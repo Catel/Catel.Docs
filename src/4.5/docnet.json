@@ -1,0 +1,22 @@
+{
+    "Name" : "Catel documentation",
+    "Source" : ".",
+    "Destination" : "../../4.5",
+    "IncludeSource": "Includes",
+    "Theme" : "Catel",
+    //"SourceFoldersToCopy" : ["folder1", "foldern"],
+    "Footer" : "",
+    "Pages" : 
+    {
+        "__index" : "index.md",
+        //"5.0": "../5.0/index.md", 
+		//"4.5": "../4.5/index.md", 
+        //"Title Page 2": "filename_page2.md",
+        //"Sub Header 1": 
+        //{
+        //    "__index" : "index.md",
+        //    "Title Page 3" : "filename_page3.md",
+        //    "Title Page 4" : "filename_page4.md"
+        //}
+    }
+}
