@@ -8,7 +8,7 @@ This case proves that it should be at least possible to determine the type of th
 
 Note that this feature is available on all controls an behaviors, not only for the *UserControl*
 
-# How to dynamically determine the view model type using a UserControl
+## How to dynamically determine the view model type using a UserControl
 
 Determining the view model dynamically when using the *UserControl* is extremely easy. You can override the *GetViewModelType(object)* method like this:
 
@@ -31,7 +31,7 @@ protected override Type GetViewModelType(object dataContext)
 
 When the method returns *null*, it will fall back on the earlier determined view model type.
 
-# How to dynamically determine the view model using a behavior
+## How to dynamically determine the view model using a behavior
 
 Determining the view model dynamically when using behaviors must be done via the *DetermineViewModelType* event like this:
 

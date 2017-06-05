@@ -2,7 +2,7 @@
 
 Starting with Catel 4.0, the views watch both the direct and inherited *DataContext*. Starting with Catel 4.1, it is possible to mimick the pre 4.0 *DataContext* subscription behavior.
 
-# Customizing the behavior for all views
+## Customizing the behavior for all views
 
 To mimick pre Catel 4.0, use the following code:
 
@@ -13,7 +13,7 @@ var dataContextSubscriptionService = dependencyResolver.Resolve<IDataContextSubs
 dataContextSubscriptionService.DefaultDataContextSubscriptionMode = DataContextSubscriptionMode.DirectDataContext;
 ```
 
-# Customizing the behavior per view
+## Customizing the behavior per view
 
 It is also customize the behavior per view. This allows very customized fine tuning of the behavior. To use this feature, one needs to create a custom implementation of the *IDataContextSubscriptionService*.
 

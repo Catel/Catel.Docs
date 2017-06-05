@@ -2,7 +2,7 @@
 
 The *IUrlLocator* class is responsible for resolving the right urls for the xaml views for a view model in navigation based applications. Before Catel 3.0, the *INavigationService* was responsible for resolving the url, but this responsibility is now taken over by the *IUrlLocator*. The *NavigationService* internally uses the *IUrlLocator* to resolve the views.
 
-# Resolving by naming convention
+## Resolving by naming convention
 
 It is possible to resolve views using the *IUrlLocator*. Then you can use the *ResolveUrl* method to resolve the url based on the type of the view model.
 
@@ -20,7 +20,7 @@ will be resolved as:
 
 Note that the *UrlLocator* checks whether the resource actually exists. If the resource does not exists, it will not be able to resolve a view
 
-# Manually resolving a naming convention
+## Manually resolving a naming convention
 
 To manually resolve a naming convention, use the following code:
 
@@ -29,7 +29,7 @@ var urlLocator = ServiceLocator.Instance.ResolveType<IUrlLocator>();
 var url = urlLocator.ResolveUrl(typeof(MyViewModel));
 ```
 
-# Customizing naming conventions
+## Customizing naming conventions
 
 By default, the *IUrlLocator* uses the following naming conventions to resolve urls:
 
@@ -69,7 +69,7 @@ var urlLocator = ServiceLocator.Instance.ResolveType<IUrlLocator>();
 urlLocator.NamingConventions.Add("/MyPages/[VM]Page.xaml");
 ```
 
-# Registering custom urls
+## Registering custom urls
 
 Sometimes, a class doesn't follow a naming convention (for whatever reason possible). In such a case, it is possible to register a mapping manually using the following code:
 
@@ -78,7 +78,7 @@ var urlLocator = ServiceLocator.Instance.ResolveType<IUrlLocator>();
 urlLocator.Register(typeof(MyViewModelNotFollowingNamingConvention), "/MyVerySpecialUrl.xaml");
 ```
 
-# Using a custom UrlLocator
+## Using a custom UrlLocator
 
 If you want to have total freedom to determine which url is provided per view model (maybe there are other services that have an impact on this), it is possible to create a custom *IUrlLocator* implementation. Then the only thing to do is to register it using the following code:
 

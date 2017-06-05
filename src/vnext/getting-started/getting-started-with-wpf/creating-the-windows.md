@@ -2,13 +2,7 @@
 
 In this step we will create the windows for the application. In the previous step we already created the user controls. Windows are a great way to show in an edit-context. Catel provides great edit-windows in the form of the *DataWindow*. This is a window that automatically adds *OK* and *Cancel* buttons (but of course allows customization of the buttons and behavior).
 
--   [Person window](#Creatingtheviews(windows)-Personwindow)
--   [Family window](#Creatingtheviews(windows)-Familywindow)
-    -   [Creating the FamilyWindowViewModel](#Creatingtheviews(windows)-CreatingtheFamilyWindowViewModel)
-    -   [Creating the FamilyWindow](#Creatingtheviews(windows)-CreatingtheFamilyWindow)
--   [Up next](#Creatingtheviews(windows)-Upnext)
-
-# Person window
+## Person window
 
 It is very important that the window derives from one of the Catel windows. This is required to make the binding system work (same as *UserControl*). Make sure that the window definition in the xaml is either *catel:Window* or *catel:DataWindow*
 
@@ -46,17 +40,17 @@ The template will also create a constructor to inject a view model into the wind
 </catel:StackGrid>
 ```
 
-# Family window
+## Family window
 
 The *FamilyWindow* is a bit different because we want additional logic in this window. We want to create add / edit / remove buttons for the family members. Therefore we need to create a separate view model which contains this logic. 
 
-## Creating the FamilyWindowViewModel
+### Creating the FamilyWindowViewModel
 
 Since the *FamilyWindowViewModel* will look a lot like the *FamilyViewModel*, just copy/paste the *FamilyViewModel* and rename the copy to *FamilyWindowViewModel*.
 
 Note that the *FamilyWindowViewModel* needs additional logic, but that will be handled in the next part of this getting started guide
 
-## Creating the FamilyWindow
+### Creating the FamilyWindow
 
 Once the *FamilyWindowViewModel* is created, the *FamilyWindow *must be created exactly the same way as the *PersonWindow*. Again make sure to use the right view model (*FamilyWindowViewModel*) in the constructor of the window in the code-behind. Then use the following xaml:
 
@@ -100,9 +94,9 @@ Once the *FamilyWindowViewModel* is created, the *FamilyWindow *must be created
 </catel:StackGrid>
 ```
 
-# Up next
+## Up next
 
-[Hooking up everything together](Hooking_up_everything_together)
+[Hooking up everything together](./hooking-up-everything-together.md)
 
 ## Attachments:
 

@@ -16,7 +16,7 @@ ApiCopManager.WriteResults();
 -   [Customizing grouping](#Listeners-Customizinggrouping)
 -   [Creating custom listeners](#Listeners-Creatingcustomlisteners)
 
-# Customizing grouping
+## Customizing grouping
 
 It is possible to group the listeners. To specify the grouping, use the following code:
 
@@ -43,7 +43,7 @@ Tag
 
 Sort by tag, which is dependent on the rule implementation. It is recommended though to use the final class name as tag.
 
-# Creating custom listeners
+## Creating custom listeners
 
 Catel provides several listeners out of the box. To create custom listeners, the only requirement is to implement the *IApiCopListener*. To make it easier to create custom listeners (such as an HTML listener), Catel provides the following base classes which can also be used as a base for custom listeners:
 

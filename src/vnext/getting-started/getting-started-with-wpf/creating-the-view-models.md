@@ -2,15 +2,9 @@
 
 In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the *ViewModelBase* class
 
--   [Creating the PersonViewModel](#Creatingtheviewmodels-CreatingthePersonViewModel)
-    -   [Enabling model injection](#Creatingtheviewmodels-Enablingmodelinjection)
-    -   [Exposing properties of a model](#Creatingtheviewmodels-Exposingpropertiesofamodel)
--   [Creating the FamilyViewModel](#Creatingtheviewmodels-CreatingtheFamilyViewModel)
--   [Up next](#Creatingtheviewmodels-Upnext)
-
 The *vm* code snippet is available to create view models. There is also an on-line item template available for Catel view models
 
-# Creating the PersonViewModel
+## Creating the PersonViewModel
 
 Below is the class definition of the *PersonViewModel*. This view model will be used to show the details of a *Person* model.
 
@@ -25,7 +19,7 @@ namespace WPF.GettingStarted.ViewModels
 }
 ```
 
-## Enabling model injection
+### Enabling model injection
 
 In hierarchy views, it is important to manage the state of views and view models based on the actual context where the view (thus view model) is located. Catel does this by allowing model injection. The view models will only be created when the model is available within the context of the view.
 
@@ -58,7 +52,7 @@ public class PersonViewModel : ViewModelBase
 
 Note that the *Person* property is decorated with the *Model* attribute. This automatically makes sure that if a view model is saved, the *IEditableObject.EndEdit* is called. When the view model is canceled, the *IEditableObject.CancelEdit* is called and all changes on the model will be reverted.
 
-## Exposing properties of a model
+### Exposing properties of a model
 
 One very powerful feature of Catel is that it can automatically map properties from a model to a view model. This way the user does not have to write repetitive code to map the properties from the model to the view model at startup and map the properties from view model to model when the view model is closed. Catel will take care of this all automatically.
 
@@ -96,7 +90,7 @@ public static readonly PropertyData LastNameProperty = RegisterProperty("LastNam
 
 Note that the properties are decorated with the *ViewModelToModel* attribute which enables the automatic mappings feature in Catel.
 
-# Creating the FamilyViewModel
+## Creating the FamilyViewModel
 
 The *FamilyViewModel* must be set up the same way as the *PersonViewModel* above.
 
@@ -165,7 +159,7 @@ namespace WPF.GettingStarted.ViewModels
 }
 ```
 
-# Up next
+## Up next
 
-[Creating the views (user controls)](Creating_the_views__user_controls_)
+[Creating the views (user controls)](./creating-the-user-controls.md)
 

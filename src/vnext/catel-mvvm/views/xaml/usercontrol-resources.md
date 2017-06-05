@@ -4,7 +4,6 @@ For the most part the resources declared within a Catel UserControl behave the e
 
 Give this simple Model and ViewModel (Catel.Fody used for parameter declaration)
 
- 
 
 ``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
     public class DataSource : ModelBase

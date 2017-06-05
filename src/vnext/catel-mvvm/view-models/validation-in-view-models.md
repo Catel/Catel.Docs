@@ -2,17 +2,7 @@
 
 Validation is very important to provide both feedback to the user, but also to make sure that no invalid data reaches the model or database. Catel offers several ways to implement validation. All options are described in this part of the documentation.
 
--   [Validation in models via mappings](#Validationinviewmodels-Validationinmodelsviamappings)
-    -   [Mapping via ViewModelToModelAttribute](#Validationinviewmodels-MappingviaViewModelToModelAttribute)
-    -   [Mapping via ExposeAttribute](#Validationinviewmodels-MappingviaExposeAttribute)
--   [Validation in view models](#Validationinviewmodels-Validationinviewmodels)
-    -   [Validating fields](#Validationinviewmodels-Validatingfields)
-    -   [Validating business rules](#Validationinviewmodels-Validatingbusinessrules)
--   [Translating model validation in the view model](#Validationinviewmodels-Translatingmodelvalidationintheviewmodel)
--   [Validating via annotations](#Validationinviewmodels-Validatingviaannotations)
--   [To validate required fields or not to validate required fields at startup](#Validationinviewmodels-Tovalidaterequiredfieldsornottovalidaterequiredfieldsatstartup)
-
-# Validation in models via mappings
+## Validation in models via mappings
 
 The best way is to put validation into a model. Most model objects nowadays implement *INotifyPropertyChanged* and *IDataErrorInfo*, the most important classes that are required to use mappings from/to a model inside a view model.
 
@@ -20,7 +10,7 @@ The great advantage of mapping properties from/to models automatically using Cat
 
 There are two ways to use automatic mappings.
 
-## Mapping via ViewModelToModelAttribute
+### Mapping via ViewModelToModelAttribute
 
 Mapping a model property by using the *ViewModelToModelAttribute* requires the definition of a model property and a separate property per mapped property. The code below automatically maps the *FirstName* property.
 
@@ -60,7 +50,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstN
 
 If the *Person.FirstName* provides an error via the *IDataErrorInfo* interface, it will automatically be exposed by the view model as well.
 
-## Mapping via ExposeAttribute
+### Mapping via ExposeAttribute
 
 Mapping a property via the *ExposeAttribute* is even more simple, but has some disadvantages. First, let's talk about the disadvantages before showing the code:
 
@@ -91,7 +81,7 @@ public static readonly PropertyData PersonProperty = RegisterProperty("Person", 
 
 Simply declare the model property and decorate it with one or multiple *ExposeAttribute* instances. Not only are the properties automatically available for binding, the view model also checks for errors and automatically maps these as well.
 
-# Validation in view models
+## Validation in view models
 
 Until now, we only spoke about automatic validation for validation that was written in the model. However, sometimes it is required to write validation inside the view model as well. One reason might be that the model is a POCO object not providing any validation. Or, sometimes there is a logical error that has nothing to do with the model, but should be shown to the user anyway.
 
@@ -106,7 +96,7 @@ The difference between a field and business rule is that a field error or warnin
 
 To implement validation into a view model, only two methods need to be implemented. Catel clearly separates the field validation from the business rule validation to make it much clearer to the developer what is going on.
 
-## Validating fields
+### Validating fields
 
 To validate fields, one should override the *ValidateFields* method. Below is an example of field validation on a view model:
 
@@ -125,7 +115,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 }
 ```
 
-## Validating business rules
+### Validating business rules
 
 To validate business rules, one should override the *ValidateBusinessRules* method. Below is an example of business rule validation on a view model:
 
@@ -144,7 +134,7 @@ protected override void ValidateBusinessRules(List<IBusinessRuleValidationResult
 }
 ```
 
-# Translating model validation in the view model
+## Translating model validation in the view model
 
 Thanks to the validation system in Catel, it is very easy to implement very advanced validation features in view models. The example below shows how to translate errors that are added to a model in the Data Access Layer or validation layer. Assume that the following pseudo code is used to set an error on a model in the DAL:
 
@@ -174,7 +164,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 
 Of course this is not something you want to actually do in your view model, so you’ll probably have to write a helper class that translates the validation for you. You might or might not like delaying the translation of the model errors to as close as the view, but it shows how extremely powerful the improved validation of Catel is. And if you think a bit about it, wouldn't it be a good idea to delay the translation from the server to the actual client to as close as the view…?
 
-# Validating via annotations
+## Validating via annotations
 
 Some people like to add validation to their (view)models using annotations (attributes). Catel also supports this method, but adds additional functionality. The idea behind it is that in the end, Catel always provides all errors of an object via the *IDataErrorInfo* interface. This means that when attribute validation is used, the errors are internally registered and provided in the *ValidateFields* method. This way, all types of validation that are provided by the .NET framework are gathered into one single location where they can be used by the view.
 
@@ -195,7 +185,7 @@ private string FirstName
 public static readonly PropertyData FirstNameProperty= RegisterProperty("FirstName", typeof(string));
 ```
 
-# To validate required fields or not to validate required fields at startup
+## To validate required fields or not to validate required fields at startup
 
 Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (\*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:
 

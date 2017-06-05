@@ -2,13 +2,7 @@
 
 Rules always belong to an *IApiCop* instance. Rules are registered once and then updated when needed, based on the requirement of the rule. Rules are normally custom-made, but Catel does provide a few base implementations.
 
--   [Registering rules](#Rules-Registeringrules)
--   [Updating rules](#Rules-Updatingrules)
--   [Available rules](#Rules-Availablerules)
-    -   [UnusedFeatureApiCopRule](#Rules-UnusedFeatureApiCopRule)
-        -   [Usage](#Rules-Usage)
-
-# Registering rules
+## Registering rules
 
 To register a rule in the *IApiCop*, use the following code:
 
@@ -22,7 +16,7 @@ The first argument is the *name* of the rule. This is a unique identifier and a
 
 It is good practice to use the *ClassName*.*FeatureName* for the rule names
 
-# Updating rules
+## Updating rules
 
 Once a rule is registered, it must be updated to actually provide any useful information. How a rule must be updated depends on the rule implementation, but the code below shows how the feature can be used. This specific rule is implemented to check if the *InfoBarMessageControl* is actually used by the software. If it is, the counter is increased as "feature being used", otherwise "feature not being used".
 
@@ -37,15 +31,15 @@ This code shows the regular code executed by the framework (the search in the vi
 
 It is good practice to use the final class name as as tag (especially when the rule is registered in a base class)
 
-# Available rules
+## Available rules
 
 Catel provides the following rules out of the box.
 
-## UnusedFeatureApiCopRule
+### UnusedFeatureApiCopRule
 
 This rule contains several counters. Each time code is executed, one must call the *IncreaseCount* method and specify if the feature is being used.
 
-### Usage
+#### Usage
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 ApiCop.UpdateRule<UnusedFeatureApiCopRule>("ruleName", 

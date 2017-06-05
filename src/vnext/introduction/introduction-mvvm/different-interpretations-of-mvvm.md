@@ -4,7 +4,7 @@ There are two different interpretations of MVVM, the "purist" way where the mode
 
 ![](attachments/622609/1015814.png)
 
-# Shortcut interpretation
+## Shortcut interpretation
 
 This is what most people do. The view model implements the model, and then provides the model to the view. The view then binds directly to the model.
 

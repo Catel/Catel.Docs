@@ -4,26 +4,26 @@
     "Destination" : "../../vnext",
     "IncludeSource": "Includes",
     "Theme" : "Catel",
+    "ConvertLocalLinks" : true,
     //"SourceFoldersToCopy" : ["folder1", "foldern"],
     "Footer" : "",
     "Pages" : 
     {
 		"Introduction" :
 		{
-			"__index" : "introduction/index.md",
+			"Introduction" : "introduction/introduction.md",
 			"Why Catel?" : "introduction/why-catel.md",
 			"Platform support" : 
 			{
-				"__index" : "introduction/platform-support/index.md",
+				"Introduction" : "introduction/platform-support/introduction.md",
 				"Caveats in WPF" : "introduction/platform-support/caveats-in-wpf.md",
 				"Caveats in UWP" : "introduction/platform-support/caveats-in-uwp.md",
 				"Caveats in Android" : "introduction/platform-support/caveats-in-android.md",
 				"Caveats in iOS" : "introduction/platform-support/caveats-in-ios.md",
 			},
-			"Introduction to data objects" : "introduction/introduction-data-objects/index.md",
+			"Introduction to data objects" : "introduction/introduction-data-objects.md",
 			"Introduction to MVVM" : 
 			{
-				"__index" : "introduction/introduction-mvvm/index.md",
 				"Different interpretations of MVVM" : "introduction/introduction-mvvm/different-interpretations-of-mvvm.md",
 				"Validation in model or view model?" : "introduction/introduction-mvvm/validation-in-model-or-view-model.md",
 				"Introduction to MVVM and models" : "introduction/introduction-mvvm/introduction-to-mvvm-and-models.md",
@@ -34,7 +34,6 @@
 		},
 		"FAQ" : 
 		{
-			"__index" : "faq/index.md",
 			"General" : "faq/general.md",
 			"MVVM" : "faq/mvvm.md",
 			"Problem solving" : "faq/problem-solving.md",
@@ -42,20 +41,18 @@
 		},
 		"Setup, deployment & projects" :
 		{
-			"__index" : "setup-deployment/index.md",
 			"Getting prerelease versions via NuGet" : "setup-deployment/getting-prerelease-versions-via-nuget.md",
 			"Stepping through the code" : "setup-deployment/stepping-through-the-code.md",
 			"Compiling from source" : "setup-deployment/compiling-from-source.md",
 			"Code snippets & templates" : 
 			{
-				"__index" : "setup-deployment/code-snippets-templates/index.md",
+				"Introduction" : "setup-deployment/code-snippets-templates/introduction.md",
 				"Using the code snippets" : "setup-deployment/code-snippets-templates/using-the-code-snippets.md",
 				"Using the item templates" : "setup-deployment/code-snippets-templates/using-the-item-templates.md",
 				"Using the project templates" : "setup-deployment/code-snippets-templates/using-the-project-templates.md",
 			},
 			"Update guides" :
 			{
-				"__index" : "setup-deployment/update-guides/index.md",
 				"Catel 4.0" : "setup-deployment/update-guides/catel-4.0.md",
 				"Catel 4.1" : "setup-deployment/update-guides/catel-4.1.md",
 				"Catel 5.0" : "setup-deployment/update-guides/catel-5.0.md",
@@ -63,11 +60,10 @@
 		},
 		"Getting started" :
 		{
-			"__index" : "getting-started/index.md",
 			"Quick introduction for developers" : "getting-started/quick-introduction-for-developers.md",
 			"Getting started with WPF" : 
 			{
-				"__index" : "getting-started/getting-started-with-wpf/index.md",
+				"Introduction" : "getting-started/getting-started-with-wpf/introduction.md",
 				"Creating the project" : "getting-started/getting-started-with-wpf/creating-the-project.md",
 				"Creating the models" : "getting-started/getting-started-with-wpf/creating-the-models.md",
 				"Serializing data from/to disk" : "getting-started/getting-started-with-wpf/serializing-data-from-to-disk.md",
@@ -79,16 +75,19 @@
 			},
 			"Getting started with Xamarin Forms" : 
 			{
-				"__index" : "getting-started/getting-started-with-xamarin-forms/index.md",
+				"Introduction" : "getting-started/getting-started-with-xamarin-forms/introduction.md",
 				"Creating the project" : "getting-started/getting-started-with-wpf/creating-the-project.md",
 			}
 		},
+		"Examples" : 
+		{
+			"Introduction" : "examples/introduction.md",
+		},
 		"Catel.Core" : 
 		{
-			"__index" : "catel-core/index.md",
 			"ApiCop" :
 			{
-				"__index" : "catel-core/apicop/index.md",
+				"Introduction" : "catel-core/apicop/introduction.md",
 				"Cops" : "catel-core/apicop/cops.md",
 				"Rules" : "catel-core/apicop/rules.md",
 				"Listeners" : "catel-core/apicop/listeners.md",
@@ -107,7 +106,7 @@
 			},
 			"Data handling" : 
 			{
-				"__index" : "catel-core/data-handling/index.md",
+				"Introduction" : "catel-core/data-handling/introduction.md",
 				"ObservableObject" : "catel-core/data-handling/observableobject.md",
 				"DispatcherObservableObject" : "catel-core/data-handling/dispatcherobservableobject.md",
 				"ModelBase" : "catel-core/data-handling/modelbase.md",
@@ -116,16 +115,15 @@
 			},
 			"Exception handling" : 
 			{
-				"__index" : "catel-core/exception-handling/index.md",
+				"Introduction" : "catel-core/exception-handling/introduction.md",
 				"WPF implementation for exception handling" : "catel-core/exception-handling/wpf-implementation-for-exception-handling.md",
 			},
 			"IoC (ServiceLocator & TypeFactory)" : 
 			{
-				"__index" : "catel-core/ioc/index.md",
+				"Introduction" : "catel-core/ioc/introduction.md",
 				"Dependency injection" : "catel-core/ioc/dependency-injection.md",
 				"Introduction to IoC components" : 
 				{
-					"__index" : "catel-core/ioc/introduction-to-components/index.md",
 					"ServiceLocator" : "catel-core/ioc/introduction-to-components/servicelocator.md",
 					"TypeFactory" : "catel-core/ioc/introduction-to-components/typefactory.md",
 					"DependencyResolver & DependencyResolverManager" : "catel-core/ioc/introduction-to-components/dependencyresolver.md",
@@ -133,7 +131,6 @@
 				},
 				"Automatic type registration" : 
 				{
-					"__index" : "catel-core/ioc/automatic-type-registration/index.md",
 					"Using attributes" : "catel-core/ioc/automatic-type-registration/using-attributes.md",
 					"Using conventions" : "catel-core/ioc/automatic-type-registration/using-conventions.md",
 				},
@@ -142,10 +139,9 @@
 			},
 			"Logging" : 
 			{
-				"__index" : "catel-core/logging/index.md",
+				"Introduction" : "catel-core/logging/introduction.md",
 				"Log Listeners" : 
 				{
-					"__index" : "catel-core/logging/log-listeners/index.md",
 					"Batch log listeners" : "catel-core/logging/log-listeners/batch-log-listeners.md",
 					"ConsoleLogListener" : "catel-core/logging/log-listeners/console-log-listener.md",
 					"DebugLogListener" : "catel-core/logging/log-listeners/debug-log-listener.md",
@@ -159,7 +155,6 @@
 				"Creating log listeners via configuration" : "catel-core/logging/creating-log-listeners-via-configuration.md",
 				"Integration with external loggers" : 
 				{
-					"__index" : "catel-core/logging/integration-with-external-loggers/index.md",
 					"Log4net" : "catel-core/logging/integration-with-external-loggers/log4net.md",
 					"NLog" : "catel-core/logging/integration-with-external-loggers/nlog.md",
 				},
@@ -167,48 +162,44 @@
 			},
 			"Messaging" : 
 			{
-				"__index" : "catel-core/messaging/index.md",
 				"MessageBase" : "catel-core/messaging/messagebase.md",
 				"Message mediator" : "catel-core/messaging/message-mediator.md",
 				"Messaging via attributes" : "catel-core/messaging/messaging-via-attributes.md",
 			},
 			"Multilingual" : 
 			{
-				"__index" : "catel-core/multilingual/index.md",
+				"Introduction" : "catel-core/multilingual/introduction.md",
 				"DisplayAttribute" : "catel-core/multilingual/displayattribute.md",
 				"DisplayNameAttribute" : "catel-core/multilingual/displaynameattribute.md",
 			},
 			"Parallel invocation & tasks" : 
 			{
-				"__index" : "catel-core/parallel-invocation-tasks/index.md",
+				"Introduction" : "catel-core/parallel-invocation-tasks/introduction.md",
 				"Thread safe code" : "catel-core/parallel-invocation-tasks/thread-safe-code.md",
 			},
 			"Pooling" : 
 			{
-				"__index" : "catel-core/pooling/index.md",
+				"Introduction" : "catel-core/pooling/introduction.md",
 			},
 			"Preventing memory leaks" : 
 			{
-				"__index" : "catel-core/preventing-memory-leaks/index.md",
 				"Change notification wrapper" : "catel-core/preventing-memory-leaks/change-notification-wrapper.md",
 				"Weak events" : "catel-core/preventing-memory-leaks/weak-events.md",
 			},
 			"Reflection" : 
 			{
-				"__index" : "catel-core/reflection/index.md",
+				"Introduction" : "catel-core/reflection/introduction.md",
 			},
 			"Scoping" : 
 			{
-				"__index" : "catel-core/scoping/index.md",
+				"Introduction" : "catel-core/scoping/introduction.md",
 			},
 			"Serialization" : 
 			{
-				"__index" : "catel-core/serialization/index.md",
 				"Introduction" : "catel-core/serialization/introduction.md",
 				"Specifying what gets serialized" : "catel-core/serialization/specifying-what-gets-serialized.md",
 				"Customizing serialization" : 
 				{
-					"__index" : "catel-core/serialization/customizing-serialization/index.md",
 					"Customizing the serialization engines" : "catel-core/serialization/customizing-serialization/customizing-serialization-engines.md",
 					"Customizing the serialization for specific models" : "catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.md",
 					"Serializing members using ToString / Parse" : "catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse.md",
@@ -223,7 +214,7 @@
 			},
 			"Validation" : 
 			{
-				"__index" : "catel-core/validation/index.md",
+				"Introduction" : "catel-core/validation/introduction.md",
 				"Validation via validate methods" : "catel-core/validation/validation-via-validate-method.md",
 				"Validation via data annotations" : "catel-core/validation/validation-via-data-annotations.md",
 				"Validation via special model validators" : "catel-core/validation/validation-via-special-model-validators.md",
@@ -237,11 +228,11 @@
 		{
 			"Auditing" : 
 			{
-				"__index" : "catel-mvvm/auditing/index.md",
+				"Introduction" : "catel-mvvm/auditing/introduction.md",
 			},
 			"Behaviors & triggers" : 
 			{
-				"__index" : "catel-mvvm/behaviors-triggers/index.md",
+				"Introduction" : "catel-mvvm/behaviors-triggers/introduction.md",
 				"Authentication" : "catel-mvvm/behaviors-triggers/authentication.md",
 				"AutoCompletion" : "catel-mvvm/behaviors-triggers/autocompletion.md",
 				"AutoScroll" : "catel-mvvm/behaviors-triggers/autoscroll.md",
@@ -262,13 +253,13 @@
 			},
 			"Bindings" : 
 			{
-				"__index" : "catel-mvvm/bindings/index.md",
+				"Introduction" : "catel-mvvm/bindings/introduction.md",
 				"Command bindings" : "catel-mvvm/bindings/command-bindings.md",
 				"Property bindings" : "catel-mvvm/bindings/property-bindings.md",
 			},
 			"Commands & events" : 
 			{
-				"__index" : "catel-mvvm/commands-events/index.md",
+				"Introduction" : "catel-mvvm/commands-events/introduction.md",
 				"Commands" : "catel-mvvm/commands-events/commands.md",
 				"Application-wide commands" : "catel-mvvm/commands-events/application-wide-commands.md",
 				"Asynchronous commands" : "catel-mvvm/commands-events/asynchronous-commands.md",
@@ -277,17 +268,15 @@
 			},
 			"Converters" : 
 			{
-				"__index" : "catel-mvvm/converters/index.md",
+				"Introduction" : "catel-mvvm/converters/introduction.md",
 			},
 			"Designers" : 
 			{
-				"__index" : "catel-mvvm/designers/index.md",
 				"Design-time view models" : "catel-mvvm/designers/design-time-view-models.md",
 				"Running code at design-time" : "catel-mvvm/designers/running-code-at-design-time.md",
 			},
 			"Locators & naming conventions" : 
 			{
-				"__index" : "catel-mvvm/locators-naming-conventions/index.md",
 				"ViewModelLocator" : "catel-mvvm/locators-naming-conventions/view-model-locator.md",
 				"ViewLocator" : "catel-mvvm/locators-naming-conventions/view-locator.md",
 				"UrlLocator" : "catel-mvvm/locators-naming-conventions/url-locator.md",
@@ -295,7 +284,6 @@
 			},
 			"Services" : 
 			{
-				"__index" : "catel-mvvm/services/index.md",
 				"LocationService" : "catel-mvvm/services/location-service.md",
 				"MessageService" : "catel-mvvm/services/message-service.md",
 				"NavigationService" : "catel-mvvm/services/navigation-service.md",
@@ -311,7 +299,7 @@
 			},
 			"View models" : 
 			{
-				"__index" : "catel-mvvm/view-models/index.md",
+				"Introduction" : "catel-mvvm/view-models/introduction.md",
 				"Creating a basic view model" : "catel-mvvm/view-models/creating-basic-view-model.md",
 				"Creating a view model that watches over other view models" : "catel-mvvm/view-models/creating-view-model-that-watches-over-other-view-models.md",
 				"Creating a view model with a model" : "catel-mvvm/view-models/creating-view-model-with-model.md",
@@ -329,10 +317,8 @@
 			},
 			"Views" : 
 			{
-				"__index" : "catel-mvvm/views/index.md",
 				"XAML" : 
 				{
-					"__index" : "catel-mvvm/views/xaml/index.md",
 					"Window and DataWindow" : "catel-mvvm/views/xaml/window-and-datawindow.md",
 					"UserControl" : "catel-mvvm/views/xaml/usercontrol.md",
 					"UserControl Resources" : "catel-mvvm/views/xaml/usercontrol-resources.md",
@@ -342,43 +328,40 @@
 					"Improving performance by defining the view model grid manually" : "catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually.md",
 					"External controls" : 
 					{
-						"__index" : "catel-mvvm/views/xaml/external-controls/index.md",
 						"Using a custom control" : "catel-mvvm/views/xaml/external-controls/using-custom-control.md",
 						"Using a custom window" : "catel-mvvm/views/xaml/external-controls/using-custom-window.md",
 					},
 					"Advanced" : 
 					{
-						"__index" : "catel-mvvm/views/xaml/advanced/index.md",
 						"UserControl - under the hood" : "catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood.md",
 						"DataWindow - under the hood" : "catel-mvvm/views/xaml/advanced/datawindow-under-the-hood.md",
 					},
 				},
 				"Xamarin.Forms" : 
 				{
-					"__index" : "catel-mvvm/views/xamarin-forms/index.md",
+					"Introduction" : "catel-mvvm/views/xamarin-forms/introduction.md",
 				},
 				"Xamarin.Android" : 
 				{
-					"__index" : "catel-mvvm/views/xamarin-android/index.md",
+					"Introduction" : "catel-mvvm/views/xamarin-android/introduction.md",
 					"Activities (pages)" : "catel-mvvm/views/xamarin-android/activities-pages.md",
 					"Fragments (user controls)" : "catel-mvvm/views/xamarin-android/fragments-user-controls.md",
 				},
 				"Xamarin.iOS" : 
 				{
-					"__index" : "catel-mvvm/views/xamarin-ios/index.md",
+					"Introduction" : "catel-mvvm/views/xamarin-ios/introduction.md",
 				},
 			},
 		},
 		"Tips & tricks" :
 		{
 			"__index" : "tips-tricks/index.md",
-			"Catel.Core" :
-			{
-				"__index" : "tips-tricks/core/index.md",
-			},
+			//"Catel.Core" :
+			//{
+			//	"__index" : "tips-tricks/core/index.md",
+			//},
 			"Catel.MVVM" :
 			{
-				"__index" : "tips-tricks/mvvm/index.md",
 				"Finding the view of a view model" : "tips-tricks/mvvm/finding-view-of-view-model.md",
 				"Requery commands automatically" : "tips-tricks/mvvm/requery-commands-automatically.md",
 				"Using a tabbed interface with MVVM" : "tips-tricks/mvvm/using-tabbed-interface-with-mvvm.md",

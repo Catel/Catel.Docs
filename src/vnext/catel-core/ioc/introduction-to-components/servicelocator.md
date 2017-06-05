@@ -10,7 +10,7 @@ The *ServiceLocator* can be instantiated, but Catel instantiates one instance th
 
 For more information how types are instantiated and dependency injection, take a look at the [TypeFactory documentation](Introduction_to_the_TypeFactory)
 
-# Registering a type
+## Registering a type
 
 Use the following code to register a specific type in the *ServiceLocator*:
 
@@ -18,7 +18,7 @@ Use the following code to register a specific type in the *ServiceLocator*:
 ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
 ```
 
-# Registering a late-bound type
+## Registering a late-bound type
 
 Use the following code to register a late-bound type in the *ServiceLocator*:
 
@@ -26,7 +26,7 @@ Use the following code to register a late-bound type in the *ServiceLocator*:
 ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitService());
 ```
 
-# Registering an instance of a type
+## Registering an instance of a type
 
 Catel uses the *TypeFactory* or *Activator.CreateInstance* to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:
 
@@ -35,7 +35,7 @@ var pleaseWaitService = new PleaseWaitService();
 ServiceLocator.Default.RegisterInstance<IPleaseWaitService>(pleaseWaitService);
 ```
 
-# Registering a type via MissingType event
+## Registering a type via MissingType event
 
 The ServiceLocator gives the end-developer a last-resort chance to register a type when it is not registered in the ServiceLocator or any of the external containers. This event is very useful for logging (then the developer in the log knows exactly what type is missing from the IoC container) or it can be used to determine at runtime in a very late stage what implementation of the service must be used. To register a type via the event, subscribe to the event and then use the following code:
 
@@ -55,7 +55,7 @@ private void OnMissingType(object sender, MissingTypeEventArgs e)
 
 If both the ImplementingInstance and ImplementingType are filled, the ImplementingIntance will be used.
 
-# Resolving a type
+## Resolving a type
 
 To retrieve the implementation of a service, use the following code:
 

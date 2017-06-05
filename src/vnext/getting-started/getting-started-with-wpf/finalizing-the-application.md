@@ -2,13 +2,7 @@
 
 The application we have created so far is fully functional, but misses a bit of the "magic". Below are some additional steps that might make your application more appealing and more user friendly. Of course you can go as far as you want by creating custom animations and such, but this guide focuses purely on making the basics more appealing.
 
--   [Adding validation](#Finalizingtheapplication-Addingvalidation)
--   [Adding behaviors to enable double-click on the list boxes](#Finalizingtheapplication-Addingbehaviorstoenabledouble-clickonthelistboxes)
--   [Adding search functionality to the main window](#Finalizingtheapplication-Addingsearchfunctionalitytothemainwindow)
-    -   [Adding additional properties to the view model](#Finalizingtheapplication-Addingadditionalpropertiestotheviewmodel)
-    -   [Adding the search functionality to the view](#Finalizingtheapplication-Addingthesearchfunctionalitytotheview)
-
-# Adding validation
+## Adding validation
 
 Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from *ModelBase*). To add validation to the *Person* model, use this code:
 
@@ -41,7 +35,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 
 Note that this validation code can be used in both the model and/or the view models
 
-# Adding behaviors to enable double-click on the list boxes
+## Adding behaviors to enable double-click on the list boxes
 
 The user must manually click the *Edit* buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the *MainWindow* and add this to the *ListBox* definition:
 
@@ -82,11 +76,11 @@ The same goes for the *FamilyWindow*:
 
 Note that the *xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"* must be added in order for the code above to compile
 
-# Adding search functionality to the main window
+## Adding search functionality to the main window
 
 A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the *MainWindowViewModel*. Below are the steps required to implement search functionality.
 
-## Adding additional properties to the view model
+### Adding additional properties to the view model
 
 Lets start by adding the additional properties required to implement searching in the *MainWindowViewModel*:
 
@@ -186,7 +180,7 @@ protected override async Task InitializeAsync()
 }
 ```
 
-## Adding the search functionality to the view
+### Adding the search functionality to the view
 
 Replace the xaml of the main window by the following content:
 

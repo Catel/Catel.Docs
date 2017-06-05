@@ -1,9 +1,5 @@
 # MouseInfo
 
-Silverlight is missing a lot. One of the things that is missing are decent mouse events such as IsMouseOver. To implement such behavior, the MouseInfo behavior is created. It supports several mouse events (even in Silverlight!).
-
-# OnMouseOver
-
  1) Add the following XML namespaces:
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}

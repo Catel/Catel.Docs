@@ -4,7 +4,7 @@ The *IViewExportService *allows a developer to export a specific view that belo
 
 /\*\*/ Exporting a view
 
-# Exporting a view
+## Exporting a view
 
 To export a view, use the following code:
 

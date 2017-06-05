@@ -1,9 +1,6 @@
 # WPF implementation for exception handling
 
--   [Creating a watcher](#WPFimplementationforexceptionhandling-Creatingawatcher)
--   [Registering the exception watcher](#WPFimplementationforexceptionhandling-Registeringtheexceptionwatcher)
-
-# Creating a watcher
+## Creating a watcher
 
 The watcher below is a self-managed watcher that takes care of exception handling in case of unhandled exceptions in both the *AppDomain* and *Dispatcher*.
 
@@ -75,7 +72,7 @@ public class ExceptionWatcher
 }
 ```
 
-# Registering the exception watcher
+## Registering the exception watcher
 
 In order for this exception handler to work, you need to register it so it stays alive in the application. Use the code below:
 

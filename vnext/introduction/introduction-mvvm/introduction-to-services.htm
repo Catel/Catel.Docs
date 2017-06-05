@@ -32,19 +32,19 @@
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../introduction/index.htm">Introduction</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Introduction.htm">Introduction</a></span></li>
+<li class="tocentry"><a href="../../introduction/introduction.htm">Introduction</a>
+</li>
 <li class="tocentry"><a href="../../introduction/why-catel.htm">Why Catel?</a>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/platform-support/index.htm">Platform support</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Platformsupport.htm">Platform support</a></span>
 </li>
-<li class="tocentry"><a href="../../introduction/introduction-data-objects/index.htm">Introduction to data objects</a>
+<li class="tocentry"><a href="../../introduction/introduction-data-objects.htm">Introduction to data objects</a>
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../introduction/introduction-mvvm/index.htm">Introduction to MVVM</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../IntroductiontoMVVM.htm">Introduction to MVVM</a></span></li>
 <li class="tocentry"><a href="../../introduction/introduction-mvvm/different-interpretations-of-mvvm.htm">Different interpretations of MVVM</a>
 </li>
 <li class="tocentry"><a href="../../introduction/introduction-mvvm/validation-in-model-or-view-model.htm">Validation in model or view model?</a>
@@ -54,24 +54,33 @@
 <li class="tocentry"><a href="../../introduction/introduction-mvvm/creating-view-models-with-catel.htm">Creating view models with Catel</a>
 </li>
 <li class="tocentry current"><a class="current" href="../../introduction/introduction-mvvm/introduction-to-services.htm">Introduction to services</a>
-</li>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#servicelocator">ServiceLocator</a></li>
+<li class="tocentry"><a href="#dependency-injection">Dependency injection</a></li>
+<li class="tocentry"><a href="#overview-of-services">Overview of services</a></li>
+</ul>
 <li class="tocentry"><a href="../../introduction/introduction-mvvm/introduction-to-nested-user-controls-problem.htm">Introduction to the nested user controls problem</a>
 </li>
+
 </ul>
 </li>
+
 </ul>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../FAQ.htm">FAQ</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/index.htm">Getting started</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Gettingstarted.htm">Getting started</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelCore.htm">Catel.Core</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span>
@@ -98,7 +107,7 @@
             <div class="nav-content">
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
-<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../introduction/index.htm">Introduction</a></li> / <li><a href="../../introduction/introduction-mvvm/index.htm">Introduction to MVVM</a></li> / <li><a href="../../introduction/introduction-mvvm/introduction-to-services.htm">Introduction to services</a></li></ul>
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../Introduction.htm">Introduction</a></li> / <li><a href="../../IntroductiontoMVVM.htm">Introduction to MVVM</a></li> / <li><a href="../../introduction/introduction-mvvm/introduction-to-services.htm">Introduction to services</a></li></ul>
 					
                     </div>
                     <hr />
@@ -107,13 +116,13 @@
                     <div class="section">
 <h1 id="introduction-to-services">Introduction to services<a class="headerlink" href="#introduction-to-services" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Services are very important in MVVM. They define a way to interact with the user without using fixed controls such as <em>MessageBox</em> or <em>SaveFileDialog</em>. The interfaces defined in Catel only define generic functionality of what to expect from a specific service. Using services is a great way to abstract away all specific functionality from a view model into a service that can be mocked during unit testing and can be used by other view models as well.</p>
-<h1 id="servicelocator">ServiceLocator<a class="headerlink" href="#servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="servicelocator">ServiceLocator<a class="headerlink" href="#servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The key behind services is the <em>ServiceLocator</em>. The <em>ServiceLocator</em> is the IoC (Inversion of Control) container that Catel provides. This is a container that contains all registrations and service instances available throughout the application. Retrieving services from the default <em>ServiceLocator</em> in Catel is very simple:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
 </pre><p>It is also possible to get services injected into the constructor, which is the recommended approach</p>
-<h1 id="dependency-injection">Dependency injection<a class="headerlink" href="#dependency-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="dependency-injection">Dependency injection<a class="headerlink" href="#dependency-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>A slightly better way to manage dependencies is to use dependency injection. The reason is that to instantiate a class, you always have to provide all the dependencies. This way, all dependencies are always known to the caller making it a bit complicated and encouraging high coupling. Using dependency injection however makes it a bit easier to control than having to <em>know</em> what services are being used by a component (such as a view model).</p>
 <p>Catel fully supports dependency on view models. This means that a view model can have a constructor with several services. Catel will automatically inject the services via the constructor. An example is below:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
@@ -128,7 +137,7 @@ public class PersonViewModel : ViewModelBase
         _pleaseWaitService = pleaseWaitService;
     }
 }
-</pre><h1 id="overview-of-services">Overview of services<a class="headerlink" href="#overview-of-services" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="overview-of-services">Overview of services<a class="headerlink" href="#overview-of-services" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The services below are available in Catel:</p>
 <p>Name</p>
 <p>Description</p>

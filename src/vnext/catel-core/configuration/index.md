@@ -2,10 +2,6 @@
 
 Catel makes it very easy to use configurations on all supported platforms. 
 
--   [Getting values from the configuration](#Configuration-Gettingvaluesfromtheconfiguration)
--   [Setting values to the configuration](#Configuration-Settingvaluestotheconfiguration)
--   [Customizing the way values are stored](#Configuration-Customizingthewayvaluesarestored)
-
 Below is a table to explain what technology is used per platform to retrieve and store configuration values.
 
 Platform
@@ -16,15 +12,7 @@ Technology
 
 ConfigurationManager.AppSettings
 
-Silverlight
-
-IsolatedStorageSettings.ApplicationSettings
-
-Windows Phone
-
-IsolatedStorageSettings.ApplicationSettings
-
-WinRT
+UWP
 
 ApplicationData.Current.LocalSettings
 
@@ -32,7 +20,7 @@ PCL
 
 Not supported
 
-# Getting values from the configuration
+## Getting values from the configuration
 
 To retrieve values from the configuration, use the following code:
 
@@ -45,7 +33,7 @@ The code above will retrieve the values from the configuration. If the configura
 
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
 
-# Setting values to the configuration
+## Setting values to the configuration
 
 To store values in the configuration, use the following code:
 
@@ -56,7 +44,7 @@ configurationService.SetValue("mySetting", 42);
 
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
 
-# Customizing the way values are stored
+## Customizing the way values are stored
 
 The *ConfigurationService* is written with extensibility in mind. Though it defaults to the .NET local storage system, it is very easy to create a customized configuration service. Below is an example on how to customize the service so it reads and writes values from/to a database.
 

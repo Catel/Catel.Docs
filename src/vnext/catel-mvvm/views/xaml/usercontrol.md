@@ -2,16 +2,11 @@
 
 The *UserControl* is a very interesting class of Catel, and fully shows the power of the MVVM Framework that ships with Catel. The user control is able to fully integrate MVVM on a user control level and solves the “nested user control” problem, which is explained in detail a bit further in this documentation.
 
--   [Automatic construction without parameter](#UserControl-Automaticconstructionwithoutparameter)
--   [Automatic construction with parameter](#UserControl-Automaticconstructionwithparameter)
--   [Mapping properties from/to view model](#UserControl-Mappingpropertiesfrom/toviewmodel)
--   [Keeping view models alive](#UserControl-Keepingviewmodelsalive)
-
-# Automatic construction without parameter
+## Automatic construction without parameter
 
 It simplest thing to do is to create a view model that has an empty constructor (thus without parameters). If the *UserControl* is added to the visual tree, the view model is instantly constructed and available for usage. A view model that is used inside a *UserControl* implementation is exactly the same as the *DataWindow* implementation. This way, the developers don’t have to worry about whether they can currently writing a view model that is meant for a window or a control.
 
-# Automatic construction with parameter
+## Automatic construction with parameter
 
 A bit harder (it’s still very easy, don’t worry), but much more powerful is the construction with a parameter. This way, a control is forced to use the data context to create the view model. If there is no valid data context that can be used to construct the view model, no view model will be constructed. This sounds a little abstract, but let’s take a look to a more meaningful example.
 
@@ -96,7 +91,7 @@ The best thing about this is that you can actually start re-using user controls 
 
 The easiest way to create a new *UserControl* is to use item templates
 
-# Mapping properties from/to view model
+## Mapping properties from/to view model
 
 When developing custom user controls, you still want to use the power of MVVM, right? With Catel, all of this is possible. All other frameworks require a developer to manually set the data context on a user control. Or what about mapping user control properties from/to the view model?
 
@@ -163,7 +158,7 @@ ViewModelToView
 
 The mapping is from the view model to the control only.
 
-# Keeping view models alive
+## Keeping view models alive
 
 The *UserControl* automatically closes view models in the *Unloaded* event. Reason for this is that there is no guarantee that the control will be loaded again. However, this can have some negative side effects. On of this side effects is a user control shown as a tab in a tab control. One of the behaviors of a tab control is that it unloads all non-active tabs from the visual tree. Therefore, the *UserControl* cancels and closes the view model. However, the state of the tab is lost then as well.
 

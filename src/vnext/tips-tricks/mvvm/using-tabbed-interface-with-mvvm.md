@@ -9,28 +9,7 @@ For this example, we will have a few requirements:
 
 ![](attachments/61669389/61669401.gif?width=600)
 
- 
-
--   [Creating the model describing a tab item](#UsingatabbedinterfacewithMVVM-Creatingthemodeldescribingatabitem)
--   [Creating the service](#UsingatabbedinterfacewithMVVM-Creatingtheservice)
-    -   [Interface](#UsingatabbedinterfacewithMVVM-Interface)
-    -   [Implementation](#UsingatabbedinterfacewithMVVM-Implementation)
--   [Creating the views](#UsingatabbedinterfacewithMVVM-Creatingtheviews)
-    -   [Creating ClosableTabItem](#UsingatabbedinterfacewithMVVM-CreatingClosableTabItem)
-        -   [Xaml](#UsingatabbedinterfacewithMVVM-Xaml)
-        -   [Code behind](#UsingatabbedinterfacewithMVVM-Codebehind)
-    -   [Creating main view (tab control container)](#UsingatabbedinterfacewithMVVM-Creatingmainview(tabcontrolcontainer))
-        -   [Xaml](#UsingatabbedinterfacewithMVVM-Xaml.1)
-        -   [Code behind](#UsingatabbedinterfacewithMVVM-Codebehind.1)
--   [Useful extension methods](#UsingatabbedinterfacewithMVVM-Usefulextensionmethods)
-    -   [ITabServiceExtensions](#UsingatabbedinterfacewithMVVM-ITabServiceExtensions)
-    -   [TabControlExtensions](#UsingatabbedinterfacewithMVVM-TabControlExtensions)
--   [Using the service](#UsingatabbedinterfacewithMVVM-Usingtheservice)
-    -   [Adding a new tab and activate it](#UsingatabbedinterfacewithMVVM-Addinganewtabandactivateit)
-    -   [Closing a tab from withing a view model](#UsingatabbedinterfacewithMVVM-Closingatabfromwithingaviewmodel)
-    -   [Closing a tab from outside a view model](#UsingatabbedinterfacewithMVVM-Closingatabfromoutsideaviewmodel)
-
-# Creating the model describing a tab item
+## Creating the model describing a tab item
 
 First of all, we need a model describing a tab item so we can interact with a service. We want the tab to be closeable via the service, but also via the view model it is representing.
 
@@ -81,9 +60,9 @@ public namespace TabDemo
 
 Because we subscribe to the *ClosedAsync* event, we can close the tab from withing the view model.
 
-# Creating the service
+## Creating the service
 
-## Interface
+### Interface
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace TabDemo.Services
@@ -165,7 +144,7 @@ namespace TabDemo.Services
 }
 ```
 
-## Implementation
+### Implementation
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace TabDemo.Services
@@ -356,13 +335,13 @@ namespace TabDemo.Services
 }
 ```
 
-# Creating the views
+## Creating the views
 
 For this to work, the service needs to interact with views. We have a few views to create.
 
-## Creating ClosableTabItem
+### Creating ClosableTabItem
 
-### Xaml
+#### Xaml
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 <UserControl x:Class="TabDemo.Controls.ClosableTabItem"
@@ -388,7 +367,7 @@ For this to work, the service needs to interact with views. We have a few views 
 </UserControl>
 ```
 
-### Code behind
+#### Code behind
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace Tabdemo.Controls
@@ -477,9 +456,9 @@ namespace Tabdemo.Controls
 }
 ```
 
-## Creating main view (tab control container)
+### Creating main view (tab control container)
 
-### Xaml
+#### Xaml
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 <catel:UserControl x:Class="TabDemo.Views.MainView"
@@ -505,7 +484,7 @@ namespace Tabdemo.Controls
 </catel:UserControl>
 ```
 
-### Code behind
+#### Code behind
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace TabDemo.Views
@@ -531,11 +510,11 @@ namespace TabDemo.Views
 }
 ```
 
-# Useful extension methods
+## Useful extension methods
 
 Here are some useful extension methods
 
-## ITabServiceExtensions
+### ITabServiceExtensions
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace TabDemo.Services
@@ -595,7 +574,7 @@ namespace TabDemo.Services
 }
 ```
 
-## TabControlExtensions
+### TabControlExtensions
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace TabDemo.Services
@@ -633,9 +612,9 @@ namespace TabDemo.Services
 
  
 
-# Using the service
+## Using the service
 
-## Adding a new tab and activate it
+### Adding a new tab and activate it
 
 This adds and activates a new tab which the user is allowed to close:
 
@@ -643,7 +622,7 @@ This adds and activates a new tab which the user is allowed to close:
 _tabService.AddAndActivate<DemoTabViewModel>(null, true);
 ```
 
-## Closing a tab from withing a view model
+### Closing a tab from withing a view model
 
 This closes a tab from within a tab view model. Closing a view model causes the *TabItem* to raise the *Closed* event and the *TabService* will correctly close the tab and update its selection.
 
@@ -651,7 +630,7 @@ This closes a tab from within a tab view model. Closing a view model causes the�
 this.SaveAndCloseViewModelAsync();
 ```
 
-## Closing a tab from outside a view model
+### Closing a tab from outside a view model
 
 This closes the currently active tab:
 

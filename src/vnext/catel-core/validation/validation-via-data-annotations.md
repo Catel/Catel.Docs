@@ -4,7 +4,7 @@ The ViewModelBase derives from ModelBase, thus all information here also applies
 
 Data annotations are validation when the specific property is set. For example, when a property FirstName is set, all the data annotations on the FirstName property are validated.
 
-#  Decorating properties with data annotations
+## Decorating properties with data annotations
 
 Decorating properties is very simple. For example, to make a property mandatory, use the following definition (note the Required attribute):
 

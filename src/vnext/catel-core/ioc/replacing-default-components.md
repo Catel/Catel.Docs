@@ -2,12 +2,9 @@
 
 By default, Catel provides very fast and functional implementations of the component interfaces. It is possible though that one needs to use a different container than the specified ones.
 
--   [Replacing default components](#Replacingthedefaultcomponents-Replacingdefaultcomponents)
--   [Creating IoC components in code](#Replacingthedefaultcomponents-CreatingIoCcomponentsincode)
-
 Note that when any component is replaced, it must be registered with the other instances that are already running. Catel cannot do this automatically because it is not aware how other (customized) components interact or require registration.
 
-# Replacing default components
+## Replacing default components
 
 Starting with Catel 3.9, it is very easy to customize the components. This can be achieved by customizing the factory methods that are available on the *IoCConfiguration* class.
 
@@ -24,7 +21,7 @@ Catel.IoC.IoCConfiguration.UpdateDefaultComponents();
 
 At this moment, Catel will fully replace the components (in this case the *IServiceLocator* and *ITypeFactory*), but will keep using the default implementation of the *IDependencyResolver*.
 
-# Creating IoC components in code
+## Creating IoC components in code
 
 It is best to respect the customization of the IoC components in the code. Therefore it is wise to always use the *IoCFactory* to create a *ServiceLocator* when a **new instance** is needed:
 

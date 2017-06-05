@@ -2,12 +2,12 @@
 
 Commands are supported in Catel. The base class for commands is *Command*.
 
-# Code snippets
+## Code snippets
 
 -   vmcommand - declare a command on a view model
 -   vmcommandwithcanexecute - declare a command with support for CanExecute on a view model
 
-# Explanation
+## Explanation
 
 To implement commands, and still be able to unit test the view models, a separate command is introduced. This command allows a developer to implement a command that can be invoked both via code (unit testing) and UI.
 
@@ -20,7 +20,7 @@ There are also several wrappers available in case object is used as type paramet
 -   *Command\<TExecuteParameter\>* (wraps *Command\<TCanExecuteParameter, TExecuteParameter\>* with object for *TCanExecuteParameter*)
 -   *Command* (wraps *Command\<TExecuteParameter\>* with object for *TExecuteParameter*)
 
-# Examples
+## Examples
 
 Code:
 

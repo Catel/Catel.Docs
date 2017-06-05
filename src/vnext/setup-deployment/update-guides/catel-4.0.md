@@ -2,35 +2,14 @@
 
 This guide describes how to update your code to be fully compatible with Catel 4.0.0.
 
--   [Renaming classes](#Catel4.0.0-Renamingclasses)
--   [Renaming namespaces](#Catel4.0.0-Renamingnamespaces)
--   [Simplied ModelBase external interfacing](#Catel4.0.0-SimpliedModelBaseexternalinterfacing)
--   [Renamed LoadTabItemsBehavior](#Catel4.0.0-RenamedLoadTabItemsBehavior)
--   [Add additional members to custom IView implementations](#Catel4.0.0-AddadditionalmemberstocustomIViewimplementations)
--   [Using FastViewPropertySelector by default for major performance improvement](#Catel4.0.0-UsingFastViewPropertySelectorbydefaultformajorperformanceimprovement)
-    -   [Manually add interesting properties (recommended)](#Catel4.0.0-Manuallyaddinterestingproperties(recommended))
-    -   [Register the ViewPropertySelector](#Catel4.0.0-RegistertheViewPropertySelector)
--   [Full support for asynchronous (async/await)](#Catel4.0.0-Fullsupportforasynchronous(async/await))
-    -   [IViewModel](#Catel4.0.0-IViewModel)
-        -   [Updating Initialize method](#Catel4.0.0-UpdatingInitializemethod)
-        -   [Updating Save method](#Catel4.0.0-UpdatingSavemethod)
-        -   [Updating Close method](#Catel4.0.0-UpdatingClosemethod)
-    -   [IMessageService](#Catel4.0.0-IMessageService)
-    -   [IUIVisualizerService](#Catel4.0.0-IUIVisualizerService)
--   [Optimizing views (especially 3rd party)](#Catel4.0.0-Optimizingviews(especially3rdparty))
--   [Removed IServiceLocator.RemoveInstance methods](#Catel4.0.0-RemovedIServiceLocator.RemoveInstancemethods)
--   [Changed CompositeCommand](#Catel4.0.0-ChangedCompositeCommand)
--   [Added time to all log calls](#Catel4.0.0-Addedtimetoalllogcalls)
--   [Behavior changes](#Catel4.0.0-Behaviorchanges)
-
-# Renaming classes
+## Renaming classes
 
 Some classes in Catel have been renamed.
 
 -   Catel.Environment =\> CatelEnvironment
 -   IDependencyPropertySelector =\> IViewPropertySelector
 
-# Renaming namespaces
+## Renaming namespaces
 
 Some namespaces in Catel have been changed to match the functionality. For example, all services are now in *Catel.Service* instead of *Catel.MVVM.Services* because they can be used without MVVM.
 
@@ -45,7 +24,7 @@ Some interfaces were moved (but not all classes in the namespace):
 
 -   Catel.Windows =\> Catel.MVVM.Views
 
-# Simplied ModelBase external interfacing
+## Simplied ModelBase external interfacing
 
 The *ModelBase* class exposed a lot of properties for validation such as *HasErrors, HasFieldErrors, HasBusinessRuleErrors*, etc. These all these properties are now explicitly implemented into interfaces to make models using *ModelBase* cleaner to use for end-developers. Below is a list of properties that are now implemented as explicit interface implementations:
 
@@ -121,7 +100,7 @@ INotifyDataWarningInfo.WarningsChanged
 
 event
 
-# Renamed LoadTabItemsBehavior
+## Renamed LoadTabItemsBehavior
 
 The *LoadTabItemsBehavior* has been refactored with new names. The old names will be removed in v5, but will error in v4. Below are the renames:
 
@@ -130,17 +109,17 @@ The *LoadTabItemsBehavior* has been refactored with new names. The old names wi
 -   AllOnStartup =\> EagerLoading 
 -   AllOnFirstUse =\> EagerLoadingOnFirstUse 
 
-# Add additional members to custom IView implementations
+## Add additional members to custom IView implementations
 
 To support Xamarin, the *IView* interface has been extended with new members. Make sure to implement the new members.
 
-# Using FastViewPropertySelector by default for major performance improvement
+## Using FastViewPropertySelector by default for major performance improvement
 
 When not using the *ViewToViewModel* attributes, it is not required to subscribe to all dependency properties in the *UserControlLogic*. Starting from Catel 4.0, Catel uses the *FastViewPropertySelector* by default which subscribes to no properties by default. This is a breaking change for users using the *ViewToViewModel* attribute.
 
 To get back the behavior, there are 2 ways:
 
-## Manually add interesting properties (recommended)
+### Manually add interesting properties (recommended)
 
 It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the *IViewPropertySelector.AddPropertyToSubscribe* method to add properties:
 
@@ -161,7 +140,7 @@ static MyView()
 }
 ```
 
-## Register the ViewPropertySelector
+### Register the ViewPropertySelector
 
 The default implementation of the *ViewPropertySelector* subscribes to all properties by default. By registering it in the *ServiceLocator* will ensure Catel subscribes to all dependency properties:
 
@@ -170,13 +149,13 @@ var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<IViewPropertySelector, ViewPropertySelector>();
 ```
 
-# Full support for asynchronous (async/await)
+## Full support for asynchronous (async/await)
 
-## IViewModel
+### IViewModel
 
 The *IViewModel* interface now returns tasks instead of direct values to support async/await.
 
-### Updating Initialize method
+#### Updating Initialize method
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public override void Initialize()
@@ -194,7 +173,7 @@ public override async Task Initialize()
 }
 ```
 
-### Updating Save method
+#### Updating Save method
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public override bool Save()
@@ -212,7 +191,7 @@ public override async Task<bool?> Save()
 }
 ```
 
-### Updating Close method
+#### Updating Close method
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public override void Close()
@@ -230,7 +209,7 @@ public override async Task Close()
 }
 ```
 
-## IMessageService
+### IMessageService
 
 The use of *await* or *Task.ContinueWith* to await the result is now necessary or use the code below:
 
@@ -241,7 +220,7 @@ if (await messageService.ShowInfo("message", other parameters...) == MessageBoxR
 }
 ```
 
-## IUIVisualizerService
+### IUIVisualizerService
 
 The use of *await* or *Task.ContinueWith* to await the result is now necessary or use the code below:
 
@@ -251,7 +230,7 @@ await uiVisualizerService.ShowDialog<MyViewModel>();
 // Window is closed here thanks to the await keyword
 ```
 
-# Optimizing views (especially 3rd party)
+## Optimizing views (especially 3rd party)
 
 Catel 4.0 introduces a much simpler way to use Catel on 3rd party controls. This means that the following changes have been applied and might be breaking:
 
@@ -262,21 +241,21 @@ Catel 4.0 introduces a much simpler way to use Catel on 3rd party controls. This
 -   Renamed *ViewLoading* and *ViewUnloading *events on *IViewModelContainer *to *Loading* and *Unloading*
 -   Renamed *IViewLoadedManager *to *IViewLoadManager*
 
-# Removed IServiceLocator.RemoveInstance methods
+## Removed IServiceLocator.RemoveInstance methods
 
 The *IServiceLocator.Remove[x]* methods are removed. Use the *RemoveType* methods instead.
 
-# Changed CompositeCommand
+## Changed CompositeCommand
 
 The composite command will always allow execution, even when commands don't allow it. Therefore the *AllowPartialExecution *is now set to *false *by default.
 
 If there is a requirement to allow partial invocation, set this property to *true*.
 
-# Added time to all log calls
+## Added time to all log calls
 
 The *time* parameter has been added to all log calls. This is a breaking change for all classes implementing *ILogListener*.
 
-# Behavior changes
+## Behavior changes
 
 To improve multiple platforms support, all parameters of the following methods on *BehaviorBase* have been removed:
 

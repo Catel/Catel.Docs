@@ -1,6 +1,6 @@
 # Catel.MVVM
 
-The last few years, MVVM has become the number one pattern to write applications using WPF, Silverlight, and Windows Phone 7. The actual pattern is very simple, but there are some flaws and questions lots of MVVM users have, such as:
+The last few years, MVVM has become the number one pattern to write applications using WPF and other XAML related platforms. The actual pattern is very simple, but there are some flaws and questions lots of MVVM users have, such as:
 
 -   How to show modal dialogs or message boxes inside a View-Model?
 -   How to run processes inside a View-Model?
@@ -16,18 +16,3 @@ This part of the documentation explains all about the MVVM framework included wi
 -   Direct pass-through of view model properties to Models
 -   Validation mapping from model to view model and back
 -   Solves the nested user controls problem
-
-If you are not yet familiar with MVVM, it is advised to read a small introduction on [Wikipedia](http://en.wikipedia.org/wiki/Model_View_ViewModel).
-
--   [Auditing](/wiki/display/CTL/Auditing)
--   [Behaviors & triggers](../input/Behaviors___triggers)
--   [Bindings](/wiki/display/CTL/Bindings)
--   [Commands & events](../input/Commands___events)
--   [Converters](/wiki/display/CTL/Converters)
--   [Designers](/wiki/display/CTL/Designers)
--   [Handling application initialization parameters](/wiki/display/CTL/Handling+application+initialization+parameters)
--   [Locators and naming conventions](/wiki/display/CTL/Locators+and+naming+conventions)
--   [Services](/wiki/display/CTL/Services)
--   [View models](/wiki/display/CTL/View+models)
--   [Views](/wiki/display/CTL/Views)
-

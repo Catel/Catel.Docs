@@ -4,7 +4,7 @@ The *ISaveFileService* allows a developer to let the user choose a file from ins
 
 -   [Choosing a file](#SaveFileService-Choosingafile)
 
-# Choosing a file
+## Choosing a file
 
 To select a file to save, it is required to set the right properties of the service and then make a call to the *DetermineFile* method:
 

@@ -1,9 +1,5 @@
 # FileLogListener
 
--   [Specifying the path](#FileLogListener-Specifyingthepath)
--   [Creating a custom listener](#FileLogListener-Creatingacustomlistener)
--   [Registering the listener](#FileLogListener-Registeringthelistener)
-
 Catel also supports very lightweight listeners to allow external logging libraries to hook on. To create a listener, first create a new class that implements the *ILogListener* interface. Next, register it in the *LogManager* using the *LogManager.AddListener* method.
 
 The ILogListener has a separate method for each LogEvent, but also has a shared method that is called for each log event. For example, if a debug message is written to the log, both the Write and Debug methods are invoked on the ILogListener.
@@ -12,7 +8,7 @@ For an example which writes to disk in batches, see the [batch log event listene
 
 Note that Catel already contains a FileLogListener and there is no need to reproduce this class. It only acts as an example that is easy to understand
 
-# Specifying the path
+## Specifying the path
 
 The default *FileLogListener* that ships with Catel allows the customization of the file name and the size of the log file. If no size is specified, the max log file size will default to 10 MB. 
 
@@ -96,7 +92,7 @@ LogManager.AddListener(fileLogListener);
 
 Note that the default path of the *FileLogListener* is *{AppData}\\{AutoLogFileName}*
 
-# Creating a custom listener
+## Creating a custom listener
 
 A listener can be created by creating a new class deriving from LogListenerBase.
 
@@ -122,7 +118,7 @@ public class FileLogListener : LogListenerBase
 }
 ```
 
-# Registering the listener
+## Registering the listener
 
  Last but not least, it is important to register the listener:
 

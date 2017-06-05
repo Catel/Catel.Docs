@@ -2,16 +2,16 @@
 
 This example shows how to create a view model without a model. This is useful when a UI item should simply acknowledge a step that doesn't need to be persisted to a persistence store. The view model does include validation.
 
-# Code snippets
+## Code snippets
 
 -   vm - declare a view model
 -   vmprop - declare a property on a view model
 
-# Explanation
+## Explanation
 
 When implementing a simple view model without a model, only one property has to be implemented that represents the checkbox that needs to be checked. The example view model declares a single property using the *vmprop* code snippet. Then, a field error is set if the user has not agreed in the *ValidateFields* method.
 
-# Code
+## Code
 
 **C\#**
 

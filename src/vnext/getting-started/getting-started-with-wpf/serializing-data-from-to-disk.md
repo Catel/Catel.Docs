@@ -2,17 +2,7 @@
 
 In this step we will create services that will serialize the models from/to disk. Services are a great way to abstract functionality that can be used in every part of the application. This guide will also register the service in the *ServiceLocator* so it can be injected in view models.
 
--   [Creating the service definition](#Serializingdatafrom/todisk-Creatingtheservicedefinition)
--   [Creating the service implementation](#Serializingdatafrom/todisk-Creatingtheserviceimplementation)
--   [Registering the service in the ServiceLocator](#Serializingdatafrom/todisk-RegisteringtheserviceintheServiceLocator)
--   [Adding the service usage to the MainWindowViewModel](#Serializingdatafrom/todisk-AddingtheserviceusagetotheMainWindowViewModel)
-    -   [Injecting the service via dependency injection](#Serializingdatafrom/todisk-Injectingtheserviceviadependencyinjection)
-    -   [Creating the Families property on the MainWindowViewModel](#Serializingdatafrom/todisk-CreatingtheFamiliespropertyontheMainWindowViewModel)
-    -   [Loading the families at startup](#Serializingdatafrom/todisk-Loadingthefamiliesatstartup)
-    -   [Saving the families at shutdown](#Serializingdatafrom/todisk-Savingthefamiliesatshutdown)
--   [Up next](#Serializingdatafrom/todisk-Upnext)
-
-# Creating the service definition
+## Creating the service definition
 
 The first thing to do is to create the *Services* folder to group the services. Below is a screenshot of how to solution will look after creating the folders:
 
@@ -33,7 +23,7 @@ namespace WPF.GettingStarted.Services
 }
 ```
 
-# Creating the service implementation
+## Creating the service implementation
 
 Below is the implementation of the service which will actually take care of saving and loading of the families:
 
@@ -81,7 +71,7 @@ namespace WPF.GettingStarted.Services
 }
 ```
 
-# Registering the service in the ServiceLocator
+## Registering the service in the ServiceLocator
 
 Now we have created the service, it is time to register it in the *ServiceLocator*. In the *App.xaml.cs*, add the following code:
 
@@ -90,11 +80,11 @@ var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<IFamilyService, FamilyService>();
 ```
 
-# Adding the service usage to the MainWindowViewModel
+## Adding the service usage to the MainWindowViewModel
 
 Now the service is registered, it can be used anywhere in the application. A great place to load and save the families is in the *MainWindowViewModel* which contains all the logic of the main application window. 
 
-## Injecting the service via dependency injection
+### Injecting the service via dependency injection
 
 To get an instance of the service in the view model, change the constructor to the following definition.
 
@@ -114,7 +104,7 @@ public MainWindowViewModel(IFamilyService familyService)
 
 As you can see in the code above, a new field is created to store the dependency *IFamilyService. *Then the constructor ensures that the argument is not null and stores it in the field.
 
-## Creating the Families property on the MainWindowViewModel
+### Creating the Families property on the MainWindowViewModel
 
 The next thing we need is a *Families* property on the *MainWindowViewModel* to store the families in we load from disk. Below is the property definition for that:
 
@@ -134,7 +124,7 @@ public ObservableCollection<Family> Families
 public static readonly PropertyData FamiliesProperty = RegisterProperty("Families", typeof(ObservableCollection<Family>), null);
 ```
 
-## Loading the families at startup
+### Loading the families at startup
 
 Now we have the *IFamilyService* and the *Families* property, it is time to combine these two. To do this, we need to override the *Initialize *method on the view model which is automatically called as soon as the view is loaded by Catel:
 
@@ -146,7 +136,7 @@ protected override async Task Initialize()
 }
 ```
 
-## Saving the families at shutdown
+### Saving the families at shutdown
 
 To save the families at shutdown, override the *Close* method on the view model which is automatically called as soon as the view is closed by Catel:
 
@@ -161,9 +151,9 @@ After running the application once, a new file will be stored in the following d
 
 *C:\\Users\\[yourusername]\\AppData\\Roaming\\CatenaLogic\\WPF.GettingStarted*
 
-# Up next
+## Up next
 
-[Creating the view models](Creating_the_view_models)
+[Creating the view models](./creating-the-viewmodels.md)
 
 ## Attachments:
 

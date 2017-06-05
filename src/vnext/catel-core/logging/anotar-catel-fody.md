@@ -16,7 +16,7 @@ Log.Info(“This is a logging with a format ‘{0}’”, “test”);
 
 Writing the *Log* definition can be boring and repetitive. Luckily [Simon Cropp](http://twitter.com/simoncropp) came up with a solution for that, namely [Anotar.Catel.Fody](http://www.nuget.org/packages/Anotar.Catel.Fody/). With the Anotar implementation, a reference will be added to the solution. Then after compilation the assembly will be removed and all calls to the *LogTo* class will be replaced by actual calls to the Catel logging classes.
 
-# How to use Anotar
+## How to use Anotar
 
 Using Anotar is really easy, just call the static methods on the *LogTo* class as you can see below:
 
@@ -32,9 +32,9 @@ Besides that it is really easy to use, another benefit is a very small performan
 private static readonly ILog Log = LogManager.GetLogger(typeof(MyClass));
 ```
 
-# Additional options
+## Additional options
 
-## Disabling method names and line numbers
+### Disabling method names and line numbers
 
 By default Anotar also logs the method and line number:
 
@@ -54,7 +54,7 @@ Then the output will look like this:
 03:59:36:344 => [DEBUG] [AnotarDemo1.Program] this is a test
 ```
 
-## Logging exceptions automatically
+### Logging exceptions automatically
 
 It is possible to automatically log exceptions inside a method. To accomplish this, decorate the method with the *LogTo[LogLevel]OnException* attribute:
 

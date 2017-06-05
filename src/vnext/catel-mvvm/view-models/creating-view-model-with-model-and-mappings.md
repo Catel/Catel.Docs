@@ -1,8 +1,5 @@
 # Creating a view model with a model and mappings
 
--   [Code snippets](#Creatingaviewmodelwithamodelandmappings-Codesnippets)
--   [Explanation](#Creatingaviewmodelwithamodelandmappings-Explanation)
-
 During of the use of the MVVM pattern, we noticed that lots and lots of developers have a model, and map the values of the model to all properties of the view model. When the UI closes, the developers map all the properties back to the model. All this redundant code is not necessary when using the view models of Catel.
 
 In Catel, we have created attributes that allow you to define a property as a model. A model is a property that a part of the view model represents to the user. A view model might have multiple models if it is a combination of several models.
@@ -20,13 +17,13 @@ To use new mechanism you should declare this attributes:
 -   AdditionalConstructorArgs - declare a arguments witch would be passed to converter constructor via reflection
 -   AdditionalPropertiesToWatch - declare properties, which changes would trigger the converter
 
-# Code snippets
+## Code snippets
 
 -   vm - declare a view model
 -   vmpropmodel - declare a property as model on a view model
 -   vmpropviewmodeltomodel - declare a property as a pass-through property on a view model"
 
-# Explanation
+## Explanation
 
 Defining a model is very simple, you only have to decorate your property with the *ModelAttribute*:
 

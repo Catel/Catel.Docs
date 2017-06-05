@@ -2,11 +2,7 @@
 
 As with every framework or toolkit, developers run into problems. This can be bugs or abuse of the API. Catel has several ways for developers to solve the problems themselves before contacting the team with the possible issue.
 
--   [Enabling the log](#Problemsolving-Enablingthelog)
--   [Enabling stepping through the code](#Problemsolving-Enablingsteppingthroughthecode)
--   [ApiCop](#Problemsolving-ApiCop)
-
-# Enabling the log
+## Enabling the log
 
 We take logging very serious in Catel. This means that a lot of information about the internals can be be seen in the output window. To enable logging in Catel, use the following code in your application startup code:
 
@@ -18,11 +14,11 @@ We take logging very serious in Catel. This means that a lot of information abou
 
 Now you can see all the log messages in the output window.
 
-# Enabling stepping through the code
+## Enabling stepping through the code
 
 It's possible to step through the Catel code to see what is happening in the internals of Catel. This gives you great insights in Catel and can help you solve the problems you are encountering. See the [stepping through the code documentation](Stepping_through_the_code).
 
-# ApiCop
+## ApiCop
 
 Catel provides a feature called ApiCop. This will give you information about the most cases where the API of Catel is abused or not used in the right way. The ApiCop feature will create an advisory report at the end of an application with tips on how to improve the feature usage in Catel. Below is an example report:
 

@@ -31,24 +31,24 @@
 <li class="tocentry"><a href="../../Home.htm">Home</a>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/index.htm">Introduction</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Introduction.htm">Introduction</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../FAQ.htm">FAQ</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/index.htm">Getting started</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Gettingstarted.htm">Getting started</a></span></li>
 <li class="tocentry"><a href="../../getting-started/quick-introduction-for-developers.htm">Quick introduction for developers</a>
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/getting-started-with-wpf/index.htm">Getting started with WPF</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../GettingstartedwithWPF.htm">Getting started with WPF</a></span></li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/introduction.htm">Introduction</a>
+</li>
 <li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-project.htm">Creating the project</a>
 </li>
 <li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-models.htm">Creating the models</a>
@@ -59,6 +59,9 @@
 </li>
 <li class="tocentry current"><a class="current" href="../../getting-started/getting-started-with-wpf/creating-the-user-controls.htm">Creating the user controls</a>
 <ul class="currentrelative">
+<li class="tocentry"><a href="#person-view">Person view</a></li>
+<li class="tocentry"><a href="#family-view">Family view</a></li>
+<li class="tocentry"><a href="#up-next">Up next</a></li>
 <li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-windows.htm">Creating the windows</a>
@@ -67,15 +70,20 @@
 </li>
 <li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/finalizing-the-application.htm">Finalizing the application</a>
 </li>
+
 </ul>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/getting-started-with-xamarin-forms/index.htm">Getting started with Xamarin Forms</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../GettingstartedwithXamarinForms.htm">Getting started with Xamarin Forms</a></span>
 </li>
+
 </ul>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelCore.htm">Catel.Core</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span>
@@ -102,7 +110,7 @@
             <div class="nav-content">
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
-<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../getting-started/index.htm">Getting started</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/index.htm">Getting started with WPF</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/creating-the-user-controls.htm">Creating the user controls</a></li></ul>
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../Gettingstarted.htm">Getting started</a></li> / <li><a href="../../GettingstartedwithWPF.htm">Getting started with WPF</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/creating-the-user-controls.htm">Creating the user controls</a></li></ul>
 					
                     </div>
                     <hr />
@@ -111,12 +119,7 @@
                     <div class="section">
 <h1 id="creating-the-views-user-controls">Creating the views (user controls)<a class="headerlink" href="#creating-the-views-user-controls" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>In this step we will create the views for the application. There are several views that will be created and both user controls and windows will be handled in this part of the guide. Catel makes it very easy to create views as user controls with their own view models. In the previous step we already created the view models.</p>
-<ul>
-<li><a href="#Creatingtheviews(usercontrols)-Personview">Person view</a></li>
-<li><a href="#Creatingtheviews(usercontrols)-Familyview">Family view</a></li>
-<li><a href="#Creatingtheviews(usercontrols)-Upnext">Up next</a></li>
-</ul>
-<h1 id="person-view">Person view<a class="headerlink" href="#person-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="person-view">Person view<a class="headerlink" href="#person-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To create a new view, right-click the <em>Views</em> folder in the solution =&gt; <em>Add</em> =&gt; <em>New item...</em> =&gt; <em>On-line</em> =&gt; and search for Catel as you can see in the screen below:</p>
 <p><img src="attachments/15630358/16318473.png" /></p>
 <p>Give the new view the name <em>PersonView</em>. The view will be added to the <em>Views</em> folder.</p>
@@ -139,7 +142,7 @@
     &lt;Label Content=&quot;Last name&quot; /&gt;
     &lt;Label Content=&quot;{Binding LastName}&quot; /&gt;
 &lt;/catel:StackGrid&gt;
-</pre><h1 id="family-view">Family view<a class="headerlink" href="#family-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="family-view">Family view<a class="headerlink" href="#family-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>FamilyView</em> must be created exactly the same way as the <em>PersonView</em>. Use the following xaml as content:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 &lt;catel:StackGrid&gt;
@@ -170,8 +173,8 @@
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 xmlns:views=&quot;clr-namespace:WPF.GettingStarted.Views&quot;
 </pre><p>The thing that is important to notice in the <em>FamilyView</em> is how it uses the <em>PersonView</em> and injects the <em>Person</em> models into the <em>PersonView</em> data context.</p>
-<h1 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p><a href="Creating_the_views__windows_">Creating the views (windows)</a></p>
+<h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><a href="./creating-the-windows.htm">Creating the views (windows)</a></p>
 <h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630358/16318472.png">image2013-11-8 23:23:3.png</a> (image/png)
  <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630358/16318473.png">image2013-11-8 23:23:45.png</a> (image/png)

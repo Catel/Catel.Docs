@@ -1,16 +1,12 @@
 # Taking full control of serialization
 
--   [Binary serialization](#Takingfullcontrolofserialization-Binaryserialization)
--   [Xml serialization](#Takingfullcontrolofserialization-Xmlserialization)
--   [Json serialization](#Takingfullcontrolofserialization-Jsonserialization)
-
 It's possible that full control is needed (either for performance or custom serialization formats). To ensure the best performance possible, this is implemented with a special interface for each serialization engine. If one of the engines detects such a special interface, it will skip all the plumbing and directly call the interface with the right context.
 
-# Binary serialization
+## Binary serialization
 
 Custom binary serialization is not (yet) supported
 
-# Xml serialization
+## Xml serialization
 
 To gain the best performance possible using the xml serializer, a model should implement the *ICustomXmlSerializable* interface.
 
@@ -40,7 +36,7 @@ public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 }
 ```
 
-# Json serialization
+## Json serialization
 
 To gain the best performance possible using the json serializer, a model should implement the *ICustomJsonSerializable* interface.
 

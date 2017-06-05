@@ -2,18 +2,7 @@
 
 The ServiceLocator in Catel supports dependency injection.
 
--   [Introduction to dependency injection](#Dependencyinjection-Introductiontodependencyinjection)
--   [Using dependency injection in Catel](#Dependencyinjection-UsingdependencyinjectioninCatel)
-    -   [Constructor injection](#Dependencyinjection-Constructorinjection)
-        -   [Manually defining the constructor to use for dependency injection](#Dependencyinjection-Manuallydefiningtheconstructortousefordependencyinjection)
-        -   [Advanced dependency injection](#Dependencyinjection-Advanceddependencyinjection)
-    -   [Property injection](#Dependencyinjection-Propertyinjection)
-        -   [Type is automatically determined based on property type](#Dependencyinjection-Typeisautomaticallydeterminedbasedonpropertytype)
-        -   [Type is manually defined](#Dependencyinjection-Typeismanuallydefined)
-        -   [Using tags](#Dependencyinjection-Usingtags)
--   [Disabling dependency injection](#Dependencyinjection-Disablingdependencyinjection)
-
-# Introduction to dependency injection
+## Introduction to dependency injection
 
 Some people make dependency injection hard to understand, or maybe they don't understand it themselves. Dependency injection simply means that instead of hard referencing or instantiating other classes (dependendies), the dependencies are injected into the class via the constructor.
 
@@ -33,7 +22,6 @@ public class MyClass
 }
 ```
 
- 
 
 **Example 2: good, retrieves the dependencies via the service locator**
 
@@ -74,9 +62,9 @@ public class MyClass
 
 There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only
 
-# Using dependency injection in Catel
+## Using dependency injection in Catel
 
-## Constructor injection
+### Constructor injection
 
 Dependency injection via the ServiceLocator in Catel is enabled by default. This means that when a type is resolved from the container, it will automatically use dependency injection to construct the type if it is not registered as instance.
 
@@ -110,7 +98,7 @@ When the MyClass will be retrieved from the ServiceLocator, this will happen:
 2.  Find next constructor with most parameters (the one with only firstDependency). If IFirstDependency can be resolved from the ServiceLocator, the type will be constructed with the constructor. Otherwise it will proceed with step 3.
 3.  At this point, no constructor could be used. In this case, the ServiceLocator will try to use the default constructor (the one without parameters) as last resort to instantiate the type.
 
-### Manually defining the constructor to use for dependency injection
+#### Manually defining the constructor to use for dependency injection
 
 Catel first sorts the constructors based on the number of parameters. Then it will "sub-sort" the same number of parameters and puts parameters with *Object* and *DynamicObject* as last so it will first try all constructors with the best possible matches
 
@@ -129,7 +117,7 @@ public MyClass(Person person)
 }
 ```
 
-### Advanced dependency injection
+#### Advanced dependency injection
 
 Starting with Catel 3.7, a new type of dependency injection is supported. It allows a developer to instantiate types that combine custom constructor injection with dependency injection. The class belows shows an interesting combination of custom values that need to be injected and dependencies that can be retrieved from the IoC container. Before Catel 3.7, one had to manually retrieve the dependencies from the IoC container when it also required other dependencies to be injected that were not registered in the IoC container:
 
@@ -191,7 +179,7 @@ As you can see it is only required to pass in the objects that are not registere
 
 Note that the order of the parameters must be the same as the constructor, otherwise the *TypeFactory* cannot determine the right constructor to use
 
-## Property injection
+### Property injection
 
 Starting with Catel 3.8, it is also possible to use property injection. The difference with constructor injection is that the TypeFactory will automatically set up all properties that required dependency injection.
 
@@ -203,7 +191,7 @@ Note that the Catel team recommends using constructor injection over property in
 
 To use property injection, simply decorate the properties of a class with the Inject attribute. Below are several options:
 
-### Type is automatically determined based on property type
+#### Type is automatically determined based on property type
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class MyClass
@@ -213,7 +201,7 @@ public class MyClass
 }
 ```
 
-### Type is manually defined
+#### Type is manually defined
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class MyClass
@@ -223,7 +211,7 @@ public class MyClass
 }
 ```
 
-### Using tags
+#### Using tags
 
 It is also possible to determine the tag of a registered dependency:
 
@@ -235,7 +223,7 @@ public class MyClass
 }
 ```
 
-# Disabling dependency injection
+## Disabling dependency injection
 
  Maybe you don't want dependency injection because it does not give you what you need or you want a very, very small improvement in performance. In that case, the dependency injection can be disabled using the code below:
 

@@ -1,17 +1,10 @@
 # MVVM
 
--   [How to support example data with view models?](#MVVM-Howtosupportexampledatawithviewmodels?)
--   [How to use events with MVVM?](#MVVM-HowtouseeventswithMVVM?)
--   [Silverlight throws error about type that cannot be created?](#MVVM-Silverlightthrowserrorabouttypethatcannotbecreated?)
--   [How can I add the MVVM behaviors via code (programmatically)?](#MVVM-HowcanIaddtheMVVMbehaviorsviacode(programmatically)?)
--   [How can I inject or manipulate the view model of a UserControl?](#MVVM-HowcanIinjectormanipulatetheviewmodelofaUserControl?)
--   [How can I prevent validation of required fields?](#MVVM-HowcanIpreventvalidationofrequiredfields?)
-
-### How to support example data with view models?
+## How to support example data with view models?
 
 To find out how to create design time data, see the [designers](Designers)topic.
 
-### How to use events with MVVM?
+## How to use events with MVVM?
 
 When writing MVVM, it's "forbidden" (read: not a best practice) to use click handlers (or other UI events) in your view-model. But then should you react to events?
 
@@ -56,28 +49,7 @@ An example for a *ListBox *double click:
 </ListBox>
 ```
 
-### Silverlight throws error about type that cannot be created?
-
-If you are using type creation via xaml this way:
-
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
-<i:Interaction.Behaviors>
-  <catel:WindowBehavior ViewModelType="viewmodels:DemoWindowViewModel" Save="okButton.Click" Cancel="cancelButton.Click" />
-</i:Interaction.Behaviors>
-```
-
-It might be possible that Silverlight throws an exception with these details:
-
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
-{System.Windows.Markup.XamlParseException: Failed to create a 'System.Type' from the text 'ViewModels:DemoWindowViewModel'. [Line: 13 Position: 67]
-at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
-at Catel.Examples.AdvancedDemo.Views.LogicInBehavior.DemoWindow.InitializeComponent()
-at Catel.Examples.AdvancedDemo.Views.LogicInBehavior.DemoWindow..ctor()}
-```
-
-This happens in Silverlight 4 when the Silverlight 5 (beta) tools are not installed. To resolve this issue, install the Silverlight 5 (beta) tools.
-
-### How can I add the MVVM behaviors via code (programmatically)?
+## How can I add the MVVM behaviors via code (programmatically)?
 
 Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta) toolkit isn't the right option to solve the issue. Luckily, it is also possible to add one of the MVVM behaviors via code to any control or window.
 
@@ -145,7 +117,7 @@ public partial class DynamicBehaviorView : UserControl, IViewModelContainer
 
 Using this technique, it is even possible to determine the view model of any view dynamically at runtime.
 
-### How can I inject or manipulate the view model of a UserControl?
+## How can I inject or manipulate the view model of a UserControl?
 
 The *UserControl* is a very powerful control. It allows lazy loaded dynamic view model construction. However, sometimes you just don't want the user control to dynamically create the view model. Luckily, the user control instantiates a new view model with this logic:
 
@@ -154,7 +126,7 @@ The *UserControl* is a very powerful control. It allows lazy loaded dynamic view
 
  You can set the DataContext of the control to a view model, and this way "inject" a view model into a control instead of letting it be created first. In fact, the user control first checks whether the DataContext is already a valid view model for the user control. If so, it keeps it that way.
 
-### How can I prevent validation of required fields?
+## How can I prevent validation of required fields?
 
 Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (\*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:
 

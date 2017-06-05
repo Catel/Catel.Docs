@@ -31,54 +31,64 @@
 <li class="tocentry"><a href="../../Home.htm">Home</a>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/index.htm">Introduction</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Introduction.htm">Introduction</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../FAQ.htm">FAQ</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/index.htm">Getting started</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Gettingstarted.htm">Getting started</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelCore.htm">Catel.Core</a></span>
 </li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span></li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/auditing/index.htm">Auditing</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Auditing.htm">Auditing</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/behaviors-triggers/index.htm">Behaviors & triggers</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Behaviors&triggers.htm">Behaviors & triggers</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/bindings/index.htm">Bindings</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Bindings.htm">Bindings</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/commands-events/index.htm">Commands & events</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Commands&events.htm">Commands & events</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/converters/index.htm">Converters</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Converters.htm">Converters</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/designers/index.htm">Designers</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Designers.htm">Designers</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/locators-naming-conventions/index.htm">Locators & naming conventions</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Locators&namingconventions.htm">Locators & naming conventions</a></span>
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../catel-mvvm/services/index.htm">Services</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Services.htm">Services</a></span></li>
 <li class="tocentry"><a href="../../catel-mvvm/services/location-service.htm">LocationService</a>
 </li>
 <li class="tocentry"><a href="../../catel-mvvm/services/message-service.htm">MessageService</a>
 </li>
 <li class="tocentry current"><a class="current" href="../../catel-mvvm/services/navigation-service.htm">NavigationService</a>
 <ul class="currentrelative">
+<li class="tocentry"><a href="#closing-an-application">Closing an application</a></li>
+<li class="tocentry"><a href="#preventing-an-application-to-be-closed">Preventing an application to be closed</a></li>
+<li class="tocentry"><a href="#navigating-to-a-new-view">Navigating to a new view</a></li>
+<li class="tocentry"><a href="#navigating-with-parameters">Navigating with parameters</a></li>
+<li class="tocentry"><a href="#navigating-back-and-forward">Navigating back and forward</a></li>
+<li class="tocentry"><a href="#navigating-to-a-custom-uri">Navigating to a custom Uri</a></li>
+<li class="tocentry"><a href="#registering-custom-views">Registering custom views</a></li>
+<li class="tocentry"><a href="#using-naming-conventions-to-find-pages">Using naming conventions to find pages</a></li>
 <li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../catel-mvvm/services/open-file-service.htm">OpenFileService</a>
@@ -99,13 +109,14 @@
 </li>
 <li class="tocentry"><a href="../../catel-mvvm/services/view-export-service.htm">ViewExportService</a>
 </li>
+
 </ul>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/view-models/index.htm">View models</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Viewmodels.htm">View models</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/views/index.htm">Views</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Views.htm">Views</a></span>
 </li>
 
 </ul>
@@ -132,7 +143,7 @@
             <div class="nav-content">
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
-<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../CatelMVVM.htm">Catel.MVVM</a></li> / <li><a href="../../catel-mvvm/services/index.htm">Services</a></li> / <li><a href="../../catel-mvvm/services/navigation-service.htm">NavigationService</a></li></ul>
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../CatelMVVM.htm">Catel.MVVM</a></li> / <li><a href="../../Services.htm">Services</a></li> / <li><a href="../../catel-mvvm/services/navigation-service.htm">NavigationService</a></li></ul>
 					
                     </div>
                     <hr />
@@ -142,24 +153,13 @@
 <h1 id="navigationservice">NavigationService<a class="headerlink" href="#navigationservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The <em>INavigationService</em> allows a developer to navigate to other pages inside an application using view models only.</p>
 <p>All pages will have to be registered manually or following the right naming convention.</p>
-<ul>
-<li><a href="#NavigationService-Closinganapplication">Closing an application</a></li>
-<li><a href="#NavigationService-Preventinganapplicationtobeclosed">Preventing an application to be closed</a></li>
-<li><a href="#NavigationService-Navigatingtoanewview">Navigating to a new view</a></li>
-<li><a href="#NavigationService-Navigatingwithparameters">Navigating with parameters</a></li>
-<li><a href="#NavigationService-Navigatingbackandforward">Navigating back and forward</a></li>
-<li><a href="#NavigationService-NavigatingtoacustomUri">Navigating to a custom Uri</a></li>
-<li><a href="#NavigationService-Registeringcustomviews">Registering custom views</a></li>
-<li><a href="#NavigationService-Usingnamingconventionstofindpages">Using naming conventions to find pages</a></li>
-</ul>
-<p>For WPF and Silverlight, the pages must inherit from <em>Page</em>. For WP7, the pages must inherit from <em>PhoneApplicationPage</em>. In WPF, the parameters are of type <em>Dictionary&lt;string, object&gt;</em>, in Silverlight and WP7, the arguments are of type <em>Dictionary&lt;string, string&gt;</em>.</p>
-<h1 id="closing-an-application">Closing an application<a class="headerlink" href="#closing-an-application" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="closing-an-application">Closing an application<a class="headerlink" href="#closing-an-application" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is possible to close an application using the following code:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.CloseApplication();
-</pre><h1 id="preventing-an-application-to-be-closed">Preventing an application to be closed<a class="headerlink" href="#preventing-an-application-to-be-closed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="preventing-an-application-to-be-closed">Preventing an application to be closed<a class="headerlink" href="#preventing-an-application-to-be-closed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To prevent an application to be closed, one can subscribe to the ApplicationClosing event:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
@@ -169,13 +169,13 @@ navigationService.ApplicationClosing += (sender, e)
 {
    e.Cancel = true;
 };
-</pre><h1 id="navigating-to-a-new-view">Navigating to a new view<a class="headerlink" href="#navigating-to-a-new-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="navigating-to-a-new-view">Navigating to a new view<a class="headerlink" href="#navigating-to-a-new-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To navigate to a new page, use the following code:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Navigate&lt;EmployeeViewModel&gt;();
-</pre><h1 id="navigating-with-parameters">Navigating with parameters<a class="headerlink" href="#navigating-with-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="navigating-with-parameters">Navigating with parameters<a class="headerlink" href="#navigating-with-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is very easy to navigate to a new page with parameters. Use the following code:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var parameters = new Dictionary&lt;string, object&gt;();
@@ -185,26 +185,26 @@ var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Navigate&lt;EmployeeViewModel&gt;(parameters);
 </pre><p>To read the navigation parameters in the receiving view model, use the OnNavigationCompleted method.</p>
-<h1 id="navigating-back-and-forward">Navigating back and forward<a class="headerlink" href="#navigating-back-and-forward" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="navigating-back-and-forward">Navigating back and forward<a class="headerlink" href="#navigating-back-and-forward" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The service also supports navigating back and forward:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.GoBack(); // navigates to the previous page, obviously
 navigationService.GoForward(); // navigates to the next page, obviously
-</pre><h1 id="navigating-to-a-custom-uri">Navigating to a custom Uri<a class="headerlink" href="#navigating-to-a-custom-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="navigating-to-a-custom-uri">Navigating to a custom Uri<a class="headerlink" href="#navigating-to-a-custom-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To navigate to a custom uri without a view model type, use the following code. Of course it's also possible to pass parameters using the right method overload.</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Navigate(&quot;/UI/Pages/EmployeePage.xaml&quot;);
-</pre><h1 id="registering-custom-views">Registering custom views<a class="headerlink" href="#registering-custom-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="registering-custom-views">Registering custom views<a class="headerlink" href="#registering-custom-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To register custom views, use the following code:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
-</pre><h1 id="using-naming-conventions-to-find-pages">Using naming conventions to find pages<a class="headerlink" href="#using-naming-conventions-to-find-pages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="using-naming-conventions-to-find-pages">Using naming conventions to find pages<a class="headerlink" href="#using-naming-conventions-to-find-pages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the <a href="https://catelproject.atlassian.net/wiki/" target="_blank">Show</a> method will try to find the view using the naming convention.</p>
 <p>To add a naming convention, use the following code:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}

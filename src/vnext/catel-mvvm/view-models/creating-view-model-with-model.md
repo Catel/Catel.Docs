@@ -2,12 +2,12 @@
 
 This example shows how to create a "classical" view model without any Catel specific MVVM features such as data pass-through. Although it is recommended to use the pass-through features, some people want to have custom validation on the view model, or want to be fully in control.
 
-# Code snippets
+## Code snippets
 
 -   vm - declare a view model
 -   vmprop - declare a property on a view model
 
-# Explanation
+## Explanation
 
 To be in full control, the only thing required is to create a basic view model with the *vm* code snippet. Then, the following methods should be implemented:
 
@@ -16,7 +16,7 @@ To be in full control, the only thing required is to create a basic view model w
 -   ValidateBusinessRules - check for business rules in the view model
 -   Save - save the view model data to the model and then save the model
 
-# Code
+## Code
 
 **C\#**
 

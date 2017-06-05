@@ -1,14 +1,10 @@
 # Mapping properties from view to view model
 
--   [Example implementation](#Mappingpropertiesfromviewtoviewmodel-Exampleimplementation)
--   [Important note starting with Catel 4.0](#Mappingpropertiesfromviewtoviewmodel-ImportantnotestartingwithCatel4.0)
--   [Mapping types](#Mappingpropertiesfromviewtoviewmodel-Mappingtypes)
-
 Sometimes a view (for example, a user control) contains additional properties besides the *DataContext* to interact with the view model. By default, it is hard to implement this in an MVVM sccenario, but Catel solves this issue using the *ViewToViewModel* attribute.
 
 This attribute automatically keeps track of changes in both the view and the view model and this way, a control can have several properties and still implement MVVM.
 
-# Example implementation
+## Example implementation
 
 The example below shows how the *MapCenter* is a dependency property on the control. It automatically maps the property to the *ViewModel.MapCenter* property.
 
@@ -48,7 +44,7 @@ public partial class MyControl : UserControl
 }
 ```
 
-# Important note starting with Catel 4.0
+## Important note starting with Catel 4.0
 
 Starting with 4.0, Catel no longer subscribes to dependency properties automatically. It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the *IViewPropertySelector.AddPropertyToSubscribe* method to add properties:
 
@@ -68,7 +64,7 @@ static MyView()
 }
 ```
 
-# Mapping types
+## Mapping types
 
 Catel supports the following mapping types using the *ViewToViewModelMappingType* enum.
 

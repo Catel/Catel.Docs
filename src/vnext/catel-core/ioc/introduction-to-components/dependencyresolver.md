@@ -1,18 +1,8 @@
 # Introduction to DependencyResolver and DependencyResolverManager
 
--   [Why the need for a DependencyResolver](#IntroductiontoDependencyResolverandDependencyResolverManager-WhytheneedforaDependencyResolver)
--   [Managing the dependency resolvers per instance](#IntroductiontoDependencyResolverandDependencyResolverManager-Managingthedependencyresolversperinstance)
-    -   [Registering a dependency resolver for an instance](#IntroductiontoDependencyResolverandDependencyResolverManager-Registeringadependencyresolverforaninstance)
-    -   [Retrieving a dependency resolver for an instance](#IntroductiontoDependencyResolverandDependencyResolverManager-Retrievingadependencyresolverforaninstance)
--   [Managing the dependency resolvers per type](#IntroductiontoDependencyResolverandDependencyResolverManager-Managingthedependencyresolverspertype)
-    -   [Registering a dependency resolver for a type](#IntroductiontoDependencyResolverandDependencyResolverManager-Registeringadependencyresolverforatype)
-    -   [Retrieving a dependency resolver for a type](#IntroductiontoDependencyResolverandDependencyResolverManager-Retrievingadependencyresolverforatype)
--   [Customizing the default DependencyResolver](#IntroductiontoDependencyResolverandDependencyResolverManager-CustomizingthedefaultDependencyResolver)
--   [Customizing the DependencyResolverManager](#IntroductiontoDependencyResolverandDependencyResolverManager-CustomizingtheDependencyResolverManager)
-
 Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the *IDependencyResolver* and *DependencyResolverManager* are introduced.
 
-# Why the need for a DependencyResolver
+## Why the need for a DependencyResolver
 
 That's a good question. Catel already provides the *IServiceLocator* which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the *ServiceLocator*. To make it simple to customize this behavior,* *the *DependencyResolver* is introduced.
 
@@ -65,11 +55,11 @@ Now you have the actual *IDependencyResolver* that was use to create the view m
 
 Note that there will only be a single instance of a *DependencyResolverManager*. It is possible to customize the default instance, but there is no need for different scoping of *DependencyResolverManager* instances so it is valid to use the static instance
 
-# Managing the dependency resolvers per instance
+## Managing the dependency resolvers per instance
 
 The *DependencyResolverManager* can manage dependency resolvers per instance. This way it is possible to retrieve the actual dependency resolver for a specific object instance.
 
-## Registering a dependency resolver for an instance
+### Registering a dependency resolver for an instance
 
 To register a dependency resolver for an instance, use this code:
 
@@ -84,7 +74,7 @@ dependencyResolverManager.RegisterDependencyResolverForInstance(myObject, depend
 
 Note that it is not required to register a *DependencyResolver* for instances created with the *TypeFactory*. The *TypeFactory* automatically registers the *DependencyResolver* used in the *DependencyResolverManager*.
 
-## Retrieving a dependency resolver for an instance
+### Retrieving a dependency resolver for an instance
 
 To retrieve the dependency resolver for a specific instance, use this code:
 
@@ -95,11 +85,11 @@ var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInsta
 
 Below is a graph that shows how the dependency resolver of an instance is determined:
 
-# Managing the dependency resolvers per type
+## Managing the dependency resolvers per type
 
 The *DependencyResolverManager* can manage dependency resolvers per type. This way it is possible to retrieve the actual dependency resolver for a specific type.
 
-## Registering a dependency resolver for a type
+### Registering a dependency resolver for a type
 
 To register a dependency resolver for a type, use this code:
 
@@ -113,7 +103,7 @@ dependencyResolverManager.RegisterDependencyResolverForType(typeof(MyClass), dep
 
 Note that these registrations are type-specific. You cannot register an interface and all classes deriving from that interface will return the same *DependencyResolver*. All actual types must be registered separately.
 
-## Retrieving a dependency resolver for a type
+### Retrieving a dependency resolver for a type
 
 To retrieve the dependency resolver for a specific instance, use this code:
 
@@ -122,7 +112,7 @@ var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForType(typeof(MyClass));
 ```
 
-# Customizing the default DependencyResolver
+## Customizing the default DependencyResolver
 
 By default, the *DependencyResolverManager* creates a *CatelDependencyResolver* that wraps the *ServiceLocator.Default* instance. In simple applications this is sufficient to get everything working. However sometimes it might be needed to customize the* *default *DependencyResolver*. To change the default one, use the code below:
 
@@ -131,7 +121,7 @@ var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyResolver();
 ```
 
-# Customizing the DependencyResolverManager
+## Customizing the DependencyResolverManager
 
 Customizing the *DependencyResolverManager* is not recommended. If you still want to do this for whatever reason, create a class implementing the *IDependencyResolverManager* or derive from the *DependencyResolverManager*:
 

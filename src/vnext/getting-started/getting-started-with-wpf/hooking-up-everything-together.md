@@ -2,27 +2,15 @@
 
 In this step we will hook everything together and add additional logic to the remaining view models.
 
--   [Hooking up the view models](#Hookingupeverythingtogether-Hookinguptheviewmodels)
-    -   [Adding additional logic to FamilyWindowViewModel](#Hookingupeverythingtogether-AddingadditionallogictoFamilyWindowViewModel)
-        -   [Adding additional dependencies being injected](#Hookingupeverythingtogether-Addingadditionaldependenciesbeinginjected)
-        -   [Adding the properties](#Hookingupeverythingtogether-Addingtheproperties)
-        -   [Adding the commands](#Hookingupeverythingtogether-Addingthecommands)
-    -   [Adding additional logic to the MainWindowViewModel](#Hookingupeverythingtogether-AddingadditionallogictotheMainWindowViewModel)
-        -   [Adding additional dependencies being injected](#Hookingupeverythingtogether-Addingadditionaldependenciesbeinginjected.1)
-        -   [Adding the properties](#Hookingupeverythingtogether-Addingtheproperties.1)
-        -   [Adding the commands](#Hookingupeverythingtogether-Addingthecommands.1)
--   [Hooking up the views](#Hookingupeverythingtogether-Hookinguptheviews)
--   [Up next](#Hookingupeverythingtogether-Upnext)
-
-# Hooking up the view models
+## Hooking up the view models
 
 We now have most of the application ready. However we need some logic in the view models to hook up everything together.
 
-## Adding additional logic to FamilyWindowViewModel
+### Adding additional logic to FamilyWindowViewModel
 
 The first thing we are going to do is to finalize the *FamilyWindowViewModel* we created in the previous step. To do this, we are going to add a few properties and commands to the view model.
 
-### Adding additional dependencies being injected
+#### Adding additional dependencies being injected
 
 Since we will be using additional services inside the *FamilyWindowViewModel*, it is important to add them as dependency via the constructor. The updated constructor will look like this:
 
@@ -41,7 +29,7 @@ public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerSer
 
 Don't forget to create the right backing fields *\_uiVisualizerService* and *\_messageService*
 
-### Adding the properties
+#### Adding the properties
 
 We need a property representing the currently selected person in edit mode of a family. Below is the property definition which needs to be added to the view model:
 
@@ -61,7 +49,7 @@ public Person SelectedPerson
 public static readonly PropertyData SelectedPersonProperty = RegisterProperty("SelectedPerson", typeof(Person), null);
 ```
 
-### Adding the commands
+#### Adding the commands
 
 Note that we recommend that you use the *vmcommand* and *vmcommandwithcanexecute* code snippets available [here](http://www.catelproject.com/download/general-files/)
 
@@ -160,11 +148,11 @@ private async Task OnRemovePersonExecuteAsync()
 }
 ```
 
-## Adding additional logic to the MainWindowViewModel
+### Adding additional logic to the MainWindowViewModel
 
 The same edit functionality we added to the *FamilyWindowViewModel* must be added to the *MainWindowViewModel*. The difference is that instead of adding / editing / removing persons, the *MainWindowViewModel* will do this for families.
 
-### Adding additional dependencies being injected
+#### Adding additional dependencies being injected
 
 We will again need additional dependencies. Below is the updated constructor for the *MainWindowViewModel*:
 
@@ -181,7 +169,7 @@ public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService ui
 }
 ```
 
-### Adding the properties
+#### Adding the properties
 
 We will again need a property to handle the selected family:
 
@@ -201,7 +189,7 @@ public Family SelectedFamily
 public static readonly PropertyData SelectedFamilyProperty = RegisterProperty("SelectedFamily", typeof(Family), null);
 ```
 
-### Adding the commands
+#### Adding the commands
 
 Last but not least, we will also add the commands to the *MainWindowViewModel *to handle the logic.
 
@@ -291,7 +279,7 @@ private async Task OnRemoveFamilyExecuteAsync()
 }
 ```
 
-# Hooking up the views
+## Hooking up the views
 
 We now have all the views ready, but we don't see anything yet. The reason for this is that we haven't modified the *MainWindow* view yet. To do so, replace the xaml content with the xaml below:
 
@@ -322,5 +310,5 @@ Now run the application and you should see your fully functional family manageme
 
 # Up next
 
-[Finalizing the application](Finalizing_the_application)
+[Finalizing the application](./finalizing-the-application.md)
 

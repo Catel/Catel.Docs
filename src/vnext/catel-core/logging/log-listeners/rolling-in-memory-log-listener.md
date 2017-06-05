@@ -1,12 +1,8 @@
 # RollingInMemoryLogListener
 
--   [Enabling the feature](#RollingInMemoryLogListener-Enablingthefeature)
--   [Querying log messages](#RollingInMemoryLogListener-Queryinglogmessages)
--   [Customizing number of items to keep in memory](#RollingInMemoryLogListener-Customizingnumberofitemstokeepinmemory)
-
 In memory logging can be very useful to be able to query the latest log messages. Catel provides this via the *RollingInMemoryLogListener* and *RollingInMemoryLogService*. The *RollingInMemoryLogService *is a wrapper around the *RollingInMemoryLogListener* to provide a simple way to use the listener.
 
-# Enabling the feature
+## Enabling the feature
 
 By default, the feature is disabled to not eat any CPU ticks when not being used. To use the feature, the only thing required is to resolve the type from the *ServiceLocator*:
 
@@ -14,7 +10,7 @@ By default, the feature is disabled to not eat any CPU ticks when not being used
 var rollingInMemoryLogService = ServiceLocator.Default.ResolveType<IRollingInMemoryLogService>();
 ```
 
-# Querying log messages
+## Querying log messages
 
 To query the latest log messages, use one of the following methods:
 
@@ -22,7 +18,7 @@ To query the latest log messages, use one of the following methods:
 -   GetWarningLogEntries
 -   GetErrorLogEntries
 
-# Customizing number of items to keep in memory
+## Customizing number of items to keep in memory
 
 To customize the number of items being kept in memory, use one of the following properties:
 

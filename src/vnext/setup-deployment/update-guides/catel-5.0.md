@@ -1,4 +1,3 @@
 # Catel 5.0
 
--   [Architecture proposal](/wiki/display/CTL/Architecture+proposal)
-
+Encountered issues while upgrading to this version? Add them here to help out others!

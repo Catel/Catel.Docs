@@ -2,10 +2,7 @@
 
 It is possible to use the *ModelBase* as base class when using EF or any other OR mapper.
 
--   [Setting up ModelBase as base class](#UsingModelBaseasbaseforentities-SettingupModelBaseasbaseclass)
--   [Ignoring default Catel properties in models](#UsingModelBaseasbaseforentities-IgnoringdefaultCatelpropertiesinmodels)
-
-# Setting up ModelBase as base class
+## Setting up ModelBase as base class
 
 There are a few caveats when using the *ModelBase* as base class for your entities. One of them is that *IsDirty* is always true because the properties from the persistence store are set after the constructor. This guide will explain how to work past that problem.
 
@@ -49,7 +46,7 @@ Note the *ClearDirtyFlag* call, which is very important to make the *IsDirty* pr
 
 4. Check the *IsDirty* of the model, not the view model when checking whether the model is dirty inside a view model.
 
-# Ignoring default Catel properties in models
+## Ignoring default Catel properties in models
 
 It is possible to ignore the default Catel properties in the models for EF code-first. To accomplish this, use the following code:
 

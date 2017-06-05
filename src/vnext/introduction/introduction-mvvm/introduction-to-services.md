@@ -2,7 +2,7 @@
 
 Services are very important in MVVM. They define a way to interact with the user without using fixed controls such as *MessageBox* or *SaveFileDialog*. The interfaces defined in Catel only define generic functionality of what to expect from a specific service. Using services is a great way to abstract away all specific functionality from a view model into a service that can be mocked during unit testing and can be used by other view models as well.
 
-# ServiceLocator
+## ServiceLocator
 
 The key behind services is the *ServiceLocator*. The *ServiceLocator* is the IoC (Inversion of Control) container that Catel provides. This is a container that contains all registrations and service instances available throughout the application. Retrieving services from the default *ServiceLocator* in Catel is very simple:
 
@@ -13,7 +13,7 @@ var messageService = dependencyResolver.Resolve<IMessageService>();
 
 It is also possible to get services injected into the constructor, which is the recommended approach
 
-# Dependency injection
+## Dependency injection
 
 A slightly better way to manage dependencies is to use dependency injection. The reason is that to instantiate a class, you always have to provide all the dependencies. This way, all dependencies are always known to the caller making it a bit complicated and encouraging high coupling. Using dependency injection however makes it a bit easier to control than having to *know* what services are being used by a component (such as a view model).
 
@@ -33,7 +33,7 @@ public class PersonViewModel : ViewModelBase
 }
 ```
 
-# Overview of services
+## Overview of services
 
 The services below are available in Catel:
 

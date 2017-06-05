@@ -12,7 +12,7 @@ The great thing about this freedom is that the different aspects of Catel can be
 
 Another nice thing is that Catel is WPF-based. Now you might be thinking: but hey, I use Silverlight! However, the upside of this approach is that all goodies that are well known in WPF, but not in Silverlight are also brought to Silverlight. For example, in Silverlight there is no automatic command re-evaluation. Catel does this out of the box, even in Silverlight.
 
- Catel offers a solution in the following fields:
+Catel offers a solution in the following fields:
 
 -   Data handling
 -   MVVM

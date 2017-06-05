@@ -2,9 +2,9 @@
 
 The example below provides an ILogListener for NLog, but any external logging library can be used.
 
-# Creating the listener
+## Creating the listener
 
- A listener can be created by creating a new class deriving from LogListenerBase.
+A listener can be created by creating a new class deriving from LogListenerBase.
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class NLogListener : LogListenerBase
@@ -35,9 +35,9 @@ public class NLogListener : LogListenerBase
 }
 ```
 
-# Registering the listener
+## Registering the listener
 
- Last but not least, it is important to register the listener:
+Last but not least, it is important to register the listener:
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 LogManager.AddListener(new NLogListener());

@@ -4,18 +4,7 @@ The *INavigationService* allows a developer to navigate to other pages inside an
 
 All pages will have to be registered manually or following the right naming convention.
 
--   [Closing an application](#NavigationService-Closinganapplication)
--   [Preventing an application to be closed](#NavigationService-Preventinganapplicationtobeclosed)
--   [Navigating to a new view](#NavigationService-Navigatingtoanewview)
--   [Navigating with parameters](#NavigationService-Navigatingwithparameters)
--   [Navigating back and forward](#NavigationService-Navigatingbackandforward)
--   [Navigating to a custom Uri](#NavigationService-NavigatingtoacustomUri)
--   [Registering custom views](#NavigationService-Registeringcustomviews)
--   [Using naming conventions to find pages](#NavigationService-Usingnamingconventionstofindpages)
-
-For WPF and Silverlight, the pages must inherit from *Page*. For WP7, the pages must inherit from *PhoneApplicationPage*. In WPF, the parameters are of type *Dictionary\<string, object\>*, in Silverlight and WP7, the arguments are of type *Dictionary\<string, string\>*.
-
-# Closing an application
+## Closing an application
 
 It is possible to close an application using the following code:
 
@@ -25,7 +14,7 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.CloseApplication();
 ```
 
-# Preventing an application to be closed
+## Preventing an application to be closed
 
 To prevent an application to be closed, one can subscribe to the ApplicationClosing event:
 
@@ -39,7 +28,7 @@ navigationService.ApplicationClosing += (sender, e)
 };
 ```
 
-# Navigating to a new view
+## Navigating to a new view
 
 To navigate to a new page, use the following code:
 
@@ -49,7 +38,7 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Navigate<EmployeeViewModel>();
 ```
 
-# Navigating with parameters
+## Navigating with parameters
 
 It is very easy to navigate to a new page with parameters. Use the following code:
 
@@ -64,7 +53,7 @@ navigationService.Navigate<EmployeeViewModel>(parameters);
 
 To read the navigation parameters in the receiving view model, use the OnNavigationCompleted method.
 
-# Navigating back and forward
+## Navigating back and forward
 
 The service also supports navigating back and forward:
 
@@ -75,7 +64,7 @@ navigationService.GoBack(); // navigates to the previous page, obviously
 navigationService.GoForward(); // navigates to the next page, obviously
 ```
 
-# Navigating to a custom Uri
+## Navigating to a custom Uri
 
 To navigate to a custom uri without a view model type, use the following code. Of course it's also possible to pass parameters using the right method overload.
 
@@ -85,7 +74,7 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Navigate("/UI/Pages/EmployeePage.xaml");
 ```
 
-# Registering custom views
+## Registering custom views
 
 To register custom views, use the following code:
 
@@ -95,7 +84,7 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
 ```
 
-# Using naming conventions to find pages
+## Using naming conventions to find pages
 
 If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the [Show](https://catelproject.atlassian.net/wiki/) method will try to find the view using the naming convention.
 

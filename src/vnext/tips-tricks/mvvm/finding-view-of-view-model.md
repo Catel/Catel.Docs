@@ -8,7 +8,7 @@ A view is removed from the manager as soon as it is unloaded (via the *Unloaded*
 
 Remember that only controls implementing *IView* are supported by the *IViewManager*
 
-# Retrieving the view of a view model
+## Retrieving the view of a view model
 
 To find the view of a view model, use the steps below:
 

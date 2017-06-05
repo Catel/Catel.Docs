@@ -1,11 +1,8 @@
 # Customizing the serialization for specific models
 
--   [Creating the modifier](#Customizingtheserializationforspecificmodels-Creatingthemodifier)
--   [Registering the modifier](#Customizingtheserializationforspecificmodels-Registeringthemodifier)
-
 Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the *IncludeInSerialization* and *ExcludeFromSerialization* attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the *ISerializerModifier*.
 
-# Creating the modifier
+## Creating the modifier
 
 To customize the serialization of a specific model type, one needs to implement the *ISerializerModifier* interface. The example belows shows how to encrypt the *Password* property on the *Person* model class.
 
@@ -30,7 +27,7 @@ public class PersonSerializerModifier : SerializerModifierBase<Person>
 }
 ```
 
-# Registering the modifier
+## Registering the modifier
 
 To register a modifier for a specific class, define the *SerializerModifier* attribute:
 

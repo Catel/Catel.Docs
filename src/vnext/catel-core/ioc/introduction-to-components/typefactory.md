@@ -1,11 +1,5 @@
 # Introduction to the TypeFactory
 
--   [Dependency injection](#IntroductiontotheTypeFactory-Dependencyinjection)
-    -   [Introduction to dependency injection](#IntroductiontotheTypeFactory-Introductiontodependencyinjection)
-    -   [Using dependency injection in Catel](#IntroductiontotheTypeFactory-UsingdependencyinjectioninCatel)
-    -   [Disabling dependency injection](#IntroductiontotheTypeFactory-Disablingdependencyinjection)
--   [Custom initialization](#IntroductiontotheTypeFactory-Custominitialization)
-
 The *TypeFactory* is responsible for actually creating types inside Catel. It uses the following mechanism:
 
 1.  List all the constructors, order them from most parameters to least parameters
@@ -13,7 +7,7 @@ The *TypeFactory* is responsible for actually creating types inside Catel. It us
         try to construct type using injection
 3.  If all constructors fail, the *TypeFactory* will fallback to *Activator.CreateInstance()*
 
-# Dependency injection
+## Dependency injection
 
 The ServiceLocator in Catel supports dependency injection.
 
@@ -121,7 +115,7 @@ When the MyClass will be retrieved from the ServiceLocator, this will happen:
 ServiceLocator.Default.SupportedDependencyInjection = false
 ```
 
-# Custom initialization
+## Custom initialization
 
 All types created with the *TypeFactory* can be initialized with custom code. This can be done by implementing the *INeedCustomInitialization* interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.
 

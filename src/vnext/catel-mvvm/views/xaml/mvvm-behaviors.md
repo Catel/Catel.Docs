@@ -8,11 +8,7 @@ Starting with Catel 2.0, it is possible to use the logic of the following contro
 
 This means that you no longer have to derive user controls from the *UserControl* to use the ability to solve the nested user controls problem. Or, if you are not happy with the endless possibilities of the *DataWindow*, why not just creating a custom one without having to think about the MVVM integration.
 
--   [WindowBehavior](#MVVMbehaviors-WindowBehavior)
--   [UserControlBehavior](#MVVMbehaviors-UserControlBehavior)
--   [NavigationPageBehavior](#MVVMbehaviors-NavigationPageBehavior)
-
-# WindowBehavior
+## WindowBehavior
 
 The *WindowBehavior* class takes care of all the MVVM integrations of a window and a view model. So, where you previously had to derive a Window implementation from *DataWindow*, you can now create a new Window like any application and then add this:
 
@@ -32,7 +28,7 @@ First of all, we have to think about all the people that are already using Catel
 
 For more information, check out the the *Catel.Examples.WPF.AdvancedDemo* which shows the differences
 
-# UserControlBehavior
+## UserControlBehavior
 
 The UserControlBehavior class takes care of all the MVVM integrations of a user control and a view model. So, where you previously had to derive a UserControl implementation from UserControl, you can now create a new UserControl like any application and then add this:
 
@@ -50,7 +46,7 @@ To support nested user controls and their validation, it is important to chain v
 
 For more information, check out the the *Catel.Examples.WPF.AdvancedDemo* which shows the differences
 
-# NavigationPageBehavior
+## NavigationPageBehavior
 
 The *NavigationPageBehavior* class takes care of all the MVVM integrations of a page (used in navigation or browser based applications) and a view model. So, where you previously had to derive a *Page* implementation from *Page*, you can now create a new *Page* like any application and then add this:
 

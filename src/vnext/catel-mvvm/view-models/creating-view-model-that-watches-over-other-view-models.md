@@ -27,18 +27,18 @@ protected override void OnViewModelPropertyChanged(IViewModel viewModel, string 
 
 It is possible to be interested in multiple view models. Since the view model is passed to the *OnViewModelPropertyChanged* method, it is very easy to check the type of the view model.
 
-# Code snippets
+## Code snippets
 
 -   vm - declare a view model
 -   vmprop - declare a property on a view model
 
-# Explanation
+## Explanation
 
 The most important thing to know is that there is a *ViewModelManager* in the library. This manager keeps track of all view models that are alive. A view model automatically registers itself to the manager, and when it is closed, the view model automatically unsubscribes itself again.
 
 By using the *InterestedInAttribute*, it is possible to receive notifications of other view models. The *InterestedInAttribute* defines a specific type of view model the decorated view model is interested in. Then, the decorated view model will receive all the *PropertyChanged* events of the live view models of that specific type. It is possible to define multiple attributes to watch several different types of view models.
 
-# Code
+## Code
 
 **Watched view model**
 

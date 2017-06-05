@@ -2,16 +2,11 @@
 
 The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the *Fragment* class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.
 
--   [Creating the view model](#Fragments(usercontrols)-Creatingtheviewmodel)
--   [Creating the view](#Fragments(usercontrols)-Creatingtheview)
--   [Designing the view](#Fragments(usercontrols)-Designingtheview)
--   [Setting up synchronization](#Fragments(usercontrols)-Settingupsynchronization)
-
-# Creating the view model
+## Creating the view model
 
 The view model can be created (or added as a linked file from another project) just like any platform using Catel (they are all equal on all platforms).
 
-# Creating the view
+## Creating the view
 
 Make sure that a *Views* folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case *PersonView*:
 
@@ -28,7 +23,7 @@ public class PersonView : Catel.Android.App.Fragment
 
 Note that the class derives from *Catel.Android.App.Fragment*
 
-# Designing the view
+## Designing the view
 
 To create the actual user interface of the fragment, add a new *axml* file to the *Resources/layout* folder, in your case *Fragment\_Person* (but you can name it whatever you want). Then use the following source:
 
@@ -63,7 +58,7 @@ To create the actual user interface of the fragment, add a new *axml* file to t
 
 ![](attachments/25329685/25559041.png?width=350)
 
-# Setting up synchronization
+## Setting up synchronization
 
 In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended *PersonView* class containing these mapping functionality:
 

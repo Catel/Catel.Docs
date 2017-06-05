@@ -44,8 +44,7 @@
 </li>
 <li class="tocentry">
 <ul>
-<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span></li>
-
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../CatelCore.htm">Catel.Core</a></span></li>
 <li class="tocentry">
 <ul class="current">
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../catel-core/apicop/index.htm">ApiCop</a></span></li>
@@ -106,6 +105,7 @@
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/validation/index.htm">Validation</a></span>
 </li>
+
 </ul>
 </li>
 <li class="tocentry">
@@ -133,7 +133,7 @@
             <div class="nav-content">
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
-<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../catel-core/apicop/index.htm">ApiCop</a></li></ul>
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../catel-core/apicop/index.htm">ApiCop</a></li></ul>
 					
                     </div>
                     <hr />
@@ -141,21 +141,16 @@
                 <div role="main">
                     <div class="section">
 <h1 id="apicop">ApiCop<a class="headerlink" href="#apicop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<ul>
-<li><a href="#ApiCop-Introduction">Introduction</a></li>
-<li><a href="#ApiCop-Usageforend-users(developers)">Usage for end-users (developers)</a></li>
-<li><a href="#ApiCop-Architecture">Architecture</a></li>
-</ul>
 <p>For more information, see:</p>
 <ul>
-<li><a href="/wiki/display/CTL/Cops">Cops</a></li>
-<li><a href="/wiki/display/CTL/Rules">Rules</a></li>
-<li><a href="/wiki/display/CTL/Listeners">Listeners</a></li>
+<li><a href="./cops.md">Cops</a></li>
+<li><a href="./rules.md">Rules</a></li>
+<li><a href="./listeners.md">Listeners</a></li>
 </ul>
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>ApiCop is a unique feature in Catel that helps developers make sure the users are using the Api of frameworks the right way. This functionality has been evolved from experience that users want logical advice including links to documentation when and why they are not using an Api in its full potential.</p>
 <p>The advantage of ApiCop is that it will only execute any code to trace the application when a debugger is attached. If no debugger is attached, the feature will be fully disabled to prevent an impact of performance when running the software without debuggers.</p>
-<h1 id="usage-for-end-users-developers">Usage for end-users (developers)<a class="headerlink" href="#usage-for-end-users-developers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="usage-for-end-users-developers">Usage for end-users (developers)<a class="headerlink" href="#usage-for-end-users-developers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>As an end-user (developers that use a framework that supports ApiCop), the usage is really simply. Whenever you need a report (for example, when closing an application when the debugger is attached), use the <em>ApiCopManager</em> to write the results. Below is an example of a WPF application in the <em>App.xaml.cs</em>:</p>
 <pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
 protected override void OnExit(ExitEventArgs e)
@@ -226,7 +221,7 @@ End of ApiCop (r) results, generation took '00:00:00.137'
 ****************************************************************
 </code></pre>
 
-<h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>ApiCop provides a set of components that help developers of frameworks to aid developers during the usage of their frameworks. Below is a graphical presentation of the components.</p>
 <p>The green parts are the only components that end-users will use. The blue parts are components for Api developers.</p>
 <h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>

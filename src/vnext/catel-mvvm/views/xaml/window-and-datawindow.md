@@ -1,19 +1,10 @@
 # Window and DataWindow
 
--   [Introduction to the Window](#WindowandDataWindow-IntroductiontotheWindow)
--   [Introduction to the DataWindow](#WindowandDataWindow-IntroductiontotheDataWindow)
--   [Using the DataWindow in MVVM](#WindowandDataWindow-UsingtheDataWindowinMVVM)
--   [Construction of view models](#WindowandDataWindow-Constructionofviewmodels)
--   [Automatic validation](#WindowandDataWindow-Automaticvalidation)
--   [Customizing the buttons](#WindowandDataWindow-Customizingthebuttons)
--   [Styling the DataWindow](#WindowandDataWindow-StylingtheDataWindow)
--   [Closing the DataWindow with the Escape key](#WindowandDataWindow-ClosingtheDataWindowwiththeEscapekey)
-
-# Introduction to the Window
+## Introduction to the Window
 
 The Window is a simplified class representing the same logic as the regular System.Windows.Window but with the binding support of Catel.
 
-# Introduction to the DataWindow
+## Introduction to the DataWindow
 
 When developing software in WPF or Silverlight, most developers always need the following three types of windows:
 
@@ -27,7 +18,7 @@ The *DataWindow* class makes it much easier to create these basic windows, simpl
 
 ![](attachments/1409288/1507350.png)
 
-# Using the DataWindow in MVVM
+## Using the DataWindow in MVVM
 
 The easiest object to use with the MVVM Framework is the *DataWindow* class. The *DataWindow* takes fully care of the construction of the view models and the validation of the view models.
 
@@ -72,7 +63,7 @@ The code above is everything you will need when using the MVVM Framework of Cate
 
 The easiest way to create a new *DataWindow* is to use item templates
 
-# Construction of view models
+## Construction of view models
 
 There are multiple ways to construct a window with a view model. There are three options that you have to construct a view model:
 
@@ -83,11 +74,11 @@ There are multiple ways to construct a window with a view model. There are three
 -   **Empty constructor**
     If you use an empty constructor, the developer will have to set the data context manually. This something you really should avoid. But hey, it’s all up to you.
 
-# Automatic validation
+## Automatic validation
 
 The cool thing about the *DataWindow* is that it automatically wraps the content that a developer defines into an *InfoBarMessageControl*. This way, errors and warnings are shown at the top of the window. Another feature of the *DataWindow* is that it automatically creates a *WarningAndErrorValidator* control and sets the view model as source. This way, all the warnings of the view model are also shown in the *InfoBarMessageControl*. In other words: you don’t have to do anything to implementation validation, except for actually setting the warnings and errors in your view model. And if the validation takes place in the model, you can use the *ViewModelToModelAttribute* so you don’t have to worry about that either.
 
-# Customizing the buttons
+## Customizing the buttons
 
 It is possible to use custom buttons and still be able to use the *DataWindow*.
 
@@ -125,7 +116,7 @@ public class UploadWindow : DataWindow
 }
 ```
 
-# Styling the DataWindow
+## Styling the DataWindow
 
 Starting with Catel 2.4, the *DataWindow* has its own styles. These are located in *DataWindow.generic.xaml*. Below is a table that contains the available styles and a short description.
 
@@ -145,7 +136,7 @@ DataWindowButtonStyle
 
 The style for the buttons. By default, the buttons are right aligned and have a fixed size.
 
-# Closing the DataWindow with the Escape key
+## Closing the DataWindow with the Escape key
 
 The *DataWindow* can be configured to close with the Escape key using the *CanCloseUsingEscape* dependency property (default true). This is useful for when *DataWindow* is used in e.g. dialogs. When used as the main window, it is advised to set *CanCloseUsingEscape=False*, as the user can inadvertedly close the application by pressing the Escape key.
 

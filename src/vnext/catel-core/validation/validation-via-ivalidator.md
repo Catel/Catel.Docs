@@ -4,7 +4,7 @@ The ViewModelBase derives from ModelBase, thus all information here also applies
 
 The validation in Catel is extremely flexible, but sometimes it is just not enough or you are forced to use external validators. For such cases, Catel provides the IValidatorProvider and IValidator interfaces. These allow very flexible injection or external validators into data objects and view models of Catel.
 
-# Implementing the IValidatorProvider
+## Implementing the IValidatorProvider
 
 The IValidatorProvider is responsible to return the right IValidator for a specific type. There is a convenience implementation named ValidatorProviderBase which only requires the implementation of one single method. Below is an example of an implementation of the IValidatorProvider.
 
@@ -32,7 +32,7 @@ public class ValidatorProvider : ValidatorProviderBase
 }
 ```
 
-# Implementing the IValidator
+## Implementing the IValidator
 
 The IValidator exposes lots of methods to gain the as much freedom as possible. However, most of the methods that are exposed by the interface are hardly used. Therefore there is a convenience base class named ValidatorBase. To create a basic validator, derive from the class and override the methods required for validation.
 
@@ -75,7 +75,7 @@ public class Validator : ValidatorBase<TargetClass>
 }
 ```
 
-# Setting the validator in ModelBase
+## Setting the validator in ModelBase
 
 To register an IValidator instance on a ModelBase, use the following code:
 
@@ -96,7 +96,7 @@ myObject.Validator = validatorProvider.GetValidator(myObject.GetType());
 
 If the IValidatorProvider returns null (which is allowed), no custom validator will be used.
 
-# Setting the validator in ViewModelBase
+## Setting the validator in ViewModelBase
 
 The ViewModelBase has it's own ServiceLocator. The easiest way to support a validator is to register an IValidatorProvider instance in the ServiceLocator:
 
@@ -105,4 +105,3 @@ ServiceLocator.Instance.RegisterType<IValidatorProvider, MyValidatorProvider>();
 ```
 
 The ViewModelBase will automatically retrieve the right IValidator for the view model. If no IValidatorProvider is registered in the ServiceLocator, no validator will be set automatically. It is also possible to set the Validator property manually, but it is recommended to use an IValidatorProvider and register it.
-

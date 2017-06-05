@@ -2,17 +2,7 @@
 
 In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: *Settings*, *Family* and *Person*. 
 
--   [Creating the model classes](#Creatingthemodels-Creatingthemodelclasses)
-    -   [Settings class](#Creatingthemodels-Settingsclass)
-    -   [Family class](#Creatingthemodels-Familyclass)
-    -   [Person class](#Creatingthemodels-Personclass)
--   [Adding properties to the models](#Creatingthemodels-Addingpropertiestothemodels)
-    -   [Settings class](#Creatingthemodels-Settingsclass.1)
-    -   [Family class](#Creatingthemodels-Familyclass.1)
-    -   [Person class](#Creatingthemodels-Personclass.1)
--   [Up next](#Creatingthemodels-Upnext)
-
-# Creating the model classes
+## Creating the model classes
 
 The models that will be used in this application will derive from the *ModelBase* or *SavableModelBase* class of Catel. These classes enable support for change notifications, validations and persistence. The *SavableModelBase* adds additional methods to save and load from/to streams or files without having to create a serializer first.
 
@@ -20,7 +10,7 @@ To create the model classes, create the following classes in the *Models* folder
 
 The *model* code snippet is available to create models
 
-## Settings class
+### Settings class
 
 The settings class is the top container that will store all families and other settings (which might be added in the future).
 
@@ -35,7 +25,7 @@ namespace WPF.GettingStarted.Models
 }
 ```
 
-## Family class
+### Family class
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace WPF.GettingStarted.Models
@@ -48,7 +38,7 @@ namespace WPF.GettingStarted.Models
 }
 ```
 
-## Person class
+### Person class
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 namespace WPF.GettingStarted.Models
@@ -61,7 +51,7 @@ namespace WPF.GettingStarted.Models
 }
 ```
 
-# Adding properties to the models
+## Adding properties to the models
 
 The next step is to add properties to the models. An important concept to understand is that Catel uses specific "dependency-a-like" properties in order to provide all the functionality in the *ModelBase* classes. Below are the properties per model that need to be registered.
 
@@ -91,7 +81,7 @@ If you want to get the functionality in the *ModelBase* classes without the "dep
 
 The *modelprop* code snippet is available to create models
 
-## Settings class
+### Settings class
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class Settings : SavableModelBase<Settings>
@@ -112,7 +102,7 @@ public class Settings : SavableModelBase<Settings>
 }
 ```
 
-## Family class
+### Family class
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class Family : ModelBase
@@ -152,7 +142,7 @@ public class Family : ModelBase
 }
 ```
 
-## Person class
+### Person class
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 public class Person : ModelBase
@@ -205,7 +195,7 @@ public class Person : ModelBase
 }
 ```
 
-# Up next
+## Up next
 
-[Serializing data from/to disk](Serializing_data_from_to_disk)
+[Serializing data from/to disk](./serializing-data-from-to-disk.md)
 

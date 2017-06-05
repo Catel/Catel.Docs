@@ -4,7 +4,7 @@ This part of the documentation will explain all the parts of MVVM, in the order 
 
 As you will notice (or maybe you don't), this framework has a lot in common with other MVVM frameworks out there. This is normal because all of the frameworks are trying to implement the same pattern, which isn't that hard to understand if you think about it long enough. Before we started writing the MVVM framework, we first investigated other frameworks because there already are enough, probably too many. However, even the better (or best) still took too much time to use, and there was too much code we had to write to create a View Model. That's the point where we decided to write our own framework that contains lots of luxury for lazy developers such as us.
 
-# Models
+## Models
 
 The Models part is one of the three major parts of MVVM. Therefore, I want to tell you a bit about what kind of Models we use to store our data. Basically, you can use all types of objects as Models, as long as the Models implement the most commonly used interfaces required by WPF or Silverlight.
 
@@ -20,7 +20,7 @@ Finally, it is strongly recommended to have your Models implement the following 
 -   **IEditableObject**
     If this interface is not implemented, a Model cannot work with “states”. This means that a user cannot start editing an object and finally cancel it (because there is no stored “state” that can be used to restore the values).
 
-# View Models
+## View Models
 
 View models are the classes that contain the view logic. They can be seen as a container for all models in a specific view, including the behavior to interact with these models (for example adding or removing them from a collection). It is very important that a view model also implements the *INotifyPropertyChanged* interfaces just like the models do.
 

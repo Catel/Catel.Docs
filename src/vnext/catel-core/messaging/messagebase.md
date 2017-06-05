@@ -4,11 +4,11 @@ The MessageMediator is a very powerful class to send messages to other objects i
 
 The MessageBase provides the following additional functionality out of the box:
 
--    Send messages with data without instantiating a message
+-   Send messages with data without instantiating a message
 -   Register message handlers
 -   Unregister message handlers
 
-# Creating messages based on the MessageBase
+## Creating messages based on the MessageBase
 
  It is very easy to create a new message. The message below is a message that contains a string and this little class provides lots of capabilities.
 
@@ -24,7 +24,7 @@ public class DemoMessage : MessageBase<DemoMessage, string>
 
 Note that the message needs an empty constructor
 
-#  Sending messages
+## Sending messages
 
 A user can send a message by using the following code:
 
@@ -40,13 +40,13 @@ Registering to messages
 DemoMessage.Register(this, OnDemoMessage);
 ```
 
-# Unregistering from messages
+## Unregistering from messages
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 DemoMessage.Unregister(this, OnDemoMessage);
 ```
 
-# Instantiating a message with data
+## Instantiating a message with data
 
 The MessageBase class can also instantiate messages by using the With method:
 

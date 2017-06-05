@@ -6,7 +6,7 @@ Below are all caveats in Android.
 
 Know caveats? Feel free to add them!
 
-# Linker settings
+## Linker settings
 
 When linking in release mode (or debug if you would like), the linker will remove all non-used items from the final application assembly. Since the binding system in Catel uses reflection, it might break when the linker is too aggressive when optimizing the app. To prevent optimalization, create a dummy file that uses the members of each type so the linker will not exclude them. Note that this class will never be instantiated, nor will its methods be invoked. It is purely to let the static analysis be notified of the usage.
 

@@ -2,18 +2,11 @@
 
 The [ServiceLocator](Introduction_to_the_ServiceLocator) in Catel can be set up to automatically register types based on the conventions.  
 
--   [Register using Naming Convention](#Automaticallyregisteringtypesusingconventions-RegisterusingNamingConvention)
--   [Register using FirstInterface Convention](#Automaticallyregisteringtypesusingconventions-RegisterusingFirstInterfaceConvention)
--   [Filter types to register](#Automaticallyregisteringtypesusingconventions-Filtertypestoregister)
-    -   [Exclude all types of the namespace containing the specified type](#Automaticallyregisteringtypesusingconventions-Excludealltypesofthenamespacecontainingthespecifiedtype)
-    -   [Exclude a specific type](#Automaticallyregisteringtypesusingconventions-Excludeaspecifictype)
-    -   [Exclude types using predicate](#Automaticallyregisteringtypesusingconventions-Excludetypesusingpredicate)
-
 The convention based registration should to be run first than the others registration methods to be sure to have all your types registered correctly.
 
 Some conventions are provided by default to allow us to register types.
 
-# **Register using Naming Convention**
+## **Register using Naming Convention**
 
 You can want to register all types which match with the default naming convention, means when I have a *IService *interface, I expect the convention to find and register the *Service* class as implementation.
 
@@ -25,7 +18,7 @@ var serviceLocator = new ServiceLocator();
 serviceLocator.RegisterTypesUsingDefaultNamingConvention();
 ```
 
-# **Register using FirstInterface Convention**
+## **Register using FirstInterface Convention**
 
 You can want to register all types which match with the default first interface convention, means when I have a *Service *class which implements more than one interface, I expect the convention to find the first interface and use it as service registration.
 
@@ -37,11 +30,11 @@ var serviceLocator = new ServiceLocator();
 serviceLocator.RegisterTypesUsingDefaultFirstInterfaceConvention();
 ```
 
-# **Filter types to register**
+## **Filter types to register**
 
 You have the ability to apply filtering on the registration process to exclude for example or include some types.
 
-## Exclude all types of the namespace containing the specified type
+### Exclude all types of the namespace containing the specified type
 
 If you want to exclude all types of the namespace which belong to a particular type, just do that: 
 
@@ -56,7 +49,7 @@ Here, we say to the *ServiceLocator* to ignore all types included into the names
 
 You can manually specify the namespace of the types to exclude using the *ExcludeAllTypesOfNamespace ***** method like this: *ExcludeAllTypesOfNamespace("MyNamespace")*
 
-## Exclude a specific type
+### Exclude a specific type
 
 If you want to exclude a specific type, you can do that by using the *ExcludeType* method like shown below:
 
@@ -69,7 +62,7 @@ serviceLocator.RegisterTypesUsingDefaultNamingConvention()
 
 The *IFooService* will be exclude on the registration process.
 
-## Exclude types using predicate
+### Exclude types using predicate
 
 You also have the possibility to filter types by using a predicate, below an example :
 

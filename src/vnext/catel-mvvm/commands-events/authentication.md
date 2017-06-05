@@ -4,7 +4,7 @@ One of the questions an MVVM developer faces is how to control the executation s
 
 It is very important that this way of disabling commands is only used to easy the development of consistent user interfaces. It cannot replace the actual check whether a user can or cannot modify data. The actual and final responsibility still lays at the business layer.
 
-# Tagging your commands
+## Tagging your commands
 
 To know whether a specific user can execute a command, you need to be able to distinguish one command from another. The *ICatelCommand* interface (which derives from *ICommand*) providers a *Tag* property that allows you to tag the command with any object that fits your needs. In one application, commands might be distinguished using strings, other applications use integer ID's.
 
@@ -14,7 +14,7 @@ A tag must be set in the constructor of a command and cannot be changed:
 Edit = new Command(OnEditExecute, OnEditCanExecute, "editCommand");
 ```
 
-# IAuthenticationProvider
+## IAuthenticationProvider
 
 The *IAuthenticationProvider* is a provider that needs to be implemented per application and must be registered in the IoC container. Below is the interface definition:
 

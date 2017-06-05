@@ -4,7 +4,7 @@ Caching is about improving applications performance. The most expensive performa
 
 So, to improve your application's performance and handling this "nonvolatile" data from a pretty clean approach, Catel comes with a CacheStorage class. Notice that the first generic parameter is the type of the key and the second the type of the value the will be stored, just like a Dictionary but CacheStorage isn't it just a Dictionary. This class allows you to retrieve data and store it into the cache with single statement and also helps you to handle expiration policy if you need it.
 
-# Initializing a cache storage
+## Initializing a cache storage
 
 To initialize a cache storage field into your class use the following code:
 
@@ -12,7 +12,7 @@ To initialize a cache storage field into your class use the following code:
 private readonly CacheStorage<string, Person> _personCache = new CacheStorage<string, Person>(storeNullValues: true);
 ```
 
-# Retrieving data and storing into cache with single statement
+## Retrieving data and storing into cache with single statement
 
 To retrieve data and store into a cache with a single statement use the following code:
 
@@ -22,7 +22,7 @@ var person = _personCache.GetFromCacheOrFetch(Id, () => service.FindPersonById(I
 
 When this statement is executed with the same key more than once , the value will be retrieved from the cache storage instead of the service call. The service call will be executed just the first time or if the item is removed from the cache manually or automatically due to the expiration policy.
 
-# Using cache expiration policies
+## Using cache expiration policies
 
 The cache expiration policies add a removal behavior to the cache storage items. A policy signals that an item is expired to make that cache storage remove the item automatically.
 
@@ -40,7 +40,7 @@ _personCache.GetFromCacheOrFetch(id, () => service.GetPersonById(id), Expiration
 
 The default cache policy specified at cache storage initialization will be used if the item storing the expiration policy is not specified.
 
-#  Build-in expiration policies
+## Build-in expiration policies
 
 Catel comes with build-in expiration policies. They are listed in the follow table:
 

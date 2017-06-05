@@ -2,7 +2,7 @@
 
 Writing a multiple threading application is always a challenge. Eventually you need use objects or statements with the ability to synchronize access to the critical sections of the code by taking and releasing a lock.
 
-# Background information
+## Background information
 
 The common solution to access the thread-sensitive resources is use the lock statement just as follow:
 
@@ -117,7 +117,7 @@ public void AfterValidateBusinessRules(object instance, List<IBusinessRuleValida
 
 SynchronizationContext also allow you create asynchronous locking request, that could be useful in Silverlight Application where the action of lock the main thread is not allowed. 
 
-#  Acquiring a lock
+##  Acquiring a lock
 
 To acquire a lock, only a call to Acquire is required:
 
@@ -133,7 +133,7 @@ Releasing a lock
 _synchronizationContext.Release();
 ```
 
-#  Automatic locking of a method
+##  Automatic locking of a method
 
 It is also possible to automatically lock and release a method call. This can be accomplished using the Execute method.
 

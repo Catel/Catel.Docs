@@ -2,12 +2,9 @@
 
 Catel implements a custom implementation of the *DisplayAttribute* known in the *DataAnnotations* namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
 
--   [Using the attribute](#DisplayAttribute-Usingtheattribute)
--   [Using the ILanguageService](#DisplayAttribute-UsingtheILanguageService)
-
 Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)
 
-# Using the attribute
+## Using the attribute
 
 Using the attribute is really easy. Just put the attribute on top of any method, property, field or parameter like this:
 
@@ -55,7 +52,7 @@ public enum Condition
 }
 ```
 
-# Using the ILanguageService
+## Using the ILanguageService
 
 By default, the attribute uses the *ILanguageService* to resolve the values to show. The *DisplayAttribute* uses conventions to resolve the different values from the resources.
 

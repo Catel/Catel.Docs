@@ -2,21 +2,11 @@
 
 Property bindings are very important in the MVVM pattern. The binding system in Catel will automatically map properties when the binding system is used.
 
--   [Binding properties one way](#Propertybindings-Bindingpropertiesoneway)
-    -   [Android](#Propertybindings-Android)
-    -   [iOS](#Propertybindings-iOS)
--   [Binding properties two way](#Propertybindings-Bindingpropertiestwoway)
-    -   [Android](#Propertybindings-Android.1)
-    -   [iOS](#Propertybindings-iOS.1)
--   [Binding properties with a converter](#Propertybindings-Bindingpropertieswithaconverter)
-    -   [Android](#Propertybindings-Android.2)
-    -   [iOS](#Propertybindings-iOS.2)
-
-# Binding properties one way
+## Binding properties one way
 
 To bind properties one way, use the code below.
 
-## Android
+### Android
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
@@ -27,15 +17,15 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 }
 ```
 
-## iOS
+### iOS
 
 iOS not yet documented
 
-# Binding properties two way
+## Binding properties two way
 
 To bind properties two way, use the code below.
 
-## Android
+### Android
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
@@ -48,15 +38,15 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 Note that you need to use the *AddTargetEvent* to allow two way binding in Android
 
-## iOS
+### iOS
 
 iOS not yet documented
 
-# Binding properties with a converter
+## Binding properties with a converter
 
 Converters are a well-known topic in MVVM. Catel supports the use of converters in the binding system. The example below will convert an integer (*vm.Counter*) to a string with a format to *"{0} clicks!"*. The converter will automatically be instantiated using the *TypeFactory*. Note that using converters in Catel support both *TwoWay* bindings and *ConverterHelper.UnsetValue* to prevent any changes in the binding system.
 
-## Android
+### Android
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
@@ -67,7 +57,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 }
 ```
 
-## iOS
+### iOS
 
 iOS not yet documented
 

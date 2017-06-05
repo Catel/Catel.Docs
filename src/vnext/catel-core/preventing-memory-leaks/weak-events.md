@@ -1,15 +1,5 @@
 # Weak events
 
--   [Open instance delegates](#Weakevents-Openinstancedelegates)
--   [Weak references](#Weakevents-Weakreferences)
--   [What does it support](#Weakevents-Whatdoesitsupport)
--   [What does it not support and what are the downsides](#Weakevents-Whatdoesitnotsupportandwhatarethedownsides)
--   [How to use](#Weakevents-Howtouse)
-    -   [Instance to instance](#Weakevents-Instancetoinstance)
-    -   [Instance to static](#Weakevents-Instancetostatic)
-    -   [Static to instance](#Weakevents-Statictoinstance)
-    -   [Static to static](#Weakevents-Statictostatic)
-
 You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
@@ -26,7 +16,7 @@ What happens here is that you subscribe to the LogReceived event of the Log clas
 
 So, in fact now the Log class knows about the instance of the class that just subscribed to it and holds a reference to it (how else can it deliver the event, if it doesn’t know the address). Thus, the classes that subscribe to the Log and that do no unsubscribe will never be collected by the garbage collection.
 
-# Open instance delegates
+## Open instance delegates
 
 The key feature behind this implementation of the weak event pattern is open instance delegates. You are probably wondering: what the hell are open instance delegates? Well, good question, and I will try to explain it. An open instance delegate is just as a regular delegate, it points to the method of a specific class, but the biggest difference is that it does not bind to a specific instance. This means that it can be described as: I know you live on that street (method), but I have not clue in which city (instance) that is. The instance can be specified later. The delegate for a regular event handler looks like this:
 
@@ -36,11 +26,11 @@ public delegate void OpenInstanceHandler(TTarget @this, object sender, TEventArg
 
 The @this is nothing special, it allows us to use the this keyword so everyone knows that the target should be passed there. As you can see, it contains 3 parameters. The first one is the target (the city), the second and third parameters are the parameters of the regular event handler.
 
-# Weak references
+## Weak references
 
 The weak event listener creates an open instance delegate and stores both the source and target in a WeakReference class. As soon as one of these references are no longer valid, the class is unbound. The good side of this approach is that this weak event listener does not leak when the event never fires.
 
-# What does it support
+## What does it support
 
 The following use cases are supported:
 
@@ -50,7 +40,7 @@ The following use cases are supported:
 
 So, actually it handles everything that can cause a memory leak via event subscriptions!
 
-# What does it not support and what are the downsides
+## What does it not support and what are the downsides
 
 This weak event listener follows the rules of the .NET framework. So, it cannot subscribe to private events. If you want private events, do your own hacking (the source is available, you only have to change the DefaultEventBindingFlags at the top of the class).
 
@@ -61,11 +51,11 @@ There are a few downsides about using a weak event listeners in general:
 -   It can only handle events with a handler of EventHandler\<TEventArgs\>
 -   You become a lazy developer not caring about subscriptions
 
-# How to use
+## How to use
 
 There are 4 categories of event subscriptions, all described below.
 
-## Instance to instance
+### Instance to instance
 
 This is the situation where an instance target subscribes to an instance event. The events are unbound as soon as either the target or source are collected.
 
@@ -75,7 +65,7 @@ var listener = new EventListener();
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(listener, source, "PublicEvent", listener.OnPublicEvent);
 ```
 
-## Instance to static
+### Instance to static
 
 This is the situation where a static target subscribes to an instance event. The events are unbound as soon as the source is collected.
 
@@ -85,7 +75,7 @@ var source = new EventSource();
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(null, source, "PublicEvent", EventListener.OnEventStaticHandler);
 ```
 
-## Static to instance
+### Static to instance
 
 This is the situation where an instance target subscribes to a static event. The events are unbound as soon as the target is collected.
 
@@ -95,7 +85,7 @@ var listener = new EventListener();
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(listener, null, "StaticEvent", listener.OnPublicEvent);
 ```
 
-## Static to static
+### Static to static
 
 This is not supported because you shouldn’t be using a weak event listener here. Static events with static event handlers simply cannot cause memory leaks because both the source and the target have no instance. However, it might be possible that you subscribe to an event too many times and the event fires too many times. But again, no memory issues here.
 

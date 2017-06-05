@@ -1,10 +1,5 @@
 # ModelBase
 
--   [Using the class](#ModelBase-Usingtheclass)
-    -   [Defining properties](#ModelBase-Definingproperties)
-    -   [Default values for reference types](#ModelBase-Defaultvaluesforreferencetypes)
--   [Functionality provided out of the box](#ModelBase-Functionalityprovidedoutofthebox)
-
 The *ModelBase* (previously known as the *DataObjectBase)* class is a generic base class that can be used for all your data classes.
 
 -   **Fully serializable**
@@ -18,7 +13,7 @@ The *ModelBase* (previously known as the *DataObjectBase)* class is a generic ba
 -   **Backup & revert**
     The class implements the *IEditableObject* interface which makes it possible to create a state of the object. Then all properties can be edited, and finally, the changes can be applied or cancelled.
 
-# Using the class
+## Using the class
 
 Using the class is extremely simple. Just declare a new class that derives from *ModelBase* and you are ready to go:
 
@@ -52,7 +47,7 @@ protected MyObject(SerializationInfo info, StreamingContext context)
 
 As you can see in the code above, the *MyObject* class derives from *ModelBase* and provides an empty constructor, but also a constructor that is used for binary deserialization. The code above might look complex, but it is created using the model code snippet, and you only have to type the name of the class.
 
-## Defining properties
+### Defining properties
 
 Defining properties for the class is very easy, and works the same like dependency properties. The advantages of this way of defining properties are:
 
@@ -81,7 +76,7 @@ public static readonly PropertyData NameProperty = RegisterProperty("Name", type
 
 A registered property can be excluded from serialization if wanted. When the object is deserialized, the default value will be used for the property in that case.
 
-## Default values for reference types
+### Default values for reference types
 
 In lots of cases, a default value for reference types is required in the property definitions. However, and you might have noticed this behavior in for example dependency properties, using an instance as default value can result in unexpected behavior.
 
@@ -99,7 +94,7 @@ public static readonly PropertyData NameProperty = RegisterProperty("PersonColle
 
 This way, every time a new value is needed, the callback will be invoked to create the default value and you will have a true default value for reference types.
 
-# Functionality provided out of the box
+## Functionality provided out of the box
 
 The *ModelBase* provides a lot of functionality out of the box. A few points I want to mention are:
 

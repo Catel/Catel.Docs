@@ -2,7 +2,7 @@
 
 Sometimes you just need to get a summary of all warnings and errors of an object. All validation is gathered in the IValidationContext and available on that class. However, there are some convenience classes that allow a developer to create a summary based on a specific tag. This convenience class is IValidationSummary, which gathers the right information from an instance of IValidationContext.
 
-# Creating a summary of all validations
+## Creating a summary of all validations
 
  To retrieve a summary of all validations from a IValidationContext, use the following code:
 
@@ -10,7 +10,7 @@ Sometimes you just need to get a summary of all warnings and errors of an object
 var validationSummary = validationContext.GetValidationSummary();
 ```
 
-# Creating a summary of all validations with a specific tag
+## Creating a summary of all validations with a specific tag
 
 To retrieve a summary of all validations with a specific tag from a IValidationContext, use the following code:
 
@@ -18,7 +18,7 @@ To retrieve a summary of all validations with a specific tag from a IValidationC
 var validationSummary = validationContext.GetValidationSummary("tag");
 ```
 
-# Using the ValidationToViewModel attribute
+## Using the ValidationToViewModel attribute
 
 The ValidationToViewModel attribute allows a developer to gather a summary of an object easily. For example, to get all the person related validation into the *PersonValidationSummary* property, use the property definition below:
 

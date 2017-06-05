@@ -2,21 +2,9 @@
 
 The *IPleaseWaitService* allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. 
 
--   [Screenshot](#PleaseWaitService-Screenshot)
--   [Showing](#PleaseWaitService-Showing)
--   [Hiding](#PleaseWaitService-Hiding)
--   [Showing and automatically hide](#PleaseWaitService-Showingandautomaticallyhide)
--   [Changing the status](#PleaseWaitService-Changingthestatus)
--   [Showing a determinate please wait window](#PleaseWaitService-Showingadeterminatepleasewaitwindow)
--   [Push/Pop](#PleaseWaitService-Push/Pop)
-
-# Screenshot
-
-This is the WPF service screenshot, the exact look differs per framework
-
 ![](attachments/1409211/1507348.png)
 
-# Showing
+## Showing
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 using Catel.IoC;
@@ -28,7 +16,7 @@ var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Show();
 ```
 
-# Hiding
+## Hiding
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 var dependencyResolver = this.GetDependencyResolver();
@@ -36,7 +24,7 @@ var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Hide();
 ```
 
-# Showing and automatically hide
+## Showing and automatically hide
 
 The *IPleaseWaitService* can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the *Show* method and the service will hide the window as soon as the delegate has completed.
 
@@ -50,7 +38,7 @@ var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Show(() => Thread.Sleep(1500));
 ```
 
-# Changing the status
+## Changing the status
 
 ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
 var dependencyResolver = this.GetDependencyResolver();
@@ -58,7 +46,7 @@ var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.UpdateStatus("new status");
 ```
 
-# Showing a determinate please wait window
+## Showing a determinate please wait window
 
 By default, the *IPleaseWaitService* shows an indeterminate state (no actual progress is visible). However, both the Silverlight and WPF implementation of the service also implement the status that shows the progress of a long running action.
 
@@ -72,7 +60,7 @@ pleaseWaitService.UpdateStatus(1, 5, "Updating item {0} of {1}");
 
 The determinate version can be hidden via a call to *Hide* or when the currentItem argument is larger than the number of totalItems.
 
-# Push/Pop
+## Push/Pop
 
 Sometimes, multiple view models or multiple actions use the service. It's not possible to hide the window when the first action is completed, because the user will still have to wait for the other actions to complete (without a please wait window). To implement this correctly, it is possible to use the *Push* and *Pop* methods.
 

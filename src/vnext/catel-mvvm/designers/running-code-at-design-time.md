@@ -4,12 +4,7 @@ Sometimes one needs to run code during design-time. A good example is to registe
 
 Starting with Catel 4.3, calling *CatelEnvironment.IsInDesignTime* will automatically invoke *DesignTimeHelper.InitializeDesignTime* if in design mode. This means you only have to add classes deriving from *DesignTimeInitializer* and they will automatically be invoked when any code is checking if it's currently running inside a designer context (e.g. *LanguageBinding*)
 
- 
-
--   [Introducing the DesignTimeCode attribute](#Runningcodeatdesign-time-IntroducingtheDesignTimeCodeattribute)
--   [Introducing the DesignTimeInitializer](#Runningcodeatdesign-time-IntroducingtheDesignTimeInitializer)
-
-# Introducing the DesignTimeCode attribute
+## Introducing the DesignTimeCode attribute
 
 To allow users to run code in the designer (Visual Studio or Blend), Catel introduces the *DesignTimeCodeAttribute*. This is an assembly-wide attribute which will specify the class to create at design time. This means that it is possible to create multiple attributes. Below is an example of the usage of the attribute:
 
@@ -20,7 +15,7 @@ To allow users to run code in the designer (Visual Studio or Blend), Catel intro
 
 When the attribute is found by Catel, it will automatically construct the types specified in the attribute. This will allow the constructor to execute any code during design time.
 
-# Introducing the DesignTimeInitializer
+## Introducing the DesignTimeInitializer
 
 The *DesignTimeCodeAttribute* contains the types that are constructed during design-time. Although the reflection in Catel is protected by only checking these arguments at design-time, it cannot be guaranteed for other systems. Therefore Catel also provides the *DesignTimeInitializer* base class. This is a base class that checks whether the type being constructed is actually running inside a design tool.
 

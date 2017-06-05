@@ -10,7 +10,7 @@ The class diagram above shows how many default interfaces of the .NET Framework 
 
 Because *ViewModelBase* derives from *ModelBase*, you can declare properties exactly the same way. Even better, you can simply use *ModelBase* (or the extended *SavableModelBase*) to create (and save) your Models, and use *ViewModelBase* as the base for all the View Models.
 
-# Creating a view model
+## Creating a view model
 
 To declare a View Model, use the following code snippet:
 
@@ -56,7 +56,7 @@ public class $name$ViewModel : ViewModelBase
 }
 ```
 
-# Declaring properties
+## Declaring properties
 
 Note that declaring properties works exactly the same as declaring properties for the *ModelBase*
 
@@ -86,7 +86,7 @@ public static readonly PropertyData NameProperty = RegisterProperty("Name", type
 
 In the View, it is now possible to bind to the *Name* property of the View Model, as long as *DataContext* is set to an instance of the View Model.
 
-# Declaring commands
+## Declaring commands
 
 There are several code snippets available to create View Model commands:
 
@@ -128,7 +128,7 @@ The only thing left to do now is to move the creation of the command to the cons
 
 In the View, it is now possible to bind any *Command* property (such as the *Command* property of a *Button*) to the *Add* property of the View Model, as long as DataContext is set to an instance of the View Model.
 
-# Adding validation
+## Adding validation
 
 Because the *ViewModelBase* class derives from *ModelBase*, it provides the same power of validation that the *ModelBase* class has to offer. *ModelBase* (and thus *ViewModelBase*) offers the following types of validation:
 
@@ -178,13 +178,13 @@ There are also other ways to add validation to a data object:
 
 The great thing is that Catel will gather all validation results from all different mappings and combine these into the *ValidationContext*. This context can be used to query all sorts of validation info about an object.
 
-# Interaction with models
+## Interaction with models
 
 One of the most important reasons why a View Model is created is because it serves as the glue between a View and the Model. The communication between the View and the View Model is fully taken care of by WPF in the form of Bindings. The problem is that most of the time, a View Model is used to show a subset of a Model (which is, for example, a database entity).
 
 Most MVVM frameworks (actually, I haven't seen anyone not requiring manual updating) require manual updating, which brings us back to the stone age (remember the WinForms time setting the controls at startup, and reading the values at the end?). Catel solves this issue by providing convenience attributes that take care of this dumb getting/setting story between the View Model and the Model. Catel fully supports getting/setting the values from/to the Model, but believe me: you will love the attributes that are described next.
 
-## ModelAttribute
+### ModelAttribute
 
 To be able to map values from/to a Model, it is important to know the actual Model. So, to let the View Model know what property represents the Model, *ModelAttribute* can be used like shown below:
 
@@ -211,7 +211,7 @@ Note that you should use the *vmpropmodel* code snippet to create Model properti
 
 Models in Catel are handled as very, very special objects. This means that as soon as a Model is set, Catel tries to call the *IEditableObject.BeginEdit* method. Then, as soon as the Model is changed without being saved, or if the View Model is canceled, the Model is correctly canceled via *IEditableObject.CancelEdit*. If the Model is saved, the active Models will be committed via *IEditableObject.EndEdit*. I will leave the rest of the magic out of this article, but if you have any questions about it, don't hesitate to contact us!
 
-## ViewModelToModelAttribute
+### ViewModelToModelAttribute
 
 Now that we know how to declare a property as a Model, it is time to learn how we can communicate with it. Normally, you would have to watch the Model to make sure it is synchronized correctly when the Model is updated. With Catel, this is not necessary any longer. Simply use *ViewModelToModelAttribute*, and you will get the following advantages:
 
@@ -249,7 +249,7 @@ public string FirstName
 
 The code above will map the *FirstName* property of the View Model to the *RealFirstName* property of the Person model.
 
-## ExposeAttribute
+### ExposeAttribute
 
 The *ViewModelToModelAttribute* is a great way to map properties between the model and the view model. However, sometimes the mappings are not required for manual coding and should only be exposed from inside the view model to the view. The *ExposeAttribute* is great way to simplify this process. The code below is the same as declaring a model property named Person and 3 additional properties using the *ViewModelToModelAttribute*:
 
@@ -276,17 +276,17 @@ public static readonly PropertyData PersonProperty = RegisterProperty("Person", 
 
 Starting with Catel 3.8, this feature has been moved to Fody to support all platforms instead of just WPF.
 
-# Interaction with other view models
+## Interaction with other view models
 
 Now that we've seen how easy it is to communicate between the View Model and the Model, you want more, right? I know how it is: “You let 'em have one finger, they take your whole hand”. No worries, you can have my right hand, as long as I can keep my left one. Anyway, the developers of Catel are prepared for this. So, let's talk about the interaction with other View Models.
 
 Say, you have a multiple document interface (MDI as it was called in the old days). If you are following MVVM principles, every document (or tab) has its own View Model. Then, you want to be aware of updates of a single type of View Model. Say, for example, that there is a View Model representing a family called *FamilyViewModel*. This View Model is probably interested in changes in the *PersonViewModel*.
 
-## ViewModelManager
+### ViewModelManager
 
 Let's start with the basics. As we have learned earlier in this article, all View Models created with the help of Catel derive from the *ViewModelBase* class. One of the things that this class does is that it registers itself with the *ViewModelManager* class when it is being created, and it unregisters itself again when it is closed. So, simply said, *ViewModelManager* is a class that holds a reference to all existing View Models at the moment.
 
-## InterestedInAttribute
+### InterestedInAttribute
 
 Now that we know about the *ViewModelManager* class, and know that there is a repository that holds all of the live instances of all View Model classes, it should be fairly easy to communicate with other View Models. It actually is; you just have to decorate a View Model with *InterestedInAttribute*, as shown below:
 
@@ -312,7 +312,7 @@ protected override void OnViewModelPropertyChanged(IViewModel viewModel, string 
 
 Note that it is also possible to get notified of commands that are being executed on other view models
 
-## MessageMediator
+### MessageMediator
 
 Catel also offers a solution to the message mediator pattern in the form of the *MessageMediator* class. This is all described in the next section "Message mediator".
 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Integration with external loggers - Catel documentation</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles/vs.css">
+    <link rel="stylesheet" href="css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="catel-core/argument-checking/index.htm">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="catel-core/caching/index.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="catel-core/configuration/index.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Datahandling.htm">Data handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Exceptionhandling.htm">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="IoC(ServiceLocator&TypeFactory).htm">IoC (ServiceLocator & TypeFactory)</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="Logging.htm">Logging</a></span></li>
+<li class="tocentry"><a href="catel-core/logging/introduction.htm">Introduction</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="LogListeners.htm">Log Listeners</a></span>
+</li>
+<li class="tocentry"><a href="catel-core/logging/customizing-listeners.htm">Customizing listeners</a>
+</li>
+<li class="tocentry"><a href="catel-core/logging/creating-log-listeners-via-configuration.htm">Creating log listeners via configuration</a>
+</li>
+<li class="tocentry">
+<ul class="current">
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="Integrationwithexternalloggers.htm">Integration with external loggers</a></span></li>
+<li class="tocentry"><a href="catel-core/logging/integration-with-external-loggers/log4net.htm">Log4net</a>
+</li>
+<li class="tocentry"><a href="catel-core/logging/integration-with-external-loggers/nlog.htm">NLog</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry"><a href="catel-core/logging/anotar-catel-fody.htm">Anotar.Catel.Fody</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Multilingual.htm">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Parallelinvocation&tasks.htm">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Preventingmemoryleaks.htm">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Serialization.htm">Serialization</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="Validation.htm">Validation</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="Home.htm">Home</a></li> / <li><a href="CatelCore.htm">Catel.Core</a></li> / <li><a href="Logging.htm">Logging</a></li> / <li><a href="Integrationwithexternalloggers.htm">Integration with external loggers</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="integration-with-external-loggers">Integration with external loggers<a class="headerlink" href="#integration-with-external-loggers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Please select one of the topics in this section:</p>
+<ul>
+<li><a href="catel-core/logging/integration-with-external-loggers/log4net.htm">Log4net</a></li>
+<li><a href="catel-core/logging/integration-with-external-loggers/nlog.htm">NLog</a></li>
+</ul>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+</html>

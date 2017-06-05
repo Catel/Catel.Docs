@@ -2,11 +2,7 @@
 
 There are some very important controls in Catel which help with visualizing the validation results.
 
--   [InfoBarMessageControl](#Validationcontrols-InfoBarMessageControl)
--   [WarningAndErrorValidator](#Validationcontrols-WarningAndErrorValidator)
--   [Styling in DataWindow](#Validationcontrols-StylinginDataWindow)
-
-# InfoBarMessageControl
+## InfoBarMessageControl
 
 Ever wanted to show the details of error messages to your end-users? Then, the *InfoBarMessageControl* is the control to use! The control shows a summary of all business and field errors provided by bindings on objects that implement the *IDataErrorInfo* interface.
 
@@ -24,7 +20,7 @@ The *InfoBarMessageControl* subscribes to the *Validation* class. This class is 
 
 When the *WarningAndErrorValidator* control is found as a child control, the *InfoBarMessageControl* also subscribes to the events exposed by the *WarningAndErrorValidator*. The internal working of that control is explained later in this article. When a data object is subscribed via the *WarningAndErrorValidator*, the *InfoBarMessageControl* will also handle the warnings and business errors of that data object.
 
-# WarningAndErrorValidator
+## WarningAndErrorValidator
 
 The *WarningAndErrorValidator* control is not visible to the end user. The only thing this control takes care of is to forward business errors and warnings to controls that are interested in them. The only control that ships with Catel is the *InfoBarMessageControl*. Thanks to the *WarningAndErrorValidator*, the *InfoBarMessageControl* is able to show business errors and warnings to the end user.
 
@@ -36,7 +32,7 @@ The *WarningAndErrorValidator* needs to be placed inside an *InfoBarMessageContr
 
 When an error or warning is found on the changed property, the control invokes the corresponding events so the *InfoBarMessageControl* can show the right information. When an error or warning no longer exists in a model, a *Removed* event is invoked so the *InfoBarMessageControl* knows that the error or warning should be removed from the summary.
 
-# Styling in DataWindow
+## Styling in DataWindow
 
 A *InfoBarMessageControl*  is automatically added to the *DataWindow*, if you want to use a different style for this *InfoBarMessageControl,* you must override the default style, add your own *InfoBarMessageControl* and disable the default *InfoBarMessageControl*  from the *DataWindow*.
 

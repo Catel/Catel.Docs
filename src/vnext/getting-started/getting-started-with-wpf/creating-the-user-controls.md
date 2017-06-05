@@ -2,11 +2,7 @@
 
 In this step we will create the views for the application. There are several views that will be created and both user controls and windows will be handled in this part of the guide. Catel makes it very easy to create views as user controls with their own view models. In the previous step we already created the view models.
 
--   [Person view](#Creatingtheviews(usercontrols)-Personview)
--   [Family view](#Creatingtheviews(usercontrols)-Familyview)
--   [Up next](#Creatingtheviews(usercontrols)-Upnext)
-
-# Person view
+## Person view
 
 To create a new view, right-click the *Views* folder in the solution =\> *Add* =\> *New item...* =\> *On-line* =\> and search for Catel as you can see in the screen below:
 
@@ -37,7 +33,7 @@ Now we only need to modify the view itself, the code-behind can stay untouched. 
 </catel:StackGrid>
 ```
 
-# Family view
+## Family view
 
 The *FamilyView* must be created exactly the same way as the *PersonView*. Use the following xaml as content:
 
@@ -76,9 +72,9 @@ xmlns:views="clr-namespace:WPF.GettingStarted.Views"
 
 The thing that is important to notice in the *FamilyView* is how it uses the *PersonView* and injects the *Person* models into the *PersonView* data context.
 
-# Up next
+## Up next
 
-[Creating the views (windows)](Creating_the_views__windows_)
+[Creating the views (windows)](./creating-the-windows.md)
 
 ## Attachments:
 

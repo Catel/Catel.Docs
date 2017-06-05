@@ -9,7 +9,7 @@ xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Inte
 xmlns:catel="http://catel.codeplex.com"
 ```
 
-# Focus when the control is loaded
+## Focus when the control is loaded
 
 The easiest and default method is to focus the first control. The parent is also focused by default (just in case if it doesn't have any focus):
 
