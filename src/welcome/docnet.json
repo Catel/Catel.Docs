@@ -4,6 +4,7 @@
     "Destination" : "../../welcome",
     "IncludeSource": "Includes",
     "Theme" : "Catel",
+    "ConvertLocalLinks" : true,
     //"SourceFoldersToCopy" : ["folder1", "foldern"],
     "Footer" : "",
     "Pages" : 

@@ -61,22 +61,22 @@
 		"Getting started" :
 		{
 			"Quick introduction for developers" : "getting-started/quick-introduction-for-developers.md",
-			"Getting started with WPF" : 
+			"WPF" : 
 			{
-				"Introduction" : "getting-started/getting-started-with-wpf/introduction.md",
-				"Creating the project" : "getting-started/getting-started-with-wpf/creating-the-project.md",
-				"Creating the models" : "getting-started/getting-started-with-wpf/creating-the-models.md",
-				"Serializing data from/to disk" : "getting-started/getting-started-with-wpf/serializing-data-from-to-disk.md",
-				"Creating the view models" : "getting-started/getting-started-with-wpf/creating-the-view-models.md",
-				"Creating the user controls" : "getting-started/getting-started-with-wpf/creating-the-user-controls.md",
-				"Creating the windows" : "getting-started/getting-started-with-wpf/creating-the-windows.md",
-				"Hooking up everything together" : "getting-started/getting-started-with-wpf/hooking-up-everything-together.md",
-				"Finalizing the application" : "getting-started/getting-started-with-wpf/finalizing-the-application.md",
+				"Introduction" : "getting-started/wpf/introduction.md",
+				"Creating the project" : "getting-started/wpf/creating-the-project.md",
+				"Creating the models" : "getting-started/wpf/creating-the-models.md",
+				"Serializing data from/to disk" : "getting-started/wpf/serializing-data-from-to-disk.md",
+				"Creating the view models" : "getting-started/wpf/creating-the-view-models.md",
+				"Creating the user controls" : "getting-started/wpf/creating-the-user-controls.md",
+				"Creating the windows" : "getting-started/wpf/creating-the-windows.md",
+				"Hooking up everything together" : "getting-started/wpf/hooking-up-everything-together.md",
+				"Finalizing the application" : "getting-started/wpf/finalizing-the-application.md",
 			},
-			"Getting started with Xamarin Forms" : 
+			"Xamarin Forms" : 
 			{
-				"Introduction" : "getting-started/getting-started-with-xamarin-forms/introduction.md",
-				"Creating the project" : "getting-started/getting-started-with-wpf/creating-the-project.md",
+				"Introduction" : "getting-started/xamarin-forms/introduction.md",
+				"Creating the project" : "getting-started/xamarin-forms/creating-the-project.md",
 			}
 		},
 		"Examples" : 
