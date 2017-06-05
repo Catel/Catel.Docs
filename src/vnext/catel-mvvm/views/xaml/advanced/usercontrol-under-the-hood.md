@@ -26,7 +26,7 @@ Another event that is very important is the *Unloaded* event. In this event, the
 
 ## DataContextChanged
 
-The *DataContextChanged* event is used to react to changes of the datacontext. You might be thinking: "there is no *DataContextChanged* event in Silverlight". We use the *DataContextHelper* class for that. If the new datacontext is new (thus not a view model that the control just set itself), it it continues to determine the datacontext. Otherwise, it will not take any action.
+The *DataContextChanged* event is used to react to changes of the datacontext. We use the *DataContextHelper* class for that. If the new datacontext is new (thus not a view model that the control just set itself), it it continues to determine the datacontext. Otherwise, it will not take any action.
 
 ## DetermineDataContext
 

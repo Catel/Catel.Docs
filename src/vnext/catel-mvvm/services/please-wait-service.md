@@ -48,7 +48,7 @@ pleaseWaitService.UpdateStatus("new status");
 
 ## Showing a determinate please wait window
 
-By default, the *IPleaseWaitService* shows an indeterminate state (no actual progress is visible). However, both the Silverlight and WPF implementation of the service also implement the status that shows the progress of a long running action.
+By default, the *IPleaseWaitService* shows an indeterminate state (no actual progress is visible).
 
 The *UpdateStatus* method can be used to show the window. The *statusFormat* argument can contain '{0}' (represents the current item) and '{1}' (represents the total items). However, they can also be left out.
 

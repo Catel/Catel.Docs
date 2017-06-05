@@ -115,7 +115,7 @@ public void AfterValidateBusinessRules(object instance, List<IBusinessRuleValida
 }
 ```
 
-SynchronizationContext also allow you create asynchronous locking request, that could be useful in Silverlight Application where the action of lock the main thread is not allowed. 
+SynchronizationContext also allow you create asynchronous locking request.
 
 ##  Acquiring a lock
 

@@ -1,6 +1,6 @@
 # DoubleClickToCommand
 
-Lots of times, a developer needs to handle a double click event. However, somehow the Silverlight team thought that double click had no priority at all. Luckily, Catel offers the solution by providing the DoubleClickToCommand trigger. This trigger allows a developer to track a double click on any FrameworkElement and respond to that using a command.
+Lots of times, a developer needs to handle a double click event. This trigger allows a developer to track a double click on any FrameworkElement and respond to that using a command.
 
 1) Add the following XML namespaces:
 

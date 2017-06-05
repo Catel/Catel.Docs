@@ -14,13 +14,10 @@ Supported platforms
 
 ### Xaml
 
--   WPF 4.0
 -   WPF 4.5
--   Silverlight 5
--   Windows Phone 8.0
--   Windows Phone 8.1
--   Windows RT 8.0
--   Windows RT 8.1
+-   WPF 4.6
+-   WPF 4.7
+-   UWP 10.0
 
 ### Android
 

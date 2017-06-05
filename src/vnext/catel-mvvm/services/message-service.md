@@ -26,7 +26,7 @@ await messageService.ShowError("Whoops, something went wrong");
 
 ## Requesting confirmation
 
-It is also possible to request confirmation from the user. The number of possibilities depends on WPF, Silverlight or Windows Phone is used (for example, not all platforms support *YesNo*).
+It is also possible to request confirmation from the user. The number of possibilities depends on the target platform (for example, not all platforms support *YesNo*).
 
 The following code must be used to request confirmation:
 
@@ -40,8 +40,6 @@ if (await messageService.Show("Are you sure you want to do this?", "Are you sure
 ```
 
 ## Asynchronous confirmation
-
-Sometimes you don't want to use regular message boxes, and in Silverlight this means that your call has to be asynchronous. The implementation is very simple:
 
 ```
 var dependencyResolver = this.GetDependencyResolver();

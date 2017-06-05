@@ -5,7 +5,7 @@ The *ModelBase* (previously known as the *DataObjectBase)* class is a generic ba
 -   **Fully serializable**
     It is now really easy to store objects on disk or serialize them into memory, either binary or in XML. The data object supports this out of the box, and automatically handles the (de)serialization.
 -   **Support property changed notifications**
-    The class supports the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces so this class can easily be used in WPF, Silverlight and applications to reflect changes to the user.
+    The class supports the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces so this class can easily be used in applications to reflect changes to the user.
 -   **Backwards compatibility**
     When serializing your objects to binary, it is hard to maintain the right versions. When you add a new property to a binary class, or change a namespace, the object cannot be loaded any longer. The data object base takes care of this issue and supports backwards compatibility.
 -   **Validation**
@@ -22,9 +22,7 @@ Using the class is extremely simple. Just declare a new class that derives from 
 /// MyObject class which fully supports serialization,
 /// property changed notifications, backwards compatibility and error checking.
 /// </summary>
-#if !SILVERLIGHT
 [Serializable]
-#endif
 public class MyObject : ModelBase<MyObject>
 {
     /// <summary>
@@ -32,7 +30,6 @@ public class MyObject : ModelBase<MyObject>
     /// </summary>
     public MyObject() { }
 
-#if !SILVERLIGHT 
 /// <summary>
 /// Initializes a new object based on <see cref="SerializationInfo"/>.
 /// </summary>
@@ -41,7 +38,6 @@ public class MyObject : ModelBase<MyObject>
 /// <param name="context"><see cref="StreamingContext"/>.</param>
 protected MyObject(SerializationInfo info, StreamingContext context)
     : base(info, context) { }
-#endif
 }
 ```
 

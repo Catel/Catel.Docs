@@ -10,8 +10,6 @@ Most frameworks require a bootstrapper that completely decides how your applicat
 
 The great thing about this freedom is that the different aspects of Catel can be used side-by-side with other frameworks, so you as a developer can use the best framework for every aspect in your application.
 
-Another nice thing is that Catel is WPF-based. Now you might be thinking: but hey, I use Silverlight! However, the upside of this approach is that all goodies that are well known in WPF, but not in Silverlight are also brought to Silverlight. For example, in Silverlight there is no automatic command re-evaluation. Catel does this out of the box, even in Silverlight.
-
 Catel offers a solution in the following fields:
 
 -   Data handling

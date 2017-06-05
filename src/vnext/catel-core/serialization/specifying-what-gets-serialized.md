@@ -74,7 +74,7 @@ CatelProperty
 
 ![](attachments/8028179/8192006.png)
 
-Note that private members can only be serialized in .NET and not in Silverlight, Windows Phone or the Windows Runtime
+Note that private members can only be serialized in full .NET, not in limited platforms such as UWP
 
 ## Excluding fields and properties using ExcludeFromSerialization attribute
 

@@ -52,12 +52,12 @@ var warningTitle = languageService.GetString("WarningTitle");
 
 To use the *LanguageService *in XAML, Catel provides the markup extensions.
 
-### Using the LanguageBinding in WPF and Silverlight
+### Using the LanguageBinding in
 
-To use the *LanguageBinding* markup extension in WPF and Silverlight, use the following code:
+To use the *LanguageBinding* markup extension, use the following code:
 
 ```
-<TextBlock Text="{LanguageBinding WarningTitle}" />
+<TextBlock Text="{markup:LanguageBinding WarningTitle}" />
 ```
 
 ### Using the LanguageBinding in Windows Phone

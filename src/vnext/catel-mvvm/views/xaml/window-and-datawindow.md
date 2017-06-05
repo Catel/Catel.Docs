@@ -6,7 +6,7 @@ The Window is a simplified class representing the same logic as the regular Syst
 
 ## Introduction to the DataWindow
 
-When developing software in WPF or Silverlight, most developers always need the following three types of windows:
+When developing software in XAML, most developers always need the following three types of windows:
 
 -   OK / Cancel buttons for data windows;
 -   OK / Cancel / Apply buttons for application settings / options;

@@ -149,7 +149,6 @@
 <h1 id="exposing-properties-of-a-model-automatically">Exposing properties of a model automatically<a class="headerlink" href="#exposing-properties-of-a-model-automatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Note that starting with Catel 3.8, this feature is part of Catel.Fody which brings support for this feature on all platforms. More information can be found here.</p>
 <p>Starting with Catel 2.2, a new attribute called <em>ExposeAttribute</em> is introduced. One of the features that already existed in Catel before is the <em>ViewModelToModelAttribute</em>. The goal of these attributes is to easily map properties from a model to the view model so as much of the plumbing (setting/getting properties, rechecking validation, etc) is done automatically for the developer.</p>
-<p>This feature is only available in WPF because Silverlight does not provide the <em>ICustomTypeDescriptor</em> or an equivalent feature</p>
 <p>Using the ViewModelToModelAttribute, this is the syntax to map properties automatically:</p>
 <pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.

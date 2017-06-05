@@ -4,8 +4,6 @@ Note that starting with Catel 3.8, this feature is part of Catel.Fody which brin
 
 Starting with Catel 2.2, a new attribute called *ExposeAttribute* is introduced. One of the features that already existed in Catel before is the *ViewModelToModelAttribute*. The goal of these attributes is to easily map properties from a model to the view model so as much of the plumbing (setting/getting properties, rechecking validation, etc) is done automatically for the developer.
 
-This feature is only available in WPF because Silverlight does not provide the *ICustomTypeDescriptor* or an equivalent feature
-
 Using the ViewModelToModelAttribute, this is the syntax to map properties automatically:
 
 ```

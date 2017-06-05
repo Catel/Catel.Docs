@@ -6,7 +6,7 @@ As you will notice (or maybe you don't), this framework has a lot in common with
 
 ## Models
 
-The Models part is one of the three major parts of MVVM. Therefore, I want to tell you a bit about what kind of Models we use to store our data. Basically, you can use all types of objects as Models, as long as the Models implement the most commonly used interfaces required by WPF or Silverlight.
+The Models part is one of the three major parts of MVVM. Therefore, I want to tell you a bit about what kind of Models we use to store our data. Basically, you can use all types of objects as Models, as long as the Models implement the most commonly used interfaces.
 
 For MVVM, it is very important that the following interfaces are implemented:
 

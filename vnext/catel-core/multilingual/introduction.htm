@@ -181,9 +181,9 @@ var languageService = dependencyResolver.Resolve&lt;ILanguageService&gt;();
 var warningTitle = languageService.GetString(&quot;WarningTitle&quot;);
 </pre><h2 id="using-the-languageservice-in-xaml">Using the LanguageService in XAML<a class="headerlink" href="#using-the-languageservice-in-xaml" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To use the *LanguageService *in XAML, Catel provides the markup extensions.</p>
-<h3 id="using-thelanguagebinding-in-wpf-and-silverlight">Using the LanguageBinding in WPF and Silverlight<a class="headerlink" href="#using-thelanguagebinding-in-wpf-and-silverlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>To use the <em>LanguageBinding</em> markup extension in WPF and Silverlight, use the following code:</p>
-<pre class="nocode">&lt;TextBlock Text=&quot;{LanguageBinding WarningTitle}&quot; /&gt;
+<h3 id="using-thelanguagebinding-in">Using the LanguageBinding in<a class="headerlink" href="#using-thelanguagebinding-in" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To use the <em>LanguageBinding</em> markup extension, use the following code:</p>
+<pre class="nocode">&lt;TextBlock Text=&quot;{markup:LanguageBinding WarningTitle}&quot; /&gt;
 </pre><h3 id="using-the-languagebinding-in-windows-phone">Using the LanguageBinding in Windows Phone<a class="headerlink" href="#using-the-languagebinding-in-windows-phone" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Since Windows Phone does not support markup extensions, a custom <em>MarkupExtension</em> implementation is used in Catel. This requires a little difference in the usage of the markup extension:</p>
 <pre class="nocode">&lt;TextBlock Text=&quot;{markup:LanguageBinding ResourceName=WarningTitle}&quot; /&gt;

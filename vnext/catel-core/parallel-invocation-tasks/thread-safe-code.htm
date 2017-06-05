@@ -246,7 +246,7 @@ public void AfterValidateBusinessRules(object instance, List&lt;IBusinessRuleVal
         throw;
     }
 }
-</pre><p>SynchronizationContext also allow you create asynchronous locking request, that could be useful in Silverlight Application where the action of lock the main thread is not allowed. </p>
+</pre><p>SynchronizationContext also allow you create asynchronous locking request.</p>
 <h2 id="acquiring-a-lock"> Acquiring a lock<a class="headerlink" href="#acquiring-a-lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To acquire a lock, only a call to Acquire is required:</p>
 <pre class="nocode">_synchronizationContext.Acquire();

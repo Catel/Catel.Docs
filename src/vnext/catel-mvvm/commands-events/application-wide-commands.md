@@ -4,7 +4,7 @@ Most commands are registered per view and available per view model. Some command
 
 ## CommandManager
 
-There is no generic way to specify application-wide commands in WPF and Silverlight. To overcome this issue, Catel introduces the *CommandManager*. This manager allows to create commands which are hosted by the *CommandManager*. The commands on the command manager can be created with input gestures (on both WPF and Silverlight). Once a view model wants to hook into a specific command, it only has to register the view model command with the application-wide command.
+There is no generic way to specify application-wide commands in XAML platforms. To overcome this issue, Catel introduces the *CommandManager*. This manager allows to create commands which are hosted by the *CommandManager*. The commands on the command manager can be created with input gestures. Once a view model wants to hook into a specific command, it only has to register the view model command with the application-wide command.
 
 Note that application-wide commands by default are only available on the main window of an application. To support this on other windows, add the following code in the constructor of a window:
 
@@ -66,7 +66,7 @@ public class CommandSubscribingViewModel : ViewModelBase
 
 ### Using application-wide commands in xaml
 
-To make it easy to bind to application-wide commands, Catel provides the *CommandManagerBinding *markup extension for WPF and Silverlight. To bind to commands in xaml, use the following code:
+To make it easy to bind to application-wide commands, Catel provides the *CommandManagerBinding *markup extension. To bind to commands in xaml, use the following code:
 
 ```
 <Ribbon catel:StackGrid.ColumnSpan="4">

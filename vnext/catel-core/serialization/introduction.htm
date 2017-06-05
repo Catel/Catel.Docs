@@ -98,7 +98,6 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Serialization.htm">Serialization</a></span></li>
 <li class="tocentry current"><a class="current" href="../../catel-core/serialization/introduction.htm">Introduction</a>
 <ul class="currentrelative">
-<li class="tocentry"><a href="#serialization-modes">Serialization modes</a></li>
 <li class="tocentry"><a href="#serializing-a-model">Serializing a model</a></li>
 <li class="tocentry"><a href="#warming-up-serialization">Warming up serialization</a></li>
 <li class="tocentry"><a href="#backwards-compatibility-for-binary-serialization">Backwards compatibility for binary serialization</a></li>
@@ -154,45 +153,6 @@
                 <div role="main">
                     <div class="section">
 <h1 id="introduction-to-serialization">Introduction to serialization<a class="headerlink" href="#introduction-to-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<h2 id="serialization-modes">Serialization modes<a class="headerlink" href="#serialization-modes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Depending on the target framework, several options are available as serialization modes:</p>
-<p>Serialization mode</p>
-<p>WPF</p>
-<p>Silverlight</p>
-<p>Windows Phone (SL)</p>
-<p>Windows Phone (RT)</p>
-<p>WinRT</p>
-<p>Xamarin.Android</p>
-<p>Xamarin.iOS</p>
-<p>Comments</p>
-<p>Binary</p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p><img src="attachments/2359393/2621501.png" /></p>
-<p> </p>
-<p>Json</p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p>Available in separate <em>Catel.Serialization.Json</em> package</p>
-<p>XML</p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p><img src="attachments/2359393/2621500.png" /></p>
-<p> </p>
-<p>Note that it is possible to implement custom serialization techniques or <a href="Customizing_serialization">customize the serialization</a></p>
 <h2 id="serializing-a-model">Serializing a model<a class="headerlink" href="#serializing-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The code below shows how to save an object (which can, of course, be a complex graph of nested objects):</p>
 <pre class="nocode">var myObject = new MyObject();

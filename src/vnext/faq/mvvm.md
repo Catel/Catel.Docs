@@ -51,8 +51,6 @@ An example for a *ListBox *double click:
 
 ## How can I add the MVVM behaviors via code (programmatically)?
 
-Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta) toolkit isn't the right option to solve the issue. Luckily, it is also possible to add one of the MVVM behaviors via code to any control or window.
-
 Below is the code-behind of a view that adds the *UserControlBehavior* via code:
 
 ```
@@ -92,7 +90,6 @@ public partial class DynamicBehaviorView : UserControl, IViewModelContainer
    /// </summary>
    public event EventHandler<PropertyChangedEventArgs> ViewModelPropertyChanged;
 
-#if !SILVERLIGHT
    /// <summary>
    /// Occurs when a property on the container has changed.
    /// </summary>
@@ -111,7 +108,6 @@ public partial class DynamicBehaviorView : UserControl, IViewModelContainer
       base.OnPropertyChanged(e);
       PropertyChanged.SafeInvoke(this, new PropertyChangedEventArgs(e.Property.Name));
    }         
-#endif      
 }
 ```
 

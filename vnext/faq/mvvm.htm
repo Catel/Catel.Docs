@@ -138,7 +138,6 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
     &lt;/ListBox.ItemTemplate&gt;
 &lt;/ListBox&gt;
 </pre><h2 id="how-can-i-add-the-mvvm-behaviors-via-code-programmatically">How can I add the MVVM behaviors via code (programmatically)?<a class="headerlink" href="#how-can-i-add-the-mvvm-behaviors-via-code-programmatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta) toolkit isn't the right option to solve the issue. Luckily, it is also possible to add one of the MVVM behaviors via code to any control or window.</p>
 <p>Below is the code-behind of a view that adds the <em>UserControlBehavior</em> via code:</p>
 <pre class="nocode">public partial class DynamicBehaviorView : UserControl, IViewModelContainer
 {
@@ -176,7 +175,6 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
    /// &lt;/summary&gt;
    public event EventHandler&lt;PropertyChangedEventArgs&gt; ViewModelPropertyChanged;
 
-#if !SILVERLIGHT
    /// &lt;summary&gt;
    /// Occurs when a property on the container has changed.
    /// &lt;/summary&gt;
@@ -195,7 +193,6 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
       base.OnPropertyChanged(e);
       PropertyChanged.SafeInvoke(this, new PropertyChangedEventArgs(e.Property.Name));
    }         
-#endif      
 }
 </pre><p>Using this technique, it is even possible to determine the view model of any view dynamically at runtime.</p>
 <h2 id="how-can-i-inject-or-manipulate-the-view-model-of-a-usercontrol">How can I inject or manipulate the view model of a UserControl?<a class="headerlink" href="#how-can-i-inject-or-manipulate-the-view-model-of-a-usercontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>

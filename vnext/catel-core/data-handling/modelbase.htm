@@ -161,7 +161,7 @@ It is now really easy to store objects on disk or serialize them into memory, ei
 </li>
 <li>
 <strong>Support property changed notifications</strong>
-The class supports the <em>INotifyPropertyChanging</em> and <em>INotifyPropertyChanged</em> interfaces so this class can easily be used in WPF, Silverlight and applications to reflect changes to the user.
+The class supports the <em>INotifyPropertyChanging</em> and <em>INotifyPropertyChanged</em> interfaces so this class can easily be used in applications to reflect changes to the user.
 </li>
 <li>
 <strong>Backwards compatibility</strong>
@@ -182,9 +182,7 @@ The class implements the <em>IEditableObject</em> interface which makes it possi
 /// MyObject class which fully supports serialization,
 /// property changed notifications, backwards compatibility and error checking.
 /// &lt;/summary&gt;
-#if !SILVERLIGHT
 [Serializable]
-#endif
 public class MyObject : ModelBase&lt;MyObject&gt;
 {
     /// &lt;summary&gt;
@@ -192,7 +190,6 @@ public class MyObject : ModelBase&lt;MyObject&gt;
     /// &lt;/summary&gt;
     public MyObject() { }
 
-#if !SILVERLIGHT 
 /// &lt;summary&gt;
 /// Initializes a new object based on &lt;see cref=&quot;SerializationInfo&quot;/&gt;.
 /// &lt;/summary&gt;
@@ -201,7 +198,6 @@ public class MyObject : ModelBase&lt;MyObject&gt;
 /// &lt;param name=&quot;context&quot;&gt;&lt;see cref=&quot;StreamingContext&quot;/&gt;.&lt;/param&gt;
 protected MyObject(SerializationInfo info, StreamingContext context)
     : base(info, context) { }
-#endif
 }
 </pre><p>As you can see in the code above, the <em>MyObject</em> class derives from <em>ModelBase</em> and provides an empty constructor, but also a constructor that is used for binary deserialization. The code above might look complex, but it is created using the model code snippet, and you only have to type the name of the class.</p>
 <h3 id="defining-properties">Defining properties<a class="headerlink" href="#defining-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
