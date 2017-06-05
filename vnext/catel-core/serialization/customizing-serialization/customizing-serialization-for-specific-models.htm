@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customizing the serialization for specific models - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/index.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/index.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/index.htm">Catel.Core</a></span></li>
+
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/apicop/index.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/caching/index.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/configuration/index.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/data-handling/index.htm">Data handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/exception-handling/index.htm">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/ioc/index.htm">IoC (ServiceLocator & TypeFactory)</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/logging/index.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/messaging/index.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/multilingual/index.htm">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/parallel-invocation-tasks/index.htm">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/pooling/index.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/preventing-memory-leaks/index.htm">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/reflection/index.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/scoping/index.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/serialization/index.htm">Serialization</a></span></li>
+
+<li class="tocentry"><a href="../../../catel-core/serialization/introduction.htm">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/serialization/specifying-what-gets-serialized.htm">Specifying what gets serialized</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/serialization/customizing-serialization/index.htm">Customizing serialization</a></span></li>
+
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-engines.htm">Customizing the serialization engines</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.htm">Customizing the serialization for specific models</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse.htm">Serializing members using ToString / Parse</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/taking-full-control-of-serialization.htm">Taking full control of serialization</a>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/serializationSupportedserializers.htm">Supported serializers</a></span>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/validation/index.htm">Validation</a></span>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../catel-core/serialization/index.htm">Serialization</a></li> / <li><a href="../../../catel-core/serialization/customizing-serialization/index.htm">Customizing serialization</a></li> / <li><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.htm">Customizing the serialization for specific models</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="customizing-the-serialization-for-specific-models">Customizing the serialization for specific models<a class="headerlink" href="#customizing-the-serialization-for-specific-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<ul>
+<li><a href="#Customizingtheserializationforspecificmodels-Creatingthemodifier">Creating the modifier</a></li>
+<li><a href="#Customizingtheserializationforspecificmodels-Registeringthemodifier">Registering the modifier</a></li>
+</ul>
+<p>Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the <em>IncludeInSerialization</em> and <em>ExcludeFromSerialization</em> attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the <em>ISerializerModifier</em>.</p>
+<h1 id="creating-the-modifier">Creating the modifier<a class="headerlink" href="#creating-the-modifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>To customize the serialization of a specific model type, one needs to implement the <em>ISerializerModifier</em> interface. The example belows shows how to encrypt the <em>Password</em> property on the <em>Person</em> model class.</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+public class PersonSerializerModifier : SerializerModifierBase&lt;Person&gt;
+{
+    public override void SerializeMember(ISerializationContext context, MemberValue memberValue)
+    {
+        if (string.Equals(memberValue.Name, &quot;Password&quot;))
+        {
+            memberValue.Value = EncryptionHelper.Encrypt(memberValue.Value);
+        }
+    }
+ 
+    public override void DeserializeMember(ISerializationContext context, MemberValue memberValue)
+    {
+        if (string.Equals(memberValue.Name, &quot;Password&quot;))
+        {
+            memberValue.Value = EncryptionHelper.Decrypt(memberValue.Value);
+        }
+    }
+}
+</pre><h1 id="registering-the-modifier">Registering the modifier<a class="headerlink" href="#registering-the-modifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>To register a modifier for a specific class, define the <em>SerializerModifier</em> attribute:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+[SerializerModifier(typeof(PersonSerializerModifier))]
+public class Person : ModelBase
+{
+    // .. class contents
+}
+</pre><p>Note that modifiers are inherited from base classes. When serializing, the modifiers defined on the most derived classes will be called last. When deserializing, the modifies defined on the most derived classes will be called first.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

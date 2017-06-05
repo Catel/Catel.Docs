@@ -1,0 +1,46 @@
+# Customizing the serialization for specific models
+
+-   [Creating the modifier](#Customizingtheserializationforspecificmodels-Creatingthemodifier)
+-   [Registering the modifier](#Customizingtheserializationforspecificmodels-Registeringthemodifier)
+
+Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the *IncludeInSerialization* and *ExcludeFromSerialization* attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the *ISerializerModifier*.
+
+# Creating the modifier
+
+To customize the serialization of a specific model type, one needs to implement the *ISerializerModifier* interface. The example belows shows how to encrypt the *Password* property on the *Person* model class.
+
+``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+public class PersonSerializerModifier : SerializerModifierBase<Person>
+{
+    public override void SerializeMember(ISerializationContext context, MemberValue memberValue)
+    {
+        if (string.Equals(memberValue.Name, "Password"))
+        {
+            memberValue.Value = EncryptionHelper.Encrypt(memberValue.Value);
+        }
+    }
+ 
+    public override void DeserializeMember(ISerializationContext context, MemberValue memberValue)
+    {
+        if (string.Equals(memberValue.Name, "Password"))
+        {
+            memberValue.Value = EncryptionHelper.Decrypt(memberValue.Value);
+        }
+    }
+}
+```
+
+# Registering the modifier
+
+To register a modifier for a specific class, define the *SerializerModifier* attribute:
+
+``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+[SerializerModifier(typeof(PersonSerializerModifier))]
+public class Person : ModelBase
+{
+    // .. class contents
+}
+```
+
+Note that modifiers are inherited from base classes. When serializing, the modifiers defined on the most derived classes will be called last. When deserializing, the modifies defined on the most derived classes will be called first.
+

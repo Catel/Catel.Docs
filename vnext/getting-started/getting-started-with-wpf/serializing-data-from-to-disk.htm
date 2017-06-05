@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serializing data from/to disk - Catel documentation</title>
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/index.htm">Getting started</a></span></li>
+
+<li class="tocentry"><a href="../../getting-started/quick-introduction-for-developers.htm">Quick introduction for developers</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/getting-started-with-wpf/index.htm">Getting started with WPF</a></span></li>
+
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-project.htm">Creating the project</a>
+</li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-models.htm">Creating the models</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../getting-started/getting-started-with-wpf/serializing-data-from-to-disk.htm">Serializing data from/to disk</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#injecting-the-service-via-dependency-injection">Injecting the service via dependency injection</a></li>
+<li class="tocentry"><a href="#creating-thefamilies-property-on-the-mainwindowviewmodel">Creating the Families property on the MainWindowViewModel</a></li>
+<li class="tocentry"><a href="#loading-the-families-at-startup">Loading the families at startup</a></li>
+<li class="tocentry"><a href="#saving-the-families-at-shutdown">Saving the families at shutdown</a></li>
+<li class="tocentry"><a href="#attachments">Attachments:</a></li>
+</ul>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-view-models.htm">Creating the view models</a>
+</li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-user-controls.htm">Creating the user controls</a>
+</li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/creating-the-windows.htm">Creating the windows</a>
+</li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/hooking-up-everything-together.htm">Hooking up everything together</a>
+</li>
+<li class="tocentry"><a href="../../getting-started/getting-started-with-wpf/finalizing-the-application.htm">Finalizing the application</a>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/getting-started-with-xamarin-forms/index.htm">Getting started with Xamarin Forms</a></span>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../getting-started/index.htm">Getting started</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/index.htm">Getting started with WPF</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/serializing-data-from-to-disk.htm">Serializing data from/to disk</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="serializing-data-fromto-disk">Serializing data from/to disk<a class="headerlink" href="#serializing-data-fromto-disk" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>In this step we will create services that will serialize the models from/to disk. Services are a great way to abstract functionality that can be used in every part of the application. This guide will also register the service in the <em>ServiceLocator</em> so it can be injected in view models.</p>
+<ul>
+<li><a href="#Serializingdatafrom/todisk-Creatingtheservicedefinition">Creating the service definition</a></li>
+<li><a href="#Serializingdatafrom/todisk-Creatingtheserviceimplementation">Creating the service implementation</a></li>
+<li><a href="#Serializingdatafrom/todisk-RegisteringtheserviceintheServiceLocator">Registering the service in the ServiceLocator</a></li>
+<li>
+<a href="#Serializingdatafrom/todisk-AddingtheserviceusagetotheMainWindowViewModel">Adding the service usage to the MainWindowViewModel</a>
+<ul>
+<li><a href="#Serializingdatafrom/todisk-Injectingtheserviceviadependencyinjection">Injecting the service via dependency injection</a></li>
+<li><a href="#Serializingdatafrom/todisk-CreatingtheFamiliespropertyontheMainWindowViewModel">Creating the Families property on the MainWindowViewModel</a></li>
+<li><a href="#Serializingdatafrom/todisk-Loadingthefamiliesatstartup">Loading the families at startup</a></li>
+<li><a href="#Serializingdatafrom/todisk-Savingthefamiliesatshutdown">Saving the families at shutdown</a></li>
+</ul>
+</li>
+<li><a href="#Serializingdatafrom/todisk-Upnext">Up next</a></li>
+</ul>
+<h1 id="creating-the-service-definition">Creating the service definition<a class="headerlink" href="#creating-the-service-definition" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>The first thing to do is to create the <em>Services</em> folder to group the services. Below is a screenshot of how to solution will look after creating the folders:</p>
+<p><img src="attachments/15630363/16318471.png" /></p>
+<p>Then add a new interface to the <em>Interfaces</em> folder named <em>IFamilyService</em>. This will manage the families that are avaiable. Below is the interface defined:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+namespace WPF.GettingStarted.Services
+{
+    using WPF.GettingStarted.Models;
+
+    public interface IFamilyService
+    {
+        IEnumerable&lt;Family&gt; LoadFamilies();
+        void SaveFamilies(IEnumerable&lt;Family&gt; families);
+    }
+}
+</pre><h1 id="creating-the-service-implementation">Creating the service implementation<a class="headerlink" href="#creating-the-service-implementation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Below is the implementation of the service which will actually take care of saving and loading of the families:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+namespace WPF.GettingStarted.Services
+{
+    using System.Collections.Generic;
+    using System.IO;
+    using Catel.Collections;
+    using Catel.Data;
+    using WPF.GettingStarted.Models;
+
+    public class FamilyService : IFamilyService
+    {
+        private readonly string _path;
+
+        public FamilyService()
+        {
+            string directory = Catel.IO.Path.GetApplicationDataDirectory(&quot;CatenaLogic&quot;, &quot;WPF.GettingStarted&quot;);
+
+            _path = Path.Combine(directory, &quot;family.xml&quot;);
+        }
+
+        public IEnumerable&lt;Family&gt; LoadFamilies()
+        {
+            if (!File.Exists(_path))
+            {
+                return new Family[] { };
+            }
+
+            using (var fileStream = File.Open(_path, FileMode.Open))
+            {
+                var settings = Settings.Load(fileStream, SerializationMode.Xml);
+                return settings.Families;
+            }
+        }
+
+        public void SaveFamilies(IEnumerable&lt;Family&gt; families)
+        {
+            var settings = new Settings();
+            settings.Families.ReplaceRange(families);
+            settings.Save(_path, SerializationMode.Xml);
+        }
+    }
+}
+</pre><h1 id="registering-the-service-in-the-servicelocator">Registering the service in the ServiceLocator<a class="headerlink" href="#registering-the-service-in-the-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Now we have created the service, it is time to register it in the <em>ServiceLocator</em>. In the <em>App.xaml.cs</em>, add the following code:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+var serviceLocator = ServiceLocator.Default;
+serviceLocator.RegisterType&lt;IFamilyService, FamilyService&gt;();
+</pre><h1 id="adding-the-service-usage-to-the-mainwindowviewmodel">Adding the service usage to the MainWindowViewModel<a class="headerlink" href="#adding-the-service-usage-to-the-mainwindowviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Now the service is registered, it can be used anywhere in the application. A great place to load and save the families is in the <em>MainWindowViewModel</em> which contains all the logic of the main application window. </p>
+<h2 id="injecting-the-service-via-dependency-injection">Injecting the service via dependency injection<a class="headerlink" href="#injecting-the-service-via-dependency-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To get an instance of the service in the view model, change the constructor to the following definition.</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+private readonly IFamilyService _familyService;
+
+/// &lt;summary&gt;
+/// Initializes a new instance of the &lt;see cref=&quot;MainWindowViewModel&quot;/&gt; class.
+/// &lt;/summary&gt;
+public MainWindowViewModel(IFamilyService familyService)
+{
+    Argument.IsNotNull(() =&gt; familyService);
+
+    _familyService = familyService;
+}
+</pre><p>As you can see in the code above, a new field is created to store the dependency *IFamilyService. *Then the constructor ensures that the argument is not null and stores it in the field.</p>
+<h2 id="creating-thefamilies-property-on-the-mainwindowviewmodel">Creating the Families property on the MainWindowViewModel<a class="headerlink" href="#creating-thefamilies-property-on-the-mainwindowviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The next thing we need is a <em>Families</em> property on the <em>MainWindowViewModel</em> to store the families in we load from disk. Below is the property definition for that:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+/// &lt;summary&gt;
+/// Gets the families.
+/// &lt;/summary&gt;
+public ObservableCollection&lt;Family&gt; Families
+{
+    get { return GetValue&lt;ObservableCollection&lt;Family&gt;&gt;(FamiliesProperty); }
+    private set { SetValue(FamiliesProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the Families property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData FamiliesProperty = RegisterProperty(&quot;Families&quot;, typeof(ObservableCollection&lt;Family&gt;), null);
+</pre><h2 id="loading-the-families-at-startup">Loading the families at startup<a class="headerlink" href="#loading-the-families-at-startup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Now we have the <em>IFamilyService</em> and the <em>Families</em> property, it is time to combine these two. To do this, we need to override the *Initialize *method on the view model which is automatically called as soon as the view is loaded by Catel:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+protected override async Task Initialize()
+{
+    var families = _familyService.LoadFamilies();
+    Families = new ObservableCollection&lt;Family&gt;(families);
+}
+</pre><h2 id="saving-the-families-at-shutdown">Saving the families at shutdown<a class="headerlink" href="#saving-the-families-at-shutdown" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To save the families at shutdown, override the <em>Close</em> method on the view model which is automatically called as soon as the view is closed by Catel:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+protected override async Task Close()
+{
+    _familyService.SaveFamilies(Families);
+}
+</pre><p>After running the application once, a new file will be stored in the following directory:</p>
+<p><em>C:\Users\[yourusername]\AppData\Roaming\CatenaLogic\WPF.GettingStarted</em></p>
+<h1 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p><a href="Creating_the_view_models">Creating the view models</a></p>
+<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630363/16318471.png">image2013-11-8 16:56:29.png</a> (image/png)</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

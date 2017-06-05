@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deferring validation - Catel documentation</title>
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/index.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span></li>
+
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/apicop/index.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/data-handling/index.htm">Data handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/exception-handling/index.htm">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/ioc/index.htm">IoC (ServiceLocator & TypeFactory)</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/logging/index.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/messaging/index.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/multilingual/index.htm">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/parallel-invocation-tasks/index.htm">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/pooling/index.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/preventing-memory-leaks/index.htm">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/reflection/index.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/scoping/index.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/serialization/index.htm">Serialization</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../catel-core/validation/index.htm">Validation</a></span></li>
+
+<li class="tocentry"><a href="../../catel-core/validation/validation-via-validate-method.htm">Validation via validate methods</a>
+</li>
+<li class="tocentry"><a href="../../catel-core/validation/validation-via-data-annotations.htm">Validation via data annotations</a>
+</li>
+<li class="tocentry"><a href="../../catel-core/validation/validation-via-special-model-validators.htm">Validation via special model validators</a>
+</li>
+<li class="tocentry"><a href="../../catel-core/validation/validation-via-ivalidator.htm">Validation via IValidator</a>
+</li>
+<li class="tocentry"><a href="../../catel-core/validation/using-validation-context.htm">Using the validation context</a>
+</li>
+<li class="tocentry"><a href="../../catel-core/validation/getting-summary-of-validation-results.htm">Getting a summary of validation results</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../catel-core/validation/deferring-validation.htm">Deferring validation</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../catel-core/validation/index.htm">Validation</a></li> / <li><a href="../../catel-core/validation/deferring-validation.htm">Deferring validation</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="deferring-validation">Deferring validation<a class="headerlink" href="#deferring-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>The opinions about validation differ from person to person. Some people think it is best practice to immediately show the errors to the users. Others want to defer it to the moment where the user clicks the Save or OK button. Catel supports both &quot;best practices&quot;.</p>
+<ul>
+<li><a href="#Deferringvalidation-Suspendingvalidationforabatchofchanges">Suspending validation for a batch of changes</a></li>
+<li><a href="#Deferringvalidation-Deferringvalidationinviewmodels">Deferring validation in view models</a></li>
+</ul>
+<h1 id="suspending-validation-for-a-batch-of-changes">Suspending validation for a batch of changes<a class="headerlink" href="#suspending-validation-for-a-batch-of-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Sometimes you need to change a batch of properties and don't want validation to be called after every property change. This can be accomplished by using the following code inside a <em>ModelBase</em> class:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+SuspendValidation = true;
+ 
+// change several properties here
+ 
+SuspendValidation = false;
+ 
+// Now force validation
+Validate(true);
+</pre><h1 id="deferring-validation-in-view-models">Deferring validation in view models<a class="headerlink" href="#deferring-validation-in-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Below is a table of properties that can be used to affect the validation deferring.</p>
+<p>Property</p>
+<p>Validate immediately</p>
+<p>Defer to a later moment</p>
+<p>DeferValidationUntilFirstSaveCall</p>
+<p>false</p>
+<p>true</p>
+<p>ValidateModelsOnInitialization</p>
+<p>true</p>
+<p>false</p>
+<p>If the DeferValidationUntilFirstSaveCall property, is used, it must be set as first property in the view model because the validation kicks in immediately when properties change.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

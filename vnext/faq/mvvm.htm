@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MVVM - Catel documentation</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles/vs.css">
+    <link rel="stylesheet" href="../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../faq/index.htm">FAQ</a></span></li>
+
+<li class="tocentry"><a href="../faq/general.htm">General</a>
+</li>
+<li class="tocentry current"><a class="current" href="../faq/mvvm.htm">MVVM</a>
+</li>
+<li class="tocentry"><a href="../faq/problem-solving.htm">Problem solving</a>
+</li>
+<li class="tocentry"><a href="../faq/performance-considerations.htm">Performance considerations</a>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../getting-started/index.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../catel-core/index.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../Home.htm">Home</a></li> / <li><a href="../faq/index.htm">FAQ</a></li> / <li><a href="../faq/mvvm.htm">MVVM</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="mvvm">MVVM<a class="headerlink" href="#mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<ul>
+<li><a href="#MVVM-Howtosupportexampledatawithviewmodels?">How to support example data with view models?</a></li>
+<li><a href="#MVVM-HowtouseeventswithMVVM?">How to use events with MVVM?</a></li>
+<li><a href="#MVVM-Silverlightthrowserrorabouttypethatcannotbecreated?">Silverlight throws error about type that cannot be created?</a></li>
+<li><a href="#MVVM-HowcanIaddtheMVVMbehaviorsviacode(programmatically)?">How can I add the MVVM behaviors via code (programmatically)?</a></li>
+<li><a href="#MVVM-HowcanIinjectormanipulatetheviewmodelofaUserControl?">How can I inject or manipulate the view model of a UserControl?</a></li>
+<li><a href="#MVVM-HowcanIpreventvalidationofrequiredfields?">How can I prevent validation of required fields?</a></li>
+</ul>
+<h3 id="how-to-support-example-data-with-view-models">How to support example data with view models?<a class="headerlink" href="#how-to-support-example-data-with-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To find out how to create design time data, see the <a href="Designers">designers</a>topic.</p>
+<h3 id="how-to-use-events-with-mvvm">How to use events with MVVM?<a class="headerlink" href="#how-to-use-events-with-mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>When writing MVVM, it's &quot;forbidden&quot; (read: not a best practice) to use click handlers (or other UI events) in your view-model. But then should you react to events?</p>
+<ol>
+<li>Start with creating a command like you are used to using MVVM. This command will be executed when the event occurs.</li>
+<li>Add a reference to <em>System.Windows.Interactivity.dll</em> (ships with Catel). If you have used NuGet to add a reference, it is automatically included for you.</li>
+<li>
+<p>Add the following namespace definitions to your view declaration:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+xmlns:catel=&quot;http://catel.codeplex.com&quot;
+</pre></li>
+<li>
+<p>Use the following code to convert an event to a command:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+&lt;i:Interaction.Triggers&gt;
+    &lt;i:EventTrigger EventName=&quot;[YourEvent]&quot;&gt;
+        &lt;catel:EventToCommand Command=&quot;{Binding [YourCommand]}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; /&gt;
+    &lt;/i:EventTrigger&gt;
+&lt;/i:Interaction.Triggers&gt;
+</pre></li>
+</ol>
+<p>An example for a *ListBox *double click:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+    &lt;i:Interaction.Triggers&gt;
+        &lt;i:EventTrigger EventName=&quot;MouseDoubleClick&quot;&gt;
+            &lt;catel:EventToCommand Command=&quot;{Binding Edit}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; /&gt;
+        &lt;/i:EventTrigger&gt;
+    &lt;/i:Interaction.Triggers&gt;
+            
+    &lt;ListBox.ItemTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;StackPanel Orientation=&quot;Horizontal&quot;&gt;
+                &lt;Label Content=&quot;{Binding FirstName}&quot; /&gt;
+                &lt;Label Content=&quot;{Binding MiddleName}&quot; /&gt;
+                &lt;Label Content=&quot;{Binding LastName}&quot; /&gt;
+            &lt;/StackPanel&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/ListBox.ItemTemplate&gt;
+&lt;/ListBox&gt;
+</pre><h3 id="silverlight-throws-error-about-type-that-cannot-be-created">Silverlight throws error about type that cannot be created?<a class="headerlink" href="#silverlight-throws-error-about-type-that-cannot-be-created" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>If you are using type creation via xaml this way:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+&lt;i:Interaction.Behaviors&gt;
+  &lt;catel:WindowBehavior ViewModelType=&quot;viewmodels:DemoWindowViewModel&quot; Save=&quot;okButton.Click&quot; Cancel=&quot;cancelButton.Click&quot; /&gt;
+&lt;/i:Interaction.Behaviors&gt;
+</pre><p>It might be possible that Silverlight throws an exception with these details:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+{System.Windows.Markup.XamlParseException: Failed to create a 'System.Type' from the text 'ViewModels:DemoWindowViewModel'. [Line: 13 Position: 67]
+at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+at Catel.Examples.AdvancedDemo.Views.LogicInBehavior.DemoWindow.InitializeComponent()
+at Catel.Examples.AdvancedDemo.Views.LogicInBehavior.DemoWindow..ctor()}
+</pre><p>This happens in Silverlight 4 when the Silverlight 5 (beta) tools are not installed. To resolve this issue, install the Silverlight 5 (beta) tools.</p>
+<h3 id="how-can-i-add-the-mvvm-behaviors-via-code-programmatically">How can I add the MVVM behaviors via code (programmatically)?<a class="headerlink" href="#how-can-i-add-the-mvvm-behaviors-via-code-programmatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta) toolkit isn't the right option to solve the issue. Luckily, it is also possible to add one of the MVVM behaviors via code to any control or window.</p>
+<p>Below is the code-behind of a view that adds the <em>UserControlBehavior</em> via code:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+public partial class DynamicBehaviorView : UserControl, IViewModelContainer
+{
+   private Catel.Windows.Controls.MVVMProviders.UserControlBehavior _mvvmBehavior;
+   
+   /// &lt;summary&gt;
+   /// Initializes a new instance of the &lt;see cref=&quot;DynamicBehaviorView&quot;/&gt; class.
+   /// &lt;/summary&gt;
+   public DynamicBehaviorView()
+   {
+      InitializeComponent();
+      _mvvmBehavior = new Catel.Windows.Controls.MVVMProviders.UserControlBehavior();
+      _mvvmBehavior.ViewModelType = typeof(ViewModels.MyViewModel);
+      System.Windows.Interactivity.Interaction.GetBehaviors(this).Add(_mvvmBehavior);
+      _mvvmBehavior.ViewModelChanged += (sender, e) =&gt; ViewModelChanged.SafeInvoke(this, e);
+      _mvvmBehavior.ViewModelPropertyChanged += (sender, e) =&gt; ViewModelPropertyChanged.SafeInvoke(this, e);
+   }
+
+   /// &lt;summary&gt;
+   /// Gets the view model that is contained by the container.
+   /// &lt;/summary&gt;
+   /// &lt;value&gt;The view model.&lt;/value&gt;
+   public IViewModel ViewModel
+   {
+      get { return _mvvmBehavior.ViewModel; }
+   }
+
+   /// &lt;summary&gt;
+   /// Occurs when the &lt;see cref=&quot;ViewModel&quot;/&gt; property has changed.
+   /// &lt;/summary&gt;
+   public event EventHandler&lt;EventArgs&gt; ViewModelChanged;
+
+   /// &lt;summary&gt;
+   /// Occurs when a property on the &lt;see cref=&quot;ViewModel&quot;/&gt; has changed.
+   /// &lt;/summary&gt;
+   public event EventHandler&lt;PropertyChangedEventArgs&gt; ViewModelPropertyChanged;
+
+#if !SILVERLIGHT
+   /// &lt;summary&gt;
+   /// Occurs when a property on the container has changed.
+   /// &lt;/summary&gt;
+   /// &lt;remarks&gt;
+   /// This event makes it possible to externally subscribe to property changes of a &lt;see cref=&quot;DependencyObject&quot;/&gt;
+   /// (mostly the container of a view model) because the .NET Framework does not allows us to.
+   /// &lt;/remarks&gt;
+   public event EventHandler&lt;PropertyChangedEventArgs&gt; PropertyChanged;
+   
+   /// &lt;summary&gt;
+   /// Invoked whenever the effective value of any dependency property on this &lt;see cref=&quot;T:System.Windows.FrameworkElement&quot;/&gt; has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides &lt;see cref=&quot;M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)&quot;/&gt;.
+   /// &lt;/summary&gt;
+   /// &lt;param name=&quot;e&quot;&gt;The event data that describes the property that changed, as well as old and new values.&lt;/param&gt;
+   protected override void OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs e)
+   {
+      base.OnPropertyChanged(e);
+      PropertyChanged.SafeInvoke(this, new PropertyChangedEventArgs(e.Property.Name));
+   }         
+#endif      
+}
+</pre><p>Using this technique, it is even possible to determine the view model of any view dynamically at runtime.</p>
+<h3 id="how-can-i-inject-or-manipulate-the-view-model-of-a-usercontrol">How can I inject or manipulate the view model of a UserControl?<a class="headerlink" href="#how-can-i-inject-or-manipulate-the-view-model-of-a-usercontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <em>UserControl</em> is a very powerful control. It allows lazy loaded dynamic view model construction. However, sometimes you just don't want the user control to dynamically create the view model. Luckily, the user control instantiates a new view model with this logic:</p>
+<ol>
+<li>The <em>DataContext</em> of the control can be injected into a constructor of the view model</li>
+<li>The view model has an empty constructor</li>
+</ol>
+<p> You can set the DataContext of the control to a view model, and this way &quot;inject&quot; a view model into a control instead of letting it be created first. In fact, the user control first checks whether the DataContext is already a valid view model for the user control. If so, it keeps it that way.</p>
+<h3 id="how-can-i-prevent-validation-of-required-fields">How can I prevent validation of required fields?<a class="headerlink" href="#how-can-i-prevent-validation-of-required-fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+Validate(true, false);
+</pre><p>If the validation is implemented in the models and not in the view model, set the <em>ValidateModelsOnInitialization</em> to false.</p>
+<p> </p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>

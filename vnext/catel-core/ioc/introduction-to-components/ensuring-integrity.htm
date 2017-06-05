@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ensuring integrity of the ServiceLocator - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/index.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/index.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/index.htm">Catel.Core</a></span></li>
+
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/apicop/index.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/caching/index.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/configuration/index.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/data-handling/index.htm">Data handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/exception-handling/index.htm">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/ioc/index.htm">IoC (ServiceLocator & TypeFactory)</a></span></li>
+
+<li class="tocentry"><a href="../../../catel-core/ioc/dependency-injection.htm">Dependency injection</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/ioc/introduction-to-components/index.htm">Introduction to IoC components</a></span></li>
+
+<li class="tocentry"><a href="../../../catel-core/ioc/introduction-to-components/servicelocator.htm">ServiceLocator</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/ioc/introduction-to-components/typefactory.htm">TypeFactory</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/ioc/introduction-to-components/dependencyresolver.htm">DependencyResolver & DependencyResolverManager</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../catel-core/ioc/introduction-to-components/ensuring-integrity.htm">Ensuring integrity of the ServiceLocator</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#attachments">Attachments:</a></li>
+</ul>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/ioc/automatic-type-registration/index.htm">Automatic type registration</a></span>
+</li>
+<li class="tocentry"><a href="../../../catel-core/ioc/setting-up-using-configuration.htm">Setting up the ServiceLocator using configuration</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/ioc/replacing-default-components.htm">Replacing the default components</a>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/logging/index.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/messaging/index.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/multilingual/index.htm">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/parallel-invocation-tasks/index.htm">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/pooling/index.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/preventing-memory-leaks/index.htm">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/reflection/index.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/scoping/index.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/serialization/index.htm">Serialization</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/validation/index.htm">Validation</a></span>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../catel-core/ioc/index.htm">IoC (ServiceLocator & TypeFactory)</a></li> / <li><a href="../../../catel-core/ioc/introduction-to-components/index.htm">Introduction to IoC components</a></li> / <li><a href="../../../catel-core/ioc/introduction-to-components/ensuring-integrity.htm">Ensuring integrity of the ServiceLocator</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="ensuring-integrity-of-the-servicelocator">Ensuring integrity of the ServiceLocator<a class="headerlink" href="#ensuring-integrity-of-the-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Starting with Catel 3.6, a very useful feature has been added to the <em>ServiceLocator</em> and <em>TypeFactory</em>. This features is called &quot;integrity checker&quot; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming. To make the example a bit more simple, below are a few classes which demonstrate a common issue in enterprises.</p>
+<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
+public class X
+{
+    public X(Y y) { }
+}
+
+public class Y
+{
+    public Y(Z z) { }
+}
+
+public class Z
+{
+    public Z(X x) { }
+}
+</pre><p>Note how a round-trip of dependencies is created which will result in a <em>StackOverflowException</em> somewhere in your code. Below is a graphical example what happens. Note that the dotted line is showing the circular dependency causing the StackOverflowException.</p>
+<p>(function(){ var data = { &quot;addon_key&quot;:&quot;com.gliffy.integration.confluence&quot;, &quot;uniqueKey&quot;:&quot;com.gliffy.integration.confluence__gliffy7353989362525653109&quot;, &quot;key&quot;:&quot;gliffy&quot;, &quot;cp&quot;:&quot;/wiki&quot;, &quot;uid&quot;:&quot;geertvanhorrik&quot;, &quot;ukey&quot;:&quot;ff8080813fbbb3f4013fbbb4d3710003&quot;, &quot;general&quot;:&quot;&quot;, &quot;w&quot;:&quot;&quot;, &quot;h&quot;:&quot;&quot;, &quot;url&quot;:&quot;https://confluence-connect.gliffy.net/macro/render?space=CTL&amp;container=3440652&amp;pageId=&amp;name=StackOverflowExample&amp;attachmentId=&amp;imageAttachmentId=&amp;border=&amp;chrome=&amp;html5=&amp;size=&amp;ceoId=&amp;contentPropertiesId=&amp;spaceKey=&amp;version=&amp;migration=&amp;previewPageId=&amp;tz=Europe%2FBerlin&amp;loc=en-GB&amp;user_id=geertvanhorrik&amp;user_key=ff8080813fbbb3f4013fbbb4d3710003&amp;xdm_e=https%3A%2F%2Fcatelproject.atlassian.net&amp;xdm_c=channel-com.gliffy.integration.confluence__gliffy7353989362525653109&amp;cp=%2Fwiki&amp;xdm_deprecated_addon_key_do_not_use=com.gliffy.integration.confluence&amp;lic=active&amp;cv=1.3.35&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmZjgwODA4MTNmYmJiM2Y0MDEzZmJiYjRkMzcxMDAwMyIsInFzaCI6ImQ2OWQ2MTJjYTAzZTljNDdlMTdiMzA2ZDMyZWY4YjljY2ZjYzQ5NGVlZDQ1Y2ViMDBhMTQyNDlhNDQzYzU5OTAiLCJpc3MiOiJDb25mbHVlbmNlOjEzNTU4NjE0MDgiLCJjb250ZXh0Ijp7InVzZXIiOnsidXNlcktleSI6ImZmODA4MDgxM2ZiYmIzZjQwMTNmYmJiNGQzNzEwMDAzIiwidXNlcm5hbWUiOiJnZWVydHZhbmhvcnJpayIsImRpc3BsYXlOYW1lIjoiR2VlcnQgdmFuIEhvcnJpayJ9fSwiZXhwIjoxNDk2NDgwMDE3LCJpYXQiOjE0OTY0Nzk4Mzd9.FsWzZWpeUeHvO8Y4h03kYGznD2_b32HlkE-rvcj1uJU&quot;, &quot;contentClassifier&quot;:&quot;content&quot;, &quot;productCtx&quot;:&quot;{\&quot;macro.hash\&quot;:\&quot;\&quot;,\&quot;page.id\&quot;:\&quot;3440652\&quot;,\&quot;space.key\&quot;:\&quot;CTL\&quot;,\&quot;user.id\&quot;:\&quot;geertvanhorrik\&quot;,\&quot;page.type\&quot;:\&quot;page\&quot;,\&quot;page.title\&quot;:\&quot;Ensuring integrity of the ServiceLocator\&quot;,\&quot;macro.body\&quot;:\&quot;\&quot;,\&quot;: = | RAW | = :\&quot;:\&quot;name=StackOverflowExample\&quot;,\&quot;space.id\&quot;:\&quot;917505\&quot;,\&quot;macro.truncated\&quot;:\&quot;false\&quot;,\&quot;output.type\&quot;:\&quot;html_export\&quot;,\&quot;page.version\&quot;:\&quot;13\&quot;,\&quot;user.key\&quot;:\&quot;ff8080813fbbb3f4013fbbb4d3710003\&quot;,\&quot;name\&quot;:\&quot;StackOverflowExample\&quot;,\&quot;macro.id\&quot;:\&quot;\&quot;}&quot;, &quot;timeZone&quot;:&quot;Europe/Berlin&quot;, &quot;origin&quot;:&quot;https://confluence-connect.gliffy.net&quot;, &quot;hostOrigin&quot;:&quot;https://catelproject.atlassian.net&quot; }; if(window.AP &amp;&amp; window.AP.subCreate) { window._AP.appendConnectAddon(data); } else { require(['ac/create'], function(create){ create.appendConnectAddon(data); }); } }());</p>
+<h1 id="typerequestinfo">TypeRequestInfo<a class="headerlink" href="#typerequestinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>The first step for the integrity checker is to make sure that it knows what types are being requested from the <em>ServiceLocator</em> (which will be instantiated by the <em>TypeFactory</em> if required). This class contains all the information about a type being created by the <em>TypeFactory:</em></p>
+<ul>
+<li>Type</li>
+<li>Tag (optional, can be used to differentiate different instances of the same type registration)</li>
+</ul>
+<h1 id="typerequestpath">TypeRequestPath<a class="headerlink" href="#typerequestpath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Now we have detailed information about the types being constructed, it is very important to keep track of the types which are being created by the <em>TypeFactory</em>. During the construction of a type, the <em>TypeFactory</em> will request the <em>ServiceLocator</em> for a type, which will ask the <em>TypeFactory</em> to construct the type again. Each time the <em>TypeFactory</em> starts constructing a type (and currently has a <em>TypeRequestPath</em>), it will create a new instance of the <em>TypeRequestInfo</em> and add it to the <em>TypeRequestPath</em>. The diagram below shows how the <em>TypeRequestPath</em> will evolve.</p>
+<p>Once the <em>TypeRequestPath</em> will contain a duplicate instance of a <em>TypeRequestInfo</em>, it will become invalid (which means there is a circular type dependency).</p>
+<p>Note that this is a very simple example, but normally a type will have several services injected which can have dependencies on their own as well which can cause a very complex type request path</p>
+<h1 id="checking-the-integrity-of-the-type-request">Checking the integrity of the type request<a class="headerlink" href="#checking-the-integrity-of-the-type-request" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>To resolve and construct a type, a lot of communication will happen between the <em>TypeFactory</em> and the <em>ServiceLocator</em>. This flow is show in the diagram below.</p>
+<p>As you can see, there is a lot of communication between the <em>ServiceLocator</em> and <em>TypeFactory</em>. In the <em>TypeRequestPath</em> example we already saw how the path will become invalid when it contains a duplicate instance of the <em>TypeRequestInfo</em>. The <em>TypeRequestPath</em> will then throw a <em>CircularDependencyException</em> with all the necessary information to solve the issue:</p>
+<p><img src="attachments/3440652/3702808.png" /></p>
+<p>Now you will find the issue in no-time and save yourself a lot of your valuable time!</p>
+<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702787">StackOverflowExample</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702788.png">StackOverflowExample.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702789">StackOverflowExample</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702790.png">StackOverflowExample.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702785">StackOverflowExample</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702786.png">StackOverflowExample.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702793">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702794.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702795">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702796.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702797">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702798.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702791">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702792.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702805">Evolving of the TypeRequestPath</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702806.png">Evolving of the TypeRequestPath.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702803.png">accept.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702804.png">exclamation.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702799">Evolving of the TypeRequestPath</a> (application/gliffy+json)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702800.png">Evolving of the TypeRequestPath.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702808.png">image2013-4-12 0:8:3.png</a> (image/png)</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

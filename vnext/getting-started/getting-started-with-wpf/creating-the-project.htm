@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creating the project - Catel documentation</title>
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/index.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../faq/index.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/index.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/index.htm">Getting started</a></span></li>
+
+<li class="tocentry"><a href="../../getting-started/quick-introduction-for-developers.htm">Quick introduction for developers</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/getting-started-with-wpf/index.htm">Getting started with WPF</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../getting-started/getting-started-with-xamarin-forms/index.htm">Getting started with Xamarin Forms</a></span></li>
+
+<li class="tocentry current"><a class="current" href="../../getting-started/getting-started-with-wpf/creating-the-project.htm">Creating the project</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#attachments">Attachments:</a></li>
+</ul>
+</ul>
+</li>
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/index.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../Home.htm">Home</a></li> / <li><a href="../../getting-started/index.htm">Getting started</a></li> / <li><a href="../../getting-started/getting-started-with-xamarin-forms/index.htm">Getting started with Xamarin Forms</a></li> / <li><a href="../../getting-started/getting-started-with-wpf/creating-the-project.htm">Creating the project</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="creating-the-wpf-project">Creating the WPF project<a class="headerlink" href="#creating-the-wpf-project" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>In this step we will create the project and add the relevant NuGet packages.</p>
+<ul>
+<li><a href="#CreatingtheWPFproject-Creatingtheproject">Creating the project</a></li>
+<li><a href="#CreatingtheWPFproject-AddingtheNuGetpackages">Adding the NuGet packages</a></li>
+<li><a href="#CreatingtheWPFproject-Runningtheproject">Running the project</a></li>
+<li><a href="#CreatingtheWPFproject-Explanationoftheprojectstructure">Explanation of the project structure</a></li>
+<li><a href="#CreatingtheWPFproject-Upnext">Up next</a></li>
+</ul>
+<p>This guide uses the on-line templates that are available in the Visual Studio gallery. If you can't find the templates on-line, please download them <a href="http://www.catelproject.com/download/general-files/" target="_blank">here</a>.</p>
+<h1 id="creating-the-project">Creating the project<a class="headerlink" href="#creating-the-project" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>To create the project, start Visual Studio and choose <em>File =&gt; New Project</em>... Then switch to the <em>on-line template section</em> as you can see in the screenshot below and search for Catel:</p>
+<p><img src="attachments/15630349/16318467.png" /></p>
+<p>Pick a good name, in our case <em>WPF.GettingStarted</em> and click OK. The template will now be downloaded and the project will be created.</p>
+<h1 id="adding-the-nuget-packages">Adding the NuGet packages<a class="headerlink" href="#adding-the-nuget-packages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>As soon as the project is created, the <em>Readme.txt</em> will be opened and instruct your what to do. Right-click on the solution =&gt; *Manage NuGet packages... *Then search for <em>Catel.Extensions.Controls</em> and click <em>Install</em>.</p>
+<p><img src="attachments/15630349/16318468.png" /></p>
+<h1 id="running-the-project">Running the project<a class="headerlink" href="#running-the-project" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Now the NuGet packages are installed, the project is created and can be built. The basics are created and the application is ready:</p>
+<p><img src="attachments/15630349/16318469.png" /></p>
+<h1 id="explanation-of-the-project-structure">Explanation of the project structure<a class="headerlink" href="#explanation-of-the-project-structure" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>The project template creates the project structure that fits best with Catel. Below is an explanation of the new project structure:</p>
+<p><img src="attachments/15630349/16318470.png" /></p>
+<p>The <em>ViewModels</em> folder contains the <em>MainWindowViewModel</em>, which contains the logic for the interaction with the <em>MainWindow</em> view.</p>
+<p>The <em>Views</em> folder contains the <em>MainWindow</em>, which represents the actual view.</p>
+<p>This structure ties to how Catel implements viewmodel location. You do not however have to follow this structure and could for example decide to place both the View and ViewModel under the same namespace/folder and implement a custom IViewModelLocator.</p>
+<h1 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p><a href="Creating_the_models">Creating the models</a></p>
+<p> </p>
+<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318465.png">image2013-11-8 14:9:0.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318466.png">image2013-11-8 14:9:32.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318467.png">image2013-11-8 14:10:46.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318468.png">image2013-11-8 14:41:5.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318469.png">image2013-11-8 14:44:7.png</a> (image/png)
+ <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630349/16318470.png">image2013-11-8 14:48:11.png</a> (image/png)</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
