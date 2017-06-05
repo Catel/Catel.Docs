@@ -61,7 +61,7 @@ AppDomain.Current.PreloadAssemblies(directory);
 
 ### Warming up the serializers
 
-To improve performance for serialization, [warm up the serializers](https://catelproject.atlassian.net/wiki/display/CTL/Introduction+to+serialization#Introductiontoserialization-Warmingupserialization).
+To improve performance for serialization, [warm up the serializers](../catel-core/serialization/introduction.md).
 
 ## MVVM
 

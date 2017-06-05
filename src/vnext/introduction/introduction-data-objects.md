@@ -19,7 +19,7 @@ Very basic class implementing the System.ComponentModel.INotifyPropertyChanging 
 
 ## The ModelBase class
 
-The [*ModelBase* ](https://catelproject.atlassian.net/wiki/display/CTL/ModelBase)(previously known as the *DataObjectBase)* class is a generic base class that can be used for all your data classes. This comes fully supporting serialization, property changed notifications, backwards compatibility and error checking.
+The [*ModelBase* ](../catel-core/data-handling/modelbase.md)(previously known as the *DataObjectBase)* class is a generic base class that can be used for all your data classes. This comes fully supporting serialization, property changed notifications, backwards compatibility and error checking.
 
 ## Creating your first data object
 

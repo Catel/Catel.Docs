@@ -98,6 +98,10 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Serialization.htm">Serialization</a></span></li>
 <li class="tocentry current"><a class="current" href="../../catel-core/serialization/introduction.htm">Introduction</a>
 <ul class="currentrelative">
+<li class="tocentry"><a href="#serialization-modes">Serialization modes</a></li>
+<li class="tocentry"><a href="#serializing-a-model">Serializing a model</a></li>
+<li class="tocentry"><a href="#warming-up-serialization">Warming up serialization</a></li>
+<li class="tocentry"><a href="#backwards-compatibility-for-binary-serialization">Backwards compatibility for binary serialization</a></li>
 <li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../catel-core/serialization/specifying-what-gets-serialized.htm">Specifying what gets serialized</a>
@@ -150,20 +154,7 @@
                 <div role="main">
                     <div class="section">
 <h1 id="introduction-to-serialization">Introduction to serialization<a class="headerlink" href="#introduction-to-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<ul>
-<li><a href="#Introductiontoserialization-Serializationmodes">Serialization modes</a></li>
-<li><a href="#Introductiontoserialization-Serializingamodel">Serializing a model</a></li>
-<li>
-<a href="#Introductiontoserialization-Warmingupserialization">Warming up serialization</a>
-<ul>
-<li><a href="#Introductiontoserialization-Warmingupspecifictypes">Warming up specific types</a></li>
-<li><a href="#Introductiontoserialization-Warmingupautomatically">Warming up automatically</a></li>
-<li><a href="#Introductiontoserialization-Warmingupusingmultiplethreads">Warming up using multiple threads</a></li>
-</ul>
-</li>
-<li><a href="#Introductiontoserialization-Backwardscompatibilityforbinaryserialization">Backwards compatibility for binary serialization</a></li>
-</ul>
-<h1 id="serialization-modes">Serialization modes<a class="headerlink" href="#serialization-modes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="serialization-modes">Serialization modes<a class="headerlink" href="#serialization-modes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Depending on the target framework, several options are available as serialization modes:</p>
 <p>Serialization mode</p>
 <p>WPF</p>
@@ -202,7 +193,7 @@
 <p><img src="attachments/2359393/2621500.png" /></p>
 <p> </p>
 <p>Note that it is possible to implement custom serialization techniques or <a href="Customizing_serialization">customize the serialization</a></p>
-<h1 id="serializing-a-model">Serializing a model<a class="headerlink" href="#serializing-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="serializing-a-model">Serializing a model<a class="headerlink" href="#serializing-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The code below shows how to save an object (which can, of course, be a complex graph of nested objects):</p>
 <pre class="nocode">var myObject = new MyObject();
  
@@ -219,7 +210,7 @@ using (var fileStream = File.Open(@&quot;C:\myobject.dob&quot;, FileMode.Open))
     myObject = ModelBase.Load&lt;MyObject&gt;(fileStream, SerializationMode.Xml);    
 }
 </pre><p>Note that for a model to support the <em>Save</em> and <em>Load</em> methods, it must derive from <em>SavableModelBase</em></p>
-<h1 id="warming-up-serialization">Warming up serialization<a class="headerlink" href="#warming-up-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h2 id="warming-up-serialization">Warming up serialization<a class="headerlink" href="#warming-up-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The first time a serializer needs to serialize an object, it needs to perform some reflection to gather all the required information. This can have a negative impact on performance for the end-user during serialization. This load cannot be prevented, but it is possible to warmup the serializer at any time when it is convenient (for example, during startup of the application).</p>
 <h3 id="warming-up-specific-types">Warming up specific types<a class="headerlink" href="#warming-up-specific-types" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This code will warm up all the specified types:</p>
@@ -243,7 +234,7 @@ binarySerialzier.Warmup();
 <p>The code example below shows how to initialize all types deriving from <em>ModelBase</em> on a single thread:</p>
 <pre class="nocode">var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerialzier.Warmup(null, -1);
-</pre><h1 id="backwards-compatibility-for-binary-serialization">Backwards compatibility for binary serialization<a class="headerlink" href="#backwards-compatibility-for-binary-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+</pre><h2 id="backwards-compatibility-for-binary-serialization">Backwards compatibility for binary serialization<a class="headerlink" href="#backwards-compatibility-for-binary-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>This example shows how an “old” (standard .NET) data class that uses custom binary serialization can easily be converted to a <em>ModelBase</em> to use the <em>ModelBase</em> even for all your existing classes.</p>
 <p>Declare a new <em>ModelBase</em> class (remember the <em>‘dataobject’</em> code snippet). If the new class is in a new assembly, or has a new name or namespace, use the <em>RedirectType</em> attribute to let the <em>ModelBase</em> know that when it finds the old type, it should deserialize that type into the new type.</p>
 <p>Then, by default, the <em>ModelBase</em> class will try to deserialize the old object. If it fails to do so, it will fall back on the default values provided by the property declarations. However, it is also possible to override the <em>GetDataFromSerializationInfo</em> method:</p>

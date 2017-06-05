@@ -54,7 +54,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstN
 
 Catel will automatically take care of change notifications.
 
-Note that you can use the *modelprop* or *vmprop* to easily create these properties using code snippets. You can also use [Catel.Fody](#) instead
+Note that you can use the *modelprop* or *vmprop* to easily create these properties using code snippets. You can also use [Catel.Fody](../catel-fody/) instead
 
 ## MVVM
 
@@ -84,7 +84,7 @@ Note that Catel is already fully aware of parent/child relations of view model
 
 ### Communication between view models
 
-There are [several methods](https://catelproject.atlassian.net/wiki/display/CTL/Creating+a+view+model+that+watches+over+other+view+models) available to communicate between view models. Just make sure that you never directly reference other view model and keep everything loosely coupled.
+There are [several methods](../catel-mvvm/view-models/creating-view-model-that-watches-over-other-view-models.md) available to communicate between view models. Just make sure that you never directly reference other view model and keep everything loosely coupled.
 
 ### Resolving views and view models
 

@@ -2,22 +2,6 @@
 
 Catel is available on a lot of platforms.
 
--   [Introducing "true PCL"](#Supportformultipleplatforms-Introducing"truePCL")
-    -   [Xaml](#Supportformultipleplatforms-Xaml)
-    -   [Android](#Supportformultipleplatforms-Android)
-    -   [iOS](#Supportformultipleplatforms-iOS)
--   [Platform support by component](#Supportformultipleplatforms-Platformsupportbycomponent)
--   [Fundamental differences](#Supportformultipleplatforms-Fundamentaldifferences)
-
-For a list of caveats per platform, check out the following links:
-
--   [Caveats in WPF](/wiki/display/CTL/Caveats+in+WPF)
--   [Caveats in Silverlight](/wiki/display/CTL/Caveats+in+Silverlight)
--   [Caveats in Windows Phone](/wiki/display/CTL/Caveats+in+Windows+Phone)
--   [Caveats in Windows RT](/wiki/display/CTL/Caveats+in+Windows+RT)
--   [Caveats in Android](/wiki/display/CTL/Caveats+in+Android)
--   [Caveats in iOS](/wiki/display/CTL/Caveats+in+iOS)
-
 ## Introducing "true PCL"
 
 Portable Class Libraries (PCL) is a technique where developers can develop a single assembly that can be used by multiple platforms. The reason the team decided not to use PCL is that it brings in too many limitations. We wanted to provide the developer all the possibilities of the platform they are developing in, not the “least platform supported”.

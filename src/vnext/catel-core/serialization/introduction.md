@@ -1,14 +1,6 @@
 # Introduction to serialization
 
--   [Serialization modes](#Introductiontoserialization-Serializationmodes)
--   [Serializing a model](#Introductiontoserialization-Serializingamodel)
--   [Warming up serialization](#Introductiontoserialization-Warmingupserialization)
-    -   [Warming up specific types](#Introductiontoserialization-Warmingupspecifictypes)
-    -   [Warming up automatically](#Introductiontoserialization-Warmingupautomatically)
-    -   [Warming up using multiple threads](#Introductiontoserialization-Warmingupusingmultiplethreads)
--   [Backwards compatibility for binary serialization](#Introductiontoserialization-Backwardscompatibilityforbinaryserialization)
-
-# Serialization modes
+## Serialization modes
 
 Depending on the target framework, several options are available as serialization modes:
 
@@ -86,7 +78,7 @@ XML
 
 Note that it is possible to implement custom serialization techniques or [customize the serialization](Customizing_serialization)
 
-# Serializing a model
+## Serializing a model
 
 The code below shows how to save an object (which can, of course, be a complex graph of nested objects):
 
@@ -114,7 +106,7 @@ using (var fileStream = File.Open(@"C:\myobject.dob", FileMode.Open))
 
 Note that for a model to support the *Save* and *Load* methods, it must derive from *SavableModelBase*
 
-# Warming up serialization
+## Warming up serialization
 
 The first time a serializer needs to serialize an object, it needs to perform some reflection to gather all the required information. This can have a negative impact on performance for the end-user during serialization. This load cannot be prevented, but it is possible to warmup the serializer at any time when it is convenient (for example, during startup of the application).
 
@@ -157,7 +149,7 @@ var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerialzier.Warmup(null, -1);
 ```
 
-# Backwards compatibility for binary serialization
+## Backwards compatibility for binary serialization
 
 This example shows how an “old” (standard .NET) data class that uses custom binary serialization can easily be converted to a *ModelBase* to use the *ModelBase* even for all your existing classes.
 

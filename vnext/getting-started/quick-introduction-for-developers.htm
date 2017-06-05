@@ -128,7 +128,7 @@ public string FirstName
 
 public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string), null);
 </pre><p>Catel will automatically take care of change notifications.</p>
-<p>Note that you can use the <em>modelprop</em> or <em>vmprop</em> to easily create these properties using code snippets. You can also use <a href="#">Catel.Fody</a> instead</p>
+<p>Note that you can use the <em>modelprop</em> or <em>vmprop</em> to easily create these properties using code snippets. You can also use <a href="../catel-fody/">Catel.Fody</a> instead</p>
 <h2 id="mvvm">MVVM<a class="headerlink" href="#mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>This part is especially meant for the MVVM part.</p>
 <h3 id="handling-of-viewmodels">Handling of viewmodels<a class="headerlink" href="#handling-of-viewmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -142,7 +142,7 @@ view.DataContext = new PersonViewModel();
 <h3 id="handling-hierarchy-and-parentchild-view-models">Handling hierarchy and parent/child view models<a class="headerlink" href="#handling-hierarchy-and-parentchild-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Note that Catel is already fully aware of parent/child relations of view models so you don’t have to do anything for this yourself. For more information, read nested user controls.</p>
 <h3 id="communication-between-view-models">Communication between view models<a class="headerlink" href="#communication-between-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>There are <a href="https://catelproject.atlassian.net/wiki/display/CTL/Creating+a+view+model+that+watches+over+other+view+models" target="_blank">several methods</a> available to communicate between view models. Just make sure that you never directly reference other view model and keep everything loosely coupled.</p>
+<p>There are <a href="../catel-mvvm/view-models/creating-view-model-that-watches-over-other-view-models.htm">several methods</a> available to communicate between view models. Just make sure that you never directly reference other view model and keep everything loosely coupled.</p>
 <h3 id="resolving-views-and-view-models">Resolving views and view models<a class="headerlink" href="#resolving-views-and-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Catel resolves views and view models by naming convention. This means that based on the name of a view, the view model can be determined. This also works the other way around where the view model can be determined based on the view. For more information, read about <a href="https://catelproject.atlassian.net/wiki/display/CTL/Locators+and+naming+conventions" target="_blank">naming conventions</a>.</p>
 
