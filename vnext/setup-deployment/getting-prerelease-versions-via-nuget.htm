@@ -44,7 +44,6 @@
 <li class="tocentry"><a href="#adding-the-custom-package-source">Adding the custom package source</a></li>
 <li class="tocentry"><a href="#installing-via-package-manager">Installing via package manager</a></li>
 <li class="tocentry"><a href="#installing-viapackage-manager-console">Installing via package manager console</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../setup-deployment/stepping-through-the-code.htm">Stepping through the code</a>
 </li>
@@ -101,14 +100,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="getting-prerelease-beta-versions-via-nuget">Getting prerelease (beta) versions via NuGet<a class="headerlink" href="#getting-prerelease-beta-versions-via-nuget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<ul>
-<li><a href="#Gettingprerelease(beta)versionsviaNuGet-Addingthecustompackagesource">Adding the custom package source</a></li>
-<li><a href="#Gettingprerelease(beta)versionsviaNuGet-Installingviapackagemanager">Installing via package manager</a></li>
-<li><a href="#Gettingprerelease(beta)versionsviaNuGet-Installingviapackagemanagerconsole">Installing via package manager console</a></li>
-</ul>
 <h2 id="adding-the-custom-package-source">Adding the custom package source<a class="headerlink" href="#adding-the-custom-package-source" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Starting with Catel v5, the alpha prereleases are only available on the <a href="https://www.myget.org/feed/Packages/catel" target="_blank">MyGet feed for Catel</a>. Therefore you must first add the custom url to the NuGet Package Manager. The easiest way to do this is via Visual Studio.</p>
-<ol>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Starting with Catel v5, the alpha prereleases are only available on the <a href="https://www.myget.org/feed/Packages/catel" target="_blank">MyGet feed for Catel</a>. Therefore you must first add the custom url to the NuGet Package Manager. The easiest way to do this is via Visual Studio.</p>
+</div><ol>
 <li>Go to <em>Tools</em> =&gt; <em>NuGet Package Manager</em> =&gt; <em>Package Manager Settings</em></li>
 <li>Select <em>Package Sources</em></li>
 <li>
@@ -119,7 +113,7 @@ Source: <a href="https://www.myget.org/F/catel/api/v3/index.json" target="_blank
 </ol>
 <h2 id="installing-via-package-manager">Installing via package manager<a class="headerlink" href="#installing-via-package-manager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Please make sure to select the same settings as in the screenshow below:</p>
-<p><img src="attachments/622628/5013505.png" /></p>
+<p><img src="../images/setup-deployment/getting-prerelease-versions-via-nuget/nuget.png" width="900" height="600" /></p>
 <h2 id="installing-viapackage-manager-console">Installing via package manager console<a class="headerlink" href="#installing-viapackage-manager-console" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>This example installs Catel.Extensions.Controls as a package. However, to install other packages simple change the ID (name) of the package.</p>
 <p><strong>Installing the latest beta</strong></p>
@@ -132,9 +126,7 @@ Source: <a href="https://www.myget.org/F/catel/api/v3/index.json" target="_blank
 <pre class="nocode">Update-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
 </pre><p><strong>Updating to the latest stable version</strong></p>
 <pre class="nocode">Update-Package Catel.Extensions.Controls
-</pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/622628/5013505.png">image2013-5-3 22:42:34.png</a> (image/png)</p>
-
+</pre>
                     </div>
                 </div>
                 <footer>

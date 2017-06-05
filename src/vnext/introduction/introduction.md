@@ -2,7 +2,9 @@
 
 Welcome to the introduction of Catel. Catel is a  framework (or enterprise library, just use whatever you like) with data handling, diagnostics, logging, WPF controls, and an MVVM-framework. So Catel is more than "just" another MVVM-framework or some nice Extension Methods that can be used. It's more like a library that you want to include in all the XAML applications you are going to develop in the near future.
 
-Note that Catel is primarily meant for Line of Business (LoB) applications
+@alert info
+Catel is primarily meant for Line of Business (LoB) applications
+@end
 
 It's important to realize that Catel is not just another Extension Methods library, nor only an MVVM-framework, but it is a combination of basic data handling, useful controls, and an MVVM-framework.
 
@@ -18,8 +20,8 @@ Then, all other developers of the team he was working on the project got enthusi
 
 Before reading any further, it's important to know why you should use the framework. Below are a few reasons why Catel might be interesting for you:
 
--   Catel is Open-Source. This way, you can customize it any way you want. If you want a new feature request, and the team does not respond fast enough, you can simply implement it yourself.
--   The codebase for Catel is available on GitHub. This way, you have the option to either download the latest stable release, or live on the edge by downloading the latest source code.
--   Catel uses unit tests to make sure that new updates do not break existing functionality.
--   Catel is very well documented. Every method and property has comments, and the comments are available in a separate reference help file. There is also a lot of documentation available, and in the future, in-depth articles will be written.
--   Catel is developed by a group of talented software developers, and is heavily under development. This is a great advantage because the knowledge is not at just one person, but at a whole group. The developers of Catel all have more than three years of development experience with WPF, and are using Catel in real life applications for at least 2 years.
+- Catel is Open-Source. This way, you can customize it any way you want. If you want a new feature request, and the team does not respond fast enough, you can simply implement it yourself.
+- The codebase for Catel is available on GitHub. This way, you have the option to either download the latest stable release, or live on the edge by downloading the latest source code.
+- Catel uses unit tests to make sure that new updates do not break existing functionality.
+- Catel is very well documented. Every method and property has comments, and the comments are available in a separate reference help file. There is also a lot of documentation available, and in the future, in-depth articles will be written.
+- Catel is developed by a group of talented software developers, and is heavily under development. This is a great advantage because the knowledge is not at just one person, but at a whole group. The developers of Catel all have more than three years of development experience with WPF, and are using Catel in real life applications for at least 2 years.

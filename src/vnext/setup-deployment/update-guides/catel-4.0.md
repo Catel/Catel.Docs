@@ -1,6 +1,6 @@
 # Catel 4.0.0
 
-This guide describes how to update your code to be fully compatible with Catel 4.0.0.
+This guide describes how to update your code to be fully compatible with Catel 4.0.
 
 ## Renaming classes
 

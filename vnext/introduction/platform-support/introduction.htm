@@ -42,9 +42,7 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Platformsupport.htm">Platform support</a></span></li>
 <li class="tocentry current"><a class="current" href="../../introduction/platform-support/introduction.htm">Introduction</a>
 <ul class="currentrelative">
-<li class="tocentry"><a href="#introducing-true-pcl">Introducing &quot;true PCL&quot;</a></li>
 <li class="tocentry"><a href="#fundamental-differences">Fundamental differences</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../introduction/platform-support/caveats-in-wpf.htm">Caveats in WPF</a>
 </li>
@@ -114,11 +112,6 @@
                     <div class="section">
 <h1 id="support-for-multiple-platforms">Support for multiple platforms<a class="headerlink" href="#support-for-multiple-platforms" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Catel is available on a lot of platforms.</p>
-<h2 id="introducing-true-pcl">Introducing &quot;true PCL&quot;<a class="headerlink" href="#introducing-true-pcl" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Portable Class Libraries (PCL) is a technique where developers can develop a single assembly that can be used by multiple platforms. The reason the team decided not to use PCL is that it brings in too many limitations. We wanted to provide the developer all the possibilities of the platform they are developing in, not the “least platform supported”.</p>
-<p>As you can see in the diagram below, each platform has its own set of functionality (orange). When using PCL, the functionality will be downgraded to the &quot;least&quot; platform (thus lots of features will be lost). Catel works the other way around by adding features of other platforms. For example, checking for dependency property changed is available on all platforms and works exactly the same for all platforms.</p>
-<p>A great example of the advantages are the services that are provided by Catel. All the platforms that support some sort of GPS functionality have the <em>ILocationService</em> (which is an interface that is platform independent). Each platform (Windows Phone, WinRT, Xamarin, etc) have their own implementation but the developer can use them in exactly the same manner without losing functionality. This means that instead of losing functionality, Catel <strong>adds</strong> functionality by not using PCL but platform dependent assemblies instead.</p>
-<p>Supported platforms</p>
 <h3 id="xaml">Xaml<a class="headerlink" href="#xaml" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <ul>
 <li>WPF 4.5</li>
@@ -136,29 +129,6 @@
 </ul>
 <h2 id="fundamental-differences">Fundamental differences<a class="headerlink" href="#fundamental-differences" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>There are some fundamental differences between platforms (such as Xaml and Android). The table below explains the differences so it is easy to understand for a developer what to use when. Note that all services are defined by interfaces and can be used on all the platforms in the same manner. The platform-specific implementations are hidden as much as possible to keep the view models very re-usable.</p>
-<p>Feature</p>
-<p>Xaml</p>
-<p>Android</p>
-<p>iOS</p>
-<p><strong>Phone pages</strong></p>
-<p><em>PhonePage</em> or <em>Page</em></p>
-<p><em>Activity</em></p>
-<p><strong>TODO</strong></p>
-<p><strong>Nested user controls</strong></p>
-<p><em>UserControl</em></p>
-<p><em>Fragment</em></p>
-<p><strong>TODO</strong></p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509315">True PCL</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509316.png">True PCL.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509317">True PCL</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509318.png">True PCL.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509319">True PCL</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509320.png">True PCL.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509321">True PCL</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509322.png">True PCL.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509313">True PCL</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329668/26509314.png">True PCL.png</a> (image/png)</p>
 
                     </div>
                 </div>

@@ -1,10 +1,10 @@
 # Catel 4.1.0
 
-This guide describes how to update your code to be fully compatible with Catel 4.1.0.
+This guide describes how to update your code to be fully compatible with Catel 4.1.
 
-This guide assumes that you are coming from Catel 4.0.0. If not, please read that guide first.
-
--   [IUIVisualizerService](#Catel4.1.0-IUIVisualizerService)
+@alert important
+This guide assumes that you are coming from Catel 4.0. If not, please read that guide first.
+@end
 
 ## IUIVisualizerService
 

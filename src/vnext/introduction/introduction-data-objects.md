@@ -2,17 +2,6 @@
 
 It is very important to understand the data objects in Catel because they form the base pillar of all components used by the MVVM framework.
 
--   [The ObservableObject class](#Introductiontodataobjects-TheObservableObjectclass)
--   [The ModelBase class](#Introductiontodataobjects-TheModelBaseclass)
--   [Creating your first data object](#Introductiontodataobjects-Creatingyourfirstdataobject)
--   [Declaring properties](#Introductiontodataobjects-Declaringproperties)
-    -   [Simple properties](#Introductiontodataobjects-Simpleproperties)
-    -   [Properties with property change callback](#Introductiontodataobjects-Propertieswithpropertychangecallback)
--   [Adding validation](#Introductiontodataobjects-Addingvalidation)
--   [Saving objects](#Introductiontodataobjects-Savingobjects)
-    -   [Loading an object](#Introductiontodataobjects-Loadinganobject)
-    -   [Saving an object](#Introductiontodataobjects-Savinganobject)
-
 ## The ObservableObject class
 
 Very basic class implementing the System.ComponentModel.INotifyPropertyChanging and T:System.ComponentModel.INotifyPropertyChanged interfaces as well as Catels Catel.Data.IAdvancedNotifyPropertyChanging and Catels Catel.Data.IAdvancedNotifyPropertyChanged.
@@ -111,25 +100,12 @@ This example shows how to declare the simplest property. In this example, a stri
 1.  Open *FirstModel.cs* created in the previous step.
 2.  In the Properties region, use the code snippet *modelprop*, and use the following values:
 
-Code snippet item
-
-Value
-
-description
-
-Gets or sets the simple property
-
-type
-
-string
-
-name
-
-SimpleProperty
-
-defaultvalue
-
-"Simple property"
+Code snippet item|Value
+-----------------|-----------
+description|Gets or sets the simple property
+type|string
+name|SimpleProperty
+defaultvalue|"Simple property"
 
 **Code**
 
@@ -160,25 +136,12 @@ public static readonly PropertyDataSimplePropertyProperty = RegisterProperty("Si
 1.  Open *FirstModel.cs* created in the previous step.
 2.  In the Properties region, use the code snippet *modelpropchanged*, and use the following values:
 
-Code snippet item
-
-Value
-
-description
-
-Gets or sets the callback property
-
-type
-
-string
-
-name
-
-CallbackProperty
-
-defaultvalue
-
-"Callback property"
+Code snippet item|Value
+-----------------|-----
+description|Gets or sets the callback property
+type|string
+name|CallbackProperty
+defaultvalue|"Callback property"
 
 **Code**
 
@@ -245,12 +208,14 @@ After the validation is implemented into the object, the validation will occur e
 
 There are also other ways to add validation to a data object:
 
--    Validation via data annotations - attributes such as the *RequiredAttribute*
--   Validation via *IValidator* - custom validation such as *FluentValidation*
+- Validation via data annotations - attributes such as the *RequiredAttribute*
+- Validation via *IValidator* - custom validation such as *FluentValidation*
 
 The great thing is that Catel will gather all validation results from all different mappings and combine these into the *ValidationContext*. This context can be used to query all sorts of validation info about an object.
 
+@alert info
 Note that this is just an introduction, more information about validation can be found in other parts of the documentation
+@end
 
 ## Saving objects
 
@@ -268,25 +233,12 @@ Saving and loading objects out of the box has never been so easy. *SavableModelB
 3.  Change the base class from *ModelBase* to *SavableModelBase*.
 4.  In the Properties region, use the code snippet *modelprop*, and use the following values:
 
-Code snippet item
-
-Value
-
-description
-
-Gets or sets the name
-
-type
-
-string
-
-name
-
-Name
-
-defaultvalue
-
-"MyName"
+Code snippet item|Value
+-----------------|-----
+description|Gets or sets the name
+type|string
+name|Name
+defaultvalue|"MyName"
 
 **Code**
 

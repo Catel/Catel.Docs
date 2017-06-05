@@ -58,7 +58,6 @@
 <li class="tocentry"><a href="#view-model">View model</a></li>
 <li class="tocentry"><a href="#user-control">User control</a></li>
 <li class="tocentry"><a href="#window">Window</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../setup-deployment/code-snippets-templates/using-the-project-templates.htm">Using the project templates</a>
 </li>
@@ -127,18 +126,15 @@
 <p>The view model is the easiest and smallest item template available. The question is even whether a new view model should be created via an item template or by using the vm code snippet.</p>
 <h2 id="user-control">User control<a class="headerlink" href="#user-control" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The user control templates create a user control deriving from UserControl. First it is very important to make a decision whether the logic should be implemented in the view base or a behavior. Then, select the appropriate template:</p>
-<p><img src="attachments/622646/1015823.png" /></p>
+<p><img src="../../images/setup-deployment/code-snippets-templates/using-the-item-templates/usercontrol.png" width="955" height="582" /></p>
 <p>The item template will assume that a view model with the same name is already created. For example, if a view with the name <em>PersonView</em> is created, the template assumes that the view model name is <em>PersonViewModel</em>. If you prefer a different naming convention, simply change the view model type name after the item has been created.</p>
-<p>Unfortunately, there is a bug in the item templates system of Visual Studio so it is not possible to also set the namespace of the view models to [ProjectRootNamespace].ViewModels, so this has to be done manually</p>
-<h2 id="window">Window<a class="headerlink" href="#window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Unfortunately, there is a bug in the item templates system of Visual Studio so it is not possible to also set the namespace of the view models to [ProjectRootNamespace].ViewModels, so this has to be done manually</p>
+</div><h2 id="window">Window<a class="headerlink" href="#window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The window templates create a window deriving from DataWindow. First it is very important to make a decision whether the logic should be implemented in the view base or a behavior. Then, select the appropriate template:</p>
-<p><img src="attachments/622646/1015824.png" /></p>
+<p><img src="../../images/setup-deployment/code-snippets-templates/using-the-item-templates/window.png" width="955" height="582" /></p>
 <p>The item template will assume that a view model with the same name is already created. For example, if a view with the name PersonView is created, the template assumes that the view model name is PersonViewModel. If you prefer a different naming convention, simply change the view model type name after the item has been created.</p>
-<p>Unfortunately, there is a bug in the item templates system of Visual Studio so it is not possible to also set the namespace of the view models to [ProjectRootNamespace].ViewModels, so this has to be done manually</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/622646/1015823.png">itemtemplates_usercontrol.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/622646/1015824.png">itemtemplates_window.png</a> (image/png)</p>
-
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Unfortunately, there is a bug in the item templates system of Visual Studio so it is not possible to also set the namespace of the view models to [ProjectRootNamespace].ViewModels, so this has to be done manually</p>
+</div>
                     </div>
                 </div>
                 <footer>

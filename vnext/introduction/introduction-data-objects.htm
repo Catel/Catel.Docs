@@ -104,26 +104,6 @@
                     <div class="section">
 <h1 id="introduction-to-data-objects">Introduction to data objects<a class="headerlink" href="#introduction-to-data-objects" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>It is very important to understand the data objects in Catel because they form the base pillar of all components used by the MVVM framework.</p>
-<ul>
-<li><a href="#Introductiontodataobjects-TheObservableObjectclass">The ObservableObject class</a></li>
-<li><a href="#Introductiontodataobjects-TheModelBaseclass">The ModelBase class</a></li>
-<li><a href="#Introductiontodataobjects-Creatingyourfirstdataobject">Creating your first data object</a></li>
-<li>
-<a href="#Introductiontodataobjects-Declaringproperties">Declaring properties</a>
-<ul>
-<li><a href="#Introductiontodataobjects-Simpleproperties">Simple properties</a></li>
-<li><a href="#Introductiontodataobjects-Propertieswithpropertychangecallback">Properties with property change callback</a></li>
-</ul>
-</li>
-<li><a href="#Introductiontodataobjects-Addingvalidation">Adding validation</a></li>
-<li>
-<a href="#Introductiontodataobjects-Savingobjects">Saving objects</a>
-<ul>
-<li><a href="#Introductiontodataobjects-Loadinganobject">Loading an object</a></li>
-<li><a href="#Introductiontodataobjects-Savinganobject">Saving an object</a></li>
-</ul>
-</li>
-</ul>
 <h2 id="the-observableobject-class">The ObservableObject class<a class="headerlink" href="#the-observableobject-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Very basic class implementing the System.ComponentModel.INotifyPropertyChanging and T:System.ComponentModel.INotifyPropertyChanged interfaces as well as Catels Catel.Data.IAdvancedNotifyPropertyChanging and Catels Catel.Data.IAdvancedNotifyPropertyChanged.</p>
 <h2 id="the-modelbase-class">The ModelBase class<a class="headerlink" href="#the-modelbase-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -206,16 +186,32 @@ public class FirstModel : ModelBase
 <li>Open <em>FirstModel.cs</em> created in the previous step.</li>
 <li>In the Properties region, use the code snippet <em>modelprop</em>, and use the following values:</li>
 </ol>
-<p>Code snippet item</p>
-<p>Value</p>
-<p>description</p>
-<p>Gets or sets the simple property</p>
-<p>type</p>
-<p>string</p>
-<p>name</p>
-<p>SimpleProperty</p>
-<p>defaultvalue</p>
-<p>&quot;Simple property&quot;</p>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Code snippet item</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>description</td>
+	<td>Gets or sets the simple property</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>SimpleProperty</td>
+</tr>
+<tr>
+	<td>defaultvalue</td>
+	<td>&quot;Simple property&quot;</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Code</strong></p>
 <pre class="nocode">/// &lt;summary&gt; 
 /// Gets or sets the simple property.
@@ -240,16 +236,32 @@ public static readonly PropertyDataSimplePropertyProperty = RegisterProperty(&qu
 <li>Open <em>FirstModel.cs</em> created in the previous step.</li>
 <li>In the Properties region, use the code snippet <em>modelpropchanged</em>, and use the following values:</li>
 </ol>
-<p>Code snippet item</p>
-<p>Value</p>
-<p>description</p>
-<p>Gets or sets the callback property</p>
-<p>type</p>
-<p>string</p>
-<p>name</p>
-<p>CallbackProperty</p>
-<p>defaultvalue</p>
-<p>&quot;Callback property&quot;</p>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Code snippet item</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>description</td>
+	<td>Gets or sets the callback property</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>CallbackProperty</td>
+</tr>
+<tr>
+	<td>defaultvalue</td>
+	<td>&quot;Callback property&quot;</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Code</strong></p>
 <pre class="nocode">/// &lt;summary&gt; 
 /// Gets or sets the callback property.
@@ -304,12 +316,12 @@ protected override void ValidateBusinessRules(List&lt;BusinessRuleValidationResu
 </pre><p>After the validation is implemented into the object, the validation will occur every time a property on the object changes. It is also possible to manually validate by calling the Validate method.</p>
 <p>There are also other ways to add validation to a data object:</p>
 <ul>
-<li> Validation via data annotations - attributes such as the <em>RequiredAttribute</em></li>
+<li>Validation via data annotations - attributes such as the <em>RequiredAttribute</em></li>
 <li>Validation via <em>IValidator</em> - custom validation such as <em>FluentValidation</em></li>
 </ul>
 <p>The great thing is that Catel will gather all validation results from all different mappings and combine these into the <em>ValidationContext</em>. This context can be used to query all sorts of validation info about an object.</p>
-<p>Note that this is just an introduction, more information about validation can be found in other parts of the documentation</p>
-<h2 id="saving-objects">Saving objects<a class="headerlink" href="#saving-objects" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that this is just an introduction, more information about validation can be found in other parts of the documentation</p>
+</div><h2 id="saving-objects">Saving objects<a class="headerlink" href="#saving-objects" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Saving and loading objects out of the box has never been so easy. <em>SavableModelBase</em> can automatically save/load objects in several ways, such as memory, file in different modes (binary and XML). This example shows that making your objects savable is very easy and does not take any time!</p>
 <p><strong>Code snippets</strong></p>
 <ul>
@@ -323,16 +335,32 @@ protected override void ValidateBusinessRules(List&lt;BusinessRuleValidationResu
 <li>Change the base class from <em>ModelBase</em> to <em>SavableModelBase</em>.</li>
 <li>In the Properties region, use the code snippet <em>modelprop</em>, and use the following values:</li>
 </ol>
-<p>Code snippet item</p>
-<p>Value</p>
-<p>description</p>
-<p>Gets or sets the name</p>
-<p>type</p>
-<p>string</p>
-<p>name</p>
-<p>Name</p>
-<p>defaultvalue</p>
-<p>&quot;MyName&quot;</p>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Code snippet item</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>description</td>
+	<td>Gets or sets the name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>name</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>defaultvalue</td>
+	<td>&quot;MyName&quot;</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Code</strong></p>
 <pre class="nocode">/// &lt;summary&gt; 
 /// Person class which fully supports serialization, property changed notifications,

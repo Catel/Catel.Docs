@@ -7,7 +7,7 @@ For this example, we will have a few requirements:
 -   Be able to add, close and activate tabs via a service
 -   Be able to specify whether a tab can be closed by the end-user
 
-![](attachments/61669389/61669401.gif?width=600)
+![](../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.gif)
 
 ## Creating the model describing a tab item
 
@@ -639,9 +639,6 @@ var selectedTab = _tabService.SelectedTab;
 _tabService.Remove(selectedTab);
 ```
 
-## Attachments:
+## Download example
 
-![](images/icons/bullet_blue.gif) [image2016-2-8 15:5:45.png](attachments/61669389/61669391.png) (image/png)
- ![](images/icons/bullet_blue.gif) [tabbed\_mvvm.gif](attachments/61669389/61669401.gif) (image/gif)
- ![](images/icons/bullet_blue.gif) [CatelSample.rar](attachments/61669389/72515594.rar) (application/octet-stream)
-
+[Download example](../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.rar)

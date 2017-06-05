@@ -2,7 +2,9 @@
 
 For performance reasons, Catel no longer automatically subscribes to the *CommandManager* to invalidate the state (saves a *lot* of CanExecute calls). If you want this behavior back, you can create a custom class that subscribes to the command manager and invalidates the commands for you.
 
+@alert important
 This was removed for a reason (performance), so this is not the recommended approach. But this allows you to get back the old behavior.
+@end
 
 To use this class, instantiate it and register it in the *ServiceLocator* so it stays alive.
 

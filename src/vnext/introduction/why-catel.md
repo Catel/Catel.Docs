@@ -12,7 +12,7 @@ The great thing about this freedom is that the different aspects of Catel can be
 
 Catel offers a solution in the following fields:
 
--   Data handling
--   MVVM
--   And much more which you will find out during the use of Catel!
+- Data handling
+- MVVM
+- And much more which you will find out during the use of Catel!
 

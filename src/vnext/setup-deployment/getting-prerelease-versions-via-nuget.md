@@ -1,12 +1,10 @@
 # Getting prerelease (beta) versions via NuGet
 
--   [Adding the custom package source](#Gettingprerelease(beta)versionsviaNuGet-Addingthecustompackagesource)
--   [Installing via package manager](#Gettingprerelease(beta)versionsviaNuGet-Installingviapackagemanager)
--   [Installing via package manager console](#Gettingprerelease(beta)versionsviaNuGet-Installingviapackagemanagerconsole)
-
 ## Adding the custom package source
 
+@alert important
 Starting with Catel v5, the alpha prereleases are only available on the [MyGet feed for Catel](https://www.myget.org/feed/Packages/catel). Therefore you must first add the custom url to the NuGet Package Manager. The easiest way to do this is via Visual Studio.
+@end
 
 1.  Go to *Tools* =\> *NuGet Package Manager* =\> *Package Manager Settings*
 2.  Select *Package Sources*
@@ -18,7 +16,7 @@ Starting with Catel v5, the alpha prereleases are only available on the [MyGet f
 
 Please make sure to select the same settings as in the screenshow below:
 
-![](attachments/622628/5013505.png)
+![](../images/setup-deployment/getting-prerelease-versions-via-nuget/nuget.png)
 
 ## Installing via package manager console
 
@@ -53,8 +51,3 @@ Update-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-uns
 ```
 Update-Package Catel.Extensions.Controls
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2013-5-3 22:42:34.png](attachments/622628/5013505.png) (image/png)
-

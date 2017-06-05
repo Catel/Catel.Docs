@@ -69,7 +69,7 @@
 <li class="tocentry"><a href="#creating-the-views">Creating the views</a></li>
 <li class="tocentry"><a href="#useful-extension-methods">Useful extension methods</a></li>
 <li class="tocentry"><a href="#using-the-service">Using the service</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
+<li class="tocentry"><a href="#attachments">Attachments</a></li>
 </ul>
 
 </ul>
@@ -109,7 +109,7 @@
 <li>Be able to add, close and activate tabs via a service</li>
 <li>Be able to specify whether a tab can be closed by the end-user</li>
 </ul>
-<p><img src="attachments/61669389/61669401.gif?width=600" /></p>
+<p><img src="../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.gif?width=600" /></p>
 <h2 id="creating-the-model-describing-a-tab-item">Creating the model describing a tab item<a class="headerlink" href="#creating-the-model-describing-a-tab-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>First of all, we need a model describing a tab item so we can interact with a service. We want the tab to be closeable via the service, but also via the view model it is representing.</p>
 <pre class="nocode">public namespace TabDemo
@@ -678,10 +678,8 @@
 <p>This closes the currently active tab:</p>
 <pre class="nocode">var selectedTab = _tabService.SelectedTab;
 _tabService.Remove(selectedTab);
-</pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/61669389/61669391.png">image2016-2-8 15:5:45.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/61669389/61669401.gif">tabbed_mvvm.gif</a> (image/gif)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/61669389/72515594.rar">CatelSample.rar</a> (application/octet-stream)</p>
+</pre><h2 id="attachments">Attachments<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><a href="../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.rar">Example</a></p>
 
                     </div>
                 </div>

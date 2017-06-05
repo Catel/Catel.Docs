@@ -97,8 +97,8 @@
                     <div class="section">
 <h1 id="requery-commands-automatically-using-commandmanager">Requery commands automatically using CommandManager<a class="headerlink" href="#requery-commands-automatically-using-commandmanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>For performance reasons, Catel no longer automatically subscribes to the <em>CommandManager</em> to invalidate the state (saves a <em>lot</em> of CanExecute calls). If you want this behavior back, you can create a custom class that subscribes to the command manager and invalidates the commands for you.</p>
-<p>This was removed for a reason (performance), so this is not the recommended approach. But this allows you to get back the old behavior.</p>
-<p>To use this class, instantiate it and register it in the <em>ServiceLocator</em> so it stays alive.</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>This was removed for a reason (performance), so this is not the recommended approach. But this allows you to get back the old behavior.</p>
+</div><p>To use this class, instantiate it and register it in the <em>ServiceLocator</em> so it stays alive.</p>
 <pre class="nocode">public class RequeryUsingCommandManager
 {
     private IViewModelManager _viewModelManager;

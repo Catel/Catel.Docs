@@ -6,7 +6,9 @@ Internally, Catel uses with the *IViewManager* for this. As soon as a view is lo
 
 A view is removed from the manager as soon as it is unloaded (via the *Unloaded* event). From this moment on, it is no longer possible to retrieve a view via its view model.
 
-Remember that only controls implementing *IView* are supported by the *IViewManager*
+@alert important
+Remember that only view classes implementing *IView* are supported by the *IViewManager*
+@end
 
 ## Retrieving the view of a view model
 

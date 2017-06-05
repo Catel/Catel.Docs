@@ -5,7 +5,7 @@
     "IncludeSource": "Includes",
     "Theme" : "Catel",
     "ConvertLocalLinks" : true,
-    //"SourceFoldersToCopy" : ["folder1", "foldern"],
+    "SourceFoldersToCopy" : ["images", "includes"],
     "Footer" : "",
     "Pages" : 
     {
@@ -24,12 +24,12 @@
 			"Introduction to data objects" : "introduction/introduction-data-objects.md",
 			"Introduction to MVVM" : 
 			{
-				"Different interpretations of MVVM" : "introduction/introduction-mvvm/different-interpretations-of-mvvm.md",
-				"Validation in model or view model?" : "introduction/introduction-mvvm/validation-in-model-or-view-model.md",
-				"Introduction to MVVM and models" : "introduction/introduction-mvvm/introduction-to-mvvm-and-models.md",
-				"Creating view models with Catel" : "introduction/introduction-mvvm/creating-view-models-with-catel.md",
-				"Introduction to services" : "introduction/introduction-mvvm/introduction-to-services.md",
-				"Introduction to the nested user controls problem" : "introduction/introduction-mvvm/introduction-to-nested-user-controls-problem.md",
+				"Different interpretations of MVVM" : "introduction/mvvm/different-interpretations-of-mvvm.md",
+				"Validation in model or view model?" : "introduction/mvvm/validation-in-model-or-view-model.md",
+				"Introduction to MVVM and models" : "introduction/mvvm/introduction-to-mvvm-and-models.md",
+				"Creating view models with Catel" : "introduction/mvvm/creating-view-models-with-catel.md",
+				"Introduction to services" : "introduction/mvvm/introduction-to-services.md",
+				"Introduction to the nested user controls problem" : "introduction/mvvm/introduction-to-nested-user-controls-problem.md",
 			}
 		},
 		"FAQ" : 
