@@ -26,31 +26,31 @@ This example installs Catel.Extensions.Controls as a package. However, to instal
 
 **Installing the latest beta**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Install-Package Catel.Extensions.Controls –IncludePrerelease
 ```
 
 **Installing a specific beta**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Install-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
 ```
 
 **Updating to the latest beta**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Update-Package Catel.Extensions.Controls –IncludePrerelease
 ```
 
 **Updating to a specific beta**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Update-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
 ```
 
 **Updating to the latest stable version**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Update-Package Catel.Extensions.Controls
 ```
 

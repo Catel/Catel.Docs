@@ -156,8 +156,7 @@
 <p>The advantage of ApiCop is that it will only execute any code to trace the application when a debugger is attached. If no debugger is attached, the feature will be fully disabled to prevent an impact of performance when running the software without debuggers.</p>
 <h2 id="usage-for-end-users-developers">Usage for end-users (developers)<a class="headerlink" href="#usage-for-end-users-developers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>As an end-user (developers that use a framework that supports ApiCop), the usage is really simply. Whenever you need a report (for example, when closing an application when the debugger is attached), use the <em>ApiCopManager</em> to write the results. Below is an example of a WPF application in the <em>App.xaml.cs</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void OnExit(ExitEventArgs e)
+<pre class="nocode">protected override void OnExit(ExitEventArgs e)
 {
 #if DEBUG
     var apiCopListener = new ConsoleApiCopListener();

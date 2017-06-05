@@ -9,7 +9,7 @@ Note that decorating a member that does not implement proper *ToString(IFormatPr
 
 For example, the class below is an excellent usage example of when to use this technique:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
     [Serializable, StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct Vector
     {

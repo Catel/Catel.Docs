@@ -8,7 +8,7 @@ There is no generic way to specify application-wide commands in WPF and Silverli
 
 Note that application-wide commands by default are only available on the main window of an application. To support this on other windows, add the following code in the constructor of a window:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class SomeWindow
 {
     private readonly CommandManagerWrapper _commandManagerWrapper;
@@ -26,7 +26,7 @@ public class SomeWindow
 
 To create application-wide commands, one must resolve the *ICommandManager* from the *DependencyResolver *and create the command:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = IoCConfiguration.DefaultDependencyResolver;
 var commandManager = dependencyResolver.Resolve<ICommandManager>();
  
@@ -39,7 +39,7 @@ It is recommended to put all the command creation in a single place so they are 
 
 When a view model wants to use application-wide specific commands, the only thing it has to do is register the command in the *CommandManager*.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class CommandSubscribingViewModel : ViewModelBase
 {
     private readonly IMessageService _messageService;
@@ -68,7 +68,7 @@ public class CommandSubscribingViewModel : ViewModelBase
 
 To make it easy to bind to application-wide commands, Catel provides the *CommandManagerBinding *markup extension for WPF and Silverlight. To bind to commands in xaml, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <Ribbon catel:StackGrid.ColumnSpan="4">
     <RibbonTab Header="Home" KeyTip="H" >
         <RibbonGroup Header="Example commands">
@@ -89,7 +89,7 @@ When implementing a ribbon or any menu structure inside an application can resul
 
 Creating a command container is very simple. It can be done by creating a class deriving from *CommandContainerBase* as shown in the example below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class ApplicationAboutCommandContainer : CommandContainerBase
 {
     private readonly IAboutService _aboutService;
@@ -119,7 +119,7 @@ If you don't use the extension methods below, you must register the command cont
 
 To make it very easy to register new commands, Catel uses naming conventions and extension methods. The name of the command (for example, *About* must be a constant on the command definitions class). If the command definition also contains a *\<CommandName\>InputGesture*, in this case *AboutInputGesture*, it will use that input gesture as a default to register the command with.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static class Commands
 {
     public static class Application
@@ -145,7 +145,7 @@ It is recommended to keep a well formed structure for your command definitions t
 
 Once you have the command container and the command definition (command name and the input gesture), it is time to register the command container:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var commandManager = ServiceLocator.Default.ResolveType<ICommandManager>();
  
 commandManager.CreateCommandWithGesture(typeof(Commands.Application), "About");
@@ -153,7 +153,7 @@ commandManager.CreateCommandWithGesture(typeof(Commands.Application), "About");
 
 This will keep the command registration very readable and maintainable when using a lot of commands:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var commandManager = ServiceLocator.Default.ResolveType<ICommandManager>();
  
 commandManager.CreateCommandWithGesture(typeof(AppCommands.Application), "Exit");

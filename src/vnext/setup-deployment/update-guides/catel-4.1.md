@@ -12,7 +12,7 @@ We have reverted the change to force you to use async code on the *IUIVisualize
 
 1.  Synchronous:
 
-    ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+    ```
     var result = uiVisualizerService.ShowDialog<MyViewModel>();
      
     // Window is closed here (synchronous behavior)
@@ -20,7 +20,7 @@ We have reverted the change to force you to use async code on the *IUIVisualize
 
 2.  Asynchronous:
 
-    ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+    ```
     var result = await uiVisualizerService.ShowDialogAsync<MyViewModel>();
      
     // Window is closed here thanks to the await keyword

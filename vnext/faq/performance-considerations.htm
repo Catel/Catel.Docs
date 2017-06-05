@@ -103,12 +103,10 @@
 <p>Therefore, it is important to disable any call to LogManager.AddDebugListener when releasing an application or while performance testing.</p>
 <h3 id="disable-event-subscriptions-of-child-values-for-modelbase">Disable event subscriptions of child values for ModelBase<a class="headerlink" href="#disable-event-subscriptions-of-child-values-for-modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To be able to (re)validate when a child object changes, the ModelBase subscribes to all change notifications (of all childs) by default. This can be disabled by using the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
+<pre class="nocode">ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
 </pre><h3 id="disabling-validation-during-activities-where-validation-is-not-required">Disabling validation during activities where validation is not required<a class="headerlink" href="#disabling-validation-during-activities-where-validation-is-not-required" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p> Validation inside Catel is very powerful, but sometimes it is not needed. To disable all validation inside Catel, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ModelBase.SuspendValidationForAllModels = true;
+<pre class="nocode">ModelBase.SuspendValidationForAllModels = true;
 </pre><h3 id="use-leanandmeanmodel-property-on-modelbase">Use LeanAndMeanModel property on ModelBase<a class="headerlink" href="#use-leanandmeanmodel-property-on-modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>When loading lots of models, it is not required to get support for validation and change notifications. Notifications and validation can be suspended per model (using the LeanAndMeanModel property) or globally using the GlobalLeanAndMeanModel property.</p>
 <h3 id="preloading-assemblies-into-the-appdomain">Preloading assemblies into the AppDomain<a class="headerlink" href="#preloading-assemblies-into-the-appdomain" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -117,14 +115,12 @@ ModelBase.SuspendValidationForAllModels = true;
 **</p>
 <p><strong>WPF application</strong></p>
 <p>In App.xaml.cs, add the following code</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var directory = typeof(MainWindow).Assembly.GetDirectory();
+<pre class="nocode">var directory = typeof(MainWindow).Assembly.GetDirectory();
 AppDomain.CurrentDomain.PreloadAssemblies(directory);
 </pre><p> </p>
 <p><strong>ASP.NET application</strong></p>
 <p>In global.asax, add the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var directory = Server.MapPath(&quot;~/bin&quot;);
+<pre class="nocode">var directory = Server.MapPath(&quot;~/bin&quot;);
 AppDomain.Current.PreloadAssemblies(directory);
 </pre><h3 id="warming-up-the-serializers">Warming up the serializers<a class="headerlink" href="#warming-up-the-serializers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To improve performance for serialization, <a href="https://catelproject.atlassian.net/wiki/display/CTL/Introduction+to+serialization#Introductiontoserialization-Warmingupserialization" target="_blank">warm up the serializers</a>.</p>
@@ -132,8 +128,7 @@ AppDomain.Current.PreloadAssemblies(directory);
 <h3 id="set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true">Set SkipSearchingForInfoBarMessageControl on UserControl to true<a class="headerlink" href="#set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>By default, Catel assumes that an InfoBarMessageControl is located on any window. However, it might be that this control is not located on a window that contains an instance of the UserControl class. This might decrease the performance, especially when lots of user controls are used in a hierarchical way. The cause is that the UserControlLogic searches for an InfoBarMessageControl to register the view model to.</p>
 <p> If no <em>InfoBarMessageControl</em> is located on a container, make sure to set <em>SkipSearchingForInfoBarMessageControl</em> to <em>true</em>.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-// Use when not using styles and transitions
+<pre class="nocode">// Use when not using styles and transitions
 Catel.Windows.Controls.UserControl.DefaultTransferStylesAndTransitionsToViewModelGridValue = false; 
  
 // Use when not using any validation controls
@@ -148,8 +143,7 @@ Catel.Data.ModelBase.SuspendValidationForAllModels = true;
 <h3 id="specify-throttling-on-the-viewmodelbase">Specify throttling on the ViewModelBase<a class="headerlink" href="#specify-throttling-on-the-viewmodelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The <em>ViewModelBase</em> allows the specify the throttling of the property change notifications. In normal situations it is best to directly raise property change notifications. However, when a lot of properties change a lot within a very short timeframe, it might be interesting to enable throttling. By using throttling, the change notifications are not directly sent to the UI but instead added to a dictionary. Then each time the <em>ThottlingRate</em> is reached, the change notifications are sent in batches to the view. If the same property has changed several times in a specific time frame, it will only be raised once which might give a performance boost in very specific situations.</p>
 <p>By default, throttling is disabled but can be enabled by setting the <em>ThrottlingRate</em> property:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
+<pre class="nocode">ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
 </pre><p>The <em>AdvancedDemo</em> example contains a demo that shows the impact of throttling</p>
 
                     </div>

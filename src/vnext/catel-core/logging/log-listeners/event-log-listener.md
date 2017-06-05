@@ -10,7 +10,7 @@ The EventLogListener allow to write log data to the system event log. 
 
 To add it, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var logListener = new EventLogListener();
 logListener.IgnoreCatelLogging = true;
 // TODO: Customize options

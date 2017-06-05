@@ -8,7 +8,7 @@ It is important that the service must be started and stopped to retrieve values
 
 The GPS service needs to be started and stopped. To start the GPS service, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var locationService = dependencyResolver.Resolve<ILocationService>();
 locationService.LocationChanged += OnCurrentLocationChanged;
@@ -21,7 +21,7 @@ The service will raise the *LocationChanged* event when a new location becomes a
 
 It is required to stop the service when it is no longer needed. The service can be stopped using the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var locationService = dependencyResolver.Resolve<ILocationService>();
 locationService.LocationChanged -= OnCurrentLocationChanged;
@@ -32,7 +32,7 @@ locationService.Stop();
 
 It is possible to emulate GPS without actually owning a Windows Phone 7 or emulate data in the emulator. To accomplish this, it is required to use the *Catel.MVVM.Services.Test.LocationService* class. This class can be used in the following way:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 Test.LocationService service = (Test.LocationService)dependencyResolver.Resolve<ILocationService>();
 

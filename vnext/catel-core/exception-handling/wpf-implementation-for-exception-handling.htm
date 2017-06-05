@@ -147,8 +147,7 @@
 <h1 id="wpf-implementation-for-exception-handling">WPF implementation for exception handling<a class="headerlink" href="#wpf-implementation-for-exception-handling" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <h2 id="creating-a-watcher">Creating a watcher<a class="headerlink" href="#creating-a-watcher" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The watcher below is a self-managed watcher that takes care of exception handling in case of unhandled exceptions in both the <em>AppDomain</em> and <em>Dispatcher</em>.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class ExceptionWatcher
+<pre class="nocode">public class ExceptionWatcher
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
  
@@ -215,8 +214,7 @@ public class ExceptionWatcher
 }
 </pre><h2 id="registering-the-exception-watcher">Registering the exception watcher<a class="headerlink" href="#registering-the-exception-watcher" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>In order for this exception handler to work, you need to register it so it stays alive in the application. Use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = ServiceLocator.Default;
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterTypeAndInstantiate&lt;ExceptionWatcher&gt;();
 </pre>
                     </div>

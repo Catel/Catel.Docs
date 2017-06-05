@@ -8,7 +8,7 @@ This feature is only available in WPF because Silverlight does not provide the *
 
 Using the ViewModelToModelAttribute, this is the syntax to map properties automatically:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -44,7 +44,7 @@ However, if you only define the *FirstName* property just to protect your model,
 
 Below is the new way you can easily expose properties of a model and protect other properties of the model from the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>

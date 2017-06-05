@@ -8,7 +8,7 @@ When handling a lot of items and invoking a method per item, it might be a viabl
 
 To invoke an *Initialize* method on all types currently loaded by Catel, in batches of 2500 types per batch, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var allTypes = new List<Type>(TypeCache.GetTypes());
 
 ParallelHelper.ExecuteInParallel(allTypes, type => 

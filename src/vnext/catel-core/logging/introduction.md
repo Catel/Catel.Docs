@@ -16,7 +16,7 @@ Catel internally creates a separate log per type. This way, there will be lots o
 
 The LogManager is the class where it all comes together. This class is responsible for creating new logs for types, but also keeps track of all logs and log listeners. To retrieve the log for a specific class, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 ```
 
@@ -24,13 +24,13 @@ private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
 To log in code, the ILog interface implements some basic methods to log information with an option for extra data. There are however lots of extension methods available to log exceptions, string formats and more. Below is an example of logging in code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Log.Warning("Customer '{0}' does not exist", customerId); 
 ```
 
 Or, if an exception is available, this can written to the log as well.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Log.Error(ex, "Failed to delete file '{0}'", fileName); 
 ```
 
@@ -38,7 +38,7 @@ Log.Error(ex, "Failed to delete file '{0}'", fileName);
 
 Sometimes additional data is required (for example, the thread id, or anything else like this). The logging is extensible and contains on the the bare minimum required for logging. To pass in additional information, use the *[Level]WithData* methods (such as *DebugWithData*):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Log.Debug("This is a message from a specific thread", new LogData
 {
     { "ThreadId", threadId }
@@ -47,7 +47,7 @@ Log.Debug("This is a message from a specific thread", new LogData
 
 Then the log data will be available in the *LogData* of the *LogEntry*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var logData = logEntry.LogData;
  
 var threadId = logData["ThreadId"];
@@ -57,7 +57,7 @@ var threadId = logData["ThreadId"];
 
 By default, Catel does not add any listeners. However, it contains a ready-to-use implementation that writes all logs to the output window or console, which is the DebugLogListener. To register this listener, call this at any time:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 #if DEBUG
 LogManager.AddDebugListener();
 #endif
@@ -69,12 +69,12 @@ Prior to Catel 3.8, one should use *LogManager.RegisterDebugListener()* instead
 
 Start with Catel 3.8, it is possible to override the global log level flags for all listeners. To do this, set the corresponding flag on the *LogManager* to a value. For example, to force debug logging on all log listeners, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogManager.IsDebugEnabled = true;
 ```
 
 To reset the override, set the value back to *null*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogManager.IsDebugEnabled = null;
 ```

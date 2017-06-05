@@ -6,7 +6,7 @@ Catel allows sending messages to unknown targets by implementing the mediator pa
 
  To register a handler for a specific message type, in this case a string, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var mediator = ServiceLocator.Default.ResolveType<IMessageMediator>();
 mediator.Register<string>(this, OnMessage);
 ```
@@ -15,7 +15,7 @@ mediator.Register<string>(this, OnMessage);
 
  To send a message to all recipients, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var mediator = ServiceLocator.Default.ResolveType<IMessageMediator>();
 mediator.SendMessage<string>("message");
 ```
@@ -24,7 +24,7 @@ mediator.SendMessage<string>("message");
 
  Sometimes, you want to send messages only based on a tag. For example, you want to let other view models know that you just added a person. All recipients that registered to the string message type with the Person tag will receive the message:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var mediator = ServiceLocator.Default.ResolveType<IMessageMediator>();
 mediator.SendMessage<string>("Person added", "Person");
 ```

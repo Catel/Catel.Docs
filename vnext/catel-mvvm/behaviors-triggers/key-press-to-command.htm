@@ -155,12 +155,10 @@
 <h1 id="keypresstocommand">KeyPressToCommand<a class="headerlink" href="#keypresstocommand" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Sometimes you need to handle a key press and convert it to a command. An excellent example is a ListBox that should respond to an <em>Ctrl + Enter</em> key press.</p>
 <p>1) Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>2) Use the following definition:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:KeyPressToCommand Command=&quot;{Binding MyCommand}&quot; Key=&quot;Enter&quot; Modifiers=&quot;Ctrl&quot; /&gt;
     &lt;/i:Interaction.Behaviors&gt;

@@ -8,7 +8,7 @@ All pages will have to be registered manually or following the right naming conv
 
 It is possible to close an application using the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.CloseApplication();
@@ -18,7 +18,7 @@ navigationService.CloseApplication();
 
 To prevent an application to be closed, one can subscribe to the ApplicationClosing event:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.ApplicationClosing += (sender, e) 
@@ -32,7 +32,7 @@ navigationService.ApplicationClosing += (sender, e)
 
 To navigate to a new page, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Navigate<EmployeeViewModel>();
@@ -42,7 +42,7 @@ navigationService.Navigate<EmployeeViewModel>();
 
 It is very easy to navigate to a new page with parameters. Use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var parameters = new Dictionary<string, object>();
 parameters.Add("id", employee.EmployeeID);
  
@@ -57,7 +57,7 @@ To read the navigation parameters in the receiving view model, use the OnNavigat
 
 The service also supports navigating back and forward:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.GoBack(); // navigates to the previous page, obviously
@@ -68,7 +68,7 @@ navigationService.GoForward(); // navigates to the next page, obviously
 
 To navigate to a custom uri without a view model type, use the following code. Of course it's also possible to pass parameters using the right method overload.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Navigate("/UI/Pages/EmployeePage.xaml");
@@ -78,7 +78,7 @@ navigationService.Navigate("/UI/Pages/EmployeePage.xaml");
 
 To register custom views, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
@@ -90,7 +90,7 @@ If you use a consistent naming convention for views, it is possible to apply thi
 
 To add a naming convention, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.NamingConventions.Add(string.Format("/Views/My{0}View", NamingConvention.ViewModelName));

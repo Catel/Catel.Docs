@@ -12,7 +12,7 @@ Note that this feature is available on all controls an behaviors, not only for t
 
 Determining the view model dynamically when using the *UserControl* is extremely easy. You can override the *GetViewModelType(object)* method like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override Type GetViewModelType(object dataContext)
 {
     if (dataContext is Rectangle)
@@ -35,7 +35,7 @@ When the method returns *null*, it will fall back on the earlier determined view
 
 Determining the view model dynamically when using behaviors must be done via the *DetermineViewModelType* event like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 mvvmBehavior.DetermineViewModelType += (sender, e) =>
 {
     if (e.DataContext is Rectangle)

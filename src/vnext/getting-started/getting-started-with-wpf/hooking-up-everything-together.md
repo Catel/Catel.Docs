@@ -14,7 +14,7 @@ The first thing we are going to do is to finalize the *FamilyWindowViewModel* w
 
 Since we will be using additional services inside the *FamilyWindowViewModel*, it is important to add them as dependency via the constructor. The updated constructor will look like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerService, IMessageService messageService)
 {
     Argument.IsNotNull(() => family);
@@ -33,7 +33,7 @@ Don't forget to create the right backing fields *\_uiVisualizerService* and *\_m
 
 We need a property representing the currently selected person in edit mode of a family. Below is the property definition which needs to be added to the view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the selected person.
 /// </summary>
@@ -57,7 +57,7 @@ Below is the code which comes in two parts.
 
 1. Add this code to the constructor:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 AddPerson = new TaskCommand(OnAddPersonExecuteAsync);
 EditPerson = new TaskCommand(OnEditPersonExecuteAsync, OnEditPersonCanExecute);
 RemovePerson = new TaskCommand(OnRemovePersonExecuteAsync, OnRemovePersonCanExecute);
@@ -65,13 +65,13 @@ RemovePerson = new TaskCommand(OnRemovePersonExecuteAsync, OnRemovePersonCanExec
 
 2. You must import **Catel.IoC** namespace since it contains **ViewModelBase**'s **GetTypeFactory()** extension method used below.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using Catel.IoC;
 ```
 
 3. Add this code to the view model itself:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
  /// <summary>
 /// Gets the AddPerson command.
 /// </summary>
@@ -156,7 +156,7 @@ The same edit functionality we added to the *FamilyWindowViewModel* must be add
 
 We will again need additional dependencies. Below is the updated constructor for the *MainWindowViewModel*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService uiVisualizerService, IMessageService messageService)
 {
     Argument.IsNotNull(() => familyService);
@@ -173,7 +173,7 @@ public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService ui
 
 We will again need a property to handle the selected family:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the selected family.
 /// </summary>
@@ -195,7 +195,7 @@ Last but not least, we will also add the commands to the *MainWindowViewModel 
 
 1. Add this code to the constructor:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 AddFamily = new TaskCommand (OnAddFamilyExecuteAsync);
 EditFamily = new TaskCommand (OnEditFamilyExecuteAsync, OnEditFamilyCanExecute);
 RemoveFamily = new TaskCommand (OnRemoveFamilyExecuteAsync, OnRemoveFamilyCanExecute);
@@ -203,7 +203,7 @@ RemoveFamily = new TaskCommand (OnRemoveFamilyExecuteAsync, OnRemoveFamilyCanExe
 
 2. Add this code to the view model itself:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the AddFamily command.
 /// </summary>
@@ -283,7 +283,7 @@ private async Task OnRemoveFamilyExecuteAsync()
 
 We now have all the views ready, but we don't see anything yet. The reason for this is that we haven't modified the *MainWindow* view yet. To do so, replace the xaml content with the xaml below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
  <catel:StackGrid>
     <catel:StackGrid.ColumnDefinitions>
         <ColumnDefinition Width="*" />

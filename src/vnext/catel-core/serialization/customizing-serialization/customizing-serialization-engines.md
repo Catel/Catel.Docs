@@ -7,7 +7,7 @@ Since the *SerializerBase* does all the heavy lifting, it is very easy to custo
 
 To customize a serializer, derive from an existing class and customize a method. The serializer below makes sure that specific members are never serialized. It keeps all other serialization logic intact.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class SafeXmlSerializer : XmlSerializer
 {
     protected override bool ShouldIgnoreMember(ModelBase model, PropertyData property)
@@ -26,7 +26,7 @@ public class SafeXmlSerializer : XmlSerializer
 
 The only thing to do now is to register this custom instance in the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.RegisterType<IXmlSerializer, SafeXmlSerializer>();
 ```
 

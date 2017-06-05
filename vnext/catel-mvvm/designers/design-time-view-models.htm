@@ -125,8 +125,7 @@
 <p>Since Catel 1.3, it is possible to create design-time versions of a view model. This way, you can preview the <em>UserControl</em> or <em>DataWindow</em> implementations using example data. Since Silverlight does not support defining types in xaml, the way that the design time works is a bit different.</p>
 <p>To create design-time support for a data window, use the following steps:</p>
 <p>1. Create a design time view model. Normally, this can easily be achieved by deriving a new class from the actual view-model and inject the model. Below is an example of a design time version of a person view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Design time version of the &lt;see cref=&quot;PersonViewModel&quot;/&gt;.
 /// &lt;/summary&gt;
 public class DesignPersonViewModel : PersonViewModel
@@ -140,14 +139,11 @@ public class DesignPersonViewModel : PersonViewModel
     }
 }
 </pre><p>2. Define the type of the design time view model.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-d:DataContext=&quot;{d:DesignInstance ViewModels:DesignPersonViewModel}&quot;
+<pre class="nocode">d:DataContext=&quot;{d:DesignInstance ViewModels:DesignPersonViewModel}&quot;
 </pre><p>If you want it to actually <strong>show</strong> demo data (instead of allowing to configure bindings), use <em>IsDesignTimeCreatable</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-d:DataContext=&quot;{d:DesignInstance ViewModels:DesignPersonViewModel, IsDesignTimeCreatable=True}&quot;
+<pre class="nocode">d:DataContext=&quot;{d:DesignInstance ViewModels:DesignPersonViewModel, IsDesignTimeCreatable=True}&quot;
 </pre><p>Full DataWindow declaration:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:DataWindow x:Class=&quot;Catel.Examples.PersonApplication.UI.Windows.PersonWindow&quot;
+<pre class="nocode">&lt;catel:DataWindow x:Class=&quot;Catel.Examples.PersonApplication.UI.Windows.PersonWindow&quot;
                   xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
                   xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot; 
                   xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;

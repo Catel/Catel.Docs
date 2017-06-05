@@ -149,8 +149,7 @@
                     <div class="section">
 <h1 id="weak-events">Weak events<a class="headerlink" href="#weak-events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var log = Log.Instance;
+<pre class="nocode">var log = Log.Instance;
 log.LogReceived += OnLogReceived;
 </pre><p>As you can see, the log is a singleton, so there is only one living instance of the Log class. It will probably live as long as the app itself. Now you might be thinking: what’s wrong with this code? Nothing, until the app starts growing and growing and your users start complaining about memory issues.</p>
 <p>What happens here is that you subscribe to the LogReceived event of the Log class. This subscription contains 2 things:</p>
@@ -161,8 +160,7 @@ log.LogReceived += OnLogReceived;
 <p>So, in fact now the Log class knows about the instance of the class that just subscribed to it and holds a reference to it (how else can it deliver the event, if it doesn’t know the address). Thus, the classes that subscribe to the Log and that do no unsubscribe will never be collected by the garbage collection.</p>
 <h2 id="open-instance-delegates">Open instance delegates<a class="headerlink" href="#open-instance-delegates" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The key feature behind this implementation of the weak event pattern is open instance delegates. You are probably wondering: what the hell are open instance delegates? Well, good question, and I will try to explain it. An open instance delegate is just as a regular delegate, it points to the method of a specific class, but the biggest difference is that it does not bind to a specific instance. This means that it can be described as: I know you live on that street (method), but I have not clue in which city (instance) that is. The instance can be specified later. The delegate for a regular event handler looks like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public delegate void OpenInstanceHandler(TTarget @this, object sender, TEventArgs e);
+<pre class="nocode">public delegate void OpenInstanceHandler(TTarget @this, object sender, TEventArgs e);
 </pre><p>The @this is nothing special, it allows us to use the this keyword so everyone knows that the target should be passed there. As you can see, it contains 3 parameters. The first one is the target (the city), the second and third parameters are the parameters of the regular event handler.</p>
 <h2 id="weak-references">Weak references<a class="headerlink" href="#weak-references" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The weak event listener creates an open instance delegate and stores both the source and target in a WeakReference class. As soon as one of these references are no longer valid, the class is unbound. The good side of this approach is that this weak event listener does not leak when the event never fires.</p>
@@ -187,20 +185,17 @@ public delegate void OpenInstanceHandler(TTarget @this, object sender, TEventArg
 <p>There are 4 categories of event subscriptions, all described below.</p>
 <h3 id="instance-to-instance">Instance to instance<a class="headerlink" href="#instance-to-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This is the situation where an instance target subscribes to an instance event. The events are unbound as soon as either the target or source are collected.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var source = new EventSource();
+<pre class="nocode">var source = new EventSource();
 var listener = new EventListener();
 var weakEventListener = WeakEventListener&lt;EventListener, EventSource, EventArgs&gt;.SubscribeToWeakEvent(listener, source, &quot;PublicEvent&quot;, listener.OnPublicEvent);
 </pre><h3 id="instance-to-static">Instance to static<a class="headerlink" href="#instance-to-static" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This is the situation where a static target subscribes to an instance event. The events are unbound as soon as the source is collected.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var source = new EventSource();
+<pre class="nocode">var source = new EventSource();
 
 var weakEventListener = WeakEventListener&lt;EventListener, EventSource, EventArgs&gt;.SubscribeToWeakEvent(null, source, &quot;PublicEvent&quot;, EventListener.OnEventStaticHandler);
 </pre><h3 id="static-to-instance">Static to instance<a class="headerlink" href="#static-to-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This is the situation where an instance target subscribes to a static event. The events are unbound as soon as the target is collected.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var listener = new EventListener();
+<pre class="nocode">var listener = new EventListener();
 
 var weakEventListener = WeakEventListener&lt;EventListener, EventSource, EventArgs&gt;.SubscribeToWeakEvent(listener, null, &quot;StaticEvent&quot;, listener.OnPublicEvent);
 </pre><h3 id="static-to-static">Static to static<a class="headerlink" href="#static-to-static" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>

@@ -8,7 +8,7 @@ The *IViewExportService *allows a developer to export a specific view that belo
 
 To export a view, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var viewExportService = dependencyResolver.Resolve<IViewExportService>();
 viewExportService.Export(myViewModel, ExportMode.File);

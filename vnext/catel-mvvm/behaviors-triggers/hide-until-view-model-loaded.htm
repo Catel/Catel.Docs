@@ -157,13 +157,11 @@
 <h1 id="hideuntilviewmodelloaded">HideUntilViewModelLoaded<a class="headerlink" href="#hideuntilviewmodelloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The <em>HideUntilViewModelLoaded</em> hides (<em>Visibility.Collapsed<em>) any view model container (</em>IViewModelContainer</em>) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.</p>
 <p>Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><h2 id="focus-when-the-control-is-loaded">Focus when the control is loaded<a class="headerlink" href="#focus-when-the-control-is-loaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The easiest and default method is to focus the first control. The parent is also focused by default (just in case if it doesn't have any focus):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;local:MyUserControl ...&gt;
+<pre class="nocode">&lt;local:MyUserControl ...&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:HideUntilViewModelLoaded /&gt;
     &lt;/i:Interaction.Behaviors&gt;

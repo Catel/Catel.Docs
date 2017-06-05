@@ -123,8 +123,7 @@
 <p>The first thing we are going to do is to finalize the <em>FamilyWindowViewModel</em> we created in the previous step. To do this, we are going to add a few properties and commands to the view model.</p>
 <h4 id="adding-additional-dependencies-being-injected">Adding additional dependencies being injected<a class="headerlink" href="#adding-additional-dependencies-being-injected" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Since we will be using additional services inside the <em>FamilyWindowViewModel</em>, it is important to add them as dependency via the constructor. The updated constructor will look like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerService, IMessageService messageService)
+<pre class="nocode">public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerService, IMessageService messageService)
 {
     Argument.IsNotNull(() =&gt; family);
     Argument.IsNotNull(() =&gt; uiVisualizerService);
@@ -137,8 +136,7 @@ public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerSer
 </pre><p>Don't forget to create the right backing fields <em>_uiVisualizerService</em> and <em>_messageService</em></p>
 <h4 id="adding-the-properties">Adding the properties<a class="headerlink" href="#adding-the-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>We need a property representing the currently selected person in edit mode of a family. Below is the property definition which needs to be added to the view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the selected person.
 /// &lt;/summary&gt;
 public Person SelectedPerson
@@ -155,20 +153,17 @@ public static readonly PropertyData SelectedPersonProperty = RegisterProperty(&q
 <p>Note that we recommend that you use the <em>vmcommand</em> and <em>vmcommandwithcanexecute</em> code snippets available <a href="http://www.catelproject.com/download/general-files/" target="_blank">here</a></p>
 <p>Below is the code which comes in two parts.</p>
 <p>1. Add this code to the constructor:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-AddPerson = new TaskCommand(OnAddPersonExecuteAsync);
+<pre class="nocode">AddPerson = new TaskCommand(OnAddPersonExecuteAsync);
 EditPerson = new TaskCommand(OnEditPersonExecuteAsync, OnEditPersonCanExecute);
 RemovePerson = new TaskCommand(OnRemovePersonExecuteAsync, OnRemovePersonCanExecute);
 </pre><ol>
 <li>You must import <strong>Catel.IoC</strong> namespace since it contains <strong>ViewModelBase</strong>'s <strong>GetTypeFactory()</strong> extension method used below.</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using Catel.IoC;
+<pre class="nocode">using Catel.IoC;
 </pre><ol>
 <li>Add this code to the view model itself:</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
- /// &lt;summary&gt;
+<pre class="nocode"> /// &lt;summary&gt;
 /// Gets the AddPerson command.
 /// &lt;/summary&gt;
 public TaskCommand AddPerson { get; private set; }
@@ -246,8 +241,7 @@ private async Task OnRemovePersonExecuteAsync()
 <p>The same edit functionality we added to the <em>FamilyWindowViewModel</em> must be added to the <em>MainWindowViewModel</em>. The difference is that instead of adding / editing / removing persons, the <em>MainWindowViewModel</em> will do this for families.</p>
 <h4 id="adding-additional-dependencies-being-injected-1">Adding additional dependencies being injected<a class="headerlink" href="#adding-additional-dependencies-being-injected-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>We will again need additional dependencies. Below is the updated constructor for the <em>MainWindowViewModel</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService uiVisualizerService, IMessageService messageService)
+<pre class="nocode">public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService uiVisualizerService, IMessageService messageService)
 {
     Argument.IsNotNull(() =&gt; familyService);
     Argument.IsNotNull(() =&gt; uiVisualizerService);
@@ -259,8 +253,7 @@ public MainWindowViewModel(IFamilyService familyService, IUIVisualizerService ui
 }
 </pre><h4 id="adding-the-properties-1">Adding the properties<a class="headerlink" href="#adding-the-properties-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>We will again need a property to handle the selected family:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the selected family.
 /// &lt;/summary&gt;
 public Family SelectedFamily
@@ -276,15 +269,13 @@ public static readonly PropertyData SelectedFamilyProperty = RegisterProperty(&q
 </pre><h4 id="adding-the-commands-1">Adding the commands<a class="headerlink" href="#adding-the-commands-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Last but not least, we will also add the commands to the *MainWindowViewModel *to handle the logic.</p>
 <p>1. Add this code to the constructor:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-AddFamily = new TaskCommand (OnAddFamilyExecuteAsync);
+<pre class="nocode">AddFamily = new TaskCommand (OnAddFamilyExecuteAsync);
 EditFamily = new TaskCommand (OnEditFamilyExecuteAsync, OnEditFamilyCanExecute);
 RemoveFamily = new TaskCommand (OnRemoveFamilyExecuteAsync, OnRemoveFamilyCanExecute);
 </pre><ol>
 <li>Add this code to the view model itself:</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets the AddFamily command.
 /// &lt;/summary&gt;
 public TaskCommand AddFamily { get; private set; }
@@ -359,8 +350,7 @@ private async Task OnRemoveFamilyExecuteAsync()
 }
 </pre><h2 id="hooking-up-the-views">Hooking up the views<a class="headerlink" href="#hooking-up-the-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>We now have all the views ready, but we don't see anything yet. The reason for this is that we haven't modified the <em>MainWindow</em> view yet. To do so, replace the xaml content with the xaml below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
- &lt;catel:StackGrid&gt;
+<pre class="nocode"> &lt;catel:StackGrid&gt;
     &lt;catel:StackGrid.ColumnDefinitions&gt;
         &lt;ColumnDefinition Width=&quot;*&quot; /&gt;
         &lt;ColumnDefinition Width=&quot;100&quot; /&gt;

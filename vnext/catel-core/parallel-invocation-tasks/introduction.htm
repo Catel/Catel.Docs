@@ -148,8 +148,7 @@
 <h2 id="running-batches-on-large-sets-in-parallel">Running batches on large sets in parallel<a class="headerlink" href="#running-batches-on-large-sets-in-parallel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>When handling a lot of items and invoking a method per item, it might be a viable option to execute the actions in batches. This normally requires quite some code to split up the large collection into batches and execute the method for each item. To make this process much easier, Catel introduces the <em>ParallelHelper</em> class.</p>
 <p>To invoke an <em>Initialize</em> method on all types currently loaded by Catel, in batches of 2500 types per batch, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var allTypes = new List&lt;Type&gt;(TypeCache.GetTypes());
+<pre class="nocode">var allTypes = new List&lt;Type&gt;(TypeCache.GetTypes());
 
 ParallelHelper.ExecuteInParallel(allTypes, type =&gt; 
 { 

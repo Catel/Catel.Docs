@@ -120,8 +120,7 @@
 <p>The application we have created so far is fully functional, but misses a bit of the &quot;magic&quot;. Below are some additional steps that might make your application more appealing and more user friendly. Of course you can go as far as you want by creating custom animations and such, but this guide focuses purely on making the basics more appealing.</p>
 <h2 id="adding-validation">Adding validation<a class="headerlink" href="#adding-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from <em>ModelBase</em>). To add validation to the <em>Person</em> model, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+<pre class="nocode">protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
 {
     if (string.IsNullOrWhiteSpace(FirstName))
     {
@@ -134,8 +133,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
     }
 }
 </pre><p>The validation for the <em>Family</em> model is very easy as well:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+<pre class="nocode">protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
 {
     if (string.IsNullOrWhiteSpace(FamilyName))
     {
@@ -145,8 +143,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
 </pre><p>Note that this validation code can be used in both the model and/or the view models</p>
 <h2 id="adding-behaviors-to-enable-double-click-on-the-list-boxes">Adding behaviors to enable double-click on the list boxes<a class="headerlink" href="#adding-behaviors-to-enable-double-click-on-the-list-boxes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The user must manually click the <em>Edit</em> buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the <em>MainWindow</em> and add this to the <em>ListBox</em> definition:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Families}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
+<pre class="nocode">&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Families}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
     &lt;ListBox.ItemTemplate&gt;
         &lt;DataTemplate&gt;
             &lt;Grid&gt;
@@ -160,8 +157,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
     &lt;/ListBox.ItemTemplate&gt;
 &lt;/ListBox&gt;
 </pre><p>The same goes for the <em>FamilyWindow</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Persons}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Persons}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;ListBox.ItemTemplate&gt;
         &lt;DataTemplate&gt;
             &lt;Grid&gt;
@@ -180,8 +176,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
 <p>A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the <em>MainWindowViewModel</em>. Below are the steps required to implement search functionality.</p>
 <h3 id="adding-additional-properties-to-the-view-model">Adding additional properties to the view model<a class="headerlink" href="#adding-additional-properties-to-the-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Lets start by adding the additional properties required to implement searching in the <em>MainWindowViewModel</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets the filtered families.
 /// &lt;/summary&gt;
 public ObservableCollection&lt;Family&gt; FilteredFamilies
@@ -210,11 +205,9 @@ public string SearchFilter
 public static readonly PropertyData SearchFilterProperty = RegisterProperty(&quot;SearchFilter&quot;, typeof(string), null, (sender, e) =&gt; ((MainWindowViewModel)sender).UpdateSearchFilter());
 </pre><p>Note that this property contains an additional change callback function which will be called when the property has changed.</p>
 <p>Add the following import to the view model. You will needed because native <strong>ObservableCollection</strong> class does not support <strong>ReplaceRange()</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using Catel.Collections;
+<pre class="nocode">using Catel.Collections;
 </pre><p>Add this method to the view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Updates the filtered items.
 /// &lt;/summary&gt;
 private void UpdateSearchFilter()
@@ -237,8 +230,7 @@ private void UpdateSearchFilter()
     }
 }
 </pre><p>Then, add this code to the <em>OnAddFamilyExecute</em> function:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private async void OnAddFamilyExecute()
+<pre class="nocode">private async void OnAddFamilyExecute()
 {
     var family = new Family();
 
@@ -253,8 +245,7 @@ private async void OnAddFamilyExecute()
     }
 }
 </pre><p>Last but not least, add this to the <em>InitializeAsync</em> method <strong>after</strong> the <em>Families</em> is set from the <em>IFamilyService</em></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override async Task InitializeAsync()
+<pre class="nocode">protected override async Task InitializeAsync()
 {
     var families = _familyService.LoadFamilies();
     Families = new ObservableCollection&lt;Family&gt;(families);
@@ -263,8 +254,7 @@ protected override async Task InitializeAsync()
 }
 </pre><h3 id="adding-the-search-functionality-to-the-view">Adding the search functionality to the view<a class="headerlink" href="#adding-the-search-functionality-to-the-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Replace the xaml of the main window by the following content:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
- &lt;catel:StackGrid&gt;
+<pre class="nocode"> &lt;catel:StackGrid&gt;
     &lt;catel:StackGrid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
         &lt;RowDefinition Height=&quot;*&quot; /&gt;

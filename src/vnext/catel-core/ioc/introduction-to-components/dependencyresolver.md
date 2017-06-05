@@ -12,7 +12,7 @@ Though in simple situations, Catel will resolve and inject all types automatical
 
 To illustrate this issue, take a look at the view model below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 // Set up a different scoping with a custom service locator
 var serviceLocator = new ServiceLocator();
 // ... register custom services here
@@ -23,7 +23,7 @@ var vm = typeFactory.CreateInstance<MyViewModel>();
 
  In this example, a view model is created with a custom dependency scope. When writing an extension method for the view models, it is impossible to get to this custom scope:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
@@ -38,7 +38,7 @@ One option to solve this is to create a property on the view model called *Depe
 
 Below is a rewritten version of the extensions class which uses the *DependencyResolverManager*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
@@ -63,7 +63,7 @@ The *DependencyResolverManager* can manage dependency resolvers per instance. T
 
 To register a dependency resolver for an instance, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 var dependencyResolver = new CatelDependencyResolver(serviceLocator);
 var myObject = new MySpecialObject();
@@ -78,7 +78,7 @@ Note that it is not required to register a *DependencyResolver* for instances cr
 
 To retrieve the dependency resolver for a specific instance, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(myObject);
 ```
@@ -93,7 +93,7 @@ The *DependencyResolverManager* can manage dependency resolvers per type. This
 
 To register a dependency resolver for a type, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 var dependencyResolver = new CatelDependencyResolver(serviceLocator);
  
@@ -107,7 +107,7 @@ Note that these registrations are type-specific. You cannot register an interfac
 
 To retrieve the dependency resolver for a specific instance, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForType(typeof(MyClass));
 ```
@@ -116,7 +116,7 @@ var dependencyResolver = dependencyResolverManager.GetDependencyResolverForType(
 
 By default, the *DependencyResolverManager* creates a *CatelDependencyResolver* that wraps the *ServiceLocator.Default* instance. In simple applications this is sufficient to get everything working. However sometimes it might be needed to customize the* *default *DependencyResolver*. To change the default one, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyResolver();
 ```
@@ -125,7 +125,7 @@ dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyReso
 
 Customizing the *DependencyResolverManager* is not recommended. If you still want to do this for whatever reason, create a class implementing the *IDependencyResolverManager* or derive from the *DependencyResolverManager*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class CustomizedDependencyResolverManager : DependencyResolverManager
 {
     public override IDependencyResolver GetDependencyResolverForType(Type type)
@@ -144,7 +144,7 @@ Note that there is no use to override the *DependencyResolverManager* as the exa
 
 Then set the *DependencyResolverManager.Default *static property:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 DependencyResolverManager.Default = new CustomizedDependencyResolverManager();
 ```
 

@@ -14,7 +14,7 @@ For more information how types are instantiated and dependency injection, take a
 
 Use the following code to register a specific type in the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
 ```
 
@@ -22,7 +22,7 @@ ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
 
 Use the following code to register a late-bound type in the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitService());
 ```
 
@@ -30,7 +30,7 @@ ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitServi
 
 Catel uses the *TypeFactory* or *Activator.CreateInstance* to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var pleaseWaitService = new PleaseWaitService();
 ServiceLocator.Default.RegisterInstance<IPleaseWaitService>(pleaseWaitService);
 ```
@@ -39,7 +39,7 @@ ServiceLocator.Default.RegisterInstance<IPleaseWaitService>(pleaseWaitService);
 
 The ServiceLocator gives the end-developer a last-resort chance to register a type when it is not registered in the ServiceLocator or any of the external containers. This event is very useful for logging (then the developer in the log knows exactly what type is missing from the IoC container) or it can be used to determine at runtime in a very late stage what implementation of the service must be used. To register a type via the event, subscribe to the event and then use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private void OnMissingType(object sender, MissingTypeEventArgs e)
 {
     if (e.InterfaceType == typeof(IPleaseWaitService))
@@ -59,6 +59,6 @@ If both the ImplementingInstance and ImplementingType are filled, the Imple
 
 To retrieve the implementation of a service, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var pleaseWaitService = ServiceLocator.Default.ResolveType<IPleaseWaitService>();
 ```

@@ -2,7 +2,7 @@
 
 You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var log = Log.Instance;
 log.LogReceived += OnLogReceived;
 ```
@@ -20,7 +20,7 @@ So, in fact now the Log class knows about the instance of the class that just su
 
 The key feature behind this implementation of the weak event pattern is open instance delegates. You are probably wondering: what the hell are open instance delegates? Well, good question, and I will try to explain it. An open instance delegate is just as a regular delegate, it points to the method of a specific class, but the biggest difference is that it does not bind to a specific instance. This means that it can be described as: I know you live on that street (method), but I have not clue in which city (instance) that is. The instance can be specified later. The delegate for a regular event handler looks like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public delegate void OpenInstanceHandler(TTarget @this, object sender, TEventArgs e);
 ```
 
@@ -59,7 +59,7 @@ There are 4 categories of event subscriptions, all described below.
 
 This is the situation where an instance target subscribes to an instance event. The events are unbound as soon as either the target or source are collected.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var source = new EventSource();
 var listener = new EventListener();
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(listener, source, "PublicEvent", listener.OnPublicEvent);
@@ -69,7 +69,7 @@ var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>
 
 This is the situation where a static target subscribes to an instance event. The events are unbound as soon as the source is collected.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var source = new EventSource();
 
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(null, source, "PublicEvent", EventListener.OnEventStaticHandler);
@@ -79,7 +79,7 @@ var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>
 
 This is the situation where an instance target subscribes to a static event. The events are unbound as soon as the target is collected.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var listener = new EventListener();
 
 var weakEventListener = WeakEventListener<EventListener, EventSource, EventArgs>.SubscribeToWeakEvent(listener, null, "StaticEvent", listener.OnPublicEvent);

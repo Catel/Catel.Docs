@@ -147,14 +147,12 @@
 <p>The <em>IProcessService</em> allows a developer to run processes from inside a view model.</p>
 <h2 id="starting-a-process-with-arguments">Starting a process with arguments<a class="headerlink" href="#starting-a-process-with-arguments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To start a process with arguments, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve&lt;IProcessService&gt;();
 processService.StartProcess(&quot;notepad.exe&quot;, @&quot;C:\mytextfile.txt&quot;);
 </pre><h2 id="starting-a-process-with-arguments-and-completed-callback">Starting a process with arguments and completed callback<a class="headerlink" href="#starting-a-process-with-arguments-and-completed-callback" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To start a process with arguments and receive a callback on completion, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve&lt;IProcessService&gt;();
 processService.StartProcess(&quot;notepad.exe&quot;, @&quot;C:\mytextfile.txt&quot;, OnProcessCompleted);
 </pre>

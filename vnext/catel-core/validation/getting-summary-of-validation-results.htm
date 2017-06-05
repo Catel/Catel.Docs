@@ -161,16 +161,13 @@
 <p>Sometimes you just need to get a summary of all warnings and errors of an object. All validation is gathered in the IValidationContext and available on that class. However, there are some convenience classes that allow a developer to create a summary based on a specific tag. This convenience class is IValidationSummary, which gathers the right information from an instance of IValidationContext.</p>
 <h2 id="creating-a-summary-of-all-validations">Creating a summary of all validations<a class="headerlink" href="#creating-a-summary-of-all-validations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> To retrieve a summary of all validations from a IValidationContext, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var validationSummary = validationContext.GetValidationSummary();
+<pre class="nocode">var validationSummary = validationContext.GetValidationSummary();
 </pre><h2 id="creating-a-summary-of-all-validations-with-a-specific-tag">Creating a summary of all validations with a specific tag<a class="headerlink" href="#creating-a-summary-of-all-validations-with-a-specific-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To retrieve a summary of all validations with a specific tag from a IValidationContext, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var validationSummary = validationContext.GetValidationSummary(&quot;tag&quot;);
+<pre class="nocode">var validationSummary = validationContext.GetValidationSummary(&quot;tag&quot;);
 </pre><h2 id="using-the-validationtoviewmodel-attribute">Using the ValidationToViewModel attribute<a class="headerlink" href="#using-the-validationtoviewmodel-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The ValidationToViewModel attribute allows a developer to gather a summary of an object easily. For example, to get all the person related validation into the <em>PersonValidationSummary</em> property, use the property definition below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[ValidationToViewModel(Tag = &quot;PersonValidation&quot;)]
+<pre class="nocode">[ValidationToViewModel(Tag = &quot;PersonValidation&quot;)]
 public IValidationSummary PersonValidationSummary { get; set; }
 </pre><p>All validation results that have the tag <em>PersonValidation</em> will automatically be gathered into the <em>PersonValidationSummary</em> property after each validation sequence.</p>
 

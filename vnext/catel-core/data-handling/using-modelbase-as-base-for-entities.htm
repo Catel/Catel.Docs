@@ -159,8 +159,7 @@
 <ol>
 <li>Create a class named <em>EntityBase</em> with the following code:</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class EntityBase : ModelBase
+<pre class="nocode">public class EntityBase : ModelBase
 {
     protected EntityBase() { }
     
@@ -180,8 +179,7 @@ public class EntityBase : ModelBase
 <p>When loading the data from the database and setting the initial values, use this code:</p>
 </li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var company = new DTO.Company()
+<pre class="nocode">var company = new DTO.Company()
 {
     Address = domainEntity.Address,
     City = domainEntity.City,
@@ -199,8 +197,7 @@ return company;
 </ol>
 <h2 id="ignoring-default-catel-properties-in-models">Ignoring default Catel properties in models<a class="headerlink" href="#ignoring-default-catel-properties-in-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is possible to ignore the default Catel properties in the models for EF code-first. To accomplish this, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void OnModelCreating(DbModelBuilder modelBuilder)
+<pre class="nocode">protected override void OnModelCreating(DbModelBuilder modelBuilder)
 {
    modelBuilder.Types().Configure(c =&gt; c.Ignore(&quot;IsDirty&quot;));
    modelBuilder.Types().Configure(c =&gt; c.Ignore(&quot;IsReadOnly&quot;));

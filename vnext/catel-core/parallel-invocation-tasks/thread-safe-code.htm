@@ -149,8 +149,7 @@
 <p>Writing a multiple threading application is always a challenge. Eventually you need use objects or statements with the ability to synchronize access to the critical sections of the code by taking and releasing a lock.</p>
 <h2 id="background-information">Background information<a class="headerlink" href="#background-information" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The common solution to access the thread-sensitive resources is use the lock statement just as follow:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private readonly object _syncObj = new object();
+<pre class="nocode">private readonly object _syncObj = new object();
 
 public void DoTheWork()
 {
@@ -161,8 +160,7 @@ public void DoTheWork()
 }
 </pre><p> </p>
 <p>But some times the scenario is not quite simple, then you need to use the Monitor class in order to synchronize cross method operations. Here is an example: </p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private readonly object _syncObj = new object();
+<pre class="nocode">private readonly object _syncObj = new object();
 
 public void DoTheWork()
 {
@@ -198,8 +196,7 @@ private object EndTheWork()
     } 
 }
 </pre><p>To combine the power of the simplicity of the lock statement syntax and the flexibility of the Monitor class, Catel introduces the SynchronizationContext class, allowing you to write the code like this.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private readonly List&lt;IValidator&gt; _validators = new List&lt;IValidator&gt;(); 
+<pre class="nocode">private readonly List&lt;IValidator&gt; _validators = new List&lt;IValidator&gt;(); 
 private readonly SynchronizationContext _synchronizationContext = new SynchronizationContext();
 
 public bool Contains(IValidator validator)
@@ -252,16 +249,13 @@ public void AfterValidateBusinessRules(object instance, List&lt;IBusinessRuleVal
 </pre><p>SynchronizationContext also allow you create asynchronous locking request, that could be useful in Silverlight Application where the action of lock the main thread is not allowed. </p>
 <h2 id="acquiring-a-lock"> Acquiring a lock<a class="headerlink" href="#acquiring-a-lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To acquire a lock, only a call to Acquire is required:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-_synchronizationContext.Acquire();
+<pre class="nocode">_synchronizationContext.Acquire();
 </pre><p>Releasing a lock</p>
 <p> To release a lock, only a call to Release is required:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-_synchronizationContext.Release();
+<pre class="nocode">_synchronizationContext.Release();
 </pre><h2 id="automatic-locking-of-a-method"> Automatic locking of a method<a class="headerlink" href="#automatic-locking-of-a-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is also possible to automatically lock and release a method call. This can be accomplished using the Execute method.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-_synchronizationContext.Execute(() =&gt; ThreadSafeCodeExecution());
+<pre class="nocode">_synchronizationContext.Execute(() =&gt; ThreadSafeCodeExecution());
 </pre>
                     </div>
                 </div>

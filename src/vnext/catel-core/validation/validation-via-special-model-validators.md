@@ -10,7 +10,7 @@ Note that it is still possible to register a custom *IValidatorProvider* to cust
 
 The first thing that needs to be done is to write a custom implementation of the *IValidator* interface. You can either implement all the members yourself or derive from *ValidatorBase *as is shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonValidator : ValidatorBase<PersonModel>
 {
     protected override void ValidateFields(PersonModel instance, List<IFieldValidationResult> validationResults)
@@ -37,7 +37,7 @@ Decorating a model with the attribute
 
 Once a validator is available, the only thing that needs to be done is to decorate the model with the *ValidateModelAttribute*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ValidateModel(typeof(PersonValidator))]
 public class PersonModel : ModelBase
 {

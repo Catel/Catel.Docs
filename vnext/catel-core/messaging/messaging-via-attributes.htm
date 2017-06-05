@@ -154,8 +154,7 @@
 <p>There are two options to decorate methods with the attribute. Either with or without tag.</p>
 <h2 id="subscribing-without-a-tag">Subscribing without a tag<a class="headerlink" href="#subscribing-without-a-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>In this case, the mediator will send the message to all the methods that has subscribe using the attribute to receive the message and not one especially. The code below broadcasts a message without any tag. This is just regular behavior of the message mediator.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Method to invoke when the command is executed.
 /// &lt;/summary&gt;
 private void OnCmdExecute()
@@ -165,8 +164,7 @@ private void OnCmdExecute()
     mediator.SendMessage(&quot;Test Value&quot;);
 }
 </pre><p>If a class, for example a view model, is interested in these messages, the only thing that needs to be done is to decorate a method with the MessageRecipient attribute as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Shows the message.
 /// &lt;/summary&gt;
 /// &lt;param name=&quot;value&quot;&gt;The value.&lt;/param&gt;
@@ -179,8 +177,7 @@ private void ShowMessage(string value)
 }
 </pre><h2 id="subscribing-with-a-tag">Subscribing with a tag<a class="headerlink" href="#subscribing-with-a-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> A tag can be used to specify some sort of grouping for messages. The MessageRecipient attribute also supports this as shown in the code below. First lets take a look how to send a message and specify a tag.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Method to invoke when the command is executed.
 /// &lt;/summary&gt;
 private void OnCmdExecute()
@@ -190,8 +187,7 @@ private void OnCmdExecute()
     mediator.SendMessage(&quot;Test Value&quot;, &quot;myTag&quot;);
 }
 </pre><p>The message is now sent with the tag. The attribute has to be used as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Shows the message.
 /// &lt;/summary&gt;
 /// &lt;param name=&quot;value&quot;&gt;The value.&lt;/param&gt;

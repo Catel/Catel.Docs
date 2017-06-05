@@ -6,7 +6,7 @@ The application we have created so far is fully functional, but misses a bit of 
 
 Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from *ModelBase*). To add validation to the *Person* model, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void ValidateFields(List<IFieldValidationResult> validationResults)
 {
     if (string.IsNullOrWhiteSpace(FirstName))
@@ -23,7 +23,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 
 The validation for the *Family* model is very easy as well:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void ValidateFields(List<IFieldValidationResult> validationResults)
 {
     if (string.IsNullOrWhiteSpace(FamilyName))
@@ -39,7 +39,7 @@ Note that this validation code can be used in both the model and/or the view mod
 
 The user must manually click the *Edit* buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the *MainWindow* and add this to the *ListBox* definition:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox x:Name="listBox" ItemsSource="{Binding Families}" SelectedItem="{Binding SelectedFamily}">
     <ListBox.ItemTemplate>
         <DataTemplate>
@@ -57,7 +57,7 @@ The user must manually click the *Edit* buttons in the editable views to edit a
 
 The same goes for the *FamilyWindow*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox x:Name="listBox" ItemsSource="{Binding Persons}" SelectedItem="{Binding SelectedPerson}">
     <ListBox.ItemTemplate>
         <DataTemplate>
@@ -84,7 +84,7 @@ A functionality that is needed in a lot of applications is search functionality.
 
 Lets start by adding the additional properties required to implement searching in the *MainWindowViewModel*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the filtered families.
 /// </summary>
@@ -118,13 +118,13 @@ Note that this property contains an additional change callback function which wi
 
 Add the following import to the view model. You will needed because native **ObservableCollection** class does not support **ReplaceRange()**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using Catel.Collections;
 ```
 
 Add this method to the view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Updates the filtered items.
 /// </summary>
@@ -151,7 +151,7 @@ private void UpdateSearchFilter()
 
 Then, add this code to the *OnAddFamilyExecute* function:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private async void OnAddFamilyExecute()
 {
     var family = new Family();
@@ -170,7 +170,7 @@ private async void OnAddFamilyExecute()
 
 Last but not least, add this to the *InitializeAsync* method **after** the *Families* is set from the *IFamilyService*
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override async Task InitializeAsync()
 {
     var families = _familyService.LoadFamilies();
@@ -184,7 +184,7 @@ protected override async Task InitializeAsync()
 
 Replace the xaml of the main window by the following content:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
  <catel:StackGrid>
     <catel:StackGrid.RowDefinitions>
         <RowDefinition Height="Auto" />

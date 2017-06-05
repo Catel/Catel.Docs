@@ -124,8 +124,7 @@
 <p>The <em>model</em> code snippet is available to create models</p>
 <h3 id="settings-class">Settings class<a class="headerlink" href="#settings-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The settings class is the top container that will store all families and other settings (which might be added in the future).</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-namespace WPF.GettingStarted.Models
+<pre class="nocode">namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
 
@@ -134,8 +133,7 @@ namespace WPF.GettingStarted.Models
     }
 }
 </pre><h3 id="family-class">Family class<a class="headerlink" href="#family-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-namespace WPF.GettingStarted.Models
+<pre class="nocode">namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
 
@@ -144,8 +142,7 @@ namespace WPF.GettingStarted.Models
     }
 }
 </pre><h3 id="person-class">Person class<a class="headerlink" href="#person-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-namespace WPF.GettingStarted.Models
+<pre class="nocode">namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
 
@@ -156,8 +153,7 @@ namespace WPF.GettingStarted.Models
 </pre><h2 id="adding-properties-to-the-models">Adding properties to the models<a class="headerlink" href="#adding-properties-to-the-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The next step is to add properties to the models. An important concept to understand is that Catel uses specific &quot;dependency-a-like&quot; properties in order to provide all the functionality in the <em>ModelBase</em> classes. Below are the properties per model that need to be registered.</p>
 <p>At first sight, these properties might look very overwhelming. Let's take a look at how the property system works. The most important thing is the actual property registration:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Persons&quot;, typeof(ObservableCollection&lt;Person&gt;), () =&gt; new ObservableCollection&lt;Person&gt;());
+<pre class="nocode">public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Persons&quot;, typeof(ObservableCollection&lt;Person&gt;), () =&gt; new ObservableCollection&lt;Person&gt;());
 </pre><p>This defines a property on the model with the following data:</p>
 <ul>
 <li>Name =&gt; Persons</li>
@@ -165,8 +161,7 @@ public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Per
 <li>DefaultValue =&gt; new ObservableCollection&lt;Person&gt;()</li>
 </ul>
 <p>This will create a property in the property bag of the model. The next piece of the property is the actual wrapper around the property value which is managed by the property bag. The Catel properties always need a wrapper to be exposed to the &quot;outside world&quot; of the class.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public ObservableCollection&lt;Person&gt; Persons
+<pre class="nocode">public ObservableCollection&lt;Person&gt; Persons
 {
     get { return GetValue&lt;ObservableCollection&lt;Person&gt;&gt;(PersonsProperty); }
     set { SetValue(PersonsProperty, value); } 
@@ -174,8 +169,7 @@ public ObservableCollection&lt;Person&gt; Persons
 </pre><p>If you want to get the functionality in the <em>ModelBase</em> classes without the &quot;dependency-a-like&quot; properties you have the option to make use of normal properties and Catel.Fody.</p>
 <p>The <em>modelprop</em> code snippet is available to create models</p>
 <h3 id="settings-class-1">Settings class<a class="headerlink" href="#settings-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class Settings : SavableModelBase&lt;Settings&gt;
+<pre class="nocode">public class Settings : SavableModelBase&lt;Settings&gt;
 {
     /// &lt;summary&gt;
     /// Gets or sets all the families.
@@ -192,8 +186,7 @@ public class Settings : SavableModelBase&lt;Settings&gt;
     public static readonly PropertyData FamiliesProperty = RegisterProperty(&quot;Families&quot;, typeof(ObservableCollection&lt;Family&gt;), () =&gt; new ObservableCollection&lt;Family&gt;());
 }
 </pre><h3 id="family-class-1">Family class<a class="headerlink" href="#family-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class Family : ModelBase
+<pre class="nocode">public class Family : ModelBase
 {
     /// &lt;summary&gt;
     /// Gets or sets the family name.
@@ -229,8 +222,7 @@ public class Family : ModelBase
     }
 }
 </pre><h3 id="person-class-1">Person class<a class="headerlink" href="#person-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class Person : ModelBase
+<pre class="nocode">public class Person : ModelBase
 {
     /// &lt;summary&gt;
     /// Gets or sets the first name.

@@ -150,21 +150,18 @@
 <p><img src="attachments/1409207/1507349.png" /></p>
 <h2 id="showing-a-message">Showing a message<a class="headerlink" href="#showing-a-message" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To show a message from a view model, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
 await messageService.Show(&quot;My first message via the service&quot;);
 </pre><h2 id="showing-an-error">Showing an error<a class="headerlink" href="#showing-an-error" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Showing a warning or error is very easy. Use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
 await messageService.ShowError(&quot;Whoops, something went wrong&quot;);
 </pre><h2 id="requesting-confirmation">Requesting confirmation<a class="headerlink" href="#requesting-confirmation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is also possible to request confirmation from the user. The number of possibilities depends on WPF, Silverlight or Windows Phone is used (for example, not all platforms support <em>YesNo</em>).</p>
 <p>The following code must be used to request confirmation:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
 if (await messageService.Show(&quot;Are you sure you want to do this?&quot;, &quot;Are you sure?&quot;, MessageButton.YesNo) == MessageResult.Yes)
 {
@@ -172,8 +169,7 @@ if (await messageService.Show(&quot;Are you sure you want to do this?&quot;, &qu
 }
 </pre><h2 id="asynchronous-confirmation">Asynchronous confirmation<a class="headerlink" href="#asynchronous-confirmation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Sometimes you don't want to use regular message boxes, and in Silverlight this means that your call has to be asynchronous. The implementation is very simple:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
 await messageService.Show(&quot;Are you sure you want to do this?&quot;, &quot;Are you sure?&quot;, MessageButton.YesNo, OnMessageServiceComplete);
 </pre><p>There are two possible callbacks, one with a result of type <em>Func&lt;MessageResult&gt;</em> or one without a result of type Action.</p>

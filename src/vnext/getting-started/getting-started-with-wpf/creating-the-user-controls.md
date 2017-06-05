@@ -14,7 +14,7 @@ Catel will automatically link the *PersonViewModel* and *PersonView* together by
 
 Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:StackGrid>
     <catel:StackGrid.RowDefinitions>
         <RowDefinition Height="Auto" />
@@ -37,7 +37,7 @@ Now we only need to modify the view itself, the code-behind can stay untouched. 
 
 The *FamilyView* must be created exactly the same way as the *PersonView*. Use the following xaml as content:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:StackGrid>
     <catel:StackGrid.RowDefinitions>
         <RowDefinition Height="Auto" />
@@ -66,7 +66,7 @@ The *FamilyView* must be created exactly the same way as the *PersonView*. Use
 
 Since this view uses the *PersonView*, it must be defined as a namespace at the top of the file:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:views="clr-namespace:WPF.GettingStarted.Views"
 ```
 

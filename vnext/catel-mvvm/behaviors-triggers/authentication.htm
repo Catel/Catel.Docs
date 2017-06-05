@@ -157,8 +157,7 @@
 <h1 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The Authentication behavior is able to hide, collapse or disable UI elements based on the current user state. The behavior uses the registered IAuthenticationProvider instances to determine whether the user has access to the specified UI element.</p>
 <p>1) Creating an authentication provider:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Example implementation of the &lt;see cref=&quot;AuthenticationProvider&quot;/&gt;. This class is not really implemented
 /// like it should, because it shouldn't be this easy to set the current role. However, for the sake of simplicity,
 /// this class has a simple property with the role of the user.
@@ -191,15 +190,12 @@ public class AuthenticationProvider : IAuthenticationProvider
     }
 }
 </pre><p>2) Register the authentication provider in the ServiceLocator:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.IoC.ServiceLocator.Instance.RegisterType&lt;IAuthenticationProvider, AuthenticationProvider&gt;();
+<pre class="nocode">Catel.IoC.ServiceLocator.Instance.RegisterType&lt;IAuthenticationProvider, AuthenticationProvider&gt;();
 </pre><p>3) Add the following XML namespaces to your view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>4) Add the behavior. As you can see, it is possible to provide a custom <em>AuthenticationTag</em>, which is passed to the <em>IAuthenticationProvider</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;TextBox&gt;
+<pre class="nocode">&lt;TextBox&gt;
   &lt;i:Interaction.Behaviors&gt;
     &lt;catel:Authentication AuthenticationTag=&quot;Administrator&quot; Action=&quot;Disable&quot; /&gt;
   &lt;/i:Interaction.Behaviors&gt;

@@ -14,7 +14,7 @@ Note that this applies to both properties and bindings
 
 Below is an example class to force the inclusion of members in Android. For each type and its members, a method is added. Then each used property is accessed and each used event is subscribed to.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class LinkerInclude
 {
     public void IncludeActivity(Activity activity)

@@ -151,8 +151,7 @@
 <p>Starting with Catel 2.2, a new attribute called <em>ExposeAttribute</em> is introduced. One of the features that already existed in Catel before is the <em>ViewModelToModelAttribute</em>. The goal of these attributes is to easily map properties from a model to the view model so as much of the plumbing (setting/getting properties, rechecking validation, etc) is done automatically for the developer.</p>
 <p>This feature is only available in WPF because Silverlight does not provide the <em>ICustomTypeDescriptor</em> or an equivalent feature</p>
 <p>Using the ViewModelToModelAttribute, this is the syntax to map properties automatically:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -183,8 +182,7 @@ public string FirstName
 public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
 </pre><p>However, if you only define the <em>FirstName</em> property just to protect your model, then why should you define the whole property? This is where the <em>ExposeAttribute</em> property comes in very handy. This attribute internally registers a new dynamic property on the view model, and then uses the same technique as the <em>ViewModelToModelAttribute</em>.</p>
 <p>Below is the new way you can easily expose properties of a model and protect other properties of the model from the view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]

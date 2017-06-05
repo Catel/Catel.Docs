@@ -35,7 +35,7 @@ The example below shows only the *Room* control and the corresponding view model
 
 First, we start with a simple model. For the model, we use the *ModelBase* class. By using the provided code snippets, this model is setup within a minute:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Bed class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
@@ -121,7 +121,7 @@ public class Room : ModelBase<Room>
 
 Next, we are going to create the view model. Again, by the use of code snippets explained earlier in this article, the view model is set up within a few minutes:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Room view model.
 /// </summary>
@@ -256,7 +256,7 @@ Another way to add a new user control is to use the item templates
 
 Now the model and the view model are fully set up, the last thing to do is to create the actual view. To accomplish this, add a new WPF user control to the project. First thing to do is to implement the code-behind, since that is the easiest to do:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <summary>
 /// Interaction logic for Room.xaml
 /// </summary>
@@ -277,7 +277,7 @@ The only thing we changed from the default user control template is that the use
 
 The last thing to do now is the actual xaml view. For the sake of simplicity, the actual content is left out (it’s just a grid with a textbox and itemscontrols for the children):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:UserControl x:Class="Catel.Articles._03___MVVM.Examples.NestedUserControls.Room"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

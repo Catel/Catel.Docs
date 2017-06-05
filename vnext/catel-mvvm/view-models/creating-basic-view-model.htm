@@ -150,8 +150,7 @@
 <p>When implementing a simple view model without a model, only one property has to be implemented that represents the checkbox that needs to be checked. The example view model declares a single property using the <em>vmprop</em> code snippet. Then, a field error is set if the user has not agreed in the <em>ValidateFields</em> method.</p>
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><strong>C#</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Simple view model.
 /// &lt;/summary&gt;
 public class SimpleViewModel : ViewModelBase
@@ -191,8 +190,7 @@ public class SimpleViewModel : ViewModelBase
 </pre><p> </p>
 <p>**XAML (assuming that the view model is set as datacontext)
 **</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;CheckBox Content=&quot;Check me to continue&quot; IsChecked=&quot;{Binding UserAgreedToContinue, NotifyOnValidationError=True, ValidatesOnDataErrors=True}&quot; /&gt;
+<pre class="nocode">&lt;CheckBox Content=&quot;Check me to continue&quot; IsChecked=&quot;{Binding UserAgreedToContinue, NotifyOnValidationError=True, ValidatesOnDataErrors=True}&quot; /&gt;
 </pre>
                     </div>
                 </div>

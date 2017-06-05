@@ -100,8 +100,7 @@
 <p>This pare contains the core functionality of Catel and what you should know when using Catel.</p>
 <h3 id="logging--debugging">Logging / debugging<a class="headerlink" href="#logging--debugging" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>If you ever think Catel is behaving strange or does not work as expected, make sure to enable the logging. Below is an example on how to enable the logging:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-#if DEBUG
+<pre class="nocode">#if DEBUG
     LogManager.RegisterDebugListener();
 #endif
 </pre><p>Catel will then log everything to the output window and provide all the information about its internals.</p>
@@ -109,8 +108,7 @@
 <h3 id="catel-properties">Catel properties<a class="headerlink" href="#catel-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>All properties in classes deriving from <em>ModelBase</em> (thus also <em>ViewModelBase</em>) require a special property definition.</p>
 <p>Normally one would write something like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private string _firstName;
+<pre class="nocode">private string _firstName;
 public string FirstName
 {
     get { return _firstName; }
@@ -122,8 +120,7 @@ public string FirstName
     }
 }
 </pre><p>In Catel one should write this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public string FirstName
+<pre class="nocode">public string FirstName
 {
     get { return GetValue&lt; string&gt;(FirstNameProperty); }
     set { SetValue(FirstNameProperty, value); }
@@ -136,12 +133,10 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;F
 <p>This part is especially meant for the MVVM part.</p>
 <h3 id="handling-of-viewmodels">Handling of viewmodels<a class="headerlink" href="#handling-of-viewmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>In other MVVM frameworks, you are obliged to set the data context of a view manually. It will look something like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var view = new PersonView();
+<pre class="nocode">var view = new PersonView();
 view.DataContext = new PersonViewModel();
 </pre><p>Catel automatically resolves the right view model based on the view. If a view is created, Catel automatically creates the view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var view = new PersonView();
+<pre class="nocode">var view = new PersonView();
 // view model is automatically created
 </pre><p>It goes even further. Catel can create view models based on the data context. For more information, read <a href="Introduction_to_the_nested_user_controls_problem">nested user controls</a>.</p>
 <h3 id="handling-hierarchy-and-parentchild-view-models">Handling hierarchy and parent/child view models<a class="headerlink" href="#handling-hierarchy-and-parentchild-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>

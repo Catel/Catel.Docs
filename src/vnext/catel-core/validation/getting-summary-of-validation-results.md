@@ -6,7 +6,7 @@ Sometimes you just need to get a summary of all warnings and errors of an object
 
  To retrieve a summary of all validations from a IValidationContext, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var validationSummary = validationContext.GetValidationSummary();
 ```
 
@@ -14,7 +14,7 @@ var validationSummary = validationContext.GetValidationSummary();
 
 To retrieve a summary of all validations with a specific tag from a IValidationContext, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var validationSummary = validationContext.GetValidationSummary("tag");
 ```
 
@@ -22,7 +22,7 @@ var validationSummary = validationContext.GetValidationSummary("tag");
 
 The ValidationToViewModel attribute allows a developer to gather a summary of an object easily. For example, to get all the person related validation into the *PersonValidationSummary* property, use the property definition below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ValidationToViewModel(Tag = "PersonValidation")]
 public IValidationSummary PersonValidationSummary { get; set; }
 ```

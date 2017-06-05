@@ -151,18 +151,15 @@
 <p>Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.</p>
 <h2 id="registering-to-a-message">Registering to a message<a class="headerlink" href="#registering-to-a-message" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> To register a handler for a specific message type, in this case a string, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
+<pre class="nocode">var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
 mediator.Register&lt;string&gt;(this, OnMessage);
 </pre><h2 id="sending-out-a-message">Sending out a message<a class="headerlink" href="#sending-out-a-message" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> To send a message to all recipients, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
+<pre class="nocode">var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
 mediator.SendMessage&lt;string&gt;(&quot;message&quot;);
 </pre><h2 id="sending-out-a-message-with-a-tag">Sending out a message with a tag<a class="headerlink" href="#sending-out-a-message-with-a-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> Sometimes, you want to send messages only based on a tag. For example, you want to let other view models know that you just added a person. All recipients that registered to the string message type with the Person tag will receive the message:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
+<pre class="nocode">var mediator = ServiceLocator.Default.ResolveType&lt;IMessageMediator&gt;();
 mediator.SendMessage&lt;string&gt;(&quot;Person added&quot;, &quot;Person&quot;);
 </pre>
                     </div>

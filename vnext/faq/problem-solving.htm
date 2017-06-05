@@ -99,8 +99,7 @@
 <p>As with every framework or toolkit, developers run into problems. This can be bugs or abuse of the API. Catel has several ways for developers to solve the problems themselves before contacting the team with the possible issue.</p>
 <h2 id="enabling-the-log">Enabling the log<a class="headerlink" href="#enabling-the-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>We take logging very serious in Catel. This means that a lot of information about the internals can be be seen in the output window. To enable logging in Catel, use the following code in your application startup code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-#if DEBUG
+<pre class="nocode">#if DEBUG
     Catel.Logging.LogManager.AddDebugListener();
 #endif
 </pre><p>Now you can see all the log messages in the output window.</p>

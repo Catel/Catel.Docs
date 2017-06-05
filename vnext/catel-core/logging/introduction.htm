@@ -167,41 +167,33 @@
 <p>Catel internally creates a separate log per type. This way, there will be lots of logs and it should be easy to filter the information the end-developer is really interested in.</p>
 <h2 id="logmanager">LogManager<a class="headerlink" href="#logmanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The LogManager is the class where it all comes together. This class is responsible for creating new logs for types, but also keeps track of all logs and log listeners. To retrieve the log for a specific class, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private static readonly ILog Log = LogManager.GetCurrentClassLogger();
+<pre class="nocode">private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 </pre><h2 id="logging-in-code">Logging in code<a class="headerlink" href="#logging-in-code" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To log in code, the ILog interface implements some basic methods to log information with an option for extra data. There are however lots of extension methods available to log exceptions, string formats and more. Below is an example of logging in code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Log.Warning(&quot;Customer '{0}' does not exist&quot;, customerId); 
+<pre class="nocode">Log.Warning(&quot;Customer '{0}' does not exist&quot;, customerId); 
 </pre><p>Or, if an exception is available, this can written to the log as well.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Log.Error(ex, &quot;Failed to delete file '{0}'&quot;, fileName); 
+<pre class="nocode">Log.Error(ex, &quot;Failed to delete file '{0}'&quot;, fileName); 
 </pre><h2 id="logging-in-code-with-additional-data">Logging in code with additional data<a class="headerlink" href="#logging-in-code-with-additional-data" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Sometimes additional data is required (for example, the thread id, or anything else like this). The logging is extensible and contains on the the bare minimum required for logging. To pass in additional information, use the <em>[Level]WithData</em> methods (such as <em>DebugWithData</em>):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Log.Debug(&quot;This is a message from a specific thread&quot;, new LogData
+<pre class="nocode">Log.Debug(&quot;This is a message from a specific thread&quot;, new LogData
 {
     { &quot;ThreadId&quot;, threadId }
 });
 </pre><p>Then the log data will be available in the <em>LogData</em> of the <em>LogEntry</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var logData = logEntry.LogData;
+<pre class="nocode">var logData = logEntry.LogData;
  
 var threadId = logData[&quot;ThreadId&quot;];
 </pre><h2 id="logging-to-the-output-window-or-console">Logging to the output window or console<a class="headerlink" href="#logging-to-the-output-window-or-console" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, Catel does not add any listeners. However, it contains a ready-to-use implementation that writes all logs to the output window or console, which is the DebugLogListener. To register this listener, call this at any time:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-#if DEBUG
+<pre class="nocode">#if DEBUG
 LogManager.AddDebugListener();
 #endif
 </pre><p>Prior to Catel 3.8, one should use <em>LogManager.RegisterDebugListener()</em> instead</p>
 <h2 id="overriding-global-log-level-flags">Overriding global log level flags<a class="headerlink" href="#overriding-global-log-level-flags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Start with Catel 3.8, it is possible to override the global log level flags for all listeners. To do this, set the corresponding flag on the <em>LogManager</em> to a value. For example, to force debug logging on all log listeners, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-LogManager.IsDebugEnabled = true;
+<pre class="nocode">LogManager.IsDebugEnabled = true;
 </pre><p>To reset the override, set the value back to <em>null</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-LogManager.IsDebugEnabled = null;
+<pre class="nocode">LogManager.IsDebugEnabled = null;
 </pre>
                     </div>
                 </div>

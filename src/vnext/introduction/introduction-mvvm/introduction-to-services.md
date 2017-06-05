@@ -6,7 +6,7 @@ Services are very important in MVVM. They define a way to interact with the user
 
 The key behind services is the *ServiceLocator*. The *ServiceLocator* is the IoC (Inversion of Control) container that Catel provides. This is a container that contains all registrations and service instances available throughout the application. Retrieving services from the default *ServiceLocator* in Catel is very simple:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var messageService = dependencyResolver.Resolve<IMessageService>();
 ```
@@ -19,7 +19,7 @@ A slightly better way to manage dependencies is to use dependency injection. The
 
 Catel fully supports dependency on view models. This means that a view model can have a constructor with several services. Catel will automatically inject the services via the constructor. An example is below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonViewModel : ViewModelBase
 { 
     private readonly IMessageService _messageService;

@@ -8,7 +8,7 @@ Making an application multilingual is a very common feature request nowadays. Th
 
 By default the *LanguageService* will use the current UI culture to retrieve the right language values. These can easily be customized:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var languageService = dependencyResolver.Resolve<ILanguageService>();
  
@@ -22,7 +22,7 @@ In order to customize the language sources, custom language sources can be regis
 
 The code below shows how to add a new *LanguageResourceSource* which represents a resource file in a specific assembly:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var languageService = dependencyResolver.Resolve<ILanguageService>();
  
@@ -41,7 +41,7 @@ The *LanguageService* will now automatically query these sources for the trans
 
 To use the *LanguageService*, retrieve it via the *DependencyResolver *(or let it be injected) and use the provided methods. The example below retrieves the *WarningTitle *resource string in the *PreferredCulture*. If the resource cannot be found in the *PreferredCulture*, it will be retrieved for the *FallbackCulture*. If that cannot be found, it will return *null*.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var languageService = dependencyResolver.Resolve<ILanguageService>();
 
@@ -56,7 +56,7 @@ To use the *LanguageService *in XAML, Catel provides the markup extensions.
 
 To use the *LanguageBinding* markup extension in WPF and Silverlight, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <TextBlock Text="{LanguageBinding WarningTitle}" />
 ```
 
@@ -64,7 +64,7 @@ To use the *LanguageBinding* markup extension in WPF and Silverlight, use the f
 
 Since Windows Phone does not support markup extensions, a custom *MarkupExtension* implementation is used in Catel. This requires a little difference in the usage of the markup extension:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <TextBlock Text="{markup:LanguageBinding ResourceName=WarningTitle}" />
 ```
 
@@ -78,7 +78,7 @@ Note that this implementation queries the database for each translation. It is b
 
 First of all, we need to implement a customized language source to allow the custom service to know what source to read for translations:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class DbLanguageSource : ILanguageSource
 {
     public DbLanguageSource(string connectionString)
@@ -101,7 +101,7 @@ public class DbLanguageSource : ILanguageSource
 
 Below is a custom implementation of the *LanguageService*. Note that we only have to derive a single method to fully customize the implementation:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class DbLanguageService : LanguageService
 {
     protected override string GetString(ILanguageSource languageSource, string resourceName, CultureInfo cultureInfo)
@@ -134,7 +134,7 @@ public class DbLanguageService : LanguageService
 
 To enable the custom *DbLanguageService*, it must be registered in the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
  
 var dbLanguageService = new DbLanguageService();

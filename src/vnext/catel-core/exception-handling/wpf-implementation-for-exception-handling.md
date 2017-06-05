@@ -4,7 +4,7 @@
 
 The watcher below is a self-managed watcher that takes care of exception handling in case of unhandled exceptions in both the *AppDomain* and *Dispatcher*.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class ExceptionWatcher
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();
@@ -76,7 +76,7 @@ public class ExceptionWatcher
 
 In order for this exception handler to work, you need to register it so it stays alive in the application. Use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterTypeAndInstantiate<ExceptionWatcher>();
 ```

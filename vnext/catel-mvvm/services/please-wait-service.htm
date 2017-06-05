@@ -152,35 +152,28 @@
 <p>The <em>IPleaseWaitService</em> allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. </p>
 <p><img src="attachments/1409211/1507348.png" /></p>
 <h2 id="showing">Showing<a class="headerlink" href="#showing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using Catel.IoC;
-</pre><pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">using Catel.IoC;
+</pre><pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.Show();
 </pre><h2 id="hiding">Hiding<a class="headerlink" href="#hiding" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.Hide();
 </pre><h2 id="showing-and-automatically-hide">Showing and automatically hide<a class="headerlink" href="#showing-and-automatically-hide" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>IPleaseWaitService</em> can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the <em>Show</em> method and the service will hide the window as soon as the delegate has completed.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using Catel.IoC;
-</pre><pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">using Catel.IoC;
+</pre><pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.Show(() =&gt; Thread.Sleep(1500));
 </pre><h2 id="changing-the-status">Changing the status<a class="headerlink" href="#changing-the-status" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.UpdateStatus(&quot;new status&quot;);
 </pre><h2 id="showing-a-determinate-please-wait-window">Showing a determinate please wait window<a class="headerlink" href="#showing-a-determinate-please-wait-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, the <em>IPleaseWaitService</em> shows an indeterminate state (no actual progress is visible). However, both the Silverlight and WPF implementation of the service also implement the status that shows the progress of a long running action.</p>
 <p>The <em>UpdateStatus</em> method can be used to show the window. The <em>statusFormat</em> argument can contain '{0}' (represents the current item) and '{1}' (represents the total items). However, they can also be left out.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.UpdateStatus(1, 5, &quot;Updating item {0} of {1}&quot;);
 </pre><p>The determinate version can be hidden via a call to <em>Hide</em> or when the currentItem argument is larger than the number of totalItems.</p>

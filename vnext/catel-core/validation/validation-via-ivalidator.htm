@@ -163,8 +163,7 @@
 <p>The validation in Catel is extremely flexible, but sometimes it is just not enough or you are forced to use external validators. For such cases, Catel provides the IValidatorProvider and IValidator interfaces. These allow very flexible injection or external validators into data objects and view models of Catel.</p>
 <h2 id="implementing-the-ivalidatorprovider">Implementing the IValidatorProvider<a class="headerlink" href="#implementing-the-ivalidatorprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The IValidatorProvider is responsible to return the right IValidator for a specific type. There is a convenience implementation named ValidatorProviderBase which only requires the implementation of one single method. Below is an example of an implementation of the IValidatorProvider.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class ValidatorProvider : ValidatorProviderBase
+<pre class="nocode">public class ValidatorProvider : ValidatorProviderBase
 {
     /// &lt;summary&gt;
     /// Gets a validator for the specified target type.
@@ -187,8 +186,7 @@ public class ValidatorProvider : ValidatorProviderBase
 }
 </pre><h2 id="implementing-the-ivalidator">Implementing the IValidator<a class="headerlink" href="#implementing-the-ivalidator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The IValidator exposes lots of methods to gain the as much freedom as possible. However, most of the methods that are exposed by the interface are hardly used. Therefore there is a convenience base class named ValidatorBase. To create a basic validator, derive from the class and override the methods required for validation.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class Validator : ValidatorBase&lt;TargetClass&gt;
+<pre class="nocode">public class Validator : ValidatorBase&lt;TargetClass&gt;
 {
     /// &lt;summary&gt;
     /// Validates the fields of the specified instance. The results must be added to the list of validation
@@ -226,21 +224,18 @@ public class Validator : ValidatorBase&lt;TargetClass&gt;
 }
 </pre><h2 id="setting-the-validator-in-modelbase">Setting the validator in ModelBase<a class="headerlink" href="#setting-the-validator-in-modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To register an IValidator instance on a ModelBase, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var modelValidation = myModel as IModelValidation;
+<pre class="nocode">var modelValidation = myModel as IModelValidation;
 if (modelValidation != null)
 {
     modelValidation .Validator = new MyValidator();
 }
 </pre><p>If an IValidatorProvider instance is available, the following code can be used to allow a more generic approach. This code assumes that the IValidatorProvider is registered in the ServiceLocator.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var validatorProvider = ServiceLocator.Instance.ResolveType&lt;IValidatorProvider&gt;();
+<pre class="nocode">var validatorProvider = ServiceLocator.Instance.ResolveType&lt;IValidatorProvider&gt;();
 myObject.Validator = validatorProvider.GetValidator(myObject.GetType());
 </pre><p>If the IValidatorProvider returns null (which is allowed), no custom validator will be used.</p>
 <h2 id="setting-the-validator-in-viewmodelbase">Setting the validator in ViewModelBase<a class="headerlink" href="#setting-the-validator-in-viewmodelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The ViewModelBase has it's own ServiceLocator. The easiest way to support a validator is to register an IValidatorProvider instance in the ServiceLocator:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ServiceLocator.Instance.RegisterType&lt;IValidatorProvider, MyValidatorProvider&gt;();
+<pre class="nocode">ServiceLocator.Instance.RegisterType&lt;IValidatorProvider, MyValidatorProvider&gt;();
 </pre><p>The ViewModelBase will automatically retrieve the right IValidator for the view model. If no IValidatorProvider is registered in the ServiceLocator, no validator will be set automatically. It is also possible to set the Validator property manually, but it is recommended to use an IValidatorProvider and register it.</p>
 
                     </div>

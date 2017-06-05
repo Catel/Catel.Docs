@@ -137,12 +137,10 @@
 <h2 id="tagging-your-commands">Tagging your commands<a class="headerlink" href="#tagging-your-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To know whether a specific user can execute a command, you need to be able to distinguish one command from another. The <em>ICatelCommand</em> interface (which derives from <em>ICommand</em>) providers a <em>Tag</em> property that allows you to tag the command with any object that fits your needs. In one application, commands might be distinguished using strings, other applications use integer ID's.</p>
 <p>A tag must be set in the constructor of a command and cannot be changed:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Edit = new Command(OnEditExecute, OnEditCanExecute, &quot;editCommand&quot;);
+<pre class="nocode">Edit = new Command(OnEditExecute, OnEditCanExecute, &quot;editCommand&quot;);
 </pre><h2 id="iauthenticationprovider">IAuthenticationProvider<a class="headerlink" href="#iauthenticationprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>IAuthenticationProvider</em> is a provider that needs to be implemented per application and must be registered in the IoC container. Below is the interface definition:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Interface to allow an authentication mechanism to control the CanExecute state of a command.
 /// &lt;/summary&gt;
 public interface IAuthenticationProvider
@@ -166,8 +164,7 @@ public interface IAuthenticationProvider
     bool CanCommandBeExecuted(ICatelCommand command, object commandParameter);
 }
 </pre><p>To register a custom implementation of the command authentication provider, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.IoC.ServiceLocator.Instance.RegisterType&lt;IAuthenticationProvider, RoleAuthenticationProvider&gt;();
+<pre class="nocode">Catel.IoC.ServiceLocator.Instance.RegisterType&lt;IAuthenticationProvider, RoleAuthenticationProvider&gt;();
 </pre><p>The code above registers a custom made command authentication provider that checks whether a specific role can execute the command.</p>
 <p>Catel checks whether an <em>IAuthenticationProvider</em> is registered. If not, the way commands are handled is not affected in any way. If there is an <em>IAuthenticationProvider</em> available, the <em>CanExecute</em> state is checked, even when there is no custom <em>CanExecute</em> implemented.</p>
 

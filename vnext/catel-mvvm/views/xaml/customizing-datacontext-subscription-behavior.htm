@@ -158,15 +158,13 @@
 <p>Starting with Catel 4.0, the views watch both the direct and inherited <em>DataContext</em>. Starting with Catel 4.1, it is possible to mimick the pre 4.0 <em>DataContext</em> subscription behavior.</p>
 <h2 id="customizing-the-behavior-for-all-views">Customizing the behavior for all views<a class="headerlink" href="#customizing-the-behavior-for-all-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To mimick pre Catel 4.0, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var dataContextSubscriptionService = dependencyResolver.Resolve&lt;IDataContextSubscriptionService&gt;();
  
 dataContextSubscriptionService.DefaultDataContextSubscriptionMode = DataContextSubscriptionMode.DirectDataContext;
 </pre><h2 id="customizing-the-behavior-per-view">Customizing the behavior per view<a class="headerlink" href="#customizing-the-behavior-per-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is also customize the behavior per view. This allows very customized fine tuning of the behavior. To use this feature, one needs to create a custom implementation of the <em>IDataContextSubscriptionService</em>.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class CustomDataContextSubscriptionService : DataContextSubscriptionService
+<pre class="nocode">public class CustomDataContextSubscriptionService : DataContextSubscriptionService
 {
     public override DataContextSubscriptionMode GetDataContextSubscriptionMode(Type viewType)
     {

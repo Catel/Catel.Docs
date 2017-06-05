@@ -8,7 +8,7 @@ Data annotations are validation when the specific property is set. For example, 
 
 Decorating properties is very simple. For example, to make a property mandatory, use the following definition (note the Required attribute):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the middle name.
 /// </summary>

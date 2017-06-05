@@ -149,8 +149,7 @@
 <p>There are two ways to use automatic mappings.</p>
 <h3 id="mapping-via-viewmodeltomodelattribute">Mapping via ViewModelToModelAttribute<a class="headerlink" href="#mapping-via-viewmodeltomodelattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Mapping a model property by using the <em>ViewModelToModelAttribute</em> requires the definition of a model property and a separate property per mapped property. The code below automatically maps the <em>FirstName</em> property.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -189,8 +188,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;F
 <li>The properties are not actually created, so you cannot use them inside your view model as real properties.</li>
 </ol>
 <p>In other words, the <em>ExposeAttribute</em> is only very useful if 1) you are using WPF and 2) if the property is not used inside the view model but only declared to protect the model from the outside world. If both of these constraints are true, then the <em>ExposeAttribute</em> is definitely worth taking a look at. The usage is very simple:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -221,8 +219,7 @@ public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Pers
 <p>To implement validation into a view model, only two methods need to be implemented. Catel clearly separates the field validation from the business rule validation to make it much clearer to the developer what is going on.</p>
 <h3 id="validating-fields">Validating fields<a class="headerlink" href="#validating-fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To validate fields, one should override the <em>ValidateFields</em> method. Below is an example of field validation on a view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
 /// &lt;/summary&gt;
@@ -236,8 +233,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
 }
 </pre><h3 id="validating-business-rules">Validating business rules<a class="headerlink" href="#validating-business-rules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To validate business rules, one should override the <em>ValidateBusinessRules</em> method. Below is an example of business rule validation on a view model:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
 /// &lt;/summary&gt;
@@ -251,11 +247,9 @@ protected override void ValidateBusinessRules(List&lt;IBusinessRuleValidationRes
 }
 </pre><h2 id="translating-model-validation-in-the-view-model">Translating model validation in the view model<a class="headerlink" href="#translating-model-validation-in-the-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Thanks to the validation system in Catel, it is very easy to implement very advanced validation features in view models. The example below shows how to translate errors that are added to a model in the Data Access Layer or validation layer. Assume that the following pseudo code is used to set an error on a model in the DAL:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-SetFieldError(“FirstName”, “FirstNameRequired”);
+<pre class="nocode">SetFieldError(“FirstName”, “FirstNameRequired”);
 </pre><p>All errors that are mapped from the model to the view model automatically are available in the <em>validationResults</em> parameter. This way, the error can be easily translated:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable 
 /// validation of field values.
 /// &lt;/summary&gt;
@@ -273,8 +267,7 @@ protected override void ValidateFields(List&lt;IFieldValidationResult&gt; valida
 </pre><p>Of course this is not something you want to actually do in your view model, so you’ll probably have to write a helper class that translates the validation for you. You might or might not like delaying the translation of the model errors to as close as the view, but it shows how extremely powerful the improved validation of Catel is. And if you think a bit about it, wouldn't it be a good idea to delay the translation from the server to the actual client to as close as the view…?</p>
 <h2 id="validating-via-annotations">Validating via annotations<a class="headerlink" href="#validating-via-annotations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Some people like to add validation to their (view)models using annotations (attributes). Catel also supports this method, but adds additional functionality. The idea behind it is that in the end, Catel always provides all errors of an object via the <em>IDataErrorInfo</em> interface. This means that when attribute validation is used, the errors are internally registered and provided in the <em>ValidateFields</em> method. This way, all types of validation that are provided by the .NET framework are gathered into one single location where they can be used by the view.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the first name.
 /// &lt;/summary&gt;
 [Required(&quot;This value is required&quot;)]
@@ -290,8 +283,7 @@ private string FirstName
 public static readonly PropertyData FirstNameProperty= RegisterProperty(&quot;FirstName&quot;, typeof(string));
 </pre><h2 id="to-validate-required-fields-or-not-to-validate-required-fields-at-startup">To validate required fields or not to validate required fields at startup<a class="headerlink" href="#to-validate-required-fields-or-not-to-validate-required-fields-at-startup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Validate(true, false);
+<pre class="nocode">Validate(true, false);
 </pre>
                     </div>
                 </div>

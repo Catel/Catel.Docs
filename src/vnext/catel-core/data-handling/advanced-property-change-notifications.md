@@ -10,7 +10,7 @@ When using the *ModelBase* or *ViewModelBase* classes, the old and new value of 
 
 The easiest way to get more information on the inside is to override the *OnPropertyChanged* method. It automatically provides an instance of the *AdvancedPropertyChangedEventArgs:*
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
 {
 }
@@ -20,7 +20,7 @@ protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
 
 Getting the information from outside the objects is a bit more work. This is because the *PropertyChanged* event still provides a value of the *PropertyChangedEventArgs* class. Therefore, it is required to cast the value:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private void OnObjectPropertyChanged(PropertyChangedEventArgs e)
 {
     var advancedArgs = e as AdvancedPropertyChangedEventArgs;
@@ -35,7 +35,7 @@ private void OnObjectPropertyChanged(PropertyChangedEventArgs e)
 
 When using the dependency property a-like property registration, the old and new value are automatically provided by the classes. However, when using the *ObservableObject,* the old and new value are not automatically provided. Therefore, it is possible to provide these values manually:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private string _firstName;
 public string FirstName
 {
@@ -58,7 +58,7 @@ As you might have noticed, the *AdvancedPropertyChangedEventArgs* also provide t
 
 It is always required to check whether the values are meaningful before actually handing them:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
 {
     if (e.IsOldValueMeaningful)

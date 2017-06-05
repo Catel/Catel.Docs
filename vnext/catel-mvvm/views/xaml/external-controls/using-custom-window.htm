@@ -166,8 +166,7 @@
 <h2 id="creating-the-base-class-with-behavior">Creating the base class with behavior<a class="headerlink" href="#creating-the-base-class-with-behavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it <em>WindowBase</em> (to make it as &quot;external control company independent&quot; as possible). Below is the code for the window definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.</p>
 <p>Because the <em>RadWindow</em> of Telerik does not close the window when the <em>DialogResult</em> is set, this window subscribes to the <em>ViewModelClosed</em> event to close the window</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Base class for a window with the Catel mvvm behavior.
 /// &lt;/summary&gt;
 public class Window : RadWindow, IDataWindow

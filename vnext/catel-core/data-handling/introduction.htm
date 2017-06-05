@@ -152,8 +152,7 @@
 <h1 id="data-handling">Data handling<a class="headerlink" href="#data-handling" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>This part of the documentation is all about data handling the way it should that is available via Catel. Some parts are based on the article on Code Project, but this documentation is more up-to-date.</p>
 <p>The first thing that is important is that lots of developers lose way too much time writing custom serializable objects. Serialization is a field of expertise, and only a handful of developers I know really master the serialization of objects (think of version changes of the assembly, class changes (new or removed properties), etc.). Most developers think they master serialization by creating a <em>BinaryFormatter</em> object like the code belows show:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serializer = new BinaryFormatter();
+<pre class="nocode">var serializer = new BinaryFormatter();
 var myObject = (MyObject)serializer.Deserialize(stream);
 </pre><p>Most developers don’t know that reflection breaks when:</p>
 <ul>

@@ -83,7 +83,7 @@ The application execution directory.  Calls `Directory.GetCurrentDirectory()`, 
 
 A good example would be:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var fileLogListener = new FileLogListener();
 fileLogListener.FilePath = "{AppDir}\{AutoLogFileName}";
  
@@ -96,7 +96,7 @@ Note that the default path of the *FileLogListener* is *{AppData}\\{AutoLogFileN
 
 A listener can be created by creating a new class deriving from LogListenerBase.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class FileLogListener : LogListenerBase
 {
     private readonly TextWriter _textWriter;
@@ -122,6 +122,6 @@ public class FileLogListener : LogListenerBase
 
  Last but not least, it is important to register the listener:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogManager.AddListener(new FileLogListener("<log_file_path>"));
 ```

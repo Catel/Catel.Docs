@@ -14,7 +14,7 @@ The *WindowBehavior* class takes care of all the MVVM integrations of a window a
 
 The *Save* and *Cancel* properties are not obligate, and need the format of *[controlname].[event]*. By default, the Click event is used, so if a button (or another control that should respond using the *Click* event), the *[controlname]* is sufficient.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <i:Interaction.Behaviors>
     <catel:WindowBehavior ViewModelType="viewmodels:DemoWindowViewModel" Save="okButton.Click" Cancel="cancelButton.Click" />
 </i:Interaction.Behaviors>
@@ -32,7 +32,7 @@ For more information, check out the the *Catel.Examples.WPF.AdvancedDemo* which 
 
 The UserControlBehavior class takes care of all the MVVM integrations of a user control and a view model. So, where you previously had to derive a UserControl implementation from UserControl, you can now create a new UserControl like any application and then add this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <i:Interaction.Behaviors>
     <catel:UserControlBehavior ViewModelType="viewmodels:DemoWindowViewModel" />
 </i:Interaction.Behaviors>
@@ -50,7 +50,7 @@ For more information, check out the the *Catel.Examples.WPF.AdvancedDemo* which 
 
 The *NavigationPageBehavior* class takes care of all the MVVM integrations of a page (used in navigation or browser based applications) and a view model. So, where you previously had to derive a *Page* implementation from *Page*, you can now create a new *Page* like any application and then add this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <i:Interaction.Behaviors>
     <catel:NavigationPageBehavior ViewModelType="viewmodels:DemoWindowViewModel" />
 </i:Interaction.Behaviors>

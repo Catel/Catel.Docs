@@ -2,7 +2,7 @@
 
 Subscribing to change notifications of objects mostly results in large statements such as the one below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var itemAsPropertyChanged = obj as INotifyPropertyChanged;
 if (itemAsPropertyChanged != null)
 {
@@ -16,7 +16,7 @@ However, using this code one must be aware that if not unsubscribed, there might
 
 Using the code below, one can subscribe to the PropertyChanged event of an object:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var wrapper = new ChangeNotificationWrapper(obj);
 wrapper.PropertyChanged += OnPropertyChanged;
 ```
@@ -27,7 +27,7 @@ Note that it is not required to check whether the object implements INotifyPrope
 
 Using the code below, one can subscribe to the CollectionChanged event of an object:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var wrapper = new ChangeNotificationWrapper(observableCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
 ```
@@ -38,7 +38,7 @@ Note that it is not required to check whether the object implements INotifyColle
 
 Sometimes it is required to watch both changes inside a collection, but also the items inside a collection. For example, there is a list of customers and you are also interested in changes of customers inside a collection. This is fully supported by the ChangeNotificationWrapper using the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var wrapper = new ChangeNotificationWrapper(observableCustomerCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
 wrapper.CollectionItemPropertyChanged += OnCollectionItemPropertyChanged;
@@ -53,6 +53,6 @@ When you are no longer interested in events from the source object, there are tw
 1.  Just leave them coming, as soon as the objects are no longer used, they will be garbage collected
 2.   Unsubscribe using the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 wrapper.UnsubscribeFromAllEvents();
 ```

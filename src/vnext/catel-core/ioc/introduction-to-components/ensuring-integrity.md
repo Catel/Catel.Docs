@@ -2,7 +2,7 @@
 
 Starting with Catel 3.6, a very useful feature has been added to the *ServiceLocator* and *TypeFactory*. This features is called "integrity checker" and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming. To make the example a bit more simple, below are a few classes which demonstrate a common issue in enterprises.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class X
 {
     public X(Y y) { }

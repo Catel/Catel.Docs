@@ -149,8 +149,7 @@
 <p>The developer has all the freedom to handle one or more methods in an auditor. Of course multiple auditors are possible as well.</p>
 <h2 id="creating-an-auditor">Creating an auditor<a class="headerlink" href="#creating-an-auditor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Creating a new auditor is very simple. Create a new class, derive from AuditorBase and override the methods you are interested in. The class example tracks the event to a fake analytics framework.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Logs all commands to a custom analytics service.
 /// &lt;/summary&gt;
 public class CommandAuditor : AuditorBase
@@ -170,8 +169,7 @@ public class CommandAuditor : AuditorBase
 }
 </pre><h2 id="registering-an-auditor">Registering an auditor<a class="headerlink" href="#registering-an-auditor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> Registering a new auditor is extremely easy as you can see in the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-AuditingManager.RegisterAuditor(new CommandAuditor());
+<pre class="nocode">AuditingManager.RegisterAuditor(new CommandAuditor());
 </pre>
                     </div>
                 </div>

@@ -90,7 +90,7 @@ Note that it is possible to implement custom serialization techniques or [custom
 
 The code below shows how to save an object (which can, of course, be a complex graph of nested objects):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var myObject = new MyObject();
  
 using (var fileStream = File.Create(@"C:\myobject.dob"))
@@ -103,7 +103,7 @@ Looks too easy, but this really is the only thing you need to do. You can specif
 
 Loading is as easy as saving, as you can see in the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 MyObject myObject = null;
  
 using (var fileStream = File.Open(@"C:\myobject.dob", FileMode.Open))
@@ -122,7 +122,7 @@ The first time a serializer needs to serialize an object, it needs to perform s
 
 This code will warm up all the specified types:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var typesToWarmup = new type[] {  typeof(Settings) };
  
 var xmlSerializer = SerializationFactory.GetXmlSerializer();
@@ -136,7 +136,7 @@ binarySerializer.Warmup(typesToWarmup);
 
 This code will warm up all types implementing the *ModelBase *class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerializer.Warmup();
  
@@ -152,7 +152,7 @@ By default, Catel will optimize the initialization and dispatch them to differen
 
 The code example below shows how to initialize all types deriving from *ModelBase* on a single thread:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerialzier.Warmup(null, -1);
 ```
@@ -165,7 +165,7 @@ Declare a new *ModelBase* class (remember the *‘dataobject’* code snippe
 
 Then, by default, the *ModelBase* class will try to deserialize the old object. If it fails to do so, it will fall back on the default values provided by the property declarations. However, it is also possible to override the *GetDataFromSerializationInfo* method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Retrieves the actual data from the serialization info.
 /// </summary>

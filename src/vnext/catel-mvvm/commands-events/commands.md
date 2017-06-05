@@ -24,7 +24,7 @@ There are also several wrappers available in case object is used as type paramet
 
 Code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly IMessageService _messageService;
  
 public void MyViewModel(IMessageService messageService)
@@ -54,6 +54,6 @@ private void MyAction_Execute(object parameter)
 
 Xaml (assuming that the view model is set as datacontext):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <Button Content="Click me" Command="{Binding MyCommand}" />
 ```

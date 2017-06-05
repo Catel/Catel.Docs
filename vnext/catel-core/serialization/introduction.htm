@@ -204,8 +204,7 @@
 <p>Note that it is possible to implement custom serialization techniques or <a href="Customizing_serialization">customize the serialization</a></p>
 <h1 id="serializing-a-model">Serializing a model<a class="headerlink" href="#serializing-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The code below shows how to save an object (which can, of course, be a complex graph of nested objects):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var myObject = new MyObject();
+<pre class="nocode">var myObject = new MyObject();
  
 using (var fileStream = File.Create(@&quot;C:\myobject.dob&quot;))
 {
@@ -213,8 +212,7 @@ using (var fileStream = File.Create(@&quot;C:\myobject.dob&quot;))
 }
 </pre><p>Looks too easy, but this really is the only thing you need to do. You can specify the serialization mode in the several available overloads of the Save method.</p>
 <p>Loading is as easy as saving, as you can see in the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-MyObject myObject = null;
+<pre class="nocode">MyObject myObject = null;
  
 using (var fileStream = File.Open(@&quot;C:\myobject.dob&quot;, FileMode.Open))
 {
@@ -225,8 +223,7 @@ using (var fileStream = File.Open(@&quot;C:\myobject.dob&quot;, FileMode.Open))
 <p>The first time a serializer needs to serialize an object, it needs to perform some reflection to gather all the required information. This can have a negative impact on performance for the end-user during serialization. This load cannot be prevented, but it is possible to warmup the serializer at any time when it is convenient (for example, during startup of the application).</p>
 <h3 id="warming-up-specific-types">Warming up specific types<a class="headerlink" href="#warming-up-specific-types" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This code will warm up all the specified types:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var typesToWarmup = new type[] {  typeof(Settings) };
+<pre class="nocode">var typesToWarmup = new type[] {  typeof(Settings) };
  
 var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerializer.Warmup(typesToWarmup);
@@ -235,8 +232,7 @@ var binarySerializer = SerializationFactory.GetBinarySerializer();
 binarySerializer.Warmup(typesToWarmup);
 </pre><h3 id="warming-up-automatically">Warming up automatically<a class="headerlink" href="#warming-up-automatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This code will warm up all types implementing the *ModelBase *class:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var xmlSerializer = SerializationFactory.GetXmlSerializer();
+<pre class="nocode">var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerializer.Warmup();
  
 var binarySerializer = SerializationFactory.GetBinarySerializer();
@@ -245,15 +241,13 @@ binarySerialzier.Warmup();
 <h3 id="warming-up-using-multiple-threads">Warming up using multiple threads<a class="headerlink" href="#warming-up-using-multiple-threads" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>By default, Catel will optimize the initialization and dispatch them to different threads. Using extensive testing, the Catel team discovered that approximately 1000 types / thread is the ideal load balancing (otherwise the spawning of the threads is more expensive than it handling it on the same thread). If this behavior needs to be customized, simply provide the number of types per thread. If <em>-1</em> is specified, all types will be warmed up in a single thread.</p>
 <p>The code example below shows how to initialize all types deriving from <em>ModelBase</em> on a single thread:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var xmlSerializer = SerializationFactory.GetXmlSerializer();
+<pre class="nocode">var xmlSerializer = SerializationFactory.GetXmlSerializer();
 xmlSerialzier.Warmup(null, -1);
 </pre><h1 id="backwards-compatibility-for-binary-serialization">Backwards compatibility for binary serialization<a class="headerlink" href="#backwards-compatibility-for-binary-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>This example shows how an “old” (standard .NET) data class that uses custom binary serialization can easily be converted to a <em>ModelBase</em> to use the <em>ModelBase</em> even for all your existing classes.</p>
 <p>Declare a new <em>ModelBase</em> class (remember the <em>‘dataobject’</em> code snippet). If the new class is in a new assembly, or has a new name or namespace, use the <em>RedirectType</em> attribute to let the <em>ModelBase</em> know that when it finds the old type, it should deserialize that type into the new type.</p>
 <p>Then, by default, the <em>ModelBase</em> class will try to deserialize the old object. If it fails to do so, it will fall back on the default values provided by the property declarations. However, it is also possible to override the <em>GetDataFromSerializationInfo</em> method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Retrieves the actual data from the serialization info.
 /// &lt;/summary&gt;
 /// &lt;remarks&gt;

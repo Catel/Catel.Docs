@@ -134,43 +134,33 @@
 <p>Some services in Catel support naming conventions. For example, the <em>IViewLocator</em> and <em>IViewModelLocator</em> allow naming conventions to prevent a user from having to register all views and view models. Internally, the naming conventions are resolved using the <em>NamingConvention</em> helper class. This part of the documentation explains the possible constants in naming conventions.</p>
 <h2 id="as-constant">[AS] constant<a class="headerlink" href="#as-constant" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The [AS] constant will be replaced by the assembly name. For example, the following naming convention:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[AS].Views
+<pre class="nocode">[AS].Views
 </pre><p>in assembly <em>Catel.Examples</em> will be resolved as:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.Examples.Views
+<pre class="nocode">Catel.Examples.Views
 </pre><h2 id="vm-constant">[VM] constant<a class="headerlink" href="#vm-constant" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The [VM] constant will be replaced by the name of the view model without the <em>ViewModel</em> postfix. For example, the following naming convention:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[AS].ViewModels.[VW]ViewModel
+<pre class="nocode">[AS].ViewModels.[VW]ViewModel
 </pre><p>in assembly <em>Catel.Examples</em> and for type <em>Catel.Examples.ViewModels.MyViewModel</em> will be resolved as:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.Examples.ViewModels.MyViewModel
+<pre class="nocode">Catel.Examples.ViewModels.MyViewModel
 </pre><h2 id="vw-constant">[VW] constant<a class="headerlink" href="#vw-constant" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The [VW] constant will be replaced by the name of the view without the <em>View</em>, <em>Control</em>, <em>Page</em> or <em>Window</em> postfixes. For example, the following naming convention:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[AS].Views.[VM]View
+<pre class="nocode">[AS].Views.[VM]View
 </pre><p>in assembly <em>Catel.Examples</em> and for type <em>Catel.Examples.Views.MyView</em> will be resolved as:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.Examples.Views.MyView
+<pre class="nocode">Catel.Examples.Views.MyView
 </pre><h2 id="up-constant">[UP] constant<a class="headerlink" href="#up-constant" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Sometimes it is not possible to use the [AS] constant because the assembly name is not used in the namespace. For example, for an application called <em>PersonApplication</em> where the client assembly is <em>PersonApplication.Client</em>, the root namespace will still be <em>PersonApplication</em>. Therefore, it is recommend to use the [UP] constant for this situation.</p>
 <p>The [UP] constant will move the namespaces up by one step. It automatically detects the right separator (\ (backslash), / (slash), . (dot) and | (pipe) are supported).</p>
 <p>The following naming convention:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[UP].Views.[VM]View
+<pre class="nocode">[UP].Views.[VM]View
 </pre><p>for type <em>Catel.Examples.ViewModels.MyViewModel</em> will be resolved as:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.Examples.Views.MyView
+<pre class="nocode">Catel.Examples.Views.MyView
 </pre><h2 id="current-constant">[CURRENT] constant<a class="headerlink" href="#current-constant" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Some people prefer to put classes into the same namespace (such as views and view models).</p>
 <p>The [CURRENT] constant will use the same namespace.</p>
 <p>The following naming convention:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[CURRENT].[VM]View
+<pre class="nocode">[CURRENT].[VM]View
 </pre><p>for type <em>Catel.Examples.MyViewModel</em> will be resolved as:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Catel.Examples.MyView
+<pre class="nocode">Catel.Examples.MyView
 </pre>
                     </div>
                 </div>

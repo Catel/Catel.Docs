@@ -6,11 +6,11 @@ The *IPleaseWaitService* allows a developer to show a please wait message (a.k.a
 
 ## Showing
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using Catel.IoC;
 ```
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Show();
@@ -18,7 +18,7 @@ pleaseWaitService.Show();
 
 ## Hiding
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Hide();
@@ -28,11 +28,11 @@ pleaseWaitService.Hide();
 
 The *IPleaseWaitService* can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the *Show* method and the service will hide the window as soon as the delegate has completed.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using Catel.IoC;
 ```
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.Show(() => Thread.Sleep(1500));
@@ -40,7 +40,7 @@ pleaseWaitService.Show(() => Thread.Sleep(1500));
 
 ## Changing the status
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.UpdateStatus("new status");
@@ -52,7 +52,7 @@ By default, the *IPleaseWaitService* shows an indeterminate state (no actual pro
 
 The *UpdateStatus* method can be used to show the window. The *statusFormat* argument can contain '{0}' (represents the current item) and '{1}' (represents the total items). However, they can also be left out.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve<IPleaseWaitService>();
 pleaseWaitService.UpdateStatus(1, 5, "Updating item {0} of {1}");

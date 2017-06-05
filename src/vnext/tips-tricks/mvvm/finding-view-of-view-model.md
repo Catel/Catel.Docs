@@ -14,13 +14,13 @@ To find the view of a view model, use the steps below:
 
 1) Resolve the view from *IViewManager* from the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var viewManager = ServiceLocator.Default.ResolveType<IViewManager>();
 ```
 
 2) Resolve the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var views = viewManager.GetViewsOfViewModel(myViewModel);
 ```
 

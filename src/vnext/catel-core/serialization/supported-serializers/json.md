@@ -10,7 +10,7 @@ The *JsonSerializationConfiguration* enables support for customizing the configu
 
 To use Bson instead of Json, use the *JsonSerializationConfiguration* class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var configuration = new JsonSerializationConfiguration
 {
     UseBson = true
@@ -23,7 +23,7 @@ jsonSerializer.Serialize(myObject, configuration);
 
 To specify the culture to use during (de)serialization, set the *Culture* property on the configuration class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var configuration = new SerializationConfiguration
 {
     Culture = new CultureInfo("nl-NL")
@@ -37,7 +37,7 @@ jsonSerializer.Serialize(myObject, configuration);
 
 By default the *JsonSerializer* supports circular references. It does so by adding additional property values to the json. Below is a json object with support for circular references:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 {  
    "$graphid":1,
    "Name":"1",
@@ -53,7 +53,7 @@ By default the *JsonSerializer* supports circular references. It does so by addi
 
 or
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 {
     "$graphid": 1,
     "Collection1": [1,
@@ -73,7 +73,7 @@ or
 
 To disable the support for reference preservation, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var jsonSerializer = dependencyResolver.Resolve<IJsonSerializer>();
 jsonSerializer.PreserveReferences = false;
 ```
@@ -82,7 +82,7 @@ jsonSerializer.PreserveReferences = false;
 
 Catel can support complex dynamic types. For this to be supported in json, the objects need additional type information in order to restore the type info again during deserialization. Below is a json object with the type information stored inside the json:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 {  
    "$typename":"Catel.Test.Data.IniFile",
    "FileName":"MyIniFile",
@@ -114,7 +114,7 @@ Catel can support complex dynamic types. For this to be supported in json, the o
 
 To disable the type information in json, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var jsonSerializer = dependencyResolver.Resolve<IJsonSerializer>();
 jsonSerializer.WriteTypeInfo = false;
 ```

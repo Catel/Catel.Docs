@@ -121,8 +121,7 @@
 <p>The <em>vm</em> code snippet is available to create view models. There is also an on-line item template available for Catel view models</p>
 <h2 id="creating-the-personviewmodel">Creating the PersonViewModel<a class="headerlink" href="#creating-the-personviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Below is the class definition of the <em>PersonViewModel</em>. This view model will be used to show the details of a <em>Person</em> model.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-namespace WPF.GettingStarted.ViewModels
+<pre class="nocode">namespace WPF.GettingStarted.ViewModels
 {
     using Catel.MVVM;
 
@@ -132,8 +131,7 @@ namespace WPF.GettingStarted.ViewModels
 }
 </pre><h3 id="enabling-model-injection">Enabling model injection<a class="headerlink" href="#enabling-model-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>In hierarchy views, it is important to manage the state of views and view models based on the actual context where the view (thus view model) is located. Catel does this by allowing model injection. The view models will only be created when the model is available within the context of the view.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class PersonViewModel : ViewModelBase
+<pre class="nocode">public class PersonViewModel : ViewModelBase
 {
     public PersonViewModel(Person person)
     {
@@ -160,8 +158,7 @@ public class PersonViewModel : ViewModelBase
 </pre><p>Note that the <em>Person</em> property is decorated with the <em>Model</em> attribute. This automatically makes sure that if a view model is saved, the <em>IEditableObject.EndEdit</em> is called. When the view model is canceled, the <em>IEditableObject.CancelEdit</em> is called and all changes on the model will be reverted.</p>
 <h3 id="exposing-properties-of-a-model">Exposing properties of a model<a class="headerlink" href="#exposing-properties-of-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>One very powerful feature of Catel is that it can automatically map properties from a model to a view model. This way the user does not have to write repetitive code to map the properties from the model to the view model at startup and map the properties from view model to model when the view model is closed. Catel will take care of this all automatically.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the first name.
 /// &lt;/summary&gt;
 [ViewModelToModel(&quot;Person&quot;)]
@@ -193,8 +190,7 @@ public static readonly PropertyData LastNameProperty = RegisterProperty(&quot;La
 </pre><p>Note that the properties are decorated with the <em>ViewModelToModel</em> attribute which enables the automatic mappings feature in Catel.</p>
 <h2 id="creating-the-familyviewmodel">Creating the FamilyViewModel<a class="headerlink" href="#creating-the-familyviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>FamilyViewModel</em> must be set up the same way as the <em>PersonViewModel</em> above.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-namespace WPF.GettingStarted.ViewModels
+<pre class="nocode">namespace WPF.GettingStarted.ViewModels
 {
     using System.Collections.ObjectModel;
     using Catel;

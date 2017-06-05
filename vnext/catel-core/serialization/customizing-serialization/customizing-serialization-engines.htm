@@ -165,8 +165,7 @@
 <li>BinarySerializer =&gt; IBinarySerializer</li>
 </ul>
 <p>To customize a serializer, derive from an existing class and customize a method. The serializer below makes sure that specific members are never serialized. It keeps all other serialization logic intact.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class SafeXmlSerializer : XmlSerializer
+<pre class="nocode">public class SafeXmlSerializer : XmlSerializer
 {
     protected override bool ShouldIgnoreMember(ModelBase model, PropertyData property)
     {
@@ -181,8 +180,7 @@ public class SafeXmlSerializer : XmlSerializer
     }
 }
 </pre><p>The only thing to do now is to register this custom instance in the <em>ServiceLocator</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ServiceLocator.Default.RegisterType&lt;IXmlSerializer, SafeXmlSerializer&gt;();
+<pre class="nocode">ServiceLocator.Default.RegisterType&lt;IXmlSerializer, SafeXmlSerializer&gt;();
 </pre><p>The following methods on the serializer classes might be of interest when customizing the serialization:</p>
 <ul>
 <li>ShouldIgnoreProperty</li>

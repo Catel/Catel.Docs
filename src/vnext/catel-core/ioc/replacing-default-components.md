@@ -12,7 +12,7 @@ Note that the customization of the IoCConfiguration is the **first **** thing th
 
 To replace any component, first create a custom implementation of the specific component, for example the *IServiceLocator*. Then update the factory and call *UpdateDefaultComponents*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.IoC.IoCFactory.CreateServiceLocatorFunc = () => new MyCustomServiceLocator();
 Catel.IoC.IoCFactory.CreateTypeFactoryFunc = () => new MyCustomTypeFactory();
  
@@ -25,7 +25,7 @@ At this moment, Catel will fully replace the components (in this case the *IServ
 
 It is best to respect the customization of the IoC components in the code. Therefore it is wise to always use the *IoCFactory* to create a *ServiceLocator* when a **new instance** is needed:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = IoCFactory.CreateServiceLocator();
 ```
 

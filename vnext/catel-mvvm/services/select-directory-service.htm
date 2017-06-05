@@ -146,8 +146,7 @@
 <p>The *ISelectDirectoryService *allows a developer to let the user choose a directory from inside a view model.</p>
 <h2 id="selecting-a-directory">Selecting a directory<a class="headerlink" href="#selecting-a-directory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To select a directory, it is required to set the right properties of the service and then make a call to the <em>DetermineDirectory</em> method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var selectDirectoryService = dependencyResolver.Resolve&lt;ISelectDirectoryService&gt;();
 if (selectDirectoryService.DetermineDirectory())
 {

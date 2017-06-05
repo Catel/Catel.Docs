@@ -175,8 +175,7 @@ Light-weight implementation of the <em>IServiceLocator</em> which does not expo
 </ul>
 <h2 id="getting-components-for-any-object">Getting components for any object<a class="headerlink" href="#getting-components-for-any-object" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>In every object, it is possible to use the <em>Default</em> properties to retrieve the instances of each component. This will cause problems when different scoping is used. To always be sure to get the right component for the object you are working with, it is recommended to use the following extension methods:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using Catel.IoC; // Contains ObjectExtensions which allow use of below extension methods
+<pre class="nocode">using Catel.IoC; // Contains ObjectExtensions which allow use of below extension methods
 
 public class MyService
 {

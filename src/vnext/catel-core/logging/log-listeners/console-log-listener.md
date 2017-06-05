@@ -6,7 +6,7 @@ The *ConsoleLogListener *writes messages to the console with automatic colors:
 
 To add it, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var logListener = new ConsoleLogListener();
 logListener.IgnoreCatelLogging = true;
 // TODO: Customize options

@@ -155,12 +155,10 @@
 <h1 id="autoscroll">AutoScroll<a class="headerlink" href="#autoscroll" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The *AutoScroll *behavior automatically scrolls to a specific direction when the <em>ItemsSource</em> of an <em>ItemsControl</em> changes.</p>
 <p>1) Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>2) Add behavior</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding LogEntries}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding LogEntries}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:AutoScroll ScrollDirection=&quot;Bottom&quot; ScrollTreshold=&quot;10&quot; /&gt;
     &lt;/i:Interaction.Behaviors&gt;

@@ -8,7 +8,7 @@ Unfortunately Android does not have a powerful binding system like XAML does. Th
 
 ### Binding properties
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [Activity]
 public class SecondActivity : Catel.Android.App.Activity
 {
@@ -35,7 +35,7 @@ public class SecondActivity : Catel.Android.App.Activity
 
 ### Binding properties with events
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonView : Catel.Android.App.Fragment
 {
     private EditText _firstNameEditText;
@@ -70,7 +70,7 @@ public class PersonView : Catel.Android.App.Fragment
 
 ### Binding properties with converters
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel)viewModel;
@@ -83,7 +83,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
  
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel)viewModel;

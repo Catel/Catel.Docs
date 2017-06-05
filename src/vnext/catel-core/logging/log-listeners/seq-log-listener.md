@@ -8,7 +8,7 @@
 
 To use the Seq log listener, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var logListener = new SeqLogListener();
 logListener.IgnoreCatelLogging = true;
 // TODO: Customize options
@@ -18,7 +18,7 @@ LogManager.AddListener(logListener);
 
 This one can also be used on configuration file:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel>
     <logging>
       <listeners>

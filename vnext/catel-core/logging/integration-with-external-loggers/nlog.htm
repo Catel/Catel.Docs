@@ -165,8 +165,7 @@
 <p>The example below provides an ILogListener for NLog, but any external logging library can be used.</p>
 <h2 id="creating-the-listener">Creating the listener<a class="headerlink" href="#creating-the-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>A listener can be created by creating a new class deriving from LogListenerBase.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class NLogListener : LogListenerBase
+<pre class="nocode">public class NLogListener : LogListenerBase
 {
     protected override void Debug(ILog log, string message, object extraData)
     {
@@ -194,8 +193,7 @@ public class NLogListener : LogListenerBase
 }
 </pre><h2 id="registering-the-listener">Registering the listener<a class="headerlink" href="#registering-the-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Last but not least, it is important to register the listener:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-LogManager.AddListener(new NLogListener());
+<pre class="nocode">LogManager.AddListener(new NLogListener());
 </pre>
                     </div>
                 </div>

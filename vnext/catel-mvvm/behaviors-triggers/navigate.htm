@@ -156,12 +156,10 @@
 <p>Note that this behavior is only available for WPF</p>
 <p>The Hyperlink control in WPF is very powerful, but it is hard to make them work outside pages.</p>
 <p>Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>To execute the NavigateUrl, simply use the behavior as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;TextBlock&gt;
+<pre class="nocode">&lt;TextBlock&gt;
     &lt;Hyperlink NavigateUri=&quot;http://catel.codeplex.com&quot;&gt;
         &lt;i:Interaction.Behaviors&gt;
             &lt;catel:Navigate /&gt;

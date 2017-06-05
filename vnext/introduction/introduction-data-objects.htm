@@ -141,8 +141,7 @@
 <li>Inside the namespace, use the <em>model</em> codesnippet and fill in the name of the class, in this case <em>FirstModel</em>.</li>
 </ol>
 <p><strong>Code</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt; 
+<pre class="nocode">/// &lt;summary&gt; 
 /// FirstModel class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
 /// &lt;/summary&gt; 
@@ -218,8 +217,7 @@ public class FirstModel : ModelBase
 <p>defaultvalue</p>
 <p>&quot;Simple property&quot;</p>
 <p><strong>Code</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt; 
+<pre class="nocode">/// &lt;summary&gt; 
 /// Gets or sets the simple property.
 /// &lt;/summary&gt; 
 public string SimpleProperty
@@ -253,8 +251,7 @@ public static readonly PropertyDataSimplePropertyProperty = RegisterProperty(&qu
 <p>defaultvalue</p>
 <p>&quot;Callback property&quot;</p>
 <p><strong>Code</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt; 
+<pre class="nocode">/// &lt;summary&gt; 
 /// Gets or sets the callback property.
 /// &lt;/summary&gt; 
 public string CallbackProperty
@@ -279,8 +276,7 @@ private void OnCallbackPropertyChanged()
 </pre><h2 id="adding-validation">Adding validation<a class="headerlink" href="#adding-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is very easy to add validation to a class (both the <em>ModelBase</em> and <em>ViewModelBase</em>). There are several ways, but this getting started guide will handle only the most simple one.</p>
 <p>To enable validation, you must override at least one of the following methods:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
 /// &lt;/summary&gt;
@@ -338,8 +334,7 @@ protected override void ValidateBusinessRules(List&lt;BusinessRuleValidationResu
 <p>defaultvalue</p>
 <p>&quot;MyName&quot;</p>
 <p><strong>Code</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt; 
+<pre class="nocode">/// &lt;summary&gt; 
 /// Person class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
 /// &lt;/summary&gt; 
@@ -388,12 +383,10 @@ public class Person : SavableModelBase&lt;Person&gt;
 }
 </pre><h3 id="loading-an-object">Loading an object<a class="headerlink" href="#loading-an-object" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Loading an object is really simple once the class has been created. It is important to use the static method on the class:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var person = Person.Load(@&quot;c:\person.dob&quot;);
+<pre class="nocode">var person = Person.Load(@&quot;c:\person.dob&quot;);
 </pre><h3 id="saving-an-object">Saving an object<a class="headerlink" href="#saving-an-object" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To save an object, an instance is required. Then simply call the <em>Save</em> method.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var person = new Person();
+<pre class="nocode">var person = new Person();
 person.Name = &quot;John Doe&quot;;
 person.Save(@&quot;c:\person.dob&quot;);
 </pre>

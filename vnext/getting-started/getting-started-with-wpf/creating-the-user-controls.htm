@@ -125,8 +125,7 @@
 <p>Give the new view the name <em>PersonView</em>. The view will be added to the <em>Views</em> folder.</p>
 <p>Catel will automatically link the <em>PersonViewModel</em> and <em>PersonView</em> together by naming convention</p>
 <p>Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:StackGrid&gt;
+<pre class="nocode">&lt;catel:StackGrid&gt;
     &lt;catel:StackGrid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
@@ -144,8 +143,7 @@
 &lt;/catel:StackGrid&gt;
 </pre><h2 id="family-view">Family view<a class="headerlink" href="#family-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>FamilyView</em> must be created exactly the same way as the <em>PersonView</em>. Use the following xaml as content:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:StackGrid&gt;
+<pre class="nocode">&lt;catel:StackGrid&gt;
     &lt;catel:StackGrid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
@@ -170,8 +168,7 @@
     &lt;/ItemsControl&gt;
 &lt;/catel:StackGrid&gt;
 </pre><p>Since this view uses the <em>PersonView</em>, it must be defined as a namespace at the top of the file:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:views=&quot;clr-namespace:WPF.GettingStarted.Views&quot;
+<pre class="nocode">xmlns:views=&quot;clr-namespace:WPF.GettingStarted.Views&quot;
 </pre><p>The thing that is important to notice in the <em>FamilyView</em> is how it uses the <em>PersonView</em> and injects the <em>Person</em> models into the <em>PersonView</em> data context.</p>
 <h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><a href="./creating-the-windows.htm">Creating the views (windows)</a></p>

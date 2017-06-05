@@ -155,14 +155,12 @@
 <p>All pages will have to be registered manually or following the right naming convention.</p>
 <h2 id="closing-an-application">Closing an application<a class="headerlink" href="#closing-an-application" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is possible to close an application using the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.CloseApplication();
 </pre><h2 id="preventing-an-application-to-be-closed">Preventing an application to be closed<a class="headerlink" href="#preventing-an-application-to-be-closed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To prevent an application to be closed, one can subscribe to the ApplicationClosing event:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.ApplicationClosing += (sender, e) 
 =&gt;
@@ -171,14 +169,12 @@ navigationService.ApplicationClosing += (sender, e)
 };
 </pre><h2 id="navigating-to-a-new-view">Navigating to a new view<a class="headerlink" href="#navigating-to-a-new-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To navigate to a new page, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Navigate&lt;EmployeeViewModel&gt;();
 </pre><h2 id="navigating-with-parameters">Navigating with parameters<a class="headerlink" href="#navigating-with-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is very easy to navigate to a new page with parameters. Use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var parameters = new Dictionary&lt;string, object&gt;();
+<pre class="nocode">var parameters = new Dictionary&lt;string, object&gt;();
 parameters.Add(&quot;id&quot;, employee.EmployeeID);
  
 var dependencyResolver = this.GetDependencyResolver();
@@ -187,28 +183,24 @@ navigationService.Navigate&lt;EmployeeViewModel&gt;(parameters);
 </pre><p>To read the navigation parameters in the receiving view model, use the OnNavigationCompleted method.</p>
 <h2 id="navigating-back-and-forward">Navigating back and forward<a class="headerlink" href="#navigating-back-and-forward" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The service also supports navigating back and forward:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.GoBack(); // navigates to the previous page, obviously
 navigationService.GoForward(); // navigates to the next page, obviously
 </pre><h2 id="navigating-to-a-custom-uri">Navigating to a custom Uri<a class="headerlink" href="#navigating-to-a-custom-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To navigate to a custom uri without a view model type, use the following code. Of course it's also possible to pass parameters using the right method overload.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Navigate(&quot;/UI/Pages/EmployeePage.xaml&quot;);
 </pre><h2 id="registering-custom-views">Registering custom views<a class="headerlink" href="#registering-custom-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To register custom views, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
 </pre><h2 id="using-naming-conventions-to-find-pages">Using naming conventions to find pages<a class="headerlink" href="#using-naming-conventions-to-find-pages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the <a href="https://catelproject.atlassian.net/wiki/" target="_blank">Show</a> method will try to find the view using the naming convention.</p>
 <p>To add a naming convention, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.NamingConventions.Add(string.Format(&quot;/Views/My{0}View&quot;, NamingConvention.ViewModelName));
 </pre><p>The above naming convention will use the following combination:</p>

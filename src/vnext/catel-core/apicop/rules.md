@@ -6,7 +6,7 @@ Rules always belong to an *IApiCop* instance. Rules are registered once and th
 
 To register a rule in the *IApiCop*, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ApiCop.RegisterRule(new UnusedFeatureApiCopRule("UserControlLogic.InfoBarMessageControl", "The InfoBarMessageControl is not found in the visual tree. This will have 
     a negative impact on performance. Consider setting the SkipSearchingForInfoBarMessageControl or DefaultSkipSearchingForInfoBarMessageControlValue to true.", 
     ApiCopRuleLevel.Error, "https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations"));
@@ -20,7 +20,7 @@ It is good practice to use the *ClassName*.*FeatureName* for the rule names
 
 Once a rule is registered, it must be updated to actually provide any useful information. How a rule must be updated depends on the rule implementation, but the code below shows how the feature can be used. This specific rule is implemented to check if the *InfoBarMessageControl* is actually used by the software. If it is, the counter is increased as "feature being used", otherwise "feature not being used".
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _infoBarMessageControl = FindParentByPredicate(TargetControl, o => o is InfoBarMessageControl) as InfoBarMessageControl;
 
 ApiCop.UpdateRule<UnusedFeatureApiCopRule>("UserControlLogic.InfoBarMessageControl", 
@@ -41,7 +41,7 @@ This rule contains several counters. Each time code is executed, one must call t
 
 #### Usage
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ApiCop.UpdateRule<UnusedFeatureApiCopRule>("ruleName", 
     rule => rule.IncreaseCount(isFeatureBeingUsed));
 ```

@@ -6,7 +6,7 @@ In this part of the documentation, the *RadTabItem* of Telerik will be used as a
 
 The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it *TabItem* (to make it as "external control company independent" as possible). Below is the code for the control definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Base class for a control with the Catel mvvm behavior.
 /// </summary>

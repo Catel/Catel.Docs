@@ -168,8 +168,7 @@
 <p>Custom binary serialization is not (yet) supported</p>
 <h2 id="xml-serialization">Xml serialization<a class="headerlink" href="#xml-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To gain the best performance possible using the xml serializer, a model should implement the <em>ICustomXmlSerializable</em> interface.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
+<pre class="nocode">public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 {
     public string FirstName
     {
@@ -194,8 +193,7 @@ public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 }
 </pre><h2 id="json-serialization">Json serialization<a class="headerlink" href="#json-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To gain the best performance possible using the json serializer, a model should implement the <em>ICustomJsonSerializable</em> interface.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class CustomJsonSerializationModel : ModelBase, ICustomJsonSerializable
+<pre class="nocode">public class CustomJsonSerializationModel : ModelBase, ICustomJsonSerializable
 {
     public string FirstName
     {

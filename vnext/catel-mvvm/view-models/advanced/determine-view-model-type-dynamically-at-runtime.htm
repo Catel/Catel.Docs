@@ -156,8 +156,7 @@
 <p>Note that this feature is available on all controls an behaviors, not only for the <em>UserControl</em></p>
 <h2 id="how-to-dynamically-determine-the-view-model-type-using-a-usercontrol">How to dynamically determine the view model type using a UserControl<a class="headerlink" href="#how-to-dynamically-determine-the-view-model-type-using-a-usercontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Determining the view model dynamically when using the <em>UserControl</em> is extremely easy. You can override the <em>GetViewModelType(object)</em> method like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override Type GetViewModelType(object dataContext)
+<pre class="nocode">protected override Type GetViewModelType(object dataContext)
 {
     if (dataContext is Rectangle)
     {
@@ -174,8 +173,7 @@ protected override Type GetViewModelType(object dataContext)
 </pre><p>When the method returns <em>null</em>, it will fall back on the earlier determined view model type.</p>
 <h2 id="how-to-dynamically-determine-the-view-model-using-a-behavior">How to dynamically determine the view model using a behavior<a class="headerlink" href="#how-to-dynamically-determine-the-view-model-using-a-behavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Determining the view model dynamically when using behaviors must be done via the <em>DetermineViewModelType</em> event like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-mvvmBehavior.DetermineViewModelType += (sender, e) =&gt;
+<pre class="nocode">mvvmBehavior.DetermineViewModelType += (sender, e) =&gt;
 {
     if (e.DataContext is Rectangle)
     {

@@ -8,7 +8,7 @@ Note that the behavior of most converters can be inverted by using the *Converte
 
 It is possible to link converters. To link converters, simply set the *Link* property in xaml:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:NullableValueConverter x:Key="NullableValueConverter" />
  
 <catel:BooleanToVisibilityConverter>
@@ -92,7 +92,7 @@ EnumToCollapsingVisibilityConverter
 
 Converts an enum to *Visibility*. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when *MyEnumValue* is *Enum1* or *Enum3*)*:*
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToCollapsingVisibilityConverter}, ConverterParameter=Enum1|Enum3}"/>
 ```
 
@@ -102,7 +102,7 @@ EnumToHidingVisibilityConverter
 
 Converts an enum to *Visibility*. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when *MyEnumValue* is *Enum1* or *Enum3*)*:*
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToHidingVisibilityConverter}, ConverterParameter=Enum1|Enum3}"/>
 ```
 

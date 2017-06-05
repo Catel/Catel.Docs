@@ -130,8 +130,7 @@
 <li>vm - defines a new view model</li>
 </ul>
 <p> When using the <em>vm</em> code snippet, this is the result:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// $name$ view model.
 /// &lt;/summary&gt;
 public class $name$ViewModel : ViewModelBase
@@ -175,8 +174,7 @@ public class $name$ViewModel : ViewModelBase
 <li>vmpropviewmodeltomodel - Defines a View Model property with <em>ViewModelToModelAttribute</em>.</li>
 </ul>
 <p>When using the <em>vmprop</em> code snippet, this is the result:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the name.
 /// &lt;/summary&gt;
 public string Name
@@ -197,8 +195,7 @@ public static readonly PropertyData NameProperty = RegisterProperty(&quot;Name&q
 <li>vmcommandwithcanexecute - Defines a command that implements a <em>CanExecute</em> method to determine whether the command can be invoked on the View Model in its current state.</li>
 </ul>
 <p>When using the <em>vmcommandwithcanexecute</em> code snippet, this is the result:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets the Add command.
 /// &lt;/summary&gt;
 public Command&lt;object, object&gt; Add { get; private set; }
@@ -236,8 +233,7 @@ private void OnAddExecute(object parameter)
 </ul>
 <p><em>ViewModelBase</em> uses smart validation. This means that if the object is already validated, the object is not validated again to make sure that the View Models don't hit too much on the performance. Only when a property on the View Model changes, validation will be invoked. Of course, if required, it is still possible to force validation when the View Model must be validated, even when no properties have changed.</p>
 <p>To implement field or business rule validation, you only have to override <em>ValidateFields</em> and/or the <em>ValidateBusinessRules</em> method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
 /// &lt;/summary&gt;
@@ -274,8 +270,7 @@ protected override void ValidateBusinessRules(List&lt;BusinessRuleValidationResu
 <p>Most MVVM frameworks (actually, I haven't seen anyone not requiring manual updating) require manual updating, which brings us back to the stone age (remember the WinForms time setting the controls at startup, and reading the values at the end?). Catel solves this issue by providing convenience attributes that take care of this dumb getting/setting story between the View Model and the Model. Catel fully supports getting/setting the values from/to the Model, but believe me: you will love the attributes that are described next.</p>
 <h3 id="modelattribute">ModelAttribute<a class="headerlink" href="#modelattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To be able to map values from/to a Model, it is important to know the actual Model. So, to let the View Model know what property represents the Model, <em>ModelAttribute</em> can be used like shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -301,8 +296,7 @@ public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Pers
 <li>When a Model has an error or warning (business or field), the warnings are mapped to the View Model so you can “re-use” the validation of the Model inside your View Model.</li>
 </ul>
 <p>So, you get all of this for free? No, you will have to decorate your property with <em>ViewModelToModelAttribute</em>, like shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the first name.
 /// &lt;/summary&gt;
 [ViewModelToModel(&quot;Person&quot;)]
@@ -317,15 +311,13 @@ public string FirstName
 /// &lt;/summary&gt;
 public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
 </pre><p>The code example is the easiest usage of the attribute that is available. It only provides the name of the Model property. This is required because it is possible (but not likely) to have multiple Models. But what if the property on your Model has a different name than your View Model? No problem, use the overload of the attribute as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[ViewModelToModel(&quot;Person&quot;, &quot;RealFirstName&quot;)]
+<pre class="nocode">[ViewModelToModel(&quot;Person&quot;, &quot;RealFirstName&quot;)]
 public string FirstName
 ///... (remaining code left out for the sake of simplicity)
 </pre><p>The code above will map the <em>FirstName</em> property of the View Model to the <em>RealFirstName</em> property of the Person model.</p>
 <h3 id="exposeattribute">ExposeAttribute<a class="headerlink" href="#exposeattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The <em>ViewModelToModelAttribute</em> is a great way to map properties between the model and the view model. However, sometimes the mappings are not required for manual coding and should only be exposed from inside the view model to the view. The <em>ExposeAttribute</em> is great way to simplify this process. The code below is the same as declaring a model property named Person and 3 additional properties using the <em>ViewModelToModelAttribute</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -351,12 +343,10 @@ public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Pers
 <p>Let's start with the basics. As we have learned earlier in this article, all View Models created with the help of Catel derive from the <em>ViewModelBase</em> class. One of the things that this class does is that it registers itself with the <em>ViewModelManager</em> class when it is being created, and it unregisters itself again when it is closed. So, simply said, <em>ViewModelManager</em> is a class that holds a reference to all existing View Models at the moment.</p>
 <h3 id="interestedinattribute">InterestedInAttribute<a class="headerlink" href="#interestedinattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Now that we know about the <em>ViewModelManager</em> class, and know that there is a repository that holds all of the live instances of all View Model classes, it should be fairly easy to communicate with other View Models. It actually is; you just have to decorate a View Model with <em>InterestedInAttribute</em>, as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[InterestedIn(typeof(FamilyViewModel))]
+<pre class="nocode">[InterestedIn(typeof(FamilyViewModel))]
 public class PersonViewModel : ViewModelBase
 </pre><p>A View Model can have multiple <em>InterestedInAttribute</em> instances, so it is possible to subscribe to multiple View Model types at the same time. Once a View Model is decorated with <em>InterestedInAttribute</em>, the View Model will receive all changes (and of course, the View Model that caused the change) via the <em>OnViewModelPropertyChanged</em> method, as shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Called when a property has changed for a view model type that the current view model is interested in. This can
 /// be accomplished by decorating the view model with the &lt;see cref=&quot;InterestedInAttribute&quot;/&gt;.
 /// &lt;/summary&gt;

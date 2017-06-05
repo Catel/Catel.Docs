@@ -10,7 +10,7 @@ Custom binary serialization is not (yet) supported
 
 To gain the best performance possible using the xml serializer, a model should implement the *ICustomXmlSerializable* interface.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 {
     public string FirstName
@@ -40,7 +40,7 @@ public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 
 To gain the best performance possible using the json serializer, a model should implement the *ICustomJsonSerializable* interface.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class CustomJsonSerializationModel : ModelBase, ICustomJsonSerializable
 {
     public string FirstName

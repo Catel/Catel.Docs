@@ -149,8 +149,7 @@
 </ul>
 <h2 id="choosing-a-file">Choosing a file<a class="headerlink" href="#choosing-a-file" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To select a file to save, it is required to set the right properties of the service and then make a call to the <em>DetermineFile</em> method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var saveFileService = dependencyResolver.Resolve&lt;ISaveFileService&gt;();
 saveFileService.Filter = &quot;C# File|*.cs&quot;;
 if (saveFileService.DetermineFile())

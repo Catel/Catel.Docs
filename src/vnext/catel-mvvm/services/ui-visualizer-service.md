@@ -10,7 +10,7 @@ The *IUIVisualizerService* allows a developer to show (modal) windows or dialogs
 
 To show a non-modal window, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var viewModel = new EmployeeViewModel();
 
 var dependencyResolver = this.GetDependencyResolver();
@@ -22,7 +22,7 @@ uiVisualizerService.Show(viewModel);
 
 To show a modal window, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var viewModel = new EmployeeViewModel();
 
 var dependencyResolver = this.GetDependencyResolver();
@@ -34,7 +34,7 @@ uiVisualizerService.ShowDialog(viewModel);
 
 To show a (modal or non-modal) window and get a callback as soon as the window is closed, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var viewModel = new EmployeeViewModel();
 
 var dependencyResolver = this.GetDependencyResolver();
@@ -46,7 +46,7 @@ uiVisualizerService.Show(viewModel, OnWindowClosed);
 
 To register a custom window which is not automatically detected via reflection, it is required to use the Register method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var uiVisualizerService = dependencyResolver.Resolve<IUIVisualizerService>();
 uiVisualizerService.Register(typeof(EmployeeViewModel), typeof(EmployeeView));

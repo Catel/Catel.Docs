@@ -4,14 +4,14 @@ Lots of times, a developer needs to handle a double click event. However, someho
 
 1) Add the following XML namespaces:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
 
 2) Use the following definition. This example will invoke the Edit command of the view model when the item is double clicked):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox x:Name="listBox" ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
   <ListBox.ItemTemplate>
     <DataTemplate>

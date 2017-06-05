@@ -4,7 +4,7 @@ Catel will automatically hook up the *CanExecute* of the command to the *Enab
 
 ## Android
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;

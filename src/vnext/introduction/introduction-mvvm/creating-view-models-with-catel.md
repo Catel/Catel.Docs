@@ -18,7 +18,7 @@ To declare a View Model, use the following code snippet:
 
  When using the *vm* code snippet, this is the result:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// $name$ view model.
 /// </summary>
@@ -68,7 +68,7 @@ There are several code snippets available to create View Model properties:
 
 When using the *vmprop* code snippet, this is the result:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the name.
 /// </summary>
@@ -95,7 +95,7 @@ There are several code snippets available to create View Model commands:
 
 When using the *vmcommandwithcanexecute* code snippet, this is the result:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the Add command.
 /// </summary>
@@ -141,7 +141,7 @@ Because the *ViewModelBase* class derives from *ModelBase*, it provides the same
 
 To implement field or business rule validation, you only have to override *ValidateFields* and/or the *ValidateBusinessRules* method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -188,7 +188,7 @@ Most MVVM frameworks (actually, I haven't seen anyone not requiring manual updat
 
 To be able to map values from/to a Model, it is important to know the actual Model. So, to let the View Model know what property represents the Model, *ModelAttribute* can be used like shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -222,7 +222,7 @@ Now that we know how to declare a property as a Model, it is time to learn how w
 
 So, you get all of this for free? No, you will have to decorate your property with *ViewModelToModelAttribute*, like shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the first name.
 /// </summary>
@@ -241,7 +241,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstN
 
 The code example is the easiest usage of the attribute that is available. It only provides the name of the Model property. This is required because it is possible (but not likely) to have multiple Models. But what if the property on your Model has a different name than your View Model? No problem, use the overload of the attribute as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ViewModelToModel("Person", "RealFirstName")]
 public string FirstName
 ///... (remaining code left out for the sake of simplicity)
@@ -253,7 +253,7 @@ The code above will map the *FirstName* property of the View Model to the *RealF
 
 The *ViewModelToModelAttribute* is a great way to map properties between the model and the view model. However, sometimes the mappings are not required for manual coding and should only be exposed from inside the view model to the view. The *ExposeAttribute* is great way to simplify this process. The code below is the same as declaring a model property named Person and 3 additional properties using the *ViewModelToModelAttribute*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -290,14 +290,14 @@ Let's start with the basics. As we have learned earlier in this article, all Vie
 
 Now that we know about the *ViewModelManager* class, and know that there is a repository that holds all of the live instances of all View Model classes, it should be fairly easy to communicate with other View Models. It actually is; you just have to decorate a View Model with *InterestedInAttribute*, as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [InterestedIn(typeof(FamilyViewModel))]
 public class PersonViewModel : ViewModelBase
 ```
 
 A View Model can have multiple *InterestedInAttribute* instances, so it is possible to subscribe to multiple View Model types at the same time. Once a View Model is decorated with *InterestedInAttribute*, the View Model will receive all changes (and of course, the View Model that caused the change) via the *OnViewModelPropertyChanged* method, as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Called when a property has changed for a view model type that the current view model is interested in. This can
 /// be accomplished by decorating the view model with the <see cref="InterestedInAttribute"/>.

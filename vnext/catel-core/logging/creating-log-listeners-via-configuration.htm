@@ -153,8 +153,7 @@
                     <div class="section">
 <h1 id="creating-log-listeners-via-configuration">Creating log listeners via configuration<a class="headerlink" href="#creating-log-listeners-via-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Starting with Catel 3.8, it is possible to instantiate <em>LogListener</em> classes from the configuration. Below is an example on how to customize the listeners:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;configSections&gt;
+<pre class="nocode">&lt;configSections&gt;
  &lt;sectionGroup name=&quot;catel&quot;&gt;
   &lt;section name=&quot;logging&quot; type=&quot;Catel.Logging.LoggingConfigurationSection, Catel.Core&quot; /&gt;
  &lt;/sectionGroup&gt;
@@ -169,11 +168,9 @@
  &lt;/logging&gt;
 &lt;/catel&gt;
 </pre><p>It is important to register the <em>logging</em> section as shown in the example above. Then the <em>logging</em> section in the bottom can contain an unlimited number of listeners. Each listener has to provide at least the <em>type</em> property which contains the type and namespace of the <em>ILogListener</em> which must be added:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;listener type=&quot;Catel.Logging.FileLogListener&quot; /&gt;
+<pre class="nocode">&lt;listener type=&quot;Catel.Logging.FileLogListener&quot; /&gt;
 </pre><p>The other properties are fully customizable and can be defined on the fly. This means that the configuration is fully customizable for every listener that needs to be added. Below is an example to register the <em>FileLogListener</em> via configuration:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;listener type=&quot;Catel.Logging.FileLogListener&quot; FilePath=&quot;CatelLogging.txt&quot; IgnoreCatelLogging=&quot;true&quot;
+<pre class="nocode">&lt;listener type=&quot;Catel.Logging.FileLogListener&quot; FilePath=&quot;CatelLogging.txt&quot; IgnoreCatelLogging=&quot;true&quot;
           IsDebugEnabled=&quot;false&quot; IsInfoEnabled=&quot;true&quot; IsWarningEnabled=&quot;true&quot; IsErrorEnabled=&quot;true&quot;/&gt;
 </pre><p>The <em>ILogListener <em>properties (</em>IsDebugEnabled</em>, <em>IsInfoEnabled</em>, <em>IsWarningEnabled</em> and <em>IsErrorEnabled</em>) are available to all listeners. All other properties depend on the the actual listener being registered. This allows major flexibility at runtime.</p>
 

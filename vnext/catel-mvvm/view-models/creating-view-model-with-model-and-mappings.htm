@@ -161,8 +161,7 @@
 </ul>
 <h2 id="explanation">Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Defining a model is very simple, you only have to decorate your property with the <em>ModelAttribute</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the person.
 /// &lt;/summary&gt;
 [Model]
@@ -178,8 +177,7 @@ public IPerson Person
 public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(IPerson));
 </pre><p>Using the <em>ModelAttribute</em> is very powerful. Basically, this is the extended functionality in the view model. If the model supports <em>IEditableObject</em>, <em>BeginEdit</em> is automatically called in the initialization of the view model. When the view model is canceled, the <em>CancelEdit</em> is called so the changes are undone.</p>
 <p>When a model is defined, it is possible to use the <em>ViewModelToModelAttribute</em>, as you can see in the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the FirstName of the person.
 /// &lt;/summary&gt;
 [ViewModelToModel(&quot;Person&quot;)]
@@ -210,8 +208,7 @@ public string LastName
 public static readonly PropertyData LastNameProperty = RegisterProperty(&quot;LastName&quot;, typeof(string));
 </pre><p>If there is a single model on a view model, the name of the model in the <em>ViewModelToModel</em> can be ommitted as shown in the code below:</p>
 <p> </p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[ViewModelToModel]
+<pre class="nocode">[ViewModelToModel]
 public string FirstName
 {
     get { return GetValue&lt;string&gt;(FirstNameProperty); }
@@ -221,8 +218,7 @@ public string FirstName
 public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
 </pre><p>The <em>ViewModelToModelAttribute</em> in the code example above automatically maps the view model *FirstName and LastName *properties to the <em>Person.</em>FirstName **and <em>Person.LastName</em> properties. This way, you don’t have to manually map the values from and to the model. Another nice effect is that the view model automatically validates all objects defined using the <em>ModelAttribute</em>, and all field and business errors mapped are automatically mapped to the view model.</p>
 <p>Sometimes you need the full name of a person, you can easily acquire it by creating a custom converter:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-      public class CollapsMappingConverter : DefaultViewModelToModelMappingConverter
+<pre class="nocode">      public class CollapsMappingConverter : DefaultViewModelToModelMappingConverter
     {
         #region Fields
         private readonly char _separator;
@@ -270,8 +266,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;F
         #endregion
     }
 </pre><p>Now, when we created the converter we should define it in mapping like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the FullName of the person.
 /// &lt;/summary&gt;
 [ViewModelToModel(&quot;Person&quot;, &quot;FirstName&quot;, AdditionalPropertiesToWatch = new[] { &quot;LastName&quot; }, ConverterType = typeof(CollapsMappingConverter))]

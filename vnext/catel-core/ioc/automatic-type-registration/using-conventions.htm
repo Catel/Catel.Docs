@@ -169,23 +169,20 @@
 <h2 id="register-using-naming-convention"><strong>Register using Naming Convention</strong><a class="headerlink" href="#register-using-naming-convention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>You can want to register all types which match with the default naming convention, means when I have a *IService *interface, I expect the convention to find and register the <em>Service</em> class as implementation.</p>
 <p>To discover types for naming convention registration, we have to simply do :</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention();
 </pre><h2 id="register-using-firstinterfaceconvention"><strong>Register using FirstInterface Convention</strong><a class="headerlink" href="#register-using-firstinterfaceconvention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>You can want to register all types which match with the default first interface convention, means when I have a *Service *class which implements more than one interface, I expect the convention to find the first interface and use it as service registration.</p>
 <p>To discover types for first interface convention registration, we have to simply do :</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultFirstInterfaceConvention();
 </pre><h2 id="filter-types-to-register"><strong>Filter types to register</strong><a class="headerlink" href="#filter-types-to-register" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>You have the ability to apply filtering on the registration process to exclude for example or include some types.</p>
 <h3 id="exclude-all-types-of-the-namespace-containing-the-specified-type">Exclude all types of the namespace containing the specified type<a class="headerlink" href="#exclude-all-types-of-the-namespace-containing-the-specified-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>If you want to exclude all types of the namespace which belong to a particular type, just do that: </p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention() 
               .ExcludeAllTypesOfNamespaceContaining&lt;IFooService&gt;();
@@ -193,16 +190,14 @@ serviceLocator.RegisterTypesUsingDefaultNamingConvention()
 <p>You can manually specify the namespace of the types to exclude using the *ExcludeAllTypesOfNamespace ***** method like this: <em>ExcludeAllTypesOfNamespace(&quot;MyNamespace&quot;)</em></p>
 <h3 id="exclude-a-specific-type">Exclude a specific type<a class="headerlink" href="#exclude-a-specific-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>If you want to exclude a specific type, you can do that by using the <em>ExcludeType</em> method like shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention()
               .ExcludeType&lt;IFooService&gt;();
 </pre><p>The <em>IFooService</em> will be exclude on the registration process.</p>
 <h3 id="exclude-types-using-predicate">Exclude types using predicate<a class="headerlink" href="#exclude-types-using-predicate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>You also have the possibility to filter types by using a predicate, below an example :</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention()
               .ExcludeTypesWhere(type =&gt; type == typeof(IFooService));

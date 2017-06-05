@@ -2,7 +2,7 @@
 
 The *ObservableObject* is a very lightweight class that only implements the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces. This class is ideal for simple objects that only need property notification. Below is an example:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Person : ObservableObject
 {
     private string _firstName;

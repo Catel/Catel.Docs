@@ -177,8 +177,7 @@
 <h2 id="using-the-datawindow-in-mvvm">Using the DataWindow in MVVM<a class="headerlink" href="#using-the-datawindow-in-mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The easiest object to use with the MVVM Framework is the <em>DataWindow</em> class. The <em>DataWindow</em> takes fully care of the construction of the view models and the validation of the view models.</p>
 <p>The usage of the <em>DataWindow</em> class is very simple, once you know how to do it. First of all, you will have to specify the base class in the xaml file like shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:DataWindow x:Class=&quot;Catel.Articles._03___MVVM.Examples.DataWindow.PersonWindow&quot;
+<pre class="nocode">&lt;catel:DataWindow x:Class=&quot;Catel.Articles._03___MVVM.Examples.DataWindow.PersonWindow&quot;
                   xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
                   xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
                   xmlns:catel=&quot;http://catel.codeplex.com&quot;&gt;
@@ -191,8 +190,7 @@
 <li>The type definition has changed from <em>Window</em> to <em>catel:DataWindow</em>;</li>
 </ol>
 <p>The code-behind is even simpler:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Interaction logic for PersonWindow.xaml
 /// &lt;/summary&gt;
 public partial class PersonWindow : DataWindow
@@ -232,8 +230,7 @@ If you use an empty constructor, the developer will have to set the data context
 <ol>
 <li>First, use the base constructor to specify that you want to use custom mode.</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Upload window.
 /// &lt;/summary&gt;
 public class UploadWindow : DataWindow
@@ -247,8 +244,7 @@ public class UploadWindow : DataWindow
 </pre><ol>
 <li>Add the custom buttons. This must be done before the call to <em>InitializeComponent</em>.</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Upload window.
 /// &lt;/summary&gt;
 public class UploadWindow : DataWindow

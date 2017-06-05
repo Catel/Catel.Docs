@@ -24,7 +24,7 @@ Not supported
 
 To retrieve values from the configuration, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var configurationService = new ConfigurationService();
 var mySetting = configurationService.GetValue<int>("mySetting", 42);
 ```
@@ -37,7 +37,7 @@ It's best to retrieve the service from the dependency resolver or let it be inje
 
 To store values in the configuration, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var configurationService = new ConfigurationService();
 configurationService.SetValue("mySetting", 42);
 ```
@@ -48,7 +48,7 @@ It's best to retrieve the service from the dependency resolver or let it be inje
 
 The *ConfigurationService* is written with extensibility in mind. Though it defaults to the .NET local storage system, it is very easy to create a customized configuration service. Below is an example on how to customize the service so it reads and writes values from/to a database.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class DbConfigurationService : ConfigurationService
 {
     protected override bool ValueExists(string key)

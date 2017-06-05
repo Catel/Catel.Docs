@@ -4,14 +4,14 @@ Most frameworks require you to set up complex message systems (messengers) or ot
 
 If a view model is interested in the changes of another view model, it’s the responsibility of the view model that is interested to watch the view model, not the other way around. To be notified of changes on other view models, the only thing you have to do is to decorate a view model with the *InterestedInAttribute*, like shown in the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [InterestedIn(typeof(FamilyViewModel))]
 public class PersonViewModel : ViewModelBase
 ```
 
 Then, inside the *PersonViewModel* (which is interested in the changes of *FamilyViewModel*), you only have to override the *OnViewModelPropertyChanged* method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Called when a property has changed for a view model type
 /// that the current view model is interested in. This can
@@ -42,7 +42,7 @@ By using the *InterestedInAttribute*, it is possible to receive notifications of
 
 **Watched view model**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Watched view model.
 /// </summary>
@@ -66,7 +66,7 @@ public class WatchedViewModel : ViewModelBase
 
 **Interested view model**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Interested view model.
 /// </summary>

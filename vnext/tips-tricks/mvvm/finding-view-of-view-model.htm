@@ -105,11 +105,9 @@
 <h2 id="retrieving-the-view-of-a-view-model">Retrieving the view of a view model<a class="headerlink" href="#retrieving-the-view-of-a-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To find the view of a view model, use the steps below:</p>
 <p>1) Resolve the view from <em>IViewManager</em> from the <em>ServiceLocator</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var viewManager = ServiceLocator.Default.ResolveType&lt;IViewManager&gt;();
+<pre class="nocode">var viewManager = ServiceLocator.Default.ResolveType&lt;IViewManager&gt;();
 </pre><p>2) Resolve the view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var views = viewManager.GetViewsOfViewModel(myViewModel);
+<pre class="nocode">var views = viewManager.GetViewsOfViewModel(myViewModel);
 </pre><p>Note that it is possible that multiple views are linked to the same view model</p>
 
                     </div>

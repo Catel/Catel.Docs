@@ -12,7 +12,7 @@ The MessageBase provides the following additional functionality out of the box:
 
  It is very easy to create a new message. The message below is a message that contains a string and this little class provides lots of capabilities.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class DemoMessage : MessageBase<DemoMessage, string>
 {
     public DemoMessage() { }
@@ -28,7 +28,7 @@ Note that the message needs an empty constructor
 
 A user can send a message by using the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 DemoMessage.SendWith("hello world");
 ```
 
@@ -36,13 +36,13 @@ Registering to messages
 
  A class that is interested in message can register to a message using the Register method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 DemoMessage.Register(this, OnDemoMessage);
 ```
 
 ## Unregistering from messages
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 DemoMessage.Unregister(this, OnDemoMessage);
 ```
 
@@ -50,6 +50,6 @@ DemoMessage.Unregister(this, OnDemoMessage);
 
 The MessageBase class can also instantiate messages by using the With method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var message = DemoMessage.With("hello world");
 ```

@@ -8,7 +8,7 @@ There are a few caveats when using the *ModelBase* as base class for your entiti
 
 1. Create a class named *EntityBase* with the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class EntityBase : ModelBase
 {
     protected EntityBase() { }
@@ -27,7 +27,7 @@ public class EntityBase : ModelBase
 
 3. When loading the data from the database and setting the initial values, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var company = new DTO.Company()
 {
     Address = domainEntity.Address,
@@ -50,7 +50,7 @@ Note the *ClearDirtyFlag* call, which is very important to make the *IsDirty* pr
 
 It is possible to ignore the default Catel properties in the models for EF code-first. To accomplish this, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void OnModelCreating(DbModelBuilder modelBuilder)
 {
    modelBuilder.Types().Configure(c => c.Ignore("IsDirty"));

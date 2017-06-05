@@ -6,7 +6,7 @@ The example below provides an ILogListener for NLog, but any external logging li
 
 A listener can be created by creating a new class deriving from LogListenerBase.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Log4netListener : LogListenerBase
 {
     protected override void Debug(ILog log, string message, object extraData)
@@ -39,7 +39,7 @@ public class Log4netListener : LogListenerBase
 
 Last but not least, it is important to register the listener:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogManager.AddListener(new Log4netListener());
 ```
 

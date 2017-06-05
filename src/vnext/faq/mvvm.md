@@ -12,14 +12,14 @@ When writing MVVM, it's "forbidden" (read: not a best practice) to use click han
 2.  Add a reference to *System.Windows.Interactivity.dll* (ships with Catel). If you have used NuGet to add a reference, it is automatically included for you.
 3.  Add the following namespace definitions to your view declaration:
 
-    ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+    ```
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
     xmlns:catel="http://catel.codeplex.com"
     ```
 
 4.  Use the following code to convert an event to a command:
 
-    ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+    ```
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="[YourEvent]">
             <catel:EventToCommand Command="{Binding [YourCommand]}" DisableAssociatedObjectOnCannotExecute="False" />
@@ -29,7 +29,7 @@ When writing MVVM, it's "forbidden" (read: not a best practice) to use click han
 
 An example for a *ListBox *double click:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="MouseDoubleClick">
@@ -55,7 +55,7 @@ Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta)
 
 Below is the code-behind of a view that adds the *UserControlBehavior* via code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public partial class DynamicBehaviorView : UserControl, IViewModelContainer
 {
    private Catel.Windows.Controls.MVVMProviders.UserControlBehavior _mvvmBehavior;
@@ -130,7 +130,7 @@ The *UserControl* is a very powerful control. It allows lazy loaded dynamic view
 
 Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (\*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Validate(true, false);
 ```
 

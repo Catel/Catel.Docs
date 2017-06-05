@@ -8,7 +8,7 @@ When using batch log listeners, it is very important to flush the log listeners 
 
 To flush all flushable listeners, use the following method:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogManager.FlushAll();
 ```
 
@@ -22,7 +22,7 @@ When implementing a custom batch log listener, it is very wise to derive from th
 
 Below is an example batch log listener:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class FileLogListener : BatchLogListenerBase
 {
     private readonly string _filePath;

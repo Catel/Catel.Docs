@@ -178,8 +178,7 @@
 <h2 id="flushing-all-listeners">Flushing all listeners<a class="headerlink" href="#flushing-all-listeners" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>When using batch log listeners, it is very important to flush the log listeners at important events such as application unhandled exceptions or when the application exits. The reason is that otherwise important log events that are currently in the batch that hasn't been written to the persistence store are lost.</p>
 <p>To flush all flushable listeners, use the following method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-LogManager.FlushAll();
+<pre class="nocode">LogManager.FlushAll();
 </pre><h2 id="implementing-a-custom-ibatchloglistener">Implementing a custom IBatchLogListener<a class="headerlink" href="#implementing-a-custom-ibatchloglistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>When implementing a custom batch log listener, it is very wise to derive from the <em>BatchLogListenerBase</em> class. This brings the following advantages:</p>
 <ol>
@@ -188,8 +187,7 @@ LogManager.FlushAll();
 <li>You only need to implement the <em>WriteBatch</em> which actually writes the entries to the persistence store</li>
 </ol>
 <p>Below is an example batch log listener:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class FileLogListener : BatchLogListenerBase
+<pre class="nocode">public class FileLogListener : BatchLogListenerBase
 {
     private readonly string _filePath;
     private readonly int _maxSizeInKiloBytes;

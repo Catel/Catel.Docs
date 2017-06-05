@@ -162,16 +162,14 @@
 <p>Ever wanted to show the details of error messages to your end-users? Then, the <em>InfoBarMessageControl</em> is the control to use! The control shows a summary of all business and field errors provided by bindings on objects that implement the <em>IDataErrorInfo</em> interface.</p>
 <p><img src="attachments/1900573/2195457.png" /></p>
 <p>In combination with the <em>WarningAndErrorValidator</em> control, the <em>InfoBarMessageControl</em> can even show field and business warnings for objects that implement the <em>IDataWarningInfo</em> interface that ships with Catel.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:InfoBarMessageControl&gt;
+<pre class="nocode">&lt;catel:InfoBarMessageControl&gt;
     &lt;!-- Actual content here --&gt;
 &lt;/catel:InfoBarMessageControl&gt;
 </pre><p>The <em>InfoBarMessageControl</em> subscribes to the <em>Validation</em> class. This class is responsible for showing the red border around the controls that WPF shows by default. Then, it requests the actual field error property of the data item. This is added to an internal collection of error messages, and therefore the control is able to show the errors of all bindings.</p>
 <p>When the <em>WarningAndErrorValidator</em> control is found as a child control, the <em>InfoBarMessageControl</em> also subscribes to the events exposed by the <em>WarningAndErrorValidator</em>. The internal working of that control is explained later in this article. When a data object is subscribed via the <em>WarningAndErrorValidator</em>, the <em>InfoBarMessageControl</em> will also handle the warnings and business errors of that data object.</p>
 <h2 id="warninganderrorvalidator">WarningAndErrorValidator<a class="headerlink" href="#warninganderrorvalidator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>WarningAndErrorValidator</em> control is not visible to the end user. The only thing this control takes care of is to forward business errors and warnings to controls that are interested in them. The only control that ships with Catel is the <em>InfoBarMessageControl</em>. Thanks to the <em>WarningAndErrorValidator</em>, the <em>InfoBarMessageControl</em> is able to show business errors and warnings to the end user.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:WarningAndErrorValidator Source=&quot;{Binding MyObject}&quot; /&gt;
+<pre class="nocode">&lt;catel:WarningAndErrorValidator Source=&quot;{Binding MyObject}&quot; /&gt;
 </pre><p>The <em>WarningAndErrorValidator</em> needs to be placed inside an <em>InfoBarMessageControl</em>. The control then subscribes to all property changed events to make sure it receives all change notifications. Then, on every property change, the control checks whether the sender either implements the <em>IDataErrorInfo</em> or <em>IDataWarningInfo</em> interfaces.</p>
 <p>When an error or warning is found on the changed property, the control invokes the corresponding events so the <em>InfoBarMessageControl</em> can show the right information. When an error or warning no longer exists in a model, a <em>Removed</em> event is invoked so the <em>InfoBarMessageControl</em> knows that the error or warning should be removed from the summary.</p>
 <h2 id="styling-in-datawindow">Styling in DataWindow<a class="headerlink" href="#styling-in-datawindow" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -197,8 +195,7 @@
 </pre></li>
 <li>
 <p>Add a new <em>InfoBarMessageControl</em>  as root control to your *DataWindow *and set the style.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:InfoBarMessageControl  Style=&quot;{DynamicResource yourCustomStyleKey}&quot;&gt;
+<pre class="nocode">&lt;catel:InfoBarMessageControl  Style=&quot;{DynamicResource yourCustomStyleKey}&quot;&gt;
         &lt;Grid&gt;
             &lt;catel:WarningAndErrorValidator Source=&quot;{Binding}&quot; /&gt;
             //Your content 

@@ -8,7 +8,7 @@ To create design-time support for a data window, use the following steps:
 
 1. Create a design time view model. Normally, this can easily be achieved by deriving a new class from the actual view-model and inject the model. Below is an example of a design time version of a person view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Design time version of the <see cref="PersonViewModel"/>.
 /// </summary>
@@ -26,19 +26,19 @@ public class DesignPersonViewModel : PersonViewModel
 
 2. Define the type of the design time view model.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 d:DataContext="{d:DesignInstance ViewModels:DesignPersonViewModel}"
 ```
 
 If you want it to actually **show** demo data (instead of allowing to configure bindings), use *IsDesignTimeCreatable*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 d:DataContext="{d:DesignInstance ViewModels:DesignPersonViewModel, IsDesignTimeCreatable=True}"
 ```
 
 Full DataWindow declaration:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:DataWindow x:Class="Catel.Examples.PersonApplication.UI.Windows.PersonWindow"
                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 

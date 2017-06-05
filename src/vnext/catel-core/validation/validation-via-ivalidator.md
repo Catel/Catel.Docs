@@ -8,7 +8,7 @@ The validation in Catel is extremely flexible, but sometimes it is just not enou
 
 The IValidatorProvider is responsible to return the right IValidator for a specific type. There is a convenience implementation named ValidatorProviderBase which only requires the implementation of one single method. Below is an example of an implementation of the IValidatorProvider.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class ValidatorProvider : ValidatorProviderBase
 {
     /// <summary>
@@ -36,7 +36,7 @@ public class ValidatorProvider : ValidatorProviderBase
 
 The IValidator exposes lots of methods to gain the as much freedom as possible. However, most of the methods that are exposed by the interface are hardly used. Therefore there is a convenience base class named ValidatorBase. To create a basic validator, derive from the class and override the methods required for validation.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Validator : ValidatorBase<TargetClass>
 {
     /// <summary>
@@ -79,7 +79,7 @@ public class Validator : ValidatorBase<TargetClass>
 
 To register an IValidator instance on a ModelBase, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var modelValidation = myModel as IModelValidation;
 if (modelValidation != null)
 {
@@ -89,7 +89,7 @@ if (modelValidation != null)
 
 If an IValidatorProvider instance is available, the following code can be used to allow a more generic approach. This code assumes that the IValidatorProvider is registered in the ServiceLocator.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var validatorProvider = ServiceLocator.Instance.ResolveType<IValidatorProvider>();
 myObject.Validator = validatorProvider.GetValidator(myObject.GetType());
 ```
@@ -100,7 +100,7 @@ If the IValidatorProvider returns null (which is allowed), no custom validator w
 
 The ViewModelBase has it's own ServiceLocator. The easiest way to support a validator is to register an IValidatorProvider instance in the ServiceLocator:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Instance.RegisterType<IValidatorProvider, MyValidatorProvider>();
 ```
 

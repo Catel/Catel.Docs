@@ -217,16 +217,14 @@
 <p>{WorkDir}</p>
 <p>The application execution directory.  Calls <code>Directory.GetCurrentDirectory()</code>, internally.</p>
 <p>A good example would be:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var fileLogListener = new FileLogListener();
+<pre class="nocode">var fileLogListener = new FileLogListener();
 fileLogListener.FilePath = &quot;{AppDir}\{AutoLogFileName}&quot;;
  
 LogManager.AddListener(fileLogListener);
 </pre><p>Note that the default path of the <em>FileLogListener</em> is <em>{AppData}\{AutoLogFileName}</em></p>
 <h2 id="creating-a-custom-listener">Creating a custom listener<a class="headerlink" href="#creating-a-custom-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>A listener can be created by creating a new class deriving from LogListenerBase.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class FileLogListener : LogListenerBase
+<pre class="nocode">public class FileLogListener : LogListenerBase
 {
     private readonly TextWriter _textWriter;
 
@@ -247,8 +245,7 @@ public class FileLogListener : LogListenerBase
 }
 </pre><h2 id="registering-the-listener">Registering the listener<a class="headerlink" href="#registering-the-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> Last but not least, it is important to register the listener:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-LogManager.AddListener(new FileLogListener(&quot;&lt;log_file_path&gt;&quot;));
+<pre class="nocode">LogManager.AddListener(new FileLogListener(&quot;&lt;log_file_path&gt;&quot;));
 </pre>
                     </div>
                 </div>

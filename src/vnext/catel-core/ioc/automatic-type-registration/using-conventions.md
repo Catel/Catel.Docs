@@ -12,7 +12,7 @@ You can want to register all types which match with the default naming conventio
 
 To discover types for naming convention registration, we have to simply do :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention();
@@ -24,7 +24,7 @@ You can want to register all types which match with the default first interface 
 
 To discover types for first interface convention registration, we have to simply do :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultFirstInterfaceConvention();
@@ -38,7 +38,7 @@ You have the ability to apply filtering on the registration process to exclude f
 
 If you want to exclude all types of the namespace which belong to a particular type, just do that: 
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention() 
@@ -53,7 +53,7 @@ You can manually specify the namespace of the types to exclude using the *Exclud
 
 If you want to exclude a specific type, you can do that by using the *ExcludeType* method like shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention()
@@ -66,7 +66,7 @@ The *IFooService* will be exclude on the registration process.
 
 You also have the possibility to filter types by using a predicate, below an example :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = new ServiceLocator();
 
 serviceLocator.RegisterTypesUsingDefaultNamingConvention()

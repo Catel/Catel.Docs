@@ -10,7 +10,7 @@ The first thing to do is to create the *Services* folder to group the services.
 
 Then add a new interface to the *Interfaces* folder named *IFamilyService*. This will manage the families that are avaiable. Below is the interface defined:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.Services
 {
     using WPF.GettingStarted.Models;
@@ -27,7 +27,7 @@ namespace WPF.GettingStarted.Services
 
 Below is the implementation of the service which will actually take care of saving and loading of the families:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.Services
 {
     using System.Collections.Generic;
@@ -75,7 +75,7 @@ namespace WPF.GettingStarted.Services
 
 Now we have created the service, it is time to register it in the *ServiceLocator*. In the *App.xaml.cs*, add the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<IFamilyService, FamilyService>();
 ```
@@ -88,7 +88,7 @@ Now the service is registered, it can be used anywhere in the application. A gre
 
 To get an instance of the service in the view model, change the constructor to the following definition.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly IFamilyService _familyService;
 
 /// <summary>
@@ -108,7 +108,7 @@ As you can see in the code above, a new field is created to store the dependency
 
 The next thing we need is a *Families* property on the *MainWindowViewModel* to store the families in we load from disk. Below is the property definition for that:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the families.
 /// </summary>
@@ -128,7 +128,7 @@ public static readonly PropertyData FamiliesProperty = RegisterProperty("Familie
 
 Now we have the *IFamilyService* and the *Families* property, it is time to combine these two. To do this, we need to override the *Initialize *method on the view model which is automatically called as soon as the view is loaded by Catel:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override async Task Initialize()
 {
     var families = _familyService.LoadFamilies();
@@ -140,7 +140,7 @@ protected override async Task Initialize()
 
 To save the families at shutdown, override the *Close* method on the view model which is automatically called as soon as the view is closed by Catel:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override async Task Close()
 {
     _familyService.SaveFamilies(Families);

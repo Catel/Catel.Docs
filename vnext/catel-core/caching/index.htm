@@ -142,21 +142,17 @@
 <p>So, to improve your application's performance and handling this &quot;nonvolatile&quot; data from a pretty clean approach, Catel comes with a CacheStorage class. Notice that the first generic parameter is the type of the key and the second the type of the value the will be stored, just like a Dictionary but CacheStorage isn't it just a Dictionary. This class allows you to retrieve data and store it into the cache with single statement and also helps you to handle expiration policy if you need it.</p>
 <h2 id="initializing-a-cache-storage">Initializing a cache storage<a class="headerlink" href="#initializing-a-cache-storage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To initialize a cache storage field into your class use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private readonly CacheStorage&lt;string, Person&gt; _personCache = new CacheStorage&lt;string, Person&gt;(storeNullValues: true);
+<pre class="nocode">private readonly CacheStorage&lt;string, Person&gt; _personCache = new CacheStorage&lt;string, Person&gt;(storeNullValues: true);
 </pre><h2 id="retrieving-data-and-storing-into-cache-with-single-statement">Retrieving data and storing into cache with single statement<a class="headerlink" href="#retrieving-data-and-storing-into-cache-with-single-statement" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To retrieve data and store into a cache with a single statement use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var person = _personCache.GetFromCacheOrFetch(Id, () =&gt; service.FindPersonById(Id));
+<pre class="nocode">var person = _personCache.GetFromCacheOrFetch(Id, () =&gt; service.FindPersonById(Id));
 </pre><p>When this statement is executed with the same key more than once , the value will be retrieved from the cache storage instead of the service call. The service call will be executed just the first time or if the item is removed from the cache manually or automatically due to the expiration policy.</p>
 <h2 id="using-cache-expiration-policies">Using cache expiration policies<a class="headerlink" href="#using-cache-expiration-policies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The cache expiration policies add a removal behavior to the cache storage items. A policy signals that an item is expired to make that cache storage remove the item automatically.</p>
 <p>A default cache expiration policy initialization code can be specified during cache storage initialization constructor:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-CacheStorage&lt;string, Person&gt; _personCache = new CacheStorage&lt;string, Person&gt;(() =&gt; ExpirationPolicy.Duration(TimeSpan.FromMinutes(5)), true);
+<pre class="nocode">CacheStorage&lt;string, Person&gt; _personCache = new CacheStorage&lt;string, Person&gt;(() =&gt; ExpirationPolicy.Duration(TimeSpan.FromMinutes(5)), true);
 </pre><p>You can specify a specific expiration policy for an item when it's storing:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-_personCache.GetFromCacheOrFetch(id, () =&gt; service.GetPersonById(id), ExpirationPolicy.Duration(TimeSpan.FromMinutes(10)));
+<pre class="nocode">_personCache.GetFromCacheOrFetch(id, () =&gt; service.GetPersonById(id), ExpirationPolicy.Duration(TimeSpan.FromMinutes(10)));
 </pre><p>The default cache policy specified at cache storage initialization will be used if the item storing the expiration policy is not specified.</p>
 <h2 id="build-in-expiration-policies">Build-in expiration policies<a class="headerlink" href="#build-in-expiration-policies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel comes with build-in expiration policies. They are listed in the follow table:</p>
@@ -167,37 +163,31 @@ _personCache.GetFromCacheOrFetch(id, () =&gt; service.GetPersonById(id), Expirat
 <p>AbsoluteExpirationPolicy</p>
 <p>Time-base</p>
 <p>The cache item will expire on the absolute expiration DateTime</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))
+<pre class="nocode">ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))
 </pre><p>DurationExpirationPolicy</p>
 <p>Time-base</p>
 <p>The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))
+<pre class="nocode">ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))
 </pre><p>SlidingExpirationPolicy</p>
 <p>Time-base</p>
 <p>The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))
+<pre class="nocode">ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))
 </pre><p>CustomExpirationPolicy</p>
 <p>Custom</p>
 <p>The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var startDateTime = DateTime.Now;
+<pre class="nocode">var startDateTime = DateTime.Now;
 var duration = TimeSpan.FromMinutes(5);
 
 ExpirationPolicy.Custom(() =&gt; DateTime.Now &gt; startDateTime.Add(duration), () =&gt; startDateTime = DateTime.Now);
 </pre><p>CompositeExpirationPolicy</p>
 <p>Custom</p>
 <p>Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(
+<pre class="nocode">new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(
 TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=&gt;...))
 </pre><p>Implementing your own expiration cache policy</p>
 <p>If the <em>CustomExpirationPolicy</em> is not enough, you can implement you own expiration policy to make that cache item expire triggered from a custom event. You are also able to add some code to reset the expiration policy if the item is read from the cache before it expires (just like <em>SlidingExpirationPolicy</em> does).</p>
 <p>To implement an expiration cache policy use the following code template:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class MyExpirationPolicy : ExpirationPolicy
+<pre class="nocode">public class MyExpirationPolicy : ExpirationPolicy
 {
    public MyExpirationPolicy():base(true)
    {

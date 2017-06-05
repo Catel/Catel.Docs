@@ -157,8 +157,7 @@
 <h2 id="how-to-control-the-view-model-instantiation-using-the-iviewmodelfactory">How to control the view model instantiation using the IViewModelFactory<a class="headerlink" href="#how-to-control-the-view-model-instantiation-using-the-iviewmodelfactory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>IViewModelFactory</em> is the best way to customize the instantiation of view models in Catel. This allows full control for all view models because the factory will be used to create all view models, except when any other methods described below are used.</p>
 <p>If customization of the view model instantiation is required, it is best the derive from the default <em>ViewModelFactory</em> class to be able to fall back to the default behavior in non-special cases.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class CustomViewModelFactory : ViewModelFactory
+<pre class="nocode">public class CustomViewModelFactory : ViewModelFactory
 {
     public override IViewModel CreateViewModel(Type viewModelType, object dataContext)
     {
@@ -173,13 +172,11 @@ public class CustomViewModelFactory : ViewModelFactory
     }
 }
 </pre><p>When a custom factory is used, it is important to register it in the ServiceLocator:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ServiceLocator.Default.RegisterType&lt;IViewModelFactory, CustomViewModelFactory&gt;();
+<pre class="nocode">ServiceLocator.Default.RegisterType&lt;IViewModelFactory, CustomViewModelFactory&gt;();
 </pre><h2 id="how-to-control-the-view-model-instantiation-using-a-usercontrol">How to control the view model instantiation using a UserControl<a class="headerlink" href="#how-to-control-the-view-model-instantiation-using-a-usercontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Note that it is best to use the <em>IViewModelFactory</em> for view model instantation because it is a more generic solution</p>
 <p>Controlling the instantiation of the view model dynamically when using the <em>UserControl</em> is extremely easy. You can override the <em>GetViewModelInstance(object)</em> method like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override IViewModel GetViewModelInstance(object dataContext)
+<pre class="nocode">protected override IViewModel GetViewModelInstance(object dataContext)
 {
     if (dataContext is Rectangle)
     {
@@ -192,8 +189,7 @@ protected override IViewModel GetViewModelInstance(object dataContext)
 <h2 id="how-to-control-the-view-model-instantiation-using-a-behavior">How to control the view model instantiation using a behavior<a class="headerlink" href="#how-to-control-the-view-model-instantiation-using-a-behavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Note that it is best to use the <em>IViewModelFactory</em> for view model instantation because it is a more generic solution</p>
 <p>Controlling the instantiation of the view model dynamically when using behaviors must be done via the <em>DetermineViewModelInstance</em> event like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-mvvmBehavior.DetermineViewModelInstance += (sender, e) =&gt;
+<pre class="nocode">mvvmBehavior.DetermineViewModelInstance += (sender, e) =&gt;
 {
     var dataContext = e.DataContext;
     if (dataContext is Rectangle)
@@ -204,8 +200,7 @@ mvvmBehavior.DetermineViewModelInstance += (sender, e) =&gt;
 </pre><p>There is no need to set the <em>e.ViewModel</em> to <em>null</em> because that is the default value.</p>
 <h2 id="preventing-the-logic-to-create-a-view-model-by-itself">Preventing the logic to create a view model by itself<a class="headerlink" href="#preventing-the-logic-to-create-a-view-model-by-itself" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>When using the behavior, it is possible to prevent the logic to instantiate a view model. In this case, it is really possible to have full control over view model instantiation. To prevent the logic to create a view model, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-mvvmBehavior.DetermineViewModelInstance += (sender, e) =&gt;
+<pre class="nocode">mvvmBehavior.DetermineViewModelInstance += (sender, e) =&gt;
 {
     var dataContext = e.DataContext;
     if (dataContext is Rectangle)

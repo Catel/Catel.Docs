@@ -156,8 +156,7 @@
 <h1 id="validation-via-validate-methods">Validation via validate methods<a class="headerlink" href="#validation-via-validate-methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase</p>
 <p>The easiest way to implement validation is to override the ValidateFields and ValidateBusinessRules methods. Below is an example of an implementation of the ValidateFields method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+<pre class="nocode">protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
 {
     if (string.IsNullOrEmpty(FirstName))
     {

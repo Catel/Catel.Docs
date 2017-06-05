@@ -131,8 +131,7 @@
 <h2 id="binding-properties-one-way">Binding properties one way<a class="headerlink" href="#binding-properties-one-way" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To bind properties one way, use the code below.</p>
 <h3 id="android">Android<a class="headerlink" href="#android" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
+<pre class="nocode">protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;
 
@@ -143,8 +142,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 <h2 id="binding-properties-two-way">Binding properties two way<a class="headerlink" href="#binding-properties-two-way" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To bind properties two way, use the code below.</p>
 <h3 id="android-1">Android<a class="headerlink" href="#android-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
+<pre class="nocode">protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;
 
@@ -156,8 +154,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 <h2 id="binding-properties-with-a-converter">Binding properties with a converter<a class="headerlink" href="#binding-properties-with-a-converter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Converters are a well-known topic in MVVM. Catel supports the use of converters in the binding system. The example below will convert an integer (<em>vm.Counter</em>) to a string with a format to <em>&quot;{0} clicks!&quot;</em>. The converter will automatically be instantiated using the <em>TypeFactory</em>. Note that using converters in Catel support both <em>TwoWay</em> bindings and <em>ConverterHelper.UnsetValue</em> to prevent any changes in the binding system.</p>
 <h3 id="android-2">Android<a class="headerlink" href="#android-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
+<pre class="nocode">protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;
 

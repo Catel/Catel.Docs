@@ -4,14 +4,14 @@ The *AutoScroll *behavior automatically scrolls to a specific direction when t
 
 1) Add the following XML namespaces:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
 
 2) Add behavior
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding LogEntries}">
     <i:Interaction.Behaviors>
         <catel:AutoScroll ScrollDirection="Bottom" ScrollTreshold="10" />

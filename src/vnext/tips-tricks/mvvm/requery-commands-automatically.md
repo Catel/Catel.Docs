@@ -6,7 +6,7 @@ This was removed for a reason (performance), so this is not the recommended appr
 
 To use this class, instantiate it and register it in the *ServiceLocator* so it stays alive.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class RequeryUsingCommandManager
 {
     private IViewModelManager _viewModelManager;

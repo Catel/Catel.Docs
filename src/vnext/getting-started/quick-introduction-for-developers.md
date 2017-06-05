@@ -10,7 +10,7 @@ This pare contains the core functionality of Catel and what you should know when
 
 If you ever think Catel is behaving strange or does not work as expected, make sure to enable the logging. Below is an example on how to enable the logging:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 #if DEBUG
     LogManager.RegisterDebugListener();
 #endif
@@ -26,7 +26,7 @@ All properties in classes deriving from *ModelBase* (thus also *ViewModelBase*) 
 
 Normally one would write something like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private string _firstName;
 public string FirstName
 {
@@ -42,7 +42,7 @@ public string FirstName
 
 In Catel one should write this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public string FirstName
 {
     get { return GetValue< string>(FirstNameProperty); }
@@ -64,14 +64,14 @@ This part is especially meant for the MVVM part.
 
 In other MVVM frameworks, you are obliged to set the data context of a view manually. It will look something like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var view = new PersonView();
 view.DataContext = new PersonViewModel();
 ```
 
 Catel automatically resolves the right view model based on the view. If a view is created, Catel automatically creates the view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var view = new PersonView();
 // view model is automatically created
 ```

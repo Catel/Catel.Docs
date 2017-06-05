@@ -176,21 +176,17 @@
 <p>For more information how types are instantiated and dependency injection, take a look at the <a href="Introduction_to_the_TypeFactory">TypeFactory documentation</a></p>
 <h2 id="registering-a-type">Registering a type<a class="headerlink" href="#registering-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Use the following code to register a specific type in the <em>ServiceLocator</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ServiceLocator.Default.RegisterType&lt;IPleaseWaitService, PleaseWaitService&gt;();
+<pre class="nocode">ServiceLocator.Default.RegisterType&lt;IPleaseWaitService, PleaseWaitService&gt;();
 </pre><h2 id="registering-a-late-bound-type">Registering a late-bound type<a class="headerlink" href="#registering-a-late-bound-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Use the following code to register a late-bound type in the <em>ServiceLocator</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ServiceLocator.Default.RegisterType&lt;IPleaseWaitService&gt;(x =&gt; new PleaseWaitService());
+<pre class="nocode">ServiceLocator.Default.RegisterType&lt;IPleaseWaitService&gt;(x =&gt; new PleaseWaitService());
 </pre><h2 id="registering-an-instance-of-a-type">Registering an instance of a type<a class="headerlink" href="#registering-an-instance-of-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel uses the <em>TypeFactory</em> or <em>Activator.CreateInstance</em> to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var pleaseWaitService = new PleaseWaitService();
+<pre class="nocode">var pleaseWaitService = new PleaseWaitService();
 ServiceLocator.Default.RegisterInstance&lt;IPleaseWaitService&gt;(pleaseWaitService);
 </pre><h2 id="registering-a-type-via-missingtype-event">Registering a type via MissingType event<a class="headerlink" href="#registering-a-type-via-missingtype-event" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The ServiceLocator gives the end-developer a last-resort chance to register a type when it is not registered in the ServiceLocator or any of the external containers. This event is very useful for logging (then the developer in the log knows exactly what type is missing from the IoC container) or it can be used to determine at runtime in a very late stage what implementation of the service must be used. To register a type via the event, subscribe to the event and then use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private void OnMissingType(object sender, MissingTypeEventArgs e)
+<pre class="nocode">private void OnMissingType(object sender, MissingTypeEventArgs e)
 {
     if (e.InterfaceType == typeof(IPleaseWaitService))
     {
@@ -204,8 +200,7 @@ private void OnMissingType(object sender, MissingTypeEventArgs e)
 </pre><p>If both the ImplementingInstance and ImplementingType are filled, the ImplementingIntance will be used.</p>
 <h2 id="resolving-a-type">Resolving a type<a class="headerlink" href="#resolving-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To retrieve the implementation of a service, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var pleaseWaitService = ServiceLocator.Default.ResolveType&lt;IPleaseWaitService&gt;();
+<pre class="nocode">var pleaseWaitService = ServiceLocator.Default.ResolveType&lt;IPleaseWaitService&gt;();
 </pre>
                     </div>
                 </div>

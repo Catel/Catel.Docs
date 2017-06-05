@@ -176,16 +176,14 @@
 <p>The main strategy will be to use the <em>DependencyResolver</em> instead of <em>ServiceLocator</em> to resolve the types in Catel, starting with version 3.8</p>
 <p>Though in simple situations, Catel will resolve and inject all types automatically, there are a few exceptions to the rule. One of these exceptions are extension methods. These are static classes which can be used to add functionality to an object. The downside is that you cannot use dependency injection in static classes, and each object that is extended can have their own scoping of dependency resolvers. To solve this issue, Catel introduces the <em>DependencyResolverManager</em>. This is a manager that keeps track of all types and objects and the <em>DependencyResolver</em> that were used to create the object. This way it is still possible to retrieve additional dependencies in extensions methods in the <strong>same</strong> dependency resolver the type was created with.</p>
 <p>To illustrate this issue, take a look at the view model below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-// Set up a different scoping with a custom service locator
+<pre class="nocode">// Set up a different scoping with a custom service locator
 var serviceLocator = new ServiceLocator();
 // ... register custom services here
 var typeFactory = serviceLocator.ResolveType&lt;ITypeFactory&gt;();
  
 var vm = typeFactory.CreateInstance&lt;MyViewModel&gt;();
 </pre><p> In this example, a view model is created with a custom dependency scope. When writing an extension method for the view models, it is impossible to get to this custom scope:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public static class MyViewModelExtensions
+<pre class="nocode">public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
     {
@@ -195,8 +193,7 @@ public static class MyViewModelExtensions
 }
 </pre><p>One option to solve this is to create a property on the view model called <em>DependencyResolver</em> or <em>ServiceLocator</em>. However, it is <strong>not</strong> the responsibility of the view model to store this property. In fact, the view model does not know which scoping was used to create itself. The only way to solve this is to inject the <em>IServiceLocator</em> into the view model, but that's not a good practice.</p>
 <p>Below is a rewritten version of the extensions class which uses the <em>DependencyResolverManager</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public static class MyViewModelExtensions
+<pre class="nocode">public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
     {
@@ -212,8 +209,7 @@ public static class MyViewModelExtensions
 <p>The <em>DependencyResolverManager</em> can manage dependency resolvers per instance. This way it is possible to retrieve the actual dependency resolver for a specific object instance.</p>
 <h3 id="registering-a-dependency-resolver-for-an-instance">Registering a dependency resolver for an instance<a class="headerlink" href="#registering-a-dependency-resolver-for-an-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To register a dependency resolver for an instance, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 var dependencyResolver = new CatelDependencyResolver(serviceLocator);
 var myObject = new MySpecialObject();
  
@@ -222,16 +218,14 @@ dependencyResolverManager.RegisterDependencyResolverForInstance(myObject, depend
 </pre><p>Note that it is not required to register a <em>DependencyResolver</em> for instances created with the <em>TypeFactory</em>. The <em>TypeFactory</em> automatically registers the <em>DependencyResolver</em> used in the <em>DependencyResolverManager</em>.</p>
 <h3 id="retrieving-a-dependency-resolver-for-an-instance">Retrieving a dependency resolver for an instance<a class="headerlink" href="#retrieving-a-dependency-resolver-for-an-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To retrieve the dependency resolver for a specific instance, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolverManager = DependencyResolverManager.Default;
+<pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(myObject);
 </pre><p>Below is a graph that shows how the dependency resolver of an instance is determined:</p>
 <h2 id="managing-the-dependency-resolvers-per-type">Managing the dependency resolvers per type<a class="headerlink" href="#managing-the-dependency-resolvers-per-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>DependencyResolverManager</em> can manage dependency resolvers per type. This way it is possible to retrieve the actual dependency resolver for a specific type.</p>
 <h3 id="registering-a-dependency-resolver-for-a-type">Registering a dependency resolver for a type<a class="headerlink" href="#registering-a-dependency-resolver-for-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To register a dependency resolver for a type, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = new ServiceLocator();
+<pre class="nocode">var serviceLocator = new ServiceLocator();
 var dependencyResolver = new CatelDependencyResolver(serviceLocator);
  
 var dependencyResolverManager = DependencyResolverManager.Default;
@@ -239,18 +233,15 @@ dependencyResolverManager.RegisterDependencyResolverForType(typeof(MyClass), dep
 </pre><p>Note that these registrations are type-specific. You cannot register an interface and all classes deriving from that interface will return the same <em>DependencyResolver</em>. All actual types must be registered separately.</p>
 <h3 id="retrieving-a-dependency-resolver-for-a-type">Retrieving a dependency resolver for a type<a class="headerlink" href="#retrieving-a-dependency-resolver-for-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To retrieve the dependency resolver for a specific instance, use this code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolverManager = DependencyResolverManager.Default;
+<pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForType(typeof(MyClass));
 </pre><h2 id="customizing-the-default-dependencyresolver">Customizing the default DependencyResolver<a class="headerlink" href="#customizing-the-default-dependencyresolver" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, the <em>DependencyResolverManager</em> creates a <em>CatelDependencyResolver</em> that wraps the <em>ServiceLocator.Default</em> instance. In simple applications this is sufficient to get everything working. However sometimes it might be needed to customize the* *default <em>DependencyResolver</em>. To change the default one, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolverManager = DependencyResolverManager.Default;
+<pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyResolver();
 </pre><h2 id="customizing-the-dependencyresolvermanager">Customizing the DependencyResolverManager<a class="headerlink" href="#customizing-the-dependencyresolvermanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Customizing the <em>DependencyResolverManager</em> is not recommended. If you still want to do this for whatever reason, create a class implementing the <em>IDependencyResolverManager</em> or derive from the <em>DependencyResolverManager</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class CustomizedDependencyResolverManager : DependencyResolverManager
+<pre class="nocode">public class CustomizedDependencyResolverManager : DependencyResolverManager
 {
     public override IDependencyResolver GetDependencyResolverForType(Type type)
     {
@@ -264,8 +255,7 @@ public class CustomizedDependencyResolverManager : DependencyResolverManager
 }
 </pre><p>Note that there is no use to override the <em>DependencyResolverManager</em> as the example, but this keeps it easy to understand</p>
 <p>Then set the *DependencyResolverManager.Default *static property:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-DependencyResolverManager.Default = new CustomizedDependencyResolverManager();
+<pre class="nocode">DependencyResolverManager.Default = new CustomizedDependencyResolverManager();
 </pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961476">DependencyResolverManager flow</a> (application/gliffy+json)
  <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961477.png">DependencyResolverManager flow.png</a> (image/png)

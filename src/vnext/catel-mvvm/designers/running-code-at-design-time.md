@@ -8,7 +8,7 @@ Starting with Catel 4.3, calling *CatelEnvironment.IsInDesignTime* will automati
 
 To allow users to run code in the designer (Visual Studio or Blend), Catel introduces the *DesignTimeCodeAttribute*. This is an assembly-wide attribute which will specify the class to create at design time. This means that it is possible to create multiple attributes. Below is an example of the usage of the attribute:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [assembly: DesignTimeCode(typeof(WpfApplication.Catel.DesignTimeLanguageService))]
 [assembly: DesignTimeCode(typeof(WpfApplication.Catel.DesignTimeServiceLocator))]
 ```
@@ -21,7 +21,7 @@ The *DesignTimeCodeAttribute* contains the types that are constructed during de
 
 Below is an example of the usage, which registers custom language resource sources in the language service. This allows real-time updates of the *LanguageService *in the designer.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class DesignTimeLanguageService : Catel.DesignTimeInitializer
 {
     protected override void Initialize()

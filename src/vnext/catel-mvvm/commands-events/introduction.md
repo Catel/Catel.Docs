@@ -2,7 +2,7 @@
 
 Commanding is supported by Catel. Catel supports Command classes, which is also known as *RelayCommand* or *DelegateCommand* in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 // TODO: Move code below to constructor
 Edit = new Command(OnEditExecute, OnEditCanExecute);
 // TODO: Move code above to constructor

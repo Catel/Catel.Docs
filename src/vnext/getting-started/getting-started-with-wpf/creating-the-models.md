@@ -14,7 +14,7 @@ The *model* code snippet is available to create models
 
 The settings class is the top container that will store all families and other settings (which might be added in the future).
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
@@ -27,7 +27,7 @@ namespace WPF.GettingStarted.Models
 
 ### Family class
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
@@ -40,7 +40,7 @@ namespace WPF.GettingStarted.Models
 
 ### Person class
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
@@ -57,7 +57,7 @@ The next step is to add properties to the models. An important concept to unders
 
 At first sight, these properties might look very overwhelming. Let's take a look at how the property system works. The most important thing is the actual property registration:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static readonly PropertyData PersonsProperty = RegisterProperty("Persons", typeof(ObservableCollection<Person>), () => new ObservableCollection<Person>());
 ```
 
@@ -69,7 +69,7 @@ This defines a property on the model with the following data:
 
 This will create a property in the property bag of the model. The next piece of the property is the actual wrapper around the property value which is managed by the property bag. The Catel properties always need a wrapper to be exposed to the "outside world" of the class.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public ObservableCollection<Person> Persons
 {
     get { return GetValue<ObservableCollection<Person>>(PersonsProperty); }
@@ -83,7 +83,7 @@ The *modelprop* code snippet is available to create models
 
 ### Settings class
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Settings : SavableModelBase<Settings>
 {
     /// <summary>
@@ -104,7 +104,7 @@ public class Settings : SavableModelBase<Settings>
 
 ### Family class
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Family : ModelBase
 {
     /// <summary>
@@ -144,7 +144,7 @@ public class Family : ModelBase
 
 ### Person class
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Person : ModelBase
 {
     /// <summary>

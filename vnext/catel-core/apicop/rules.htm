@@ -153,16 +153,14 @@
 <p>Rules always belong to an <em>IApiCop</em> instance. Rules are registered once and then updated when needed, based on the requirement of the rule. Rules are normally custom-made, but Catel does provide a few base implementations.</p>
 <h2 id="registering-rules">Registering rules<a class="headerlink" href="#registering-rules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To register a rule in the <em>IApiCop</em>, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ApiCop.RegisterRule(new UnusedFeatureApiCopRule(&quot;UserControlLogic.InfoBarMessageControl&quot;, &quot;The InfoBarMessageControl is not found in the visual tree. This will have 
+<pre class="nocode">ApiCop.RegisterRule(new UnusedFeatureApiCopRule(&quot;UserControlLogic.InfoBarMessageControl&quot;, &quot;The InfoBarMessageControl is not found in the visual tree. This will have 
     a negative impact on performance. Consider setting the SkipSearchingForInfoBarMessageControl or DefaultSkipSearchingForInfoBarMessageControlValue to true.&quot;, 
     ApiCopRuleLevel.Error, &quot;https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations&quot;));
 </pre><p>The first argument is the <em>name</em> of the rule. This is a unique identifier and allows users to ignore rules by this name. The next parameter is a good extension which will explain to the end-developer what is wrong and why the rule is created in the first place. In this case it is about the <em>InfoBarMessageControl</em> which might have a negative impact on performance.</p>
 <p>It is good practice to use the <em>ClassName</em>.<em>FeatureName</em> for the rule names</p>
 <h2 id="updating-rules">Updating rules<a class="headerlink" href="#updating-rules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Once a rule is registered, it must be updated to actually provide any useful information. How a rule must be updated depends on the rule implementation, but the code below shows how the feature can be used. This specific rule is implemented to check if the <em>InfoBarMessageControl</em> is actually used by the software. If it is, the counter is increased as &quot;feature being used&quot;, otherwise &quot;feature not being used&quot;.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-_infoBarMessageControl = FindParentByPredicate(TargetControl, o =&gt; o is InfoBarMessageControl) as InfoBarMessageControl;
+<pre class="nocode">_infoBarMessageControl = FindParentByPredicate(TargetControl, o =&gt; o is InfoBarMessageControl) as InfoBarMessageControl;
 
 ApiCop.UpdateRule&lt;UnusedFeatureApiCopRule&gt;(&quot;UserControlLogic.InfoBarMessageControl&quot;, 
     rule =&gt; rule.IncreaseCount(_infoBarMessageControl != null, TargetControlType.FullName));
@@ -173,8 +171,7 @@ ApiCop.UpdateRule&lt;UnusedFeatureApiCopRule&gt;(&quot;UserControlLogic.InfoBarM
 <h3 id="unusedfeatureapicoprule">UnusedFeatureApiCopRule<a class="headerlink" href="#unusedfeatureapicoprule" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>This rule contains several counters. Each time code is executed, one must call the <em>IncreaseCount</em> method and specify if the feature is being used.</p>
 <h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ApiCop.UpdateRule&lt;UnusedFeatureApiCopRule&gt;(&quot;ruleName&quot;, 
+<pre class="nocode">ApiCop.UpdateRule&lt;UnusedFeatureApiCopRule&gt;(&quot;ruleName&quot;, 
     rule =&gt; rule.IncreaseCount(isFeatureBeingUsed));
 </pre>
                     </div>

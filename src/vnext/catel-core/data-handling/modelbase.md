@@ -17,7 +17,7 @@ The *ModelBase* (previously known as the *DataObjectBase)* class is a generic ba
 
 Using the class is extremely simple. Just declare a new class that derives from *ModelBase* and you are ready to go:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// MyObject class which fully supports serialization,
 /// property changed notifications, backwards compatibility and error checking.
@@ -58,7 +58,7 @@ Defining properties for the class is very easy, and works the same like dependen
 
 Below is the code that defines a new property Name of type string:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the name.
 /// </summary>
@@ -82,13 +82,13 @@ In lots of cases, a default value for reference types is required in the propert
 
 Below is an example of a "regular" property registration using a default value for a collection property:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static readonly PropertyData NameProperty = RegisterProperty("PersonCollection", typeof(Collection<Person>), new Collection<Person>());
 ```
 
 However, instead of creating a new collection for each new object with this property, only one collection will be created that will be used by all classes that have this property registered. One solution is to pass null as default value and create the collection in the constructor. A better solution is to use the override of *RegisterProperty* with the callback parameters:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public static readonly PropertyData NameProperty = RegisterProperty("PersonCollection", typeof(Collection<Person>), () => new Collection<Person>());
 ```
 

@@ -8,7 +8,7 @@ The *vm* code snippet is available to create view models. There is also an on-li
 
 Below is the class definition of the *PersonViewModel*. This view model will be used to show the details of a *Person* model.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.ViewModels
 {
     using Catel.MVVM;
@@ -23,7 +23,7 @@ namespace WPF.GettingStarted.ViewModels
 
 In hierarchy views, it is important to manage the state of views and view models based on the actual context where the view (thus view model) is located. Catel does this by allowing model injection. The view models will only be created when the model is available within the context of the view.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonViewModel : ViewModelBase
 {
     public PersonViewModel(Person person)
@@ -56,7 +56,7 @@ Note that the *Person* property is decorated with the *Model* attribute. This au
 
 One very powerful feature of Catel is that it can automatically map properties from a model to a view model. This way the user does not have to write repetitive code to map the properties from the model to the view model at startup and map the properties from view model to model when the view model is closed. Catel will take care of this all automatically.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the first name.
 /// </summary>
@@ -94,7 +94,7 @@ Note that the properties are decorated with the *ViewModelToModel* attribute whi
 
 The *FamilyViewModel* must be set up the same way as the *PersonViewModel* above.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace WPF.GettingStarted.ViewModels
 {
     using System.Collections.ObjectModel;

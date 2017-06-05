@@ -14,14 +14,14 @@ Give the new view the name *PersonWindow*. The view will be added to the *View
 
 Note that we can use the *PersonViewModel* for both the *PersonView* (user control) and *PersonWindow*. Both views represent the same models and view models, just a different context. To make sure that the *IUIVisualizerService* knows what view to pick first, register the *PersonWindow* in the *IUIVisualizerService* at application startup:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var uiVisualizerService = serviceLocator.ResolveType<IUIVisualizerService>();
 uiVisualizerService.Register(typeof(PersonViewModel), typeof(PersonWindow));
 ```
 
 The template will also create a constructor to inject a view model into the window. Please make sure that the constructor takes a view model of the type *PersonViewModel* instead of the generated *PersonWindowModel*. Then replace the content of the view with the xaml below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:StackGrid>
     <catel:StackGrid.RowDefinitions>
         <RowDefinition Height="Auto" />
@@ -54,7 +54,7 @@ Note that the *FamilyWindowViewModel* needs additional logic, but that will be h
 
 Once the *FamilyWindowViewModel* is created, the *FamilyWindow *must be created exactly the same way as the *PersonWindow*. Again make sure to use the right view model (*FamilyWindowViewModel*) in the constructor of the window in the code-behind. Then use the following xaml:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:StackGrid>
     <catel:StackGrid.RowDefinitions>
         <RowDefinition Height="Auto" />

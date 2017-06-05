@@ -20,7 +20,7 @@ To be in full control, the only thing required is to create a basic view model w
 
 **C\#**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Classical view model.
 /// </summary>

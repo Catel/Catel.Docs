@@ -18,7 +18,7 @@ There are several different components that are very important for the IoC in Ca
 
 In every object, it is possible to use the *Default* properties to retrieve the instances of each component. This will cause problems when different scoping is used. To always be sure to get the right component for the object you are working with, it is recommended to use the following extension methods:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using Catel.IoC; // Contains ObjectExtensions which allow use of below extension methods
 
 public class MyService

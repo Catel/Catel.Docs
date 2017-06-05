@@ -123,7 +123,7 @@ To get back the behavior, there are 2 ways:
 
 It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the *IViewPropertySelector.AddPropertyToSubscribe* method to add properties:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 var viewPropertySelector = serviceLocator.ResolveType<IViewPropertySelector>();
 
@@ -133,7 +133,7 @@ viewPropertySelector.AddPropertyToSubscribe("MyProperty", typeof(MyView));
 
 In most cases, the only reason to subscribe to property changes is because of the *ViewToViewModel *attribute. If that is the case, it is best to use the extension method *AutoDetectViewPropertiesToSubscribe* in the static constructor of the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 static MyView()
 {
     typeof(MyView).AutoDetectViewPropertiesToSubscribe();
@@ -144,7 +144,7 @@ static MyView()
 
 The default implementation of the *ViewPropertySelector* subscribes to all properties by default. By registering it in the *ServiceLocator* will ensure Catel subscribes to all dependency properties:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<IViewPropertySelector, ViewPropertySelector>();
 ```
@@ -157,7 +157,7 @@ The *IViewModel* interface now returns tasks instead of direct values to suppor
 
 #### Updating Initialize method
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override void Initialize()
 {
     base.Initialize();
@@ -166,7 +166,7 @@ public override void Initialize()
 
 Must be changed in:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override async Task Initialize()
 {
     await base.Initialize();
@@ -175,7 +175,7 @@ public override async Task Initialize()
 
 #### Updating Save method
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override bool Save()
 {
     return base.Save();
@@ -184,7 +184,7 @@ public override bool Save()
 
 Must be changed in:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override async Task<bool?> Save()
 {
     return await base.Save();
@@ -193,7 +193,7 @@ public override async Task<bool?> Save()
 
 #### Updating Close method
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override void Close()
 {
     base.Close();
@@ -202,7 +202,7 @@ public override void Close()
 
 Must be changed in:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public override async Task Close()
 {
     await base.Close();
@@ -213,7 +213,7 @@ public override async Task Close()
 
 The use of *await* or *Task.ContinueWith* to await the result is now necessary or use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 if (await messageService.ShowInfo("message", other parameters...) == MessageBoxResult.Yes)
 {
     // Handle yes here
@@ -224,7 +224,7 @@ if (await messageService.ShowInfo("message", other parameters...) == MessageBoxR
 
 The use of *await* or *Task.ContinueWith* to await the result is now necessary or use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 await uiVisualizerService.ShowDialog<MyViewModel>();
  
 // Window is closed here thanks to the await keyword
@@ -259,7 +259,7 @@ The *time* parameter has been added to all log calls. This is a breaking change
 
 To improve multiple platforms support, all parameters of the following methods on *BehaviorBase* have been removed:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 OnAssociatedObjectLoaded(object sender, EventArgs e) => OnAssociatedObjectLoaded()
  
 OnAssociatedObjectUnloaded(object sender, EventArgs e) => OnAssociatedObjectUnloaded()

@@ -10,7 +10,7 @@ The view model can be created (or added as a linked file from another project) j
 
 Make sure that a *Views* folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case *MainActivity*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [Activity(MainLauncher = true)]
 public class MainActivity : Catel.Android.App.Activity
 {
@@ -30,7 +30,7 @@ Note that the class derives from *Catel.Android.App.Activity*
 
 To create the actual user interface of the fragment, add a new *axml* file to the *Resources/layout* folder, in your case *Page\_Main* (but you can name it whatever you want). Then use the following source:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -50,7 +50,7 @@ To create the actual user interface of the fragment, add a new *axml* file to 
 
 In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended *MainActivity *class containing these mapping functionality:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [Activity(MainLauncher = true)]
 public class MainActivity : Catel.Android.App.Activity
 {

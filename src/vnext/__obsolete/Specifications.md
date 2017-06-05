@@ -14,7 +14,7 @@ The big advantage is that commonly used queries can be converted to a specificat
 
  Creating a specification is very simple. Below is an example of an active products specification:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class ActiveProductSpecification : Specification<Product>
 {
     public ActiveProductSpecification() 
@@ -26,7 +26,7 @@ public class ActiveProductSpecification : Specification<Product>
 
 Then the specification can be used like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var productRepository = new ProductRepository();
 var activeProductSpecification = new ActiveProductSpecification();
 

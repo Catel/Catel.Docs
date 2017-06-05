@@ -27,7 +27,7 @@ To use new mechanism you should declare this attributes:
 
 Defining a model is very simple, you only have to decorate your property with the *ModelAttribute*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -48,7 +48,7 @@ Using the *ModelAttribute* is very powerful. Basically, this is the extended fun
 
 When a model is defined, it is possible to use the *ViewModelToModelAttribute*, as you can see in the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the FirstName of the person.
 /// </summary>
@@ -84,7 +84,7 @@ If there is a single model on a view model, the name of the model in the *ViewMo
 
  
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ViewModelToModel]
 public string FirstName
 {
@@ -99,7 +99,7 @@ The *ViewModelToModelAttribute* in the code example above automatically maps the
 
 Sometimes you need the full name of a person, you can easily acquire it by creating a custom converter:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
       public class CollapsMappingConverter : DefaultViewModelToModelMappingConverter
     {
         #region Fields
@@ -151,7 +151,7 @@ Sometimes you need the full name of a person, you can easily acquire it by creat
 
 Now, when we created the converter we should define it in mapping like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the FullName of the person.
 /// </summary>

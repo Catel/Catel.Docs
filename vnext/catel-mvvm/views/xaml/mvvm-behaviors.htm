@@ -166,8 +166,7 @@
 <h2 id="windowbehavior">WindowBehavior<a class="headerlink" href="#windowbehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>WindowBehavior</em> class takes care of all the MVVM integrations of a window and a view model. So, where you previously had to derive a Window implementation from <em>DataWindow</em>, you can now create a new Window like any application and then add this:</p>
 <p>The <em>Save</em> and <em>Cancel</em> properties are not obligate, and need the format of <em>[controlname].[event]</em>. By default, the Click event is used, so if a button (or another control that should respond using the <em>Click</em> event), the <em>[controlname]</em> is sufficient.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;i:Interaction.Behaviors&gt;
+<pre class="nocode">&lt;i:Interaction.Behaviors&gt;
     &lt;catel:WindowBehavior ViewModelType=&quot;viewmodels:DemoWindowViewModel&quot; Save=&quot;okButton.Click&quot; Cancel=&quot;cancelButton.Click&quot; /&gt;
 &lt;/i:Interaction.Behaviors&gt;
 </pre><p>Seems too easy right? Well, it is really all you have to do.</p>
@@ -176,8 +175,7 @@
 <p>For more information, check out the the <em>Catel.Examples.WPF.AdvancedDemo</em> which shows the differences</p>
 <h2 id="usercontrolbehavior">UserControlBehavior<a class="headerlink" href="#usercontrolbehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The UserControlBehavior class takes care of all the MVVM integrations of a user control and a view model. So, where you previously had to derive a UserControl implementation from UserControl, you can now create a new UserControl like any application and then add this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;i:Interaction.Behaviors&gt;
+<pre class="nocode">&lt;i:Interaction.Behaviors&gt;
     &lt;catel:UserControlBehavior ViewModelType=&quot;viewmodels:DemoWindowViewModel&quot; /&gt;
 &lt;/i:Interaction.Behaviors&gt;
 </pre><p>This looks great, but why is there still a <em>UserControl</em> with this terrific solution?</p>
@@ -186,8 +184,7 @@
 <p>For more information, check out the the <em>Catel.Examples.WPF.AdvancedDemo</em> which shows the differences</p>
 <h2 id="navigationpagebehavior">NavigationPageBehavior<a class="headerlink" href="#navigationpagebehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The <em>NavigationPageBehavior</em> class takes care of all the MVVM integrations of a page (used in navigation or browser based applications) and a view model. So, where you previously had to derive a <em>Page</em> implementation from <em>Page</em>, you can now create a new <em>Page</em> like any application and then add this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;i:Interaction.Behaviors&gt;
+<pre class="nocode">&lt;i:Interaction.Behaviors&gt;
     &lt;catel:NavigationPageBehavior ViewModelType=&quot;viewmodels:DemoWindowViewModel&quot; /&gt;
 &lt;/i:Interaction.Behaviors&gt;
 </pre><p>This looks great, but why is there still a Page with this terrific solution?</p>

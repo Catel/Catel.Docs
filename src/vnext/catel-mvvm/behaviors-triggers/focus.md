@@ -4,7 +4,7 @@ To set the focus on a UI element, one must write code in the code-behind. With t
 
 Add the following XML namespaces:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
@@ -13,7 +13,7 @@ xmlns:catel="http://catel.codeplex.com"
 
 The easiest and default method is to set the focus when the associated control is loaded. In WPF, this is immediately when the control is focused. In Silverlight, there is a delay of 400 milliseconds by default, otherwise the focus is not set correctly.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
     <i:Interaction.Behaviors>
         <catel:Focus />
@@ -27,7 +27,7 @@ In Silverlight, simply calling Focus() on the associated object is not enough. T
 
 It is possible to set the focus when a specific event occurs. For example, when the layout root gets a MouseEnter event, the focus must be set on a specific control. This can be done via the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
     <i:Interaction.Behaviors>
         <catel:Focus FocusMoment="Event" Source="{Binding ElementName=layoutRoot}" EventName="MouseEnter" />
@@ -41,7 +41,7 @@ If you are using Silverlight, and you don't want the default delay of 500 millis
 
  It is possible to set the focus when a specific property changes. For example, when a value is set, the focus must move on to a new control. This can be done via the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
     <i:Interaction.Behaviors>
         <catel:Focus FocusMoment="PropertyChanged" Source="{Binding }" PropertyName="MyProperty" />

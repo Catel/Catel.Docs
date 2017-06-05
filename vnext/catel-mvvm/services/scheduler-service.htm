@@ -148,14 +148,12 @@
 <p>Note that the <em>SchedulerService</em> does not provide any persistence of actions and schedules. When the application is closed, all schedules are lost because they are kept in memory.</p>
 <h2 id="scheduling-an-action-in-the-relative-future">Scheduling an action in the relative future<a class="headerlink" href="#scheduling-an-action-in-the-relative-future" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To schedule an action in the relative future, use the <em>Schedule</em> method with the <em>TimeSpan</em> overload. The code below starts the action with a delay of 50 milliseconds.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var schedulerService = dependencyResolver.Resolve&lt;ISchedulerService&gt;();
 schedulerService.Schedule(() =&gt; DoSomething(), new TimeSpan(0, 0, 0, 0, 50));
 </pre><h2 id="scheduling-an-action-in-the-absolute-future">Scheduling an action in the absolute future<a class="headerlink" href="#scheduling-an-action-in-the-absolute-future" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To schedule an action in the absolute future, use the <em>Schedule</em> method with the *DateTime *overload. The code below starts the action in 5 minutes.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var schedulerService = dependencyResolver.Resolve&lt;ISchedulerService&gt;();
 schedulerService.Schedule(() =&gt; DoSomething(), DateTime.Now.AddMinutes(5));
 </pre>

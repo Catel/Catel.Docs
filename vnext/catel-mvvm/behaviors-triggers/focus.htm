@@ -159,13 +159,11 @@
 <h1 id="focus">Focus<a class="headerlink" href="#focus" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>To set the focus on a UI element, one must write code in the code-behind. With the Focus behavior, this is no longer necessary. This behavior sets the focus only once on the first time the associated object is loaded.</p>
 <p>Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><h2 id="focus-when-the-control-is-loaded">Focus when the control is loaded<a class="headerlink" href="#focus-when-the-control-is-loaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The easiest and default method is to set the focus when the associated control is loaded. In WPF, this is immediately when the control is focused. In Silverlight, there is a delay of 400 milliseconds by default, otherwise the focus is not set correctly.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:Focus /&gt;
     &lt;/i:Interaction.Behaviors&gt;
@@ -173,8 +171,7 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>In Silverlight, simply calling Focus() on the associated object is not enough. Therefore, the focus is set with a timer with a default delay of 500 milliseconds. This is customizable via the FocusDelay property</p>
 <h2 id="focus-when-an-event-occurs">Focus when an event occurs<a class="headerlink" href="#focus-when-an-event-occurs" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is possible to set the focus when a specific event occurs. For example, when the layout root gets a MouseEnter event, the focus must be set on a specific control. This can be done via the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:Focus FocusMoment=&quot;Event&quot; Source=&quot;{Binding ElementName=layoutRoot}&quot; EventName=&quot;MouseEnter&quot; /&gt;
     &lt;/i:Interaction.Behaviors&gt;
@@ -182,8 +179,7 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>If you are using Silverlight, and you don't want the default delay of 500 milliseconds, make sure to explicitly set it to 0</p>
 <h2 id="focus-when-a-property-changes">Focus when a property changes<a class="headerlink" href="#focus-when-a-property-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p> It is possible to set the focus when a specific property changes. For example, when a value is set, the focus must move on to a new control. This can be done via the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:Focus FocusMoment=&quot;PropertyChanged&quot; Source=&quot;{Binding }&quot; PropertyName=&quot;MyProperty&quot; /&gt;
     &lt;/i:Interaction.Behaviors&gt;

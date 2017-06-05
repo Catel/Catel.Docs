@@ -15,7 +15,7 @@ When implementing a simple view model without a model, only one property has to 
 
 **C\#**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Simple view model.
 /// </summary>
@@ -60,6 +60,6 @@ public class SimpleViewModel : ViewModelBase
 **XAML (assuming that the view model is set as datacontext)
 **
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <CheckBox Content="Check me to continue" IsChecked="{Binding UserAgreedToContinue, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" />
 ```

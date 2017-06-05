@@ -17,7 +17,7 @@ The default implementation automatically filters the collection specified. If th
 
 The behavior can be used as follows:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:AutoCompletionBehavior PropertyName="{Binding PropertyName, Mode=OneWay}" 
                               ItemsSource="{Binding RawCollection}" IsEnabled="{Binding EnableAutoCompletion}"/>
 ```

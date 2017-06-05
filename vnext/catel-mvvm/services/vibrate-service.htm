@@ -147,14 +147,12 @@
 <p>The <em>IVibrateService</em> allows a developer to start and stop vibration of the device via a service.</p>
 <h2 id="starting-vibration">Starting vibration<a class="headerlink" href="#starting-vibration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To start the vibration, use the following code (will vibrate for 250 ms). Note that the time span must be between 0 and 5 seconds.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var vibrateService = dependencyResolver.Resolve&lt;IVibrateService&gt;();
 vibrateService.Start(new TimeSpan(0, 0, 0, 0, 250);
 </pre><h2 id="stopping-the-vibration-earlier-than-initially-planned">Stopping the vibration earlier than initially planned<a class="headerlink" href="#stopping-the-vibration-earlier-than-initially-planned" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, the vibration stops automatically after the specified time span has passed. However, it is possible to stop the vibration manually.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var vibrateService = dependencyResolver.Resolve&lt;IVibrateService&gt;();
 vibrateService.Stop();
 </pre>

@@ -144,8 +144,7 @@
 <p>This attribute automatically keeps track of changes in both the view and the view model and this way, a control can have several properties and still implement MVVM.</p>
 <h2 id="example-implementation">Example implementation<a class="headerlink" href="#example-implementation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The example below shows how the <em>MapCenter</em> is a dependency property on the control. It automatically maps the property to the <em>ViewModel.MapCenter</em> property.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public partial class MyControl : UserControl
+<pre class="nocode">public partial class MyControl : UserControl
 {
     static MyControl()
     {
@@ -180,14 +179,12 @@ public partial class MyControl : UserControl
 }
 </pre><h2 id="important-note-starting-with-catel-4.0">Important note starting with Catel 4.0<a class="headerlink" href="#important-note-starting-with-catel-4.0" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Starting with 4.0, Catel no longer subscribes to dependency properties automatically. It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the <em>IViewPropertySelector.AddPropertyToSubscribe</em> method to add properties:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = ServiceLocator.Default;
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
 var viewPropertySelector = serviceLocator.ResolveType&lt;IViewPropertySelector&gt;();
  
 viewPropertySelector.AddPropertyToSubscribe(&quot;MyProperty&quot;, typeof(MyView));
 </pre><p>In most cases, the only reason to subscribe to property changes is because of the *ViewToViewModel *attribute. If that is the case, it is best to use the extension method <em>AutoDetectViewPropertiesToSubscribe</em> in the static constructor of the view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-static MyView()
+<pre class="nocode">static MyView()
 {
     typeof(MyView).AutoDetectViewPropertiesToSubscribe();
 }

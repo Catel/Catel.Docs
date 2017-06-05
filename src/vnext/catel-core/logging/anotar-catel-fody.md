@@ -4,13 +4,13 @@ Logging is a very important part of an application. It provides detailed informa
 
 In general, logging works by defining an *ILog* instance on a class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 ```
 
 Then in any method, logging can be added like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Log.Info(“This is a logging with a format ‘{0}’”, “test”);
 ```
 
@@ -20,7 +20,7 @@ Writing the *Log* definition can be boring and repetitive. Luckily [Simon Cropp]
 
 Using Anotar is really easy, just call the static methods on the *LogTo* class as you can see below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 LogTo.Info("This is a logging with a format ‘{0}’", “test”);
 ```
 
@@ -28,7 +28,7 @@ Note that it is no longer required to define the *Log* field, it will be added a
 
 Besides that it is really easy to use, another benefit is a very small performance improvement. The *GetCurrentClassLogger* uses reflection to determine the current class. This is a very slight hit on performance the first time a class is used (only once, the field is static). Anotar directly replaces the call by an implementation like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private static readonly ILog Log = LogManager.GetLogger(typeof(MyClass));
 ```
 
@@ -38,19 +38,19 @@ private static readonly ILog Log = LogManager.GetLogger(typeof(MyClass));
 
 By default Anotar also logs the method and line number:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 03:58:11:858 => [DEBUG] [AnotarDemo.Program] Method: 'Void Main(String[])'. Line: ~19. this is a test
 ```
 
 If you don't want such output, add this attribute on assembly level:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [assembly: LogMinimalMessage]
 ```
 
 Then the output will look like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 03:59:36:344 => [DEBUG] [AnotarDemo1.Program] this is a test
 ```
 
@@ -58,7 +58,7 @@ Then the output will look like this:
 
 It is possible to automatically log exceptions inside a method. To accomplish this, decorate the method with the *LogTo[LogLevel]OnException* attribute:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [LogToDebugOnException]
 public static void ExceptionalMethod()
 {
@@ -68,7 +68,7 @@ public static void ExceptionalMethod()
 
 Then the output will be as follows:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 04:01:48:331 => [DEBUG] [AnotarDemo.Program] Exception occurred in 'Void ExceptionalMethod()'.  | [Exception] System.Exception: This will be logged automatically
    at AnotarDemo.Program.ExceptionalMethod() in c:\Source\AnotarDemo\AnotarDemo\Program.cs:line 27
 ```

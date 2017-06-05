@@ -136,8 +136,7 @@
 <p>The image shows that we have a house. In that house, we have multiple rooms. In each room, there can be several tables with chairs and beds. This shows a “complex” UI tree with lots of different user controls (each object has its own representation and thus user control). Now our goal is to create user controls that can be used in the window that shows the full house, but also in “sub-parts” and we want to be fully independent of the <em>HouseWindowViewModel</em> (which is the only view model that would be created in a regular MVVM Framework).</p>
 <p>The example below shows only the <em>Room</em> control and the corresponding view model. The full source code of this article is provided in the source code repository of Catel, so the whole example is available if you are interested or need a more complete example.</p>
 <p>First, we start with a simple model. For the model, we use the <em>ModelBase</em> class. By using the provided code snippets, this model is setup within a minute:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Bed class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
 /// &lt;/summary&gt;
@@ -219,8 +218,7 @@ public class Room : ModelBase&lt;Room&gt;
     #endregion
 }
 </pre><p>Next, we are going to create the view model. Again, by the use of code snippets explained earlier in this article, the view model is set up within a few minutes:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Room view model.
 /// &lt;/summary&gt;
 public class RoomViewModel : ViewModelBase
@@ -348,8 +346,7 @@ public class RoomViewModel : ViewModelBase
 <p>In the view model, the properties of the Room model are mapped by the use of the <em>Model</em> attribute and the <em>ViewModelToModel</em> attribute. Last but not least, commands are defined to be able to add new tables and beds to the <em>Room</em> model.</p>
 <p>Another way to add a new user control is to use the item templates</p>
 <p>Now the model and the view model are fully set up, the last thing to do is to create the actual view. To accomplish this, add a new WPF user control to the project. First thing to do is to implement the code-behind, since that is the easiest to do:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;summary&gt;
+<pre class="nocode">&lt;summary&gt;
 /// Interaction logic for Room.xaml
 /// &lt;/summary&gt;
 public partial class Room : UserControl
@@ -365,8 +362,7 @@ public partial class Room : UserControl
 }
 </pre><p>The only thing we changed from the default user control template is that the user control now derives from <em>Catel.Windows.Controls.UserControl</em> control instead of the default <em>System.Windows.Controls.UserControl</em> control. This is it for the code-behind, let’s move up to the view.</p>
 <p>The last thing to do now is the actual xaml view. For the sake of simplicity, the actual content is left out (it’s just a grid with a textbox and itemscontrols for the children):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel:UserControl x:Class=&quot;Catel.Articles._03___MVVM.Examples.NestedUserControls.Room&quot;
+<pre class="nocode">&lt;catel:UserControl x:Class=&quot;Catel.Articles._03___MVVM.Examples.NestedUserControls.Room&quot;
                       xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
                       xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
                       xmlns:catel=&quot;http://catel.codeplex.com&quot;

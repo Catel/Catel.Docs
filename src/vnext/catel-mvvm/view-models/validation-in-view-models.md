@@ -14,7 +14,7 @@ There are two ways to use automatic mappings.
 
 Mapping a model property by using the *ViewModelToModelAttribute* requires the definition of a model property and a separate property per mapped property. The code below automatically maps the *FirstName* property.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -59,7 +59,7 @@ Mapping a property via the *ExposeAttribute* is even more simple, but has some d
 
 In other words, the *ExposeAttribute* is only very useful if 1) you are using WPF and 2) if the property is not used inside the view model but only declared to protect the model from the outside world. If both of these constraints are true, then the *ExposeAttribute* is definitely worth taking a look at. The usage is very simple:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the person.
 /// </summary>
@@ -100,7 +100,7 @@ To implement validation into a view model, only two methods need to be implement
 
 To validate fields, one should override the *ValidateFields* method. Below is an example of field validation on a view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -119,7 +119,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 
 To validate business rules, one should override the *ValidateBusinessRules* method. Below is an example of business rule validation on a view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -138,13 +138,13 @@ protected override void ValidateBusinessRules(List<IBusinessRuleValidationResult
 
 Thanks to the validation system in Catel, it is very easy to implement very advanced validation features in view models. The example below shows how to translate errors that are added to a model in the Data Access Layer or validation layer. Assume that the following pseudo code is used to set an error on a model in the DAL:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 SetFieldError(“FirstName”, “FirstNameRequired”);
 ```
 
 All errors that are mapped from the model to the view model automatically are available in the *validationResults* parameter. This way, the error can be easily translated:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable 
 /// validation of field values.
@@ -168,7 +168,7 @@ Of course this is not something you want to actually do in your view model, so y
 
 Some people like to add validation to their (view)models using annotations (attributes). Catel also supports this method, but adds additional functionality. The idea behind it is that in the end, Catel always provides all errors of an object via the *IDataErrorInfo* interface. This means that when attribute validation is used, the errors are internally registered and provided in the *ValidateFields* method. This way, all types of validation that are provided by the .NET framework are gathered into one single location where they can be used by the view.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets or sets the first name.
 /// </summary>
@@ -189,6 +189,6 @@ public static readonly PropertyData FirstNameProperty= RegisterProperty("FirstNa
 
 Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (\*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Validate(true, false);
 ```

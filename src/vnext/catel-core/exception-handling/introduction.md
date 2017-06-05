@@ -14,7 +14,7 @@ It is important to register an exception in the service and let Catel know how i
 
 The example below registers several exceptions and how they should be handled. When a *FileNotFoundException* occurs, it will show a message to the user. For any other exception, it will log the exception and show a message that the user should contact the developers.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver .Resolve<IExceptionService>();
 
@@ -36,7 +36,7 @@ The *Process* method comes in two flavors: as action and as function.
 
 ### Executing an action
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.Process(() => { throw new ArgumentOutOfRangeException(); });
@@ -44,7 +44,7 @@ exceptionService.Process(() => { throw new ArgumentOutOfRangeException(); });
 
 ### Executing a function
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 var result = exceptionService.Process<int>(() => 1 + 1);
@@ -62,7 +62,7 @@ Firstly, you need to define how the *IExceptionService* will retry your action i
 
 When you setting up your exceptions on IExceptionService, you have to additionnally use the OnErrorRetryImmediately method like shown below :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.Register<ArgumentNullException>(exception => { /* Do something */ })
@@ -77,7 +77,7 @@ You can also specify the number of times you want the *IExceptionService* to ret
 
 You have also the possibility to define more deeply the way you want your actions to be retried by using the *OnErrorRetry* method like shown below.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.Register<ArgumentNullException>(exception => { /* Do something */ })
@@ -90,7 +90,7 @@ Where 5 represents the nombre of times the action will be retried and *TimeSpan
 
 If you have provided a retry policy, you can use the *ProcessWithRetry* method to expect have your policy applied on error. Below an example :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.ProcessWithRetry(() =>
@@ -103,7 +103,7 @@ exceptionService.ProcessWithRetry(() =>
 
 Can you subscribe to the events which are thown each time an action is retried like this :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.RetryingAction +=
@@ -116,7 +116,7 @@ exceptionService.RetryingAction +=
 
 It is possible to manually handle exceptions using the service. This is useful when you don't want to wrap code in the Process method, but still want to be able to create a generic exception handling policy.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 
@@ -136,7 +136,7 @@ If the exception can be handled, the registered action will be executed, but you
 
 Although it will probably hardly used, it is possible to unregister exceptions again using the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.Unregister<ArgumentException>();
 ```
@@ -147,7 +147,7 @@ exceptionService.Unregister<ArgumentException>();
 
 You can want to throttle down the number of exceptions you receive when a production process goes awry for example. You can do it through the *UsingTolerance* extension method as shown below :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 
@@ -161,7 +161,7 @@ Here, the idea is to only receive the 10<sup>th</sup> exception message.
 
 Can you subscribe to the events which are thown each time an exception is buffered like this :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 exceptionService.ExceptionBuffered +=
@@ -174,7 +174,7 @@ exceptionService.ExceptionBuffered +=
 
 If you want to know if an exception type have its policy registered on the *IExceptionService*, you can do this by using the *IsExceptionRegistered* method like shown below :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 if (exceptionService.IsExceptionRegistered<ArgumentNullException>())
@@ -187,7 +187,7 @@ if (exceptionService.IsExceptionRegistered<ArgumentNullException>())
 
 If you want to retrieve the registered exception handler for an exception type, you have to use the *GetHandler* method like shown below :
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 var exceptionHandler = exceptionService.GetHandler<ArgumentException>();

@@ -12,7 +12,7 @@ There are two options to decorate methods with the attribute. Either with or wit
 
 In this case, the mediator will send the message to all the methods that has subscribe using the attribute to receive the message and not one especially. The code below broadcasts a message without any tag. This is just regular behavior of the message mediator.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Method to invoke when the command is executed.
 /// </summary>
@@ -26,7 +26,7 @@ private void OnCmdExecute()
 
 If a class, for example a view model, is interested in these messages, the only thing that needs to be done is to decorate a method with the MessageRecipient attribute as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Shows the message.
 /// </summary>
@@ -44,7 +44,7 @@ private void ShowMessage(string value)
 
  A tag can be used to specify some sort of grouping for messages. The MessageRecipient attribute also supports this as shown in the code below. First lets take a look how to send a message and specify a tag.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Method to invoke when the command is executed.
 /// </summary>
@@ -58,7 +58,7 @@ private void OnCmdExecute()
 
 The message is now sent with the tag. The attribute has to be used as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Shows the message.
 /// </summary>

@@ -8,7 +8,7 @@ This attribute automatically keeps track of changes in both the view and the vie
 
 The example below shows how the *MapCenter* is a dependency property on the control. It automatically maps the property to the *ViewModel.MapCenter* property.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public partial class MyControl : UserControl
 {
     static MyControl()
@@ -48,7 +48,7 @@ public partial class MyControl : UserControl
 
 Starting with 4.0, Catel no longer subscribes to dependency properties automatically. It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the *IViewPropertySelector.AddPropertyToSubscribe* method to add properties:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 var viewPropertySelector = serviceLocator.ResolveType<IViewPropertySelector>();
  
@@ -57,7 +57,7 @@ viewPropertySelector.AddPropertyToSubscribe("MyProperty", typeof(MyView));
 
 In most cases, the only reason to subscribe to property changes is because of the *ViewToViewModel *attribute. If that is the case, it is best to use the extension method *AutoDetectViewPropertiesToSubscribe* in the static constructor of the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 static MyView()
 {
     typeof(MyView).AutoDetectViewPropertiesToSubscribe();

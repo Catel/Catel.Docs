@@ -24,7 +24,7 @@ The easiest object to use with the MVVM Framework is the *DataWindow* class. The
 
 The usage of the *DataWindow* class is very simple, once you know how to do it. First of all, you will have to specify the base class in the xaml file like shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:DataWindow x:Class="Catel.Articles._03___MVVM.Examples.DataWindow.PersonWindow"
                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -41,7 +41,7 @@ As you can see, one thing has changed in regard to a “normal” window definit
 
 The code-behind is even simpler:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Interaction logic for PersonWindow.xaml
 /// </summary>
@@ -84,7 +84,7 @@ It is possible to use custom buttons and still be able to use the *DataWindow*.
 
 1. First, use the base constructor to specify that you want to use custom mode.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Upload window.
 /// </summary>
@@ -100,7 +100,7 @@ public class UploadWindow : DataWindow
 
 2. Add the custom buttons. This must be done before the call to *InitializeComponent*.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Upload window.
 /// </summary>

@@ -160,8 +160,7 @@
 <div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that it is still possible to register a custom <em>IValidatorProvider</em> to customize this behavior. It is even possible to set the <em>Validator</em> property of the <em>ModelBase</em> on a specific instance of a model</p>
 </div><h2 id="implementing-the-validator">Implementing the validator<a class="headerlink" href="#implementing-the-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The first thing that needs to be done is to write a custom implementation of the <em>IValidator</em> interface. You can either implement all the members yourself or derive from *ValidatorBase *as is shown below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class PersonValidator : ValidatorBase&lt;PersonModel&gt;
+<pre class="nocode">public class PersonValidator : ValidatorBase&lt;PersonModel&gt;
 {
     protected override void ValidateFields(PersonModel instance, List&lt;IFieldValidationResult&gt; validationResults)
     {
@@ -183,8 +182,7 @@ public class PersonValidator : ValidatorBase&lt;PersonModel&gt;
 }
 </pre><p>Decorating a model with the attribute</p>
 <p>Once a validator is available, the only thing that needs to be done is to decorate the model with the <em>ValidateModelAttribute</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[ValidateModel(typeof(PersonValidator))]
+<pre class="nocode">[ValidateModel(typeof(PersonValidator))]
 public class PersonModel : ModelBase
 {
     public string FirstName

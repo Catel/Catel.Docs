@@ -166,8 +166,7 @@
 <p>The <em>JsonSerializationConfiguration</em> enables support for customizing the configuration used while (de)serializing. Below is an example</p>
 <h3 id="using-bson-instead-of-json">Using Bson instead of Json<a class="headerlink" href="#using-bson-instead-of-json" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To use Bson instead of Json, use the <em>JsonSerializationConfiguration</em> class:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var configuration = new JsonSerializationConfiguration
+<pre class="nocode">var configuration = new JsonSerializationConfiguration
 {
     UseBson = true
 };
@@ -175,8 +174,7 @@ var configuration = new JsonSerializationConfiguration
 jsonSerializer.Serialize(myObject, configuration);
 </pre><h3 id="specifying-the-culture-to-use-during-deserialization">Specifying the culture to use during (de)serialization<a class="headerlink" href="#specifying-the-culture-to-use-during-deserialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To specify the culture to use during (de)serialization, set the <em>Culture</em> property on the configuration class:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var configuration = new SerializationConfiguration
+<pre class="nocode">var configuration = new SerializationConfiguration
 {
     Culture = new CultureInfo(&quot;nl-NL&quot;)
 };
@@ -185,8 +183,7 @@ var configuration = new SerializationConfiguration
 jsonSerializer.Serialize(myObject, configuration);
 </pre><h2 id="preserve-references-and-support-circular-references">Preserve references (and support circular references)<a class="headerlink" href="#preserve-references-and-support-circular-references" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default the <em>JsonSerializer</em> supports circular references. It does so by adding additional property values to the json. Below is a json object with support for circular references:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-{  
+<pre class="nocode">{  
    &quot;$graphid&quot;:1,
    &quot;Name&quot;:&quot;1&quot;,
    &quot;CircularModel&quot;:{  
@@ -198,8 +195,7 @@ jsonSerializer.Serialize(myObject, configuration);
    }
 }
 </pre><p>or</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-{
+<pre class="nocode">{
     &quot;$graphid&quot;: 1,
     &quot;Collection1&quot;: [1,
     2,
@@ -215,13 +211,11 @@ jsonSerializer.Serialize(myObject, configuration);
     &quot;$Collection2_$graphrefid&quot;: 2
 }
 </pre><p>To disable the support for reference preservation, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var jsonSerializer = dependencyResolver.Resolve&lt;IJsonSerializer&gt;();
+<pre class="nocode">var jsonSerializer = dependencyResolver.Resolve&lt;IJsonSerializer&gt;();
 jsonSerializer.PreserveReferences = false;
 </pre><h2 id="support-complex-dynamic-types">Support complex dynamic types<a class="headerlink" href="#support-complex-dynamic-types" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel can support complex dynamic types. For this to be supported in json, the objects need additional type information in order to restore the type info again during deserialization. Below is a json object with the type information stored inside the json:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-{  
+<pre class="nocode">{  
    &quot;$typename&quot;:&quot;Catel.Test.Data.IniFile&quot;,
    &quot;FileName&quot;:&quot;MyIniFile&quot;,
    &quot;IniEntryCollection&quot;:[  
@@ -249,8 +243,7 @@ jsonSerializer.PreserveReferences = false;
    ]
 }
 </pre><p>To disable the type information in json, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var jsonSerializer = dependencyResolver.Resolve&lt;IJsonSerializer&gt;();
+<pre class="nocode">var jsonSerializer = dependencyResolver.Resolve&lt;IJsonSerializer&gt;();
 jsonSerializer.WriteTypeInfo = false;
 </pre>
                     </div>

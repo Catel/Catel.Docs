@@ -140,8 +140,7 @@
 <h1 id="argument-checking">Argument checking<a class="headerlink" href="#argument-checking" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>It is best practice to always check if the input to a method is correct. If not, an exception should be thrown. Most people do not check for exceptions correctly and lots of null reference exceptions inside a deep stacktrace are hard to solve.
 Catel does check the input on every method. Normally, a check would look like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public void CheckForException(object obj)
+<pre class="nocode">public void CheckForException(object obj)
 {
     if (obj == null)
     {
@@ -149,8 +148,7 @@ public void CheckForException(object obj)
     }
 }
 </pre><p>However, Catel extensively logs all behavior, thus all the checks started to look like this:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public void CheckForException(object obj)
+<pre class="nocode">public void CheckForException(object obj)
 {
     if (obj == null)
     {
@@ -159,20 +157,17 @@ public void CheckForException(object obj)
     }
 }
 </pre><p>Handling input correctly in such a case takes a lot of space and repetitive code. Therefore the Argument class is developed. This way, it is very simple to check for arguments:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public void CheckForException(object obj)
+<pre class="nocode">public void CheckForException(object obj)
 {
     Argument.IsNotNull(&quot;obj&quot;, obj);
 }
 </pre><p>Or, if a range should be checked:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public void CheckForException(int myInt)
+<pre class="nocode">public void CheckForException(int myInt)
 {
     Argument.IsNotOutOfRange(&quot;myInt&quot;, myInt, 0, 10);
 }
 </pre><p>A final example is to check whether a type implements a specific interface:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public void CheckForException(object obj)
+<pre class="nocode">public void CheckForException(object obj)
 {
     Argument.ImplementsInterface(&quot;obj&quot;, obj, typeof(INotifyPropertyChanged));
 }

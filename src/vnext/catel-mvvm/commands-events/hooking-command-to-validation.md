@@ -4,7 +4,7 @@ It is possible to hook the *CanExecute* of a *Command* to the *IValidationSummar
 
 1. Add validation to a person view model (note how the validation adds the tag *PersonValidation* to a validation):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -26,14 +26,14 @@ protected override void ValidateFields(System.Collections.Generic.List<IFieldVal
 
 2. Add a property to the view model containing the validation summary using the *ValidationToViewModel* attribute.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ValidationToViewModel(Tag = "PersonValidation")]
 public IValidationSummary PersonValidationSummary { get; set; }
 ```
 
 3. Define a command on the view model:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the Save command.
 /// </summary>
@@ -50,7 +50,7 @@ private void OnSaveExecute()
 
 4. Create the command that automatically uses the validation summary using the *CommandHelper* class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Save = CommandHelper.CreateCommand(OnSaveExecute, () => PersonValidationSummary);
 ```
 

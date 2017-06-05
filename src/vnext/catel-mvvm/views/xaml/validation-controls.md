@@ -10,7 +10,7 @@ Ever wanted to show the details of error messages to your end-users? Then, the *
 
 In combination with the *WarningAndErrorValidator* control, the *InfoBarMessageControl* can even show field and business warnings for objects that implement the *IDataWarningInfo* interface that ships with Catel.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:InfoBarMessageControl>
     <!-- Actual content here -->
 </catel:InfoBarMessageControl>
@@ -24,7 +24,7 @@ When the *WarningAndErrorValidator* control is found as a child control, the *In
 
 The *WarningAndErrorValidator* control is not visible to the end user. The only thing this control takes care of is to forward business errors and warnings to controls that are interested in them. The only control that ships with Catel is the *InfoBarMessageControl*. Thanks to the *WarningAndErrorValidator*, the *InfoBarMessageControl* is able to show business errors and warnings to the end user.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:WarningAndErrorValidator Source="{Binding MyObject}" />
 ```
 
@@ -57,7 +57,7 @@ A *InfoBarMessageControl*  is automatically added to the *DataWindow*, if you 
 
 4.  Add a new *InfoBarMessageControl*  as root control to your *DataWindow *and set the style.
 
-    ``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+    ```
     <catel:InfoBarMessageControl  Style="{DynamicResource yourCustomStyleKey}">
             <Grid>
                 <catel:WarningAndErrorValidator Source="{Binding}" />

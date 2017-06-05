@@ -178,8 +178,7 @@
 <p>In memory logging can be very useful to be able to query the latest log messages. Catel provides this via the <em>RollingInMemoryLogListener</em> and <em>RollingInMemoryLogService</em>. The *RollingInMemoryLogService *is a wrapper around the <em>RollingInMemoryLogListener</em> to provide a simple way to use the listener.</p>
 <h2 id="enabling-the-feature">Enabling the feature<a class="headerlink" href="#enabling-the-feature" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, the feature is disabled to not eat any CPU ticks when not being used. To use the feature, the only thing required is to resolve the type from the <em>ServiceLocator</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var rollingInMemoryLogService = ServiceLocator.Default.ResolveType&lt;IRollingInMemoryLogService&gt;();
+<pre class="nocode">var rollingInMemoryLogService = ServiceLocator.Default.ResolveType&lt;IRollingInMemoryLogService&gt;();
 </pre><h2 id="querying-log-messages">Querying log messages<a class="headerlink" href="#querying-log-messages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To query the latest log messages, use one of the following methods:</p>
 <ul>

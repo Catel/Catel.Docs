@@ -4,14 +4,14 @@ Sometimes, a binding update should be delayed for performance reasons. This is p
 
 1) Add the following XML namespaces:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
 
 2) Use the following definition. This example will delay the update of the SelectedItem binding with 100 milliseconds:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox x:Name="listBox" ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
   <i:Interaction.Behaviors>
     <catel:DelayBindingUpdate PropertyName="SelectedItem" UpdateDelay="100" />

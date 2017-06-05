@@ -6,14 +6,14 @@ The usage is really simple, but requires the System.Windows.Interactivity.dll re
 
  1) Add the following XML namespaces:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
 
 2) Use the following definition. This example will invoke the Edit command of the view model):
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="MouseDoubleClick">
@@ -35,13 +35,13 @@ xmlns:catel="http://catel.codeplex.com"
 
 If you want to use parameters (in the case of this example, get the MouseDoubleClick event args, set PassEventArgsToCommand to true:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <Commands:EventToCommand Command="{Binding Edit}" DisableAssociatedObjectOnCannotExecute="False" PassEventArgsToCommand="True" />
 ```
 
 Then, in the view model, you can even make the command "type-safe":
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Gets the Edit command.
 /// </summary>

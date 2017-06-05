@@ -16,7 +16,7 @@ Note that the *InteractivityManager* is only compatible with behaviors and trigg
 
 The manager contains both events and methods to retrieve information about triggers. For example, if one is interested in all the *Focus* triggers, one could do the following:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class FocusWatcher
 {
     private static readonly ILog Log = LogManager.GetCurrentClassLogger();

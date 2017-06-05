@@ -6,7 +6,7 @@ In memory logging can be very useful to be able to query the latest log messages
 
 By default, the feature is disabled to not eat any CPU ticks when not being used. To use the feature, the only thing required is to resolve the type from the *ServiceLocator*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var rollingInMemoryLogService = ServiceLocator.Default.ResolveType<IRollingInMemoryLogService>();
 ```
 

@@ -17,7 +17,7 @@ Some people make dependency injection hard to understand, or maybe they don't un
 
 **Example 1: bad, instantiates the dependencies itself**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -36,7 +36,7 @@ public class MyClass
 
 **Example 2: good, retrieves the dependencies via the service locator**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -54,7 +54,7 @@ public class MyClass
 
 **Example 3: good, gets the dependencies injected**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -81,7 +81,7 @@ It will first search for all available constructors on the type that will be ins
 
 To get a better understanding of what happens, see the class below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -111,7 +111,7 @@ When the MyClass will be retrieved from the ServiceLocator, this will happen:
 
  Maybe you don't want dependency injection because it does not give you what you need or you want a very, very small improvement in performance. In that case, the dependency injection can be disabled using the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.SupportedDependencyInjection = false
 ```
 

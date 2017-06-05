@@ -107,14 +107,12 @@
 <li>Add a reference to <em>System.Windows.Interactivity.dll</em> (ships with Catel). If you have used NuGet to add a reference, it is automatically included for you.</li>
 <li>
 <p>Add the following namespace definitions to your view declaration:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre></li>
 <li>
 <p>Use the following code to convert an event to a command:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;i:Interaction.Triggers&gt;
+<pre class="nocode">&lt;i:Interaction.Triggers&gt;
     &lt;i:EventTrigger EventName=&quot;[YourEvent]&quot;&gt;
         &lt;catel:EventToCommand Command=&quot;{Binding [YourCommand]}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; /&gt;
     &lt;/i:EventTrigger&gt;
@@ -122,8 +120,7 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre></li>
 </ol>
 <p>An example for a *ListBox *double click:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Triggers&gt;
         &lt;i:EventTrigger EventName=&quot;MouseDoubleClick&quot;&gt;
             &lt;catel:EventToCommand Command=&quot;{Binding Edit}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; /&gt;
@@ -143,8 +140,7 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><h2 id="how-can-i-add-the-mvvm-behaviors-via-code-programmatically">How can I add the MVVM behaviors via code (programmatically)?<a class="headerlink" href="#how-can-i-add-the-mvvm-behaviors-via-code-programmatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Silverlight has a known issue, and sometimes installing the Silverlight 5 (beta) toolkit isn't the right option to solve the issue. Luckily, it is also possible to add one of the MVVM behaviors via code to any control or window.</p>
 <p>Below is the code-behind of a view that adds the <em>UserControlBehavior</em> via code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public partial class DynamicBehaviorView : UserControl, IViewModelContainer
+<pre class="nocode">public partial class DynamicBehaviorView : UserControl, IViewModelContainer
 {
    private Catel.Windows.Controls.MVVMProviders.UserControlBehavior _mvvmBehavior;
    
@@ -211,8 +207,7 @@ public partial class DynamicBehaviorView : UserControl, IViewModelContainer
 <p> You can set the DataContext of the control to a view model, and this way &quot;inject&quot; a view model into a control instead of letting it be created first. In fact, the user control first checks whether the DataContext is already a valid view model for the user control. If so, it keeps it that way.</p>
 <h2 id="how-can-i-prevent-validation-of-required-fields">How can I prevent validation of required fields?<a class="headerlink" href="#how-can-i-prevent-validation-of-required-fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-Validate(true, false);
+<pre class="nocode">Validate(true, false);
 </pre><p>If the validation is implemented in the models and not in the view model, set the <em>ValidateModelsOnInitialization</em> to false.</p>
 <p> </p>
 

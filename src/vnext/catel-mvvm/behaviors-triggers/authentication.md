@@ -4,7 +4,7 @@ The Authentication behavior is able to hide, collapse or disable UI elements bas
 
 1) Creating an authentication provider:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Example implementation of the <see cref="AuthenticationProvider"/>. This class is not really implemented
 /// like it should, because it shouldn't be this easy to set the current role. However, for the sake of simplicity,
@@ -41,20 +41,20 @@ public class AuthenticationProvider : IAuthenticationProvider
 
 2) Register the authentication provider in the ServiceLocator:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.IoC.ServiceLocator.Instance.RegisterType<IAuthenticationProvider, AuthenticationProvider>();
 ```
 
 3) Add the following XML namespaces to your view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
 xmlns:catel="http://catel.codeplex.com"
 ```
 
 4) Add the behavior. As you can see, it is possible to provide a custom *AuthenticationTag*, which is passed to the *IAuthenticationProvider*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <TextBox>
   <i:Interaction.Behaviors>
     <catel:Authentication AuthenticationTag="Administrator" Action="Disable" />

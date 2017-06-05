@@ -4,7 +4,7 @@ Note that the *DispatcherObservableObject* is located in *Catel.MVVM* because it
 
 The *DispatcherObservableObject* is a class that derives from the *ObservableObject* class. The only difference is that the *DispatcherObservableObject* will dispatch all property change notifications to the UI thread. Below is a class that uses the *DispatcherObservableObject* and is thread-safe for the change notifications.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Person : DispatcherObservableObject
 {
     private string _firstName;

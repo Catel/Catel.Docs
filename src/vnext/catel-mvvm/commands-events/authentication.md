@@ -10,7 +10,7 @@ To know whether a specific user can execute a command, you need to be able to di
 
 A tag must be set in the constructor of a command and cannot be changed:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Edit = new Command(OnEditExecute, OnEditCanExecute, "editCommand");
 ```
 
@@ -18,7 +18,7 @@ Edit = new Command(OnEditExecute, OnEditCanExecute, "editCommand");
 
 The *IAuthenticationProvider* is a provider that needs to be implemented per application and must be registered in the IoC container. Below is the interface definition:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Interface to allow an authentication mechanism to control the CanExecute state of a command.
 /// </summary>
@@ -46,7 +46,7 @@ public interface IAuthenticationProvider
 
 To register a custom implementation of the command authentication provider, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.IoC.ServiceLocator.Instance.RegisterType<IAuthenticationProvider, RoleAuthenticationProvider>();
 ```
 

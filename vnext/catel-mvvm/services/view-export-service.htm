@@ -147,8 +147,7 @@
 <p>/**/ Exporting a view</p>
 <h2 id="exporting-a-view">Exporting a view<a class="headerlink" href="#exporting-a-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To export a view, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var dependencyResolver = this.GetDependencyResolver();
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var viewExportService = dependencyResolver.Resolve&lt;IViewExportService&gt;();
 viewExportService.Export(myViewModel, ExportMode.File);
 </pre>

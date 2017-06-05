@@ -10,7 +10,7 @@ The advantage of ApiCop is that it will only execute any code to trace the appli
 
 As an end-user (developers that use a framework that supports ApiCop), the usage is really simply. Whenever you need a report (for example, when closing an application when the debugger is attached), use the *ApiCopManager* to write the results. Below is an example of a WPF application in the *App.xaml.cs*:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void OnExit(ExitEventArgs e)
 {
 #if DEBUG

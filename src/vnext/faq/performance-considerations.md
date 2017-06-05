@@ -16,7 +16,7 @@ Therefore, it is important to disable any call to LogManager.AddDebugListener w
 
 To be able to (re)validate when a child object changes, the ModelBase subscribes to all change notifications (of all childs) by default. This can be disabled by using the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
 ```
 
@@ -24,7 +24,7 @@ ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
 
  Validation inside Catel is very powerful, but sometimes it is not needed. To disable all validation inside Catel, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ModelBase.SuspendValidationForAllModels = true;
 ```
 
@@ -43,7 +43,7 @@ Preloading assemblies might result in a slower startup time, but will not cause 
 
 In App.xaml.cs, add the following code
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var directory = typeof(MainWindow).Assembly.GetDirectory();
 AppDomain.CurrentDomain.PreloadAssemblies(directory);
 ```
@@ -54,7 +54,7 @@ AppDomain.CurrentDomain.PreloadAssemblies(directory);
 
 In global.asax, add the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var directory = Server.MapPath("~/bin");
 AppDomain.Current.PreloadAssemblies(directory);
 ```
@@ -71,7 +71,7 @@ By default, Catel assumes that an InfoBarMessageControl is located on any wind
 
  If no *InfoBarMessageControl* is located on a container, make sure to set *SkipSearchingForInfoBarMessageControl* to *true*.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 // Use when not using styles and transitions
 Catel.Windows.Controls.UserControl.DefaultTransferStylesAndTransitionsToViewModelGridValue = false; 
  
@@ -95,7 +95,7 @@ The *ViewModelBase* allows the specify the throttling of the property change not
 
 By default, throttling is disabled but can be enabled by setting the *ThrottlingRate* property:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
 ```
 

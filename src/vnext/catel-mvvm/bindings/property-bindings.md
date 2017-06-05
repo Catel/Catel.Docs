@@ -8,7 +8,7 @@ To bind properties one way, use the code below.
 
 ### Android
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;
@@ -27,7 +27,7 @@ To bind properties two way, use the code below.
 
 ### Android
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;
@@ -48,7 +48,7 @@ Converters are a well-known topic in MVVM. Catel supports the use of converters 
 
 ### Android
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
 {
     var vm = (MainViewModel) viewModel;

@@ -16,7 +16,7 @@ Note that the pool manager does not limit the number of objects in memory. It ha
 
 Retrieving an object from the pool is very simple. When an instance of the *PoolManager\<TPoolable\>* is available, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var poolableBuffer = _poolManager.GetObject();
 ```
 
@@ -26,7 +26,7 @@ The *PoolManager\<TPoolable\>* will automatically create a new object when no ob
 
 Objects should be automatically returned to the pool when the objects are disposed. This means the objects are not really disposed but the state is being reset and the object is being returned to the pool. To automatically take care of this, it's best to use the *PoolManager\<TPoolable\>* as shown below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 using (var poolableBuffer = _poolManager.GetObject())
 {
     var buffer = poolableBuffer.Data;
@@ -47,7 +47,7 @@ Catel implements pooling via the *PoolManager\<TPoolable\>* class. This class al
 
 By default, the *PoolManager\<TPoolable\>* uses a maximum size of 5 MB per poolable type. If, for this example, the maximum size of byte buffers should be 1 MB, use the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var poolManager = new PoolManager<Buffer4096Poolable>();
 poolManager.MaxSize = 1024 * 1024 * 1;
 ```
@@ -58,7 +58,7 @@ If the *MaxSize* is reached, objects will not be added back to the internal pool
 
 Since the objects need to be re-used, it's very important that the *PoolManager\<TPoolable\>* knows how to reset objects to the initial state. Therefore every poolable object needs to implement *IPoolable* which also implements *IDisposable*. Below is an example implementation of a poolable object.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class Buffer4096Poolable : IPoolable
 {
     private const int BufferSize = 4096;

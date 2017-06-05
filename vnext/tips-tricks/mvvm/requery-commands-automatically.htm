@@ -99,8 +99,7 @@
 <p>For performance reasons, Catel no longer automatically subscribes to the <em>CommandManager</em> to invalidate the state (saves a <em>lot</em> of CanExecute calls). If you want this behavior back, you can create a custom class that subscribes to the command manager and invalidates the commands for you.</p>
 <p>This was removed for a reason (performance), so this is not the recommended approach. But this allows you to get back the old behavior.</p>
 <p>To use this class, instantiate it and register it in the <em>ServiceLocator</em> so it stays alive.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class RequeryUsingCommandManager
+<pre class="nocode">public class RequeryUsingCommandManager
 {
     private IViewModelManager _viewModelManager;
 

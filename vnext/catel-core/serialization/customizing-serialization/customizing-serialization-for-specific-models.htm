@@ -165,8 +165,7 @@
 <p>Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the <em>IncludeInSerialization</em> and <em>ExcludeFromSerialization</em> attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the <em>ISerializerModifier</em>.</p>
 <h2 id="creating-the-modifier">Creating the modifier<a class="headerlink" href="#creating-the-modifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To customize the serialization of a specific model type, one needs to implement the <em>ISerializerModifier</em> interface. The example belows shows how to encrypt the <em>Password</em> property on the <em>Person</em> model class.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class PersonSerializerModifier : SerializerModifierBase&lt;Person&gt;
+<pre class="nocode">public class PersonSerializerModifier : SerializerModifierBase&lt;Person&gt;
 {
     public override void SerializeMember(ISerializationContext context, MemberValue memberValue)
     {
@@ -186,8 +185,7 @@ public class PersonSerializerModifier : SerializerModifierBase&lt;Person&gt;
 }
 </pre><h2 id="registering-the-modifier">Registering the modifier<a class="headerlink" href="#registering-the-modifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To register a modifier for a specific class, define the <em>SerializerModifier</em> attribute:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[SerializerModifier(typeof(PersonSerializerModifier))]
+<pre class="nocode">[SerializerModifier(typeof(PersonSerializerModifier))]
 public class Person : ModelBase
 {
     // .. class contents

@@ -4,7 +4,7 @@ In Catel, view models are automatically closed when the *UserControl* is unloade
 
 It is possible to have more control about the lifetime of view models. To keep a view model alive, even when the view is unloaded, set the *CloseViewModelOnUnloaded* property of the *UserControl* to false in the constructor of the view:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 CloseViewModelOnUnloaded = false;
 ```
 

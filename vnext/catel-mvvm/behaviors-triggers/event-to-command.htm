@@ -156,12 +156,10 @@
 <p>Almost every respectable MVVM framework supports the EventToCommand trigger. It is a trigger that allows a an event to be turned into a command. This way, you never have to manually add event handlers, search for the view model in the code-behind and then call the right command.</p>
 <p>The usage is really simple, but requires the System.Windows.Interactivity.dll reference (ships with Catel). The example below shows how to add a trigger for the double click of a ListBox.</p>
 <p> 1) Add the following XML namespaces:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+<pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
 </pre><p>2) Use the following definition. This example will invoke the Edit command of the view model):</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
+<pre class="nocode">&lt;ListBox ItemsSource=&quot;{Binding PersonCollection}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;i:Interaction.Triggers&gt;
         &lt;i:EventTrigger EventName=&quot;MouseDoubleClick&quot;&gt;
             &lt;catel:EventToCommand Command=&quot;{Binding Edit}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; /&gt;
@@ -179,11 +177,9 @@ xmlns:catel=&quot;http://catel.codeplex.com&quot;
     &lt;/ListBox.ItemTemplate&gt;
 &lt;/ListBox&gt;
 </pre><p>If you want to use parameters (in the case of this example, get the MouseDoubleClick event args, set PassEventArgsToCommand to true:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;Commands:EventToCommand Command=&quot;{Binding Edit}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; PassEventArgsToCommand=&quot;True&quot; /&gt;
+<pre class="nocode">&lt;Commands:EventToCommand Command=&quot;{Binding Edit}&quot; DisableAssociatedObjectOnCannotExecute=&quot;False&quot; PassEventArgsToCommand=&quot;True&quot; /&gt;
 </pre><p>Then, in the view model, you can even make the command &quot;type-safe&quot;:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Gets the Edit command.
 /// &lt;/summary&gt;
 public Command&lt;MouseEventArgs&gt; Edit { get; private set; }

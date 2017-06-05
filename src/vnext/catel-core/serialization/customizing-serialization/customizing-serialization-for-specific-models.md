@@ -6,7 +6,7 @@ Catel has a default behavior for what gets serialized. It can be tweaked by incl
 
 To customize the serialization of a specific model type, one needs to implement the *ISerializerModifier* interface. The example belows shows how to encrypt the *Password* property on the *Person* model class.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonSerializerModifier : SerializerModifierBase<Person>
 {
     public override void SerializeMember(ISerializationContext context, MemberValue memberValue)
@@ -31,7 +31,7 @@ public class PersonSerializerModifier : SerializerModifierBase<Person>
 
 To register a modifier for a specific class, define the *SerializerModifier* attribute:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [SerializerModifier(typeof(PersonSerializerModifier))]
 public class Person : ModelBase
 {

@@ -169,8 +169,7 @@
                     <div class="section">
 <h1 id="ensuring-integrity-of-the-servicelocator">Ensuring integrity of the ServiceLocator<a class="headerlink" href="#ensuring-integrity-of-the-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Starting with Catel 3.6, a very useful feature has been added to the <em>ServiceLocator</em> and <em>TypeFactory</em>. This features is called &quot;integrity checker&quot; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming. To make the example a bit more simple, below are a few classes which demonstrate a common issue in enterprises.</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public class X
+<pre class="nocode">public class X
 {
     public X(Y y) { }
 }

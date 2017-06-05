@@ -8,7 +8,7 @@ The first thing to do is to create a new base class that accepts a view model ty
 
 Because the *RadWindow* of Telerik does not close the window when the *DialogResult* is set, this window subscribes to the *ViewModelClosed* event to close the window
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Base class for a window with the Catel mvvm behavior.
 /// </summary>

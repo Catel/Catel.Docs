@@ -6,7 +6,7 @@ The *IProcessService* allows a developer to run processes from inside a view mod
 
 To start a process with arguments, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve<IProcessService>();
 processService.StartProcess("notepad.exe", @"C:\mytextfile.txt");
@@ -16,7 +16,7 @@ processService.StartProcess("notepad.exe", @"C:\mytextfile.txt");
 
 To start a process with arguments and receive a callback on completion, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve<IProcessService>();
 processService.StartProcess("notepad.exe", @"C:\mytextfile.txt", OnProcessCompleted);

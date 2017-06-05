@@ -159,14 +159,12 @@
 <p>When using the <em>ModelBase</em> or <em>ViewModelBase</em> classes, the old and new value of a property are automatically provided on a property change. There are two ways to get more information about a property change event.</p>
 <h3 id="getting-more-information-from-the-inside">Getting more information from the inside<a class="headerlink" href="#getting-more-information-from-the-inside" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The easiest way to get more information on the inside is to override the <em>OnPropertyChanged</em> method. It automatically provides an instance of the <em>AdvancedPropertyChangedEventArgs:</em></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
+<pre class="nocode">protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
 {
 }
 </pre><h3 id="getting-mode-information-from-the-outside">Getting mode information from the outside<a class="headerlink" href="#getting-mode-information-from-the-outside" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Getting the information from outside the objects is a bit more work. This is because the <em>PropertyChanged</em> event still provides a value of the <em>PropertyChangedEventArgs</em> class. Therefore, it is required to cast the value:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private void OnObjectPropertyChanged(PropertyChangedEventArgs e)
+<pre class="nocode">private void OnObjectPropertyChanged(PropertyChangedEventArgs e)
 {
     var advancedArgs = e as AdvancedPropertyChangedEventArgs;
     if (advancedArgs != null)
@@ -176,8 +174,7 @@ private void OnObjectPropertyChanged(PropertyChangedEventArgs e)
 }
 </pre><h2 id="providing-old-value-manually">Providing old value manually<a class="headerlink" href="#providing-old-value-manually" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>When using the dependency property a-like property registration, the old and new value are automatically provided by the classes. However, when using the <em>ObservableObject,</em> the old and new value are not automatically provided. Therefore, it is possible to provide these values manually:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-private string _firstName;
+<pre class="nocode">private string _firstName;
 public string FirstName
 {
     get { return _firstName; }
@@ -193,8 +190,7 @@ public string FirstName
 <h2 id="some-sidenotes">Some sidenotes<a class="headerlink" href="#some-sidenotes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>As you might have noticed, the <em>AdvancedPropertyChangedEventArgs</em> also provide the <em>IsOldValueMeaningful</em> and the <em>IsNewValueMeaningful.</em> These are introduced because it is not always possible to determine the old or new value (for example, when the property name is string.Empty, there is no old value or new value). Therefore, the <em>OldValue</em> and <em>NewValue</em> properties are null, but doesn't mean that those are the actual old and new values.</p>
 <p>It is always required to check whether the values are meaningful before actually handing them:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
+<pre class="nocode">protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
 {
     if (e.IsOldValueMeaningful)
     {

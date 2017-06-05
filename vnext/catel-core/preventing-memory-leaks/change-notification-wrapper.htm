@@ -148,8 +148,7 @@
                     <div class="section">
 <h1 id="change-notification-wrapper">Change notification wrapper<a class="headerlink" href="#change-notification-wrapper" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Subscribing to change notifications of objects mostly results in large statements such as the one below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var itemAsPropertyChanged = obj as INotifyPropertyChanged;
+<pre class="nocode">var itemAsPropertyChanged = obj as INotifyPropertyChanged;
 if (itemAsPropertyChanged != null)
 {
     itemAsPropertyChanged.PropertyChanged += OnPropertyChanged;
@@ -157,20 +156,17 @@ if (itemAsPropertyChanged != null)
 </pre><p>However, using this code one must be aware that if not unsubscribed, there might be a potential memory leak here. In Catel, there is a solution for such cases that can raise change notifications using weak events called the ChangeNotificationWrapper. It allows the subscription of both the INotifyPropertyChanged and INotifyCollectionChanged interfaces.</p>
 <h2 id="subscribing-to-events-of-an-observable-object"> Subscribing to events of an observable object<a class="headerlink" href="#subscribing-to-events-of-an-observable-object" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Using the code below, one can subscribe to the PropertyChanged event of an object:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var wrapper = new ChangeNotificationWrapper(obj);
+<pre class="nocode">var wrapper = new ChangeNotificationWrapper(obj);
 wrapper.PropertyChanged += OnPropertyChanged;
 </pre><p>Note that it is not required to check whether the object implements INotifyPropertyChanged, the wrapper does it automatically</p>
 <h2 id="subscribing-to-events-of-an-observable-collection"> Subscribing to events of an observable collection<a class="headerlink" href="#subscribing-to-events-of-an-observable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Using the code below, one can subscribe to the CollectionChanged event of an object:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var wrapper = new ChangeNotificationWrapper(observableCollection);
+<pre class="nocode">var wrapper = new ChangeNotificationWrapper(observableCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
 </pre><p>Note that it is not required to check whether the object implements INotifyCollectionChanged, the wrapper does it automatically</p>
 <h2 id="advanced-scenario-with-observable-collections">Advanced scenario with observable collections<a class="headerlink" href="#advanced-scenario-with-observable-collections" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Sometimes it is required to watch both changes inside a collection, but also the items inside a collection. For example, there is a list of customers and you are also interested in changes of customers inside a collection. This is fully supported by the ChangeNotificationWrapper using the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var wrapper = new ChangeNotificationWrapper(observableCustomerCollection);
+<pre class="nocode">var wrapper = new ChangeNotificationWrapper(observableCustomerCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
 wrapper.CollectionItemPropertyChanged += OnCollectionItemPropertyChanged;
 </pre><p>All subscriptions are automatically managed by the ChangeNotificationWrapper when items are added or removed from the collection.</p>
@@ -180,8 +176,7 @@ wrapper.CollectionItemPropertyChanged += OnCollectionItemPropertyChanged;
 <li>Just leave them coming, as soon as the objects are no longer used, they will be garbage collected</li>
 <li> Unsubscribe using the following code:</li>
 </ol>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-wrapper.UnsubscribeFromAllEvents();
+<pre class="nocode">wrapper.UnsubscribeFromAllEvents();
 </pre>
                     </div>
                 </div>

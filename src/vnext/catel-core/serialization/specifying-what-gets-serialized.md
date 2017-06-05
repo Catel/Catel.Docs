@@ -2,7 +2,7 @@
 
 By default, Catel only serializes the defined Catel properties on the *ModelBase* or any deriving classes. It is possible to customize this behavior. Below is a class which will be used in all examples:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyModel : ModelBase
 {
     private string _fieldValue;
@@ -39,7 +39,7 @@ CatelProperty
 
 To include fields or regular properties on an object, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyModel : ModelBase
 {
     [IncludeInSerialization]
@@ -80,7 +80,7 @@ Note that private members can only be serialized in .NET and not in Silverlight,
 
 To exclude Catel properties on an object, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyModel : ModelBase
 {
     private string _fieldValue;
@@ -120,7 +120,7 @@ There is a very edge case that a class derives from *ModelBase*, but also imple
 
  
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [SerializeAsCollection]
 public class MyModel : ModelBase, IList<int>
 {
@@ -132,7 +132,7 @@ public class MyModel : ModelBase, IList<int>
 
 Internally Catel uses a default implementation of the *ISerializationManager* to determine what members of a type should be serialized. It is possible to customize this behavior by overriding a single method or by creating a brand new type. Below is an example which always excludes *Password* properties and fields from serialization.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class SafeSerializationManager : SerializationManager
 {
     public override HashSet<string> GetFieldsToSerialize(Type type)
@@ -169,7 +169,7 @@ public class SafeSerializationManager : SerializationManager
 
 Don't forget to register it in the *ServiceLocator* as well:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<ISerializationManager, SafeSerializationManager>();
 ```

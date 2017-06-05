@@ -6,7 +6,7 @@ The opinions about validation differ from person to person. Some people think it
 
 Sometimes you need to change a batch of properties and don't want validation to be called after every property change. This can be accomplished by using the following code inside a *ModelBase* class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 SuspendValidation = true;
  
 // change several properties here

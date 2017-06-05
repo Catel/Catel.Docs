@@ -150,20 +150,13 @@
                     <div class="section">
 <h1 id="listeners">Listeners<a class="headerlink" href="#listeners" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Listeners are a way to get information about the cops and their rules in the framework. The <em>ApiCopManager</em> will take care of all the retrieval of the results and the registration of the cops. The registered listeners are used by the <em>ApiCopManager.WriteResults</em> method to write the output to. To add a listener and be able to see the output of the <em>ApiCop</em> feature, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var apiCopListener = new ConsoleApiCopListener();
+<pre class="nocode">var apiCopListener = new ConsoleApiCopListener();
 ApiCopManager.AddListener(apiCopListener);
 </pre><p>After the listeners are added, one can call <em>ApiCopManager.WriteResults</em>:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-ApiCopManager.WriteResults();
-</pre><ul>
-<li><a href="#Listeners-Customizinggrouping">Customizing grouping</a></li>
-<li><a href="#Listeners-Creatingcustomlisteners">Creating custom listeners</a></li>
-</ul>
-<h2 id="customizing-grouping">Customizing grouping<a class="headerlink" href="#customizing-grouping" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<pre class="nocode">ApiCopManager.WriteResults();
+</pre><h2 id="customizing-grouping">Customizing grouping<a class="headerlink" href="#customizing-grouping" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is possible to group the listeners. To specify the grouping, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var apiCopListener = new ConsoleApiCopListener();
+<pre class="nocode">var apiCopListener = new ConsoleApiCopListener();
 apiCopListener.Grouping = ApiCopListenerGrouping.Rule;
 </pre><p>The following grouping options are available:</p>
 <p>Grouping name</p>

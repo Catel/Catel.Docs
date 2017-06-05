@@ -8,7 +8,7 @@ Note that this is still work in progress, we would love to support this, but MS 
 
 Using the attribute is really easy. Just put the attribute on top of any method, property, field or parameter like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public enum Condition
 {
     [DisplayName("Contains")]

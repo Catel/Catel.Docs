@@ -8,7 +8,7 @@ As you might have noticed, there are lots of "double" item templates. However, t
 
 Shortly said, a view with the logic in the view base is defined like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyView : Catel.Windows.Controls.UserControl
 {
     // rest of the class definition

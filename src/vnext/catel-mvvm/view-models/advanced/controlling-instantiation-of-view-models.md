@@ -10,7 +10,7 @@ The *IViewModelFactory* is the best way to customize the instantiation of view m
 
 If customization of the view model instantiation is required, it is best the derive from the default *ViewModelFactory* class to be able to fall back to the default behavior in non-special cases.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class CustomViewModelFactory : ViewModelFactory
 {
     public override IViewModel CreateViewModel(Type viewModelType, object dataContext)
@@ -29,7 +29,7 @@ public class CustomViewModelFactory : ViewModelFactory
 
 When a custom factory is used, it is important to register it in the ServiceLocator:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.RegisterType<IViewModelFactory, CustomViewModelFactory>();
 ```
 
@@ -39,7 +39,7 @@ Note that it is best to use the *IViewModelFactory* for view model instantation 
 
 Controlling the instantiation of the view model dynamically when using the *UserControl* is extremely easy. You can override the *GetViewModelInstance(object)* method like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 protected override IViewModel GetViewModelInstance(object dataContext)
 {
     if (dataContext is Rectangle)
@@ -59,7 +59,7 @@ Note that it is best to use the *IViewModelFactory* for view model instantation 
 
 Controlling the instantiation of the view model dynamically when using behaviors must be done via the *DetermineViewModelInstance* event like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 mvvmBehavior.DetermineViewModelInstance += (sender, e) =>
 {
     var dataContext = e.DataContext;
@@ -76,7 +76,7 @@ There is no need to set the *e.ViewModel* to *null* because that is the default 
 
 When using the behavior, it is possible to prevent the logic to instantiate a view model. In this case, it is really possible to have full control over view model instantiation. To prevent the logic to create a view model, use this code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 mvvmBehavior.DetermineViewModelInstance += (sender, e) =>
 {
     var dataContext = e.DataContext;

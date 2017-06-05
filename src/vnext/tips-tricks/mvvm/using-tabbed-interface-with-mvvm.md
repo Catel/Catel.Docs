@@ -13,7 +13,7 @@ For this example, we will have a few requirements:
 
 First of all, we need a model describing a tab item so we can interact with a service. We want the tab to be closeable via the service, but also via the view model it is representing.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public namespace TabDemo
 {
     using System;
@@ -64,7 +64,7 @@ Because we subscribe to the *ClosedAsync* event, we can close the tab from with
 
 ### Interface
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace TabDemo.Services
 {
     using System;
@@ -146,7 +146,7 @@ namespace TabDemo.Services
 
 ### Implementation
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace TabDemo.Services
 {
     using System;
@@ -343,7 +343,7 @@ For this to work, the service needs to interact with views. We have a few views 
 
 #### Xaml
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <UserControl x:Class="TabDemo.Controls.ClosableTabItem"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -369,7 +369,7 @@ For this to work, the service needs to interact with views. We have a few views 
 
 #### Code behind
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace Tabdemo.Controls
 {
     using System.Windows;
@@ -460,7 +460,7 @@ namespace Tabdemo.Controls
 
 #### Xaml
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:UserControl x:Class="TabDemo.Views.MainView"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -486,7 +486,7 @@ namespace Tabdemo.Controls
 
 #### Code behind
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace TabDemo.Views
 {
     using Catel.IoC;
@@ -516,7 +516,7 @@ Here are some useful extension methods
 
 ### ITabServiceExtensions
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace TabDemo.Services
 {
     using Catel;
@@ -576,7 +576,7 @@ namespace TabDemo.Services
 
 ### TabControlExtensions
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 namespace TabDemo.Services
 {
     using System.Linq;
@@ -618,7 +618,7 @@ namespace TabDemo.Services
 
 This adds and activates a new tab which the user is allowed to close:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _tabService.AddAndActivate<DemoTabViewModel>(null, true);
 ```
 
@@ -626,7 +626,7 @@ _tabService.AddAndActivate<DemoTabViewModel>(null, true);
 
 This closes a tab from within a tab view model. Closing a view model causes the *TabItem* to raise the *Closed* event and the *TabService* will correctly close the tab and update its selection.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 this.SaveAndCloseViewModelAsync();
 ```
 
@@ -634,7 +634,7 @@ this.SaveAndCloseViewModelAsync();
 
 This closes the currently active tab:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var selectedTab = _tabService.SelectedTab;
 _tabService.Remove(selectedTab);
 ```

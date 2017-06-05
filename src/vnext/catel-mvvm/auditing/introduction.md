@@ -31,7 +31,7 @@ The developer has all the freedom to handle one or more methods in an auditor. O
 
 Creating a new auditor is very simple. Create a new class, derive from AuditorBase and override the methods you are interested in. The class example tracks the event to a fake analytics framework.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Logs all commands to a custom analytics service.
 /// </summary>
@@ -56,6 +56,6 @@ public class CommandAuditor : AuditorBase
 
  Registering a new auditor is extremely easy as you can see in the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 AuditingManager.RegisterAuditor(new CommandAuditor());
 ```

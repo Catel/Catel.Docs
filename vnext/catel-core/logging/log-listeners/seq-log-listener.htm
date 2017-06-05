@@ -177,15 +177,13 @@
 <p><img src="attachments/31588366/31752194.png" /></p>
 <p> </p>
 <p>To use the Seq log listener, use the following code:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var logListener = new SeqLogListener();
+<pre class="nocode">var logListener = new SeqLogListener();
 logListener.IgnoreCatelLogging = true;
 // TODO: Customize options
  
 LogManager.AddListener(logListener);
 </pre><p>This one can also be used on configuration file:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-&lt;catel&gt;
+<pre class="nocode">&lt;catel&gt;
     &lt;logging&gt;
       &lt;listeners&gt;
         &lt;listener type=&quot;Catel.Logging.SeqLogListener&quot; ServerUrl=&quot;http://localhost:5341&quot; IgnoreCatelLogging=&quot;true&quot; IsDebugEnabled=&quot;false&quot; IsInfoEnabled=&quot;true&quot; IsWarningEnabled=&quot;true&quot; IsErrorEnabled=&quot;true&quot; /&gt;

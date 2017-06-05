@@ -194,73 +194,62 @@
 <p>To get back the behavior, there are 2 ways:</p>
 <h3 id="manually-add-interesting-properties-recommended">Manually add interesting properties (recommended)<a class="headerlink" href="#manually-add-interesting-properties-recommended" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the <em>IViewPropertySelector.AddPropertyToSubscribe</em> method to add properties:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = ServiceLocator.Default;
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
 var viewPropertySelector = serviceLocator.ResolveType&lt;IViewPropertySelector&gt;();
 
 
 viewPropertySelector.AddPropertyToSubscribe(&quot;MyProperty&quot;, typeof(MyView));
 </pre><p>In most cases, the only reason to subscribe to property changes is because of the *ViewToViewModel *attribute. If that is the case, it is best to use the extension method <em>AutoDetectViewPropertiesToSubscribe</em> in the static constructor of the view:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-static MyView()
+<pre class="nocode">static MyView()
 {
     typeof(MyView).AutoDetectViewPropertiesToSubscribe();
 }
 </pre><h3 id="register-the-viewpropertyselector">Register the ViewPropertySelector<a class="headerlink" href="#register-the-viewpropertyselector" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The default implementation of the <em>ViewPropertySelector</em> subscribes to all properties by default. By registering it in the <em>ServiceLocator</em> will ensure Catel subscribes to all dependency properties:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var serviceLocator = ServiceLocator.Default;
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType&lt;IViewPropertySelector, ViewPropertySelector&gt;();
 </pre><h2 id="full-support-for-asynchronous-asyncawait">Full support for asynchronous (async/await)<a class="headerlink" href="#full-support-for-asynchronous-asyncawait" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="iviewmodel">IViewModel<a class="headerlink" href="#iviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The <em>IViewModel</em> interface now returns tasks instead of direct values to support async/await.</p>
 <h4 id="updating-initialize-method">Updating Initialize method<a class="headerlink" href="#updating-initialize-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override void Initialize()
+<pre class="nocode">public override void Initialize()
 {
     base.Initialize();
 }
 </pre><p>Must be changed in:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override async Task Initialize()
+<pre class="nocode">public override async Task Initialize()
 {
     await base.Initialize();
 }
 </pre><h4 id="updating-save-method">Updating Save method<a class="headerlink" href="#updating-save-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override bool Save()
+<pre class="nocode">public override bool Save()
 {
     return base.Save();
 }
 </pre><p>Must be changed in:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override async Task&lt;bool?&gt; Save()
+<pre class="nocode">public override async Task&lt;bool?&gt; Save()
 {
     return await base.Save();
 }
 </pre><h4 id="updating-close-method">Updating Close method<a class="headerlink" href="#updating-close-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override void Close()
+<pre class="nocode">public override void Close()
 {
     base.Close();
 }
 </pre><p>Must be changed in:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-public override async Task Close()
+<pre class="nocode">public override async Task Close()
 {
     await base.Close();
 }
 </pre><h3 id="imessageservice">IMessageService<a class="headerlink" href="#imessageservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The use of <em>await</em> or <em>Task.ContinueWith</em> to await the result is now necessary or use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-if (await messageService.ShowInfo(&quot;message&quot;, other parameters...) == MessageBoxResult.Yes)
+<pre class="nocode">if (await messageService.ShowInfo(&quot;message&quot;, other parameters...) == MessageBoxResult.Yes)
 {
     // Handle yes here
 }
 </pre><h3 id="iuivisualizerservice">IUIVisualizerService<a class="headerlink" href="#iuivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The use of <em>await</em> or <em>Task.ContinueWith</em> to await the result is now necessary or use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-await uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
+<pre class="nocode">await uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
  
 // Window is closed here thanks to the await keyword
 </pre><h2 id="optimizing-views-especially-3rd-party">Optimizing views (especially 3rd party)<a class="headerlink" href="#optimizing-views-especially-3rd-party" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -282,8 +271,7 @@ await uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
 <p>The <em>time</em> parameter has been added to all log calls. This is a breaking change for all classes implementing <em>ILogListener</em>.</p>
 <h2 id="behavior-changes">Behavior changes<a class="headerlink" href="#behavior-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To improve multiple platforms support, all parameters of the following methods on <em>BehaviorBase</em> have been removed:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-OnAssociatedObjectLoaded(object sender, EventArgs e) =&gt; OnAssociatedObjectLoaded()
+<pre class="nocode">OnAssociatedObjectLoaded(object sender, EventArgs e) =&gt; OnAssociatedObjectLoaded()
  
 OnAssociatedObjectUnloaded(object sender, EventArgs e) =&gt; OnAssociatedObjectUnloaded()
 </pre><p> </p>

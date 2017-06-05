@@ -117,15 +117,13 @@
 <ol>
 <li>
 <p>Synchronous:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var result = uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
+<pre class="nocode">var result = uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
 
 // Window is closed here (synchronous behavior)
 </pre></li>
 <li>
 <p>Asynchronous:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-var result = await uiVisualizerService.ShowDialogAsync&lt;MyViewModel&gt;();
+<pre class="nocode">var result = await uiVisualizerService.ShowDialogAsync&lt;MyViewModel&gt;();
 
 // Window is closed here thanks to the await keyword
 </pre></li>

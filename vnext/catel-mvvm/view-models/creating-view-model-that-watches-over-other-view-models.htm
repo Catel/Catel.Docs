@@ -142,12 +142,10 @@
 <h1 id="creating-a-view-model-that-watches-over-other-view-models">Creating a view model that watches over other view models<a class="headerlink" href="#creating-a-view-model-that-watches-over-other-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Most frameworks require you to set up complex message systems (messengers) or other techniques to communicate with other view models. The downside of this approach is that once a view model is written in module X, and you are interested in the view model, the developer of module X must take care of notifying other view models. We think this is not the responsibility of the originating view model.</p>
 <p>If a view model is interested in the changes of another view model, it’s the responsibility of the view model that is interested to watch the view model, not the other way around. To be notified of changes on other view models, the only thing you have to do is to decorate a view model with the <em>InterestedInAttribute</em>, like shown in the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-[InterestedIn(typeof(FamilyViewModel))]
+<pre class="nocode">[InterestedIn(typeof(FamilyViewModel))]
 public class PersonViewModel : ViewModelBase
 </pre><p>Then, inside the <em>PersonViewModel</em> (which is interested in the changes of <em>FamilyViewModel</em>), you only have to override the <em>OnViewModelPropertyChanged</em> method:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Called when a property has changed for a view model type
 /// that the current view model is interested in. This can
 /// be accomplished by decorating the view model with the &lt;see cref=&quot;InterestedInAttribute&quot;/&gt;.
@@ -169,8 +167,7 @@ protected override void OnViewModelPropertyChanged(IViewModel viewModel, string 
 <p>By using the <em>InterestedInAttribute</em>, it is possible to receive notifications of other view models. The <em>InterestedInAttribute</em> defines a specific type of view model the decorated view model is interested in. Then, the decorated view model will receive all the <em>PropertyChanged</em> events of the live view models of that specific type. It is possible to define multiple attributes to watch several different types of view models.</p>
 <h2 id="code">Code<a class="headerlink" href="#code" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><strong>Watched view model</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Watched view model.
 /// &lt;/summary&gt;
 public class WatchedViewModel : ViewModelBase
@@ -190,8 +187,7 @@ public class WatchedViewModel : ViewModelBase
    }
 }
 </pre><p><strong>Interested view model</strong></p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-/// &lt;summary&gt;
+<pre class="nocode">/// &lt;summary&gt;
 /// Interested view model.
 /// &lt;/summary&gt;
 [InterestedIn(typeof(WatchedViewModel))]

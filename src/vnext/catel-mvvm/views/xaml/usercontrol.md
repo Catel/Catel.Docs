@@ -16,7 +16,7 @@ Say, you want to write an application to manage company trees. The top-level of 
 
 Now comes the real power of *UserControl* in to play. For example, to show the company and its managers, one has to write an items control that contains the companies and then a user control containing the details of the company. For the sake of simplicity, I will leave the employees out for now. The usage might seem a bit complex, but once you get the hang of it, it’s actually quite simple. First of all, create a view model that has a constructor of the model that you want to accept, in our case the *Company* class of which we will show the details:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Initializes a new instance of the <see cref="CompanyViewModel"/> class.
 /// </summary>
@@ -31,7 +31,7 @@ public CompanyViewModel(Models.Company company)
 
 As you can see, the view model can only be constructed by passing a company model. This is quite normal, because how can we show details of a non-existing (null) company? Now we have a view model, we can create our user control:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <catel:UserControl x:Class="Catel.Articles._03___MVVM.Examples.UserControlWithParameter.Company"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -46,7 +46,7 @@ Note that the class definition is now *catel:UserControl* instead of *UserContro
 
 The code behind is even simpler:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Interaction logic for Company.xaml
 /// </summary>
@@ -64,7 +64,7 @@ public partial class Company : UserControl
 
 Now the control is created (I don’t want to focus on the actual control content here, since it’s not important), we can use the user control in our main window that has a collection of companies. The view model also has a *SelectedCompany* property representing the selected company inside the listbox. Then, we use the Company control and bind the data context to the *SelectedCompany* property:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 <!-- Items control of companies -->
 <ListBox Grid.Column="0" ItemsSource="{Binding CompanyCollection}" SelectedItem="{Binding SelectedCompany}">
     <ListBox.ItemTemplate>
@@ -97,7 +97,7 @@ When developing custom user controls, you still want to use the power of MVVM, r
 
 To map a property of a custom user control to a view model and back, the only thing a developer has to do is to decorate the dependency property of the control with the *ViewToViewModelAttribute*. Normally, a developer has to build logic that subscribes to property changes of both the view model and the control, and then synchronize all the differences. Thanks to the *ViewToViewModelAttribute*, the *UserControl* that ships with Catel takes care of this. The usage of the attribute looks as follows:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ViewToViewModel]
 public bool MyDependencyProperty
 {
@@ -112,7 +112,7 @@ public static readonly DependencyProperty MyDependencyPropertyProperty =
 
 By default, the attribute assumes that the name of the property on the view model is the same as the property on the user control. To specify a different name, use the overload of the attribute constructor as shown in the following example:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ViewToViewModel("MyViewModelProperty")]
 public bool MyDependencyProperty
 ... (remaining code left out for the sake of simplicity)
@@ -120,7 +120,7 @@ public bool MyDependencyProperty
 
 In the first place, all of this looks fine enough. However, what should happen when the current view model of the control is replaced by another instance? Or what if the developer only wants to map values from the control to the view model, but not back? By default, the view model will take the lead when this attribute is used. This means that as soon as the view model is changed, the values of the control will be overwritten by the values of the view model. If another behavior is required, the *MappingType* property of the attribute should be used:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [ViewToViewModel("MyViewModelProperty", MappingType = ViewToViewModelMappingType.TwoWayControlWins)]
 public bool MyDependencyProperty
 ... (remaining code left out for the sake of simplicity)

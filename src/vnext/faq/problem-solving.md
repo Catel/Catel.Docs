@@ -6,7 +6,7 @@ As with every framework or toolkit, developers run into problems. This can be bu
 
 We take logging very serious in Catel. This means that a lot of information about the internals can be be seen in the output window. To enable logging in Catel, use the following code in your application startup code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 #if DEBUG
     Catel.Logging.LogManager.AddDebugListener();
 #endif

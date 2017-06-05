@@ -8,7 +8,7 @@ So, to improve your application's performance and handling this "nonvolatile" da
 
 To initialize a cache storage field into your class use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly CacheStorage<string, Person> _personCache = new CacheStorage<string, Person>(storeNullValues: true);
 ```
 
@@ -16,7 +16,7 @@ private readonly CacheStorage<string, Person> _personCache = new CacheStorage<st
 
 To retrieve data and store into a cache with a single statement use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var person = _personCache.GetFromCacheOrFetch(Id, () => service.FindPersonById(Id));
 ```
 
@@ -28,13 +28,13 @@ The cache expiration policies add a removal behavior to the cache storage items.
 
 A default cache expiration policy initialization code can be specified during cache storage initialization constructor:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 CacheStorage<string, Person> _personCache = new CacheStorage<string, Person>(() => ExpirationPolicy.Duration(TimeSpan.FromMinutes(5)), true);
 ```
 
 You can specify a specific expiration policy for an item when it's storing:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _personCache.GetFromCacheOrFetch(id, () => service.GetPersonById(id), ExpirationPolicy.Duration(TimeSpan.FromMinutes(10)));
 ```
 
@@ -58,7 +58,7 @@ Time-base
 
 The cache item will expire on the absolute expiration DateTime
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))
 ```
 
@@ -68,7 +68,7 @@ Time-base
 
 The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))
 ```
 
@@ -78,7 +78,7 @@ Time-base
 
 The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))
 ```
 
@@ -88,7 +88,7 @@ Custom
 
 The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var startDateTime = DateTime.Now;
 var duration = TimeSpan.FromMinutes(5);
 
@@ -101,7 +101,7 @@ Custom
 
 Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(
 TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=>...))
 ```
@@ -112,7 +112,7 @@ If the *CustomExpirationPolicy* is not enough, you can implement you own expirat
 
 To implement an expiration cache policy use the following code template:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyExpirationPolicy : ExpirationPolicy
 {
    public MyExpirationPolicy():base(true)

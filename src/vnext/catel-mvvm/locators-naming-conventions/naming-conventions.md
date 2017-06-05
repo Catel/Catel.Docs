@@ -6,13 +6,13 @@ Some services in Catel support naming conventions. For example, the *IViewLocato
 
 The [AS] constant will be replaced by the assembly name. For example, the following naming convention:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [AS].Views
 ```
 
 in assembly *Catel.Examples* will be resolved as:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.Examples.Views
 ```
 
@@ -20,13 +20,13 @@ Catel.Examples.Views
 
 The [VM] constant will be replaced by the name of the view model without the *ViewModel* postfix. For example, the following naming convention:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [AS].ViewModels.[VW]ViewModel
 ```
 
 in assembly *Catel.Examples* and for type *Catel.Examples.ViewModels.MyViewModel* will be resolved as:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.Examples.ViewModels.MyViewModel
 ```
 
@@ -34,13 +34,13 @@ Catel.Examples.ViewModels.MyViewModel
 
 The [VW] constant will be replaced by the name of the view without the *View*, *Control*, *Page* or *Window* postfixes. For example, the following naming convention:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [AS].Views.[VM]View
 ```
 
 in assembly *Catel.Examples* and for type *Catel.Examples.Views.MyView* will be resolved as:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.Examples.Views.MyView
 ```
 
@@ -52,13 +52,13 @@ The [UP] constant will move the namespaces up by one step. It automatically dete
 
 The following naming convention:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [UP].Views.[VM]View
 ```
 
 for type *Catel.Examples.ViewModels.MyViewModel* will be resolved as:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.Examples.Views.MyView
 ```
 
@@ -70,12 +70,12 @@ The [CURRENT] constant will use the same namespace.
 
 The following naming convention:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 [CURRENT].[VM]View
 ```
 
 for type *Catel.Examples.MyViewModel* will be resolved as:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 Catel.Examples.MyView
 ```

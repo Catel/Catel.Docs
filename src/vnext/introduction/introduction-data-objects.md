@@ -38,7 +38,7 @@ This example shows the simplest way to declare a data object using the *ModelBas
 
 **Code**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary> 
 /// FirstModel class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
@@ -133,7 +133,7 @@ defaultvalue
 
 **Code**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary> 
 /// Gets or sets the simple property.
 /// </summary> 
@@ -182,7 +182,7 @@ defaultvalue
 
 **Code**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary> 
 /// Gets or sets the callback property.
 /// </summary> 
@@ -213,7 +213,7 @@ It is very easy to add validation to a class (both the *ModelBase* and *ViewMode
 
 To enable validation, you must override at least one of the following methods:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary>
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -290,7 +290,7 @@ defaultvalue
 
 **Code**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 /// <summary> 
 /// Person class which fully supports serialization, property changed notifications,
 /// backwards compatibility and error checking.
@@ -344,7 +344,7 @@ public class Person : SavableModelBase<Person>
 
 Loading an object is really simple once the class has been created. It is important to use the static method on the class:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var person = Person.Load(@"c:\person.dob");
 ```
 
@@ -352,7 +352,7 @@ var person = Person.Load(@"c:\person.dob");
 
 To save an object, an instance is required. Then simply call the *Save* method.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var person = new Person();
 person.Name = "John Doe";
 person.Save(@"c:\person.dob");

@@ -6,6 +6,6 @@ The *IApiCop* is responsible for containing all the rules that are used inside
 
 To retrieve an IApiCop for a class, use the following code:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private static readonly IApiCop = ApiCopManager.GetCurrentClassApiCop();
 ```

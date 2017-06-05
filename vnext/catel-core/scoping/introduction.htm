@@ -141,8 +141,7 @@
                     <div class="section">
 <h1 id="scoping">Scoping<a class="headerlink" href="#scoping" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Sometimes scoping is important to share an object inside a specific scope which cannot be determined upfront. A great example is the serialization inside Catel which requires a serialization scope which can be shared over a lot of objects. Scoping in Catel is really. To create a scope of an object with a specific tag, use the code below:</p>
-<pre class="nocode">{.java data-syntaxhighlighter-params=&quot;brush: java; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: java; gutter: false; theme: Confluence&quot;}
-using (var scopeManager = ScopeManager&lt;object&gt;.GetScopeManager(&quot;object&quot;))
+<pre class="nocode">using (var scopeManager = ScopeManager&lt;object&gt;.GetScopeManager(&quot;object&quot;))
 {
     var scopeObject = scopeManager.ScopeObject;
  

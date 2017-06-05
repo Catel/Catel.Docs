@@ -3,7 +3,7 @@
 It is best practice to always check if the input to a method is correct. If not, an exception should be thrown. Most people do not check for exceptions correctly and lots of null reference exceptions inside a deep stacktrace are hard to solve.
 Catel does check the input on every method. Normally, a check would look like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public void CheckForException(object obj)
 {
     if (obj == null)
@@ -15,7 +15,7 @@ public void CheckForException(object obj)
 
 However, Catel extensively logs all behavior, thus all the checks started to look like this:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public void CheckForException(object obj)
 {
     if (obj == null)
@@ -28,7 +28,7 @@ public void CheckForException(object obj)
 
 Handling input correctly in such a case takes a lot of space and repetitive code. Therefore the Argument class is developed. This way, it is very simple to check for arguments:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public void CheckForException(object obj)
 {
     Argument.IsNotNull("obj", obj);
@@ -37,7 +37,7 @@ public void CheckForException(object obj)
 
 Or, if a range should be checked:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public void CheckForException(int myInt)
 {
     Argument.IsNotOutOfRange("myInt", myInt, 0, 10);
@@ -46,7 +46,7 @@ public void CheckForException(int myInt)
 
 A final example is to check whether a type implements a specific interface:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public void CheckForException(object obj)
 {
     Argument.ImplementsInterface("obj", obj, typeof(INotifyPropertyChanged));

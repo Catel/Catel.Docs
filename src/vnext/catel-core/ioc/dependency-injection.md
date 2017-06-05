@@ -8,7 +8,7 @@ Some people make dependency injection hard to understand, or maybe they don't un
 
 **Example 1: bad, instantiates the dependencies itself**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -25,7 +25,7 @@ public class MyClass
 
 **Example 2: good, retrieves the dependencies via the service locator**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -43,7 +43,7 @@ public class MyClass
 
 **Example 3: good, gets the dependencies injected**
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -72,7 +72,7 @@ It will first search for all available constructors on the type that will be ins
 
  To get a better understanding of what happens, see the class below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -104,7 +104,7 @@ Catel first sorts the constructors based on the number of parameters. Then it wi
 
 If Catel is still unable to pick the right constructor in a class, this behavior can be overridden by decorating the constructor with the DependencyInjectionConstructor attribute:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public MyClass(IPerson person)
 {
  
@@ -121,7 +121,7 @@ public MyClass(Person person)
 
 Starting with Catel 3.7, a new type of dependency injection is supported. It allows a developer to instantiate types that combine custom constructor injection with dependency injection. The class belows shows an interesting combination of custom values that need to be injected and dependencies that can be retrieved from the IoC container. Before Catel 3.7, one had to manually retrieve the dependencies from the IoC container when it also required other dependencies to be injected that were not registered in the IoC container:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonViewModel : ViewModelBase
 {
     private readonly IMessageService _messageService;
@@ -143,7 +143,7 @@ public class PersonViewModel : ViewModelBase
 
 With the new technology, such a constructor can be rewritten to truly support dependency injection:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class PersonViewModel : ViewModelBase
 {
     private readonly IMessageService _messageService;
@@ -171,7 +171,7 @@ This feature is initially written to support dependency injection in combination
 
 The advanced dependency injection can be used by using the TypeFactory class. Below is an example on how to create a new type using advanced dependency injection:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 var personViewModel = TypeFactory.Default.CreateInstanceWithParametersAndAutoCompletion<PersonViewModel>(new Person());
 ```
 
@@ -193,7 +193,7 @@ To use property injection, simply decorate the properties of a class with the I
 
 #### Type is automatically determined based on property type
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     [Inject]
@@ -203,7 +203,7 @@ public class MyClass
 
 #### Type is manually defined
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     [Inject(typeof(IMySubclassedDependency))]
@@ -215,7 +215,7 @@ public class MyClass
 
 It is also possible to determine the tag of a registered dependency:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 public class MyClass
 {
     [Inject(Tag = "myTag")]
@@ -227,6 +227,6 @@ public class MyClass
 
  Maybe you don't want dependency injection because it does not give you what you need or you want a very, very small improvement in performance. In that case, the dependency injection can be disabled using the code below:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 ServiceLocator.Default.SupportedDependencyInjection = false
 ```

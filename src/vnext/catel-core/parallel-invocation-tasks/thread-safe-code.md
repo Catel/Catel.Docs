@@ -6,7 +6,7 @@ Writing a multiple threading application is always a challenge. Eventually you n
 
 The common solution to access the thread-sensitive resources is use the lock statement just as follow:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly object _syncObj = new object();
 
 public void DoTheWork()
@@ -22,7 +22,7 @@ public void DoTheWork()
 
 But some times the scenario is not quite simple, then you need to use the Monitor class in order to synchronize cross method operations. Here is an example: 
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly object _syncObj = new object();
 
 public void DoTheWork()
@@ -62,7 +62,7 @@ private object EndTheWork()
 
 To combine the power of the simplicity of the lock statement syntax and the flexibility of the Monitor class, Catel introduces the SynchronizationContext class, allowing you to write the code like this.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 private readonly List<IValidator> _validators = new List<IValidator>(); 
 private readonly SynchronizationContext _synchronizationContext = new SynchronizationContext();
 
@@ -121,7 +121,7 @@ SynchronizationContext also allow you create asynchronous locking request, that 
 
 To acquire a lock, only a call to Acquire is required:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _synchronizationContext.Acquire();
 ```
 
@@ -129,7 +129,7 @@ Releasing a lock
 
  To release a lock, only a call to Release is required:
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _synchronizationContext.Release();
 ```
 
@@ -137,6 +137,6 @@ _synchronizationContext.Release();
 
 It is also possible to automatically lock and release a method call. This can be accomplished using the Execute method.
 
-``` {.java data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"}
+```
 _synchronizationContext.Execute(() => ThreadSafeCodeExecution());
 ```
