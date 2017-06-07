@@ -1105,6 +1105,12 @@
       "title": "Introduction"
     },
     {
+      "location": "catel-resharper/introduction.htm",
+      "breadcrumbs": "Home / Catel.ReSharper / Introduction",
+      "keywords": "_ _Basically _into _with a AdvancedPropertyChangedEventArgs age Age AgeProperty allows already ALT and are argument Argument ArgumentException arguments as automatic be but can cannot case Catel changed check Check Checking class classes code convert Convert Converting custom default definitely definitions development DoSomething down e easier endregion Enter Error even event Expose extremely fields Fields first FirstName FirstNameProperty following for from generate get Gets GetValue helps hit However if If in inherits input instead int into Introduction is IsNotNullOrWhitespace IsNullOrWhitespace it It known last LastName LastNameProperty life Log logic lots make Make metadata method Methods middle MiddleName MiddleNameProperty might missing model ModelBase much myInput name new not NotImplementedException null Occurs of OnAgeChanged ones OnLastNameChanged or param person Person piece pleasure plugin possible powerful private properties Properties property PropertyData public Public readonly region Register RegisterProperty regular Resharper ReSharper result return s select set sets SetValue simply snippets so So something sometimes start static Static string summary sure Thanks that the The then Then this throw to too turn using valid value view ViewModelBase void when which whitespace will with work write writing you You your",
+      "title": "Introduction"
+    },
+    {
       "location": "tips-tricks/mvvm/finding-view-of-view-model.htm",
       "breadcrumbs": "Home / Tips & tricks / Catel.MVVM / Finding the view of a view model",
       "keywords": "1 2 a A alert an and are as As below by Catel changes classes code comes Default drag drop end event events example eye find Finding for For from From GetViewsOfViewModel handy implementing important in Internally is it its IView IViewManager keep linked loaded Loaded longer manager model models moment multiple myViewModel no Note notice of on only possible registered Remember removed required Resolve ResolveType retrieve Retrieving same ServiceLocator Sometimes soon steps support supported that the The this to To unloaded Unloaded use uses var via view viewManager views want when where will with you",

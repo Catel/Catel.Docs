@@ -355,6 +355,10 @@
 		{
 			"Introduction" : "catel-fody/introduction.md",
 		},
+		"Catel.ReSharper" : 
+		{
+			"Introduction" : "catel-resharper/introduction.md",
+		},		
 		"Tips & tricks" :
 		{
 			"__index" : "tips-tricks/index.md",
