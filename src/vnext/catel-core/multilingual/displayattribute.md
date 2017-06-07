@@ -2,7 +2,9 @@
 
 Catel implements a custom implementation of the *DisplayAttribute* known in the *DataAnnotations* namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
 
+@note warning
 Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)
+@end
 
 ## Using the attribute
 
@@ -56,39 +58,11 @@ public enum Condition
 
 By default, the attribute uses the *ILanguageService* to resolve the values to show. The *DisplayAttribute* uses conventions to resolve the different values from the resources.
 
-Property
-
-ResourceName used when resolving
-
-Fallback value
-
-ShortName
-
-[ResourceName]\_ShortName
-
-Name
-
-Name
-
-[ResourceName]\_Name
-
-No fallback value, will return empty value
-
-Description
-
-[ResourceName]\_Description
-
-No fallback value, will return empty value
-
-Prompt
-
-[ResourceName]\_Prompt
-
-No fallback value, will return empty value
-
-GroupName
-
-[ResourceName]\_GroupName
-
-No fallback value, will return empty value
+Property|ResourceName used when resolving|Fallback value
+-|-
+ShortName|[ResourceName]\_ShortName|Name
+Name|[ResourceName]\_Name|No fallback value, will return empty value
+Description|[ResourceName]\_Description|No fallback value, will return empty value
+Prompt|[ResourceName]\_Prompt|No fallback value, will return empty value
+GroupName|[ResourceName]\_GroupName|No fallback value, will return empty value
 

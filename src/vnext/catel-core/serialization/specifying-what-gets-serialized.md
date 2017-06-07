@@ -19,21 +19,11 @@ public class MyModel : ModelBase
 }
 ```
 
-Member name
-
-Gets serialized
-
-\_fieldValue
-
-![](attachments/8028179/8192007.png)
-
-RegularProperty
-
-![](attachments/8028179/8192007.png)
-
-CatelProperty
-
-![](attachments/8028179/8192006.png)
+Member name|Gets serialized
+-|-
+_fieldValue|false
+RegularProperty|false
+CatelProperty|true
 
 ## Including fields and properties using IncludeInSerialization attribute
 
@@ -58,23 +48,15 @@ public class MyModel : ModelBase
 }
 ```
 
-Member name
+Member name|Gets serialized
+-|-
+_fieldValue|true
+RegularProperty|true
+CatelProperty|true
 
-Gets serialized
-
-\_fieldValue
-
-![](attachments/8028179/8192006.png)
-
-RegularProperty
-
-![](attachments/8028179/8192006.png)
-
-CatelProperty
-
-![](attachments/8028179/8192006.png)
-
+@alert important
 Note that private members can only be serialized in full .NET, not in limited platforms such as UWP
+@end
 
 ## Excluding fields and properties using ExcludeFromSerialization attribute
 
@@ -98,21 +80,11 @@ public class MyModel : ModelBase
 }
 ```
 
-Member name
-
-Gets serialized
-
-\_fieldValue
-
-![](attachments/8028179/8192007.png)
-
-RegularProperty
-
-![](attachments/8028179/8192007.png)
-
-CatelProperty
-
-![](attachments/8028179/8192007.png)
+Member name|Gets serialized
+-|-
+_fieldValue|false
+RegularProperty|false
+CatelProperty|false
 
 ## Serializing a ModelBase as collection
 
@@ -173,13 +145,3 @@ Don't forget to register it in the *ServiceLocator* as well:
 var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType<ISerializationManager, SafeSerializationManager>();
 ```
-
- 
-
- 
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [supported.png](attachments/8028179/8192006.png) (image/png)
- ![](images/icons/bullet_blue.gif) [notsupported.png](attachments/8028179/8192007.png) (image/png)
-

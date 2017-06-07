@@ -84,9 +84,7 @@
 <li class="tocentry"><a href="../../../catel-core/logging/log-listeners/debug-log-listener.htm">DebugLogListener</a>
 </li>
 <li class="tocentry current"><a class="current" href="../../../catel-core/logging/log-listeners/event-log-listener.htm">EventLogListener</a>
-<ul class="currentrelative">
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
-</ul>
+</li>
 <li class="tocentry"><a href="../../../catel-core/logging/log-listeners/event-tracing-for-windows.htm">Event Tracing for Windows (ETW)</a>
 </li>
 <li class="tocentry"><a href="../../../catel-core/logging/log-listeners/file-log-listener.htm">FileLogListener</a>
@@ -174,19 +172,15 @@
                     <div class="section">
 <h1 id="eventloglistener">EventLogListener<a class="headerlink" href="#eventloglistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The EventLogListener allow to write log data to the system event log. </p>
-<p> </p>
-<p><a href="/wiki/download/attachments/31588371/Screenshot%202014-08-20%2008.13.01.png?version=1&amp;modificationDate=1426323126280&amp;cacheVersion=1&amp;api=v2"><img src="rest/documentConversion/latest/conversion/thumbnail/31752195/1" /></a></p>
-<p> </p>
+<p><img src="../../../images/catel-core/logging/log-listeners/ecvent-log-listener/eventlog.png" /> </p>
 <p>To add it, use the code below:</p>
 <pre class="nocode">var logListener = new EventLogListener();
 logListener.IgnoreCatelLogging = true;
 // TODO: Customize options
   
 LogManager.AddListener(logListener);
-</pre><p>This log listener is currently available  only for .NET 4.0 and .NET 4.5</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/31588371/31752195.png">Screenshot 2014-08-20 08.13.01.png</a> (image/png)</p>
-
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>This log listener is currently available only for the full .net framework</p>
+</div>
                     </div>
                 </div>
                 <footer>

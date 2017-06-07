@@ -2,7 +2,9 @@
 
 The [ServiceLocator](Introduction_to_the_ServiceLocator) in Catel can be set up to automatically register types based on the conventions.  
 
+@alert info
 The convention based registration should to be run first than the others registration methods to be sure to have all your types registered correctly.
+@end
 
 Some conventions are provided by default to allow us to register types.
 
@@ -47,7 +49,9 @@ serviceLocator.RegisterTypesUsingDefaultNamingConvention()
 
 Here, we say to the *ServiceLocator* to ignore all types included into the namespace which belong to the *IFooService* type.
 
+@alert info
 You can manually specify the namespace of the types to exclude using the *ExcludeAllTypesOfNamespace ***** method like this: *ExcludeAllTypesOfNamespace("MyNamespace")*
+@end
 
 ### Exclude a specific type
 
@@ -73,8 +77,9 @@ serviceLocator.RegisterTypesUsingDefaultNamingConvention()
               .ExcludeTypesWhere(type => type == typeof(IFooService));
 ```
 
+@alert info
 All *Exclude* methods have an *Include* version
-
+@end
  
 
  

@@ -89,7 +89,6 @@
 <li class="tocentry"><a href="#introduction-to-the-pool-manager">Introduction to the pool manager</a></li>
 <li class="tocentry"><a href="#customizinga-pool-manager">Customizing a pool manager</a></li>
 <li class="tocentry"><a href="#creating-a-poolable-object">Creating a poolable object</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 
 </ul>
@@ -146,12 +145,13 @@
                     <div class="section">
 <h1 id="pooling">Pooling<a class="headerlink" href="#pooling" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Garbage collection in .NET can be very expensive, especially for objects on the Large Object Heap (LOH). .NET itself already uses pooling for threads to prevent the costly creation of threads but instead re-uses the already created threads using a thread pool. Catel provides an implementation of pooling using the <em>PoolManager&lt;TPoolable&gt;</em>. This allows both Catel and third party developers to create a pool for large objects so they can be reused.</p>
-<p>The documentation uses a byte array of 4096 as poolable object as example. If <em>_poolManager</em> is used in the code below, it represents an instance of <em>PoolManager&lt;Buffer4096Poolable&gt;</em></p>
-<h2 id="introduction-to-the-pool-manager">Introduction to the pool manager<a class="headerlink" href="#introduction-to-the-pool-manager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>The documentation uses a byte array of 4096 as poolable object as example. If <em>_poolManager</em> is used in the code below, it represents an instance of <em>PoolManager&lt;Buffer4096Poolable&gt;</em></p>
+</div><h2 id="introduction-to-the-pool-manager">Introduction to the pool manager<a class="headerlink" href="#introduction-to-the-pool-manager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The pool manager internally uses a stack to manage the available objects in the pool. It's important to understand how a pool works. The flow diagram below shows how the pool manager deals with objects:</p>
+<p><img src="../../images/catel-core/pooling/hasobjects.png" width="676" height="255" /></p>
 <p>It is recommended that a pool manager gets registered in the <em>ServiceLocator</em> so it can be re-used by multiple components.</p>
-<p>Note that the pool manager does not limit the number of objects in memory. It has a <em>MaxSize</em> property so it will store only a maximum amount of objects inside the internal pool, but if the pool is running out of instances and a new object is requested, it will return a new instance (and thus creating a new object which could be garbage collected).</p>
-<h3 id="retrieving-objects-from-the-pool">Retrieving objects from the pool<a class="headerlink" href="#retrieving-objects-from-the-pool" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the pool manager does not limit the number of objects in memory. It has a <em>MaxSize</em> property so it will store only a maximum amount of objects inside the internal pool, but if the pool is running out of instances and a new object is requested, it will return a new instance (and thus creating a new object which could be garbage collected).</p>
+</div><h3 id="retrieving-objects-from-the-pool">Retrieving objects from the pool<a class="headerlink" href="#retrieving-objects-from-the-pool" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Retrieving an object from the pool is very simple. When an instance of the <em>PoolManager&lt;TPoolable&gt;</em> is available, use the code below:</p>
 <pre class="nocode">var poolableBuffer = _poolManager.GetObject();
 </pre><p>The <em>PoolManager&lt;TPoolable&gt;</em> will automatically create a new object when no objects are available in the pool.</p>
@@ -166,6 +166,7 @@
 
 // outside the scope, the object is automatically disposed and returned to the pool
 </pre><p>The flow chart below shows how the <em>PoolManager&lt;TPoolable&gt;</em> will handle the dispose:</p>
+<p><img src="../../images/catel-core/pooling/reachedmaxsize.png" width="676" height="255" /></p>
 <h2 id="customizinga-pool-manager">Customizing a pool manager<a class="headerlink" href="#customizinga-pool-manager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel implements pooling via the <em>PoolManager&lt;TPoolable&gt;</em> class. This class allows the caller to retrieve an object. There is no need to explicitly derive a class from the PoolManager&lt;TPoolable&gt;. It can be customized though.</p>
 <h3 id="customizing-the-maximum-size">Customizing the maximum size<a class="headerlink" href="#customizing-the-maximum-size" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -206,16 +207,7 @@ poolManager.MaxSize = 1024 * 1024 * 1;
         _poolManager.ReturnObject(this);
     }
 }
-</pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760460">Pool Manager</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760461.png">Pool Manager.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760458">Pool Manager</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760459.png">Pool Manager.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760464">Pool Manager - returning objects</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760465.png">Pool Manager - returning objects.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760462">Pool Manager - returning objects</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/102760450/102760463.png">Pool Manager - returning objects.png</a> (image/png)</p>
-
+</pre>
                     </div>
                 </div>
                 <footer>

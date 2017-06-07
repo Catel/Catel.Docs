@@ -26,7 +26,9 @@ using (var fileStream = File.Open(@"C:\myobject.dob", FileMode.Open))
 }
 ```
 
+@alert info
 Note that for a model to support the *Save* and *Load* methods, it must derive from *SavableModelBase*
+@end
 
 ## Warming up serialization
 
@@ -58,7 +60,9 @@ var binarySerializer = SerializationFactory.GetBinarySerializer();
 binarySerialzier.Warmup();
 ```
 
+@alert danger
 Note that warming up for all types **might** take a serious amount of time and **might** increase the memory footprint of your application depending on the number of models
+@end
 
 ### Warming up using multiple threads
 
@@ -102,9 +106,3 @@ protected override void GetDataFromSerializationInfo(SerializationInfo info)
     LastName = SerializationHelper.GetString(info, "LastName", LastNameProperty.GetDefaultValue());
 }
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2015-8-9 9:43:41.png](attachments/8028162/48889861.png) (image/png)
- ![](images/icons/bullet_blue.gif) [image2015-8-9 9:44:36.png](attachments/8028162/48889862.png) (image/png)
-

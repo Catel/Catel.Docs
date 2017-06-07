@@ -200,6 +200,7 @@
 				"Specifying what gets serialized" : "catel-core/serialization/specifying-what-gets-serialized.md",
 				"Customizing serialization" : 
 				{
+					"Introduction" : "catel-core/serialization/customizing-serialization/introduction.md",
 					"Customizing the serialization engines" : "catel-core/serialization/customizing-serialization/customizing-serialization-engines.md",
 					"Customizing the serialization for specific models" : "catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.md",
 					"Serializing members using ToString / Parse" : "catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse.md",

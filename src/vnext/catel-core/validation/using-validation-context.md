@@ -1,6 +1,8 @@
 # Using the validation context
 
+@alert info
 The *ViewModelBase* derives from *ModelBase*, thus all information here also applies to the *ViewModelBase*
+@end
 
 Sometimes detailed information about validation is required. This is possible in Catel thanks to the ValidationContext class. The ValidationContext serves as the container for all validation results that are gathered via the available validation methods. The ValidationContext has lots of methods that all return lists of either IFieldValidationResult or IBusinessRuleValidationResult.
 

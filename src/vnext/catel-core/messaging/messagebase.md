@@ -22,7 +22,9 @@ public class DemoMessage : MessageBase<DemoMessage, string>
 }
 ```
 
+@alert important
 Note that the message needs an empty constructor
+@end
 
 ## Sending messages
 

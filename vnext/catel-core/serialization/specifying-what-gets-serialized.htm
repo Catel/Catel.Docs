@@ -104,7 +104,6 @@
 <li class="tocentry"><a href="#excluding-fields-and-properties-using-excludefromserialization-attribute">Excluding fields and properties using ExcludeFromSerialization attribute</a></li>
 <li class="tocentry"><a href="#serializing-a-modelbase-as-collection">Serializing a ModelBase as collection</a></li>
 <li class="tocentry"><a href="#implementing-a-custom-iserializationmanager">Implementing a custom ISerializationManager</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Customizingserialization.htm">Customizing serialization</a></span>
@@ -169,14 +168,28 @@
 
     public static readonly PropertyData CatelPropertyProperty = RegisterProperty(&quot;CatelProperty&quot;, typeof(string), null);
 }
-</pre><p>Member name</p>
-<p>Gets serialized</p>
-<p>_fieldValue</p>
-<p><img src="attachments/8028179/8192007.png" /></p>
-<p>RegularProperty</p>
-<p><img src="attachments/8028179/8192007.png" /></p>
-<p>CatelProperty</p>
-<p><img src="attachments/8028179/8192006.png" /></p>
+</pre><table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Member name</th>
+	<th>Gets serialized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>_fieldValue</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>RegularProperty</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>CatelProperty</td>
+	<td>true</td>
+</tr>
+</tbody>
+</table>
 <h2 id="including-fields-and-properties-using-includeinserialization-attribute">Including fields and properties using IncludeInSerialization attribute<a class="headerlink" href="#including-fields-and-properties-using-includeinserialization-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To include fields or regular properties on an object, use the following code:</p>
 <pre class="nocode">public class MyModel : ModelBase
@@ -195,16 +208,30 @@
 
     public static readonly PropertyData CatelPropertyProperty = RegisterProperty(&quot;CatelProperty&quot;, typeof(string), null);
 }
-</pre><p>Member name</p>
-<p>Gets serialized</p>
-<p>_fieldValue</p>
-<p><img src="attachments/8028179/8192006.png" /></p>
-<p>RegularProperty</p>
-<p><img src="attachments/8028179/8192006.png" /></p>
-<p>CatelProperty</p>
-<p><img src="attachments/8028179/8192006.png" /></p>
-<p>Note that private members can only be serialized in full .NET, not in limited platforms such as UWP</p>
-<h2 id="excluding-fields-and-properties-using-excludefromserialization-attribute">Excluding fields and properties using ExcludeFromSerialization attribute<a class="headerlink" href="#excluding-fields-and-properties-using-excludefromserialization-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Member name</th>
+	<th>Gets serialized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>_fieldValue</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>RegularProperty</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td>CatelProperty</td>
+	<td>true</td>
+</tr>
+</tbody>
+</table>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that private members can only be serialized in full .NET, not in limited platforms such as UWP</p>
+</div><h2 id="excluding-fields-and-properties-using-excludefromserialization-attribute">Excluding fields and properties using ExcludeFromSerialization attribute<a class="headerlink" href="#excluding-fields-and-properties-using-excludefromserialization-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To exclude Catel properties on an object, use the following code:</p>
 <pre class="nocode">public class MyModel : ModelBase
 {
@@ -221,14 +248,28 @@
 
     public static readonly PropertyData CatelPropertyProperty = RegisterProperty(&quot;CatelProperty&quot;, typeof(string), null);
 }
-</pre><p>Member name</p>
-<p>Gets serialized</p>
-<p>_fieldValue</p>
-<p><img src="attachments/8028179/8192007.png" /></p>
-<p>RegularProperty</p>
-<p><img src="attachments/8028179/8192007.png" /></p>
-<p>CatelProperty</p>
-<p><img src="attachments/8028179/8192007.png" /></p>
+</pre><table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Member name</th>
+	<th>Gets serialized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>_fieldValue</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>RegularProperty</td>
+	<td>false</td>
+</tr>
+<tr>
+	<td>CatelProperty</td>
+	<td>false</td>
+</tr>
+</tbody>
+</table>
 <h2 id="serializing-a-modelbase-as-collection">Serializing a ModelBase as collection<a class="headerlink" href="#serializing-a-modelbase-as-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>There is a very edge case that a class derives from <em>ModelBase</em>, but also implements <em>IList&lt;T&gt;</em>. In this case, it's hard for the serializers to determine what to do. By default, it will treat the model as a Catel model (since it can contain more properties than just the <em>Items</em> property. If such a class should be serialized as collection (meaning it will only serialize the <em>Items</em> property), decorate it with the <em>SerializeAsCollection</em> attribute:</p>
 <p> </p>
@@ -274,12 +315,7 @@ public class MyModel : ModelBase, IList&lt;int&gt;
 </pre><p>Don't forget to register it in the <em>ServiceLocator</em> as well:</p>
 <pre class="nocode">var serviceLocator = ServiceLocator.Default;
 serviceLocator.RegisterType&lt;ISerializationManager, SafeSerializationManager&gt;();
-</pre><p> </p>
-<p> </p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/8028179/8192006.png">supported.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/8028179/8192007.png">notsupported.png</a> (image/png)</p>
-
+</pre>
                     </div>
                 </div>
                 <footer>

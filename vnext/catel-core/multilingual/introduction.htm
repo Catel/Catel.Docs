@@ -189,8 +189,8 @@ var warningTitle = languageService.GetString(&quot;WarningTitle&quot;);
 <pre class="nocode">&lt;TextBlock Text=&quot;{markup:LanguageBinding ResourceName=WarningTitle}&quot; /&gt;
 </pre><h2 id="implementing-custom-languageservice-from-database">Implementing custom LanguageService (from database)<a class="headerlink" href="#implementing-custom-languageservice-from-database" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Implementing a custom <em>LanguageService</em> consists of several steps which are described below.</p>
-<p>Note that this implementation queries the database for each translation. It is best to read all translations into memory at once to improve performance</p>
-<h3 id="creating-a-custom-ilanguagesource-implementation">Creating a custom ILanguageSource implementation<a class="headerlink" href="#creating-a-custom-ilanguagesource-implementation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that this implementation queries the database for each translation. It is best to read all translations into memory at once to improve performance</p>
+</div><h3 id="creating-a-custom-ilanguagesource-implementation">Creating a custom ILanguageSource implementation<a class="headerlink" href="#creating-a-custom-ilanguagesource-implementation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>First of all, we need to implement a customized language source to allow the custom service to know what source to read for translations:</p>
 <pre class="nocode">public class DbLanguageSource : ILanguageSource
 {

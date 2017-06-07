@@ -103,6 +103,8 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../Customizingserialization.htm">Customizing serialization</a></span></li>
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/introduction.htm">Introduction</a>
+</li>
 <li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-engines.htm">Customizing the serialization engines</a>
 </li>
 <li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.htm">Customizing the serialization for specific models</a>
@@ -164,8 +166,8 @@
 <li>The member is decorated using the <em>SerializeUsingParseAndToString</em> attribute</li>
 <li>The container class has a <em>SerializerModifier</em> that returns <em>true</em> in the <em>ShouldSerializeMemberUsingParse</em> method</li>
 </ol>
-<p>Note that decorating a member that does not implement proper <em>ToString(IFormatProvider)</em> and <em>Parse(string, IFormatProvider)</em> methods is useless, the serialization engine will ignore these types</p>
-<p>For example, the class below is an excellent usage example of when to use this technique:</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that decorating a member that does not implement proper <em>ToString(IFormatProvider)</em> and <em>Parse(string, IFormatProvider)</em> methods is useless, the serialization engine will ignore these types</p>
+</div><p>For example, the class below is an excellent usage example of when to use this technique:</p>
 <pre class="nocode">    [Serializable, StructLayout(LayoutKind.Sequential, Pack = 1)]
     public struct Vector
     {

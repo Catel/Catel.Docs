@@ -72,7 +72,9 @@ Since Windows Phone does not support markup extensions, a custom *MarkupExtensi
 
 Implementing a custom *LanguageService* consists of several steps which are described below.
 
+@alert important
 Note that this implementation queries the database for each translation. It is best to read all translations into memory at once to improve performance
+@end
 
 ### Creating a custom ILanguageSource implementation
 

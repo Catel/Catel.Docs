@@ -2,9 +2,8 @@
 
 [Seq](http://getseq.net/) is a structured logs server for .NET Apps. It act like a logs repository, allow to diagnostic by query your logs using a natural syntax, react on notifying you through email or instant messages and so on ...
 
-![](attachments/31588366/31752194.png)
+![](../../../images/catel-core/logging/log-listeners/seq-log-listener/seq.png)
 
- 
 
 To use the Seq log listener, use the following code:
 
@@ -28,9 +27,6 @@ This one can also be used on configuration file:
 </catel>
 ```
 
-This log listener is currently available only for .NET 4.0 and .NET 4.5
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [catel.seq.png](attachments/31588366/31752194.png) (image/png)
-
+@alert important
+This log listener is currently available only for the full .net framework
+@end

@@ -148,7 +148,9 @@
                     <div class="section">
 <h1 id="displayattribute">DisplayAttribute<a class="headerlink" href="#displayattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Catel implements a custom implementation of the <em>DisplayAttribute</em> known in the <em>DataAnnotations</em> namespace of .NET. This attribute uses the <em>ILanguageService</em> so you can easily have all translations in a single location when using Catel.</p>
-<p>Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)</p>
+<p>@note warning
+Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)
+@end</p>
 <h2 id="using-the-attribute">Using the attribute<a class="headerlink" href="#using-the-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Using the attribute is really easy. Just put the attribute on top of any method, property, field or parameter like this:</p>
 <pre class="nocode">public enum Condition
@@ -194,24 +196,42 @@
 }
 </pre><h2 id="using-the-ilanguageservice">Using the ILanguageService<a class="headerlink" href="#using-the-ilanguageservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>By default, the attribute uses the <em>ILanguageService</em> to resolve the values to show. The <em>DisplayAttribute</em> uses conventions to resolve the different values from the resources.</p>
-<p>Property</p>
-<p>ResourceName used when resolving</p>
-<p>Fallback value</p>
-<p>ShortName</p>
-<p>[ResourceName]_ShortName</p>
-<p>Name</p>
-<p>Name</p>
-<p>[ResourceName]_Name</p>
-<p>No fallback value, will return empty value</p>
-<p>Description</p>
-<p>[ResourceName]_Description</p>
-<p>No fallback value, will return empty value</p>
-<p>Prompt</p>
-<p>[ResourceName]_Prompt</p>
-<p>No fallback value, will return empty value</p>
-<p>GroupName</p>
-<p>[ResourceName]_GroupName</p>
-<p>No fallback value, will return empty value</p>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Property</th>
+	<th>ResourceName used when resolving</th>
+	<th>Fallback value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>ShortName</td>
+	<td>[ResourceName]_ShortName</td>
+	<td>Name</td>
+</tr>
+<tr>
+	<td>Name</td>
+	<td>[ResourceName]_Name</td>
+	<td>No fallback value, will return empty value</td>
+</tr>
+<tr>
+	<td>Description</td>
+	<td>[ResourceName]_Description</td>
+	<td>No fallback value, will return empty value</td>
+</tr>
+<tr>
+	<td>Prompt</td>
+	<td>[ResourceName]_Prompt</td>
+	<td>No fallback value, will return empty value</td>
+</tr>
+<tr>
+	<td>GroupName</td>
+	<td>[ResourceName]_GroupName</td>
+	<td>No fallback value, will return empty value</td>
+</tr>
+</tbody>
+</table>
 
                     </div>
                 </div>

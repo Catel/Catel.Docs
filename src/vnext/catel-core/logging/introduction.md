@@ -63,8 +63,6 @@ LogManager.AddDebugListener();
 #endif
 ```
 
-Prior to Catel 3.8, one should use *LogManager.RegisterDebugListener()* instead
-
 ## Overriding global log level flags
 
 Start with Catel 3.8, it is possible to override the global log level flags for all listeners. To do this, set the corresponding flag on the *LogManager* to a value. For example, to force debug logging on all log listeners, use the code below:

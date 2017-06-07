@@ -4,7 +4,9 @@ It's possible that full control is needed (either for performance or custom seri
 
 ## Binary serialization
 
+@alert important
 Custom binary serialization is not (yet) supported
+@end
 
 ## Xml serialization
 

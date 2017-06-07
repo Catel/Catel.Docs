@@ -103,6 +103,8 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../Customizingserialization.htm">Customizing serialization</a></span></li>
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/introduction.htm">Introduction</a>
+</li>
 <li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-engines.htm">Customizing the serialization engines</a>
 </li>
 <li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.htm">Customizing the serialization for specific models</a>
@@ -165,8 +167,8 @@
 <h1 id="taking-full-control-of-serialization">Taking full control of serialization<a class="headerlink" href="#taking-full-control-of-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>It's possible that full control is needed (either for performance or custom serialization formats). To ensure the best performance possible, this is implemented with a special interface for each serialization engine. If one of the engines detects such a special interface, it will skip all the plumbing and directly call the interface with the right context.</p>
 <h2 id="binary-serialization">Binary serialization<a class="headerlink" href="#binary-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Custom binary serialization is not (yet) supported</p>
-<h2 id="xml-serialization">Xml serialization<a class="headerlink" href="#xml-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Custom binary serialization is not (yet) supported</p>
+</div><h2 id="xml-serialization">Xml serialization<a class="headerlink" href="#xml-serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To gain the best performance possible using the xml serializer, a model should implement the <em>ICustomXmlSerializable</em> interface.</p>
 <pre class="nocode">public class CustomXmlSerializationModel : ModelBase, ICustomXmlSerializable
 {

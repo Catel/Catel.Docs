@@ -21,7 +21,9 @@ var wrapper = new ChangeNotificationWrapper(obj);
 wrapper.PropertyChanged += OnPropertyChanged;
 ```
 
+@alert info
 Note that it is not required to check whether the object implements INotifyPropertyChanged, the wrapper does it automatically
+@end
 
 ##  Subscribing to events of an observable collection
 
@@ -32,7 +34,9 @@ var wrapper = new ChangeNotificationWrapper(observableCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
 ```
 
+@alert info
 Note that it is not required to check whether the object implements INotifyCollectionChanged, the wrapper does it automatically
+@end
 
 ## Advanced scenario with observable collections
 

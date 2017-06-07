@@ -1,6 +1,8 @@
 # Validation via validate methods
 
+@alert info
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+@end
 
 The easiest way to implement validation is to override the ValidateFields and ValidateBusinessRules methods. Below is an example of an implementation of the ValidateFields method:
 

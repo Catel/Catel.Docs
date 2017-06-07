@@ -177,52 +177,50 @@
 <h1 id="fileloglistener">FileLogListener<a class="headerlink" href="#fileloglistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Catel also supports very lightweight listeners to allow external logging libraries to hook on. To create a listener, first create a new class that implements the <em>ILogListener</em> interface. Next, register it in the <em>LogManager</em> using the <em>LogManager.AddListener</em> method.</p>
 <p>The ILogListener has a separate method for each LogEvent, but also has a shared method that is called for each log event. For example, if a debug message is written to the log, both the Write and Debug methods are invoked on the ILogListener.</p>
-<p>For an example which writes to disk in batches, see the <a href="Batch_log_listeners">batch log event listeners</a></p>
-<p>Note that Catel already contains a FileLogListener and there is no need to reproduce this class. It only acts as an example that is easy to understand</p>
-<h2 id="specifying-the-path">Specifying the path<a class="headerlink" href="#specifying-the-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>For an example which writes to disk in batches, see the <a href="Batch_log_listeners">batch log event listeners</a></p>
+</div><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that Catel already contains a FileLogListener and there is no need to reproduce this class. It only acts as an example that is easy to understand</p>
+</div><h2 id="specifying-the-path">Specifying the path<a class="headerlink" href="#specifying-the-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The default <em>FileLogListener</em> that ships with Catel allows the customization of the file name and the size of the log file. If no size is specified, the max log file size will default to 10 MB. </p>
 <p>There are several constants inside the file name that can be used:</p>
-<p>Constant</p>
-<p>Description</p>
-<p>{AppData}</p>
+<p><em>{AppData}</em></p>
 <p>The application data directory that is used by all users.</p>
 <p>Based on the entry assembly. For example <code>%ProgramData%\[company]\[product]\.</code></p>
 <p>*<em>Note: Currently this writes to <code>%ProgramData%</code> only if HttpContext.Current evaluates to an object (e.g. a web app); otherwise it uses %AppData%</em>.
 *</p>
-<p>{AppDataLocal}</p>
+<p><em>{AppDataLocal}</em></p>
 <p>The local application data directory that is used by the current, non-roaming user.</p>
 <p>Based on the entry assembly. For example <code>%LocalAppData%\[company]\product]\</code>.</p>
-<p>{AppDataRoaming}</p>
+<p><em>{AppDataRoaming}</em></p>
 <p>The roaming application data directory that is used by the current roaming user.</p>
 <p>Based on the entry assembly. For example <code>%AppData%\[company]\[product]\</code>.</p>
-<p>{AppDataMachine}</p>
+<p><em>{AppDataMachine}</em></p>
 <p>The application data directory that is used by all users.</p>
 <p>Based on the entry assembly. For example <code>%ProgramData%\[company]\[product]\</code>.</p>
-<p>{AppDir}</p>
+<p><em>{AppDir}</em></p>
 <p>The directory of the current application (i.e. <code>AppDomain.CurrentDomain.BaseDirectory</code>).</p>
-<p>{AssemblyCompany}</p>
+<p><em>{AssemblyCompany}</em></p>
 <p>The assembly company.</p>
-<p>{AssemblyName}</p>
+<p><em>{AssemblyName}</em></p>
 <p>The assembly name.</p>
-<p>{AssemblyProduct}</p>
+<p><em>{AssemblyProduct}</em></p>
 <p>The assembly product.</p>
-<p>{AutoLogFileName}</p>
+<p><em>{AutoLogFileName}</em></p>
 <p>Creates a log file with the following format: <code>{</code><em><code>AssemblyName}_{Date}_{Time}_{ProcessId}</code>.</em></p>
-<p>{Date}</p>
+<p><em>{Date}</em></p>
 <p>The date as <em><code>yyyy-MM-dd</code>.</em></p>
-<p>{Time}</p>
+<p><em>{Time}</em></p>
 <p>The time as <em><code>HHmmss</code>.</em></p>
-<p>{ProcessId}</p>
+<p><em>{ProcessId}</em></p>
 <p>The process id.</p>
-<p>{WorkDir}</p>
+<p><em>{WorkDir}</em></p>
 <p>The application execution directory.  Calls <code>Directory.GetCurrentDirectory()</code>, internally.</p>
 <p>A good example would be:</p>
 <pre class="nocode">var fileLogListener = new FileLogListener();
 fileLogListener.FilePath = &quot;{AppDir}\{AutoLogFileName}&quot;;
  
 LogManager.AddListener(fileLogListener);
-</pre><p>Note that the default path of the <em>FileLogListener</em> is <em>{AppData}\{AutoLogFileName}</em></p>
-<h2 id="creating-a-custom-listener">Creating a custom listener<a class="headerlink" href="#creating-a-custom-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that the default path of the <em>FileLogListener</em> is <em>{AppData}\{AutoLogFileName}</em></p>
+</div><h2 id="creating-a-custom-listener">Creating a custom listener<a class="headerlink" href="#creating-a-custom-listener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>A listener can be created by creating a new class deriving from LogListenerBase.</p>
 <pre class="nocode">public class FileLogListener : LogListenerBase
 {

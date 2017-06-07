@@ -103,6 +103,8 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../Customizingserialization.htm">Customizing serialization</a></span></li>
+<li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/introduction.htm">Introduction</a>
+</li>
 <li class="tocentry current"><a class="current" href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-engines.htm">Customizing the serialization engines</a>
 </li>
 <li class="tocentry"><a href="../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models.htm">Customizing the serialization for specific models</a>
@@ -183,12 +185,20 @@
 <pre class="nocode">ServiceLocator.Default.RegisterType&lt;IXmlSerializer, SafeXmlSerializer&gt;();
 </pre><p>The following methods on the serializer classes might be of interest when customizing the serialization:</p>
 <ul>
-<li>ShouldIgnoreProperty</li>
-<li>BeforeSerialization</li>
+<li>
+<p>ShouldIgnoreProperty</p>
+</li>
+<li>
+<p>BeforeSerialization</p>
+</li>
 <li>BeforeSerializeProperty</li>
 <li>AfterSerializeProperty</li>
-<li>AfterSerialization</li>
-<li>BeforeDeserialization</li>
+<li>
+<p>AfterSerialization</p>
+</li>
+<li>
+<p>BeforeDeserialization</p>
+</li>
 <li>BeforeDeserializeProperty</li>
 <li>AfterDeserializeProperty</li>
 <li>AfterDeserialization</li>

@@ -2,15 +2,21 @@
 
 Garbage collection in .NET can be very expensive, especially for objects on the Large Object Heap (LOH). .NET itself already uses pooling for threads to prevent the costly creation of threads but instead re-uses the already created threads using a thread pool. Catel provides an implementation of pooling using the *PoolManager\<TPoolable\>*. This allows both Catel and third party developers to create a pool for large objects so they can be reused.
 
+@alert info
 The documentation uses a byte array of 4096 as poolable object as example. If *\_poolManager* is used in the code below, it represents an instance of *PoolManager\<Buffer4096Poolable\>*
+@end
 
 ## Introduction to the pool manager
 
 The pool manager internally uses a stack to manage the available objects in the pool. It's important to understand how a pool works. The flow diagram below shows how the pool manager deals with objects:
 
+![](../../images/catel-core/pooling/hasobjects.png)
+
 It is recommended that a pool manager gets registered in the *ServiceLocator* so it can be re-used by multiple components.
 
+@alert important
 Note that the pool manager does not limit the number of objects in memory. It has a *MaxSize* property so it will store only a maximum amount of objects inside the internal pool, but if the pool is running out of instances and a new object is requested, it will return a new instance (and thus creating a new object which could be garbage collected).
+@end
 
 ### Retrieving objects from the pool
 
@@ -38,6 +44,8 @@ using (var poolableBuffer = _poolManager.GetObject())
 ```
 
 The flow chart below shows how the *PoolManager\<TPoolable\>* will handle the dispose:
+
+![](../../images/catel-core/pooling/reachedmaxsize.png)
 
 ## Customizing a pool manager
 
@@ -91,15 +99,3 @@ public class Buffer4096Poolable : IPoolable
     }
 }
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [Pool Manager](attachments/102760450/102760460) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [Pool Manager.png](attachments/102760450/102760461.png) (image/png)
- ![](images/icons/bullet_blue.gif) [Pool Manager](attachments/102760450/102760458) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [Pool Manager.png](attachments/102760450/102760459.png) (image/png)
- ![](images/icons/bullet_blue.gif) [Pool Manager - returning objects](attachments/102760450/102760464) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [Pool Manager - returning objects.png](attachments/102760450/102760465.png) (image/png)
- ![](images/icons/bullet_blue.gif) [Pool Manager - returning objects](attachments/102760450/102760462) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [Pool Manager - returning objects.png](attachments/102760450/102760463.png) (image/png)
-

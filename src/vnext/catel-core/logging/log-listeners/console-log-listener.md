@@ -2,7 +2,7 @@
 
 The *ConsoleLogListener *writes messages to the console with automatic colors:
 
-![](attachments/31588359/31752193.png?width=500)
+![](../../../images/catel-core/logging/log-listeners/console-log-listener/console.png)
 
 To add it, use the code below:
 
@@ -13,8 +13,3 @@ logListener.IgnoreCatelLogging = true;
  
 LogManager.AddListener(logListener);
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2014-8-18 9:53:26.png](attachments/31588359/31752193.png) (image/png)
-

@@ -33,10 +33,12 @@ ServiceLocator.Default.RegisterType<IXmlSerializer, SafeXmlSerializer>();
 The following methods on the serializer classes might be of interest when customizing the serialization:
 
 -   ShouldIgnoreProperty
+
 -   BeforeSerialization
 -   BeforeSerializeProperty
 -   AfterSerializeProperty
 -   AfterSerialization
+
 -   BeforeDeserialization
 -   BeforeDeserializeProperty
 -   AfterDeserializeProperty

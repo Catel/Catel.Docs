@@ -1,6 +1,8 @@
 # Validation via IValidator
 
+@alert info
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+@end
 
 The validation in Catel is extremely flexible, but sometimes it is just not enough or you are forced to use external validators. For such cases, Catel provides the IValidatorProvider and IValidator interfaces. These allow very flexible injection or external validators into data objects and view models of Catel.
 

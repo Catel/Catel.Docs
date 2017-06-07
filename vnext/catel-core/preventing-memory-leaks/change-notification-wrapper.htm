@@ -158,13 +158,13 @@ if (itemAsPropertyChanged != null)
 <p>Using the code below, one can subscribe to the PropertyChanged event of an object:</p>
 <pre class="nocode">var wrapper = new ChangeNotificationWrapper(obj);
 wrapper.PropertyChanged += OnPropertyChanged;
-</pre><p>Note that it is not required to check whether the object implements INotifyPropertyChanged, the wrapper does it automatically</p>
-<h2 id="subscribing-to-events-of-an-observable-collection"> Subscribing to events of an observable collection<a class="headerlink" href="#subscribing-to-events-of-an-observable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that it is not required to check whether the object implements INotifyPropertyChanged, the wrapper does it automatically</p>
+</div><h2 id="subscribing-to-events-of-an-observable-collection"> Subscribing to events of an observable collection<a class="headerlink" href="#subscribing-to-events-of-an-observable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Using the code below, one can subscribe to the CollectionChanged event of an object:</p>
 <pre class="nocode">var wrapper = new ChangeNotificationWrapper(observableCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
-</pre><p>Note that it is not required to check whether the object implements INotifyCollectionChanged, the wrapper does it automatically</p>
-<h2 id="advanced-scenario-with-observable-collections">Advanced scenario with observable collections<a class="headerlink" href="#advanced-scenario-with-observable-collections" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that it is not required to check whether the object implements INotifyCollectionChanged, the wrapper does it automatically</p>
+</div><h2 id="advanced-scenario-with-observable-collections">Advanced scenario with observable collections<a class="headerlink" href="#advanced-scenario-with-observable-collections" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Sometimes it is required to watch both changes inside a collection, but also the items inside a collection. For example, there is a list of customers and you are also interested in changes of customers inside a collection. This is fully supported by the ChangeNotificationWrapper using the code below:</p>
 <pre class="nocode">var wrapper = new ChangeNotificationWrapper(observableCustomerCollection);
 wrapper.CollectionChanged += OnCollectionChanged;
