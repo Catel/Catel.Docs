@@ -140,8 +140,8 @@
         validationResults.Add(FieldValidationResult.CreateError(FamilyNameProperty, &quot;The family name is required&quot;));
     }
 }
-</pre><p>Note that this validation code can be used in both the model and/or the view models</p>
-<h2 id="adding-behaviors-to-enable-double-click-on-the-list-boxes">Adding behaviors to enable double-click on the list boxes<a class="headerlink" href="#adding-behaviors-to-enable-double-click-on-the-list-boxes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that this validation code can be used in both the model and/or the view models</p>
+</div><h2 id="adding-behaviors-to-enable-double-click-on-the-list-boxes">Adding behaviors to enable double-click on the list boxes<a class="headerlink" href="#adding-behaviors-to-enable-double-click-on-the-list-boxes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The user must manually click the <em>Edit</em> buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the <em>MainWindow</em> and add this to the <em>ListBox</em> definition:</p>
 <pre class="nocode">&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Families}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
     &lt;ListBox.ItemTemplate&gt;
@@ -171,8 +171,8 @@
     &lt;/ListBox.ItemTemplate&gt;
 &lt;/ListBox&gt;
  
-</pre><p>Note that the <em>xmlns:i=&quot;http://schemas.microsoft.com/expression/2010/interactivity&quot;</em> must be added in order for the code above to compile</p>
-<h2 id="adding-search-functionality-to-the-main-window">Adding search functionality to the main window<a class="headerlink" href="#adding-search-functionality-to-the-main-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the <em>xmlns:i=&quot;http://schemas.microsoft.com/expression/2010/interactivity&quot;</em> must be added in order for the code above to compile</p>
+</div><h2 id="adding-search-functionality-to-the-main-window">Adding search functionality to the main window<a class="headerlink" href="#adding-search-functionality-to-the-main-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the <em>MainWindowViewModel</em>. Below are the steps required to implement search functionality.</p>
 <h3 id="adding-additional-properties-to-the-view-model">Adding additional properties to the view model<a class="headerlink" href="#adding-additional-properties-to-the-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Lets start by adding the additional properties required to implement searching in the <em>MainWindowViewModel</em>:</p>
@@ -203,8 +203,8 @@ public string SearchFilter
 /// Register the SearchFilter property so it is known in the class.
 /// &lt;/summary&gt;
 public static readonly PropertyData SearchFilterProperty = RegisterProperty(&quot;SearchFilter&quot;, typeof(string), null, (sender, e) =&gt; ((MainWindowViewModel)sender).UpdateSearchFilter());
-</pre><p>Note that this property contains an additional change callback function which will be called when the property has changed.</p>
-<p>Add the following import to the view model. You will needed because native <strong>ObservableCollection</strong> class does not support <strong>ReplaceRange()</strong></p>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that this property contains an additional change callback function which will be called when the property has changed.</p>
+</div><p>Add the following import to the view model. You will needed because native <strong>ObservableCollection</strong> class does not support <strong>ReplaceRange()</strong></p>
 <pre class="nocode">using Catel.Collections;
 </pre><p>Add this method to the view model:</p>
 <pre class="nocode">/// &lt;summary&gt;

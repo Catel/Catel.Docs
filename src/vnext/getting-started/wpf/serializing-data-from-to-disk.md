@@ -6,7 +6,7 @@ In this step we will create services that will serialize the models from/to disk
 
 The first thing to do is to create the *Services* folder to group the services. Below is a screenshot of how to solution will look after creating the folders:
 
-![](attachments/15630363/16318471.png)
+![](../../images/getting-started/wpf/serializing-data-from-to-disk/solutionexplorer.png)
 
 Then add a new interface to the *Interfaces* folder named *IFamilyService*. This will manage the families that are avaiable. Below is the interface defined:
 
@@ -154,8 +154,3 @@ After running the application once, a new file will be stored in the following d
 ## Up next
 
 [Creating the view models](./creating-the-viewmodels.md)
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2013-11-8 16:56:29.png](attachments/15630363/16318471.png) (image/png)
-

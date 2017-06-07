@@ -27,7 +27,9 @@ public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerSer
 }
 ```
 
+@alert important
 Don't forget to create the right backing fields *\_uiVisualizerService* and *\_messageService*
+@end
 
 #### Adding the properties
 
@@ -51,7 +53,9 @@ public static readonly PropertyData SelectedPersonProperty = RegisterProperty("S
 
 #### Adding the commands
 
+@alert info
 Note that we recommend that you use the *vmcommand* and *vmcommandwithcanexecute* code snippets available [here](http://www.catelproject.com/download/general-files/)
+@end
 
 Below is the code which comes in two parts.
 

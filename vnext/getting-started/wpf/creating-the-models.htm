@@ -121,8 +121,8 @@
 <h2 id="creating-the-model-classes">Creating the model classes<a class="headerlink" href="#creating-the-model-classes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The models that will be used in this application will derive from the <em>ModelBase</em> or <em>SavableModelBase</em> class of Catel. These classes enable support for change notifications, validations and persistence. The <em>SavableModelBase</em> adds additional methods to save and load from/to streams or files without having to create a serializer first.</p>
 <p>To create the model classes, create the following classes in the <em>Models</em> folder.</p>
-<p>The <em>model</em> code snippet is available to create models</p>
-<h3 id="settings-class">Settings class<a class="headerlink" href="#settings-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>The <em>model</em> code snippet is available to create models</p>
+</div><h3 id="settings-class">Settings class<a class="headerlink" href="#settings-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The settings class is the top container that will store all families and other settings (which might be added in the future).</p>
 <pre class="nocode">namespace WPF.GettingStarted.Models
 {
@@ -166,9 +166,9 @@
     get { return GetValue&lt;ObservableCollection&lt;Person&gt;&gt;(PersonsProperty); }
     set { SetValue(PersonsProperty, value); } 
 }
-</pre><p>If you want to get the functionality in the <em>ModelBase</em> classes without the &quot;dependency-a-like&quot; properties you have the option to make use of normal properties and Catel.Fody.</p>
-<p>The <em>modelprop</em> code snippet is available to create models</p>
-<h3 id="settings-class-1">Settings class<a class="headerlink" href="#settings-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>If you want to get the functionality in the <em>ModelBase</em> classes without the &quot;dependency-a-like&quot; properties you have the option to make use of normal properties and Catel.Fody.</p>
+</div><div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>The <em>modelprop</em> code snippet is available to create models</p>
+</div><h3 id="settings-class-1">Settings class<a class="headerlink" href="#settings-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <pre class="nocode">public class Settings : SavableModelBase&lt;Settings&gt;
 {
     /// &lt;summary&gt;

@@ -62,7 +62,6 @@
 <li class="tocentry"><a href="#person-view">Person view</a></li>
 <li class="tocentry"><a href="#family-view">Family view</a></li>
 <li class="tocentry"><a href="#up-next">Up next</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../getting-started/wpf/creating-the-windows.htm">Creating the windows</a>
 </li>
@@ -121,10 +120,10 @@
 <p>In this step we will create the views for the application. There are several views that will be created and both user controls and windows will be handled in this part of the guide. Catel makes it very easy to create views as user controls with their own view models. In the previous step we already created the view models.</p>
 <h2 id="person-view">Person view<a class="headerlink" href="#person-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To create a new view, right-click the <em>Views</em> folder in the solution =&gt; <em>Add</em> =&gt; <em>New item...</em> =&gt; <em>On-line</em> =&gt; and search for Catel as you can see in the screen below:</p>
-<p><img src="attachments/15630358/16318473.png" /></p>
+<p><img src="../../images/getting-started/wpf/creating-the-user-controls/itemtemplate.png" width="955" height="660" /></p>
 <p>Give the new view the name <em>PersonView</em>. The view will be added to the <em>Views</em> folder.</p>
-<p>Catel will automatically link the <em>PersonViewModel</em> and <em>PersonView</em> together by naming convention</p>
-<p>Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Catel will automatically link the <em>PersonViewModel</em> and <em>PersonView</em> together by naming convention</p>
+</div><p>Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:</p>
 <pre class="nocode">&lt;catel:StackGrid&gt;
     &lt;catel:StackGrid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
@@ -172,10 +171,6 @@
 </pre><p>The thing that is important to notice in the <em>FamilyView</em> is how it uses the <em>PersonView</em> and injects the <em>Person</em> models into the <em>PersonView</em> data context.</p>
 <h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p><a href="./creating-the-windows.htm">Creating the views (windows)</a></p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630358/16318472.png">image2013-11-8 23:23:3.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630358/16318473.png">image2013-11-8 23:23:45.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/15630358/16318474.png">image2013-11-8 23:34:55.png</a> (image/png)</p>
 
                     </div>
                 </div>

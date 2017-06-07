@@ -4,11 +4,17 @@ Welcome to the *Getting started* guide for Catel and WPF. In this guide, a very
 
 The application will manage family members and will display the families in separate views.
 
+@alert info
 Note that this guide assumes that the reader has a basic understanding of XAML and WPF since this guide will not cover these basics
+@end
 
+@alert info
 The source code for this example can be found at <https://github.com/Catel/Catel.GettingStarted.WPF>
+@end
 
+@alert info
 Note that this guide will recommend code snippets that can be found [here](http://www.catelproject.com/downloads/general-files/). They are not required, just recommended to speed up creating Catel classes and properties.
+@end
 
 - [Creating the WPF project](./creating-the-project.md)
 - [Creating the models](./creating-the-models.md)
@@ -19,14 +25,6 @@ Note that this guide will recommend code snippets that can be found [here](http:
 - [Hooking up everything together](./hooking-up-everything-together.md)
 - [Finalizing the application](./finalizing-the-application.md)
 
-Download the final result: [WPF.GettingStarted.zip](attachments/15630345/16318481.zip)
+Download the final result: [WPF.GettingStarted.zip](../../images/getting-started/wpf/introduction/wpf-getting-started.zip)
 
-![](attachments/15630345/16318479.png)
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2013-11-9 1:22:16.png](attachments/15630345/16318479.png) (image/png)
- ![](images/icons/bullet_blue.gif) [WPF.GettingStarted.zip](attachments/15630345/40927240.zip) (application/zip)
- ![](images/icons/bullet_blue.gif) [WPF.GettingStarted.zip](attachments/15630345/51019783.zip) (application/zip)
- ![](images/icons/bullet_blue.gif) [WPF.GettingStarted.zip](attachments/15630345/16318481.zip) (application/zip)
-
+![](../../images/getting-started/wpf/introduction/screenshot.png)

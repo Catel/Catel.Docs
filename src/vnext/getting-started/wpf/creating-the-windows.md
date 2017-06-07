@@ -4,20 +4,24 @@ In this step we will create the windows for the application. In the previous ste
 
 ## Person window
 
+@alert important
 It is very important that the window derives from one of the Catel windows. This is required to make the binding system work (same as *UserControl*). Make sure that the window definition in the xaml is either *catel:Window* or *catel:DataWindow*
+@end
 
 To add a new *DataWindow*, right-click the *Views* folder in the solution =\> *Add* =\> *New item...* =\> *On-line* =\> and search for Catel as you can see in the screen below:
 
-![](attachments/16023626/16318475.png)
+![](../../images/getting-started/wpf/creating-the-windows/itemtemplate.png)
 
 Give the new view the name *PersonWindow*. The view will be added to the *Views* folder.
 
+@alert important
 Note that we can use the *PersonViewModel* for both the *PersonView* (user control) and *PersonWindow*. Both views represent the same models and view models, just a different context. To make sure that the *IUIVisualizerService* knows what view to pick first, register the *PersonWindow* in the *IUIVisualizerService* at application startup:
 
 ```
 var uiVisualizerService = serviceLocator.ResolveType<IUIVisualizerService>();
 uiVisualizerService.Register(typeof(PersonViewModel), typeof(PersonWindow));
 ```
+@end
 
 The template will also create a constructor to inject a view model into the window. Please make sure that the constructor takes a view model of the type *PersonViewModel* instead of the generated *PersonWindowModel*. Then replace the content of the view with the xaml below:
 
@@ -48,7 +52,9 @@ The *FamilyWindow* is a bit different because we want additional logic in this
 
 Since the *FamilyWindowViewModel* will look a lot like the *FamilyViewModel*, just copy/paste the *FamilyViewModel* and rename the copy to *FamilyWindowViewModel*.
 
+@alert important
 Note that the *FamilyWindowViewModel* needs additional logic, but that will be handled in the next part of this getting started guide
+@end
 
 ### Creating the FamilyWindow
 
@@ -97,10 +103,3 @@ Once the *FamilyWindowViewModel* is created, the *FamilyWindow *must be created
 ## Up next
 
 [Hooking up everything together](./hooking-up-everything-together.md)
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2013-11-8 23:34:55.png](attachments/16023626/16318475.png) (image/png)
- ![](images/icons/bullet_blue.gif) [image2013-11-8 23:23:45.png](attachments/16023626/16318476.png) (image/png)
- ![](images/icons/bullet_blue.gif) [image2013-11-8 23:23:3.png](attachments/16023626/16318477.png) (image/png)
-

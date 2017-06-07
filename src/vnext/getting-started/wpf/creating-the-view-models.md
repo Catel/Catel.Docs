@@ -2,7 +2,9 @@
 
 In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the *ViewModelBase* class
 
+@alert tip
 The *vm* code snippet is available to create view models. There is also an on-line item template available for Catel view models
+@end
 
 ## Creating the PersonViewModel
 
@@ -50,7 +52,9 @@ public class PersonViewModel : ViewModelBase
 }
 ```
 
+@alert info
 Note that the *Person* property is decorated with the *Model* attribute. This automatically makes sure that if a view model is saved, the *IEditableObject.EndEdit* is called. When the view model is canceled, the *IEditableObject.CancelEdit* is called and all changes on the model will be reverted.
+@end
 
 ### Exposing properties of a model
 
@@ -88,7 +92,9 @@ public string LastName
 public static readonly PropertyData LastNameProperty = RegisterProperty("LastName", typeof(string), null);
 ```
 
+@alert info
 Note that the properties are decorated with the *ViewModelToModel* attribute which enables the automatic mappings feature in Catel.
+@end
 
 ## Creating the FamilyViewModel
 

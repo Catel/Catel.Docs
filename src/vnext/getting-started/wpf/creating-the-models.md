@@ -8,7 +8,9 @@ The models that will be used in this application will derive from the *ModelBas
 
 To create the model classes, create the following classes in the *Models* folder.
 
+@alert tip
 The *model* code snippet is available to create models
+@end
 
 ### Settings class
 
@@ -77,9 +79,13 @@ public ObservableCollection<Person> Persons
 }
 ```
 
+@alert info
 If you want to get the functionality in the *ModelBase* classes without the "dependency-a-like" properties you have the option to make use of normal properties and Catel.Fody.
+@end
 
+@alert tip
 The *modelprop* code snippet is available to create models
+@end
 
 ### Settings class
 

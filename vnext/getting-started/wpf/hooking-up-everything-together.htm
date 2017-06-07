@@ -133,8 +133,8 @@
     _uiVisualizerService = uiVisualizerService;
     _messageService = messageService;
 }
-</pre><p>Don't forget to create the right backing fields <em>_uiVisualizerService</em> and <em>_messageService</em></p>
-<h4 id="adding-the-properties">Adding the properties<a class="headerlink" href="#adding-the-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Don't forget to create the right backing fields <em>_uiVisualizerService</em> and <em>_messageService</em></p>
+</div><h4 id="adding-the-properties">Adding the properties<a class="headerlink" href="#adding-the-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>We need a property representing the currently selected person in edit mode of a family. Below is the property definition which needs to be added to the view model:</p>
 <pre class="nocode">/// &lt;summary&gt;
 /// Gets or sets the selected person.
@@ -150,8 +150,8 @@ public Person SelectedPerson
 /// &lt;/summary&gt;
 public static readonly PropertyData SelectedPersonProperty = RegisterProperty(&quot;SelectedPerson&quot;, typeof(Person), null);
 </pre><h4 id="adding-the-commands">Adding the commands<a class="headerlink" href="#adding-the-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that we recommend that you use the <em>vmcommand</em> and <em>vmcommandwithcanexecute</em> code snippets available <a href="http://www.catelproject.com/download/general-files/" target="_blank">here</a></p>
-<p>Below is the code which comes in two parts.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that we recommend that you use the <em>vmcommand</em> and <em>vmcommandwithcanexecute</em> code snippets available <a href="http://www.catelproject.com/download/general-files/" target="_blank">here</a></p>
+</div><p>Below is the code which comes in two parts.</p>
 <p>1. Add this code to the constructor:</p>
 <pre class="nocode">AddPerson = new TaskCommand(OnAddPersonExecuteAsync);
 EditPerson = new TaskCommand(OnEditPersonExecuteAsync, OnEditPersonCanExecute);

@@ -6,11 +6,13 @@ In this step we will create the views for the application. There are several vie
 
 To create a new view, right-click the *Views* folder in the solution =\> *Add* =\> *New item...* =\> *On-line* =\> and search for Catel as you can see in the screen below:
 
-![](attachments/15630358/16318473.png)
+![](../../images/getting-started/wpf/creating-the-user-controls/itemtemplate.png)
 
 Give the new view the name *PersonView*. The view will be added to the *Views* folder.
 
+@alert info
 Catel will automatically link the *PersonViewModel* and *PersonView* together by naming convention
+@end
 
 Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:
 
@@ -75,10 +77,3 @@ The thing that is important to notice in the *FamilyView* is how it uses the *
 ## Up next
 
 [Creating the views (windows)](./creating-the-windows.md)
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2013-11-8 23:23:3.png](attachments/15630358/16318472.png) (image/png)
- ![](images/icons/bullet_blue.gif) [image2013-11-8 23:23:45.png](attachments/15630358/16318473.png) (image/png)
- ![](images/icons/bullet_blue.gif) [image2013-11-8 23:34:55.png](attachments/15630358/16318474.png) (image/png)
-
