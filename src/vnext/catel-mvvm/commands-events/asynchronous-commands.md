@@ -2,23 +2,25 @@
 
 Commands in MVVM are a very precious good. Actually, MVVM can't exist without them because they allow a developer to bind to a method (that's actually all an *ICommand* implementation is). However, sometimes it is required to create asynchronous commands. Starting with Catel 3.1, the *AsynchronousCommand* is introduced.
 
-With the *AsynchronousCommand*, it is possible to create a command that executes a method in the background without blocking the UI thread. It is possible to report progress to the UI thread.
+With the `AsynchronousCommand`, it is possible to create a command that executes a method in the background without blocking the UI thread. It is possible to report progress to the UI thread.
 
-Want to use async methods? Use the *TaskCommand*
+@alert info
+Want to use async methods? Use the `TaskCommand`
+@end
 
 ## Creating the command
 
-The *AsynchronousCommand* can be used the same as the the regular *Command* class. The command must be constructed like this:
+The `AsynchronousCommand` can be used the same as the the regular `Command` class. The command must be constructed like this:
 
 ```
 CancelableAsyncCommand = new AsynchronousCommand(OnCancelableAsyncCommand, () => !CancelableAsyncCommand.IsExecuting);
 ```
 
-The second parameter is the *CanExecute* delegate, and this example does not allow multiple executions of the same command at the same time.
+The second parameter is the `CanExecute` delegate, and this example does not allow multiple executions of the same command at the same time.
 
 ## Running the command
 
-Running the command is the same as the regular *Command* class. The view can simply bind to the command like the code below:
+Running the command is the same as the regular `Command` class. The view can simply bind to the command like the code below:
 
 ```
 <Button Command="{Binding CancelableAsyncCommand}" Content="Execute Command" />
@@ -26,15 +28,15 @@ Running the command is the same as the regular *Command* class. The view can sim
 
 ## Canceling the command
 
-Last but not least, the cool thing about the *AsynchronousCommand* is that it can complete in two ways. It either completes the method by itself, or it is canceled from the outside. To cancel a running command, two steps must be accomplished:
+Last but not least, the cool thing about the `AsynchronousCommand` is that it can complete in two ways. It either completes the method by itself, or it is canceled from the outside. To cancel a running command, two steps must be accomplished:
 
-1. Bind to the *CancelCommand* property of the *AsynchronousCommand*:
+1. Bind to the *CancelCommand* property of the `AsynchronousCommand`:
 
 ```
 <Button Command="{Binding CancelableAsyncCommand.CancelCommand}" Content="Cancel Command" />
 ```
 
-2. Make sure the execute action checks the *ShouldCancel* property like in the example below:
+2. Make sure the execute action checks the `ShouldCancel` property like in the example below:
 
 ```
 private void OnCancelableAsyncCommand()
@@ -52,7 +54,9 @@ private void OnCancelableAsyncCommand()
 }
 ```
 
-Note that this example looks stupid and you should not use Thread.Sleep, but this is just for the sake of simplicity and the example
+@alert important
+Note that this example looks stupid and you should not use `Thread.Sleep`, but this is just for the sake of simplicity and the example
+@end
 
 ## Reporting progress
 

@@ -1,6 +1,6 @@
 # Commands & events
 
-Commanding is supported by Catel. Catel supports Command classes, which is also known as *RelayCommand* or *DelegateCommand* in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:
+Commanding is supported by Catel. Catel supports Command classes, which is also known as `RelayCommand` or `DelegateCommand` in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:
 
 ```
 // TODO: Move code below to constructor
@@ -29,7 +29,7 @@ private void OnEditExecute()
 }
 ```
 
-There are some people who don’t like the *ICommand* implementations. For example, Caliburn (Micro) uses convention and does not require the creation of a command. There are a few downsides for that:
+There are some people who don’t like the `ICommand` implementations. For example, Caliburn (Micro) uses convention and does not require the creation of a command. There are a few downsides for that:
 
 -   It requires you to make sure the name of the control is the same as the method;
 -   It is not clear that it is actually a command if you are not fully familiar with the conventions;

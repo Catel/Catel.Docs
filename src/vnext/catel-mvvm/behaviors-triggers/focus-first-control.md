@@ -1,6 +1,6 @@
 # FocusFirstControl
 
-The Focus behavior is very powerful, but sometimes you just need to focus the first control on a window or control. This can be done by using the FocusFirstControl behavior instead. This behavior will focus the first control on a window or control and has only one property: *FocusParentFirst*.
+The Focus behavior is very powerful, but sometimes you just need to focus the first control on a window or control. This can be done by using the FocusFirstControl behavior instead. This behavior will focus the first control on a window or control and has only one property: `FocusParentFirst`.
 
 Add the following XML namespaces:
 

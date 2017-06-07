@@ -138,8 +138,8 @@
     bindingContext.AddBinding(() =&gt; vm.FirstName, () =&gt; _firstNameEditText.Text, BindingMode.OneWay);
 }
 </pre><h3 id="ios">iOS<a class="headerlink" href="#ios" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>iOS not yet documented</p>
-<h2 id="binding-properties-two-way">Binding properties two way<a class="headerlink" href="#binding-properties-two-way" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>iOS not yet documented</p>
+</div><h2 id="binding-properties-two-way">Binding properties two way<a class="headerlink" href="#binding-properties-two-way" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To bind properties two way, use the code below.</p>
 <h3 id="android-1">Android<a class="headerlink" href="#android-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <pre class="nocode">protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
@@ -150,8 +150,8 @@
 }
 </pre><p>Note that you need to use the <em>AddTargetEvent</em> to allow two way binding in Android</p>
 <h3 id="ios-1">iOS<a class="headerlink" href="#ios-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>iOS not yet documented</p>
-<h2 id="binding-properties-with-a-converter">Binding properties with a converter<a class="headerlink" href="#binding-properties-with-a-converter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>iOS not yet documented</p>
+</div><h2 id="binding-properties-with-a-converter">Binding properties with a converter<a class="headerlink" href="#binding-properties-with-a-converter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Converters are a well-known topic in MVVM. Catel supports the use of converters in the binding system. The example below will convert an integer (<em>vm.Counter</em>) to a string with a format to <em>&quot;{0} clicks!&quot;</em>. The converter will automatically be instantiated using the <em>TypeFactory</em>. Note that using converters in Catel support both <em>TwoWay</em> bindings and <em>ConverterHelper.UnsetValue</em> to prevent any changes in the binding system.</p>
 <h3 id="android-2">Android<a class="headerlink" href="#android-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <pre class="nocode">protected override void AddBindings(BindingContext bindingContext, IViewModel viewModel)
@@ -161,8 +161,8 @@
     bindingContext.AddBindingWithConverter&lt;ClicksConverter&gt;(() =&gt; vm.Counter, () =&gt; _testButton.Text, BindingMode.OneWay);
 }
 </pre><h3 id="ios-2">iOS<a class="headerlink" href="#ios-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>iOS not yet documented</p>
-
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>iOS not yet documented</p>
+</div>
                     </div>
                 </div>
                 <footer>

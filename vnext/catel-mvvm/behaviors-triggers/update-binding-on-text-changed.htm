@@ -153,11 +153,11 @@
                 <div role="main">
                     <div class="section">
 <h1 id="updatebindingontextchanged">UpdateBindingOnTextChanged<a class="headerlink" href="#updatebindingontextchanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The UpdateBindingOnTextChange is a very useful behavior which allows to delay a binding update on the TextChanged event of a TextBox. This way, it is possible to implement search boxes that only start a search after a specific time when no new key presses have occurred. For example, when a user types a new search string, and the user doesn't enter a new key for 500 ms, the binding is updated.</p>
+<p>The <code>UpdateBindingOnTextChange</code> is a very useful behavior which allows to delay a binding update on the <code>TextChanged</code> event of a <code>TextBox</code>. This way, it is possible to implement search boxes that only start a search after a specific time when no new key presses have occurred. For example, when a user types a new search string, and the user doesn't enter a new key for 500 ms, the binding is updated.</p>
 <p>1) Add the following XML namespaces:</p>
 <pre class="nocode">xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
 xmlns:catel=&quot;http://catel.codeplex.com&quot;
-</pre><p>2) Use the following definition. This example will update the binding after 500 ms where normally it would only occur when the user tabs out of the TextBox:</p>
+</pre><p>2) Use the following definition. This example will update the binding after 500 ms where normally it would only occur when the user tabs out of the <code>TextBox</code>:</p>
 <pre class="nocode">&lt;TextBox Text=&quot;{Binding SearchParam, Mode=TwoWay}&quot;&gt;
     &lt;i:Interaction.Behaviors&gt;
         &lt;catel:UpdateBindingOnTextChanged UpdateDelay=&quot;500&quot; /&gt;

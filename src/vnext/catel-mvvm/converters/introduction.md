@@ -2,11 +2,13 @@
 
 In MVVM, there will be some point where you will need to use converters. Most of these converters are used in any project, so we have decided to add them to Catel. Below is a list of converters and a short description what they are used for.
 
-Note that the behavior of most converters can be inverted by using the *ConverterParameter*
+@alert info
+Note that the behavior of most converters can be inverted by using the `ConverterParameter`
+@end
 
 ## Linking converters
 
-It is possible to link converters. To link converters, simply set the *Link* property in xaml:
+It is possible to link converters. To link converters, simply set the `Link` property in xaml:
 
 ```
 <catel:NullableValueConverter x:Key="NullableValueConverter" />

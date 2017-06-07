@@ -129,8 +129,8 @@
                 <div role="main">
                     <div class="section">
 <h1 id="hooking-a-command-to-validation-automatically">Hooking a command to validation automatically<a class="headerlink" href="#hooking-a-command-to-validation-automatically" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>It is possible to hook the <em>CanExecute</em> of a <em>Command</em> to the <em>IValidationSummary</em> automatically. This way, there is no need to check for errors manually in the <em>CanExecute</em> method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.</p>
-<p>1. Add validation to a person view model (note how the validation adds the tag <em>PersonValidation</em> to a validation):</p>
+<p>It is possible to hook the <code>CanExecute</code> of a <code>Command</code> to the <code>IValidationSummary</code> automatically. This way, there is no need to check for errors manually in the <code>CanExecute</code> method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.</p>
+<p>1. Add validation to a person view model (note how the validation adds the tag <code>PersonValidation</code> to a validation):</p>
 <pre class="nocode">/// &lt;summary&gt;
 /// Validates the field values of this object. Override this method to enable
 /// validation of field values.
@@ -148,7 +148,7 @@ protected override void ValidateFields(System.Collections.Generic.List&lt;IField
         validationResults.Add(FieldValidationResult.CreateErrorWithTag(LastNameProperty, &quot;Last name cannot be empty&quot;, &quot;PersonValidation&quot;));
     }
 }
-</pre><p>2. Add a property to the view model containing the validation summary using the <em>ValidationToViewModel</em> attribute.</p>
+</pre><p>2. Add a property to the view model containing the validation summary using the <code>ValidationToViewModel</code> attribute.</p>
 <pre class="nocode">[ValidationToViewModel(Tag = &quot;PersonValidation&quot;)]
 public IValidationSummary PersonValidationSummary { get; set; }
 </pre><ol>
@@ -167,10 +167,10 @@ private void OnSaveExecute()
     // TODO: Handle command logic here
 }
 </pre><ol>
-<li>Create the command that automatically uses the validation summary using the <em>CommandHelper</em> class:</li>
+<li>Create the command that automatically uses the validation summary using the <code>CommandHelper</code> class:</li>
 </ol>
 <pre class="nocode">Save = CommandHelper.CreateCommand(OnSaveExecute, () =&gt; PersonValidationSummary);
-</pre><p>With this example, the <em>Save</em> command on the view model can only be executed when there are no errors with the <em>PersonValidation</em> tag.</p>
+</pre><p>With this example, the <code>Save</code> command on the view model can only be executed when there are no errors with the <code>PersonValidation</code> tag.</p>
 
                     </div>
                 </div>

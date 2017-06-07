@@ -1,8 +1,8 @@
 # Hooking a command to validation automatically
 
-It is possible to hook the *CanExecute* of a *Command* to the *IValidationSummary* automatically. This way, there is no need to check for errors manually in the *CanExecute* method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.
+It is possible to hook the `CanExecute` of a `Command` to the `IValidationSummary` automatically. This way, there is no need to check for errors manually in the `CanExecute` method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.
 
-1. Add validation to a person view model (note how the validation adds the tag *PersonValidation* to a validation):
+1. Add validation to a person view model (note how the validation adds the tag `PersonValidation` to a validation):
 
 ```
 /// <summary>
@@ -24,7 +24,7 @@ protected override void ValidateFields(System.Collections.Generic.List<IFieldVal
 }
 ```
 
-2. Add a property to the view model containing the validation summary using the *ValidationToViewModel* attribute.
+2. Add a property to the view model containing the validation summary using the `ValidationToViewModel` attribute.
 
 ```
 [ValidationToViewModel(Tag = "PersonValidation")]
@@ -48,11 +48,11 @@ private void OnSaveExecute()
 }
 ```
 
-4. Create the command that automatically uses the validation summary using the *CommandHelper* class:
+4. Create the command that automatically uses the validation summary using the `CommandHelper` class:
 
 ```
 Save = CommandHelper.CreateCommand(OnSaveExecute, () => PersonValidationSummary);
 ```
 
-With this example, the *Save* command on the view model can only be executed when there are no errors with the *PersonValidation* tag.
+With this example, the `Save` command on the view model can only be executed when there are no errors with the `PersonValidation` tag.
 

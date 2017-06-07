@@ -1,6 +1,6 @@
 # Focus
 
-To set the focus on a UI element, one must write code in the code-behind. With the Focus behavior, this is no longer necessary. This behavior sets the focus only once on the first time the associated object is loaded.
+To set the focus on a UI element, one must write code in the code-behind. With the `Focus` behavior, this is no longer necessary. This behavior sets the focus only once on the first time the associated object is loaded.
 
 Add the following XML namespaces:
 
@@ -35,7 +35,7 @@ It is possible to set the focus when a specific event occurs. For example, when 
 
 ## Focus when a property changes
 
- It is possible to set the focus when a specific property changes. For example, when a value is set, the focus must move on to a new control. This can be done via the following code:
+It is possible to set the focus when a specific property changes. For example, when a value is set, the focus must move on to a new control. This can be done via the following code:
 
 ```
 <ListBox ItemsSource="{Binding PersonCollection}" SelectedItem="{Binding SelectedPerson}">

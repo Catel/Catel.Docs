@@ -129,7 +129,7 @@
                 <div role="main">
                     <div class="section">
 <h1 id="commands--events">Commands &amp; events<a class="headerlink" href="#commands--events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Commanding is supported by Catel. Catel supports Command classes, which is also known as <em>RelayCommand</em> or <em>DelegateCommand</em> in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:</p>
+<p>Commanding is supported by Catel. Catel supports Command classes, which is also known as <code>RelayCommand</code> or <code>DelegateCommand</code> in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:</p>
 <pre class="nocode">// TODO: Move code below to constructor
 Edit = new Command(OnEditExecute, OnEditCanExecute);
 // TODO: Move code above to constructor
@@ -154,7 +154,7 @@ private void OnEditExecute()
 {
     // TODO: Handle command logic here
 }
-</pre><p>There are some people who don’t like the <em>ICommand</em> implementations. For example, Caliburn (Micro) uses convention and does not require the creation of a command. There are a few downsides for that:</p>
+</pre><p>There are some people who don’t like the <code>ICommand</code> implementations. For example, Caliburn (Micro) uses convention and does not require the creation of a command. There are a few downsides for that:</p>
 <ul>
 <li>It requires you to make sure the name of the control is the same as the method;</li>
 <li>It is not clear that it is actually a command if you are not fully familiar with the conventions;</li>

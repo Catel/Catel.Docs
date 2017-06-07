@@ -65,7 +65,6 @@
 <ul class="currentrelative">
 <li class="tocentry"><a href="#autocompletion-service">AutoCompletion service</a></li>
 <li class="tocentry"><a href="#autocompletion-behavior">AutoCompletion behavior</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../catel-mvvm/behaviors-triggers/autoscroll.htm">AutoScroll</a>
 </li>
@@ -163,17 +162,15 @@
 <li>AutoCompletionBehavior =&gt; can be attached to a TextBox to support a dropdown with recommended values</li>
 </ol>
 <p>The auto completion features looks like the screenshot below:</p>
-<p><img src="attachments/23887894/24117251.png" /></p>
+<p><img src="../../images/catel-mvvm/behaviors-triggers/autocompletion/example.png" width="142" height="226" /></p>
 <h2 id="autocompletion-service">AutoCompletion service<a class="headerlink" href="#autocompletion-service" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The default implementation automatically filters the collection specified. If there is no filter yet, it will filter the top 10 occurrences from the collection. When a filter is available, it will do the same but with the filter applied.</p>
 <h2 id="autocompletion-behavior">AutoCompletion behavior<a class="headerlink" href="#autocompletion-behavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The behavior can be used as follows:</p>
 <pre class="nocode">&lt;catel:AutoCompletionBehavior PropertyName=&quot;{Binding PropertyName, Mode=OneWay}&quot; 
                               ItemsSource=&quot;{Binding RawCollection}&quot; IsEnabled=&quot;{Binding EnableAutoCompletion}&quot;/&gt;
-</pre><p>If the <em>PropertyName</em> is <em>null</em> or whitespace, the <em>ItemsSource</em> will be treated as collection of strings to be filtered directly</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/23887894/24117251.png">image2014-3-12 18:2:42.png</a> (image/png)</p>
-
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>If the <code>PropertyName</code> is <code>null</code> or whitespace, the <code>ItemsSource</code> will be treated as collection of strings to be filtered directly</p>
+</div>
                     </div>
                 </div>
                 <footer>

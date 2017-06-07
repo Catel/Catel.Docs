@@ -133,10 +133,10 @@
                 <div role="main">
                     <div class="section">
 <h1 id="commandmanager-and-command-containers-application-wide-commands">CommandManager and command containers (Application-wide commands)<a class="headerlink" href="#commandmanager-and-command-containers-application-wide-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Most commands are registered per view and available per view model. Some commands (such as commands on a <em>Ribbon</em> or <em>Toolbar</em>) are application-wide. Catel supports both types, and this part of the documentation explains how to use the <em>ICommandManager</em> to work with application-wide commands such as <em>Refresh</em> with a key bound to <em>F5</em>.</p>
+<p>Most commands are registered per view and available per view model. Some commands (such as commands on a <code>Ribbon</code> or <code>Toolbar</code>) are application-wide. Catel supports both types, and this part of the documentation explains how to use the <code>ICommandManager</code> to work with application-wide commands such as <code>Refresh</code> with a key bound to <code>F5</code>.</p>
 <h2 id="commandmanager">CommandManager<a class="headerlink" href="#commandmanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>There is no generic way to specify application-wide commands in XAML platforms. To overcome this issue, Catel introduces the <em>CommandManager</em>. This manager allows to create commands which are hosted by the <em>CommandManager</em>. The commands on the command manager can be created with input gestures. Once a view model wants to hook into a specific command, it only has to register the view model command with the application-wide command.</p>
-<p>Note that application-wide commands by default are only available on the main window of an application. To support this on other windows, add the following code in the constructor of a window:</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that application-wide commands by default are only available on the main window of an application. To support this on other windows, add the following code in the constructor of a window:</p>
 <pre class="nocode">public class SomeWindow
 {
     private readonly CommandManagerWrapper _commandManagerWrapper;
@@ -148,14 +148,14 @@
         _commandManagerWrapper = new CommandManagerWrapper(this);
     }
 }
-</pre><h2 id="creating-application-wide-commands">Creating application-wide commands<a class="headerlink" href="#creating-application-wide-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre></div><h2 id="creating-application-wide-commands">Creating application-wide commands<a class="headerlink" href="#creating-application-wide-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To create application-wide commands, one must resolve the <em>ICommandManager</em> from the *DependencyResolver *and create the command:</p>
 <pre class="nocode">var dependencyResolver = IoCConfiguration.DefaultDependencyResolver;
 var commandManager = dependencyResolver.Resolve&lt;ICommandManager&gt;();
  
 commandManager.CreateCommand(&quot;Refresh&quot;, new InputGesture(Key.F5));
-</pre><p>It is recommended to put all the command creation in a single place so they are easily manageable.</p>
-<h3 id="registering-a-custom-command">Registering a custom command<a class="headerlink" href="#registering-a-custom-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>It is recommended to put all the command creation in a single place so they are easily manageable.</p>
+</div><h3 id="registering-a-custom-command">Registering a custom command<a class="headerlink" href="#registering-a-custom-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>When a view model wants to use application-wide specific commands, the only thing it has to do is register the command in the <em>CommandManager</em>.</p>
 <pre class="nocode">public class CommandSubscribingViewModel : ViewModelBase
 {
@@ -233,8 +233,8 @@ commandManager.CreateCommand(&quot;Refresh&quot;, new InputGesture(Key.F5));
         public static readonly InputGesture SomeCommandInputGesture = null;
     }
 }
-</pre><p>It is recommended to keep a well formed structure for your command definitions to keep them manageable, even in very large applications</p>
-<h4 id="registering-the-command-container">Registering the command container<a class="headerlink" href="#registering-the-command-container" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>It is recommended to keep a well formed structure for your command definitions to keep them manageable, even in very large applications</p>
+</div><h4 id="registering-the-command-container">Registering the command container<a class="headerlink" href="#registering-the-command-container" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Once you have the command container and the command definition (command name and the input gesture), it is time to register the command container:</p>
 <pre class="nocode">var commandManager = ServiceLocator.Default.ResolveType&lt;ICommandManager&gt;();
  

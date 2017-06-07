@@ -1,8 +1,8 @@
 # EventToCommand
 
-Almost every respectable MVVM framework supports the EventToCommand trigger. It is a trigger that allows a an event to be turned into a command. This way, you never have to manually add event handlers, search for the view model in the code-behind and then call the right command.
+Almost every respectable MVVM framework supports the `EventToCommand` trigger. It is a trigger that allows a an event to be turned into a command. This way, you never have to manually add event handlers, search for the view model in the code-behind and then call the right command.
 
-The usage is really simple, but requires the System.Windows.Interactivity.dll reference (ships with Catel). The example below shows how to add a trigger for the double click of a ListBox.
+The usage is really simple, but requires the `System.Windows.Interactivity.dll` reference (ships with Catel). The example below shows how to add a trigger for the double click of a ListBox.
 
  1) Add the following XML namespaces:
 

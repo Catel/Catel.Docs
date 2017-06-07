@@ -1,6 +1,6 @@
 # MouseInfo
 
- 1) Add the following XML namespaces:
+1) Add the following XML namespaces:
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"

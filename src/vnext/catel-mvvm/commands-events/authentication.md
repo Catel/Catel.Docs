@@ -1,12 +1,12 @@
 # Commands authentication
 
-One of the questions an MVVM developer faces is how to control the executation state of a command by role or user authentication method. Catel offers an out-of-the-box solution for this problem to check the *CanExecute* state of the commands in the UI. 
+One of the questions an MVVM developer faces is how to control the executation state of a command by role or user authentication method. Catel offers an out-of-the-box solution for this problem to check the `CanExecute` state of the commands in the UI. 
 
 It is very important that this way of disabling commands is only used to easy the development of consistent user interfaces. It cannot replace the actual check whether a user can or cannot modify data. The actual and final responsibility still lays at the business layer.
 
 ## Tagging your commands
 
-To know whether a specific user can execute a command, you need to be able to distinguish one command from another. The *ICatelCommand* interface (which derives from *ICommand*) providers a *Tag* property that allows you to tag the command with any object that fits your needs. In one application, commands might be distinguished using strings, other applications use integer ID's.
+To know whether a specific user can execute a command, you need to be able to distinguish one command from another. The `ICatelCommand` interface (which derives from `ICommand`) providers a `Tag` property that allows you to tag the command with any object that fits your needs. In one application, commands might be distinguished using strings, other applications use integer ID's.
 
 A tag must be set in the constructor of a command and cannot be changed:
 
@@ -16,7 +16,7 @@ Edit = new Command(OnEditExecute, OnEditCanExecute, "editCommand");
 
 ## IAuthenticationProvider
 
-The *IAuthenticationProvider* is a provider that needs to be implemented per application and must be registered in the IoC container. Below is the interface definition:
+The `IAuthenticationProvider` is a provider that needs to be implemented per application and must be registered in the IoC container. Below is the interface definition:
 
 ```
 /// <summary>
@@ -52,5 +52,6 @@ Catel.IoC.ServiceLocator.Instance.RegisterType<IAuthenticationProvider, RoleAuth
 
 The code above registers a custom made command authentication provider that checks whether a specific role can execute the command.
 
-Catel checks whether an *IAuthenticationProvider* is registered. If not, the way commands are handled is not affected in any way. If there is an *IAuthenticationProvider* available, the *CanExecute* state is checked, even when there is no custom *CanExecute* implemented.
-
+@alert info
+Catel checks whether an `IAuthenticationProvider` is registered. If not, the way commands are handled is not affected in any way. If there is an `IAuthenticationProvider` available, the `CanExecute` state is checked, even when there is no custom `CanExecute` implemented.
+@end

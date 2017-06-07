@@ -62,19 +62,12 @@ xmlns:catel="http://catel.codeplex.com"
 </TextBox>
 ```
 
-5) Below are screenshots of the example applications (which can be found at <http://catelexamples.codeplex.com>):
+5) Below are screenshots of the example applications:
 
 **Logged in as administrator:**
 
-**![](attachments/1409066/1507337.png)
-**
+![](../../images/catel-mvvm/behaviors-triggers/authentication/administrator.png)
 
 **Logged in as read-only user:**
 
-![](attachments/1409066/1507338.png)
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [authentication\_administrator.png](attachments/1409066/1507337.png) (image/png)
- ![](images/icons/bullet_blue.gif) [authentication\_readonly.png](attachments/1409066/1507338.png) (image/png)
-
+![](../../images/catel-mvvm/behaviors-triggers/authentication/readonly.png)

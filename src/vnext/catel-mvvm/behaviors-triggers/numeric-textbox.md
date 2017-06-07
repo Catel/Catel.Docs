@@ -1,6 +1,6 @@
 # NumericTextBox
 
-The NumericTextBox behavior makes it easy to allow specific numeric input on a TextBox.
+The `NumericTextBox` behavior makes it easy to allow specific numeric input on a TextBox.
 
 1) Add the following XML namespaces:
 
@@ -19,5 +19,6 @@ xmlns:catel="http://catel.codeplex.com"
 </TextBox>
 ```
 
+@alert info
 Use the properties on the behavior to customize the behavior to your needs
-
+@end

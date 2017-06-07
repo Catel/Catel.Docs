@@ -1,8 +1,10 @@
 # Navigate
 
+@alert important
 Note that this behavior is only available for WPF
+@end
 
-The Hyperlink control in WPF is very powerful, but it is hard to make them work outside pages.
+The `Hyperlink` control in WPF is very powerful, but it is hard to make them work outside pages.
 
 Add the following XML namespaces:
 
@@ -25,5 +27,6 @@ To execute the NavigateUrl, simply use the behavior as shown below:
 </TextBlock>
 ```
 
-Another alternative is to use the LinkLabel control
-
+@alert info
+Another alternative is to use the `LinkLabel` control from [Orc.Controls](https://github.com/wildgums/orc.controls)
+@end

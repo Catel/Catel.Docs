@@ -1,6 +1,6 @@
 # SelectTextOnFocus
 
-The SelectTextOnFocus behavior makes it easy to select all text when a TextBox receives the focus.
+The `SelectTextOnFocus` behavior makes it easy to select all text when a `TextBox` receives the focus.
 
 1) Add the following XML namespaces:
 

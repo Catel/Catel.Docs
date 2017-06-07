@@ -4,15 +4,13 @@ Behaviors and triggers are very important to correctly separate the view from th
 
 Catel offers lots of behaviors out of the box, so it is definitely worth taking a look at the behaviors.
 
-Note that Windows 8.0 does not support any behaviors or triggers. Windows 8.1 does support behaviors, but no triggers.
-
-AuthenticationAutoCompletionBehaviorAutoScrollDelayBindingUpdateDoubleClickToCommandEventToCommandFocusFocusFirstControlFocusOnKeyPressHideUntilViewModelLoadedKeyPressToCommandMouseInfoNavigateNumericTextBoxSelectTextOnFocusUpdateBindingOnPasswordChangedUpdateBindingOnTextChanged
-
 ## Managing interactivity classes
 
 Starting with Catel 4.0, it is possible to manage interactivity classes such as behaviors from the InteractivityManager class. This allows a developer to get notified when a behavior or trigger is loaded or unloaded.
 
+@alert important
 Note that the *InteractivityManager* is only compatible with behaviors and triggers using one of the Catel base classes
+@end
 
 The manager contains both events and methods to retrieve information about triggers. For example, if one is interested in all the *Focus* triggers, one could do the following:
 

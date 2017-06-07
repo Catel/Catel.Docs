@@ -135,20 +135,20 @@
                     <div class="section">
 <h1 id="asynchronous-commands">Asynchronous commands<a class="headerlink" href="#asynchronous-commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Commands in MVVM are a very precious good. Actually, MVVM can't exist without them because they allow a developer to bind to a method (that's actually all an <em>ICommand</em> implementation is). However, sometimes it is required to create asynchronous commands. Starting with Catel 3.1, the <em>AsynchronousCommand</em> is introduced.</p>
-<p>With the <em>AsynchronousCommand</em>, it is possible to create a command that executes a method in the background without blocking the UI thread. It is possible to report progress to the UI thread.</p>
-<p>Want to use async methods? Use the <em>TaskCommand</em></p>
-<h2 id="creating-the-command">Creating the command<a class="headerlink" href="#creating-the-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The <em>AsynchronousCommand</em> can be used the same as the the regular <em>Command</em> class. The command must be constructed like this:</p>
+<p>With the <code>AsynchronousCommand</code>, it is possible to create a command that executes a method in the background without blocking the UI thread. It is possible to report progress to the UI thread.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Want to use async methods? Use the <code>TaskCommand</code></p>
+</div><h2 id="creating-the-command">Creating the command<a class="headerlink" href="#creating-the-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <code>AsynchronousCommand</code> can be used the same as the the regular <code>Command</code> class. The command must be constructed like this:</p>
 <pre class="nocode">CancelableAsyncCommand = new AsynchronousCommand(OnCancelableAsyncCommand, () =&gt; !CancelableAsyncCommand.IsExecuting);
-</pre><p>The second parameter is the <em>CanExecute</em> delegate, and this example does not allow multiple executions of the same command at the same time.</p>
+</pre><p>The second parameter is the <code>CanExecute</code> delegate, and this example does not allow multiple executions of the same command at the same time.</p>
 <h2 id="running-the-command">Running the command<a class="headerlink" href="#running-the-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Running the command is the same as the regular <em>Command</em> class. The view can simply bind to the command like the code below:</p>
+<p>Running the command is the same as the regular <code>Command</code> class. The view can simply bind to the command like the code below:</p>
 <pre class="nocode">&lt;Button Command=&quot;{Binding CancelableAsyncCommand}&quot; Content=&quot;Execute Command&quot; /&gt;
 </pre><h2 id="canceling-the-command">Canceling the command<a class="headerlink" href="#canceling-the-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Last but not least, the cool thing about the <em>AsynchronousCommand</em> is that it can complete in two ways. It either completes the method by itself, or it is canceled from the outside. To cancel a running command, two steps must be accomplished:</p>
-<p>1. Bind to the <em>CancelCommand</em> property of the <em>AsynchronousCommand</em>:</p>
+<p>Last but not least, the cool thing about the <code>AsynchronousCommand</code> is that it can complete in two ways. It either completes the method by itself, or it is canceled from the outside. To cancel a running command, two steps must be accomplished:</p>
+<p>1. Bind to the <em>CancelCommand</em> property of the <code>AsynchronousCommand</code>:</p>
 <pre class="nocode">&lt;Button Command=&quot;{Binding CancelableAsyncCommand.CancelCommand}&quot; Content=&quot;Cancel Command&quot; /&gt;
-</pre><p>2. Make sure the execute action checks the <em>ShouldCancel</em> property like in the example below:</p>
+</pre><p>2. Make sure the execute action checks the <code>ShouldCancel</code> property like in the example below:</p>
 <pre class="nocode">private void OnCancelableAsyncCommand()
 {
     for (var i = 1; i &lt;= 100; i++)
@@ -162,8 +162,8 @@
         Thread.Sleep(100);
     }
 }
-</pre><p>Note that this example looks stupid and you should not use Thread.Sleep, but this is just for the sake of simplicity and the example</p>
-<h2 id="reporting-progress">Reporting progress<a class="headerlink" href="#reporting-progress" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that this example looks stupid and you should not use <code>Thread.Sleep</code>, but this is just for the sake of simplicity and the example</p>
+</div><h2 id="reporting-progress">Reporting progress<a class="headerlink" href="#reporting-progress" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>During the execution of a command, it is possible to report progress back to the main thread. This can done by using the <em>ReportProgress</em> method. All code inside the <em>ReportProgress</em> will be executed in the UI thread:</p>
 <pre class="nocode">private void OnCancelableAsyncCommand()
 {

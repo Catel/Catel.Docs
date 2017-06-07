@@ -1,6 +1,6 @@
 # KeyPressToCommand
 
-Sometimes you need to handle a key press and convert it to a command. An excellent example is a ListBox that should respond to an *Ctrl + Enter* key press.
+Sometimes you need to handle a key press and convert it to a command. An excellent example is a ListBox that should respond to an `Ctrl + Enter` key press.
 
 1) Add the following XML namespaces:
 

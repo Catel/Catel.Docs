@@ -61,9 +61,7 @@
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../Bindings.htm">Bindings</a></span></li>
 <li class="tocentry current"><a class="current" href="../../catel-mvvm/bindings/introduction.htm">Introduction</a>
-<ul class="currentrelative">
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
-</ul>
+</li>
 <li class="tocentry"><a href="../../catel-mvvm/bindings/command-bindings.htm">Command bindings</a>
 </li>
 <li class="tocentry"><a href="../../catel-mvvm/bindings/property-bindings.htm">Property bindings</a>
@@ -126,21 +124,19 @@
                     <div class="section">
 <h1 id="bindings">Bindings<a class="headerlink" href="#bindings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>By default, all XAML technologies support binding out of the box. However other platforms (such as Xamarin.Android and Xamarin.iOS) don't. Catel provides a binding system for these platforms, which is described in this topic.</p>
-<p>Note that although the binding system in Catel is very powerful, it will never be as flexible / powerful as the native XAML binding system. We do try to support as many features as possible though.</p>
-<p>For examples, check out the following pages:</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that although the binding system in Catel is very powerful, it will never be as flexible / powerful as the native XAML binding system. We do try to support as many features as possible though.</p>
+</div><p>For examples, check out the following pages:</p>
 <ul>
 <li><a href="./property-bindings.htm">Property bindings</a></li>
 <li><a href="/./command-bindings.htm">Command bindings</a></li>
 </ul>
 <h1 id="binding-system-explained">Binding system explained<a class="headerlink" href="#binding-system-explained" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>The binding system consists of several classes. Below is an architectural overview.</p>
-<p>As the image shows, each view will have their own <em>BindingContext</em>. A <em>BindingContext</em> contains all the bindings currently available in the view and allows adding / removing bindings dynamically when required. As soon as a major change occurs (such as a new view model), a new <em>BindingContext</em> will be created and the old one will be cleaned up. The views in Catel will automatically take care of the <em>BindingContext</em> initialization and lifetime management.</p>
-<p>Each <em>Binding</em> is a mapping from source to target. It also allows the specification of a converter like available in the XAML platforms. Each <em>Binding</em> also contains several <em>BindingParty</em> objects. The default value for <em>BindingMode</em> is <em>BindingMode.TwoWay.</em></p>
-<p>A <em>BindingParty</em> is an object that will take care of watching the source or target of the binding and inform the binding when a value has been changed. The binding parties are considered equal and contain the same logic for both the source and target of the binding.</p>
-<p>All bindings must be initialized in the <em>AddBindings</em> method that is available on all views provided by Catel. </p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/26771484/26968066">binding system</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/26771484/26968067.png">binding system.png</a> (image/png)</p>
+<p><img src="../../images/catel-mvvm/bindings/introduction/architecture.png" width="400" height="540" /></p>
+<p>As the image shows, each view will have their own <code>BindingContext</code>. A <code>BindingContext</code> contains all the bindings currently available in the view and allows adding / removing bindings dynamically when required. As soon as a major change occurs (such as a new view model), a new <code>BindingContext</code> will be created and the old one will be cleaned up. The views in Catel will automatically take care of the <code>BindingContext</code> initialization and lifetime management.</p>
+<p>Each <code>Binding</code> is a mapping from source to target. It also allows the specification of a converter like available in the XAML platforms. Each <code>Binding</code> also contains several <code>BindingParty</code> objects. The default value for <code>BindingMode</code> is <code>BindingMode.TwoWay.</code></p>
+<p>A <code>BindingParty</code> is an object that will take care of watching the source or target of the binding and inform the binding when a value has been changed. The binding parties are considered equal and contain the same logic for both the source and target of the binding.</p>
+<p>All bindings must be initialized in the <code>AddBindings</code> method that is available on all views provided by Catel. </p>
 
                     </div>
                 </div>

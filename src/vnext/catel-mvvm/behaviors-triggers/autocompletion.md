@@ -7,7 +7,7 @@ To enable auto completion features, once can use the services and behaviors prov
 
 The auto completion features looks like the screenshot below:
 
-![](attachments/23887894/24117251.png)
+![](../../images/catel-mvvm/behaviors-triggers/autocompletion/example.png)
 
 ## AutoCompletion service
 
@@ -22,9 +22,6 @@ The behavior can be used as follows:
                               ItemsSource="{Binding RawCollection}" IsEnabled="{Binding EnableAutoCompletion}"/>
 ```
 
-If the *PropertyName* is *null* or whitespace, the *ItemsSource* will be treated as collection of strings to be filtered directly
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2014-3-12 18:2:42.png](attachments/23887894/24117251.png) (image/png)
-
+@alert important
+If the `PropertyName` is `null` or whitespace, the `ItemsSource` will be treated as collection of strings to be filtered directly
+@end

@@ -19,7 +19,9 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 ### iOS
 
+@alert important
 iOS not yet documented
+@end
 
 ## Binding properties two way
 
@@ -40,7 +42,9 @@ Note that you need to use the *AddTargetEvent* to allow two way binding in Andro
 
 ### iOS
 
+@alert important
 iOS not yet documented
+@end
 
 ## Binding properties with a converter
 
@@ -59,5 +63,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 ### iOS
 
+@alert important
 iOS not yet documented
+@end
 

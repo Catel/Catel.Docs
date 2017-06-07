@@ -1,6 +1,6 @@
 # HideUntilViewModelLoaded
 
-The *HideUntilViewModelLoaded* hides (*Visibility.Collapsed*) any view model container (*IViewModelContainer*) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.
+The *HideUntilViewModelLoaded* hides (`Visibility.Collapsed`) any view model container (`IViewModelContainer`) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.
 
 Add the following XML namespaces:
 

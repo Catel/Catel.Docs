@@ -54,4 +54,4 @@ Full DataWindow declaration:
 
 3. Example of design time data support:
 
-![](attachments/1409176/1507344.png)
+![](../../images/catel-mvvm/designers/design-time-view-models/wpf.png)
