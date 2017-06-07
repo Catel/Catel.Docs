@@ -1,6 +1,6 @@
 # Activities (pages)
 
-The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the *Fragment* class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.
+The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the `Fragment` class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.
 
 ## Creating the view model
 
@@ -8,7 +8,7 @@ The view model can be created (or added as a linked file from another project) j
 
 ## Creating the view
 
-Make sure that a *Views* folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case *MainActivity*:
+Make sure that a `Views` folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case `MainActivity`:
 
 ```
 [Activity(MainLauncher = true)]
@@ -24,11 +24,13 @@ public class MainActivity : Catel.Android.App.Activity
 }
 ```
 
+@alert important
 Note that the class derives from *Catel.Android.App.Activity*
+@end
 
 ## Designing the view
 
-To create the actual user interface of the fragment, add a new *axml* file to the *Resources/layout* folder, in your case *Page\_Main* (but you can name it whatever you want). Then use the following source:
+To create the actual user interface of the fragment, add a new `xaml` file to the `Resources/layout` folder, in your case `Page\_Main` (but you can name it whatever you want). Then use the following source:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,7 +50,7 @@ To create the actual user interface of the fragment, add a new *axml* file to 
 
 ## Setting up synchronization
 
-In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended *MainActivity *class containing these mapping functionality:
+In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended `MainActivity` class containing these mapping functionality:
 
 ```
 [Activity(MainLauncher = true)]
@@ -81,8 +83,3 @@ public class MainActivity : Catel.Android.App.Activity
     }
 }
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2014-4-1 23:11:1.png](attachments/25329688/25559042.png) (image/png)
-

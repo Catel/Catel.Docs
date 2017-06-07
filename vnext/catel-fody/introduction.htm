@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction - Catel documentation</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles/vs.css">
+    <link rel="stylesheet" href="../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../CatelFody.htm">Catel.Fody</a></span></li>
+<li class="tocentry current"><a class="current" href="../catel-fody/introduction.htm">Introduction</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#enabling-catel.fody">Enabling Catel.Fody</a></li>
+<li class="tocentry"><a href="#disabling-weaving-for-specific-types-or-properties">Disabling weaving for specific types or properties</a></li>
+<li class="tocentry"><a href="#configuring-catel.fody">Configuring Catel.Fody</a></li>
+<li class="tocentry"><a href="#weaving-properties">Weaving properties</a></li>
+<li class="tocentry"><a href="#weaving-argument-checks">Weaving argument checks</a></li>
+<li class="tocentry"><a href="#exposing-properties-on-view-models">Exposing properties on view models</a></li>
+<li class="tocentry"><a href="#xmlschema-generation">XmlSchema generation</a></li>
+</ul>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../Home.htm">Home</a></li> / <li><a href="../CatelFody.htm">Catel.Fody</a></li> / <li><a href="../catel-fody/introduction.htm">Introduction</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Catel.Fody is an addin for Fody (see https://github.com/Fody/Fody), which
+is an extensible tool for weaving .net assemblies. This addin will rewrite simple properties to the dependency-property alike properties that are used inside Catel.</p>
+<p>It will rewrite all properties on the <code>ModelBase</code> and <code>ViewModelBase</code>. So, a
+property that is written as this:</p>
+<pre><code>public string FirstName { get; set; }
+</code></pre>
+
+<p>will be weaved into</p>
+<pre><code>public string FirstName
+{
+    get { return GetValue&lt;string&gt;(FirstNameProperty); }
+    set { SetValue(FirstNameProperty, value); }
+}
+
+public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
+</code></pre>
+
+<p>but if a readonly computed property like this one exists:</p>
+<pre><code>public string FullName
+{
+    get { return string.Format(&quot;{0} {1}&quot;, FirstName, LastName).Trim(); }
+}
+</code></pre>
+
+<p>the <em>OnPropertyChanged</em> method will be also weaved into</p>
+<pre><code>protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
+{
+    base.OnPropertyChanged(e);
+
+    if (e.PropertyName.Equals(&quot;FirstName&quot;))
+    {
+        base.RaisePropertyChanged(&quot;FullName&quot;);
+    }
+
+    if (e.PropertyName.Equals(&quot;LastName&quot;))
+    {
+        base.RaisePropertyChanged(&quot;FullName&quot;);
+    }
+}
+</code></pre>
+
+<h2 id="enabling-catel.fody">Enabling Catel.Fody<a class="headerlink" href="#enabling-catel.fody" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To enable Catel.Fody to weave assemblies, you need to perform the following steps:</p>
+<ol>
+<li>Install the Catel.Fody NuGet package</li>
+<li>Update FodyWeavers.xml and make sure it contains <Catel /></li>
+</ol>
+<blockquote>
+<p>Note that the FodyWeavers.xml should be updated automatically when</p>
+</blockquote>
+<h2 id="disabling-weaving-for-specific-types-or-properties">Disabling weaving for specific types or properties<a class="headerlink" href="#disabling-weaving-for-specific-types-or-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To disable the weaving of types or properties of a type, decorate it with the 
+<em>NoWeaving</em> attribute as shown in the example below:</p>
+<pre><code>[NoWeaving]
+public class MyClass : ModelBase
+{
+    ...
+}
+</code></pre>
+
+<h2 id="configuring-catel.fody">Configuring Catel.Fody<a class="headerlink" href="#configuring-catel.fody" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Though we recommend to leave the default settings (great for most people), it is possible to configure the weaver. Below is a list of options that can be configured.</p>
+<p>To configure an option, modify <code>FodyWeavers.xml</code> by adding the property and value to the Catel element. For example, the example below will disable argument and logging weaving:</p>
+<pre><code>&lt;Catel WeaveArguments=&quot;false&quot; WeaveLogging=&quot;false&quot; /&gt;
+</code></pre>
+
+<h3 id="weaveproperties">WeaveProperties<a class="headerlink" href="#weaveproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Weave all regular properties on classes that inherit (directly or indirectly) from Catel.Data.ModelBase into Catel properties.</p>
+<blockquote>
+<p>Default value is <em>true</em></p>
+</blockquote>
+<h3 id="weaveexposedproperties">WeaveExposedProperties<a class="headerlink" href="#weaveexposedproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Weave all Catel properties decorated with both the Catel.MVVM.Model attribute and Fody.Expose attribute as automatic mappings,</p>
+<blockquote>
+<p>Default value is <em>true</em></p>
+</blockquote>
+<h3 id="weavearguments">WeaveArguments<a class="headerlink" href="#weavearguments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Weave all Argument check attributes into actual argument checks.</p>
+<blockquote>
+<p>Default value is <em>true</em></p>
+</blockquote>
+<h3 id="weavelogging">WeaveLogging<a class="headerlink" href="#weavelogging" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Weave all calls to <code>LogManager.GetCurrentClassLogger()</code> into <code>LogManager.GetLogger(typeof(classname))</code>.</p>
+<blockquote>
+<p>Default value is <em>true</em></p>
+</blockquote>
+<h3 id="generatexmlschemas">GenerateXmlSchemas<a class="headerlink" href="#generatexmlschemas" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Generate xml schemas for all classes that inherit (directly or indirectly) from <code>Catel.Data.ModelBase</code>.</p>
+<blockquote>
+<p>Default value is <em>false</em></p>
+</blockquote>
+<h2 id="weaving-properties">Weaving properties<a class="headerlink" href="#weaving-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <code>PropertyChanged.Fody</code> plugin for Fody already supports Catel out of the box, but only for property change notifications. However, with the <code>Catel.Fody</code> plugin, it is possible to automatically weave a simple property into a Catel property.</p>
+<p>The following property definition:</p>
+<pre><code>public string Name { get; set; }
+</code></pre>
+
+<p>will be weaved into:</p>
+<pre><code>public string Name
+{
+    get { return GetValue&lt;string&gt;(NameProperty); }
+    set { SetValue(NameProperty, value); }
+}
+ 
+public static readonly PropertyData NameProperty = RegisterProperty(&quot;Name&quot;, typeof(string));
+</code></pre>
+
+<h3 id="support-for-computed-properties">Support for computed properties<a class="headerlink" href="#support-for-computed-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>If  a computed property like this one exists:</p>
+<pre><code>public string FullName
+{
+    get { return string.Format(&quot;{0} {1}&quot;, FirstName, LastName).Trim(); }
+}
+</code></pre>
+
+<p>the <code>OnPropertyChanged</code> method will be also weaved into</p>
+<pre><code>protected override void OnPropertyChanged(AdvancedPropertyChangedEventArgs e)
+{
+    base.OnPropertyChanged(e);
+ 
+    if (e.PropertyName.Equals(&quot;FirstName&quot;))
+    {
+        base.RaisePropertyChanged(&quot;FullName&quot;);
+    }
+ 
+    if (e.PropertyName.Equals(&quot;LastName&quot;))
+    {
+        base.RaisePropertyChanged(&quot;FullName&quot;);
+    }
+}
+</code></pre>
+
+<p>In order to avoid this behavior, you can use the <code>NoWeavingAttribute</code> on the computed property, just like this:</p>
+<pre><code>[NoWeaving]
+public string FullName
+{
+    get { return string.Format(&quot;{0} {1}&quot;, FirstName, LastName).Trim(); }
+}
+</code></pre>
+
+<p>In the background, <code>Catel.Fody</code> will handle the following workflow:</p>
+<ol>
+<li>Find all types in the assembly deriving from <code>ModelBase</code> (thus also <code>ViewModelBase</code>)</li>
+<li>Check if the type has an automatic property backing field (only those properties are weaved)</li>
+<li>Add the <code>PropertyData</code> field for the property</li>
+<li>Instantiate the <code>PropertyData</code> field in the static constructor of the type</li>
+<li>Replace the content of the getter and setter with the appropriate calls to <code>GetValue</code> and <code>SetValue</code>
+ </li>
+</ol>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that this feature is automatically disabled for classes that already override the <code>OnPropertyChanged</code> method. It is too complex to determine where the logic should be added so the end-developer is responsible for implementing this feature when overriding <code>OnPropertyChanged</code></p>
+</div><h3 id="automatically-excluded-properties">Automatically excluded properties<a class="headerlink" href="#automatically-excluded-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>By default, Catel.Fody ignores the following properties and types by default because they shouldn't be weaved:</p>
+<ol>
+<li>All properties of type <code>ICommand</code></li>
+<li>Properties without an automatically generated backing field</li>
+</ol>
+<h3 id="specifying-default-values-for-weaved-properties">Specifying default values for weaved properties<a class="headerlink" href="#specifying-default-values-for-weaved-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>By default, Catel uses <code>null</code> as default values for reference types. For value types, it will use <code>default(T)</code>. To specify the default value of a weaved property, use the <code>DefaultValue</code> attribute as shown in the example below:</p>
+<pre><code>public class Person : ModelBase
+{
+    [DefaultValue(&quot;Geert&quot;)]
+    public string FirstName { get; set; }
+  
+    public string LastName { get; set; }
+}
+</code></pre>
+
+<p>This will be weaved into:</p>
+<pre><code>public class Person : ModelBase
+{
+    public string FirstName
+    {
+        get { return GetValue&lt;string&gt;(FirstNameProperty); }
+        set { SetValue(FirstNameProperty, value); }
+    }
+ 
+    public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string), &quot;Geert&quot;);
+ 
+    public string LastName
+    {
+        get { return GetValue&lt;string&gt;(LastNameProperty); }
+        set { SetValue(LastNameProperty, value); }
+    }
+ 
+    public static readonly PropertyData LastNameProperty = RegisterProperty(&quot;LastName&quot;, typeof(string), null);
+}
+</code></pre>
+
+<h3 id="how-to-get-automatic-change-notifications">How to get automatic change notifications<a class="headerlink" href="#how-to-get-automatic-change-notifications" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The Fody plugin for Catel automatically searches for the <code>On[PropertyName]Changed</code> methods. If a method is found, it will automatically be called when the property has changed. For example, the <code>OnNameChanged</code> is automatically called when the <code>Name</code> property is changed in the example below:</p>
+<pre><code>public string Name { get; set; }
+ 
+private void OnNameChanged()
+{
+    // this method is automatically called when the Name property changes
+}
+</code></pre>
+
+<h2 id="weaving-argument-checks">Weaving argument checks<a class="headerlink" href="#weaving-argument-checks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>With the Catel.Fody plugin, it is possible to automatically weave a method implementation with its own argument check operations declared via attributes.</p>
+<h3 id="automatic-performance-improvements">Automatic performance improvements<a class="headerlink" href="#automatic-performance-improvements" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The latest version of Catel.Fody automatically converts all expression argument checks to faster calls. For example, the code below:</p>
+<pre><code>Argument.IsNotNull(() =&gt; myString);
+</code></pre>
+
+<p>Will automatically be weaved into this:</p>
+<pre><code>Argument.IsNotNull(&quot;myString&quot;, myString);
+</code></pre>
+
+<p>This is much faster because the expression doesn't have to be parsed at runtime. This is a very noticeable performance boost if the expression check is used more than 50 times per second.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>When using the latest version of Catel.Fody, the team recommends using expressions above the regular argument checks (with name and value specified separately) because it will result in cleaner code. With this feature, there is no longer a performance penalty for using the expressions version</p>
+</div><h3 id="argument-checking-via-attributes">Argument checking via attributes<a class="headerlink" href="#argument-checking-via-attributes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The following method definition:</p>
+<pre><code>public void DoSomething([NotNullOrEmpty] string myString. [NotNull] object myObject)
+{
+}
+</code></pre>
+
+<p>Will be weaved into:</p>
+<pre><code>public void DoSomething(string myString, object myObject)
+{
+    Argument.IsNotNullOrEmpty(&quot;myString&quot;, myString);
+    Argument.IsNotNull(&quot;myObject&quot;, myObject);
+}
+</code></pre>
+
+<p>In the background, Catel.Fody will handle the following workflow:</p>
+<ol>
+<li>Find all types in the assembly</li>
+<li>Find all method of each type</li>
+<li>Find all annotated method parameter of each method</li>
+<li>Insert as first instructions of the method body the calls to Argument check corresponding methods.</li>
+</ol>
+<h3 id="available-argument-check-catel.fody-attributes">Available argument check Catel.Fody attributes<a class="headerlink" href="#available-argument-check-catel.fody-attributes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<ul>
+<li>NotNull =&gt; Argument.IsNotNull</li>
+<li>NotNullOrEmptyArray =&gt; Argument.IsNotNullOrEmptyArray</li>
+<li>NotNullOrEmpty =&gt; Argument.IsNotNullOrEmpty</li>
+<li>NotNullOrWhitespace =&gt; Argument.IsNotNullOrWhitespace</li>
+<li>Match =&gt; Argument.IsMatch</li>
+<li>NotMatch =&gt; Argument.IsNotMatch</li>
+<li>NotOutOfRange =&gt; Argument.IsNotOutOfRange</li>
+<li>Maximum =&gt; Argument.IsMaximum</li>
+<li>Minimal =&gt; Argument.IsMinimal</li>
+<li>OfType =&gt; Argument.IsOfType</li>
+<li>ImplementsInterface =&gt; Argument.ImplementsInterface</li>
+<li>InheritsFrom =&gt; Argument.InheritsFrom</li>
+</ul>
+<h2 id="exposing-properties-on-view-models">Exposing properties on view models<a class="headerlink" href="#exposing-properties-on-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The way to expose properties of a model to the view model in Catel is the <code>ViewModelToModelAttribute</code>. The goal of these attributes is to easily map properties from a model to the view model so as much of the plumbing (setting/getting properties, rechecking validation, etc) is done automatically for the developer.</p>
+<p>Using the <code>ViewModelToModelAttribute</code>, this is the syntax to map properties automatically:</p>
+<pre><code>/// &lt;summary&gt;
+/// Gets or sets the person.
+/// &lt;/summary&gt;
+[Model]
+public Person Person
+{
+    get { return GetValue&lt;Person&gt;(PersonProperty); }
+    private set { SetValue(PersonProperty, value); }
+}
+  
+/// &lt;summary&gt;
+/// Register the Person property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(Person));
+  
+/// &lt;summary&gt;
+/// Gets or sets the first name.
+/// &lt;/summary&gt;
+[ViewModelToModel(&quot;Person&quot;)]
+public string FirstName
+{
+    get { return GetValue&lt;string&gt;(FirstNameProperty); }
+    set { SetValue(FirstNameProperty, value); }
+}
+  
+/// &lt;summary&gt;
+/// Register the FirstName property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
+</code></pre>
+
+<p>However, if you only define the <code>FirstName</code> property just to protect your model, then why should you define the whole property? This is where the <code>ExposeAttribute</code> property comes in very handy. This attribute internally registers a new dynamic property on the view model, and then uses the same technique as the <code>ViewModelToModelAttribute</code>.</p>
+<p>Below is the new way you can easily expose properties of a model and protect other properties of the model from the view:</p>
+<pre><code>/// &lt;summary&gt;
+/// Gets or sets the person.
+/// &lt;/summary&gt;
+[Model]
+[Expose(&quot;FirstName&quot;)]
+[Expose(&quot;MiddleName&quot;)]
+[Expose(&quot;LastName&quot;)]
+private Person Person
+{
+    get { return GetValue&lt;Person&gt;(PersonProperty); }
+    set { SetValue(PersonProperty, value); }
+}
+  
+/// &lt;summary&gt;
+/// Register the Person property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(Person));
+</code></pre>
+
+<p>This is a very cool feature that allows you to protect your model without having to re-define all the properties on the view model. Also, the validation in the model is automatically synchronized with the view model when you use this attribute.</p>
+<p>In combination with the automatic property weaving, this could be written as clean as the code below:</p>
+<pre><code>[Model]
+[Expose(&quot;FirstName&quot;)]
+[Expose(&quot;MiddleName&quot;)]
+[Expose(&quot;LastName&quot;)]
+private Person Person { get; set; }
+</code></pre>
+
+<h2 id="xmlschema-generation">XmlSchema generation<a class="headerlink" href="#xmlschema-generation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>to start of metadata</p>
+<p>The .NET framework supports <code>XmlSchema</code> attributes to allow static members to define a custom schema method required for WCF serialization. Unfortunately this cannot be implemented in Catel itself because it would required too much reflection and the method is static. Therefore this feature included in Catel.Fody.</p>
+<p>Starting with Catel.Fody 2.0, this feature is disabled by default. To enabled it, use the following option in <code>FodyWeavers.xml</code>:</p>
+<pre><code>&lt;Catel GenerateXmlSchemas=&quot;true&quot; /&gt;
+</code></pre>
+
+<p>When the <code>XmlSchemaProvider</code> is available on the target platform where Catel is used, the changes will be made to classes deriving from <code>ModelBase</code>:</p>
+<p>1. Decorate the class with <code>XmlSchemaProvider</code> attribute:</p>
+<pre><code>[XmlSchemaProvider(&quot;GetXmlSchemaForCatelFodyTestAssemblyInheritedClass&quot;)]
+public class InheritedClass : BaseClass
+{
+    // rest of the class definition
+}
+</code></pre>
+
+<p>2. Implement the class specific <code>GetXmlSchema</code> method:</p>
+<pre><code>[CompilerGenerated]
+public static XmlQualifiedName GetXmlSchemaForCatelFodyTestAssemblyInheritedClass(XmlSchemaSet xmlSchemaSet)
+{
+    Type type = typeof(InheritedClass);
+    return XmlSchemaManager.GetXmlSchema(type, xmlSchemaSet);
+}
+</code></pre>
+
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-fody/introduction.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script src="../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

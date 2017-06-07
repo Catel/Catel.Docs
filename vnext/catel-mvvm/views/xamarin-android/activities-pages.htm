@@ -98,7 +98,6 @@
 <li class="tocentry"><a href="#creating-the-view">Creating the view</a></li>
 <li class="tocentry"><a href="#designing-the-view">Designing the view</a></li>
 <li class="tocentry"><a href="#setting-up-synchronization">Setting up synchronization</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xamarin-android/fragments-user-controls.htm">Fragments (user controls)</a>
 </li>
@@ -113,6 +112,9 @@
 </li>
 
 </ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelFody.htm">Catel.Fody</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
@@ -144,11 +146,11 @@
                 <div role="main">
                     <div class="section">
 <h1 id="activities-pages">Activities (pages)<a class="headerlink" href="#activities-pages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the <em>Fragment</em> class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.</p>
+<p>The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the <code>Fragment</code> class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.</p>
 <h2 id="creating-the-view-model">Creating the view model<a class="headerlink" href="#creating-the-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The view model can be created (or added as a linked file from another project) just like any platform using Catel (they are all equal on all platforms).</p>
 <h2 id="creating-the-view">Creating the view<a class="headerlink" href="#creating-the-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Make sure that a <em>Views</em> folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case <em>MainActivity</em>:</p>
+<p>Make sure that a <code>Views</code> folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case <code>MainActivity</code>:</p>
 <pre class="nocode">[Activity(MainLauncher = true)]
 public class MainActivity : Catel.Android.App.Activity
 {
@@ -160,9 +162,9 @@ public class MainActivity : Catel.Android.App.Activity
         SetContentView(Resource.Layout.Page_Main);
     }
 }
-</pre><p>Note that the class derives from <em>Catel.Android.App.Activity</em></p>
-<h2 id="designing-the-view">Designing the view<a class="headerlink" href="#designing-the-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>To create the actual user interface of the fragment, add a new <em>axml</em> file to the <em>Resources/layout</em> folder, in your case <em>Page_Main</em> (but you can name it whatever you want). Then use the following source:</p>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the class derives from <em>Catel.Android.App.Activity</em></p>
+</div><h2 id="designing-the-view">Designing the view<a class="headerlink" href="#designing-the-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To create the actual user interface of the fragment, add a new <code>xaml</code> file to the <code>Resources/layout</code> folder, in your case <code>Page\_Main</code> (but you can name it whatever you want). Then use the following source:</p>
 <pre class="nocode">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
     android:orientation=&quot;vertical&quot;
@@ -176,7 +178,7 @@ public class MainActivity : Catel.Android.App.Activity
 &lt;/LinearLayout&gt;
 </pre><p><img src="attachments/25329688/25559042.png?width=300" /></p>
 <h2 id="setting-up-synchronization">Setting up synchronization<a class="headerlink" href="#setting-up-synchronization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended *MainActivity *class containing these mapping functionality:</p>
+<p>In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended <code>MainActivity</code> class containing these mapping functionality:</p>
 <pre class="nocode">[Activity(MainLauncher = true)]
 public class MainActivity : Catel.Android.App.Activity
 {
@@ -206,9 +208,7 @@ public class MainActivity : Catel.Android.App.Activity
         _testButton.Text = string.Format(&quot;{0} clicks!&quot;, vm.Counter);
     }
 }
-</pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/25329688/25559042.png">image2014-4-1 23:11:1.png</a> (image/png)</p>
-
+</pre>
                     </div>
                 </div>
                 <footer>

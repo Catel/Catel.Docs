@@ -90,8 +90,6 @@
 </li>
 <li class="tocentry"><a href="../../../../catel-mvvm/views/xaml/usercontrol-resources.htm">UserControl Resources</a>
 </li>
-<li class="tocentry"><a href="../../../../catel-mvvm/views/xaml/mvvm-behaviors.htm">MVVM behaviors</a>
-</li>
 <li class="tocentry"><a href="../../../../catel-mvvm/views/xaml/validation-controls.htm">Validation controls</a>
 </li>
 <li class="tocentry"><a href="../../../../catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior.htm">Customizing DataContext subscription behavior</a>
@@ -133,6 +131,9 @@
 </ul>
 </li>
 <li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
 </li>
 
@@ -162,9 +163,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="using-a-custom-control">Using a custom control<a class="headerlink" href="#using-a-custom-control" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>In this part of the documentation, the <em>RadTabItem</em> of Telerik will be used as an example on how to create a <em>RadTabItem</em> that behaves like the <em>UserControl</em>.</p>
+<p>In this part of the documentation, the <code>RadTabItem</code> of Telerik will be used as an example on how to create a <code>RadTabItem</code> that behaves like the <code>UserControl</code>.</p>
 <h2 id="creating-the-base-class-with-behavior">Creating the base class with behavior<a class="headerlink" href="#creating-the-base-class-with-behavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it <em>TabItem</em> (to make it as &quot;external control company independent&quot; as possible). Below is the code for the control definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.</p>
+<p>The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it <code>TabItem</code> (to make it as &quot;external control company independent&quot; as possible). Below is the code for the control definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.</p>
 <pre class="nocode">/// &lt;summary&gt;
 /// Base class for a control with the Catel mvvm behavior.
 /// &lt;/summary&gt;
@@ -236,9 +237,9 @@ public class TabItem : RadTabItem, IUserControl
         remove { _viewDataContextChanged -= value; }
     }
 }
-</pre><p>You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes</p>
-<h2 id="using-the-class">Using the class<a class="headerlink" href="#using-the-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The class can now be used the same as the <em>UserControl</em> class. For more information, see <em>UserControl explained</em>.</p>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes</p>
+</div><h2 id="using-the-class">Using the class<a class="headerlink" href="#using-the-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The class can now be used the same as the <code>UserControl</code> class. For more information, see <a href="../usercontrol.htm">UserControl explained</a>.</p>
 
                     </div>
                 </div>

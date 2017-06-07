@@ -1,6 +1,8 @@
 # Xamarin.Android
 
+@alert important
 Note that this guide is not a full Android development guide. It will cover the basics though.
+@end
 
 ## Bindings
 

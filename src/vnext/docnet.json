@@ -302,7 +302,6 @@
 			{
 				"Introduction" : "catel-mvvm/view-models/introduction.md",
 				"Creating a basic view model" : "catel-mvvm/view-models/creating-basic-view-model.md",
-				"Creating a view model that watches over other view models" : "catel-mvvm/view-models/creating-view-model-that-watches-over-other-view-models.md",
 				"Creating a view model with a model" : "catel-mvvm/view-models/creating-view-model-with-model.md",
 				"Creating a view model with a model and mappings" : "catel-mvvm/view-models/creating-view-model-with-model-and-mappings.md",
 				"Mapping properties from view to view model" : "catel-mvvm/view-models/mapping-properties-from-view-to-view-model.md",
@@ -312,7 +311,6 @@
 				{
 					"Keeping view models alive" : "catel-mvvm/view-models/advanced/keeping-view-models-alive.md",
 					"Exposing properties of a model automatically" : "catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically.md",
-					"Determine the view model type dynamically at runtime" : "catel-mvvm/view-models/advanced/determine-view-model-type-dynamically-at-runtime.md",
 					"Controlling the instantiation of view models" : "catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models.md",
 				},
 			},
@@ -323,7 +321,6 @@
 					"Window and DataWindow" : "catel-mvvm/views/xaml/window-and-datawindow.md",
 					"UserControl" : "catel-mvvm/views/xaml/usercontrol.md",
 					"UserControl Resources" : "catel-mvvm/views/xaml/usercontrol-resources.md",
-					"MVVM behaviors" : "catel-mvvm/views/xaml/mvvm-behaviors.md",
 					"Validation controls" : "catel-mvvm/views/xaml/validation-controls.md",
 					"Customizing DataContext subscription behavior" : "catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior.md",
 					"Improving performance by defining the view model grid manually" : "catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually.md",
@@ -353,6 +350,10 @@
 					"Introduction" : "catel-mvvm/views/xamarin-ios/introduction.md",
 				},
 			},
+		},
+		"Catel.Fody" : 
+		{
+			"Introduction" : "catel-fody/introduction.md",
 		},
 		"Tips & tricks" :
 		{

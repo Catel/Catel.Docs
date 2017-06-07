@@ -9,7 +9,7 @@ This example shows how to create a "classical" view model without any Catel spec
 
 ## Explanation
 
-To be in full control, the only thing required is to create a basic view model with the *vm* code snippet. Then, the following methods should be implemented:
+To be in full control, the only thing required is to create a basic view model with the `vm` code snippet. Then, the following methods should be implemented:
 
 -   Constructor - initialize the properties on the view model
 -   ValidateFields - check for field errors in the view model

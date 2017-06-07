@@ -89,10 +89,6 @@
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/usercontrol.htm">UserControl</a>
 </li>
 <li class="tocentry current"><a class="current" href="../../../catel-mvvm/views/xaml/usercontrol-resources.htm">UserControl Resources</a>
-<ul class="currentrelative">
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
-</ul>
-<li class="tocentry"><a href="../../../catel-mvvm/views/xaml/mvvm-behaviors.htm">MVVM behaviors</a>
 </li>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/validation-controls.htm">Validation controls</a>
 </li>
@@ -125,6 +121,9 @@
 </ul>
 </li>
 <li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
 </li>
 
@@ -154,10 +153,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="usercontrol-resources">UserControl Resources<a class="headerlink" href="#usercontrol-resources" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>For the most part the resources declared within a Catel UserControl behave the exact same as resources defined in the standard UserControl.  However because of the way the Catel UserControl operates (see <a href="UserControl_-_under_the_hood">UserControl Under the hood</a> ) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:</p>
-<p>Give this simple Model and ViewModel (Catel.Fody used for parameter declaration)</p>
-<pre class="nocode">{.c# data-syntaxhighlighter-params=&quot;brush: c#; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: c#; gutter: false; theme: Confluence&quot;}
-    public class DataSource : ModelBase
+<p>For the most part the resources declared within a Catel UserControl behave the exact same as resources defined in the standard UserControl.  However because of the way the Catel UserControl operates (see <a href="./advanced/usercontrol-under-the-hood.htm">UserControl Under the hood</a>) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:</p>
+<p>Given this simple Model and ViewModel (Catel.Fody used for parameter declaration)</p>
+<pre class="nocode">    public class DataSource : ModelBase
     {
         public int Id { get; set; }
         public string URI { get; set; }
@@ -191,8 +189,7 @@
         public FastObservableCollection&lt;DataSource&gt; ProjectDataSources { get; set; }
         
     }
-</pre><p> </p>
-<p>and this View:</p>
+</pre><p>and this View:</p>
 <p><strong>View</strong></p>
 <pre class="nocode">{.xml data-syntaxhighlighter-params=&quot;brush: xml; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: xml; gutter: false; theme: Confluence&quot;}
 &lt;catel:UserControl x:Class=&quot;Catel.Examples.WPF.Commanding.Views.DocumentView&quot;
@@ -288,16 +285,12 @@
 &lt;/catel:UserControl&gt;
 </pre><p> </p>
 <p>Will produce this at runtime:</p>
-<p><img src="attachments/76808197/76808195.png?width=466" /></p>
-<p> </p>
-<p> The ListView on the left is not populated because the binding is not found and will produce this error:</p>
+<p><img src="../../../images/catel-mvvm/views/xaml/usercontrol-resources/example.png" width="466" height="213" /></p>
+<p> 
+ The ListView on the left is not populated because the binding is not found and will produce this error:</p>
 <pre class="nocode">{.c# data-syntaxhighlighter-params=&quot;brush: c#; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: c#; gutter: false; theme: Confluence&quot;}
 System.Windows.Data Error: 40 : BindingExpression path error: 'ProjectDataSources' property not found on 'object' ''MainWindowViewModel' (HashCode=-1500006600)'. BindingExpression:Path=ProjectDataSources; DataItem='MainWindowViewModel' (HashCode=-1500006600); target element is 'CollectionViewSource' (HashCode=5965360); target property is 'Source' (type 'Object')
 </pre><p>While the ListView on the right has the correct content due to the proper binding.  Further discussion on <a href="http://stackoverflow.com/questions/31488173/binding-from-within-a-resourcedictionary-in-a-catel-wpf-usercontrol" target="_blank">Stack Overflow</a>.</p>
-<p> </p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/76808197/76808196.png">CatelUserControlResources.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/76808197/76808195.png">CatelUserControlResources.png</a> (image/png)</p>
 
                     </div>
                 </div>

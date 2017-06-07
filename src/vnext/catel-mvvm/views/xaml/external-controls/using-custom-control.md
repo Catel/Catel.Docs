@@ -1,10 +1,10 @@
 # Using a custom control
 
-In this part of the documentation, the *RadTabItem* of Telerik will be used as an example on how to create a *RadTabItem* that behaves like the *UserControl*.
+In this part of the documentation, the `RadTabItem` of Telerik will be used as an example on how to create a `RadTabItem` that behaves like the `UserControl`.
 
 ## Creating the base class with behavior
 
-The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it *TabItem* (to make it as "external control company independent" as possible). Below is the code for the control definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.
+The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it `TabItem` (to make it as "external control company independent" as possible). Below is the code for the control definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.
 
 ```
 /// <summary>
@@ -80,9 +80,11 @@ public class TabItem : RadTabItem, IUserControl
 }
 ```
 
+@alert important
 You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes
+@end
 
 ## Using the class
 
-The class can now be used the same as the *UserControl* class. For more information, see *UserControl explained*.
+The class can now be used the same as the `UserControl` class. For more information, see [UserControl explained](../usercontrol.md).
 

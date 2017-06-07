@@ -90,14 +90,11 @@
 </li>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/usercontrol-resources.htm">UserControl Resources</a>
 </li>
-<li class="tocentry"><a href="../../../catel-mvvm/views/xaml/mvvm-behaviors.htm">MVVM behaviors</a>
-</li>
 <li class="tocentry current"><a class="current" href="../../../catel-mvvm/views/xaml/validation-controls.htm">Validation controls</a>
 <ul class="currentrelative">
 <li class="tocentry"><a href="#infobarmessagecontrol">InfoBarMessageControl</a></li>
 <li class="tocentry"><a href="#warninganderrorvalidator">WarningAndErrorValidator</a></li>
 <li class="tocentry"><a href="#styling-in-datawindow">Styling in DataWindow</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior.htm">Customizing DataContext subscription behavior</a>
 </li>
@@ -126,6 +123,9 @@
 </li>
 
 </ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelFody.htm">Catel.Fody</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
@@ -159,23 +159,23 @@
 <h1 id="validation-controls">Validation controls<a class="headerlink" href="#validation-controls" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>There are some very important controls in Catel which help with visualizing the validation results.</p>
 <h2 id="infobarmessagecontrol">InfoBarMessageControl<a class="headerlink" href="#infobarmessagecontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Ever wanted to show the details of error messages to your end-users? Then, the <em>InfoBarMessageControl</em> is the control to use! The control shows a summary of all business and field errors provided by bindings on objects that implement the <em>IDataErrorInfo</em> interface.</p>
-<p><img src="attachments/1900573/2195457.png" /></p>
-<p>In combination with the <em>WarningAndErrorValidator</em> control, the <em>InfoBarMessageControl</em> can even show field and business warnings for objects that implement the <em>IDataWarningInfo</em> interface that ships with Catel.</p>
+<p>Ever wanted to show the details of error messages to your end-users? Then, the <code>InfoBarMessageControl</code> is the control to use! The control shows a summary of all business and field errors provided by bindings on objects that implement the <code>IDataErrorInfo</code> interface.</p>
+<p><img src="../../../images/catel-mvvm/views/xaml/validation-controls/infobarmessagecontrol.png" width="534" height="178" /></p>
+<p>In combination with the <code>WarningAndErrorValidator</code> control, the <code>InfoBarMessageControl</code> can even show field and business warnings for objects that implement the <code>IDataWarningInfo</code> interface that ships with Catel.</p>
 <pre class="nocode">&lt;catel:InfoBarMessageControl&gt;
     &lt;!-- Actual content here --&gt;
 &lt;/catel:InfoBarMessageControl&gt;
-</pre><p>The <em>InfoBarMessageControl</em> subscribes to the <em>Validation</em> class. This class is responsible for showing the red border around the controls that WPF shows by default. Then, it requests the actual field error property of the data item. This is added to an internal collection of error messages, and therefore the control is able to show the errors of all bindings.</p>
-<p>When the <em>WarningAndErrorValidator</em> control is found as a child control, the <em>InfoBarMessageControl</em> also subscribes to the events exposed by the <em>WarningAndErrorValidator</em>. The internal working of that control is explained later in this article. When a data object is subscribed via the <em>WarningAndErrorValidator</em>, the <em>InfoBarMessageControl</em> will also handle the warnings and business errors of that data object.</p>
+</pre><p>The <code>InfoBarMessageControl</code> subscribes to the <code>Validation</code> class. This class is responsible for showing the red border around the controls that WPF shows by default. Then, it requests the actual field error property of the data item. This is added to an internal collection of error messages, and therefore the control is able to show the errors of all bindings.</p>
+<p>When the <code>WarningAndErrorValidator</code> control is found as a child control, the <code>InfoBarMessageControl</code> also subscribes to the events exposed by the <code>WarningAndErrorValidator</code>. The internal working of that control is explained later in this article. When a data object is subscribed via the <code>WarningAndErrorValidator</code>, the <code>InfoBarMessageControl</code> will also handle the warnings and business errors of that data object.</p>
 <h2 id="warninganderrorvalidator">WarningAndErrorValidator<a class="headerlink" href="#warninganderrorvalidator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The <em>WarningAndErrorValidator</em> control is not visible to the end user. The only thing this control takes care of is to forward business errors and warnings to controls that are interested in them. The only control that ships with Catel is the <em>InfoBarMessageControl</em>. Thanks to the <em>WarningAndErrorValidator</em>, the <em>InfoBarMessageControl</em> is able to show business errors and warnings to the end user.</p>
+<p>The <code>WarningAndErrorValidator</code> control is not visible to the end user. The only thing this control takes care of is to forward business errors and warnings to controls that are interested in them. The only control that ships with Catel is the <code>InfoBarMessageControl</code>. Thanks to the <code>WarningAndErrorValidator</code>, the <code>InfoBarMessageControl</code> is able to show business errors and warnings to the end user.</p>
 <pre class="nocode">&lt;catel:WarningAndErrorValidator Source=&quot;{Binding MyObject}&quot; /&gt;
-</pre><p>The <em>WarningAndErrorValidator</em> needs to be placed inside an <em>InfoBarMessageControl</em>. The control then subscribes to all property changed events to make sure it receives all change notifications. Then, on every property change, the control checks whether the sender either implements the <em>IDataErrorInfo</em> or <em>IDataWarningInfo</em> interfaces.</p>
-<p>When an error or warning is found on the changed property, the control invokes the corresponding events so the <em>InfoBarMessageControl</em> can show the right information. When an error or warning no longer exists in a model, a <em>Removed</em> event is invoked so the <em>InfoBarMessageControl</em> knows that the error or warning should be removed from the summary.</p>
+</pre><p>The <code>WarningAndErrorValidator</code> needs to be placed inside an <code>InfoBarMessageControl</code>. The control then subscribes to all property changed events to make sure it receives all change notifications. Then, on every property change, the control checks whether the sender either implements the <code>IDataErrorInfo</code> or <code>IDataWarningInfo</code> interfaces.</p>
+<p>When an error or warning is found on the changed property, the control invokes the corresponding events so the <code>InfoBarMessageControl</code> can show the right information. When an error or warning no longer exists in a model, a <em>Removed</em> event is invoked so the <code>InfoBarMessageControl</code> knows that the error or warning should be removed from the summary.</p>
 <h2 id="styling-in-datawindow">Styling in DataWindow<a class="headerlink" href="#styling-in-datawindow" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>A <em>InfoBarMessageControl</em>  is automatically added to the <em>DataWindow</em>, if you want to use a different style for this <em>InfoBarMessageControl,</em> you must override the default style, add your own <em>InfoBarMessageControl</em> and disable the default <em>InfoBarMessageControl</em>  from the <em>DataWindow</em>.</p>
+<p>A <code>InfoBarMessageControl</code> is automatically added to the <code>DataWindow</code>, if you want to use a different style for this <code>InfoBarMessageControl</code>, you must override the default style, add your own <code>InfoBarMessageControl</code> and disable the default <code>InfoBarMessageControl</code> from the <code>DataWindow</code>.</p>
 <ol>
-<li>Create a custom style based on the <a href="https://github.com/Catel/Catel/blob/552fdff2990cbce9c963b94796dbe09b5fb52ee6/src/Catel.MVVM/Catel.MVVM.NET40/Themes/InfoBarMessageControl.generic.xaml" target="_blank">default style</a>.</li>
+<li>Create a custom style based on the <a href="https://github.com/Catel/Catel/blob/master/src/Catel.MVVM/Catel.MVVM.NET46/Themes/InfoBarMessageControl.generic.xaml" target="_blank">default style</a>.</li>
 <li>Change the x:Key from  x:Key=&quot;{x:Type local:InfoBarMessageControl}&quot; to  x:Key=&quot;yourCustomStyleKey&quot;</li>
 <li>
 <p>Set the InfoBarMessageControlGenerationMode to None</p>
@@ -194,7 +194,7 @@
         }
 </pre></li>
 <li>
-<p>Add a new <em>InfoBarMessageControl</em>  as root control to your *DataWindow *and set the style.</p>
+<p>Add a new <code>InfoBarMessageControl</code> as root control to your <code>DataWindow</code> and set the style.</p>
 <pre class="nocode">&lt;catel:InfoBarMessageControl  Style=&quot;{DynamicResource yourCustomStyleKey}&quot;&gt;
         &lt;Grid&gt;
             &lt;catel:WarningAndErrorValidator Source=&quot;{Binding}&quot; /&gt;
@@ -203,9 +203,6 @@
 &lt;/catel:InfoBarMessageControl&gt;
 </pre></li>
 </ol>
-<p> </p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/1900573/2195457.png">infobarmessagecontrol.png</a> (image/png)</p>
 
                     </div>
                 </div>

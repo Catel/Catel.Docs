@@ -1,11 +1,11 @@
 # UserControl Resources
 
-For the most part the resources declared within a Catel UserControl behave the exact same as resources defined in the standard UserControl.  However because of the way the Catel UserControl operates (see [UserControl Under the hood](UserControl_-_under_the_hood) ) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:
+For the most part the resources declared within a Catel UserControl behave the exact same as resources defined in the standard UserControl.  However because of the way the Catel UserControl operates (see [UserControl Under the hood](./advanced/usercontrol-under-the-hood.md)) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:
 
-Give this simple Model and ViewModel (Catel.Fody used for parameter declaration)
+Given this simple Model and ViewModel (Catel.Fody used for parameter declaration)
 
 
-``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
+```
     public class DataSource : ModelBase
     {
         public int Id { get; set; }
@@ -42,7 +42,6 @@ Give this simple Model and ViewModel (Catel.Fody used for parameter declaration)
     }
 ```
 
- 
 
 and this View:
 
@@ -146,10 +145,9 @@ and this View:
 
 Will produce this at runtime:
 
-![](attachments/76808197/76808195.png?width=466)
+![](../../../images/catel-mvvm/views/xaml/usercontrol-resources/example.png)
 
  
-
  The ListView on the left is not populated because the binding is not found and will produce this error:
 
 ``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
@@ -157,11 +155,3 @@ System.Windows.Data Error: 40 : BindingExpression path error: 'ProjectDataSource
 ```
 
 While the ListView on the right has the correct content due to the proper binding.  Further discussion on [Stack Overflow](http://stackoverflow.com/questions/31488173/binding-from-within-a-resourcedictionary-in-a-catel-wpf-usercontrol).
-
- 
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [CatelUserControlResources.png](attachments/76808197/76808196.png) (image/png)
- ![](images/icons/bullet_blue.gif) [CatelUserControlResources.png](attachments/76808197/76808195.png) (image/png)
-

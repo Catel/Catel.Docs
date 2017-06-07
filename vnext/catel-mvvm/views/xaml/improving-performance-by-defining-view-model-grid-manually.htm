@@ -90,8 +90,6 @@
 </li>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/usercontrol-resources.htm">UserControl Resources</a>
 </li>
-<li class="tocentry"><a href="../../../catel-mvvm/views/xaml/mvvm-behaviors.htm">MVVM behaviors</a>
-</li>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/validation-controls.htm">Validation controls</a>
 </li>
 <li class="tocentry"><a href="../../../catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior.htm">Customizing DataContext subscription behavior</a>
@@ -99,7 +97,7 @@
 <li class="tocentry current"><a class="current" href="../../../catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually.htm">Improving performance by defining the view model grid manually</a>
 <ul class="currentrelative">
 <li class="tocentry"><a href="#creating-the-grid-manually">Creating the grid manually</a></li>
-<li class="tocentry"><a href="#customizing-the-iviewmodelwrapperservice">Customizing the <em>IViewModelWrapperService</em></a></li>
+<li class="tocentry"><a href="#customizing-the-">Customizing the <code>IViewModelWrapperService</code></a></li>
 </ul>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../Externalcontrols.htm">External controls</a></span>
@@ -124,6 +122,9 @@
 </li>
 
 </ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../CatelFody.htm">Catel.Fody</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
@@ -155,12 +156,12 @@
                 <div role="main">
                     <div class="section">
 <h1 id="improving-performance-by-defining-the-view-model-grid-manually">Improving performance by defining the view model grid manually<a class="headerlink" href="#improving-performance-by-defining-the-view-model-grid-manually" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Catel wraps the content of each user control in a grid. This grid is the actual view model container as can be read in the <a href="UserControl_-_under_the_hood">advanced documentation</a>. This wrapper is very convenient, but does have (little) impact on the performance and visual state management. To prevent Catel to wrap the control for you, there are a few things you can do.</p>
+<p>Catel wraps the content of each user control in a grid. This grid is the actual view model container as can be read in the <a href="./advanced/usercontrol-under-the-hood.htm">advanced documentation</a>. This wrapper is very convenient, but does have (little) impact on the performance and visual state management. To prevent Catel to wrap the control for you, there are a few things you can do.</p>
 <h2 id="creating-the-grid-manually">Creating the grid manually<a class="headerlink" href="#creating-the-grid-manually" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The easiest way is to create the grid manually. The default implementation of the *IViewModelWrapperService *checks if the direct child control is a grid and has a specific name <em>'__catelInnerWrapper'.</em> To prevent Catel from creating the wrapper, simply specify the name on the root grid.</p>
-<p>Note that Catel will override the <em>DataContext</em> binding of this grid to reflect the view model.</p>
-<h2 id="customizing-the-iviewmodelwrapperservice">Customizing the <em>IViewModelWrapperService</em><a class="headerlink" href="#customizing-the-iviewmodelwrapperservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Another way to prevent Catel from wrapping the grids is to implement the <em>IViewModelWrapperService</em> yourself.</p>
+<p>The easiest way is to create the grid manually. The default implementation of the <code>IViewModelWrapperService</code> checks if the direct child control is a grid and has a specific name <code>'\_\_catelInnerWrapper'</code>. To prevent Catel from creating the wrapper, simply specify the name on the root grid.</p>
+<p>Note that Catel will override the <code>DataContext</code> binding of this grid to reflect the view model.</p>
+<h2 id="customizing-the-">Customizing the <code>IViewModelWrapperService</code><a class="headerlink" href="#customizing-the-" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Another way to prevent Catel from wrapping the grids is to implement the <code>IViewModelWrapperService</code> yourself.</p>
 <p>Note that we recommend to create the grid manually since that is highly likely to have less side-effects</p>
 
                     </div>

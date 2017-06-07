@@ -2,13 +2,11 @@
 
 Starting with Catel 3.1, it is possible to take control of the view model instantiation of a view dynamically at runtime. This feature can be used when the construction of a view model is more complex than injecting the datacontext as model, or when the view model instance in a custom repository should be re-used.
 
-Note that this feature is available on all controls an behaviors, not only for the *UserControl*
-
 ## How to control the view model instantiation using the IViewModelFactory
 
-The *IViewModelFactory* is the best way to customize the instantiation of view models in Catel. This allows full control for all view models because the factory will be used to create all view models, except when any other methods described below are used.
+The `IViewModelFactory` is the best way to customize the instantiation of view models in Catel. This allows full control for all view models because the factory will be used to create all view models, except when any other methods described below are used.
 
-If customization of the view model instantiation is required, it is best the derive from the default *ViewModelFactory* class to be able to fall back to the default behavior in non-special cases.
+If customization of the view model instantiation is required, it is best the derive from the default `ViewModelFactory` class to be able to fall back to the default behavior in non-special cases.
 
 ```
 public class CustomViewModelFactory : ViewModelFactory
@@ -27,7 +25,7 @@ public class CustomViewModelFactory : ViewModelFactory
 }
 ```
 
-When a custom factory is used, it is important to register it in the ServiceLocator:
+When a custom factory is used, it is important to register it in the `ServiceLocator`:
 
 ```
 ServiceLocator.Default.RegisterType<IViewModelFactory, CustomViewModelFactory>();
@@ -35,9 +33,11 @@ ServiceLocator.Default.RegisterType<IViewModelFactory, CustomViewModelFactory>()
 
 ## How to control the view model instantiation using a UserControl
 
-Note that it is best to use the *IViewModelFactory* for view model instantation because it is a more generic solution
+@alert important
+Note that it is best to use the `IViewModelFactory` for view model instantation because it is a more generic solution
+@end
 
-Controlling the instantiation of the view model dynamically when using the *UserControl* is extremely easy. You can override the *GetViewModelInstance(object)* method like this:
+Controlling the instantiation of the view model dynamically when using the `UserControl` is extremely easy. You can override the `GetViewModelInstance(object)` method like this:
 
 ```
 protected override IViewModel GetViewModelInstance(object dataContext)
@@ -51,13 +51,15 @@ protected override IViewModel GetViewModelInstance(object dataContext)
 }
 ```
 
-When the method returns *null*, the logic will try to construct the view model by itself.
+When the method returns `null`, the logic will try to construct the view model by itself.
 
 ## How to control the view model instantiation using a behavior
 
-Note that it is best to use the *IViewModelFactory* for view model instantation because it is a more generic solution
+@alert important
+Note that it is best to use the `IViewModelFactory` for view model instantation because it is a more generic solution
+@end
 
-Controlling the instantiation of the view model dynamically when using behaviors must be done via the *DetermineViewModelInstance* event like this:
+Controlling the instantiation of the view model dynamically when using behaviors must be done via the `DetermineViewModelInstance` event like this:
 
 ```
 mvvmBehavior.DetermineViewModelInstance += (sender, e) =>
