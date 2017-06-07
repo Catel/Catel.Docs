@@ -19,7 +19,9 @@ The first step to setup the service locator from the configuration file is impor
 </configuration>
 ```
 
+@alert important
 In the example above we also create a section group named catel to group all Catel related configuration sections.
+@end
 
 ## Configuring a service locator from the default configuration
 

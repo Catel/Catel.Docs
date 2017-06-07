@@ -24,13 +24,13 @@ As soon as the project is created, the *Readme.txt* will be opened and instruct
 
 Now the NuGet packages are installed, the project is created and can be built. The basics are created and the application is ready:
 
-![](../../images/getting-started/wpf/creating-the-project/solutionexplorer.png)
+![](../../images/getting-started/wpf/creating-the-project/example.png)
 
 ## Explanation of the project structure
 
 The project template creates the project structure that fits best with Catel. Below is an explanation of the new project structure:
 
-![](../../images/getting-started/wpf/creating-the-project/exmaple.png)
+![](../../images/getting-started/wpf/creating-the-project/solutionexplorer.png)
 
 The *ViewModels* folder contains the *MainWindowViewModel*, which contains the logic for the interaction with the *MainWindow* view.
 

@@ -52,13 +52,13 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../ApiCop.htm">ApiCop</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Argumentchecking.htm">Argument checking</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Caching.htm">Caching</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Configuration.htm">Configuration</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Datahandling.htm">Data handling</a></span>
@@ -169,8 +169,8 @@
    &lt;/configSections&gt;
    ...
 &lt;/configuration&gt;
-</pre><p>In the example above we also create a section group named catel to group all Catel related configuration sections.</p>
-<h2 id="configuring-a-service-locator-from-the-default-configuration">Configuring a service locator from the default configuration<a class="headerlink" href="#configuring-a-service-locator-from-the-default-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>In the example above we also create a section group named catel to group all Catel related configuration sections.</p>
+</div><h2 id="configuring-a-service-locator-from-the-default-configuration">Configuring a service locator from the default configuration<a class="headerlink" href="#configuring-a-service-locator-from-the-default-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It's possible add more than one service locator configuration to the configuration file but you must specify an unique name. If a name of a service locator configuration is not specified then the name <em>default</em> is assigned. By default such configuration supports dependency injection.</p>
 <pre class="nocode">{.html/xml data-syntaxhighlighter-params=&quot;brush: html/xml; gutter: false; theme: Confluence&quot; data-theme=&quot;Confluence&quot; style=&quot;brush: html/xml; gutter: false; theme: Confluence&quot;}
 &lt;configuration&gt;

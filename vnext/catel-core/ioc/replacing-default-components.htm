@@ -52,13 +52,13 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../ApiCop.htm">ApiCop</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Argumentchecking.htm">Argument checking</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Caching.htm">Caching</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Configuration.htm">Configuration</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Datahandling.htm">Data handling</a></span>
@@ -156,11 +156,11 @@
                     <div class="section">
 <h1 id="replacing-the-default-components">Replacing the default components<a class="headerlink" href="#replacing-the-default-components" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>By default, Catel provides very fast and functional implementations of the component interfaces. It is possible though that one needs to use a different container than the specified ones.</p>
-<p>Note that when any component is replaced, it must be registered with the other instances that are already running. Catel cannot do this automatically because it is not aware how other (customized) components interact or require registration.</p>
-<h2 id="replacing-default-components">Replacing default components<a class="headerlink" href="#replacing-default-components" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that when any component is replaced, it must be registered with the other instances that are already running. Catel cannot do this automatically because it is not aware how other (customized) components interact or require registration.</p>
+</div><h2 id="replacing-default-components">Replacing default components<a class="headerlink" href="#replacing-default-components" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Starting with Catel 3.9, it is very easy to customize the components. This can be achieved by customizing the factory methods that are available on the <em>IoCConfiguration</em> class.</p>
-<p>Note that the customization of the IoCConfiguration is the **first **** thing that must be done at application start up</p>
-<p>To replace any component, first create a custom implementation of the specific component, for example the <em>IServiceLocator</em>. Then update the factory and call <em>UpdateDefaultComponents</em>:</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the customization of the IoCConfiguration is the **first **** thing that must be done at application start up</p>
+</div><p>To replace any component, first create a custom implementation of the specific component, for example the <em>IServiceLocator</em>. Then update the factory and call <em>UpdateDefaultComponents</em>:</p>
 <pre class="nocode">Catel.IoC.IoCFactory.CreateServiceLocatorFunc = () =&gt; new MyCustomServiceLocator();
 Catel.IoC.IoCFactory.CreateTypeFactoryFunc = () =&gt; new MyCustomTypeFactory();
  

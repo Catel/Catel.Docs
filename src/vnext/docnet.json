@@ -94,15 +94,15 @@
 			},
 			"Argument checking" : 
 			{
-				"__index" : "catel-core/argument-checking/index.md",
+				"Introduction" : "catel-core/argument-checking/introduction.md",
 			},
 			"Caching" : 
 			{
-				"__index" : "catel-core/caching/index.md",
+				"Introduction" : "catel-core/caching/introduction.md",
 			},
 			"Configuration" : 
 			{
-				"__index" : "catel-core/configuration/index.md",
+				"Introduction" : "catel-core/configuration/introduction.md",
 			},
 			"Data handling" : 
 			{

@@ -14,7 +14,9 @@ ApiCop.RegisterRule(new UnusedFeatureApiCopRule("UserControlLogic.InfoBarMessage
 
 The first argument is the *name* of the rule. This is a unique identifier and allows users to ignore rules by this name. The next parameter is a good extension which will explain to the end-developer what is wrong and why the rule is created in the first place. In this case it is about the *InfoBarMessageControl* which might have a negative impact on performance.
 
+@alert tip
 It is good practice to use the *ClassName*.*FeatureName* for the rule names
+@end
 
 ## Updating rules
 
@@ -29,7 +31,9 @@ ApiCop.UpdateRule<UnusedFeatureApiCopRule>("UserControlLogic.InfoBarMessageContr
 
 This code shows the regular code executed by the framework (the search in the visual tree) and the update of the rule. Note that the update method only requires the following things: the name, a callback method and a tag. The reason a callback method is being used is that the callback will only be executed when a debugger is attached to minimize the impact on performance in production scenarios.
 
+@alert tip
 It is good practice to use the final class name as as tag (especially when the rule is registered in a base class)
+@end
 
 ## Available rules
 

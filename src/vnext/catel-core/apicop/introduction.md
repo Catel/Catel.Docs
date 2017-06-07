@@ -33,7 +33,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
     To ignore rules, call ApiCopManager.IgnoredRules.Add([rulename]);
 
     For more information about ApiCop, visit the website:
-      https://catelproject.atlassian.net/wiki/display/CTL/ApiCop
+      http://docs.catelproject.com/vnext/ApiCop.htm
 
     ****************************************************************
 
@@ -43,7 +43,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
 
     Cop TargetType: Catel.Windows.Controls.MVVMProviders.Logic.UserControlLogic
     Rule: UserControlLogic.InfoBarMessageControl (Error)
-    For more information about this rule, visit https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations
+    For more information about this rule, visit ...
 
     [DataWindowTest.Views.AView] Feature used '0' of '2' times, consider turning it off by default
 
@@ -51,7 +51,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
 
     Cop TargetType: Catel.Windows.Controls.MVVMProviders.Logic.UserControlLogic
     Rule: UserControlLogic.CreateWarningAndErrorValidator (Error)
-    For more information about this rule, visit https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations
+    For more information about this rule, visit ...
 
     [DataWindowTest.Views.AView] Feature used '0' of '2' times, consider turning it off by default
 
@@ -63,7 +63,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
 
     Cop TargetType: Catel.Windows.Controls.MVVMProviders.Logic.UserControlLogic
     Rule: UserControlLogic.InfoBarMessageControl (Error)
-    For more information about this rule, visit https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations
+    For more information about this rule, visit ...
 
     [DataWindowTest.Views.BView] Feature used '0' of '2' times, consider turning it off by default
 
@@ -71,7 +71,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
 
     Cop TargetType: Catel.Windows.Controls.MVVMProviders.Logic.UserControlLogic
     Rule: UserControlLogic.CreateWarningAndErrorValidator (Error)
-    For more information about this rule, visit https://catelproject.atlassian.net/wiki/display/CTL/Performance+considerations
+    For more information about this rule, visit ...
 
     [DataWindowTest.Views.BView] Feature used '0' of '2' times, consider turning it off by default
 
@@ -85,16 +85,6 @@ The code above writes the results of the ApiCop feature to the console, which wi
 
 ApiCop provides a set of components that help developers of frameworks to aid developers during the usage of their frameworks. Below is a graphical presentation of the components.
 
+![](../../images/catel-core/apicop/introduction/architecture.png)
+
 The green parts are the only components that end-users will use. The blue parts are components for Api developers.
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [ApiCop](attachments/22872079/23101443) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [ApiCop.png](attachments/22872079/23101444.png) (image/png)
- ![](images/icons/bullet_blue.gif) [ApiCop](attachments/22872079/23101445) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [ApiCop.png](attachments/22872079/23101446.png) (image/png)
- ![](images/icons/bullet_blue.gif) [ApiCop](attachments/22872079/23101447) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [ApiCop.png](attachments/22872079/23101448.png) (image/png)
- ![](images/icons/bullet_blue.gif) [ApiCop](attachments/22872079/23101441) (application/gliffy+json)
- ![](images/icons/bullet_blue.gif) [ApiCop.png](attachments/22872079/23101442.png) (image/png)
-

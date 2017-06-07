@@ -4,21 +4,11 @@ Catel makes it very easy to use configurations on all supported platforms. 
 
 Below is a table to explain what technology is used per platform to retrieve and store configuration values.
 
-Platform
-
-Technology
-
-.NET
-
-ConfigurationManager.AppSettings
-
-UWP
-
-ApplicationData.Current.LocalSettings
-
-PCL
-
-Not supported
+Platform|Technology
+-|-
+.NET|ConfigurationManager.AppSettings
+UWP|ApplicationData.Current.LocalSettings
+PCL|Not supported
 
 ## Getting values from the configuration
 
@@ -31,7 +21,9 @@ var mySetting = configurationService.GetValue<int>("mySetting", 42);
 
 The code above will retrieve the values from the configuration. If the configuration value does not exist, it will return *42* as default value.
 
+@alert info
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
+@end
 
 ## Setting values to the configuration
 
@@ -42,7 +34,9 @@ var configurationService = new ConfigurationService();
 configurationService.SetValue("mySetting", 42);
 ```
 
+@alert info
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
+@end
 
 ## Customizing the way values are stored
 
@@ -92,5 +86,6 @@ public class DbConfigurationService : ConfigurationService
 }
 ```
 
+@alert important
 Don't forget to register the customized *ConfigurationService* in the *ServiceLocator*
-
+@end

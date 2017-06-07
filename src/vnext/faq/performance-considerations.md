@@ -2,7 +2,9 @@
 
 While developing software, it is very important to keep an eye on the performance. Catel itself does perform very well, but there are some caveats that you should be aware of. If you have the feeling that the application is laggy or slow, or if you want to make sure to squeeze the best performance out of Catel, consider taking a closer look at the checklist below.
 
+@alert tip
 Use the [ApiCop feature](ApiCop) to get a detailed advisory report on your software
+@end
 
 ## General
 
@@ -99,5 +101,6 @@ By default, throttling is disabled but can be enabled by setting the *Throttling
 ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
 ```
 
+@alert info
 The *AdvancedDemo* example contains a demo that shows the impact of throttling
-
+@end

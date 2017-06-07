@@ -60,7 +60,9 @@ public class MyClass
 }
 ```
 
+@alert info
 There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only
+@end
 
 ## Using dependency injection in Catel
 
@@ -70,7 +72,7 @@ Dependency injection via the ServiceLocator in Catel is enabled by default. This
 
 It will first search for all available constructors on the type that will be instantiated. Then, for each constructor, starting with the one with the most parameters, it will try to retrieve all values. If one fails, it will go to the next. If all fail, it will try to use the default constructor without parameters. If that fails as well, then the type cannot be constructed and an exception will be thrown.
 
- To get a better understanding of what happens, see the class below:
+To get a better understanding of what happens, see the class below:
 
 ```
 public class MyClass
@@ -165,9 +167,9 @@ public class PersonViewModel : ViewModelBase
 }
 ```
 
- 
-
+@alert info
 This feature is initially written to support dependency injection in combination with [nested user controls](Introduction_to_the_nested_user_controls_problem)
+@end
 
 The advanced dependency injection can be used by using the TypeFactory class. Below is an example on how to create a new type using advanced dependency injection:
 
@@ -177,17 +179,21 @@ var personViewModel = TypeFactory.Default.CreateInstanceWithParametersAndAutoCom
 
 As you can see it is only required to pass in the objects that are not registered in the IoC container. All other dependencies will be automatically resolved from the *ServiceLocator*.
 
+@alert important
 Note that the order of the parameters must be the same as the constructor, otherwise the *TypeFactory* cannot determine the right constructor to use
+@end
 
 ### Property injection
 
 Starting with Catel 3.8, it is also possible to use property injection. The difference with constructor injection is that the TypeFactory will automatically set up all properties that required dependency injection.
 
+@alert important
 Note that the Catel team recommends using constructor injection over property injection. Property injection looks like a silver bullet, but is very tricky because:
 
 1) It does not allow you to check for *null* values and store dependencies in private fields (when)?
 
 2) Dependency Injection is just a technique. When using a constructor, you can force a user to provide the value and check the input. With property injection, you can only *hope* that the user will set them for you, there is no way to check this (unless that is some *after constructor and dependency injection* initialization routine. This is never the case if a user manually creates a type though.
+@end
 
 To use property injection, simply decorate the properties of a class with the Inject attribute. Below are several options:
 

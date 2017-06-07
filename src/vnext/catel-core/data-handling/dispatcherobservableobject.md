@@ -1,6 +1,8 @@
 # DispatcherObservableObject
 
+@alert important
 Note that the *DispatcherObservableObject* is located in *Catel.MVVM* because it uses the *IDispatcherService*
+@end
 
 The *DispatcherObservableObject* is a class that derives from the *ObservableObject* class. The only difference is that the *DispatcherObservableObject* will dispatch all property change notifications to the UI thread. Below is a class that uses the *DispatcherObservableObject* and is thread-safe for the change notifications.
 

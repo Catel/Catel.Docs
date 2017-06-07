@@ -52,13 +52,13 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../ApiCop.htm">ApiCop</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Argumentchecking.htm">Argument checking</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Caching.htm">Caching</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Configuration.htm">Configuration</a></span>
 </li>
 <li class="tocentry">
 <ul>
@@ -150,8 +150,8 @@
                 <div role="main">
                     <div class="section">
 <h1 id="dispatcherobservableobject">DispatcherObservableObject<a class="headerlink" href="#dispatcherobservableobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Note that the <em>DispatcherObservableObject</em> is located in <em>Catel.MVVM</em> because it uses the <em>IDispatcherService</em></p>
-<p>The <em>DispatcherObservableObject</em> is a class that derives from the <em>ObservableObject</em> class. The only difference is that the <em>DispatcherObservableObject</em> will dispatch all property change notifications to the UI thread. Below is a class that uses the <em>DispatcherObservableObject</em> and is thread-safe for the change notifications.</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the <em>DispatcherObservableObject</em> is located in <em>Catel.MVVM</em> because it uses the <em>IDispatcherService</em></p>
+</div><p>The <em>DispatcherObservableObject</em> is a class that derives from the <em>ObservableObject</em> class. The only difference is that the <em>DispatcherObservableObject</em> will dispatch all property change notifications to the UI thread. Below is a class that uses the <em>DispatcherObservableObject</em> and is thread-safe for the change notifications.</p>
 <pre class="nocode">public class Person : DispatcherObservableObject
 {
     private string _firstName;

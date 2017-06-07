@@ -52,13 +52,13 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../ApiCop.htm">ApiCop</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Argumentchecking.htm">Argument checking</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Caching.htm">Caching</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Configuration.htm">Configuration</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Datahandling.htm">Data handling</a></span>
@@ -167,8 +167,8 @@ exceptionService.Register&lt;Exception&gt;(exception =&gt; 
     Log.Error(exception);
     dependencyResolver.Resolve&lt;IMessageService&gt;().Show(&quot;An unknown exception occurred, please contact the developers&quot;); 
 });
-</pre><p>The IExceptionService checks for type hierarchy. For example, when an exception as type Exception is registered, this handler will handle all exceptions</p>
-<h2 id="executing-code-using-the-iexceptionservice">Executing code using the IExceptionService<a class="headerlink" href="#executing-code-using-the-iexceptionservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>The IExceptionService checks for type hierarchy. For example, when an exception as type Exception is registered, this handler will handle all exceptions</p>
+</div><h2 id="executing-code-using-the-iexceptionservice">Executing code using the IExceptionService<a class="headerlink" href="#executing-code-using-the-iexceptionservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The Process method is responsible to keep track of all exceptions which might occur and will handle them if they are registered. If one of your registered exceptions is thrown by the code, the Process method will handle it and perform the action defined while the registration operation (for example, by showing a message box).</p>
 <p>The <em>Process</em> method comes in two flavors: as action and as function.</p>
 <h3 id="executing-an-action">Executing an action<a class="headerlink" href="#executing-an-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -179,8 +179,8 @@ exceptionService.Process(() =&gt; { throw new ArgumentOutOfRangeException(); });
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var exceptionService = dependencyResolver.Resolve&lt;IExceptionService&gt;();
 var result = exceptionService.Process&lt;int&gt;(() =&gt; 1 + 1);
-</pre><p>You can process yours actions asynchronously by using the <strong><em>ProcessAsync</em></strong> method.</p>
-<h2 id="use-the-retry-capabilities">Use the retry capabilities<a class="headerlink" href="#use-the-retry-capabilities" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>You can process yours actions asynchronously by using the <strong><em>ProcessAsync</em></strong> method.</p>
+</div><h2 id="use-the-retry-capabilities">Use the retry capabilities<a class="headerlink" href="#use-the-retry-capabilities" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>In some cases, you can want to have possibility to retry an action a certain number of times before finally handle your exception. Let see how the <em>IExceptionService</em> allows us to handle this kind of cases.</p>
 <p>Firstly, you need to define how the <em>IExceptionService</em> will retry your action in case of error, two possibilities are provided for that.</p>
 <h3 id="retry-immediately">Retry Immediately<a class="headerlink" href="#retry-immediately" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>

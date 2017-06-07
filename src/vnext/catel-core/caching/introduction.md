@@ -44,67 +44,13 @@ The default cache policy specified at cache storage initialization will be used 
 
 Catel comes with build-in expiration policies. They are listed in the follow table:
 
-Expiration policy
-
-Type
-
-Description
-
-Initialization code sample
-
-AbsoluteExpirationPolicy
-
-Time-base
-
-The cache item will expire on the absolute expiration DateTime
-
-```
-ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))
-```
-
-DurationExpirationPolicy
-
-Time-base
-
-The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now
-
-```
-ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))
-```
-
-SlidingExpirationPolicy
-
-Time-base
-
-The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan
-
-```
-ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))
-```
-
-CustomExpirationPolicy
-
-Custom
-
-The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.
-
-```
-var startDateTime = DateTime.Now;
-var duration = TimeSpan.FromMinutes(5);
-
-ExpirationPolicy.Custom(() => DateTime.Now > startDateTime.Add(duration), () => startDateTime = DateTime.Now);
-```
-
-CompositeExpirationPolicy
-
-Custom
-
-Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.
-
-```
-new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(
-TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=>...))
-```
+Expiration policy|Type|Description|Initialization code sample
+-|-|-|-
+AbsoluteExpirationPolicy|Time-base|The cache item will expire on the absolute expiration DateTime|```ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))```
+DurationExpirationPolicy|Time-base|The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now|```ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))```
+SlidingExpirationPolicy|Time-base|The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan|```ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))```
+CustomExpirationPolicy|Custom|The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.|```var startDateTime = DateTime.Now;var duration = TimeSpan.FromMinutes(5);ExpirationPolicy.Custom(() => DateTime.Now > startDateTime.Add(duration), () => startDateTime = DateTime.Now);```
+CompositeExpirationPolicy|Custom|Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.|```new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=>...))```
 
 Implementing your own expiration cache policy
 
@@ -134,5 +80,6 @@ public class MyExpirationPolicy : ExpirationPolicy
 }
 ```
 
+@alert info
 The base constructor has a parameter to indicate if the policy can be reset. Therefore, if you call the base constructor with false then the OnReset method will never called.
-
+@end

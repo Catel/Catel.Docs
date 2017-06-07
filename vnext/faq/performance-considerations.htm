@@ -96,8 +96,8 @@
                     <div class="section">
 <h1 id="performance-considerations">Performance considerations<a class="headerlink" href="#performance-considerations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>While developing software, it is very important to keep an eye on the performance. Catel itself does perform very well, but there are some caveats that you should be aware of. If you have the feeling that the application is laggy or slow, or if you want to make sure to squeeze the best performance out of Catel, consider taking a closer look at the checklist below.</p>
-<p>Use the <a href="ApiCop">ApiCop feature</a> to get a detailed advisory report on your software</p>
-<h2 id="general">General<a class="headerlink" href="#general" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>Use the <a href="ApiCop">ApiCop feature</a> to get a detailed advisory report on your software</p>
+</div><h2 id="general">General<a class="headerlink" href="#general" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="disable-the-call-to-logmanager.adddebuglistener">Disable the call to LogManager.AddDebugListener<a class="headerlink" href="#disable-the-call-to-logmanager.adddebuglistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The <em>DebugListener</em> is a very useful class while developing an application. It throws all the logging of Catel to the output window of Visual Studio which allows you to view exactly what happens behind the scenes. However, writing all these logs to the output window is very expensive and might cause an application to perform badly.</p>
 <p>Therefore, it is important to disable any call to LogManager.AddDebugListener when releasing an application or while performance testing.</p>
@@ -144,8 +144,8 @@ Catel.Data.ModelBase.SuspendValidationForAllModels = true;
 <p>The <em>ViewModelBase</em> allows the specify the throttling of the property change notifications. In normal situations it is best to directly raise property change notifications. However, when a lot of properties change a lot within a very short timeframe, it might be interesting to enable throttling. By using throttling, the change notifications are not directly sent to the UI but instead added to a dictionary. Then each time the <em>ThottlingRate</em> is reached, the change notifications are sent in batches to the view. If the same property has changed several times in a specific time frame, it will only be raised once which might give a performance boost in very specific situations.</p>
 <p>By default, throttling is disabled but can be enabled by setting the <em>ThrottlingRate</em> property:</p>
 <pre class="nocode">ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
-</pre><p>The <em>AdvancedDemo</em> example contains a demo that shows the impact of throttling</p>
-
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>The <em>AdvancedDemo</em> example contains a demo that shows the impact of throttling</p>
+</div>
                     </div>
                 </div>
                 <footer>

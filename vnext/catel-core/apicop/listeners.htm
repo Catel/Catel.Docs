@@ -66,13 +66,13 @@
 </ul>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/argument-checking/index.htm">Argument checking</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Argumentchecking.htm">Argument checking</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/caching/index.htm">Caching</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Caching.htm">Caching</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/configuration/index.htm">Configuration</a></span>
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Configuration.htm">Configuration</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../Datahandling.htm">Data handling</a></span>
@@ -159,14 +159,28 @@ ApiCopManager.AddListener(apiCopListener);
 <pre class="nocode">var apiCopListener = new ConsoleApiCopListener();
 apiCopListener.Grouping = ApiCopListenerGrouping.Rule;
 </pre><p>The following grouping options are available:</p>
-<p>Grouping name</p>
-<p>Description</p>
-<p>Cop</p>
-<p>Sort by the name of the class in which the cop is registered.</p>
-<p>Rule</p>
-<p>Sort by the rule name.</p>
-<p>Tag</p>
-<p>Sort by tag, which is dependent on the rule implementation. It is recommended though to use the final class name as tag.</p>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Grouping name</th>
+	<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Cop</td>
+	<td>Sort by the name of the class in which the cop is registered.</td>
+</tr>
+<tr>
+	<td>Rule</td>
+	<td>Sort by the rule name.</td>
+</tr>
+<tr>
+	<td>Tag</td>
+	<td>Sort by tag, which is dependent on the rule implementation. It is recommended though to use the final class name as tag.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="creating-custom-listeners">Creating custom listeners<a class="headerlink" href="#creating-custom-listeners" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Catel provides several listeners out of the box. To create custom listeners, the only requirement is to implement the <em>IApiCopListener</em>. To make it easier to create custom listeners (such as an HTML listener), Catel provides the following base classes which can also be used as a base for custom listeners:</p>
 <ul>
