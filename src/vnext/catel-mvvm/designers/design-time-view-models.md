@@ -2,7 +2,7 @@
 
 Lots of developers are using designers such as the built-in designer in Visual Studio or Expression Blend to design their xaml based applications. Although you should use designers with lots of care, we strive to fully support all designers.
 
-Since Catel 1.3, it is possible to create design-time versions of a view model. This way, you can preview the *UserControl* or *DataWindow* implementations using example data.
+Since Catel 1.3, it is possible to create design-time versions of a view model. This way, you can preview the `UserControl` or `DataWindow` implementations using example data.
 
 To create design-time support for a data window, use the following steps:
 
@@ -30,7 +30,7 @@ public class DesignPersonViewModel : PersonViewModel
 d:DataContext="{d:DesignInstance ViewModels:DesignPersonViewModel}"
 ```
 
-If you want it to actually **show** demo data (instead of allowing to configure bindings), use *IsDesignTimeCreatable*:
+If you want it to actually **show** demo data (instead of allowing to configure bindings), use `IsDesignTimeCreatable`:
 
 ```
 d:DataContext="{d:DesignInstance ViewModels:DesignPersonViewModel, IsDesignTimeCreatable=True}"

@@ -133,9 +133,9 @@
                     <div class="section">
 <h1 id="viewmodellocator">ViewModelLocator<a class="headerlink" href="#viewmodellocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <p>Starting with Catel 3.0, there are several ways to hook up a view model to the view. When a view is constructed, an MVVM behavior is added to the view. Thanks to these MVVM behaviors, it is possible to use exactly the same logic on 3rd party controls.</p>
-<p>Note that the while using the conventions, magic words such as &quot;View&quot;, &quot;Control&quot;, &quot;UserControl&quot;, &quot;Window&quot; and &quot;Page&quot; will be stripped from the view name while locating the view model type</p>
-<h2 id="resolving-by-naming-convention">Resolving by naming convention<a class="headerlink" href="#resolving-by-naming-convention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>If the <em>GetViewModelType</em> method returns <em>null</em> (which is the default behavior), the view will resolve the <em>IViewModelLocator</em> from the <em>ServiceLocator</em>. Then it will use the <em>ResolveViewModel</em> method to resolve the view model based on the type of the view.</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that the while using the conventions, magic words such as &quot;View&quot;, &quot;Control&quot;, &quot;UserControl&quot;, &quot;Window&quot; and &quot;Page&quot; will be stripped from the view name while locating the view model type</p>
+</div><h2 id="resolving-by-naming-convention">Resolving by naming convention<a class="headerlink" href="#resolving-by-naming-convention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>If the <code>GetViewModelType</code> method returns <code>null</code> (which is the default behavior), the view will resolve the <code>IViewModelLocator</code> from the <code>ServiceLocator</code>. Then it will use the <code>ResolveViewModel</code> method to resolve the view model based on the type of the view.</p>
 <p>For example, the following view:</p>
 <pre class="nocode">Catel.Examples.Views.MyView
 </pre><p>will be resolved as:</p>
@@ -166,8 +166,8 @@ var viewModelType = viewModelLocator.ResolveViewModel(typeof(MyView));
 <li>[CURRENT].[VW]ActivityViewModel</li>
 <li>[CURRENT].[VW]FragmentViewModel</li>
 </ul>
-<p>For more information about naming conventions, see <a href="Naming_conventions">Naming conventions</a></p>
-<p>However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>For more information about naming conventions, see <a href="./naming-conventions.htm">Naming conventions</a></p>
+</div><p>However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:</p>
 <pre class="nocode">var viewModelLocator = ServiceLocator.Default.ResolveType&lt;IViewModelLocator&gt;();
 viewModelLocator.NamingConventions.Add(&quot;MyCustomAssembly.ViewModels.[VW]ViewModel&quot;);
 </pre><h2 id="registering-custom-view-models">Registering custom view models<a class="headerlink" href="#registering-custom-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -175,10 +175,10 @@ viewModelLocator.NamingConventions.Add(&quot;MyCustomAssembly.ViewModels.[VW]Vie
 <pre class="nocode">var viewModelLocator = ServiceLocator.Default.ResolveType&lt;IViewModelLocator&gt;();
 viewModelLocator.Register(typeof(MyViewNotFollowingNamingConvention), typeof(MyViewModel));
 </pre><h2 id="using-a-custom-viewmodellocator">Using a custom ViewModelLocator<a class="headerlink" href="#using-a-custom-viewmodellocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>If you want to have total freedom to determine which view model is provided per view (maybe there are other services that have an impact on this), it is possible to create a custom <em>IViewModelLocator</em> implementation. Then the only thing to do is to register it using the following code:</p>
+<p>If you want to have total freedom to determine which view model is provided per view (maybe there are other services that have an impact on this), it is possible to create a custom <code>IViewModelLocator</code> implementation. Then the only thing to do is to register it using the following code:</p>
 <pre class="nocode">ServiceLocator.Default.Register&lt;IViewModelLocator, MyViewModelLocator&gt;();
 </pre><h2 id="using-a-generic-implementation-of-the-view">Using a generic implementation of the view<a class="headerlink" href="#using-a-generic-implementation-of-the-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Last but not least, it is still possible to use the &quot;old-fashioned&quot; way by using the generic view bases. These classes directly derive from the non-generic views and return the generic type definition of the view model using the <em>GetViewModelType</em> method.</p>
+<p>Last but not least, it is still possible to use the &quot;old-fashioned&quot; way by using the generic view bases. These classes directly derive from the non-generic views and return the generic type definition of the view model using the <code>GetViewModelType</code> method.</p>
 
                     </div>
                 </div>

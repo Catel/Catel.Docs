@@ -1,8 +1,10 @@
 # LocationService
 
-The *ILocationService* allows a developer to use GPS devices inside a view model.
+The `ILocationService` allows a developer to use GPS devices inside a view model.
 
+@alert important
 It is important that the service must be started and stopped to retrieve values
+@end
 
 ## Starting the service
 
@@ -15,7 +17,7 @@ locationService.LocationChanged += OnCurrentLocationChanged;
 locationService.Start();
 ```
 
-The service will raise the *LocationChanged* event when a new location becomes available.
+The service will raise the `LocationChanged` event when a new location becomes available.
 
 ## Stopping the service
 
@@ -30,7 +32,7 @@ locationService.Stop();
 
 ## Emulating GPS without device
 
-It is possible to emulate GPS without actually owning a Windows Phone 7 or emulate data in the emulator. To accomplish this, it is required to use the *Catel.MVVM.Services.Test.LocationService* class. This class can be used in the following way:
+It is possible to emulate GPS without actually owning a device or emulate data in the emulator. To accomplish this, it is required to use the `Catel.MVVM.Services.Test.LocationService` class. This class can be used in the following way:
 
 ```
 var dependencyResolver = this.GetDependencyResolver();

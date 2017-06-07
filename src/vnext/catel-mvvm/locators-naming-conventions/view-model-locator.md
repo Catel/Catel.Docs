@@ -2,11 +2,13 @@
 
 Starting with Catel 3.0, there are several ways to hook up a view model to the view. When a view is constructed, an MVVM behavior is added to the view. Thanks to these MVVM behaviors, it is possible to use exactly the same logic on 3rd party controls.
 
+@alert important
 Note that the while using the conventions, magic words such as "View", "Control", "UserControl", "Window" and "Page" will be stripped from the view name while locating the view model type
+@end
 
 ## Resolving by naming convention
 
-If the *GetViewModelType* method returns *null* (which is the default behavior), the view will resolve the *IViewModelLocator* from the *ServiceLocator*. Then it will use the *ResolveViewModel* method to resolve the view model based on the type of the view.
+If the `GetViewModelType` method returns `null` (which is the default behavior), the view will resolve the `IViewModelLocator` from the `ServiceLocator`. Then it will use the `ResolveViewModel` method to resolve the view model based on the type of the view.
 
 For example, the following view:
 
@@ -52,7 +54,9 @@ By default, the *IViewModelLocator* uses the following naming conventions to res
 -   [CURRENT].[VW]ActivityViewModel
 -   [CURRENT].[VW]FragmentViewModel
 
-For more information about naming conventions, see [Naming conventions](Naming_conventions)
+@alert info
+For more information about naming conventions, see [Naming conventions](./naming-conventions.md)
+@end
 
 However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:
 
@@ -72,7 +76,7 @@ viewModelLocator.Register(typeof(MyViewNotFollowingNamingConvention), typeof(MyV
 
 ## Using a custom ViewModelLocator
 
-If you want to have total freedom to determine which view model is provided per view (maybe there are other services that have an impact on this), it is possible to create a custom *IViewModelLocator* implementation. Then the only thing to do is to register it using the following code:
+If you want to have total freedom to determine which view model is provided per view (maybe there are other services that have an impact on this), it is possible to create a custom `IViewModelLocator` implementation. Then the only thing to do is to register it using the following code:
 
 ```
 ServiceLocator.Default.Register<IViewModelLocator, MyViewModelLocator>();
@@ -80,5 +84,5 @@ ServiceLocator.Default.Register<IViewModelLocator, MyViewModelLocator>();
 
 ## Using a generic implementation of the view
 
-Last but not least, it is still possible to use the "old-fashioned" way by using the generic view bases. These classes directly derive from the non-generic views and return the generic type definition of the view model using the *GetViewModelType* method.
+Last but not least, it is still possible to use the "old-fashioned" way by using the generic view bases. These classes directly derive from the non-generic views and return the generic type definition of the view model using the `GetViewModelType` method.
 

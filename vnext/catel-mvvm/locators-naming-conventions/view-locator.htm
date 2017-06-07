@@ -131,9 +131,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="viewlocator">ViewLocator<a class="headerlink" href="#viewlocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The <em>IViewLocator</em> class is responsible for resolving the right views for a view model. Before Catel 3.0, the <em>IUIVisualizerService</em> was responsible for resolving the view, but this responsibility is now taken over by the <em>IViewLocator</em>. The <em>UIVisualizerService</em> internally uses the <em>IViewLocator</em> to resolve the views. </p>
+<p>The <code>IViewLocator</code> class is responsible for resolving the right views for a view model. Before Catel 3.0, the <code>IUIVisualizerService</code> was responsible for resolving the view, but this responsibility is now taken over by the <code>IViewLocator</code>. The <code>UIVisualizerService</code> internally uses the <code>IViewLocator</code> to resolve the views. </p>
 <h2 id="resolving-by-naming-convention">Resolving by naming convention<a class="headerlink" href="#resolving-by-naming-convention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>It is possible to resolve views using the <em>IViewLocator</em>. Then you can use the <em>ResolveView</em> method to resolve the view based on the type of the view model.</p>
+<p>It is possible to resolve views using the <code>IViewLocator</code>. Then you can use the <code>ResolveView</code> method to resolve the view based on the type of the view model.</p>
 <p>For example, the following view model:</p>
 <pre class="nocode">Catel.Examples.ViewModels.MyViewModel
 </pre><p>will be resolved as:</p>
@@ -143,7 +143,7 @@
 <pre class="nocode">var viewLocator = ServiceLocator.Default.ResolveType&lt;IViewLocator&gt;();
 var viewType = viewLocator.ResolveView(typeof(MyViewModel));
 </pre><h2 id="customizing-naming-conventions">Customizing naming conventions<a class="headerlink" href="#customizing-naming-conventions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>By default, the IViewLocator uses the following naming conventions to resolve views:</p>
+<p>By default, the <code>IViewLocator</code> uses the following naming conventions to resolve views:</p>
 <ul>
 <li>[UP].Views.[VM]</li>
 <li>[UP].Views.[VM]View</li>
@@ -198,9 +198,8 @@ var viewType = viewLocator.ResolveView(typeof(MyViewModel));
 <li>[CURRENT].[VM]Activity</li>
 <li>[CURRENT].[VM]Fragment</li>
 </ul>
-<p> </p>
-<p>For more information about naming conventions, see <a href="Naming_conventions">Naming conventions</a></p>
-<p>However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>For more information about naming conventions, see <a href="./naming-conventions.htm">Naming conventions</a></p>
+</div><p>However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:</p>
 <pre class="nocode">var viewLocator = ServiceLocator.Default.ResolveType&lt;IViewLocator&gt;();
 viewLocator.NamingConventions.Add(&quot;MyCustomAssembly.Views.[VM]View&quot;);
 </pre><h2 id="registering-custom-views">Registering custom views<a class="headerlink" href="#registering-custom-views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -208,7 +207,7 @@ viewLocator.NamingConventions.Add(&quot;MyCustomAssembly.Views.[VM]View&quot;);
 <pre class="nocode">var viewLocator = ServiceLocator.Default.ResolveType&lt;IViewLocator&gt;();
 viewLocator.Register(typeof(MyViewModelNotFollowingNamingConvention), typeof(MyView));
 </pre><h2 id="using-a-custom-viewlocator">Using a custom ViewLocator<a class="headerlink" href="#using-a-custom-viewlocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>If you want to have total freedom to determine which view is provided per view model (maybe there are other services that have an impact on this), it is possible to create a custom IViewLocator implementation. Then the only thing to do is to register it using the following code:</p>
+<p>If you want to have total freedom to determine which view is provided per view model (maybe there are other services that have an impact on this), it is possible to create a custom <code>IViewLocator</code> implementation. Then the only thing to do is to register it using the following code:</p>
 <pre class="nocode">ServiceLocator.Default.RegisterType&lt;IViewLocator, MyViewLocator&gt;();
 </pre>
                     </div>

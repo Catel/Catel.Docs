@@ -1,8 +1,6 @@
 # ViewExportService
 
-The *IViewExportService *allows a developer to export a specific view that belongs to a view model to the clipboard, a file or a printer.
-
-/\*\*/ Exporting a view
+The `IViewExportService` allows a developer to export a specific view that belongs to a view model to the clipboard, a file or a printer.
 
 ## Exporting a view
 

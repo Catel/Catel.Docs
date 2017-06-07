@@ -145,15 +145,15 @@
                 <div role="main">
                     <div class="section">
 <h1 id="locationservice">LocationService<a class="headerlink" href="#locationservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The <em>ILocationService</em> allows a developer to use GPS devices inside a view model.</p>
-<p>It is important that the service must be started and stopped to retrieve values</p>
-<h2 id="starting-the-service">Starting the service<a class="headerlink" href="#starting-the-service" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <code>ILocationService</code> allows a developer to use GPS devices inside a view model.</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>It is important that the service must be started and stopped to retrieve values</p>
+</div><h2 id="starting-the-service">Starting the service<a class="headerlink" href="#starting-the-service" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The GPS service needs to be started and stopped. To start the GPS service, use the following code:</p>
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var locationService = dependencyResolver.Resolve&lt;ILocationService&gt;();
 locationService.LocationChanged += OnCurrentLocationChanged;
 locationService.Start();
-</pre><p>The service will raise the <em>LocationChanged</em> event when a new location becomes available.</p>
+</pre><p>The service will raise the <code>LocationChanged</code> event when a new location becomes available.</p>
 <h2 id="stopping-the-service">Stopping the service<a class="headerlink" href="#stopping-the-service" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>It is required to stop the service when it is no longer needed. The service can be stopped using the following code:</p>
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
@@ -161,7 +161,7 @@ var locationService = dependencyResolver.Resolve&lt;ILocationService&gt;();
 locationService.LocationChanged -= OnCurrentLocationChanged;
 locationService.Stop();
 </pre><h2 id="emulating-gps-without-device">Emulating GPS without device<a class="headerlink" href="#emulating-gps-without-device" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>It is possible to emulate GPS without actually owning a Windows Phone 7 or emulate data in the emulator. To accomplish this, it is required to use the <em>Catel.MVVM.Services.Test.LocationService</em> class. This class can be used in the following way:</p>
+<p>It is possible to emulate GPS without actually owning a device or emulate data in the emulator. To accomplish this, it is required to use the <code>Catel.MVVM.Services.Test.LocationService</code> class. This class can be used in the following way:</p>
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 Test.LocationService service = (Test.LocationService)dependencyResolver.Resolve&lt;ILocationService&gt;();
 

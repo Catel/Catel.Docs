@@ -1,6 +1,6 @@
 # NavigationService
 
-The *INavigationService* allows a developer to navigate to other pages inside an application using view models only.
+The `INavigationService` allows a developer to navigate to other pages inside an application using view models only.
 
 All pages will have to be registered manually or following the right naming convention.
 
@@ -16,7 +16,7 @@ navigationService.CloseApplication();
 
 ## Preventing an application to be closed
 
-To prevent an application to be closed, one can subscribe to the ApplicationClosing event:
+To prevent an application to be closed, one can subscribe to the `ApplicationClosing` event:
 
 ```
 var dependencyResolver = this.GetDependencyResolver();
@@ -51,7 +51,7 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.Navigate<EmployeeViewModel>(parameters);
 ```
 
-To read the navigation parameters in the receiving view model, use the OnNavigationCompleted method.
+To read the navigation parameters in the receiving view model, use the `OnNavigationCompleted` method.
 
 ## Navigating back and forward
 
@@ -86,7 +86,7 @@ navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage
 
 ## Using naming conventions to find pages
 
-If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the [Show](https://catelproject.atlassian.net/wiki/) method will try to find the view using the naming convention.
+If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the `Show` method will try to find the view using the naming convention.
 
 To add a naming convention, use the following code:
 
@@ -126,8 +126,3 @@ By default, the following naming conventions will be used:
 -    /UI/Pages/[VM]Page.xaml
 -    /UI/Windows/[VM].xaml
 -    /UI/Windows/[VM]Window.xaml 
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [services\_messageservice.png](attachments/1409207/1507349.png) (image/png)
-

@@ -1,6 +1,6 @@
 # VibrateService
 
-The *IVibrateService* allows a developer to start and stop vibration of the device via a service.
+The `IVibrateService` allows a developer to start and stop vibration of the device via a service.
 
 ## Starting vibration
 

@@ -1,10 +1,10 @@
 # ViewLocator
 
-The *IViewLocator* class is responsible for resolving the right views for a view model. Before Catel 3.0, the *IUIVisualizerService* was responsible for resolving the view, but this responsibility is now taken over by the *IViewLocator*. The *UIVisualizerService* internally uses the *IViewLocator* to resolve the views. 
+The `IViewLocator` class is responsible for resolving the right views for a view model. Before Catel 3.0, the `IUIVisualizerService` was responsible for resolving the view, but this responsibility is now taken over by the `IViewLocator`. The `UIVisualizerService` internally uses the `IViewLocator` to resolve the views. 
 
 ## Resolving by naming convention
 
-It is possible to resolve views using the *IViewLocator*. Then you can use the *ResolveView* method to resolve the view based on the type of the view model.
+It is possible to resolve views using the `IViewLocator`. Then you can use the `ResolveView` method to resolve the view based on the type of the view model.
 
 For example, the following view model:
 
@@ -29,7 +29,7 @@ var viewType = viewLocator.ResolveView(typeof(MyViewModel));
 
 ## Customizing naming conventions
 
-By default, the IViewLocator uses the following naming conventions to resolve views:
+By default, the `IViewLocator` uses the following naming conventions to resolve views:
 
 -   [UP].Views.[VM]
 -   [UP].Views.[VM]View
@@ -84,9 +84,9 @@ By default, the IViewLocator uses the following naming conventions to resolve vi
 -   [CURRENT].[VM]Activity
 -   [CURRENT].[VM]Fragment
 
- 
-
-For more information about naming conventions, see [Naming conventions](Naming_conventions)
+@alert info
+For more information about naming conventions, see [Naming conventions](./naming-conventions.md)
+@end
 
 However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:
 
@@ -106,7 +106,7 @@ viewLocator.Register(typeof(MyViewModelNotFollowingNamingConvention), typeof(MyV
 
 ## Using a custom ViewLocator
 
-If you want to have total freedom to determine which view is provided per view model (maybe there are other services that have an impact on this), it is possible to create a custom IViewLocator implementation. Then the only thing to do is to register it using the following code:
+If you want to have total freedom to determine which view is provided per view model (maybe there are other services that have an impact on this), it is possible to create a custom `IViewLocator` implementation. Then the only thing to do is to register it using the following code:
 
 ```
 ServiceLocator.Default.RegisterType<IViewLocator, MyViewLocator>();

@@ -91,7 +91,6 @@
 <li class="tocentry"><a href="#changing-the-status">Changing the status</a></li>
 <li class="tocentry"><a href="#showing-a-determinate-please-wait-window">Showing a determinate please wait window</a></li>
 <li class="tocentry"><a href="#pushpop">Push/Pop</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../catel-mvvm/services/process-service.htm">ProcessService</a>
 </li>
@@ -149,8 +148,7 @@
                 <div role="main">
                     <div class="section">
 <h1 id="pleasewaitservice">PleaseWaitService<a class="headerlink" href="#pleasewaitservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The <em>IPleaseWaitService</em> allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. </p>
-<p><img src="attachments/1409211/1507348.png" /></p>
+<p>The <code>IPleaseWaitService</code> allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. </p>
 <h2 id="showing">Showing<a class="headerlink" href="#showing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <pre class="nocode">using Catel.IoC;
 </pre><pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
@@ -161,7 +159,7 @@ pleaseWaitService.Show();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.Hide();
 </pre><h2 id="showing-and-automatically-hide">Showing and automatically hide<a class="headerlink" href="#showing-and-automatically-hide" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The <em>IPleaseWaitService</em> can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the <em>Show</em> method and the service will hide the window as soon as the delegate has completed.</p>
+<p>The <code>IPleaseWaitService</code> can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the <code>Show</code> method and the service will hide the window as soon as the delegate has completed.</p>
 <pre class="nocode">using Catel.IoC;
 </pre><pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
@@ -171,18 +169,16 @@ pleaseWaitService.Show(() =&gt; Thread.Sleep(1500));
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.UpdateStatus(&quot;new status&quot;);
 </pre><h2 id="showing-a-determinate-please-wait-window">Showing a determinate please wait window<a class="headerlink" href="#showing-a-determinate-please-wait-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>By default, the <em>IPleaseWaitService</em> shows an indeterminate state (no actual progress is visible).</p>
-<p>The <em>UpdateStatus</em> method can be used to show the window. The <em>statusFormat</em> argument can contain '{0}' (represents the current item) and '{1}' (represents the total items). However, they can also be left out.</p>
+<p>By default, the <code>IPleaseWaitService</code> shows an indeterminate state (no actual progress is visible).</p>
+<p>The <code>UpdateStatus</code> method can be used to show the window. The <code>statusFormat</code> argument can contain '{0}' (represents the current item) and '{1}' (represents the total items). However, they can also be left out.</p>
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var pleaseWaitService = dependencyResolver.Resolve&lt;IPleaseWaitService&gt;();
 pleaseWaitService.UpdateStatus(1, 5, &quot;Updating item {0} of {1}&quot;);
 </pre><p>The determinate version can be hidden via a call to <em>Hide</em> or when the currentItem argument is larger than the number of totalItems.</p>
 <h2 id="pushpop">Push/Pop<a class="headerlink" href="#pushpop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Sometimes, multiple view models or multiple actions use the service. It's not possible to hide the window when the first action is completed, because the user will still have to wait for the other actions to complete (without a please wait window). To implement this correctly, it is possible to use the <em>Push</em> and <em>Pop</em> methods.</p>
-<p>The <em>Push</em> method shows the window if it is not already visible and then increases an internal counter. At the start of each (asynchronous) action, the developer can call the <em>Push</em> method. When the action is completed, the developer calls <em>Pop</em> which will internally decrease the counter. If the counter hits zero (0), the window is automatically hidden.</p>
-<p>It is possible to hide the window, even when the internal counter is not yet zero. A call to <em>Hide</em> will reset the counter to zero and thus hide the window.</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/1409211/1507348.png">services_pleasewaitservice.png</a> (image/png)</p>
+<p>Sometimes, multiple view models or multiple actions use the service. It's not possible to hide the window when the first action is completed, because the user will still have to wait for the other actions to complete (without a please wait window). To implement this correctly, it is possible to use the <code>Push</code> and <code>Pop</code> methods.</p>
+<p>The <code>Push</code> method shows the window if it is not already visible and then increases an internal counter. At the start of each (asynchronous) action, the developer can call the <code>Push</code> method. When the action is completed, the developer calls <code>Pop</code> which will internally decrease the counter. If the counter hits zero (0), the window is automatically hidden.</p>
+<p>It is possible to hide the window, even when the internal counter is not yet zero. A call to <code>Hide</code> will reset the counter to zero and thus hide the window.</p>
 
                     </div>
                 </div>

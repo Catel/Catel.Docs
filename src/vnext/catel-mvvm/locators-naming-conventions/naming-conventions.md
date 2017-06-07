@@ -1,6 +1,6 @@
 # Naming conventions
 
-Some services in Catel support naming conventions. For example, the *IViewLocator* and *IViewModelLocator* allow naming conventions to prevent a user from having to register all views and view models. Internally, the naming conventions are resolved using the *NamingConvention* helper class. This part of the documentation explains the possible constants in naming conventions.
+Some services in Catel support naming conventions. For example, the `IViewLocator` and `IViewModelLocator` allow naming conventions to prevent a user from having to register all views and view models. Internally, the naming conventions are resolved using the `NamingConvention` helper class. This part of the documentation explains the possible constants in naming conventions.
 
 ## [AS] constant
 

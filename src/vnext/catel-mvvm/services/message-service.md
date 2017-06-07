@@ -1,8 +1,6 @@
 # MessageService
 
-The *IMessageService* allows a developer to show message boxes from a view model.
-
-![](attachments/1409207/1507349.png)
+The `IMessageService` allows a developer to show message boxes from a view model.
 
 ## Showing a message
 
@@ -26,7 +24,7 @@ await messageService.ShowError("Whoops, something went wrong");
 
 ## Requesting confirmation
 
-It is also possible to request confirmation from the user. The number of possibilities depends on the target platform (for example, not all platforms support *YesNo*).
+It is also possible to request confirmation from the user. The number of possibilities depends on the target platform (for example, not all platforms support `YesNo`).
 
 The following code must be used to request confirmation:
 
@@ -47,5 +45,5 @@ var messageService = dependencyResolver.Resolve<IMessageService>();
 await messageService.Show("Are you sure you want to do this?", "Are you sure?", MessageButton.YesNo, OnMessageServiceComplete);
 ```
 
-There are two possible callbacks, one with a result of type *Func\<MessageResult\>* or one without a result of type Action.
+There are two possible callbacks, one with a result of type `Func\<MessageResult\>` or one without a result of type Action.
 

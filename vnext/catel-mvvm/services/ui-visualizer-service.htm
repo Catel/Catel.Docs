@@ -101,7 +101,6 @@
 <li class="tocentry"><a href="#showing-a-window-with-callback">Showing a window with callback</a></li>
 <li class="tocentry"><a href="#registering-a-window">Registering a window</a></li>
 <li class="tocentry"><a href="#using-naming-conventions-to-find-windows">Using naming conventions to find windows</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../catel-mvvm/services/vibrate-service.htm">VibrateService</a>
 </li>
@@ -149,9 +148,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="uivisualizerservice">UIVisualizerService<a class="headerlink" href="#uivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The <em>IUIVisualizerService</em> allows a developer to show (modal) windows or dialogs without actually referencing a specific view. Internally, the <em>UIVisualizerService</em> uses the <em>ViewLocator</em> to resolve views.</p>
+<p>The <code>IUIVisualizerService</code> allows a developer to show (modal) windows or dialogs without actually referencing a specific view. Internally, the <code>UIVisualizerService</code> uses the <code>ViewLocator</code> to resolve views.</p>
 <h2 id="screenshot">Screenshot<a class="headerlink" href="#screenshot" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="attachments/1409219/1507346.png" /></p>
+<p><img src="../../images/catel-mvvm/services/ui-visualizer-service/example.png" width="531" height="360" /></p>
 <h2 id="showing-a-non-modal-window">Showing a non-modal window<a class="headerlink" href="#showing-a-non-modal-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>To show a non-modal window, use the following code:</p>
 <pre class="nocode">var viewModel = new EmployeeViewModel();
@@ -179,9 +178,7 @@ uiVisualizerService.Show(viewModel, OnWindowClosed);
 var uiVisualizerService = dependencyResolver.Resolve&lt;IUIVisualizerService&gt;();
 uiVisualizerService.Register(typeof(EmployeeViewModel), typeof(EmployeeView));
 </pre><h2 id="using-naming-conventions-to-find-windows">Using naming conventions to find windows<a class="headerlink" href="#using-naming-conventions-to-find-windows" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Please see the <a href="ViewLocator">ViewLocator</a>topic.</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/1409219/1507346.png">services_uivisualizerservice.png</a> (image/png)</p>
+<p>Please see the <a href="../locators-naming-conventions/view-locator.htm">ViewLocator</a>topic.</p>
 
                     </div>
                 </div>

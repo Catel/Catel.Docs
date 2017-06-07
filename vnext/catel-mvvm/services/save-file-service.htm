@@ -143,12 +143,9 @@
                 <div role="main">
                     <div class="section">
 <h1 id="savefileservice">SaveFileService<a class="headerlink" href="#savefileservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>The <em>ISaveFileService</em> allows a developer to let the user choose a file from inside a view model.</p>
-<ul>
-<li><a href="#SaveFileService-Choosingafile">Choosing a file</a></li>
-</ul>
+<p>The <code>ISaveFileService</code> allows a developer to let the user choose a file from inside a view model.</p>
 <h2 id="choosing-a-file">Choosing a file<a class="headerlink" href="#choosing-a-file" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>To select a file to save, it is required to set the right properties of the service and then make a call to the <em>DetermineFile</em> method:</p>
+<p>To select a file to save, it is required to set the right properties of the service and then make a call to the <code>DetermineFile</code> method:</p>
 <pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
 var saveFileService = dependencyResolver.Resolve&lt;ISaveFileService&gt;();
 saveFileService.Filter = &quot;C# File|*.cs&quot;;
