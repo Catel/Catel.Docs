@@ -372,6 +372,7 @@
 				"Requery commands automatically" : "tips-tricks/mvvm/requery-commands-automatically.md",
 				"Using a tabbed interface with MVVM" : "tips-tricks/mvvm/using-tabbed-interface-with-mvvm.md",
 			}
-		}
+		},
+		"API reference" : "reference/**"
     }
 }

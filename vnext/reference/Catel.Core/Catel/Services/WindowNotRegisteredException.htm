@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WindowNotRegisteredException - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger.htm">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions.htm">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument.htm">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler.htm">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions.htm">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions.htm">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment.htm">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter.htm">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate.htm">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule.htm">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute.htm">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute.htm">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper.htm">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer.htm">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable.htm">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken.htm">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum.htm">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper.htm">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions.htm">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions.htm">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory.htm">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason.htm">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper.htm">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime.htm">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper.htm">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper.htm">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum.htm">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions.htm">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter.htm">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken.htm">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute.htm">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject.htm">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent.htm">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions.htm">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable.htm">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction.htm">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener.htm">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference.htm">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions.htm">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms.htm">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper.htm">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException.htm">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule.htm">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException.htm">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper.htm">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper.htm">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper.htm">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms.htm">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions.htm">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext.htm">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper.htm">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule.htm">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions.htm">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper.htm">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms.htm">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper.htm">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper.htm">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper.htm">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper.htm">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions.htm">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction.htm">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase.htm">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener.htm">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Caching.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Collections.htm">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ComponentModel.htm">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Configuration.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Core.htm">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Data.htm">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IO.htm">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IoC.htm">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Logging.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Runtime.htm">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Services.htm">Services</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerSensorListener.htm">AccelerometerSensorListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerService.htm">AccelerometerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerValue.htm">AccelerometerValue</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerValueChangedEventArgs.htm">AccelerometerValueChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ApplicationClosingEventArgs.htm">ApplicationClosingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AutoCompletionService.htm">AutoCompletionService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraOperationCompletedEventArgs.htm">CameraOperationCompletedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraService.htm">CameraService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraServiceBase.htm">CameraServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraType.htm">CameraType</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ContentReadyEventArgs.htm">ContentReadyEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/DispatcherService.htm">DispatcherService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ExportMode.htm">ExportMode</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/FileServiceBase.htm">FileServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/FlashMode.htm">FlashMode</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAccelerometerService.htm">IAccelerometerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAccelerometerValue.htm">IAccelerometerValue</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAutoCompletionService.htm">IAutoCompletionService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ICameraService.htm">ICameraService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IDispatcherService.htm">IDispatcherService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IDispatcherServiceExtensions.htm">IDispatcherServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IFileSupport.htm">IFileSupport</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILanguageService.htm">ILanguageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILanguageSource.htm">ILanguageSource</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILocation.htm">ILocation</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILocationService.htm">ILocationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IMessageService.htm">IMessageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/INavigationRootService.htm">INavigationRootService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/INavigationService.htm">INavigationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IObjectConverterService.htm">IObjectConverterService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IObjectConverterServiceExtensions.htm">IObjectConverterServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IOpenFileService.htm">IOpenFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IPleaseWaitService.htm">IPleaseWaitService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IPleaseWaitServiceExtensions.htm">IPleaseWaitServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IProcessService.htm">IProcessService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IRollingInMemoryLogService.htm">IRollingInMemoryLogService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISaveFileService.htm">ISaveFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISchedulerService.htm">ISchedulerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISelectDirectoryService.htm">ISelectDirectoryService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISensorService.htm">ISensorService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IService.htm">IService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStartUpInfoProvider.htm">IStartUpInfoProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStartUpInfoProviderExtensions.htm">IStartUpInfoProviderExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IState.htm">IState</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStateService.htm">IStateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStateServiceExtensions.htm">IStateServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IUIVisualizerService.htm">IUIVisualizerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IUIVisualizerServiceExtensions.htm">IUIVisualizerServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IVibrateService.htm">IVibrateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewExportService.htm">IViewExportService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewModelService.htm">IViewModelService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService.htm">IViewModelWrapperService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey.htm">LanguageResourceKey</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource.htm">LanguageResourceSource</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageService.htm">LanguageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageServiceBase.htm">LanguageServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/Location.htm">Location</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationChangedEventArgs.htm">LocationChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationListener.htm">LocationListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationService.htm">LocationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationServiceBase.htm">LocationServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageBoxButton.htm">MessageBoxButton</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageBoxResult.htm">MessageBoxResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageButton.htm">MessageButton</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageImage.htm">MessageImage</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageResult.htm">MessageResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageService.htm">MessageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NamingConvention.htm">NamingConvention</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationHelper.htm">NavigationHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationRootService.htm">NavigationRootService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationService.htm">NavigationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationServiceBase.htm">NavigationServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ObjectConverterService.htm">ObjectConverterService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/OpenFileService.htm">OpenFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PageNotRegisteredException.htm">PageNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PleaseWaitService.htm">PleaseWaitService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PleaseWaitWorkDelegate.htm">PleaseWaitWorkDelegate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ProcessCompletedDelegate.htm">ProcessCompletedDelegate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ProcessService.htm">ProcessService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/RollingInMemoryLogService.htm">RollingInMemoryLogService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SaveFileService.htm">SaveFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SchedulerService.htm">SchedulerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SelectDirectoryService.htm">SelectDirectoryService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SensorServiceBase.htm">SensorServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ServiceBase.htm">ServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/Size.htm">Size</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/StartUpInfoProvider.htm">StartUpInfoProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/StateService.htm">StateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/UICompletedEventArgs.htm">UICompletedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/UIVisualizerService.htm">UIVisualizerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/VibrateService.htm">VibrateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewExportService.htm">ViewExportService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelServiceBase.htm">ViewModelServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelWrapperService.htm">ViewModelWrapperService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelWrapperServiceBase.htm">ViewModelWrapperServiceBase</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException.htm">WindowNotRegisteredException</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/WrapOptions.htm">WrapOptions</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Test.htm">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Text.htm">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Threading.htm">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../Services.htm">Services</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException.htm">WindowNotRegisteredException</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="windownotregisteredexception">WindowNotRegisteredException<a class="headerlink" href="#windownotregisteredexception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Services</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class WindowNotRegisteredException : Exception
+</pre><p><strong>Base types</strong>
+<a href="">Exception</a></p>
+<p>Exception in case a window not registered, but still being used.</p>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="windownotregisteredexceptionstring-name">WindowNotRegisteredException(string name)<a class="headerlink" href="#windownotregisteredexceptionstring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">WindowNotRegisteredException</a> class.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+The name of the window.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="name">Name<a class="headerlink" href="#name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the name of the window.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Services/WindowNotRegisteredException.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

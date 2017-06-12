@@ -1,0 +1,41 @@
+
+
+# IExecuteWithObject
+
+Name|Value
+---|---
+Assembly|Catel.Core
+Namespace|Catel
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+
+```
+public interface IExecuteWithObject
+```
+
+Interface defining a method accepting an object parameter. This allows the execution
+    of generic objects in a non-generic way.
+
+
+
+## Methods
+
+### ExecuteWithObject(object parameter)
+
+Executes the object with the object parameter.
+    
+
+
+    The class implementing this interface is responsible for casting the parameter
+    to the right type and to determine whether ```null``` is allowed as parameter.
+
+#### Parameters
+
+**parameter**
+The parameter.
+
+#### Returns
+
+```true``` if the action is executed successfully; otherwise ```false```.
+
+
+

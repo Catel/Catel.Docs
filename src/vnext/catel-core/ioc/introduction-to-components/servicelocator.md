@@ -2,17 +2,19 @@
 
 The *ServiceLocator* services as the container inside Catel.
 
-Internally it uses the *TypeFactory* as instantiator for the services.
+Internally it uses the `TypeFactory` as instantiator for the services.
 
-Catel uses it's own *ServiceLocator* implementing the *IServiceLocator* to gather all services required by Catel. For example, default services are the *IPleaseWaitService* and the *IUIVisualizerService*. By default, when the first view model is instantiated, Catel registers all default out of the box services to the *ServiceLocator*. However, it only does this when the specific services are not already registered. This allows an end-developer to register his/her own implementations of the services before any view model is instantiated (for example, at application startup).
+Catel uses it's own `ServiceLocator` implementing the `IServiceLocator` to gather all services required by Catel. For example, default services are the `IPleaseWaitService` and the `IUIVisualizerService`. By default, when the first view model is instantiated, Catel registers all default out of the box services to the `ServiceLocator`. However, it only does this when the specific services are not already registered. This allows an end-developer to register his/her own implementations of the services before any view model is instantiated (for example, at application startup).
 
-The *ServiceLocator* can be instantiated, but Catel instantiates one instance that can be used and shared amongst all objects inside the same *AppDomain*. The *ServiceLocator* can be retrieved by using *ServiceLocator*.*Default*.
+The `ServiceLocator` can be instantiated, but Catel instantiates one instance that can be used and shared amongst all objects inside the same `AppDomain`. The `ServiceLocator` can be retrieved by using `ServiceLocator`.`Default`.
 
-For more information how types are instantiated and dependency injection, take a look at the [TypeFactory documentation](Introduction_to_the_TypeFactory)
+@alert info
+For more information how types are instantiated and dependency injection, take a look at the [TypeFactory documentation](./typefactory.md)
+@end
 
 ## Registering a type
 
-Use the following code to register a specific type in the *ServiceLocator*:
+Use the following code to register a specific type in the `ServiceLocator`:
 
 ```
 ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
@@ -20,7 +22,7 @@ ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
 
 ## Registering a late-bound type
 
-Use the following code to register a late-bound type in the *ServiceLocator*:
+Use the following code to register a late-bound type in the `ServiceLocator`:
 
 ```
 ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitService());
@@ -28,7 +30,7 @@ ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitServi
 
 ## Registering an instance of a type
 
-Catel uses the *TypeFactory* or *Activator.CreateInstance* to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:
+Catel uses the `TypeFactory` or `Activator.CreateInstance` to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:
 
 ```
 var pleaseWaitService = new PleaseWaitService();

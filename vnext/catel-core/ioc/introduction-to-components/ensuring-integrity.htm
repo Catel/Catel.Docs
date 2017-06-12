@@ -19,7 +19,7 @@
     <div class="grid-for-nav">
         <nav data-toggle="nav-shift" class="nav-side stickynav">
             <div class="side-nav-search">
-                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
                 <div role="search">
                     <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
                         <input type="text" name="q" placeholder="Search docs" />
@@ -87,7 +87,6 @@
 <li class="tocentry"><a href="#typerequestinfo">TypeRequestInfo</a></li>
 <li class="tocentry"><a href="#typerequestpath">TypeRequestPath</a></li>
 <li class="tocentry"><a href="#checking-the-integrity-of-the-type-request">Checking the integrity of the type request</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 
 </ul>
@@ -147,6 +146,9 @@
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
 </li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../APIreference.htm">API reference</a></span>
+</li>
 
 </ul>
 				<div class="toc-footer">
@@ -167,14 +169,14 @@
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
 <ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../IoC(ServiceLocator&TypeFactory).htm">IoC (ServiceLocator & TypeFactory)</a></li> / <li><a href="../../../IntroductiontoIoCcomponents.htm">Introduction to IoC components</a></li> / <li><a href="../../../catel-core/ioc/introduction-to-components/ensuring-integrity.htm">Ensuring integrity of the ServiceLocator</a></li></ul>
-
+					
                     </div>
                     <hr />
                 </div>
                 <div role="main">
                     <div class="section">
 <h1 id="ensuring-integrity-of-the-servicelocator">Ensuring integrity of the ServiceLocator<a class="headerlink" href="#ensuring-integrity-of-the-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Starting with Catel 3.6, a very useful feature has been added to the <em>ServiceLocator</em> and <em>TypeFactory</em>. This features is called &quot;integrity checker&quot; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming. To make the example a bit more simple, below are a few classes which demonstrate a common issue in enterprises.</p>
+<p>Starting with Catel 3.6, a very useful feature has been added to the <code>ServiceLocator</code> and <code>TypeFactory</code>. This features is called &quot;integrity checker&quot; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming. To make the example a bit more simple, below are a few classes which demonstrate a common issue in enterprises.</p>
 <pre class="nocode">public class X
 {
     public X(Y y) { }
@@ -189,45 +191,25 @@ public class Z
 {
     public Z(X x) { }
 }
-</pre><p>Note how a round-trip of dependencies is created which will result in a <em>StackOverflowException</em> somewhere in your code. Below is a graphical example what happens. Note that the dotted line is showing the circular dependency causing the StackOverflowException.</p>
-<p>(function(){ var data = { &quot;addon_key&quot;:&quot;com.gliffy.integration.confluence&quot;, &quot;uniqueKey&quot;:&quot;com.gliffy.integration.confluence__gliffy7353989362525653109&quot;, &quot;key&quot;:&quot;gliffy&quot;, &quot;cp&quot;:&quot;/wiki&quot;, &quot;uid&quot;:&quot;geertvanhorrik&quot;, &quot;ukey&quot;:&quot;ff8080813fbbb3f4013fbbb4d3710003&quot;, &quot;general&quot;:&quot;&quot;, &quot;w&quot;:&quot;&quot;, &quot;h&quot;:&quot;&quot;, &quot;url&quot;:&quot;https://confluence-connect.gliffy.net/macro/render?space=CTL&amp;container=3440652&amp;pageId=&amp;name=StackOverflowExample&amp;attachmentId=&amp;imageAttachmentId=&amp;border=&amp;chrome=&amp;html5=&amp;size=&amp;ceoId=&amp;contentPropertiesId=&amp;spaceKey=&amp;version=&amp;migration=&amp;previewPageId=&amp;tz=Europe%2FBerlin&amp;loc=en-GB&amp;user_id=geertvanhorrik&amp;user_key=ff8080813fbbb3f4013fbbb4d3710003&amp;xdm_e=https%3A%2F%2Fcatelproject.atlassian.net&amp;xdm_c=channel-com.gliffy.integration.confluence__gliffy7353989362525653109&amp;cp=%2Fwiki&amp;xdm_deprecated_addon_key_do_not_use=com.gliffy.integration.confluence&amp;lic=active&amp;cv=1.3.35&amp;jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmZjgwODA4MTNmYmJiM2Y0MDEzZmJiYjRkMzcxMDAwMyIsInFzaCI6ImQ2OWQ2MTJjYTAzZTljNDdlMTdiMzA2ZDMyZWY4YjljY2ZjYzQ5NGVlZDQ1Y2ViMDBhMTQyNDlhNDQzYzU5OTAiLCJpc3MiOiJDb25mbHVlbmNlOjEzNTU4NjE0MDgiLCJjb250ZXh0Ijp7InVzZXIiOnsidXNlcktleSI6ImZmODA4MDgxM2ZiYmIzZjQwMTNmYmJiNGQzNzEwMDAzIiwidXNlcm5hbWUiOiJnZWVydHZhbmhvcnJpayIsImRpc3BsYXlOYW1lIjoiR2VlcnQgdmFuIEhvcnJpayJ9fSwiZXhwIjoxNDk2NDgwMDE3LCJpYXQiOjE0OTY0Nzk4Mzd9.FsWzZWpeUeHvO8Y4h03kYGznD2_b32HlkE-rvcj1uJU&quot;, &quot;contentClassifier&quot;:&quot;content&quot;, &quot;productCtx&quot;:&quot;{\&quot;macro.hash\&quot;:\&quot;\&quot;,\&quot;page.id\&quot;:\&quot;3440652\&quot;,\&quot;space.key\&quot;:\&quot;CTL\&quot;,\&quot;user.id\&quot;:\&quot;geertvanhorrik\&quot;,\&quot;page.type\&quot;:\&quot;page\&quot;,\&quot;page.title\&quot;:\&quot;Ensuring integrity of the ServiceLocator\&quot;,\&quot;macro.body\&quot;:\&quot;\&quot;,\&quot;: = | RAW | = :\&quot;:\&quot;name=StackOverflowExample\&quot;,\&quot;space.id\&quot;:\&quot;917505\&quot;,\&quot;macro.truncated\&quot;:\&quot;false\&quot;,\&quot;output.type\&quot;:\&quot;html_export\&quot;,\&quot;page.version\&quot;:\&quot;13\&quot;,\&quot;user.key\&quot;:\&quot;ff8080813fbbb3f4013fbbb4d3710003\&quot;,\&quot;name\&quot;:\&quot;StackOverflowExample\&quot;,\&quot;macro.id\&quot;:\&quot;\&quot;}&quot;, &quot;timeZone&quot;:&quot;Europe/Berlin&quot;, &quot;origin&quot;:&quot;https://confluence-connect.gliffy.net&quot;, &quot;hostOrigin&quot;:&quot;https://catelproject.atlassian.net&quot; }; if(window.AP &amp;&amp; window.AP.subCreate) { window._AP.appendConnectAddon(data); } else { require(['ac/create'], function(create){ create.appendConnectAddon(data); }); } }());</p>
+</pre><p>Note how a round-trip of dependencies is created which will result in a <code>StackOverflowException</code> somewhere in your code. Below is a graphical example what happens. Note that the dotted line is showing the circular dependency causing the StackOverflowException.</p>
+<p><img src="../../../images/catel-core/ioc/introduction-to-components/ensuring-integrity/stackoverflow.png" width="524" height="215" /></p>
 <h2 id="typerequestinfo">TypeRequestInfo<a class="headerlink" href="#typerequestinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The first step for the integrity checker is to make sure that it knows what types are being requested from the <em>ServiceLocator</em> (which will be instantiated by the <em>TypeFactory</em> if required). This class contains all the information about a type being created by the <em>TypeFactory:</em></p>
+<p>The first step for the integrity checker is to make sure that it knows what types are being requested from the <code>ServiceLocator</code> (which will be instantiated by the <code>TypeFactory</code> if required). This class contains all the information about a type being created by the <code>TypeFactory:</code></p>
 <ul>
 <li>Type</li>
 <li>Tag (optional, can be used to differentiate different instances of the same type registration)</li>
 </ul>
 <h2 id="typerequestpath">TypeRequestPath<a class="headerlink" href="#typerequestpath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Now we have detailed information about the types being constructed, it is very important to keep track of the types which are being created by the <em>TypeFactory</em>. During the construction of a type, the <em>TypeFactory</em> will request the <em>ServiceLocator</em> for a type, which will ask the <em>TypeFactory</em> to construct the type again. Each time the <em>TypeFactory</em> starts constructing a type (and currently has a <em>TypeRequestPath</em>), it will create a new instance of the <em>TypeRequestInfo</em> and add it to the <em>TypeRequestPath</em>. The diagram below shows how the <em>TypeRequestPath</em> will evolve.</p>
-<p>Once the <em>TypeRequestPath</em> will contain a duplicate instance of a <em>TypeRequestInfo</em>, it will become invalid (which means there is a circular type dependency).</p>
-<p>Note that this is a very simple example, but normally a type will have several services injected which can have dependencies on their own as well which can cause a very complex type request path</p>
-<h2 id="checking-the-integrity-of-the-type-request">Checking the integrity of the type request<a class="headerlink" href="#checking-the-integrity-of-the-type-request" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>To resolve and construct a type, a lot of communication will happen between the <em>TypeFactory</em> and the <em>ServiceLocator</em>. This flow is show in the diagram below.</p>
-<p>As you can see, there is a lot of communication between the <em>ServiceLocator</em> and <em>TypeFactory</em>. In the <em>TypeRequestPath</em> example we already saw how the path will become invalid when it contains a duplicate instance of the <em>TypeRequestInfo</em>. The <em>TypeRequestPath</em> will then throw a <em>CircularDependencyException</em> with all the necessary information to solve the issue:</p>
-<p><img src="attachments/3440652/3702808.png" /></p>
+<p>Now we have detailed information about the types being constructed, it is very important to keep track of the types which are being created by the <code>TypeFactory</code>. During the construction of a type, the <code>TypeFactory</code> will request the <code>ServiceLocator</code> for a type, which will ask the <code>TypeFactory</code> to construct the type again. Each time the <code>TypeFactory</code> starts constructing a type (and currently has a <code>TypeRequestPath</code>), it will create a new instance of the <code>TypeRequestInfo</code> and add it to the <code>TypeRequestPath</code>. The diagram below shows how the <code>TypeRequestPath</code> will evolve.</p>
+<p><img src="../../../images/catel-core/ioc/introduction-to-components/ensuring-integrity/typerequestpath.png" width="1032" height="512" /></p>
+<p>Once the <code>TypeRequestPath</code> will contain a duplicate instance of a <code>TypeRequestInfo</code>, it will become invalid (which means there is a circular type dependency).</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that this is a very simple example, but normally a type will have several services injected which can have dependencies on their own as well which can cause a very complex type request path</p>
+</div><h2 id="checking-the-integrity-of-the-type-request">Checking the integrity of the type request<a class="headerlink" href="#checking-the-integrity-of-the-type-request" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To resolve and construct a type, a lot of communication will happen between the <code>TypeFactory</code> and the <code>ServiceLocator</code>. This flow is show in the diagram below.</p>
+<p><img src="../../../images/catel-core/ioc/introduction-to-components/ensuring-integrity/flow.png" width="1024" height="230" /></p>
+<p>As you can see, there is a lot of communication between the <code>ServiceLocator</code> and <code>TypeFactory</code>. In the <code>TypeRequestPath</code> example we already saw how the path will become invalid when it contains a duplicate instance of the <code>TypeRequestInfo</code>. The <code>TypeRequestPath</code> will then throw a <code>CircularDependencyException</code> with all the necessary information to solve the issue:</p>
+<p><img src="../../../images/catel-core/ioc/introduction-to-components/ensuring-integrity/quickwatch.png" width="837" height="469" /></p>
 <p>Now you will find the issue in no-time and save yourself a lot of your valuable time!</p>
-<h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702787">StackOverflowExample</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702788.png">StackOverflowExample.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702789">StackOverflowExample</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702790.png">StackOverflowExample.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702785">StackOverflowExample</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702786.png">StackOverflowExample.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702793">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702794.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702795">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702796.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702797">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702798.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702791">ServiceLocatory and TypeFactory communication</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702792.png">ServiceLocatory and TypeFactory communication.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702805">Evolving of the TypeRequestPath</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702806.png">Evolving of the TypeRequestPath.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702803.png">accept.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702804.png">exclamation.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702799">Evolving of the TypeRequestPath</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702800.png">Evolving of the TypeRequestPath.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/3440652/3702808.png">image2013-4-12 0:8:3.png</a> (image/png)</p>
 
                     </div>
                 </div>
@@ -235,31 +217,8 @@ public class Z
                     <hr />
                     <div role="contentinfo">
 
-                      <p>
-					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity.md" target="_blank">contribute</a>!
-					  </p>
-					  <p>
-					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
-					  </p>
-					  <hr />
-					  <p>
-					    <h2>Discussion</h2>
-					   <div id="disqus_thread"></div>
-					   <script>
-					   var disqus_config = function () {
-					   this.page.url = 'http://docs.catelproject.com/catel-core/ioc/introduction-to-components/ensuring-integrity.htm';
-					   this.page.identifier = '../src/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity.md';
-					   };
-					   (function() { // DON'T EDIT BELOW THIS LINE
-					   var d = document, s = d.createElement('script');
-					   s.src = 'https://catel-docs.disqus.com/embed.js';
-					   s.setAttribute('data-timestamp', +new Date());
-					   (d.head || d.body).appendChild(s);
-					   })();
-					   </script>
-					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					  </p>
-					</div>
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity.md" target="_blank">contribute</a>!</p>
+                    </div>
                 </footer>
             </div>
         </section>

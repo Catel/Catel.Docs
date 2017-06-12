@@ -5,7 +5,7 @@ The *TypeFactory* is responsible for actually creating types inside Catel. It us
 1.  List all the constructors, order them from most parameters to least parameters
 2.  While (constructors available)
         try to construct type using injection
-3.  If all constructors fail, the *TypeFactory* will fallback to *Activator.CreateInstance()*
+3.  If all constructors fail, the `TypeFactory` will fallback to `Activator.CreateInstance()`
 
 ## Dependency injection
 
@@ -31,10 +31,7 @@ public class MyClass
 }
 ```
 
-**
-**
-
-**Example 2: good, retrieves the dependencies via the service locator**
+**Example 2: good, retrieves the dependencies via the service locator**)
 
 ```
 public class MyClass
@@ -49,7 +46,6 @@ public class MyClass
     }
 }
 ```
-
  
 
 **Example 3: good, gets the dependencies injected**
@@ -71,7 +67,9 @@ public class MyClass
 }
 ```
 
+@alert info
 There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only
+@end
 
 ## Using dependency injection in Catel
 
@@ -117,7 +115,8 @@ ServiceLocator.Default.SupportedDependencyInjection = false
 
 ## Custom initialization
 
-All types created with the *TypeFactory* can be initialized with custom code. This can be done by implementing the *INeedCustomInitialization* interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.
+All types created with the `TypeFactory` can be initialized with custom code. This can be done by implementing the `INeedCustomInitialization` interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.
 
-To prevent misuse of the *Initialize* method, it is best to implement the interface explicitly
-
+@alert important
+To prevent misuse of the `Initialize` method, it is best to implement the interface explicitly
+@end

@@ -19,7 +19,7 @@
     <div class="grid-for-nav">
         <nav data-toggle="nav-shift" class="nav-side stickynav">
             <div class="side-nav-search">
-                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
                 <div role="search">
                     <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
                         <input type="text" name="q" placeholder="Search docs" />
@@ -87,7 +87,6 @@
 <li class="tocentry"><a href="#managing-the-dependency-resolvers-per-type">Managing the dependency resolvers per type</a></li>
 <li class="tocentry"><a href="#customizing-the-default-dependencyresolver">Customizing the default DependencyResolver</a></li>
 <li class="tocentry"><a href="#customizing-the-dependencyresolvermanager">Customizing the DependencyResolverManager</a></li>
-<li class="tocentry"><a href="#attachments">Attachments:</a></li>
 </ul>
 <li class="tocentry"><a href="../../../catel-core/ioc/introduction-to-components/ensuring-integrity.htm">Ensuring integrity of the ServiceLocator</a>
 </li>
@@ -149,6 +148,9 @@
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
 </li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../APIreference.htm">API reference</a></span>
+</li>
 
 </ul>
 				<div class="toc-footer">
@@ -169,18 +171,18 @@
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
 <ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../IoC(ServiceLocator&TypeFactory).htm">IoC (ServiceLocator & TypeFactory)</a></li> / <li><a href="../../../IntroductiontoIoCcomponents.htm">Introduction to IoC components</a></li> / <li><a href="../../../catel-core/ioc/introduction-to-components/dependencyresolver.htm">DependencyResolver & DependencyResolverManager</a></li></ul>
-
+					
                     </div>
                     <hr />
                 </div>
                 <div role="main">
                     <div class="section">
 <h1 id="introduction-to-dependencyresolver-and-dependencyresolvermanager">Introduction to DependencyResolver and DependencyResolverManager<a class="headerlink" href="#introduction-to-dependencyresolver-and-dependencyresolvermanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
-<p>Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the <em>IDependencyResolver</em> and <em>DependencyResolverManager</em> are introduced.</p>
+<p>Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the <code>IDependencyResolver</code> and <code>DependencyResolverManager</code> are introduced.</p>
 <h2 id="why-the-need-for-a-dependencyresolver">Why the need for a DependencyResolver<a class="headerlink" href="#why-the-need-for-a-dependencyresolver" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>That's a good question. Catel already provides the <em>IServiceLocator</em> which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the *ServiceLocator<em>. To make it simple to customize this behavior,</em> *the <em>DependencyResolver</em> is introduced.</p>
-<p>The main strategy will be to use the <em>DependencyResolver</em> instead of <em>ServiceLocator</em> to resolve the types in Catel, starting with version 3.8</p>
-<p>Though in simple situations, Catel will resolve and inject all types automatically, there are a few exceptions to the rule. One of these exceptions are extension methods. These are static classes which can be used to add functionality to an object. The downside is that you cannot use dependency injection in static classes, and each object that is extended can have their own scoping of dependency resolvers. To solve this issue, Catel introduces the <em>DependencyResolverManager</em>. This is a manager that keeps track of all types and objects and the <em>DependencyResolver</em> that were used to create the object. This way it is still possible to retrieve additional dependencies in extensions methods in the <strong>same</strong> dependency resolver the type was created with.</p>
+<p>That's a good question. Catel already provides the <code>IServiceLocator</code> which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the <code>ServiceLocator</code>. To make it simple to customize this behavior,<code></code>the <code>DependencyResolver</code> is introduced.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>The main strategy will be to use the <code>DependencyResolver</code> instead of <code>ServiceLocator</code> to resolve the types in Catel, starting with version 3.8</p>
+</div><p>Though in simple situations, Catel will resolve and inject all types automatically, there are a few exceptions to the rule. One of these exceptions are extension methods. These are static classes which can be used to add functionality to an object. The downside is that you cannot use dependency injection in static classes, and each object that is extended can have their own scoping of dependency resolvers. To solve this issue, Catel introduces the <code>DependencyResolverManager</code>. This is a manager that keeps track of all types and objects and the <code>DependencyResolver</code> that were used to create the object. This way it is still possible to retrieve additional dependencies in extensions methods in the <code>same</code> dependency resolver the type was created with.</p>
 <p>To illustrate this issue, take a look at the view model below:</p>
 <pre class="nocode">// Set up a different scoping with a custom service locator
 var serviceLocator = new ServiceLocator();
@@ -188,31 +190,31 @@ var serviceLocator = new ServiceLocator();
 var typeFactory = serviceLocator.ResolveType&lt;ITypeFactory&gt;();
  
 var vm = typeFactory.CreateInstance&lt;MyViewModel&gt;();
-</pre><p> In this example, a view model is created with a custom dependency scope. When writing an extension method for the view models, it is impossible to get to this custom scope:</p>
+</pre><p>In this example, a view model is created with a custom dependency scope. When writing an extension method for the view models, it is impossible to get to this custom scope:</p>
 <pre class="nocode">public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
     {
-         // You can use ServiceLocator.Default here, but that is a *different and wrong* scope
+         // You can use ServiceLocator.Default here, but that is a `different and wrong` scope
          var additionalDependency = ServiceLocator.Default.ResolveType&lt;IAdditionalDependency&gt;();
     }
 }
-</pre><p>One option to solve this is to create a property on the view model called <em>DependencyResolver</em> or <em>ServiceLocator</em>. However, it is <strong>not</strong> the responsibility of the view model to store this property. In fact, the view model does not know which scoping was used to create itself. The only way to solve this is to inject the <em>IServiceLocator</em> into the view model, but that's not a good practice.</p>
-<p>Below is a rewritten version of the extensions class which uses the <em>DependencyResolverManager</em>:</p>
+</pre><p>One option to solve this is to create a property on the view model called <code>DependencyResolver</code> or <code>ServiceLocator</code>. However, it is <code>not</code> the responsibility of the view model to store this property. In fact, the view model does not know which scoping was used to create itself. The only way to solve this is to inject the <code>IServiceLocator</code> into the view model, but that's not a good practice.</p>
+<p>Below is a rewritten version of the extensions class which uses the <code>DependencyResolverManager</code>:</p>
 <pre class="nocode">public static class MyViewModelExtensions
 {
     public static void DoSomething(this MyViewModel myViewModel)
     {
-         // Get the *right* scope
+         // Get the `right` scope
          var dependencyResolverManager = DependencyResolverManager.Default;
          var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(myViewModel);
          var additionalDependency = dependencyResolver.Resolve&lt;IAdditionalDependency&gt;();
     }
 }
-</pre><p>Now you have the actual <em>IDependencyResolver</em> that was use to create the view model and can easily provide the right logic with the right scoping.</p>
-<p>Note that there will only be a single instance of a <em>DependencyResolverManager</em>. It is possible to customize the default instance, but there is no need for different scoping of <em>DependencyResolverManager</em> instances so it is valid to use the static instance</p>
-<h2 id="managing-the-dependency-resolvers-per-instance">Managing the dependency resolvers per instance<a class="headerlink" href="#managing-the-dependency-resolvers-per-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The <em>DependencyResolverManager</em> can manage dependency resolvers per instance. This way it is possible to retrieve the actual dependency resolver for a specific object instance.</p>
+</pre><p>Now you have the actual <code>IDependencyResolver</code> that was use to create the view model and can easily provide the right logic with the right scoping.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that there will only be a single instance of a <code>DependencyResolverManager</code>. It is possible to customize the default instance, but there is no need for different scoping of <code>DependencyResolverManager</code> instances so it is valid to use the static instance</p>
+</div><h2 id="managing-the-dependency-resolvers-per-instance">Managing the dependency resolvers per instance<a class="headerlink" href="#managing-the-dependency-resolvers-per-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <code>DependencyResolverManager</code> can manage dependency resolvers per instance. This way it is possible to retrieve the actual dependency resolver for a specific object instance.</p>
 <h3 id="registering-a-dependency-resolver-for-an-instance">Registering a dependency resolver for an instance<a class="headerlink" href="#registering-a-dependency-resolver-for-an-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To register a dependency resolver for an instance, use this code:</p>
 <pre class="nocode">var serviceLocator = new ServiceLocator();
@@ -221,14 +223,15 @@ var myObject = new MySpecialObject();
  
 var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.RegisterDependencyResolverForInstance(myObject, dependencyResolver);
-</pre><p>Note that it is not required to register a <em>DependencyResolver</em> for instances created with the <em>TypeFactory</em>. The <em>TypeFactory</em> automatically registers the <em>DependencyResolver</em> used in the <em>DependencyResolverManager</em>.</p>
-<h3 id="retrieving-a-dependency-resolver-for-an-instance">Retrieving a dependency resolver for an instance<a class="headerlink" href="#retrieving-a-dependency-resolver-for-an-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that it is not required to register a <code>DependencyResolver</code> for instances created with the <code>TypeFactory</code>. The <code>TypeFactory</code> automatically registers the <code>DependencyResolver</code> used in the <code>DependencyResolverManager</code>.</p>
+</div><h3 id="retrieving-a-dependency-resolver-for-an-instance">Retrieving a dependency resolver for an instance<a class="headerlink" href="#retrieving-a-dependency-resolver-for-an-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To retrieve the dependency resolver for a specific instance, use this code:</p>
 <pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(myObject);
 </pre><p>Below is a graph that shows how the dependency resolver of an instance is determined:</p>
+<p><img src="../../../images/catel-core/ioc/introduction-to-components/dependencyresolver/flow.png" width="1200" height="260" /></p>
 <h2 id="managing-the-dependency-resolvers-per-type">Managing the dependency resolvers per type<a class="headerlink" href="#managing-the-dependency-resolvers-per-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>The <em>DependencyResolverManager</em> can manage dependency resolvers per type. This way it is possible to retrieve the actual dependency resolver for a specific type.</p>
+<p>The <code>DependencyResolverManager</code> can manage dependency resolvers per type. This way it is possible to retrieve the actual dependency resolver for a specific type.</p>
 <h3 id="registering-a-dependency-resolver-for-a-type">Registering a dependency resolver for a type<a class="headerlink" href="#registering-a-dependency-resolver-for-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To register a dependency resolver for a type, use this code:</p>
 <pre class="nocode">var serviceLocator = new ServiceLocator();
@@ -236,17 +239,17 @@ var dependencyResolver = new CatelDependencyResolver(serviceLocator);
  
 var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.RegisterDependencyResolverForType(typeof(MyClass), dependencyResolver);
-</pre><p>Note that these registrations are type-specific. You cannot register an interface and all classes deriving from that interface will return the same <em>DependencyResolver</em>. All actual types must be registered separately.</p>
-<h3 id="retrieving-a-dependency-resolver-for-a-type">Retrieving a dependency resolver for a type<a class="headerlink" href="#retrieving-a-dependency-resolver-for-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that these registrations are type-specific. You cannot register an interface and all classes deriving from that interface will return the same <code>DependencyResolver</code>. All actual types must be registered separately.</p>
+</div><h3 id="retrieving-a-dependency-resolver-for-a-type">Retrieving a dependency resolver for a type<a class="headerlink" href="#retrieving-a-dependency-resolver-for-a-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>To retrieve the dependency resolver for a specific instance, use this code:</p>
 <pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForType(typeof(MyClass));
 </pre><h2 id="customizing-the-default-dependencyresolver">Customizing the default DependencyResolver<a class="headerlink" href="#customizing-the-default-dependencyresolver" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>By default, the <em>DependencyResolverManager</em> creates a <em>CatelDependencyResolver</em> that wraps the <em>ServiceLocator.Default</em> instance. In simple applications this is sufficient to get everything working. However sometimes it might be needed to customize the* *default <em>DependencyResolver</em>. To change the default one, use the code below:</p>
+<p>By default, the <code>DependencyResolverManager</code> creates a <code>CatelDependencyResolver</code> that wraps the <code>ServiceLocator.Default</code> instance. In simple applications this is sufficient to get everything working. However sometimes it might be needed to customize the<code></code>default <code>DependencyResolver</code>. To change the default one, use the code below:</p>
 <pre class="nocode">var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyResolver();
 </pre><h2 id="customizing-the-dependencyresolvermanager">Customizing the DependencyResolverManager<a class="headerlink" href="#customizing-the-dependencyresolvermanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>Customizing the <em>DependencyResolverManager</em> is not recommended. If you still want to do this for whatever reason, create a class implementing the <em>IDependencyResolverManager</em> or derive from the <em>DependencyResolverManager</em>:</p>
+<p>Customizing the <code>DependencyResolverManager</code> is not recommended. If you still want to do this for whatever reason, create a class implementing the <code>IDependencyResolverManager</code> or derive from the <code>DependencyResolverManager</code>:</p>
 <pre class="nocode">public class CustomizedDependencyResolverManager : DependencyResolverManager
 {
     public override IDependencyResolver GetDependencyResolverForType(Type type)
@@ -259,48 +262,18 @@ dependencyResolverManager.DefaultDependencyResolver = new MyCustomDependencyReso
         return base.GetDependencyResolverForType(type);
     }
 }
-</pre><p>Note that there is no use to override the <em>DependencyResolverManager</em> as the example, but this keeps it easy to understand</p>
-<p>Then set the *DependencyResolverManager.Default *static property:</p>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that there is no use to override the <code>DependencyResolverManager</code> as the example, but this keeps it easy to understand</p>
+</div><p>Then set the <code>DependencyResolverManager.Default</code>static property:</p>
 <pre class="nocode">DependencyResolverManager.Default = new CustomizedDependencyResolverManager();
-</pre><h2 id="attachments">Attachments:<a class="headerlink" href="#attachments" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p><img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961476">DependencyResolverManager flow</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961477.png">DependencyResolverManager flow.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961478">DependencyResolverManager flow</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961479.png">DependencyResolverManager flow.png</a> (image/png)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961474">DependencyResolverManager flow</a> (application/gliffy+json)
- <img src="images/icons/bullet_blue.gif" /> <a href="attachments/9797678/9961475.png">DependencyResolverManager flow.png</a> (image/png)</p>
-
+</pre>
                     </div>
                 </div>
                 <footer>
                     <hr />
                     <div role="contentinfo">
 
-                      <p>
-					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/dependencyresolver.md" target="_blank">contribute</a>!
-					  </p>
-					  <p>
-					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
-					  </p>
-					  <hr />
-					  <p>
-					    <h2>Discussion</h2>
-					   <div id="disqus_thread"></div>
-					   <script>
-					   var disqus_config = function () {
-					   this.page.url = 'http://docs.catelproject.com/catel-core/ioc/introduction-to-components/dependencyresolver.htm';
-					   this.page.identifier = '../src/vnext/catel-core/ioc/introduction-to-components/dependencyresolver.md';
-					   };
-					   (function() { // DON'T EDIT BELOW THIS LINE
-					   var d = document, s = d.createElement('script');
-					   s.src = 'https://catel-docs.disqus.com/embed.js';
-					   s.setAttribute('data-timestamp', +new Date());
-					   (d.head || d.body).appendChild(s);
-					   })();
-					   </script>
-					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					  </p>
-					</div>
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/dependencyresolver.md" target="_blank">contribute</a>!</p>
+                    </div>
                 </footer>
             </div>
         </section>

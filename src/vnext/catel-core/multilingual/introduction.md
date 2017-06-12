@@ -146,8 +146,3 @@ dbLanguageService.RegisterLanguageSource(dbLanguageSource);
  
 serviceLocator.RegisterInstance<ILanguageService>(dbLanguageService);
 ```
-
-## Attachments:
-
-![](images/icons/bullet_blue.gif) [image2015-5-28 22:8:44.png](attachments/21299207/44859414.png) (image/png)
-

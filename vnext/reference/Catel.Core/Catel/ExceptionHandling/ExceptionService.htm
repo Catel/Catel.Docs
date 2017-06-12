@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExceptionService - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger.htm">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions.htm">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument.htm">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler.htm">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions.htm">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions.htm">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment.htm">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter.htm">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate.htm">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule.htm">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute.htm">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute.htm">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper.htm">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer.htm">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable.htm">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken.htm">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum.htm">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper.htm">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions.htm">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions.htm">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory.htm">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason.htm">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper.htm">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime.htm">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper.htm">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper.htm">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum.htm">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions.htm">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter.htm">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken.htm">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute.htm">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject.htm">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent.htm">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions.htm">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable.htm">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction.htm">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener.htm">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference.htm">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions.htm">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms.htm">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper.htm">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException.htm">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule.htm">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException.htm">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper.htm">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper.htm">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper.htm">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms.htm">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions.htm">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext.htm">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper.htm">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule.htm">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions.htm">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper.htm">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms.htm">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper.htm">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper.htm">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper.htm">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper.htm">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions.htm">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction.htm">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase.htm">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener.htm">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Caching.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Collections.htm">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ComponentModel.htm">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Configuration.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Core.htm">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Data.htm">Data</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/BufferedEventArgs.htm">BufferedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/BufferPolicy.htm">BufferPolicy</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionHandler.htm">ExceptionHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionHandlerExtensions.htm">ExceptionHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionInheritanceComparer.htm">ExceptionInheritanceComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionPredicate.htm">ExceptionPredicate</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionService.htm">ExceptionService</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#events">Events</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionServiceExtensions.htm">ExceptionServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/IBufferPolicy.htm">IBufferPolicy</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/IExceptionHandler.htm">IExceptionHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/IExceptionService.htm">IExceptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/IPolicy.htm">IPolicy</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/IRetryPolicy.htm">IRetryPolicy</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.htm">PolicyBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/RetryingEventArgs.htm">RetryingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/RetryPolicy.htm">RetryPolicy</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IO.htm">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IoC.htm">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Logging.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Runtime.htm">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Services.htm">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Test.htm">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Text.htm">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Threading.htm">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionService.htm">ExceptionService</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="exceptionservice">ExceptionService<a class="headerlink" href="#exceptionservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.ExceptionHandling</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class ExceptionService : IExceptionService
+</pre><p><strong>Base types</strong></p>
+<p><a href="/Catel.Core\Catel\ExceptionHandling\IExceptionService.htm">IExceptionService</a></p>
+<p>The exception service allows the usage of the Try/Catch mechanics. This means that this service provides possibilities
+    to handle all exception types previously registered.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="default">_default<a class="headerlink" href="#default" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The static instance of the exception service.</p>
+<h3 id="exceptioncounter">_exceptionCounter<a class="headerlink" href="#exceptioncounter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The _exception counts</p>
+<h3 id="exceptionhandlers">_exceptionHandlers<a class="headerlink" href="#exceptionhandlers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The _exception handlers</p>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="default-1">Default<a class="headerlink" href="#default-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the default instance of the exception service.</p>
+<h3 id="exceptionhandlers-1">ExceptionHandlers<a class="headerlink" href="#exceptionhandlers-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the exception handlers.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="exceptionbuffered">ExceptionBuffered<a class="headerlink" href="#exceptionbuffered" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when an exception is buffered.</p>
+<h3 id="retryingaction">RetryingAction<a class="headerlink" href="#retryingaction" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when an action is retrying.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="gethandlertype-exceptiontype">GetHandler(Type exceptionType)<a class="headerlink" href="#gethandlertype-exceptiontype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the exception handler for the specified exception type.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>exceptionType</strong>
+Type of the exception.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The exception handler.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The  is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The exceptionType is not of type <a href="#">Exception</a>.</p>
+<h3 id="gethandler">GetHandler<TException>()<a class="headerlink" href="#gethandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the exception handler for the specified exception type.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TException</strong>
+The type of the exception.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The exception handler.</p>
+<h3 id="handleexceptionexception-exception">HandleException(Exception exception)<a class="headerlink" href="#handleexceptionexception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Handles the specified exception if possible.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>exception</strong>
+The exception to handle.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the exception is handled; otherwise <code>false</code>.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The exception is <code>null</code>.</p>
+<h3 id="isexceptionregisteredtype-exceptiontype">IsExceptionRegistered(Type exceptionType)<a class="headerlink" href="#isexceptionregisteredtype-exceptiontype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified exception type is registered.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>exceptionType</strong>
+Type of the exception.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified exception type is registered; otherwise, <code>false</code>.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The  is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The exceptionType is not of type <a href="#">Exception</a>.</p>
+<h3 id="true">IsExceptionRegistered<TException>()<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified exception type is registered.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TException</strong>
+The type of the exception.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the exception type is registered; otherwise, <code>false</code>.</p>
+<h3 id="onexceptionbufferedexception-bufferedexception-datetime-datetime">OnExceptionBuffered(Exception bufferedException, DateTime dateTime)<a class="headerlink" href="#onexceptionbufferedexception-bufferedexception-datetime-datetime" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Notifies the subscribers whenever a exception buffered event occurs.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>bufferedException</strong>
+The buffered exception</p>
+<p><strong>dateTime</strong>
+The date and time when the event occurs.</p>
+<h3 id="true">OnRetryingAction(int retryCount, Exception lastError, TimeSpan delay)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Notifies the subscribers whenever a retry event occurs.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>retryCount</strong>
+The current retry attempt count.</p>
+<p><strong>lastError</strong>
+The exception that caused the retry conditions to occur.</p>
+<p><strong>delay</strong>
+The delay that indicates how long the current thread will be suspended before the next iteration is invoked.</p>
+<h3 id="processaction-action">Process(Action action)<a class="headerlink" href="#processaction-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action.</p>
+<pre><code>If the exception could not be handled safely by this service, it will throw the exception.
+</code></pre>
+
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processfunc-action">Process<TResult>(Func<TResult> action)<a class="headerlink" href="#processfunc-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action.</p>
+<pre><code>If the exception could not be handled safely by this service, it will throw the exception.
+</code></pre>
+
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processasyncfunc-action">ProcessAsync(Func<Task> action)<a class="headerlink" href="#processasyncfunc-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processasynctask-action">ProcessAsync(Task action)<a class="headerlink" href="#processasynctask-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processasyncfunctask-action">ProcessAsync<TResult>(Func&lt;Task<TResult>&gt; action)<a class="headerlink" href="#processasyncfunctask-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processasyncfunc-action-cancellationtoken-cancellationtoken">ProcessAsync<TResult>(Func<TResult> action, CancellationToken cancellationToken)<a class="headerlink" href="#processasyncfunc-action-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action. The action will be executed asynchronously.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processwithretryfunc-action">ProcessWithRetry<TResult>(Func<TResult> action)<a class="headerlink" href="#processwithretryfunc-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes the specified action with possibility to retry on error.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the result.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="processwithretryasyncfunctask-action">ProcessWithRetryAsync<TResult>(Func&lt;Task<TResult>&gt; action)<a class="headerlink" href="#processwithretryasyncfunctask-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Processes asynchronously the specified action with possibility to retry on error.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The action.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action is <code>null</code>.</p>
+<h3 id="registeriexceptionhandler-handler">Register(IExceptionHandler handler)<a class="headerlink" href="#registeriexceptionhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers an handler for a specific exception type.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>handler</strong>
+The handler to use when the exception occurs.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The handler to use.</p>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The handler is <code>null</code>.</p>
+<h3 id="registeraction-handler-functexception-bool-exceptionpredicate">Register<TException>(Action<TException> handler, Func&lt;TException, bool&gt; exceptionPredicate)<a class="headerlink" href="#registeraction-handler-functexception-bool-exceptionpredicate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a specific exception including the handler.</p>
+<h4 id="type-parameters-7">Type Parameters<a class="headerlink" href="#type-parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TException</strong>
+The type of the exception.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>exceptionPredicate</strong>
+The  exception filter.</p>
+<p><strong>handler</strong>
+The action to execute when the exception occurs.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The handler to use.</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The handler is <code>null</code>.</p>
+<p><strong>T:System.Exception</strong>
+A delegate callback throws an exception.</p>
+<h3 id="unregister">Unregister<TException>()<a class="headerlink" href="#unregister" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Unregisters a specific exception for handling.</p>
+<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TException</strong>
+The type of the exception.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the exception is unsubscripted; otherwise <code>false</code>.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/ExceptionHandling/ExceptionService.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

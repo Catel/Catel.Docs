@@ -19,7 +19,7 @@
     <div class="grid-for-nav">
         <nav data-toggle="nav-shift" class="nav-side stickynav">
             <div class="side-nav-search">
-                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
                 <div role="search">
                     <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
                         <input type="text" name="q" placeholder="Search docs" />
@@ -148,6 +148,9 @@
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/index.htm">Tips & tricks</a></span>
 </li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../APIreference.htm">API reference</a></span>
+</li>
 
 </ul>
 				<div class="toc-footer">
@@ -168,7 +171,7 @@
                 <div role="navigation" aria-label="breadcrumbs navigation">
                     <div class="breadcrumbs">
 <ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../IoC(ServiceLocator&TypeFactory).htm">IoC (ServiceLocator & TypeFactory)</a></li> / <li><a href="../../../IntroductiontoIoCcomponents.htm">Introduction to IoC components</a></li> / <li><a href="../../../catel-core/ioc/introduction-to-components/typefactory.htm">TypeFactory</a></li></ul>
-
+					
                     </div>
                     <hr />
                 </div>
@@ -182,7 +185,7 @@
 While (constructors available)
     try to construct type using injection
 </li>
-<li>If all constructors fail, the <em>TypeFactory</em> will fallback to <em>Activator.CreateInstance()</em></li>
+<li>If all constructors fail, the <code>TypeFactory</code> will fallback to <code>Activator.CreateInstance()</code></li>
 </ol>
 <h2 id="dependency-injection">Dependency injection<a class="headerlink" href="#dependency-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>The ServiceLocator in Catel supports dependency injection.</p>
@@ -200,9 +203,7 @@ While (constructors available)
         _secondDependency = new SecondDependency();
     }
 }
-</pre><p>**
-**</p>
-<p><strong>Example 2: good, retrieves the dependencies via the service locator</strong></p>
+</pre><p><strong>Example 2: good, retrieves the dependencies via the service locator</strong>)</p>
 <pre class="nocode">public class MyClass
 {
     private IFirstDependency _firstDependency;
@@ -230,8 +231,8 @@ While (constructors available)
         _secondDependency = secondDependency;
     }
 }
-</pre><p>There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only</p>
-<h2 id="using-dependency-injection-in-catel">Using dependency injection in Catel<a class="headerlink" href="#using-dependency-injection-in-catel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only</p>
+</div><h2 id="using-dependency-injection-in-catel">Using dependency injection in Catel<a class="headerlink" href="#using-dependency-injection-in-catel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <p>Dependency injection via the ServiceLocator in Catel is enabled by default. This means that when a type is resolved from the container, it will automatically use dependency injection to construct the type if it is not registered as instance.</p>
 <p>It will first search for all available constructors on the type that will be instantiated. Then, for each constructor, starting with the one with the most parameters, it will try to retrieve all values. If one fails, it will go to the next. If all fail, it will try to use the default constructor without parameters. If that fails as well, then the type cannot be constructed and an exception will be thrown.</p>
 <p>To get a better understanding of what happens, see the class below:</p>
@@ -262,40 +263,17 @@ While (constructors available)
 <p> Maybe you don't want dependency injection because it does not give you what you need or you want a very, very small improvement in performance. In that case, the dependency injection can be disabled using the code below:</p>
 <pre class="nocode">ServiceLocator.Default.SupportedDependencyInjection = false
 </pre><h2 id="custom-initialization">Custom initialization<a class="headerlink" href="#custom-initialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>All types created with the <em>TypeFactory</em> can be initialized with custom code. This can be done by implementing the <em>INeedCustomInitialization</em> interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.</p>
-<p>To prevent misuse of the <em>Initialize</em> method, it is best to implement the interface explicitly</p>
-
+<p>All types created with the <code>TypeFactory</code> can be initialized with custom code. This can be done by implementing the <code>INeedCustomInitialization</code> interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.</p>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>To prevent misuse of the <code>Initialize</code> method, it is best to implement the interface explicitly</p>
+</div>
                     </div>
                 </div>
                 <footer>
                     <hr />
                     <div role="contentinfo">
 
-                      <p>
-					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/typefactory.md" target="_blank">contribute</a>!
-					  </p>
-					  <p>
-					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
-					  </p>
-					  <hr />
-					  <p>
-					    <h2>Discussion</h2>
-					   <div id="disqus_thread"></div>
-					   <script>
-					   var disqus_config = function () {
-					   this.page.url = 'http://docs.catelproject.com/catel-core/ioc/introduction-to-components/typefactory.htm';
-					   this.page.identifier = '../src/vnext/catel-core/ioc/introduction-to-components/typefactory.md';
-					   };
-					   (function() { // DON'T EDIT BELOW THIS LINE
-					   var d = document, s = d.createElement('script');
-					   s.src = 'https://catel-docs.disqus.com/embed.js';
-					   s.setAttribute('data-timestamp', +new Date());
-					   (d.head || d.body).appendChild(s);
-					   })();
-					   </script>
-					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					  </p>
-					</div>
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-core/ioc/introduction-to-components/typefactory.md" target="_blank">contribute</a>!</p>
+                    </div>
                 </footer>
             </div>
         </section>

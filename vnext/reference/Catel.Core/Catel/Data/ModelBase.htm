@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ModelBase - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger.htm">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions.htm">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument.htm">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler.htm">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions.htm">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions.htm">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment.htm">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter.htm">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate.htm">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule.htm">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute.htm">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute.htm">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper.htm">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer.htm">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable.htm">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken.htm">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum.htm">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper.htm">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions.htm">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions.htm">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory.htm">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason.htm">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper.htm">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime.htm">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper.htm">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper.htm">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum.htm">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions.htm">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter.htm">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken.htm">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute.htm">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject.htm">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent.htm">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions.htm">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable.htm">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction.htm">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener.htm">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference.htm">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions.htm">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms.htm">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper.htm">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException.htm">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule.htm">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException.htm">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper.htm">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper.htm">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper.htm">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms.htm">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions.htm">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext.htm">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper.htm">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule.htm">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions.htm">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper.htm">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms.htm">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper.htm">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper.htm">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper.htm">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper.htm">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions.htm">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction.htm">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase.htm">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener.htm">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Caching.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Collections.htm">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ComponentModel.htm">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Configuration.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Core.htm">Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Data.htm">Data</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/AdvancedPropertyChangedEventArgs.htm">AdvancedPropertyChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/AdvancedPropertyChangingEventArgs.htm">AdvancedPropertyChangingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/AttributeValidatorProvider.htm">AttributeValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/BoxingCache.htm">BoxingCache</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/BusinessRuleValidationResult.htm">BusinessRuleValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/CatelTypeInfo.htm">CatelTypeInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ChangeNotificationWrapper.htm">ChangeNotificationWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/CompositeValidator.htm">CompositeValidator</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/CompositeValidatorProvider.htm">CompositeValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/DispatcherObservableObject.htm">DispatcherObservableObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/EditableObjectHelper.htm">EditableObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/EventChangeType.htm">EventChangeType</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ExcludeFromValidationAttribute.htm">ExcludeFromValidationAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/FieldValidationResult.htm">FieldValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IAdvancedNotifyPropertyChanged.htm">IAdvancedNotifyPropertyChanged</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IAdvancedNotifyPropertyChanging.htm">IAdvancedNotifyPropertyChanging</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IBusinessRuleValidationResult.htm">IBusinessRuleValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IFieldValidationResult.htm">IFieldValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModel.htm">IModel</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModelEditor.htm">IModelEditor</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModelEqualityComparer.htm">IModelEqualityComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModelSerialization.htm">IModelSerialization</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModelValidation.htm">IModelValidation</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IModelValidationExtensions.htm">IModelValidationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/InvalidPropertyException.htm">InvalidPropertyException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/InvalidPropertyValueException.htm">InvalidPropertyValueException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IParent.htm">IParent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IParentExtensions.htm">IParentExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ISavableModel.htm">ISavableModel</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValidationContext.htm">IValidationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValidationResult.htm">IValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValidationSummary.htm">IValidationSummary</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValidator.htm">IValidator</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValidatorProvider.htm">IValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/IValueValidator.htm">IValueValidator</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/Data/ModelBase.htm">ModelBase</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#events">Events</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ModelBaseExtensions.htm">ModelBaseExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ModelEqualityComparer.htm">ModelEqualityComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ObservableObject.htm">ObservableObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ObservableObjectExtensions.htm">ObservableObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyAlreadyRegisteredException.htm">PropertyAlreadyRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyBag.htm">PropertyBag</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyData.htm">PropertyData</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyDataManager.htm">PropertyDataManager</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyNotNullableException.htm">PropertyNotNullableException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyNotRegisteredException.htm">PropertyNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/PropertyValue.htm">PropertyValue</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/SavableModelBase.htm">SavableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/SerializationMode.htm">SerializationMode</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/SuspensionContext.htm">SuspensionContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidateModelAttribute.htm">ValidateModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationContext.htm">ValidationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationContextChange.htm">ValidationContextChange</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationContextChangeType.htm">ValidationContextChangeType</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationContextHelper.htm">ValidationContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationEventArgs.htm">ValidationEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationExtensions.htm">ValidationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationResult.htm">ValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationResultType.htm">ValidationResultType</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidationSummary.htm">ValidationSummary</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidatorBase.htm">ValidatorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/ValidatorProviderBase.htm">ValidatorProviderBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Data/XmlNameMapper.htm">XmlNameMapper</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IO.htm">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IoC.htm">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Logging.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Runtime.htm">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Services.htm">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Test.htm">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Text.htm">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Threading.htm">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../Data.htm">Data</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/Data/ModelBase.htm">ModelBase</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="modelbase">ModelBase<a class="headerlink" href="#modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Data</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public abstract class ModelBase : IModel, ObservableObject
+</pre><p><strong>Base types</strong>
+<a href="/Catel.Core\Catel\Data\ObservableObject.htm">ObservableObject</a></p>
+<p><strong>Base types</strong></p>
+<p><a href="/Catel.Core\Catel\Data\IModel.htm">IModel</a></p>
+<p>Abstract class that serves as a base class for serializable objects.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="backup">_backup<a class="headerlink" href="#backup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The backup of the current object if any backup is initiated.</p>
+<h3 id="changecallbackssuspensioncontext">_changeCallbacksSuspensionContext<a class="headerlink" href="#changecallbackssuspensioncontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="changenotificationssuspensioncontext">_changeNotificationsSuspensionContext<a class="headerlink" href="#changenotificationssuspensioncontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="dataannotationsvalidationcontext">_dataAnnotationsValidationContext<a class="headerlink" href="#dataannotationsvalidationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="dataannotationvalidationresults">_dataAnnotationValidationResults<a class="headerlink" href="#dataannotationvalidationresults" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>A dictionary containing the annotation (attribute) validation results of properties of this class.</p>
+<h3 id="equalitycomparer">_equalityComparer<a class="headerlink" href="#equalitycomparer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Backing field for the EqualityComparer property. Because it has custom logic, it needs a backing field.</p>
+<h3 id="firstannotationvalidation">_firstAnnotationValidation<a class="headerlink" href="#firstannotationvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="hashcode">_hashCode<a class="headerlink" href="#hashcode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Backing field for the GetHashCode method so it only has to be calculated once to gain the best performance possible.</p>
+<h3 id="hasretrievedvalidatoronce">_hasRetrievedValidatorOnce<a class="headerlink" href="#hasretrievedvalidatoronce" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Field that determines whether a validator has been retrieved yet.</p>
+<h3 id="initializedtypes">_initializedTypes<a class="headerlink" href="#initializedtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Dictionary of initialized types.</p>
+<h3 id="leanandmeanmodel">_leanAndMeanModel<a class="headerlink" href="#leanandmeanmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Backing field for the LeanAndMeanModel property. Because it has custom logic, it needs a backing field.</p>
+<h3 id="lock">_lock<a class="headerlink" href="#lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Lock object.</p>
+<h3 id="parent">_parent<a class="headerlink" href="#parent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The parent object of the current object.</p>
+<h3 id="propertiesnotcheckedduringdisabledvalidation">_propertiesNotCheckedDuringDisabledValidation<a class="headerlink" href="#propertiesnotcheckedduringdisabledvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>List of property names that were changed, but not checked for validation because validation was suspended at that
+    time.</p>
+<pre><code>As soon as validation is activated again, these properties should be validated.
+</code></pre>
+
+<h3 id="propertybag">_propertyBag<a class="headerlink" href="#propertybag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The property values.</p>
+<h3 id="propertyvaluechangenotificationwrappers">_propertyValueChangeNotificationWrappers<a class="headerlink" href="#propertyvaluechangenotificationwrappers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The change notification wrappers for all property values.</p>
+<h3 id="propertyvaluesignoredorfailedforvalidation">_propertyValuesIgnoredOrFailedForValidation<a class="headerlink" href="#propertyvaluesignoredorfailedforvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The property names that failed to validate and should be skipped next time for NET 4.0 
+    attribute validation.</p>
+<h3 id="serializationinfo">_serializationInfo<a class="headerlink" href="#serializationinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <a href="#">SerializationInfo</a> that is retrieved and will be used for deserialization.</p>
+<h3 id="suspendvalidation">_suspendValidation<a class="headerlink" href="#suspendvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Backing field for the SuspendValidation property. Because it has custom logic, it needs a backing field.</p>
+<h3 id="validationcontext">_validationContext<a class="headerlink" href="#validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The validation context, which can contain in-between validation info.</p>
+<h3 id="validationsuspensioncontext">_validationSuspensionContext<a class="headerlink" href="#validationsuspensioncontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="validator">_validator<a class="headerlink" href="#validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The backing field for the Validator property.</p>
+<h3 id="emptystreamingcontext">EmptyStreamingContext<a class="headerlink" href="#emptystreamingcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The empty streaming context.</p>
+<h3 id="errormessageproperty">ErrorMessageProperty<a class="headerlink" href="#errormessageproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>IDataErrorInfo.Error</p>
+<p>The name of the Error property.</p>
+<h3 id="haserrorsmessageproperty">HasErrorsMessageProperty<a class="headerlink" href="#haserrorsmessageproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>INotifyDataErrorInfo.HasErrors</p>
+<p>The name of the HasErrors property.</p>
+<h3 id="haswarningsmessageproperty">HasWarningsMessageProperty<a class="headerlink" href="#haswarningsmessageproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>INotifyDataWarningInfo.HasWarnings</p>
+<p>The name of the HasWarnings property.</p>
+<h3 id="isdirtyproperty">IsDirtyProperty<a class="headerlink" href="#isdirtyproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Register the IsDirty property so it is known in the class.</p>
+<h3 id="isreadonlyproperty">IsReadOnlyProperty<a class="headerlink" href="#isreadonlyproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Register the IsReadOnly property so it is known in the class.</p>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h3 id="warningmessageproperty">WarningMessageProperty<a class="headerlink" href="#warningmessageproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>IDataWarningInfo.Warning</p>
+<p>The name of the Warning property.</p>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="modelbase-1">ModelBase()<a class="headerlink" href="#modelbase-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes static members of the <a href="#">ModelBase</a> class.</p>
+<h3 id="modelbase-2">ModelBase()<a class="headerlink" href="#modelbase-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">ModelBase</a> class.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Must have a public constructor in order to be serializable.</p>
+<h3 id="modelbaseserializationinfo-info-streamingcontext-context">ModelBase(SerializationInfo info, StreamingContext context)<a class="headerlink" href="#modelbaseserializationinfo-info-streamingcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">ModelBase</a> class.</p>
+<pre><code>Only constructor for the ModelBase.
+</code></pre>
+
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>info</strong>
+SerializationInfo object, null if this is the first time construction.</p>
+<p><strong>context</strong>
+StreamingContext object, simple pass a default new StreamingContext() if this is the first time construction.</p>
+<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Call this method, even when constructing the object for the first time (thus not deserializing).</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="alwaysinvokenotifychanged">AlwaysInvokeNotifyChanged<a class="headerlink" href="#alwaysinvokenotifychanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object should always invoke the PropertyChanged event,
+    even when the actual value of a property has not changed.</p>
+<pre><code>Enabling this property is useful when using this class in a WPF environment.
+</code></pre>
+
+<h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>By default, this property is <code>false</code>.</p>
+<h3 id="automaticallyvalidateonpropertychanged">AutomaticallyValidateOnPropertyChanged<a class="headerlink" href="#automaticallyvalidateonpropertychanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object should automatically validate itself when a property value
+    has changed.</p>
+<h3 id="catel.data.imodel.isineditsession">Catel.Data.IModel.IsInEditSession<a class="headerlink" href="#catel.data.imodel.isineditsession" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the object is currently in an edit session, started by the BeginEdit method.</p>
+<h3 id="catel.data.imodel.keyname">Catel.Data.IModel.KeyName<a class="headerlink" href="#catel.data.imodel.keyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the name of the object. By default, this is the hash code of all the properties combined.</p>
+<h3 id="catel.data.imodelvalidation.businessruleerrorcount">Catel.Data.IModelValidation.BusinessRuleErrorCount<a class="headerlink" href="#catel.data.imodelvalidation.businessruleerrorcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of business rule errors.</p>
+<h3 id="catel.data.imodelvalidation.businessrulewarningcount">Catel.Data.IModelValidation.BusinessRuleWarningCount<a class="headerlink" href="#catel.data.imodelvalidation.businessrulewarningcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of business rule warnings.</p>
+<h3 id="catel.data.imodelvalidation.fielderrorcount">Catel.Data.IModelValidation.FieldErrorCount<a class="headerlink" href="#catel.data.imodelvalidation.fielderrorcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field errors.</p>
+<h3 id="catel.data.imodelvalidation.fieldwarningcount">Catel.Data.IModelValidation.FieldWarningCount<a class="headerlink" href="#catel.data.imodelvalidation.fieldwarningcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field warnings.</p>
+<h3 id="catel.data.imodelvalidation.ishidingvalidationresults">Catel.Data.IModelValidation.IsHidingValidationResults<a class="headerlink" href="#catel.data.imodelvalidation.ishidingvalidationresults" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the object is currently hiding its validation results. If the object
+    hides its validation results, it is still possible to retrieve the validation results using the
+    <a href="#">ValidationContext</a>.</p>
+<h3 id="catel.data.imodelvalidation.validationcontext">Catel.Data.IModelValidation.ValidationContext<a class="headerlink" href="#catel.data.imodelvalidation.validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the validation context which contains all information about the validation.</p>
+<h3 id="catel.data.imodelvalidation.validator">Catel.Data.IModelValidation.Validator<a class="headerlink" href="#catel.data.imodelvalidation.validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the validator to use.</p>
+<pre><code>By default, this value retrieves the default validator from them [IValidatorProvider](#) if it is
+registered in the [ServiceLocator](#).
+</code></pre>
+
+<h3 id="catel.data.iparent.parent">Catel.Data.IParent.Parent<a class="headerlink" href="#catel.data.iparent.parent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the parent.</p>
+<h3 id="defaultdisableeventsubscriptionsofchildvaluesvalue">DefaultDisableEventSubscriptionsOfChildValuesValue<a class="headerlink" href="#defaultdisableeventsubscriptionsofchildvaluesvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether event subscriptions of child values should be disabled.</p>
+<h3 id="defaultserializationconfiguration">DefaultSerializationConfiguration<a class="headerlink" href="#defaultserializationconfiguration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the default serialization configuration.</p>
+<h3 id="defaultserializer">DefaultSerializer<a class="headerlink" href="#defaultserializer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the default serializer that will be used for the Serializer property.</p>
+<h3 id="defaultsuspendvalidationvalue">DefaultSuspendValidationValue<a class="headerlink" href="#defaultsuspendvalidationvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value for the SuspendValidation for each model.</p>
+<pre><code>By default, this value is ```false```.
+</code></pre>
+
+<h3 id="defaultvalidateusingdataannotationsvalue">DefaultValidateUsingDataAnnotationsValue<a class="headerlink" href="#defaultvalidateusingdataannotationsvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the validation should not try to process data annotations.</p>
+<h3 id="deserializationsucceeded">DeserializationSucceeded<a class="headerlink" href="#deserializationsucceeded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the deserialization has succeeded. If automatic deserialization fails, the object
+    should try to deserialize manually.</p>
+<h3 id="disableeventsubscriptionsofchildvalues">DisableEventSubscriptionsOfChildValues<a class="headerlink" href="#disableeventsubscriptionsofchildvalues" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether event subscriptions of child values should be disabled.</p>
+<pre><code>The default value is ```false```.
+</code></pre>
+
+<h3 id="disablepropertychangenotifications">DisablePropertyChangeNotifications<a class="headerlink" href="#disablepropertychangenotifications" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether property change notifications are currently disabled for all instances.</p>
+<h3 id="equalitycomparer-1">EqualityComparer<a class="headerlink" href="#equalitycomparer-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the equality comparer used to compare model bases with each other.</p>
+<h3 id="globalleanandmeanmodel">GlobalLeanAndMeanModel<a class="headerlink" href="#globalleanandmeanmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether all models should behave as a lean and mean model.</p>
+<pre><code>To find out what lean and mean means, see LeanAndMeanModel.
+
+
+
+The default value is ```false```.
+</code></pre>
+
+<h3 id="handlepropertyandcollectionchanges">HandlePropertyAndCollectionChanges<a class="headerlink" href="#handlepropertyandcollectionchanges" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object should handle (thus invoke the specific events) when
+    a property of collection value has changed.</p>
+<h3 id="hidevalidationresults">HideValidationResults<a class="headerlink" href="#hidevalidationresults" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the validation results should be hidden. This means that 
+    the <a href="#">ValidationContext</a> should be filled, but the <a href="#">IDataErrorInfo</a> and 
+    <a href="#">INotifyDataErrorInfo</a> should not expose any of the validation ressults.</p>
+<pre><code>This is very useful when the validation in the UI should be delayed to a specific point. However, the
+validation is still available for retrieval.
+
+
+
+By default, this value is ```false```.
+</code></pre>
+
+<h4 id="remarks-3">Remarks<a class="headerlink" href="#remarks-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Unlike the SuspendValidation property, this property will not prevent validation. It will only
+    prevent the error interfaces to not expose them.</p>
+<h3 id="isdeserialized">IsDeserialized<a class="headerlink" href="#isdeserialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the object is fully deserialized.</p>
+<h3 id="isdeserializeddataavailable">IsDeserializedDataAvailable<a class="headerlink" href="#isdeserializeddataavailable" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the deserialized data is available, which means that
+    OnDeserialized is invoked.</p>
+<h3 id="isdirty">IsDirty<a class="headerlink" href="#isdirty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object is dirty (contains unsaved data).</p>
+<h3 id="isinitialized">IsInitialized<a class="headerlink" href="#isinitialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this object is initialized.</p>
+<h3 id="isinitializing">IsInitializing<a class="headerlink" href="#isinitializing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this object is currently initializing.</p>
+<h3 id="isreadonly">IsReadOnly<a class="headerlink" href="#isreadonly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object is currently read-only. When the object is read-only, values can only be read, not set.</p>
+<h3 id="isvalidated">IsValidated<a class="headerlink" href="#isvalidated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this object is validated or not.</p>
+<h3 id="isvalidating">IsValidating<a class="headerlink" href="#isvalidating" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the object is currently validating. During validation, no validation will be invoked.</p>
+<h3 id="leanandmeanmodel-1">LeanAndMeanModel<a class="headerlink" href="#leanandmeanmodel-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether this model should behave as a lean and mean model.</p>
+<pre><code>A lean and mean model will not handle any validation code, nor will it raise any change notification events.
+</code></pre>
+
+<h3 id="propertydatamanager">PropertyDataManager<a class="headerlink" href="#propertydatamanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the property data manager that manages the properties of this object.</p>
+<h3 id="serializationconfiguration">SerializationConfiguration<a class="headerlink" href="#serializationconfiguration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the serialization configuration.</p>
+<h3 id="serializer">Serializer<a class="headerlink" href="#serializer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the serializer used for internal model serialization (such as backups).</p>
+<h3 id="suspendvalidation-1">SuspendValidation<a class="headerlink" href="#suspendvalidation-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the validation should be suspended. A call to Boolean) will be returned immediately.</p>
+<h4 id="remarks-4">Remarks<a class="headerlink" href="#remarks-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Unlike the HideValidationResults property, this property will prevent validation. If you want validation
+    and the ability to query results, but simply hide the validation results, use the HideValidationResults property.</p>
+<h3 id="suspendvalidationforallmodels">SuspendValidationForAllModels<a class="headerlink" href="#suspendvalidationforallmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the validation for all classes deriving from <a href="#">ModelBase</a> should be suspended.</p>
+<pre><code>This is a good way to improve performance for a specific operation where validation only causes overhead.
+</code></pre>
+
+<h3 id="system.componentmodel.idataerrorinfo.error">System.ComponentModel.IDataErrorInfo.Error<a class="headerlink" href="#system.componentmodel.idataerrorinfo.error" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the current error.</p>
+<h3 id="system.componentmodel.idataerrorinfo.this">System.ComponentModel.IDataErrorInfo.this[]<a class="headerlink" href="#system.componentmodel.idataerrorinfo.this" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets an error for a specific column.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>columnName</strong>
+Column name.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The error or Empty if no error is available.</p>
+<h3 id="system.componentmodel.idatawarninginfo.this">System.ComponentModel.IDataWarningInfo.this[]<a class="headerlink" href="#system.componentmodel.idatawarninginfo.this" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a warning for a specific column.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>columnName</strong>
+Column name.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The warning or Empty if no warning is available.</p>
+<h3 id="system.componentmodel.idatawarninginfo.warning">System.ComponentModel.IDataWarningInfo.Warning<a class="headerlink" href="#system.componentmodel.idatawarninginfo.warning" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the current warning.</p>
+<h3 id="system.componentmodel.inotifydataerrorinfo.haserrors">System.ComponentModel.INotifyDataErrorInfo.HasErrors<a class="headerlink" href="#system.componentmodel.inotifydataerrorinfo.haserrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this object contains any field or business errors.</p>
+<h3 id="system.componentmodel.inotifydatawarninginfo.haswarnings">System.ComponentModel.INotifyDataWarningInfo.HasWarnings<a class="headerlink" href="#system.componentmodel.inotifydatawarninginfo.haswarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this object contains any field or business warnings.</p>
+<h3 id="validateusingdataannotations">ValidateUsingDataAnnotations<a class="headerlink" href="#validateusingdataannotations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the validation should not try to process data annotations.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="begineditingevent">_beginEditingEvent<a class="headerlink" href="#begineditingevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="canceleditingcompletedevent">_cancelEditingCompletedEvent<a class="headerlink" href="#canceleditingcompletedevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the edit cancel has been completed or canceled.</p>
+<h4 id="remarks-5">Remarks<a class="headerlink" href="#remarks-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This event uses <a href="#">EventArgs</a> instead of
+    an derived version of <a href="#">EditEventArgs</a> because
+    having a Cancel flag would be misleading and there appears to
+    be no need for the EditableObject as
+    the sender of the event should be the same information.</p>
+<h3 id="canceleditingevent">_cancelEditingEvent<a class="headerlink" href="#canceleditingevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="deserialized">_deserialized<a class="headerlink" href="#deserialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="endeditingevent">_endEditingEvent<a class="headerlink" href="#endeditingevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="errorschanged">_errorsChanged<a class="headerlink" href="#errorschanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="initialized">_initialized<a class="headerlink" href="#initialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="serialized">_serialized<a class="headerlink" href="#serialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="validated">_validated<a class="headerlink" href="#validated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="validating">_validating<a class="headerlink" href="#validating" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="warningschanged">_warningsChanged<a class="headerlink" href="#warningschanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="catel.data.imodel.initialized">Catel.Data.IModel.Initialized<a class="headerlink" href="#catel.data.imodel.initialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is initialized.</p>
+<h3 id="catel.data.imodelvalidation.validated">Catel.Data.IModelValidation.Validated<a class="headerlink" href="#catel.data.imodelvalidation.validated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is validated.</p>
+<h3 id="catel.data.imodelvalidation.validating">Catel.Data.IModelValidation.Validating<a class="headerlink" href="#catel.data.imodelvalidation.validating" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is validating.</p>
+<h3 id="catel.runtime.serialization.iserializable.deserialized">Catel.Runtime.Serialization.ISerializable.Deserialized<a class="headerlink" href="#catel.runtime.serialization.iserializable.deserialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is deserialized.</p>
+<h3 id="catel.runtime.serialization.iserializable.serialized">Catel.Runtime.Serialization.ISerializable.Serialized<a class="headerlink" href="#catel.runtime.serialization.iserializable.serialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is serialized.</p>
+<h3 id="system.componentmodel.iadvancededitableobject.beginediting">System.ComponentModel.IAdvancedEditableObject.BeginEditing<a class="headerlink" href="#system.componentmodel.iadvancededitableobject.beginediting" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="system.componentmodel.iadvancededitableobject.cancelediting">System.ComponentModel.IAdvancedEditableObject.CancelEditing<a class="headerlink" href="#system.componentmodel.iadvancededitableobject.cancelediting" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="system.componentmodel.iadvancededitableobject.canceleditingcompleted">System.ComponentModel.IAdvancedEditableObject.CancelEditingCompleted<a class="headerlink" href="#system.componentmodel.iadvancededitableobject.canceleditingcompleted" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="system.componentmodel.iadvancededitableobject.endediting">System.ComponentModel.IAdvancedEditableObject.EndEditing<a class="headerlink" href="#system.componentmodel.iadvancededitableobject.endediting" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="system.componentmodel.inotifydataerrorinfo.errorschanged">System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged<a class="headerlink" href="#system.componentmodel.inotifydataerrorinfo.errorschanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the validation errors have changed for a property or for the entire object.</p>
+<h3 id="system.componentmodel.inotifydatawarninginfo.warningschanged">System.ComponentModel.INotifyDataWarningInfo.WarningsChanged<a class="headerlink" href="#system.componentmodel.inotifydatawarninginfo.warningschanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the warnings have changed.</p>
+<h3 id="validatedbusinessrules">ValidatedBusinessRules<a class="headerlink" href="#validatedbusinessrules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object has validated the business rules.</p>
+<h3 id="validatedfields">ValidatedFields<a class="headerlink" href="#validatedfields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object has validated the fields.</p>
+<h3 id="validatingbusinessrules">ValidatingBusinessRules<a class="headerlink" href="#validatingbusinessrules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is about the validate the business rules.</p>
+<h3 id="validatingfields">ValidatingFields<a class="headerlink" href="#validatingfields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the object is about the validate the fields.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="catchupwithsuspendedannotationsvalidation">CatchUpWithSuspendedAnnotationsValidation()<a class="headerlink" href="#catchupwithsuspendedannotationsvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Catches up with suspended annotations validation.</p>
+<pre><code>This method will take care of unvalidated properties that have been changed during
+the suspended validation state of this model.
+</code></pre>
+
+<h3 id="clearisdirtyonallchilds">ClearIsDirtyOnAllChilds()<a class="headerlink" href="#clearisdirtyonallchilds" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Clears the IsDirty on all childs.</p>
+<h3 id="clearisdirtyonallchildsobject-obj-hashset-handledreferences">ClearIsDirtyOnAllChilds(object obj, HashSet<IModel> handledReferences)<a class="headerlink" href="#clearisdirtyonallchildsobject-obj-hashset-handledreferences" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Clears the IsDirty on all childs.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The object.</p>
+<p><strong>handledReferences</strong>
+The already handled references, required to prevent circular stackoverflows.</p>
+<h3 id="ensurevalidationisuptodatebool-constraint">EnsureValidationIsUpToDate(bool constraint)<a class="headerlink" href="#ensurevalidationisuptodatebool-constraint" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Ensures the validation is up to date.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>constraint</strong>
+if set to <code>true</code>, the validation will be updated if not up to date.</p>
+<h3 id="equalsobject-obj">Equals(object obj)<a class="headerlink" href="#equalsobject-obj" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified <a href="#">Object</a> is equal to this instance.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The <a href="#">Object</a> to compare with this instance.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified <a href="#">Object</a> is equal to this instance; otherwise, <code>false</code>.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.NullReferenceException</strong>
+The obj parameter is null.</p>
+<h3 id="finishinitializationafterconstructionordeserialization">FinishInitializationAfterConstructionOrDeserialization()<a class="headerlink" href="#finishinitializationafterconstructionordeserialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Finishes the initialization after construction or deserialization.</p>
+<h3 id="true">GetBusinessRuleErrors()<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the current errors errors.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The errors or Empty if no error is available.</p>
+<h3 id="getbusinessrulewarnings">GetBusinessRuleWarnings()<a class="headerlink" href="#getbusinessrulewarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the current business warnings.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The warnings or Empty if no warning is available.</p>
+<h3 id="getfielderrorsstring-columnname">GetFieldErrors(string columnName)<a class="headerlink" href="#getfielderrorsstring-columnname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the errors for a specific column.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>columnName</strong>
+Column name.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The errors or Empty if no error is available.</p>
+<h3 id="getfieldwarningsstring-columnname">GetFieldWarnings(string columnName)<a class="headerlink" href="#getfieldwarningsstring-columnname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the warnings for a specific column.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>columnName</strong>
+Column name.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The warnings or Empty if no warning is available.</p>
+<h3 id="gethashcode">GetHashCode()<a class="headerlink" href="#gethashcode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns a hash code for this instance.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+<h3 id="getobjectdataserializationinfo-info-streamingcontext-context">GetObjectData(SerializationInfo info, StreamingContext context)<a class="headerlink" href="#getobjectdataserializationinfo-info-streamingcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Populates a <a href="#">SerializationInfo</a> with the data needed to serialize the target object.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>info</strong>
+The <a href="#">SerializationInfo</a> to populate with data.</p>
+<p><strong>context</strong>
+The destination (see <a href="#">StreamingContext</a>) for this serialization.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.Security.SecurityException</strong>
+The caller does not have the required permission.</p>
+<h3 id="getpropertydatastring-name">GetPropertyData(string name)<a class="headerlink" href="#getpropertydatastring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the <a href="#">PropertyData</a> for the specified property.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+The name of the property.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">PropertyData</a>.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="getpropertyinfopropertydata-property">GetPropertyInfo(PropertyData property)<a class="headerlink" href="#getpropertyinfopropertydata-property" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the <a href="#">PropertyInfo</a> for the specified property.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+The property.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyInfo</a> or <code>null</code> if no property info is found.</p>
+<h3 id="getpropertyinfostring-property">GetPropertyInfo(string property)<a class="headerlink" href="#getpropertyinfostring-property" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the <a href="#">PropertyInfo</a> for the specified property.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+The name of the property.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyInfo</a> or <code>null</code> if no property info is found.</p>
+<h3 id="getvalidator">GetValidator()<a class="headerlink" href="#getvalidator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the validator. If the field is <code>null</code>, it will query the service locator.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>IValidator.</p>
+<h3 id="getvaluepropertydata-property">GetValue(PropertyData property)<a class="headerlink" href="#getvaluepropertydata-property" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the value of a specific property.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+<a href="#">PropertyData</a> of the property.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Object value of the property.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="getvaluestring-name">GetValue(string name)<a class="headerlink" href="#getvaluestring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the value of a specific property.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Object value of the property.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="getvaluepropertydata-property-1">GetValue<TValue>(PropertyData property)<a class="headerlink" href="#getvaluepropertydata-property-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the typed value of a specific property.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+<a href="#">PropertyData</a> of the property.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Object value of the property.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="getvaluestring-name-1">GetValue<TValue>(string name)<a class="headerlink" href="#getvaluestring-name-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the typed value of a specific property.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Object value of the property.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="getvaluefaststring-propertyname">GetValueFast<T>(string propertyName)<a class="headerlink" href="#getvaluefaststring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the value fast without checking for any constraints. This means that if this method is used incorrectly,
+    it can throw random exceptions.</p>
+<pre><code>This is a wrapper around the _propertyValues field. Don't use the field directly, always use
+this method because it takes care of locking and event subscriptions.
+</code></pre>
+
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The value of the property.</p>
+<h3 id="handleobjecteventssubscriptionstring-propertyname-object-propertyvalue">HandleObjectEventsSubscription(string propertyName, object propertyValue)<a class="headerlink" href="#handleobjecteventssubscriptionstring-propertyname-object-propertyvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Handles the object events subscription. This means that the old value will be removed from the event subscriptions, and
+    the new value will be subscribed to.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>propertyValue</strong>
+The property value.</p>
+<h3 id="initialize">Initialize()<a class="headerlink" href="#initialize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes the object by setting default values.</p>
+<h3 id="initializecustomproperties">InitializeCustomProperties()<a class="headerlink" href="#initializecustomproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Allows the initialization of custom properties. This is a virtual method that is called
+    inside the constructor before the object is fully constructed.</p>
+<pre><code>This might be considered as bad or as a hack, but it's a good way to be able to inject
+custom properties before any actual logic is handled by derived classes.
+</code></pre>
+
+<h4 id="remarks-6">Remarks<a class="headerlink" href="#remarks-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Only use when you really know what you are doing.</p>
+<h3 id="initializeproperties">InitializeProperties()<a class="headerlink" href="#initializeproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes all the properties for this object.</p>
+<h3 id="initializepropertypropertydata-property-bool-lateregistration-bool-iscalculatedproperty">InitializeProperty(PropertyData property, bool lateRegistration, bool isCalculatedProperty)<a class="headerlink" href="#initializepropertypropertydata-property-bool-lateregistration-bool-iscalculatedproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a specific property for this object.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+The property.</p>
+<p><strong>lateRegistration</strong>
+If set to <code>true</code>, the property is assumed to be registered after the official initialization.</p>
+<p><strong>isCalculatedProperty</strong>
+if set to <code>true</code>, the property is a calculated property.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<p><strong>T:Catel.Data.InvalidPropertyException</strong>
+The name of the property is invalid.</p>
+<p><strong>T:Catel.Data.PropertyAlreadyRegisteredException</strong>
+The property is already registered.</p>
+<h3 id="initializepropertystring-name-type-type-object-defaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-isserializable-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty-bool-lateregistration-bool-iscalculatedproperty">InitializeProperty(string name, Type type, object defaultValue, bool setParent, EventHandler<AdvancedPropertyChangedEventArgs> propertyChangedEventHandler, bool isSerializable, bool includeInSerialization, bool includeInBackup, bool isModelBaseProperty, bool lateRegistration, bool isCalculatedProperty)<a class="headerlink" href="#initializepropertystring-name-type-type-object-defaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-isserializable-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty-bool-lateregistration-bool-iscalculatedproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a specific property for this object.</p>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>type</strong>
+Type of the property.</p>
+<p><strong>defaultValue</strong>
+Default value of the property.</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>isSerializable</strong>
+if set to <code>true</code>, the property is serializable.</p>
+<p><strong>includeInSerialization</strong>
+if set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+if set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>isModelBaseProperty</strong>
+if set to <code>true</code>, the property is declared by the <a href="#">ModelBase</a>.</p>
+<p><strong>lateRegistration</strong>
+if set to <code>true</code>, the property is assumed to be registered after the official initialization.</p>
+<p><strong>isCalculatedProperty</strong>
+if set to <code>true</code>, the property is a calculated property.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.InvalidPropertyException</strong>
+The name is <code>null</code> or whitespace.</p>
+<p><strong>T:Catel.Data.PropertyAlreadyRegisteredException</strong>
+The property is already registered.</p>
+<h3 id="initializepropertyafterconstructionpropertydata-property">InitializePropertyAfterConstruction(PropertyData property)<a class="headerlink" href="#initializepropertyafterconstructionpropertydata-property" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a specific property for this object after the object is already constructed and initialized.</p>
+<pre><code>Normally, properties are automatically registered in the constructor. If properties should be registered
+via runtime behavior, this method must be used.
+</code></pre>
+
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+<a href="#">PropertyData</a> of the property.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<p><strong>T:Catel.Data.InvalidPropertyException</strong>
+The name of the property is invalid.</p>
+<p><strong>T:Catel.Data.PropertyAlreadyRegisteredException</strong>
+The property is already registered.</p>
+<h3 id="ismodelbasepropertystring-name">IsModelBaseProperty(string name)<a class="headerlink" href="#ismodelbasepropertystring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified property is a property declared by the <a href="#">ModelBase</a> itself.</p>
+<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+The name of the property.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified property is a property declared by the <a href="#">ModelBase</a> itself; otherwise, <code>false</code>.</p>
+<h3 id="ispropertyregisteredstring-name">IsPropertyRegistered(string name)<a class="headerlink" href="#ispropertyregisteredstring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether a specific property is registered.</p>
+<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>True if the property is registered, otherwise false.</p>
+<h3 id="true">IsPropertyRegistered(Type type, string name)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether a specific property is registered.</p>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type of the object for which to check.</p>
+<p><strong>name</strong>
+Name of the property.</p>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>True if the property is registered, otherwise false.</p>
+<h3 id="ispropertyregisteredstring-name-1">IsPropertyRegistered<T>(string name)<a class="headerlink" href="#ispropertyregisteredstring-name-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether a specific property is registered.</p>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of the object for which to check.</p>
+<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>True if the property is registered, otherwise false.</p>
+<h3 id="loadtype-type-stream-stream-serializationmode-mode-iserializationconfiguration-configuration">Load(Type type, Stream stream, SerializationMode mode, ISerializationConfiguration configuration)<a class="headerlink" href="#loadtype-type-stream-stream-serializationmode-mode-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Loads the object from a stream using a specific formatting.</p>
+<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>stream</strong>
+Stream that contains the serialized data of this object.</p>
+<p><strong>mode</strong>
+<a href="#">SerializationMode</a> to use.</p>
+<p><strong>configuration</strong>
+The configuration.</p>
+<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Deserialized instance of the object. If the deserialization fails, <code>null</code> is returned.</p>
+<h4 id="remarks-7">Remarks<a class="headerlink" href="#remarks-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>When enableRedirects is enabled, loading will take more time. Only set
+    the parameter to <code>true</code> when the deserialization without redirects fails.</p>
+<h3 id="loadstream-stream-serializationmode-mode-iserializationconfiguration-configuration">Load<T>(Stream stream, SerializationMode mode, ISerializationConfiguration configuration)<a class="headerlink" href="#loadstream-stream-serializationmode-mode-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Loads the object from a stream using a specific formatting.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of the object that should be loaded.</p>
+<h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>stream</strong>
+Stream that contains the serialized data of this object.</p>
+<p><strong>mode</strong>
+<a href="#">SerializationMode</a> to use.</p>
+<p><strong>configuration</strong>
+The configuration.</p>
+<h4 id="returns-22">Returns<a class="headerlink" href="#returns-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Deserialized instance of the object. If the deserialization fails, <code>null</code> is returned.</p>
+<h4 id="remarks-8">Remarks<a class="headerlink" href="#remarks-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>When enableRedirects is enabled, loading will take more time. Only set
+    the parameter to <code>true</code> when the deserialization without redirects fails.</p>
+<h3 id="loadxdocument-xmldocument">Load<T>(XDocument xmlDocument)<a class="headerlink" href="#loadxdocument-xmldocument" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Loads the object from an XmlDocument object.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of the object that should be loaded.</p>
+<h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>xmlDocument</strong>
+The XML document.</p>
+<h4 id="returns-23">Returns<a class="headerlink" href="#returns-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Deserialized instance of the object. If the deserialization fails, <code>null</code> is returned.</p>
+<h3 id="notifyerrorschangedstring-propertyname-bool-notifyhaserrors">NotifyErrorsChanged(string propertyName, bool notifyHasErrors)<a class="headerlink" href="#notifyerrorschangedstring-propertyname-bool-notifyhaserrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Notifies all listeners that the errors for the specified property have changed. If the
+    propertyName is <code>null</code> or Empty, the business
+    errors will be updated.</p>
+<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>notifyHasErrors</strong>
+if set to <code>true</code>, the HasErrors property will be notified as well.</p>
+<h3 id="notifyvalidationresultivalidationresult-validationresult-bool-notifyglobal">NotifyValidationResult(IValidationResult validationResult, bool notifyGlobal)<a class="headerlink" href="#notifyvalidationresultivalidationresult-validationresult-bool-notifyglobal" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the right events based on the validation result.</p>
+<h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationResult</strong>
+The validation result.</p>
+<p><strong>notifyGlobal</strong>
+If set to <code>true</code>, the global properties such as HasErrors and HasWarnings are also raised.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The validationResult is <code>null</code>.</p>
+<h3 id="notifywarningschangedstring-propertyname-bool-notifyhaswarnings">NotifyWarningsChanged(string propertyName, bool notifyHasWarnings)<a class="headerlink" href="#notifywarningschangedstring-propertyname-bool-notifyhaswarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Notifies all listeners that the warnings for the specified property have changed. If the
+    propertyName is <code>null</code> or Empty, the business
+    errors will be updated.</p>
+<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>notifyHasWarnings</strong>
+if set to <code>true</code>, the HasWarnings property will be notified as well.</p>
+<h3 id="onbegineditbeginediteventargs-e">OnBeginEdit(BeginEditEventArgs e)<a class="headerlink" href="#onbegineditbeginediteventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the BeginEdit event.</p>
+<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">BeginEditEventArgs</a> instance containing the event data.</p>
+<h3 id="oncanceleditediteventargs-e">OnCancelEdit(EditEventArgs e)<a class="headerlink" href="#oncanceleditediteventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CancelEdit event.</p>
+<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">EditEventArgs</a> instance containing the event data.</p>
+<h3 id="oncanceleditcompletedcanceleditcompletedeventargs-e">OnCancelEditCompleted(CancelEditCompletedEventArgs e)<a class="headerlink" href="#oncanceleditcompletedcanceleditcompletedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CancelEditingCompleted event.</p>
+<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="ondeserialized">OnDeserialized()<a class="headerlink" href="#ondeserialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is deserialized.</p>
+<h3 id="ondeserializedstreamingcontext-context">OnDeserialized(StreamingContext context)<a class="headerlink" href="#ondeserializedstreamingcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invoked when the deserialization of the object graph is complete.</p>
+<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>context</strong>
+The <a href="#">StreamingContext</a>..</p>
+<h3 id="ondeserializing">OnDeserializing()<a class="headerlink" href="#ondeserializing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is being deserialized.</p>
+<h3 id="onendeditediteventargs-e">OnEndEdit(EditEventArgs e)<a class="headerlink" href="#onendeditediteventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the EndEdit event.</p>
+<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">EditEventArgs</a> instance containing the event data.</p>
+<h3 id="oninitialized">OnInitialized()<a class="headerlink" href="#oninitialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is initialized.</p>
+<h3 id="oninitializing">OnInitializing()<a class="headerlink" href="#oninitializing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is being initialized.</p>
+<h3 id="onpropertyobjectcollectionchangedobject-sender-notifycollectionchangedeventargs-e">OnPropertyObjectCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)<a class="headerlink" href="#onpropertyobjectcollectionchangedobject-sender-notifycollectionchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when a property that implements <a href="#">INotifyCollectionChanged</a> raises the event.</p>
+<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">NotifyCollectionChangedEventArgs</a> instance containing the event data.</p>
+<h3 id="onpropertyobjectcollectionitempropertychangedobject-sender-propertychangedeventargs-e">OnPropertyObjectCollectionItemPropertyChanged(object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#onpropertyobjectcollectionitempropertychangedobject-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when a property inside a collection that implements <a href="#">INotifyCollectionChanged</a> that implements
+    <a href="#">INotifyPropertyChanged</a> raises the event.</p>
+<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
+<h3 id="onpropertyobjectpropertychangedobject-sender-propertychangedeventargs-e">OnPropertyObjectPropertyChanged(object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#onpropertyobjectpropertychangedobject-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when a property that implements <a href="#">INotifyPropertyChanged</a> raises the event.</p>
+<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
+<h3 id="onserialized">OnSerialized()<a class="headerlink" href="#onserialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object has been serialized.</p>
+<h3 id="onserializing">OnSerializing()<a class="headerlink" href="#onserializing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is being serialized.</p>
+<h3 id="onvalidatedivalidationcontext-validationcontext">OnValidated(IValidationContext validationContext)<a class="headerlink" href="#onvalidatedivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is validated.</p>
+<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="onvalidatedbusinessrulesivalidationcontext-validationcontext">OnValidatedBusinessRules(IValidationContext validationContext)<a class="headerlink" href="#onvalidatedbusinessrulesivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object has validated the business rules.</p>
+<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="onvalidatedfieldsivalidationcontext-validationcontext">OnValidatedFields(IValidationContext validationContext)<a class="headerlink" href="#onvalidatedfieldsivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object has validated the fields.</p>
+<h4 id="parameters-41">Parameters<a class="headerlink" href="#parameters-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="onvalidatingivalidationcontext-validationcontext">OnValidating(IValidationContext validationContext)<a class="headerlink" href="#onvalidatingivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is validating.</p>
+<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="onvalidatingbusinessrulesivalidationcontext-validationcontext">OnValidatingBusinessRules(IValidationContext validationContext)<a class="headerlink" href="#onvalidatingbusinessrulesivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is validating the business rules.</p>
+<h4 id="parameters-43">Parameters<a class="headerlink" href="#parameters-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="onvalidatingfieldsivalidationcontext-validationcontext">OnValidatingFields(IValidationContext validationContext)<a class="headerlink" href="#onvalidatingfieldsivalidationcontext-validationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the object is validating the fields.</p>
+<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationContext</strong>
+The validation context.</p>
+<h3 id="raisepropertychangedobject-sender-advancedpropertychangedeventargs-e">RaisePropertyChanged(object sender, AdvancedPropertyChangedEventArgs e)<a class="headerlink" href="#raisepropertychangedobject-sender-advancedpropertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the PropertyChanged event.</p>
+<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
+<h4 id="remarks-9">Remarks<a class="headerlink" href="#remarks-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is overriden en does not call the base because lots of additional logic is added in this class. The
+    Boolean) will explicitly call 
+    AdvancedPropertyChangedEventArgs).</p>
+<pre><code>If this method is overriden, it is very important to call the base.
+</code></pre>
+
+<h3 id="raisepropertychangedobject-sender-propertychangedeventargs-e-bool-setdirtyandallowautomaticvalidation-bool-isrefreshcallonly">RaisePropertyChanged(object sender, PropertyChangedEventArgs e, bool setDirtyAndAllowAutomaticValidation, bool isRefreshCallOnly)<a class="headerlink" href="#raisepropertychangedobject-sender-propertychangedeventargs-e-bool-setdirtyandallowautomaticvalidation-bool-isrefreshcallonly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invoked when a property value has changed.</p>
+<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
+<p><strong>setDirtyAndAllowAutomaticValidation</strong>
+if set to <code>true</code>, the IsDirty property is set and automatic validation is allowed.</p>
+<p><strong>isRefreshCallOnly</strong>
+if set to <code>true</code>, the call is only to refresh updates (for example, for the IDataErrorInfo 
+    implementation). If this value is <code>false</code>, the custom change handlers will not be called.</p>
+<h3 id="raisepropertychangedforallregisteredproperties">RaisePropertyChangedForAllRegisteredProperties()<a class="headerlink" href="#raisepropertychangedforallregisteredproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the property changed for all registered properties.</p>
+<h4 id="remarks-10">Remarks<a class="headerlink" href="#remarks-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Using this method does not set the IsDirty property to <code>true</code>, nor will
+    it cause the object to validate itself automatically, even when the AutomaticallyValidateOnPropertyChanged
+    is set to <code>true</code>.</p>
+<h3 id="registerpropertystring-name-type-type-func-createdefaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty">RegisterProperty(string name, Type type, Func<object> createDefaultValue, bool setParent, EventHandler<AdvancedPropertyChangedEventArgs> propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool isModelBaseProperty)<a class="headerlink" href="#registerpropertystring-name-type-type-func-createdefaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>type</strong>
+Type of the property.</p>
+<p><strong>createDefaultValue</strong>
+The delegate that creates the default value. If <code>null</code>, a delegate returning the default 
+    value (<code>null</code> for reference types, <code>Activator.CreateInstance(type)</code> for value types).</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+if set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+if set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>isModelBaseProperty</strong>
+if set to <code>true</code>, the property is declared by the <a href="#">ModelBase</a>.</p>
+<h4 id="returns-24">Returns<a class="headerlink" href="#returns-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The name is <code>null</code> or whitespace.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is <code>null</code>.</p>
+<h3 id="registerpropertystring-name-type-type-func-createdefaultvalue-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent">RegisterProperty(string name, Type type, Func<object> createDefaultValue, EventHandler<AdvancedPropertyChangedEventArgs> propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool setParent)<a class="headerlink" href="#registerpropertystring-name-type-type-func-createdefaultvalue-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>type</strong>
+Type of the property.</p>
+<p><strong>createDefaultValue</strong>
+The delegate that creates the default value. If <code>null</code>, a delegate returning the default 
+    value (<code>null</code> for reference types, <code>Activator.CreateInstance(type)</code> for value types).</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+if set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+if set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<h4 id="returns-25">Returns<a class="headerlink" href="#returns-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The name is <code>null</code> or whitespace.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is <code>null</code>.</p>
+<h3 id="registerpropertytmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-func-createdefaultvalue-actiontmodel-advancedpropertychangedeventargs-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, Func<TValue> createDefaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool setParent)<a class="headerlink" href="#registerpropertytmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-func-createdefaultvalue-actiontmodel-advancedpropertychangedeventargs-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TModel</strong>
+The model type.</p>
+<p><strong>TValue</strong>
+The value type.</p>
+<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyExpression</strong>
+The property expression.</p>
+<p><strong>createDefaultValue</strong>
+The delegate that creates the default value. If <code>null</code>, a delegate returning the default 
+    value (<code>null</code> for reference types, <code>Activator.CreateInstance(type)</code> for value types).</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+If set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+If set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<h4 id="returns-26">Returns<a class="headerlink" href="#returns-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The member type of the body of the propertyExpression of should be <code>MemberTypes.Property</code>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The propertyExpression is <code>null</code>.</p>
+<h3 id="registerpropertytmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-tvalue-defaultvalue-actiontmodel-advancedpropertychangedeventargs-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, TValue defaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool setParent)<a class="headerlink" href="#registerpropertytmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-tvalue-defaultvalue-actiontmodel-advancedpropertychangedeventargs-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TModel</strong>
+The model type.</p>
+<p><strong>TValue</strong>
+The value type.</p>
+<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyExpression</strong>
+The property expression.</p>
+<p><strong>defaultValue</strong>
+Default value of the property.</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+If set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+If set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>setParent</strong>
+If set to <code>true</code>, the parent of the property will be set.</p>
+<h4 id="returns-27">Returns<a class="headerlink" href="#returns-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The member type of the body of the propertyExpression of should be <code>MemberTypes.Property</code>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The propertyExpression is <code>null</code>.</p>
+<h3 id="registerpropertystring-name-type-type-tvalue-defaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty">RegisterProperty<TValue>(string name, Type type, TValue defaultValue, bool setParent, EventHandler<AdvancedPropertyChangedEventArgs> propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool isModelBaseProperty)<a class="headerlink" href="#registerpropertystring-name-type-type-tvalue-defaultvalue-bool-setparent-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-ismodelbaseproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="type-parameters-7">Type Parameters<a class="headerlink" href="#type-parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
+<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>type</strong>
+Type of the property.</p>
+<p><strong>defaultValue</strong>
+Default value of the property.</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+if set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+if set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>isModelBaseProperty</strong>
+if set to <code>true</code>, the property is declared by the <a href="#">ModelBase</a>.</p>
+<h4 id="returns-28">Returns<a class="headerlink" href="#returns-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The name is <code>null</code> or whitespace.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is <code>null</code>.</p>
+<h3 id="registerpropertystring-name-type-type-tvalue-defaultvalue-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent">RegisterProperty<TValue>(string name, Type type, TValue defaultValue, EventHandler<AdvancedPropertyChangedEventArgs> propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup, bool setParent)<a class="headerlink" href="#registerpropertystring-name-type-type-tvalue-defaultvalue-eventhandler-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup-bool-setparent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers a property that will be automatically handled by this object.</p>
+<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
+<h4 id="parameters-52">Parameters<a class="headerlink" href="#parameters-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>type</strong>
+Type of the property.</p>
+<p><strong>defaultValue</strong>
+Default value of the property.</p>
+<p><strong>propertyChangedEventHandler</strong>
+The property changed event handler.</p>
+<p><strong>includeInSerialization</strong>
+if set to <code>true</code>, the property should be included in the serialization.</p>
+<p><strong>includeInBackup</strong>
+if set to <code>true</code>, the property should be included in the backup when handling IEditableObject.</p>
+<p><strong>setParent</strong>
+if set to <code>true</code>, the parent of the property will be set.</p>
+<h4 id="returns-29">Returns<a class="headerlink" href="#returns-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">PropertyData</a> containing the property information.</p>
+<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The name is <code>null</code> or whitespace.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is <code>null</code>.</p>
+<h3 id="setdirtyandautomaticallyvalidatestring-propertyname-bool-setdirtyandallowautomaticvalidation">SetDirtyAndAutomaticallyValidate(string propertyName, bool setDirtyAndAllowAutomaticValidation)<a class="headerlink" href="#setdirtyandautomaticallyvalidatestring-propertyname-bool-setdirtyandallowautomaticvalidation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the IsDirty property and automatically validate if required.</p>
+<h4 id="parameters-53">Parameters<a class="headerlink" href="#parameters-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>setDirtyAndAllowAutomaticValidation</strong>
+If set to <code>true</code>, the IsDirty property is set and automatic validation is allowed.</p>
+<h3 id="setparentiparent-parent">SetParent(IParent parent)<a class="headerlink" href="#setparentiparent-parent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the new parent of this object.</p>
+<h4 id="parameters-54">Parameters<a class="headerlink" href="#parameters-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>parent</strong>
+The new parent.</p>
+<h3 id="setvaluepropertydata-property-object-value">SetValue(PropertyData property, object value)<a class="headerlink" href="#setvaluepropertydata-property-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the value of a specific property.</p>
+<h4 id="parameters-55">Parameters<a class="headerlink" href="#parameters-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+<a href="#">PropertyData</a> of the property.</p>
+<p><strong>value</strong>
+Value of the property.</p>
+<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="setvaluepropertydata-property-object-value-bool-notifyonchange-bool-validateattributes">SetValue(PropertyData property, object value, bool notifyOnChange, bool validateAttributes)<a class="headerlink" href="#setvaluepropertydata-property-object-value-bool-notifyonchange-bool-validateattributes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the value of a specific property.</p>
+<h4 id="parameters-56">Parameters<a class="headerlink" href="#parameters-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>property</strong>
+The property to set.</p>
+<p><strong>value</strong>
+Value of the property.</p>
+<p><strong>notifyOnChange</strong>
+If <code>true</code>, the PropertyChanged event will be invoked.</p>
+<p><strong>validateAttributes</strong>
+If set to <code>true</code>, the validation attributes on the property will be validated.</p>
+<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotNullableException</strong>
+The property is not nullable, but value is <code>null</code>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The property is <code>null</code>.</p>
+<h3 id="setvaluestring-name-object-value">SetValue(string name, object value)<a class="headerlink" href="#setvaluestring-name-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the value of a specific property.</p>
+<h4 id="parameters-57">Parameters<a class="headerlink" href="#parameters-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>value</strong>
+Value of the property.</p>
+<h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="setvaluestring-name-object-value-bool-notifyonchange-bool-validateattributes">SetValue(string name, object value, bool notifyOnChange, bool validateAttributes)<a class="headerlink" href="#setvaluestring-name-object-value-bool-notifyonchange-bool-validateattributes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the value of a specific property.</p>
+<h4 id="parameters-58">Parameters<a class="headerlink" href="#parameters-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>name</strong>
+Name of the property.</p>
+<p><strong>value</strong>
+Value of the property.</p>
+<p><strong>notifyOnChange</strong>
+If <code>true</code>, the PropertyChanged event will be invoked.</p>
+<p><strong>validateAttributes</strong>
+If set to <code>true</code>, the validation attributes on the property will be validated.</p>
+<h4 id="exceptions-20">Exceptions<a class="headerlink" href="#exceptions-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Data.PropertyNotNullableException</strong>
+The property is not nullable, but value is <code>null</code>.</p>
+<p><strong>T:Catel.Data.PropertyNotRegisteredException</strong>
+The property is not registered.</p>
+<h3 id="setvaluefaststring-propertyname-object-value">SetValueFast(string propertyName, object value)<a class="headerlink" href="#setvaluefaststring-propertyname-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the value fast without checking for any constraints or additional logic such as change notifications. This 
+    means that if this method is used incorrectly, it can throw random exceptions.</p>
+<pre><code>This is a wrapper around the _propertyValues field. Don't use the field directly, always use
+this method because it takes care of locking and event subscriptions.
+</code></pre>
+
+<h4 id="parameters-59">Parameters<a class="headerlink" href="#parameters-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>value</strong>
+The value.</p>
+<h3 id="shouldpropertychangeupdateisdirtystring-propertyname">ShouldPropertyChangeUpdateIsDirty(string propertyName)<a class="headerlink" href="#shouldpropertychangeupdateisdirtystring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether a specific property change should update <code>IsDirty</code> to <code>true</code>.</p>
+<h4 id="returns-30">Returns<a class="headerlink" href="#returns-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if <code>IsDirty</code> should be set to <code>true</code> when the specified property has changed, <code>false</code> otherwise.</p>
+<h3 id="suspendchangecallbacks">SuspendChangeCallbacks()<a class="headerlink" href="#suspendchangecallbacks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Suspends the change callbacks whenever a property has been called. This is very useful when
+    there are expensive property change callbacks registered with a property that need to be
+    temporarily disabled.</p>
+<h4 id="returns-31">Returns<a class="headerlink" href="#returns-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h3 id="suspendchangenotificationsbool-raiseonresume">SuspendChangeNotifications(bool raiseOnResume)<a class="headerlink" href="#suspendchangenotificationsbool-raiseonresume" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Suspends the change notifications until the disposed object has been released.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>raiseOnResume</strong>
+if set to <code>true</code>, the notifications are invoked on resume.</p>
+<h4 id="returns-32">Returns<a class="headerlink" href="#returns-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A disposable object.</p>
+<h3 id="suspendvalidationsbool-validateonresume">SuspendValidations(bool validateOnResume)<a class="headerlink" href="#suspendvalidationsbool-validateonresume" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Suspends the validation until the disposable token has been disposed.</p>
+<h4 id="returns-33">Returns<a class="headerlink" href="#returns-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h3 id="tostring">ToString()<a class="headerlink" href="#tostring" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns a <a href="#">String</a> that represents this instance.</p>
+<h4 id="returns-34">Returns<a class="headerlink" href="#returns-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A <a href="#">String</a> that represents this instance.</p>
+<h3 id="unregisterpropertytype-modeltype-string-name">UnregisterProperty(Type modelType, string name)<a class="headerlink" href="#unregisterpropertytype-modeltype-string-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Unregisters the property.</p>
+<pre><code>Note that the unregistration of a property applies to all models of the same type. It is not possible to 
+unregister a property for a single instance of a type.
+</code></pre>
+
+<h4 id="parameters-60">Parameters<a class="headerlink" href="#parameters-60" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>modelType</strong>
+Type of the model, required because it cannot be retrieved in a static context.</p>
+<p><strong>name</strong>
+The name.</p>
+<h3 id="validatebool-force">Validate(bool force)<a class="headerlink" href="#validatebool-force" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Validates the current object for field and business rule errors.</p>
+<h4 id="parameters-61">Parameters<a class="headerlink" href="#parameters-61" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>force</strong>
+If set to <code>true</code>, a validation is forced. When the validation is not forced, it means 
+    that when the object is already validated, and no properties have been changed, no validation actually occurs 
+    since there is no reason for any values to have changed.</p>
+<h4 id="remarks-11">Remarks<a class="headerlink" href="#remarks-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>To check whether this object contains any errors, use the HasErrors property.</p>
+<h3 id="validatebool-force-bool-validatedataannotations">Validate(bool force, bool validateDataAnnotations)<a class="headerlink" href="#validatebool-force-bool-validatedataannotations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Validates the current object for field and business rule errors.</p>
+<h4 id="parameters-62">Parameters<a class="headerlink" href="#parameters-62" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>force</strong>
+If set to <code>true</code>, a validation is forced (even if the object knows it is already validated).</p>
+<p><strong>validateDataAnnotations</strong>
+If set to <code>true</code>, the data annotations will be checked. This value is only used if force is set to <code>true</code>.</p>
+<h4 id="remarks-12">Remarks<a class="headerlink" href="#remarks-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>To check whether this object contains any errors, use the HasErrors property.</p>
+<h3 id="validatebusinessruleslist-validationresults">ValidateBusinessRules(List<IBusinessRuleValidationResult> validationResults)<a class="headerlink" href="#validatebusinessruleslist-validationresults" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Validates the business rules of this object. Override this method to enable
+    validation of business rules.</p>
+<h4 id="parameters-63">Parameters<a class="headerlink" href="#parameters-63" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationResults</strong>
+The validation results, add additional results to this list.</p>
+<h3 id="validatefieldslist-validationresults">ValidateFields(List<IFieldValidationResult> validationResults)<a class="headerlink" href="#validatefieldslist-validationresults" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Validates the field values of this object. Override this method to enable
+    validation of field values.</p>
+<h4 id="parameters-64">Parameters<a class="headerlink" href="#parameters-64" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>validationResults</strong>
+The validation results, add additional results to this list.</p>
+<h3 id="validatepropertyusingannotationsstring-propertyname-object-value-propertydata-catelpropertydata">ValidatePropertyUsingAnnotations(string propertyName, object value, PropertyData catelPropertyData)<a class="headerlink" href="#validatepropertyusingannotationsstring-propertyname-object-value-propertydata-catelpropertydata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Validates the property using data annotations.</p>
+<h4 id="parameters-65">Parameters<a class="headerlink" href="#parameters-65" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>value</strong>
+The value to validate.</p>
+<p><strong>catelPropertyData</strong>
+The catel property data. Can be <code>null</code> for non-Catel properties.</p>
+<h4 id="returns-35">Returns<a class="headerlink" href="#returns-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if no errors using data annotations are found; otherwise <code>false</code>.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Data/ModelBase.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

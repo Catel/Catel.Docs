@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CollectionExtensions - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger.htm">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions.htm">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument.htm">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler.htm">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions.htm">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions.htm">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment.htm">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter.htm">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate.htm">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule.htm">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute.htm">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute.htm">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper.htm">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer.htm">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable.htm">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken.htm">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum.htm">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper.htm">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions.htm">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions.htm">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory.htm">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason.htm">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper.htm">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime.htm">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper.htm">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper.htm">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum.htm">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions.htm">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter.htm">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken.htm">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute.htm">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject.htm">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent.htm">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions.htm">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable.htm">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction.htm">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener.htm">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference.htm">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions.htm">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms.htm">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper.htm">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException.htm">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule.htm">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException.htm">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper.htm">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper.htm">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper.htm">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms.htm">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions.htm">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext.htm">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper.htm">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule.htm">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions.htm">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper.htm">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms.htm">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper.htm">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper.htm">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper.htm">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper.htm">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions.htm">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction.htm">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase.htm">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener.htm">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Caching.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Collections.htm">Collections</a></span></li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/Collections/CollectionExtensions.htm">CollectionExtensions</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/CollectionHelper.htm">CollectionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/DictionaryExtensions.htm">DictionaryExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/FastBindingList.htm">FastBindingList</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/FastObservableCollection.htm">FastObservableCollection</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.htm">ISuspendChangeNotificationsCollection</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/ListDictionary.htm">ListDictionary</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/NotifyListChangedEventArgs.htm">NotifyListChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/NotifyRangedCollectionChangedEventArgs.htm">NotifyRangedCollectionChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/NotifyRangedListChangedAction.htm">NotifyRangedListChangedAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/NotifyRangedListChangedEventArgs.htm">NotifyRangedListChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/SuspensionContext.htm">SuspensionContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Collections/SuspensionMode.htm">SuspensionMode</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ComponentModel.htm">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Configuration.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Core.htm">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Data.htm">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IO.htm">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IoC.htm">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Logging.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Runtime.htm">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Services.htm">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Test.htm">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Text.htm">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Threading.htm">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../Collections.htm">Collections</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/Collections/CollectionExtensions.htm">CollectionExtensions</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="collectionextensions">CollectionExtensions<a class="headerlink" href="#collectionextensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Collections</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class CollectionExtensions
+</pre><p>Extensions for the <a href="#">ICollection</a> and <a href="#">Collection</a> classes.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="addrangeicollection-collection-ienumerable-range">AddRange<T>(ICollection<T> collection, IEnumerable<T> range)<a class="headerlink" href="#addrangeicollection-collection-ienumerable-range" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Add an range of items to the specified <a href="#">ICollection</a>.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of items within the collection.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>collection</strong>
+The collection.</p>
+<p><strong>range</strong>
+An range of items.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The collection is <code>null</code>.</p>
+<h3 id="canmoveitemdownilist-list-object-item">CanMoveItemDown(IList list, object item)<a class="headerlink" href="#canmoveitemdownilist-list-object-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the item can be moved down in the list.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>item</strong>
+The item to check.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item can be moved down in the list; otherwise, <code>false</code>.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="canmoveitemupilist-list-object-item">CanMoveItemUp(IList list, object item)<a class="headerlink" href="#canmoveitemupilist-list-object-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the item can be moved up in the list.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>item</strong>
+The item to check.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item can be moved up in the list; otherwise, <code>false</code>.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="foreachienumerable-collection-action-action">ForEach<TItem>(IEnumerable<TItem> collection, Action<TItem> action)<a class="headerlink" href="#foreachienumerable-collection-action-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The for each extension on <a href="#">IEnumerable</a>.</p>
+<h4 id="true">Type Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TItem</strong>
+The type of the item.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>collection</strong>
+The collection.</p>
+<p><strong>action</strong>
+The action.</p>
+<h3 id="moveitemdownilist-list-object-item">MoveItemDown(IList list, object item)<a class="headerlink" href="#moveitemdownilist-list-object-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Moves the specified item down in the list.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>item</strong>
+The item to move down.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item has successfully been moved down; otherwise <code>false</code>.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="moveitemdownbyindexilist-list-int-index">MoveItemDownByIndex(IList list, int index)<a class="headerlink" href="#moveitemdownbyindexilist-list-int-index" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Moves the item at the specified index down in the list.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>index</strong>
+The index of the item to move down.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item has successfully been moved down; otherwise <code>false</code>.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The index is smaller than 0 or larger than the list count.</p>
+<h3 id="true">MoveItemUp(IList list, object item)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Moves the specified item up in the list.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>item</strong>
+The item to move up.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item has successfully been moved up; otherwise <code>false</code>.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="moveitemupbyindexilist-list-int-index">MoveItemUpByIndex(IList list, int index)<a class="headerlink" href="#moveitemupbyindexilist-list-int-index" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Moves the item at the specified index up in the list.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<p><strong>index</strong>
+The index of the item to move up.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the item has successfully been moved up; otherwise <code>false</code>.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The index is smaller than 0 or larger than the list count.</p>
+<h3 id="true">RemoveFirst(IList list)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the first entry from the list.</p>
+<pre><code>When there are no items in the list, this method will silently exit.
+</code></pre>
+
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="removelastilist-list">RemoveLast(IList list)<a class="headerlink" href="#removelastilist-list" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the last entry from the list.</p>
+<pre><code>When there are no items in the list, this method will silently exit.
+</code></pre>
+
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>list</strong>
+The list.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The list is <code>null</code>.</p>
+<h3 id="replacerangeicollection-collection-ienumerable-range">ReplaceRange<T>(ICollection<T> collection, IEnumerable<T> range)<a class="headerlink" href="#replacerangeicollection-collection-ienumerable-range" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Replaces the whole range of the specified collection. This is done by internally
+    calling Clear and finally <code>AddRange{T}</code>.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of items within the collection.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>collection</strong>
+The collection.</p>
+<p><strong>range</strong>
+The range of items to add to the observable collection.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The collection is <code>null</code>.</p>
+<h3 id="sortilist-existingset-funct-t-int-comparer">Sort<T>(IList<T> existingSet, Func&lt;T, T, int&gt; comparer)<a class="headerlink" href="#sortilist-existingset-funct-t-int-comparer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sorts the specified existing set.</p>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The type of elements.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>existingSet</strong>
+The existing set.</p>
+<p><strong>comparer</strong>
+The comparer.</p>
+<h3 id="synchronizecollectionilist-existingset-ienumerable-newset-bool-updateexistingset">SynchronizeCollection<T>(IList<T> existingSet, IEnumerable<T> newSet, bool updateExistingSet)<a class="headerlink" href="#synchronizecollectionilist-existingset-ienumerable-newset-bool-updateexistingset" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Synchronizes the collection by adding / removing items that are in the new set.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The type of the collection item.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>existingSet</strong>
+The existing set.</p>
+<p><strong>newSet</strong>
+The new set.</p>
+<p><strong>updateExistingSet</strong>
+if set to <code>true</code>, the existing set will be updated, otherwise a new collection will be created and the existing set will remain unchanged.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>IEnumerable&lt;T&gt;.</p>
+<h3 id="toarrayienumerable-collection-type-elementtype">ToArray(IEnumerable collection, Type elementType)<a class="headerlink" href="#toarrayienumerable-collection-type-elementtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts the collection to an array.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>collection</strong>
+The collection.</p>
+<p><strong>elementType</strong>
+Type of the element.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Array.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Collections/CollectionExtensions.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

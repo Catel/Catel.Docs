@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CameraServiceBase - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../CatelCore.htm">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger.htm">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions.htm">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument.htm">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler.htm">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions.htm">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions.htm">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment.htm">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter.htm">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate.htm">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule.htm">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute.htm">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute.htm">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper.htm">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer.htm">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable.htm">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken.htm">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum.htm">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper.htm">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions.htm">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions.htm">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory.htm">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason.htm">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper.htm">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime.htm">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper.htm">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper.htm">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum.htm">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions.htm">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter.htm">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken.htm">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute.htm">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject.htm">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent.htm">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions.htm">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable.htm">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction.htm">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener.htm">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference.htm">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions.htm">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms.htm">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper.htm">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException.htm">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule.htm">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException.htm">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper.htm">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper.htm">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper.htm">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms.htm">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions.htm">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext.htm">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper.htm">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule.htm">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions.htm">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper.htm">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms.htm">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper.htm">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper.htm">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper.htm">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper.htm">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions.htm">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction.htm">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase.htm">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener.htm">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ApiCop.htm">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Caching.htm">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Collections.htm">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ComponentModel.htm">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Configuration.htm">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Core.htm">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Data.htm">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../ExceptionHandling.htm">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IO.htm">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../IoC.htm">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Logging.htm">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Messaging.htm">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Pooling.htm">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Reflection.htm">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Runtime.htm">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Scoping.htm">Scoping</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../Services.htm">Services</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerSensorListener.htm">AccelerometerSensorListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerService.htm">AccelerometerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerValue.htm">AccelerometerValue</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AccelerometerValueChangedEventArgs.htm">AccelerometerValueChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ApplicationClosingEventArgs.htm">ApplicationClosingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/AutoCompletionService.htm">AutoCompletionService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraOperationCompletedEventArgs.htm">CameraOperationCompletedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraService.htm">CameraService</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/Services/CameraServiceBase.htm">CameraServiceBase</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#events">Events</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/CameraType.htm">CameraType</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ContentReadyEventArgs.htm">ContentReadyEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/DispatcherService.htm">DispatcherService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ExportMode.htm">ExportMode</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/FileServiceBase.htm">FileServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/FlashMode.htm">FlashMode</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAccelerometerService.htm">IAccelerometerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAccelerometerValue.htm">IAccelerometerValue</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IAutoCompletionService.htm">IAutoCompletionService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ICameraService.htm">ICameraService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IDispatcherService.htm">IDispatcherService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IDispatcherServiceExtensions.htm">IDispatcherServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IFileSupport.htm">IFileSupport</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILanguageService.htm">ILanguageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILanguageSource.htm">ILanguageSource</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILocation.htm">ILocation</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ILocationService.htm">ILocationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IMessageService.htm">IMessageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/INavigationRootService.htm">INavigationRootService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/INavigationService.htm">INavigationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IObjectConverterService.htm">IObjectConverterService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IObjectConverterServiceExtensions.htm">IObjectConverterServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IOpenFileService.htm">IOpenFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IPleaseWaitService.htm">IPleaseWaitService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IPleaseWaitServiceExtensions.htm">IPleaseWaitServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IProcessService.htm">IProcessService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IRollingInMemoryLogService.htm">IRollingInMemoryLogService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISaveFileService.htm">ISaveFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISchedulerService.htm">ISchedulerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISelectDirectoryService.htm">ISelectDirectoryService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ISensorService.htm">ISensorService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IService.htm">IService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStartUpInfoProvider.htm">IStartUpInfoProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStartUpInfoProviderExtensions.htm">IStartUpInfoProviderExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IState.htm">IState</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStateService.htm">IStateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IStateServiceExtensions.htm">IStateServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IUIVisualizerService.htm">IUIVisualizerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IUIVisualizerServiceExtensions.htm">IUIVisualizerServiceExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IVibrateService.htm">IVibrateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewExportService.htm">IViewExportService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewModelService.htm">IViewModelService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService.htm">IViewModelWrapperService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey.htm">LanguageResourceKey</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource.htm">LanguageResourceSource</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageService.htm">LanguageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LanguageServiceBase.htm">LanguageServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/Location.htm">Location</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationChangedEventArgs.htm">LocationChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationListener.htm">LocationListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationService.htm">LocationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/LocationServiceBase.htm">LocationServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageBoxButton.htm">MessageBoxButton</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageBoxResult.htm">MessageBoxResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageButton.htm">MessageButton</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageImage.htm">MessageImage</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageResult.htm">MessageResult</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/MessageService.htm">MessageService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NamingConvention.htm">NamingConvention</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationHelper.htm">NavigationHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationRootService.htm">NavigationRootService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationService.htm">NavigationService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/NavigationServiceBase.htm">NavigationServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ObjectConverterService.htm">ObjectConverterService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/OpenFileService.htm">OpenFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PageNotRegisteredException.htm">PageNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PleaseWaitService.htm">PleaseWaitService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/PleaseWaitWorkDelegate.htm">PleaseWaitWorkDelegate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ProcessCompletedDelegate.htm">ProcessCompletedDelegate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ProcessService.htm">ProcessService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/RollingInMemoryLogService.htm">RollingInMemoryLogService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SaveFileService.htm">SaveFileService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SchedulerService.htm">SchedulerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SelectDirectoryService.htm">SelectDirectoryService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/SensorServiceBase.htm">SensorServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ServiceBase.htm">ServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/Size.htm">Size</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/StartUpInfoProvider.htm">StartUpInfoProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/StateService.htm">StateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/UICompletedEventArgs.htm">UICompletedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/UIVisualizerService.htm">UIVisualizerService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/VibrateService.htm">VibrateService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewExportService.htm">ViewExportService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelServiceBase.htm">ViewModelServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelWrapperService.htm">ViewModelWrapperService</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/ViewModelWrapperServiceBase.htm">ViewModelWrapperServiceBase</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException.htm">WindowNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Services/WrapOptions.htm">WrapOptions</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Test.htm">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Text.htm">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../Threading.htm">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../CatelCore.htm">Catel.Core</a></li> / <li><a href="../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../Services.htm">Services</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/Services/CameraServiceBase.htm">CameraServiceBase</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="cameraservicebase">CameraServiceBase<a class="headerlink" href="#cameraservicebase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Services</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public abstract class CameraServiceBase : ICameraService, ViewModelServiceBase
+</pre><p><strong>Base types</strong>
+<a href="/Catel.Core\Catel\Services\ViewModelServiceBase.htm">ViewModelServiceBase</a></p>
+<p><strong>Base types</strong></p>
+<p><a href="/Catel.Core\Catel\Services\ICameraService.htm">ICameraService</a></p>
+<p>Base implementation of the <a href="#">ICameraService</a>. This implementation takes care of some
+    protection code to prevent double initialization or forgotten initialization.</p>
+<pre><code>This class ensures that the service is running when setting or getting cricical properties or
+calling critical methods. This might look a bit dumb in the first place, but saves the developer
+of the end-classes lots of redundant checking.
+</code></pre>
+
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="isrunning">_isRunning<a class="headerlink" href="#isrunning" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="availableresolutions">AvailableResolutions<a class="headerlink" href="#availableresolutions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the available resolutions.</p>
+<h3 id="cameratype">CameraType<a class="headerlink" href="#cameratype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the type of the camera.</p>
+<h3 id="flashmode">FlashMode<a class="headerlink" href="#flashmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the flash mode. Unsupported flash modes silently default to Off.</p>
+<h3 id="isfocusatpointsupported">IsFocusAtPointSupported<a class="headerlink" href="#isfocusatpointsupported" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the camera can programmatically auto focus on a specific point in the viewfinder.</p>
+<h3 id="isfocussupported">IsFocusSupported<a class="headerlink" href="#isfocussupported" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the camera can be auto-focused programmatically.</p>
+<h3 id="orientation">Orientation<a class="headerlink" href="#orientation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of degrees that the viewfind brush needs to be rotated clockwise to align with the camera sensor.</p>
+<h3 id="previewresolution">PreviewResolution<a class="headerlink" href="#previewresolution" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the preview resolution of the images.</p>
+<h3 id="resolution">Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the resolution of the actual images.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="autofocuscompleted">AutoFocusCompleted<a class="headerlink" href="#autofocuscompleted" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the focus operation is completed.</p>
+<h3 id="capturecompleted">CaptureCompleted<a class="headerlink" href="#capturecompleted" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the capture sequence is complete.</p>
+<h3 id="captureimageavailable">CaptureImageAvailable<a class="headerlink" href="#captureimageavailable" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when an image is available.</p>
+<h3 id="capturestarted">CaptureStarted<a class="headerlink" href="#capturestarted" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the capture sequence has started.</p>
+<h3 id="capturethumbnailavailable">CaptureThumbnailAvailable<a class="headerlink" href="#capturethumbnailavailable" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when a thumbnail image is available.</p>
+<h3 id="initialized">Initialized<a class="headerlink" href="#initialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the camera has been initialized.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="cancelcamerafocus">CancelCameraFocus()<a class="headerlink" href="#cancelcamerafocus" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Cancels the current camera auto focus operation.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="cancelfocus">CancelFocus()<a class="headerlink" href="#cancelfocus" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Cancels the current camera auto focus operation.</p>
+<h3 id="capturecameraimage">CaptureCameraImage()<a class="headerlink" href="#capturecameraimage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initiates a full-resolution capture of the current image displayed in the viewfinder</p>
+<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="captureimage">CaptureImage()<a class="headerlink" href="#captureimage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initiates a full-resolution capture of the current image displayed in the viewfinder</p>
+<h3 id="ensureservicerunning">EnsureServiceRunning()<a class="headerlink" href="#ensureservicerunning" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Ensures that the service is running. If not, this method will throw a
+    <a href="#">NotSupportedException</a>.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.NotSupportedException</strong>
+The service is not running.</p>
+<h3 id="focus">Focus()<a class="headerlink" href="#focus" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a camera auto focus operation.</p>
+<h3 id="focusatpointdouble-x-double-y">FocusAtPoint(double x, double y)<a class="headerlink" href="#focusatpointdouble-x-double-y" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a camera auto focus operation on a specific point in the viewfinder, for those devices that support it.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>x</strong>
+The horizontal location in the viewfinder; a value between 0 (left) and 1.0 (right).</p>
+<p><strong>y</strong>
+The vertical location in the viewfinder; a value between 0 (top) and 1.0 (bottom).</p>
+<h3 id="focuscamera">FocusCamera()<a class="headerlink" href="#focuscamera" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a camera auto focus operation.</p>
+<h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="focuscameraatpointdouble-x-double-y">FocusCameraAtPoint(double x, double y)<a class="headerlink" href="#focuscameraatpointdouble-x-double-y" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a camera auto focus operation on a specific point in the viewfinder, for those devices that support it.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>x</strong>
+The horizontal location in the viewfinder; a value between 0 (left) and 1.0 (right).</p>
+<p><strong>y</strong>
+The vertical location in the viewfinder; a value between 0 (top) and 1.0 (bottom).</p>
+<h4 id="remarks-3">Remarks<a class="headerlink" href="#remarks-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="getavailableresolutions">GetAvailableResolutions()<a class="headerlink" href="#getavailableresolutions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the available resolutions.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The available resolutions.</p>
+<h3 id="getcameratype">GetCameraType()<a class="headerlink" href="#getcameratype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the type of the camera.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The camera type.</p>
+<h3 id="getflashmode">GetFlashMode()<a class="headerlink" href="#getflashmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the flash mode.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The flash mode.</p>
+<h3 id="getisfocusatpointsupported">GetIsFocusAtPointSupported()<a class="headerlink" href="#getisfocusatpointsupported" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the camera can programmatically auto focus on a specific point in the viewfinder.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the camera can programmatically auto focus on a specific point in the viewfinder; otherwise, <code>false</code>.</p>
+<h3 id="getisfocussupported">GetIsFocusSupported()<a class="headerlink" href="#getisfocussupported" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether the camera can be auto-focused programmatically.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the camera can be auto-focused programmatically; otherwise, <code>false</code>.</p>
+<h3 id="getorientation">GetOrientation()<a class="headerlink" href="#getorientation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of degrees that the viewfind brush needs to be rotated clockwise to align with the camera sensor.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The orientation.</p>
+<h3 id="getpreviewbufferargb32int-pixeldata">GetPreviewBufferArgb32(int[] pixelData)<a class="headerlink" href="#getpreviewbufferargb32int-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the current viewfinder ARGB frame into a buffer for further manipulation.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The ARGB pixel data.</p>
+<h3 id="getpreviewbufferargb32fromcameraint-pixeldata">GetPreviewBufferArgb32FromCamera(int[] pixelData)<a class="headerlink" href="#getpreviewbufferargb32fromcameraint-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the current viewfinder ARGB frame into a buffer for further manipulation.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The ARGB pixel data.</p>
+<h4 id="remarks-4">Remarks<a class="headerlink" href="#remarks-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="getpreviewbufferybyte-pixeldata">GetPreviewBufferY(byte[] pixelData)<a class="headerlink" href="#getpreviewbufferybyte-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the luminance data for the current viewfinder frame into a buffer for further manipulation.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The YCrCb pixel data.</p>
+<h3 id="getpreviewbufferycbcrbyte-pixeldata">GetPreviewBufferYCbCr(byte[] pixelData)<a class="headerlink" href="#getpreviewbufferycbcrbyte-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the current viewfinder frame into a buffer for further manipulation.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The pixel data.</p>
+<h3 id="getpreviewbufferycbcrfromcamerabyte-pixeldata">GetPreviewBufferYCbCrFromCamera(byte[] pixelData)<a class="headerlink" href="#getpreviewbufferycbcrfromcamerabyte-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the current viewfinder frame into a buffer for further manipulation.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The pixel data.</p>
+<h4 id="remarks-5">Remarks<a class="headerlink" href="#remarks-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="getpreviewbufferyfromcamerabyte-pixeldata">GetPreviewBufferYFromCamera(byte[] pixelData)<a class="headerlink" href="#getpreviewbufferyfromcamerabyte-pixeldata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Copies the luminance data for the current viewfinder frame into a buffer for further manipulation.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>pixelData</strong>
+The YCrCb pixel data.</p>
+<h4 id="remarks-6">Remarks<a class="headerlink" href="#remarks-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="getpreviewresolution">GetPreviewResolution()<a class="headerlink" href="#getpreviewresolution" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the preview resolution of the images.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The preview resolution.</p>
+<h3 id="getresolution">GetResolution()<a class="headerlink" href="#getresolution" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the resolution of the actual images.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The resolution.</p>
+<h3 id="iscameratypesupportedcameratype-type">IsCameraTypeSupported(CameraType type)<a class="headerlink" href="#iscameratypesupportedcameratype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether a particular camera type is supported on the device.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified camera type is supported; otherwise, <code>false</code>.</p>
+<h3 id="isflashmodesupportedflashmode-mode">IsFlashModeSupported(FlashMode mode)<a class="headerlink" href="#isflashmodesupportedflashmode-mode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether a particular flash mode is supported on the device.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>mode</strong>
+The mode.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified flash mode is supported; otherwise, <code>false</code>.</p>
+<h3 id="true">IsFlashModeSupportedByCamera(FlashMode mode)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether a particular flash mode is supported on the device.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>mode</strong>
+The mode.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified flash mode is supported; otherwise, <code>false</code>.</p>
+<h4 id="true">Remarks<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+<h3 id="raiseautofocuscompletedcameraoperationcompletedeventargs-e">RaiseAutoFocusCompleted(CameraOperationCompletedEventArgs e)<a class="headerlink" href="#raiseautofocuscompletedcameraoperationcompletedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the AutoFocusCompleted event.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">CameraOperationCompletedEventArgs</a> instance containing the event data.</p>
+<h3 id="raisecapturecompletedcameraoperationcompletedeventargs-e">RaiseCaptureCompleted(CameraOperationCompletedEventArgs e)<a class="headerlink" href="#raisecapturecompletedcameraoperationcompletedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CaptureCompleted event.</p>
+<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">CameraOperationCompletedEventArgs</a> instance containing the event data.</p>
+<h3 id="raisecaptureimageavailablecontentreadyeventargs-e">RaiseCaptureImageAvailable(ContentReadyEventArgs e)<a class="headerlink" href="#raisecaptureimageavailablecontentreadyeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CaptureImageAvailable event.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">ContentReadyEventArgs</a> instance containing the event data.</p>
+<h3 id="raisecapturestartedeventargs-e">RaiseCaptureStarted(EventArgs e)<a class="headerlink" href="#raisecapturestartedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CaptureStarted event.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="raisecapturethumbnailavailablecontentreadyeventargs-e">RaiseCaptureThumbnailAvailable(ContentReadyEventArgs e)<a class="headerlink" href="#raisecapturethumbnailavailablecontentreadyeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the CaptureThumbnailAvailable event.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">ContentReadyEventArgs</a> instance containing the event data.</p>
+<h3 id="raiseinitializedcameraoperationcompletedeventargs-e">RaiseInitialized(CameraOperationCompletedEventArgs e)<a class="headerlink" href="#raiseinitializedcameraoperationcompletedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the Initialized event.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">CameraOperationCompletedEventArgs</a> instance containing the event data.</p>
+<h3 id="setflashmodeflashmode-flashmode">SetFlashMode(FlashMode flashMode)<a class="headerlink" href="#setflashmodeflashmode-flashmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the flash mode.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>flashMode</strong>
+The flash mode.</p>
+<h3 id="setresolutionsize-resolution">SetResolution(Size resolution)<a class="headerlink" href="#setresolutionsize-resolution" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the resolution of the actual images.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>resolution</strong>
+The resolution.</p>
+<h3 id="start">Start()<a class="headerlink" href="#start" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts the camera service for the primary camera so it's retrieving data.</p>
+<h3 id="startcameratype-cameratype">Start(CameraType cameraType)<a class="headerlink" href="#startcameratype-cameratype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts the camera service for a specific camera type so it's retrieving data.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>cameraType</strong>
+Type of the camera.</p>
+<h3 id="startservicecameratype-cameratype">StartService(CameraType cameraType)<a class="headerlink" href="#startservicecameratype-cameratype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts the camera service so it's retrieving data.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>cameraType</strong>
+Type of the camera.</p>
+<h4 id="remarks-7">Remarks<a class="headerlink" href="#remarks-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently not running.</p>
+<h3 id="stop">Stop()<a class="headerlink" href="#stop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Stops the camera service so it's no longer retrieving data.</p>
+<h3 id="stopservice">StopService()<a class="headerlink" href="#stopservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Stops the camera service so it's no longer retrieving data.</p>
+<h4 id="remarks-8">Remarks<a class="headerlink" href="#remarks-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method is already protected and only called when the service is currently running.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Services/CameraServiceBase.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

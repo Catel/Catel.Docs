@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ViewLoadManager - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Introduction.htm">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../FAQ.htm">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Setup,deployment&projects.htm">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Gettingstarted.htm">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Examples.htm">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelMVVM.htm">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelFody.htm">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelReSharper.htm">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/index.htm">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../APIreference.htm">API reference</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelCore.htm">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../CatelMVVM.htm">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../Catel.htm">Catel</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Android.htm">Android</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../MVVM.htm">MVVM</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Binding.htm">Binding</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingBase.htm">BindingBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContext.htm">BindingContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContextExtensions.htm">BindingContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingExtensions.htm">BindingExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingMode.htm">BindingMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingParty.htm">BindingParty</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/BindingPartyExtensions.htm">BindingPartyExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CancelingEventArgs.htm">CancelingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CancellableEventArgs.htm">CancellableEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Command.htm">Command</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBase.htm">CommandBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBinding.htm">CommandBinding</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCanceledEventArgs.htm">CommandCanceledEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandContainerBase.htm">CommandContainerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCreatedEventArgs.htm">CommandCreatedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandEventArgs.htm">CommandEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandExecutedEventArgs.htm">CommandExecutedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandHelper.htm">CommandHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManager.htm">CommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManagerWrapper.htm">CommandManagerWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CommandProgressChangedEventArgs.htm">CommandProgressChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/CompositeCommand.htm">CompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionMode.htm">DataContextSubscriptionMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionService.htm">DataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/DefaultViewModelToModelMappingConverter.htm">DefaultViewModelToModelMappingConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IAuthenticationProvider.htm">IAuthenticationProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelCommand.htm">ICatelCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelTaskCommand.htm">ICatelTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ICommandManager.htm">ICommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ICompositeCommand.htm">ICompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService.htm">IDataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ILocator.htm">ILocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/InvalidViewModelException.htm">InvalidViewModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IProgressNotifyableViewModel.htm">IProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IRelationalViewModel.htm">IRelationalViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ITaskProgressReport.htm">ITaskProgressReport</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IUrlLocator.htm">IUrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewLocator.htm">IViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModel.htm">IViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager.htm">IViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelContainer.htm">IViewModelContainer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelExtensions.htm">IViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactory.htm">IViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactoryExtensions.htm">IViewModelFactoryExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocator.htm">IViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocatorExtensions.htm">IViewModelLocatorExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelManager.htm">IViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelToModelConverter.htm">IViewModelToModelConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase.htm">LocatorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel.htm">ManagedViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute.htm">ModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode.htm">ModelCleanUpMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo.htm">ModelErrorInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo.htm">ModelInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException.htm">ModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModuleInitializer.htm">ModuleInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/NavigationViewModelBase.htm">NavigationViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectExtensions.htm">ObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectToDisplayNameConverter.htm">ObjectToDisplayNameConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressiveTaskCommand.htm">ProgressiveTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressNotifyableViewModel.htm">ProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/PropertyNotFoundInModelException.htm">PropertyNotFoundInModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/SavingEventArgs.htm">SavingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/TaskCommand.htm">TaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator.htm">UrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute.htm">ValidationToViewModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper.htm">ViewHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator.htm">ViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelBase.htm">ViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelClosedEventArgs.htm">ViewModelClosedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelCommandManager.htm">ViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelExtensions.htm">ViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelFactory.htm">ViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelLocator.htm">ViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager.htm">ViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions.htm">ViewModelManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata.htm">ViewModelMetadata</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException.htm">ViewModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelServiceHelper.htm">ViewModelServiceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelAttribute.htm">ViewModelToModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelConverterBase.htm">ViewModelToModelConverterBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMapping.htm">ViewModelToModelMapping</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMode.htm">ViewModelToModelMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/WrongViewModelTypeException.htm">WrongViewModelTypeException</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Auditing.htm">Auditing</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Converters.htm">Converters</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Navigation.htm">Navigation</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Properties.htm">Properties</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Providers.htm">Providers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Tasks.htm">Tasks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../Views.htm">Views</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/DataContextChangedEventArgs.htm">DataContextChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/FastViewPropertySelector.htm">FastViewPropertySelector</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IDataWindow.htm">IDataWindow</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/INavigationView.htm">INavigationView</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IPage.htm">IPage</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.htm">IUserControl</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IView.htm">IView</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadManager.htm">IViewLoadManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadState.htm">IViewLoadState</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewManager.htm">IViewManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewManagerExtensions.htm">IViewManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.htm">IViewModelWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/IViewPropertySelector.htm">IViewPropertySelector</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewExtensions.htm">ViewExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadEventArgs.htm">ViewLoadEventArgs</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager.htm">ViewLoadManager</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#events">Events</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadStateEvent.htm">ViewLoadStateEvent</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewManager.htm">ViewManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewModelWrapper.htm">ViewModelWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewPropertySelector.htm">ViewPropertySelector</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewStack.htm">ViewStack</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewStackPartEventArgs.htm">ViewStackPartEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelAttribute.htm">ViewToViewModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMapping.htm">ViewToViewModelMapping</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingContainer.htm">ViewToViewModelMappingContainer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingHelper.htm">ViewToViewModelMappingHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingType.htm">ViewToViewModelMappingType</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/WeakViewInfo.htm">WeakViewInfo</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Properties.htm">Properties</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Windows.htm">Windows</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../Xamarin.htm">Xamarin</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../System.htm">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../CatelSerializationJson.htm">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../APIreference.htm">API reference</a></li> / <li><a href="../../../../../CatelMVVM.htm">Catel.MVVM</a></li> / <li><a href="../../../../../Catel.htm">Catel</a></li> / <li><a href="../../../../../MVVM.htm">MVVM</a></li> / <li><a href="../../../../../Views.htm">Views</a></li> / <li><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager.htm">ViewLoadManager</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="viewloadmanager">ViewLoadManager<a class="headerlink" href="#viewloadmanager" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.MVVM</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.MVVM.Views</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class ViewLoadManager : IViewLoadManager
+</pre><p><strong>Base types</strong></p>
+<p><a href="/Catel.MVVM\Catel\MVVM\Views\IViewLoadManager.htm">IViewLoadManager</a></p>
+<p>Manager that handles top =&gt; bottom loaded events for all views inside an application.</p>
+<pre><code>The reason this class is built is that in non-WPF technologies, the visual tree is loaded from
+bottom =&amp;gt; top. However, Catel heavily relies on the order to be top =&amp;gt; bottom.
+
+
+
+This manager subscribes to both the ```Loaded``` and ```LayoutUpdated```
+events. This is because in a nested scenario this will happen:
+</code></pre>
+
+<pre class="nocode">
+</pre><pre><code>Will be executed in the following order:
+</code></pre>
+
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="cleanuptimer">_cleanUpTimer<a class="headerlink" href="#cleanuptimer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="lastinvokedviewloadstateevent">_lastInvokedViewLoadStateEvent<a class="headerlink" href="#lastinvokedviewloadstateevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="views">_views<a class="headerlink" href="#views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="viewloadmanager-1">ViewLoadManager()<a class="headerlink" href="#viewloadmanager-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">ViewLoadManager</a> class.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="viewloaded">ViewLoaded<a class="headerlink" href="#viewloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when any of the subscribed views are loaded.</p>
+<h3 id="viewloading">ViewLoading<a class="headerlink" href="#viewloading" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when any of the subscribed views are about to be loaded.</p>
+<h3 id="viewunloaded">ViewUnloaded<a class="headerlink" href="#viewunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when any of the subscribed views are unloaded.</p>
+<h3 id="viewunloading">ViewUnloading<a class="headerlink" href="#viewunloading" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when any of the subscribed views are about to be unloaded.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="addviewiviewloadstate-viewloadstate">AddView(IViewLoadState viewLoadState)<a class="headerlink" href="#addviewiviewloadstate-viewloadstate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Adds the view load state.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>viewLoadState</strong>
+The view load state.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The viewLoadState is <code>null</code>.</p>
+<h3 id="cleanup">CleanUp()<a class="headerlink" href="#cleanup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Cleans up the dead links.</p>
+<h3 id="invokeviewloadeventiview-view-viewloadstateevent-viewloadstateevent">InvokeViewLoadEvent(IView view, ViewLoadStateEvent viewLoadStateEvent)<a class="headerlink" href="#invokeviewloadeventiview-view-viewloadstateevent-viewloadstateevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specific view load event and makes sure that it isn't double invoked.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>view</strong>
+The view.</p>
+<p><strong>viewLoadStateEvent</strong>
+The view load state event.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+viewLoadStateEvent</p>
+<h3 id="onviewinfoloadedobject-sender-eventargs-e">OnViewInfoLoaded(object sender, EventArgs e)<a class="headerlink" href="#onviewinfoloadedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onviewinfounloadedobject-sender-eventargs-e">OnViewInfoUnloaded(object sender, EventArgs e)<a class="headerlink" href="#onviewinfounloadedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="raiseloadediview-view">RaiseLoaded(IView view)<a class="headerlink" href="#raiseloadediview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="raiseunloadediview-view">RaiseUnloaded(IView view)<a class="headerlink" href="#raiseunloadediview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

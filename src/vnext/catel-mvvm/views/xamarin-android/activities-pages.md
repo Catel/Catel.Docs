@@ -46,8 +46,6 @@ To create the actual user interface of the fragment, add a new `xaml` file to 
 </LinearLayout>
 ```
 
-![](attachments/25329688/25559042.png?width=300)
-
 ## Setting up synchronization
 
 In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended `MainActivity` class containing these mapping functionality:

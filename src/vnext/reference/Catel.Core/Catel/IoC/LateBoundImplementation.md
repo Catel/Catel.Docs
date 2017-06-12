@@ -1,0 +1,28 @@
+
+
+# LateBoundImplementation
+
+Name|Value
+---|---
+Assembly|Catel.Core
+Namespace|Catel.IoC
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+
+```
+public class LateBoundImplementation
+```
+
+Class representing a late-bound implementation. This means that a type registered in the 
+    [ServiceLocator](#) is registered with an unknown callback and the implementation
+    type could not be determined at registration time.
+
+
+
+## Constructors
+
+### LateBoundImplementation()
+
+Prevents a default instance of the [LateBoundImplementation](#) class from being created.
+
+
+

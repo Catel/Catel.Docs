@@ -1,0 +1,64 @@
+
+
+# IWeakAction
+
+Name|Value
+---|---
+Assembly|Catel.Core
+Namespace|Catel
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+
+```
+public interface IWeakAction<TParameter> : IExecuteWithObject, IWeakReference
+```
+
+**Base types**
+
+[IExecuteWithObject](/Catel.Core\Catel\IExecuteWithObject.md),[IWeakReference](/Catel.Core\Catel\IWeakReference.md)
+
+
+A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not
+    cause memory leaks.
+
+#### Type Parameters
+
+**TParameter**
+The type of the parameter.
+
+
+
+## Properties
+
+### Action
+
+Gets the actual delegate to invoke.
+
+#### Remarks
+
+This property is only introduced to allow action comparison on WinRT. Do not try to use this method by yourself.
+
+
+
+### MethodName
+
+Gets the name of the method that should be executed.
+
+
+
+## Methods
+
+### Execute(TParameter parameter)
+
+Executes the action. This only happens if the action's target is still alive.
+
+#### Parameters
+
+**parameter**
+The parameter.
+
+#### Returns
+
+```true``` if the action is executed successfully; otherwise ```false```.
+
+
+
