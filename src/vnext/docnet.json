@@ -7,6 +7,7 @@
     "ConvertLocalLinks" : true,
     "SourceFoldersToCopy" : ["images", "includes"],
     "Footer" : "",
+    "PathSpecification": "Relative",
     "Pages" : 
     {
 		"Introduction" :
@@ -110,6 +111,10 @@
 				"ObservableObject" : "catel-core/data-handling/observableobject.md",
 				"DispatcherObservableObject" : "catel-core/data-handling/dispatcherobservableobject.md",
 				"ModelBase" : "catel-core/data-handling/modelbase.md",
+				"ValidatableModelBase" : "catel-core/data-handling/validatablemodelbase.md",
+				"ComparableModelBase" : "catel-core/data-handling/comparablemodelbase.md",
+				"SavableModelBase" : "catel-core/data-handling/savablemodelbase.md",
+				"ChildAwareModelBase" : "catel-core/data-handling/childawaremodelbase.md",
 				"Using ModelBase as base for entities" : "catel-core/data-handling/using-modelbase-as-base-for-entities.md",
 				"Advanced property change notifications" : "catel-core/data-handling/advanced-property-change-notifications.md",
 			},

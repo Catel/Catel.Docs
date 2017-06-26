@@ -1,6 +1,6 @@
 # ModelBase
 
-The *ModelBase* (previously known as the *DataObjectBase)* class is a generic base class that can be used for all your data classes.
+The *ModelBase* class is a generic base class that can be used for all your data classes.
 
 -   **Fully serializable**
     It is now really easy to store objects on disk or serialize them into memory, either binary or in XML. The data object supports this out of the box, and automatically handles the (de)serialization.
@@ -8,8 +8,6 @@ The *ModelBase* (previously known as the *DataObjectBase)* class is a generic ba
     The class supports the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces so this class can easily be used in applications to reflect changes to the user.
 -   **Backwards compatibility**
     When serializing your objects to binary, it is hard to maintain the right versions. When you add a new property to a binary class, or change a namespace, the object cannot be loaded any longer. The data object base takes care of this issue and supports backwards compatibility.
--   **Validation**
-    The class implements the *IDataErrorInfo* interface so it is possible to validate the data object and check the errors. This way, no custom validation code needs to be written outside the data class.
 -   **Backup & revert**
     The class implements the *IEditableObject* interface which makes it possible to create a state of the object. Then all properties can be edited, and finally, the changes can be applied or cancelled.
 
@@ -92,15 +90,11 @@ This way, every time a new value is needed, the callback will be invoked to crea
 
 ## Functionality provided out of the box
 
-The *ModelBase* provides a lot of functionality out of the box. A few points I want to mention are:
+The `ModelBase` provides a lot of functionality out of the box. A few points I want to mention are:
 
 **INotifyPropertyChanged**
 
 All properties registered using the *RegisterProperty* method automatically take care of change notifications.
-
-**IDataErrorInfo**
-
-It is very easy to set field and business errors using the *SetFieldError* and *SetBusinessError* methods that can be used in the overridable *ValidateFields* and *ValidateBusinessRules* methods.
 
 **IEditableObject**
 
@@ -108,6 +102,7 @@ The data object can automatically create an internal backup and restore it, if r
 
 **Serialization**
 
-As told many times before, using the *SavableModelBase,* you can simply save your file to a stream (file on disk, stream in memory, etc.).
+As told many times before, using the `[SavableModelBase](./savablemodelbase.md)`, you can simply save your file to a stream (file on disk, stream in memory, etc.).
+
 Keep in mind that this class is not suitable for database communication, there are much better ways to handle this (ORM mappers such as Entity Framework, NHibernate, LLBLGen Pro, etc.).
 

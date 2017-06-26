@@ -165,7 +165,7 @@
     {
       "location": "setup-deployment/update-guides/catel-5.0.htm",
       "breadcrumbs": "Home / Setup, deployment & projects / Update guides / Catel 5.0",
-      "keywords": "0 4 5 Add alert are assumes be Catel code coming compatible describes Encountered end first from fully guide help here how If important issues not others out please read that them this This to update upgrading version while with you your",
+      "keywords": "0 4 5 a Add adds alert all and are assumes bag based basic be been before behavior below breaking but care Catel cause change changes check checks child ChildAwareModelBase class classes code coming ComparableModelBase comparer compatible compiler contains core Core costly danger decrease describes does Encountered end equality errors event first from fully greatly guide has help here how If important improve into is issues It itself Load logic longer lot means members memory methods ModelBase MVVM no not of on others out performance please print property read registrations SavableModelBase Save separate serialization simplified split subscriptions support takes that the The them this This to up update updating upgrading v5 ValidatableModelBase validation values version very which while with you your",
       "title": "Catel 5.0"
     },
     {
@@ -309,8 +309,32 @@
     {
       "location": "catel-core/data-handling/modelbase.htm",
       "breadcrumbs": "Home / Catel.Core / Data handling / ModelBase",
-      "keywords": "a A above add added advantages all All also an and any applications applied are as As automatically backup Backup backwards Backwards base based be before behavior Below better binary box business but by callback can cancelled cannot care case cases change changed changes check checking checks class classes code collection Collection communication compatibility compiler complex constructed constructor contains context contracts create created creating cref custom data database DataObjectBase de declare default Default defined defines defining Defining definitions dependency derives deserialization deserialized directly disk during each easily easy edited either empty Empty Entity error errors etc every example excluded existing extremely few field file finally for found Framework from fully Fully functionality Functionality generic get Gets GetValue go handle handles hard have However I IDataErrorInfo IEditableObject if implements in In included info information Initializes INotifyPropertyChanged INotifyPropertyChanging instance instead interface interfaces internal into invoked is issue it It Just Keep known like LLBLGen loaded longer look lot lots maintain makes many mappers memory mention method methods might mind model ModelBase much MyObject name Name NameProperty namespace need needed needs new NHibernate no not noticed notifications now null object objects of on one One only or ORM out outside overridable override param parameters pass Person PersonCollection points possible previously Pro properties Properties property PropertyData protected provided provides public readonly ready really reference reflect Register registered RegisterProperty registration regular required restore result retrieve return revert right same SavableModelBase save scratch see serializable Serializable serialization Serialization SerializationInfo serialize serializing set SetBusinessError SetFieldError sets SetValue simple simply snippet so solution specify state static store stream StreamingContext string subscribe such suitable summary support Support supports take takes that the The them Then there this This time times to told true type typeof types unexpected use used user using Using validate ValidateBusinessRules ValidateFields validation Validation value values versions very want wanted way ways when When which will with works written XML you You your",
+      "keywords": "a A above add added advantages all All also an and any applications applied are as As automatically backup Backup backwards Backwards base based be before behavior Below better binary box but by callback can cancelled cannot care case cases change changed changes checking checks class classes code collection Collection communication compatibility compiler complex constructed constructor contains context contracts create created creating cref data database de declare default Default defined defines defining Defining definitions dependency derives deserialization deserialized directly disk during each easily easy edited either empty Empty Entity error errors etc every example excluded existing extremely few file finally for found Framework from fully Fully functionality Functionality generic get Gets GetValue go handle handles hard have However I IEditableObject if implements in In included info information Initializes INotifyPropertyChanged INotifyPropertyChanging instance instead interface interfaces internal into invoked is issue it It Just Keep known like LLBLGen loaded longer look lot lots maintain makes many mappers md memory mention method might mind model ModelBase much MyObject name Name NameProperty namespace need needed new NHibernate no not noticed notifications now null object objects of on one One only or ORM out override param parameters pass Person PersonCollection points possible Pro properties Properties property PropertyData protected provided provides public readonly ready really reference reflect Register registered RegisterProperty registration regular required restore result retrieve return revert right same savablemodelbase SavableModelBase save scratch see serializable Serializable serialization Serialization SerializationInfo serialize serializing set sets SetValue simple simply snippet so solution specify state static store stream StreamingContext string subscribe such suitable summary support Support supports take takes that the The them Then there this This time times to told true type typeof types unexpected use used user using Using value values versions very want wanted way ways when When which will with works XML you You your",
       "title": "ModelBase"
+    },
+    {
+      "location": "catel-core/data-handling/validatablemodelbase.htm",
+      "breadcrumbs": "Home / Catel.Core / Data handling / ValidatableModelBase",
+      "keywords": "alert and be check class code custom data documentation end errors extends functionality future IDataErrorInfo implements important in interface is it md model modelbase ModelBase More needs no object outside possible should so the The This to ValidatableModelBase validate validation way with written",
+      "title": "ValidatableModelBase"
+    },
+    {
+      "location": "catel-core/data-handling/comparablemodelbase.htm",
+      "breadcrumbs": "Home / Catel.Core / Data handling / ComparableModelBase",
+      "keywords": "a alert be been box class ComparableModelBase comparer default documentation end equality extends future has important improve in logic md members modelbase ModelBase More moved of out performance separate should the The This to with written",
+      "title": "ComparableModelBase"
+    },
+    {
+      "location": "catel-core/data-handling/savablemodelbase.htm",
+      "breadcrumbs": "Home / Catel.Core / Data handling / SavableModelBase",
+      "keywords": "a alert any as be by can class convenience documentation end extends functionality future implementation important in is ISerializer just md model modelbase ModelBase More Note persistence SavableModelBase save serialized should store that the The to well with written",
+      "title": "SavableModelBase"
+    },
+    {
+      "location": "catel-core/data-handling/childawaremodelbase.htm",
+      "breadcrumbs": "Home / Catel.Core / Data handling / ChildAwareModelBase",
+      "keywords": "alert all be change ChangeNotificationWrapper child ChildAwareModelBase class documentation end events extends functionality future get important in md model modelbase ModelBase More notifications objects of should subscribe the The to uses using weak with written",
+      "title": "ChildAwareModelBase"
     },
     {
       "location": "catel-core/data-handling/using-modelbase-as-base-for-entities.htm",
