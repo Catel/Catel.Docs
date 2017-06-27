@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DragDrop - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/">Catel</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DataContextChangedHelper/">DataContextChangedHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DataWindow/">DataWindow</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowButton/">DataWindowButton</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowDefaultButton/">DataWindowDefaultButton</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowMode/">DataWindowMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/DependencyObjectExtensions/">DependencyObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/FrameworkElementExtensions/">FrameworkElementExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/InfoBarMessageControlGenerationMode/">InfoBarMessageControlGenerationMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/PopupHelper/">PopupHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ResourceHelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/UIElementExtensions/">UIElementExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Window/">Window</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/WindowExtensions/">WindowExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/WrapControlHelper/">WrapControlHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/WrapOptions/">WrapOptions</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/">Controls</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Input/">Input</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/">Interactivity</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/Authentication/">Authentication</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/AuthenticationAction/">AuthenticationAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/AutoCompletion/">AutoCompletion</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/AutoScroll/">AutoScroll</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/Behavior/">Behavior</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorBase/">BehaviorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorEventArgs/">BehaviorEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/CommandBehaviorBase/">CommandBehaviorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/CommandEventTriggerBase/">CommandEventTriggerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/CommandTriggerActionBase/">CommandTriggerActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/CommandTriggerBase/">CommandTriggerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DelayBindingUpdate/">DelayBindingUpdate</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DoubleClickToCommand/">DoubleClickToCommand</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDrop/">DragDrop</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/EventToCommand/">EventToCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/EventTriggerBase/">EventTriggerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/Focus/">Focus</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/FocusBehaviorBase/">FocusBehaviorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/FocusFirstControl/">FocusFirstControl</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/FocusMoment/">FocusMoment</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/FocusOnKeyPress/">FocusOnKeyPress</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/HideUntilViewModelLoaded/">HideUntilViewModelLoaded</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/IBehavior/">IBehavior</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/ITrigger/">ITrigger</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/KeyPressToCommand/">KeyPressToCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/MouseInfo/">MouseInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/Navigate/">Navigate</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/NumericTextBox/">NumericTextBox</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/RoutedEventTrigger/">RoutedEventTrigger</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/ScrollDirection/">ScrollDirection</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/SelectTextOnFocus/">SelectTextOnFocus</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/TriggerActionBase/">TriggerActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/TriggerBase/">TriggerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/TriggerEventArgs/">TriggerEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/UpdateBindingBehaviorBase/">UpdateBindingBehaviorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/UpdateBindingOnPasswordChanged/">UpdateBindingOnPasswordChanged</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/UpdateBindingOnTextChanged/">UpdateBindingOnTextChanged</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Markup/">Markup</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Xamarin/">Xamarin</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/index.htm">Catel.MVVM</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/index.htm">Catel</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/index.htm">Windows</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/index.htm">Interactivity</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDrop/index.htm">DragDrop</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="dragdrop">DragDrop<a class="headerlink" href="#dragdrop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.MVVM</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Windows.Interactivity</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class DragDrop : BehaviorBase&lt;ItemsControl&gt;
+</pre><p><strong>Base types</strong>
+<a href="">BehaviorBase</a></p>
+<p>An attached behavior that allows you to drag and drop items among various ItemsControls, e.g. ItemsControl, ListBox, TabControl, etc.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This code was originally found at http://wpfbehaviorlibrary.codeplex.com/, which is based on http://gallery.expression.microsoft.com/DragDropBehavior/.</p>
+<pre><code>Original license: Ms-Pl, compatible with the MIT license.
+</code></pre>
+
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="dropindication">_dropIndication<a class="headerlink" href="#dropindication" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="mydata">_myData<a class="headerlink" href="#mydata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="mydragadorner">_myDragAdorner<a class="headerlink" href="#mydragadorner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="mydragscrollwaitcounter">_myDragScrollWaitCounter<a class="headerlink" href="#mydragscrollwaitcounter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="mydragstartposition">_myDragStartPosition<a class="headerlink" href="#mydragstartposition" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="mydropadorner">_myDropAdorner<a class="headerlink" href="#mydropadorner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="myisdragging">_myIsDragging<a class="headerlink" href="#myisdragging" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="myismousedown">_myIsMouseDown<a class="headerlink" href="#myismousedown" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="defaultdataformatstring">DefaultDataFormatString<a class="headerlink" href="#defaultdataformatstring" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Catel.Windows.Interactivity.DataFormat</p>
+<h3 id="dragwaitcounterlimit">DragWaitCounterLimit<a class="headerlink" href="#dragwaitcounterlimit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>10</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="datatemplate">DataTemplate<a class="headerlink" href="#datatemplate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the data template of the items to use while dragging.</p>
+<h3 id="dropindication-1">DropIndication<a class="headerlink" href="#dropindication-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the drop indication.</p>
+<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The default is vertical.</p>
+<h3 id="itemtype">ItemType<a class="headerlink" href="#itemtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the type of the items in the ItemsControl.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="additemitemscontrol-itemscontrol-object-item-int-insertindex">AddItem(ItemsControl itemsControl, object item, int insertIndex)<a class="headerlink" href="#additemitemscontrol-itemscontrol-object-item-int-insertindex" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when an item is added to itemsControl.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>itemsControl</strong>
+The items control item is to be added to.</p>
+<p><strong>item</strong>
+The item to be added.</p>
+<p><strong>insertIndex</strong>
+Index item should be inserted at.</p>
+<h3 id="candragitemscontrol-itemscontrol-object-item">CanDrag(ItemsControl itemsControl, object item)<a class="headerlink" href="#candragitemscontrol-itemscontrol-object-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether item can be dragged from or within the specified items control.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>itemsControl</strong>
+The drag source.</p>
+<p><strong>item</strong>
+The item to be dragged.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if item can be dragged; otherwise, <code>false</code>.</p>
+<h3 id="candropitemscontrol-itemscontrol-object-item">CanDrop(ItemsControl itemsControl, object item)<a class="headerlink" href="#candropitemscontrol-itemscontrol-object-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether item can be dropped onto the specified items control.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>itemsControl</strong>
+The drop target.</p>
+<p><strong>item</strong>
+The item that would be dropped.</p>
+<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if item can be dropped; otherwise, <code>false</code>.</p>
+<h3 id="dataispresentdrageventargs-e">DataIsPresent(DragEventArgs e)<a class="headerlink" href="#dataispresentdrageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="true">DetachAdorners()<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="dispose">Dispose()<a class="headerlink" href="#dispose" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+<h3 id="disposebool-disposing">Dispose(bool disposing)<a class="headerlink" href="#disposebool-disposing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Releases unmanaged and - optionally - managed resources</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>disposing</strong>
+<code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+<h3 id="dragstarteditemscontrol-itemscontrol">DragStarted(ItemsControl itemsControl)<a class="headerlink" href="#dragstarteditemscontrol-itemscontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="true">GetData(DragEventArgs e)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getinsertionindexitemscontrol-itemscontrol-drageventargs-e">GetInsertionIndex(ItemsControl itemsControl, DragEventArgs e)<a class="headerlink" href="#getinsertionindexitemscontrol-itemscontrol-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="handledragscrollingframeworkelement-itemscontrol-drageventargs-e">HandleDragScrolling(FrameworkElement itemsControl, DragEventArgs e)<a class="headerlink" href="#handledragscrollingframeworkelement-itemscontrol-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="initializedragadorneruielement-itemscontrol-object-dragdata-point-startposition">InitializeDragAdorner(UIElement itemsControl, object dragData, Point startPosition)<a class="headerlink" href="#initializedragadorneruielement-itemscontrol-object-dragdata-point-startposition" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="initializedropadorneritemscontrol-itemscontrol-drageventargs-e">InitializeDropAdorner(ItemsControl itemsControl, DragEventArgs e)<a class="headerlink" href="#initializedropadorneritemscontrol-itemscontrol-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="isdroppointbeforeitemitemscontrol-itemscontrol-drageventargs-e">IsDropPointBeforeItem(ItemsControl itemsControl, DragEventArgs e)<a class="headerlink" href="#isdroppointbeforeitemitemscontrol-itemscontrol-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the associated object is loaded.</p>
+<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()<a class="headerlink" href="#onassociatedobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the associated object is unloaded.</p>
+<h3 id="ondragenterobject-sender-drageventargs-e">OnDragEnter(object sender, DragEventArgs e)<a class="headerlink" href="#ondragenterobject-sender-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="ondragleaveobject-sender-drageventargs-e">OnDragLeave(object sender, DragEventArgs e)<a class="headerlink" href="#ondragleaveobject-sender-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="ondragoverobject-sender-drageventargs-e">OnDragOver(object sender, DragEventArgs e)<a class="headerlink" href="#ondragoverobject-sender-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="ondropobject-sender-drageventargs-e">OnDrop(object sender, DragEventArgs e)<a class="headerlink" href="#ondropobject-sender-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onmousemoveobject-sender-mouseeventargs-e">OnMouseMove(object sender, MouseEventArgs e)<a class="headerlink" href="#onmousemoveobject-sender-mouseeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onpreviewdropobject-sender-drageventargs-e">OnPreviewDrop(object sender, DragEventArgs e)<a class="headerlink" href="#onpreviewdropobject-sender-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onpreviewmouseleftbuttondownobject-sender-mousebuttoneventargs-e">OnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)<a class="headerlink" href="#onpreviewmouseleftbuttondownobject-sender-mousebuttoneventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onpreviewmouseleftbuttonupobject-sender-mousebuttoneventargs-e">OnPreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)<a class="headerlink" href="#onpreviewmouseleftbuttonupobject-sender-mousebuttoneventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onpreviewquerycontinuedragobject-sender-querycontinuedrageventargs-e">OnPreviewQueryContinueDrag(object sender, QueryContinueDragEventArgs e)<a class="headerlink" href="#onpreviewquerycontinuedragobject-sender-querycontinuedrageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="removeitemitemscontrol-itemscontrol-object-itemtoremove">RemoveItem(ItemsControl itemsControl, object itemToRemove)<a class="headerlink" href="#removeitemitemscontrol-itemscontrol-object-itemtoremove" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the item from itemsControl.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>itemsControl</strong>
+The items control to remove itemToRemove from.</p>
+<p><strong>itemToRemove</strong>
+The item to remove.</p>
+<h3 id="resetstate">ResetState()<a class="headerlink" href="#resetstate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="updatedragadornerpoint-currentposition">UpdateDragAdorner(Point currentPosition)<a class="headerlink" href="#updatedragadornerpoint-currentposition" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="updatedropadorneritemscontrol-itemscontrol-drageventargs-e">UpdateDropAdorner(ItemsControl itemsControl, DragEventArgs e)<a class="headerlink" href="#updatedropadorneritemscontrol-itemscontrol-drageventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.MVVM/Catel/Windows/Interactivity/DragDrop.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

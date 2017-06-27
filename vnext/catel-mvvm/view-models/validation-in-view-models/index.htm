@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Validation in view models - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/auditing/">Auditing</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/behaviors-triggers/">Behaviors & triggers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/bindings/">Bindings</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/commands-events/">Commands & events</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/converters/">Converters</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/designers/">Designers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/locators-naming-conventions/">Locators & naming conventions</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-mvvm/view-models/">View models</a></span></li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/creating-basic-view-model/">Creating a basic view model</a>
+</li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/creating-view-model-with-model/">Creating a view model with a model</a>
+</li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/creating-view-model-with-model-and-mappings/">Creating a view model with a model and mappings</a>
+</li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/mapping-properties-from-view-to-view-model/">Mapping properties from view to view model</a>
+</li>
+<li class="tocentry"><a href="../../../catel-mvvm/view-models/nested-view-models/">Nested view models</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../catel-mvvm/view-models/validation-in-view-models/">Validation in view models</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#validation-in-models-via-mappings">Validation in models via mappings</a></li>
+<li class="tocentry"><a href="#validation-in-view-models-1">Validation in view models</a></li>
+<li class="tocentry"><a href="#translating-model-validation-in-the-view-model">Translating model validation in the view model</a></li>
+<li class="tocentry"><a href="#validating-via-annotations">Validating via annotations</a></li>
+<li class="tocentry"><a href="#to-validate-required-fields-or-not-to-validate-required-fields-at-startup">To validate required fields or not to validate required fields at startup</a></li>
+</ul>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/view-models/advanced/">Advanced</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/views/">Views</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../catel-mvvm/index.htm">Catel.MVVM</a></li> / <li><a href="../../../catel-mvvm/view-models/index.htm">View models</a></li> / <li><a href="../../../catel-mvvm/view-models/validation-in-view-models/index.htm">Validation in view models</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="validation-in-view-models">Validation in view models<a class="headerlink" href="#validation-in-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Validation is very important to provide both feedback to the user, but also to make sure that no invalid data reaches the model or database. Catel offers several ways to implement validation. All options are described in this part of the documentation.</p>
+<h2 id="validation-in-models-via-mappings">Validation in models via mappings<a class="headerlink" href="#validation-in-models-via-mappings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The best way is to put validation into a model. Most model objects nowadays implement <code>INotifyPropertyChanged</code> and <code>IDataErrorInfo</code>, the most important classes that are required to use mappings from/to a model inside a view model.</p>
+<p>The great advantage of mapping properties from/to models automatically using Catel is that you don't have to write lots of plumbing yourself (getting and setting values in the model and view model). However, if the model implements <code>INotifyPropertyChanged</code> and *IDataErrorInfo<code>, Catel also automatically uses the validation from the model. For example, if there is a</code>Person<code>model that checks if the</code>FirstName<code>and</code>LastName` are entered, why rewrite this validation again in the view model?</p>
+<p>There are two ways to use automatic mappings.</p>
+<h3 id="mapping-via-viewmodeltomodelattribute">Mapping via ViewModelToModelAttribute<a class="headerlink" href="#mapping-via-viewmodeltomodelattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Mapping a model property by using the <em>ViewModelToModelAttribute</em> requires the definition of a model property and a separate property per mapped property. The code below automatically maps the <em>FirstName</em> property.</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Gets or sets the person.
+/// &lt;/summary&gt;
+[Model]
+public Person Person
+{
+    get { return GetValue&lt;Person&gt;(PersonProperty); }
+    private set { SetValue(PersonProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the Person property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(Person));
+
+
+/// &lt;summary&gt;
+/// Gets or sets the first name.
+/// &lt;/summary&gt;
+[ViewModelToModel(&quot;Person&quot;)]
+public string FirstName
+{
+    get { return GetValue&lt;string&gt;(FirstNameProperty); }
+    set { SetValue(FirstNameProperty, value); }
+}
+
+
+/// &lt;summary&gt;
+/// Register the FirstName property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
+</pre><p>If the <code>Person.FirstName</code> provides an error via the <code>IDataErrorInfo</code> interface, it will automatically be exposed by the view model as well.</p>
+<h3 id="mapping-via-exposeattribute">Mapping via ExposeAttribute<a class="headerlink" href="#mapping-via-exposeattribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Mapping a property via the <code>ExposeAttribute</code> is even more simple, but has some disadvantages. First, let's talk about the disadvantages before showing the code:</p>
+<ol>
+<li>Catel uses the <em>ICustomTypeDescriptor</em> interface to implement this behavior, and the interface is only available in WPF.</li>
+<li>The properties are not actually created, so you cannot use them inside your view model as real properties.</li>
+</ol>
+<p>In other words, the <code>ExposeAttribute</code> is only very useful if 1) you are using WPF and 2) if the property is not used inside the view model but only declared to protect the model from the outside world. If both of these constraints are true, then the <code>ExposeAttribute</code> is definitely worth taking a look at. The usage is very simple:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Gets or sets the person.
+/// &lt;/summary&gt;
+[Model]
+[Expose(&quot;FirstName&quot;)]
+[Expose(&quot;MiddleName&quot;)]
+[Expose(&quot;LastName&quot;)]
+private  Person Person
+{
+    get { return GetValue&lt;Person&gt;(PersonProperty); }
+    set { SetValue(PersonProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the Person property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(Person));
+</pre><p>Simply declare the model property and decorate it with one or multiple <code>ExposeAttribute</code> instances. Not only are the properties automatically available for binding, the view model also checks for errors and automatically maps these as well.</p>
+<h2 id="validation-in-view-models-1">Validation in view models<a class="headerlink" href="#validation-in-view-models-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Until now, we only spoke about automatic validation for validation that was written in the model. However, sometimes it is required to write validation inside the view model as well. One reason might be that the model is a POCO object not providing any validation. Or, sometimes there is a logical error that has nothing to do with the model, but should be shown to the user anyway.</p>
+<p>In such a case, Catel offers lots of possibilities to write custom validation inside the view model. Below are the possibilities:</p>
+<ul>
+<li>Field warnings</li>
+<li>Field errors</li>
+<li>Business rule warnings</li>
+<li>Business rule errors</li>
+</ul>
+<p>The difference between a field and business rule is that a field error or warning is specific for a property. These are returned via <code>IDataErrorInfo[&quot;propertyName&quot;]</code>. A business rule is a rule that applies to multiple fields or even a whole entity. Business rule validations are returned via <code>IDataErrorInfo.Error</code>.</p>
+<p>To implement validation into a view model, only two methods need to be implemented. Catel clearly separates the field validation from the business rule validation to make it much clearer to the developer what is going on.</p>
+<h3 id="validating-fields">Validating fields<a class="headerlink" href="#validating-fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To validate fields, one should override the <em>ValidateFields</em> method. Below is an example of field validation on a view model:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Validates the field values of this object. Override this method to enable
+/// validation of field values.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;validationResults&quot;&gt;The validation results, add additional results to this list.&lt;/param&gt;
+protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+{
+    if (!string.IsNullOrEmpty(FirstName))
+    {
+        validationResults.Add(FieldValidationResult.CreateError(FirstNameProperty, &quot;First name cannot be empty&quot;));
+    }
+}
+</pre><h3 id="validating-business-rules">Validating business rules<a class="headerlink" href="#validating-business-rules" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To validate business rules, one should override the <code>ValidateBusinessRules</code> method. Below is an example of business rule validation on a view model:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Validates the field values of this object. Override this method to enable
+/// validation of field values.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;validationResults&quot;&gt;The validation results, add additional results to this list.&lt;/param&gt;
+protected override void ValidateBusinessRules(List&lt;IBusinessRuleValidationResult&gt; validationResults)
+{
+    if (SomeBusinessErrorOccurs)
+    {
+        validationResults.Add(BusinessRuleValidationResult.CreateError(&quot;A business error occurred&quot;));
+    }
+}
+</pre><h2 id="translating-model-validation-in-the-view-model">Translating model validation in the view model<a class="headerlink" href="#translating-model-validation-in-the-view-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Thanks to the validation system in Catel, it is very easy to implement very advanced validation features in view models. The example below shows how to translate errors that are added to a model in the Data Access Layer or validation layer. Assume that the following pseudo code is used to set an error on a model in the DAL:</p>
+<pre class="nocode">SetFieldError(“FirstName”, “FirstNameRequired”);
+</pre><p>All errors that are mapped from the model to the view model automatically are available in the <code>validationResults</code> parameter. This way, the error can be easily translated:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Validates the field values of this object. Override this method to enable 
+/// validation of field values.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;validationResults&quot;&gt;The validation results, add additional results to this list.&lt;/param&gt;
+protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+{
+   foreach (var validationResult in validationResults)
+   {
+      if (validationResult.Message == &quot;FirstNameRequired&quot;)
+      {
+         validationResult.Message = Properties.Resources.FirstNameRequired; 
+      }
+   }
+}
+</pre><p>Of course this is not something you want to actually do in your view model, so you’ll probably have to write a helper class that translates the validation for you. You might or might not like delaying the translation of the model errors to as close as the view, but it shows how extremely powerful the improved validation of Catel is. And if you think a bit about it, wouldn't it be a good idea to delay the translation from the server to the actual client to as close as the view…?</p>
+<h2 id="validating-via-annotations">Validating via annotations<a class="headerlink" href="#validating-via-annotations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Some people like to add validation to their (view)models using annotations (attributes). Catel also supports this method, but adds additional functionality. The idea behind it is that in the end, Catel always provides all errors of an object via the <code>IDataErrorInfo</code> interface. This means that when attribute validation is used, the errors are internally registered and provided in the <code>ValidateFields</code> method. This way, all types of validation that are provided by the .NET framework are gathered into one single location where they can be used by the view.</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Gets or sets the first name.
+/// &lt;/summary&gt;
+[Required(&quot;This value is required&quot;)]
+private string FirstName
+{
+    get { return GetValue&lt;string&gt;(FirstNameProperty); }
+    set { SetValue(FirstNameProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the FirstName property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData FirstNameProperty= RegisterProperty(&quot;FirstName&quot;, typeof(string));
+</pre><h2 id="to-validate-required-fields-or-not-to-validate-required-fields-at-startup">To validate required fields or not to validate required fields at startup<a class="headerlink" href="#to-validate-required-fields-or-not-to-validate-required-fields-at-startup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:</p>
+<pre class="nocode">Validate(true, false);
+</pre>
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-mvvm/view-models/validation-in-view-models.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

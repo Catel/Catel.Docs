@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeakEventListener - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ApplicationExtensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ByteArrayExtensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CatelEnvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositeFilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeInitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DisposableToken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EnvironmentHelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/EventHandlerExtensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionExtensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICommandManagerExtensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ICompositeFilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IDisposableToken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IExecuteWithObject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IFluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IUniqueIdentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/KnownPlatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/LanguageHelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MustBeImplementedException/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/MVVMModule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectHelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ObjectToStringHelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ParallelHelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/Platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProcessExtensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ProgressContext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ResourceHelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SerializationJsonModule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringExtensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/StringToObjectHelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/SupportedPlatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/TagHelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThemeHelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ThreadHelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/UriExtensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakAction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/ApiCop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/ComponentModel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Core/">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/ExceptionHandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/IO/">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/IoC/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Runtime/">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Text/">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.MVVM/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../Home.htm">Home</a></li> / <li><a href="../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../reference/Catel.Core/index.htm">Catel.Core</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/index.htm">Catel</a></li> / <li><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/index.htm">WeakEventListener</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="weakeventlistener">WeakEventListener<a class="headerlink" href="#weakeventlistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class WeakEventListener
+</pre><p>Convenience implementation of the <a href="#">WeakEventListener</a> that automatically determines the type
+    of the event source, the event target and the event args.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This class can only be used for non-static event sources and targets. If static events or listeners are required, use
+    the <a href="#">WeakEventListener</a> class.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="listenertypecache">ListenerTypeCache<a class="headerlink" href="#listenertypecache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="subscribetoweakcollectionchangedeventobject-target-object-source-notifycollectionchangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname">SubscribeToWeakCollectionChangedEvent(object target, object source, NotifyCollectionChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)<a class="headerlink" href="#subscribetoweakcollectionchangedeventobject-target-object-source-notifycollectionchangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic
+    unsubscription of the event.</p>
+<pre><code>This method subscribes to the [NotifyCollectionChangedEventHandler](#) which does not follow the ```EventHandler{TEventArgs}``` convention.
+</code></pre>
+
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+Instance subscribing to the event, should be <code>null</code> for static event handlers.</p>
+<p><strong>source</strong>
+The source of the event, should be <code>null</code> for static events.</p>
+<p><strong>handler</strong>
+The handler to execute when the event occurs.</p>
+<p><strong>throwWhenSubscriptionFails</strong>
+if set to <code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
+<p><strong>eventName</strong>
+Name of the event.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The created event listener.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The target is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The eventName is <code>null</code> or whitespace.</p>
+<p><strong>T:System.InvalidOperationException</strong>
+The source and target are both <code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The handler is an anonymous delegate.</p>
+<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method can only be used for non-static event sources and targets. If static events or listeners are required, use
+    the <a href="#">WeakEventListener</a> class.</p>
+<h3 id="subscribetoweakeventobject-target-object-source-string-eventname-delegate-handler-bool-throwwhensubscriptionfails">SubscribeToWeakEvent(object target, object source, string eventName, Delegate handler, bool throwWhenSubscriptionFails)<a class="headerlink" href="#subscribetoweakeventobject-target-object-source-string-eventname-delegate-handler-bool-throwwhensubscriptionfails" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic
+    unsubscription of the event.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+Instance subscribing to the event, should be <code>null</code> for static event handlers.</p>
+<p><strong>source</strong>
+The source of the event, should be <code>null</code> for static events.</p>
+<p><strong>eventName</strong>
+Name of the event.</p>
+<p><strong>handler</strong>
+The handler to execute when the event occurs.</p>
+<p><strong>throwWhenSubscriptionFails</strong>
+if set to <code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The created event listener.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The target is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The eventName is <code>null</code> or whitespace.</p>
+<p><strong>T:System.InvalidOperationException</strong>
+The source and target are both <code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The handler is not of type <a href="#">PropertyChangedEventHandler</a>, <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
+<h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method can only be used for non-static event sources and targets. If static events or listeners are required, use
+    the <a href="#">WeakEventListener</a> class.</p>
+<h3 id="subscribetoweakeventobject-target-object-source-string-eventname-delegate-handler-type-eventsourcetype-bool-throwwhensubscriptionfails">SubscribeToWeakEvent(object target, object source, string eventName, Delegate handler, Type eventSourceType, bool throwWhenSubscriptionFails)<a class="headerlink" href="#subscribetoweakeventobject-target-object-source-string-eventname-delegate-handler-type-eventsourcetype-bool-throwwhensubscriptionfails" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic
+    unsubscription of the event.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+Instance subscribing to the event, should be <code>null</code> for static event handlers.</p>
+<p><strong>source</strong>
+The source of the event, should be <code>null</code> for static events.</p>
+<p><strong>eventName</strong>
+Name of the event.</p>
+<p><strong>handler</strong>
+The handler to execute when the event occurs.</p>
+<p><strong>eventSourceType</strong>
+The event source to use for type implementations. Differs from the source type for explicitly implemented events.</p>
+<p><strong>throwWhenSubscriptionFails</strong>
+if set to <code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The created event listener.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The target is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The eventName is <code>null</code> or whitespace.</p>
+<p><strong>T:System.InvalidOperationException</strong>
+The source and target are both <code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The handler is not of type <a href="#">PropertyChangedEventHandler</a>, <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
+<h4 id="remarks-3">Remarks<a class="headerlink" href="#remarks-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method can only be used for non-static event sources and targets. If static events or listeners are required, use
+    the <a href="#">WeakEventListener</a> class.</p>
+<h3 id="subscribetoweakgenericeventobject-target-object-source-string-eventname-eventhandler-handler-bool-throwwhensubscriptionfails">SubscribeToWeakGenericEvent<TEventArgs>(object target, object source, string eventName, EventHandler<TEventArgs> handler, bool throwWhenSubscriptionFails)<a class="headerlink" href="#subscribetoweakgenericeventobject-target-object-source-string-eventname-eventhandler-handler-bool-throwwhensubscriptionfails" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic
+    unsubscription of the event.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TEventArgs</strong>
+The type of the event args.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+Instance subscribing to the event, should be <code>null</code> for static event handlers.</p>
+<p><strong>source</strong>
+The source of the event, should be <code>null</code> for static events.</p>
+<p><strong>eventName</strong>
+Name of the event.</p>
+<p><strong>handler</strong>
+The handler to execute when the event occurs.</p>
+<p><strong>throwWhenSubscriptionFails</strong>
+if set to <code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The created event listener.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The eventName is <code>null</code> or whitespace.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The handler is <code>null</code>.</p>
+<p><strong>T:System.InvalidOperationException</strong>
+The source and target are both <code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The handler is not of type <a href="#">PropertyChangedEventHandler</a>,
+    <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
+<h3 id="subscribetoweakpropertychangedeventobject-target-object-source-propertychangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname">SubscribeToWeakPropertyChangedEvent(object target, object source, PropertyChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)<a class="headerlink" href="#subscribetoweakpropertychangedeventobject-target-object-source-propertychangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic
+    unsubscription of the event.</p>
+<pre><code>This method subscribes to the [PropertyChangedEventHandler](#) which does not follow the ```EventHandler{TEventArgs}``` convention.
+</code></pre>
+
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+Instance subscribing to the event, should be <code>null</code> for static event handlers.</p>
+<p><strong>source</strong>
+The source of the event, should be <code>null</code> for static events.</p>
+<p><strong>eventName</strong>
+Name of the event.</p>
+<p><strong>handler</strong>
+The handler to execute when the event occurs.</p>
+<p><strong>throwWhenSubscriptionFails</strong>
+if set to <code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The created event listener.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The target is <code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The eventName is <code>null</code> or whitespace.</p>
+<p><strong>T:System.InvalidOperationException</strong>
+The source and target are both <code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The handler is an anonymous delegate.</p>
+<h4 id="remarks-4">Remarks<a class="headerlink" href="#remarks-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method can only be used for non-static event sources and targets. If static events or listeners are required, use
+    the <a href="#">WeakEventListener</a> class.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/WeakEventListener.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

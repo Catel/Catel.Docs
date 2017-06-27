@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UserControlLogic - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/">Catel</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Binding/">Binding</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingBase/">BindingBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContext/">BindingContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContextExtensions/">BindingContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingExtensions/">BindingExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingMode/">BindingMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingParty/">BindingParty</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingPartyExtensions/">BindingPartyExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CancelingEventArgs/">CancelingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CancellableEventArgs/">CancellableEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Command/">Command</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBase/">CommandBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBinding/">CommandBinding</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCanceledEventArgs/">CommandCanceledEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandContainerBase/">CommandContainerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCreatedEventArgs/">CommandCreatedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandEventArgs/">CommandEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandExecutedEventArgs/">CommandExecutedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandHelper/">CommandHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManager/">CommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManagerWrapper/">CommandManagerWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandProgressChangedEventArgs/">CommandProgressChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CompositeCommand/">CompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionMode/">DataContextSubscriptionMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionService/">DataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DefaultViewModelToModelMappingConverter/">DefaultViewModelToModelMappingConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IAuthenticationProvider/">IAuthenticationProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelCommand/">ICatelCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelTaskCommand/">ICatelTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICommandManager/">ICommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICompositeCommand/">ICompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService/">IDataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ILocator/">ILocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/InvalidViewModelException/">InvalidViewModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IProgressNotifyableViewModel/">IProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IRelationalViewModel/">IRelationalViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ITaskProgressReport/">ITaskProgressReport</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IUrlLocator/">IUrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewLocator/">IViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModel/">IViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager/">IViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelContainer/">IViewModelContainer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelExtensions/">IViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactory/">IViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactoryExtensions/">IViewModelFactoryExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocator/">IViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocatorExtensions/">IViewModelLocatorExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelManager/">IViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelToModelConverter/">IViewModelToModelConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModuleInitializer/">ModuleInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/NavigationViewModelBase/">NavigationViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectExtensions/">ObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectToDisplayNameConverter/">ObjectToDisplayNameConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressiveTaskCommand/">ProgressiveTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressNotifyableViewModel/">ProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/PropertyNotFoundInModelException/">PropertyNotFoundInModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/SavingEventArgs/">SavingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/TaskCommand/">TaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelBase/">ViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelClosedEventArgs/">ViewModelClosedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelCommandManager/">ViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelExtensions/">ViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelFactory/">ViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelLocator/">ViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelServiceHelper/">ViewModelServiceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelAttribute/">ViewModelToModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelConverterBase/">ViewModelToModelConverterBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMapping/">ViewModelToModelMapping</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMode/">ViewModelToModelMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/WrongViewModelTypeException/">WrongViewModelTypeException</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Auditing/">Auditing</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Converters/">Converters</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelInstanceEventArgs/">DetermineViewModelInstanceEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelTypeEventArgs/">DetermineViewModelTypeEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/LogicBase/">LogicBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/LogicExtensions/">LogicExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/LogicViewModelBehavior/">LogicViewModelBehavior</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/NavigationLogicBase/">NavigationLogicBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/PageLogic/">PageLogic</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/UnloadBehavior/">UnloadBehavior</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/UserControlLogic/">UserControlLogic</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/WindowLogic/">WindowLogic</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Tasks/">Tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/">Views</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Xamarin/">Xamarin</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/index.htm">Catel.MVVM</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/index.htm">Catel</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/index.htm">MVVM</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/index.htm">Providers</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/UserControlLogic/index.htm">UserControlLogic</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="usercontrollogic">UserControlLogic<a class="headerlink" href="#usercontrollogic" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.MVVM</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.MVVM.Providers</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class UserControlLogic : LogicBase
+</pre><p><strong>Base types</strong>
+<a href="/Catel.MVVM\Catel\MVVM\Providers\LogicBase.htm">LogicBase</a></p>
+<p>MVVM Provider behavior implementation for a user control.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="infobarmessagecontrol">_infoBarMessageControl<a class="headerlink" href="#infobarmessagecontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="parentviewmodel">_parentViewModel<a class="headerlink" href="#parentviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="parentviewmodelcontainer">_parentViewModelContainer<a class="headerlink" href="#parentviewmodelcontainer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="apicop">ApiCop<a class="headerlink" href="#apicop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The API cop.</p>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="usercontrollogic-1">UserControlLogic()<a class="headerlink" href="#usercontrollogic-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes static members of the <a href="#">UserControlLogic</a> class.</p>
+<h3 id="usercontrollogiciview-targetview-type-viewmodeltype-iviewmodel-viewmodel">UserControlLogic(IView targetView, Type viewModelType, IViewModel viewModel)<a class="headerlink" href="#usercontrollogiciview-targetview-type-viewmodeltype-iviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">UserControlLogic</a> class.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>targetView</strong>
+The target control.</p>
+<p><strong>viewModelType</strong>
+Type of the view model.</p>
+<p><strong>viewModel</strong>
+The view model.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The targetView is <code>null</code>.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="closeviewmodelonunloaded">CloseViewModelOnUnloaded<a class="headerlink" href="#closeviewmodelonunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the user control should close any existing
+    view model when the control is unloaded from the visual tree.</p>
+<pre><code>Set this property to ```false``` if a view model should be kept alive and re-used
+for unloading/loading instead of creating a new one.
+
+
+
+By default, this value is ```true```.
+</code></pre>
+
+<h3 id="createwarninganderrorvalidatorforviewmodel">CreateWarningAndErrorValidatorForViewModel<a class="headerlink" href="#createwarninganderrorvalidatorforviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether to create a <a href="#">WarningAndErrorValidator</a> for the current
+    control.</p>
+<pre><code>If a user control does not have any [InfoBarMessageControl](#) or equivalent control, it is useless to create
+a [WarningAndErrorValidator](#) for the current control.
+
+
+
+The default value is determined by the DefaultCreateWarningAndErrorValidatorForViewModelValue property.
+</code></pre>
+
+<h3 id="defaultcreatewarninganderrorvalidatorforviewmodelvalue">DefaultCreateWarningAndErrorValidatorForViewModelValue<a class="headerlink" href="#defaultcreatewarninganderrorvalidatorforviewmodelvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value for the CreateWarningAndErrorValidatorForViewModel property. This way, the behavior
+    can be changed an entire application to prevent disabling it on every control.</p>
+<pre><code>The default value is ```true```.
+</code></pre>
+
+<h3 id="defaultskipsearchingforinfobarmessagecontrolvalue">DefaultSkipSearchingForInfoBarMessageControlValue<a class="headerlink" href="#defaultskipsearchingforinfobarmessagecontrolvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value for the SkipSearchingForInfoBarMessageControl property. This way, the behavior
+    can be changed an entire application to prevent disabling it on every control.</p>
+<pre><code>The default value is ```false```.
+</code></pre>
+
+<h3 id="defaultsupportparentviewmodelcontainersvalue">DefaultSupportParentViewModelContainersValue<a class="headerlink" href="#defaultsupportparentviewmodelcontainersvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the default value for the SupportParentViewModelContainers property.</p>
+<pre><code>The default value is ```true```.
+</code></pre>
+
+<h3 id="defaultunloadbehaviorvalue">DefaultUnloadBehaviorValue<a class="headerlink" href="#defaultunloadbehaviorvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the default value for the UnloadBehavior property.</p>
+<pre><code>The default value is SaveAndCloseViewModel.
+</code></pre>
+
+<h3 id="disablewhennoviewmodel">DisableWhenNoViewModel<a class="headerlink" href="#disablewhennoviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the user control should automatically be disabled when there is no
+    active view model.</p>
+<h3 id="hasparentviewmodelcontainer">HasParentViewModelContainer<a class="headerlink" href="#hasparentviewmodelcontainer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether there is a parent view model container available.</p>
+<h3 id="issubscribedtoparentviewmodel">IsSubscribedToParentViewModel<a class="headerlink" href="#issubscribedtoparentviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this instance is subscribed to a parent view model.</p>
+<h3 id="parentviewmodelcontainer-1">ParentViewModelContainer<a class="headerlink" href="#parentviewmodelcontainer-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the parent view model container.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>For internal usage only.</p>
+<h3 id="skipsearchingforinfobarmessagecontrol">SkipSearchingForInfoBarMessageControl<a class="headerlink" href="#skipsearchingforinfobarmessagecontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether to skip the search for an info bar message control. If not skipped,
+    the user control will search for a the first <a href="#">InfoBarMessageControl</a> that can be found. 
+    During this search, the user control will use both the visual and logical tree.</p>
+<pre><code>If a user control does not have any [InfoBarMessageControl](#), searching
+for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from
+happening, set this property to ```true```.
+
+
+
+The default value is determined by the DefaultSkipSearchingForInfoBarMessageControlValue property.
+</code></pre>
+
+<h3 id="supportparentviewmodelcontainers">SupportParentViewModelContainers<a class="headerlink" href="#supportparentviewmodelcontainers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether parent view model containers are supported. If supported,
+    the user control will search for the <a href="#">IViewModelContainer</a> interface. During this search, the user control 
+    will use both the visual and logical tree.</p>
+<pre><code>If a user control does not have any parent control implementing the [IViewModelContainer](#) interface, searching
+for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from
+happening, set this property to ```false```.
+
+
+
+The default value is ```true```.
+</code></pre>
+
+<h3 id="unloadbehavior">UnloadBehavior<a class="headerlink" href="#unloadbehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets the unload behavior when the data context of the target control changes.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="clearwarningsanderrorsforobjectobject-obj">ClearWarningsAndErrorsForObject(object obj)<a class="headerlink" href="#clearwarningsanderrorsforobjectobject-obj" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Clears the warnings and errors for the specified object.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The object.</p>
+<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Since there is a &quot;bug&quot; in the .NET Framework (DataContext issue), this method clears the current
+    warnings and errors in the InfoBarMessageControl if available.</p>
+<h3 id="closeanddisposeviewmodelasyncnullable-result">CloseAndDisposeViewModelAsync(Nullable<bool> result)<a class="headerlink" href="#closeanddisposeviewmodelasyncnullable-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Closes and disposes the current view model.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>result</strong>
+<code>true</code> if the view model should be saved; <code>false</code> if the view model should be canceled; <code>null</code> if it should only be closed.</p>
+<h3 id="createviewmodelwrapperbool-checkifwrapped">CreateViewModelWrapper(bool checkIfWrapped)<a class="headerlink" href="#createviewmodelwrapperbool-checkifwrapped" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates the view model wrapper.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>checkIfWrapped</strong>
+if set to <code>true</code>, check if the view is already wrapped.</p>
+<h3 id="getviewmodelresultvaluefromunloadbehavior">GetViewModelResultValueFromUnloadBehavior()<a class="headerlink" href="#getviewmodelresultvaluefromunloadbehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the view model result value based on the UnloadBehavior property so it can be used for
+    the Boolean}) method.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The right value.</p>
+<h3 id="onparentviewmodelcancelingasyncobject-sender-cancelingeventargs-e">OnParentViewModelCancelingAsync(object sender, CancelingEventArgs e)<a class="headerlink" href="#onparentviewmodelcancelingasyncobject-sender-cancelingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Handles the Canceling event of the parent ViewModel.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The source of the event.</p>
+<p><strong>e</strong>
+The <a href="#">CancelingEventArgs</a> instance containing the event data.</p>
+<h3 id="true">OnParentViewModelClosingAsync(object sender, EventArgs e)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when Closing event of the parent ViewModel.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="onparentviewmodelcontainerloadingobject-sender-eventargs-e">OnParentViewModelContainerLoading(object sender, EventArgs e)<a class="headerlink" href="#onparentviewmodelcontainerloadingobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onparentviewmodelcontainerunloadingobject-sender-eventargs-e">OnParentViewModelContainerUnloading(object sender, EventArgs e)<a class="headerlink" href="#onparentviewmodelcontainerunloadingobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onparentviewmodelcontainerviewmodelchangedobject-sender-eventargs-e">OnParentViewModelContainerViewModelChanged(object sender, EventArgs e)<a class="headerlink" href="#onparentviewmodelcontainerviewmodelchangedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Handles the ViewModelChanged event of the parent ViewModel container.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The source of the event.</p>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="onparentviewmodelsavingasyncobject-sender-savingeventargs-e">OnParentViewModelSavingAsync(object sender, SavingEventArgs e)<a class="headerlink" href="#onparentviewmodelsavingasyncobject-sender-savingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Handles the Saving event of the parent ViewModel.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The source of the event.</p>
+<p><strong>e</strong>
+The <a href="#">SavingEventArgs</a> instance containing the event data.</p>
+<h3 id="ontargetcontrolcontentchangedobject-sender-propertychangedeventargs-e">OnTargetControlContentChanged(object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#ontargetcontrolcontentchangedobject-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the content of the target control has changed.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
+<h3 id="ontargetviewdatacontextchangedobject-sender-datacontextchangedeventargs-e">OnTargetViewDataContextChanged(object sender, DataContextChangedEventArgs e)<a class="headerlink" href="#ontargetviewdatacontextchangedobject-sender-datacontextchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the <code>DataContext</code> property of the <code>TargetView</code> has changed.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="ontargetviewloadedasyncobject-sender-eventargs-e">OnTargetViewLoadedAsync(object sender, EventArgs e)<a class="headerlink" href="#ontargetviewloadedasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the <code>TargetView</code> has just been loaded.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="ontargetviewunloadedasyncobject-sender-eventargs-e">OnTargetViewUnloadedAsync(object sender, EventArgs e)<a class="headerlink" href="#ontargetviewunloadedasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the <code>TargetView</code> has just been unloaded.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">EventArgs</a> instance containing the event data.</p>
+<h3 id="onviewloadedmanagerloadingobject-sender-viewloadeventargs-e">OnViewLoadedManagerLoading(object sender, ViewLoadEventArgs e)<a class="headerlink" href="#onviewloadedmanagerloadingobject-sender-viewloadeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the view manager is loading.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</p>
+<h3 id="onviewloadedmanagerunloadingobject-sender-viewloadeventargs-e">OnViewLoadedManagerUnloading(object sender, ViewLoadEventArgs e)<a class="headerlink" href="#onviewloadedmanagerunloadingobject-sender-viewloadeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the view manager is unloading.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>sender</strong>
+The sender.</p>
+<p><strong>e</strong>
+The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</p>
+<h3 id="onviewmodelchanged">OnViewModelChanged()<a class="headerlink" href="#onviewmodelchanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the ViewModel property has just been changed.</p>
+<h3 id="onviewmodelchanging">OnViewModelChanging()<a class="headerlink" href="#onviewmodelchanging" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Called when the ViewModel property is about to change.</p>
+<h3 id="registerviewmodelaschild">RegisterViewModelAsChild()<a class="headerlink" href="#registerviewmodelaschild" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Registers the view model as child on the parent view model.</p>
+<h3 id="setdatacontextobject-newdatacontext">SetDataContext(object newDataContext)<a class="headerlink" href="#setdatacontextobject-newdatacontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the data context of the target control.</p>
+<pre><code>This method is abstract because the real logic implementation knows how to set the data context (for example,
+by using an additional data context grid).
+</code></pre>
+
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>newDataContext</strong>
+The new data context.</p>
+<h3 id="subscribetoparentviewmodeliviewmodel-parentviewmodel">SubscribeToParentViewModel(IViewModel parentViewModel)<a class="headerlink" href="#subscribetoparentviewmodeliviewmodel-parentviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to a parent view model.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>parentViewModel</strong>
+The parent view model.</p>
+<h3 id="subscribetoparentviewmodelcontainer">SubscribeToParentViewModelContainer()<a class="headerlink" href="#subscribetoparentviewmodelcontainer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Subscribes to the parent view model container.</p>
+<h3 id="unregisterviewmodelaschild">UnregisterViewModelAsChild()<a class="headerlink" href="#unregisterviewmodelaschild" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Unregisters the view model as child on the parent view model.</p>
+<h3 id="unsubscribefromparentviewmodel">UnsubscribeFromParentViewModel()<a class="headerlink" href="#unsubscribefromparentviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Unsubscribes from a parent view model.</p>
+<h3 id="unsubscribefromparentviewmodelcontainer">UnsubscribeFromParentViewModelContainer()<a class="headerlink" href="#unsubscribefromparentviewmodelcontainer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Unsubscribes from the parent view model container.</p>
+<h3 id="updatedatacontexttouseviewmodelasyncobject-newdatacontext">UpdateDataContextToUseViewModelAsync(object newDataContext)<a class="headerlink" href="#updatedatacontexttouseviewmodelasyncobject-newdatacontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Updates the data context to use view model.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>newDataContext</strong>
+The new data context.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.MVVM/Catel/MVVM/Providers/UserControlLogic.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

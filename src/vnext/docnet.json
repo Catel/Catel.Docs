@@ -7,7 +7,7 @@
     "ConvertLocalLinks" : true,
     "SourceFoldersToCopy" : ["images", "includes"],
     "Footer" : "",
-    "PathSpecification": "Relative",
+    "PathSpecification": "RelativeAsFolder",
     "Pages" : 
     {
 		"Introduction" :

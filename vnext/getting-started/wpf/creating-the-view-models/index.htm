@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creating the view models - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../getting-started/">Getting started</a></span></li>
+<li class="tocentry"><a href="../../../getting-started/quick-introduction-for-developers/">Quick introduction for developers</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../getting-started/wpf/">WPF</a></span></li>
+<li class="tocentry"><a href="../../../getting-started/wpf/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-project/">Creating the project</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-models/">Creating the models</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/serializing-data-from-to-disk/">Serializing data from/to disk</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../getting-started/wpf/creating-the-view-models/">Creating the view models</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#creating-the-personviewmodel">Creating the PersonViewModel</a></li>
+<li class="tocentry"><a href="#creating-the-familyviewmodel">Creating the FamilyViewModel</a></li>
+<li class="tocentry"><a href="#up-next">Up next</a></li>
+</ul>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-user-controls/">Creating the user controls</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-windows/">Creating the windows</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/hooking-up-everything-together/">Hooking up everything together</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/finalizing-the-application/">Finalizing the application</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/xamarin-forms/">Xamarin Forms</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../getting-started/index.htm">Getting started</a></li> / <li><a href="../../../getting-started/wpf/index.htm">WPF</a></li> / <li><a href="../../../getting-started/wpf/creating-the-view-models/index.htm">Creating the view models</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="creating-the-view-models">Creating the view models<a class="headerlink" href="#creating-the-view-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the <em>ViewModelBase</em> class</p>
+<div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>The <em>vm</em> code snippet is available to create view models. There is also an on-line item template available for Catel view models</p>
+</div><h2 id="creating-the-personviewmodel">Creating the PersonViewModel<a class="headerlink" href="#creating-the-personviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Below is the class definition of the <em>PersonViewModel</em>. This view model will be used to show the details of a <em>Person</em> model.</p>
+<pre class="nocode">namespace WPF.GettingStarted.ViewModels
+{
+    using Catel.MVVM;
+
+    public class PersonViewModel : ViewModelBase
+    {
+    }
+}
+</pre><h3 id="enabling-model-injection">Enabling model injection<a class="headerlink" href="#enabling-model-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>In hierarchy views, it is important to manage the state of views and view models based on the actual context where the view (thus view model) is located. Catel does this by allowing model injection. The view models will only be created when the model is available within the context of the view.</p>
+<pre class="nocode">public class PersonViewModel : ViewModelBase
+{
+    public PersonViewModel(Person person)
+    {
+        Argument.IsNotNull(() =&gt; person);
+
+        Person = person;
+    }
+
+    /// &lt;summary&gt;
+    /// Gets or sets the person.
+    /// &lt;/summary&gt;
+    [Model]
+    public Person Person
+    {
+        get { return GetValue&lt;Person&gt;(PersonProperty); }
+        set { SetValue(PersonProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the Person property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Person&quot;, typeof(Person), null);
+}
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that the <em>Person</em> property is decorated with the <em>Model</em> attribute. This automatically makes sure that if a view model is saved, the <em>IEditableObject.EndEdit</em> is called. When the view model is canceled, the <em>IEditableObject.CancelEdit</em> is called and all changes on the model will be reverted.</p>
+</div><h3 id="exposing-properties-of-a-model">Exposing properties of a model<a class="headerlink" href="#exposing-properties-of-a-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>One very powerful feature of Catel is that it can automatically map properties from a model to a view model. This way the user does not have to write repetitive code to map the properties from the model to the view model at startup and map the properties from view model to model when the view model is closed. Catel will take care of this all automatically.</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Gets or sets the first name.
+/// &lt;/summary&gt;
+[ViewModelToModel(&quot;Person&quot;)]
+public string FirstName
+{
+    get { return GetValue&lt;string&gt;(FirstNameProperty); }
+    set { SetValue(FirstNameProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the FirstName property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string), null);
+
+/// &lt;summary&gt;
+/// Gets or sets the last name.
+/// &lt;/summary&gt;
+[ViewModelToModel(&quot;Person&quot;)]
+public string LastName
+{
+    get { return GetValue&lt;string&gt;(LastNameProperty); }
+    set { SetValue(LastNameProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the LastName property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData LastNameProperty = RegisterProperty(&quot;LastName&quot;, typeof(string), null);
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that the properties are decorated with the <em>ViewModelToModel</em> attribute which enables the automatic mappings feature in Catel.</p>
+</div><h2 id="creating-the-familyviewmodel">Creating the FamilyViewModel<a class="headerlink" href="#creating-the-familyviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <em>FamilyViewModel</em> must be set up the same way as the <em>PersonViewModel</em> above.</p>
+<pre class="nocode">namespace WPF.GettingStarted.ViewModels
+{
+    using System.Collections.ObjectModel;
+    using Catel;
+    using Catel.Data;
+    using Catel.MVVM;
+    using WPF.GettingStarted.Models;
+
+    public class FamilyViewModel : ViewModelBase
+    {
+        public FamilyViewModel(Family family)
+        {
+            Argument.IsNotNull(() =&gt; family);
+ 
+            Family = family; 
+        }
+
+        /// &lt;summary&gt;
+        /// Gets the family.
+        /// &lt;/summary&gt;
+        [Model]
+        public Family Family
+        {
+            get { return GetValue&lt;Family&gt;(FamilyProperty); }
+            private set { SetValue(FamilyProperty, value); }
+        }
+        /// &lt;summary&gt;
+        /// Register the Family property so it is known in the class.
+        /// &lt;/summary&gt;
+        public static readonly PropertyData FamilyProperty = RegisterProperty(&quot;Family&quot;, typeof(Family), null);
+
+        /// &lt;summary&gt;
+        /// Gets the family members.
+        /// &lt;/summary&gt;
+        [ViewModelToModel(&quot;Family&quot;)]
+        public ObservableCollection&lt;Person&gt; Persons
+        {
+            get { return GetValue&lt;ObservableCollection&lt;Person&gt;&gt;(PersonsProperty); }
+            private set { SetValue(PersonsProperty, value); }
+        }
+
+        /// &lt;summary&gt;
+        /// Register the Persons property so it is known in the class.
+        /// &lt;/summary&gt;
+        public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Persons&quot;, typeof(ObservableCollection&lt;Person&gt;), null);
+
+        /// &lt;summary&gt;
+        /// Gets or sets the family name.
+        /// &lt;/summary&gt;
+        [ViewModelToModel(&quot;Family&quot;)]
+        public string FamilyName
+        {
+            get { return GetValue&lt;string&gt;(FamilyNameProperty); }
+            set { SetValue(FamilyNameProperty, value); }
+        }
+
+        /// &lt;summary&gt;
+        /// Register the FamilyName property so it is known in the class.
+        /// &lt;/summary&gt;
+        public static readonly PropertyData FamilyNameProperty = RegisterProperty(&quot;FamilyName&quot;, typeof(string));
+    }
+}
+</pre><h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><a href="./creating-the-user-controls.htm">Creating the views (user controls)</a></p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/getting-started/wpf/creating-the-view-models.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

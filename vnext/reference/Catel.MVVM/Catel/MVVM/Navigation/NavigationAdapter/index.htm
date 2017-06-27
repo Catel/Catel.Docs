@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NavigationAdapter - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/">Catel</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Binding/">Binding</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingBase/">BindingBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContext/">BindingContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingContextExtensions/">BindingContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingExtensions/">BindingExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingMode/">BindingMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingParty/">BindingParty</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/BindingPartyExtensions/">BindingPartyExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CancelingEventArgs/">CancelingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CancellableEventArgs/">CancellableEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Command/">Command</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBase/">CommandBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandBinding/">CommandBinding</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCanceledEventArgs/">CommandCanceledEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandContainerBase/">CommandContainerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandCreatedEventArgs/">CommandCreatedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandEventArgs/">CommandEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandExecutedEventArgs/">CommandExecutedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandHelper/">CommandHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManager/">CommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandManagerWrapper/">CommandManagerWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CommandProgressChangedEventArgs/">CommandProgressChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/CompositeCommand/">CompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionMode/">DataContextSubscriptionMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DataContextSubscriptionService/">DataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/DefaultViewModelToModelMappingConverter/">DefaultViewModelToModelMappingConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IAuthenticationProvider/">IAuthenticationProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelCommand/">ICatelCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICatelTaskCommand/">ICatelTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICommandManager/">ICommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ICompositeCommand/">ICompositeCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService/">IDataContextSubscriptionService</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ILocator/">ILocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/InvalidViewModelException/">InvalidViewModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IProgressNotifyableViewModel/">IProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IRelationalViewModel/">IRelationalViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ITaskProgressReport/">ITaskProgressReport</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IUrlLocator/">IUrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewLocator/">IViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModel/">IViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager/">IViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelContainer/">IViewModelContainer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelExtensions/">IViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactory/">IViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelFactoryExtensions/">IViewModelFactoryExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocator/">IViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelLocatorExtensions/">IViewModelLocatorExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelManager/">IViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/IViewModelToModelConverter/">IViewModelToModelConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModuleInitializer/">ModuleInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/NavigationViewModelBase/">NavigationViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectExtensions/">ObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ObjectToDisplayNameConverter/">ObjectToDisplayNameConverter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressiveTaskCommand/">ProgressiveTaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ProgressNotifyableViewModel/">ProgressNotifyableViewModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/PropertyNotFoundInModelException/">PropertyNotFoundInModelException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/SavingEventArgs/">SavingEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/TaskCommand/">TaskCommand</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelBase/">ViewModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelClosedEventArgs/">ViewModelClosedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelCommandManager/">ViewModelCommandManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelExtensions/">ViewModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelFactory/">ViewModelFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelLocator/">ViewModelLocator</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelServiceHelper/">ViewModelServiceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelAttribute/">ViewModelToModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelConverterBase/">ViewModelToModelConverterBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMapping/">ViewModelToModelMapping</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelToModelMode/">ViewModelToModelMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/WrongViewModelTypeException/">WrongViewModelTypeException</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Auditing/">Auditing</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Converters/">Converters</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityEventArgs/">ActivityEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityLifecycleCallbacksListener/">ActivityLifecycleCallbacksListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatedEventArgs/">NavigatedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatingEventArgs/">NavigatingEventArgs</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapter/">NavigationAdapter</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry"><a href="#events">Events</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapterBase/">NavigationAdapterBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationContext/">NavigationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsBase/">NavigationEventArgsBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsExtensions/">NavigationEventArgsExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationMode/">NavigationMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationModeExtensions/">NavigationModeExtensions</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Tasks/">Tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/">Views</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Xamarin/">Xamarin</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/index.htm">Catel.MVVM</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/index.htm">Catel</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/index.htm">MVVM</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/index.htm">Navigation</a></li> / <li><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapter/index.htm">NavigationAdapter</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="navigationadapter">NavigationAdapter<a class="headerlink" href="#navigationadapter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.MVVM</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.MVVM.Navigation</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public class NavigationAdapter : NavigationAdapterBase
+</pre><p><strong>Base types</strong>
+<a href="/Catel.MVVM\Catel\MVVM\Navigation\NavigationAdapterBase.htm">NavigationAdapterBase</a></p>
+<p>Navigation adapter class because everyone seems to be implementing their own :-(</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="lastglobalnavigationcontext">_lastGlobalNavigationContext<a class="headerlink" href="#lastglobalnavigationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="lastnavigationcontext">_lastNavigationContext<a class="headerlink" href="#lastnavigationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="navigationserviceinitialized">_navigationServiceInitialized<a class="headerlink" href="#navigationserviceinitialized" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="navigationadapteriview-navigationtarget-object-navigationroot">NavigationAdapter(IView navigationTarget, object navigationRoot)<a class="headerlink" href="#navigationadapteriview-navigationtarget-object-navigationroot" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes a new instance of the <a href="#">NavigationAdapter</a> class.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>navigationTarget</strong>
+The navigation target.</p>
+<p><strong>navigationRoot</strong>
+The navigation root.</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="handlenavigatedonloaded">HandleNavigatedOnLoaded<a class="headerlink" href="#handlenavigatedonloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the navigated event should be invoked on the loaded event.</p>
+<h3 id="navigationcontext">NavigationContext<a class="headerlink" href="#navigationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation context.</p>
+<h3 id="navigationroot">NavigationRoot<a class="headerlink" href="#navigationroot" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation root.</p>
+<h3 id="navigationtarget">NavigationTarget<a class="headerlink" href="#navigationtarget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation target.</p>
+<h3 id="navigationtargettype">NavigationTargetType<a class="headerlink" href="#navigationtargettype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the type of the navigation target.</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="navigatedaway">NavigatedAway<a class="headerlink" href="#navigatedaway" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the app has navigated away from this view.</p>
+<h3 id="navigatedto">NavigatedTo<a class="headerlink" href="#navigatedto" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the app has navigated to this view.</p>
+<h3 id="navigatingaway">NavigatingAway<a class="headerlink" href="#navigatingaway" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Occurs when the app is about to navigate away from this view.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="canhandlenavigation">CanHandleNavigation()<a class="headerlink" href="#canhandlenavigation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the navigation can be handled by this adapter.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the navigation can be handled by this adapter; otherwise, <code>false</code>.</p>
+<h3 id="determinenavigationcontext">DetermineNavigationContext()<a class="headerlink" href="#determinenavigationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="true">GetNavigationTarget<T>()<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation target as a type.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The type of the navigation target.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The type.</p>
+<h3 id="getnavigationuriobject-target">GetNavigationUri(object target)<a class="headerlink" href="#getnavigationuriobject-target" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation URI for the target page.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>target</strong>
+The target.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>System.String.</p>
+<h3 id="getnavigationurifortargetpage">GetNavigationUriForTargetPage()<a class="headerlink" href="#getnavigationurifortargetpage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the navigation URI for the target page.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>System.String.</p>
+<h3 id="geturiwithoutparametersstring-uri">GetUriWithoutParameters(string uri)<a class="headerlink" href="#geturiwithoutparametersstring-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the URI without parameters, thus <code>/Pages/MyView.xaml?id=1</code> will be returned as
+    <code>/Pages/MyView.xaml</code>/</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uri</strong>
+The URI.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The URI without parameters.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The uri is <code>null</code> or whitespace.</p>
+<h3 id="geturiwithoutparametersuri-uri">GetUriWithoutParameters(Uri uri)<a class="headerlink" href="#geturiwithoutparametersuri-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the URI without parameters, thus <code>/Pages/MyView.xaml?id=1</code> will be returned as
+    <code>/Pages/MyView.xaml</code>/</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uri</strong>
+The URI.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The URI without parameters.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The uri is <code>null</code>.</p>
+<h3 id="handlenavigatedeventnavigatedeventargs-e">HandleNavigatedEvent(NavigatedEventArgs e)<a class="headerlink" href="#handlenavigatedeventnavigatedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="initialize">Initialize()<a class="headerlink" href="#initialize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="initializenavigationservicebool-iscomingfromloadedevent">InitializeNavigationService(bool isComingFromLoadedEvent)<a class="headerlink" href="#initializenavigationservicebool-iscomingfromloadedevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onnavigatedeventobject-sender-navigationeventargs-e">OnNavigatedEvent(object sender, NavigationEventArgs e)<a class="headerlink" href="#onnavigatedeventobject-sender-navigationeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onnavigatingeventobject-sender-navigatingcanceleventargs-e">OnNavigatingEvent(object sender, NavigatingCancelEventArgs e)<a class="headerlink" href="#onnavigatingeventobject-sender-navigatingcanceleventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="onnavigationtargetloadedobject-sender-eventargs-e">OnNavigationTargetLoaded(object sender, EventArgs e)<a class="headerlink" href="#onnavigationtargetloadedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="raisenavigatedawaynavigatedeventargs-e">RaiseNavigatedAway(NavigatedEventArgs e)<a class="headerlink" href="#raisenavigatedawaynavigatedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the NavigatedAway event.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">NavigatedEventArgs</a> instance containing the event data.</p>
+<h3 id="raisenavigatedtonavigatedeventargs-e">RaiseNavigatedTo(NavigatedEventArgs e)<a class="headerlink" href="#raisenavigatedtonavigatedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the NavigatedTo event.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">NavigatedEventArgs</a> instance containing the event data.</p>
+<h3 id="raisenavigatingawaynavigatingeventargs-e">RaiseNavigatingAway(NavigatingEventArgs e)<a class="headerlink" href="#raisenavigatingawaynavigatingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Raises the NavigatingAway event.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>e</strong>
+The <a href="#">NavigatingEventArgs</a> instance containing the event data.</p>
+<h3 id="uninitialize">Uninitialize()<a class="headerlink" href="#uninitialize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="uninitializenavigationservice">UninitializeNavigationService()<a class="headerlink" href="#uninitializenavigationservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Uninitializes the navigation service.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapter.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

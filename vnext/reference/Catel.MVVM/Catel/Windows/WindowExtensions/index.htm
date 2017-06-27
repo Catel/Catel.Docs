@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WindowExtensions - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.MVVM/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.MVVM/Catel/">Catel</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DataContextChangedHelper/">DataContextChangedHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DataWindow/">DataWindow</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowButton/">DataWindowButton</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowDefaultButton/">DataWindowDefaultButton</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DataWindowMode/">DataWindowMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/DependencyObjectExtensions/">DependencyObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/FrameworkElementExtensions/">FrameworkElementExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/InfoBarMessageControlGenerationMode/">InfoBarMessageControlGenerationMode</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/PopupHelper/">PopupHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/ResourceHelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/UIElementExtensions/">UIElementExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/Window/">Window</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/Catel.MVVM/Catel/Windows/WindowExtensions/">WindowExtensions</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/WrapControlHelper/">WrapControlHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/WrapOptions/">WrapOptions</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Controls/">Controls</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Input/">Input</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/">Interactivity</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Markup/">Markup</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/Threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Xamarin/">Xamarin</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../reference/Catel.MVVM/index.htm">Catel.MVVM</a></li> / <li><a href="../../../../../reference/Catel.MVVM/Catel/index.htm">Catel</a></li> / <li><a href="../../../../../reference/Catel.MVVM/Catel/Windows/index.htm">Windows</a></li> / <li><a href="../../../../../reference/Catel.MVVM/Catel/Windows/WindowExtensions/index.htm">WindowExtensions</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="windowextensions">WindowExtensions<a class="headerlink" href="#windowextensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.MVVM</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Windows</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class WindowExtensions
+</pre><p>Extensions for <a href="#">Window</a>.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="gwl_exstyle">GWL_EXSTYLE<a class="headerlink" href="#gwl_exstyle" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>-20</p>
+<p>Extended windows styles.</p>
+<h3 id="gwl_style">GWL_STYLE<a class="headerlink" href="#gwl_style" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>-16</p>
+<p>Window styles.</p>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The log.</p>
+<h3 id="swp_framechanged">SWP_FRAMECHANGED<a class="headerlink" href="#swp_framechanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>32</p>
+<h3 id="swp_nomove">SWP_NOMOVE<a class="headerlink" href="#swp_nomove" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>2</p>
+<h3 id="swp_nosize">SWP_NOSIZE<a class="headerlink" href="#swp_nosize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>1</p>
+<h3 id="swp_nozorder">SWP_NOZORDER<a class="headerlink" href="#swp_nozorder" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>4</p>
+<h3 id="wm_seticon">WM_SETICON<a class="headerlink" href="#wm_seticon" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>128</p>
+<h3 id="ws_ex_dlgmodalframe">WS_EX_DLGMODALFRAME<a class="headerlink" href="#ws_ex_dlgmodalframe" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>1</p>
+<h3 id="ws_sysmenu">WS_SYSMENU<a class="headerlink" href="#ws_sysmenu" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>524288</p>
+<p>Shows or hides a system menu.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="applyiconfromapplicationwindow-window">ApplyIconFromApplication(Window window)<a class="headerlink" href="#applyiconfromapplicationwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Applies the icon from the entry assembly (the application) to the window.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+The window.</p>
+<h3 id="bringwindowtotopintptr-hwnd">BringWindowToTop(IntPtr hWnd)<a class="headerlink" href="#bringwindowtotopintptr-hwnd" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="bringwindowtotopwindow-window">BringWindowToTop(Window window)<a class="headerlink" href="#bringwindowtotopwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Brings to specified window to top.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+The window to bring to top.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The window is <code>null</code>.</p>
+<h3 id="getprocessmainwindowhandle">GetProcessMainWindowHandle()<a class="headerlink" href="#getprocessmainwindowhandle" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns the main window handle of the current process.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Handle of the main window of the current process.</p>
+<h3 id="getwindowhandlewindow-window">GetWindowHandle(Window window)<a class="headerlink" href="#getwindowhandlewindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the window handle of the specified window.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+The window.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>IntPtr.</p>
+<h3 id="getwindowlongintptr-hwnd-int-nindex">GetWindowLong(IntPtr hWnd, int nIndex)<a class="headerlink" href="#getwindowlongintptr-hwnd-int-nindex" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getwindowrectintptr-hwnd-rect-lprect">GetWindowRect(IntPtr hWnd, RECT lpRect)<a class="headerlink" href="#getwindowrectintptr-hwnd-rect-lprect" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="hasownerwindow-window">HasOwner(Window window)<a class="headerlink" href="#hasownerwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether the window currently has an owner.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Window to check.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>True if the window has an owner, otherwise false.</p>
+<h3 id="removeiconwindow-window">RemoveIcon(Window window)<a class="headerlink" href="#removeiconwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the icon from the window.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+The window.</p>
+<h3 id="sendmessageintptr-hwnd-uint-msg-intptr-wparam-intptr-lparam">SendMessage(IntPtr hwnd, uint msg, IntPtr wParam, IntPtr lParam)<a class="headerlink" href="#sendmessageintptr-hwnd-uint-msg-intptr-wparam-intptr-lparam" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="setownerwindowwindow-window-bool-forcenewowner-bool-focusfirstcontrol">SetOwnerWindow(Window window, bool forceNewOwner, bool focusFirstControl)<a class="headerlink" href="#setownerwindowwindow-window-bool-forcenewowner-bool-focusfirstcontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window to the main window of the current process.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<p><strong>focusFirstControl</strong>
+If true, the first control will automatically be focused.</p>
+<h3 id="setownerwindowwindow-window-intptr-owner-bool-forcenewowner">SetOwnerWindow(Window window, IntPtr owner, bool forceNewOwner)<a class="headerlink" href="#setownerwindowwindow-window-intptr-owner-bool-forcenewowner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window via the window handle.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<h3 id="setownerwindowwindow-window-window-owner-bool-forcenewowner">SetOwnerWindow(Window window, Window owner, bool forceNewOwner)<a class="headerlink" href="#setownerwindowwindow-window-window-owner-bool-forcenewowner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window via the Window class.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<h3 id="setownerwindowwindow-window-window-ownerwindow-intptr-ownerhandle-bool-forcenewowner-bool-focusfirstcontrol">SetOwnerWindow(Window window, Window ownerWindow, IntPtr ownerHandle, bool forceNewOwner, bool focusFirstControl)<a class="headerlink" href="#setownerwindowwindow-window-window-ownerwindow-intptr-ownerhandle-bool-forcenewowner-bool-focusfirstcontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window. It will first try to set the owner via
+    the ownerWindow. If the ownerWindow is not available,
+    this method will use the ownerHandle to set the parent.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>ownerWindow</strong>
+New owner window.</p>
+<p><strong>ownerHandle</strong>
+The owner handle.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<p><strong>focusFirstControl</strong>
+If true, the first control will automatically be focused.</p>
+<h3 id="setownerwindowandfocuswindow-window-bool-forcenewowner">SetOwnerWindowAndFocus(Window window, bool forceNewOwner)<a class="headerlink" href="#setownerwindowandfocuswindow-window-bool-forcenewowner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window to the main window of the current process, but
+    also sets the focus on the first control.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<h3 id="setownerwindowandfocuswindow-window-intptr-owner-bool-forcenewowner">SetOwnerWindowAndFocus(Window window, IntPtr owner, bool forceNewOwner)<a class="headerlink" href="#setownerwindowandfocuswindow-window-intptr-owner-bool-forcenewowner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window via the window handle, but
+    also sets the focus on the first control.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<h3 id="setownerwindowandfocuswindow-window-window-owner-bool-forcenewowner">SetOwnerWindowAndFocus(Window window, Window owner, bool forceNewOwner)<a class="headerlink" href="#setownerwindowandfocuswindow-window-window-owner-bool-forcenewowner" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window via the Window class, but
+    also sets the focus on the first control.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<h3 id="setownerwindowbyhandlewindow-window-intptr-owner-bool-forcenewowner-bool-focusfirstcontrol">SetOwnerWindowByHandle(Window window, IntPtr owner, bool forceNewOwner, bool focusFirstControl)<a class="headerlink" href="#setownerwindowbyhandlewindow-window-intptr-owner-bool-forcenewowner-bool-focusfirstcontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window via the window handle.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<p><strong>focusFirstControl</strong>
+If true, the first control will automatically be focused.</p>
+<h3 id="setownerwindowbywindowwindow-window-window-owner-bool-forcenewowner-bool-focusfirstcontrol">SetOwnerWindowByWindow(Window window, Window owner, bool forceNewOwner, bool focusFirstControl)<a class="headerlink" href="#setownerwindowbywindowwindow-window-window-owner-bool-forcenewowner-bool-focusfirstcontrol" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Sets the owner window of a specific window.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>window</strong>
+Reference to the current window.</p>
+<p><strong>owner</strong>
+New owner window.</p>
+<p><strong>forceNewOwner</strong>
+If true, the new owner will be forced. Otherwise, if the
+    window currently has an owner, that owner will be respected (and thus not changed).</p>
+<p><strong>focusFirstControl</strong>
+If true, the first control will automatically be focused.</p>
+<h3 id="setwindowlongintptr-hwnd-int-nindex-int-dwnewlong">SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong)<a class="headerlink" href="#setwindowlongintptr-hwnd-int-nindex-int-dwnewlong" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="setwindowposintptr-hwnd-intptr-hwndinsertafter-int-x-int-y-int-width-int-height-uint-flags">SetWindowPos(IntPtr hwnd, IntPtr hwndInsertAfter, int x, int y, int width, int height, uint flags)<a class="headerlink" href="#setwindowposintptr-hwnd-intptr-hwndinsertafter-int-x-int-y-int-width-int-height-uint-flags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.MVVM/Catel/Windows/WindowExtensions.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

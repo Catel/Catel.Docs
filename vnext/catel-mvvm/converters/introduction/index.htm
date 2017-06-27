@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/auditing/">Auditing</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/behaviors-triggers/">Behaviors & triggers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/bindings/">Bindings</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/commands-events/">Commands & events</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-mvvm/converters/">Converters</a></span></li>
+<li class="tocentry current"><a class="current" href="../../../catel-mvvm/converters/introduction/">Introduction</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#linking-converters">Linking converters</a></li>
+<li class="tocentry"><a href="#available-converters">Available converters</a></li>
+</ul>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/designers/">Designers</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/locators-naming-conventions/">Locators & naming conventions</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/view-models/">View models</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/views/">Views</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../catel-mvvm/index.htm">Catel.MVVM</a></li> / <li><a href="../../../catel-mvvm/converters/index.htm">Converters</a></li> / <li><a href="../../../catel-mvvm/converters/introduction/index.htm">Introduction</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="converters">Converters<a class="headerlink" href="#converters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>In MVVM, there will be some point where you will need to use converters. Most of these converters are used in any project, so we have decided to add them to Catel. Below is a list of converters and a short description what they are used for.</p>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that the behavior of most converters can be inverted by using the <code>ConverterParameter</code></p>
+</div><h2 id="linking-converters">Linking converters<a class="headerlink" href="#linking-converters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>It is possible to link converters. To link converters, simply set the <code>Link</code> property in xaml:</p>
+<pre class="nocode">&lt;catel:NullableValueConverter x:Key=&quot;NullableValueConverter&quot; /&gt;
+ 
+&lt;catel:BooleanToVisibilityConverter&gt;
+    &lt;catel:BooleanToVisibilityConverter.Link&gt;
+        &lt;code:NullToBoolConverter Link=&quot;{StaticResource NullableValueConverter}&quot; /&gt;
+    &lt;/catel:BooleanToVisibilityConverter.Link&gt;
+&lt;/catel:BooleanToVisibilityConverter&gt;
+</pre><h2 id="available-converters">Available converters<a class="headerlink" href="#available-converters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Name</p>
+<p>Description</p>
+<p>AreEqualMultiValueConverter</p>
+<p>Converts the comparison of 2 values to a boolean</p>
+<p>BooleanToCollapsingVisibilityConverter</p>
+<p>Convert from bool to <em>Visibility</em> and back.</p>
+<p>BooleanToHidingVisibilityConverter</p>
+<p>Convert from bool to <em>Visibility</em> and back.</p>
+<p>BooleanToGrayscaleConverter</p>
+<p>Converts a boolean to a grayscale saturation value. If the input is false, this converter will return 0, otherwise 1.</p>
+<p>BooleanToOppositeBooleanConverter</p>
+<p>Convert a boolean to it's inverted value.</p>
+<p>BooleanToTextConverter</p>
+<p>Converts a boolean value to text, for example &quot;yes&quot; and &quot;no&quot;, or &quot;x&quot; and &quot; &quot;.</p>
+<p>BooleanToCollapsingVisibilityConverter</p>
+<p>Convert from bool to <em>Visibility</em> and back. True returns <em>Visibility.Visible</em>, False returns <em>Visibility.Collapsed</em>.</p>
+<p>BooleanToHidingVisibilityConverter</p>
+<p>Convert from bool to <em>Visibility</em> and back. True returns <em>Visibility.Visible</em>, False returns <em>Visibility.Hidden</em>.</p>
+<p>ColorToBrushConverter</p>
+<p>Converts a color value to a brush and vice versa.</p>
+<p>ContainsItemsConverter</p>
+<p>Convert the count of an ICollection or IEnumerable to true or false, depending on whether the instance contains items.</p>
+<p>For an instance which implements ICollection, check Count &gt; 0</p>
+<p>For an instance which implements IEnumerable, if the instance can be Enumerated.</p>
+<p>CountCollapsedConverter</p>
+<p>Converts the 'count' of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Collapsed</em></p>
+<p>Visible means: ICollection.Count &gt; 0, String.Length &gt; 0 or long, int, short &gt; 0.</p>
+<p>CountHiddenConverter</p>
+<p>Converts the 'count' of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Hidden</em></p>
+<p>Visible means: ICollection.Count &gt; 0, String.Length &gt; 0 or long, int, short &gt; 0.</p>
+<p>EmptyStringToCollapsingVisibilityConverter</p>
+<p>Converts a string to <em>Visibility</em>. If the string is empty, it will return <em>Visibility.Collapsed</em>.</p>
+<p>EmptyStringToHidingVisibilityConverter</p>
+<p>Converts a string to <em>Visibility</em>. If the string is empty, it will return <em>Visibility.Hidden</em>.</p>
+<p>EnumToCollapsingVisibilityConverter</p>
+<p>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3<em>)</em>:</em></p>
+<pre class="nocode">&lt;TextBlock Visibility=&quot;{Binding MyEnumValue, Converter={converters:EnumToCollapsingVisibilityConverter}, ConverterParameter=Enum1|Enum3}&quot;/&gt;
+</pre><p>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</p>
+<p>EnumToHidingVisibilityConverter</p>
+<p>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3<em>)</em>:</em></p>
+<pre class="nocode">&lt;TextBlock Visibility=&quot;{Binding MyEnumValue, Converter={converters:EnumToHidingVisibilityConverter}, ConverterParameter=Enum1|Enum3}&quot;/&gt;
+</pre><p>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</p>
+<p>FormattingConverter</p>
+<p>Formats the value using the format string provided in the ConverterParameter</p>
+<p>IsSelectedConverter</p>
+<p>Converts a selected value to either true of false.</p>
+<p>IsSelectedValueConverter</p>
+<p>Converts a selected value to either true of false.</p>
+<p>GetFirstValidationErrorConverter</p>
+<p>Converts a collection containing ValidationError objects to return the first error or an empty string in case there are no errors.</p>
+<p>IsSelectedConverter</p>
+<p>Converts a selected value to either true or false. Useful whena mutually exclusive selection must be made.</p>
+<p>IntToStringConverter</p>
+<p>Converts an inteteger to a string and back.</p>
+<p>LanguageConverter</p>
+<p>Converts the string (value) to a translated value using the <em>ILanguageService</em>. The parameter can be specified, then it should be a <em>CultureInfo</em>.</p>
+<p>MethodToValueConverter</p>
+<p>Converts the result of a method to a value. This makes it possible to bind to a method. <a href="http://geekswithblogs.net/claraoscura/archive/2008/10/17/125901.aspx" target="_blank">See Source</a></p>
+<p>MultiplyConverter</p>
+<p>Calculates the product of given value and factor in parameter.</p>
+<p>NullableValueConverter</p>
+<p>Converts a value to a representive value for nullable.</p>
+<p>ObjectToDisplayNameConverter</p>
+<p>Converts any value to a display name. Uses the DisplayNameAttribute to handle the tough work.</p>
+<p>PlatformToBooleanConverter</p>
+<p>Converts a value of <em>KnownPlatforms</em> to a boolean based on the current platform. This makes it possible to enable / disable functionality in shared projects based on the target platform.</p>
+<p>ReferenceToBooleanConverter</p>
+<p>Converts a reference to a boolean. If the reference is <em>null</em>, it will return <em>false</em>.</p>
+<p>ReferenceToCollapsingVisibilityConverter</p>
+<p>Converts a reference to <em>Visibility</em>. If the reference is <em>null</em>, it will return <em>Visibility.Collapsed</em>.</p>
+<p>ReferenceToHidingVisibilityConverter</p>
+<p>Converts a reference to <em>Visibility</em>. If the reference is <em>null</em>, it will return <em>Visibility.Hidden</em>.</p>
+<p>ShortDateFormattingConverter</p>
+<p>Converts a date to a short date and back.</p>
+<p>StringToIntConverter</p>
+<p>Converts string to an integer and back.</p>
+<p>ViewModelToViewConverter</p>
+<p>Converts a view model to a view. Great way to locate a view based on a view model inside xaml.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-mvvm/converters/introduction.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

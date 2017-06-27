@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Path - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ApplicationExtensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/AsyncEventHandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/AsyncEventHandlerExtensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ByteArrayExtensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CatelEnvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CompositeFilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CompositePredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeInitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DisposableToken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/EnvironmentHelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/EventHandlerExtensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionExtensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ICommandManagerExtensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ICompositeFilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IDisposableToken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IExecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IExecuteWithObject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IFluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/INotifyPropertyChangedExtensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IUniqueIdentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/JsonExtensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/KnownPlatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/LanguageHelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/MustBeImplementedException/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/MVVMModule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/NotSupportedInPlatformException/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ObjectHelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ObjectToStringHelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ParallelHelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ProcessExtensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ProgressContext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ResourceHelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/SerializationJsonModule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/StringExtensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/StringToObjectHelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/SupportedPlatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/TagHelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ThemeHelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ThreadHelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/UniqueIdentifierHelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/UriExtensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakAction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/ApiCop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/ComponentModel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Core/">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/ExceptionHandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/IO/">IO</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IO/ApplicationDataTarget/">ApplicationDataTarget</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/Catel.Core/Catel/IO/Path/">Path</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#methods">Methods</a></li>
+</ul>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IO/StreamExtensions/">StreamExtensions</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/IoC/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Runtime/">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Text/">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/System/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Serialization.Json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../Home.htm">Home</a></li> / <li><a href="../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../reference/Catel.Core/index.htm">Catel.Core</a></li> / <li><a href="../../../../../reference/Catel.Core/Catel/index.htm">Catel</a></li> / <li><a href="../../../../../reference/Catel.Core/Catel/IO/index.htm">IO</a></li> / <li><a href="../../../../../reference/Catel.Core/Catel/IO/Path/index.htm">Path</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="path">Path<a class="headerlink" href="#path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.IO</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class Path
+</pre><p>Static class that implements some path methods</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="appendtrailingslashstring-path">AppendTrailingSlash(string path)<a class="headerlink" href="#appendtrailingslashstring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Appends a trailing backslash () to the path.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>path</strong>
+Path to append the trailing backslash to.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Path including the trailing backslash.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The path is <code>null</code> or whitespace.</p>
+<h3 id="appendtrailingslashstring-path-char-slash">AppendTrailingSlash(string path, char slash)<a class="headerlink" href="#appendtrailingslashstring-path-char-slash" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Appends a trailing slash (\ or /) to the path.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>path</strong>
+Path to append the trailing slash to.</p>
+<p><strong>slash</strong>
+Slash to append (\ or /).</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Path including the trailing slash.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The path is <code>null</code> or whitespace.</p>
+<h3 id="combinestring-paths">Combine(string[] paths)<a class="headerlink" href="#combinestring-paths" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns a combination of multiple paths.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paths</strong>
+Paths to combine.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Combination of all the paths passed.</p>
+<h3 id="combineurlsstring-urls">CombineUrls(string[] urls)<a class="headerlink" href="#combineurlsstring-urls" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns a combination of multiple urls.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>urls</strong>
+Urls to combine.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Combination of all the urls passed.</p>
+<h3 id="getapplicationdatadirectory">GetApplicationDataDirectory()<a class="headerlink" href="#getapplicationdatadirectory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
+    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
+    If the folder does not exist, the folder is automatically created by this method. </p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
+    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
+    If the folder does not exist, the folder is automatically created by this method. </p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-productname">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string productName)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[product name].
+</code></pre>
+
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>applicationDataTarget</strong>
+The application data target.</p>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-companyname-string-productname">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
+    folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>applicationDataTarget</strong>
+The application data target.</p>
+<p><strong>companyName</strong>
+Name of the company.</p>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectorystring-productname">GetApplicationDataDirectory(string productName)<a class="headerlink" href="#getapplicationdatadirectorystring-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[product name].
+</code></pre>
+
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectorystring-companyname-string-productname">GetApplicationDataDirectory(string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectorystring-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
+    folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>companyName</strong>
+Name of the company.</p>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryforallusers">GetApplicationDataDirectoryForAllUsers()<a class="headerlink" href="#getapplicationdatadirectoryforallusers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
+    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
+    If the folder does not exist, the folder is automatically created by this method. </p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryforallusersstring-productname">GetApplicationDataDirectoryForAllUsers(string productName)<a class="headerlink" href="#getapplicationdatadirectoryforallusersstring-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[product name].
+</code></pre>
+
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getapplicationdatadirectoryforallusersstring-companyname-string-productname">GetApplicationDataDirectoryForAllUsers(string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectoryforallusersstring-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
+    folder is automatically created by this method.</p>
+<pre><code>This method returns a value like [application data]\[company]\[product name].
+</code></pre>
+
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>companyName</strong>
+Name of the company.</p>
+<p><strong>productName</strong>
+Name of the product.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Directory for the application data.</p>
+<h3 id="getdirectorynamestring-path">GetDirectoryName(string path)<a class="headerlink" href="#getdirectorynamestring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the name of the directory.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>path</strong>
+The path to get the directory name from.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The directory name.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The path is <code>null</code> or whitespace.</p>
+<h3 id="getfilenamestring-path">GetFileName(string path)<a class="headerlink" href="#getfilenamestring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the name of the file.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>path</strong>
+The path to get the file name from.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The file name.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The path is <code>null</code> or whitespace.</p>
+<h3 id="getfullpathstring-relativepath-string-basepath">GetFullPath(string relativePath, string basePath)<a class="headerlink" href="#getfullpathstring-relativepath-string-basepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns the full path for a relative path.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>relativePath</strong>
+Relative path to convert to a full path.</p>
+<p><strong>basePath</strong>
+Base path (a.k.a. working directory).</p>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Full path.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The relativePath is <code>null</code> or whitespace.</p>
+<h3 id="getparentdirectorystring-path">GetParentDirectory(string path)<a class="headerlink" href="#getparentdirectorystring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the parent directory.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>path</strong>
+The path to get the parent directory from.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Parent directory of a path. If there is no parent directory, Empty is returned.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This method will always strip the trailing backslash from the parent.</p>
+<h3 id="getrelativepathstring-fullpath-string-basepath">GetRelativePath(string fullPath, string basePath)<a class="headerlink" href="#getrelativepathstring-fullpath-string-basepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns a relative path string from a full path.</p>
+<pre><code>The path to convert. Can be either a file or a directory
+The base path to truncate to and replace
+
+
+
+Lower case string of the relative path. If path is a directory it's returned 
+without a backslash at the end.
+
+
+
+Examples of returned values:
+ .\test.txt, ..\test.txt, ..\..\..\test.txt, ., ..
+</code></pre>
+
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fullPath</strong>
+Full path to convert to relative path.</p>
+<p><strong>basePath</strong>
+The base path (a.k.a. working directory). If this parameter is <code>null</code> or empty, the current working directory will be used.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Relative path.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The fullPath is <code>null</code> or whitespace.</p>
+<h3 id="removestartandtrailingslashesstring-value">RemoveStartAndTrailingSlashes(string value)<a class="headerlink" href="#removestartandtrailingslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes any slashes (\ or /) at the beginning and end of the string.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+Value to remove the slashes from.</p>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Value without trailing slashes.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The value is <code>null</code> or whitespace.</p>
+<h3 id="removestartslashesstring-value">RemoveStartSlashes(string value)<a class="headerlink" href="#removestartslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes any slashes (\ or /) at the beginning of the string.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+Value to remove the slashes from.</p>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Value without slashes.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The value is <code>null</code> or whitespace.</p>
+<h3 id="removetrailingslashesstring-value">RemoveTrailingSlashes(string value)<a class="headerlink" href="#removetrailingslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes any slashes (\ or /) at the end of the string.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+Value to remove the slashes from.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Value without slashes.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The value is <code>null</code> or whitespace.</p>
+<h3 id="replacepathslashesbyurlslashesstring-value">ReplacePathSlashesByUrlSlashes(string value)<a class="headerlink" href="#replacepathslashesbyurlslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Replaces path slashes () by url slashes (/).</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+Value to convert.</p>
+<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Prepared url.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The value is <code>null</code> or whitespace.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/reference/Catel.Core/Catel/IO/Path.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

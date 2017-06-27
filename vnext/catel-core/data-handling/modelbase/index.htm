@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ModelBase - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="../../../index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../Home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/argument-checking/">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../catel-core/data-handling/">Data handling</a></span></li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/observableobject/">ObservableObject</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/dispatcherobservableobject/">DispatcherObservableObject</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../catel-core/data-handling/modelbase/">ModelBase</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#using-the-class">Using the class</a></li>
+<li class="tocentry"><a href="#functionality-provided-out-of-the-box">Functionality provided out of the box</a></li>
+</ul>
+<li class="tocentry"><a href="../../../catel-core/data-handling/validatablemodelbase/">ValidatableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/comparablemodelbase/">ComparableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/savablemodelbase/">SavableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/childawaremodelbase/">ChildAwareModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/using-modelbase-as-base-for-entities/">Using ModelBase as base for entities</a>
+</li>
+<li class="tocentry"><a href="../../../catel-core/data-handling/advanced-property-change-notifications/">Advanced property change notifications</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/exception-handling/">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/ioc/">IoC (ServiceLocator & TypeFactory)</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/multilingual/">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/parallel-invocation-tasks/">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/preventing-memory-leaks/">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/serialization/">Serialization</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/validation/">Validation</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../Home.htm">Home</a></li> / <li><a href="../../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../catel-core/data-handling/index.htm">Data handling</a></li> / <li><a href="../../../catel-core/data-handling/modelbase/index.htm">ModelBase</a></li></ul>
+					
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="modelbase">ModelBase<a class="headerlink" href="#modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>The <em>ModelBase</em> class is a generic base class that can be used for all your data classes.</p>
+<ul>
+<li>
+<strong>Fully serializable</strong>
+It is now really easy to store objects on disk or serialize them into memory, either binary or in XML. The data object supports this out of the box, and automatically handles the (de)serialization.
+</li>
+<li>
+<strong>Support property changed notifications</strong>
+The class supports the <em>INotifyPropertyChanging</em> and <em>INotifyPropertyChanged</em> interfaces so this class can easily be used in applications to reflect changes to the user.
+</li>
+<li>
+<strong>Backwards compatibility</strong>
+When serializing your objects to binary, it is hard to maintain the right versions. When you add a new property to a binary class, or change a namespace, the object cannot be loaded any longer. The data object base takes care of this issue and supports backwards compatibility.
+</li>
+<li>
+<strong>Backup &amp; revert</strong>
+The class implements the <em>IEditableObject</em> interface which makes it possible to create a state of the object. Then all properties can be edited, and finally, the changes can be applied or cancelled.
+</li>
+</ul>
+<h2 id="using-the-class">Using the class<a class="headerlink" href="#using-the-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Using the class is extremely simple. Just declare a new class that derives from <em>ModelBase</em> and you are ready to go:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// MyObject class which fully supports serialization,
+/// property changed notifications, backwards compatibility and error checking.
+/// &lt;/summary&gt;
+[Serializable]
+public class MyObject : ModelBase&lt;MyObject&gt;
+{
+    /// &lt;summary&gt;
+    /// Initializes a new object from scratch.
+    /// &lt;/summary&gt;
+    public MyObject() { }
+
+/// &lt;summary&gt;
+/// Initializes a new object based on &lt;see cref=&quot;SerializationInfo&quot;/&gt;.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;info&quot;&gt;&lt;see cref=&quot;SerializationInfo&quot;/&gt;
+//     that contains the information.&lt;/param&gt;
+/// &lt;param name=&quot;context&quot;&gt;&lt;see cref=&quot;StreamingContext&quot;/&gt;.&lt;/param&gt;
+protected MyObject(SerializationInfo info, StreamingContext context)
+    : base(info, context) { }
+}
+</pre><p>As you can see in the code above, the <em>MyObject</em> class derives from <em>ModelBase</em> and provides an empty constructor, but also a constructor that is used for binary deserialization. The code above might look complex, but it is created using the model code snippet, and you only have to type the name of the class.</p>
+<h3 id="defining-properties">Defining properties<a class="headerlink" href="#defining-properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Defining properties for the class is very easy, and works the same like dependency properties. The advantages of this way of defining properties are:</p>
+<ul>
+<li>Properties defined like this are automatically included during serialization; no need to specify complex data contracts;</li>
+<li>You can specify a default value for a property which will be used when the class is constructed or the property is not found during deserialization (in case this property is added to an existing class);</li>
+<li>The <em>PropertyData</em> object can be used to retrieve property values so the compiler checks for errors;</li>
+<li>You can directly subscribe to change notifications, and all properties automatically support <em>INotifyPropertyChanged</em> out of the box.</li>
+</ul>
+<p>Below is the code that defines a new property Name of type string:</p>
+<pre class="nocode">/// &lt;summary&gt;
+/// Gets or sets the name.
+/// &lt;/summary&gt;
+public string Name
+{
+    get { return GetValue&lt;string&gt;(NameProperty); }
+    set { SetValue(NameProperty, value); }
+}
+
+/// &lt;summary&gt;
+/// Register the Name property so it is known in the class.
+/// &lt;/summary&gt;
+public static readonly PropertyData NameProperty = RegisterProperty(&quot;Name&quot;, typeof(string), string.Empty);
+</pre><p>A registered property can be excluded from serialization if wanted. When the object is deserialized, the default value will be used for the property in that case.</p>
+<h3 id="default-values-for-reference-types">Default values for reference types<a class="headerlink" href="#default-values-for-reference-types" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>In lots of cases, a default value for reference types is required in the property definitions. However, and you might have noticed this behavior in for example dependency properties, using an instance as default value can result in unexpected behavior.</p>
+<p>Below is an example of a &quot;regular&quot; property registration using a default value for a collection property:</p>
+<pre class="nocode">public static readonly PropertyData NameProperty = RegisterProperty(&quot;PersonCollection&quot;, typeof(Collection&lt;Person&gt;), new Collection&lt;Person&gt;());
+</pre><p>However, instead of creating a new collection for each new object with this property, only one collection will be created that will be used by all classes that have this property registered. One solution is to pass null as default value and create the collection in the constructor. A better solution is to use the override of <em>RegisterProperty</em> with the callback parameters:</p>
+<pre class="nocode">public static readonly PropertyData NameProperty = RegisterProperty(&quot;PersonCollection&quot;, typeof(Collection&lt;Person&gt;), () =&gt; new Collection&lt;Person&gt;());
+</pre><p>This way, every time a new value is needed, the callback will be invoked to create the default value and you will have a true default value for reference types.</p>
+<h2 id="functionality-provided-out-of-the-box">Functionality provided out of the box<a class="headerlink" href="#functionality-provided-out-of-the-box" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <code>ModelBase</code> provides a lot of functionality out of the box. A few points I want to mention are:</p>
+<p><strong>INotifyPropertyChanged</strong></p>
+<p>All properties registered using the <em>RegisterProperty</em> method automatically take care of change notifications.</p>
+<p><strong>IEditableObject</strong></p>
+<p>The data object can automatically create an internal backup and restore it, if required, using the <em>IEditableObject</em> interface.</p>
+<p><strong>Serialization</strong></p>
+<p>As told many times before, using the <code>[SavableModelBase](./savablemodelbase.md)</code>, you can simply save your file to a stream (file on disk, stream in memory, etc.).</p>
+<p>Keep in mind that this class is not suitable for database communication, there are much better ways to handle this (ORM mappers such as Entity Framework, NHibernate, LLBLGen Pro, etc.).</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/catel.github.io/blob/master/src/../src/vnext/catel-core/data-handling/modelbase.md" target="_blank">contribute</a>!</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>
