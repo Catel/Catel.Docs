@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -429,7 +425,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -448,7 +444,7 @@ The type.</p>
 Type of the serializer modifier.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="cleartype-type">Clear(Type type)<a class="headerlink" href="#cleartype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Clears the specified type from cache so it will be evaluated.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -456,19 +452,19 @@ The type is <code>null</code>.</p>
 The type.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getcatelpropertiestype-type-bool-includemodelbaseproperties">GetCatelProperties(Type type, bool includeModelBaseProperties)<a class="headerlink" href="#getcatelpropertiestype-type-bool-includemodelbaseproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the catel properties.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>type</strong>
 Type of the model.</p>
 <p><strong>includeModelBaseProperties</strong>
-if set to <code>true</code>, also include model base properties.</p>
+if set to<code>true</code> , also include model base properties.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>A hash set containing the Catel properties.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getcatelpropertiestoserializetype-type">GetCatelPropertiesToSerialize(Type type)<a class="headerlink" href="#getcatelpropertiestoserializetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the Catel properties to serialize for the specified object.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -478,19 +474,19 @@ The type.</p>
 <p>The list of properties to serialize.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getcatelpropertynamestype-type-bool-includemodelbaseproperties">GetCatelPropertyNames(Type type, bool includeModelBaseProperties)<a class="headerlink" href="#getcatelpropertynamestype-type-bool-includemodelbaseproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the catel property names.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>type</strong>
 Type of the model.</p>
 <p><strong>includeModelBaseProperties</strong>
-if set to <code>true</code>, also include model base properties.</p>
+if set to<code>true</code> , also include model base properties.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>A hash set containing the Catel property names.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getfieldnamestype-type">GetFieldNames(Type type)<a class="headerlink" href="#getfieldnamestype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the field names.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -500,7 +496,7 @@ Type of the model.</p>
 <p>A hash set containing the field names.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getfieldstype-type">GetFields(Type type)<a class="headerlink" href="#getfieldstype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the fields.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -510,7 +506,7 @@ Type of the model.</p>
 <p>A hash set containing the fields.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getfieldstoserializetype-type">GetFieldsToSerialize(Type type)<a class="headerlink" href="#getfieldstoserializetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the fields to serialize for the specified object.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -520,7 +516,7 @@ The type.</p>
 <p>The list of fields to serialize.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getregularpropertiestype-type">GetRegularProperties(Type type)<a class="headerlink" href="#getregularpropertiestype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the regular properties.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -530,7 +526,7 @@ Type of the model.</p>
 <p>A hash set containing the regular properties.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getregularpropertiestoserializetype-type">GetRegularPropertiesToSerialize(Type type)<a class="headerlink" href="#getregularpropertiestoserializetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the regular properties to serialize for the specified object.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -540,7 +536,7 @@ The type.</p>
 <p>The list of properties to serialize.</p>
 <h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getregularpropertynamestype-type">GetRegularPropertyNames(Type type)<a class="headerlink" href="#getregularpropertynamestype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the regular property names.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -550,21 +546,17 @@ Type of the model.</p>
 <p>A hash set containing the regular property names.</p>
 <h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="getserializermodifierstype-type">GetSerializerModifiers(Type type)<a class="headerlink" href="#getserializermodifierstype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the serializer modifiers for the specified type.</p>
-<pre><code>Note that the order is important because the modifiers will be called in the returned order during serialization
-and in reversed order during deserialization.
-</code></pre>
-
+<p>Gets the serializer modifiers for the specified type.Note that the order is important because the modifiers will be called in the returned order during serialization and in reversed order during deserialization.</p>
 <h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>type</strong>
 The type.</p>
 <h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>An array containing the modifiers. Never <code>null</code>, but can be an empty array.</p>
+<p>An array containing the modifiers. Never<code>null</code> , but can be an empty array.</p>
 <h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="removeserializermodifiertype-type-type-serializermodifiertype">RemoveSerializerModifier(Type type, Type serializerModifierType)<a class="headerlink" href="#removeserializermodifiertype-type-type-serializermodifiertype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Removes the serializer modifier for a specific type.</p>
 <h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -574,7 +566,7 @@ The type.</p>
 Type of the serializer modifier.</p>
 <h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="warmuptype-type">Warmup(Type type)<a class="headerlink" href="#warmuptype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Warmups the specified type by calling all the methods for the specified type.</p>
 <h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -582,7 +574,7 @@ The type is <code>null</code>.</p>
 The type.</p>
 <h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 
                     </div>
                 </div>

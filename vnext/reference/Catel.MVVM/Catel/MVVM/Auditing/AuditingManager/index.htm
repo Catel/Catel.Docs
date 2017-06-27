@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -210,8 +204,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -231,8 +223,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -273,9 +263,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -286,9 +273,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -356,20 +340,13 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class AuditingManager
-</pre><p>Handles the auditing for MVVM inside Catel.</p>
-<pre><code>Use this manager to register custom auditors.
-</code></pre>
-
+</pre><p>Handles the auditing for MVVM inside Catel.Use this manager to register custom auditors.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="auditors">_auditors<a class="headerlink" href="#auditors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>List of currently registered auditors.</p>
-<h3 id="instance">_instance<a class="headerlink" href="#instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Instance of this singleton class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="isauditingenabled">IsAuditingEnabled<a class="headerlink" href="#isauditingenabled" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a value indicating whether auditing is enabled. Auditing is enabled when at least 1 auditor is registered.</p>
@@ -378,98 +355,24 @@
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="clear">Clear()<a class="headerlink" href="#clear" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Clears all the current auditors.</p>
-<h3 id="oncommandexecutediviewmodel-viewmodel-string-commandname-icatelcommand-command-object-commandparameter">OnCommandExecuted(IViewModel viewModel, string commandName, ICatelCommand command, object commandParameter)<a class="headerlink" href="#oncommandexecutediviewmodel-viewmodel-string-commandname-icatelcommand-command-object-commandparameter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a command of a view model has just been executed.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<p><strong>commandName</strong>
-Name of the command, which is the name of the command property.</p>
-<p><strong>command</strong>
-The command that has been executed.</p>
-<p><strong>commandParameter</strong>
-The command parameter.</p>
-<h3 id="onpropertychangediviewmodel-viewmodel-string-propertyname-object-newvalue">OnPropertyChanged(IViewModel viewModel, string propertyName, object newValue)<a class="headerlink" href="#onpropertychangediviewmodel-viewmodel-string-propertyname-object-newvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when the property of a view model has just changed.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<p><strong>propertyName</strong>
-Name of the property.</p>
-<p><strong>newValue</strong>
-The new property value.</p>
-<h3 id="onpropertychangingiviewmodel-viewmodel-string-propertyname-object-oldvalue">OnPropertyChanging(IViewModel viewModel, string propertyName, object oldValue)<a class="headerlink" href="#onpropertychangingiviewmodel-viewmodel-string-propertyname-object-oldvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when the property of a view model is about to change.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<p><strong>propertyName</strong>
-Name of the property.</p>
-<p><strong>oldValue</strong>
-The old property value.</p>
-<h3 id="onviewmodelcancelediviewmodel-viewmodel">OnViewModelCanceled(IViewModel viewModel)<a class="headerlink" href="#onviewmodelcancelediviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model has just been canceled.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelcancelingiviewmodel-viewmodel">OnViewModelCanceling(IViewModel viewModel)<a class="headerlink" href="#onviewmodelcancelingiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model is about to be canceled.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelclosediviewmodel-viewmodel">OnViewModelClosed(IViewModel viewModel)<a class="headerlink" href="#onviewmodelclosediviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model has just been closed.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelclosingiviewmodel-viewmodel">OnViewModelClosing(IViewModel viewModel)<a class="headerlink" href="#onviewmodelclosingiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model is about to be closed.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelcreatediviewmodel-viewmodel">OnViewModelCreated(IViewModel viewModel)<a class="headerlink" href="#onviewmodelcreatediviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a specific view model type is created.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelcreatingtype-viewmodeltype">OnViewModelCreating(Type viewModelType)<a class="headerlink" href="#onviewmodelcreatingtype-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a specific view model type is being created.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModelType</strong>
-Type of the view model.</p>
-<h3 id="onviewmodelsavediviewmodel-viewmodel">OnViewModelSaved(IViewModel viewModel)<a class="headerlink" href="#onviewmodelsavediviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model has just been saved.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h3 id="onviewmodelsavingiviewmodel-viewmodel">OnViewModelSaving(IViewModel viewModel)<a class="headerlink" href="#onviewmodelsavingiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Must be called when a view model is about to be saved.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
 <h3 id="registerauditoriauditor-auditor">RegisterAuditor(IAuditor auditor)<a class="headerlink" href="#registerauditoriauditor-auditor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers a specific auditor.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>auditor</strong>
 The auditor.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The auditor is <code>null</code>.</p>
+The auditor is<code>null</code>.</p>
 <h3 id="registerauditor">RegisterAuditor<TAuditor>()<a class="headerlink" href="#registerauditor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers a auditor and automatically instantiates it by using the <a href="#">ITypeFactory</a>.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TAuditor</strong>
 The type of the auditor.</p>
 <h3 id="unregisterauditoriauditor-auditor">UnregisterAuditor(IAuditor auditor)<a class="headerlink" href="#unregisterauditoriauditor-auditor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unregisters a specific auditor.</p>
-<pre><code>If the auditor is not registered, nothing happens.
-</code></pre>
-
+<p>Unregisters a specific auditor.If the auditor is not registered, nothing happens.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The auditor is <code>null</code>.</p>
-<h3 id="updatestate">UpdateState()<a class="headerlink" href="#updatestate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates the state.</p>
+The auditor is<code>null</code>.</p>
 
                     </div>
                 </div>

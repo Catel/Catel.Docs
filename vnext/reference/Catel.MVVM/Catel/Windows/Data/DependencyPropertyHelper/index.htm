@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -122,8 +119,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/">Data</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingEvaluator/">BindingEvaluator</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingHelper/">BindingHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingWithValidation/">BindingWithValidation</a>
@@ -220,100 +215,81 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class DependencyPropertyHelper
 </pre><p>Helper class for dependency properties.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cachebydependencyproperty">_cacheByDependencyProperty<a class="headerlink" href="#cachebydependencyproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing the names of all found dependency properties, required because it is not possible to get the name of a 
-    dependency property in some platforms.</p>
-<h3 id="cachebyparenttype">_cacheByParentType<a class="headerlink" href="#cachebyparenttype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all dependency properties of a specific type.</p>
-<h3 id="cachebypropertyname">_cacheByPropertyName<a class="headerlink" href="#cachebypropertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing a dependency property based on the type + propertyname, where the key is generated using the
-    String) method.</p>
-<h3 id="cachekeycache">_cacheKeyCache<a class="headerlink" href="#cachekeycache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The cache for the cache keys.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="ensureitemincachetype-viewtype">EnsureItemInCache(Type viewType)<a class="headerlink" href="#ensureitemincachetype-viewtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Ensures that the dependency properties of the specified <a href="#">FrameworkElement</a> are in the cache.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewType</strong>
-The view type.</p>
-<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The viewType is <code>null</code>.</p>
 <h3 id="getdependencypropertiestype-viewtype">GetDependencyProperties(Type viewType)<a class="headerlink" href="#getdependencypropertiestype-viewtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets all dependency properties of the specified <a href="#">Type</a>.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewType</strong>
 The view type.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>List containing all dependency properties of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewType is <code>null</code>.</p>
+The viewType is<code>null</code>.</p>
 <h3 id="getdependencypropertiesframeworkelement-frameworkelement">GetDependencyProperties(FrameworkElement frameworkElement)<a class="headerlink" href="#getdependencypropertiesframeworkelement-frameworkelement" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets all dependency properties of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>List containing all dependency properties of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <h3 id="getdependencypropertybynameframeworkelement-frameworkelement-string-propertyname">GetDependencyPropertyByName(FrameworkElement frameworkElement, string propertyName)<a class="headerlink" href="#getdependencypropertybynameframeworkelement-frameworkelement-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a the dependency property of a specific <a href="#">FrameworkElement</a> by its name.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>propertyName</strong>
 Name of the property.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">DependencyProperty</a> or <code>null</code> if the property cannot be found.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">DependencyProperty</a> or<code>null</code> if the property cannot be found.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
+The propertyName is<code>null</code> or whitespace.</p>
 <h3 id="getdependencypropertycachekeytype-viewtype-string-propertyname">GetDependencyPropertyCacheKey(Type viewType, string propertyName)<a class="headerlink" href="#getdependencypropertycachekeytype-viewtype-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the dependency property key for the cache.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewType</strong>
 The view type.</p>
 <p><strong>propertyName</strong>
 Name of the property.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The key to use in the cache.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewType is <code>null</code>.</p>
+The viewType is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
+The propertyName is<code>null</code> or whitespace.</p>
 <h3 id="getdependencypropertycachekeyprefixtype-viewtype">GetDependencyPropertyCacheKeyPrefix(Type viewType)<a class="headerlink" href="#getdependencypropertycachekeyprefixtype-viewtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the dependency property cache key prefix.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewType</strong>
 The view type.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The dependency property cache key prefix based on the framework element..</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewType is <code>null</code>.</p>
+The viewType is<code>null</code>.</p>
 <h3 id="getdependencypropertynameframeworkelement-frameworkelement-dependencyproperty-dependencyproperty">GetDependencyPropertyName(FrameworkElement frameworkElement, DependencyProperty dependencyProperty)<a class="headerlink" href="#getdependencypropertynameframeworkelement-frameworkelement-dependencyproperty-dependencyproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the name of the specified dependency property.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element containing the dependency property.</p>
 <p><strong>dependencyProperty</strong>
 The dependency property.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The name of the dependency property or <code>null</code> if the name could not be found.</p>
+<p>The name of the dependency property or<code>null</code> if the name could not be found.</p>
 
                     </div>
                 </div>

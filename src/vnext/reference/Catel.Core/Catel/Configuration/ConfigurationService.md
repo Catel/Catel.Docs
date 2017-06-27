@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ConfigurationService : IConfigurationService
@@ -17,38 +17,15 @@ public class ConfigurationService : IConfigurationService
 [IConfigurationService](/Catel.Core\Catel\Configuration\IConfigurationService.md)
 
 
-Configuration service implementation that allows customization how configuration values
-    are being used inside an application.
-    
-
-
-    This default implementation writes to the
+Configuration service implementation that allows customization how configuration values are being used inside an application.This default implementation writes to the
 
 
 
 ## Fields
 
-### _hasPendingNotifications
-
-### _localConfigFilePath
-
-### _localConfiguration
-
-### _objectConverterService
-
-### _roamingConfigFilePath
-
-### _roamingConfiguration
-
-### _serializationManager
-
-### _suspendNotifications
-
-### Log
-
 ## Constructors
 
-### ConfigurationService(ISerializationManager serializationManager, IObjectConverterService objectConverterService)
+### ConfigurationService(ISerializationManager serializationManager, IObjectConverterService objectConverterService, ISerializer serializer)
 
 Initializes a new instance of the [ConfigurationService](#) class.
 
@@ -59,6 +36,26 @@ The serialization manager.
 
 **objectConverterService**
 The object converter service.
+
+**serializer**
+The serializer.
+
+
+
+### ConfigurationService(ISerializationManager serializationManager, IObjectConverterService objectConverterService, IXmlSerializer serializer)
+
+Initializes a new instance of the [ConfigurationService](#) class.
+
+#### Parameters
+
+**serializationManager**
+The serialization manager.
+
+**objectConverterService**
+The object converter service.
+
+**serializer**
+The serializer.
 
 
 
@@ -71,36 +68,6 @@ Occurs when the configuration has changed.
 
 
 ## Methods
-
-### GetFinalKey(string key)
-
-Gets the final key. This method allows customization of the key.
-
-#### Parameters
-
-**key**
-The key.
-
-#### Returns
-
-System.String.
-
-
-
-### GetSettingsContainer(ConfigurationContainer container)
-
-Gets the settings container for this platform
-
-#### Parameters
-
-**container**
-The settings container.
-
-#### Returns
-
-The settings container.
-
-
 
 ### GetValue<T>(ConfigurationContainer container, string key, T defaultValue)
 
@@ -129,25 +96,7 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
-
-
-
-### GetValueFromStore(ConfigurationContainer container, string key)
-
-Gets the value from the store.
-
-#### Parameters
-
-**container**
-The container.
-
-**key**
-The key.
-
-#### Returns
-
-The value.
+The key is`null` or whitespace.
 
 
 
@@ -169,7 +118,7 @@ The default value.
 #### Exceptions
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -187,16 +136,14 @@ The key.
 
 #### Returns
 
-```true``` if the specified value is available; otherwise, ```false```.
+`true` if the specified value is available; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
-
-### RaiseConfigurationChanged(ConfigurationContainer container, string key, object value)
 
 ### SetValue(ConfigurationContainer container, string key, object value)
 
@@ -216,24 +163,7 @@ The value.
 #### Exceptions
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
-
-
-
-### SetValueToStore(ConfigurationContainer container, string key, string value)
-
-Sets the value to the store.
-
-#### Parameters
-
-**container**
-The container.
-
-**key**
-The key.
-
-**value**
-The value.
+The key is`null` or whitespace.
 
 
 
@@ -244,24 +174,6 @@ Suspends the notifications of this service until the returned object is disposed
 #### Returns
 
 IDisposable.
-
-
-
-### ValueExists(ConfigurationContainer container, string key)
-
-Determines whether the specified key value exists in the configuration.
-
-#### Parameters
-
-**container**
-The container.
-
-**key**
-The key.
-
-#### Returns
-
-```true``` if the value exists, ```false``` otherwise.
 
 
 

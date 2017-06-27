@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class PropertyAlreadyRegisteredException : Exception
@@ -16,8 +16,7 @@ public class PropertyAlreadyRegisteredException : Exception
 [Exception]()
 
 
-Exception when a property is added to the [ModelBase](#) class that is
-    already registered by the object.
+Exception when a property is added to the [ModelBase](#) class that is already registered by the object.
 
 
 

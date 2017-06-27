@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop.Rules
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class UnusedFeatureApiCopRule : ApiCopRule
@@ -21,8 +21,6 @@ Rule to find out unused feature counts.
 
 
 ## Fields
-
-### _lock
 
 ## Constructors
 
@@ -70,7 +68,7 @@ Increases the count and determines whether the feature is being used at the mome
 #### Parameters
 
 **isUsed**
-if set to ```true```, the feature is being used.
+if set to`true` , the feature is being used.
 
 **tag**
 The tag.
@@ -91,7 +89,7 @@ The tag.
 
 #### Returns
 
-```true``` if the specified ApiCop is valid; otherwise, ```false```.
+`true` if the specified ApiCop is valid; otherwise,`false`.
 
 
 

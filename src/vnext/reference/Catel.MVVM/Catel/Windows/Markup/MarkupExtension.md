@@ -22,25 +22,13 @@ Custom markup extension.
 
 ## Fields
 
-### _internalBindingValue
-
 ## Constructors
-
-### MarkupExtension()
-
-Initializes a new instance of the [MarkupExtension](#) class.
-
-
 
 ## Properties
 
 ### InternalBindingValue
 
-Gets or sets the binding value.
-    
-
-
-    Do not use this property, it's use to set up the binding manually.
+Gets or sets the binding value.Do not use this property, it's use to set up the binding manually.
 
 
 
@@ -66,23 +54,6 @@ A service provider helper that can provide services for the markup extension.
 #### Returns
 
 The object value to set on the property where the extension is applied.
-
-
-
-### RaisePropertyChanged(string propertyName)
-
-Called when a property has been changed.
-
-#### Parameters
-
-**propertyName**
-Name of the property.
-
-
-
-### UpdateBinding()
-
-Updates the binding.
 
 
 

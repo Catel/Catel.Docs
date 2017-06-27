@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class GetFirstValidationErrorConverter : ValueConverterBase
@@ -16,31 +16,9 @@ public class GetFirstValidationErrorConverter : ValueConverterBase
 [ValueConverterBase](/Catel.MVVM\Catel\MVVM\Converters\ValueConverterBase.md)
 
 
-Converts a collection containing [ValidationError](#) objects to return the first error
-    or an empty string in case there are no errors.
+Converts a collection containing [ValidationError](#) objects to return the first error or an empty string in case there are no errors.
 
 
 
 ## Methods
-
-### Convert(object value, Type targetType, object parameter)
-
-Modifies the source data before passing it to the target for display in the UI.
-
-#### Parameters
-
-**value**
-The source data being passed to the target.
-
-**targetType**
-The [Type](#) of data expected by the target dependency property.
-
-**parameter**
-An optional parameter to be used in the converter logic.
-
-#### Returns
-
-The value to be passed to the target dependency property.
-
-
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class BindingFlagsHelper
@@ -40,11 +40,7 @@ A value representing whether the hierarchy should be flattened. Corresponds with
 A value representing whether static members should be included. Corresponds with Static.
 
 **allowNonPublicMembers**
-A value representing whether non-public members should be included. Corresponds with NonPublic.
-    
-
-
-    If this value is ```null```, the default of the framework will be used. Also see DefaultBindingFlags.
+A value representing whether non-public members should be included. Corresponds with NonPublic.If this value is`null` , the default of the framework will be used. Also see DefaultBindingFlags.
 
 #### Returns
 

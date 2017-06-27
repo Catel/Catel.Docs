@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -355,6 +351,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService/">IViewModelWrapperService</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IWrapControlService/">IWrapControlService</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey/">LanguageResourceKey</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource/">LanguageResourceSource</a>
@@ -443,6 +441,12 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException/">WindowNotRegisteredException</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlService/">WrapControlService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceControlNames/">WrapControlServiceControlNames</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceWrapOptions/">WrapControlServiceWrapOptions</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapOptions/">WrapOptions</a>
 </li>
 
@@ -520,7 +524,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -533,19 +537,17 @@
 <p><strong>action</strong>
 The action.</p>
 <p><strong>onlyBeginInvokeWhenNoAccess</strong>
-If set to <code>true</code>, the action will be executed directly if possible. Otherwise, 
-    <code>Dispatcher.BeginInvoke</code> will be used.</p>
+If set to<code>true</code> , the action will be executed directly if possible. Otherwise,<code>Dispatcher.BeginInvoke</code> will be used.</p>
 <h3 id="invokeaction-action-bool-onlyinvokewhennoaccess">Invoke(Action action, bool onlyInvokeWhenNoAccess)<a class="headerlink" href="#invokeaction-action-bool-onlyinvokewhennoaccess" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Executes the specified action with the specified arguments synchronously on the thread the Dispatcher is associated with.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>action</strong>
 The action.</p>
 <p><strong>onlyInvokeWhenNoAccess</strong>
-If set to <code>true</code>, the action will be executed directly if possible. Otherwise, 
-    <code>Dispatcher.BeginInvoke</code> will be used.</p>
+If set to<code>true</code> , the action will be executed directly if possible. Otherwise,<code>Dispatcher.BeginInvoke</code> will be used.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The action is <code>null</code>.</p>
+The action is<code>null</code>.</p>
 <h3 id="invokeasyncaction-action">InvokeAsync(Action action)<a class="headerlink" href="#invokeasyncaction-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

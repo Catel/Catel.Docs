@@ -6,13 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IAsyncWaitQueue<T, T>
 ```
 
-A collection of cancelable [TaskCompletionSource](#) instances. Implementations must be threadsafe  must work correctly if the caller is holding a lock.
+A collection of cancelable [TaskCompletionSource](#) instances. Implementations must be threadsafe must work correctly if the caller is holding a lock.
 
 #### Type Parameters
 
@@ -48,7 +48,7 @@ Removes a single entry in the wait queue. Returns a disposable that completes th
 #### Parameters
 
 **result**
-The result used to complete the wait queue entry. If this isn't needed, use ```default(T)```.
+The result used to complete the wait queue entry. If this isn't needed, use`default(T)`.
 
 
 
@@ -59,7 +59,7 @@ Removes all entries in the wait queue. Returns a disposable that completes all e
 #### Parameters
 
 **result**
-The result used to complete the wait queue entries. If this isn't needed, use ```default(T)```.
+The result used to complete the wait queue entries. If this isn't needed, use`default(T)`.
 
 
 

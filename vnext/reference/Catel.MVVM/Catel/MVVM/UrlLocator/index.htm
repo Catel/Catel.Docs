@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -213,8 +207,6 @@
 <li class="tocentry"><a href="#fields">Fields</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -234,8 +226,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -261,9 +251,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -274,9 +261,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -344,7 +328,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -355,16 +339,9 @@
 <p><a href="/Catel.MVVM\Catel\MVVM\IUrlLocator.htm">IUrlLocator</a></p>
 <p>Locator for urls.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="getdefaultnamingconventions">GetDefaultNamingConventions()<a class="headerlink" href="#getdefaultnamingconventions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the default naming conventions.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>An enumerable of default naming conventions.</p>
 <h3 id="registertype-viewmodeltype-string-url">Register(Type viewModelType, string url)<a class="headerlink" href="#registertype-viewmodeltype-string-url" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the specified url in the local cache. This cache will also be used by the Boolean)
-    method.</p>
+<p>Registers the specified url in the local cache. This cache will also be used by the Boolean) method.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModelType</strong>
 The view model to resolve the url for.</p>
@@ -372,36 +349,23 @@ The view model to resolve the url for.</p>
 The resolved url.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModelType is <code>null</code>.</p>
+The viewModelType is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The url is <code>null</code> or whitespace.</p>
-<h3 id="resolvenamingconventionstring-assembly-string-typetoresolvename-string-namingconvention">ResolveNamingConvention(string assembly, string typeToResolveName, string namingConvention)<a class="headerlink" href="#resolvenamingconventionstring-assembly-string-typetoresolvename-string-namingconvention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>This method is not supported.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-The assembly name.</p>
-<p><strong>typeToResolveName</strong>
-The full type name of the type to resolve.</p>
-<p><strong>namingConvention</strong>
-The naming convention to use for resolving.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Nothing, this method throws a <a href="#">NotSupportedException</a>.</p>
+The url is<code>null</code> or whitespace.</p>
 <h3 id="resolveurltype-viewmodeltype-bool-ensurepageexists">ResolveUrl(Type viewModelType, bool ensurePageExists)<a class="headerlink" href="#resolveurltype-viewmodeltype-bool-ensurepageexists" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Resolves an url by the view model and the registered NamingConventions.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModelType</strong>
 Type of the view model to resolve the url for.</p>
 <p><strong>ensurePageExists</strong>
-If set to <code>true</code>, the method checks whether the page resource actually exists.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The resolved url or <code>null</code> if the view could not be resolved.</p>
+If set to<code>true</code> , the method checks whether the page resource actually exists.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The resolved url or<code>null</code> if the view could not be resolved.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModelType is <code>null</code>.</p>
+The viewModelType is<code>null</code>.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Keep in mind that all results are cached. The cache itself is not automatically cleared when the
-    NamingConventions are changed. If the NamingConventions are changed,
-    the cache must be cleared manually.</p>
+<p>Keep in mind that all results are cached. The cache itself is not automatically cleared when the NamingConventions are changed. If the NamingConventions are changed, the cache must be cleared manually.</p>
 
                     </div>
                 </div>

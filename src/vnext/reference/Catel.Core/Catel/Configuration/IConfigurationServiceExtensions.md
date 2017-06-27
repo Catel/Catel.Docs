@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IConfigurationServiceExtensions
@@ -45,10 +45,10 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -79,10 +79,10 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -104,10 +104,10 @@ The default value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -129,10 +129,10 @@ The default value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -155,10 +155,10 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -181,10 +181,10 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -210,10 +210,10 @@ The configuration value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 
@@ -235,10 +235,10 @@ The value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The configurationService is ```null```.
+The configurationService is`null`.
 
 **T:System.ArgumentException**
-The key is ```null``` or whitespace.
+The key is`null` or whitespace.
 
 
 

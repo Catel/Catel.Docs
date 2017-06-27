@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ExceptionHandler<TException> : IExceptionHandler<TException, TException> where TException : Exception 
@@ -28,15 +28,7 @@ The exception type.
 
 ## Fields
 
-### _action
-
 ## Constructors
-
-### ExceptionHandler()
-
-Initializes a new instance of the [ExceptionHandler](#) class.
-
-
 
 ## Properties
 
@@ -86,7 +78,7 @@ The exception.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 
@@ -97,9 +89,7 @@ The action to do on an exception of defined type occurs.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
-
-### SetFilter()
 

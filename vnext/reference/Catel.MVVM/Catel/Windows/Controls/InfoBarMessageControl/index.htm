@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -119,13 +116,9 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/">Controls</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/BusinessWarningOrErrorInfo/">BusinessWarningOrErrorInfo</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ContentPage/">ContentPage</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ContentView/">ContentView</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/FieldWarningOrErrorInfo/">FieldWarningOrErrorInfo</a>
 </li>
 <li class="tocentry current"><a class="current" href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/InfoBarMessageControl/">InfoBarMessageControl</a>
 <ul class="currentrelative">
@@ -143,8 +136,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/PopupLayout/">PopupLayout</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/UserControl/">UserControl</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ValidationData/">ValidationData</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ValidationEventAction/">ValidationEventAction</a>
 </li>
@@ -238,7 +229,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -247,28 +238,10 @@
 <a href="">ContentControl</a></p>
 <p>Control for displaying messages to the user.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A long, long, long time ago, the messages were hold in a dependency property (DP). However, even though DP values are
-    not static, several instances that were open at the same time were still clearing eachother values (thus it seemed the
-    DP behaves like it's a static member). Therefore, the messages are now hold in a field, and all problems are now gone.</p>
-<pre><code>And the control lived happily ever after.
-</code></pre>
-
+<p>A long, long, long time ago, the messages were hold in a dependency property (DP). However, even though DP values are not static, several instances that were open at the same time were still clearing eachother values (thus it seemed the DP behaves like it's a static member). Therefore, the messages are now hold in a field, and all problems are now gone.And the control lived happily ever after.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="errormessages">_errorMessages<a class="headerlink" href="#errormessages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="errors">_errors<a class="headerlink" href="#errors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="lock">_lock<a class="headerlink" href="#lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="objectstoignore">_objectsToIgnore<a class="headerlink" href="#objectstoignore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="subscribedtoevents">_subscribedToEvents<a class="headerlink" href="#subscribedtoevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="warninganderrorvalidators">_warningAndErrorValidators<a class="headerlink" href="#warninganderrorvalidators" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="warningmessages">_warningMessages<a class="headerlink" href="#warningmessages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="warnings">_warnings<a class="headerlink" href="#warnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="elementmessagebar">ElementMessageBar<a class="headerlink" href="#elementmessagebar" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>PART_MessageBar</p>
-<p>The bar that will show the initial message bar.</p>
 <h3 id="infomessageproperty">InfoMessageProperty<a class="headerlink" href="#infomessageproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>DependencyProperty definition as the backing store for InfoMessage.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h3 id="messagecountproperty">MessageCountProperty<a class="headerlink" href="#messagecountproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Definition of the dependency property is private.</p>
 <h3 id="modeproperty">ModeProperty<a class="headerlink" href="#modeproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -277,8 +250,6 @@
 <p>DependencyProperty definition as the backing store for Text.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="infobarmessagecontrol-1">InfoBarMessageControl()<a class="headerlink" href="#infobarmessagecontrol-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of the <a href="#">InfoBarMessageControl</a> class.</p>
-<h3 id="infobarmessagecontrol-2">InfoBarMessageControl()<a class="headerlink" href="#infobarmessagecontrol-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">InfoBarMessageControl</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="defaulttextpropertyvalue">DefaultTextPropertyValue<a class="headerlink" href="#defaulttextpropertyvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -286,8 +257,7 @@
 <h3 id="errormessagecollection">ErrorMessageCollection<a class="headerlink" href="#errormessagecollection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the error message collection.</p>
 <h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This property is not defined as dependency property, since it seems to cause some issues when several windows/controls with
-    this control are open at the same time (dependency properties seem to behave static, but they shouldn't).</p>
+<p>This property is not defined as dependency property, since it seems to cause some issues when several windows/controls with this control are open at the same time (dependency properties seem to behave static, but they shouldn't).</p>
 <h3 id="infomessage">InfoMessage<a class="headerlink" href="#infomessage" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Info message for the info bar.</p>
 <h3 id="messagecount">MessageCount<a class="headerlink" href="#messagecount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -301,107 +271,30 @@
 <h3 id="warningmessagecollection">WarningMessageCollection<a class="headerlink" href="#warningmessagecollection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the warning message collection.</p>
 <h4 id="remarks-3">Remarks<a class="headerlink" href="#remarks-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This property is not defined as dependency property, since it seems to cause some issues when several windows/controls with
-    this control are open at the same time (dependency properties seem to behave static, but they shouldn't).</p>
+<p>This property is not defined as dependency property, since it seems to cause some issues when several windows/controls with this control are open at the same time (dependency properties seem to behave static, but they shouldn't).</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="clearobjectmessagesobject-bindingobject">ClearObjectMessages(object bindingObject)<a class="headerlink" href="#clearobjectmessagesobject-bindingobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Clears the object messages for the specified binding object.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>bindingObject</strong>
-The binding object.</p>
-<h4 id="remarks-4">Remarks<a class="headerlink" href="#remarks-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This method is implemented because of the DataContext issue (DataContext cannot be changed before a
-    user control is loaded, and therefore might be binding to the wrong object).</p>
-<h3 id="getbindingobjectobject-bindingobject">GetBindingObject(object bindingObject)<a class="headerlink" href="#getbindingobjectobject-bindingobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the binding object.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>bindingObject</strong>
-The binding object.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>object from the binding.</p>
-<h3 id="ignoreobjectobject-bindingobject">IgnoreObject(object bindingObject)<a class="headerlink" href="#ignoreobjectobject-bindingobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds an object to the ignore list so this control does not show messages for the specified object any longer.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>bindingObject</strong>
-The binding object.</p>
 <h3 id="onapplytemplate">OnApplyTemplate()<a class="headerlink" href="#onapplytemplate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>When overridden in a derived class, is invoked whenever application code or internal processes call <code>System.Windows.FrameworkElement.ApplyTemplate</code>.</p>
-<h3 id="oninfobarmessageerrorvalidationobject-sender-validationerroreventargs-e">OnInfoBarMessageErrorValidation(object sender, ValidationErrorEventArgs e)<a class="headerlink" href="#oninfobarmessageerrorvalidationobject-sender-validationerroreventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Handling data errors.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-A sender.</p>
-<p><strong>e</strong>
-The event arguments</p>
-<h3 id="oninfobarmessagevalidationobject-sender-validationeventargs-e">OnInfoBarMessageValidation(object sender, ValidationEventArgs e)<a class="headerlink" href="#oninfobarmessagevalidationobject-sender-validationeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Handling business data errors.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-A sender.</p>
-<p><strong>e</strong>
-The event arguments</p>
-<h3 id="onloadedobject-sender-routedeventargs-e">OnLoaded(object sender, RoutedEventArgs e)<a class="headerlink" href="#onloadedobject-sender-routedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the control is loaded.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">RoutedEventArgs</a> instance containing the event data.</p>
-<h3 id="onmodechanged">OnModeChanged()<a class="headerlink" href="#onmodechanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the Mode property has changed.</p>
-<h3 id="onunloadedobject-sender-routedeventargs-e">OnUnloaded(object sender, RoutedEventArgs e)<a class="headerlink" href="#onunloadedobject-sender-routedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the control is unloaded.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">RoutedEventArgs</a> instance containing the event data.</p>
-<h3 id="processvalidationmessageobject-bindingobject-string-message-validationeventaction-action-validationtype-type">ProcessValidationMessage(object bindingObject, string message, ValidationEventAction action, ValidationType type)<a class="headerlink" href="#processvalidationmessageobject-bindingobject-string-message-validationeventaction-action-validationtype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Process an validation message.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>bindingObject</strong>
-The binding object which will be used as key in dictionary with error messages. Allowed to be <code>null</code> if ClearAll.</p>
-<p><strong>message</strong>
-The actual warning or error message.</p>
-<p><strong>action</strong>
-An error event action. See <a href="#">ValidationErrorEventAction</a>.</p>
-<p><strong>type</strong>
-The validation type.</p>
-<h3 id="subscribetoevents">SubscribeToEvents()<a class="headerlink" href="#subscribetoevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Subscribes to events.</p>
+<p>When overridden in a derived class, is invoked whenever application code or internal processes call<code>System.Windows.FrameworkElement.ApplyTemplate</code>.</p>
 <h3 id="subscribewarninganderrorvalidatorwarninganderrorvalidator-validator">SubscribeWarningAndErrorValidator(WarningAndErrorValidator validator)<a class="headerlink" href="#subscribewarninganderrorvalidatorwarninganderrorvalidator-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Subscribes an instance of the <a href="#">WarningAndErrorValidator</a> class.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>validator</strong>
 The validator.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The validator is <code>null</code>.</p>
-<h4 id="remarks-5">Remarks<a class="headerlink" href="#remarks-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Keep in mind that this method is normally handled by Catel. Only use this method if you really know
-    what you are doing.</p>
-<h3 id="unsubscribefromevents">UnsubscribeFromEvents()<a class="headerlink" href="#unsubscribefromevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unsubscribes from events.</p>
+The validator is<code>null</code>.</p>
+<h4 id="remarks-4">Remarks<a class="headerlink" href="#remarks-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Keep in mind that this method is normally handled by Catel. Only use this method if you really know what you are doing.</p>
 <h3 id="unsubscribewarninganderrorvalidatorwarninganderrorvalidator-validator">UnsubscribeWarningAndErrorValidator(WarningAndErrorValidator validator)<a class="headerlink" href="#unsubscribewarninganderrorvalidatorwarninganderrorvalidator-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unsubscribes the warning and error validator.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>validator</strong>
 The validator.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The validator is <code>null</code>.</p>
-<h4 id="remarks-6">Remarks<a class="headerlink" href="#remarks-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Keep in mind that this method is normally handled by Catel. Only use this method if you really know
-    what you are doing.</p>
-<h3 id="updatemessages">UpdateMessages()<a class="headerlink" href="#updatemessages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Update the content of the control with the found warnings and errors.</p>
-<h3 id="updatesmessagecollectionobservablecollection-messagecollection-dictionaryobject-list-messagesource">UpdatesMessageCollection(ObservableCollection<string> messageCollection, Dictionary&lt;object, List<string>&gt; messageSource)<a class="headerlink" href="#updatesmessagecollectionobservablecollection-messagecollection-dictionaryobject-list-messagesource" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates a message collection by adding new messages and removing old ones that no longer exist.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>messageCollection</strong>
-The message collection.</p>
-<p><strong>messageSource</strong>
-The message source.</p>
+The validator is<code>null</code>.</p>
+<h4 id="remarks-5">Remarks<a class="headerlink" href="#remarks-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Keep in mind that this method is normally handled by Catel. Only use this method if you really know what you are doing.</p>
 
                     </div>
                 </div>

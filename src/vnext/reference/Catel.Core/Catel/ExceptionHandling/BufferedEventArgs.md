@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class BufferedEventArgs : EventArgs
@@ -33,7 +33,7 @@ the date time that indicates when the buffering was invoked.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The bufferedException is ```null```.
+The bufferedException is`null`.
 
 
 

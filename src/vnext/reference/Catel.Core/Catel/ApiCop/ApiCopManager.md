@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ApiCopManager
@@ -18,19 +18,7 @@ Manager class for the ApiCop feature.
 
 ## Fields
 
-### _cops
-
-### _dummyApiCop
-
-### _listeners
-
 ## Constructors
-
-### ApiCopManager()
-
-Initializes static members of the [ApiCopManager](#) class.
-
-
 
 ## Properties
 
@@ -50,12 +38,7 @@ Gets a value indicating whether ApiCop is enabled.
 
 ### AddListener(IApiCopListener listener)
 
-Adds the ApiCop listener which will receive all ApiCop information.
-    
-
-
-    This method does not check whether the listener is already added to the list
-    of registered listeners.
+Adds the ApiCop listener which will receive all ApiCop information.This method does not check whether the listener is already added to the list of registered listeners.
 
 #### Parameters
 
@@ -65,7 +48,7 @@ The listener.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
+The listener is`null`.
 
 
 
@@ -89,7 +72,7 @@ The type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -122,12 +105,12 @@ The listener.
 
 #### Returns
 
-```true``` if the specified listener is already registered; otherwise, ```false```.
+`true` if the specified listener is already registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
+The listener is`null`.
 
 
 
@@ -143,7 +126,7 @@ The listener.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
+The listener is`null`.
 
 
 

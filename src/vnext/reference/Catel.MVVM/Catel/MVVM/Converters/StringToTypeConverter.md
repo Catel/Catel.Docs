@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class StringToTypeConverter : TypeConverter

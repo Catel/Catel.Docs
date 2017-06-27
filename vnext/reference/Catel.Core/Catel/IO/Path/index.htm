@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -332,7 +328,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -348,7 +344,7 @@ Path to append the trailing backslash to.</p>
 <p>Path including the trailing backslash.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The path is <code>null</code> or whitespace.</p>
+The path is<code>null</code> or whitespace.</p>
 <h3 id="appendtrailingslashstring-path-char-slash">AppendTrailingSlash(string path, char slash)<a class="headerlink" href="#appendtrailingslashstring-path-char-slash" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Appends a trailing slash (\ or /) to the path.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -360,7 +356,7 @@ Slash to append (\ or /).</p>
 <p>Path including the trailing slash.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The path is <code>null</code> or whitespace.</p>
+The path is<code>null</code> or whitespace.</p>
 <h3 id="combinestring-paths">Combine(string[] paths)<a class="headerlink" href="#combinestring-paths" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Returns a combination of multiple paths.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -376,28 +372,15 @@ Urls to combine.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Combination of all the urls passed.</p>
 <h3 id="getapplicationdatadirectory">GetApplicationDataDirectory()<a class="headerlink" href="#getapplicationdatadirectory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. </p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is<code>null</code> , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. </p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is<code>null</code> , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-productname">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string productName)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][product name].</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>applicationDataTarget</strong>
 The application data target.</p>
@@ -406,11 +389,7 @@ Name of the product.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-companyname-string-productname">GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectoryapplicationdatatarget-applicationdatatarget-string-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>applicationDataTarget</strong>
 The application data target.</p>
@@ -421,21 +400,14 @@ Name of the product.</p>
 <h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectorystring-productname">GetApplicationDataDirectory(string productName)<a class="headerlink" href="#getapplicationdatadirectorystring-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][product name].</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>productName</strong>
 Name of the product.</p>
 <h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectorystring-companyname-string-productname">GetApplicationDataDirectory(string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectorystring-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>companyName</strong>
 Name of the company.</p>
@@ -444,30 +416,18 @@ Name of the product.</p>
 <h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryforallusers">GetApplicationDataDirectoryForAllUsers()<a class="headerlink" href="#getapplicationdatadirectoryforallusers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is <code>null</code>, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. </p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is<code>null</code> , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryforallusersstring-productname">GetApplicationDataDirectoryForAllUsers(string productName)<a class="headerlink" href="#getapplicationdatadirectoryforallusersstring-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][product name].</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>productName</strong>
 Name of the product.</p>
 <h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Directory for the application data.</p>
 <h3 id="getapplicationdatadirectoryforallusersstring-companyname-string-productname">GetApplicationDataDirectoryForAllUsers(string companyName, string productName)<a class="headerlink" href="#getapplicationdatadirectoryforallusersstring-companyname-string-productname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.</p>
-<pre><code>This method returns a value like [application data]\[company]\[product name].
-</code></pre>
-
+<p>Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data][company][product name].</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>companyName</strong>
 Name of the company.</p>
@@ -484,7 +444,7 @@ The path to get the directory name from.</p>
 <p>The directory name.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The path is <code>null</code> or whitespace.</p>
+The path is<code>null</code> or whitespace.</p>
 <h3 id="getfilenamestring-path">GetFileName(string path)<a class="headerlink" href="#getfilenamestring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the name of the file.</p>
 <h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -494,7 +454,7 @@ The path to get the file name from.</p>
 <p>The file name.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The path is <code>null</code> or whitespace.</p>
+The path is<code>null</code> or whitespace.</p>
 <h3 id="getfullpathstring-relativepath-string-basepath">GetFullPath(string relativePath, string basePath)<a class="headerlink" href="#getfullpathstring-relativepath-string-basepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Returns the full path for a relative path.</p>
 <h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -506,7 +466,7 @@ Base path (a.k.a. working directory).</p>
 <p>Full path.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The relativePath is <code>null</code> or whitespace.</p>
+The relativePath is<code>null</code> or whitespace.</p>
 <h3 id="getparentdirectorystring-path">GetParentDirectory(string path)<a class="headerlink" href="#getparentdirectorystring-path" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the parent directory.</p>
 <h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -517,71 +477,17 @@ The path to get the parent directory from.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>This method will always strip the trailing backslash from the parent.</p>
 <h3 id="getrelativepathstring-fullpath-string-basepath">GetRelativePath(string fullPath, string basePath)<a class="headerlink" href="#getrelativepathstring-fullpath-string-basepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns a relative path string from a full path.</p>
-<pre><code>The path to convert. Can be either a file or a directory
-The base path to truncate to and replace
-
-
-
-Lower case string of the relative path. If path is a directory it's returned 
-without a backslash at the end.
-
-
-
-Examples of returned values:
- .\test.txt, ..\test.txt, ..\..\..\test.txt, ., ..
-</code></pre>
-
+<p>Returns a relative path string from a full path.The path to convert. Can be either a file or a directory The base path to truncate to and replace Lower case string of the relative path. If path is a directory it's returned without a backslash at the end.Examples of returned values: .\test.txt, ..\test.txt, ......\test.txt, ., ..</p>
 <h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>fullPath</strong>
 Full path to convert to relative path.</p>
 <p><strong>basePath</strong>
-The base path (a.k.a. working directory). If this parameter is <code>null</code> or empty, the current working directory will be used.</p>
+The base path (a.k.a. working directory). If this parameter is<code>null</code> or empty, the current working directory will be used.</p>
 <h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Relative path.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullPath is <code>null</code> or whitespace.</p>
-<h3 id="removestartandtrailingslashesstring-value">RemoveStartAndTrailingSlashes(string value)<a class="headerlink" href="#removestartandtrailingslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes any slashes (\ or /) at the beginning and end of the string.</p>
-<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-Value to remove the slashes from.</p>
-<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Value without trailing slashes.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The value is <code>null</code> or whitespace.</p>
-<h3 id="removestartslashesstring-value">RemoveStartSlashes(string value)<a class="headerlink" href="#removestartslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes any slashes (\ or /) at the beginning of the string.</p>
-<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-Value to remove the slashes from.</p>
-<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Value without slashes.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The value is <code>null</code> or whitespace.</p>
-<h3 id="removetrailingslashesstring-value">RemoveTrailingSlashes(string value)<a class="headerlink" href="#removetrailingslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes any slashes (\ or /) at the end of the string.</p>
-<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-Value to remove the slashes from.</p>
-<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Value without slashes.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The value is <code>null</code> or whitespace.</p>
-<h3 id="replacepathslashesbyurlslashesstring-value">ReplacePathSlashesByUrlSlashes(string value)<a class="headerlink" href="#replacepathslashesbyurlslashesstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Replaces path slashes () by url slashes (/).</p>
-<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-Value to convert.</p>
-<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Prepared url.</p>
-<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The value is <code>null</code> or whitespace.</p>
+The fullPath is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

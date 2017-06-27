@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -265,8 +261,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/AwaitableDisposable/">AwaitableDisposable</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/DefaultAsyncWaitQueue/">DefaultAsyncWaitQueue</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/Deque/">Deque</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/IAsyncWaitQueue/">IAsyncWaitQueue</a>
 </li>
@@ -358,22 +352,20 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class TaskHelper
 </pre><p>Helper class for tasks.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="canceled">_canceled<a class="headerlink" href="#canceled" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="completed">_completed<a class="headerlink" href="#completed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="defaultconfigureawaitvalue">DefaultConfigureAwaitValue<a class="headerlink" href="#defaultconfigureawaitvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>False</p>
 <p>The default configure await value.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="canceled-1">Canceled<a class="headerlink" href="#canceled-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="canceled">Canceled<a class="headerlink" href="#canceled" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>A <a href="#">Task</a> that has been canceled.</p>
-<h3 id="completed-1">Completed<a class="headerlink" href="#completed-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="completed">Completed<a class="headerlink" href="#completed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>A <a href="#">Task</a> that has been completed.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="runaction-action-bool-configureawait-cancellationtoken-cancellationtoken">Run(Action action, bool configureAwait, CancellationToken cancellationToken)<a class="headerlink" href="#runaction-action-bool-configureawait-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -433,29 +425,23 @@ The cancellation token.</p>
 The actions to spawn in separate threads.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The actions is <code>null</code>.</p>
+The actions is<code>null</code>.</p>
 <h3 id="runandwaitasyncaction-actions">RunAndWaitAsync(Action[] actions)<a class="headerlink" href="#runandwaitasyncaction-actions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Runs all the specified actions in separate threads and waits for the to complete.</p>
-<pre><code>The waiting for all threads is also done in a separate thread which makes this method asynchronous.
-</code></pre>
-
+<p>Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>actions</strong>
 The actions to spawn in separate threads.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The actions is <code>null</code>.</p>
+The actions is<code>null</code>.</p>
 <h3 id="runandwaitasyncfunc-actions">RunAndWaitAsync(Func<Task>[] actions)<a class="headerlink" href="#runandwaitasyncfunc-actions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Runs all the specified actions in separate threads and waits for the to complete.</p>
-<pre><code>The waiting for all threads is also done in a separate thread which makes this method asynchronous.
-</code></pre>
-
+<p>Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>actions</strong>
 The actions to spawn in separate threads.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The actions is <code>null</code>.</p>
+The actions is<code>null</code>.</p>
 
                     </div>
                 </div>

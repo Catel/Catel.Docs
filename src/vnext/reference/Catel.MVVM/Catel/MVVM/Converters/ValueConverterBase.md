@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ValueConverterBase<TConvert, TConvertBack> : IValueConverter, MarkupExtension
@@ -34,24 +34,15 @@ The type of the convert back input.
 
 ## Fields
 
-### Log
-
 ## Properties
 
 ### BackOverrideType
 
-Gets or sets an optional [Type](#) value to pass to the Object) method of this instance if the Link
-    property is set.
+Gets or sets an optional [Type](#) value to pass to the Object) method of this instance if the Link property is set.
 
 #### Remarks
 
-Normally this value is ignored as it is in most implementations of ```ConvertBack```.
-
-
-
-### CurrentCulture
-
-Gets the current culture.
+Normally this value is ignored as it is in most implementations of`ConvertBack`.
 
 
 
@@ -63,12 +54,11 @@ Gets or sets the linked value converter. This way it is possible to chain up sev
 
 ### OverrideType
 
-Gets or sets an optional [Type](#) value to pass to the Object) method of the chained converter if the Link
-    property is set.
+Gets or sets an optional [Type](#) value to pass to the Object) method of the chained converter if the Link property is set.
 
 #### Remarks
 
-Normally this value is ignored as it is in most implementations of ```Convert```.
+Normally this value is ignored as it is in most implementations of`Convert`.
 
 
 
@@ -98,27 +88,6 @@ The value to be passed to the target dependency property.
 
 
 
-### Convert(TConvert value, Type targetType, object parameter)
-
-Modifies the source data before passing it to the target for display in the UI.
-
-#### Parameters
-
-**value**
-The source data being passed to the target.
-
-**targetType**
-The [Type](#) of data expected by the target dependency property.
-
-**parameter**
-An optional parameter to be used in the converter logic.
-
-#### Returns
-
-The value to be passed to the target dependency property.
-
-
-
 ### ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
 
 Modifies the target data before passing it to the source object.
@@ -140,51 +109,6 @@ The culture of the conversion.
 #### Returns
 
 The value to be passed to the source object.
-
-
-
-### ConvertBack(TConvertBack value, Type targetType, object parameter)
-
-Modifies the target data before passing it to the source object.
-
-#### Parameters
-
-**value**
-The target data being passed to the source.
-
-**targetType**
-The [Type](#) of data expected by the source object.
-
-**parameter**
-An optional parameter to be used in the converter logic.
-
-#### Returns
-
-The value to be passed to the source object.
-
-#### Remarks
-
-By default, this method returns UnsetValue. This method only has
-    to be overridden when it is actually used.
-
-
-
-### IsConvertable<T>(object value)
-
-Determines whether the specified value is convertable.
-
-#### Type Parameters
-
-**T**
-
-#### Parameters
-
-**value**
-The value.
-
-#### Returns
-
-```true``` if the specified value is convertable; otherwise, ```false```.
 
 
 

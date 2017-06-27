@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelWrapperService : IViewModelWrapperService, ViewModelWrapperServiceBase
@@ -26,33 +26,7 @@ The view model wrapper service which is responsible of ensuring the view model c
 
 ## Fields
 
-### _weakIsWrappingTable
-
-### InnerWrapperName
-__catelInnerWrapper
-
-### Log
-
 ## Methods
-
-### CreateViewModelGrid(IView view, object viewModelSource, WrapOptions wrapOptions)
-
-### GetContent(IView view)
-
-### IsViewWrapped(IView view)
-
-Determines whether the specified view is wrapped.
-
-#### Parameters
-
-**view**
-The view.
-
-#### Returns
-
-```true``` if the view is wrapped; otherwise, ```false```.
-
-
 
 ### IsWrapped(IView view)
 
@@ -65,16 +39,14 @@ The view.
 
 #### Returns
 
-```true``` if the specified view is already wrapped; otherwise, ```false```.
+`true` if the specified view is already wrapped; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
-
-### SetContent(IView view, object content)
 
 ### Wrap(IView view, object viewModelSource, WrapOptions wrapOptions)
 
@@ -86,7 +58,7 @@ Wraps the specified view.
 The view.
 
 **viewModelSource**
-The view model source containing the ```ViewModel``` property.
+The view model source containing the`ViewModel` property.
 
 **wrapOptions**
 The wrap options.
@@ -98,7 +70,7 @@ The [IViewModelWrapper](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 

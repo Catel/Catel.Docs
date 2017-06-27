@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -88,8 +86,6 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate/">CompositePredicate</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
@@ -116,15 +112,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -147,6 +139,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -199,6 +193,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -326,7 +322,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -335,9 +331,6 @@
 <p><a href="/Catel.Core\Catel\IDisposableToken.htm">IDisposableToken</a></p>
 <p>A reusable disposable token that accepts initialization and uninitialization code.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="dispose">_dispose<a class="headerlink" href="#dispose" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="instance">_instance<a class="headerlink" href="#instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="tag">_tag<a class="headerlink" href="#tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="disposabletokent-instance-actionidisposabletokent-t-initialize-actionidisposabletokent-t-dispose-object-tag">DisposableToken(T instance, Action&lt;IDisposableToken&lt;T, T&gt;&gt; initialize, Action&lt;IDisposableToken&lt;T, T&gt;&gt; dispose, object tag)<a class="headerlink" href="#disposabletokent-instance-actionidisposabletokent-t-initialize-actionidisposabletokent-t-dispose-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">DisposableToken</a> class.</p>
@@ -351,12 +344,12 @@ The dispose action that will be called with (instance, tag).</p>
 <p><strong>tag</strong>
 The tag.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="instance-1">Instance<a class="headerlink" href="#instance-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="instance">Instance<a class="headerlink" href="#instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the instance attached to this token.</p>
-<h3 id="tag-1">Tag<a class="headerlink" href="#tag-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="tag">Tag<a class="headerlink" href="#tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the tag.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="dispose-1">Dispose()<a class="headerlink" href="#dispose-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="dispose">Dispose()<a class="headerlink" href="#dispose" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Disposes this instance.</p>
 
                     </div>

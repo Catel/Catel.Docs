@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Messaging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class MessageMediatorHelper
@@ -17,12 +17,6 @@ Helper class for the [MessageMediator](#) to allow easy subscription
 
 
 ## Fields
-
-### Log
-
-The log.
-
-
 
 ## Methods
 
@@ -36,16 +30,15 @@ Subscribes all methods of the specified instance that are decorated with the [Me
 The instance to subscribe.
 
 **messageMediator**
-The message mediator. If ```null```, the default will be used.
+The message mediator. If`null` , the default will be used.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.NotSupportedException**
-The object has non-public methods decorated with the [MessageRecipientAttribute](#), but the
-    application is not written in full .NET.
+The object has non-public methods decorated with the [MessageRecipientAttribute](#) , but the application is not written in full .NET.
 
 **T:System.InvalidCastException**
 One of the methods cannot be casted to a valid message method.
@@ -62,12 +55,12 @@ Unsubscribes all methods of the specified instance that are decorated with the [
 The instance.
 
 **messageMediator**
-The message mediator. If ```null```, the default will be used.
+The message mediator. If`null` , the default will be used.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 

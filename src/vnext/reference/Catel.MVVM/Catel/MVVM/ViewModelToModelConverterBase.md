@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ViewModelToModelConverterBase : IViewModelToModelConverter
@@ -22,17 +22,6 @@ Base class for view model to model converters.
 
 
 ## Constructors
-
-### ViewModelToModelConverterBase(string[] propertyNames)
-
-Initializes a new instance of the [ViewModelToModelConverterBase](#) class.
-
-#### Parameters
-
-**propertyNames**
-Name of property on which attribute was setted
-
-
 
 ## Properties
 
@@ -61,7 +50,7 @@ Owner VM type
 
 #### Returns
 
-```true``` if this instance can convert the specified types; otherwise, ```false```.
+`true` if this instance can convert the specified types; otherwise,`false`.
 
 
 
@@ -82,7 +71,7 @@ Type of the view model.
 
 #### Returns
 
-```true``` if this instance can convert back the specified in type; otherwise, ```false```.
+`true` if this instance can convert back the specified in type; otherwise,`false`.
 
 
 
@@ -133,7 +122,7 @@ The name of changed property
 
 #### Returns
 
-```true``` if the property name should be converted, ```false``` otherwise.
+`true` if the property name should be converted,`false` otherwise.
 
 
 

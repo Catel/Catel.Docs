@@ -46,7 +46,7 @@ The [Binding](#).
 #### Exceptions
 
 **!:ArgumentNullException**
-The sourcePropertyExpression is ```null```.
+The sourcePropertyExpression is`null`.
 
 
 
@@ -84,7 +84,7 @@ The [Binding](#).
 #### Exceptions
 
 **!:ArgumentNullException**
-The source is ```null```.
+The source is`null`.
 
 
 
@@ -118,7 +118,7 @@ The [Binding](#).
 #### Exceptions
 
 **!:ArgumentNullException**
-The sourcePropertyExpression is ```null```.
+The sourcePropertyExpression is`null`.
 
 
 
@@ -158,7 +158,7 @@ The [Binding](#).
 #### Exceptions
 
 **!:ArgumentNullException**
-The source is ```null```.
+The source is`null`.
 
 
 
@@ -190,10 +190,10 @@ Catel.MVVM.CommandBinding.
 #### Exceptions
 
 **!:ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 **!:ArgumentException**
-The eventName is ```null``` or whitespace.
+The eventName is`null` or whitespace.
 
 
 

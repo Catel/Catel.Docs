@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ValidationContext : IValidationContext
@@ -23,31 +23,7 @@ Context containing all validation and provides several methods to gather this in
 
 ## Fields
 
-### _businessRuleValidations
-
-List of business rule validations.
-
-
-
-### _fieldValidations
-
-List of field validations.
-
-
-
-### _stopWatch
-
-The stop watch which will give accurate modification stamps.
-
-
-
 ## Constructors
-
-### ValidationContext()
-
-Initializes static members of the [ValidationContext](#) class.
-
-
 
 ### ValidationContext()
 
@@ -62,10 +38,10 @@ Initializes a new instance of the [ValidationContext](#) class.
 #### Parameters
 
 **fieldValidationResults**
-The field validation results. Can be ```null``` to add no field validation results.
+The field validation results. Can be`null` to add no field validation results.
 
 **businessRuleValidationResults**
-The business rule validation results. Can be ```null``` to add no business rule validations.
+The business rule validation results. Can be`null` to add no business rule validations.
 
 
 
@@ -76,10 +52,10 @@ Initializes a new instance of the [ValidationContext](#) class.
 #### Parameters
 
 **fieldValidationResults**
-The field validation results. Can be ```null``` to add no field validation results.
+The field validation results. Can be`null` to add no field validation results.
 
 **businessRuleValidationResults**
-The business rule validation results. Can be ```null``` to add no business rule validations.
+The business rule validation results. Can be`null` to add no business rule validations.
 
 **lastModified**
 The last modified date/time.
@@ -102,28 +78,49 @@ Gets a value indicating whether this instance contains warnings.
 
 ### LastModified
 
-Gets the last modified date/time.
-    
-
-
-    Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) 
-    is not accurate enough. Use the ```LastModifiedTicks``` instead.
+Gets the last modified date/time.Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) is not accurate enough. Use the`LastModifiedTicks` instead.
 
 
 
 ### LastModifiedTicks
 
-Gets the last modified ticks which is much more precise that the LastModified. Use this value
-    to compare last modification ticks on other validation contexts.
-    
-
-
-    Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks
-    will return the Ticks which is ```not``` reliable.
+Gets the last modified ticks which is much more precise that the LastModified. Use this value to compare last modification ticks on other validation contexts.Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks will return the Ticks which is`not` reliable.
 
 
 
 ## Methods
+
+### Add(IBusinessRuleValidationResult businessRuleValidationResult)
+
+Adds the business rule validation result.
+
+#### Parameters
+
+**businessRuleValidationResult**
+The business rule validation result.
+
+#### Exceptions
+
+**T:System.ArgumentNullException**
+The businessRuleValidationResult is`null`.
+
+
+
+### Add(IFieldValidationResult fieldValidationResult)
+
+Adds the field validation result.
+
+#### Parameters
+
+**fieldValidationResult**
+The field validation result.
+
+#### Exceptions
+
+**T:System.ArgumentNullException**
+The fieldValidationResult is`null`.
+
+
 
 ### AddBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)
 
@@ -137,7 +134,7 @@ The business rule validation result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The businessRuleValidationResult is ```null```.
+The businessRuleValidationResult is`null`.
 
 
 
@@ -153,7 +150,7 @@ The field validation result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The fieldValidationResult is ```null```.
+The fieldValidationResult is`null`.
 
 
 
@@ -423,7 +420,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -446,7 +443,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -516,7 +513,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -539,7 +536,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -609,7 +606,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -632,7 +629,7 @@ List of [IFieldValidationResult](#) items.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -736,6 +733,38 @@ List of [IValidationResult](#) items.
 
 
 
+### Remove(IBusinessRuleValidationResult businessRuleValidationResult)
+
+Removes the business rule validation result.
+
+#### Parameters
+
+**businessRuleValidationResult**
+The business rule validation result.
+
+#### Exceptions
+
+**T:System.ArgumentNullException**
+The businessRuleValidationResult is`null`.
+
+
+
+### Remove(IFieldValidationResult fieldValidationResult)
+
+Removes the field validation result.
+
+#### Parameters
+
+**fieldValidationResult**
+The field validation result.
+
+#### Exceptions
+
+**T:System.ArgumentNullException**
+The fieldValidationResult is`null`.
+
+
+
 ### RemoveBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)
 
 Removes the business rule validation result.
@@ -748,7 +777,7 @@ The business rule validation result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The businessRuleValidationResult is ```null```.
+The businessRuleValidationResult is`null`.
 
 
 
@@ -764,7 +793,7 @@ The field validation result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The fieldValidationResult is ```null```.
+The fieldValidationResult is`null`.
 
 
 
@@ -777,6 +806,4 @@ Returns a [String](#) that represents this instance.
 A [String](#) that represents this instance.
 
 
-
-### UpdateLastModificationStamp(DateTime dateTime, bool resetLastModifiedTicksToZero)
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Tasks
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class TaskBase : ITask, ModelBase
@@ -62,22 +62,6 @@ Register the Percentage property so it is known in the class.
 
 ## Constructors
 
-### TaskBase(string name)
-
-Initializes a new instance of the [TaskBase](#) class.
-
-#### Parameters
-
-**name**
-The task name name.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The name is ```null```.
-
-
-
 ## Properties
 
 ### AutomaticallyDispatch
@@ -117,8 +101,6 @@ Gets or sets the percentage.
 The execute.
 
 
-
-### PercentagePropertyChanged()
 
 ### Rollback()
 

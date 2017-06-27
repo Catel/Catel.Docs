@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CommandManager : ICommandManager
@@ -17,28 +17,11 @@ public class CommandManager : ICommandManager
 [ICommandManager](/Catel.MVVM\Catel\MVVM\ICommandManager.md)
 
 
-Manager that takes care of application-wide commands and can dynamically forward
-    them to the right view models.
+Manager that takes care of application-wide commands and can dynamically forward them to the right view models.
 
 
 
 ## Fields
-
-### _commandGestures
-
-### _commands
-
-### _lockObject
-
-### _originalCommandGestures
-
-### _subscribedToApplicationActivedEvent
-
-### _subscribedViews
-
-### _suspendedKeyboardEvents
-
-### Log
 
 ## Constructors
 
@@ -68,12 +51,7 @@ Occurs when a command has been created.
 
 ### CreateCommand(string commandName, InputGesture inputGesture, ICompositeCommand compositeCommand, bool throwExceptionWhenCommandIsAlreadyCreated)
 
-Creates the command inside the command manager.
-    
-
-
-    If the throwExceptionWhenCommandIsAlreadyCreated is ```false``` and the command is already created, only
-    the input gesture is updated for the existing command.
+Creates the command inside the command manager.If the throwExceptionWhenCommandIsAlreadyCreated is`false` and the command is already created, only the input gesture is updated for the existing command.
 
 #### Parameters
 
@@ -84,15 +62,15 @@ Name of the command.
 The input gesture.
 
 **compositeCommand**
-The composite command. If ```null```, this will default to a new instance of [CompositeCommand](#).
+The composite command. If`null` , this will default to a new instance of [CompositeCommand](#).
 
 **throwExceptionWhenCommandIsAlreadyCreated**
-if set to ```true```, this method will throw an exception when the command is already created.
+if set to`true` , this method will throw an exception when the command is already created.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.InvalidOperationException**
 The specified command is already created using the Boolean) method.
@@ -111,7 +89,7 @@ Name of the command.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -129,12 +107,12 @@ Name of the command.
 
 #### Returns
 
-The [ICommand](#) or ```null``` if the command is not created.
+The [ICommand](#) or`null` if the command is not created.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 
 
@@ -159,7 +137,7 @@ Name of the command.
 
 #### Returns
 
-The input gesture or ```null``` if there is no input gesture for the specified command.
+The input gesture or`null` if there is no input gesture for the specified command.
 
 #### Exceptions
 
@@ -179,7 +157,7 @@ Name of the command.
 
 #### Returns
 
-The input gesture or ```null``` if there is no input gesture for the specified command.
+The input gesture or`null` if there is no input gesture for the specified command.
 
 #### Exceptions
 
@@ -205,16 +183,14 @@ Name of the command.
 
 #### Returns
 
-```true``` if the specified command name is created; otherwise, ```false```.
+`true` if the specified command name is created; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 
-
-### OnWindowLoaded(object sender, RoutedEventArgs e)
 
 ### RegisterAction(string commandName, Action action)
 
@@ -231,10 +207,10 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -256,10 +232,10 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -284,10 +260,10 @@ The view model.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -318,7 +294,7 @@ The view.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 
@@ -337,10 +313,10 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -362,10 +338,10 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -387,10 +363,10 @@ The command.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.
@@ -412,7 +388,7 @@ The new input gesture.
 #### Exceptions
 
 **T:System.ArgumentException**
-The commandName is ```null``` or whitespace.
+The commandName is`null` or whitespace.
 
 **T:System.InvalidOperationException**
 The specified command is not created using the Boolean) method.

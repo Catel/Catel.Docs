@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -203,53 +200,46 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class ResourceHelper
 </pre><p>Resource helper class.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="ensurepackuriisallowed">EnsurePackUriIsAllowed()<a class="headerlink" href="#ensurepackuriisallowed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Ensures that the pack URI is allowed. Sometimes, when no application object is instantiated
-    yet, the pack URI is not allowed. This method takes care of that.</p>
+<p>Ensures that the pack URI is allowed. Sometimes, when no application object is instantiated yet, the pack URI is not allowed. This method takes care of that.</p>
 <h3 id="getresourceuristring-resourceuri-string-shortassemblyname">GetResourceUri(string resourceUri, string shortAssemblyName)<a class="headerlink" href="#getresourceuristring-resourceuri-string-shortassemblyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the resource URI for the specified resource and assembly name. The uri will
-    be created like the following examples:</p>
+<p>Gets the resource URI for the specified resource and assembly name. The uri will be created like the following examples:</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>resourceUri</strong>
 The resource URI.</p>
 <p><strong>shortAssemblyName</strong>
-Name of the assembly. If <code>null</code> or empty, the current application will be used.
-    If used, this must be the short name of the assembly.</p>
+Name of the assembly. If<code>null</code> or empty, the current application will be used. If used, this must be the short name of the assembly.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The resource uri.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The resourceUri is <code>null</code> or whitespace.</p>
+The resourceUri is<code>null</code> or whitespace.</p>
 <h3 id="xamlpageexistsstring-uristring">XamlPageExists(string uriString)<a class="headerlink" href="#xamlpageexistsstring-uristring" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified uri is pointing to a valid xaml file.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified uri is pointing to a valid xaml file; otherwise <code>false</code>.</p>
+<p><code>true</code> if the specified uri is pointing to a valid xaml file; otherwise<code>false</code>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The uriString is <code>null</code> or whitespace.</p>
+The uriString is<code>null</code> or whitespace.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that the uriString must be a valid resource URI. The String) can be used to
-    easily create a resource URI.</p>
+<p>Note that the uriString must be a valid resource URI. The String) can be used to easily create a resource URI.</p>
 <h3 id="xamlpageexistsuri-uri">XamlPageExists(Uri uri)<a class="headerlink" href="#xamlpageexistsuri-uri" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified uri is pointing to a valid xaml file.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified uri is pointing to a valid xaml file; otherwise <code>false</code>.</p>
+<p><code>true</code> if the specified uri is pointing to a valid xaml file; otherwise<code>false</code>.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The uri is <code>null</code>.</p>
+The uri is<code>null</code>.</p>
 <h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that the uri must be a valid resource URI. The String) can be used to
-    easily create a resource URI.</p>
+<p>Note that the uri must be a valid resource URI. The String) can be used to easily create a resource URI.</p>
 
                     </div>
                 </div>

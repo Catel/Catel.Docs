@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISuspendChangeNotificationsCollection : ICollection
@@ -25,8 +25,7 @@ Interface to specify that collection supports suspending change notifications.
 
 ### IsDirty
 
-Gets or sets a value indicating whether change to the collection is made when
-    its notifications are suspended.
+Gets or sets a value indicating whether change to the collection is made when its notifications are suspended.
 
 
 

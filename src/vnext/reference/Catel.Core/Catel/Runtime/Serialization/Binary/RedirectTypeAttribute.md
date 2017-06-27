@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Binary
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class RedirectTypeAttribute : Attribute
@@ -20,13 +20,7 @@ Attribute that can be used to redirect types to other types to be able to rename
 
 #### Remarks
 
-This attribute should be appended to the property definition.
-    
-
-
-    In case this attribute is used on a field or property, the NewAssemblyName and 
-    NewTypeName are mandatory. In all other cases, the type and assembly will be
-    loaded automatically.
+This attribute should be appended to the property definition.In case this attribute is used on a field or property, the NewAssemblyName and NewTypeName are mandatory. In all other cases, the type and assembly will be loaded automatically.
 
 
 
@@ -47,7 +41,7 @@ Original type name.
 #### Exceptions
 
 **T:System.ArgumentException**
-The originalAssemblyName is ```null``` or whitespace.
+The originalAssemblyName is`null` or whitespace.
 
 
 
@@ -69,11 +63,7 @@ Gets or sets the new type name.
 
 #### Remarks
 
-Leave empty if the type name is unchanged.
-    
-
-
-    List or Array types should be postfixed with a [[]].
+Leave empty if the type name is unchanged.List or Array types should be postfixed with a [[]].
 
 
 

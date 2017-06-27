@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -354,7 +350,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -364,12 +360,6 @@
 <p><strong>T</strong>
 Type of the elements contained by the suspending collection.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="newitemindices">_newItemIndices<a class="headerlink" href="#newitemindices" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="newitems">_newItems<a class="headerlink" href="#newitems" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="olditemindices">_oldItemIndices<a class="headerlink" href="#olditemindices" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="olditems">_oldItems<a class="headerlink" href="#olditems" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="suspensioncount">_suspensionCount<a class="headerlink" href="#suspensioncount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="suspensionmode">_suspensionMode<a class="headerlink" href="#suspensionmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="suspensioncontextsuspensionmode-mode">SuspensionContext(SuspensionMode mode)<a class="headerlink" href="#suspensioncontextsuspensionmode-mode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Missing: <see cref="T:Catel.Collections.SuspensionContext`1" /></a> class.</p>
@@ -381,13 +371,13 @@ The suspension mode.</p>
 <p>Gets or sets the suspension count.</p>
 <h3 id="mode">Mode<a class="headerlink" href="#mode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the suspension mode.</p>
-<h3 id="newitemindices-1">NewItemIndices<a class="headerlink" href="#newitemindices-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="newitemindices">NewItemIndices<a class="headerlink" href="#newitemindices" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the indices od the added items while change notifications were suspended.</p>
-<h3 id="newitems-1">NewItems<a class="headerlink" href="#newitems-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="newitems">NewItems<a class="headerlink" href="#newitems" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the added items while change notifications were suspended.</p>
-<h3 id="olditemindices-1">OldItemIndices<a class="headerlink" href="#olditemindices-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="olditemindices">OldItemIndices<a class="headerlink" href="#olditemindices" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the indices od the removed items while change notifications were suspended.</p>
-<h3 id="olditems-1">OldItems<a class="headerlink" href="#olditems-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="olditems">OldItems<a class="headerlink" href="#olditems" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the removed items while change notifications were suspended.</p>
 
                     </div>

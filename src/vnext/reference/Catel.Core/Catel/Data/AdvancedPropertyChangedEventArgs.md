@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class AdvancedPropertyChangedEventArgs : PropertyChangedEventArgs
@@ -16,12 +16,7 @@ public class AdvancedPropertyChangedEventArgs : PropertyChangedEventArgs
 [PropertyChangedEventArgs]()
 
 
-Property changed event args that are used when a property has changed. The event arguments contains both
-    the original sender as the current sender of the event.
-    
-
-
-    Best used in combination with [IAdvancedNotifyPropertyChanged](#).
+Property changed event args that are used when a property has changed. The event arguments contains both the original sender as the current sender of the event.Best used in combination with [IAdvancedNotifyPropertyChanged](#).
 
 
 
@@ -29,7 +24,7 @@ Property changed event args that are used when a property has changed. The event
 
 ### AdvancedPropertyChangedEventArgs(object sender, AdvancedPropertyChangedEventArgs e)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -37,13 +32,13 @@ Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; cl
 The sender.
 
 **e**
-The [AdvancedPropertyChangedEventArgs](#)"/&gt; instance containing the event data.
+The [AdvancedPropertyChangedEventArgs](#) "/&gt; instance containing the event data.
 
 
 
 ### AdvancedPropertyChangedEventArgs(object originalSender, object latestSender, string propertyName)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -60,7 +55,7 @@ Name of the property.
 
 ### AdvancedPropertyChangedEventArgs(object originalSender, object latestSender, string propertyName, object newValue)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -80,7 +75,7 @@ The new value.
 
 ### AdvancedPropertyChangedEventArgs(object originalSender, object latestSender, string propertyName, object oldValue, object newValue)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -98,41 +93,12 @@ The old value.
 
 **newValue**
 The new value.
-
-
-
-### AdvancedPropertyChangedEventArgs(object originalSender, object latestSender, string propertyName, object oldValue, object newValue, bool isOldValueMeaningful, bool isNewValueMeaningful)
-
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
-
-#### Parameters
-
-**originalSender**
-The original sender.
-
-**latestSender**
-The latest sender.
-
-**propertyName**
-Name of the property.
-
-**oldValue**
-The old value.
-
-**newValue**
-The new value.
-
-**isOldValueMeaningful**
-if set to ```true```, the oldValue has a meaningful value.
-
-**isNewValueMeaningful**
-if set to ```true```, the newValue has a meaningful value.
 
 
 
 ### AdvancedPropertyChangedEventArgs(object sender, string propertyName)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -146,7 +112,7 @@ Name of the property.
 
 ### AdvancedPropertyChangedEventArgs(object sender, string propertyName, object newValue)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -163,7 +129,7 @@ The new value.
 
 ### AdvancedPropertyChangedEventArgs(object sender, string propertyName, object oldValue, object newValue)
 
-Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#)"/&gt; class.
+Initializes a new instance of the [AdvancedPropertyChangedEventArgs](#) "/&gt; class.
 
 #### Parameters
 
@@ -185,19 +151,13 @@ The new value.
 
 ### IsNewValueMeaningful
 
-Gets a value indicating whether the NewValue has any meaning. Sometimes it is not possible
-    to determine the new value in case a 3rd party class triggered the PropertyChanged
-    event. In such a case, the NewValue will be ```null```, but this does not mean that the new 
-    value is ```null```.
+Gets a value indicating whether the NewValue has any meaning. Sometimes it is not possible to determine the new value in case a 3rd party class triggered the PropertyChanged event. In such a case, the NewValue will be`null` , but this does not mean that the new value is`null`.
 
 
 
 ### IsOldValueMeaningful
 
-Gets a value indicating whether the OldValue has any meaning. Sometimes it is not possible
-    to determine the old value in case a 3rd party class triggered the PropertyChanged
-    event. In such a case, the OldValue will be ```null```, but this does not mean that the previous 
-    value was ```null```.
+Gets a value indicating whether the OldValue has any meaning. Sometimes it is not possible to determine the old value in case a 3rd party class triggered the PropertyChanged event. In such a case, the OldValue will be`null` , but this does not mean that the previous value was`null`.
 
 
 

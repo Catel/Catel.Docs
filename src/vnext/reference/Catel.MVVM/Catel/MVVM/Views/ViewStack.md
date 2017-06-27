@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewStack
@@ -17,14 +17,6 @@ Class containing a view stack and whether the stack is currently loaded.
 
 
 ## Fields
-
-### _children
-
-### _isViewStackLoaded
-
-### _parentViewStack
-
-### _viewInfo
 
 ## Constructors
 
@@ -38,24 +30,7 @@ Initializes a new instance of the [ViewStack](#) class.
 The view.
 
 **isViewLoaded**
-if set to ```true```, the view is loaded.
-
-
-
-### ViewStack(IView view, bool isViewLoaded, ViewStack parentViewStack)
-
-Initializes a new instance of the [ViewStack](#) class.
-
-#### Parameters
-
-**view**
-The view.
-
-**isViewLoaded**
-if set to ```true```, the view is loaded.
-
-**parentViewStack**
-The parent view stack. Can be ```null``` for root view stacks.
+if set to`true` , the view is loaded.
 
 
 
@@ -115,7 +90,7 @@ The parent view stack.
 
 #### Returns
 
-```true``` if added, ```false``` otherwise.
+`true` if added,`false` otherwise.
 
 
 
@@ -133,7 +108,7 @@ The parent view stack.
 
 #### Returns
 
-```true``` if added, ```false``` otherwise.
+`true` if added,`false` otherwise.
 
 
 
@@ -154,17 +129,13 @@ The view.
 
 #### Returns
 
-```true``` if this view stack contains the specified view; otherwise, ```false```.
+`true` if this view stack contains the specified view; otherwise,`false`.
 
 
 
 ### Dispose()
 
-Disposes this instance.
-    
-
-
-    Not using [IDisposable](#) to prevent other auto systems from kicking in.
+Disposes this instance.Not using [IDisposable](#) to prevent other auto systems from kicking in.
 
 
 
@@ -185,22 +156,4 @@ Marks the view stack as unloaded.
 Notifies the that parent is ready to accept loaded messages.
 
 
-
-### OnChildViewLoaded(object sender, ViewStackPartEventArgs e)
-
-### OnChildViewStackLoaded(object sender, ViewStackPartEventArgs e)
-
-### OnChildViewStackUnloaded(object sender, ViewStackPartEventArgs e)
-
-### OnChildViewUnloaded(object sender, ViewStackPartEventArgs e)
-
-### OnParentViewStackLoaded(object sender, ViewStackPartEventArgs e)
-
-### OnViewLoaded(object sender, EventArgs e)
-
-### OnViewUnloaded(object sender, EventArgs e)
-
-### RaiseViewLoaded()
-
-### RaiseViewUnloaded()
 

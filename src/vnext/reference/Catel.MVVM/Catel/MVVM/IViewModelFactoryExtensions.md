@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IViewModelFactoryExtensions
@@ -20,11 +20,7 @@ Extensions for the [IViewModelFactory](#).
 
 ### CreateViewModel<TViewModel>(IViewModelFactory viewModelFactory, object dataContext, object tag)
 
-Creates a new view model.
-    
-
-
-    This is a convenience wrapper around the Object) method. This method cannot be overriden.
+Creates a new view model.This is a convenience wrapper around the Object) method. This method cannot be overriden.
 
 #### Type Parameters
 
@@ -44,15 +40,15 @@ The preferred tag to use when resolving dependencies.
 
 #### Returns
 
-The newly created [IViewModel](#) or ```null``` if no view model could be created.
+The newly created [IViewModel](#) or`null` if no view model could be created.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelFactory is ```null```.
+The viewModelFactory is`null`.
 
 **T:System.ArgumentException**
-The ```TViewModel``` does not implement the [IViewModel](#) interface.
+The`TViewModel` does not implement the [IViewModel](#) interface.
 
 
 

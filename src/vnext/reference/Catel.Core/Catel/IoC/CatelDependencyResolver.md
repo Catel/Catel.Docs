@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CatelDependencyResolver : IDependencyResolver
@@ -17,16 +17,11 @@ public class CatelDependencyResolver : IDependencyResolver
 [IDependencyResolver](/Catel.Core\Catel\IoC\IDependencyResolver.md)
 
 
-Implementation of the [IDependencyResolver](#) interface for Catel by wrapping the
-    [ServiceLocator](#).
+Implementation of the [IDependencyResolver](#) interface for Catel by wrapping the [ServiceLocator](#).
 
 
 
 ## Fields
-
-### _serviceLocator
-
-### Log
 
 ## Constructors
 
@@ -42,7 +37,7 @@ The service locator.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -62,19 +57,13 @@ The tag.
 
 #### Returns
 
-```true``` if the specified type with the specified tag can be resolved; otherwise, ```false```.
+`true` if the specified type with the specified tag can be resolved; otherwise,`false`.
 
 
 
 ### CanResolveAll(Type[] types)
 
-Determines whether all types specified can be resolved. Though Object) will return ```null```
-    at the array index when a type cannot be resolved, this method will actually check whether all the specified types
-    are registered.
-    
-
-
-    It is still possible to call Object), even when this method returns ```false```.
+Determines whether all types specified can be resolved. Though Object) will return`null` at the array index when a type cannot be resolved, this method will actually check whether all the specified types are registered.It is still possible to call Object) , even when this method returns`false`.
 
 #### Parameters
 
@@ -83,7 +72,7 @@ The types.
 
 #### Returns
 
-```true``` if all types specified can be resolved; otherwise, ```false```.
+`true` if all types specified can be resolved; otherwise,`false`.
 
 
 
@@ -106,7 +95,7 @@ The resolved object.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:Catel.IoC.TypeNotRegisteredException**
 The type is not found in any container.
@@ -127,7 +116,7 @@ The tag.
 
 #### Returns
 
-A list of resolved types. If one of the types cannot be resolved, that location in the array will be ```null```.
+A list of resolved types. If one of the types cannot be resolved, that location in the array will be`null`.
 
 
 

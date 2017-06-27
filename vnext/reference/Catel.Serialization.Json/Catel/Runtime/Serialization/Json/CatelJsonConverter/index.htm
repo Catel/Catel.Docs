@@ -167,7 +167,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -176,8 +176,6 @@
 <a href="">JsonConverter</a></p>
 <p>Converts Catel models manually using the Catel serializer.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="configuration">_configuration<a class="headerlink" href="#configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="jsonserializer">_jsonSerializer<a class="headerlink" href="#jsonserializer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="cateljsonconverterijsonserializer-jsonserializer-iserializationconfiguration-configuration">CatelJsonConverter(IJsonSerializer jsonSerializer, ISerializationConfiguration configuration)<a class="headerlink" href="#cateljsonconverterijsonserializer-jsonserializer-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">CatelJsonConverter</a> class.</p>
@@ -193,7 +191,7 @@ The configuration.</p>
 <p><strong>objectType</strong>
 Type of the object.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if this instance can convert the specified object type; otherwise, <code>false</code>.</p>
+<p><code>true</code> if this instance can convert the specified object type; otherwise,<code>false</code>.</p>
 <h3 id="readjsonjsonreader-reader-type-objecttype-object-existingvalue-jsonserializer-serializer">ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)<a class="headerlink" href="#readjsonjsonreader-reader-type-objecttype-object-existingvalue-jsonserializer-serializer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Reads the json.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -205,7 +203,7 @@ Type of the object.</p>
 The existing value.</p>
 <p><strong>serializer</strong>
 The serializer.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>System.Object.</p>
 <h3 id="writejsonjsonwriter-writer-object-value-jsonserializer-serializer">WriteJson(JsonWriter writer, object value, JsonSerializer serializer)<a class="headerlink" href="#writejsonjsonwriter-writer-object-value-jsonserializer-serializer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the json.</p>

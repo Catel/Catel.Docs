@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class MemberMetadata
@@ -60,8 +60,7 @@ Gets the name of the member.
 
 ### MemberNameForSerialization
 
-Gets or sets the member name for serialization. This is a name mapped based on attributes
-    like DataMember("something"), etc.
+Gets or sets the member name for serialization. This is a name mapped based on attributes like DataMember("something"), etc.
 
 
 

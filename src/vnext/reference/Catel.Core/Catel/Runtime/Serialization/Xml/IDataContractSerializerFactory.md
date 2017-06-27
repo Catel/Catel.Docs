@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IDataContractSerializerFactory
@@ -20,21 +20,13 @@ Interface defining a factory to create [DataContractSerializer](#) objects for s
 
 ### DataContractResolver
 
-Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#).
-    
-
-
-    The default value is .
+Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#).The default value is.
 
 
 
 ### DataContractSurrogate
 
-Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#).
-    
-
-
-    The default value is .
+Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#).The default value is.
 
 
 
@@ -42,8 +34,7 @@ Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContr
 
 ### GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List<Type> additionalKnownTypes)
 
-Gets the Data Contract serializer for a specific type. This method caches serializers so the
-    performance can be improved when a serializer is used more than once.
+Gets the Data Contract serializer for a specific type. This method caches serializers so the performance can be improved when a serializer is used more than once.
 
 #### Parameters
 
@@ -69,10 +60,10 @@ A list of additional types to add to the known types.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serializingType is ```null```.
+The serializingType is`null`.
 
 **T:System.ArgumentException**
-The xmlName is ```null``` or whitespace.
+The xmlName is`null` or whitespace.
 
 
 

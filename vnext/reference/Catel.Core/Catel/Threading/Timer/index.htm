@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -265,8 +261,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/AwaitableDisposable/">AwaitableDisposable</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/DefaultAsyncWaitQueue/">DefaultAsyncWaitQueue</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/Deque/">Deque</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/IAsyncWaitQueue/">IAsyncWaitQueue</a>
 </li>
@@ -360,7 +354,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -369,13 +363,8 @@
 <p><a href="">IDisposable</a></p>
 <p>Timer for WinRT since WinRT only provides the DispatcherTimer which cannot be used outside the UI thread.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cancellationtokensource">_cancellationTokenSource<a class="headerlink" href="#cancellationtokensource" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="lock">_lock<a class="headerlink" href="#lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="timer-1">_timer<a class="headerlink" href="#timer-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="timercallback">_timerCallback<a class="headerlink" href="#timercallback" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="timerstate">_timerState<a class="headerlink" href="#timerstate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="timer-2">Timer()<a class="headerlink" href="#timer-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="timer-1">Timer()<a class="headerlink" href="#timer-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Timer</a> class.</p>
 <h3 id="timertimercallback-callback">Timer(TimerCallback callback)<a class="headerlink" href="#timertimercallback-callback" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Timer</a> class.</p>
@@ -395,7 +384,7 @@ The due time.</p>
 The interval.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The callback is <code>null</code>.</p>
+The callback is<code>null</code>.</p>
 <h3 id="timertimercallback-callback-object-state-timespan-duetime-timespan-interval">Timer(TimerCallback callback, object state, TimeSpan dueTime, TimeSpan interval)<a class="headerlink" href="#timertimercallback-callback-object-state-timespan-duetime-timespan-interval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Timer</a> class.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -409,7 +398,7 @@ The due time.</p>
 The interval.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The callback is <code>null</code>.</p>
+The callback is<code>null</code>.</p>
 <h3 id="timerint-interval">Timer(int interval)<a class="headerlink" href="#timerint-interval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Timer</a> class.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -436,30 +425,8 @@ The interval.</p>
 The due time.</p>
 <p><strong>interval</strong>
 The interval.</p>
-<h3 id="continuetimertask-t-object-state">ContinueTimer(Task t, object state)<a class="headerlink" href="#continuetimertask-t-object-state" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Continues the timer.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>t</strong>
-The task.</p>
-<p><strong>state</strong>
-The state which must be the cancellation token.</p>
 <h3 id="dispose">Dispose()<a class="headerlink" href="#dispose" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-<h3 id="ontimertickobject-state">OnTimerTick(object state)<a class="headerlink" href="#ontimertickobject-state" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="setuptimertimespan-duetime-timespan-interval">SetUpTimer(TimeSpan dueTime, TimeSpan interval)<a class="headerlink" href="#setuptimertimespan-duetime-timespan-interval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Sets up the timer.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>dueTime</strong></p>
-<p><strong>interval</strong></p>
-<h3 id="startcancellationtoken-cancellationtoken">Start(CancellationToken cancellationToken)<a class="headerlink" href="#startcancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Starts the timer.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>cancellationToken</strong>
-The cancellation token.</p>
-<h3 id="stop">Stop()<a class="headerlink" href="#stop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Stops the timer.</p>
-<h3 id="timerelapsed">TimerElapsed()<a class="headerlink" href="#timerelapsed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the interval elapses.</p>
 
                     </div>
                 </div>

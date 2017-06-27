@@ -26,12 +26,6 @@ The content page.
 
 ## Fields
 
-### _viewManager
-
-The view mananger.
-
-
-
 ## Constructors
 
 ### ContentPage()
@@ -113,44 +107,4 @@ Occurs when the view model has changed.
 
 
 ## Methods
-
-### OnAppearing()
-
-Occurs immediately prior to the [Page](#) becoming visible.
-
-
-
-### OnBackButtonPressed()
-
-Occurs when the back button is pressed.
-
-#### Returns
-
-To be added.
-
-#### Remarks
-
-TODO: This implementation requires improvements.
-
-
-
-### OnDataContextChanged(object sender, DataContextChangedEventArgs eventArgs)
-
-Occurs when the data context has changed.
-
-#### Parameters
-
-**sender**
-The sender
-
-**eventArgs**
-The data context changed event args.
-
-
-
-### OnDisappearing()
-
-Occurs when the [Page](#) disappears.
-
-
 

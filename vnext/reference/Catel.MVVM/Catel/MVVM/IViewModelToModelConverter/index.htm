@@ -180,15 +180,9 @@
 </ul>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -212,8 +206,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -233,8 +225,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -260,9 +250,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -273,9 +260,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -343,7 +327,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -360,7 +344,7 @@ Type of the out.</p>
 <p><strong>viewModelType</strong>
 Owner VM type</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if this instance can convert the specified types; otherwise, <code>false</code>.</p>
+<p><code>true</code> if this instance can convert the specified types; otherwise,<code>false</code>.</p>
 <h3 id="canconvertbacktype-intype-type-outtypes-type-viewmodeltype">CanConvertBack(Type inType, Type[] outTypes, Type viewModelType)<a class="headerlink" href="#canconvertbacktype-intype-type-outtypes-type-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether this instance can convert back the specified in type.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -371,15 +355,15 @@ The out types.</p>
 <p><strong>viewModelType</strong>
 Type of the view model.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if this instance can convert back the specified in type; otherwise, <code>false</code>.</p>
-<h3 id="true">Convert(object[] values, IViewModel viewModel)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>true</code> if this instance can convert back the specified in type; otherwise,<code>false</code>.</p>
+<h3 id="convertobject-values-iviewmodel-viewmodel">Convert(object[] values, IViewModel viewModel)<a class="headerlink" href="#convertobject-values-iviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts the specified values.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>values</strong>
 The values.</p>
 <p><strong>viewModel</strong>
 Owner VM</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>System.Object.</p>
 <h3 id="convertbackobject-value-iviewmodel-viewmodel">ConvertBack(object value, IViewModel viewModel)<a class="headerlink" href="#convertbackobject-value-iviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts the specified values back.</p>
@@ -388,15 +372,15 @@ Owner VM</p>
 Property value</p>
 <p><strong>viewModel</strong>
 Owner VM</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>System.Object[].</p>
 <h3 id="shouldconvertstring-propertyname">ShouldConvert(string propertyName)<a class="headerlink" href="#shouldconvertstring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the property name should be converted.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>propertyName</strong>
 The name of changed property</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the property name should be converted, <code>false</code> otherwise.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the property name should be converted,<code>false</code> otherwise.</p>
 
                     </div>
                 </div>

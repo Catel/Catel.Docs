@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class XmlSerializationContextInfo : ISerializationContextInfo
@@ -22,8 +22,6 @@ Class containing all information about the binary serialization context.
 
 
 ## Fields
-
-### _lockObject
 
 ## Constructors
 
@@ -42,7 +40,7 @@ The model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The xmlContent is ```null```.
+The xmlContent is`null`.
 
 
 
@@ -61,7 +59,7 @@ The model, is allowed to be null for value types.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 
 
@@ -80,7 +78,7 @@ The model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The xmlReader is ```null```.
+The xmlReader is`null`.
 
 
 
@@ -99,8 +97,4 @@ Gets the model.
 
 
 ## Methods
-
-### Initialize(string xmlContent, object model)
-
-### Initialize(XElement element, object model)
 

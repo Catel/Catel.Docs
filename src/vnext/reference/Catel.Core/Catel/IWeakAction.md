@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IWeakAction<TParameter> : IExecuteWithObject, IWeakReference
@@ -17,8 +17,7 @@ public interface IWeakAction<TParameter> : IExecuteWithObject, IWeakReference
 [IExecuteWithObject](/Catel.Core\Catel\IExecuteWithObject.md),[IWeakReference](/Catel.Core\Catel\IWeakReference.md)
 
 
-A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not
-    cause memory leaks.
+A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not cause memory leaks.
 
 #### Type Parameters
 
@@ -58,7 +57,7 @@ The parameter.
 
 #### Returns
 
-```true``` if the action is executed successfully; otherwise ```false```.
+`true` if the action is executed successfully; otherwise`false`.
 
 
 

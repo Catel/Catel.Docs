@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps)
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps)
 
 ```
 public static class TypeInfoExtensions
@@ -17,8 +17,6 @@ The type info extensions.
 
 
 ## Fields
-
-### Log
 
 ## Methods
 
@@ -44,7 +42,7 @@ An array of [ConstructorInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -67,7 +65,7 @@ An array of [ConstructorInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -88,15 +86,15 @@ The binding flags.
 
 #### Returns
 
-The [EventInfo](#) or ```null``` if the member is not found.
+The [EventInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -119,7 +117,7 @@ An array of [EventInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -140,15 +138,15 @@ The binding flags.
 
 #### Returns
 
-The [FieldInfo](#) or ```null``` if the member is not found.
+The [FieldInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -171,7 +169,7 @@ An array of [FieldInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -192,15 +190,15 @@ The binding flags.
 
 #### Returns
 
-The [FieldInfo](#) or ```null``` if the member is not found.
+The [FieldInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -223,7 +221,7 @@ An array of [FieldInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -244,15 +242,15 @@ The binding flags.
 
 #### Returns
 
-The [MethodInfo](#) or ```null``` if the member is not found.
+The [MethodInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -276,15 +274,15 @@ The binding flags.
 
 #### Returns
 
-The [MethodInfo](#) or ```null``` if the member is not found.
+The [MethodInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -307,7 +305,7 @@ An array of [MethodInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -330,7 +328,7 @@ An array of [PropertyInfo](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 
 
@@ -351,30 +349,15 @@ The binding flags.
 
 #### Returns
 
-The [PropertyInfo](#) or ```null``` if the member is not found.
+The [PropertyInfo](#) or`null` if the member is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeInfo is ```null```.
+The typeInfo is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
-
-
-
-### ShouldFlattenHierarchy(BindingFlags bindingFlags)
-
-Determines whether the hierarchy should be flattened based on the specified binding flags.
-
-#### Parameters
-
-**bindingFlags**
-The binding flags.
-
-#### Returns
-
-```true``` if the hierarchy should be flattened; otherwise ```false```.
+The name is`null` or whitespace.
 
 
 

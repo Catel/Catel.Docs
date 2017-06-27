@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -197,6 +191,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -324,7 +320,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -344,7 +340,7 @@ The string.</p>
 <p><strong>valueToCheck</strong>
 The value to check.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string contains the value to check, <code>false</code> otherwise.</p>
+<p><code>true</code> if the string contains the value to check,<code>false</code> otherwise.</p>
 <h3 id="endswithanystring-str-string-values">EndsWithAny(string str, string[] values)<a class="headerlink" href="#endswithanystring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string ends with any of the values.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -352,8 +348,8 @@ The value to check.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string ends with any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string ends with any of the values,<code>false</code> otherwise.</p>
 <h3 id="endswithanyignorecasestring-str-string-values">EndsWithAnyIgnoreCase(string str, string[] values)<a class="headerlink" href="#endswithanyignorecasestring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string ends with any of the values.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -361,8 +357,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string ends with any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string ends with any of the values,<code>false</code> otherwise.</p>
 <h3 id="endswithignorecasestring-str-string-valuetocheck">EndsWithIgnoreCase(string str, string valueToCheck)<a class="headerlink" href="#endswithignorecasestring-str-string-valuetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string ends with the value to check.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -370,8 +366,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>valueToCheck</strong>
 The value to check.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string ends with the value to check, <code>false</code> otherwise.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string ends with the value to check,<code>false</code> otherwise.</p>
 <h3 id="equalsanystring-str-string-values">EqualsAny(string str, string[] values)<a class="headerlink" href="#equalsanystring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string equals any of the values.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -379,8 +375,8 @@ The value to check.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string equals any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string equals any of the values,<code>false</code> otherwise.</p>
 <h3 id="equalsanyignorecasestring-str-string-values">EqualsAnyIgnoreCase(string str, string[] values)<a class="headerlink" href="#equalsanyignorecasestring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string equals with any of the values.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -388,8 +384,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string equals any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string equals any of the values,<code>false</code> otherwise.</p>
 <h3 id="equalsignorecasestring-str-string-valuetocheck">EqualsIgnoreCase(string str, string valueToCheck)<a class="headerlink" href="#equalsignorecasestring-str-string-valuetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Executes a string comparison that is case insensitive.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -397,8 +393,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>valueToCheck</strong>
 The value to check.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the strings are equal, <code>false</code> otherwise.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the strings are equal,<code>false</code> otherwise.</p>
 <h3 id="getslugstring-input-string-spacereplacement-string-dotreplacement-bool-makelowercase">GetSlug(string input, string spaceReplacement, string dotReplacement, bool makeLowercase)<a class="headerlink" href="#getslugstring-input-string-spacereplacement-string-dotreplacement-bool-makelowercase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the slug of the specific input string.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -409,18 +405,15 @@ The space replacement.</p>
 <p><strong>dotReplacement</strong>
 The dot replacement.</p>
 <p><strong>makeLowercase</strong>
-if set to <code>true</code>, make the slug lower case.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , make the slug lower case.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The slug based on the input.</p>
 <h3 id="getuniquecontrolnamestring-controlname">GetUniqueControlName(string controlName)<a class="headerlink" href="#getuniquecontrolnamestring-controlname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the a unique name for a control. This is sometimes required in some frameworks.</p>
-<pre><code>The name is made unique by appending a unique guid.
-</code></pre>
-
+<p>Gets the a unique name for a control. This is sometimes required in some frameworks.The name is made unique by appending a unique guid.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>controlName</strong>
 Name of the control.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>System.String.</p>
 <h3 id="indexofignorecasestring-str-string-valuetocheck">IndexOfIgnoreCase(string str, string valueToCheck)<a class="headerlink" href="#indexofignorecasestring-str-string-valuetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines the index of the value to check inside the specified string.</p>
@@ -429,14 +422,14 @@ Name of the control.</p>
 The string.</p>
 <p><strong>valueToCheck</strong>
 The value to check.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The index or <code>-1</code> if not found.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The index or<code>-1</code> if not found.</p>
 <h3 id="prepareassearchfilterstring-filter">PrepareAsSearchFilter(string filter)<a class="headerlink" href="#prepareassearchfilterstring-filter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Prepares a string value as search filter by trimming it and making it lower-case.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>filter</strong>
 The filter.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The search filter.</p>
 <h3 id="removediacriticsstring-value">RemoveDiacritics(string value)<a class="headerlink" href="#removediacriticsstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Removes the diacritics (special characters) from the string.</p>
@@ -448,7 +441,7 @@ The value.</p>
 <h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>System.String.</p>
 <h3 id="startswithanystring-str-string-values">StartsWithAny(string str, string[] values)<a class="headerlink" href="#startswithanystring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string starts with any of the values.</p>
@@ -457,8 +450,8 @@ The value.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string starts with any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string starts with any of the values,<code>false</code> otherwise.</p>
 <h3 id="startswithanyignorecasestring-str-string-values">StartsWithAnyIgnoreCase(string str, string[] values)<a class="headerlink" href="#startswithanyignorecasestring-str-string-values" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string starts with any of the values.</p>
 <h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -466,8 +459,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>values</strong>
 The values to check for.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string starts with any of the values, <code>false</code> otherwise.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string starts with any of the values,<code>false</code> otherwise.</p>
 <h3 id="startswithignorecasestring-str-string-valuetocheck">StartsWithIgnoreCase(string str, string valueToCheck)<a class="headerlink" href="#startswithignorecasestring-str-string-valuetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the string starts with the value to check.</p>
 <h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -475,8 +468,8 @@ The values to check for.</p>
 The string.</p>
 <p><strong>valueToCheck</strong>
 The value to check.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the string starts with the value to check, <code>false</code> otherwise.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the string starts with the value to check,<code>false</code> otherwise.</p>
 
                     </div>
                 </div>

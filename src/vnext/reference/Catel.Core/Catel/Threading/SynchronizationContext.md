@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class SynchronizationContext
@@ -21,16 +21,6 @@ Be aware when you use this class. If it is improperly used could provoke dead lo
 
 
 ## Fields
-
-### _calls
-
-### _isLockAcquired
-
-### _syncObj
-
-The sync obj.
-
-
 
 ## Properties
 
@@ -60,7 +50,7 @@ The code to be executed.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If code is ```null```.
+If code is`null`.
 
 #### Remarks
 
@@ -89,7 +79,7 @@ The result of execute the code.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If code is ```null```.
+If code is`null`.
 
 #### Remarks
 

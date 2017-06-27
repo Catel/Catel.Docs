@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewModelCommandManager
@@ -30,7 +30,7 @@ The handler to execute when a command is executed.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 
 
@@ -41,7 +41,7 @@ Invalidates all the commands that implement the [ICatelCommand](#).
 #### Parameters
 
 **force**
-If ```true```, the commands are re-initialized. The default value is ```false```.
+If`true` , the commands are re-initialized. The default value is`false`.
 
 
 

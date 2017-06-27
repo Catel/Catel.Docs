@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class DelegateHelper
@@ -28,7 +28,7 @@ Creates a delegate for the specified method and target.
 Type of the delegate.
 
 **target**
-The target. If ```null```, the method will be assumed static.
+The target. If`null` , the method will be assumed static.
 
 **methodInfo**
 The method info.
@@ -40,7 +40,7 @@ The delegate.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The delegateType is ```null```.
+The delegateType is`null`.
 
 
 
@@ -54,7 +54,7 @@ Creates a delegate for the specified method and target.
 Type of the delegate.
 
 **target**
-The target. Cannot be ```null``` for this method.
+The target. Cannot be`null` for this method.
 
 **methodName**
 Name of the method.
@@ -66,10 +66,10 @@ The delegate.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The delegateType is ```null```.
+The delegateType is`null`.
 
 **T:System.ArgumentException**
-The methodName is ```null``` or whitespace.
+The methodName is`null` or whitespace.
 
 
 
@@ -92,7 +92,7 @@ The delegate.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The delegateType is ```null```.
+The delegateType is`null`.
 
 
 
@@ -118,10 +118,10 @@ The delegate.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The delegateType is ```null```.
+The delegateType is`null`.
 
 **T:System.ArgumentException**
-The methodName is ```null``` or whitespace.
+The methodName is`null` or whitespace.
 
 
 

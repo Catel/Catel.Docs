@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CameraOperationCompletedEventArgs : EventArgs
@@ -29,7 +29,7 @@ Initializes a new instance of the [CameraOperationCompletedEventArgs](#) class.
 #### Parameters
 
 **ex**
-The exception that occurred. If no exception has occurred, pass ```null```.
+The exception that occurred. If no exception has occurred, pass`null`.
 
 
 
@@ -37,8 +37,7 @@ The exception that occurred. If no exception has occurred, pass ```null```.
 
 ### Exception
 
-Gets the exception that occurred if any exception occurred. If no exception occurred,
-    this value is ```null```.
+Gets the exception that occurred if any exception occurred. If no exception occurred, this value is`null`.
 
 
 

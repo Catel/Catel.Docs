@@ -6,14 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IModelEditor
 ```
 
-An interface that allows public editing of [ModelBase](#) instances using the ```GetValue```
-    and ```SetValue``` methods.
+An interface that allows public editing of [ModelBase](#) instances using the`GetValue` and`SetValue` methods.
 
 
 
@@ -35,7 +34,7 @@ The value of the property.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 **T:Catel.Data.PropertyNotRegisteredException**
 The property is not registered.
@@ -58,7 +57,7 @@ The value of the property.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 **T:Catel.Data.PropertyNotRegisteredException**
 The property is not registered.
@@ -99,7 +98,7 @@ The value.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 **T:Catel.Data.PropertyNotRegisteredException**
 The property is not registered.

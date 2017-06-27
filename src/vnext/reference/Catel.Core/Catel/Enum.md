@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class Enum<TEnum> where TEnum : struct, IComparable, IFormattable 
@@ -25,16 +25,7 @@ Type of the enumeration to wrap.
 
 ### ConvertFromOtherEnumValue(object inputEnumValue)
 
-Converts a specific enum value from one specific enum type to another enum type by it's name.
-    
-
-
-    For example, to convert ```Catel.Services.CameraType``` to ```Microsoft.Devices.CameraType```, use the
-    following code:
-    
-
-
-    ConvertEnum&lt;Microsoft.Devices.CameraType&gt;(Catel.Services.CameraType.Primary);
+Converts a specific enum value from one specific enum type to another enum type by it's name.For example, to convert`Catel.Services.CameraType` to`Microsoft.Devices.CameraType` , use the following code: ConvertEnum&lt;Microsoft.Devices.CameraType&gt;(Catel.Services.CameraType.Primary);
 
 #### Parameters
 
@@ -48,25 +39,10 @@ The converted enum value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The inputEnumValue is ```null```.
+The inputEnumValue is`null`.
 
 **T:System.ArgumentException**
 The inputEnumValue is not of type [Enum](#).
-
-
-
-### GetFields(Type enumType)
-
-Gets the fields from an enum.
-
-#### Parameters
-
-**enumType**
-Type of the enum.
-
-#### Returns
-
-Array of [FieldInfo](#) values.
 
 
 
@@ -86,21 +62,6 @@ The name of the value.
 
 
 ### GetName(long value)
-
-Gets the name.
-
-#### Parameters
-
-**value**
-The value.
-
-#### Returns
-
-The name of the value.
-
-
-
-### GetName(TEnum value)
 
 Gets the name.
 
@@ -145,7 +106,7 @@ Parses the specified input.
 The input.
 
 **ignoreCase**
-if set to ```true```, the case should be ignored.
+if set to`true` , the case should be ignored.
 
 #### Returns
 
@@ -173,14 +134,14 @@ Tries to parse an enum value name.
 The input.
 
 **ignoreCase**
-if set to ```true```, the case will be ignored.
+if set to`true` , the case will be ignored.
 
 **result**
 The result.
 
 #### Returns
 
-```true``` if successful; otherwise ```false```.
+`true` if successful; otherwise`false`.
 
 
 
@@ -194,14 +155,14 @@ Tries to parse an enum value name.
 The input.
 
 **ignoreCase**
-if set to ```true```, the case will be ignored.
+if set to`true` , the case will be ignored.
 
 **result**
 The result.
 
 #### Returns
 
-```true``` if successful; otherwise ```false```.
+`true` if successful; otherwise`false`.
 
 
 
@@ -219,7 +180,7 @@ The result.
 
 #### Returns
 
-```true``` if successful; otherwise ```false```.
+`true` if successful; otherwise`false`.
 
 
 
@@ -237,7 +198,7 @@ The result.
 
 #### Returns
 
-```true``` if successful; otherwise ```false```.
+`true` if successful; otherwise`false`.
 
 
 

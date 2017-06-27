@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ListDictionary<TKey, TValue> : IDictionary<TKey, TValue>
@@ -30,8 +30,6 @@ The type of values in the dictionary.
 
 
 ## Fields
-
-### _list
 
 ## Constructors
 
@@ -150,7 +148,7 @@ The key.
 
 ### CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
 
-Copies the elements to an [Array](#), starting at a particular System.Array index.
+Copies the elements to an [Array](#) , starting at a particular System.Array index.
 
 #### Parameters
 
@@ -171,8 +169,6 @@ Returns an enumerator that iterates through the collection.
 A [IEnumerator](#) that can be used to iterate through the collection.
 
 
-
-### GetIndex(TKey key)
 
 ### Remove(KeyValuePair<TKey, TValue> item)
 
@@ -199,8 +195,6 @@ The key of the element to remove.
 #### Returns
 
 
-
-### RemoveAndGetIndex(TKey key)
 
 ### TryGetValue(TKey key, TValue value)
 

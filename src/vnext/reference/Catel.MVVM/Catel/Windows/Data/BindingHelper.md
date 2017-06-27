@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class BindingHelper
@@ -51,7 +51,7 @@ The actual binding value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The frameworkElement is ```null```.
+The frameworkElement is`null`.
 
 
 

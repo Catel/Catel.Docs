@@ -16,11 +16,7 @@ public abstract class Behavior<T> : DependencyObject where T : DependencyObject
 [DependencyObject]()
 
 
-Base class for the behavior because the SDK for WinRT only ships with interfaces.
-    
-
-
-    This class tries to mimic the WPF, Silverlight and Windows Phone behavior class to allow reusage of the behaviors in Catel.
+Base class for the behavior because the SDK for WinRT only ships with interfaces.This class tries to mimic the WPF, Silverlight and Windows Phone behavior class to allow reusage of the behaviors in Catel.
 
 #### Type Parameters
 
@@ -30,29 +26,11 @@ Base class for the behavior because the SDK for WinRT only ships with interfaces
 
 ## Fields
 
-### _attachedCounter
-
-### Log
-
-The log.
-
-
-
 ## Properties
 
 ### AssociatedObject
 
-Gets the [DependencyObject](#) to which the  is attached.
-
-**See Also***
-
-[IBehavior](#)
-
-
-
-### Microsoft.Xaml.Interactivity.IBehavior.AssociatedObject
-
-Gets the [DependencyObject](#) to which the  is attached.
+Gets the [DependencyObject](#) to which the is attached.
 
 **See Also***
 
@@ -61,16 +39,4 @@ Gets the [DependencyObject](#) to which the  is attached.
 
 
 ## Methods
-
-### OnAttached()
-
-Called when the associated object is attached.
-
-
-
-### OnDetaching()
-
-Called when the associated object is detached.
-
-
 

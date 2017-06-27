@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ProgressContext : Disposable
@@ -21,14 +21,6 @@ Never calculate progress manually anymore.
 
 
 ## Fields
-
-### _onePercentage
-
-### _refreshInterval
-
-### _refreshIntervalCount
-
-### _smallRefreshIntervalCounter
 
 ## Constructors
 
@@ -56,16 +48,13 @@ Gets or sets the current count.
 
 ### CurrentRefreshNumber
 
-Gets the current refresh number. This represents a value that is calculated 
-    based on the TotalCount, CurrentCount and NumberOfRefreshes.
+Gets the current refresh number. This represents a value that is calculated based on the TotalCount , CurrentCount and NumberOfRefreshes.
 
 
 
 ### IsRefreshRequired
 
-Gets a value indicating whether an update is required. An update is required
-    at the moment that the CurrentCount exactly meets the count representing
-    a single refresh.
+Gets a value indicating whether an update is required. An update is required at the moment that the CurrentCount exactly meets the count representing a single refresh.
 
 
 

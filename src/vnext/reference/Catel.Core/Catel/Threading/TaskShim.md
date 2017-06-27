@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TaskShim
@@ -16,7 +16,7 @@ Task wrapper so it works on all platforms.
 
 #### Remarks
 
-This code originally comes from https://github.com/StephenCleary/AsyncEx/blob/77b9711c2c5fd4ca28b220ce4c93d209eeca2b4a/Source/Unit%20Tests/Tests%20(NET40)/Internal/TaskShim.cs.
+This code originally comes from https://github.com/StephenCleary/AsyncEx/ (MIT license).
 
 
 
@@ -173,7 +173,7 @@ The action parameter was null.
 
 ### Run(Func<Task> function)
 
-Queues the specified work to run on the ThreadPool and returns a proxy for the  task returned by function.
+Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.
 
 #### Parameters
 
@@ -193,7 +193,7 @@ The function parameter was null.
 
 ### Run(Func<Task> function, CancellationToken cancellationToken)
 
-Queues the specified work to run on the ThreadPool and returns a proxy for the  task returned by function.
+Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.
 
 #### Parameters
 
@@ -216,7 +216,7 @@ The function parameter was null.
 
 ### Run<TResult>(Func<Task<TResult>> function)
 
-Queues the specified work to run on the ThreadPool and returns a proxy for the  Task(TResult) returned by function.
+Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.
 
 #### Type Parameters
 
@@ -241,7 +241,7 @@ The function parameter was null.
 
 ### Run<TResult>(Func<Task<TResult>> function, CancellationToken cancellationToken)
 
-Queues the specified work to run on the ThreadPool and returns a proxy for the  Task(TResult) returned by function.
+Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.
 
 #### Type Parameters
 
@@ -433,7 +433,7 @@ The tasks to wait on for completion.
 
 #### Returns
 
-A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.
+A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.
 
 #### Exceptions
 
@@ -456,7 +456,7 @@ The tasks to wait on for completion.
 
 #### Returns
 
-A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.
+A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.
 
 #### Exceptions
 
@@ -484,7 +484,7 @@ The tasks to wait on for completion.
 
 #### Returns
 
-A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.
+A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.
 
 #### Exceptions
 
@@ -512,7 +512,7 @@ The tasks to wait on for completion.
 
 #### Returns
 
-A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.
+A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.
 
 #### Exceptions
 

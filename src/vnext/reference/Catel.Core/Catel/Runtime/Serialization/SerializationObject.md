@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class SerializationObject
@@ -18,29 +18,7 @@ Class containing information about a (de)serialized value.
 
 ## Fields
 
-### _memberValue
-
 ## Constructors
-
-### SerializationObject(Type modelType, SerializationMemberGroup memberGroup, string memberName, object memberValue)
-
-Initializes a new instance of the [SerializationObject](#) class.
-
-#### Parameters
-
-**modelType**
-Type of the model.
-
-**memberGroup**
-Group of the member.
-
-**memberName**
-Name of the member.
-
-**memberValue**
-The member value.
-
-
 
 ## Properties
 
@@ -103,10 +81,10 @@ SerializationObject.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 **T:System.ArgumentException**
-The memberName is ```null``` or whitespace.
+The memberName is`null` or whitespace.
 
 
 
@@ -135,10 +113,10 @@ SerializationObject.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 **T:System.ArgumentException**
-The memberName is ```null``` or whitespace.
+The memberName is`null` or whitespace.
 
 
 

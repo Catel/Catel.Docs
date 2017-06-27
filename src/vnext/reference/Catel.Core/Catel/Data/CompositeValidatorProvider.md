@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositeValidatorProvider : ValidatorProviderBase
@@ -20,24 +20,11 @@ Allows the combination of several validator providers into a single validator pr
 
 #### Remarks
 
-This class can be used to unify instances of [IValidatorProvider](#) into a single one and provides several 
-    sources in order to retrieve [IValidator](#) instances.
+This class can be used to unify instances of [IValidatorProvider](#) into a single one and provides several sources in order to retrieve [IValidator](#) instances.
 
 
 
 ## Fields
-
-### _syncObj
-
-The locker.
-
-
-
-### _validatorProviders
-
-The validator providers.
-
-
 
 ## Methods
 
@@ -53,7 +40,7 @@ The validator provider.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If validatorProvider is ```null```.
+If validatorProvider is`null`.
 
 
 
@@ -68,36 +55,12 @@ The validator provider.
 
 #### Returns
 
-```true``` if this composite validator provider contains the specified validator; otherwise, ```false```.
+`true` if this composite validator provider contains the specified validator; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validatorProvider is ```null```.
-
-
-
-### GetValidator(Type targetType)
-
-Gets a validator for the specified target type.
-
-#### Parameters
-
-**targetType**
-The target type.
-
-#### Returns
-
-The [IValidator](#) for the specified type or ```null``` if no validator is available for the specified type.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The targetType is ```null```.
-
-#### Remarks
-
-If there are more than once validator provider and they retrieve more than once validator all of these will be aggregated into a single [CompositeValidator](#).
+The validatorProvider is`null`.
 
 
 
@@ -113,7 +76,7 @@ The validator provider.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If validatorProvider is ```null```.
+If validatorProvider is`null`.
 
 
 

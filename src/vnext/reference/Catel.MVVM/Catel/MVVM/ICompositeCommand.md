@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ICompositeCommand : ICatelCommand
@@ -25,23 +25,13 @@ Composite command which allows several commands inside a single command being ex
 
 ### AllowPartialExecution
 
-Gets or sets a value indicating whether partial execution of commands is allowed. If this value is ```true```, this composite
-    command will always be executable and only invoke the internal commands that are executable.
-    
-
-
-    The default value is ```false```.
+Gets or sets a value indicating whether partial execution of commands is allowed. If this value is`true` , this composite command will always be executable and only invoke the internal commands that are executable.The default value is`false`.
 
 
 
 ### AtLeastOneMustBeExecutable
 
-Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be 
-    executed without any commands.
-    
-
-
-    The default value is ```true```.
+Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be executed without any commands.The default value is`true`.
 
 
 
@@ -89,7 +79,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -105,7 +95,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -124,7 +114,7 @@ The view model. If specified, the command will automatically be unregistered whe
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 #### Remarks
 
@@ -144,7 +134,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -160,7 +150,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -176,7 +166,7 @@ The command.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 
 

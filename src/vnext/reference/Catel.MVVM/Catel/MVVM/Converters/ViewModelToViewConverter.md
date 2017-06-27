@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class ViewModelToViewConverter : ValueConverterBase
@@ -16,43 +16,13 @@ public class ViewModelToViewConverter : ValueConverterBase
 [ValueConverterBase](/Catel.MVVM\Catel\MVVM\Converters\ValueConverterBase.md)
 
 
-Converts a view model to a view. This converter is very useful to dynamically load 
-    view content.
+Converts a view model to a view. This converter is very useful to dynamically load view content.
 
 
 
 ## Fields
 
-### _viewLocator
-
 ## Constructors
 
-### ViewModelToViewConverter()
-
-Initializes static members of the [ViewModelToViewConverter](#) class.
-
-
-
 ## Methods
-
-### Convert(object value, Type targetType, object parameter)
-
-Modifies the source data before passing it to the target for display in the UI.
-
-#### Parameters
-
-**value**
-The source data being passed to the target.
-
-**targetType**
-The [Type](#) of data expected by the target dependency property.
-
-**parameter**
-An optional parameter to be used in the converter logic.
-
-#### Returns
-
-The value to be passed to the target dependency property.
-
-
 

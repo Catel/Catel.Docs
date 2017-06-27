@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -209,8 +203,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/TaskCommand/">TaskCommand</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
@@ -237,8 +229,6 @@
 </ul>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelServiceHelper/">ViewModelServiceHelper</a>
@@ -263,9 +253,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -276,9 +263,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -346,34 +330,17 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class ViewModelManager : IViewModelManager
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\IViewModelManager.htm">IViewModelManager</a></p>
-<p>Manager for view models. Thanks to this manager, it is possible to subscribe to other view models and be able to respond
-    correctly to property changes in other views.</p>
+<p>Manager for view models. Thanks to this manager, it is possible to subscribe to other view models and be able to respond correctly to property changes in other views.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="instances">_instances<a class="headerlink" href="#instances" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>List of all live instances of the view model managers.</p>
-<h3 id="instanceslock">_instancesLock<a class="headerlink" href="#instanceslock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The lock for _instances</p>
-<h3 id="managedviewmodels">_managedViewModels<a class="headerlink" href="#managedviewmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Dictionary containing all the managed view models by this view model manager.</p>
-<h3 id="managedviewmodelslock">_managedViewModelsLock<a class="headerlink" href="#managedviewmodelslock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The lock for the _managedViewModels dictionary.</p>
-<h3 id="viewmodelmodels">_viewModelModels<a class="headerlink" href="#viewmodelmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Dictionary containing the unique identifiers of a all view models and their registered models.</p>
-<h3 id="viewmodelmodelslock">_viewModelModelsLock<a class="headerlink" href="#viewmodelmodelslock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The lock for the _viewModelModels dictionary.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="viewmodelmanager-1">ViewModelManager()<a class="headerlink" href="#viewmodelmanager-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of <a href="#">ViewModelManager</a> class</p>
-<h3 id="viewmodelmanager-2">ViewModelManager()<a class="headerlink" href="#viewmodelmanager-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">ViewModelManager</a> class.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The constructor is private because this is a singleton class.</p>
@@ -383,41 +350,27 @@
 <h3 id="viewmodelcount">ViewModelCount<a class="headerlink" href="#viewmodelcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the view model count.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="clear">Clear()<a class="headerlink" href="#clear" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Clears all the view models in the manager.</p>
-<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This method should only be called during unit testing.</p>
-<h3 id="clearall">ClearAll()<a class="headerlink" href="#clearall" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Clears all the current view model managers.</p>
-<h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This method should only be called during unit testing.</p>
-<h3 id="getallviewmodelsdictionarytype-managedviewmodel-managedviewmodels">GetAllViewModels(Dictionary&lt;Type, ManagedViewModel&gt; managedViewModels)<a class="headerlink" href="#getallviewmodelsdictionarytype-managedviewmodel-managedviewmodels" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the active view models.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>managedViewModels</strong>
-Dictionary of view-models</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h3 id="getchildviewmodelsiviewmodel-parentviewmodel">GetChildViewModels(IViewModel parentViewModel)<a class="headerlink" href="#getchildviewmodelsiviewmodel-parentviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the child view models of the specified view model.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>parentViewModel</strong>
 The parent view model.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The child view models.</p>
 <h3 id="getchildviewmodelsint-parentuniqueidentifier">GetChildViewModels(int parentUniqueIdentifier)<a class="headerlink" href="#getchildviewmodelsint-parentuniqueidentifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the child view models of the specified view model unique identifier.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>parentUniqueIdentifier</strong>
 The parent unique identifier.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The child view models.</p>
 <h3 id="getfirstordefaultinstancetype-viewmodeltype">GetFirstOrDefaultInstance(Type viewModelType)<a class="headerlink" href="#getfirstordefaultinstancetype-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the first or default instance of the specified view model.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModelType</strong>
 Type of the view mode.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">IViewModel</a> or <code>null</code> if the view model is not registered.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">IViewModel</a> or<code>null</code> if the view model is not registered.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 The viewModelType is not of type <a href="#">IViewModel</a>.</p>
@@ -426,92 +379,69 @@ The viewModelType is not of type <a href="#">IViewModel</a>.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
 The type of the view model.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">IViewModel</a> or <code>null</code> if the view model is not registered.</p>
-<h3 id="getmanagedviewmodeltype-viewmodeltype">GetManagedViewModel(Type viewModelType)<a class="headerlink" href="#getmanagedviewmodeltype-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the managed view model for a specific view model type.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModelType</strong>
-Type of the view model.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">ManagedViewModel</a> of the specified type.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">IViewModel</a> or<code>null</code> if the view model is not registered.</p>
 <h3 id="getviewmodelint-uniqueidentifier">GetViewModel(int uniqueIdentifier)<a class="headerlink" href="#getviewmodelint-uniqueidentifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the view model by its unique identifier.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uniqueIdentifier</strong>
 The unique identifier.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">IViewModel</a> or <code>null</code> if the view model is not registered.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">IViewModel</a> or<code>null</code> if the view model is not registered.</p>
 <h3 id="getviewmodelsofmodelobject-model">GetViewModelsOfModel(object model)<a class="headerlink" href="#getviewmodelsofmodelobject-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the view models of a model.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>model</strong>
 The model to find the linked view models for.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>An array containing all the view models.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="registermodeliviewmodel-viewmodel-object-model">RegisterModel(IViewModel viewModel, object model)<a class="headerlink" href="#registermodeliviewmodel-viewmodel-object-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers the model of a view model.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model.</p>
 <p><strong>model</strong>
 The model.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <h3 id="registerviewmodelinstanceiviewmodel-viewmodel">RegisterViewModelInstance(IViewModel viewModel)<a class="headerlink" href="#registerviewmodelinstanceiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers a view model instance with the manager. All view models must register themselves to the manager.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model to register.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
-<h3 id="registerviewmodelinstanceinternaliviewmodel-viewmodel">RegisterViewModelInstanceInternal(IViewModel viewModel)<a class="headerlink" href="#registerviewmodelinstanceinternaliviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers a view model instance with the manager. All view models must register themselves to the manager.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model to register.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <h3 id="unregisterallmodelsiviewmodel-viewmodel">UnregisterAllModels(IViewModel viewModel)<a class="headerlink" href="#unregisterallmodelsiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters all models of a view model.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <h3 id="unregistermodeliviewmodel-viewmodel-object-model">UnregisterModel(IViewModel viewModel, object model)<a class="headerlink" href="#unregistermodeliviewmodel-viewmodel-object-model" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters the model of a view model.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model.</p>
 <p><strong>model</strong>
 The model.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <h3 id="unregisterviewmodelinstanceiviewmodel-viewmodel">UnregisterViewModelInstance(IViewModel viewModel)<a class="headerlink" href="#unregisterviewmodelinstanceiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters a view model instance from the manager. All view models must unregister themselves from the manager.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model to unregister.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
-<h3 id="unregisterviewmodelinstanceinternaliviewmodel-viewmodel">UnregisterViewModelInstanceInternal(IViewModel viewModel)<a class="headerlink" href="#unregisterviewmodelinstanceinternaliviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unregisters a view model instance from the manager. All view models must unregister themselves from the manager.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model to unregister.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 
                     </div>
                 </div>

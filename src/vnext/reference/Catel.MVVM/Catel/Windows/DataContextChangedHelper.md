@@ -6,13 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class DataContextChangedHelper
 ```
 
-Helper class to subscribe to the ```DataContextChanged``` event of UI elements.
+Helper class to subscribe to the`DataContextChanged` event of UI elements.
 
 
 
@@ -33,11 +33,9 @@ The handler to add.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 
-
-### GetDataContextSubscriptionMode(FrameworkElement element)
 
 ### RemoveDataContextChangedHandler(FrameworkElement element, EventHandler<DependencyPropertyValueChangedEventArgs> handler)
 
@@ -54,7 +52,7 @@ The handler to remove.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 
 

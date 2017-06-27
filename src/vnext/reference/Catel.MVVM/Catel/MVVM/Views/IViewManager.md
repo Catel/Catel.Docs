@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewManager
@@ -37,7 +37,7 @@ Type of the view.
 
 #### Returns
 
-The [IViewModel](#) or ```null``` if the view model is not registered.
+The [IViewModel](#) or`null` if the view model is not registered.
 
 #### Exceptions
 
@@ -62,7 +62,7 @@ An array containing all the views that are linked to the view.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -78,7 +78,7 @@ The view to register.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 
@@ -94,7 +94,7 @@ The view to unregister.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 

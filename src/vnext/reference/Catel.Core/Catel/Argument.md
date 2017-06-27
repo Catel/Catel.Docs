@@ -6,57 +6,19 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class Argument
 ```
 
-Argument validator class to help validating arguments that are passed into a method.
-    
-
-
-    This class automatically adds thrown exceptions to the log file.
+Argument validator class to help validating arguments that are passed into a method.This class automatically adds thrown exceptions to the log file.
 
 
 
 ## Fields
 
-### Log
-
-The [ILog](#) object.
-
-
-
 ## Methods
-
-### GetParameterInfo<T>(Expression<Func<T>> expression)
-
-The get parameter info.
-
-#### Type Parameters
-
-**T**
-The type of the parameter.
-
-#### Parameters
-
-**expression**
-The expression.
-
-#### Returns
-
-The [Missing: <see cref="T:Catel.Argument.ParameterInfo`1" />](#).
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The expression body is not of type [MemberExpression](#).
-
-**T:System.ArgumentNullException**
-The expression is ```null```.
-
-
 
 ### ImplementsInterface(string paramName, object instance, Type interfaceType)
 
@@ -76,7 +38,7 @@ The type of the interface to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
 The instance does not implement the interfaceType.
@@ -104,7 +66,7 @@ The type of the interface to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -128,7 +90,7 @@ The type of the interface to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The expression value is ```null```.
+The expression value is`null`.
 
 **T:System.ArgumentException**
 The expression value does not implement the interfaceType.
@@ -155,10 +117,10 @@ The instance to check.
 #### Exceptions
 
 **T:System.ArgumentException**
-The paramName is ```null```.
+The paramName is`null`.
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -180,10 +142,10 @@ The types of the interfaces to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
-The interfaceTypes is ```null``` or an empty array.
+The interfaceTypes is`null` or an empty array.
 
 
 
@@ -208,7 +170,7 @@ The types of the interfaces to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -232,7 +194,7 @@ The types of the interfaces to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The expression value is ```null```.
+The expression value is`null`.
 
 **T:System.ArgumentException**
 The expression value does not implement at least one of the interfaceTypes.
@@ -257,10 +219,10 @@ The base type.
 #### Exceptions
 
 **T:System.ArgumentException**
-The paramName is ```null```.
+The paramName is`null`.
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -284,7 +246,7 @@ The base type.
 **T:System.ArgumentException**
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -308,10 +270,10 @@ The instance.
 #### Exceptions
 
 **T:System.ArgumentException**
-The paramName is ```null```.
+The paramName is`null`.
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -333,10 +295,10 @@ The regular expression options.
 #### Exceptions
 
 **T:System.ArgumentException**
-The pattern is ```null```.
+The pattern is`null`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -361,7 +323,7 @@ The regular expression options.
 #### Exceptions
 
 **T:System.ArgumentException**
-The paramName is ```null``` or whitespace.
+The paramName is`null` or whitespace.
 
 
 
@@ -391,7 +353,7 @@ If expression value is out of range.
 The expression body is not of type [MemberExpression](#).
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -418,7 +380,7 @@ The validation function to call for validation.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 If expression value is out of range.
@@ -483,7 +445,7 @@ The validation function to call for validation.
 **T:System.ArgumentOutOfRangeException**
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 
 
@@ -513,7 +475,7 @@ If expression value is out of range.
 The expression body is not of type [MemberExpression](#).
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -540,7 +502,7 @@ The validation function to call for validation.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 If expression value is out of range.
@@ -605,7 +567,7 @@ The validation function to call for validation.
 **T:System.ArgumentOutOfRangeException**
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 
 
@@ -621,10 +583,10 @@ The expression.
 #### Exceptions
 
 **T:System.ArgumentException**
-If expression value is ```null``` or empty.
+If expression value is`null` or empty.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -643,7 +605,7 @@ Value of the parameter.
 #### Exceptions
 
 **T:System.ArgumentException**
-If paramValue is ```null``` or empty.
+If paramValue is`null` or empty.
 
 
 
@@ -665,10 +627,10 @@ The regular expression options.
 #### Exceptions
 
 **T:System.ArgumentException**
-The pattern is ```null```.
+The pattern is`null`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -693,13 +655,13 @@ The regular expression options.
 #### Exceptions
 
 **T:System.ArgumentException**
-The paramName is ```null``` or whitespace.
+The paramName is`null` or whitespace.
 
 
 
 ### IsNotNull(string paramName, object paramValue)
 
-Determines whether the specified argument is not ```null```.
+Determines whether the specified argument is not`null`.
 
 #### Parameters
 
@@ -717,7 +679,7 @@ Value of the parameter.
 
 ### IsNotNull<T>(Expression<Func<T>> expression)
 
-Determines whether the specified argument is not ```null```.
+Determines whether the specified argument is not`null`.
 
 #### Type Parameters
 
@@ -732,7 +694,7 @@ The expression.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If expression value is ```null```.
+If expression value is`null`.
 
 **T:System.ArgumentException**
 The expression body is not of type [MemberExpression](#).
@@ -741,7 +703,7 @@ The expression body is not of type [MemberExpression](#).
 
 ### IsNotNullOrEmpty(Expression<Func<Nullable<Guid>>> expression)
 
-Determines whether the specified argument is not ```null``` or empty.
+Determines whether the specified argument is not`null` or empty.
 
 #### Parameters
 
@@ -751,16 +713,16 @@ The expression.
 #### Exceptions
 
 **T:System.ArgumentException**
-If expression value is ```null``` or empty.
+If expression value is`null` or empty.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
 ### IsNotNullOrEmpty(Expression<Func<string>> expression)
 
-Determines whether the specified argument is not ```null``` or empty.
+Determines whether the specified argument is not`null` or empty.
 
 #### Parameters
 
@@ -770,16 +732,16 @@ The expression.
 #### Exceptions
 
 **T:System.ArgumentException**
-If expression value is ```null``` or empty.
+If expression value is`null` or empty.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
 ### IsNotNullOrEmpty(string paramName, Nullable<Guid> paramValue)
 
-Determines whether the specified argument is not ```null``` or empty.
+Determines whether the specified argument is not`null` or empty.
 
 #### Parameters
 
@@ -797,7 +759,7 @@ Value of the parameter.
 
 ### IsNotNullOrEmpty(string paramName, string paramValue)
 
-Determines whether the specified argument is not ```null``` or empty.
+Determines whether the specified argument is not`null` or empty.
 
 #### Parameters
 
@@ -815,7 +777,7 @@ Value of the parameter.
 
 ### IsNotNullOrEmptyArray(Expression<Func<Array>> expression)
 
-Determines whether the specified argument is not ```null``` or an empty array (.Length == 0).
+Determines whether the specified argument is not`null` or an empty array (.Length == 0).
 
 #### Parameters
 
@@ -825,16 +787,16 @@ The expression
 #### Exceptions
 
 **T:System.ArgumentException**
-If expression value is ```null``` or an empty array.
+If expression value is`null` or an empty array.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
 ### IsNotNullOrEmptyArray(string paramName, Array paramValue)
 
-Determines whether the specified argument is not ```null``` or an empty array (.Length == 0).
+Determines whether the specified argument is not`null` or an empty array (.Length == 0).
 
 #### Parameters
 
@@ -852,7 +814,7 @@ Value of the parameter.
 
 ### IsNotNullOrWhitespace(Expression<Func<string>> expression)
 
-Determines whether the specified argument is not ```null``` or a whitespace.
+Determines whether the specified argument is not`null` or a whitespace.
 
 #### Parameters
 
@@ -862,16 +824,16 @@ The expression.
 #### Exceptions
 
 **T:System.ArgumentException**
-If expression value is ```null``` or a whitespace.
+If expression value is`null` or a whitespace.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
 ### IsNotNullOrWhitespace(string paramName, string paramValue)
 
-Determines whether the specified argument is not ```null``` or a whitespace.
+Determines whether the specified argument is not`null` or a whitespace.
 
 #### Parameters
 
@@ -905,10 +867,10 @@ The types to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
-The notRequiredTypes is ```null``` or empty array.
+The notRequiredTypes is`null` or empty array.
 
 
 
@@ -933,7 +895,7 @@ The types to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -957,7 +919,7 @@ The types to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The expression value is ```null```.
+The expression value is`null`.
 
 **T:System.ArgumentException**
 The expression value is of one of the notRequiredTypes.
@@ -982,7 +944,7 @@ The type to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
 The instance is of type notRequiredType.
@@ -1010,7 +972,7 @@ The type to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1034,7 +996,7 @@ The type to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The expression value is ```null```.
+The expression value is`null`.
 
 **T:System.ArgumentException**
 The expression value is of type notRequiredType.
@@ -1070,7 +1032,7 @@ If expression value is out of range.
 The expression body is not of type [MemberExpression](#).
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -1100,7 +1062,7 @@ The validation function to call for validation.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 If expression value is out of range.
@@ -1170,7 +1132,7 @@ The validation function to call for validation.
 **T:System.ArgumentOutOfRangeException**
 
 **T:System.ArgumentNullException**
-The validation is ```null```.
+The validation is`null`.
 
 
 
@@ -1192,10 +1154,10 @@ The types to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
-The requiredTypes is ```null``` or an empty array.
+The requiredTypes is`null` or an empty array.
 
 
 
@@ -1220,7 +1182,7 @@ The types to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1244,7 +1206,7 @@ The types to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The requiredTypes is ```null```.
+The requiredTypes is`null`.
 
 **T:System.ArgumentException**
 The expression value is not at least one of the requiredTypes.
@@ -1269,7 +1231,7 @@ The type to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 **T:System.ArgumentException**
 The instance is not of type requiredType.
@@ -1297,7 +1259,7 @@ The type to check for.
 type
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1321,7 +1283,7 @@ The type to check for.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The expression value is ```null```.
+The expression value is`null`.
 
 **T:System.ArgumentException**
 The expression value is not of type requiredType.
@@ -1330,12 +1292,12 @@ The expression value is not of type requiredType.
 
 ### IsSupported(bool isSupported, string errorFormat, object[] args)
 
-Checks whether the passed in boolean check is ```true```. If not, this method will throw a [NotSupportedException](#).
+Checks whether the passed in boolean check is`true`. If not, this method will throw a [NotSupportedException](#).
 
 #### Parameters
 
 **isSupported**
-if set to ```true```, the action is supported; otherwise ```false```.
+if set to`true` , the action is supported; otherwise`false`.
 
 **errorFormat**
 The error format.
@@ -1346,10 +1308,10 @@ The arguments for the string format.
 #### Exceptions
 
 **T:System.NotSupportedException**
-The isSupported is ```false```.
+The isSupported is`false`.
 
 **T:System.ArgumentException**
-The errorFormat is ```null``` or whitespace.
+The errorFormat is`null` or whitespace.
 
 
 
@@ -1373,10 +1335,10 @@ The validator.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of  validator returns ```false```.
+If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of validator returns`false`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -1400,10 +1362,10 @@ The validation result.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -1427,10 +1389,10 @@ The validation function.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -1454,10 +1416,10 @@ The validation function.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The expression is ```null```.
+The expression is`null`.
 
 
 
@@ -1484,10 +1446,10 @@ The validator.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of  validator returns ```false```.
+If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of validator returns`false`.
 
 **T:System.ArgumentNullException**
-The paramName is ```null```.
+The paramName is`null`.
 
 
 
@@ -1514,10 +1476,10 @@ The validation function.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The paramName is ```null```.
+The paramName is`null`.
 
 
 
@@ -1544,10 +1506,10 @@ The validation function.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The paramName is ```null```.
+The paramName is`null`.
 
 
 
@@ -1574,10 +1536,10 @@ The validation function.
 #### Exceptions
 
 **T:System.ArgumentException**
-If the validation code returns ```false```.
+If the validation code returns`false`.
 
 **T:System.ArgumentNullException**
-The paramName is ```null```.
+The paramName is`null`.
 
 
 

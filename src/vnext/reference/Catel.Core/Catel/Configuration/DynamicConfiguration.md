@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class DynamicConfiguration : ModelBase
@@ -21,8 +21,6 @@ Dynamic configuration.
 
 
 ## Fields
-
-### _propertiesSetAtLeastOnce
 
 ## Methods
 
@@ -52,7 +50,7 @@ The name.
 
 #### Returns
 
-```true``` if the property is set; otherwise, ```false```.
+`true` if the property is set; otherwise,`false`.
 
 
 

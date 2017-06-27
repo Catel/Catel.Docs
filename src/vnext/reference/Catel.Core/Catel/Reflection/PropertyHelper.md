@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class PropertyHelper
@@ -17,16 +17,6 @@ Property helper class.
 
 
 ## Fields
-
-### _availableProperties
-
-### _expressionNameCache
-
-### Log
-
-The [ILog](#) object.
-
-
 
 ## Methods
 
@@ -59,10 +49,10 @@ The base Type.
 **T:Catel.Reflection.PropertyNotFoundException**
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
@@ -79,7 +69,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case.
+if set to`true` , ignore case.
 
 #### Returns
 
@@ -97,7 +87,7 @@ Gets the name of the property based on the expression.
 The property expression.
 
 **allowNested**
-If set to ```true```, nested properties are allowed.
+If set to`true` , nested properties are allowed.
 
 #### Returns
 
@@ -106,36 +96,7 @@ The string representing the property name.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyExpression is ```null```.
-
-**T:System.NotSupportedException**
-The specified expression is not a member access expression.
-
-
-
-### GetPropertyName(Expression propertyExpression, bool allowNested, bool nested)
-
-Gets the name of the property based on the expression.
-
-#### Parameters
-
-**propertyExpression**
-The property expression.
-
-**allowNested**
-If set to ```true```, nested properties are allowed.
-
-**nested**
-If set to ```true```, this is a nested call.
-
-#### Returns
-
-The string representing the property name or Empty if no property can be found.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 **T:System.NotSupportedException**
 The specified expression is not a member access expression.
@@ -160,7 +121,7 @@ The type of the value.
 The property expression.
 
 **allowNested**
-If set to ```true```, nested properties are allowed.
+If set to`true` , nested properties are allowed.
 
 #### Returns
 
@@ -169,7 +130,7 @@ The string representing the property name.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 **T:System.NotSupportedException**
 The specified expression is not a member access expression.
@@ -191,7 +152,7 @@ The type of the value.
 The property expression.
 
 **allowNested**
-If set to ```true```, nested properties are allowed.
+If set to`true` , nested properties are allowed.
 
 #### Returns
 
@@ -200,7 +161,7 @@ The string representing the property name.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 **T:System.NotSupportedException**
 The specified expression is not a member access expression.
@@ -220,11 +181,11 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Returns
 
-The property value or ```null``` if no property can be found.
+The property value or`null` if no property can be found.
 
 #### Exceptions
 
@@ -235,10 +196,10 @@ The obj is not found or not publicly available.
 The property value cannot be read.
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
@@ -260,19 +221,19 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Returns
 
-The property value or ```null``` if no property can be found.
+The property value or`null` if no property can be found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 **T:Catel.Reflection.PropertyNotFoundException**
 The obj is not found or not publicly available.
@@ -295,19 +256,19 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Returns
 
-```true``` if the property exists on the object type; otherwise, ```false```.
+`true` if the property exists on the object type; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
@@ -324,19 +285,19 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Returns
 
-```true``` if the property is a public property on the specified object; otherwise, ```false```.
+`true` if the property is a public property on the specified object; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
@@ -356,7 +317,7 @@ The property.
 The value.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Exceptions
 
@@ -367,17 +328,16 @@ The obj is not found or not publicly available.
 The the property value cannot be written.
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
 ### TryGetPropertyValue(object obj, string property, bool ignoreCase, object value)
 
-Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return ```false```.
+Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return`false`.
 
 #### Parameters
 
@@ -388,29 +348,28 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 **value**
 The value as output parameter.
 
 #### Returns
 
-```true``` if the method succeeds; otherwise ```false```.
+`true` if the method succeeds; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
 ### TryGetPropertyValue(object obj, string property, object value)
 
-Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return ```false```.
+Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return`false`.
 
 #### Parameters
 
@@ -425,24 +384,21 @@ The value as output parameter.
 
 #### Returns
 
-```true``` if the method succeeds; otherwise ```false```.
+`true` if the method succeeds; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
-
-### TryGetPropertyValue<TValue>(object obj, string property, bool ignoreCase, bool throwOnException, TValue value)
 
 ### TryGetPropertyValue<TValue>(object obj, string property, bool ignoreCase, TValue value)
 
-Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return ```false```.
+Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return`false`.
 
 #### Type Parameters
 
@@ -458,29 +414,28 @@ The object.
 The property.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 **value**
 The value as output parameter.
 
 #### Returns
 
-```true``` if the method succeeds; otherwise ```false```.
+`true` if the method succeeds; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
 ### TryGetPropertyValue<TValue>(object obj, string property, TValue value)
 
-Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return ```false```.
+Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return`false`.
 
 #### Type Parameters
 
@@ -500,22 +455,21 @@ The value as output parameter.
 
 #### Returns
 
-```true``` if the method succeeds; otherwise ```false```.
+`true` if the method succeeds; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
 
 ### TrySetPropertyValue(object obj, string property, object value, bool ignoreCase)
 
-Tries to set the property value. If it fails, no exceptions will be thrown, but ```false``` will
-    be returned.
+Tries to set the property value. If it fails, no exceptions will be thrown, but`false` will be returned.
 
 #### Parameters
 
@@ -529,21 +483,19 @@ The property.
 The value.
 
 **ignoreCase**
-if set to ```true```, ignore case when searching for the property name.
+if set to`true` , ignore case when searching for the property name.
 
 #### Returns
 
-```true``` if the method succeeds; otherwise ```false```.
+`true` if the method succeeds; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The obj is ```null```.
+The obj is`null`.
 
 **T:System.ArgumentException**
-The property is ```null``` or whitespace.
+The property is`null` or whitespace.
 
 
-
-### TrySetPropertyValue(object obj, string property, object value, bool ignoreCase, bool throwOnError)
 

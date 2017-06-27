@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelClosedEventArgs : EventArgs
@@ -32,12 +32,12 @@ Initializes a new instance of the [ViewModelClosedEventArgs](#) class.
 The view model.
 
 **result**
-The result to pass to the view. This will, for example, be used as ```DialogResult```.
+The result to pass to the view. This will, for example, be used as`DialogResult`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -45,7 +45,7 @@ The viewModel is ```null```.
 
 ### Result
 
-Gets the result to pass to the view. This will, for example, be used as ```DialogResult```
+Gets the result to pass to the view. This will, for example, be used as`DialogResult`
 
 
 

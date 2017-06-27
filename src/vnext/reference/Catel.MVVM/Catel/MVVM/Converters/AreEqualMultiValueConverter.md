@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class AreEqualMultiValueConverter : IMultiValueConverter, MarkupExtension
@@ -20,8 +20,7 @@ public class AreEqualMultiValueConverter : IMultiValueConverter, MarkupExtension
 [IMultiValueConverter]()
 
 
-Converts a comparison of 2 bindings to a boolean whether the 
-    objects are equal or not.
+Converts a comparison of 2 bindings to a boolean whether the objects are equal or not.
 
 
 

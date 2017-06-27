@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class DictionaryExtensions
@@ -20,7 +20,7 @@ Extensions for the [Dictionary](#) class.
 
 ### AddItemIfNotEmpty<TKey>(Dictionary<TKey, string> dictionary, TKey key, string value)
 
-Adds the specified value using the key if the value is not ```null``` or whitespace.
+Adds the specified value using the key if the value is not`null` or whitespace.
 
 #### Type Parameters
 
@@ -41,7 +41,7 @@ The value to check and to add.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dictionary is ```null```.
+The dictionary is`null`.
 
 
 
@@ -66,12 +66,12 @@ The target.
 The source.
 
 **overwriteExisting**
-if set to ```true```, existing items in the target dictionary will be overwritten.
+if set to`true` , existing items in the target dictionary will be overwritten.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The target is ```null```.
+The target is`null`.
 
 
 

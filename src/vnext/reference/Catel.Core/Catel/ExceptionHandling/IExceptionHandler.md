@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IExceptionHandler<TException, TException> : IExceptionHandler where TException : Exception 
@@ -38,7 +38,7 @@ The action to do on an exception of defined type occurs.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 

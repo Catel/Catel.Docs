@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class TypeInstantiatedEventArgs : EventArgs
@@ -43,7 +43,7 @@ Type of the registration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceType is ```null```.
+The serviceType is`null`.
 
 
 

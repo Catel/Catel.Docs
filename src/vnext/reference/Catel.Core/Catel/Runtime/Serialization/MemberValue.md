@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class MemberValue
@@ -17,8 +17,6 @@ Member value which represents the serialization info of a specific member.
 
 
 ## Fields
-
-### _value
 
 ## Constructors
 
@@ -64,18 +62,13 @@ Gets the group of the member.
 
 ### MemberType
 
-Gets the type of the member.
-    
-
-
-    This is the actual member type as it is defined on the type. This is ```not``` a wrapper around
-    the ```value.GetType()```.
+Gets the type of the member.This is the actual member type as it is defined on the type. This is`not` a wrapper around the`value.GetType()`.
 
 
 
 ### MemberTypeName
 
-Gets the name of the model type, which should be a cached version of ```ModelType.GetSafeFullName(false);```.
+Gets the name of the model type, which should be a cached version of`ModelType.GetSafeFullName(false);`.
 
 
 
@@ -87,7 +80,7 @@ Gets the type of the model which this member value is a member of.
 
 ### ModelTypeName
 
-Gets the name of the model type, which should be a cached version of ```ModelType.GetSafeFullName(false);```.
+Gets the name of the model type, which should be a cached version of`ModelType.GetSafeFullName(false);`.
 
 
 
@@ -99,8 +92,7 @@ Gets the name of the member.
 
 ### NameForSerialization
 
-Gets or sets the name for serialization. This is a name mapped based on attributes
-    like DataMember("something"), etc.
+Gets or sets the name for serialization. This is a name mapped based on attributes like DataMember("something"), etc.
 
 
 
@@ -114,7 +106,7 @@ Gets or sets the value.
 
 ### GetBestMemberType()
 
-Gets the the best member type. Code is equal to ```memberValue.ActualMemberType ?? memberValue.MemberType```.
+Gets the the best member type. Code is equal to`memberValue.ActualMemberType ?? memberValue.MemberType`.
 
 #### Returns
 

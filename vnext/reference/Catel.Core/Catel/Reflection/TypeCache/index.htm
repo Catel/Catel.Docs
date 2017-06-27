@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -374,57 +370,14 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class TypeCache
 </pre><p>Cache containing the types of an appdomain.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="hasinitializedonce">_hasInitializedOnce<a class="headerlink" href="#hasinitializedonce" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="isalreadyinloadingevent">_isAlreadyInLoadingEvent<a class="headerlink" href="#isalreadyinloadingevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The boolean specifying whether the type cache is already loading assemblies via the loaded event.</p>
-<h3 id="loadedassemblies">_loadedAssemblies<a class="headerlink" href="#loadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The list of loaded assemblies which do not required additional initialization again.</p>
-<pre><code>This is required because the AppDomain.AssemblyLoad might be called several times for the same AppDomain
-</code></pre>
-
-<h3 id="lockobject">_lockObject<a class="headerlink" href="#lockobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The lock object.</p>
-<h3 id="onassemblyloadeddelayqueue">_onAssemblyLoadedDelayQueue<a class="headerlink" href="#onassemblyloadeddelayqueue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Assemblies, loaded while Catel was processing AssemblyLoaded event.</p>
-<h3 id="threadsafeassemblyqueue">_threadSafeAssemblyQueue<a class="headerlink" href="#threadsafeassemblyqueue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="typesbyassembly">_typesByAssembly<a class="headerlink" href="#typesbyassembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types by assembly. This means that the first dictionary contains the assembly name
-    and all types contained by that assembly.</p>
-<h3 id="typesbyinterface">_typesByInterface<a class="headerlink" href="#typesbyinterface" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types implementing a specific interface.</p>
-<h3 id="typeswithassembly">_typesWithAssembly<a class="headerlink" href="#typeswithassembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types based on a string. This way, it is easy to retrieve a type based on a 
-    string containing the type name and assembly without the overhead, such as <code>Catel.TypeHelper, Catel.Core</code>.</p>
-<h3 id="typeswithassemblylowercase">_typesWithAssemblyLowerCase<a class="headerlink" href="#typeswithassemblylowercase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types based on a string. This way, it is easy to retrieve a type based on a 
-    string containing the type name and assembly without the overhead, such as <code>Catel.TypeHelper, Catel.Core</code>.</p>
-<h3 id="typeswithoutassembly">_typesWithoutAssembly<a class="headerlink" href="#typeswithoutassembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types based without an assembly. This means that a type with this format:
-    <code>Catel.TypeHelper, Catel.Core</code> will be located as <code>Catel.TypeHelper</code>.</p>
-<pre><code>The values resolved from this dictionary can be used as key in the _typesWithAssembly dictionary.
-</code></pre>
-
-<h3 id="typeswithoutassemblylowercase">_typesWithoutAssemblyLowerCase<a class="headerlink" href="#typeswithoutassemblylowercase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the types based without an assembly. This means that a type with this format:
-    <code>Catel.TypeHelper, Catel.Core</code> will be located as <code>Catel.TypeHelper</code>.</p>
-<pre><code>The values resolved from this dictionary can be used as key in the _typesWithAssembly dictionary.
-</code></pre>
-
-<h3 id="defaultcollectionsizeforassemblies">DefaultCollectionSizeForAssemblies<a class="headerlink" href="#defaultcollectionsizeforassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>50</p>
-<h3 id="defaultcollectionsizefortypes">DefaultCollectionSizeForTypes<a class="headerlink" href="#defaultcollectionsizefortypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>10000</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="typecache-1">TypeCache()<a class="headerlink" href="#typecache-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="shouldignoreassemblyevaluators">ShouldIgnoreAssemblyEvaluators<a class="headerlink" href="#shouldignoreassemblyevaluators" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the evaluators used to determine whether a specific assembly should be ignored.</p>
@@ -434,7 +387,6 @@
 <h3 id="assemblyloaded">AssemblyLoaded<a class="headerlink" href="#assemblyloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Occurs when an assembly is loaded into the currently <a href="#">AppDomain</a>.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="getassemblytypeslist-assemblies-bool-allowmultithreadedinitialization">GetAssemblyTypes(List<Assembly> assemblies, bool allowMultithreadedInitialization)<a class="headerlink" href="#getassemblytypeslist-assemblies-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="gettypestring-typenamewithassembly-bool-ignorecase-bool-allowinitialization">GetType(string typeNameWithAssembly, bool ignoreCase, bool allowInitialization)<a class="headerlink" href="#gettypestring-typenamewithassembly-bool-ignorecase-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the specified type from the loaded assemblies.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -443,77 +395,43 @@ The name of the type including namespace and assembly, formatted with the String
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
+If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">Type</a> or <code>null</code> if the type cannot be found.</p>
+<p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The typeNameWithAssembly is <code>null</code> or whitespace.</p>
-<h3 id="gettypestring-typename-string-assemblyname-bool-ignorecase-bool-allowinitialization">GetType(string typeName, string assemblyName, bool ignoreCase, bool allowInitialization)<a class="headerlink" href="#gettypestring-typename-string-assemblyname-bool-ignorecase-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeName</strong>
-Name of the type.</p>
-<p><strong>assemblyName</strong>
-Name of the assembly. Can be <code>null</code> if no assembly is known.</p>
-<p><strong>ignoreCase</strong>
-A value indicating whether the case should be ignored.</p>
-<p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">Type</a> or <code>null</code> if the type cannot be found.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The typeName is <code>null</code> or whitespace.</p>
-<h3 id="gettypebysplittinginternalsstring-typewithinnertypes">GetTypeBySplittingInternals(string typeWithInnerTypes)<a class="headerlink" href="#gettypebysplittinginternalsstring-typewithinnertypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type by splitting internal types. This means that System.Collections.List`1[[MyCustomType.Item]] will be splitted
-    and resolved separately.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeWithInnerTypes</strong>
-The type with inner types.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The typeNameWithAssembly is<code>null</code> or whitespace.</p>
 <h3 id="gettypesfunctype-bool-predicate-bool-allowinitialization">GetTypes(Func&lt;Type, bool&gt; predicate, bool allowInitialization)<a class="headerlink" href="#gettypesfunctype-bool-predicate-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets all the types from the current <a href="#">AppDomain</a> where the predicate returns true.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>predicate</strong>
 The predicate where the type should apply to.</p>
 <p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>An array containing all the <a href="#">Type</a> that match the predicate.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The predicate is <code>null</code>.</p>
+The predicate is<code>null</code>.</p>
 <h3 id="gettypesimplementinginterfacetype-interfacetype">GetTypesImplementingInterface(Type interfaceType)<a class="headerlink" href="#gettypesimplementinginterfacetype-interfacetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the types implementing the specified interface.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>interfaceType</strong>
 Type of the interface.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Type[].</p>
 <h3 id="gettypesofassemblyassembly-assembly-functype-bool-predicate">GetTypesOfAssembly(Assembly assembly, Func&lt;Type, bool&gt; predicate)<a class="headerlink" href="#gettypesofassemblyassembly-assembly-functype-bool-predicate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the types of the specified assembly.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong>
 The assembly.</p>
 <p><strong>predicate</strong>
 The predicate to use on the types.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>All types of the specified assembly.</p>
-<h3 id="gettypesprefilteredbyassemblyassembly-assembly-functype-bool-predicate-bool-allowinitialization">GetTypesPrefilteredByAssembly(Assembly assembly, Func&lt;Type, bool&gt; predicate, bool allowInitialization)<a class="headerlink" href="#gettypesprefilteredbyassemblyassembly-assembly-functype-bool-predicate-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the types prefiltered by assembly. If types must be retrieved from a single assembly only, this method is very fast.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-Name of the assembly.</p>
-<p><strong>predicate</strong>
-The predicate.</p>
-<p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>System.Type[].</p>
 <h3 id="gettypewithassemblystring-typename-string-assemblyname-bool-ignorecase-bool-allowinitialization">GetTypeWithAssembly(string typeName, string assemblyName, bool ignoreCase, bool allowInitialization)<a class="headerlink" href="#gettypewithassemblystring-typename-string-assemblyname-bool-ignorecase-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the specified type from the loaded assemblies.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeName</strong>
 The name of the type including namespace.</p>
 <p><strong>assemblyName</strong>
@@ -521,84 +439,49 @@ The name of the type including namespace.</p>
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">Type</a> or <code>null</code> if the type cannot be found.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The typeName is <code>null</code> or whitespace.</p>
+The typeName is<code>null</code> or whitespace.</p>
 <h3 id="gettypewithoutassemblystring-typenamewithoutassembly-bool-ignorecase-bool-allowinitialization">GetTypeWithoutAssembly(string typeNameWithoutAssembly, bool ignoreCase, bool allowInitialization)<a class="headerlink" href="#gettypewithoutassemblystring-typenamewithoutassembly-bool-ignorecase-bool-allowinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type without assembly. For example, when the value <code>Catel.TypeHelper</code> is used as parameter, the type for
-    <code>Catel.TypeHelper, Catel.Core</code> will be returned.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Gets the type without assembly. For example, when the value<code>Catel.TypeHelper</code> is used as parameter, the type for<code>Catel.TypeHelper, Catel.Core</code> will be returned.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeNameWithoutAssembly</strong>
 The type name without assembly.</p>
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to <code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If <code>false</code>, deal with the types currently in the cache.</p>
-<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">Type</a> or <code>null</code> if the type cannot be found.</p>
+If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The typeNameWithoutAssembly is<code>null</code> or whitespace.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Note that this method can only support one type of &quot;simple type name&quot; resolving. For example, if &quot;Catel.TypeHelper&quot; is located in multiple assemblies, it will always use the latest known type for resolving the type.</p>
+<h3 id="initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(Assembly assembly, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>assembly</strong>
+The assembly to initialize the types from. If<code>null</code> , all assemblies will be checked.</p>
+<p><strong>forceFullInitialization</strong>
+If<code>true</code> , the types are initialized, even when the types are already initialized.</p>
+<p><strong>allowMultithreadedInitialization</strong>
+If<code>true</code> , allow multithreaded initialization. The default value is<code>false</code>.</p>
+<h3 id="initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(string assemblyName, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Initializes the types. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>assemblyName</strong>
+Name of the assembly. If<code>null</code> , all assemblies will be checked.</p>
+<p><strong>forceFullInitialization</strong>
+If<code>true</code> , the types are initialized, even when the types are already initialized.</p>
+<p><strong>allowMultithreadedInitialization</strong>
+If<code>true</code> , allow multithreaded initialization.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The typeNameWithoutAssembly is <code>null</code> or whitespace.</p>
-<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that this method can only support one type of &quot;simple type name&quot; resolving. For example, if &quot;Catel.TypeHelper&quot; is located in
-    multiple assemblies, it will always use the latest known type for resolving the type.</p>
-<h3 id="initializeassembliesienumerable-assemblies-bool-force-bool-allowmultithreadedinitialization">InitializeAssemblies(IEnumerable<Assembly> assemblies, bool force, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializeassembliesienumerable-assemblies-bool-force-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="initializetypeassembly-assembly-type-type">InitializeType(Assembly assembly, Type type)<a class="headerlink" href="#initializetypeassembly-assembly-type-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(Assembly assembly, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and
-    registering the type by type name and assembly name.</p>
-<pre><code>The types initialized by this method are used by GetType.
-</code></pre>
-
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-The assembly to initialize the types from. If <code>null</code>, all assemblies will be checked.</p>
-<p><strong>forceFullInitialization</strong>
-If <code>true</code>, the types are initialized, even when the types are already initialized.</p>
-<p><strong>allowMultithreadedInitialization</strong>
-If <code>true</code>, allow multithreaded initialization. The default value is <code>false</code>.</p>
-<h3 id="initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(string assemblyName, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the types. It does this by looping through all loaded assemblies and
-    registering the type by type name and assembly name.</p>
-<pre><code>The types initialized by this method are used by GetType.
-</code></pre>
-
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assemblyName</strong>
-Name of the assembly. If <code>null</code>, all assemblies will be checked.</p>
-<p><strong>forceFullInitialization</strong>
-If <code>true</code>, the types are initialized, even when the types are already initialized.</p>
-<p><strong>allowMultithreadedInitialization</strong>
-If <code>true</code>, allow multithreaded initialization.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The assemblyName is <code>null</code> or whitespace.</p>
-<h3 id="onassemblyloadedobject-sender-assemblyloadeventargs-args">OnAssemblyLoaded(object sender, AssemblyLoadEventArgs args)<a class="headerlink" href="#onassemblyloadedobject-sender-assemblyloadeventargs-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when an assembly is loaded in the current <a href="#">AppDomain</a>.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>args</strong>
-The <a href="#">AssemblyLoadEventArgs</a> instance containing the event data.</p>
-<h3 id="shouldignoreassemblyassembly-assembly">ShouldIgnoreAssembly(Assembly assembly)<a class="headerlink" href="#shouldignoreassemblyassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified assembly must be ignored by the type cache.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-The assembly.</p>
-<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the assembly should be ignored, <code>false</code> otherwise.</p>
-<h3 id="shouldignoretypeassembly-assembly-type-type">ShouldIgnoreType(Assembly assembly, Type type)<a class="headerlink" href="#shouldignoretypeassembly-assembly-type-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified type must be ignored by the type cache.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-The assembly.</p>
-<p><strong>type</strong>
-The type to check.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the type should be ignored, <code>false</code> otherwise.</p>
+The assemblyName is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

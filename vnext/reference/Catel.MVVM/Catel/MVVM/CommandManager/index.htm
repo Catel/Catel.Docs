@@ -184,15 +184,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -216,8 +210,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -237,8 +229,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -264,9 +254,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -277,9 +264,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -347,24 +331,15 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class CommandManager : ICommandManager
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\ICommandManager.htm">ICommandManager</a></p>
-<p>Manager that takes care of application-wide commands and can dynamically forward
-    them to the right view models.</p>
+<p>Manager that takes care of application-wide commands and can dynamically forward them to the right view models.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="commandgestures">_commandGestures<a class="headerlink" href="#commandgestures" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="commands">_commands<a class="headerlink" href="#commands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="lockobject">_lockObject<a class="headerlink" href="#lockobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="originalcommandgestures">_originalCommandGestures<a class="headerlink" href="#originalcommandgestures" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="subscribedtoapplicationactivedevent">_subscribedToApplicationActivedEvent<a class="headerlink" href="#subscribedtoapplicationactivedevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="subscribedviews">_subscribedViews<a class="headerlink" href="#subscribedviews" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="suspendedkeyboardevents">_suspendedKeyboardEvents<a class="headerlink" href="#suspendedkeyboardevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="commandmanager-1">CommandManager()<a class="headerlink" href="#commandmanager-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">CommandManager</a> class.</p>
@@ -376,23 +351,19 @@
 <p>Occurs when a command has been created.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="createcommandstring-commandname-inputgesture-inputgesture-icompositecommand-compositecommand-bool-throwexceptionwhencommandisalreadycreated">CreateCommand(string commandName, InputGesture inputGesture, ICompositeCommand compositeCommand, bool throwExceptionWhenCommandIsAlreadyCreated)<a class="headerlink" href="#createcommandstring-commandname-inputgesture-inputgesture-icompositecommand-compositecommand-bool-throwexceptionwhencommandisalreadycreated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates the command inside the command manager.</p>
-<pre><code>If the throwExceptionWhenCommandIsAlreadyCreated is ```false``` and the command is already created, only
-the input gesture is updated for the existing command.
-</code></pre>
-
+<p>Creates the command inside the command manager.If the throwExceptionWhenCommandIsAlreadyCreated is<code>false</code> and the command is already created, only the input gesture is updated for the existing command.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <p><strong>inputGesture</strong>
 The input gesture.</p>
 <p><strong>compositeCommand</strong>
-The composite command. If <code>null</code>, this will default to a new instance of <a href="#">CompositeCommand</a>.</p>
+The composite command. If<code>null</code> , this will default to a new instance of <a href="#">CompositeCommand</a>.</p>
 <p><strong>throwExceptionWhenCommandIsAlreadyCreated</strong>
-if set to <code>true</code>, this method will throw an exception when the command is already created.</p>
+if set to<code>true</code> , this method will throw an exception when the command is already created.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is already created using the Boolean) method.</p>
 <h3 id="executecommandstring-commandname">ExecuteCommand(string commandName)<a class="headerlink" href="#executecommandstring-commandname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -402,7 +373,7 @@ The specified command is already created using the Boolean) method.</p>
 Name of the command.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="getcommandstring-commandname">GetCommand(string commandName)<a class="headerlink" href="#getcommandstring-commandname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -411,10 +382,10 @@ The specified command is not created using the Boolean) method.</p>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">ICommand</a> or <code>null</code> if the command is not created.</p>
+<p>The <a href="#">ICommand</a> or<code>null</code> if the command is not created.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <h3 id="getcommands">GetCommands()<a class="headerlink" href="#getcommands" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets all the registered commands.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -425,7 +396,7 @@ The commandName is <code>null</code> or whitespace.</p>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The input gesture or <code>null</code> if there is no input gesture for the specified command.</p>
+<p>The input gesture or<code>null</code> if there is no input gesture for the specified command.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
@@ -435,7 +406,7 @@ The specified command is not created using the Boolean) method.</p>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The input gesture or <code>null</code> if there is no input gesture for the specified command.</p>
+<p>The input gesture or<code>null</code> if there is no input gesture for the specified command.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
@@ -447,11 +418,10 @@ The specified command is not created using the Boolean) method.</p>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified command name is created; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the specified command name is created; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
-<h3 id="onwindowloadedobject-sender-routedeventargs-e">OnWindowLoaded(object sender, RoutedEventArgs e)<a class="headerlink" href="#onwindowloadedobject-sender-routedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The commandName is<code>null</code> or whitespace.</p>
 <h3 id="registeractionstring-commandname-action-action">RegisterAction(string commandName, Action action)<a class="headerlink" href="#registeractionstring-commandname-action-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers the action with the specified command name.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -459,11 +429,11 @@ The commandName is <code>null</code> or whitespace.</p>
 Name of the command.</p>
 <p><strong>action</strong>
 The action.</p>
-<h4 id="true">Exceptions<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The action is <code>null</code>.</p>
+The action is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="registeractionstring-commandname-action-action-1">RegisterAction(string commandName, Action<object> action)<a class="headerlink" href="#registeractionstring-commandname-action-action-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -473,11 +443,11 @@ The specified command is not created using the Boolean) method.</p>
 Name of the command.</p>
 <p><strong>action</strong>
 The action.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The action is <code>null</code>.</p>
+The action is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="registercommandstring-commandname-icommand-command-iviewmodel-viewmodel">RegisterCommand(string commandName, ICommand command, IViewModel viewModel)<a class="headerlink" href="#registercommandstring-commandname-icommand-command-iviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -489,11 +459,11 @@ Name of the command.</p>
 The command.</p>
 <p><strong>viewModel</strong>
 The view model.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The command is <code>null</code>.</p>
+The command is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="resetinputgestures">ResetInputGestures()<a class="headerlink" href="#resetinputgestures" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -505,9 +475,9 @@ The specified command is not created using the Boolean) method.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>view</strong>
 The view.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The view is <code>null</code>.</p>
+The view is<code>null</code>.</p>
 <h3 id="unregisteractionstring-commandname-action-action">UnregisterAction(string commandName, Action action)<a class="headerlink" href="#unregisteractionstring-commandname-action-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters the action with the specified command name.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -515,11 +485,11 @@ The view is <code>null</code>.</p>
 Name of the command.</p>
 <p><strong>action</strong>
 The action.</p>
-<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The action is <code>null</code>.</p>
+The action is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="unregisteractionstring-commandname-action-action-1">UnregisterAction(string commandName, Action<object> action)<a class="headerlink" href="#unregisteractionstring-commandname-action-action-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -529,11 +499,11 @@ The specified command is not created using the Boolean) method.</p>
 Name of the command.</p>
 <p><strong>action</strong>
 The action.</p>
-<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The action is <code>null</code>.</p>
+The action is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="unregistercommandstring-commandname-icommand-command">UnregisterCommand(string commandName, ICommand command)<a class="headerlink" href="#unregistercommandstring-commandname-icommand-command" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -543,11 +513,11 @@ The specified command is not created using the Boolean) method.</p>
 Name of the command.</p>
 <p><strong>command</strong>
 The command.</p>
-<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The command is <code>null</code>.</p>
+The command is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 <h3 id="updateinputgesturestring-commandname-inputgesture-inputgesture">UpdateInputGesture(string commandName, InputGesture inputGesture)<a class="headerlink" href="#updateinputgesturestring-commandname-inputgesture-inputgesture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -557,9 +527,9 @@ The specified command is not created using the Boolean) method.</p>
 Name of the command.</p>
 <p><strong>inputGesture</strong>
 The new input gesture.</p>
-<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The commandName is <code>null</code> or whitespace.</p>
+The commandName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The specified command is not created using the Boolean) method.</p>
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelWrapper : IViewModelWrapper
@@ -23,8 +23,6 @@ View model wrapper class.
 
 ## Fields
 
-### _grid
-
 ## Constructors
 
 ### ViewModelWrapper(object contentToWrap)
@@ -39,15 +37,11 @@ The view model wrapper object, such as a grid.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The contentToWrap is ```null```.
+The contentToWrap is`null`.
 
 
 
 ## Methods
-
-### CreateWrapper(object viewModelWrapper)
-
-### SetViewModel(IViewModel viewModel)
 
 ### UpdateViewModel(IViewModel viewModel)
 

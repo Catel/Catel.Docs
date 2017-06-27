@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IVibrateService
@@ -25,8 +25,7 @@ Starts vibration on the device.
 #### Parameters
 
 **duration**
-A TimeSpan object specifying the amount of time, in seconds, for which the phone vibrates.
-    Valid times are between 0 and 5 seconds. Values greater than 5 or less than 0 will generate an exception.
+A TimeSpan object specifying the amount of time, in seconds, for which the phone vibrates. Valid times are between 0 and 5 seconds. Values greater than 5 or less than 0 will generate an exception.
 
 #### Exceptions
 

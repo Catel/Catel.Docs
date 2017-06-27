@@ -7,6 +7,7 @@
     "ConvertLocalLinks" : true,
     //"SourceFoldersToCopy" : ["folder1", "foldern"],
     "Footer" : "",
+    "PathSpecification": "RelativeAsFolder",
     "Pages" : 
     {
         "__index" : "index.md",

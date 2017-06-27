@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class ICommandManagerExtensions
@@ -17,8 +17,6 @@ Extension methods for the [ICommandManager](#).
 
 
 ## Fields
-
-### Log
 
 ## Methods
 
@@ -40,7 +38,7 @@ Name of the command name field.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The commandManager is ```null```.
+The commandManager is`null`.
 
 
 
@@ -63,7 +61,7 @@ Dictionary&lt;System.String, ICommand&gt;.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The commandManager is ```null```.
+The commandManager is`null`.
 
 
 

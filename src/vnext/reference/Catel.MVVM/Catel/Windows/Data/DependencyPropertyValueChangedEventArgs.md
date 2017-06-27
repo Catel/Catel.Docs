@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class DependencyPropertyValueChangedEventArgs : EventArgs
@@ -39,28 +39,6 @@ Old value.
 
 **newValue**
 New value.
-
-
-
-### DependencyPropertyValueChangedEventArgs(string propertyName, DependencyPropertyChangedEventArgs e)
-
-Initializes a new instance of the [DependencyPropertyValueChangedEventArgs](#) class.
-
-#### Parameters
-
-**propertyName**
-Name of the property.
-
-**e**
-The [DependencyPropertyChangedEventArgs](#) instance containing the event data.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
-
-**T:System.ArgumentNullException**
-The e is ```null```.
 
 
 

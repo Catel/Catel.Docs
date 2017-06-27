@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IWeakEventListener
@@ -30,7 +30,7 @@ Gets a value indicating whether the event source has not yet been garbage collec
 
 #### Remarks
 
-In case of static events, this property always returns ```false```.
+In case of static events, this property always returns`false`.
 
 
 
@@ -52,14 +52,13 @@ Gets a value indicating whether the event target has not yet been garbage collec
 
 #### Remarks
 
-In case of static event handlers, this property always returns ```false```.
+In case of static event handlers, this property always returns`false`.
 
 
 
 ### Source
 
-Gets the actual source object. This property returns ```null``` if the event is static or
-    the source is no longer alive.
+Gets the actual source object. This property returns`null` if the event is static or the source is no longer alive.
 
 
 
@@ -77,8 +76,7 @@ Gets the source weak reference.
 
 ### Target
 
-Gets the actual target object. This property returns ```null``` if the handler is static or
-    the target is no longer alive.
+Gets the actual target object. This property returns`null` if the handler is static or the target is no longer alive.
 
 
 

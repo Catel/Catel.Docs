@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -371,17 +367,13 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class PropertyHelper
 </pre><p>Property helper class.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="availableproperties">_availableProperties<a class="headerlink" href="#availableproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="expressionnamecache">_expressionNameCache<a class="headerlink" href="#expressionnamecache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="gethiddenpropertyvalueobject-obj-string-property-type-basetype">GetHiddenPropertyValue<TValue>(object obj, string property, Type baseType)<a class="headerlink" href="#gethiddenpropertyvalueobject-obj-string-property-type-basetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets hidden property value.</p>
@@ -400,9 +392,9 @@ The base Type.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:Catel.Reflection.PropertyNotFoundException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
+The property is<code>null</code> or whitespace.</p>
 <h3 id="getpropertyinfoobject-obj-string-property-bool-ignorecase">GetPropertyInfo(object obj, string property, bool ignoreCase)<a class="headerlink" href="#getpropertyinfoobject-obj-string-property-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the property info from the cache.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -411,7 +403,7 @@ The object.</p>
 <p><strong>property</strong>
 The property.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case.</p>
+if set to<code>true</code> , ignore case.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>PropertyInfo.</p>
 <h3 id="getpropertynameexpression-propertyexpression-bool-allownested">GetPropertyName(Expression propertyExpression, bool allowNested)<a class="headerlink" href="#getpropertynameexpression-propertyexpression-bool-allownested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -420,28 +412,12 @@ if set to <code>true</code>, ignore case.</p>
 <p><strong>propertyExpression</strong>
 The property expression.</p>
 <p><strong>allowNested</strong>
-If set to <code>true</code>, nested properties are allowed.</p>
+If set to<code>true</code> , nested properties are allowed.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The string representing the property name.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The propertyExpression is <code>null</code>.</p>
-<p><strong>T:System.NotSupportedException</strong>
-The specified expression is not a member access expression.</p>
-<h3 id="getpropertynameexpression-propertyexpression-bool-allownested-bool-nested">GetPropertyName(Expression propertyExpression, bool allowNested, bool nested)<a class="headerlink" href="#getpropertynameexpression-propertyexpression-bool-allownested-bool-nested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the name of the property based on the expression.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>propertyExpression</strong>
-The property expression.</p>
-<p><strong>allowNested</strong>
-If set to <code>true</code>, nested properties are allowed.</p>
-<p><strong>nested</strong>
-If set to <code>true</code>, this is a nested call.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The string representing the property name or Empty if no property can be found.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The propertyExpression is <code>null</code>.</p>
+The propertyExpression is<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
 The specified expression is not a member access expression.</p>
 <h3 id="getpropertynametmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-bool-allownested">GetPropertyName&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, bool allowNested)<a class="headerlink" href="#getpropertynametmodel-tvalueexpressionfunctmodel-tvalue-propertyexpression-bool-allownested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -451,16 +427,16 @@ The specified expression is not a member access expression.</p>
 The type of the model.</p>
 <p><strong>TValue</strong>
 The type of the value.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>propertyExpression</strong>
 The property expression.</p>
 <p><strong>allowNested</strong>
-If set to <code>true</code>, nested properties are allowed.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+If set to<code>true</code> , nested properties are allowed.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The string representing the property name.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The propertyExpression is <code>null</code>.</p>
+The propertyExpression is<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
 The specified expression is not a member access expression.</p>
 <h3 id="getpropertynameexpressionfunc-propertyexpression-bool-allownested">GetPropertyName<TValue>(Expression&lt;Func<TValue>&gt; propertyExpression, bool allowNested)<a class="headerlink" href="#getpropertynameexpressionfunc-propertyexpression-bool-allownested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -468,96 +444,96 @@ The specified expression is not a member access expression.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TValue</strong>
 The type of the value.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>propertyExpression</strong>
 The property expression.</p>
 <p><strong>allowNested</strong>
-If set to <code>true</code>, nested properties are allowed.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+If set to<code>true</code> , nested properties are allowed.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The string representing the property name.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The propertyExpression is <code>null</code>.</p>
+The propertyExpression is<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
 The specified expression is not a member access expression.</p>
 <h3 id="getpropertyvalueobject-obj-string-property-bool-ignorecase">GetPropertyValue(object obj, string property, bool ignoreCase)<a class="headerlink" href="#getpropertyvalueobject-obj-string-property-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the property value of a specific object.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The object.</p>
+<p><strong>property</strong>
+The property.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The property value or<code>null</code> if no property can be found.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:Catel.Reflection.PropertyNotFoundException</strong>
+The obj is not found or not publicly available.</p>
+<p><strong>T:Catel.Reflection.CannotGetPropertyValueException</strong>
+The property value cannot be read.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The obj is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="getpropertyvalueobject-obj-string-property-bool-ignorecase-1">GetPropertyValue<TValue>(object obj, string property, bool ignoreCase)<a class="headerlink" href="#getpropertyvalueobject-obj-string-property-bool-ignorecase-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the property value of a specific object.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
 The property.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The property value or <code>null</code> if no property can be found.</p>
+<p>The property value or<code>null</code> if no property can be found.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:Catel.Reflection.PropertyNotFoundException</strong>
-The obj is not found or not publicly available.</p>
-<p><strong>T:Catel.Reflection.CannotGetPropertyValueException</strong>
-The property value cannot be read.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="getpropertyvalueobject-obj-string-property-bool-ignorecase-1">GetPropertyValue<TValue>(object obj, string property, bool ignoreCase)<a class="headerlink" href="#getpropertyvalueobject-obj-string-property-bool-ignorecase-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the property value of a specific object.</p>
-<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>TValue</strong>
-The type of the value.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>obj</strong>
-The object.</p>
-<p><strong>property</strong>
-The property.</p>
-<p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The property value or <code>null</code> if no property can be found.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
+The property is<code>null</code> or whitespace.</p>
 <p><strong>T:Catel.Reflection.PropertyNotFoundException</strong>
 The obj is not found or not publicly available.</p>
 <p><strong>T:Catel.Reflection.CannotGetPropertyValueException</strong>
 The property value cannot be read.</p>
 <h3 id="ispropertyavailableobject-obj-string-property-bool-ignorecase">IsPropertyAvailable(object obj, string property, bool ignoreCase)<a class="headerlink" href="#ispropertyavailableobject-obj-string-property-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified property is available on the object.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The object.</p>
+<p><strong>property</strong>
+The property.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the property exists on the object type; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The obj is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="ispublicpropertyobject-obj-string-property-bool-ignorecase">IsPublicProperty(object obj, string property, bool ignoreCase)<a class="headerlink" href="#ispublicpropertyobject-obj-string-property-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified property is a public property on the specified object.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
 The property.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
 <h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the property exists on the object type; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the property is a public property on the specified object; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">IsPublicProperty(object obj, string property, bool ignoreCase)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified property is a public property on the specified object.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>obj</strong>
-The object.</p>
-<p><strong>property</strong>
-The property.</p>
-<p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
-<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the property is a public property on the specified object; otherwise, <code>false</code>.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">SetPropertyValue(object obj, string property, object value, bool ignoreCase)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="setpropertyvalueobject-obj-string-property-object-value-bool-ignorecase">SetPropertyValue(object obj, string property, object value, bool ignoreCase)<a class="headerlink" href="#setpropertyvalueobject-obj-string-property-object-value-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Sets the property value of a specific object.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
@@ -565,57 +541,74 @@ The property.</p>
 <p><strong>value</strong>
 The value.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
-<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:Catel.Reflection.PropertyNotFoundException</strong>
 The obj is not found or not publicly available.</p>
 <p><strong>T:Catel.Reflection.CannotSetPropertyValueException</strong>
 The the property value cannot be written.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
+The property is<code>null</code> or whitespace.</p>
 <h3 id="trygetpropertyvalueobject-obj-string-property-bool-ignorecase-object-value">TryGetPropertyValue(object obj, string property, bool ignoreCase, object value)<a class="headerlink" href="#trygetpropertyvalueobject-obj-string-property-bool-ignorecase-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return <code>false</code>.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return<code>false</code>.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
 The property.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
 <p><strong>value</strong>
 The value as output parameter.</p>
-<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the method succeeds; otherwise <code>false</code>.</p>
-<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the method succeeds; otherwise<code>false</code>.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">TryGetPropertyValue(object obj, string property, object value)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return <code>false</code>.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="trygetpropertyvalueobject-obj-string-property-object-value">TryGetPropertyValue(object obj, string property, object value)<a class="headerlink" href="#trygetpropertyvalueobject-obj-string-property-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return<code>false</code>.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
 The property.</p>
 <p><strong>value</strong>
 The value as output parameter.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the method succeeds; otherwise<code>false</code>.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The obj is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="trygetpropertyvalueobject-obj-string-property-bool-ignorecase-tvalue-value">TryGetPropertyValue<TValue>(object obj, string property, bool ignoreCase, TValue value)<a class="headerlink" href="#trygetpropertyvalueobject-obj-string-property-bool-ignorecase-tvalue-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return<code>false</code>.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TValue</strong>
+The type of the value.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>obj</strong>
+The object.</p>
+<p><strong>property</strong>
+The property.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
+<p><strong>value</strong>
+The value as output parameter.</p>
 <h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the method succeeds; otherwise <code>false</code>.</p>
+<p><code>true</code> if the method succeeds; otherwise<code>false</code>.</p>
 <h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">TryGetPropertyValue<TValue>(object obj, string property, bool ignoreCase, bool throwOnException, TValue value)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="trygetpropertyvalueobject-obj-string-property-bool-ignorecase-tvalue-value">TryGetPropertyValue<TValue>(object obj, string property, bool ignoreCase, TValue value)<a class="headerlink" href="#trygetpropertyvalueobject-obj-string-property-bool-ignorecase-tvalue-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return <code>false</code>.</p>
-<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="trygetpropertyvalueobject-obj-string-property-tvalue-value">TryGetPropertyValue<TValue>(object obj, string property, TValue value)<a class="headerlink" href="#trygetpropertyvalueobject-obj-string-property-tvalue-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value is set to a default value and the method will return<code>false</code>.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TValue</strong>
 The type of the value.</p>
 <h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -623,41 +616,18 @@ The type of the value.</p>
 The object.</p>
 <p><strong>property</strong>
 The property.</p>
-<p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
 <p><strong>value</strong>
 The value as output parameter.</p>
 <h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the method succeeds; otherwise <code>false</code>.</p>
+<p><code>true</code> if the method succeeds; otherwise<code>false</code>.</p>
 <h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">TryGetPropertyValue<TValue>(object obj, string property, TValue value)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to get the property value. If it fails, not exceptions will be thrown but the value
-    is set to a default value and the method will return <code>false</code>.</p>
-<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>TValue</strong>
-The type of the value.</p>
+The property is<code>null</code> or whitespace.</p>
+<h3 id="trysetpropertyvalueobject-obj-string-property-object-value-bool-ignorecase">TrySetPropertyValue(object obj, string property, object value, bool ignoreCase)<a class="headerlink" href="#trysetpropertyvalueobject-obj-string-property-object-value-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to set the property value. If it fails, no exceptions will be thrown, but<code>false</code> will be returned.</p>
 <h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>obj</strong>
-The object.</p>
-<p><strong>property</strong>
-The property.</p>
-<p><strong>value</strong>
-The value as output parameter.</p>
-<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the method succeeds; otherwise <code>false</code>.</p>
-<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">TrySetPropertyValue(object obj, string property, object value, bool ignoreCase)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to set the property value. If it fails, no exceptions will be thrown, but <code>false</code> will
-    be returned.</p>
-<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>obj</strong>
 The object.</p>
 <p><strong>property</strong>
@@ -665,15 +635,14 @@ The property.</p>
 <p><strong>value</strong>
 The value.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, ignore case when searching for the property name.</p>
-<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the method succeeds; otherwise <code>false</code>.</p>
-<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , ignore case when searching for the property name.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the method succeeds; otherwise<code>false</code>.</p>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The obj is <code>null</code>.</p>
+The obj is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The property is <code>null</code> or whitespace.</p>
-<h3 id="true">TrySetPropertyValue(object obj, string property, object value, bool ignoreCase, bool throwOnError)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The property is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

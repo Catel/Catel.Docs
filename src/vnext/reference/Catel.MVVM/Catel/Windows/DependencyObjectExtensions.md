@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class DependencyObjectExtensions
@@ -35,7 +35,7 @@ The maximum number of levels to go up when searching for the parent. If smaller 
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -54,7 +54,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -75,7 +75,7 @@ The maximum number of levels to go up when searching for the parent. If smaller 
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -94,7 +94,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -109,7 +109,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -130,7 +130,7 @@ The maximum number of levels to go up when searching for the parent. If smaller 
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -149,7 +149,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -167,7 +167,7 @@ The condition.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -185,7 +185,7 @@ The name of the element to search for.
 
 #### Returns
 
-object or ```null``` if the descendant is not found.
+object or`null` if the descendant is not found.
 
 
 
@@ -204,7 +204,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the descendant is not found.
+object or`null` if the descendant is not found.
 
 
 
@@ -219,7 +219,7 @@ The start element.
 
 #### Returns
 
-object or ```null``` if the ancestor is not found.
+object or`null` if the ancestor is not found.
 
 
 
@@ -249,12 +249,12 @@ The element to retrieve the parent from.
 
 #### Returns
 
-The parent or ```null``` if the parent could not be found.
+The parent or`null` if the parent could not be found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 
 
@@ -269,12 +269,12 @@ The element to retrieve the parent from.
 
 #### Returns
 
-The parent or ```null``` if the parent could not be found.
+The parent or`null` if the parent could not be found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The element is ```null```.
+The element is`null`.
 
 
 
@@ -292,15 +292,15 @@ The name that the name of the [DependencyObject](#) should match.
 
 #### Returns
 
-```true``` if the specified [DependencyObject](#) has the specified name; otherwise, ```false```.
+`true` if the specified [DependencyObject](#) has the specified name; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dependencyObject is ```null```.
+The dependencyObject is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 

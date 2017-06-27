@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop.Rules
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class InitializationApiCopRule : ApiCopRule
@@ -88,7 +88,7 @@ The tag.
 
 #### Returns
 
-```true``` if the specified ApiCop is valid; otherwise, ```false```.
+`true` if the specified ApiCop is valid; otherwise,`false`.
 
 #### Exceptions
 
@@ -98,8 +98,7 @@ The tag.
 
 ### SetInitializationMode(InitializationMode initializationMode, string tag)
 
-Sets the initialization model. If the value is already set, it won't be updated so it can be used without
-    checking for previous states.
+Sets the initialization model. If the value is already set, it won't be updated so it can be used without checking for previous states.
 
 #### Parameters
 

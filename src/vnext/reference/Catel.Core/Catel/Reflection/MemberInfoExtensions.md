@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class MemberInfoExtensions
@@ -18,13 +18,7 @@ Member info extensions.
 
 ## Fields
 
-### _constructorSignatureCache
-
-### _methodSignatureCache
-
 ## Methods
-
-### GetMethodBaseSignaturePrefix(MethodBase methodBase)
 
 ### GetSignature(ConstructorInfo constructorInfo)
 
@@ -42,7 +36,7 @@ The signature of the member info.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The constructorInfo is ```null```.
+The constructorInfo is`null`.
 
 
 
@@ -62,7 +56,7 @@ The signature of the member info.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The methodInfo is ```null```.
+The methodInfo is`null`.
 
 
 

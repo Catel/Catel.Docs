@@ -6,18 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Messaging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IMessageMediator
 ```
 
-The interface definition for our Message mediator. This allows loose-event coupling between components
-     in an application by sending messages to registered elements.
-     
-
-
-     This class implements the mediator pattern.
+The interface definition for our Message mediator. This allows loose-event coupling between components in an application by sending messages to registered elements.This class implements the mediator pattern.
 
 
 
@@ -25,13 +20,7 @@ The interface definition for our Message mediator. This allows loose-event coupl
 
 ### CleanUp()
 
-Cleans up the list of registered handlers. All handlers that are no longer alive
-    are removed from the list.
-    
-
-
-    This method is automatically invoked after each call to Object), but
-    can also be invoked manually.
+Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list.This method is automatically invoked after each call to Object) , but can also be invoked manually.
 
 
 
@@ -49,12 +38,12 @@ The tag.
 
 #### Returns
 
-```true``` if the message type is registered; otherwise, ```false```.
+`true` if the message type is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The messageType is ```null```.
+The messageType is`null`.
 
 
 
@@ -74,7 +63,7 @@ The tag.
 
 #### Returns
 
-```true``` if the message type is registered; otherwise, ```false```.
+`true` if the message type is registered; otherwise,`false`.
 
 
 
@@ -100,17 +89,16 @@ The message tag.
 
 #### Returns
 
-```true``` if the handler is registered successfully; otherwise ```false```.
+`true` if the handler is registered successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 #### Remarks
 
-A handler cannot be registered twice. If the same handler is already registered, this method will
-    return ```false```.
+A handler cannot be registered twice. If the same handler is already registered, this method will return`false`.
 
 
 
@@ -133,12 +121,12 @@ The message tag.
 
 #### Returns
 
-```true``` if any handlers were invoked; otherwise ```false```.
+`true` if any handlers were invoked; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 
@@ -164,17 +152,16 @@ The message tag.
 
 #### Returns
 
-```true``` if the handler is unregistered successfully; otherwise ```false```.
+`true` if the handler is unregistered successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 #### Remarks
 
-A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return ```false```.
+A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
 
 
 
@@ -192,27 +179,22 @@ The message tag.
 
 #### Returns
 
-```true``` if the handler is unregistered successfully; otherwise ```false```.
+`true` if the handler is unregistered successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The recipient is ```null```.
+The recipient is`null`.
 
 #### Remarks
 
-A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return ```false```.
+A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
 
 
 
 ### UnregisterRecipientAndIgnoreTags(object recipient)
 
-Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to. 
-    
-
-
-    This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
+Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to.This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
 
 #### Parameters
 
@@ -221,17 +203,16 @@ The recipient to unregister.
 
 #### Returns
 
-```true``` if the handler is unregistered successfully; otherwise ```false```.
+`true` if the handler is unregistered successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The recipient is ```null```.
+The recipient is`null`.
 
 #### Remarks
 
-A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return ```false```.
+A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
 
 
 

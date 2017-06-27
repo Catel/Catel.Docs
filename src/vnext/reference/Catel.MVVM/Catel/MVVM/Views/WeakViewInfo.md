@@ -6,24 +6,17 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class WeakViewInfo
 ```
 
-Class containing weak events for a [IView](#). This way it is safe to subscribe
-    to events of a [IView](#) without causing memory leaks.
+Class containing weak events for a [IView](#). This way it is safe to subscribe to events of a [IView](#) without causing memory leaks.
 
 
 
 ## Fields
-
-### _isViewLoadState
-
-### _view
-
-### Log
 
 ## Constructors
 
@@ -37,12 +30,12 @@ Initializes a new instance of the [WeakViewInfo](#) class.
 The view.
 
 **isViewLoaded**
-if set to ```true```, the view is already loaded.
+if set to`true` , the view is already loaded.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 
@@ -56,12 +49,12 @@ Initializes a new instance of the [WeakViewInfo](#) class.
 The view load state.
 
 **isViewLoaded**
-if set to ```true```, the view is already loaded.
+if set to`true` , the view is already loaded.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewLoadState is ```null```.
+The viewLoadState is`null`.
 
 
 
@@ -100,12 +93,6 @@ Occurs when the view is unloaded.
 
 
 ## Methods
-
-### Initialize(object viewObject, bool isViewLoaded)
-
-### OnLoaded()
-
-### OnUnloaded()
 
 ### OnViewLoaded(object sender, EventArgs e)
 

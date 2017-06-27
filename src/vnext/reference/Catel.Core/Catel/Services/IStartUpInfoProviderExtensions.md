@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public static class IStartUpInfoProviderExtensions
@@ -17,8 +17,6 @@ Extension methods for the startup info provider.
 
 
 ## Fields
-
-### ReplaceableCharacters
 
 ## Methods
 
@@ -38,7 +36,7 @@ The command line as string.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The startUpInfoProvider is ```null```.
+The startUpInfoProvider is`null`.
 
 
 

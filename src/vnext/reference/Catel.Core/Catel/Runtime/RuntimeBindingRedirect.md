@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class RuntimeBindingRedirect
@@ -17,12 +17,6 @@ Automatically tries to resolve different versions of already loaded assemblies (
 
 
 ## Fields
-
-### _appDomain
-
-### _attemptedLoads
-
-### Log
 
 ## Constructors
 
@@ -44,6 +38,4 @@ The application domain.
 
 
 ## Methods
-
-### OnAssemblyResolve(object sender, ResolveEventArgs args)
 

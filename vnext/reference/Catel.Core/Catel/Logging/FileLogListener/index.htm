@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -233,10 +229,6 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/BatchLogListenerBase/">BatchLogListenerBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelEventSource/">CatelEventSource</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelLog/">CatelLog</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ConsoleLogListener/">ConsoleLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/DebugLogListener/">DebugLogListener</a>
@@ -255,8 +247,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListener/">IBatchLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListenerExtensions/">IBatchLogListenerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ICatelLog/">ICatelLog</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IJsonLogFormatter/">IJsonLogFormatter</a>
 </li>
@@ -391,7 +381,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -400,15 +390,12 @@
 <a href="/Catel.Core\Catel\Logging\BatchLogListenerBase.htm">BatchLogListenerBase</a></p>
 <p>Log listener which writes all data to a file.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="assembly">_assembly<a class="headerlink" href="#assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="filepath">_filePath<a class="headerlink" href="#filepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="autologfilenamereplacement">AutoLogFileNameReplacement<a class="headerlink" href="#autologfilenamereplacement" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="fileloglistenerassembly-assembly">FileLogListener(Assembly assembly)<a class="headerlink" href="#fileloglistenerassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">FileLogListener</a> class.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong>
-The assembly to load the product info from. If <code>null</code>, the entry assembly will be used.</p>
+The assembly to load the product info from. If<code>null</code> , the entry assembly will be used.</p>
 <h3 id="fileloglistenerstring-filepath-int-maxsizeinkilobytes-assembly-assembly">FileLogListener(string filePath, int maxSizeInKiloBytes, Assembly assembly)<a class="headerlink" href="#fileloglistenerstring-filepath-int-maxsizeinkilobytes-assembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">FileLogListener</a> class.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -417,30 +404,16 @@ The file path.</p>
 <p><strong>maxSizeInKiloBytes</strong>
 The max size in kilo bytes.</p>
 <p><strong>assembly</strong>
-The assembly to load the product info from. If <code>null</code>, the entry assembly will be used.</p>
+The assembly to load the product info from. If<code>null</code> , the entry assembly will be used.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The filePath is <code>null</code> or whitespace.</p>
+The filePath is<code>null</code> or whitespace.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="filepath-1">FilePath<a class="headerlink" href="#filepath-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="filepath">FilePath<a class="headerlink" href="#filepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the file path.</p>
 <h3 id="maxsizeinkilobytes">MaxSizeInKiloBytes<a class="headerlink" href="#maxsizeinkilobytes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the maximum size information kilo bytes.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="createcopyofcurrentlogfilestring-filepath">CreateCopyOfCurrentLogFile(string filePath)<a class="headerlink" href="#createcopyofcurrentlogfilestring-filepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="determinefilepathstring-filepath">DetermineFilePath(string filePath)<a class="headerlink" href="#determinefilepathstring-filepath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines the real file path.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>filePath</strong>
-The file path to examine.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The real file path.</p>
-<h3 id="initializebool-initfilepath-assembly-assembly">Initialize(bool initFilePath, Assembly assembly)<a class="headerlink" href="#initializebool-initfilepath-assembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="writebatchasynclist-batchentries">WriteBatchAsync(List<LogBatchEntry> batchEntries)<a class="headerlink" href="#writebatchasynclist-batchentries" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the batch of entries.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>batchEntries</strong>
-The batch entries.</p>
 
                     </div>
                 </div>

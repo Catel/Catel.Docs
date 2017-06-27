@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class AssemblyHelper
@@ -18,30 +18,11 @@ Assembly helper class.
 
 ## Fields
 
-### _assemblyMappings
-
-### _lockObject
-
-### _registeredAssemblies
-
-### Log
-
-The log.
-
-
-
 ## Methods
 
 ### GetAllTypesSafely(Assembly assembly, bool logLoaderExceptions)
 
-Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadException](#) is thrown,
-    and no types are returned. In that case the user must manually get the successfully loaded types from the
-    Types.
-    
-
-
-    This method automatically loads the types. If the [ReflectionTypeLoadException](#) occurs, this method
-    will return the types that were loaded successfully.
+Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadException](#) is thrown, and no types are returned. In that case the user must manually get the successfully loaded types from the Types.This method automatically loads the types. If the [ReflectionTypeLoadException](#) occurs, this method will return the types that were loaded successfully.
 
 #### Parameters
 
@@ -49,7 +30,7 @@ Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadExcep
 The assembly.
 
 **logLoaderExceptions**
-If set to ```true```, the loader exceptions will be logged.
+If set to`true` , the loader exceptions will be logged.
 
 #### Returns
 
@@ -58,7 +39,7 @@ The array of successfully loaded types.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The assembly is ```null```.
+The assembly is`null`.
 
 
 
@@ -73,12 +54,12 @@ The assembly name without version.
 
 #### Returns
 
-The assembly name with version or ```null``` if the assembly is not found in the [AppDomain](#).
+The assembly name with version or`null` if the assembly is not found in the [AppDomain](#).
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The assemblyNameWithoutVersion is ```null``` or whitespace.
+The assemblyNameWithoutVersion is`null` or whitespace.
 
 
 
@@ -109,8 +90,7 @@ DateTime.
 
 ### GetLoadedAssemblies()
 
-Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    ```AppDomain.GetAssemblies()```.
+Gets the loaded assemblies by using the right method. For Windows applications, it uses`AppDomain.GetAssemblies()`.
 
 #### Returns
 
@@ -120,8 +100,7 @@ Gets the loaded assemblies by using the right method. For Windows applications, 
 
 ### GetLoadedAssemblies(AppDomain appDomain)
 
-Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    ```AppDomain.GetAssemblies()```.
+Gets the loaded assemblies by using the right method. For Windows applications, it uses`AppDomain.GetAssemblies()`.
 
 #### Parameters
 
@@ -136,8 +115,7 @@ The app domain to search in.
 
 ### GetLoadedAssemblies(AppDomain appDomain, bool ignoreDynamicAssemblies)
 
-Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    ```AppDomain.GetAssemblies()```.
+Gets the loaded assemblies by using the right method. For Windows applications, it uses`AppDomain.GetAssemblies()`.
 
 #### Parameters
 
@@ -145,7 +123,7 @@ Gets the loaded assemblies by using the right method. For Windows applications, 
 The app domain to search in.
 
 **ignoreDynamicAssemblies**
-if set to ```true```, dynamic assemblies are being ignored.
+if set to`true` , dynamic assemblies are being ignored.
 
 #### Returns
 
@@ -163,11 +141,7 @@ Determines whether the specified assembly is a dynamic assembly.
 
 #### Returns
 
-```true``` if the specified assembly is a dynamic assembly; otherwise, ```false```.
+`true` if the specified assembly is a dynamic assembly; otherwise,`false`.
 
 
-
-### RegisterAssemblyWithVersionInfo(Assembly assembly)
-
-### ShouldIgnoreAssembly(Assembly assembly, bool ignoreDynamicAssemblies)
 

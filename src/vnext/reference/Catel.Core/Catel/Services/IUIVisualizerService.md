@@ -6,14 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IUIVisualizerService
 ```
 
-This interface defines a UI controller which can be used to display dialogs
-    in either modal or modaless form from a ViewModel.
+This interface defines a UI controller which can be used to display dialogs in either modal or modaless form from a ViewModel.
 
 
 
@@ -30,19 +29,18 @@ The name.
 
 #### Returns
 
-```true``` if the specified name is registered; otherwise, ```false```.
+`true` if the specified name is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
 ### Register(string name, Type windowType, bool throwExceptionIfExists)
 
-Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.
+Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.
 
 #### Parameters
 
@@ -53,12 +51,12 @@ Name of the registered window.
 Type of the window.
 
 **throwExceptionIfExists**
-if set to ```true```, this method will throw an exception when already registered.
+if set to`true` , this method will throw an exception when already registered.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -72,16 +70,16 @@ Shows a window that is registered with the specified view model in a non-modal s
 The view model.
 
 **completedProc**
-The callback procedure that will be invoked as soon as the window is closed. This value can be ```null```.
+The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.
 
 #### Returns
 
-```true``` if the popup window is successfully opened; otherwise ```false```.
+`true` if the popup window is successfully opened; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 **T:Catel.Services.WindowNotRegisteredException**
 The viewModel is not registered by the Boolean) method first.
@@ -98,19 +96,19 @@ Shows a window that is registered with the specified view model in a non-modal s
 The name that the window is registered with.
 
 **data**
-The data to set as data context. If ```null```, the data context will be untouched.
+The data to set as data context. If`null` , the data context will be untouched.
 
 **completedProc**
-The callback procedure that will be invoked as soon as the window is closed. This value can be ```null```.
+The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.
 
 #### Returns
 
-```true``` if the popup window is successfully opened; otherwise ```false```.
+`true` if the popup window is successfully opened; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:Catel.Services.WindowNotRegisteredException**
 The name is not registered by the Boolean) method first.
@@ -127,7 +125,7 @@ Shows a window that is registered with the specified view model in a modal state
 The view model.
 
 **completedProc**
-The callback procedure that will be invoked as soon as the window is closed. This value can be ```null```.
+The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.
 
 #### Returns
 
@@ -136,7 +134,7 @@ Nullable boolean representing the dialog result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 **T:Catel.Services.WindowNotRegisteredException**
 The viewModel is not registered by the Boolean) method first.
@@ -153,10 +151,10 @@ Shows a window that is registered with the specified view model in a modal state
 The name that the window is registered with.
 
 **data**
-The data to set as data context. If ```null```, the data context will be untouched.
+The data to set as data context. If`null` , the data context will be untouched.
 
 **completedProc**
-The callback procedure that will be invoked as soon as the window is closed. This value can be ```null```.
+The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.
 
 #### Returns
 
@@ -165,7 +163,7 @@ Nullable boolean representing the dialog result.
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:Catel.Services.WindowNotRegisteredException**
 The name is not registered by the Boolean) method first.
@@ -183,7 +181,7 @@ Name of the registered window.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 

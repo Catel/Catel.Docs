@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -209,9 +206,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
 </li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -287,7 +281,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -296,55 +290,23 @@
 <a href="">CommandTriggerActionBase</a></p>
 <p>Class to convert a routed event to a command.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="disableassociatedobjectoncannotexecute">_disableAssociatedObjectOnCannotExecute<a class="headerlink" href="#disableassociatedobjectoncannotexecute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="disableassociatedobjectoncannotexecuteproperty">DisableAssociatedObjectOnCannotExecuteProperty<a class="headerlink" href="#disableassociatedobjectoncannotexecuteproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>DependencyProperty definition as the backing store for DisableAssociatedObjectOnCannotExecute.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="eventtocommand-1">EventToCommand()<a class="headerlink" href="#eventtocommand-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">EventToCommand</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="disableassociatedobjectoncannotexecute-1">DisableAssociatedObjectOnCannotExecute<a class="headerlink" href="#disableassociatedobjectoncannotexecute-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether the associated object should be disabled when the command
-    cannot be executed.</p>
+<h3 id="disableassociatedobjectoncannotexecute">DisableAssociatedObjectOnCannotExecute<a class="headerlink" href="#disableassociatedobjectoncannotexecute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the associated object should be disabled when the command cannot be executed.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Wrapper for the DisableAssociatedObjectOnCannotExecute dependency property.</p>
 <h3 id="passeventargstocommand">PassEventArgsToCommand<a class="headerlink" href="#passeventargstocommand" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether the <a href="#">EventArgs</a> passed to the event handler
-    should be passed to the command as well.</p>
+<p>Gets or sets a value indicating whether the <a href="#">EventArgs</a> passed to the event handler should be passed to the command as well.</p>
 <h3 id="preventinvocationifassociatedobjectisdisabled">PreventInvocationIfAssociatedObjectIsDisabled<a class="headerlink" href="#preventinvocationifassociatedobjectisdisabled" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether the invocation of the command should be prevented when the
-    AssociatedObject is disabled.</p>
-<pre><code>By default, this value is ```true.```
-
-
-This property is introduced to disable the default behavior. For example, when showing a window which will disable
-the underlying object, the command will no longer be invoked. While this is the recommended behavior in most cases,
-sometimes you just need to bypass the default functionality.
-</code></pre>
-
+<p>Gets or sets a value indicating whether the invocation of the command should be prevented when the AssociatedObject is disabled.By default, this value is<code>true.</code> This property is introduced to disable the default behavior. For example, when showing a window which will disable the underlying object, the command will no longer be invoked. While this is the recommended behavior in most cases, sometimes you just need to bypass the default functionality.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="invoke">Invoke()<a class="headerlink" href="#invoke" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Invokes the action without any parameter.</p>
-<h3 id="invokeobject-parameter">Invoke(object parameter)<a class="headerlink" href="#invokeobject-parameter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the action.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>parameter</strong>
-The parameter to the action. If the Action does not require a parameter, the parameter may be set to a null reference.</p>
-<h3 id="isassociatedobjectdisabled">IsAssociatedObjectDisabled()<a class="headerlink" href="#isassociatedobjectdisabled" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Checks whether the associated object is disabled or not.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the associated object is disabled; otherwise <code>false</code>.</p>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the associated object is loaded.</p>
-<h3 id="oncommandcanexecutechanged">OnCommandCanExecuteChanged()<a class="headerlink" href="#oncommandcanexecutechanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the <code>CanExecute</code> state of a command has changed.</p>
-<h3 id="ondisableassociatedobjectoncannotexecutechangedbool-newvalue">OnDisableAssociatedObjectOnCannotExecuteChanged(bool newValue)<a class="headerlink" href="#ondisableassociatedobjectoncannotexecutechangedbool-newvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the DisableAssociatedObjectOnCannotExecute property has changed.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>newValue</strong>
-The new value.</p>
-<h3 id="updateelementstate">UpdateElementState()<a class="headerlink" href="#updateelementstate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates the state of the associated element.</p>
 
                     </div>
                 </div>

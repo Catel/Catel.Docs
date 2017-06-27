@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelToModelMapping
@@ -15,6 +15,8 @@ public class ViewModelToModelMapping
 Model value class to store the mapping of the View Model to a Model mapping.
 
 
+
+## Fields
 
 ## Constructors
 
@@ -33,7 +35,7 @@ The [ViewModelToModelAttribute](#) that was used to define the mapping.
 #### Exceptions
 
 **T:System.ArgumentException**
-The viewModelProperty is ```null``` or whitespace.
+The viewModelProperty is`null` or whitespace.
 
 
 
@@ -66,7 +68,7 @@ Constructor args
 #### Exceptions
 
 **T:System.ArgumentException**
-The viewModelProperty is ```null``` or whitespace.
+The viewModelProperty is`null` or whitespace.
 
 
 
@@ -74,21 +76,19 @@ The viewModelProperty is ```null``` or whitespace.
 
 ### Converter
 
-Gets the converter.
-    
-
-
-    The default value is TwoWay.
+Gets the converter.The default value is TwoWay.
 
 
 
 ### ConverterType
 
-Gets the type of the converter.
-    
+Gets the type of the converter.The default value is TwoWay.
 
 
-    The default value is TwoWay.
+
+### IgnoredProperties
+
+Gets the ignored properties.
 
 
 

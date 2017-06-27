@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class Registration : ConfigurationElement
@@ -21,34 +21,6 @@ The registration element.
 
 
 ## Fields
-
-### ImplementationTypePropertyName
-implementationType
-
-The implementation type property name.
-
-
-
-### InterfaceTypePropertyName
-interfaceType
-
-The interface type property name.
-
-
-
-### RegistrationTypePropertyName
-registrationType
-
-The registration type property name.
-
-
-
-### TagPropertyName
-tag
-
-The registration tag property name.
-
-
 
 ## Properties
 

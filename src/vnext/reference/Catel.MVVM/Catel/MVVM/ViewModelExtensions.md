@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ViewModelExtensions
@@ -18,36 +18,9 @@ Extension methods for view model classes.
 
 ## Methods
 
-### GetNestedValidationContext(ViewModelBase viewModel, bool recursive)
-
-Gets the nested validation context. If recursive is ```true```, the validation context returned
-    will include all validation from all registered children.
-
-#### Parameters
-
-**viewModel**
-The view model.
-
-**recursive**
-If set to ```true```, the validation context will be merged with all children.
-
-#### Returns
-
-A combined [IValidationContext](#) of all the child view models and the viewModel itself.
-
-#### Remarks
-
-This method does not check for arguments for performance reasons and because it's private.
-
-
-
 ### GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations)
 
-Gets the validation summary for the specified viewModel and, if specified, the children as well.
-    
-
-
-    This method does not filter on any tag.
+Gets the validation summary for the specified viewModel and, if specified, the children as well.This method does not filter on any tag.
 
 #### Parameters
 
@@ -55,7 +28,7 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 The view model.
 
 **includeChildViewModelValidations**
-If set to ```true```, all validation from all child view models should be gathered as well.
+If set to`true` , all validation from all child view models should be gathered as well.
 
 #### Returns
 
@@ -64,17 +37,13 @@ The validation summary.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
 ### GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations, object tag)
 
-Gets the validation summary for the specified viewModel and, if specified, the children as well.
-    
-
-
-    This method also filters on the specified tag.
+Gets the validation summary for the specified viewModel and, if specified, the children as well.This method also filters on the specified tag.
 
 #### Parameters
 
@@ -82,7 +51,7 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 The view model.
 
 **includeChildViewModelValidations**
-If set to ```true```, all validation from all child view models should be gathered as well.
+If set to`true` , all validation from all child view models should be gathered as well.
 
 **tag**
 The tag.
@@ -94,7 +63,7 @@ The validation summary.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -114,7 +83,7 @@ IViewModelCommandManager.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -131,16 +100,16 @@ The view model.
 The last updated ticks.
 
 **includeChildViewModelValidations**
-If set to ```true```, all validation from all child view models should be gathered as well.
+If set to`true` , all validation from all child view models should be gathered as well.
 
 #### Returns
 
-```true``` if the validation summary is outdated; otherwise, ```false```.
+`true` if the validation summary is outdated; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 

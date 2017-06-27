@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -209,9 +206,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
 </li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -287,22 +281,15 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps)</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps)</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class AutoCompletion : BehaviorBase&lt;TextBox&gt;
 </pre><p><strong>Base types</strong>
 <a href="">BehaviorBase</a></p>
-<p>Auto complete behavior to support auto complete on a <code>TextBox</code> control.</p>
+<p>Auto complete behavior to support auto complete on a<code>TextBox</code> control.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="autocompletionservice">_autoCompletionService<a class="headerlink" href="#autocompletionservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="availablesuggestions">_availableSuggestions<a class="headerlink" href="#availablesuggestions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="isupdatingassociatedobject">_isUpdatingAssociatedObject<a class="headerlink" href="#isupdatingassociatedobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="popup">_popup<a class="headerlink" href="#popup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="subscribed">_subscribed<a class="headerlink" href="#subscribed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="suggestionlistbox">_suggestionListBox<a class="headerlink" href="#suggestionlistbox" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="valueatsuggestionboxopen">_valueAtSuggestionBoxOpen<a class="headerlink" href="#valueatsuggestionboxopen" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="itemssourceproperty">ItemsSourceProperty<a class="headerlink" href="#itemssourceproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The items source property.</p>
 <h3 id="propertynameproperty">PropertyNameProperty<a class="headerlink" href="#propertynameproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -318,31 +305,8 @@
 <h3 id="propertyname">PropertyName<a class="headerlink" href="#propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the name of the property.</p>
 <h3 id="useautocompletionservice">UseAutoCompletionService<a class="headerlink" href="#useautocompletionservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether this behavior should use the auto completion service to filter the items source.</p>
-<pre><code>If this value is set to ```false```, it will show the ItemsSource as auto completion source without filtering.
-
-
-
-The default value is ```true```.
-</code></pre>
-
+<p>Gets or sets a value indicating whether this behavior should use the auto completion service to filter the items source.If this value is set to<code>false</code> , it will show the ItemsSource as auto completion source without filtering.The default value is<code>true</code>.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the associated object is loaded.</p>
-<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()<a class="headerlink" href="#onassociatedobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the associated object is unloaded.</p>
-<h3 id="onisenabledchanged">OnIsEnabledChanged()<a class="headerlink" href="#onisenabledchanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the is enabled property has changed.</p>
-<h3 id="onitemssourcechanged">OnItemsSourceChanged()<a class="headerlink" href="#onitemssourcechanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onpreviewkeydownobject-sender-keyeventargs-e">OnPreviewKeyDown(object sender, KeyEventArgs e)<a class="headerlink" href="#onpreviewkeydownobject-sender-keyeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onpropertynamechanged">OnPropertyNameChanged()<a class="headerlink" href="#onpropertynamechanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onsuggestionlistboxmouseleftbuttonupobject-sender-mousebuttoneventargs-e">OnSuggestionListBoxMouseLeftButtonUp(object sender, MouseButtonEventArgs e)<a class="headerlink" href="#onsuggestionlistboxmouseleftbuttonupobject-sender-mousebuttoneventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onsuggestionlistboxselectionchangedobject-sender-selectionchangedeventargs-e">OnSuggestionListBoxSelectionChanged(object sender, SelectionChangedEventArgs e)<a class="headerlink" href="#onsuggestionlistboxselectionchangedobject-sender-selectionchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="ontextchangedobject-sender-textchangedeventargs-e">OnTextChanged(object sender, TextChangedEventArgs e)<a class="headerlink" href="#ontextchangedobject-sender-textchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="subscribeevents">SubscribeEvents()<a class="headerlink" href="#subscribeevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="unsubscribeevents">UnsubscribeEvents()<a class="headerlink" href="#unsubscribeevents" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="updatesuggestionboxbool-isvisible">UpdateSuggestionBox(bool isVisible)<a class="headerlink" href="#updatesuggestionboxbool-isvisible" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="updatesuggestions">UpdateSuggestions()<a class="headerlink" href="#updatesuggestions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 
                     </div>
                 </div>

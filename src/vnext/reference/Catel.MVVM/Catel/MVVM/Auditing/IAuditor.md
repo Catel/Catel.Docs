@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Auditing
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IAuditor
@@ -60,23 +60,6 @@ Name of the property.
 
 **newValue**
 The new property value.
-
-
-
-### OnPropertyChanging(IViewModel viewModel, string propertyName, object oldValue)
-
-Called when the property of a view model is about to change.
-
-#### Parameters
-
-**viewModel**
-The view model.
-
-**propertyName**
-Name of the property.
-
-**oldValue**
-The old property value.
 
 
 

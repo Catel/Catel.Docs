@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewModelWrapperService
@@ -29,12 +29,12 @@ The view.
 
 #### Returns
 
-```true``` if the specified view is already wrapped; otherwise, ```false```.
+`true` if the specified view is already wrapped; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 
@@ -48,7 +48,7 @@ Wraps the specified view.
 The view.
 
 **viewModelSource**
-The view model source containing the ```ViewModel``` property.
+The view model source containing the`ViewModel` property.
 
 **wrapOptions**
 The wrap options.
@@ -60,7 +60,7 @@ The [IViewModelWrapper](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 

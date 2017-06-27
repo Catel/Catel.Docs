@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IFluent
@@ -16,9 +16,7 @@ Interface that is used to build fluent interfaces and hides methods declared by 
 
 #### Remarks
 
-Code that consumes implementations of this interface should expect one of two things:
-    
-    See http://bit.ly/ifluentinterface for more information.
+Code that consumes implementations of this interface should expect one of two things: See http://bit.ly/ifluentinterface for more information.
 
 
 
@@ -35,7 +33,7 @@ The [Object](#) to compare with this instance.
 
 #### Returns
 
-```true``` if the specified [Object](#) is equal to this instance; otherwise, ```false```.
+`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
 
 
 

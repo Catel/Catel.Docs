@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Caching.Policies
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ExpirationPolicy
@@ -18,20 +18,7 @@ The expiration policy.
 
 ## Fields
 
-### Log
-
 ## Constructors
-
-### ExpirationPolicy(bool canReset)
-
-Initializes a new instance of the [ExpirationPolicy](#) class.
-
-#### Parameters
-
-**canReset**
-The can reset.
-
-
 
 ## Properties
 
@@ -44,12 +31,6 @@ Gets a value indicating whether the value with this policy can be reset.
 ### IsExpired
 
 Gets a value indicating whether the value with this policy attached is expired.
-
-
-
-### IsResting
-
-Gets a value indicating whether is resting.
 
 
 
@@ -69,7 +50,7 @@ Indicates whether the policy will be created even if the policy will be created 
 
 #### Returns
 
-The [AbsoluteExpirationPolicy](#) or ```null``` if absoluteExpirationDateTime is in the pass.
+The [AbsoluteExpirationPolicy](#) or`null` if absoluteExpirationDateTime is in the pass.
 
 #### Remarks
 
@@ -99,7 +80,7 @@ The [CustomExpirationPolicy](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The isExpiredFunc is ```null```.
+The isExpiredFunc is`null`.
 
 
 
@@ -117,17 +98,11 @@ Indicates whether the policy will be created even if the policy will be created 
 
 #### Returns
 
-The [DurationExpirationPolicy](#) or ```null``` if durationTimeSpan is less than 0 ticks.
+The [DurationExpirationPolicy](#) or`null` if durationTimeSpan is less than 0 ticks.
 
 #### Remarks
 
 The cache item will expire using the duration to calculate the absolute expiration from now.
-
-
-
-### OnReset()
-
-Called when the policy is resetting.
 
 
 
@@ -156,7 +131,7 @@ Indicates whether the policy will be created even if the policy will be created 
 
 #### Returns
 
-The [SlidingExpirationPolicy](#) or ```null``` if durationTimeSpan is less than 0 ticks.
+The [SlidingExpirationPolicy](#) or`null` if durationTimeSpan is less than 0 ticks.
 
 #### Remarks
 

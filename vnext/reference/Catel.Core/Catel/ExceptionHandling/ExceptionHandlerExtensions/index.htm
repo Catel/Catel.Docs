@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -232,8 +228,6 @@
 <ul class="currentrelative">
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionInheritanceComparer/">ExceptionInheritanceComparer</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionPredicate/">ExceptionPredicate</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionHandling/ExceptionService/">ExceptionService</a>
@@ -358,7 +352,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -376,9 +370,9 @@ The number of times to attempts.</p>
 The interval between two attempts.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exceptionHandler is <code>null</code>.</p>
+The exceptionHandler is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
-The numberOfTimes is larger than <code>1</code>.</p>
+The numberOfTimes is larger than<code>1</code>.</p>
 <h3 id="onerrorretryimmediatelyiexceptionhandler-exceptionhandler-int-numberoftimes">OnErrorRetryImmediately(IExceptionHandler exceptionHandler, int numberOfTimes)<a class="headerlink" href="#onerrorretryimmediatelyiexceptionhandler-exceptionhandler-int-numberoftimes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Should retry action on error immediately.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -388,9 +382,9 @@ The exception handler.</p>
 The number of times.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exceptionHandler is <code>null</code>.</p>
+The exceptionHandler is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
-The numberOfTimes is larger than <code>1</code>.</p>
+The numberOfTimes is larger than<code>1</code>.</p>
 <h3 id="usingtoleranceiexceptionhandler-exceptionhandler-int-numberoftimes-timespan-interval">UsingTolerance(IExceptionHandler exceptionHandler, int numberOfTimes, TimeSpan interval)<a class="headerlink" href="#usingtoleranceiexceptionhandler-exceptionhandler-int-numberoftimes-timespan-interval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Should buffer the exceptions using the specified policy tolerance.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -402,7 +396,7 @@ The number of times before handling the exception.</p>
 The interval.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exceptionHandler is <code>null</code>.</p>
+The exceptionHandler is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
 The numberOfTimes is out of range.</p>
 

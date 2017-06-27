@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -205,8 +201,6 @@
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/Caching/">Caching</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Caching/CacheStorage/">CacheStorage</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Caching/CacheStorageValueInfo/">CacheStorageValueInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Caching/ExpiredEventArgs/">ExpiredEventArgs</a>
 </li>
@@ -341,7 +335,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -356,10 +350,7 @@ The value type.</p>
 <h3 id="disposevaluesonremoval">DisposeValuesOnRemoval<a class="headerlink" href="#disposevaluesonremoval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets whether values should be disposed on removal.</p>
 <h3 id="expirationtimerinterval">ExpirationTimerInterval<a class="headerlink" href="#expirationtimerinterval" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the expiration timer interval.</p>
-<pre><code>The default value is ```TimeSpan.FromSeconds(1)```.
-</code></pre>
-
+<p>Gets or sets the expiration timer interval.The default value is<code>TimeSpan.FromSeconds(1)</code>.</p>
 <h3 id="keys">Keys<a class="headerlink" href="#keys" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the keys so it is possible to enumerate the cache.</p>
 <h3 id="this">this[]<a class="headerlink" href="#this" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -371,7 +362,7 @@ The key.</p>
 <p>The value associated with the specified key, or default value for the type of the value if the key do not exists.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="expired">Expired<a class="headerlink" href="#expired" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Occurs when the item has expired.</p>
@@ -391,7 +382,7 @@ The expiration policy</p>
 Indicates if the key exists the value will be overridden.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 <h3 id="addtkey-key-tvalue-value-bool-override-timespan-expiration">Add(TKey key, TValue value, bool override, TimeSpan expiration)<a class="headerlink" href="#addtkey-key-tvalue-value-bool-override-timespan-expiration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Adds a value to the cache associated with to a key.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -405,7 +396,7 @@ Indicates if the key exists the value will be overridden.</p>
 The timespan in which the cache item should expire when added.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 <h3 id="clear">Clear()<a class="headerlink" href="#clear" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Clears all the items currently in the cache.</p>
 <h3 id="containstkey-key">Contains(TKey key)<a class="headerlink" href="#containstkey-key" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -414,23 +405,23 @@ The key is <code>null</code>.</p>
 <p><strong>key</strong>
 The key.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the cache contains an element with the specified key; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the cache contains an element with the specified key; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 <h3 id="gettkey-key">Get(TKey key)<a class="headerlink" href="#gettkey-key" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the value associated with the specified key</p>
-<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key of the value to get.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The value associated with the specified key, or default value for the type of the value if the key do not exists.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 <h3 id="getfromcacheorfetchtkey-key-func-code-expirationpolicy-expirationpolicy-bool-override">GetFromCacheOrFetch(TKey key, Func<TValue> code, ExpirationPolicy expirationPolicy, bool override)<a class="headerlink" href="#getfromcacheorfetchtkey-key-func-code-expirationpolicy-expirationpolicy-bool-override" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Adds a value to the cache associated with to a key.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key.</p>
 <p><strong>code</strong>
@@ -443,10 +434,10 @@ Indicates if the key exists the value will be overridden</p>
 <p>The instance initialized by the code.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-If key is <code>null</code>.</p>
+If key is<code>null</code>.</p>
 <h3 id="getfromcacheorfetchtkey-key-func-code-bool-override-timespan-expiration">GetFromCacheOrFetch(TKey key, Func<TValue> code, bool override, TimeSpan expiration)<a class="headerlink" href="#getfromcacheorfetchtkey-key-func-code-bool-override-timespan-expiration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Adds a value to the cache associated with to a key.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key.</p>
 <p><strong>code</strong>
@@ -459,13 +450,10 @@ The timespan in which the cache item should expire when added.</p>
 <p>The instance initialized by the code.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-If key is <code>null</code>.</p>
+If key is<code>null</code>.</p>
 <h3 id="getfromcacheorfetchasynctkey-key-functask-code-expirationpolicy-expirationpolicy-bool-override">GetFromCacheOrFetchAsync(TKey key, Func&lt;Task<TValue>&gt; code, ExpirationPolicy expirationPolicy, bool override)<a class="headerlink" href="#getfromcacheorfetchasynctkey-key-functask-code-expirationpolicy-expirationpolicy-bool-override" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds a value to the cache associated with to a key asynchronously.</p>
-<pre><code>Note that this is a wrapper around Boolean).
-</code></pre>
-
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around Boolean).</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key.</p>
 <p><strong>code</strong>
@@ -478,13 +466,10 @@ Indicates if the key exists the value will be overridden.</p>
 <p>The instance initialized by the code.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-If key is <code>null</code>.</p>
+If key is<code>null</code>.</p>
 <h3 id="getfromcacheorfetchasynctkey-key-functask-code-bool-override-timespan-expiration">GetFromCacheOrFetchAsync(TKey key, Func&lt;Task<TValue>&gt; code, bool override, TimeSpan expiration)<a class="headerlink" href="#getfromcacheorfetchasynctkey-key-functask-code-bool-override-timespan-expiration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds a value to the cache associated with to a key asynchronously.</p>
-<pre><code>Note that this is a wrapper around TimeSpan).
-</code></pre>
-
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around TimeSpan).</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key.</p>
 <p><strong>code</strong>
@@ -497,17 +482,17 @@ The timespan in which the cache item should expire when added.</p>
 <p>The instance initialized by the code.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-If key is <code>null</code>.</p>
+If key is<code>null</code>.</p>
 <h3 id="removetkey-key-action-action">Remove(TKey key, Action action)<a class="headerlink" href="#removetkey-key-action-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Removes an item from the cache.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>key</strong>
 The key.</p>
 <p><strong>action</strong>
 The action that need to be executed in synchronization with the item cache removal.</p>
 <h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The key is <code>null</code>.</p>
+The key is<code>null</code>.</p>
 
                     </div>
                 </div>

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISchedulerService
@@ -33,7 +33,7 @@ The date time.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The dateTime is in the past.
@@ -55,7 +55,7 @@ The time span.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The timeSpan is in the past.

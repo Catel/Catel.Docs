@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -209,9 +206,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
 </li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -287,72 +281,36 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class Focus : FocusBehaviorBase
 </pre><p><strong>Base types</strong>
 <a href="/Catel.MVVM\Catel\Windows\Interactivity\FocusBehaviorBase.htm">FocusBehaviorBase</a></p>
-<p>Behavior to set focus to a <a href="#">FrameworkElement</a>. This behavior sets the focus
-    only once on the first time the AssociatedObject is loaded.</p>
+<p>Behavior to set focus to a <a href="#">FrameworkElement</a>. This behavior sets the focus only once on the first time the AssociatedObject is loaded.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="weakeventlistener">_weakEventListener<a class="headerlink" href="#weakeventlistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="eventnameproperty">EventNameProperty<a class="headerlink" href="#eventnameproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Using a DependencyProperty as the backing store for EventName.  This enables animation, styling, binding, etc...</p>
+<p>Using a DependencyProperty as the backing store for EventName. This enables animation, styling, binding, etc...</p>
 <h3 id="focusmomentproperty">FocusMomentProperty<a class="headerlink" href="#focusmomentproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Using a DependencyProperty as the backing store for FocusMoment.  This enables animation, styling, binding, etc...</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
+<p>Using a DependencyProperty as the backing store for FocusMoment. This enables animation, styling, binding, etc...</p>
 <h3 id="propertynameproperty">PropertyNameProperty<a class="headerlink" href="#propertynameproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Using a DependencyProperty as the backing store for PropertyName.  This enables animation, styling, binding, etc...</p>
+<p>Using a DependencyProperty as the backing store for PropertyName. This enables animation, styling, binding, etc...</p>
 <h3 id="sourceproperty">SourceProperty<a class="headerlink" href="#sourceproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Using a DependencyProperty as the backing store for Source.  This enables animation, styling, binding, etc...</p>
+<p>Using a DependencyProperty as the backing store for Source. This enables animation, styling, binding, etc...</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="focus-1">Focus()<a class="headerlink" href="#focus-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">Focus</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="eventname">EventName<a class="headerlink" href="#eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the name of the event. This value is required when the FocusMoment property is 
-    Event.</p>
+<p>Gets or sets the name of the event. This value is required when the FocusMoment property is Event.</p>
 <h3 id="focusmoment">FocusMoment<a class="headerlink" href="#focusmoment" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the focus moment.</p>
-<pre><code>When this value is Loaded, no other properties need to be set.
-
-
-
-When this value is PropertyChanged, both the Source and 
-PropertyName must be set.
-
-
-
-When this value is Event, both the Source and 
-EventName must be set.
-</code></pre>
-
+<p>Gets or sets the focus moment.When this value is Loaded , no other properties need to be set.When this value is PropertyChanged , both the Source and PropertyName must be set.When this value is Event , both the Source and EventName must be set.</p>
 <h3 id="propertyname">PropertyName<a class="headerlink" href="#propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the name of the property. This value is required when the FocusMoment property is 
-    PropertyChanged.</p>
+<p>Gets or sets the name of the property. This value is required when the FocusMoment property is PropertyChanged.</p>
 <h3 id="source">Source<a class="headerlink" href="#source" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the source. This value is required when the FocusMoment property is either 
-    PropertyChanged or Event.</p>
+<p>Gets or sets the source. This value is required when the FocusMoment property is either PropertyChanged or Event.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject is loaded.</p>
-<h3 id="onsourcechangeddependencypropertychangedeventargs-e">OnSourceChanged(DependencyPropertyChangedEventArgs e)<a class="headerlink" href="#onsourcechangeddependencypropertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the source has changed.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>e</strong>
-The <a href="#">DependencyPropertyChangedEventArgs</a> instance containing the event data.</p>
-<h3 id="onsourceeventoccurred">OnSourceEventOccurred()<a class="headerlink" href="#onsourceeventoccurred" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the event on the Source has occurred.</p>
-<h3 id="onsourcepropertychangedobject-sender-propertychangedeventargs-e">OnSourcePropertyChanged(object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#onsourcepropertychangedobject-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when a property on the Source has changed.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
 
                     </div>
                 </div>

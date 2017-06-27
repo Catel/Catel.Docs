@@ -26,26 +26,13 @@ The content page.
 
 ## Fields
 
-### _viewManager
-
-The view mananger.
-
-
-
 ## Constructors
-
-### ContentView()
-
-Initializes a new instance of the [ContentView](#) class.
-
-
 
 ## Properties
 
 ### BindingContext
 
-Gets or sets object that contains the properties that will be targeted by the bound properties that belong to this
-        [BindableObject](#).
+Gets or sets object that contains the properties that will be targeted by the bound properties that belong to this [BindableObject](#).
 
 #### Examples
 
@@ -109,40 +96,4 @@ Occurs when the view model has changed.
 
 
 ## Methods
-
-### EnsureParentChildRelationship(object dataContext)
-
-Ensures the parent-child relationship.
-
-#### Parameters
-
-**dataContext**
-
-
-
-### FindParentViewModel()
-
-Finds the parent viewmodel.
-
-#### Returns
-
-The parent viewmodel.
-
-
-
-### OnDataContextChanged(object sender, DataContextChangedEventArgs dataContextChangedEventArgs)
-
-#### Parameters
-
-**sender**
-
-**dataContextChangedEventArgs**
-
-
-
-### RemoveParentChildRelationship()
-
-Removes the parent-child relationship
-
-
 

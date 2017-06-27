@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewLoadManager : IViewLoadManager
@@ -17,33 +17,13 @@ public class ViewLoadManager : IViewLoadManager
 [IViewLoadManager](/Catel.MVVM\Catel\MVVM\Views\IViewLoadManager.md)
 
 
-Manager that handles top =&gt; bottom loaded events for all views inside an application.
-    
+Manager that handles top =&gt; bottom loaded events for all views inside an application.The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.This manager subscribes to both the`Loaded` and`LayoutUpdated` events. This is because in a nested scenario this will happen:```
 
-
-    The reason this class is built is that in non-WPF technologies, the visual tree is loaded from
-    bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.
-    
-
-
-    This manager subscribes to both the ```Loaded``` and ```LayoutUpdated```
-    events. This is because in a nested scenario this will happen:
-    
-
-```
-
-```
-    Will be executed in the following order:
+``` Will be executed in the following order:
 
 
 
 ## Fields
-
-### _cleanUpTimer
-
-### _lastInvokedViewLoadStateEvent
-
-### _views
 
 ## Constructors
 
@@ -93,7 +73,7 @@ The view load state.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewLoadState is ```null```.
+The viewLoadState is`null`.
 
 
 
@@ -102,31 +82,4 @@ The viewLoadState is ```null```.
 Cleans up the dead links.
 
 
-
-### InvokeViewLoadEvent(IView view, ViewLoadStateEvent viewLoadStateEvent)
-
-Invokes the specific view load event and makes sure that it isn't double invoked.
-
-#### Parameters
-
-**view**
-The view.
-
-**viewLoadStateEvent**
-The view load state event.
-
-#### Exceptions
-
-**T:System.ArgumentOutOfRangeException**
-viewLoadStateEvent
-
-
-
-### OnViewInfoLoaded(object sender, EventArgs e)
-
-### OnViewInfoUnloaded(object sender, EventArgs e)
-
-### RaiseLoaded(IView view)
-
-### RaiseUnloaded(IView view)
 

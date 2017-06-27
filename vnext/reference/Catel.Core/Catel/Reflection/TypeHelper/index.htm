@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -373,22 +369,16 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class TypeHelper
 </pre><p><a href="#">Type</a> helper class.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="microsoftpublickeytokens">_microsoftPublicKeyTokens<a class="headerlink" href="#microsoftpublickeytokens" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>A list of microsoft public key tokens.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="typehelper-1">TypeHelper()<a class="headerlink" href="#typehelper-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">Object</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="microsoftpublickeytokens-1">MicrosoftPublicKeyTokens<a class="headerlink" href="#microsoftpublickeytokens-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="microsoftpublickeytokens">MicrosoftPublicKeyTokens<a class="headerlink" href="#microsoftpublickeytokens" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the Microsoft public key tokens.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="casttinput-toutputtinput-value">Cast&lt;TInput, TOutput&gt;(TInput value)<a class="headerlink" href="#casttinput-toutputtinput-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -433,19 +423,19 @@ The value to cast.</p>
 <p><strong>type</strong>
 Type to convert.</p>
 <p><strong>stripAssemblies</strong>
-if set to <code>true</code>, the assembly names will be stripped as well.</p>
+if set to<code>true</code> , the assembly names will be stripped as well.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>String representing the type without version information.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The type is <code>null</code> or whitespace.</p>
+The type is<code>null</code> or whitespace.</p>
 <h3 id="formatinnertypesstring-innertypes-bool-stripassemblies">FormatInnerTypes(string[] innerTypes, bool stripAssemblies)<a class="headerlink" href="#formatinnertypesstring-innertypes-bool-stripassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Formats multiple inner types into one string.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>innerTypes</strong>
 The inner types.</p>
 <p><strong>stripAssemblies</strong>
-if set to <code>true</code>, the assembly names will be stripped as well.</p>
+if set to<code>true</code> , the assembly names will be stripped as well.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>string representing a combination of all inner types.</p>
 <h3 id="formattypestring-assembly-string-type">FormatType(string assembly, string type)<a class="headerlink" href="#formattypestring-assembly-string-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -459,17 +449,17 @@ Type name to format.</p>
 <p>Type name like [typename], [assemblyname].</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The assembly is <code>null</code> or whitespace.</p>
+The assembly is<code>null</code> or whitespace.</p>
 <h3 id="getassemblynamestring-fulltypename">GetAssemblyName(string fullTypeName)<a class="headerlink" href="#getassemblynamestring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the name of the assembly.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>fullTypeName</strong>
-Full name of the type, for example <code>Catel.TypeHelper, Catel.Core</code>.</p>
+Full name of the type, for example<code>Catel.TypeHelper, Catel.Core</code>.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The assembly name retrieved from the type, for example <code>Catel.Core</code> or <code>null</code> if the assembly is not contained by the type.</p>
+<p>The assembly name retrieved from the type, for example<code>Catel.Core</code> or<code>null</code> if the assembly is not contained by the type.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullTypeName is <code>null</code> or whitespace.</p>
+The fullTypeName is<code>null</code> or whitespace.</p>
 <h3 id="getassemblynamewithoutoverheadstring-fullyqualifiedassemblyname">GetAssemblyNameWithoutOverhead(string fullyQualifiedAssemblyName)<a class="headerlink" href="#getassemblynamewithoutoverheadstring-fullyqualifiedassemblyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the assembly name without overhead (version, public keytoken, etc)</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -479,7 +469,7 @@ Name of the fully qualified assembly.</p>
 <p>The assembly without the overhead.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullyQualifiedAssemblyName is <code>null</code> or whitespace.</p>
+The fullyQualifiedAssemblyName is<code>null</code> or whitespace.</p>
 <h3 id="getinnertypesstring-type">GetInnerTypes(string type)<a class="headerlink" href="#getinnertypesstring-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Returns the inner type of a type, for example, a generic array type.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -489,7 +479,7 @@ Full type which might contain an inner type.</p>
 <p>Array of inner types.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The type is <code>null</code> or whitespace.</p>
+The type is<code>null</code> or whitespace.</p>
 <h3 id="gettypedinstanceobject-instance">GetTypedInstance<TTargetType>(object instance)<a class="headerlink" href="#gettypedinstanceobject-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the typed instance based on the specified instance.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -504,66 +494,56 @@ The instance cannot be casted to TTargetType.</p>
 <p>Gets the name of the type without the assembly but including the namespace.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>fullTypeName</strong>
-Full name of the type, for example <code>Catel.TypeHelper, Catel.Core</code>.</p>
+Full name of the type, for example<code>Catel.TypeHelper, Catel.Core</code>.</p>
 <h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The type name retrieved from the type, for example <code>Catel.TypeHelper</code>.</p>
+<p>The type name retrieved from the type, for example<code>Catel.TypeHelper</code>.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullTypeName is <code>null</code> or whitespace.</p>
+The fullTypeName is<code>null</code> or whitespace.</p>
 <h3 id="gettypenamespacestring-fulltypename">GetTypeNamespace(string fullTypeName)<a class="headerlink" href="#gettypenamespacestring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the type namespace.</p>
 <h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>fullTypeName</strong>
-Full name of the type, for example <code>Catel.TypeHelper, Catel.Core</code>.</p>
+Full name of the type, for example<code>Catel.TypeHelper, Catel.Core</code>.</p>
 <h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The type namespace retrieved from the type, for example <code>Catel</code>.</p>
+<p>The type namespace retrieved from the type, for example<code>Catel</code>.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullTypeName is <code>null</code> or whitespace.</p>
+The fullTypeName is<code>null</code> or whitespace.</p>
 <h3 id="gettypenamewithassemblystring-fulltypename">GetTypeNameWithAssembly(string fullTypeName)<a class="headerlink" href="#gettypenamewithassemblystring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type name with assembly, but without the fully qualified assembly name. For example, this method provides
-    the string:</p>
-<p><code>Catel.TypeHelper, Catel.Core, Version=1.0.0.0, PublicKeyToken=123456789</code></p>
-<pre><code>and will return:
-</code></pre>
-
-<p><code>Catel.TypeHelper, Catel.Core</code></p>
-<h4 id="Catel">Parameters<a class="headerlink" href="#Catel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Gets the type name with assembly, but without the fully qualified assembly name. For example, this method provides the string:<code>Catel.TypeHelper, Catel.Core, Version=1.0.0.0, PublicKeyToken=123456789</code> and will return:<code>Catel.TypeHelper, Catel.Core</code></p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>fullTypeName</strong>
 Full name of the type.</p>
 <h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The type name including the assembly.</p>
-<h4 id="Catel">Exceptions<a class="headerlink" href="#Catel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The fullTypeName is <code>null</code> or whitespace.</p>
-<h3 id="gettypenamewithoutnamespacestring-fulltypename">GetTypeNameWithoutNamespace(string fullTypeName)<a class="headerlink" href="#gettypenamewithoutnamespacestring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type name without the assembly namespace.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>fullTypeName</strong>
-Full name of the type, for example <code>Catel.TypeHelper, Catel.Core</code>.</p>
-<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The type name retrieved from the type, for example <code>TypeHelper</code>.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The fullTypeName is <code>null</code> or whitespace.</p>
+The fullTypeName is<code>null</code> or whitespace.</p>
+<h3 id="gettypenamewithoutnamespacestring-fulltypename">GetTypeNameWithoutNamespace(string fullTypeName)<a class="headerlink" href="#gettypenamewithoutnamespacestring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the type name without the assembly namespace.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fullTypeName</strong>
+Full name of the type, for example<code>Catel.TypeHelper, Catel.Core</code>.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The type name retrieved from the type, for example<code>TypeHelper</code>.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The fullTypeName is<code>null</code> or whitespace.</p>
 <h3 id="issubclassofrawgenerictype-generic-type-tocheck">IsSubclassOfRawGeneric(Type generic, Type toCheck)<a class="headerlink" href="#issubclassofrawgenerictype-generic-type-tocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the subclass is of a raw generic type.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>generic</strong>
 The generic.</p>
 <p><strong>toCheck</strong>
 The type to check.</p>
 <h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the subclass is of a raw generic type; otherwise, <code>false</code>.</p>
-<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the subclass is of a raw generic type; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The generic is <code>null</code>.</p>
+The generic is<code>null</code>.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This implementation is based on this forum thread:
-    http://stackoverflow.com/questions/457676/c-reflection-check-if-a-class-is-derived-from-a-generic-class</p>
-<pre><code>Original license: CC BY-SA 2.5, compatible with the MIT license.
-</code></pre>
-
+<p>This implementation is based on this forum thread: http://stackoverflow.com/questions/457676/c-reflection-check-if-a-class-is-derived-from-a-generic-class Original license: CC BY-SA 2.5, compatible with the MIT license.</p>
 <h3 id="trycasttinput-toutputtinput-value-toutput-output">TryCast&lt;TInput, TOutput&gt;(TInput value, TOutput output)<a class="headerlink" href="#trycasttinput-toutputtinput-value-toutput-output" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Tries to Generic cast of a value.</p>
 <h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -571,7 +551,7 @@ The generic is <code>null</code>.</p>
 Requested return type.</p>
 <p><strong>TInput</strong>
 The input type.</p>
-<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value to cast.</p>
 <p><strong>output</strong>

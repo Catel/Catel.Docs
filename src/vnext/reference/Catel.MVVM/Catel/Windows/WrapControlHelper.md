@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public static class WrapControlHelper
@@ -80,7 +80,7 @@ The framework element.
 
 #### Returns
 
-```true``` if the specified [FrameworkElement](#) can be safely wrapped; otherwise, ```false```.
+`true` if the specified [FrameworkElement](#) can be safely wrapped; otherwise,`false`.
 
 
 
@@ -98,12 +98,12 @@ The wrap option that is used, which will be mapped to the control. The value All
 
 #### Returns
 
-[FrameworkElement](#) or ```null``` if the element is not found.
+[FrameworkElement](#) or`null` if the element is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The wrappedGrid is ```null```.
+The wrappedGrid is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The wrapOption is All.
@@ -124,12 +124,12 @@ Name of the control.
 
 #### Returns
 
-[FrameworkElement](#) or ```null``` if the element is not found.
+[FrameworkElement](#) or`null` if the element is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The wrappedGrid is ```null```.
+The wrappedGrid is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The controlName is not a valid control name.
@@ -155,12 +155,12 @@ The wrap option that is used, which will be mapped to the control. The value All
 
 #### Returns
 
-[FrameworkElement](#) or ```null``` if the element is not found.
+[FrameworkElement](#) or`null` if the element is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The wrappedGrid is ```null```.
+The wrappedGrid is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The wrapOption is All.
@@ -186,34 +186,15 @@ Name of the control.
 
 #### Returns
 
-[FrameworkElement](#) or ```null``` if the element is not found.
+[FrameworkElement](#) or`null` if the element is not found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The wrappedGrid is ```null```.
+The wrappedGrid is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The controlName is not a valid control name.
-
-
-
-### SetControlContent(object contentControl, FrameworkElement element)
-
-Sets the content of the control via reflection.
-
-#### Parameters
-
-**contentControl**
-The content control.
-
-**element**
-The element.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The contentControl is ```null```.
 
 
 
@@ -241,10 +222,7 @@ The parent content control.
 
 #### Remarks
 
-The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a
-    framework element can be wrapped by using the FrameworkElement) method.
-    This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl
-    is passed.
+The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a framework element can be wrapped by using the FrameworkElement) method. This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl is passed.
 
 
 
@@ -269,13 +247,7 @@ The parent content control.
 
 #### Remarks
 
-The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a
-    framework element can be wrapped by using the FrameworkElement) method.
-    
-
-
-    This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl
-    is passed.
+The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a framework element can be wrapped by using the FrameworkElement) method.This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl is passed.
 
 
 

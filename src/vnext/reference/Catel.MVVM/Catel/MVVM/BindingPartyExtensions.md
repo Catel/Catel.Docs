@@ -18,13 +18,7 @@ Extension methods for binding parties.
 
 ## Fields
 
-### AddEventMethodInfo
-
-### Log
-
 ## Constructors
-
-### BindingPartyExtensions()
 
 ## Methods
 
@@ -43,10 +37,10 @@ Name of the event.
 #### Exceptions
 
 **!:ArgumentNullException**
-The bindingParty is ```null```.
+The bindingParty is`null`.
 
 **!:ArgumentException**
-The bindingParty is ```null```.
+The bindingParty is`null`.
 
 
 

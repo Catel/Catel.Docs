@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ITypeFactory
@@ -20,12 +20,7 @@ Type factory which will cache constructors to ensure the best performance availa
 
 ### ClearCache()
 
-Clears the cache of all constructors.
-    
-
-
-    This call is normally not necessary since the type factory should keep an eye on the 
-    TypeRegistered event to invalidate the cache.
+Clears the cache of all constructors.This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.
 
 
 
@@ -45,7 +40,7 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 
@@ -68,17 +63,13 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 
 ### CreateInstanceWithParametersAndAutoCompletion(Type typeToConstruct, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.
-    
-
-
-    This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 
@@ -95,17 +86,13 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 
 ### CreateInstanceWithParametersAndAutoCompletionWithTag(Type typeToConstruct, object tag, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.
-    
-
-
-    This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 
@@ -125,7 +112,7 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 
@@ -151,7 +138,7 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 
@@ -174,7 +161,7 @@ The instantiated type using dependency injection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typeToConstruct is ```null```.
+The typeToConstruct is`null`.
 
 
 

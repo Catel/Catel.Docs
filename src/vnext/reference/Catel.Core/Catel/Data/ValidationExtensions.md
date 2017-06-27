@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ValidationExtensions
@@ -38,8 +38,7 @@ The [IValidationSummary](#).
 
 ### SynchronizeWithContext(ValidationContext validationContext, IValidationContext additionalValidationContext, bool onlyAddValidation)
 
-Synchronizes the current with the specified context. This means that the current contains will become the same as the
-    specified context.
+Synchronizes the current with the specified context. This means that the current contains will become the same as the specified context.
 
 #### Parameters
 
@@ -50,7 +49,7 @@ The validation context.
 The additional validation context.
 
 **onlyAddValidation**
-if set to ```true```, validation is only added, not removed. This is great to build up summaries.
+if set to`true` , validation is only added, not removed. This is great to build up summaries.
 
 #### Returns
 
@@ -61,7 +60,7 @@ The list of changes.
 **T:System.ArgumentOutOfRangeException**
 
 **T:System.ArgumentNullException**
-The validationContext is ```null```.
+The validationContext is`null`.
 
 
 

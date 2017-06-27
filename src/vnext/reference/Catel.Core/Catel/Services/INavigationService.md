@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface INavigationService
@@ -52,7 +52,7 @@ Closes the current application. The actual implementation depends on the final t
 
 #### Returns
 
-```true``` if the application is closed; otherwise ```false```.
+`true` if the application is closed; otherwise`false`.
 
 
 
@@ -84,13 +84,12 @@ Navigates to a specific location.
 The URI.
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The uri is ```null``` or whitespace.
+The uri is`null` or whitespace.
 
 
 
@@ -104,13 +103,12 @@ Navigates the specified location registered using the view model type.
 The view model type.
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelType is ```null```.
+The viewModelType is`null`.
 
 
 
@@ -126,7 +124,7 @@ The URI.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 
@@ -142,15 +140,13 @@ The view model type.
 #### Parameters
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 
 
 ### Register(string name, Uri uri)
 
-Registers the specified view model and the uri. Use this method to override the uri
-    detection mechanism in Catel.
+Registers the specified view model and the uri. Use this method to override the uri detection mechanism in Catel.
 
 #### Parameters
 
@@ -163,10 +159,10 @@ The URI to register.
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 **T:System.InvalidOperationException**
 The name is already registered.
@@ -175,8 +171,7 @@ The name is already registered.
 
 ### Register(Type viewModelType, Uri uri)
 
-Registers the specified view model and the uri. Use this method to override the uri
-    detection mechanism in Catel.
+Registers the specified view model and the uri. Use this method to override the uri detection mechanism in Catel.
 
 #### Parameters
 
@@ -192,7 +187,7 @@ The URI to register.
 The viewModelType does not implement [IViewModel](#).
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 
@@ -219,7 +214,7 @@ Name of the registered page.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 
@@ -234,7 +229,7 @@ Type of the view model to unregister.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 

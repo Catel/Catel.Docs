@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -119,13 +116,9 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/">Controls</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/BusinessWarningOrErrorInfo/">BusinessWarningOrErrorInfo</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ContentPage/">ContentPage</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ContentView/">ContentView</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/FieldWarningOrErrorInfo/">FieldWarningOrErrorInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/InfoBarMessageControl/">InfoBarMessageControl</a>
 </li>
@@ -140,8 +133,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/PopupLayout/">PopupLayout</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/UserControl/">UserControl</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ValidationData/">ValidationData</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Controls/ValidationEventAction/">ValidationEventAction</a>
 </li>
@@ -235,15 +226,14 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class InfoBarMessageControlVisibilityConverter : IValueConverter
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\Converters\IValueConverter.htm">IValueConverter</a></p>
-<p>Converter for the <a href="#">InfoBarMessageControl</a> to determine whether the control
-    should be visible for the current mode and</p>
+<p>Converter for the <a href="#">InfoBarMessageControl</a> to determine whether the control should be visible for the current mode and</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="convertobject-value-type-targettype-object-parameter-cultureinfo-culture">Convert(object value, Type targetType, object parameter, CultureInfo culture)<a class="headerlink" href="#convertobject-value-type-targettype-object-parameter-cultureinfo-culture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a value.</p>
@@ -260,7 +250,7 @@ The culture to use in the converter.</p>
 <p>A converted value. If the method returns null, the valid null value is used.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-If value is <code>null</code>.</p>
+If value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 If value is not of type <a href="#">InfoBarMessageControlMode</a>.</p>
 <h3 id="convertbackobject-value-type-targettype-object-parameter-cultureinfo-culture">ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)<a class="headerlink" href="#convertbackobject-value-type-targettype-object-parameter-cultureinfo-culture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>

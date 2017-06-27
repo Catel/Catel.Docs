@@ -168,7 +168,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -185,8 +185,6 @@
 <h3 id="graphrefid">GraphRefId<a class="headerlink" href="#graphrefid" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>$graphrefid</p>
 <p>The graph reference identifier.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h3 id="typename">TypeName<a class="headerlink" href="#typename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>$typename</p>
 <p>The type name.</p>
@@ -202,133 +200,33 @@ The type factory.</p>
 The object adapter.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The serializationManager is <code>null</code>.</p>
+The serializationManager is<code>null</code>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="preservereferences">PreserveReferences<a class="headerlink" href="#preservereferences" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether references should be preserved.</p>
-<pre><code>This will add additional ```$graphid``` and ```$graphrefid``` properties to each json object.
-</code></pre>
-
+<p>Gets or sets a value indicating whether references should be preserved.This will add additional<code>$graphid</code> and<code>$graphrefid</code> properties to each json object.</p>
 <h3 id="writetypeinfo">WriteTypeInfo<a class="headerlink" href="#writetypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets a value indicating whether type information should be written to the json output.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="afterserializationiserializationcontext-context">AfterSerialization(ISerializationContext<JsonSerializationContextInfo> context)<a class="headerlink" href="#afterserializationiserializationcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Afters the serialization.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<h3 id="appendcontexttostreamiserializationcontext-context-stream-stream">AppendContextToStream(ISerializationContext<JsonSerializationContextInfo> context, Stream stream)<a class="headerlink" href="#appendcontexttostreamiserializationcontext-context-stream-stream" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Appends the context to stream.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<p><strong>stream</strong>
-The stream.</p>
-<h3 id="beforedeserializationiserializationcontext-context">BeforeDeserialization(ISerializationContext<JsonSerializationContextInfo> context)<a class="headerlink" href="#beforedeserializationiserializationcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Befores the deserialization.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<h3 id="beforeserializationiserializationcontext-context">BeforeSerialization(ISerializationContext<JsonSerializationContextInfo> context)<a class="headerlink" href="#beforeserializationiserializationcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Befores the serialization.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<h3 id="deserializeobject-model-iserializationcontext-context">Deserialize(object model, ISerializationContext<JsonSerializationContextInfo> context)<a class="headerlink" href="#deserializeobject-model-iserializationcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Deserializes the specified model.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>model</strong>
-The model.</p>
-<p><strong>context</strong>
-The context.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h3 id="deserializetype-modeltype-jsonreader-jsonreader-iserializationconfiguration-configuration">Deserialize(Type modelType, JsonReader jsonReader, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializetype-modeltype-jsonreader-jsonreader-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the specified model from the json reader.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>modelType</strong>
 Type of the model.</p>
 <p><strong>jsonReader</strong>
 The json reader.</p>
 <p><strong>configuration</strong>
 The configuration.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The model.</p>
-<h3 id="deserializememberiserializationcontext-context-membervalue-membervalue">DeserializeMember(ISerializationContext<JsonSerializationContextInfo> context, MemberValue memberValue)<a class="headerlink" href="#deserializememberiserializationcontext-context-membervalue-membervalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Deserializes the member.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<p><strong>memberValue</strong>
-The member value.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">SerializationObject</a> representing the deserialized value or result.</p>
-<h3 id="getcontextobject-model-type-modeltype-jsonreader-jsonreader-jsonwriter-jsonwriter-serializationcontextmode-contextmode-dictionarystring-jproperty-jsonproperties-jarray-jsonarray-iserializationconfiguration-configuration">GetContext(object model, Type modelType, JsonReader jsonReader, JsonWriter jsonWriter, SerializationContextMode contextMode, Dictionary&lt;string, JProperty&gt; jsonProperties, JArray jsonArray, ISerializationConfiguration configuration)<a class="headerlink" href="#getcontextobject-model-type-modeltype-jsonreader-jsonreader-jsonwriter-jsonwriter-serializationcontextmode-contextmode-dictionarystring-jproperty-jsonproperties-jarray-jsonarray-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the context.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>model</strong>
-The model.</p>
-<p><strong>modelType</strong>
-Type of the model.</p>
-<p><strong>jsonReader</strong>
-The json reader.</p>
-<p><strong>jsonWriter</strong>
-The json writer.</p>
-<p><strong>contextMode</strong>
-The context mode.</p>
-<p><strong>jsonProperties</strong>
-The json properties.</p>
-<p><strong>jsonArray</strong>
-The json array.</p>
-<p><strong>configuration</strong>
-The configuration.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>ISerializationContext&lt;JsonSerializationContextInfo&gt;.</p>
-<h3 id="getcontextobject-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)<a class="headerlink" href="#getcontextobject-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the context.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>model</strong>
-The model.</p>
-<p><strong>modelType</strong>
-Type of the model.</p>
-<p><strong>stream</strong>
-The stream.</p>
-<p><strong>contextMode</strong>
-The context mode.</p>
-<p><strong>configuration</strong>
-The configuration.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>ISerializationContext{SerializationInfo}.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-contextMode</p>
-<h3 id="serializeobject-model-iserializationcontext-context">Serialize(object model, ISerializationContext<JsonSerializationContextInfo> context)<a class="headerlink" href="#serializeobject-model-iserializationcontext-context" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Serializes the specified model.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>model</strong>
-The model.</p>
-<p><strong>context</strong>
-The context.</p>
 <h3 id="serializeobject-model-jsonwriter-jsonwriter-iserializationconfiguration-configuration">Serialize(object model, JsonWriter jsonWriter, ISerializationConfiguration configuration)<a class="headerlink" href="#serializeobject-model-jsonwriter-jsonwriter-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Serializes the specified model to the json writer.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>model</strong>
 The model.</p>
 <p><strong>jsonWriter</strong>
 The json writer.</p>
 <p><strong>configuration</strong>
 The configuration.</p>
-<h3 id="serializememberiserializationcontext-context-membervalue-membervalue">SerializeMember(ISerializationContext<JsonSerializationContextInfo> context, MemberValue memberValue)<a class="headerlink" href="#serializememberiserializationcontext-context-membervalue-membervalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Serializes the member.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>context</strong>
-The context.</p>
-<p><strong>memberValue</strong>
-The member value.</p>
-<h3 id="warmuptype-type">Warmup(Type type)<a class="headerlink" href="#warmuptype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Warms up the specified type.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type to warmup.</p>
 
                     </div>
                 </div>

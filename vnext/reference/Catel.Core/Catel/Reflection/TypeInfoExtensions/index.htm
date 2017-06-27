@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -371,14 +367,13 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps)</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps)</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class TypeInfoExtensions
 </pre><p>The type info extensions.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="getconstructortypeinfo-typeinfo-type-types-bindingflags-bindingflags">GetConstructor(TypeInfo typeInfo, Type[] types, BindingFlags bindingFlags)<a class="headerlink" href="#getconstructortypeinfo-typeinfo-type-types-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the constructor with the specified types.</p>
@@ -393,7 +388,7 @@ The binding flags.</p>
 <p>An array of <a href="#">ConstructorInfo</a>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getconstructorstypeinfo-typeinfo-bindingflags-bindingflags">GetConstructors(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#getconstructorstypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the constructors.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -405,7 +400,7 @@ The binding flags.</p>
 <p>An array of <a href="#">ConstructorInfo</a>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="geteventtypeinfo-typeinfo-string-name-bindingflags-bindingflags">GetEvent(TypeInfo typeInfo, string name, BindingFlags bindingFlags)<a class="headerlink" href="#geteventtypeinfo-typeinfo-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the event with the specified name.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -416,12 +411,12 @@ The name of the member to retrieve.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">EventInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">EventInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="geteventstypeinfo-typeinfo-bindingflags-bindingflags">GetEvents(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#geteventstypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the events.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -433,7 +428,7 @@ The binding flags.</p>
 <p>An array of <a href="#">EventInfo</a>.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getfieldtypeinfo-typeinfo-string-name-bindingflags-bindingflags">GetField(TypeInfo typeInfo, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getfieldtypeinfo-typeinfo-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the field with the specified name.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -444,12 +439,12 @@ The name of the member to retrieve.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">FieldInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">FieldInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="getfieldstypeinfo-typeinfo-bindingflags-bindingflags">GetFields(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#getfieldstypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the fields.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -461,7 +456,7 @@ The binding flags.</p>
 <p>An array of <a href="#">FieldInfo</a>.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getmembertypeinfo-typeinfo-string-name-bindingflags-bindingflags">GetMember(TypeInfo typeInfo, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getmembertypeinfo-typeinfo-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the member with the specified name.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -472,12 +467,12 @@ The name of the member to retrieve.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">FieldInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">FieldInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="getmemberstypeinfo-typeinfo-bindingflags-bindingflags">GetMembers(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#getmemberstypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the members.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -489,7 +484,7 @@ The binding flags.</p>
 <p>An array of <a href="#">FieldInfo</a>.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getmethodtypeinfo-typeinfo-string-name-bindingflags-bindingflags">GetMethod(TypeInfo typeInfo, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodtypeinfo-typeinfo-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the method with the specified name.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -500,12 +495,12 @@ The name of the member to retrieve.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">MethodInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">MethodInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="getmethodtypeinfo-typeinfo-string-name-type-types-bindingflags-bindingflags">GetMethod(TypeInfo typeInfo, string name, Type[] types, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodtypeinfo-typeinfo-string-name-type-types-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the method with the specified name and types.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -518,12 +513,12 @@ The types of the method.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">MethodInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">MethodInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="getmethodstypeinfo-typeinfo-bindingflags-bindingflags">GetMethods(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodstypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the methods.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -535,7 +530,7 @@ The binding flags.</p>
 <p>An array of <a href="#">MethodInfo</a>.</p>
 <h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getpropertiestypeinfo-typeinfo-bindingflags-bindingflags">GetProperties(TypeInfo typeInfo, BindingFlags bindingFlags)<a class="headerlink" href="#getpropertiestypeinfo-typeinfo-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the properties.</p>
 <h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -547,7 +542,7 @@ The binding flags.</p>
 <p>An array of <a href="#">PropertyInfo</a>.</p>
 <h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <h3 id="getpropertytypeinfo-typeinfo-string-name-bindingflags-bindingflags">GetProperty(TypeInfo typeInfo, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getpropertytypeinfo-typeinfo-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the property with the specified name.</p>
 <h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -558,19 +553,12 @@ The name of the member to retrieve.</p>
 <p><strong>bindingFlags</strong>
 The binding flags.</p>
 <h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">PropertyInfo</a> or <code>null</code> if the member is not found.</p>
+<p>The <a href="#">PropertyInfo</a> or<code>null</code> if the member is not found.</p>
 <h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeInfo is <code>null</code>.</p>
+The typeInfo is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
-<h3 id="shouldflattenhierarchybindingflags-bindingflags">ShouldFlattenHierarchy(BindingFlags bindingFlags)<a class="headerlink" href="#shouldflattenhierarchybindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the hierarchy should be flattened based on the specified binding flags.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>bindingFlags</strong>
-The binding flags.</p>
-<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the hierarchy should be flattened; otherwise <code>false</code>.</p>
+The name is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -340,24 +336,15 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public interface IMessageMediator
-</pre><p>The interface definition for our Message mediator. This allows loose-event coupling between components
-     in an application by sending messages to registered elements.</p>
-<pre><code> This class implements the mediator pattern.
-</code></pre>
-
+</pre><p>The interface definition for our Message mediator. This allows loose-event coupling between components in an application by sending messages to registered elements.This class implements the mediator pattern.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="cleanup">CleanUp()<a class="headerlink" href="#cleanup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cleans up the list of registered handlers. All handlers that are no longer alive
-    are removed from the list.</p>
-<pre><code>This method is automatically invoked after each call to Object), but
-can also be invoked manually.
-</code></pre>
-
+<p>Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list.This method is automatically invoked after each call to Object) , but can also be invoked manually.</p>
 <h3 id="ismessageregisteredtype-messagetype-object-tag">IsMessageRegistered(Type messageType, object tag)<a class="headerlink" href="#ismessageregisteredtype-messagetype-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified message type is registered.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -366,23 +353,23 @@ The type of the message.</p>
 <p><strong>tag</strong>
 The tag.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the message type is registered; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the message type is registered; otherwise,<code>false</code>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The messageType is <code>null</code>.</p>
+The messageType is<code>null</code>.</p>
 <h3 id="ismessageregisteredobject-tag">IsMessageRegistered<TMessage>(object tag)<a class="headerlink" href="#ismessageregisteredobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified message type is registered.</p>
-<h4 id="true">Type Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TMessage</strong>
 The type of the message.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>tag</strong>
 The tag.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the message type is registered; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the message type is registered; otherwise,<code>false</code>.</p>
 <h3 id="registerobject-recipient-action-handler-object-tag">Register<TMessage>(object recipient, Action<TMessage> handler, object tag)<a class="headerlink" href="#registerobject-recipient-action-handler-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers a specific recipient for a specific message.</p>
-<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TMessage</strong>
 The type of the message.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -393,16 +380,15 @@ The handler method.</p>
 <p><strong>tag</strong>
 The message tag.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the handler is registered successfully; otherwise <code>false</code>.</p>
+<p><code>true</code> if the handler is registered successfully; otherwise<code>false</code>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The handler is <code>null</code>.</p>
+The handler is<code>null</code>.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A handler cannot be registered twice. If the same handler is already registered, this method will
-    return <code>false</code>.</p>
+<p>A handler cannot be registered twice. If the same handler is already registered, this method will return<code>false</code>.</p>
 <h3 id="sendmessagetmessage-message-object-tag">SendMessage<TMessage>(TMessage message, object tag)<a class="headerlink" href="#sendmessagetmessage-message-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Broadcasts a message to all message targets for a given message tag and passes a parameter.</p>
-<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TMessage</strong>
 The type of the message.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -411,13 +397,13 @@ The message parameter.</p>
 <p><strong>tag</strong>
 The message tag.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if any handlers were invoked; otherwise <code>false</code>.</p>
+<p><code>true</code> if any handlers were invoked; otherwise<code>false</code>.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The message is <code>null</code>.</p>
+The message is<code>null</code>.</p>
 <h3 id="unregisterobject-recipient-action-handler-object-tag">Unregister<TMessage>(object recipient, Action<TMessage> handler, object tag)<a class="headerlink" href="#unregisterobject-recipient-action-handler-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters a specific recipient for a specific message with the specified tag.</p>
-<h4 id="true">Type Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TMessage</strong>
 The type of the message.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -428,13 +414,12 @@ The handler method.</p>
 <p><strong>tag</strong>
 The message tag.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the handler is unregistered successfully; otherwise <code>false</code>.</p>
+<p><code>true</code> if the handler is unregistered successfully; otherwise<code>false</code>.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The handler is <code>null</code>.</p>
+The handler is<code>null</code>.</p>
 <h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return <code>false</code>.</p>
+<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return<code>false</code>.</p>
 <h3 id="unregisterrecipientobject-recipient-object-tag">UnregisterRecipient(object recipient, object tag)<a class="headerlink" href="#unregisterrecipientobject-recipient-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -442,30 +427,25 @@ The handler is <code>null</code>.</p>
 The recipient to unregister.</p>
 <p><strong>tag</strong>
 The message tag.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the handler is unregistered successfully; otherwise <code>false</code>.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the handler is unregistered successfully; otherwise<code>false</code>.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The recipient is <code>null</code>.</p>
+The recipient is<code>null</code>.</p>
 <h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return <code>false</code>.</p>
+<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return<code>false</code>.</p>
 <h3 id="unregisterrecipientandignoretagsobject-recipient">UnregisterRecipientAndIgnoreTags(object recipient)<a class="headerlink" href="#unregisterrecipientandignoretagsobject-recipient" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to. </p>
-<pre><code>This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
-</code></pre>
-
+<p>Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to.This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>recipient</strong>
 The recipient to unregister.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the handler is unregistered successfully; otherwise <code>false</code>.</p>
-<h4 id="true">Exceptions<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the handler is unregistered successfully; otherwise<code>false</code>.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The recipient is <code>null</code>.</p>
+The recipient is<code>null</code>.</p>
 <h4 id="remarks-3">Remarks<a class="headerlink" href="#remarks-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it
-    is not registered, this method will return <code>false</code>.</p>
+<p>A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return<code>false</code>.</p>
 
                     </div>
                 </div>

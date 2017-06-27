@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -210,8 +204,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -231,8 +223,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -256,9 +246,6 @@
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <ul>
@@ -299,9 +286,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -369,7 +353,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -378,7 +362,6 @@
 <a href="">NavigationLogicBase</a></p>
 <p>MVVM Provider behavior implementation for a navigation page.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="hasnavigatedaway">_hasNavigatedAway<a class="headerlink" href="#hasnavigatedaway" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="pagelogicipage-targetpage-type-viewmodeltype">PageLogic(IPage targetPage, Type viewModelType)<a class="headerlink" href="#pagelogicipage-targetpage-type-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">PageLogic</a> class.</p>
@@ -389,31 +372,9 @@ The page this provider should take care of.</p>
 Type of the view model.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The targetPage is <code>null</code>.</p>
+The targetPage is<code>null</code>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="canviewbeloaded">CanViewBeLoaded<a class="headerlink" href="#canviewbeloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether the control can be loaded. This is very useful in non-WPF classes where
-    the <code>LayoutUpdated</code> is used instead of the <code>Loaded</code> event.</p>
-<pre><code>If this value is ```true```, this logic implementation can call the  EventArgs) when the 
-control is loaded. Otherwise, the call will be ignored.
-</code></pre>
-
-<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This value is introduced for Windows Phone because a navigation backwards still leads to a call to
-    <code>LayoutUpdated</code>. To prevent new view models from being created, this property can be overridden by 
-    such logic implementations.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="onviewmodelchanged">OnViewModelChanged()<a class="headerlink" href="#onviewmodelchanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the ViewModel property has just been changed.</p>
-<h3 id="setdatacontextobject-newdatacontext">SetDataContext(object newDataContext)<a class="headerlink" href="#setdatacontextobject-newdatacontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Sets the data context of the target control.</p>
-<pre><code>This method is abstract because the real logic implementation knows how to set the data context (for example,
-by using an additional data context grid).
-</code></pre>
-
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>newDataContext</strong>
-The new data context.</p>
 
                     </div>
                 </div>

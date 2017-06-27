@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class CollectionExtensions
@@ -17,12 +17,6 @@ Extensions for the [ICollection](#) and [Collection](#) classes.
 
 
 ## Fields
-
-### Log
-
-The log.
-
-
 
 ## Methods
 
@@ -46,7 +40,7 @@ An range of items.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
+The collection is`null`.
 
 
 
@@ -64,12 +58,12 @@ The item to check.
 
 #### Returns
 
-```true``` if the item can be moved down in the list; otherwise, ```false```.
+`true` if the item can be moved down in the list; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
@@ -87,12 +81,12 @@ The item to check.
 
 #### Returns
 
-```true``` if the item can be moved up in the list; otherwise, ```false```.
+`true` if the item can be moved up in the list; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
@@ -129,12 +123,12 @@ The item to move down.
 
 #### Returns
 
-```true``` if the item has successfully been moved down; otherwise ```false```.
+`true` if the item has successfully been moved down; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
@@ -152,12 +146,12 @@ The index of the item to move down.
 
 #### Returns
 
-```true``` if the item has successfully been moved down; otherwise ```false```.
+`true` if the item has successfully been moved down; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The index is smaller than 0 or larger than the list count.
@@ -178,12 +172,12 @@ The item to move up.
 
 #### Returns
 
-```true``` if the item has successfully been moved up; otherwise ```false```.
+`true` if the item has successfully been moved up; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
@@ -201,12 +195,12 @@ The index of the item to move up.
 
 #### Returns
 
-```true``` if the item has successfully been moved up; otherwise ```false```.
+`true` if the item has successfully been moved up; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The index is smaller than 0 or larger than the list count.
@@ -215,11 +209,7 @@ The index is smaller than 0 or larger than the list count.
 
 ### RemoveFirst(IList list)
 
-Removes the first entry from the list.
-    
-
-
-    When there are no items in the list, this method will silently exit.
+Removes the first entry from the list.When there are no items in the list, this method will silently exit.
 
 #### Parameters
 
@@ -229,17 +219,13 @@ The list.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
 ### RemoveLast(IList list)
 
-Removes the last entry from the list.
-    
-
-
-    When there are no items in the list, this method will silently exit.
+Removes the last entry from the list.When there are no items in the list, this method will silently exit.
 
 #### Parameters
 
@@ -249,14 +235,13 @@ The list.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The list is ```null```.
+The list is`null`.
 
 
 
 ### ReplaceRange<T>(ICollection<T> collection, IEnumerable<T> range)
 
-Replaces the whole range of the specified collection. This is done by internally
-    calling Clear and finally ```AddRange{T}```.
+Replaces the whole range of the specified collection. This is done by internally calling Clear and finally`AddRange{T}`.
 
 #### Type Parameters
 
@@ -274,7 +259,7 @@ The range of items to add to the observable collection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
+The collection is`null`.
 
 
 
@@ -315,7 +300,7 @@ The existing set.
 The new set.
 
 **updateExistingSet**
-if set to ```true```, the existing set will be updated, otherwise a new collection will be created and the existing set will remain unchanged.
+if set to`true` , the existing set will be updated, otherwise a new collection will be created and the existing set will remain unchanged.
 
 #### Returns
 

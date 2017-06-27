@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISensorService<TValueInterface, TEventArgs> where TEventArgs : EventArgs 
@@ -28,16 +28,11 @@ The type of the event args.
 
 ### CurrentValue
 
-Gets the current sensor value. If no value is available, ```null``` will be returned.
+Gets the current sensor value. If no value is available,`null` will be returned.
 
 #### Remarks
 
-This is convenience property that internally calls GetCurrentValue.
-    
-
-
-    Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot 
-    subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
+This is convenience property that internally calls GetCurrentValue.Note that the services inside Catel do not support [INotifyPropertyChanged](#) , thus you cannot subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
 
 
 
@@ -69,7 +64,7 @@ Gets the current sensor value.
 
 #### Returns
 
-The current sensor value. If no value is available, ```null``` will be returned.
+The current sensor value. If no value is available,`null` will be returned.
 
 
 

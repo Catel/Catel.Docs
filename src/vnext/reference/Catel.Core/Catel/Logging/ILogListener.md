@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ILogListener
@@ -26,61 +26,37 @@ Gets or sets a value indicating whether to ignore Catel logging.
 
 ### IsDebugEnabled
 
-Gets or sets a value indicating whether this listener is interested in debug messages.
-    
-
-
-    This default value is ```true```.
+Gets or sets a value indicating whether this listener is interested in debug messages.This default value is`true`.
 
 
 
 ### IsErrorEnabled
 
-Gets or sets a value indicating whether this listener is interested in error messages.
-    
-
-
-    This default value is ```true```.
+Gets or sets a value indicating whether this listener is interested in error messages.This default value is`true`.
 
 
 
 ### IsInfoEnabled
 
-Gets or sets a value indicating whether this listener is interested in info messages.
-    
-
-
-    This default value is ```true```.
+Gets or sets a value indicating whether this listener is interested in info messages.This default value is`true`.
 
 
 
 ### IsStatusEnabled
 
-Gets or sets a value indicating whether this listener is interested in status messages.
-    
-
-
-    This default value is ```true```.
+Gets or sets a value indicating whether this listener is interested in status messages.This default value is`true`.
 
 
 
 ### IsWarningEnabled
 
-Gets or sets a value indicating whether this listener is interested in warning messages.
-    
-
-
-    This default value is ```true```.
+Gets or sets a value indicating whether this listener is interested in warning messages.This default value is`true`.
 
 
 
 ### TimeDisplay
 
-Gets or sets a value indicating what format of time to use.
-    
-
-
-    This default value is ```Time```.
+Gets or sets a value indicating what format of time to use.This default value is`Time`.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class PropertyValue : ISerializable
@@ -44,10 +44,10 @@ The key value pair.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 **T:System.ArgumentException**
-The ```Key``` of keyValuePair is ```null``` or whitespace.
+The`Key` of keyValuePair is`null` or whitespace.
 
 
 
@@ -69,10 +69,10 @@ The value of the property.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -126,7 +126,7 @@ Populates a [SerializationInfo](#) with the data needed to serialize the target 
 The [SerializationInfo](#) to populate with data.
 
 **context**
-The destination (see [StreamingContext](#)) for this serialization.
+The destination (see [StreamingContext](#) ) for this serialization.
 
 #### Exceptions
 

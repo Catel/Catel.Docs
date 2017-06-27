@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -464,7 +460,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -473,48 +469,18 @@
 <p><a href="/Catel.Core\Catel\Runtime\Serialization\Xml\IDataContractSerializerFactory.htm">IDataContractSerializerFactory</a></p>
 <p>Default implementation of the <a href="#">IDataContractSerializerFactory</a> interface.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="datacontractserializerscache">_dataContractSerializersCache<a class="headerlink" href="#datacontractserializerscache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache for the <a href="#">DataContractSerializer</a> per name.</p>
-<h3 id="knowntypesbyattributescache">_knownTypesByAttributesCache<a class="headerlink" href="#knowntypesbyattributescache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache for known attributes per type.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="datacontractserializerfactory-1">DataContractSerializerFactory()<a class="headerlink" href="#datacontractserializerfactory-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">DataContractSerializerFactory</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="datacontractresolver">DataContractResolver<a class="headerlink" href="#datacontractresolver" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the DataContractResolver passed in constructor to <a href="#">DataContractSerializer</a>.</p>
-<pre><code>The default value is .
-</code></pre>
-
+<p>Gets or sets the DataContractResolver passed in constructor to <a href="#">DataContractSerializer</a>.The default value is.</p>
 <h3 id="datacontractsurrogate">DataContractSurrogate<a class="headerlink" href="#datacontractsurrogate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the <a href="#">IDataContractSurrogate</a> passed in constructor to <a href="#">DataContractSerializer</a>.</p>
-<pre><code>The default value is .
-</code></pre>
-
+<p>Gets or sets the <a href="#">IDataContractSurrogate</a> passed in constructor to <a href="#">DataContractSerializer</a>.The default value is.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="addtypememberstype-type-xmlserializertypeinfo-serializertypeinfo">AddTypeMembers(Type type, XmlSerializerTypeInfo serializerTypeInfo)<a class="headerlink" href="#addtypememberstype-type-xmlserializertypeinfo-serializertypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="addtypetoknowntypesifserializabletype-typetoadd-xmlserializertypeinfo-serializertypeinfo">AddTypeToKnownTypesIfSerializable(Type typeToAdd, XmlSerializerTypeInfo serializerTypeInfo)<a class="headerlink" href="#addtypetoknowntypesifserializabletype-typetoadd-xmlserializertypeinfo-serializertypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds the type to the known types if the type is serializable.</p>
+<h3 id="getdatacontractserializertype-serializingtype-type-typetoserialize-string-xmlname-string-rootnamespace-list-additionalknowntypes">GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List<Type> additionalKnownTypes)<a class="headerlink" href="#getdatacontractserializertype-serializingtype-type-typetoserialize-string-xmlname-string-rootnamespace-list-additionalknowntypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the Data Contract serializer for a specific type. This method caches serializers so the performance can be improved when a serializer is used more than once.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeToAdd</strong>
-The type to add.</p>
-<p><strong>serializerTypeInfo</strong>
-The serializer type info.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the type is serializable; otherwise <code>false</code>.</p>
-<h3 id="allownonpublicreflectiontype-type">AllowNonPublicReflection(Type type)<a class="headerlink" href="#allownonpublicreflectiontype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns whether non-public reflection is allowed on the specified type.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if non-public reflection is allowed, <code>false</code> otherwise.</p>
-<h3 id="true">GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List<Type> additionalKnownTypes)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the Data Contract serializer for a specific type. This method caches serializers so the
-    performance can be improved when a serializer is used more than once.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>serializingType</strong>
 The type that is currently (de)serializing.</p>
 <p><strong>typeToSerialize</strong>
@@ -525,61 +491,13 @@ Name of the property as known in XML.</p>
 The root namespace.</p>
 <p><strong>additionalKnownTypes</strong>
 A list of additional types to add to the known types.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><a href="#">DataContractSerializer</a> for the given type.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The serializingType is <code>null</code>.</p>
+The serializingType is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The xmlName is <code>null</code> or whitespace.</p>
-<h3 id="true">GetKnownTypes(Type type, XmlSerializerTypeInfo serializerTypeInfo, bool resolveAbstractClassesAndInterfaces)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the known types inside the specific type.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<p><strong>serializerTypeInfo</strong>
-The serializer type info.</p>
-<p><strong>resolveAbstractClassesAndInterfaces</strong>
-if set to <code>true</code> [resolve abstract classes and interfaces].</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Array of <a href="#">Type</a> that are found in the object type.</p>
-<h3 id="getknowntypesforitemstype-type-xmlserializertypeinfo-serializertypeinfo">GetKnownTypesForItems(Type type, XmlSerializerTypeInfo serializerTypeInfo)<a class="headerlink" href="#getknowntypesforitemstype-type-xmlserializertypeinfo-serializertypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the known types of IEnumerable type.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<p><strong>serializerTypeInfo</strong>
-The serializer type info.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Array of <a href="#">Type</a> that are found in the object type.</p>
-<h3 id="getknowntypesviaattributestype-type">GetKnownTypesViaAttributes(Type type)<a class="headerlink" href="#getknowntypesviaattributestype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the known types via attributes.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The list of known types via the <a href="#">KnownTypeAttribute</a>.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
-<h3 id="istypeserializabletype-type-xmlserializertypeinfo-serializertypeinfo">IsTypeSerializable(Type type, XmlSerializerTypeInfo serializerTypeInfo)<a class="headerlink" href="#istypeserializabletype-type-xmlserializertypeinfo-serializertypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified type is serializable.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<p><strong>serializerTypeInfo</strong>
-The serializer type information.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified type is serializable; otherwise, <code>false</code>.</p>
-<h3 id="shouldtypebeignoredtype-type-xmlserializertypeinfo-serializertypeinfo">ShouldTypeBeIgnored(Type type, XmlSerializerTypeInfo serializerTypeInfo)<a class="headerlink" href="#shouldtypebeignoredtype-type-xmlserializertypeinfo-serializertypeinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the type should be handled.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<p><strong>serializerTypeInfo</strong>
-The serializer type info.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the type should be handled; otherwise, <code>false</code>.</p>
+The xmlName is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

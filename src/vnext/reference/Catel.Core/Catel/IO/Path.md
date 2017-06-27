@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IO
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class Path
@@ -34,7 +34,7 @@ Path including the trailing backslash.
 #### Exceptions
 
 **T:System.ArgumentException**
-The path is ```null``` or whitespace.
+The path is`null` or whitespace.
 
 
 
@@ -57,7 +57,7 @@ Path including the trailing slash.
 #### Exceptions
 
 **T:System.ArgumentException**
-The path is ```null``` or whitespace.
+The path is`null` or whitespace.
 
 
 
@@ -93,13 +93,7 @@ Combination of all the urls passed.
 
 ### GetApplicationDataDirectory()
 
-Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is ```null```, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. 
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is`null` , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Returns
 
@@ -109,13 +103,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget)
 
-Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is ```null```, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. 
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is`null` , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Returns
 
@@ -125,11 +113,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string productName)
 
-Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[product name].
+Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[product name].
 
 #### Parameters
 
@@ -147,12 +131,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectory(ApplicationDataTarget applicationDataTarget, string companyName, string productName)
 
-Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Parameters
 
@@ -173,11 +152,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectory(string productName)
 
-Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[product name].
+Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[product name].
 
 #### Parameters
 
@@ -192,12 +167,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectory(string companyName, string productName)
 
-Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Parameters
 
@@ -215,13 +185,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectoryForAllUsers()
 
-Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. 
-    If the entry assembly is ```null```, this method will fall back to the calling assembly to retrieve the information.
-    If the folder does not exist, the folder is automatically created by this method. 
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for the company and product as defined the the assembly information of the entry assembly. If the entry assembly is`null` , this method will fall back to the calling assembly to retrieve the information. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Returns
 
@@ -231,11 +195,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectoryForAllUsers(string productName)
 
-Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[product name].
+Gets the application data directory for a specific product. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[product name].
 
 #### Parameters
 
@@ -250,12 +210,7 @@ Directory for the application data.
 
 ### GetApplicationDataDirectoryForAllUsers(string companyName, string productName)
 
-Gets the application data directory for a specific product of a specific company. If the folder does not exist, the
-    folder is automatically created by this method.
-    
-
-
-    This method returns a value like [application data]\[company]\[product name].
+Gets the application data directory for a specific product of a specific company. If the folder does not exist, the folder is automatically created by this method.This method returns a value like [application data]\[company]\[product name].
 
 #### Parameters
 
@@ -287,7 +242,7 @@ The directory name.
 #### Exceptions
 
 **T:System.ArgumentException**
-The path is ```null``` or whitespace.
+The path is`null` or whitespace.
 
 
 
@@ -307,7 +262,7 @@ The file name.
 #### Exceptions
 
 **T:System.ArgumentException**
-The path is ```null``` or whitespace.
+The path is`null` or whitespace.
 
 
 
@@ -330,7 +285,7 @@ Full path.
 #### Exceptions
 
 **T:System.ArgumentException**
-The relativePath is ```null``` or whitespace.
+The relativePath is`null` or whitespace.
 
 
 
@@ -355,22 +310,7 @@ This method will always strip the trailing backslash from the parent.
 
 ### GetRelativePath(string fullPath, string basePath)
 
-Returns a relative path string from a full path.
-    
-
-
-    The path to convert. Can be either a file or a directory
-    The base path to truncate to and replace
-    
-
-
-    Lower case string of the relative path. If path is a directory it's returned 
-    without a backslash at the end.
-    
-
-
-    Examples of returned values:
-     .\test.txt, ..\test.txt, ..\..\..\test.txt, ., ..
+Returns a relative path string from a full path.The path to convert. Can be either a file or a directory The base path to truncate to and replace Lower case string of the relative path. If path is a directory it's returned without a backslash at the end.Examples of returned values: .\test.txt, ..\test.txt, ..\..\..\test.txt, ., ..
 
 #### Parameters
 
@@ -378,7 +318,7 @@ Returns a relative path string from a full path.
 Full path to convert to relative path.
 
 **basePath**
-The base path (a.k.a. working directory). If this parameter is ```null``` or empty, the current working directory will be used.
+The base path (a.k.a. working directory). If this parameter is`null` or empty, the current working directory will be used.
 
 #### Returns
 
@@ -387,87 +327,7 @@ Relative path.
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullPath is ```null``` or whitespace.
-
-
-
-### RemoveStartAndTrailingSlashes(string value)
-
-Removes any slashes (\ or /) at the beginning and end of the string.
-
-#### Parameters
-
-**value**
-Value to remove the slashes from.
-
-#### Returns
-
-Value without trailing slashes.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The value is ```null``` or whitespace.
-
-
-
-### RemoveStartSlashes(string value)
-
-Removes any slashes (\ or /) at the beginning of the string.
-
-#### Parameters
-
-**value**
-Value to remove the slashes from.
-
-#### Returns
-
-Value without slashes.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The value is ```null``` or whitespace.
-
-
-
-### RemoveTrailingSlashes(string value)
-
-Removes any slashes (\ or /) at the end of the string.
-
-#### Parameters
-
-**value**
-Value to remove the slashes from.
-
-#### Returns
-
-Value without slashes.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The value is ```null``` or whitespace.
-
-
-
-### ReplacePathSlashesByUrlSlashes(string value)
-
-Replaces path slashes (\) by url slashes (/).
-
-#### Parameters
-
-**value**
-Value to convert.
-
-#### Returns
-
-Prepared url.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The value is ```null``` or whitespace.
+The fullPath is`null` or whitespace.
 
 
 

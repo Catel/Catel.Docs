@@ -22,8 +22,6 @@ ActivityLifecycleCallbacksListener implementation.
 
 ## Fields
 
-### _activity
-
 ## Constructors
 
 ### ActivityLifecycleCallbacksListener(Activity activity)

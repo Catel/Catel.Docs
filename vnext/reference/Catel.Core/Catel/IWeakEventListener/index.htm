@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -146,6 +138,8 @@
 <li class="tocentry"><a href="#properties">Properties</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
+</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/JsonExtensions/">JsonExtensions</a>
@@ -197,6 +191,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -324,7 +320,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -336,7 +332,7 @@
 <h3 id="issourcealive">IsSourceAlive<a class="headerlink" href="#issourcealive" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a value indicating whether the event source has not yet been garbage collected.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>In case of static events, this property always returns <code>false</code>.</p>
+<p>In case of static events, this property always returns<code>false</code>.</p>
 <h3 id="isstaticevent">IsStaticEvent<a class="headerlink" href="#isstaticevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a value indicating whether this instance represents a static event.</p>
 <h3 id="isstaticeventhandler">IsStaticEventHandler<a class="headerlink" href="#isstaticeventhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -344,17 +340,15 @@
 <h3 id="istargetalive">IsTargetAlive<a class="headerlink" href="#istargetalive" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a value indicating whether the event target has not yet been garbage collected.</p>
 <h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>In case of static event handlers, this property always returns <code>false</code>.</p>
+<p>In case of static event handlers, this property always returns<code>false</code>.</p>
 <h3 id="source">Source<a class="headerlink" href="#source" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the actual source object. This property returns <code>null</code> if the event is static or
-    the source is no longer alive.</p>
+<p>Gets the actual source object. This property returns<code>null</code> if the event is static or the source is no longer alive.</p>
 <h3 id="sourcetype">SourceType<a class="headerlink" href="#sourcetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the type of the source.</p>
 <h3 id="sourceweakreference">SourceWeakReference<a class="headerlink" href="#sourceweakreference" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the source weak reference.</p>
 <h3 id="target">Target<a class="headerlink" href="#target" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the actual target object. This property returns <code>null</code> if the handler is static or
-    the target is no longer alive.</p>
+<p>Gets the actual target object. This property returns<code>null</code> if the handler is static or the target is no longer alive.</p>
 <h3 id="targettype">TargetType<a class="headerlink" href="#targettype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the type of the target.</p>
 <h3 id="targetweakreference">TargetWeakReference<a class="headerlink" href="#targetweakreference" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>

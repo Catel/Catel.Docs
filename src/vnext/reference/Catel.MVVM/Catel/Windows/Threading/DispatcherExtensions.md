@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class DispatcherExtensions
@@ -17,8 +17,6 @@ Extension methods for the dispatcher.
 
 
 ## Fields
-
-### Log
 
 ## Methods
 
@@ -36,17 +34,16 @@ The action.
 
 #### Returns
 
-The DispatcherOperation or ```null``` if the action was not dispatched but executed directly.
+The DispatcherOperation or`null` if the action was not dispatched but executed directly.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 #### Remarks
 
-For target frameworks where the [Dispatcher](#) class does not contain the ```Invoke``` method, the ```BeginInvoke```
-    method will be used instead.
+For target frameworks where the [Dispatcher](#) class does not contain the`Invoke` method, the`BeginInvoke` method will be used instead.
 
 
 
@@ -63,12 +60,11 @@ The dispatcher.
 The action.
 
 **onlyBeginInvokeWhenNoAccess**
-If set to ```true```, the action will be executed directly if possible. Otherwise,
-    ```Dispatcher.BeginInvoke``` will be used.
+If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 #### Returns
 
-The DispatcherOperation or ```null``` if the action was not dispatched but executed directly.
+The DispatcherOperation or`null` if the action was not dispatched but executed directly.
 
 
 
@@ -85,26 +81,22 @@ The dispatcher.
 A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
 
 **args**
-An array of objects to pass as arguments to the given method. Can be ```null```.
+An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Returns
 
-The DispatcherOperation or ```null``` if the action was not dispatched but executed directly.
+The DispatcherOperation or`null` if the action was not dispatched but executed directly.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The method is ```null```.
+The method is`null`.
 
 
 
 ### BeginInvokeIfRequired(Dispatcher dispatcher, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.
-    
-
-
-    To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -116,27 +108,22 @@ The action.
 
 #### Returns
 
-The DispatcherOperation or ```null``` if the action was not dispatched but executed directly.
+The DispatcherOperation or`null` if the action was not dispatched but executed directly.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 #### Remarks
 
-For target frameworks where the [Dispatcher](#) class does not contain the ```Invoke``` method, the ```BeginInvoke```
-    method will be used instead.
+For target frameworks where the [Dispatcher](#) class does not contain the`Invoke` method, the`BeginInvoke` method will be used instead.
 
 
 
 ### BeginInvokeIfRequired(Dispatcher dispatcher, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.
-    
-
-
-    To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -147,16 +134,16 @@ The dispatcher.
 A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
 
 **args**
-An array of objects to pass as arguments to the given method. Can be ```null```.
+An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Returns
 
-The DispatcherOperation or ```null``` if the action was not dispatched but executed directly.
+The DispatcherOperation or`null` if the action was not dispatched but executed directly.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The method is ```null```.
+The method is`null`.
 
 
 
@@ -176,7 +163,7 @@ The managed thread id.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dispatcher is ```null```.
+The dispatcher is`null`.
 
 
 
@@ -195,12 +182,11 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 #### Remarks
 
-For target frameworks where the [Dispatcher](#) class does not contain the ```Invoke``` method, the ```BeginInvoke```
-    method will be used instead.
+For target frameworks where the [Dispatcher](#) class does not contain the`Invoke` method, the`BeginInvoke` method will be used instead.
 
 
 
@@ -217,8 +203,7 @@ The dispatcher.
 The action.
 
 **onlyBeginInvokeWhenNoAccess**
-If set to ```true```, the action will be executed directly if possible. Otherwise,
-    ```Dispatcher.BeginInvoke``` will be used.
+If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 
 
@@ -235,17 +220,16 @@ The dispatcher.
 A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
 
 **args**
-An array of objects to pass as arguments to the given method. Can be ```null```.
+An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The method is ```null```.
+The method is`null`.
 
 #### Remarks
 
-For target frameworks where the [Dispatcher](#) class does not contain the ```Invoke``` method, the ```BeginInvoke```
-    method will be used instead.
+For target frameworks where the [Dispatcher](#) class does not contain the`Invoke` method, the`BeginInvoke` method will be used instead.
 
 
 
@@ -295,11 +279,7 @@ The task representing the action.
 
 ### InvokeIfRequired(Dispatcher dispatcher, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.
-    
-
-
-    To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -312,22 +292,17 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 #### Remarks
 
-For target frameworks where the [Dispatcher](#) class does not contain the ```Invoke``` method, the ```BeginInvoke```
-    method will be used instead.
+For target frameworks where the [Dispatcher](#) class does not contain the`Invoke` method, the`BeginInvoke` method will be used instead.
 
 
 
 ### InvokeIfRequired(Dispatcher dispatcher, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.
-    
-
-
-    To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -338,16 +313,12 @@ The dispatcher.
 A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
 
 **args**
-An array of objects to pass as arguments to the given method. Can be ```null```.
+An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The method is ```null```.
+The method is`null`.
 
 
-
-### SetCanceled<T>(TaskCompletionSource<T> tcs)
-
-### SetResult<T>(TaskCompletionSource<T> tcs, T result)
 

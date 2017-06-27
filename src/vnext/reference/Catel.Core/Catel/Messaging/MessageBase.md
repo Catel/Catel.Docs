@@ -6,22 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Messaging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class MessageBase<TMessage, TData> where TMessage : new(), MessageBase<TMessage, TData> 
 ```
 
-Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class
-    to define individual message types.
-    
-
-
-    For most subclasses the only thing to code is an empty class body including the type parameters.
-    
-
-
-    For the payload data you can choose betweeen the following options:
+Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class to define individual message types.For most subclasses the only thing to code is an empty class body including the type parameters.For the payload data you can choose betweeen the following options:
 
 #### Type Parameters
 
@@ -35,36 +26,7 @@ The type of payload data to be carried with the message.
 
 ## Fields
 
-### _mediator
-
 ## Constructors
-
-### MessageBase()
-
-Initializes a new instance of the [Object](#) class.
-
-
-
-### MessageBase()
-
-Initializes a new instance of the [Object](#) class.
-    
-
-
-    Necessary for two reasons:
-
-
-
-### MessageBase(TData data)
-
-Initializes a new instance of the [MessageBase](#) class.
-
-#### Parameters
-
-**data**
-The data.
-
-
 
 ## Properties
 
@@ -78,16 +40,12 @@ Provides access to the payload data.
 
 ### Register(object recipient, Action<TMessage> handler, object tag)
 
-Convenient helper method to subscribe to this Message type.
-    
-
-
-    Usage:
+Convenient helper method to subscribe to this Message type.Usage:
 
 #### Parameters
 
 **recipient**
-The instance which registers to the messages. Is most cases this will be ```this```.
+The instance which registers to the messages. Is most cases this will be`this`.
 
 **handler**
 A delegate handling the incoming message. For example: msg =&gt; Handler(msg.Data).
@@ -98,26 +56,7 @@ The optional Catel mediator tag to be used.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
-
-
-
-### Send(TMessage message, object tag)
-
-Send the message.
-
-#### Parameters
-
-**message**
-The message to be sent.
-
-**tag**
-The optional Catel mediator tag to be used.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The message is ```null```.
+The handler is`null`.
 
 
 
@@ -137,16 +76,12 @@ The optional Catel mediator tag to be used.
 
 ### Unregister(object recipient, Action<TMessage> handler, object tag)
 
-Convenient helper method to unsubscribe from this Message type.
-    
-
-
-    Usage:
+Convenient helper method to unsubscribe from this Message type.Usage:
 
 #### Parameters
 
 **recipient**
-The instance which unregisters from the messages. Is most cases this will be ```this```.
+The instance which unregisters from the messages. Is most cases this will be`this`.
 
 **handler**
 A delegate handling the incoming message. For example: msg =&gt; Handler(msg.Data).
@@ -157,7 +92,7 @@ The optional Catel mediator tag to be used.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 
 

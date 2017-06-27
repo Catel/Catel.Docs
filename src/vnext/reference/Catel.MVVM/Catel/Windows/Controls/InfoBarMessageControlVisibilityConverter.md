@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Controls
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class InfoBarMessageControlVisibilityConverter : IValueConverter
@@ -17,8 +17,7 @@ public class InfoBarMessageControlVisibilityConverter : IValueConverter
 [IValueConverter](/Catel.MVVM\Catel\MVVM\Converters\IValueConverter.md)
 
 
-Converter for the [InfoBarMessageControl](#) to determine whether the control
-    should be visible for the current mode and
+Converter for the [InfoBarMessageControl](#) to determine whether the control should be visible for the current mode and
 
 
 
@@ -49,7 +48,7 @@ A converted value. If the method returns null, the valid null value is used.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If value is ```null```.
+If value is`null`.
 
 **T:System.ArgumentException**
 If value is not of type [InfoBarMessageControlMode](#).

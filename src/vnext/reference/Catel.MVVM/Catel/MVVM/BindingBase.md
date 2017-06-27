@@ -18,25 +18,11 @@ Base class for all bindings.
 
 ## Fields
 
-### _toStringValue
-
-### Log
-
 ## Methods
 
 ### ClearBinding()
 
 Clears the binding and stops listening to both the source and target instances.
-
-
-
-### DetermineToString()
-
-Determines the value to use in the ToString method.
-
-#### Returns
-
-The string to use.
 
 
 
@@ -49,12 +35,4 @@ Converts the current instance to a string.
 The string representation of this object.
 
 
-
-### Uninitialize()
-
-Uninitializes this binding.
-
-
-
-### UninitializeBinding()
 

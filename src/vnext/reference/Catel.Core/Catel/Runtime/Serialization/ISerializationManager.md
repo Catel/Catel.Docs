@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISerializationManager
@@ -41,7 +41,7 @@ Type of the serializer modifier.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -57,7 +57,7 @@ The type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -71,7 +71,7 @@ Gets the catel properties.
 Type of the model.
 
 **includeModelBaseProperties**
-if set to ```true```, also include model base properties.
+if set to`true` , also include model base properties.
 
 #### Returns
 
@@ -80,7 +80,7 @@ A hash set containing the Catel properties.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -100,7 +100,7 @@ The list of properties to serialize.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -114,7 +114,7 @@ Gets the catel property names.
 Type of the model.
 
 **includeModelBaseProperties**
-if set to ```true```, also include model base properties.
+if set to`true` , also include model base properties.
 
 #### Returns
 
@@ -123,7 +123,7 @@ A hash set containing the Catel property names.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -143,7 +143,7 @@ A hash set containing the field names.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -163,7 +163,7 @@ A hash set containing the fields.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -183,7 +183,7 @@ The list of fields to serialize.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -203,7 +203,7 @@ A hash set containing the regular properties.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -223,7 +223,7 @@ The list of properties to serialize.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -243,18 +243,13 @@ A hash set containing the regular property names.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
 ### GetSerializerModifiers(Type type)
 
-Gets the serializer modifiers for the specified type.
-    
-
-
-    Note that the order is important because the modifiers will be called in the returned order during serialization
-    and in reversed order during deserialization.
+Gets the serializer modifiers for the specified type.Note that the order is important because the modifiers will be called in the returned order during serialization and in reversed order during deserialization.
 
 #### Parameters
 
@@ -263,12 +258,12 @@ The type.
 
 #### Returns
 
-An array containing the modifiers. Never ```null```, but can be an empty array.
+An array containing the modifiers. Never`null` , but can be an empty array.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -287,7 +282,7 @@ Type of the serializer modifier.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -303,7 +298,7 @@ The type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 

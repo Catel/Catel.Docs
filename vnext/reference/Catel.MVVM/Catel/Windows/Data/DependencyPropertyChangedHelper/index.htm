@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -122,8 +119,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/">Data</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingEvaluator/">BindingEvaluator</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingHelper/">BindingHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Data/BindingWithValidation/">BindingWithValidation</a>
@@ -220,144 +215,100 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class DependencyPropertyChangedHelper
-</pre><p>Dependency property changed helper. This helper class allows to subscribe to any dependency property
-    changed of any framework element element.</p>
+</pre><p>Dependency property changed helper. This helper class allows to subscribe to any dependency property changed of any framework element element.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="dependencyproperties">_dependencyProperties<a class="headerlink" href="#dependencyproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing already registered dependency properties.</p>
-<h3 id="realdependencypropertiescache">_realDependencyPropertiesCache<a class="headerlink" href="#realdependencypropertiescache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Dictionary containing values whether a property is a real dependency property.</p>
-<h3 id="wrapperdependencyproperties">_wrapperDependencyProperties<a class="headerlink" href="#wrapperdependencyproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Dictionary containing a dependency to real dependency name mapping.</p>
-<h3 id="inheriteddatacontextname">InheritedDataContextName<a class="headerlink" href="#inheriteddatacontextname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>InheritedDataContext</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="getdependencypropertyframeworkelement-frameworkelement-string-propertyname">GetDependencyProperty<T>(FrameworkElement frameworkElement, string propertyName)<a class="headerlink" href="#getdependencypropertyframeworkelement-frameworkelement-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the dependency property from the cache. If it does not yet exist, it will create the dependency property and
-    add it to the cache.</p>
-<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The type of the dependency property.</p>
+<h3 id="isrealdependencypropertyframeworkelement-frameworkelement-string-propertyname">IsRealDependencyProperty(FrameworkElement frameworkElement, string propertyName)<a class="headerlink" href="#isrealdependencypropertyframeworkelement-frameworkelement-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified dependency property is a real dependency or a wrapper or handler one for internal usage.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>propertyName</strong>
 Name of the property.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The dependency property.</p>
+<p><code>true</code> if the property is a real dependency property; otherwise,<code>false</code>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
-<h3 id="gethandlerdependencypropertynamestring-propertyname">GetHandlerDependencyPropertyName(string propertyName)<a class="headerlink" href="#gethandlerdependencypropertynamestring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the name of the handler dependency property.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>propertyName</strong>
-Name of the property.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The name of the dependency property containing the changed handler for the actual dependency property.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
-<h3 id="isrealdependencypropertyframeworkelement-frameworkelement-string-propertyname">IsRealDependencyProperty(FrameworkElement frameworkElement, string propertyName)<a class="headerlink" href="#isrealdependencypropertyframeworkelement-frameworkelement-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified dependency property is a real dependency or a wrapper or handler one for internal usage.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>frameworkElement</strong>
-The framework element.</p>
-<p><strong>propertyName</strong>
-Name of the property.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the property is a real dependency property; otherwise, <code>false</code>.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
-<h3 id="true">OnDependencyPropertyChanged(object sender, DependencyPropertyChangedEventArgs e)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when a dependency property has changed.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">DependencyPropertyChangedEventArgs</a> instance containing the event data.</p>
+The propertyName is<code>null</code> or whitespace.</p>
 <h3 id="subscribetoalldependencypropertiesframeworkelement-frameworkelement-eventhandler-handler">SubscribeToAllDependencyProperties(FrameworkElement frameworkElement, EventHandler<DependencyPropertyValueChangedEventArgs> handler)<a class="headerlink" href="#subscribetoalldependencypropertiesframeworkelement-frameworkelement-eventhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Subscribes to all dependency properties of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>handler</strong>
 The handler to subscribe.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <h3 id="subscribetodatacontextframeworkelement-frameworkelement-eventhandler-handler-bool-inherited">SubscribeToDataContext(FrameworkElement frameworkElement, EventHandler<DependencyPropertyValueChangedEventArgs> handler, bool inherited)<a class="headerlink" href="#subscribetodatacontextframeworkelement-frameworkelement-eventhandler-handler-bool-inherited" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Subscribes to the change events of the inherited DataContext.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>handler</strong>
 The handler to subscribe.</p>
 <p><strong>inherited</strong>
-if set to <code>true</code>, check inherited data context as well.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , check inherited data context as well.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <h3 id="subscribetodependencypropertyframeworkelement-frameworkelement-string-propertyname-eventhandler-handler">SubscribeToDependencyProperty(FrameworkElement frameworkElement, string propertyName, EventHandler<DependencyPropertyValueChangedEventArgs> handler)<a class="headerlink" href="#subscribetodependencypropertyframeworkelement-frameworkelement-string-propertyname-eventhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Subscribes to the specified dependency property of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>propertyName</strong>
 The name of the dependency property to subscribe to.</p>
 <p><strong>handler</strong>
 The handler to subscribe.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
+The propertyName is<code>null</code> or whitespace.</p>
 <h3 id="unsubscribefromalldependencypropertiesframeworkelement-frameworkelement-eventhandler-handler">UnsubscribeFromAllDependencyProperties(FrameworkElement frameworkElement, EventHandler<DependencyPropertyValueChangedEventArgs> handler)<a class="headerlink" href="#unsubscribefromalldependencypropertiesframeworkelement-frameworkelement-eventhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unsubscribes from all dependency properties of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>handler</strong>
 The handler to unsubscribe.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <h3 id="unsubscribefromdatacontextframeworkelement-frameworkelement-eventhandler-handler-bool-inherited">UnsubscribeFromDataContext(FrameworkElement frameworkElement, EventHandler<DependencyPropertyValueChangedEventArgs> handler, bool inherited)<a class="headerlink" href="#unsubscribefromdatacontextframeworkelement-frameworkelement-eventhandler-handler-bool-inherited" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unsubscribes from the change events of the inherited DataContext.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>handler</strong>
 The handler to subscribe.</p>
 <p><strong>inherited</strong>
-if set to <code>true</code>, check inherited data context as well.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , check inherited data context as well.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <h3 id="unsubscribefromdependencypropertyframeworkelement-frameworkelement-string-propertyname-eventhandler-handler">UnsubscribeFromDependencyProperty(FrameworkElement frameworkElement, string propertyName, EventHandler<DependencyPropertyValueChangedEventArgs> handler)<a class="headerlink" href="#unsubscribefromdependencypropertyframeworkelement-frameworkelement-string-propertyname-eventhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Subscribes from the specified dependency property of the specified <a href="#">FrameworkElement</a>.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>frameworkElement</strong>
 The framework element.</p>
 <p><strong>propertyName</strong>
 The name of the dependency property to unsubscribe from.</p>
 <p><strong>handler</strong>
 The handler to unsubscribe.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The frameworkElement is <code>null</code>.</p>
+The frameworkElement is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
+The propertyName is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

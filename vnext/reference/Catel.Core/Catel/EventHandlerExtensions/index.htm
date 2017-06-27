@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -88,8 +86,6 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate/">CompositePredicate</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
@@ -113,15 +109,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -144,6 +136,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -196,6 +190,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -323,7 +319,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -331,20 +327,16 @@
 </pre><p>Extensions for event handlers.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="safeinvokenotifycollectionchangedeventhandler-handler-object-sender-notifycollectionchangedeventargs-e">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, NotifyCollectionChangedEventArgs e)<a class="headerlink" href="#safeinvokenotifycollectionchangedeventhandler-handler-object-sender-notifycollectionchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = CollectionChanged;
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = CollectionChanged;
     if (handler != null)
     {
         handler(this, e, new NotifyCollectionChangedEventArgs(...));
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
-    
-</pre><h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));</p>
+<p>```</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
@@ -352,22 +344,18 @@ The sender.</p>
 <p><strong>e</strong>
 The event args.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
-<h3 id="safeinvokenotifycollectionchangedeventhandler-handler-object-sender-func-fe">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, Func<NotifyCollectionChangedEventArgs> fE)<a class="headerlink" href="#safeinvokenotifycollectionchangedeventhandler-handler-object-sender-func-fe" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = CollectionChanged;
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
+<h3 id="nohighlight">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, Func<NotifyCollectionChangedEventArgs> fE)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = CollectionChanged;
     if (handler != null)
     {
         handler(this, e, new NotifyCollectionChangedEventArgs(...));
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
-    
-</pre><h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));</p>
+<p>```</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
@@ -375,22 +363,18 @@ The sender.</p>
 <p><strong>fE</strong>
 The event args.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
-<h3 id="safeinvokepropertychangedeventhandler-handler-object-sender-propertychangedeventargs-e">SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#safeinvokepropertychangedeventhandler-handler-object-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = PropertyChanged;
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
+<h3 id="nohighlight">SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = PropertyChanged;
     if (handler != null)
     {
         handler(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
-    
-</pre><h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));</p>
+<p>```</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
@@ -398,22 +382,18 @@ The sender.</p>
 <p><strong>e</strong>
 The event args.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
-<h3 id="safeinvokepropertychangedeventhandler-handler-object-sender-func-fe">SafeInvoke(PropertyChangedEventHandler handler, object sender, Func<PropertyChangedEventArgs> fE)<a class="headerlink" href="#safeinvokepropertychangedeventhandler-handler-object-sender-func-fe" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = PropertyChanged;
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
+<h3 id="nohighlight">SafeInvoke(PropertyChangedEventHandler handler, object sender, Func<PropertyChangedEventArgs> fE)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = PropertyChanged;
     if (handler != null)
     {
         handler(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
-    
-</pre><h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));</p>
+<p>```</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
@@ -421,87 +401,71 @@ The sender.</p>
 <p><strong>fE</strong>
 The event args.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
-<h3 id="safeinvokeeventhandler-handler-object-sender">SafeInvoke(EventHandler handler, object sender)<a class="headerlink" href="#safeinvokeeventhandler-handler-object-sender" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner with Empty
-    as parameter for the event args. Where normally one has to write the following code:</p>
-<pre class="nocode">var handler = MyEvent;
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
+<h3 id="nohighlight">SafeInvoke(EventHandler handler, object sender)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
         handler(this, EventArgs.Empty);
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">MyEvent.SafeInvoke(this);
-    
-</pre><h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+MyEvent.SafeInvoke(this);</p>
+<p>```</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
 The sender.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
+<h4 id="nohighlight">Returns<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
 <h3 id="safeinvokeeventhandler-handler-object-sender-eventargs-e">SafeInvoke(EventHandler handler, object sender, EventArgs e)<a class="headerlink" href="#safeinvokeeventhandler-handler-object-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner with Empty
-    as parameter for the event args. Where normally one has to write the following code:</p>
-<pre class="nocode">var handler = MyEvent;
+<p>Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
         handler(this, EventArgs.Empty);
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">MyEvent.SafeInvoke(this);
-    
-</pre><h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+MyEvent.SafeInvoke(this);</p>
+<p>```</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
 The sender.</p>
 <p><strong>e</strong>
 The event args.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
-<h3 id="safeinvokeeventhandler-handler-object-sender-1">SafeInvoke(EventHandler<EventArgs> handler, object sender)<a class="headerlink" href="#safeinvokeeventhandler-handler-object-sender-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner with Empty
-    as parameter for the event args. Where normally one has to write the following code:</p>
-<pre class="nocode">var handler = MyEvent;
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
+<h3 id="nohighlight">SafeInvoke(EventHandler<EventArgs> handler, object sender)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
         handler(this, EventArgs.Empty);
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">MyEvent.SafeInvoke(this);
-    
-</pre><h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+MyEvent.SafeInvoke(this);</p>
+<p>```</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>handler</strong>
 The handler.</p>
 <p><strong>sender</strong>
 The sender.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
+<h4 id="nohighlight">Returns<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
 <h3 id="safeinvokeeventhandler-handler-object-sender-func-fe">SafeInvoke<TEventArgs>(EventHandler<TEventArgs> handler, object sender, Func<TEventArgs> fE)<a class="headerlink" href="#safeinvokeeventhandler-handler-object-sender-func-fe" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = MyEvent;
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
         handler(this, e);
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">MyEvent.SafeInvoke(this, e);
-    
-</pre><h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+MyEvent.SafeInvoke(this, e);</p>
+<p>```</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TEventArgs</strong>
 The type of the <a href="#">EventArgs</a> class.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -511,23 +475,19 @@ The handler.</p>
 The sender.</p>
 <p><strong>fE</strong>
 The event args.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
 <h3 id="safeinvokeeventhandler-handler-object-sender-teventargs-e">SafeInvoke<TEventArgs>(EventHandler<TEventArgs> handler, object sender, TEventArgs e)<a class="headerlink" href="#safeinvokeeventhandler-handler-object-sender-teventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specified handler in a thread-safe manner. Where normally one
-    has to write the following code:</p>
-<pre class="nocode">var handler = MyEvent;
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
         handler(this, e);
-    }
-    
-</pre><pre><code>One can now write:
-</code></pre>
-
-<pre class="nocode">MyEvent.SafeInvoke(this, e);
-    
-</pre><h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+    }</p>
+<p><code>One can now write:</code>
+MyEvent.SafeInvoke(this, e);</p>
+<p>```</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TEventArgs</strong>
 The type of the <a href="#">EventArgs</a> class.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -537,8 +497,8 @@ The handler.</p>
 The sender.</p>
 <p><strong>e</strong>
 The event args.</p>
-<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the event handler was not <code>null</code>; otherwise <code>false</code>.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the event handler was not<code>null</code> ; otherwise<code>false</code>.</p>
 <h3 id="unsubscribeallhandlerseventhandler-handler">UnsubscribeAllHandlers<TEventArgs>(EventHandler<TEventArgs> handler)<a class="headerlink" href="#unsubscribeallhandlerseventhandler-handler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Unsubscribes all the handlers from the specified event.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

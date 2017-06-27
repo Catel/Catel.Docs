@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Serialization.Json
 Namespace|Catel.Runtime.Serialization.Json
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IJsonSerializer : ISerializer
@@ -25,11 +25,7 @@ Interface for the binary serializer.
 
 ### PreserveReferences
 
-Gets or sets a value indicating whether references should be preserved.
-    
-
-
-    This will add additional ```$graphid``` and ```$graphrefid``` properties to each json object.
+Gets or sets a value indicating whether references should be preserved.This will add additional`$graphid` and`$graphrefid` properties to each json object.
 
 
 

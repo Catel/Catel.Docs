@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IRollingInMemoryLogService
@@ -26,31 +26,19 @@ Gets the log listener.
 
 ### MaximumNumberOfErrorLogEntries
 
-Gets or sets the maximum number of error log entries to keep.
-    
-
-
-    The default value is 50.
+Gets or sets the maximum number of error log entries to keep.The default value is 50.
 
 
 
 ### MaximumNumberOfLogEntries
 
-Gets or sets the maximum number of log entries to keep.
-    
-
-
-    The default value is 250.
+Gets or sets the maximum number of log entries to keep.The default value is 250.
 
 
 
 ### MaximumNumberOfWarningLogEntries
 
-Gets or sets the maximum number of warning log entries to keep.
-    
-
-
-    The default value is 50.
+Gets or sets the maximum number of warning log entries to keep.The default value is 50.
 
 
 

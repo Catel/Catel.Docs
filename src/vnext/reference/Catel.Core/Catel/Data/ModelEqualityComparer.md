@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ModelEqualityComparer : IModelEqualityComparer, EqualityComparer<ModelBase>
@@ -26,19 +26,7 @@ Implementation of the [EqualityComparer](#) for the [ModelBase](#).
 
 ## Fields
 
-### PropertyDataManager
-
-The property data manager.
-
-
-
 ## Constructors
-
-### ModelEqualityComparer()
-
-Initializes a new instance of the [ModelEqualityComparer](#) class.
-
-
 
 ### ModelEqualityComparer()
 
@@ -50,39 +38,19 @@ Initializes a new instance of the [ModelEqualityComparer](#) class.
 
 ### CompareCollections
 
-Gets or sets a value indicating whether collections should be compared as well.
-    
-
-
-    Note that this might degrade performance on properties with large collections.
-    
-
-
-    The default value is ```false```.
+Gets or sets a value indicating whether collections should be compared as well.Note that this might degrade performance on properties with large collections.The default value is`false`.
 
 
 
 ### CompareProperties
 
-Gets or sets a value indicating whether properties should be compared.
-    
-
-
-    The default value is ```false```.
+Gets or sets a value indicating whether properties should be compared.The default value is`false`.
 
 
 
 ### CompareValues
 
-Gets or sets a value indicating whether values should be compared as well.
-    
-
-
-    Note that this might degrade performance on properties with large collections.
-    
-
-
-    The default value is ```false```.
+Gets or sets a value indicating whether values should be compared as well.Note that this might degrade performance on properties with large collections.The default value is`false`.
 
 
 

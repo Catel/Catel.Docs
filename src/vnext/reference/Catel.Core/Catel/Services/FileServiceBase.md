@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class FileServiceBase : IFileSupport, ViewModelServiceBase
@@ -25,12 +25,6 @@ Base class for file services.
 
 
 ## Constructors
-
-### FileServiceBase()
-
-Initializes a new instance of the [FileServiceBase](#) class.
-
-
 
 ## Properties
 
@@ -89,20 +83,4 @@ Gets or sets a value indicating whether the dialog accepts only valid Win32 file
 
 
 ## Methods
-
-### ConfigureFileDialog(FileDialog fileDialog)
-
-Configures the file dialog.
-
-#### Parameters
-
-**fileDialog**
-The file dialog.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The fileDialog is ```null```.
-
-
 

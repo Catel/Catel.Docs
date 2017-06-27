@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class ViewExportService : IViewExportService, ServiceBase
@@ -26,16 +26,6 @@ The ViewExportService interface.
 
 ## Fields
 
-### _saveFileService
-
-### _viewManager
-
-### Log
-
-The log.
-
-
-
 ## Constructors
 
 ### ViewExportService(IViewManager viewManager, ISaveFileService saveFileService)
@@ -53,17 +43,15 @@ The save file service.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewManager is ```null```.
+The viewManager is`null`.
 
 
 
 ## Methods
 
-### CreateImageFromUIElement(UIElement element, double dpiX, double dpiY)
-
 ### Export(IViewModel viewModel, ExportMode exportMode, double dpiX, double dpiY)
 
-Exports the viewModel's view to the print or clipboard or file.
+Exports the viewModel 's view to the print or clipboard or file.
 
 #### Parameters
 
@@ -84,33 +72,11 @@ The dpi Y.
 **T:System.InvalidOperationException**
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 #### Remarks
 
 If exportMode is Print then the dpiX and dpiY argument will be ignored.
-
-
-
-### Print(BitmapSource bitmap)
-
-Prints a [UIElement](#).
-
-#### Parameters
-
-**bitmap**
-The bitmap.
-
-
-
-### SaveToFile(BitmapSource bitmap)
-
-The save to file.
-
-#### Parameters
-
-**bitmap**
-The bitmap.
 
 
 

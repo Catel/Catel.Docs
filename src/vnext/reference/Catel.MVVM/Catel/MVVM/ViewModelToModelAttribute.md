@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelToModelAttribute : Attribute
@@ -37,7 +37,7 @@ The property of the model object that should be linked to the [ViewModelBase](#)
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -45,51 +45,31 @@ The model is ```null```.
 
 ### AdditionalConstructorArgs
 
-Gets or sets the additional constructor args.
-    
-
-
-    This args would be passed to constructor.
+Gets or sets the additional constructor args.This args would be passed to constructor.
 
 
 
 ### AdditionalPropertiesToWatch
 
-Gets or sets the additional properties to triger converter.
-    
-
-
-    This args would be passed to constructor.
+Gets or sets the additional properties to triger converter.This args would be passed to constructor.
 
 
 
 ### ConverterType
 
-Gets or sets the type of the converter.
-    
-
-
-    The default value is TwoWay.
+Gets or sets the type of the converter.The default value is TwoWay.
 
 
 
 ### Mode
 
-Gets or sets the mode of the mapping.
-    
-
-
-    The default value is TwoWay.
+Gets or sets the mode of the mapping.The default value is TwoWay.
 
 
 
 ### Model
 
-Gets the property name that holds the model object.
-    
-
-
-    Must be a property on the [ViewModelBase](#) implementation, but is allowed to be private.
+Gets the property name that holds the model object.Must be a property on the [ViewModelBase](#) implementation, but is allowed to be private.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Interactivity
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class FocusOnKeyPress : FocusBehaviorBase
@@ -22,19 +22,15 @@ Behavior to set the focus on a key press.
 
 ## Fields
 
-### _layoutRoot
-
 ### KeyProperty
 
-Using a DependencyProperty as the backing store for Key.  This enables animation, styling, binding, etc...
+Using a DependencyProperty as the backing store for Key. This enables animation, styling, binding, etc...
 
 
-
-### Log
 
 ### ModifiersProperty
 
-Using a DependencyProperty as the backing store for Modifiers.  This enables animation, styling, binding, etc...
+Using a DependencyProperty as the backing store for Modifiers. This enables animation, styling, binding, etc...
 
 
 
@@ -61,34 +57,4 @@ Gets or sets the modifiers to check for.
 
 
 ## Methods
-
-### OnAssociatedObjectLoaded()
-
-Called when the AssociatedObject is loaded.
-
-
-
-### OnAssociatedObjectUnloaded()
-
-Called when the AssociatedObject is unloaded.
-
-
-
-### OnKeyDown(object sender, KeyEventArgs e)
-
-Called when the specified key is pressed.
-
-#### Parameters
-
-**sender**
-The sender.
-
-**e**
-The key event args instance containing the event data.
-
-
-
-### Subscribe()
-
-### Unsubscribe()
 

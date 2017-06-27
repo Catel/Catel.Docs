@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ServiceLocatorExtensions
@@ -17,12 +17,6 @@ Extension methods for the [IServiceLocator](#) interface.
 
 
 ## Fields
-
-### Log
-
-The log.
-
-
 
 ## Methods
 
@@ -45,12 +39,12 @@ The tag.
 
 #### Returns
 
-```true``` if the specified service type is registered; otherwise, ```false```.
+`true` if the specified service type is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -77,12 +71,12 @@ The tag.
 
 #### Returns
 
-```true``` if the TService type is registered as singleton, otherwise ```false```.
+`true` if the TService type is registered as singleton, otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -109,7 +103,7 @@ The tag.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -134,12 +128,12 @@ The service locator.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to ```true```, an older type registration is overwritten by this new one.
+If set to`true` , an older type registration is overwritten by this new one.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -168,12 +162,12 @@ The create service function.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to ```true```, an older type registration is overwritten by this new one.
+If set to`true` , an older type registration is overwritten by this new one.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -201,7 +195,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -233,7 +227,7 @@ TService.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -258,7 +252,7 @@ The service locator.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -287,7 +281,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -318,7 +312,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -342,7 +336,7 @@ The type of the service.
 The type of the implementation.
 
 **tag**
-The tag to register the service with. The default value is ```null```.
+The tag to register the service with. The default value is`null`.
 
 **registrationType**
 The registration type. The default value is Singleton.
@@ -350,7 +344,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -384,7 +378,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -409,7 +403,7 @@ Type of the registration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -496,12 +490,12 @@ The tag.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to ```true```, an older type registration is overwritten by this new one.
+If set to`true` , an older type registration is overwritten by this new one.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -533,12 +527,12 @@ The tag.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to ```true```, an older type registration is overwritten by this new one.
+If set to`true` , an older type registration is overwritten by this new one.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -569,7 +563,7 @@ The registration type. The default value is Singleton.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -597,7 +591,7 @@ The tag.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -625,7 +619,7 @@ An instance of the type registered on the service.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 **T:Catel.IoC.TypeNotRegisteredException**
 The type is not found in any container.
@@ -638,7 +632,7 @@ Note that the actual implementation lays in the hands of the IoC technique being
 
 ### ResolveTypeAndReturnNullIfNotRegistered(IServiceLocator serviceLocator, Type serviceType, object tag)
 
-Resolves the type from the [IServiceLocator](#). If the type is not registered, this method will return ```null```.
+Resolves the type from the [IServiceLocator](#). If the type is not registered, this method will return`null`.
 
 #### Parameters
 
@@ -653,18 +647,18 @@ The tag.
 
 #### Returns
 
-The resolved type or ```null``` if the type is not registered in the [IServiceLocator](#).
+The resolved type or`null` if the type is not registered in the [IServiceLocator](#).
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
 ### ResolveTypeAndReturnNullIfNotRegistered<T>(IServiceLocator serviceLocator, object tag)
 
-Resolves the type from the [IServiceLocator](#). If the type is not registered, this method will return ```null```.
+Resolves the type from the [IServiceLocator](#). If the type is not registered, this method will return`null`.
 
 #### Type Parameters
 
@@ -681,12 +675,12 @@ The tag.
 
 #### Returns
 
-The resolved type or ```null``` if the type is not registered in the [IServiceLocator](#).
+The resolved type or`null` if the type is not registered in the [IServiceLocator](#).
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 
 
@@ -711,7 +705,7 @@ All instance of the type registered on the service.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 
@@ -721,8 +715,7 @@ Note that the actual implementation lays in the hands of the IoC technique being
 
 ### ResolveTypeUsingParameters(IServiceLocator serviceLocator, Type serviceType, object[] parameters, object tag)
 
-Resolves the type using parameters. This method combines the Object) and
-    the Object[]) to provide the functionality.
+Resolves the type using parameters. This method combines the Object) and the Object[]) to provide the functionality.
 
 #### Parameters
 
@@ -745,7 +738,7 @@ The instantiated type constructed with the specified parameters.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 **T:System.InvalidOperationException**
 The type is not registered in the container as transient type.
@@ -754,8 +747,7 @@ The type is not registered in the container as transient type.
 
 ### ResolveTypeUsingParameters<T>(IServiceLocator serviceLocator, object[] parameters, object tag)
 
-Resolves the type using parameters. This method combines the Object) and
-    the Object[]) to provide the functionality.
+Resolves the type using parameters. This method combines the Object) and the Object[]) to provide the functionality.
 
 #### Type Parameters
 
@@ -780,7 +772,7 @@ The instantiated type constructed with the specified parameters.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 **T:System.InvalidOperationException**
 The type is not registered in the container as transient type.
@@ -806,12 +798,12 @@ The tag.
 
 #### Returns
 
-An instance of the type registered on the service or ```null``` if missing.
+An instance of the type registered on the service or`null` if missing.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The serviceLocator is ```null```.
+The serviceLocator is`null`.
 
 #### Remarks
 

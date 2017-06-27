@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class LoggingConfigurationSection : ConfigurationSection
@@ -45,19 +45,6 @@ sectionGroup name = "catel" >
 
 ## Fields
 
-### Log
-
-The log.
-
-
-
-### LoggingConfigurationCollectionPropertyName
-listeners
-
-The logging configuration collection property name.
-
-
-
 ## Properties
 
 ### LogListenerConfigurationCollection
@@ -75,7 +62,7 @@ Gets the log listeners.
 #### Parameters
 
 **assembly**
-The assembly to load the product info from. If ```null```, the entry assembly will be used.
+The assembly to load the product info from. If`null` , the entry assembly will be used.
 
 #### Returns
 

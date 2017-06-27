@@ -12,7 +12,7 @@ Available on|Portable Class Libraries, Windows 10.0 (Universal Apps)
 public interface IDataErrorInfo
 ```
 
-WinRT implementation of the ```IDataErrorInfo``` interface.
+WinRT implementation of the`IDataErrorInfo` interface.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TaskExtensions
@@ -25,7 +25,7 @@ Waits for the task to complete, unwrapping any exceptions.
 #### Parameters
 
 **task**
-The task. May not be ```null```.
+The task. May not be`null`.
 
 
 
@@ -36,7 +36,7 @@ Waits for the task to complete, unwrapping any exceptions.
 #### Parameters
 
 **task**
-The task. May not be ```null```.
+The task. May not be`null`.
 
 **cancellationToken**
 A cancellation token to observe while waiting for the task to complete.
@@ -60,7 +60,7 @@ The type of the result of the task.
 #### Parameters
 
 **task**
-The task. May not be ```null```.
+The task. May not be`null`.
 
 #### Returns
 
@@ -80,7 +80,7 @@ The type of the result of the task.
 #### Parameters
 
 **task**
-The task. May not be ```null```.
+The task. May not be`null`.
 
 **cancellationToken**
 A cancellation token to observe while waiting for the task to complete.

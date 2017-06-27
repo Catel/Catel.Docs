@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class SuspensionContext
@@ -17,8 +17,6 @@ Suspension context that can track properties during a suspension period.
 
 
 ## Fields
-
-### _hashSet
 
 ## Properties
 
@@ -43,7 +41,7 @@ Adds the specified property name to the suspension context.
 #### Parameters
 
 **propertyName**
-Name of the property. If ```null```, this will be converted to ```string.Empty```.
+Name of the property. If`null` , this will be converted to`string.Empty`.
 
 
 

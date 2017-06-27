@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ApiCopRule : IApiCopRule
@@ -23,31 +23,7 @@ Class containing an ApiCop rule.
 
 ## Fields
 
-### _lock
-
-### _propertiesByTag
-
 ## Constructors
-
-### ApiCopRule(string name, string description, ApiCopRuleLevel level, string url)
-
-Initializes a new instance of the [ApiCopRule](#) class.
-
-#### Parameters
-
-**name**
-The name.
-
-**description**
-The description.
-
-**level**
-The level.
-
-**url**
-The URL.
-
-
 
 ## Properties
 
@@ -76,32 +52,6 @@ Gets the URL.
 
 
 ## Methods
-
-### AddTag(string tag)
-
-Adds the tag so it is known in this rule.
-
-#### Parameters
-
-**tag**
-The tag.
-
-
-
-### GetPropertyBagForTag(string tag)
-
-Gets the property bag for the specified tag.
-
-#### Parameters
-
-**tag**
-The tag.
-
-#### Returns
-
-The property bag.
-
-
 
 ### GetResultAsText(string tag)
 
@@ -142,7 +92,7 @@ The tag.
 
 #### Returns
 
-```true``` if the specified ApiCop is valid; otherwise, ```false```.
+`true` if the specified ApiCop is valid; otherwise,`false`.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ExceptionFactory
@@ -32,14 +32,13 @@ The arguments.
 
 #### Returns
 
-The created exception or ```null``` if there was no valid constructor available.
+The created exception or`null` if there was no valid constructor available.
 
 
 
 ### CreateException(Type exceptionType, string message, Exception innerException)
 
-Creates the exception with the message and inner exception. If the exception does not support creation with
-    inner exceptions, it will use the message only.
+Creates the exception with the message and inner exception. If the exception does not support creation with inner exceptions, it will use the message only.
 
 #### Parameters
 
@@ -54,7 +53,7 @@ The inner exception.
 
 #### Returns
 
-The created exception or ```null``` if there was no valid constructor available.
+The created exception or`null` if there was no valid constructor available.
 
 
 
@@ -74,14 +73,13 @@ The arguments.
 
 #### Returns
 
-The created exception or ```null``` if there was no valid constructor available.
+The created exception or`null` if there was no valid constructor available.
 
 
 
 ### CreateException<TException>(string message, Exception innerException)
 
-Creates the exception with the message and inner exception. If the exception does not support creation with
-    inner exceptions, it will use the message only.
+Creates the exception with the message and inner exception. If the exception does not support creation with inner exceptions, it will use the message only.
 
 #### Type Parameters
 
@@ -98,7 +96,7 @@ The inner exception.
 
 #### Returns
 
-The created exception or ```null``` if there was no valid constructor available.
+The created exception or`null` if there was no valid constructor available.
 
 
 

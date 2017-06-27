@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class FieldValidationResult : IFieldValidationResult, ValidationResult
@@ -47,10 +47,10 @@ The args.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The property is ```null```.
+The property is`null`.
 
 **T:System.ArgumentException**
-The messageFormat is ```null``` or whitespace.
+The messageFormat is`null` or whitespace.
 
 
 
@@ -75,7 +75,7 @@ The args.
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -111,10 +111,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 **T:System.ArgumentException**
-The messageFormat is ```null``` or whitespace.
+The messageFormat is`null` or whitespace.
 
 
 
@@ -140,7 +140,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -171,7 +171,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 
 
@@ -197,7 +197,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 
 
@@ -223,10 +223,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 
@@ -257,10 +257,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 
@@ -286,10 +286,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 **T:System.ArgumentException**
-The messageFormat is ```null``` or whitespace.
+The messageFormat is`null` or whitespace.
 
 
 
@@ -315,7 +315,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -346,7 +346,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 
 
@@ -372,7 +372,7 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The propertyData is ```null```.
+The propertyData is`null`.
 
 
 
@@ -398,10 +398,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 
@@ -432,10 +432,10 @@ The [FieldValidationResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The propertyExpression is ```null```.
+The propertyExpression is`null`.
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 

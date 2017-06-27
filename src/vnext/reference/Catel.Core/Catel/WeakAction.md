@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class WeakAction<TParameter> : IWeakAction<TParameter>, WeakActionBase
@@ -20,24 +20,11 @@ public class WeakAction<TParameter> : IWeakAction<TParameter>, WeakActionBase
 [IWeakAction](/Catel.Core\Catel\IWeakAction.md)
 
 
-A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not 
-    cause memory leaks.
+A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not cause memory leaks.
 
 
 
 ## Fields
-
-### _action
-
-The action that must be invoked on the action.
-
-
-
-### Log
-
-The log.
-
-
 
 ## Constructors
 
@@ -56,7 +43,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.NotSupportedException**
 The action is an anonymous delegate.

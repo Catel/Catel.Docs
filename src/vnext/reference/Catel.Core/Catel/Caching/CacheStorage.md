@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Caching
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CacheStorage<TKey, TValue> : ICacheStorage<TKey, TValue, TKey, TValue>
@@ -30,62 +30,6 @@ The value type.
 
 
 ## Fields
-
-### _checkForExpiredItems
-
-Determines whether the cache storage can check for expired items.
-
-
-
-### _defaultExpirationPolicyInitCode
-
-### _dictionary
-
-The dictionary.
-
-
-
-### _disposeValuesOnRemoval
-
-Determines whether values should be disposed on removal.
-
-
-
-### _expirationTimer
-
-The timer that is being executed to invalidate the cache.
-
-
-
-### _expirationTimerInterval
-
-The expiration timer interval.
-
-
-
-### _locksByKey
-
-The async locks.
-
-
-
-### _nullKeyLock
-
-The lock used when the key is ```null```.
-
-
-
-### _storeNullValues
-
-Determines whether the cache storage can store null values.
-
-
-
-### _syncObj
-
-The synchronization object.
-
-
 
 ## Constructors
 
@@ -116,11 +60,7 @@ Gets or sets whether values should be disposed on removal.
 
 ### ExpirationTimerInterval
 
-Gets or sets the expiration timer interval.
-    
-
-
-    The default value is ```TimeSpan.FromSeconds(1)```.
+Gets or sets the expiration timer interval.The default value is`TimeSpan.FromSeconds(1)`.
 
 
 
@@ -146,7 +86,7 @@ The value associated with the specified key, or default value for the type of th
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
 
@@ -187,7 +127,7 @@ Indicates if the key exists the value will be overridden.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
 
@@ -212,7 +152,7 @@ The timespan in which the cache item should expire when added.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
 
@@ -233,22 +173,14 @@ The key.
 
 #### Returns
 
-```true``` if the cache contains an element with the specified key; otherwise, ```false```.
+`true` if the cache contains an element with the specified key; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
-
-### ExecuteInLock(TKey key, Action action)
-
-### ExecuteInLock<T>(TKey key, Func<T> action)
-
-### ExecuteInLockAsync(TKey key, Func<Task> action)
-
-### ExecuteInLockAsync<T>(TKey key, Func<Task<T>> action)
 
 ### Get(TKey key)
 
@@ -266,7 +198,7 @@ The value associated with the specified key, or default value for the type of th
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
 
@@ -295,7 +227,7 @@ The instance initialized by the code.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If key is ```null```.
+If key is`null`.
 
 
 
@@ -324,17 +256,13 @@ The instance initialized by the code.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If key is ```null```.
+If key is`null`.
 
 
 
 ### GetFromCacheOrFetchAsync(TKey key, Func<Task<TValue>> code, ExpirationPolicy expirationPolicy, bool override)
 
-Adds a value to the cache associated with to a key asynchronously.
-    
-
-
-    Note that this is a wrapper around Boolean).
+Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around Boolean).
 
 #### Parameters
 
@@ -357,17 +285,13 @@ The instance initialized by the code.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If key is ```null```.
+If key is`null`.
 
 
 
 ### GetFromCacheOrFetchAsync(TKey key, Func<Task<TValue>> code, bool override, TimeSpan expiration)
 
-Adds a value to the cache associated with to a key asynchronously.
-    
-
-
-    Note that this is a wrapper around TimeSpan).
+Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around TimeSpan).
 
 #### Parameters
 
@@ -390,33 +314,7 @@ The instance initialized by the code.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-If key is ```null```.
-
-
-
-### GetLockByKey(TKey key)
-
-Gets the lock by key.
-
-#### Parameters
-
-**key**
-The key.
-
-#### Returns
-
-The lock object.
-
-
-
-### OnTimerElapsed(object state)
-
-Called when the timer to clean up the cache elapsed.
-
-#### Parameters
-
-**state**
-The timer state.
+If key is`null`.
 
 
 
@@ -435,36 +333,7 @@ The action that need to be executed in synchronization with the item cache remov
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The key is ```null```.
+The key is`null`.
 
 
-
-### RemoveExpiredItems()
-
-Removes the expired items from the cache.
-
-
-
-### RemoveItem(TKey key, bool raiseEvents, Action action)
-
-Remove item from cache by key.
-
-#### Parameters
-
-**key**
-The key.
-
-**raiseEvents**
-Indicates whether events should be raised.
-
-**action**
-The action that need to be executed in synchronization with the item cache removal.
-
-#### Returns
-
-The value indicating whether the item was removed.
-
-
-
-### UpdateTimer()
 

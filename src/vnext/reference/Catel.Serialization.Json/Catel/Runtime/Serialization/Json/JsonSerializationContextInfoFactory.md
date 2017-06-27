@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Serialization.Json
 Namespace|Catel.Runtime.Serialization.Json
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class JsonSerializationContextInfoFactory : ISerializationContextInfoFactory

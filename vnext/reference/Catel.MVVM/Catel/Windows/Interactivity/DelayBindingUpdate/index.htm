@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -209,9 +206,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
 </li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -287,96 +281,30 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class DelayBindingUpdate : BehaviorBase&lt;FrameworkElement&gt;
 </pre><p><strong>Base types</strong>
 <a href="">BehaviorBase</a></p>
-<p>This behaviors sets the binding to Explicit and manually updates the
-    binding from view to view model after the delay.</p>
+<p>This behaviors sets the binding to Explicit and manually updates the binding from view to view model after the delay.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="dependencypropertycache">_dependencyPropertyCache<a class="headerlink" href="#dependencypropertycache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="originalbinding">_originalBinding<a class="headerlink" href="#originalbinding" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="timer">_timer<a class="headerlink" href="#timer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="bindingproperties">BindingProperties<a class="headerlink" href="#bindingproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="delaybindingupdate-1">DelayBindingUpdate()<a class="headerlink" href="#delaybindingupdate-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="delaybindingupdate-2">DelayBindingUpdate()<a class="headerlink" href="#delaybindingupdate-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">DelayBindingUpdate</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="dependencypropertyname">DependencyPropertyName<a class="headerlink" href="#dependencypropertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the name of the dependency property. This property is used before the PropertyName. By
-    default, this behavior tries to retrieve the dependency property via &quot;[PropertyName]Property&quot; (which is the default
-    naming convention of dependency properties). In the rare case that this naming convention is not followed, it is
-    possible to use this property.</p>
+<p>Gets or sets the name of the dependency property. This property is used before the PropertyName. By default, this behavior tries to retrieve the dependency property via &quot;[PropertyName]Property&quot; (which is the default naming convention of dependency properties). In the rare case that this naming convention is not followed, it is possible to use this property.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This property does not reflect to any changes, so this property must be set when the 
-    AssociatedObject is loaded.</p>
-<pre><code>This property should only be used as backup if the PropertyName property does not work.
-</code></pre>
-
+<p>This property does not reflect to any changes, so this property must be set when the AssociatedObject is loaded.This property should only be used as backup if the PropertyName property does not work.</p>
 <h3 id="propertyname">PropertyName<a class="headerlink" href="#propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the name of the property.</p>
 <h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This property does not reflect to any changes, so this property must be set when the 
-    AssociatedObject is loaded.</p>
+<p>This property does not reflect to any changes, so this property must be set when the AssociatedObject is loaded.</p>
 <h3 id="updatedelay">UpdateDelay<a class="headerlink" href="#updatedelay" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the update delay. </p>
-<pre><code>This is the value that is used between updates in milliseconds. The binding will be updated
-after the delay. When a new value becomes available, the timer is reset and starts all over.
-
-
-
-The default value is ```100```. If the value is smaller than ```50```, the value
-will be ignored and there will be no delay between the value change and binding update. If the
-value is higher than ```5000```, it will be set to ```5000```.
-</code></pre>
-
-<h3 id="useddependencypropertyname">UsedDependencyPropertyName<a class="headerlink" href="#useddependencypropertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the name of the used dependency property.</p>
+<p>Gets or sets the update delay.This is the value that is used between updates in milliseconds. The binding will be updated after the delay. When a new value becomes available, the timer is reset and starts all over.The default value is<code>100</code>. If the value is smaller than<code>50</code> , the value will be ignored and there will be no delay between the value change and binding update. If the value is higher than<code>5000</code> , it will be set to<code>5000</code>.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="createbindingcopybinding-binding">CreateBindingCopy(Binding binding)<a class="headerlink" href="#createbindingcopybinding-binding" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates the binding copy.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>binding</strong>
-The binding.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The duplicated binding.</p>
-<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The binding is <code>null</code>.</p>
-<h3 id="getdependencyproperty">GetDependencyProperty()<a class="headerlink" href="#getdependencyproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the dependency property based on the properties of this behavior.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">DependencyProperty</a> of <code>null</code> if the dependency property is not found.</p>
-<h3 id="getdependencypropertystring-dependencypropertyname">GetDependencyProperty(string dependencyPropertyName)<a class="headerlink" href="#getdependencypropertystring-dependencypropertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the dependency property with the specified property name.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>dependencyPropertyName</strong>
-Name of the property.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">DependencyProperty</a> or <code>null</code> if the dependency property is not found.</p>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject has been loaded.</p>
-<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()<a class="headerlink" href="#onassociatedobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject has been unloaded.</p>
-<h3 id="ondependencypropertychangedobject-sender-dependencypropertyvaluechangedeventargs-e">OnDependencyPropertyChanged(object sender, DependencyPropertyValueChangedEventArgs e)<a class="headerlink" href="#ondependencypropertychangedobject-sender-dependencypropertyvaluechangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the associated dependency property has changed.</p>
-<h3 id="ontimertickobject-sender-eventargs-e">OnTimerTick(object sender, EventArgs e)<a class="headerlink" href="#ontimertickobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when timer ticks.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">EventArgs</a> instance containing the event data.</p>
-<h3 id="updatebinding">UpdateBinding()<a class="headerlink" href="#updatebinding" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates the binding value.</p>
-<h3 id="validaterequiredproperties">ValidateRequiredProperties()<a class="headerlink" href="#validaterequiredproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Validates the required properties.</p>
 
                     </div>
                 </div>

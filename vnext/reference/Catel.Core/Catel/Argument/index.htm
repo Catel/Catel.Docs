@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -92,8 +90,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -114,15 +110,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -145,6 +137,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -197,6 +191,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -324,194 +320,174 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class Argument
-</pre><p>Argument validator class to help validating arguments that are passed into a method.</p>
-<pre><code>This class automatically adds thrown exceptions to the log file.
-</code></pre>
-
+</pre><p>Argument validator class to help validating arguments that are passed into a method.This class automatically adds thrown exceptions to the log file.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The <a href="#">ILog</a> object.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="getparameterinfoexpressionfunc-expression">GetParameterInfo<T>(Expression&lt;Func<T>&gt; expression)<a class="headerlink" href="#getparameterinfoexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The get parameter info.</p>
-<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The type of the parameter.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">Missing: <see cref="T:Catel.Argument.ParameterInfo`1" /></a>.</p>
-<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The expression body is not of type <a href="#">MemberExpression</a>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
 <h3 id="implementsinterfacestring-paramname-object-instance-type-interfacetype">ImplementsInterface(string paramName, object instance, Type interfaceType)<a class="headerlink" href="#implementsinterfacestring-paramname-object-instance-type-interfacetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance implements the specified interfaceType.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
 <p><strong>interfaceType</strong>
 The type of the interface to check for.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The instance does not implement the interfaceType.</p>
 <h3 id="implementsinterfacestring-paramname-type-type-type-interfacetype">ImplementsInterface(string paramName, Type type, Type interfaceType)<a class="headerlink" href="#implementsinterfacestring-paramname-type-type-type-interfacetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type implements the specified interfaceType.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>interfaceType</strong>
 The type of the interface to check for.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="implementsinterfaceexpressionfunc-expression-type-interfacetype">ImplementsInterface<T>(Expression&lt;Func<T>&gt; expression, Type interfaceType)<a class="headerlink" href="#implementsinterfaceexpressionfunc-expression-type-interfacetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value implements the specified interfaceType.</p>
-<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>interfaceType</strong>
 The type of the interface to check for.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression value is <code>null</code>.</p>
+The expression value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value does not implement the interfaceType.</p>
 <h3 id="implementsinterfacestring-paramname-object-instance">ImplementsInterface<TInterface>(string paramName, object instance)<a class="headerlink" href="#implementsinterfacestring-paramname-object-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance implements the specified TInterface.</p>
-<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TInterface</strong>
 The type of the T interface.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paramName</strong>
+Name of the param.</p>
+<p><strong>instance</strong>
+The instance to check.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The paramName is<code>null</code>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The instance is<code>null</code>.</p>
+<h3 id="implementsoneoftheinterfacesstring-paramname-object-instance-type-interfacetypes">ImplementsOneOfTheInterfaces(string paramName, object instance, Type[] interfaceTypes)<a class="headerlink" href="#implementsoneoftheinterfacesstring-paramname-object-instance-type-interfacetypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Checks whether the specified instance implements at least one of the specified interfaceTypes.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The paramName is <code>null</code>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
-<h3 id="implementsoneoftheinterfacesstring-paramname-object-instance-type-interfacetypes">ImplementsOneOfTheInterfaces(string paramName, object instance, Type[] interfaceTypes)<a class="headerlink" href="#implementsoneoftheinterfacesstring-paramname-object-instance-type-interfacetypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Checks whether the specified instance implements at least one of the specified interfaceTypes.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the param.</p>
-<p><strong>instance</strong>
-The instance to check.</p>
 <p><strong>interfaceTypes</strong>
 The types of the interfaces to check for.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The interfaceTypes is <code>null</code> or an empty array.</p>
+The interfaceTypes is<code>null</code> or an empty array.</p>
 <h3 id="implementsoneoftheinterfacesstring-paramname-type-type-type-interfacetypes">ImplementsOneOfTheInterfaces(string paramName, Type type, Type[] interfaceTypes)<a class="headerlink" href="#implementsoneoftheinterfacesstring-paramname-type-type-type-interfacetypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type implements at least one of the the specified interfaceTypes.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>interfaceTypes</strong>
 The types of the interfaces to check for.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="implementsoneoftheinterfacesexpressionfunc-expression-type-interfacetypes">ImplementsOneOfTheInterfaces<T>(Expression&lt;Func<T>&gt; expression, Type[] interfaceTypes)<a class="headerlink" href="#implementsoneoftheinterfacesexpressionfunc-expression-type-interfacetypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value implements at least one of the specified interfaceTypes.</p>
-<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>interfaceTypes</strong>
 The types of the interfaces to check for.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression value is <code>null</code>.</p>
+The expression value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value does not implement at least one of the interfaceTypes.</p>
 <h3 id="inheritsfromstring-paramname-object-instance-type-basetype">InheritsFrom(string paramName, object instance, Type baseType)<a class="headerlink" href="#inheritsfromstring-paramname-object-instance-type-basetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance inherits from the baseType.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance.</p>
 <p><strong>baseType</strong>
 The base type.</p>
-<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The paramName is <code>null</code>.</p>
+The paramName is<code>null</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <h3 id="inheritsfromstring-paramname-type-type-type-basetype">InheritsFrom(string paramName, Type type, Type baseType)<a class="headerlink" href="#inheritsfromstring-paramname-type-type-type-basetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type inherits from the baseType.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
 <p><strong>type</strong>
 The type.</p>
 <p><strong>baseType</strong>
 The base type.</p>
-<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="inheritsfromstring-paramname-object-instance">InheritsFrom<TBase>(string paramName, object instance)<a class="headerlink" href="#inheritsfromstring-paramname-object-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance inherits from the specified TBase.</p>
-<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TBase</strong>
 The base type.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance.</p>
-<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The paramName is <code>null</code>.</p>
+The paramName is<code>null</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <h3 id="ismatchexpressionfunc-expression-string-pattern-regexoptions-regexoptions">IsMatch(Expression&lt;Func<string>&gt; expression, string pattern, RegexOptions regexOptions)<a class="headerlink" href="#ismatchexpressionfunc-expression-string-pattern-regexoptions-regexoptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument match with a given pattern.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>pattern</strong>
 The pattern.</p>
 <p><strong>regexOptions</strong>
 The regular expression options.</p>
-<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The pattern is <code>null</code>.</p>
+The pattern is<code>null</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="ismatchstring-paramname-string-paramvalue-string-pattern-regexoptions-regexoptions">IsMatch(string paramName, string paramValue, string pattern, RegexOptions regexOptions)<a class="headerlink" href="#ismatchstring-paramname-string-paramvalue-string-pattern-regexoptions-regexoptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument match with a given pattern.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>paramValue</strong>
@@ -520,10 +496,27 @@ The param value.</p>
 The pattern.</p>
 <p><strong>regexOptions</strong>
 The regular expression options.</p>
-<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The paramName is <code>null</code> or whitespace.</p>
+The paramName is<code>null</code> or whitespace.</p>
 <h3 id="ismaximumexpressionfunc-expression-t-maximumvalue">IsMaximum<T>(Expression&lt;Func<T>&gt; expression, T maximumValue)<a class="headerlink" href="#ismaximumexpressionfunc-expression-t-maximumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument has a maximum value.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The value type.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>expression</strong>
+The expression.</p>
+<p><strong>maximumValue</strong>
+The maximum value.</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If expression value is out of range.</p>
+<p><strong>T:System.ArgumentException</strong>
+The expression body is not of type <a href="#">MemberExpression</a>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The expression is<code>null</code>.</p>
+<h3 id="ismaximumexpressionfunc-expression-t-maximumvalue-funct-t-bool-validation">IsMaximum<T>(Expression&lt;Func<T>&gt; expression, T maximumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#ismaximumexpressionfunc-expression-t-maximumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument has a maximum value.</p>
 <h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -533,33 +526,31 @@ The value type.</p>
 The expression.</p>
 <p><strong>maximumValue</strong>
 The maximum value.</p>
-<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If expression value is out of range.</p>
-<p><strong>T:System.ArgumentException</strong>
-The expression body is not of type <a href="#">MemberExpression</a>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="ismaximumexpressionfunc-expression-t-maximumvalue-funct-t-bool-validation">IsMaximum<T>(Expression&lt;Func<T>&gt; expression, T maximumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#ismaximumexpressionfunc-expression-t-maximumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument has a maximum value.</p>
-<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The value type.</p>
-<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<p><strong>maximumValue</strong>
-The maximum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
 If expression value is out of range.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression body is not of type <a href="#">MemberExpression</a>.</p>
 <h3 id="ismaximumstring-paramname-t-paramvalue-t-maximumvalue">IsMaximum<T>(string paramName, T paramValue, T maximumValue)<a class="headerlink" href="#ismaximumstring-paramname-t-paramvalue-t-maximumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument has a maximum value.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of the argument.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paramName</strong>
+Name of the parameter.</p>
+<p><strong>paramValue</strong>
+Value of the parameter.</p>
+<p><strong>maximumValue</strong>
+The maximum value.</p>
+<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If paramValue is out of range.</p>
+<h3 id="ismaximumstring-paramname-t-paramvalue-t-maximumvalue-funct-t-bool-validation">IsMaximum<T>(string paramName, T paramValue, T maximumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#ismaximumstring-paramname-t-paramvalue-t-maximumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument has a maximum value.</p>
 <h4 id="type-parameters-7">Type Parameters<a class="headerlink" href="#type-parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -571,28 +562,30 @@ Name of the parameter.</p>
 Value of the parameter.</p>
 <p><strong>maximumValue</strong>
 The maximum value.</p>
-<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If paramValue is out of range.</p>
-<h3 id="ismaximumstring-paramname-t-paramvalue-t-maximumvalue-funct-t-bool-validation">IsMaximum<T>(string paramName, T paramValue, T maximumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#ismaximumstring-paramname-t-paramvalue-t-maximumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument has a maximum value.</p>
-<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-Type of the argument.</p>
-<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the parameter.</p>
-<p><strong>paramValue</strong>
-Value of the parameter.</p>
-<p><strong>maximumValue</strong>
-The maximum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentOutOfRangeException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <h3 id="isminimalexpressionfunc-expression-t-minimumvalue">IsMinimal<T>(Expression&lt;Func<T>&gt; expression, T minimumValue)<a class="headerlink" href="#isminimalexpressionfunc-expression-t-minimumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument has a minimum value.</p>
+<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The value type.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>expression</strong>
+The expression.</p>
+<p><strong>minimumValue</strong>
+The minimum value.</p>
+<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If expression value is out of range.</p>
+<p><strong>T:System.ArgumentException</strong>
+The expression body is not of type <a href="#">MemberExpression</a>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The expression is<code>null</code>.</p>
+<h3 id="isminimalexpressionfunc-expression-t-minimumvalue-funct-t-bool-validation">IsMinimal<T>(Expression&lt;Func<T>&gt; expression, T minimumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#isminimalexpressionfunc-expression-t-minimumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument has a minimum value.</p>
 <h4 id="type-parameters-9">Type Parameters<a class="headerlink" href="#type-parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -602,33 +595,31 @@ The value type.</p>
 The expression.</p>
 <p><strong>minimumValue</strong>
 The minimum value.</p>
-<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If expression value is out of range.</p>
-<p><strong>T:System.ArgumentException</strong>
-The expression body is not of type <a href="#">MemberExpression</a>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isminimalexpressionfunc-expression-t-minimumvalue-funct-t-bool-validation">IsMinimal<T>(Expression&lt;Func<T>&gt; expression, T minimumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#isminimalexpressionfunc-expression-t-minimumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument has a minimum value.</p>
-<h4 id="type-parameters-10">Type Parameters<a class="headerlink" href="#type-parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The value type.</p>
-<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<p><strong>minimumValue</strong>
-The minimum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
 If expression value is out of range.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression body is not of type <a href="#">MemberExpression</a>.</p>
 <h3 id="isminimalstring-paramname-t-paramvalue-t-minimumvalue">IsMinimal<T>(string paramName, T paramValue, T minimumValue)<a class="headerlink" href="#isminimalstring-paramname-t-paramvalue-t-minimumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument has a minimum value.</p>
+<h4 id="type-parameters-10">Type Parameters<a class="headerlink" href="#type-parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+Type of the argument.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paramName</strong>
+Name of the parameter.</p>
+<p><strong>paramValue</strong>
+Value of the parameter.</p>
+<p><strong>minimumValue</strong>
+The minimum value.</p>
+<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If paramValue is out of range.</p>
+<h3 id="isminimalstring-paramname-t-paramvalue-t-minimumvalue-funct-t-bool-validation">IsMinimal<T>(string paramName, T paramValue, T minimumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#isminimalstring-paramname-t-paramvalue-t-minimumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument has a minimum value.</p>
 <h4 id="type-parameters-11">Type Parameters<a class="headerlink" href="#type-parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -640,64 +631,49 @@ Name of the parameter.</p>
 Value of the parameter.</p>
 <p><strong>minimumValue</strong>
 The minimum value.</p>
-<h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If paramValue is out of range.</p>
-<h3 id="isminimalstring-paramname-t-paramvalue-t-minimumvalue-funct-t-bool-validation">IsMinimal<T>(string paramName, T paramValue, T minimumValue, Func&lt;T, T, bool&gt; validation)<a class="headerlink" href="#isminimalstring-paramname-t-paramvalue-t-minimumvalue-funct-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument has a minimum value.</p>
-<h4 id="type-parameters-12">Type Parameters<a class="headerlink" href="#type-parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-Type of the argument.</p>
-<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the parameter.</p>
-<p><strong>paramValue</strong>
-Value of the parameter.</p>
-<p><strong>minimumValue</strong>
-The minimum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-20">Exceptions<a class="headerlink" href="#exceptions-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentOutOfRangeException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <h3 id="isnotemptyexpressionfunc-expression">IsNotEmpty(Expression&lt;Func<Guid>&gt; expression)<a class="headerlink" href="#isnotemptyexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is not empty.</p>
-<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
-<h4 id="exceptions-21">Exceptions<a class="headerlink" href="#exceptions-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-20">Exceptions<a class="headerlink" href="#exceptions-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If expression value is <code>null</code> or empty.</p>
+If expression value is<code>null</code> or empty.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="isnotemptystring-paramname-guid-paramvalue">IsNotEmpty(string paramName, Guid paramValue)<a class="headerlink" href="#isnotemptystring-paramname-guid-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is not empty.</p>
-<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
 <p><strong>paramValue</strong>
 Value of the parameter.</p>
-<h4 id="exceptions-22">Exceptions<a class="headerlink" href="#exceptions-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-21">Exceptions<a class="headerlink" href="#exceptions-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If paramValue is <code>null</code> or empty.</p>
+If paramValue is<code>null</code> or empty.</p>
 <h3 id="isnotmatchexpressionfunc-expression-string-pattern-regexoptions-regexoptions">IsNotMatch(Expression&lt;Func<string>&gt; expression, string pattern, RegexOptions regexOptions)<a class="headerlink" href="#isnotmatchexpressionfunc-expression-string-pattern-regexoptions-regexoptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument doesn't match with a given pattern.</p>
-<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>pattern</strong>
 The pattern.</p>
 <p><strong>regexOptions</strong>
 The regular expression options.</p>
-<h4 id="exceptions-23">Exceptions<a class="headerlink" href="#exceptions-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-22">Exceptions<a class="headerlink" href="#exceptions-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The pattern is <code>null</code>.</p>
+The pattern is<code>null</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="isnotmatchstring-paramname-string-paramvalue-string-pattern-regexoptions-regexoptions">IsNotMatch(string paramName, string paramValue, string pattern, RegexOptions regexOptions)<a class="headerlink" href="#isnotmatchstring-paramname-string-paramvalue-string-pattern-regexoptions-regexoptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument doesn't match with a given pattern.</p>
-<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>paramValue</strong>
@@ -706,53 +682,62 @@ The para value.</p>
 The pattern.</p>
 <p><strong>regexOptions</strong>
 The regular expression options.</p>
-<h4 id="exceptions-24">Exceptions<a class="headerlink" href="#exceptions-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-23">Exceptions<a class="headerlink" href="#exceptions-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The paramName is <code>null</code> or whitespace.</p>
+The paramName is<code>null</code> or whitespace.</p>
 <h3 id="isnotnullstring-paramname-object-paramvalue">IsNotNull(string paramName, object paramValue)<a class="headerlink" href="#isnotnullstring-paramname-object-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code>.</p>
-<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code>.</p>
+<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
 <p><strong>paramValue</strong>
 Value of the parameter.</p>
-<h4 id="exceptions-25">Exceptions<a class="headerlink" href="#exceptions-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-24">Exceptions<a class="headerlink" href="#exceptions-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong></p>
 <h3 id="isnotnullexpressionfunc-expression">IsNotNull<T>(Expression&lt;Func<T>&gt; expression)<a class="headerlink" href="#isnotnullexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code>.</p>
-<h4 id="type-parameters-13">Type Parameters<a class="headerlink" href="#type-parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code>.</p>
+<h4 id="type-parameters-12">Type Parameters<a class="headerlink" href="#type-parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The parameter type.</p>
+<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>expression</strong>
+The expression.</p>
+<h4 id="exceptions-25">Exceptions<a class="headerlink" href="#exceptions-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+If expression value is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The expression body is not of type <a href="#">MemberExpression</a>.</p>
+<h3 id="isnotnulloremptyexpressionfuncnullable-expression">IsNotNullOrEmpty(Expression&lt;Func&lt;Nullable<Guid>&gt;&gt; expression)<a class="headerlink" href="#isnotnulloremptyexpressionfuncnullable-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is not<code>null</code> or empty.</p>
 <h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <h4 id="exceptions-26">Exceptions<a class="headerlink" href="#exceptions-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-If expression value is <code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The expression body is not of type <a href="#">MemberExpression</a>.</p>
-<h3 id="isnotnulloremptyexpressionfuncnullable-expression">IsNotNullOrEmpty(Expression&lt;Func&lt;Nullable<Guid>&gt;&gt; expression)<a class="headerlink" href="#isnotnulloremptyexpressionfuncnullable-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or empty.</p>
+If expression value is<code>null</code> or empty.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The expression is<code>null</code>.</p>
+<h3 id="isnotnulloremptyexpressionfunc-expression">IsNotNullOrEmpty(Expression&lt;Func<string>&gt; expression)<a class="headerlink" href="#isnotnulloremptyexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is not<code>null</code> or empty.</p>
 <h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <h4 id="exceptions-27">Exceptions<a class="headerlink" href="#exceptions-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If expression value is <code>null</code> or empty.</p>
+If expression value is<code>null</code> or empty.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isnotnulloremptyexpressionfunc-expression">IsNotNullOrEmpty(Expression&lt;Func<string>&gt; expression)<a class="headerlink" href="#isnotnulloremptyexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or empty.</p>
-<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<h4 id="exceptions-28">Exceptions<a class="headerlink" href="#exceptions-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-If expression value is <code>null</code> or empty.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="isnotnulloremptystring-paramname-nullable-paramvalue">IsNotNullOrEmpty(string paramName, Nullable<Guid> paramValue)<a class="headerlink" href="#isnotnulloremptystring-paramname-nullable-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or empty.</p>
+<p>Determines whether the specified argument is not<code>null</code> or empty.</p>
+<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paramName</strong>
+Name of the parameter.</p>
+<p><strong>paramValue</strong>
+Value of the parameter.</p>
+<h4 id="exceptions-28">Exceptions<a class="headerlink" href="#exceptions-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong></p>
+<h3 id="isnotnulloremptystring-paramname-string-paramvalue">IsNotNullOrEmpty(string paramName, string paramValue)<a class="headerlink" href="#isnotnulloremptystring-paramname-string-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is not<code>null</code> or empty.</p>
 <h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
@@ -760,140 +745,150 @@ Name of the parameter.</p>
 Value of the parameter.</p>
 <h4 id="exceptions-29">Exceptions<a class="headerlink" href="#exceptions-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong></p>
-<h3 id="isnotnulloremptystring-paramname-string-paramvalue">IsNotNullOrEmpty(string paramName, string paramValue)<a class="headerlink" href="#isnotnulloremptystring-paramname-string-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or empty.</p>
-<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the parameter.</p>
-<p><strong>paramValue</strong>
-Value of the parameter.</p>
-<h4 id="exceptions-30">Exceptions<a class="headerlink" href="#exceptions-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong></p>
 <h3 id="isnotnulloremptyarrayexpressionfunc-expression">IsNotNullOrEmptyArray(Expression&lt;Func<Array>&gt; expression)<a class="headerlink" href="#isnotnulloremptyarrayexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or an empty array (.Length == 0).</p>
-<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code> or an empty array (.Length == 0).</p>
+<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression</p>
-<h4 id="exceptions-31">Exceptions<a class="headerlink" href="#exceptions-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-30">Exceptions<a class="headerlink" href="#exceptions-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If expression value is <code>null</code> or an empty array.</p>
+If expression value is<code>null</code> or an empty array.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="isnotnulloremptyarraystring-paramname-array-paramvalue">IsNotNullOrEmptyArray(string paramName, Array paramValue)<a class="headerlink" href="#isnotnulloremptyarraystring-paramname-array-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or an empty array (.Length == 0).</p>
-<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code> or an empty array (.Length == 0).</p>
+<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
 <p><strong>paramValue</strong>
 Value of the parameter.</p>
-<h4 id="exceptions-32">Exceptions<a class="headerlink" href="#exceptions-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-31">Exceptions<a class="headerlink" href="#exceptions-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong></p>
 <h3 id="isnotnullorwhitespaceexpressionfunc-expression">IsNotNullOrWhitespace(Expression&lt;Func<string>&gt; expression)<a class="headerlink" href="#isnotnullorwhitespaceexpressionfunc-expression" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or a whitespace.</p>
-<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code> or a whitespace.</p>
+<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
-<h4 id="exceptions-33">Exceptions<a class="headerlink" href="#exceptions-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-32">Exceptions<a class="headerlink" href="#exceptions-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If expression value is <code>null</code> or a whitespace.</p>
+If expression value is<code>null</code> or a whitespace.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
+The expression is<code>null</code>.</p>
 <h3 id="isnotnullorwhitespacestring-paramname-string-paramvalue">IsNotNullOrWhitespace(string paramName, string paramValue)<a class="headerlink" href="#isnotnullorwhitespacestring-paramname-string-paramvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not <code>null</code> or a whitespace.</p>
-<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Determines whether the specified argument is not<code>null</code> or a whitespace.</p>
+<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
 <p><strong>paramValue</strong>
 Value of the parameter.</p>
-<h4 id="exceptions-34">Exceptions<a class="headerlink" href="#exceptions-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-33">Exceptions<a class="headerlink" href="#exceptions-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong></p>
 <h3 id="isnotofoneofthetypesstring-paramname-object-instance-type-notrequiredtypes">IsNotOfOneOfTheTypes(string paramName, object instance, Type[] notRequiredTypes)<a class="headerlink" href="#isnotofoneofthetypesstring-paramname-object-instance-type-notrequiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance is not of any of the specified notRequiredTypes.</p>
-<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
 <p><strong>notRequiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-35">Exceptions<a class="headerlink" href="#exceptions-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-34">Exceptions<a class="headerlink" href="#exceptions-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The notRequiredTypes is <code>null</code> or empty array.</p>
+The notRequiredTypes is<code>null</code> or empty array.</p>
 <h3 id="isnotofoneofthetypesstring-paramname-type-type-type-notrequiredtypes">IsNotOfOneOfTheTypes(string paramName, Type type, Type[] notRequiredTypes)<a class="headerlink" href="#isnotofoneofthetypesstring-paramname-type-type-type-notrequiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type is not of any of the specified notRequiredTypes.</p>
-<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>notRequiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-36">Exceptions<a class="headerlink" href="#exceptions-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-35">Exceptions<a class="headerlink" href="#exceptions-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="isnotofoneofthetypesexpressionfunc-expression-type-notrequiredtypes">IsNotOfOneOfTheTypes<T>(Expression&lt;Func<T>&gt; expression, Type[] notRequiredTypes)<a class="headerlink" href="#isnotofoneofthetypesexpressionfunc-expression-type-notrequiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value is not of any of the specified notRequiredTypes.</p>
-<h4 id="type-parameters-14">Type Parameters<a class="headerlink" href="#type-parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-13">Type Parameters<a class="headerlink" href="#type-parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>notRequiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-37">Exceptions<a class="headerlink" href="#exceptions-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-36">Exceptions<a class="headerlink" href="#exceptions-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression value is <code>null</code>.</p>
+The expression value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value is of one of the notRequiredTypes.</p>
 <h3 id="isnotoftypestring-paramname-object-instance-type-notrequiredtype">IsNotOfType(string paramName, object instance, Type notRequiredType)<a class="headerlink" href="#isnotoftypestring-paramname-object-instance-type-notrequiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance is not of the specified notRequiredType.</p>
-<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
 <p><strong>notRequiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-38">Exceptions<a class="headerlink" href="#exceptions-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-37">Exceptions<a class="headerlink" href="#exceptions-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The instance is of type notRequiredType.</p>
 <h3 id="isnotoftypestring-paramname-type-type-type-notrequiredtype">IsNotOfType(string paramName, Type type, Type notRequiredType)<a class="headerlink" href="#isnotoftypestring-paramname-type-type-type-notrequiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type is not of the specified notRequiredType.</p>
-<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>notRequiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-39">Exceptions<a class="headerlink" href="#exceptions-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-38">Exceptions<a class="headerlink" href="#exceptions-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="isnotoftypeexpressionfunc-expression-type-notrequiredtype">IsNotOfType<T>(Expression&lt;Func<T>&gt; expression, Type notRequiredType)<a class="headerlink" href="#isnotoftypeexpressionfunc-expression-type-notrequiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value is not of the specified notRequiredType.</p>
-<h4 id="type-parameters-15">Type Parameters<a class="headerlink" href="#type-parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-14">Type Parameters<a class="headerlink" href="#type-parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>notRequiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-40">Exceptions<a class="headerlink" href="#exceptions-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-39">Exceptions<a class="headerlink" href="#exceptions-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression value is <code>null</code>.</p>
+The expression value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value is of type notRequiredType.</p>
 <h3 id="isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue">IsNotOutOfRange<T>(Expression&lt;Func<T>&gt; expression, T minimumValue, T maximumValue)<a class="headerlink" href="#isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is not out of range.</p>
+<h4 id="type-parameters-15">Type Parameters<a class="headerlink" href="#type-parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The value type.</p>
+<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>expression</strong>
+The expression.</p>
+<p><strong>minimumValue</strong>
+The minimum value.</p>
+<p><strong>maximumValue</strong>
+The maximum value.</p>
+<h4 id="exceptions-40">Exceptions<a class="headerlink" href="#exceptions-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If expression value is out of range.</p>
+<p><strong>T:System.ArgumentException</strong>
+The expression body is not of type <a href="#">MemberExpression</a>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The expression is<code>null</code>.</p>
+<h3 id="isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation">IsNotOutOfRange<T>(Expression&lt;Func<T>&gt; expression, T minimumValue, T maximumValue, Func&lt;T, T, T, bool&gt; validation)<a class="headerlink" href="#isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is not out of range.</p>
 <h4 id="type-parameters-16">Type Parameters<a class="headerlink" href="#type-parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -905,39 +900,36 @@ The expression.</p>
 The minimum value.</p>
 <p><strong>maximumValue</strong>
 The maximum value.</p>
-<h4 id="exceptions-41">Exceptions<a class="headerlink" href="#exceptions-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If expression value is out of range.</p>
-<p><strong>T:System.ArgumentException</strong>
-The expression body is not of type <a href="#">MemberExpression</a>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation">IsNotOutOfRange<T>(Expression&lt;Func<T>&gt; expression, T minimumValue, T maximumValue, Func&lt;T, T, T, bool&gt; validation)<a class="headerlink" href="#isnotoutofrangeexpressionfunc-expression-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not out of range.</p>
-<h4 id="type-parameters-17">Type Parameters<a class="headerlink" href="#type-parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The value type.</p>
-<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<p><strong>minimumValue</strong>
-The minimum value.</p>
-<p><strong>maximumValue</strong>
-The maximum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-42">Exceptions<a class="headerlink" href="#exceptions-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-41">Exceptions<a class="headerlink" href="#exceptions-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <p><strong>T:System.ArgumentOutOfRangeException</strong>
 If expression value is out of range.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression body is not of type <a href="#">MemberExpression</a>.</p>
 <h3 id="isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue">IsNotOutOfRange<T>(string paramName, T paramValue, T minimumValue, T maximumValue)<a class="headerlink" href="#isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is not out of range.</p>
-<h4 id="type-parameters-18">Type Parameters<a class="headerlink" href="#type-parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-17">Type Parameters<a class="headerlink" href="#type-parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 Type of the argument.</p>
+<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>paramName</strong>
+Name of the parameter.</p>
+<p><strong>paramValue</strong>
+Value of the parameter.</p>
+<p><strong>minimumValue</strong>
+The minimum value.</p>
+<p><strong>maximumValue</strong>
+The maximum value.</p>
+<h4 id="exceptions-42">Exceptions<a class="headerlink" href="#exceptions-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+If paramValue is out of range.</p>
+<h3 id="isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation">IsNotOutOfRange<T>(string paramName, T paramValue, T minimumValue, T maximumValue, Func&lt;T, T, T, bool&gt; validation)<a class="headerlink" href="#isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is not out of range.</p>
+<h4 id="type-parameters-18">Type Parameters<a class="headerlink" href="#type-parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong></p>
 <h4 id="parameters-43">Parameters<a class="headerlink" href="#parameters-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the parameter.</p>
@@ -947,129 +939,128 @@ Value of the parameter.</p>
 The minimum value.</p>
 <p><strong>maximumValue</strong>
 The maximum value.</p>
-<h4 id="exceptions-43">Exceptions<a class="headerlink" href="#exceptions-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-If paramValue is out of range.</p>
-<h3 id="isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation">IsNotOutOfRange<T>(string paramName, T paramValue, T minimumValue, T maximumValue, Func&lt;T, T, T, bool&gt; validation)<a class="headerlink" href="#isnotoutofrangestring-paramname-t-paramvalue-t-minimumvalue-t-maximumvalue-funct-t-t-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is not out of range.</p>
-<h4 id="type-parameters-19">Type Parameters<a class="headerlink" href="#type-parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong></p>
-<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the parameter.</p>
-<p><strong>paramValue</strong>
-Value of the parameter.</p>
-<p><strong>minimumValue</strong>
-The minimum value.</p>
-<p><strong>maximumValue</strong>
-The maximum value.</p>
 <p><strong>validation</strong>
 The validation function to call for validation.</p>
-<h4 id="exceptions-44">Exceptions<a class="headerlink" href="#exceptions-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-43">Exceptions<a class="headerlink" href="#exceptions-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentOutOfRangeException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The validation is <code>null</code>.</p>
+The validation is<code>null</code>.</p>
 <h3 id="isofoneofthetypesstring-paramname-object-instance-type-requiredtypes">IsOfOneOfTheTypes(string paramName, object instance, Type[] requiredTypes)<a class="headerlink" href="#isofoneofthetypesstring-paramname-object-instance-type-requiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance is of at least one of the specified requiredTypes.</p>
-<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
 <p><strong>requiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-45">Exceptions<a class="headerlink" href="#exceptions-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-44">Exceptions<a class="headerlink" href="#exceptions-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The requiredTypes is <code>null</code> or an empty array.</p>
+The requiredTypes is<code>null</code> or an empty array.</p>
 <h3 id="isofoneofthetypesstring-paramname-type-type-type-requiredtypes">IsOfOneOfTheTypes(string paramName, Type type, Type[] requiredTypes)<a class="headerlink" href="#isofoneofthetypesstring-paramname-type-type-type-requiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type is of at least one of the specified requiredTypes.</p>
-<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>requiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-46">Exceptions<a class="headerlink" href="#exceptions-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-45">Exceptions<a class="headerlink" href="#exceptions-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="isofoneofthetypesexpressionfunc-expression-type-requiredtypes">IsOfOneOfTheTypes<T>(Expression&lt;Func<T>&gt; expression, Type[] requiredTypes)<a class="headerlink" href="#isofoneofthetypesexpressionfunc-expression-type-requiredtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value is of at least one of the specified requiredTypes.</p>
-<h4 id="type-parameters-20">Type Parameters<a class="headerlink" href="#type-parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-19">Type Parameters<a class="headerlink" href="#type-parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression type.</p>
 <p><strong>requiredTypes</strong>
 The types to check for.</p>
-<h4 id="exceptions-47">Exceptions<a class="headerlink" href="#exceptions-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-46">Exceptions<a class="headerlink" href="#exceptions-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The requiredTypes is <code>null</code>.</p>
+The requiredTypes is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value is not at least one of the requiredTypes.</p>
 <h3 id="isoftypestring-paramname-object-instance-type-requiredtype">IsOfType(string paramName, object instance, Type requiredType)<a class="headerlink" href="#isoftypestring-paramname-object-instance-type-requiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified instance is of the specified requiredType.</p>
-<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>instance</strong>
 The instance to check.</p>
 <p><strong>requiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-48">Exceptions<a class="headerlink" href="#exceptions-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-47">Exceptions<a class="headerlink" href="#exceptions-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The instance is <code>null</code>.</p>
+The instance is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The instance is not of type requiredType.</p>
 <h3 id="isoftypestring-paramname-type-type-type-requiredtype">IsOfType(string paramName, Type type, Type requiredType)<a class="headerlink" href="#isoftypestring-paramname-type-type-type-requiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified type is of the specified requiredType.</p>
-<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>paramName</strong>
 Name of the param.</p>
 <p><strong>type</strong>
 The type to check.</p>
 <p><strong>requiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-49">Exceptions<a class="headerlink" href="#exceptions-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-48">Exceptions<a class="headerlink" href="#exceptions-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 type</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The type is <code>null</code>.</p>
+The type is<code>null</code>.</p>
 <h3 id="isoftypeexpressionfunc-expression-type-requiredtype">IsOfType<T>(Expression&lt;Func<T>&gt; expression, Type requiredType)<a class="headerlink" href="#isoftypeexpressionfunc-expression-type-requiredtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Checks whether the specified expression value is of the specified requiredType.</p>
-<h4 id="type-parameters-21">Type Parameters<a class="headerlink" href="#type-parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-20">Type Parameters<a class="headerlink" href="#type-parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The type of the value.</p>
-<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>requiredType</strong>
 The type to check for.</p>
-<h4 id="exceptions-50">Exceptions<a class="headerlink" href="#exceptions-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-49">Exceptions<a class="headerlink" href="#exceptions-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression value is <code>null</code>.</p>
+The expression value is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The expression value is not of type requiredType.</p>
 <h3 id="issupportedbool-issupported-string-errorformat-object-args">IsSupported(bool isSupported, string errorFormat, object[] args)<a class="headerlink" href="#issupportedbool-issupported-string-errorformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Checks whether the passed in boolean check is <code>true</code>. If not, this method will throw a <a href="#">NotSupportedException</a>.</p>
-<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Checks whether the passed in boolean check is<code>true</code>. If not, this method will throw a <a href="#">NotSupportedException</a>.</p>
+<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>isSupported</strong>
-if set to <code>true</code>, the action is supported; otherwise <code>false</code>.</p>
+if set to<code>true</code> , the action is supported; otherwise<code>false</code>.</p>
 <p><strong>errorFormat</strong>
 The error format.</p>
 <p><strong>args</strong>
 The arguments for the string format.</p>
-<h4 id="exceptions-51">Exceptions<a class="headerlink" href="#exceptions-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-50">Exceptions<a class="headerlink" href="#exceptions-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.NotSupportedException</strong>
-The isSupported is <code>false</code>.</p>
+The isSupported is<code>false</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The errorFormat is <code>null</code> or whitespace.</p>
+The errorFormat is<code>null</code> or whitespace.</p>
 <h3 id="isvalidexpressionfunc-expression-ivaluevalidator-validator">IsValid<T>(Expression&lt;Func<T>&gt; expression, IValueValidator<T> validator)<a class="headerlink" href="#isvalidexpressionfunc-expression-ivaluevalidator-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified argument is valid.</p>
+<h4 id="type-parameters-21">Type Parameters<a class="headerlink" href="#type-parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T</strong>
+The value type.</p>
+<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>expression</strong>
+The expression.</p>
+<p><strong>validator</strong>
+The validator.</p>
+<h4 id="exceptions-51">Exceptions<a class="headerlink" href="#exceptions-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of validator returns<code>false</code>.</p>
+<p><strong>T:System.ArgumentNullException</strong>
+The expression is<code>null</code>.</p>
+<h3 id="isvalidexpressionfunc-expression-bool-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, bool validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-22">Type Parameters<a class="headerlink" href="#type-parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1077,14 +1068,14 @@ The value type.</p>
 <h4 id="parameters-52">Parameters<a class="headerlink" href="#parameters-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>expression</strong>
 The expression.</p>
-<p><strong>validator</strong>
-The validator.</p>
+<p><strong>validation</strong>
+The validation result.</p>
 <h4 id="exceptions-52">Exceptions<a class="headerlink" href="#exceptions-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of  validator returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isvalidexpressionfunc-expression-bool-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, bool validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The expression is<code>null</code>.</p>
+<h3 id="isvalidexpressionfunc-expression-func-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, Func<bool> validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-func-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-23">Type Parameters<a class="headerlink" href="#type-parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1093,13 +1084,13 @@ The value type.</p>
 <p><strong>expression</strong>
 The expression.</p>
 <p><strong>validation</strong>
-The validation result.</p>
+The validation function.</p>
 <h4 id="exceptions-53">Exceptions<a class="headerlink" href="#exceptions-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isvalidexpressionfunc-expression-func-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, Func<bool> validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-func-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The expression is<code>null</code>.</p>
+<h3 id="isvalidexpressionfunc-expression-funct-bool-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, Func&lt;T, bool&gt; validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-funct-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-24">Type Parameters<a class="headerlink" href="#type-parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1111,25 +1102,27 @@ The expression.</p>
 The validation function.</p>
 <h4 id="exceptions-54">Exceptions<a class="headerlink" href="#exceptions-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isvalidexpressionfunc-expression-funct-bool-validation">IsValid<T>(Expression&lt;Func<T>&gt; expression, Func&lt;T, bool&gt; validation)<a class="headerlink" href="#isvalidexpressionfunc-expression-funct-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The expression is<code>null</code>.</p>
+<h3 id="isvalidstring-paramname-t-paramvalue-ivaluevalidator-validator">IsValid<T>(string paramName, T paramValue, IValueValidator<T> validator)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-ivaluevalidator-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-25">Type Parameters<a class="headerlink" href="#type-parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The value type.</p>
 <h4 id="parameters-55">Parameters<a class="headerlink" href="#parameters-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>expression</strong>
-The expression.</p>
-<p><strong>validation</strong>
-The validation function.</p>
+<p><strong>paramName</strong>
+Name of the parameter.</p>
+<p><strong>paramValue</strong>
+The parameter value.</p>
+<p><strong>validator</strong>
+The validator.</p>
 <h4 id="exceptions-55">Exceptions<a class="headerlink" href="#exceptions-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
+If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of validator returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The expression is <code>null</code>.</p>
-<h3 id="isvalidstring-paramname-t-paramvalue-ivaluevalidator-validator">IsValid<T>(string paramName, T paramValue, IValueValidator<T> validator)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-ivaluevalidator-validator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The paramName is<code>null</code>.</p>
+<h3 id="isvalidstring-paramname-t-paramvalue-bool-validation">IsValid<T>(string paramName, T paramValue, bool validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-26">Type Parameters<a class="headerlink" href="#type-parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1139,14 +1132,14 @@ The value type.</p>
 Name of the parameter.</p>
 <p><strong>paramValue</strong>
 The parameter value.</p>
-<p><strong>validator</strong>
-The validator.</p>
+<p><strong>validation</strong>
+The validation function.</p>
 <h4 id="exceptions-56">Exceptions<a class="headerlink" href="#exceptions-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the Missing: <see cref="M:Catel.Data.IValueValidator`1.IsValid(`0)" /> of  validator returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The paramName is <code>null</code>.</p>
-<h3 id="isvalidstring-paramname-t-paramvalue-bool-validation">IsValid<T>(string paramName, T paramValue, bool validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The paramName is<code>null</code>.</p>
+<h3 id="isvalidstring-paramname-t-paramvalue-func-validation">IsValid<T>(string paramName, T paramValue, Func<bool> validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-func-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-27">Type Parameters<a class="headerlink" href="#type-parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1160,10 +1153,10 @@ The parameter value.</p>
 The validation function.</p>
 <h4 id="exceptions-57">Exceptions<a class="headerlink" href="#exceptions-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The paramName is <code>null</code>.</p>
-<h3 id="isvalidstring-paramname-t-paramvalue-func-validation">IsValid<T>(string paramName, T paramValue, Func<bool> validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-func-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The paramName is<code>null</code>.</p>
+<h3 id="isvalidstring-paramname-t-paramvalue-funct-bool-validation">IsValid<T>(string paramName, T paramValue, Func&lt;T, bool&gt; validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-funct-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified argument is valid.</p>
 <h4 id="type-parameters-28">Type Parameters<a class="headerlink" href="#type-parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
@@ -1177,26 +1170,9 @@ The parameter value.</p>
 The validation function.</p>
 <h4 id="exceptions-58">Exceptions<a class="headerlink" href="#exceptions-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
+If the validation code returns<code>false</code>.</p>
 <p><strong>T:System.ArgumentNullException</strong>
-The paramName is <code>null</code>.</p>
-<h3 id="isvalidstring-paramname-t-paramvalue-funct-bool-validation">IsValid<T>(string paramName, T paramValue, Func&lt;T, bool&gt; validation)<a class="headerlink" href="#isvalidstring-paramname-t-paramvalue-funct-bool-validation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified argument is valid.</p>
-<h4 id="type-parameters-29">Type Parameters<a class="headerlink" href="#type-parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T</strong>
-The value type.</p>
-<h4 id="parameters-59">Parameters<a class="headerlink" href="#parameters-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>paramName</strong>
-Name of the parameter.</p>
-<p><strong>paramValue</strong>
-The parameter value.</p>
-<p><strong>validation</strong>
-The validation function.</p>
-<h4 id="exceptions-59">Exceptions<a class="headerlink" href="#exceptions-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-If the validation code returns <code>false</code>.</p>
-<p><strong>T:System.ArgumentNullException</strong>
-The paramName is <code>null</code>.</p>
+The paramName is<code>null</code>.</p>
 
                     </div>
                 </div>

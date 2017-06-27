@@ -16,7 +16,7 @@ public static class ArgumentsProxyFactory
 
 ### CreateAlertArgument(string caption, string message, string positiveButton, string negativeButton)
 
-Creates a proxy for .
+Creates a proxy for.
 
 #### Parameters
 

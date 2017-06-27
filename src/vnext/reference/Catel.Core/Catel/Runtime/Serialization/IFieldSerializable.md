@@ -6,14 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IFieldSerializable
 ```
 
-Fast serialization interaction. By default the serialization engine uses reflection to get and set values. To improve
-    performance, once can implement this interface.
+Fast serialization interaction. By default the serialization engine uses reflection to get and set values. To improve performance, once can implement this interface.
 
 
 
@@ -33,7 +32,7 @@ The value.
 
 #### Returns
 
-```true``` if the value is retrieved successfully; otherwise, ```false```.
+`true` if the value is retrieved successfully; otherwise,`false`.
 
 
 
@@ -51,7 +50,7 @@ The value.
 
 #### Returns
 
-```true``` if the value is set successfully; otherwise, ```false```.
+`true` if the value is set successfully; otherwise,`false`.
 
 
 

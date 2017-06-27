@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class RegistrationConventionHandler : IRegistrationConventionHandler
@@ -22,48 +22,6 @@ Represents the [IRegistrationConventionHandler](#) implementation.
 
 
 ## Fields
-
-### _assemblies
-
-The assemblies
-
-
-
-### _default
-
-The static instance of the registration convention handler.
-
-
-
-### _registeredConventions
-
-The registered conventions
-
-
-
-### _retrievedTypes
-
-The retrieved types
-
-
-
-### _serviceLocator
-
-The service locator
-
-
-
-### _typeFactory
-
-The type factory
-
-
-
-### Log
-
-The log.
-
-
 
 ## Constructors
 
@@ -121,7 +79,7 @@ The assembly.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The assembly is ```null```.
+The assembly is`null`.
 
 
 
@@ -134,22 +92,6 @@ Applies the registered conventions.
 ### RegisterConvention<TRegistrationConvention>(RegistrationType registrationType)
 
 Registers the convention.
-
-
-
-### RemoveIfAlreadyRegistered(Type type)
-
-Removes the specified type in the container if already registered.
-
-#### Parameters
-
-**type**
-The type.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The type is ```null```.
 
 
 

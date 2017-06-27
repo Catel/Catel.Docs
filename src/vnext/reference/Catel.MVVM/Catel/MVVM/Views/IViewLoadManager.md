@@ -6,18 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewLoadManager
 ```
 
-Manager that handles top =&gt; bottom loaded events for all views inside an application.
-    
-
-
-    The reason this class is built is that in non-WPF technologies, the visual tree is loaded from
-    bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.
+Manager that handles top =&gt; bottom loaded events for all views inside an application.The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.
 
 
 
@@ -61,7 +56,7 @@ The view load state.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewLoadState is ```null```.
+The viewLoadState is`null`.
 
 
 

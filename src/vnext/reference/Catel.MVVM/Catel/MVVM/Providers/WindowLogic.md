@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Providers
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class WindowLogic : LogicBase
@@ -21,20 +21,6 @@ MVVM Provider behavior implementation for a window.
 
 
 ## Fields
-
-### _closeInitiatedByViewModel
-
-### _closeInitiatedByViewModelResult
-
-### _targetWindowClosedEventName
-
-### _targetWindowClosedWeakEventListener
-
-### Log
-
-The log.
-
-
 
 ## Constructors
 
@@ -56,7 +42,7 @@ The view model to inject.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The targetWindow is ```null```.
+The targetWindow is`null`.
 
 
 
@@ -64,33 +50,11 @@ The targetWindow is ```null```.
 
 ### ForceCloseAfterSettingDialogResult
 
-Gets or sets a value indicating whether the logic should call ```Close``` immediately when
-    the ```DialogResult``` is set.
-    
-
-
-    By default, the ```Window``` class correctly closes the window when the ```DialogResult``` is 
-    set, but not all implementations work like this.
-    
-
-
-    The default value is false.
-
-
-
-### TargetWindow
-
-Gets the target control as window object.
+Gets or sets a value indicating whether the logic should call`Close` immediately when the`DialogResult` is set.By default, the`Window` class correctly closes the window when the`DialogResult` is set, but not all implementations work like this.The default value is false.
 
 
 
 ## Methods
-
-### InvokeCloseDynamically()
-
-Invokes the close method on the window dynamically.
-
-
 
 ### OnTargetViewUnloadedAsync(object sender, EventArgs e)
 
@@ -106,7 +70,7 @@ The [EventArgs](#) instance containing the event data.
 
 
 
-### OnTargetWindowClosed()
+### OnTargetWindowClosed(object sender, EventArgs e)
 
 Called when the TargetWindow has been closed.
 
@@ -127,22 +91,6 @@ The sender.
 
 **e**
 The [ViewModelClosedEventArgs](#) instance containing the event data.
-
-
-
-### SetDataContext(object newDataContext)
-
-Sets the data context of the target control.
-    
-
-
-    This method is abstract because the real logic implementation knows how to set the data context (for example,
-    by using an additional data context grid).
-
-#### Parameters
-
-**newDataContext**
-The new data context.
 
 
 

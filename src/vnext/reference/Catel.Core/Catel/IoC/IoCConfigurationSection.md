@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class IoCConfigurationSection : ConfigurationSection
@@ -48,13 +48,6 @@ sectionGroup name = "catel" >
 
 
 ## Fields
-
-### ServiceLocatorConfigurationCollectionPropertyName
-serviceLocatorConfigurations
-
-The service locator configuration collection property name.
-
-
 
 ## Properties
 

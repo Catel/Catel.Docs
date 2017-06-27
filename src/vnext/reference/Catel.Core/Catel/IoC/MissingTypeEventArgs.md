@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class MissingTypeEventArgs : EventArgs
@@ -16,12 +16,7 @@ public class MissingTypeEventArgs : EventArgs
 [EventArgs]()
 
 
-Event arguments for the MissingType event.
-    
-
-
-    These event arguments will be fired. To resolve a type, set either the ImplementingInstance
-    or ImplementingType. If both are filled, the instance will be used.
+Event arguments for the MissingType event.These event arguments will be fired. To resolve a type, set either the ImplementingInstance or ImplementingType. If both are filled, the instance will be used.
 
 
 
@@ -39,7 +34,7 @@ Type of the interface.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The interfaceType is ```null```.
+The interfaceType is`null`.
 
 
 
@@ -47,21 +42,13 @@ The interfaceType is ```null```.
 
 ### ImplementingInstance
 
-Gets or sets the implementing instance.
-    
-
-
-    Set if the registration of an instance is required.
+Gets or sets the implementing instance.Set if the registration of an instance is required.
 
 
 
 ### ImplementingType
 
-Gets or sets the implementing type.
-    
-
-
-    Set if the registration of a type is required.
+Gets or sets the implementing type.Set if the registration of a type is required.
 
 
 

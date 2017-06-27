@@ -22,20 +22,6 @@ Contains information about a specific binding party (either source or target).
 
 ## Fields
 
-### _changeNotificationWrapper
-
-### _instance
-
-### _propertyInfo
-
-### _propertyName
-
-### _toStringValue
-
-### _weakEventListeners
-
-### Log
-
 ## Constructors
 
 ### BindingParty(object instance, string propertyName)
@@ -56,11 +42,7 @@ Name of the property.
 
 ### Instance
 
-Gets the instance of the binding party.
-    
-
-
-    Note that this value is stored in a weak reference and can be ```null``` if garbage collected.
+Gets the instance of the binding party.Note that this value is stored in a weak reference and can be`null` if garbage collected.
 
 
 
@@ -97,24 +79,9 @@ Performs application-defined tasks associated with freeing, releasing, or resett
 
 
 
-### Dispose(bool disposing)
-
-Releases unmanaged and - optionally - managed resources.
-
-#### Parameters
-
-**disposing**
-```true``` to release both managed and unmanaged resources; ```false``` to release only unmanaged resources.
-
-
-
 ### GetPropertyValue()
 
-Gets the property value.
-    
-
-
-    Note that the property value will be ```null``` if the Instance is garbage collected.
+Gets the property value.Note that the property value will be`null` if the Instance is garbage collected.
 
 #### Returns
 
@@ -122,21 +89,9 @@ The property value.
 
 
 
-### OnInstancePropertyChanged(object sender, PropertyChangedEventArgs e)
-
-### RaiseValueChanged()
-
-Raises the ValueChanged event.
-
-
-
 ### SetPropertyValue(object newValue)
 
-Sets the property value.
-    
-
-
-    Note that the property value will not be set if the Instance is garbage collected.
+Sets the property value.Note that the property value will not be set if the Instance is garbage collected.
 
 #### Parameters
 

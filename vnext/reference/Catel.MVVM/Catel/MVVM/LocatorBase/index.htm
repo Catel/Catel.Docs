@@ -183,15 +183,9 @@
 <li class="tocentry"><a href="#properties">Properties</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -215,8 +209,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -236,8 +228,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -263,9 +253,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -276,9 +263,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -346,117 +330,24 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public abstract class LocatorBase : ILocator
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\ILocator.htm">ILocator</a></p>
-<p>Base class for all locators. This class implements the shared logic so only custom logic has to
-    be implemented by new locator classes.</p>
+<p>Base class for all locators. This class implements the shared logic so only custom logic has to be implemented by new locator classes.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cache">_cache<a class="headerlink" href="#cache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="locatorbase-1">LocatorBase()<a class="headerlink" href="#locatorbase-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">Object</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="namingconventions">NamingConventions<a class="headerlink" href="#namingconventions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the naming conventions to use to locate types.</p>
-<pre><code>By adding or removing conventions to this property, the service can use custom resolving of types.
-
-
-
-Each implementation should add its own default naming convention.
-</code></pre>
-
+<p>Gets or sets the naming conventions to use to locate types.By adding or removing conventions to this property, the service can use custom resolving of types.Each implementation should add its own default naming convention.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="additemtocachestring-valuetoresolve-string-resolvedvalue">AddItemToCache(string valueToResolve, string resolvedValue)<a class="headerlink" href="#additemtocachestring-valuetoresolve-string-resolvedvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds the item to the cache.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>valueToResolve</strong>
-The value to resolve.</p>
-<p><strong>resolvedValue</strong>
-The resolved value.</p>
-<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The valueToResolve is <code>null</code> or whitespace.</p>
 <h3 id="clearcache">ClearCache()<a class="headerlink" href="#clearcache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Clears the cache of the resolved naming conventions.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that clearing the cache will also clear all manually registered values registered via the 
-    String) method.</p>
-<h3 id="getdefaultnamingconventions">GetDefaultNamingConventions()<a class="headerlink" href="#getdefaultnamingconventions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the default naming conventions.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>An enumerable of default naming conventions.</p>
-<h3 id="getitemfromcachestring-valuetoresolve">GetItemFromCache(string valueToResolve)<a class="headerlink" href="#getitemfromcachestring-valuetoresolve" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the item from the cache.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>valueToResolve</strong>
-The value to resolve.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The item or <code>null</code> if the item was not found in the cache.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The valueToResolve is <code>null</code> or whitespace.</p>
-<h3 id="gettypefromstringstring-fulltypename">GetTypeFromString(string fullTypeName)<a class="headerlink" href="#gettypefromstringstring-fulltypename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the type from string. This is a helper method to easily</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>fullTypeName</strong>
-Full name of the type.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The resolved type or <code>null</code> if the type could not be resolved.</p>
-<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Internally, this method uses Boolean).</p>
-<h3 id="registerstring-valuetoresolve-string-resolvedvalue">Register(string valueToResolve, string resolvedValue)<a class="headerlink" href="#registerstring-valuetoresolve-string-resolvedvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the specified type in the local cache. This cache will also be used by the String)
-    method.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>valueToResolve</strong>
-The value to resolve.</p>
-<p><strong>resolvedValue</strong>
-The resolved value.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The valueToResolve is <code>null</code> or whitespace.</p>
-<h3 id="resolvestring-valuetoresolve">Resolve(string valueToResolve)<a class="headerlink" href="#resolvestring-valuetoresolve" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Resolves the specified value to resolve. It uses both the NamingConventions and the manually registered
-    values registered via the String) method to resolve the value.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>valueToResolve</strong>
-The value to resolve.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The resolved value or <code>null</code> if the value could not be resolved.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentException</strong>
-The valueToResolve is <code>null</code> or whitespace.</p>
-<h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This method can be overriden to implement custom behavior. Don't forget to register the value using the 
-    String) method if the result should be cached in a custom implementation.</p>
-<pre><code>By default, this value will assume the valueToResolve is a type and will cast it as so. If the 
-valueToResolve is not a type, override this method and register the result using the String)
-method manually.
-</code></pre>
-
-<h3 id="resolvenamingconventionstring-assembly-string-typetoresolvename-string-namingconvention">ResolveNamingConvention(string assembly, string typeToResolveName, string namingConvention)<a class="headerlink" href="#resolvenamingconventionstring-assembly-string-typetoresolvename-string-namingconvention" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Resolves a single naming convention.</p>
-<pre><code>This method is abstract because each locator should or could use its own naming convention to resolve
-the type. The String) method has prepared all the values such as the assembly name and the
-only thing this method has to do is to actually resolve a string value based on the specified naming convention.
-</code></pre>
-
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>assembly</strong>
-The assembly name.</p>
-<p><strong>typeToResolveName</strong>
-The full type name of the type to resolve.</p>
-<p><strong>namingConvention</strong>
-The naming convention to use for resolving.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The resolved naming convention.</p>
+<p>Note that clearing the cache will also clear all manually registered values registered via the String) method.</p>
 
                     </div>
                 </div>

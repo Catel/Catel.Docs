@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class FirstInterfaceRegistrationConvention : RegistrationConventionBase
@@ -21,12 +21,6 @@ The first interface convention based on [RegistrationConventionBase](#).
 
 
 ## Fields
-
-### Log
-
-The log.
-
-
 
 ## Constructors
 
@@ -58,7 +52,7 @@ The types to register.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The typesToRegister is ```null```.
+The typesToRegister is`null`.
 
 
 

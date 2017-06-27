@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -265,8 +261,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/AwaitableDisposable/">AwaitableDisposable</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/DefaultAsyncWaitQueue/">DefaultAsyncWaitQueue</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/Deque/">Deque</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Threading/IAsyncWaitQueue/">IAsyncWaitQueue</a>
 </li>
@@ -356,14 +350,14 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class TaskShim
 </pre><p>Task wrapper so it works on all platforms.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This code originally comes from https://github.com/StephenCleary/AsyncEx/blob/77b9711c2c5fd4ca28b220ce4c93d209eeca2b4a/Source/Unit%20Tests/Tests%20(NET40)/Internal/TaskShim.cs.</p>
+<p>This code originally comes from https://github.com/StephenCleary/AsyncEx/ (MIT license).</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="delayint-millisecondsdelay">Delay(int millisecondsDelay)<a class="headerlink" href="#delayint-millisecondsdelay" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates a task that will complete after a time delay.</p>
@@ -442,7 +436,7 @@ The cancellation token.</p>
 <p><strong>T:System.ArgumentNullException</strong>
 The action parameter was null.</p>
 <h3 id="runfunc-function">Run(Func<Task> function)<a class="headerlink" href="#runfunc-function" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Queues the specified work to run on the ThreadPool and returns a proxy for the  task returned by function.</p>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>function</strong>
 The work to execute asynchronously.</p>
@@ -452,7 +446,7 @@ The work to execute asynchronously.</p>
 <p><strong>T:System.ArgumentNullException</strong>
 The function parameter was null.</p>
 <h3 id="runfunc-function-cancellationtoken-cancellationtoken">Run(Func<Task> function, CancellationToken cancellationToken)<a class="headerlink" href="#runfunc-function-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Queues the specified work to run on the ThreadPool and returns a proxy for the  task returned by function.</p>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>function</strong>
 The work to execute asynchronously.</p>
@@ -464,7 +458,7 @@ The cancellation token.</p>
 <p><strong>T:System.ArgumentNullException</strong>
 The function parameter was null.</p>
 <h3 id="runfunctask-function">Run<TResult>(Func&lt;Task<TResult>&gt; function)<a class="headerlink" href="#runfunctask-function" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Queues the specified work to run on the ThreadPool and returns a proxy for the  Task(TResult) returned by function.</p>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TResult</strong>
 The type of the result returned by the proxy task.</p>
@@ -477,7 +471,7 @@ The work to execute asynchronously</p>
 <p><strong>T:System.ArgumentNullException</strong>
 The function parameter was null.</p>
 <h3 id="runfunctask-function-cancellationtoken-cancellationtoken">Run<TResult>(Func&lt;Task<TResult>&gt; function, CancellationToken cancellationToken)<a class="headerlink" href="#runfunctask-function-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Queues the specified work to run on the ThreadPool and returns a proxy for the  Task(TResult) returned by function.</p>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TResult</strong>
 The type of the result returned by the proxy task.</p>
@@ -579,7 +573,7 @@ The tasks array contained a null task.</p>
 <p><strong>tasks</strong>
 The tasks to wait on for completion.</p>
 <h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.</p>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
 <h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 The tasks argument was null.</p>
@@ -591,7 +585,7 @@ The tasks array contained a null task, or was empty.</p>
 <p><strong>tasks</strong>
 The tasks to wait on for completion.</p>
 <h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.</p>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
 <h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 The tasks argument was null.</p>
@@ -606,7 +600,7 @@ The type of the completed task.</p>
 <p><strong>tasks</strong>
 The tasks to wait on for completion.</p>
 <h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.</p>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
 <h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 The tasks argument was null.</p>
@@ -621,7 +615,7 @@ The type of the completed task.</p>
 <p><strong>tasks</strong>
 The tasks to wait on for completion.</p>
 <h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A task that represents the completion of one of the supplied tasks.  The return task's Result is the task that completed.</p>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
 <h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 The tasks argument was null.</p>

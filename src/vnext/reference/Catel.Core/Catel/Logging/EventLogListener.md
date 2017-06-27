@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class EventLogListener : BatchLogListenerBase
@@ -49,51 +49,4 @@ Gets or sets the source name to register and use when writing to the event log.
 
 
 ## Methods
-
-### ChooseEventLogEntryType(LogEvent logEvent)
-
-### FormatLogEvent(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)
-
-Formats the log event to a message which can be written to a log persistence storage.
-
-#### Parameters
-
-**log**
-The log.
-
-**message**
-The message.
-
-**logEvent**
-The log event.
-
-**extraData**
-The extra data.
-
-**logData**
-The log data.
-
-**time**
-The time.
-
-#### Returns
-
-The formatted log event.
-
-
-
-### WriteBatchAsync(List<LogBatchEntry> batchEntries)
-
-Writes the batch asynchronous.
-
-#### Parameters
-
-**batchEntries**
-The batch entries.
-
-#### Returns
-
-Task.
-
-
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ExceptionServiceExtensions
@@ -35,12 +35,12 @@ The cancellation token.
 
 #### Returns
 
-```true``` if the exception is handled; otherwise ```false```.
+`true` if the exception is handled; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionService is ```null```.
+The exceptionService is`null`.
 
 
 
@@ -59,7 +59,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.Exception**
 A delegate callback throws an exception.
@@ -84,7 +84,7 @@ The cancellation token.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -105,7 +105,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 **T:System.Exception**
 A delegate callback throws an exception.
@@ -127,7 +127,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionService is ```null```.
+The exceptionService is`null`.
 
 
 
@@ -156,7 +156,7 @@ The cancellation token.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -181,7 +181,7 @@ The handler to use.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionService is ```null```.
+The exceptionService is`null`.
 
 
 

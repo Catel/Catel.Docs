@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISerializer
@@ -90,7 +90,7 @@ The deserialized model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -116,7 +116,7 @@ The deserialized model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -142,7 +142,7 @@ The deserialized model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 
 
@@ -168,7 +168,7 @@ The deserialized model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 
 
@@ -194,7 +194,7 @@ The list of members that have been deserialized.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 
 
@@ -220,7 +220,7 @@ The list of members that have been deserialized.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 
 
@@ -242,7 +242,7 @@ The configuration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -264,7 +264,7 @@ The configuration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -289,27 +289,21 @@ The members to ignore.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
 ### Warmup(IEnumerable<Type> types, int typesPerThread)
 
-Warms up the specified types. If the types is ```null```, all types known
-    in the [TypeCache](#) deriving from the [ModelBase](#) class will be initialized.
-    
-
-
-    Note that it is not required to call this, but it can help to prevent an additional performance
-    impact the first time a type is serialized.
+Warms up the specified types. If the types is`null` , all types known in the [TypeCache](#) deriving from the [ModelBase](#) class will be initialized.Note that it is not required to call this, but it can help to prevent an additional performance impact the first time a type is serialized.
 
 #### Parameters
 
 **types**
-The types to warmp up. If ```null```, all types will be initialized.
+The types to warmp up. If`null` , all types will be initialized.
 
 **typesPerThread**
-The types per thread. If ```-1```, all types will be initialized on the same thread.
+The types per thread. If`-1` , all types will be initialized on the same thread.
 
 
 

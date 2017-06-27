@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Interactivity
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class FocusFirstControl : BehaviorBase<FrameworkElement>
@@ -32,19 +32,9 @@ Dependency property for the FocusParentsFirst property.
 
 ### FocusParentsFirst
 
-Gets or sets a value indicating whether the parent should be focused first. 
-    
-
-
-    The default value is ```true```.
+Gets or sets a value indicating whether the parent should be focused first.The default value is`true`.
 
 
 
 ## Methods
-
-### OnAssociatedObjectLoaded()
-
-Called when the associated object is loaded.
-
-
 

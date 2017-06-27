@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IValidationResult
@@ -24,12 +24,7 @@ Gets the validation result message.
 
 #### Remarks
 
-This value has a public setter so it is possible to customize the message
-    in derived classes.
-    
-
-
-    One should be careful and know what they are doing when overwriting an error message.
+This value has a public setter so it is possible to customize the message in derived classes.One should be careful and know what they are doing when overwriting an error message.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class UriExtensions
@@ -34,7 +34,7 @@ The safe URI string.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 
@@ -49,12 +49,12 @@ The URL.
 
 #### Returns
 
-```true``` if the specified url is an absolute url; otherwise, ```false```.
+`true` if the specified url is an absolute url; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The url is ```null```.
+The url is`null`.
 
 
 

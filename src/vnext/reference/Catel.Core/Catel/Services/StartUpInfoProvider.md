@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class StartUpInfoProvider : IStartUpInfoProvider
@@ -18,12 +18,6 @@ public class StartUpInfoProvider : IStartUpInfoProvider
 
 
 ## Fields
-
-### _arguments
-
-The command argument list.
-
-
 
 ## Properties
 

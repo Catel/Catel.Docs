@@ -18,12 +18,6 @@ Class DispatcherOperation.
 
 ## Constructors
 
-### DispatcherOperation()
-
-Static constructor.
-
-
-
 ## Properties
 
 ### Default

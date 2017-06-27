@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -233,10 +229,6 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/BatchLogListenerBase/">BatchLogListenerBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelEventSource/">CatelEventSource</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelLog/">CatelLog</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ConsoleLogListener/">ConsoleLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/DebugLogListener/">DebugLogListener</a>
@@ -250,8 +242,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListener/">IBatchLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListenerExtensions/">IBatchLogListenerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ICatelLog/">ICatelLog</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IJsonLogFormatter/">IJsonLogFormatter</a>
 </li>
@@ -389,37 +379,43 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class LogExtensions
 </pre><p>Extensions to the <a href="#">ILog</a> interface.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="heading1">Heading1<a class="headerlink" href="#heading1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>=======================================================================</p>
-<h3 id="heading2">Heading2<a class="headerlink" href="#heading2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<hr />
-<h3 id="heading3">Heading3<a class="headerlink" href="#heading3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="debugilog-log">Debug(ILog log)<a class="headerlink" href="#debugilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as debug message.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
-<h3 id="debugilog-log-exception-exception">Debug(ILog log, Exception exception)<a class="headerlink" href="#debugilog-log-exception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="debugilog-log-logevent-logevent-string-messageformat-object-s1">Debug(ILog log, LogEvent logEvent, string messageFormat, object s1)<a class="headerlink" href="#debugilog-log-logevent-logevent-string-messageformat-object-s1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The format argument 1</p>
+<h3 id="debugilog-log-exception-exception">Debug(ILog log, Exception exception)<a class="headerlink" href="#debugilog-log-exception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as debug message.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
 The exception.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="debugilog-log-exception-exception-string-messageformat-object-args">Debug(ILog log, Exception exception, string messageFormat, object[] args)<a class="headerlink" href="#debugilog-log-exception-exception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -430,10 +426,68 @@ The message format.</p>
 The formatting arguments.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
+<h3 id="debugilog-log-string-messageformat-object-s1-object-s2">Debug(ILog log, string messageFormat, object s1, object s2)<a class="headerlink" href="#debugilog-log-string-messageformat-object-s1-object-s2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as debug message.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The format argument 1</p>
+<p><strong>s2</strong>
+The format argument 2</p>
+<h3 id="debugilog-log-string-messageformat-object-s1-object-s2-object-s3">Debug(ILog log, string messageFormat, object s1, object s2, object s3)<a class="headerlink" href="#debugilog-log-string-messageformat-object-s1-object-s2-object-s3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as debug message.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The format argument 1</p>
+<p><strong>s2</strong>
+The format argument 2</p>
+<p><strong>s3</strong>
+The format argument 3</p>
+<h3 id="debugilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4">Debug(ILog log, string messageFormat, object s1, object s2, object s3, object s4)<a class="headerlink" href="#debugilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as debug message.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The format argument 1</p>
+<p><strong>s2</strong>
+The format argument 2</p>
+<p><strong>s3</strong>
+The format argument 3</p>
+<p><strong>s4</strong>
+The format argument 4</p>
+<h3 id="debugilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others">Debug(ILog log, string messageFormat, object s1, object s2, object s3, object s4, object s5, object[] others)<a class="headerlink" href="#debugilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as debug message.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The format argument 1</p>
+<p><strong>s2</strong>
+The format argument 2</p>
+<p><strong>s3</strong>
+The format argument 3</p>
+<p><strong>s4</strong>
+The format argument 4</p>
+<p><strong>s5</strong>
+The format argument 5</p>
+<p><strong>others</strong>
+The othersm format arguments</p>
 <h3 id="debugilog-log-string-messageformat-object-args">Debug(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#debugilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -442,12 +496,12 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="debugandstatusilog-log">DebugAndStatus(ILog log)<a class="headerlink" href="#debugandstatusilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as debug and status message.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="debugandstatusilog-log-string-messageformat-object-args">DebugAndStatus(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#debugandstatusilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug and status message.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -456,7 +510,7 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="debugwithdatailog-log-exception-exception-string-message-object-extradata">DebugWithData(ILog log, Exception exception, string message, object extraData)<a class="headerlink" href="#debugwithdatailog-log-exception-exception-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message with extra data.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -467,10 +521,10 @@ The message.</p>
 The extra data.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="debugwithdatailog-log-string-message-logdata-logdata">DebugWithData(ILog log, string message, LogData logData)<a class="headerlink" href="#debugwithdatailog-log-string-message-logdata-logdata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message with log data.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -479,7 +533,7 @@ The message.</p>
 The log data.</p>
 <h3 id="debugwithdatailog-log-string-message-object-extradata">DebugWithData(ILog log, string message, object extraData)<a class="headerlink" href="#debugwithdatailog-log-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as debug message with extra data.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -488,22 +542,22 @@ The message.</p>
 The extra data.</p>
 <h3 id="errorilog-log">Error(ILog log)<a class="headerlink" href="#errorilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as error message.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="errorilog-log-exception-exception">Error(ILog log, Exception exception)<a class="headerlink" href="#errorilog-log-exception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
 The exception.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="errorilog-log-exception-exception-string-messageformat-object-args">Error(ILog log, Exception exception, string messageFormat, object[] args)<a class="headerlink" href="#errorilog-log-exception-exception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -514,10 +568,76 @@ The message format.</p>
 The formatting arguments.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
+<h3 id="errorilog-log-string-messageformat-object-s1">Error(ILog log, string messageFormat, object s1)<a class="headerlink" href="#errorilog-log-string-messageformat-object-s1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as error message.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting arguments.</p>
+<h3 id="errorilog-log-string-messageformat-object-s1-object-s2">Error(ILog log, string messageFormat, object s1, object s2)<a class="headerlink" href="#errorilog-log-string-messageformat-object-s1-object-s2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as error message.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The .</p>
+<p><strong>s2</strong></p>
+<h3 id="errorilog-log-string-messageformat-object-s1-object-s2-object-s3">Error(ILog log, string messageFormat, object s1, object s2, object s3)<a class="headerlink" href="#errorilog-log-string-messageformat-object-s1-object-s2-object-s3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as error message.</p>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<h3 id="errorilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4">Error(ILog log, string messageFormat, object s1, object s2, object s3, object s4)<a class="headerlink" href="#errorilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as error message.</p>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<h3 id="errorilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others">Error(ILog log, string messageFormat, object s1, object s2, object s3, object s4, object s5, object[] others)<a class="headerlink" href="#errorilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as error message.</p>
+<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<p><strong>s5</strong>
+The formatting argument 5.</p>
+<p><strong>others</strong>
+The formatting arguments.</p>
 <h3 id="errorilog-log-string-messageformat-object-args">Error(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#errorilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -525,14 +645,11 @@ The message format.</p>
 <p><strong>args</strong>
 The formatting arguments.</p>
 <h3 id="errorandcreateexceptionilog-log-exception-innerexception-funcstring-texception-createexceptioncallback-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Exception innerException, Func&lt;string, TException&gt; createExceptionCallback, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-exception-innerexception-funcstring-texception-createexceptioncallback-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.</p>
-<pre><code>The specified exception must have a constructor that accepts a single string as message.
-</code></pre>
-
+<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>innerException</strong>
@@ -553,14 +670,11 @@ The args.</p>
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-exception-innerexception-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Exception innerException, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-exception-innerexception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.</p>
-<pre><code>The specified exception must have a constructor that accepts a single string as message.
-</code></pre>
-
+<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
-<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>innerException</strong>
@@ -574,20 +688,17 @@ The args.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.NotSupportedException</strong></p>
 <p><strong>T:System.ArgumentNullException</strong>
-The log is <code>null</code>.</p>
+The log is<code>null</code>.</p>
 <h4 id="examples-1">Examples<a class="headerlink" href="#examples-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <pre class="nocode">This example logs an error and immediately throws the exception:
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-funcstring-texception-createexceptioncallback-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Func&lt;string, TException&gt; createExceptionCallback, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-funcstring-texception-createexceptioncallback-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.</p>
-<pre><code>The specified exception must have a constructor that accepts a single string as message.
-</code></pre>
-
+<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
-<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>createExceptionCallback</strong>
@@ -600,7 +711,7 @@ The args.</p>
 <p>Exception.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The log is <code>null</code>.</p>
+The log is<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
 The TException does not have a constructor accepting a string.</p>
 <h4 id="examples-2">Examples<a class="headerlink" href="#examples-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -608,14 +719,11 @@ The TException does not have a constructor accepting a string.</p>
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.</p>
-<pre><code>The specified exception must have a constructor that accepts a single string as message.
-</code></pre>
-
+<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
-<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -624,7 +732,7 @@ The message format.</p>
 The args.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The log is <code>null</code>.</p>
+The log is<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
 The TException does not have a constructor accepting a string.</p>
 <h4 id="examples-3">Examples<a class="headerlink" href="#examples-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -633,12 +741,12 @@ The TException does not have a constructor accepting a string.</p>
     
 </pre><h3 id="errorandstatusilog-log">ErrorAndStatus(ILog log)<a class="headerlink" href="#errorandstatusilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as error and status message.</p>
-<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="errorandstatusilog-log-string-messageformat-object-args">ErrorAndStatus(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#errorandstatusilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error and status message.</p>
-<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -647,7 +755,7 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="errorwithdatailog-log-exception-exception-string-message-object-extradata">ErrorWithData(ILog log, Exception exception, string message, object extraData)<a class="headerlink" href="#errorwithdatailog-log-exception-exception-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message with extra data.</p>
-<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -658,10 +766,10 @@ The message.</p>
 The extra data.</p>
 <h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="errorwithdatailog-log-string-message-logdata-logdata">ErrorWithData(ILog log, string message, LogData logData)<a class="headerlink" href="#errorwithdatailog-log-string-message-logdata-logdata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message with log data.</p>
-<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -670,43 +778,31 @@ The message.</p>
 The log data.</p>
 <h3 id="errorwithdatailog-log-string-message-object-extradata">ErrorWithData(ILog log, string message, object extraData)<a class="headerlink" href="#errorwithdatailog-log-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as error message with extra data.</p>
-<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
 The message.</p>
 <p><strong>extraData</strong>
 The extra data.</p>
-<h3 id="formatexceptionexception-exception-string-message">FormatException(Exception exception, string message)<a class="headerlink" href="#formatexceptionexception-exception-string-message" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Formats the exception for logging with an additional message.</p>
-<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>exception</strong>
-The exception.</p>
-<p><strong>message</strong>
-The message.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Formatted string.</p>
-<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
 <h3 id="infoilog-log">Info(ILog log)<a class="headerlink" href="#infoilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as info message.</p>
-<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="infoilog-log-exception-exception">Info(ILog log, Exception exception)<a class="headerlink" href="#infoilog-log-exception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message.</p>
-<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
 The exception.</p>
-<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="infoilog-log-exception-exception-string-messageformat-object-args">Info(ILog log, Exception exception, string messageFormat, object[] args)<a class="headerlink" href="#infoilog-log-exception-exception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message.</p>
-<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -715,12 +811,12 @@ The exception.</p>
 The message format.</p>
 <p><strong>args</strong>
 The formatting arguments.</p>
-<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="infoilog-log-string-messageformat-object-args">Info(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#infoilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message.</p>
-<h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -729,12 +825,12 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="infoandstatusilog-log">InfoAndStatus(ILog log)<a class="headerlink" href="#infoandstatusilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as info and status message.</p>
-<h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="infoandstatusilog-log-string-messageformat-object-args">InfoAndStatus(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#infoandstatusilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info and status message.</p>
-<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -743,7 +839,7 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="infowithdatailog-log-exception-exception-string-message-object-extradata">InfoWithData(ILog log, Exception exception, string message, object extraData)<a class="headerlink" href="#infowithdatailog-log-exception-exception-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message with extra data.</p>
-<h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -752,12 +848,12 @@ The exception.</p>
 The message.</p>
 <p><strong>extraData</strong>
 The extra data.</p>
-<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="infowithdatailog-log-string-message-logdata-logdata">InfoWithData(ILog log, string message, LogData logData)<a class="headerlink" href="#infowithdatailog-log-string-message-logdata-logdata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message with log data.</p>
-<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -766,7 +862,7 @@ The message.</p>
 The log data.</p>
 <h3 id="infowithdatailog-log-string-message-object-extradata">InfoWithData(ILog log, string message, object extraData)<a class="headerlink" href="#infowithdatailog-log-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as info message with extra data.</p>
-<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -775,7 +871,7 @@ The message.</p>
 The extra data.</p>
 <h3 id="logdebugheadingilog-log-string-headingcontent-string-messageformat-object-args">LogDebugHeading(ILog log, string headingContent, string messageFormat, object[] args)<a class="headerlink" href="#logdebugheadingilog-log-string-headingcontent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a debug message.</p>
-<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-41">Parameters<a class="headerlink" href="#parameters-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>headingContent</strong>
@@ -786,7 +882,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logdebugheading1ilog-log-string-messageformat-object-args">LogDebugHeading1(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logdebugheading1ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a debug message.</p>
-<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -795,7 +891,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logdebugheading2ilog-log-string-messageformat-object-args">LogDebugHeading2(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logdebugheading2ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a debug message.</p>
-<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-43">Parameters<a class="headerlink" href="#parameters-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -804,7 +900,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logdebugheading3ilog-log-string-messageformat-object-args">LogDebugHeading3(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logdebugheading3ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a debug message.</p>
-<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -813,12 +909,12 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logdeviceinfoilog-log">LogDeviceInfo(ILog log)<a class="headerlink" href="#logdeviceinfoilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs the device info.</p>
-<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="logerrorheadingilog-log-string-headingcontent-string-messageformat-object-args">LogErrorHeading(ILog log, string headingContent, string messageFormat, object[] args)<a class="headerlink" href="#logerrorheadingilog-log-string-headingcontent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a error message.</p>
-<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>headingContent</strong>
@@ -829,7 +925,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logerrorheading1ilog-log-string-messageformat-object-args">LogErrorHeading1(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logerrorheading1ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a error message.</p>
-<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -838,7 +934,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logerrorheading2ilog-log-string-messageformat-object-args">LogErrorHeading2(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logerrorheading2ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a error message.</p>
-<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -847,7 +943,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logerrorheading3ilog-log-string-messageformat-object-args">LogErrorHeading3(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logerrorheading3ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a error message.</p>
-<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -856,7 +952,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logheadingilog-log-logevent-logevent-string-headingcontent-string-messageformat-object-args">LogHeading(ILog log, LogEvent logEvent, string headingContent, string messageFormat, object[] args)<a class="headerlink" href="#logheadingilog-log-logevent-logevent-string-headingcontent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading.</p>
-<h4 id="parameters-41">Parameters<a class="headerlink" href="#parameters-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>logEvent</strong>
@@ -869,7 +965,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="loginfoheadingilog-log-string-headingcontent-string-messageformat-object-args">LogInfoHeading(ILog log, string headingContent, string messageFormat, object[] args)<a class="headerlink" href="#loginfoheadingilog-log-string-headingcontent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a info message.</p>
-<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>headingContent</strong>
@@ -880,7 +976,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="loginfoheading1ilog-log-string-messageformat-object-args">LogInfoHeading1(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#loginfoheading1ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a info message.</p>
-<h4 id="parameters-43">Parameters<a class="headerlink" href="#parameters-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-52">Parameters<a class="headerlink" href="#parameters-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -889,7 +985,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="loginfoheading2ilog-log-string-messageformat-object-args">LogInfoHeading2(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#loginfoheading2ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a info message.</p>
-<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-53">Parameters<a class="headerlink" href="#parameters-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -898,7 +994,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="loginfoheading3ilog-log-string-messageformat-object-args">LogInfoHeading3(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#loginfoheading3ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a info message.</p>
-<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-54">Parameters<a class="headerlink" href="#parameters-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -907,12 +1003,12 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logproductinfoilog-log">LogProductInfo(ILog log)<a class="headerlink" href="#logproductinfoilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs the product info with version information.</p>
-<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-55">Parameters<a class="headerlink" href="#parameters-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="logwarningheadingilog-log-string-headingcontent-string-messageformat-object-args">LogWarningHeading(ILog log, string headingContent, string messageFormat, object[] args)<a class="headerlink" href="#logwarningheadingilog-log-string-headingcontent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a warning message.</p>
-<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-56">Parameters<a class="headerlink" href="#parameters-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>headingContent</strong>
@@ -923,7 +1019,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logwarningheading1ilog-log-string-messageformat-object-args">LogWarningHeading1(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logwarningheading1ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a warning message.</p>
-<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-57">Parameters<a class="headerlink" href="#parameters-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -932,7 +1028,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logwarningheading2ilog-log-string-messageformat-object-args">LogWarningHeading2(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logwarningheading2ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a warning message.</p>
-<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-58">Parameters<a class="headerlink" href="#parameters-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -941,7 +1037,7 @@ The message format.</p>
 The arguments.</p>
 <h3 id="logwarningheading3ilog-log-string-messageformat-object-args">LogWarningHeading3(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#logwarningheading3ilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Logs a heading as a warning message.</p>
-<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-59">Parameters<a class="headerlink" href="#parameters-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -950,12 +1046,79 @@ The message format.</p>
 The arguments.</p>
 <h3 id="statusilog-log">Status(ILog log)<a class="headerlink" href="#statusilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as status message.</p>
-<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-60">Parameters<a class="headerlink" href="#parameters-60" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
+<h3 id="statusilog-log-string-messageformat-object-s1">Status(ILog log, string messageFormat, object s1)<a class="headerlink" href="#statusilog-log-string-messageformat-object-s1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as status message.</p>
+<h4 id="parameters-61">Parameters<a class="headerlink" href="#parameters-61" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting arguments.</p>
+<h3 id="statusilog-log-string-messageformat-object-s1-object-s2">Status(ILog log, string messageFormat, object s1, object s2)<a class="headerlink" href="#statusilog-log-string-messageformat-object-s1-object-s2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as status message.</p>
+<h4 id="parameters-62">Parameters<a class="headerlink" href="#parameters-62" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<h3 id="statusilog-log-string-messageformat-object-s1-object-s2-object-s3">Status(ILog log, string messageFormat, object s1, object s2, object s3)<a class="headerlink" href="#statusilog-log-string-messageformat-object-s1-object-s2-object-s3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as status message.</p>
+<h4 id="parameters-63">Parameters<a class="headerlink" href="#parameters-63" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<h3 id="statusilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4">Status(ILog log, string messageFormat, object s1, object s2, object s3, object s4)<a class="headerlink" href="#statusilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as status message.</p>
+<h4 id="parameters-64">Parameters<a class="headerlink" href="#parameters-64" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<h3 id="statusilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others">Status(ILog log, string messageFormat, object s1, object s2, object s3, object s4, object s5, object[] others)<a class="headerlink" href="#statusilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as status message.</p>
+<h4 id="parameters-65">Parameters<a class="headerlink" href="#parameters-65" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<p><strong>s5</strong>
+The formatting argument 5.</p>
+<p><strong>others</strong>
+The formatting arguments.</p>
 <h3 id="statusilog-log-string-messageformat-object-args">Status(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#statusilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as status message.</p>
-<h4 id="parameters-52">Parameters<a class="headerlink" href="#parameters-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-66">Parameters<a class="headerlink" href="#parameters-66" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -964,22 +1127,22 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="warningilog-log">Warning(ILog log)<a class="headerlink" href="#warningilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as warning message.</p>
-<h4 id="parameters-53">Parameters<a class="headerlink" href="#parameters-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-67">Parameters<a class="headerlink" href="#parameters-67" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="warningilog-log-exception-exception">Warning(ILog log, Exception exception)<a class="headerlink" href="#warningilog-log-exception-exception" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message.</p>
-<h4 id="parameters-54">Parameters<a class="headerlink" href="#parameters-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-68">Parameters<a class="headerlink" href="#parameters-68" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
 The exception.</p>
-<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="warningilog-log-exception-exception-string-messageformat-object-args">Warning(ILog log, Exception exception, string messageFormat, object[] args)<a class="headerlink" href="#warningilog-log-exception-exception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message.</p>
-<h4 id="parameters-55">Parameters<a class="headerlink" href="#parameters-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-69">Parameters<a class="headerlink" href="#parameters-69" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -988,12 +1151,79 @@ The exception.</p>
 The message format.</p>
 <p><strong>args</strong>
 The formatting arguments.</p>
-<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
+<h3 id="warningilog-log-string-messageformat-object-s1">Warning(ILog log, string messageFormat, object s1)<a class="headerlink" href="#warningilog-log-string-messageformat-object-s1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as warning message.</p>
+<h4 id="parameters-70">Parameters<a class="headerlink" href="#parameters-70" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting arguments.</p>
+<h3 id="warningilog-log-string-messageformat-object-s1-object-s2">Warning(ILog log, string messageFormat, object s1, object s2)<a class="headerlink" href="#warningilog-log-string-messageformat-object-s1-object-s2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as warning message.</p>
+<h4 id="parameters-71">Parameters<a class="headerlink" href="#parameters-71" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<h3 id="warningilog-log-string-messageformat-object-s1-object-s2-object-s3">Warning(ILog log, string messageFormat, object s1, object s2, object s3)<a class="headerlink" href="#warningilog-log-string-messageformat-object-s1-object-s2-object-s3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as warning message.</p>
+<h4 id="parameters-72">Parameters<a class="headerlink" href="#parameters-72" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<h3 id="warningilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4">Warning(ILog log, string messageFormat, object s1, object s2, object s3, object s4)<a class="headerlink" href="#warningilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as warning message.</p>
+<h4 id="parameters-73">Parameters<a class="headerlink" href="#parameters-73" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<h3 id="warningilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others">Warning(ILog log, string messageFormat, object s1, object s2, object s3, object s4, object s5, object[] others)<a class="headerlink" href="#warningilog-log-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as warning message.</p>
+<h4 id="parameters-74">Parameters<a class="headerlink" href="#parameters-74" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<p><strong>s5</strong>
+The formatting argument 5.</p>
+<p><strong>others</strong>
+The formatting arguments.</p>
 <h3 id="warningilog-log-string-messageformat-object-args">Warning(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#warningilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message.</p>
-<h4 id="parameters-56">Parameters<a class="headerlink" href="#parameters-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-75">Parameters<a class="headerlink" href="#parameters-75" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -1002,12 +1232,12 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="warningandstatusilog-log">WarningAndStatus(ILog log)<a class="headerlink" href="#warningandstatusilog-log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes an empty line as warning and status message.</p>
-<h4 id="parameters-57">Parameters<a class="headerlink" href="#parameters-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-76">Parameters<a class="headerlink" href="#parameters-76" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <h3 id="warningandstatusilog-log-string-messageformat-object-args">WarningAndStatus(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#warningandstatusilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning and status message.</p>
-<h4 id="parameters-58">Parameters<a class="headerlink" href="#parameters-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-77">Parameters<a class="headerlink" href="#parameters-77" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>messageFormat</strong>
@@ -1016,7 +1246,7 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="warningwithdatailog-log-exception-exception-string-message-object-extradata">WarningWithData(ILog log, Exception exception, string message, object extraData)<a class="headerlink" href="#warningwithdatailog-log-exception-exception-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message with extra data.</p>
-<h4 id="parameters-59">Parameters<a class="headerlink" href="#parameters-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-78">Parameters<a class="headerlink" href="#parameters-78" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -1025,12 +1255,12 @@ The exception.</p>
 The message.</p>
 <p><strong>extraData</strong>
 The extra data.</p>
-<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 <h3 id="warningwithdatailog-log-string-message-logdata-logdata">WarningWithData(ILog log, string message, LogData logData)<a class="headerlink" href="#warningwithdatailog-log-string-message-logdata-logdata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message with log data.</p>
-<h4 id="parameters-60">Parameters<a class="headerlink" href="#parameters-60" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-79">Parameters<a class="headerlink" href="#parameters-79" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -1039,7 +1269,7 @@ The message.</p>
 The log data.</p>
 <h3 id="warningwithdatailog-log-string-message-object-extradata">WarningWithData(ILog log, string message, object extraData)<a class="headerlink" href="#warningwithdatailog-log-string-message-object-extradata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as warning message with extra data.</p>
-<h4 id="parameters-61">Parameters<a class="headerlink" href="#parameters-61" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-80">Parameters<a class="headerlink" href="#parameters-80" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>message</strong>
@@ -1048,7 +1278,7 @@ The message.</p>
 The extra data.</p>
 <h3 id="writeilog-log-logevent-logevent-exception-exception-string-messageformat-object-args">Write(ILog log, LogEvent logEvent, Exception exception, string messageFormat, object[] args)<a class="headerlink" href="#writeilog-log-logevent-logevent-exception-exception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as the specified log event.</p>
-<h4 id="parameters-62">Parameters<a class="headerlink" href="#parameters-62" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-81">Parameters<a class="headerlink" href="#parameters-81" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>logEvent</strong>
@@ -1059,12 +1289,89 @@ The exception.</p>
 The message format.</p>
 <p><strong>args</strong>
 The formatting arguments.</p>
-<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
+<h3 id="writeilog-log-logevent-logevent-string-messageformat-object-s1">Write(ILog log, LogEvent logEvent, string messageFormat, object s1)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-s1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as the specified log event.</p>
+<h4 id="parameters-82">Parameters<a class="headerlink" href="#parameters-82" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<h3 id="writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2">Write(ILog log, LogEvent logEvent, string messageFormat, object s1, object s2)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as the specified log event.</p>
+<h4 id="parameters-83">Parameters<a class="headerlink" href="#parameters-83" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<h3 id="writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3">Write(ILog log, LogEvent logEvent, string messageFormat, object s1, object s2, object s3)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as the specified log event.</p>
+<h4 id="parameters-84">Parameters<a class="headerlink" href="#parameters-84" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<h3 id="writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3-object-s4">Write(ILog log, LogEvent logEvent, string messageFormat, object s1, object s2, object s3, object s4)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3-object-s4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as the specified log event.</p>
+<h4 id="parameters-85">Parameters<a class="headerlink" href="#parameters-85" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<h3 id="writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others">Write(ILog log, LogEvent logEvent, string messageFormat, object s1, object s2, object s3, object s4, object s5, object[] others)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-s1-object-s2-object-s3-object-s4-object-s5-object-others" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Writes the specified message as the specified log event.</p>
+<h4 id="parameters-86">Parameters<a class="headerlink" href="#parameters-86" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>log</strong>
+The log.</p>
+<p><strong>logEvent</strong>
+The log event.</p>
+<p><strong>messageFormat</strong>
+The message format.</p>
+<p><strong>s1</strong>
+The formatting argument 1.</p>
+<p><strong>s2</strong>
+The formatting argument 2.</p>
+<p><strong>s3</strong>
+The formatting argument 3.</p>
+<p><strong>s4</strong>
+The formatting argument 4.</p>
+<p><strong>s5</strong>
+The formatting argument 5.</p>
+<p><strong>others</strong>
+The formatting arguments.</p>
 <h3 id="writeilog-log-logevent-logevent-string-messageformat-object-args">Write(ILog log, LogEvent logEvent, string messageFormat, object[] args)<a class="headerlink" href="#writeilog-log-logevent-logevent-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as the specified log event.</p>
-<h4 id="parameters-63">Parameters<a class="headerlink" href="#parameters-63" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-87">Parameters<a class="headerlink" href="#parameters-87" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>logEvent</strong>
@@ -1075,7 +1382,7 @@ The message format.</p>
 The formatting arguments.</p>
 <h3 id="writewithdatailog-log-exception-exception-string-message-object-extradata-logevent-logevent">WriteWithData(ILog log, Exception exception, string message, object extraData, LogEvent logEvent)<a class="headerlink" href="#writewithdatailog-log-exception-exception-string-message-object-extradata-logevent-logevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Writes the specified message as specified log event with extra data.</p>
-<h4 id="parameters-64">Parameters<a class="headerlink" href="#parameters-64" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-88">Parameters<a class="headerlink" href="#parameters-88" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>log</strong>
 The log.</p>
 <p><strong>exception</strong>
@@ -1086,9 +1393,9 @@ The message.</p>
 The extra data.</p>
 <p><strong>logEvent</strong>
 The log event.</p>
-<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The exception is <code>null</code>.</p>
+The exception is<code>null</code>.</p>
 
                     </div>
                 </div>

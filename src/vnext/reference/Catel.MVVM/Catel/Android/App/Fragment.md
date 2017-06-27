@@ -26,14 +26,6 @@ Fragment implementation that automatically takes care of view models.
 
 ## Fields
 
-### _bindingContext
-
-### _dataContext
-
-### _logic
-
-### _tag
-
 ## Constructors
 
 ### Fragment()
@@ -62,25 +54,9 @@ The transfer.
 
 ## Properties
 
-### Catel.MVVM.Views.IView.Tag
-
-Gets the tag of the view.
-
-
-
 ### CloseViewModelOnUnloaded
 
-Gets or sets a value indicating whether the user control should close any existing
-    view model when the control is unloaded from the visual tree.
-    
-
-
-    Set this property to ```false``` if a view model should be kept alive and re-used
-    for unloading/loading instead of creating a new one.
-    
-
-
-    By default, this value is ```true```.
+Gets or sets a value indicating whether the user control should close any existing view model when the control is unloaded from the visual tree.Set this property to`false` if a view model should be kept alive and re-used for unloading/loading instead of creating a new one.By default, this value is`true`.
 
 
 
@@ -92,8 +68,7 @@ Gets or sets the data context.
 
 ### DisableWhenNoViewModel
 
-Gets or sets a value indicating whether the user control should automatically be disabled when there is no
-    active view model.
+Gets or sets a value indicating whether the user control should automatically be disabled when there is no active view model.
 
 
 
@@ -111,30 +86,13 @@ Gets the parent of the view.
 
 ### PreventViewModelCreation
 
-Gets or sets a value indicating whether the view model container should prevent the 
-    creation of a view model.
-    
-
-
-    This property is very useful when using views in transitions where the view model is no longer required.
+Gets or sets a value indicating whether the view model container should prevent the creation of a view model.This property is very useful when using views in transitions where the view model is no longer required.
 
 
 
 ### SupportParentViewModelContainers
 
-Gets or sets a value indicating whether parent view model containers are supported. If supported,
-    the user control will search for a [IView](#) that implements the [IViewModelContainer](#)
-    interface. During this search, the user control will use both the visual and logical tree.
-    
-
-
-    If a user control does not have any parent control implementing the [IViewModelContainer](#) interface, searching
-    for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from
-    happening, set this property to ```false```.
-    
-
-
-    The default value is ```true```.
+Gets or sets a value indicating whether parent view model containers are supported. If supported, the user control will search for a [IView](#) that implements the [IViewModelContainer](#) interface. During this search, the user control will use both the visual and logical tree.If a user control does not have any parent control implementing the [IViewModelContainer](#) interface, searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to`false`.The default value is`true`.
 
 
 
@@ -170,8 +128,7 @@ Occurs when a property on the container has changed.
 
 #### Remarks
 
-This event makes it possible to externally subscribe to property changes of a view
-    (mostly the container of a view model) because the .NET Framework does not allows us to.
+This event makes it possible to externally subscribe to property changes of a view (mostly the container of a view model) because the .NET Framework does not allows us to.
 
 
 
@@ -195,61 +152,9 @@ Occurs when a property on the ViewModel has changed.
 
 ## Methods
 
-### AddBindings(BindingContext bindingContext, IViewModel viewModel)
-
-Called when the bindings must be added. This can happen
-    
-
-
-    Normally the binding system would take care of this.
-
-#### Parameters
-
-**bindingContext**
-The binding context.
-
-**viewModel**
-The view model.
-
-#### Returns
-
-```true``` if the bindings were successfully added.
-
-
-
-### GetViewModel<TViewModel>()
-
-Gets the view model as a type.
-
-#### Type Parameters
-
-**TViewModel**
-The type of the view model.
-
-#### Returns
-
-The view model of ```null```.
-
-
-
-### InitializeBindingContext()
-
-### OnBindingUpdateRequired(object sender, EventArgs e)
-
 ### OnPause()
 
 Called when the fragment is paused.
-
-
-
-### OnPropertyChanged(PropertyChangedEventArgs e)
-
-Called when a dependency property on this control has changed.
-
-#### Parameters
-
-**e**
-The  instance containing the event data.
 
 
 
@@ -258,30 +163,4 @@ The  instance containing the event data.
 Called when the fragment is resumed.
 
 
-
-### OnViewModelChanged()
-
-Called when the ViewModel has changed.
-
-#### Remarks
-
-This method does not implement any logic and saves a developer from subscribing/unsubscribing
-    to the ViewModelChanged event inside the same user control.
-
-
-
-### OnViewModelPropertyChanged(PropertyChangedEventArgs e)
-
-Called when a property on the current ViewModel has changed.
-
-#### Parameters
-
-**e**
-The  instance containing the event data.
-
-
-
-### RaiseViewModelChanged()
-
-### UninitializeBindingContext()
 

@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -199,6 +193,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -326,284 +322,273 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class StringToObjectHelper
 </pre><p>String to object helper class that converts a string to the right object if possible.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="stringtoobjecthelper-1">StringToObjectHelper()<a class="headerlink" href="#stringtoobjecthelper-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of the <a href="#">StringToObjectHelper</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="defaultculture">DefaultCulture<a class="headerlink" href="#defaultculture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the default culture to use for parsing.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cleanstringstring-value">CleanString(string value)<a class="headerlink" href="#cleanstringstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cleans up the string, for example by removing the braces.</p>
+<h3 id="toboolstring-value">ToBool(string value)<a class="headerlink" href="#toboolstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a boolean.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The cleaned up string.</p>
-<h3 id="toboolstring-value">ToBool(string value)<a class="headerlink" href="#toboolstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a boolean.</p>
+<p>The boolean value of the string.</p>
+<h3 id="tobytearraystring-value">ToByteArray(string value)<a class="headerlink" href="#tobytearraystring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a byte array.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The boolean value of the string.</p>
-<h3 id="tobytearraystring-value">ToByteArray(string value)<a class="headerlink" href="#tobytearraystring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a byte array.</p>
+<p>The byte array value of the string.</p>
+<h3 id="todatetimestring-value">ToDateTime(string value)<a class="headerlink" href="#todatetimestring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a date/time.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The byte array value of the string.</p>
-<h3 id="todatetimestring-value">ToDateTime(string value)<a class="headerlink" href="#todatetimestring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The date/time value of the string.</p>
+<h3 id="todatetimestring-value-cultureinfo-cultureinfo">ToDateTime(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todatetimestring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a date/time.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
+<p><strong>cultureInfo</strong>
+The culture information.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The date/time value of the string.</p>
-<h3 id="todatetimestring-value-cultureinfo-cultureinfo">ToDateTime(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todatetimestring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a date/time.</p>
+<h3 id="todecimalstring-value">ToDecimal(string value)<a class="headerlink" href="#todecimalstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a decimal.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<p><strong>cultureInfo</strong>
-The culture information.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The date/time value of the string.</p>
-<h3 id="todecimalstring-value">ToDecimal(string value)<a class="headerlink" href="#todecimalstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The decimal value of the string.</p>
+<h3 id="todecimalstring-value-cultureinfo-cultureinfo">ToDecimal(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todecimalstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a decimal.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
+<p><strong>cultureInfo</strong>
+The culture information.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The decimal value of the string.</p>
-<h3 id="todecimalstring-value-cultureinfo-cultureinfo">ToDecimal(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todecimalstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a decimal.</p>
+<h3 id="todoublestring-value">ToDouble(string value)<a class="headerlink" href="#todoublestring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a double.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<p><strong>cultureInfo</strong>
-The culture information.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The decimal value of the string.</p>
-<h3 id="todoublestring-value">ToDouble(string value)<a class="headerlink" href="#todoublestring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The double value of the string.</p>
+<h3 id="todoublestring-value-cultureinfo-cultureinfo">ToDouble(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todoublestring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a double.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The double value of the string.</p>
-<h3 id="todoublestring-value-cultureinfo-cultureinfo">ToDouble(string value, CultureInfo cultureInfo)<a class="headerlink" href="#todoublestring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a double.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The double value of the string.</p>
 <h3 id="toenumstring-value-tenumvalue-defaultvalue">ToEnum<TEnumValue>(string value, TEnumValue defaultValue)<a class="headerlink" href="#toenumstring-value-tenumvalue-defaultvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to an enum value. If the value cannot be converted for any reason, the defaultValue
-    will be returned.</p>
+<p>Converts a string to an enum value. If the value cannot be converted for any reason, the defaultValue will be returned.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TEnumValue</strong>
 The type of the enum.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <p><strong>defaultValue</strong>
 The default value.</p>
-<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The enum value representing the string.</p>
 <h3 id="tofloatstring-value">ToFloat(string value)<a class="headerlink" href="#tofloatstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a float.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The float value of the string.</p>
+<h3 id="tofloatstring-value-cultureinfo-cultureinfo">ToFloat(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tofloatstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a float.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The float value of the string.</p>
-<h3 id="tofloatstring-value-cultureinfo-cultureinfo">ToFloat(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tofloatstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a float.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The float value of the string.</p>
 <h3 id="toguidstring-value">ToGuid(string value)<a class="headerlink" href="#toguidstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a guid.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The guid value of the string.</p>
+<h3 id="tointstring-value">ToInt(string value)<a class="headerlink" href="#tointstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to an integer.</p>
 <h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The guid value of the string.</p>
-<h3 id="tointstring-value">ToInt(string value)<a class="headerlink" href="#tointstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The integer value of the string.</p>
+<h3 id="tointstring-value-cultureinfo-cultureinfo">ToInt(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tointstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to an integer.</p>
 <h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
+<p><strong>cultureInfo</strong>
+The culture information.</p>
 <h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The integer value of the string.</p>
-<h3 id="tointstring-value-cultureinfo-cultureinfo">ToInt(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tointstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to an integer.</p>
+<h3 id="tolongstring-value">ToLong(string value)<a class="headerlink" href="#tolongstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a long.</p>
 <h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<p><strong>cultureInfo</strong>
-The culture information.</p>
 <h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The integer value of the string.</p>
-<h3 id="tolongstring-value">ToLong(string value)<a class="headerlink" href="#tolongstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The long value of the string.</p>
+<h3 id="tolongstring-value-cultureinfo-cultureinfo">ToLong(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tolongstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a long.</p>
 <h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The long value of the string.</p>
-<h3 id="tolongstring-value-cultureinfo-cultureinfo">ToLong(string value, CultureInfo cultureInfo)<a class="headerlink" href="#tolongstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a long.</p>
-<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The long value of the string.</p>
 <h3 id="torighttypetype-targettype-string-value">ToRightType(Type targetType, string value)<a class="headerlink" href="#torighttypetype-targettype-string-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to the right target type, such as <a href="#">String</a>, <a href="#">Boolean</a> and <a href="#">DateTime</a>.</p>
+<p>Converts a string to the right target type, such as <a href="#">String</a> , <a href="#">Boolean</a> and <a href="#">DateTime</a>.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>targetType</strong>
+The target type to convert to.</p>
+<p><strong>value</strong>
+The value to convert to the specified target type.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The converted value. If the value is<code>null</code> , this method will return<code>null</code>.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.NotSupportedException</strong>
+The specified targetType is not supported.</p>
+<h3 id="torighttypetype-targettype-string-value-cultureinfo-cultureinfo">ToRightType(Type targetType, string value, CultureInfo cultureInfo)<a class="headerlink" href="#torighttypetype-targettype-string-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to the right target type, such as <a href="#">String</a> , <a href="#">Boolean</a> and <a href="#">DateTime</a>.</p>
 <h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>targetType</strong>
 The target type to convert to.</p>
 <p><strong>value</strong>
 The value to convert to the specified target type.</p>
-<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The converted value. If the value is <code>null</code>, this method will return <code>null</code>.</p>
-<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.NotSupportedException</strong>
-The specified targetType is not supported.</p>
-<h3 id="torighttypetype-targettype-string-value-cultureinfo-cultureinfo">ToRightType(Type targetType, string value, CultureInfo cultureInfo)<a class="headerlink" href="#torighttypetype-targettype-string-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to the right target type, such as <a href="#">String</a>, <a href="#">Boolean</a> and <a href="#">DateTime</a>.</p>
-<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>targetType</strong>
-The target type to convert to.</p>
-<p><strong>value</strong>
-The value to convert to the specified target type.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The converted value. If the value is <code>null</code>, this method will return <code>null</code>.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The converted value. If the value is<code>null</code> , this method will return<code>null</code>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.NotSupportedException</strong>
 The specified targetType is not supported.</p>
 <h3 id="toshortstring-value">ToShort(string value)<a class="headerlink" href="#toshortstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a short.</p>
-<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The short value of the string.</p>
 <h3 id="toshortstring-value-cultureinfo-cultureinfo">ToShort(string value, CultureInfo cultureInfo)<a class="headerlink" href="#toshortstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a short.</p>
-<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The short value of the string.</p>
 <h3 id="tostringstring-value">ToString(string value)<a class="headerlink" href="#tostringstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a string.</p>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The string value of the string.</p>
+<h3 id="totimespanstring-value">ToTimeSpan(string value)<a class="headerlink" href="#totimespanstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to a timespan.</p>
 <h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The string value of the string.</p>
-<h3 id="totimespanstring-value">ToTimeSpan(string value)<a class="headerlink" href="#totimespanstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The timespan value of the string.</p>
+<h3 id="totimespanstring-value-cultureinfo-cultureinfo">ToTimeSpan(string value, CultureInfo cultureInfo)<a class="headerlink" href="#totimespanstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a timespan.</p>
 <h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-22">Returns<a class="headerlink" href="#returns-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The timespan value of the string.</p>
-<h3 id="totimespanstring-value-cultureinfo-cultureinfo">ToTimeSpan(string value, CultureInfo cultureInfo)<a class="headerlink" href="#totimespanstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to a timespan.</p>
-<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-23">Returns<a class="headerlink" href="#returns-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-22">Returns<a class="headerlink" href="#returns-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The timespan value of the string.</p>
 <h3 id="totypestring-value">ToType(string value)<a class="headerlink" href="#totypestring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a Type.</p>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-23">Returns<a class="headerlink" href="#returns-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The Type value of the string.</p>
+<h3 id="touintstring-value">ToUInt(string value)<a class="headerlink" href="#touintstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to an unsigned integer.</p>
 <h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-24">Returns<a class="headerlink" href="#returns-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The Type value of the string.</p>
-<h3 id="touintstring-value">ToUInt(string value)<a class="headerlink" href="#touintstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The unsigned integer value of the string.</p>
+<h3 id="touintstring-value-cultureinfo-cultureinfo">ToUInt(string value, CultureInfo cultureInfo)<a class="headerlink" href="#touintstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to an unsigned integer.</p>
 <h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
+<p><strong>cultureInfo</strong>
+The culture information.</p>
 <h4 id="returns-25">Returns<a class="headerlink" href="#returns-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The unsigned integer value of the string.</p>
-<h3 id="touintstring-value-cultureinfo-cultureinfo">ToUInt(string value, CultureInfo cultureInfo)<a class="headerlink" href="#touintstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to an unsigned integer.</p>
+<h3 id="toulongstring-value">ToULong(string value)<a class="headerlink" href="#toulongstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to an unsigned long.</p>
 <h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<p><strong>cultureInfo</strong>
-The culture information.</p>
 <h4 id="returns-26">Returns<a class="headerlink" href="#returns-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The unsigned integer value of the string.</p>
-<h3 id="toulongstring-value">ToULong(string value)<a class="headerlink" href="#toulongstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The unsigned long value of the string.</p>
+<h3 id="toulongstring-value-cultureinfo-cultureinfo">ToULong(string value, CultureInfo cultureInfo)<a class="headerlink" href="#toulongstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to an unsigned long.</p>
 <h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-27">Returns<a class="headerlink" href="#returns-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The unsigned long value of the string.</p>
-<h3 id="toulongstring-value-cultureinfo-cultureinfo">ToULong(string value, CultureInfo cultureInfo)<a class="headerlink" href="#toulongstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to an unsigned long.</p>
-<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-28">Returns<a class="headerlink" href="#returns-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-27">Returns<a class="headerlink" href="#returns-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The unsigned long value of the string.</p>
 <h3 id="touristring-value">ToUri(string value)<a class="headerlink" href="#touristring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to a Uri.</p>
+<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-28">Returns<a class="headerlink" href="#returns-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The Uri value of the string.</p>
+<h3 id="toushortstring-value">ToUShort(string value)<a class="headerlink" href="#toushortstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts a string to an unsigned short.</p>
 <h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-29">Returns<a class="headerlink" href="#returns-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The Uri value of the string.</p>
-<h3 id="toushortstring-value">ToUShort(string value)<a class="headerlink" href="#toushortstring-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The unsigned short value of the string.</p>
+<h3 id="toushortstring-value-cultureinfo-cultureinfo">ToUShort(string value, CultureInfo cultureInfo)<a class="headerlink" href="#toushortstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Converts a string to an unsigned short.</p>
 <h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
-<h4 id="returns-30">Returns<a class="headerlink" href="#returns-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The unsigned short value of the string.</p>
-<h3 id="toushortstring-value-cultureinfo-cultureinfo">ToUShort(string value, CultureInfo cultureInfo)<a class="headerlink" href="#toushortstring-value-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a string to an unsigned short.</p>
-<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
-<h4 id="returns-31">Returns<a class="headerlink" href="#returns-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-30">Returns<a class="headerlink" href="#returns-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The unsigned short value of the string.</p>
 
                     </div>

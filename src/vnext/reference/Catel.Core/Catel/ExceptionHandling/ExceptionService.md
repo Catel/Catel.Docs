@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ExceptionService : IExceptionService
@@ -17,36 +17,11 @@ public class ExceptionService : IExceptionService
 [IExceptionService](/Catel.Core\Catel\ExceptionHandling\IExceptionService.md)
 
 
-The exception service allows the usage of the Try/Catch mechanics. This means that this service provides possibilities
-    to handle all exception types previously registered.
+The exception service allows the usage of the Try/Catch mechanics. This means that this service provides possibilities to handle all exception types previously registered.
 
 
 
 ## Fields
-
-### _default
-
-The static instance of the exception service.
-
-
-
-### _exceptionCounter
-
-The _exception counts
-
-
-
-### _exceptionHandlers
-
-The _exception handlers
-
-
-
-### Log
-
-The log.
-
-
 
 ## Properties
 
@@ -94,7 +69,7 @@ The exception handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The  is ```null```.
+The is`null`.
 
 **T:System.ArgumentException**
 The exceptionType is not of type [Exception](#).
@@ -127,12 +102,12 @@ The exception to handle.
 
 #### Returns
 
-```true``` if the exception is handled; otherwise ```false```.
+`true` if the exception is handled; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 
@@ -147,12 +122,12 @@ Type of the exception.
 
 #### Returns
 
-```true``` if the specified exception type is registered; otherwise, ```false```.
+`true` if the specified exception type is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The  is ```null```.
+The is`null`.
 
 **T:System.ArgumentException**
 The exceptionType is not of type [Exception](#).
@@ -170,48 +145,13 @@ The type of the exception.
 
 #### Returns
 
-```true``` if the exception type is registered; otherwise, ```false```.
-
-
-
-### OnExceptionBuffered(Exception bufferedException, DateTime dateTime)
-
-Notifies the subscribers whenever a exception buffered event occurs.
-
-#### Parameters
-
-**bufferedException**
-The buffered exception
-
-**dateTime**
-The date and time when the event occurs.
-
-
-
-### OnRetryingAction(int retryCount, Exception lastError, TimeSpan delay)
-
-Notifies the subscribers whenever a retry event occurs.
-
-#### Parameters
-
-**retryCount**
-The current retry attempt count.
-
-**lastError**
-The exception that caused the retry conditions to occur.
-
-**delay**
-The delay that indicates how long the current thread will be suspended before the next iteration is invoked.
+`true` if the exception type is registered; otherwise,`false`.
 
 
 
 ### Process(Action action)
 
-Processes the specified action.
-    
-
-
-    If the exception could not be handled safely by this service, it will throw the exception.
+Processes the specified action.If the exception could not be handled safely by this service, it will throw the exception.
 
 #### Parameters
 
@@ -221,17 +161,13 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
 ### Process<TResult>(Func<TResult> action)
 
-Processes the specified action.
-    
-
-
-    If the exception could not be handled safely by this service, it will throw the exception.
+Processes the specified action.If the exception could not be handled safely by this service, it will throw the exception.
 
 #### Type Parameters
 
@@ -248,7 +184,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -266,7 +202,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -284,7 +220,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -307,7 +243,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -333,7 +269,7 @@ The cancellation token.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -356,7 +292,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -379,7 +315,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -399,7 +335,7 @@ The handler to use.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 
 
@@ -415,7 +351,7 @@ The type of the exception.
 #### Parameters
 
 **exceptionPredicate**
-The  exception filter.
+The exception filter.
 
 **handler**
 The action to execute when the exception occurs.
@@ -427,7 +363,7 @@ The handler to use.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 **T:System.Exception**
 A delegate callback throws an exception.
@@ -445,7 +381,7 @@ The type of the exception.
 
 #### Returns
 
-```true``` if the exception is unsubscripted; otherwise ```false```.
+`true` if the exception is unsubscripted; otherwise`false`.
 
 
 

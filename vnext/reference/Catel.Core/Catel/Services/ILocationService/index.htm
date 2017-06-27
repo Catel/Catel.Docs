@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -357,6 +353,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService/">IViewModelWrapperService</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IWrapControlService/">IWrapControlService</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey/">LanguageResourceKey</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource/">LanguageResourceSource</a>
@@ -445,6 +443,12 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException/">WindowNotRegisteredException</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlService/">WrapControlService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceControlNames/">WrapControlServiceControlNames</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceWrapOptions/">WrapControlServiceWrapOptions</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapOptions/">WrapOptions</a>
 </li>
 
@@ -522,7 +526,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -530,13 +534,9 @@
 </pre><p>Interface that supports retrieving the current location.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="currentlocation">CurrentLocation<a class="headerlink" href="#currentlocation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the current location represented as <a href="#">ILocation</a>. If no location is available, <code>null</code> will be returned.</p>
+<p>Gets the current location represented as <a href="#">ILocation</a>. If no location is available,<code>null</code> will be returned.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This is convenience property that internally calls GetCurrentLocation.</p>
-<pre><code>Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot 
-subscribe to changes of this property. Instead, subscribe to the LocationChanged event.
-</code></pre>
-
+<p>This is convenience property that internally calls GetCurrentLocation.Note that the services inside Catel do not support <a href="#">INotifyPropertyChanged</a> , thus you cannot subscribe to changes of this property. Instead, subscribe to the LocationChanged event.</p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="locationchanged">LocationChanged<a class="headerlink" href="#locationchanged" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Occurs when the current location has changed.</p>
@@ -544,11 +544,11 @@ subscribe to changes of this property. Instead, subscribe to the LocationChanged
 <h3 id="getcurrentlocation">GetCurrentLocation()<a class="headerlink" href="#getcurrentlocation" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the current location.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The current location represented as <a href="#">ILocation</a>. If no location is available, <code>null</code> will be returned.</p>
+<p>The current location represented as <a href="#">ILocation</a>. If no location is available,<code>null</code> will be returned.</p>
 <h3 id="start">Start()<a class="headerlink" href="#start" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Starts the location service so it's retrieving data.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the service started successfully; otherwise <code>false</code>.</p>
+<p><code>true</code> if the service started successfully; otherwise<code>false</code>.</p>
 <h3 id="stop">Stop()<a class="headerlink" href="#stop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Stops the location service so it's no longer retrieving data.</p>
 

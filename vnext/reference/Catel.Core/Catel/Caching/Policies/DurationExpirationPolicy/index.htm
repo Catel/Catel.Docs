@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -205,8 +201,6 @@
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/Catel/Caching/">Caching</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/Caching/CacheStorage/">CacheStorage</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/Caching/CacheStorageValueInfo/">CacheStorageValueInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/Caching/ExpiredEventArgs/">ExpiredEventArgs</a>
 </li>
@@ -355,7 +349,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -364,21 +358,7 @@
 <a href="/Catel.Core\Catel\Caching\Policies\AbsoluteExpirationPolicy.htm">AbsoluteExpirationPolicy</a></p>
 <p>The cache item will expire using the duration to calculate the absolute expiration from now.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="durationexpirationpolicytimespan-durationtimespan">DurationExpirationPolicy(TimeSpan durationTimeSpan)<a class="headerlink" href="#durationexpirationpolicytimespan-durationtimespan" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">DurationExpirationPolicy</a> class.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>durationTimeSpan</strong>
-The expiration.</p>
-<h3 id="durationexpirationpolicytimespan-durationtimespan-bool-canreset">DurationExpirationPolicy(TimeSpan durationTimeSpan, bool canReset)<a class="headerlink" href="#durationexpirationpolicytimespan-durationtimespan-bool-canreset" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">DurationExpirationPolicy</a> class.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>durationTimeSpan</strong>
-The expiration.</p>
-<p><strong>canReset</strong>
-The can reset.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="durationtimespan">DurationTimeSpan<a class="headerlink" href="#durationtimespan" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the expiration.</p>
 
                     </div>
                 </div>

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IRelationalViewModel : IViewModel
@@ -33,8 +33,7 @@ Gets the parent view model.
 
 ### RegisterChildViewModel(IViewModel childViewModel)
 
-Registers a child view model to this view model. When a view model is registered as a child view model, it will
-    receive all notifications from this view model and be notified of any validation changes.
+Registers a child view model to this view model. When a view model is registered as a child view model, it will receive all notifications from this view model and be notified of any validation changes.
 
 #### Parameters
 
@@ -44,7 +43,7 @@ The child view model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The childViewModel is ```null```.
+The childViewModel is`null`.
 
 
 
@@ -61,8 +60,7 @@ The parent view model.
 
 ### UnregisterChildViewModel(IViewModel childViewModel)
 
-Unregisters the child view model. This means that the child view model will no longer receive any notifications
-    from this view model as parent view model, nor will it be included in any validation calls in this view model.
+Unregisters the child view model. This means that the child view model will no longer receive any notifications from this view model as parent view model, nor will it be included in any validation calls in this view model.
 
 #### Parameters
 
@@ -72,7 +70,7 @@ The child.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The childViewModel is ```null```.
+The childViewModel is`null`.
 
 
 

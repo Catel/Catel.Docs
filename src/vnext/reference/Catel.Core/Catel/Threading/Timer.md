@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class Timer : IDisposable
@@ -22,16 +22,6 @@ Timer for WinRT since WinRT only provides the DispatcherTimer which cannot be us
 
 
 ## Fields
-
-### _cancellationTokenSource
-
-### _lock
-
-### _timer
-
-### _timerCallback
-
-### _timerState
 
 ## Constructors
 
@@ -73,7 +63,7 @@ The interval.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The callback is ```null```.
+The callback is`null`.
 
 
 
@@ -98,7 +88,7 @@ The interval.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The callback is ```null```.
+The callback is`null`.
 
 
 
@@ -159,60 +149,9 @@ The interval.
 
 
 
-### ContinueTimer(Task t, object state)
-
-Continues the timer.
-
-#### Parameters
-
-**t**
-The task.
-
-**state**
-The state which must be the cancellation token.
-
-
-
 ### Dispose()
 
 Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-
-
-
-### OnTimerTick(object state)
-
-### SetUpTimer(TimeSpan dueTime, TimeSpan interval)
-
-Sets up the timer.
-
-#### Parameters
-
-**dueTime**
-
-**interval**
-
-
-
-### Start(CancellationToken cancellationToken)
-
-Starts the timer.
-
-#### Parameters
-
-**cancellationToken**
-The cancellation token.
-
-
-
-### Stop()
-
-Stops the timer.
-
-
-
-### TimerElapsed()
-
-Called when the interval elapses.
 
 
 

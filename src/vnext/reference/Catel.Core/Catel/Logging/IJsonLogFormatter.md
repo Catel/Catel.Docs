@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public interface IJsonLogFormatter
@@ -37,10 +37,10 @@ Formats the log infos.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The log is ```null```.
+The log is`null`.
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 

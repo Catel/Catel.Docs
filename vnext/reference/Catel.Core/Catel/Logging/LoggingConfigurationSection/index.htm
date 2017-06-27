@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -233,10 +229,6 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/BatchLogListenerBase/">BatchLogListenerBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelEventSource/">CatelEventSource</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelLog/">CatelLog</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ConsoleLogListener/">ConsoleLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/DebugLogListener/">DebugLogListener</a>
@@ -250,8 +242,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListener/">IBatchLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListenerExtensions/">IBatchLogListenerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ICatelLog/">ICatelLog</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IJsonLogFormatter/">IJsonLogFormatter</a>
 </li>
@@ -390,7 +380,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -418,11 +408,6 @@
     &lt;/ configuration &gt;
      
 </pre><h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
-<h3 id="loggingconfigurationcollectionpropertyname">LoggingConfigurationCollectionPropertyName<a class="headerlink" href="#loggingconfigurationcollectionpropertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>listeners</p>
-<p>The logging configuration collection property name.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="loglistenerconfigurationcollection">LogListenerConfigurationCollection<a class="headerlink" href="#loglistenerconfigurationcollection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the logging configuration collection.</p>
@@ -431,7 +416,7 @@
 <p>Gets the log listeners.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong>
-The assembly to load the product info from. If <code>null</code>, the entry assembly will be used.</p>
+The assembly to load the product info from. If<code>null</code> , the entry assembly will be used.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>IEnumerable{ILogListener}.</p>
 

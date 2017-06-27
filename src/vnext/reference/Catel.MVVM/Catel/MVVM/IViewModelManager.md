@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewModelManager
@@ -42,7 +42,7 @@ The child view models.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The parentViewModel is ```null```.
+The parentViewModel is`null`.
 
 
 
@@ -72,7 +72,7 @@ Type of the view model.
 
 #### Returns
 
-The [IViewModel](#) or ```null``` if the view model is not registered.
+The [IViewModel](#) or`null` if the view model is not registered.
 
 #### Exceptions
 
@@ -92,7 +92,7 @@ The type of the view model.
 
 #### Returns
 
-The [IViewModel](#) or ```null``` if the view model is not registered.
+The [IViewModel](#) or`null` if the view model is not registered.
 
 
 
@@ -107,7 +107,7 @@ The unique identifier.
 
 #### Returns
 
-The [IViewModel](#) or ```null``` if the view model is not registered.
+The [IViewModel](#) or`null` if the view model is not registered.
 
 
 
@@ -127,7 +127,7 @@ An array containing all the view models.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The model is ```null```.
+The model is`null`.
 
 
 
@@ -146,7 +146,7 @@ The model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -162,7 +162,7 @@ The view model to register.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -178,7 +178,7 @@ The view model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -197,7 +197,7 @@ The model.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 
@@ -213,7 +213,7 @@ The view model to unregister.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModel is ```null```.
+The viewModel is`null`.
 
 
 

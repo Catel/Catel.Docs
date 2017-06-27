@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -233,10 +229,6 @@
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/Logging/">Logging</a></span></li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/BatchLogListenerBase/">BatchLogListenerBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelEventSource/">CatelEventSource</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelLog/">CatelLog</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ConsoleLogListener/">ConsoleLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/DebugLogListener/">DebugLogListener</a>
@@ -250,8 +242,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListener/">IBatchLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListenerExtensions/">IBatchLogListenerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ICatelLog/">ICatelLog</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IJsonLogFormatter/">IJsonLogFormatter</a>
 </li>
@@ -390,7 +380,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -399,34 +389,12 @@
 <a href="">ConfigurationElementCollection</a></p>
 <p>The log listeners configuration collection.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="itemelementname">ItemElementName<a class="headerlink" href="#itemelementname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>listener</p>
-<p>The item element name.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="collectiontype">CollectionType<a class="headerlink" href="#collectiontype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The collection type.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The <a href="#">ConfigurationElementCollectionType</a> of this collection.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="createnewelement">CreateNewElement()<a class="headerlink" href="#createnewelement" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates a new ConfigurationElement.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>A new <a href="#">ConfigurationElement</a>.</p>
-<h3 id="getelementkeyconfigurationelement-element">GetElementKey(ConfigurationElement element)<a class="headerlink" href="#getelementkeyconfigurationelement-element" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the element key for a specified configuration element when overridden in a derived class.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>element</strong>
-The <a href="#">ConfigurationElement</a> to return the key for.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>An <a href="#">Object</a> that acts as the key for the specified <a href="#">ConfigurationElement</a>.</p>
-<h3 id="iselementnamestring-elementname">IsElementName(string elementName)<a class="headerlink" href="#iselementnamestring-elementname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the given  is the collection element name.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>param</strong></p>
-<p><strong>elementName</strong>
-The element name</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if is the element name, otherwise <code>false</code>.</p>
 
                     </div>
                 </div>

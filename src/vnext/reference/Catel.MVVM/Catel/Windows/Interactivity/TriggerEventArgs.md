@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Interactivity
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class TriggerEventArgs : EventArgs
@@ -34,7 +34,7 @@ The trigger.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The trigger is ```null```.
+The trigger is`null`.
 
 
 

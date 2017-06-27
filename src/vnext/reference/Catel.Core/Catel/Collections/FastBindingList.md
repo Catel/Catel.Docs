@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class FastBindingList<T> : ISuspendChangeNotificationsCollection, BindingList<T>
@@ -20,8 +20,7 @@ public class FastBindingList<T> : ISuspendChangeNotificationsCollection, Binding
 [ISuspendChangeNotificationsCollection](/Catel.Core\Catel\Collections\ISuspendChangeNotificationsCollection.md)
 
 
-Fast implementation of [BindingList](#) where the change notifications
-    can be suspended.
+Fast implementation of [BindingList](#) where the change notifications can be suspended.
 
 #### Type Parameters
 
@@ -32,29 +31,7 @@ Type of the elements contained by this collection.
 
 ## Fields
 
-### _dispatcherService
-
-### _sortDirection
-
-### _sorted
-
-### _sortProperty
-
-### _suspensionContext
-
-The current suspension context.
-
-
-
-### Log
-
 ## Constructors
-
-### FastBindingList()
-
-Initializes static members of the [FastBindingList](#) class.
-
-
 
 ### FastBindingList()
 
@@ -94,14 +71,7 @@ Gets or sets a value indicating whether events should automatically be dispatche
 
 ### IsDirty
 
-Gets or sets a value indicating whether change to the collection is made when
-    its notifications are suspended.
-
-
-
-### IsSortedCore
-
-Gets a value indicating whether the list is sorted.
+Gets or sets a value indicating whether change to the collection is made when its notifications are suspended.
 
 
 
@@ -111,39 +81,11 @@ Gets a value indicating whether change notifications are suspended.
 
 
 
-### SortDirectionCore
-
-Gets the direction the list is sorted.
-
-
-
-### SortPropertyCore
-
-Gets the property descriptor that is used for sorting the list.
-
-
-
-### SupportsSearchingCore
-
-Gets a value indicating whether the list supports searching.
-
-
-
-### SupportsSortingCore
-
-Gets a value indicating whether the list supports sorting.
-
-
-
 ## Methods
 
 ### AddItems(IEnumerable<T> collection)
 
-Adds the specified items to the collection without causing a change notification for all items.
-    
-
-
-    This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -153,17 +95,13 @@ The collection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
+The collection is`null`.
 
 
 
 ### AddItems(IEnumerable collection)
 
-Adds the specified items to the collection without causing a change notification for all items.
-    
-
-
-    This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -173,55 +111,7 @@ The collection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
-
-
-
-### ApplySortCore(PropertyDescriptor prop, ListSortDirection direction)
-
-Apply sort.
-
-#### Parameters
-
-**prop**
-The [PropertyDescriptor](#) that specifies the property to sort on.
-
-**direction**
-One of the [ListSortDirection](#) values.
-
-
-
-### ClearItems()
-
-Removes all items from the collection.
-
-
-
-### FindCore(PropertyDescriptor prop, object key)
-
-Search for the index of item that has the specified property descriptor with the specified value.
-
-#### Parameters
-
-**prop**
-The [PropertyDescriptor](#) that specifies the property to search on.
-
-**key**
-The value of property to match.
-
-
-
-### InsertItem(int index, T item)
-
-Inserts an item into the collection at the specified index.
-
-#### Parameters
-
-**index**
-The zero-based index at which item should be inserted.
-
-**item**
-The object to insert.
+The collection is`null`.
 
 
 
@@ -240,7 +130,7 @@ The start index.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
+The collection is`null`.
 
 
 
@@ -259,45 +149,13 @@ The start index.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
-
-
-
-### NotifyChanges()
-
-Notifies external classes of property changes.
-
-
-
-### OnListChanged(ListChangedEventArgs e)
-
-Raises the ListChanged event, but also makes sure the event is dispatched to the UI thread.
-
-#### Parameters
-
-**e**
-The [ListChangedEventArgs](#) instance containing the event data.
-
-
-
-### RemoveItem(int index)
-
-Removes the item at the specified index of the collection.
-
-#### Parameters
-
-**index**
-The zero-based index of the element to remove.
+The collection is`null`.
 
 
 
 ### RemoveItems(IEnumerable<T> collection)
 
-Removes the specified items from the collection without causing a change notification for all items.
-    
-
-
-    This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -307,17 +165,13 @@ The collection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
+The collection is`null`.
 
 
 
 ### RemoveItems(IEnumerable collection)
 
-Removes the specified items from the collection without causing a change notification for all items.
-    
-
-
-    This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -327,34 +181,13 @@ The collection.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The collection is ```null```.
-
-
-
-### RemoveSortCore()
-
-Removes any applied sort.
+The collection is`null`.
 
 
 
 ### Reset()
 
-Raises CollectionChanged with 
-    Reset changed action.
-
-
-
-### SetItem(int index, T item)
-
-Replaces the element at the specified index.
-
-#### Parameters
-
-**index**
-The zero-based index of the element to replace.
-
-**item**
-The new value for the element at the specified index.
+Raises CollectionChanged with Reset changed action.
 
 
 

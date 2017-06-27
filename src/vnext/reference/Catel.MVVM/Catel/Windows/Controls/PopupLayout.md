@@ -22,22 +22,6 @@ Is a relative layout that allow show view as modal.
 
 ## Fields
 
-### _backdrop
-
-### _content
-
-The content
-
-
-
-### _popupView
-
-The popup view
-
-
-
-### Log
-
 ## Properties
 
 ### Content
@@ -72,7 +56,7 @@ The view to be displayed as popup
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The view is ```null```.
+The view is`null`.
 
 
 

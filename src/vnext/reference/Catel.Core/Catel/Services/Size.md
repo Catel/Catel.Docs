@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public struct Size : IEquatable<Size>, ValueType
@@ -25,10 +25,6 @@ Object containing size information.
 
 
 ## Fields
-
-### _height
-
-### _width
 
 ## Constructors
 
@@ -73,7 +69,7 @@ The size to compare this instance to.
 
 #### Returns
 
-```true``` if equal, ```false``` otherwise.
+`true` if equal,`false` otherwise.
 
 
 
@@ -88,7 +84,7 @@ The [Object](#) to compare with this instance.
 
 #### Returns
 
-```true``` if the specified [Object](#) is equal to this instance; otherwise, ```false```.
+`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
 
 
 

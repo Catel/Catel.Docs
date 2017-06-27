@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class DisposableToken<T> : IDisposableToken<T, T>
@@ -22,12 +22,6 @@ A reusable disposable token that accepts initialization and uninitialization cod
 
 
 ## Fields
-
-### _dispose
-
-### _instance
-
-### _tag
 
 ## Constructors
 

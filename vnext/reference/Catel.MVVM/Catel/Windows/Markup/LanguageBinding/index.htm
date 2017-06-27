@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -218,7 +215,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -227,8 +224,6 @@
 <a href="/Catel.MVVM\Catel\Windows\Markup\UpdatableMarkupExtension.htm">UpdatableMarkupExtension</a></p>
 <p>Binding that uses the <a href="#">ILanguageService</a> to retrieve the binding values.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="languageservice">_languageService<a class="headerlink" href="#languageservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onlanguageupdatedweaklistener">_onLanguageUpdatedWeakListener<a class="headerlink" href="#onlanguageupdatedweaklistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="languagebinding-1">LanguageBinding()<a class="headerlink" href="#languagebinding-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">LanguageBinding</a> class.</p>
@@ -239,7 +234,7 @@
 Name of the resource.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="culture">Culture<a class="headerlink" href="#culture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets the culture. If set to <code>null</code>, it will be determined automatically.</p>
+<p>Gets or sets the culture. If set to<code>null</code> , it will be determined automatically.</p>
 <h3 id="hidedesigntimemessages">HideDesignTimeMessages<a class="headerlink" href="#hidedesigntimemessages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets a value indicating whether to hide design time messages or not.</p>
 <h3 id="resourcename">ResourceName<a class="headerlink" href="#resourcename" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -254,24 +249,6 @@ The sender.</p>
 The <a href="#">EventArgs</a> instance containing the event data.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Must be public because this uses weak events.</p>
-<h3 id="ontargetobjectloaded">OnTargetObjectLoaded()<a class="headerlink" href="#ontargetobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the target object is loaded.</p>
-<pre><code>Note that this method will only be called if the target object is a [FrameworkElement](#).
-</code></pre>
-
-<h3 id="ontargetobjectunloaded">OnTargetObjectUnloaded()<a class="headerlink" href="#ontargetobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the target object is unloaded.</p>
-<pre><code>Note that this method will only be called if the target object is a [FrameworkElement](#).
-</code></pre>
-
-<h3 id="providedynamicvalueiserviceprovider-serviceprovider">ProvideDynamicValue(IServiceProvider serviceProvider)<a class="headerlink" href="#providedynamicvalueiserviceprovider-serviceprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>When implemented in a derived class, returns an object that is provided as the value of the target property for this markup extension.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>serviceProvider</strong>
-The service provider.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The object value to set on the property where the extension is applied.</p>
-<h3 id="showdesigntimemessages">ShowDesignTimeMessages()<a class="headerlink" href="#showdesigntimemessages" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 
                     </div>
                 </div>

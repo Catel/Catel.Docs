@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span>
 </li>
@@ -95,20 +93,10 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/INotifyDataWarningInfo/">INotifyDataWarningInfo</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/INotifyPropertyChanging/">INotifyPropertyChanging</a>
-</li>
 <li class="tocentry current"><a class="current" href="../../../../../reference/Catel.Core/System/ComponentModel/PropertyChangedEventArgsExtensions/">PropertyChangedEventArgsExtensions</a>
 <ul class="currentrelative">
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/PropertyChangingEventArgs/">PropertyChangingEventArgs</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/PropertyChangingEventHandler/">PropertyChangingEventHandler</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/RunWorkerCompletedEventArgs/">RunWorkerCompletedEventArgs</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/System/ComponentModel/RunWorkerCompletedEventHandler/">RunWorkerCompletedEventHandler</a>
-</li>
 
 </ul>
 </li>
@@ -175,7 +163,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -183,35 +171,31 @@
 </pre><p>Extensions for the <a href="#">PropertyChangedEventArgs</a> class.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="allpropertieschangedpropertychangedeventargs-e">AllPropertiesChanged(PropertyChangedEventArgs e)<a class="headerlink" href="#allpropertieschangedpropertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents that all properties
-    of an object have changed. This is the case when the PropertyName is <code>null</code>
-    or empty.</p>
+<p>Returns whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents that all properties of an object have changed. This is the case when the PropertyName is<code>null</code> or empty.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>e</strong>
 The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the PropertyName is <code>null</code> or empty, <code>false</code> otherwise.</p>
+<p><code>true</code> if the PropertyName is<code>null</code> or empty,<code>false</code> otherwise.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The e is <code>null</code>.</p>
+The e is<code>null</code>.</p>
 <h3 id="haspropertychangedpropertychangedeventargs-e-string-propertyname">HasPropertyChanged(PropertyChangedEventArgs e, string propertyName)<a class="headerlink" href="#haspropertychangedpropertychangedeventargs-e-string-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification
-    for the property specified by the property name.</p>
+<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification for the property specified by the property name.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>e</strong>
 The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.</p>
 <p><strong>propertyName</strong>
 Name of the property.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if PropertyName equals the property from the property expression; otherwise, <code>false</code>.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if PropertyName equals the property from the property expression; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The e is <code>null</code>.</p>
+The e is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The propertyName is <code>null</code> or whitespace.</p>
-<h3 id="true">HasPropertyChanged&lt;TModel, TValue&gt;(PropertyChangedEventArgs e, Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, bool allowNested)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification
-    for the property specified by the property expression.</p>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="haspropertychangedtmodel-tvaluepropertychangedeventargs-e-expressionfunctmodel-tvalue-propertyexpression-bool-allownested">HasPropertyChanged&lt;TModel, TValue&gt;(PropertyChangedEventArgs e, Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, bool allowNested)<a class="headerlink" href="#haspropertychangedtmodel-tvaluepropertychangedeventargs-e-expressionfunctmodel-tvalue-propertyexpression-bool-allownested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification for the property specified by the property expression.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TModel</strong>
 The type of the model.</p>
@@ -223,15 +207,14 @@ The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.
 <p><strong>propertyExpression</strong>
 The property expression.</p>
 <p><strong>allowNested</strong>
-if set to <code>true</code>, nested properties are allowed.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if PropertyName equals the property from the property expression; otherwise, <code>false</code>.</p>
+if set to<code>true</code> , nested properties are allowed.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if PropertyName equals the property from the property expression; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The e is <code>null</code>.</p>
+The e is<code>null</code>.</p>
 <h3 id="haspropertychangedpropertychangedeventargs-e-expressionfunc-propertyexpression-bool-allownested">HasPropertyChanged<TValue>(PropertyChangedEventArgs e, Expression&lt;Func<TValue>&gt; propertyExpression, bool allowNested)<a class="headerlink" href="#haspropertychangedpropertychangedeventargs-e-expressionfunc-propertyexpression-bool-allownested" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification
-    for the property specified by the property expression.</p>
+<p>Determines whether the specified instance of the <a href="#">PropertyChangedEventArgs</a> represents a change notification for the property specified by the property expression.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TValue</strong>
 The type of the value.</p>
@@ -241,12 +224,12 @@ The <a href="#">PropertyChangedEventArgs</a> instance containing the event data.
 <p><strong>propertyExpression</strong>
 The property expression.</p>
 <p><strong>allowNested</strong>
-if set to <code>true</code>, nested properties are allowed.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if PropertyName equals the property from the property expression; otherwise, <code>false</code>.</p>
+if set to<code>true</code> , nested properties are allowed.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if PropertyName equals the property from the property expression; otherwise,<code>false</code>.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The e is <code>null</code>.</p>
+The e is<code>null</code>.</p>
 
                     </div>
                 </div>

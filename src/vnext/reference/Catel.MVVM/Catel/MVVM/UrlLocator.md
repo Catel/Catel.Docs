@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class UrlLocator : IUrlLocator, LocatorBase
@@ -26,28 +26,11 @@ Locator for urls.
 
 ## Fields
 
-### Log
-
-The log.
-
-
-
 ## Methods
-
-### GetDefaultNamingConventions()
-
-Gets the default naming conventions.
-
-#### Returns
-
-An enumerable of default naming conventions.
-
-
 
 ### Register(Type viewModelType, string url)
 
-Registers the specified url in the local cache. This cache will also be used by the Boolean)
-    method.
+Registers the specified url in the local cache. This cache will also be used by the Boolean) method.
 
 #### Parameters
 
@@ -60,31 +43,10 @@ The resolved url.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelType is ```null```.
+The viewModelType is`null`.
 
 **T:System.ArgumentException**
-The url is ```null``` or whitespace.
-
-
-
-### ResolveNamingConvention(string assembly, string typeToResolveName, string namingConvention)
-
-This method is not supported.
-
-#### Parameters
-
-**assembly**
-The assembly name.
-
-**typeToResolveName**
-The full type name of the type to resolve.
-
-**namingConvention**
-The naming convention to use for resolving.
-
-#### Returns
-
-Nothing, this method throws a [NotSupportedException](#).
+The url is`null` or whitespace.
 
 
 
@@ -98,22 +60,20 @@ Resolves an url by the view model and the registered NamingConventions.
 Type of the view model to resolve the url for.
 
 **ensurePageExists**
-If set to ```true```, the method checks whether the page resource actually exists.
+If set to`true` , the method checks whether the page resource actually exists.
 
 #### Returns
 
-The resolved url or ```null``` if the view could not be resolved.
+The resolved url or`null` if the view could not be resolved.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelType is ```null```.
+The viewModelType is`null`.
 
 #### Remarks
 
-Keep in mind that all results are cached. The cache itself is not automatically cleared when the
-    NamingConventions are changed. If the NamingConventions are changed,
-    the cache must be cleared manually.
+Keep in mind that all results are cached. The cache itself is not automatically cleared when the NamingConventions are changed. If the NamingConventions are changed, the cache must be cleared manually.
 
 
 

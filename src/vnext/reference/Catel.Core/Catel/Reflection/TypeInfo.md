@@ -18,25 +18,7 @@ The type info.
 
 ## Fields
 
-### _type
-
 ## Constructors
-
-### TypeInfo(Type type)
-
-Initializes a new instance of the [TypeInfo](#) class.
-
-#### Parameters
-
-**type**
-The type.
-
-#### Exceptions
-
-**!:System.ArgumentNullException**
-The type is ```null```.
-
-
 
 ## Properties
 
@@ -52,11 +34,11 @@ An [Assembly](#) instance that describes the assembly containing the current typ
 
 ### AssemblyQualifiedName
 
-Gets the assembly-qualified name of the [Type](#), which includes the name of the assembly from which the [Type](#) was loaded.
+Gets the assembly-qualified name of the [Type](#) , which includes the name of the assembly from which the [Type](#) was loaded.
 
 #### Returns
 
-The assembly-qualified name of the [Type](#), which includes the name of the assembly from which the [Type](#) was loaded, or null if the current instance represents a generic type parameter.
+The assembly-qualified name of the [Type](#) , which includes the name of the assembly from which the [Type](#) was loaded, or null if the current instance represents a generic type parameter.
 
 
 
@@ -66,7 +48,7 @@ Gets the attributes associated with the [Type](#).
 
 #### Returns
 
-A [TypeAttributes](#) object representing the attribute set of the [Type](#), unless the [Type](#) represents a generic type parameter, in which case the value is unspecified.
+A [TypeAttributes](#) object representing the attribute set of the [Type](#) , unless the [Type](#) represents a generic type parameter, in which case the value is unspecified.
 
 
 
@@ -130,11 +112,11 @@ A [Type](#) object representing the enclosing type, if the current type is a nes
 
 ### FullName
 
-Gets the fully qualified name of the [Type](#), including the namespace of the [Type](#) but not the assembly.
+Gets the fully qualified name of the [Type](#) , including the namespace of the [Type](#) but not the assembly.
 
 #### Returns
 
-The fully qualified name of the [Type](#), including the namespace of the [Type](#) but not the assembly; or null if the current instance represents a generic type parameter, an array type, pointer type, or byref type based on a type parameter, or a generic type that is not a generic type definition but contains unresolved type parameters.
+The fully qualified name of the [Type](#) , including the namespace of the [Type](#) but not the assembly; or null if the current instance represents a generic type parameter, an array type, pointer type, or byref type based on a type parameter, or a generic type that is not a generic type definition but contains unresolved type parameters.
 
 
 
@@ -219,7 +201,7 @@ Gets a value indicating whether the string format attribute AnsiClass is selecte
 
 #### Returns
 
-true if the string format attribute AnsiClass is selected for the [Type](#); otherwise, false.
+true if the string format attribute AnsiClass is selected for the [Type](#) ; otherwise, false.
 
 
 
@@ -239,7 +221,7 @@ Gets a value indicating whether the string format attribute AutoClass is selecte
 
 #### Returns
 
-true if the string format attribute AutoClass is selected for the [Type](#); otherwise, false.
+true if the string format attribute AutoClass is selected for the [Type](#) ; otherwise, false.
 
 
 
@@ -249,7 +231,7 @@ Gets a value indicating whether the class layout attribute AutoLayout is selecte
 
 #### Returns
 
-true if the class layout attribute AutoLayout is selected for the [Type](#); otherwise, false.
+true if the class layout attribute AutoLayout is selected for the [Type](#) ; otherwise, false.
 
 
 
@@ -329,7 +311,7 @@ Gets a value indicating whether the [Type](#) has a [ComImportAttribute](#) attr
 
 #### Returns
 
-true if the [Type](#) has a [ComImportAttribute](#); otherwise, false.
+true if the [Type](#) has a [ComImportAttribute](#) ; otherwise, false.
 
 
 
@@ -489,7 +471,7 @@ Gets a value indicating whether the string format attribute UnicodeClass is sele
 
 #### Returns
 
-true if the string format attribute UnicodeClass is selected for the [Type](#); otherwise, false.
+true if the string format attribute UnicodeClass is selected for the [Type](#) ; otherwise, false.
 
 
 
@@ -529,17 +511,12 @@ Gets a value that identifies a metadata element.
 
 #### Returns
 
-A value which, in combination with Module, uniquely identifies a metadata element.
+A value which, in combination with Module , uniquely identifies a metadata element.
 
 #### Exceptions
 
 **T:System.InvalidOperationException**
-The current [MemberInfo](#) represents an array method, such 
-    as Address, on an array type whose element type is a dynamic type that has not been completed. To get a metadata token in this case, pass 
-    the [MemberInfo](#) object to the ```System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo)```
-    method; or use the ```System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])``` 
-     method to get the token directly, instead of using the ```System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])``` 
-    method to get a [MethodInfo](#) first.
+The current [MemberInfo](#) represents an array method, such as Address, on an array type whose element type is a dynamic type that has not been completed. To get a metadata token in this case, pass the [MemberInfo](#) object to the`System.Reflection.Emit.ModuleBuilder.GetMethodToken(System.Reflection.MethodInfo)` method; or use the`System.Reflection.Emit.ModuleBuilder.GetArrayMethodToken(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])` method to get the token directly, instead of using the`System.Reflection.Emit.ModuleBuilder.GetArrayMethod(System.Type,System.String,System.Reflection.CallingConventions,System.Type,System.Type[])` method to get a [MethodInfo](#) first.
 
 
 
@@ -569,7 +546,7 @@ Gets the namespace of the [Type](#).
 
 #### Returns
 
-The namespace of the [Type](#), or null if the current instance represents a generic parameter.
+The namespace of the [Type](#) , or null if the current instance represents a generic parameter.
 
 
 
@@ -629,7 +606,7 @@ The [TypeInfo](#) whose underlying system type is to be compared with the underl
 
 #### Returns
 
-true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#); otherwise, false.
+true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#) ; otherwise, false.
 
 
 
@@ -644,7 +621,7 @@ The [Type](#) whose underlying system type is to be compared with the underlying
 
 #### Returns
 
-true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#); otherwise, false.
+true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#) ; otherwise, false.
 
 
 
@@ -658,22 +635,17 @@ Returns a filtered array of [MemberInfo](#) objects of the specified member type
 A MemberTypes object indicating the type of member to search for.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 **filter**
 The delegate that does the comparisons, returning true if the member currently being inspected matches the filterCriteria and false otherwise. You can use the FilterAttribute, FilterName, and FilterNameIgnoreCase delegates supplied by this class. The first uses the fields of FieldAttributes, MethodAttributes, and MethodImplAttributes as search criteria, and the other two delegates use String objects as the search criteria.
 
 **filterCriteria**
-The search criteria that determines whether a member is returned in the array of MemberInfo objects.
-    The fields of FieldAttributes, MethodAttributes, and MethodImplAttributes can be used in conjunction with the FilterAttribute delegate supplied by this class.
+The search criteria that determines whether a member is returned in the array of MemberInfo objects. The fields of FieldAttributes, MethodAttributes, and MethodImplAttributes can be used in conjunction with the FilterAttribute delegate supplied by this class.
 
 #### Returns
 
-A filtered array of [MemberInfo](#) objects of the specified member type.
-    -or- 
-    An empty array of type [MemberInfo](#), if the current [Type](#) does not have members of type memberType that match the filter criteria.
+A filtered array of [MemberInfo](#) objects of the specified member type. -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have members of type memberType that match the filter criteria.
 
 #### Exceptions
 
@@ -707,21 +679,13 @@ Searches for a constructor whose parameters match the specified argument types a
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the constructor to get.
-    -or- 
-    An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a constructor that takes no parameters.
-    -or- 
-    EmptyTypes.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the constructor to get. -or- An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a constructor that takes no parameters. -or- EmptyTypes.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the parameter type array. The default binder does not process this parameter.
@@ -733,16 +697,10 @@ A [ConstructorInfo](#) object representing the constructor that matches the spec
 #### Exceptions
 
 **T:System.ArgumentNullException**
-types is null.
-    -or- 
-    One of the elements in types is null.
+types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
-    -or- 
-    types and modifiers do not have the same length.
+types is multidimensional. -or- modifiers is multidimensional. -or- types and modifiers do not have the same length.
 
 
 
@@ -753,9 +711,7 @@ Searches for a public instance constructor whose parameters match the types in t
 #### Parameters
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the desired constructor.
-    -or- 
-    An empty array of [Type](#) objects, to get a constructor that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the desired constructor. -or- An empty array of [Type](#) objects, to get a constructor that takes no parameters.
 
 #### Returns
 
@@ -764,9 +720,7 @@ A [ConstructorInfo](#) object representing the public instance constructor whose
 #### Exceptions
 
 **T:System.ArgumentNullException**
-types is null.
-    -or- 
-    One of the elements in types is null.
+types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
 types is multidimensional.
@@ -779,24 +733,22 @@ Returns all the public constructors defined for the current [Type](#).
 
 #### Returns
 
-An array of [ConstructorInfo](#) objects representing all the public instance constructors defined for the current [Type](#), but not including the type initializer (static constructor). If no public instance constructors are defined for the current [Type](#), or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method, an empty array of type [ConstructorInfo](#) is returned.
+An array of [ConstructorInfo](#) objects representing all the public instance constructors defined for the current [Type](#) , but not including the type initializer (static constructor). If no public instance constructors are defined for the current [Type](#) , or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method, an empty array of type [ConstructorInfo](#) is returned.
 
 
 
 ### GetConstructors(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the constructors defined for the current [Type](#), using the specified BindingFlags.
+When overridden in a derived class, searches for the constructors defined for the current [Type](#) , using the specified BindingFlags.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [ConstructorInfo](#) objects representing all constructors defined for the current [Type](#) that match the specified binding constraints, including the type initializer if it is defined. Returns an empty array of type [ConstructorInfo](#) if no constructors are defined for the current [Type](#), if none of the defined constructors match the binding constraints, or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method.
+An array of [ConstructorInfo](#) objects representing all constructors defined for the current [Type](#) that match the specified binding constraints, including the type initializer if it is defined. Returns an empty array of type [ConstructorInfo](#) if no constructors are defined for the current [Type](#) , if none of the defined constructors match the binding constraints, or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method.
 
 
 
@@ -858,9 +810,7 @@ Searches for the members defined for the current [Type](#) whose [DefaultMemberA
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all default members of the current [Type](#).
-    -or- 
-    An empty array of type [MemberInfo](#), if the current [Type](#) does not have default members.
+An array of [MemberInfo](#) objects representing all default members of the current [Type](#). -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have default members.
 
 
 
@@ -885,7 +835,7 @@ The [String](#) containing the name of an event which is declared or inherited b
 
 #### Returns
 
-The [EventInfo](#) object representing the specified public event which is declared or inherited by the current [Type](#), if found; otherwise, null.
+The [EventInfo](#) object representing the specified public event which is declared or inherited by the current [Type](#) , if found; otherwise, null.
 
 #### Exceptions
 
@@ -904,13 +854,11 @@ When overridden in a derived class, returns the [EventInfo](#) object representi
 The [String](#) containing the name of an event which is declared or inherited by the current [Type](#).
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-The [EventInfo](#) object representing the specified event which is declared or inherited by the current [Type](#), if found; otherwise, null.
+The [EventInfo](#) object representing the specified event which is declared or inherited by the current [Type](#) , if found; otherwise, null.
 
 #### Exceptions
 
@@ -925,28 +873,22 @@ Returns all the public events that are declared or inherited by the current [Typ
 
 #### Returns
 
-An array of [EventInfo](#) objects representing all the public events which are declared or inherited by the current [Type](#).
-    -or- 
-    An empty array of type [EventInfo](#), if the current [Type](#) does not have public events.
+An array of [EventInfo](#) objects representing all the public events which are declared or inherited by the current [Type](#). -or- An empty array of type [EventInfo](#) , if the current [Type](#) does not have public events.
 
 
 
 ### GetEvents(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for events that are declared or inherited by the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for events that are declared or inherited by the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [EventInfo](#) objects representing all events which are declared or inherited by the current [Type](#) that match the specified binding constraints.
-    -or- 
-    An empty array of type [EventInfo](#), if the current [Type](#) does not have events, or if none of the events match the binding constraints.
+An array of [EventInfo](#) objects representing all events which are declared or inherited by the current [Type](#) that match the specified binding constraints. -or- An empty array of type [EventInfo](#) , if the current [Type](#) does not have events, or if none of the events match the binding constraints.
 
 
 
@@ -969,7 +911,7 @@ A [FieldInfo](#) object representing the public field with the specified name, i
 name is null.
 
 **T:System.NotSupportedException**
-This [Type](#) object is a ```System.Reflection.Emit.TypeBuilder``` whose ```System.Reflection.Emit.TypeBuilder.CreateType``` method has not yet been called.
+This [Type](#) object is a`System.Reflection.Emit.TypeBuilder` whose`System.Reflection.Emit.TypeBuilder.CreateType` method has not yet been called.
 
 
 
@@ -983,9 +925,7 @@ Searches for the specified field, using the specified binding constraints.
 The [String](#) containing the name of the data field to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
@@ -1004,28 +944,22 @@ Returns all the public fields of the current [Type](#).
 
 #### Returns
 
-An array of [FieldInfo](#) objects representing all the public fields defined for the current [Type](#).
-    -or- 
-    An empty array of type [FieldInfo](#), if no public fields are defined for the current [Type](#).
+An array of [FieldInfo](#) objects representing all the public fields defined for the current [Type](#). -or- An empty array of type [FieldInfo](#) , if no public fields are defined for the current [Type](#).
 
 
 
 ### GetFields(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the fields defined for the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for the fields defined for the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [FieldInfo](#) objects representing all fields defined for the current [Type](#) that match the specified binding constraints.
-    -or- 
-    An empty array of type [FieldInfo](#), if no fields are defined for the current [Type](#), or if none of the defined fields match the binding constraints.
+An array of [FieldInfo](#) objects representing all fields defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [FieldInfo](#) , if no fields are defined for the current [Type](#) , or if none of the defined fields match the binding constraints.
 
 
 
@@ -1065,7 +999,7 @@ A [Type](#) object representing a generic type from which the current type can b
 #### Exceptions
 
 **T:System.InvalidOperationException**
-The current type is not a generic type.  That is, IsGenericType returns false.
+The current type is not a generic type. That is, IsGenericType returns false.
 
 **T:System.NotSupportedException**
 The invoked method is not supported in the base class. Derived classes must provide an implementation.
@@ -1083,7 +1017,7 @@ The [String](#) containing the name of the interface to get. For generic interfa
 
 #### Returns
 
-A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#), if found; otherwise, null.
+A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#) , if found; otherwise, null.
 
 #### Exceptions
 
@@ -1105,13 +1039,11 @@ When overridden in a derived class, searches for the specified interface, specif
 The [String](#) containing the name of the interface to get. For generic interfaces, this is the mangled name.
 
 **ignoreCase**
-true to ignore the case of that part of name that specifies the simple interface name (the part that specifies the namespace must be correctly cased).
-    -or- 
-    false to perform a case-sensitive search for all parts of name.
+true to ignore the case of that part of name that specifies the simple interface name (the part that specifies the namespace must be correctly cased). -or- false to perform a case-sensitive search for all parts of name.
 
 #### Returns
 
-A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#), if found; otherwise, null.
+A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#) , if found; otherwise, null.
 
 #### Exceptions
 
@@ -1158,9 +1090,7 @@ When overridden in a derived class, gets all the interfaces implemented or inher
 
 #### Returns
 
-An array of [Type](#) objects representing all the interfaces implemented or inherited by the current [Type](#).
-    -or- 
-    An empty array of type [Type](#), if no interfaces are implemented or inherited by the current [Type](#).
+An array of [Type](#) objects representing all the interfaces implemented or inherited by the current [Type](#). -or- An empty array of type [Type](#) , if no interfaces are implemented or inherited by the current [Type](#).
 
 #### Exceptions
 
@@ -1199,9 +1129,7 @@ Searches for the specified members, using the specified binding constraints.
 The [String](#) containing the name of the members to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return an empty array.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return an empty array.
 
 #### Returns
 
@@ -1227,9 +1155,7 @@ The [String](#) containing the name of the members to get.
 The [MemberTypes](#) value to search for.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return an empty array.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return an empty array.
 
 #### Returns
 
@@ -1251,28 +1177,22 @@ Returns all the public members of the current [Type](#).
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all the public members of the current [Type](#).
-    -or- 
-    An empty array of type [MemberInfo](#), if the current [Type](#) does not have public members.
+An array of [MemberInfo](#) objects representing all the public members of the current [Type](#). -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have public members.
 
 
 
 ### GetMembers(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the members defined for the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for the members defined for the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all members defined for the current [Type](#) that match the specified binding constraints.
-    -or- 
-    An empty array of type [MemberInfo](#), if no members are defined for the current [Type](#), or if none of the defined members match the binding constraints.
+An array of [MemberInfo](#) objects representing all members defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MemberInfo](#) , if no members are defined for the current [Type](#) , or if none of the defined members match the binding constraints.
 
 
 
@@ -1309,9 +1229,7 @@ Searches for the specified method, using the specified binding constraints.
 The [String](#) containing the name of the method to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
@@ -1337,22 +1255,16 @@ Searches for the specified method whose parameters match the specified argument 
 The [String](#) containing the name of the method to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder.
 
 **callConvention**
 The [CallingConventions](#) object that specifies the set of rules to use regarding the order and layout of arguments, how the return value is passed, what registers are used for arguments, and how the stack is cleaned up.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get.
-    -or- 
-    An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get. -or- An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the types array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.
@@ -1367,16 +1279,10 @@ A [MethodInfo](#) object representing the method that matches the specified requ
 More than one method is found with the specified name and matching the specified binding constraints.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
-    -or- 
-    One of the elements in types is null.
+name is null. -or- types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
+types is multidimensional. -or- modifiers is multidimensional.
 
 
 
@@ -1390,19 +1296,13 @@ Searches for the specified method whose parameters match the specified argument 
 The [String](#) containing the name of the method to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get.
-    -or- 
-    An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get. -or- An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the types array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.
@@ -1417,16 +1317,10 @@ A [MethodInfo](#) object representing the method that matches the specified requ
 More than one method is found with the specified name and matching the specified binding constraints.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
-    -or- 
-    One of the elements in types is null.
+name is null. -or- types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
+types is multidimensional. -or- modifiers is multidimensional.
 
 
 
@@ -1440,9 +1334,7 @@ Searches for the specified public method whose parameters match the specified ar
 The [String](#) containing the name of the public method to get.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get.
-    -or- 
-    An empty array of [Type](#) objects to get a method that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get. -or- An empty array of [Type](#) objects to get a method that takes no parameters.
 
 #### Returns
 
@@ -1454,11 +1346,7 @@ A [MethodInfo](#) object representing the public method whose parameters match t
 More than one method is found with the specified name and specified parameters.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
-    -or- 
-    One of the elements in types is null.
+name is null. -or- types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
 types is multidimensional.
@@ -1475,14 +1363,10 @@ Searches for the specified method whose parameters match the specified argument 
 The [String](#) containing the name of the method to get.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get.
-      -or- 
-      An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get. -or- An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-      -or- 
-      Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
@@ -1494,11 +1378,7 @@ A [MethodInfo](#) object representing the method that matches the specified requ
 More than one method is found with the specified name and matching the specified binding constraints.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
-    -or- 
-    One of the elements in types is null.
+name is null. -or- types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
 types is multidimensional.
@@ -1515,9 +1395,7 @@ Searches for the specified public method whose parameters match the specified ar
 The [String](#) containing the name of the public method to get.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get.
-    -or- 
-    An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the method to get. -or- An empty array of [Type](#) objects (as provided by the EmptyTypes field) to get a method that takes no parameters.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the types array. To be only used when calling through COM interop, and only parameters that are passed by reference are handled. The default binder does not process this parameter.
@@ -1532,16 +1410,10 @@ A [MethodInfo](#) object representing the public method that matches the specifi
 More than one method is found with the specified name and specified parameters.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
-    -or- 
-    One of the elements in types is null.
+name is null. -or- types is null. -or- One of the elements in types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
+types is multidimensional. -or- modifiers is multidimensional.
 
 
 
@@ -1551,28 +1423,22 @@ Returns all the public methods of the current [Type](#).
 
 #### Returns
 
-An array of [MethodInfo](#) objects representing all the public methods defined for the current [Type](#).
-    -or- 
-    An empty array of type [MethodInfo](#), if no public methods are defined for the current [Type](#).
+An array of [MethodInfo](#) objects representing all the public methods defined for the current [Type](#). -or- An empty array of type [MethodInfo](#) , if no public methods are defined for the current [Type](#).
 
 
 
 ### GetMethods(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the methods defined for the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for the methods defined for the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [MethodInfo](#) objects representing all methods defined for the current [Type](#) that match the specified binding constraints.
-    -or- 
-    An empty array of type [MethodInfo](#), if no methods are defined for the current [Type](#), or if none of the defined methods match the binding constraints.
+An array of [MethodInfo](#) objects representing all methods defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MethodInfo](#) , if no methods are defined for the current [Type](#) , or if none of the defined methods match the binding constraints.
 
 
 
@@ -1606,9 +1472,7 @@ When overridden in a derived class, searches for the specified nested type, usin
 The string containing the name of the nested type to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
@@ -1633,18 +1497,16 @@ An array of [Type](#) objects representing the public types nested in the curren
 
 ### GetNestedTypes(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the types nested in the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for the types nested in the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [Type](#) objects representing all the types nested in the current [Type](#) that match the specified binding constraints (the search is not recursive), or an empty array of type [Type](#), if no nested types are found that match the binding constraints.
+An array of [Type](#) objects representing all the types nested in the current [Type](#) that match the specified binding constraints (the search is not recursive), or an empty array of type [Type](#) , if no nested types are found that match the binding constraints.
 
 
 
@@ -1654,28 +1516,22 @@ Returns all the public properties of the current [Type](#).
 
 #### Returns
 
-An array of [PropertyInfo](#) objects representing all public properties of the current [Type](#).
-    -or- 
-    An empty array of type [PropertyInfo](#), if the current [Type](#) does not have public properties.
+An array of [PropertyInfo](#) objects representing all public properties of the current [Type](#). -or- An empty array of type [PropertyInfo](#) , if the current [Type](#) does not have public properties.
 
 
 
 ### GetProperties(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the properties of the current [Type](#), using the specified binding constraints.
+When overridden in a derived class, searches for the properties of the current [Type](#) , using the specified binding constraints.
 
 #### Parameters
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
-An array of [PropertyInfo](#) objects representing all properties of the current [Type](#) that match the specified binding constraints.
-    -or- 
-    An empty array of type [PropertyInfo](#), if the current [Type](#) does not have properties, or if none of the properties match the binding constraints.
+An array of [PropertyInfo](#) objects representing all properties of the current [Type](#) that match the specified binding constraints. -or- An empty array of type [PropertyInfo](#) , if the current [Type](#) does not have properties, or if none of the properties match the binding constraints.
 
 
 
@@ -1712,9 +1568,7 @@ Searches for the specified property, using the specified binding constraints.
 The [String](#) containing the name of the property to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 #### Returns
 
@@ -1740,22 +1594,16 @@ Searches for the specified property whose parameters match the specified argumen
 The [String](#) containing the name of the property to get.
 
 **bindingAttr**
-A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted.
-    -or- 
-    Zero, to return null.
+A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. -or- Zero, to return null.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder.
 
 **returnType**
 The return type of the property.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get.
-    -or- 
-    An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get. -or- An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the types array. The default binder does not process this parameter.
@@ -1770,16 +1618,10 @@ A [PropertyInfo](#) object representing the property that matches the specified 
 More than one property is found with the specified name and matching the specified binding constraints.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
+name is null. -or- types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
-    -or- 
-    types and modifiers do not have the same length.
+types is multidimensional. -or- modifiers is multidimensional. -or- types and modifiers do not have the same length.
 
 **T:System.NullReferenceException**
 An element of types is null.
@@ -1825,9 +1667,7 @@ The [String](#) containing the name of the public property to get.
 The return type of the property.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get.
-    -or- 
-    An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get. -or- An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
 
 #### Returns
 
@@ -1839,9 +1679,7 @@ A [PropertyInfo](#) object representing the public property whose parameters mat
 More than one property is found with the specified name and matching the specified argument types.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
+name is null. -or- types is null.
 
 **T:System.ArgumentException**
 types is multidimensional.
@@ -1864,9 +1702,7 @@ The [String](#) containing the name of the public property to get.
 The return type of the property.
 
 **types**
-An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get.
-    -or- 
-    An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
+An array of [Type](#) objects representing the number, order, and type of the parameters for the indexed property to get. -or- An empty array of the type [Type](#) (that is, Type[] types = new Type[0]) to get a property that is not indexed.
 
 **modifiers**
 An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the types array. The default binder does not process this parameter.
@@ -1881,16 +1717,10 @@ A [PropertyInfo](#) object representing the public property that matches the spe
 More than one property is found with the specified name and matching the specified argument types and modifiers.
 
 **T:System.ArgumentNullException**
-name is null.
-    -or- 
-    types is null.
+name is null. -or- types is null.
 
 **T:System.ArgumentException**
-types is multidimensional.
-    -or- 
-    modifiers is multidimensional.
-    -or- 
-    types and modifiers do not have the same length.
+types is multidimensional. -or- modifiers is multidimensional. -or- types and modifiers do not have the same length.
 
 **T:System.NullReferenceException**
 An element of types is null.
@@ -1904,19 +1734,13 @@ Invokes the specified member, using the specified binding constraints and matchi
 #### Parameters
 
 **name**
-The [String](#) containing the name of the constructor, method, property, or field member to invoke.
-    -or- 
-    An empty string ("") to invoke the default member. 
-    -or-
-    For IDispatch members, a string representing the DispID, for example "[DispID=3]".
+The [String](#) containing the name of the constructor, method, property, or field member to invoke. -or- An empty string ("") to invoke the default member. -or- For IDispatch members, a string representing the DispID, for example "[DispID=3]".
 
 **invokeAttr**
 A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. The access can be one of the BindingFlags such as Public, NonPublic, Private, InvokeMethod, GetField, and so on. The type of lookup need not be specified. If the type of lookup is omitted, BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static are used.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder. Note that explicitly defining a [Binder](#) object may be requird for successfully invoking method overloads with variable arguments.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder. Note that explicitly defining a [Binder](#) object may be requird for successfully invoking method overloads with variable arguments.
 
 **target**
 The [Object](#) on which to invoke the specified member.
@@ -1934,25 +1758,7 @@ An [Object](#) representing the return value of the invoked member.
 invokeAttr contains CreateInstance and name is null.
 
 **T:System.ArgumentException**
-args is multidimensional.
-    -or- 
-    invokeAttr is not a valid [BindingFlags](#) attribute. 
-    -or- 
-    invokeAttr does not contain one of the following binding flags: InvokeMethod, CreateInstance, GetField, SetField, GetProperty, or SetProperty. 
-    -or- 
-    invokeAttr contains CreateInstance combined with InvokeMethod, GetField, SetField, GetProperty, or SetProperty.
-    -or- 
-    invokeAttr contains both GetField and SetField.
-    -or- 
-    invokeAttr contains both GetProperty and SetProperty.
-    -or- 
-    invokeAttr contains InvokeMethod combined with SetField or SetProperty.
-    -or- 
-    invokeAttr contains SetField and args has more than one element.
-    -or- 
-    This method is called on a COM object and one of the following binding flags was not passed in: BindingFlags.InvokeMethod, BindingFlags.GetProperty, BindingFlags.SetProperty, BindingFlags.PutDispProperty, or BindingFlags.PutRefDispProperty.
-    -or- 
-    One of the named parameter arrays contains a string that is null.
+args is multidimensional. -or- invokeAttr is not a valid [BindingFlags](#) attribute. -or- invokeAttr does not contain one of the following binding flags: InvokeMethod, CreateInstance, GetField, SetField, GetProperty, or SetProperty. -or- invokeAttr contains CreateInstance combined with InvokeMethod, GetField, SetField, GetProperty, or SetProperty. -or- invokeAttr contains both GetField and SetField. -or- invokeAttr contains both GetProperty and SetProperty. -or- invokeAttr contains InvokeMethod combined with SetField or SetProperty. -or- invokeAttr contains SetField and args has more than one element. -or- This method is called on a COM object and one of the following binding flags was not passed in: BindingFlags.InvokeMethod, BindingFlags.GetProperty, BindingFlags.SetProperty, BindingFlags.PutDispProperty, or BindingFlags.PutRefDispProperty. -or- One of the named parameter arrays contains a string that is null.
 
 **T:System.MethodAccessException**
 The specified member is a class initializer.
@@ -1961,9 +1767,7 @@ The specified member is a class initializer.
 The field or property cannot be found.
 
 **T:System.MissingMethodException**
-The method cannot be found.
-    -or- 
-    The current [Type](#) object represents a type that contains open type parameters, that is, ContainsGenericParameters returns true.
+The method cannot be found. -or- The current [Type](#) object represents a type that contains open type parameters, that is, ContainsGenericParameters returns true.
 
 **T:System.Reflection.TargetException**
 The specified member cannot be invoked on target.
@@ -1975,7 +1779,7 @@ More than one method matches the binding criteria.
 The .NET Compact Framework does not currently support this method.
 
 **T:System.InvalidOperationException**
-The method represented by name has one or more unspecified generic type parameters. That is, the method's ```ContainsGenericParameters``` property returns true.
+The method represented by name has one or more unspecified generic type parameters. That is, the method's`ContainsGenericParameters` property returns true.
 
 
 
@@ -1986,19 +1790,13 @@ When overridden in a derived class, invokes the specified member, using the spec
 #### Parameters
 
 **name**
-The [String](#) containing the name of the constructor, method, property, or field member to invoke.
-    -or- 
-    An empty string ("") to invoke the default member. 
-    -or-
-    For IDispatch members, a string representing the DispID, for example "[DispID=3]".
+The [String](#) containing the name of the constructor, method, property, or field member to invoke. -or- An empty string ("") to invoke the default member. -or- For IDispatch members, a string representing the DispID, for example "[DispID=3]".
 
 **invokeAttr**
 A bitmask comprised of one or more [BindingFlags](#) that specify how the search is conducted. The access can be one of the BindingFlags such as Public, NonPublic, Private, InvokeMethod, GetField, and so on. The type of lookup need not be specified. If the type of lookup is omitted, BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static are used.
 
 **binder**
-A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection.
-    -or- 
-    null, to use the DefaultBinder. Note that explicitly defining a [Binder](#) object may be requird for successfully invoking method overloads with variable arguments.
+A [Binder](#) object that defines a set of properties and enables binding, which can involve selection of an overloaded method, coercion of argument types, and invocation of a member through reflection. -or- null, to use the DefaultBinder. Note that explicitly defining a [Binder](#) object may be requird for successfully invoking method overloads with variable arguments.
 
 **target**
 The [Object](#) on which to invoke the specified member.
@@ -2007,13 +1805,10 @@ The [Object](#) on which to invoke the specified member.
 An array containing the arguments to pass to the member to invoke.
 
 **modifiers**
-An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the args array. A parameter's associated attributes are stored in the member's signature. 
-    The default binder processes this parameter only when calling a COM component.
+An array of [ParameterModifier](#) objects representing the attributes associated with the corresponding element in the args array. A parameter's associated attributes are stored in the member's signature. The default binder processes this parameter only when calling a COM component.
 
 **culture**
-The [CultureInfo](#) object representing the globalization locale to use, which may be necessary for locale-specific conversions, such as converting a numeric String to a Double.
-    -or- 
-    null to use the current thread's [CultureInfo](#).
+The [CultureInfo](#) object representing the globalization locale to use, which may be necessary for locale-specific conversions, such as converting a numeric String to a Double. -or- null to use the current thread's [CultureInfo](#).
 
 **namedParameters**
 An array containing the names of the parameters to which the values in the args array are passed.
@@ -2028,31 +1823,7 @@ An [Object](#) representing the return value of the invoked member.
 invokeAttr contains CreateInstance and name is null.
 
 **T:System.ArgumentException**
-args is multidimensional.
-    -or- 
-    modifiers is multidimensional.
-    -or- 
-    args and modifiers do not have the same length.
-    -or- 
-    invokeAttr is not a valid [BindingFlags](#) attribute.
-    -or- 
-    invokeAttr does not contain one of the following binding flags: InvokeMethod, CreateInstance, GetField, SetField, GetProperty, or SetProperty.
-    -or- 
-    invokeAttr contains CreateInstance combined with InvokeMethod, GetField, SetField, GetProperty, or SetProperty.
-    -or- 
-    invokeAttr contains both GetField and SetField.
-    -or- 
-    invokeAttr contains both GetProperty and SetProperty.
-    -or- 
-    invokeAttr contains InvokeMethod combined with SetField or SetProperty.
-    -or- 
-    invokeAttr contains SetField and args has more than one element.
-    -or- 
-    The named parameter array is larger than the argument array.
-    -or- 
-    This method is called on a COM object and one of the following binding flags was not passed in: BindingFlags.InvokeMethod, BindingFlags.GetProperty, BindingFlags.SetProperty, BindingFlags.PutDispProperty, or BindingFlags.PutRefDispProperty.
-    -or- 
-    One of the named parameter arrays contains a string that is null.
+args is multidimensional. -or- modifiers is multidimensional. -or- args and modifiers do not have the same length. -or- invokeAttr is not a valid [BindingFlags](#) attribute. -or- invokeAttr does not contain one of the following binding flags: InvokeMethod, CreateInstance, GetField, SetField, GetProperty, or SetProperty. -or- invokeAttr contains CreateInstance combined with InvokeMethod, GetField, SetField, GetProperty, or SetProperty. -or- invokeAttr contains both GetField and SetField. -or- invokeAttr contains both GetProperty and SetProperty. -or- invokeAttr contains InvokeMethod combined with SetField or SetProperty. -or- invokeAttr contains SetField and args has more than one element. -or- The named parameter array is larger than the argument array. -or- This method is called on a COM object and one of the following binding flags was not passed in: BindingFlags.InvokeMethod, BindingFlags.GetProperty, BindingFlags.SetProperty, BindingFlags.PutDispProperty, or BindingFlags.PutRefDispProperty. -or- One of the named parameter arrays contains a string that is null.
 
 **T:System.MethodAccessException**
 The specified member is a class initializer.
@@ -2061,9 +1832,7 @@ The specified member is a class initializer.
 The field or property cannot be found.
 
 **T:System.MissingMethodException**
-The method cannot be found.
-    -or- 
-    The current [Type](#) object represents a type that contains open type parameters, that is, ContainsGenericParameters returns true.
+The method cannot be found. -or- The current [Type](#) object represents a type that contains open type parameters, that is, ContainsGenericParameters returns true.
 
 **T:System.Reflection.TargetException**
 The specified member cannot be invoked on target.
@@ -2072,7 +1841,7 @@ The specified member cannot be invoked on target.
 More than one method matches the binding criteria.
 
 **T:System.InvalidOperationException**
-The method represented by name has one or more unspecified generic type parameters. That is, the method's ```ContainsGenericParameters``` property returns true.
+The method represented by name has one or more unspecified generic type parameters. That is, the method's`ContainsGenericParameters` property returns true.
 
 
 
@@ -2102,7 +1871,7 @@ The Type to compare with the current Type.
 
 #### Returns
 
-true if c and the current Type represent the same type, or if the current Type is in the inheritance hierarchy of c, or if the current Type is an interface that c implements, or if c is a generic type parameter and the current Type represents one of the constraints of c. false if none of these conditions are true, or if c is null.
+true if c and the current Type represent the same type, or if the current Type is in the inheritance hierarchy of c , or if the current Type is an interface that c implements, or if c is a generic type parameter and the current Type represents one of the constraints of c. false if none of these conditions are true, or if c is null.
 
 
 
@@ -2135,7 +1904,7 @@ The object to compare with the current Type.
 
 #### Returns
 
-true if the current Type is in the inheritance hierarchy of the object represented by o, or if the current Type is an interface that o supports. false if neither of these conditions is the case, or if o is null, or if the current Type is an open generic type (that is, ContainsGenericParameters returns true).
+true if the current Type is in the inheritance hierarchy of the object represented by o , or if the current Type is an interface that o supports. false if neither of these conditions is the case, or if o is null, or if the current Type is an open generic type (that is, ContainsGenericParameters returns true).
 
 
 
@@ -2150,7 +1919,7 @@ The Type to compare with the current Type.
 
 #### Returns
 
-true if the Type represented by the c parameter and the current Type represent classes, and the class represented by the current Type derives from the class represented by c; otherwise, false. This method also returns false if c and the current Type represent the same class.
+true if the Type represented by the c parameter and the current Type represent classes, and the class represented by the current Type derives from the class represented by c ; otherwise, false. This method also returns false if c and the current Type represent the same class.
 
 #### Exceptions
 
@@ -2226,14 +1995,10 @@ A [Type](#) representing the constructed type formed by substituting the element
 The current type does not represent a generic type definition. That is, IsGenericTypeDefinition returns false.
 
 **T:System.ArgumentNullException**
-typeArguments is null.
-    -or- 
-    Any element of typeArguments is null.
+typeArguments is null. -or- Any element of typeArguments is null.
 
 **T:System.ArgumentException**
-The number of elements in typeArguments is not the same as the number of type parameters in the current generic type definition.
-    -or- 
-    Any element of typeArguments does not satisfy the constraints specified for the corresponding type parameter of the current generic type.
+The number of elements in typeArguments is not the same as the number of type parameters in the current generic type definition. -or- Any element of typeArguments does not satisfy the constraints specified for the corresponding type parameter of the current generic type.
 
 **T:System.NotSupportedException**
 The invoked method is not supported in the base class. Derived classes must provide an implementation.

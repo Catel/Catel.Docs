@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class FastViewPropertySelector : ViewPropertySelector
@@ -16,11 +16,7 @@ public class FastViewPropertySelector : ViewPropertySelector
 [ViewPropertySelector](/Catel.MVVM\Catel\MVVM\Views\ViewPropertySelector.md)
 
 
-Very fast view property selector because it does not select any view properties.
-    
-
-
-    Use this one for best performance but loose the automatic view property change notifications.
+Very fast view property selector because it does not select any view properties.Use this one for best performance but loose the automatic view property change notifications.
 
 
 
@@ -37,7 +33,7 @@ Type of the target view.
 
 #### Returns
 
-```true``` if all view properties must be subscribed to, ```false``` otherwise.
+`true` if all view properties must be subscribed to,`false` otherwise.
 
 
 

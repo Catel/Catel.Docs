@@ -6,14 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewLoadState
 ```
 
-Interface containing the load state of a view. This interface can be implemented by
-    a view, but also by other helper classes wrapping a view.
+Interface containing the load state of a view. This interface can be implemented by a view, but also by other helper classes wrapping a view.
 
 
 

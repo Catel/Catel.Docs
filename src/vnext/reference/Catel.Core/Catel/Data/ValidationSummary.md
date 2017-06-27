@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ValidationSummary : IValidationSummary
@@ -23,30 +23,6 @@ The validation summary that contains a momentum of the [IValidationContext](#).
 
 ## Fields
 
-### _businessRuleErrors
-
-The business rule errors.
-
-
-
-### _businessRuleWarnings
-
-The business rule warnings.
-
-
-
-### _fieldErrors
-
-The field errors.
-
-
-
-### _fieldWarnings
-
-The field warnings.
-
-
-
 ## Constructors
 
 ### ValidationSummary(IValidationContext validationContext)
@@ -61,7 +37,7 @@ The validation context to base the summary on.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validationContext is ```null```.
+The validationContext is`null`.
 
 
 
@@ -80,7 +56,7 @@ The tag.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validationContext is ```null```.
+The validationContext is`null`.
 
 
 
@@ -148,24 +124,13 @@ Gets a value indicating whether the summary contains warnings.
 
 ### LastModified
 
-Gets the last modified date/time.
-    
-
-
-    Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) 
-    is not accurate enough. Use the ```LastModifiedTicks``` instead.
+Gets the last modified date/time.Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) is not accurate enough. Use the`LastModifiedTicks` instead.
 
 
 
 ### LastModifiedTicks
 
-Gets the last modified ticks which is much more precise that the LastModified. Use this value
-    to compare last modification ticks on other validation contexts.
-    
-
-
-    Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks
-    will return the Ticks which is ```not``` reliable.
+Gets the last modified ticks which is much more precise that the LastModified. Use this value to compare last modification ticks on other validation contexts.Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks will return the Ticks which is`not` reliable.
 
 
 

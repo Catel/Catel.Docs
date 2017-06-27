@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TypeExtensions
@@ -34,14 +34,13 @@ Type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
 ### IsBasicType(Type type)
 
-Determines whether the specified type is a basic type. A basic type is one that can be wholly expressed
-    as an XML attribute. All primitive data types and [String](#) and [DateTime](#) are basic types.
+Determines whether the specified type is a basic type. A basic type is one that can be wholly expressed as an XML attribute. All primitive data types and [String](#) and [DateTime](#) are basic types.
 
 #### Parameters
 
@@ -50,19 +49,18 @@ The type to check.
 
 #### Returns
 
-```true``` if the specified type is a basic type; otherwise, ```false```.
+`true` if the specified type is a basic type; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
 ### IsClassType(Type type)
 
-Determines whether the specified type is a class type, meaning it is not a value type but also not a string
-    or any of the primitive types in .NET.
+Determines whether the specified type is a class type, meaning it is not a value type but also not a string or any of the primitive types in .NET.
 
 #### Parameters
 
@@ -71,7 +69,7 @@ The type.
 
 #### Returns
 
-```true``` if this type is a class type; otherwise, ```false```.
+`true` if this type is a class type; otherwise,`false`.
 
 
 
@@ -86,7 +84,7 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is a collection; otherwise, ```false```.
+`true` if the specified type is a collection; otherwise,`false`.
 
 
 
@@ -101,7 +99,7 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is a dictionary; otherwise, ```false```.
+`true` if the specified type is a dictionary; otherwise,`false`.
 
 
 
@@ -116,12 +114,12 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is a model base; otherwise, ```false```.
+`true` if the specified type is a model base; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 

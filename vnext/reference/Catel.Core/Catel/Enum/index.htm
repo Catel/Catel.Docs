@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -88,8 +86,6 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CompositePredicate/">CompositePredicate</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
@@ -113,15 +109,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -144,6 +136,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -196,6 +190,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -323,7 +319,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -334,15 +330,7 @@
 Type of the enumeration to wrap.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="convertfromotherenumvalueobject-inputenumvalue">ConvertFromOtherEnumValue(object inputEnumValue)<a class="headerlink" href="#convertfromotherenumvalueobject-inputenumvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts a specific enum value from one specific enum type to another enum type by it's name.</p>
-<pre><code>For example, to convert ```Catel.Services.CameraType``` to ```Microsoft.Devices.CameraType```, use the
-following code:
-
-
-
-ConvertEnum&amp;lt;Microsoft.Devices.CameraType&amp;gt;(Catel.Services.CameraType.Primary);
-</code></pre>
-
+<p>Converts a specific enum value from one specific enum type to another enum type by it's name.For example, to convert<code>Catel.Services.CameraType</code> to<code>Microsoft.Devices.CameraType</code> , use the following code: ConvertEnum&lt;Microsoft.Devices.CameraType&gt;(Catel.Services.CameraType.Primary);</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>inputEnumValue</strong>
 The input enum value.</p>
@@ -350,98 +338,84 @@ The input enum value.</p>
 <p>The converted enum value.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The inputEnumValue is <code>null</code>.</p>
+The inputEnumValue is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The inputEnumValue is not of type <a href="#">Enum</a>.</p>
-<h3 id="getfieldstype-enumtype">GetFields(Type enumType)<a class="headerlink" href="#getfieldstype-enumtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the fields from an enum.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>enumType</strong>
-Type of the enum.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Array of <a href="#">FieldInfo</a> values.</p>
 <h3 id="getnameint-value">GetName(int value)<a class="headerlink" href="#getnameint-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the name.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>value</strong>
+The value.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The name of the value.</p>
+<h3 id="getnamelong-value">GetName(long value)<a class="headerlink" href="#getnamelong-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the name.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>value</strong>
 The value.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The name of the value.</p>
-<h3 id="getnamelong-value">GetName(long value)<a class="headerlink" href="#getnamelong-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the name.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The name of the value.</p>
-<h3 id="getnametenum-value">GetName(TEnum value)<a class="headerlink" href="#getnametenum-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the name.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>value</strong>
-The value.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The name of the value.</p>
 <h3 id="getnames">GetNames()<a class="headerlink" href="#getnames" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the names.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Array of names of an enum.</p>
 <h3 id="getvalues">GetValues()<a class="headerlink" href="#getvalues" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the values.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><a href="#">List</a> of values.</p>
 <h3 id="parsestring-input-bool-ignorecase">Parse(string input, bool ignoreCase)<a class="headerlink" href="#parsestring-input-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Parses the specified input.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>input</strong>
+The input.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> , the case should be ignored.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The enum value.</p>
+<h3 id="tolist">ToList()<a class="headerlink" href="#tolist" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Converts an enumaration to a list.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><a href="#">List</a> containing all the values.</p>
+<h3 id="tryparsestring-input-bool-ignorecase-nullable-result">TryParse(string input, bool ignoreCase, Nullable<TEnum> result)<a class="headerlink" href="#tryparsestring-input-bool-ignorecase-nullable-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to parse an enum value name.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>input</strong>
+The input.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> , the case will be ignored.</p>
+<p><strong>result</strong>
+The result.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if successful; otherwise<code>false</code>.</p>
+<h3 id="tryparsestring-input-bool-ignorecase-tenum-result">TryParse(string input, bool ignoreCase, TEnum result)<a class="headerlink" href="#tryparsestring-input-bool-ignorecase-tenum-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to parse an enum value name.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>input</strong>
 The input.</p>
 <p><strong>ignoreCase</strong>
-if set to <code>true</code>, the case should be ignored.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The enum value.</p>
-<h3 id="tolist">ToList()<a class="headerlink" href="#tolist" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Converts an enumaration to a list.</p>
+if set to<code>true</code> , the case will be ignored.</p>
+<p><strong>result</strong>
+The result.</p>
 <h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><a href="#">List</a> containing all the values.</p>
-<h3 id="tryparsestring-input-bool-ignorecase-nullable-result">TryParse(string input, bool ignoreCase, Nullable<TEnum> result)<a class="headerlink" href="#tryparsestring-input-bool-ignorecase-nullable-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>true</code> if successful; otherwise<code>false</code>.</p>
+<h3 id="tryparsestring-input-nullable-result">TryParse(string input, Nullable<TEnum> result)<a class="headerlink" href="#tryparsestring-input-nullable-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Tries to parse an enum value name.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>input</strong>
 The input.</p>
-<p><strong>ignoreCase</strong>
-if set to <code>true</code>, the case will be ignored.</p>
 <p><strong>result</strong>
 The result.</p>
 <h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if successful; otherwise <code>false</code>.</p>
-<h3 id="tryparsestring-input-bool-ignorecase-tenum-result">TryParse(string input, bool ignoreCase, TEnum result)<a class="headerlink" href="#tryparsestring-input-bool-ignorecase-tenum-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>true</code> if successful; otherwise<code>false</code>.</p>
+<h3 id="tryparsestring-input-tenum-result">TryParse(string input, TEnum result)<a class="headerlink" href="#tryparsestring-input-tenum-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Tries to parse an enum value name.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>input</strong>
 The input.</p>
-<p><strong>ignoreCase</strong>
-if set to <code>true</code>, the case will be ignored.</p>
 <p><strong>result</strong>
 The result.</p>
 <h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if successful; otherwise <code>false</code>.</p>
-<h3 id="true">TryParse(string input, Nullable<TEnum> result)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to parse an enum value name.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>input</strong>
-The input.</p>
-<p><strong>result</strong>
-The result.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if successful; otherwise <code>false</code>.</p>
-<h3 id="tryparsestring-input-tenum-result">TryParse(string input, TEnum result)<a class="headerlink" href="#tryparsestring-input-tenum-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to parse an enum value name.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>input</strong>
-The input.</p>
-<p><strong>result</strong>
-The result.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if successful; otherwise <code>false</code>.</p>
+<p><code>true</code> if successful; otherwise<code>false</code>.</p>
 
                     </div>
                 </div>

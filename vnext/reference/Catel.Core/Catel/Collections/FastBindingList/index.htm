@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -355,7 +351,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
@@ -364,23 +360,13 @@
 <a href="">BindingList</a></p>
 <p><strong>Base types</strong></p>
 <p><a href="/Catel.Core\Catel\Collections\ISuspendChangeNotificationsCollection.htm">ISuspendChangeNotificationsCollection</a></p>
-<p>Fast implementation of <a href="#">BindingList</a> where the change notifications
-    can be suspended.</p>
+<p>Fast implementation of <a href="#">BindingList</a> where the change notifications can be suspended.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 Type of the elements contained by this collection.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="dispatcherservice">_dispatcherService<a class="headerlink" href="#dispatcherservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="sortdirection">_sortDirection<a class="headerlink" href="#sortdirection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="sorted">_sorted<a class="headerlink" href="#sorted" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="sortproperty">_sortProperty<a class="headerlink" href="#sortproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="suspensioncontext">_suspensionContext<a class="headerlink" href="#suspensioncontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The current suspension context.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="fastbindinglist-1">FastBindingList()<a class="headerlink" href="#fastbindinglist-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of the <a href="#">FastBindingList</a> class.</p>
-<h3 id="fastbindinglist-2">FastBindingList()<a class="headerlink" href="#fastbindinglist-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">FastBindingList</a> class.</p>
 <h3 id="fastbindinglistienumerable-collection">FastBindingList(IEnumerable<T> collection)<a class="headerlink" href="#fastbindinglistienumerable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">FastBindingList</a> class.</p>
@@ -396,132 +382,64 @@ The collection.</p>
 <h3 id="automaticallydispatchchangenotifications">AutomaticallyDispatchChangeNotifications<a class="headerlink" href="#automaticallydispatchchangenotifications" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets a value indicating whether events should automatically be dispatched to the UI thread.</p>
 <h3 id="isdirty">IsDirty<a class="headerlink" href="#isdirty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether change to the collection is made when
-    its notifications are suspended.</p>
-<h3 id="issortedcore">IsSortedCore<a class="headerlink" href="#issortedcore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether the list is sorted.</p>
+<p>Gets or sets a value indicating whether change to the collection is made when its notifications are suspended.</p>
 <h3 id="notificationssuspended">NotificationsSuspended<a class="headerlink" href="#notificationssuspended" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets a value indicating whether change notifications are suspended.</p>
-<h3 id="sortdirectioncore">SortDirectionCore<a class="headerlink" href="#sortdirectioncore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the direction the list is sorted.</p>
-<h3 id="sortpropertycore">SortPropertyCore<a class="headerlink" href="#sortpropertycore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the property descriptor that is used for sorting the list.</p>
-<h3 id="supportssearchingcore">SupportsSearchingCore<a class="headerlink" href="#supportssearchingcore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether the list supports searching.</p>
-<h3 id="supportssortingcore">SupportsSortingCore<a class="headerlink" href="#supportssortingcore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether the list supports sorting.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="additemsienumerable-collection">AddItems(IEnumerable<T> collection)<a class="headerlink" href="#additemsienumerable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds the specified items to the collection without causing a change notification for all items.</p>
-<pre><code>This method will raise a change notification at the end.
-</code></pre>
-
+<p>Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
+The collection is<code>null</code>.</p>
 <h3 id="additemsienumerable-collection-1">AddItems(IEnumerable collection)<a class="headerlink" href="#additemsienumerable-collection-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Adds the specified items to the collection without causing a change notification for all items.</p>
-<pre><code>This method will raise a change notification at the end.
-</code></pre>
-
+<p>Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
-<h3 id="applysortcorepropertydescriptor-prop-listsortdirection-direction">ApplySortCore(PropertyDescriptor prop, ListSortDirection direction)<a class="headerlink" href="#applysortcorepropertydescriptor-prop-listsortdirection-direction" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Apply sort.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>prop</strong>
-The <a href="#">PropertyDescriptor</a> that specifies the property to sort on.</p>
-<p><strong>direction</strong>
-One of the <a href="#">ListSortDirection</a> values.</p>
-<h3 id="clearitems">ClearItems()<a class="headerlink" href="#clearitems" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes all items from the collection.</p>
-<h3 id="findcorepropertydescriptor-prop-object-key">FindCore(PropertyDescriptor prop, object key)<a class="headerlink" href="#findcorepropertydescriptor-prop-object-key" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Search for the index of item that has the specified property descriptor with the specified value.</p>
-<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>prop</strong>
-The <a href="#">PropertyDescriptor</a> that specifies the property to search on.</p>
-<p><strong>key</strong>
-The value of property to match.</p>
-<h3 id="insertitemint-index-t-item">InsertItem(int index, T item)<a class="headerlink" href="#insertitemint-index-t-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Inserts an item into the collection at the specified index.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>index</strong>
-The zero-based index at which item should be inserted.</p>
-<p><strong>item</strong>
-The object to insert.</p>
+The collection is<code>null</code>.</p>
 <h3 id="insertitemsienumerable-collection-int-index">InsertItems(IEnumerable<T> collection, int index)<a class="headerlink" href="#insertitemsienumerable-collection-int-index" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Inserts the elements of the specified collection at the specified index.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <p><strong>index</strong>
 The start index.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
+The collection is<code>null</code>.</p>
 <h3 id="insertitemsienumerable-collection-int-index-1">InsertItems(IEnumerable collection, int index)<a class="headerlink" href="#insertitemsienumerable-collection-int-index-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Inserts the elements of the specified collection at the specified index.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <p><strong>index</strong>
 The start index.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
-<h3 id="notifychanges">NotifyChanges()<a class="headerlink" href="#notifychanges" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Notifies external classes of property changes.</p>
-<h3 id="onlistchangedlistchangedeventargs-e">OnListChanged(ListChangedEventArgs e)<a class="headerlink" href="#onlistchangedlistchangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Raises the ListChanged event, but also makes sure the event is dispatched to the UI thread.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>e</strong>
-The <a href="#">ListChangedEventArgs</a> instance containing the event data.</p>
-<h3 id="removeitemint-index">RemoveItem(int index)<a class="headerlink" href="#removeitemint-index" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes the item at the specified index of the collection.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>index</strong>
-The zero-based index of the element to remove.</p>
+The collection is<code>null</code>.</p>
 <h3 id="removeitemsienumerable-collection">RemoveItems(IEnumerable<T> collection)<a class="headerlink" href="#removeitemsienumerable-collection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes the specified items from the collection without causing a change notification for all items.</p>
-<pre><code>This method will raise a change notification at the end.
-</code></pre>
-
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
+The collection is<code>null</code>.</p>
 <h3 id="removeitemsienumerable-collection-1">RemoveItems(IEnumerable collection)<a class="headerlink" href="#removeitemsienumerable-collection-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes the specified items from the collection without causing a change notification for all items.</p>
-<pre><code>This method will raise a change notification at the end.
-</code></pre>
-
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>collection</strong>
 The collection.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The collection is <code>null</code>.</p>
-<h3 id="removesortcore">RemoveSortCore()<a class="headerlink" href="#removesortcore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes any applied sort.</p>
+The collection is<code>null</code>.</p>
 <h3 id="reset">Reset()<a class="headerlink" href="#reset" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Raises CollectionChanged with 
-    Reset changed action.</p>
-<h3 id="setitemint-index-t-item">SetItem(int index, T item)<a class="headerlink" href="#setitemint-index-t-item" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Replaces the element at the specified index.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>index</strong>
-The zero-based index of the element to replace.</p>
-<p><strong>item</strong>
-The new value for the element at the specified index.</p>
+<p>Raises CollectionChanged with Reset changed action.</p>
 <h3 id="suspendchangenotifications">SuspendChangeNotifications()<a class="headerlink" href="#suspendchangenotifications" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Suspends the change notifications until the returned <a href="#">IDisposable</a> is disposed.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -542,7 +460,7 @@ The new value for the element at the specified index.</p>
     
 </pre><h3 id="suspendchangenotificationssuspensionmode-mode">SuspendChangeNotifications(SuspensionMode mode)<a class="headerlink" href="#suspendchangenotificationssuspensionmode-mode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Suspends the change notifications until the returned <a href="#">IDisposable</a> is disposed.</p>
-<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>mode</strong>
 The suspension Mode.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

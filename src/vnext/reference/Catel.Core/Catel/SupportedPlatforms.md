@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public enum SupportedPlatforms : Enum
@@ -36,24 +36,24 @@ The iOS platform.
 
 
 
-### NET40
-0
-
-.NET framework 4.0.
-
-
-
 ### NET45
-1
+0
 
 .NET framework 4.5.
 
 
 
 ### NET46
-2
+1
 
 .NET framework 4.6.
+
+
+
+### NET47
+2
+
+.NET framework 4.7.
 
 
 

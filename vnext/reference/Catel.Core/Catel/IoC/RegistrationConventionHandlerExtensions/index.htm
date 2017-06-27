@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -418,7 +414,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -429,7 +425,7 @@
 <p>Adds the assembly to scan.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="excludealltypesofnamespaceiregistrationconventionhandler-registrationconventionhandler-string-namespace">ExcludeAllTypesOfNamespace(IRegistrationConventionHandler registrationConventionHandler, string namespace)<a class="headerlink" href="#excludealltypesofnamespaceiregistrationconventionhandler-registrationconventionhandler-string-namespace" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Excludes the namespace.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -440,9 +436,9 @@ The namespace.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The namespace is <code>null</code> or whitespace.</p>
+The namespace is<code>null</code> or whitespace.</p>
 <h3 id="excludealltypesofnamespacecontainingiregistrationconventionhandler-registrationconventionhandler">ExcludeAllTypesOfNamespaceContaining<T>(IRegistrationConventionHandler registrationConventionHandler)<a class="headerlink" href="#excludealltypesofnamespacecontainingiregistrationconventionhandler-registrationconventionhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Excludes the namespace containing.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -453,7 +449,7 @@ The registration convention handler.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="excludeassemblieswhereiregistrationconventionhandler-registrationconventionhandler-predicate-exclude">ExcludeAssembliesWhere(IRegistrationConventionHandler registrationConventionHandler, Predicate<Assembly> exclude)<a class="headerlink" href="#excludeassemblieswhereiregistrationconventionhandler-registrationconventionhandler-predicate-exclude" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Only exclude assemblies that match the specified predicate when scanning.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -464,7 +460,7 @@ The exclude.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="excludeassemblyiregistrationconventionhandler-registrationconventionhandler">ExcludeAssembly<TAssembly>(IRegistrationConventionHandler registrationConventionHandler)<a class="headerlink" href="#excludeassemblyiregistrationconventionhandler-registrationconventionhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Excludes the assembly.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -476,7 +472,7 @@ The registration convention handler.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="excludetypeiregistrationconventionhandler-registrationconventionhandler">ExcludeType<T>(IRegistrationConventionHandler registrationConventionHandler)<a class="headerlink" href="#excludetypeiregistrationconventionhandler-registrationconventionhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Excludes the type.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -487,7 +483,7 @@ The registration convention handler.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="excludetypeswhereiregistrationconventionhandler-registrationconventionhandler-predicate-exclude">ExcludeTypesWhere(IRegistrationConventionHandler registrationConventionHandler, Predicate<Type> exclude)<a class="headerlink" href="#excludetypeswhereiregistrationconventionhandler-registrationconventionhandler-predicate-exclude" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Only exclude types that match the specified predicate when scanning.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -498,7 +494,7 @@ The exclude.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="includealltypesofnamespaceiregistrationconventionhandler-registrationconventionhandler-string-namespace">IncludeAllTypesOfNamespace(IRegistrationConventionHandler registrationConventionHandler, string namespace)<a class="headerlink" href="#includealltypesofnamespaceiregistrationconventionhandler-registrationconventionhandler-string-namespace" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Only include types in the specified namespace or its sub namespaces when scanning.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -509,10 +505,9 @@ The namespace to include.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="includealltypesofnamespacecontainingiregistrationconventionhandler-registrationconventionhandler">IncludeAllTypesOfNamespaceContaining<T>(IRegistrationConventionHandler registrationConventionHandler)<a class="headerlink" href="#includealltypesofnamespacecontainingiregistrationconventionhandler-registrationconventionhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Only include types in the same namespace as the specified type or its sub namespaces
-    when scanning.</p>
+<p>Only include types in the same namespace as the specified type or its sub namespaces when scanning.</p>
 <h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 A type in the namespace to include.</p>
@@ -522,7 +517,7 @@ The registration convention handler.</p>
 <h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="includetypeiregistrationconventionhandler-registrationconventionhandler">IncludeType<T>(IRegistrationConventionHandler registrationConventionHandler)<a class="headerlink" href="#includetypeiregistrationconventionhandler-registrationconventionhandler" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong></p>
@@ -532,7 +527,7 @@ The registration convention handler.</p>
 <h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="includetypeswhereiregistrationconventionhandler-registrationconventionhandler-predicate-include">IncludeTypesWhere(IRegistrationConventionHandler registrationConventionHandler, Predicate<Type> include)<a class="headerlink" href="#includetypeswhereiregistrationconventionhandler-registrationconventionhandler-predicate-include" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Only include types that match the specified predicate when scanning.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -543,7 +538,7 @@ The predicate to use for matching.</p>
 <h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 <h3 id="shouldalsouseconventioniregistrationconventionhandler-registrationconventionhandler-registrationtype-registrationtype">ShouldAlsoUseConvention<TRegistrationConvention>(IRegistrationConventionHandler registrationConventionHandler, RegistrationType registrationType)<a class="headerlink" href="#shouldalsouseconventioniregistrationconventionhandler-registrationconventionhandler-registrationtype-registrationtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Registers the convention.</p>
 <h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -557,7 +552,7 @@ Type of the registration.</p>
 <h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The registrationConventionHandler is <code>null</code>.</p>
+The registrationConventionHandler is<code>null</code>.</p>
 
                     </div>
                 </div>

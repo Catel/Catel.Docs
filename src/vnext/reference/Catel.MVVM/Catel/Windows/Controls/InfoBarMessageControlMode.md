@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Controls
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public enum InfoBarMessageControlMode : Enum
@@ -25,8 +25,7 @@ The display mode for the [InfoBarMessageControl](#).
 ### Inline
 0
 
-Displays the control inline, which means all controls below are moved down a bit when the
-    control becomes visible.
+Displays the control inline, which means all controls below are moved down a bit when the control becomes visible.
 
 
 

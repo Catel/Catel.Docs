@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -210,8 +204,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -231,8 +223,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -256,9 +246,6 @@
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
@@ -302,7 +289,7 @@
 <li class="tocentry current"><a class="current" href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager/">ViewLoadManager</a>
 <ul class="currentrelative">
 <li class="tocentry"><a href="#fields">Fields</a></li>
-<li class="tocentry"><a href="#constructors">Constructors</a></li>
+<li class="tocentry"><a href="#Will">Constructors</a></li>
 <li class="tocentry"><a href="#events">Events</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
@@ -320,12 +307,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelAttribute/">ViewToViewModelAttribute</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMapping/">ViewToViewModelMapping</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingContainer/">ViewToViewModelMappingContainer</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingHelper/">ViewToViewModelMappingHelper</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingType/">ViewToViewModelMappingType</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/WeakViewInfo/">WeakViewInfo</a>
@@ -335,9 +316,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -405,32 +383,17 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class ViewLoadManager : IViewLoadManager
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\Views\IViewLoadManager.htm">IViewLoadManager</a></p>
-<p>Manager that handles top =&gt; bottom loaded events for all views inside an application.</p>
-<pre><code>The reason this class is built is that in non-WPF technologies, the visual tree is loaded from
-bottom =&amp;gt; top. However, Catel heavily relies on the order to be top =&amp;gt; bottom.
-
-
-
-This manager subscribes to both the ```Loaded``` and ```LayoutUpdated```
-events. This is because in a nested scenario this will happen:
-</code></pre>
-
-<pre class="nocode">
-</pre><pre><code>Will be executed in the following order:
-</code></pre>
-
+<p>Manager that handles top =&gt; bottom loaded events for all views inside an application.The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.This manager subscribes to both the<code>Loaded</code> and<code>LayoutUpdated</code> events. This is because in a nested scenario this will happen:```</p>
+<p>``` Will be executed in the following order:</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cleanuptimer">_cleanUpTimer<a class="headerlink" href="#cleanuptimer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="lastinvokedviewloadstateevent">_lastInvokedViewLoadStateEvent<a class="headerlink" href="#lastinvokedviewloadstateevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="views">_views<a class="headerlink" href="#views" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h2 id="Will">Constructors<a class="headerlink" href="#Will" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="viewloadmanager-1">ViewLoadManager()<a class="headerlink" href="#viewloadmanager-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">ViewLoadManager</a> class.</p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
@@ -450,23 +413,9 @@ events. This is because in a nested scenario this will happen:
 The view load state.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewLoadState is <code>null</code>.</p>
+The viewLoadState is<code>null</code>.</p>
 <h3 id="cleanup">CleanUp()<a class="headerlink" href="#cleanup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Cleans up the dead links.</p>
-<h3 id="invokeviewloadeventiview-view-viewloadstateevent-viewloadstateevent">InvokeViewLoadEvent(IView view, ViewLoadStateEvent viewLoadStateEvent)<a class="headerlink" href="#invokeviewloadeventiview-view-viewloadstateevent-viewloadstateevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the specific view load event and makes sure that it isn't double invoked.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>view</strong>
-The view.</p>
-<p><strong>viewLoadStateEvent</strong>
-The view load state event.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentOutOfRangeException</strong>
-viewLoadStateEvent</p>
-<h3 id="onviewinfoloadedobject-sender-eventargs-e">OnViewInfoLoaded(object sender, EventArgs e)<a class="headerlink" href="#onviewinfoloadedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewinfounloadedobject-sender-eventargs-e">OnViewInfoUnloaded(object sender, EventArgs e)<a class="headerlink" href="#onviewinfounloadedobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="raiseloadediview-view">RaiseLoaded(IView view)<a class="headerlink" href="#raiseloadediview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="raiseunloadediview-view">RaiseUnloaded(IView view)<a class="headerlink" href="#raiseunloadediview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 
                     </div>
                 </div>

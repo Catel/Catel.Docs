@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class ValueConverterGroup : IValueConverter
@@ -17,35 +17,15 @@ public class ValueConverterGroup : IValueConverter
 [IValueConverter](/Catel.MVVM\Catel\MVVM\Converters\IValueConverter.md)
 
 
-A value converter which contains a list of IValueConverters and invokes their Convert or ConvertBack methods
-    in the order that they exist in the list.  The output of one converter is piped into the next converter
-    allowing for modular value converters to be chained together.  If the ConvertBack method is invoked, the
-    value converters are executed in reverse order (highest to lowest index).  Do not leave an element in the
-    Converters property collection null, every element must reference a valid IValueConverter instance. If a
-    value converter's type is not decorated with the ValueConversionAttribute, an InvalidOperationException will be
-    thrown when the converter is added to the Converters collection.
-    
-
-
-    Known limitations: the supplied parameter is used for ALL! converters.
+A value converter which contains a list of IValueConverters and invokes their Convert or ConvertBack methods in the order that they exist in the list. The output of one converter is piped into the next converter allowing for modular value converters to be chained together. If the ConvertBack method is invoked, the value converters are executed in reverse order (highest to lowest index). Do not leave an element in the Converters property collection null, every element must reference a valid IValueConverter instance. If a value converter's type is not decorated with the ValueConversionAttribute, an InvalidOperationException will be thrown when the converter is added to the Converters collection.Known limitations: the supplied parameter is used for ALL! converters.
 
 #### Remarks
 
-Original source: http://www.codeproject.com/KB/WPF/PipingValueConverters_WPF.aspx
-    
-
-
-    Original license: CPOL, compatible with the MIT license.
+Original source: http://www.codeproject.com/KB/WPF/PipingValueConverters_WPF.aspx Original license: CPOL, compatible with the MIT license.
 
 
 
 ## Fields
-
-### _cachedAttributes
-
-### _converters
-
-### Log
 
 ## Constructors
 
@@ -110,37 +90,6 @@ The culture to use in the converter.
 #### Returns
 
 A converted value. If the method returns null, the valid null value is used.
-
-
-
-### GetTargetType(int converterIndex, Type finalTargetType, bool convert)
-
-Returns the target type for a conversion operation.
-
-#### Parameters
-
-**converterIndex**
-The index of the current converter about to be executed.
-
-**finalTargetType**
-The 'targetType' argument passed into the conversion method.
-
-**convert**
-Pass true if calling from the Convert method, or false if calling from ConvertBack.
-
-
-
-### OnConvertersCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-
-Called when [converters collection changed].
-
-#### Parameters
-
-**sender**
-The sender.
-
-**e**
-The [NotifyCollectionChangedEventArgs](#) instance containing the event data.
 
 
 

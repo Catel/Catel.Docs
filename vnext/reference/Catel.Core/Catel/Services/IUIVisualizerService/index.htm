@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -355,6 +351,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService/">IViewModelWrapperService</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IWrapControlService/">IWrapControlService</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey/">LanguageResourceKey</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource/">LanguageResourceSource</a>
@@ -443,6 +441,12 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException/">WindowNotRegisteredException</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlService/">WrapControlService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceControlNames/">WrapControlServiceControlNames</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceWrapOptions/">WrapControlServiceWrapOptions</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapOptions/">WrapOptions</a>
 </li>
 
@@ -520,13 +524,12 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public interface IUIVisualizerService
-</pre><p>This interface defines a UI controller which can be used to display dialogs
-    in either modal or modaless form from a ViewModel.</p>
+</pre><p>This interface defines a UI controller which can be used to display dialogs in either modal or modaless form from a ViewModel.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="isregisteredstring-name">IsRegistered(string name)<a class="headerlink" href="#isregisteredstring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified name is registered.</p>
@@ -534,65 +537,64 @@
 <p><strong>name</strong>
 The name.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified name is registered; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the specified name is registered; otherwise,<code>false</code>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="registerstring-name-type-windowtype-bool-throwexceptionifexists">Register(string name, Type windowType, bool throwExceptionIfExists)<a class="headerlink" href="#registerstring-name-type-windowtype-bool-throwexceptionifexists" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.</p>
+<p>Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>name</strong>
 Name of the registered window.</p>
 <p><strong>windowType</strong>
 Type of the window.</p>
 <p><strong>throwExceptionIfExists</strong>
-if set to <code>true</code>, this method will throw an exception when already registered.</p>
+if set to<code>true</code> , this method will throw an exception when already registered.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <h3 id="showasynciviewmodel-viewmodel-eventhandler-completedproc">ShowAsync(IViewModel viewModel, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showasynciviewmodel-viewmodel-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Shows a window that is registered with the specified view model in a non-modal state.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model.</p>
 <p><strong>completedProc</strong>
-The callback procedure that will be invoked as soon as the window is closed. This value can be <code>null</code>.</p>
-<h4 id="true">Returns<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the popup window is successfully opened; otherwise <code>false</code>.</p>
+The callback procedure that will be invoked as soon as the window is closed. This value can be<code>null</code>.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the popup window is successfully opened; otherwise<code>false</code>.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <p><strong>T:Catel.Services.WindowNotRegisteredException</strong>
 The viewModel is not registered by the Boolean) method first.</p>
-<h3 id="true">ShowAsync(string name, object data, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="showasyncstring-name-object-data-eventhandler-completedproc">ShowAsync(string name, object data, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showasyncstring-name-object-data-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Shows a window that is registered with the specified view model in a non-modal state.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>name</strong>
 The name that the window is registered with.</p>
 <p><strong>data</strong>
-The data to set as data context. If <code>null</code>, the data context will be untouched.</p>
+The data to set as data context. If<code>null</code> , the data context will be untouched.</p>
 <p><strong>completedProc</strong>
-The callback procedure that will be invoked as soon as the window is closed. This value can be <code>null</code>.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the popup window is successfully opened; otherwise <code>false</code>.</p>
+The callback procedure that will be invoked as soon as the window is closed. This value can be<code>null</code>.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the popup window is successfully opened; otherwise<code>false</code>.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <p><strong>T:Catel.Services.WindowNotRegisteredException</strong>
 The name is not registered by the Boolean) method first.</p>
-<h3 id="true">ShowDialogAsync(IViewModel viewModel, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="showdialogasynciviewmodel-viewmodel-eventhandler-completedproc">ShowDialogAsync(IViewModel viewModel, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showdialogasynciviewmodel-viewmodel-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Shows a window that is registered with the specified view model in a modal state.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model.</p>
 <p><strong>completedProc</strong>
-The callback procedure that will be invoked as soon as the window is closed. This value can be <code>null</code>.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The callback procedure that will be invoked as soon as the window is closed. This value can be<code>null</code>.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Nullable boolean representing the dialog result.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <p><strong>T:Catel.Services.WindowNotRegisteredException</strong>
 The viewModel is not registered by the Boolean) method first.</p>
 <h3 id="showdialogasyncstring-name-object-data-eventhandler-completedproc">ShowDialogAsync(string name, object data, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showdialogasyncstring-name-object-data-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -601,14 +603,14 @@ The viewModel is not registered by the Boolean) method first.</p>
 <p><strong>name</strong>
 The name that the window is registered with.</p>
 <p><strong>data</strong>
-The data to set as data context. If <code>null</code>, the data context will be untouched.</p>
+The data to set as data context. If<code>null</code> , the data context will be untouched.</p>
 <p><strong>completedProc</strong>
-The callback procedure that will be invoked as soon as the window is closed. This value can be <code>null</code>.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The callback procedure that will be invoked as soon as the window is closed. This value can be<code>null</code>.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Nullable boolean representing the dialog result.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The name is <code>null</code> or whitespace.</p>
+The name is<code>null</code> or whitespace.</p>
 <p><strong>T:Catel.Services.WindowNotRegisteredException</strong>
 The name is not registered by the Boolean) method first.</p>
 <h3 id="unregisterstring-name">Unregister(string name)<a class="headerlink" href="#unregisterstring-name" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -616,8 +618,8 @@ The name is not registered by the Boolean) method first.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>name</strong>
 Name of the registered window.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the view model is unregistered; otherwise <code>false</code>.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the view model is unregistered; otherwise<code>false</code>.</p>
 
                     </div>
                 </div>

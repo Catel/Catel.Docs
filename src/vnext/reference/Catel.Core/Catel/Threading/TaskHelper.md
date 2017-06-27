@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TaskHelper
@@ -17,10 +17,6 @@ Helper class for tasks.
 
 
 ## Fields
-
-### _canceled
-
-### _completed
 
 ### DefaultConfigureAwaitValue
 False
@@ -151,17 +147,13 @@ The actions to spawn in separate threads.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The actions is ```null```.
+The actions is`null`.
 
 
 
 ### RunAndWaitAsync(Action[] actions)
 
-Runs all the specified actions in separate threads and waits for the to complete.
-    
-
-
-    The waiting for all threads is also done in a separate thread which makes this method asynchronous.
+Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.
 
 #### Parameters
 
@@ -171,17 +163,13 @@ The actions to spawn in separate threads.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The actions is ```null```.
+The actions is`null`.
 
 
 
 ### RunAndWaitAsync(Func<Task>[] actions)
 
-Runs all the specified actions in separate threads and waits for the to complete.
-    
-
-
-    The waiting for all threads is also done in a separate thread which makes this method asynchronous.
+Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.
 
 #### Parameters
 
@@ -191,7 +179,7 @@ The actions to spawn in separate threads.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The actions is ```null```.
+The actions is`null`.
 
 
 

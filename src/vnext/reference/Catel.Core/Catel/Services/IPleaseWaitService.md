@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IPleaseWaitService
@@ -20,11 +20,7 @@ Interface for the Please Wait service.
 
 ### ShowCounter
 
-Gets the show counter.
-    
-
-
-    This property can be used to get the current show counter if the please wait window should be hidden for a moment.
+Gets the show counter.This property can be used to get the current show counter if the please wait window should be hidden for a moment.
 
 
 
@@ -38,35 +34,13 @@ Hides this please wait window.
 
 ### Pop()
 
-Decreases the number of clients that show the please wait window. The implementing class 
-    is responsible for holding a counter internally which a call to this method will decrease.
-    
-
-
-    As long as the internal counter is not zero (0), the please wait window will stay visible. To
-    increase the counter, make a call to Pop.
-    
-
-
-    A call to String) or one of its overloads will not increase the internal counter. A
-    call to Hide will reset the internal counter to zero (0) and thus hide the window.
+Decreases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will decrease.As long as the internal counter is not zero (0), the please wait window will stay visible. To increase the counter, make a call to Pop.A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.
 
 
 
 ### Push(string status)
 
-Increases the number of clients that show the please wait window. The implementing class
-    is responsible for holding a counter internally which a call to this method will increase.
-    
-
-
-    As long as the internal counter is not zero (0), the please wait window will stay visible. To
-    decrease the counter, make a call to Pop.
-    
-
-
-    A call to String) or one of its overloads will not increase the internal counter. A
-    call to Hide will reset the internal counter to zero (0) and thus hide the window.
+Increases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will increase.As long as the internal counter is not zero (0), the please wait window will stay visible. To decrease the counter, make a call to Pop.A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.
 
 #### Parameters
 
@@ -77,8 +51,7 @@ The status to change the text to.
 
 ### Show(PleaseWaitWorkDelegate workDelegate, string status)
 
-Shows the please wait window with the specified status text and executes the work delegate (in a background thread). When the work 
-    is finished, the please wait window will be automatically closed.
+Shows the please wait window with the specified status text and executes the work delegate (in a background thread). When the work is finished, the please wait window will be automatically closed.
 
 #### Parameters
 
@@ -86,7 +59,7 @@ Shows the please wait window with the specified status text and executes the wor
 The work delegate.
 
 **status**
-The status. When the string is ```null``` or empty, the default please wait text will be used.
+The status. When the string is`null` or empty, the default please wait text will be used.
 
 
 
@@ -97,7 +70,7 @@ Shows the please wait window with the specified status text.
 #### Parameters
 
 **status**
-The status. When the string is ```null``` or empty, the default please wait text will be used.
+The status. When the string is`null` or empty, the default please wait text will be used.
 
 #### Remarks
 
@@ -107,16 +80,7 @@ When this method is used, the Hide method must be called to hide the window agai
 
 ### UpdateStatus(int currentItem, int totalItems, string statusFormat)
 
-Updates the status and shows a progress bar with the specified status text. The percentage will be automatically calculated.
-    
-
-
-    The busy indicator will automatically hide when the totalItems is larger than currentItem.
-    
-
-
-    When providing the statusFormat, it is possible to use ```{0}``` (represents current item) and
-    ```{1}``` (represents total items).
+Updates the status and shows a progress bar with the specified status text. The percentage will be automatically calculated.The busy indicator will automatically hide when the totalItems is larger than currentItem.When providing the statusFormat , it is possible to use`{0}` (represents current item) and`{1}` (represents total items).
 
 #### Parameters
 
@@ -127,7 +91,7 @@ The current item.
 The total items.
 
 **statusFormat**
-The status format. Can be empty, but not ```null```.
+The status format. Can be empty, but not`null`.
 
 #### Exceptions
 
@@ -135,7 +99,7 @@ The status format. Can be empty, but not ```null```.
 The currentItem is smaller than zero.
 
 **T:System.ArgumentNullException**
-The statusFormat is ```null```.
+The statusFormat is`null`.
 
 
 
@@ -146,7 +110,7 @@ Updates the status text.
 #### Parameters
 
 **status**
-The status. When the string is ```null``` or empty, the default please wait text will be used.
+The status. When the string is`null` or empty, the default please wait text will be used.
 
 
 

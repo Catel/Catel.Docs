@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|System.ComponentModel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class EndEditEventArgs : EditEventArgs
@@ -16,8 +16,7 @@ public class EndEditEventArgs : EditEventArgs
 [EditEventArgs](/Catel.Core\System\ComponentModel\EditEventArgs.md)
 
 
-Event args implementation called when the object is about to call BeginEdit. This way,
-    it is possible to cancel the events.
+Event args implementation called when the object is about to call BeginEdit. This way, it is possible to cancel the events.
 
 
 
@@ -35,7 +34,7 @@ The editable object.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The editableObject is ```null```.
+The editableObject is`null`.
 
 
 

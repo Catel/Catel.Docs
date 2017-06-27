@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ApiCop : IApiCop
@@ -23,10 +23,6 @@ ApiCop writer class.
 
 ## Fields
 
-### _lock
-
-### _rules
-
 ## Constructors
 
 ### ApiCop(Type targetType)
@@ -41,7 +37,7 @@ The type for which this ApiCop is intented.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The targetType is ```null```.
+The targetType is`null`.
 
 
 
@@ -86,14 +82,13 @@ The rule.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The rule is ```null```.
+The rule is`null`.
 
 
 
 ### UpdateRule<TRule>(string name, Action<TRule> action)
 
-Updates the rule with the specified name. If the rule is found and the ApiCop functionality is enabled,
-    the specified action will be invoked on the registered rule.
+Updates the rule with the specified name. If the rule is found and the ApiCop functionality is enabled, the specified action will be invoked on the registered rule.
 
 #### Type Parameters
 
@@ -110,15 +105,15 @@ The action.
 
 #### Returns
 
-The rule or ```null``` if the rule is not registered first.
+The rule or`null` if the rule is not registered first.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 

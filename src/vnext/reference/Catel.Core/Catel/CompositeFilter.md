@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositeFilter<T> : ICompositeFilter<T, T> where T : class 
@@ -52,8 +52,7 @@ Gets the includes.
 
 ### Matches(T target)
 
-Checks whether the target matches any of the Includes and does
-    not match any of the Excludes.
+Checks whether the target matches any of the Includes and does not match any of the Excludes.
 
 #### Parameters
 
@@ -62,7 +61,7 @@ The target.
 
 #### Returns
 
-```true``` if the match is a successful hit, ```false``` otherwise.
+`true` if the match is a successful hit,`false` otherwise.
 
 
 
@@ -77,7 +76,7 @@ The target.
 
 #### Returns
 
-```true``` if the match is a successful hit, ```false``` otherwise.
+`true` if the match is a successful hit,`false` otherwise.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ThreadHelper
@@ -30,11 +30,7 @@ System.String.
 
 ### Sleep(int millisecondsTimeout)
 
-Lets the current execution thread sleep for the specified milliseconds.
-    
-
-
-    In WinRT, this method uses the Task to delay.
+Lets the current execution thread sleep for the specified milliseconds.In WinRT, this method uses the Task to delay.
 
 #### Parameters
 

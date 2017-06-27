@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Auditing
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class AuditorBase : IAuditor
@@ -17,23 +17,11 @@ public abstract class AuditorBase : IAuditor
 [IAuditor](/Catel.MVVM\Catel\MVVM\Auditing\IAuditor.md)
 
 
-Convenience implementation of the [IAuditor](#) interface so not all interface members
-    have to be implemented by the developer.
-    
-
-
-    This auditor also ignores the default properties such as ```IsDirty``` since hardly anyone
-    would be interested in such changes. To enable the notification, clear the PropertiesToIgnore.
+Convenience implementation of the [IAuditor](#) interface so not all interface members have to be implemented by the developer.This auditor also ignores the default properties such as`IsDirty` since hardly anyone would be interested in such changes. To enable the notification, clear the PropertiesToIgnore.
 
 
 
 ## Constructors
-
-### AuditorBase()
-
-Initializes a new instance of the [AuditorBase](#) class.
-
-
 
 ## Properties
 
@@ -79,23 +67,6 @@ Name of the property.
 
 **newValue**
 The new property value.
-
-
-
-### OnPropertyChanging(IViewModel viewModel, string propertyName, object oldValue)
-
-Called when the property of a view model is about to change.
-
-#### Parameters
-
-**viewModel**
-The view model.
-
-**propertyName**
-Name of the property.
-
-**oldValue**
-The old property value.
 
 
 

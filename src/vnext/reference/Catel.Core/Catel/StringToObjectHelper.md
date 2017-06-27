@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class StringToObjectHelper
@@ -18,15 +18,7 @@ String to object helper class that converts a string to the right object if poss
 
 ## Fields
 
-### Log
-
 ## Constructors
-
-### StringToObjectHelper()
-
-Initializes static members of the [StringToObjectHelper](#) class.
-
-
 
 ## Properties
 
@@ -37,21 +29,6 @@ Gets or sets the default culture to use for parsing.
 
 
 ## Methods
-
-### CleanString(string value)
-
-Cleans up the string, for example by removing the braces.
-
-#### Parameters
-
-**value**
-The value.
-
-#### Returns
-
-The cleaned up string.
-
-
 
 ### ToBool(string value)
 
@@ -184,8 +161,7 @@ The double value of the string.
 
 ### ToEnum<TEnumValue>(string value, TEnumValue defaultValue)
 
-Converts a string to an enum value. If the value cannot be converted for any reason, the defaultValue
-    will be returned.
+Converts a string to an enum value. If the value cannot be converted for any reason, the defaultValue will be returned.
 
 #### Type Parameters
 
@@ -322,7 +298,7 @@ The long value of the string.
 
 ### ToRightType(Type targetType, string value)
 
-Converts a string to the right target type, such as [String](#), [Boolean](#) and [DateTime](#).
+Converts a string to the right target type, such as [String](#) , [Boolean](#) and [DateTime](#).
 
 #### Parameters
 
@@ -334,7 +310,7 @@ The value to convert to the specified target type.
 
 #### Returns
 
-The converted value. If the value is ```null```, this method will return ```null```.
+The converted value. If the value is`null` , this method will return`null`.
 
 #### Exceptions
 
@@ -345,7 +321,7 @@ The specified targetType is not supported.
 
 ### ToRightType(Type targetType, string value, CultureInfo cultureInfo)
 
-Converts a string to the right target type, such as [String](#), [Boolean](#) and [DateTime](#).
+Converts a string to the right target type, such as [String](#) , [Boolean](#) and [DateTime](#).
 
 #### Parameters
 
@@ -360,7 +336,7 @@ The culture information.
 
 #### Returns
 
-The converted value. If the value is ```null```, this method will return ```null```.
+The converted value. If the value is`null` , this method will return`null`.
 
 #### Exceptions
 

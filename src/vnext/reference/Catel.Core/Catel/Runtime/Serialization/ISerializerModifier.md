@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISerializerModifier
@@ -119,7 +119,7 @@ The member value.
 
 #### Returns
 
-```true``` if the property should be ignored, ```false``` otherwise.
+`true` if the property should be ignored,`false` otherwise.
 
 
 
@@ -129,7 +129,7 @@ Returns whether the serializer should serialize this model as a collection.
 
 #### Returns
 
-```true``` if the model should be serialized as a collection, ```false``` if not. Return ```null``` if the serializer should decide automatically.
+`true` if the model should be serialized as a collection,`false` if not. Return`null` if the serializer should decide automatically.
 
 
 
@@ -139,13 +139,13 @@ Returns whether the serializer should serialize this model as a dictionary.
 
 #### Returns
 
-```true``` if the model should be serialized as a dictionary, ```false``` if not. Return ```null``` if the serializer should decide automatically.
+`true` if the model should be serialized as a dictionary,`false` if not. Return`null` if the serializer should decide automatically.
 
 
 
 ### ShouldSerializeEnumMemberUsingToString(MemberValue memberValue)
 
-Returns whether the serializer should serialize the enum member using ```ToString()```.
+Returns whether the serializer should serialize the enum member using`ToString()`.
 
 #### Parameters
 
@@ -157,11 +157,11 @@ Returns whether the serializer should serialize the enum member using ```ToStrin
 
 ### ShouldSerializeMemberUsingParse(MemberValue memberValue)
 
-Returns whether the serializer should serialize the member using ```ToString(IFormatProvider)``` and ```Parse(string, IFormatProvider)```.
+Returns whether the serializer should serialize the member using`ToString(IFormatProvider)` and`Parse(string, IFormatProvider)`.
 
 #### Returns
 
-```true``` if the member should be serialized using parse, ```false``` if not. Return ```null``` if the serializer should decide automatically.
+`true` if the member should be serialized using parse,`false` if not. Return`null` if the serializer should decide automatically.
 
 
 

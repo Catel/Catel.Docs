@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class MessageService : IMessageService, ViewModelServiceBase
@@ -26,8 +26,6 @@ Message service that implements the [IMessageService](#).
 
 ## Fields
 
-### _dispatcherService
-
 ## Constructors
 
 ### MessageService(IDispatcherService dispatcherService)
@@ -42,13 +40,11 @@ The dispatcher service.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dispatcherService is ```null```.
+The dispatcherService is`null`.
 
 
 
 ## Methods
-
-### Initialize()
 
 ### ShowAsync(string message, string caption, MessageButton button, MessageImage icon)
 
@@ -71,7 +67,7 @@ The icon.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -87,7 +83,7 @@ The exception.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 
@@ -106,7 +102,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -125,36 +121,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
-
-
-
-### ShowMessageBoxAsync(string message, string caption, MessageButton button, MessageImage icon)
-
-Shows the message box.
-
-#### Parameters
-
-**message**
-The message.
-
-**caption**
-The caption.
-
-**button**
-The button.
-
-**icon**
-The icon.
-
-#### Returns
-
-The message result.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -173,52 +140,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
-
-
-
-### TranslateMessageBoxResult(MessageBoxResult result)
-
-Translates the message box result.
-
-#### Parameters
-
-**result**
-The result.
-
-#### Returns
-
-Corresponding [MessageResult](#).
-
-
-
-### TranslateMessageButton(MessageButton button)
-
-Translates the message button.
-
-#### Parameters
-
-**button**
-The button.
-
-#### Returns
-
-Corresponding [MessageBoxButton](#).
-
-
-
-### TranslateMessageImage(MessageImage image)
-
-Translates the message image.
-
-#### Parameters
-
-**image**
-The image.
-
-#### Returns
-
-Corresponding [MessageBoxImage](#).
+The message is`null` or whitespace.
 
 
 

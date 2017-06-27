@@ -6,127 +6,55 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class LogManager
 ```
 
-Log manager that allows external libraries to subscribe to logging of Catel.
-    
-
-
-    The manager automatically adds an instance of the [DebugLogListener](#) to
-    the list of listeners so the tracing is available in debug mode. To remove this listener,
-    call ClearListeners before doing any initialization.
+Log manager that allows external libraries to subscribe to logging of Catel.The manager automatically adds an instance of the [DebugLogListener](#) to the list of listeners so the tracing is available in debug mode. To remove this listener, call ClearListeners before doing any initialization.
 
 
 
 ## Fields
 
-### _ignoreCatelLogging
-
-### _isDebugEnabled
-
-### _isErrorEnabled
-
-### _isInfoEnabled
-
-### _isStatusEnabled
-
-### _isWarningEnabled
-
-### _loggers
-
-Dictionary containing the logs per type.
-
-
-
-### _logListeners
-
-List of all registered [ILogListener](#) instances.
-
-
-
-### Log
-
-Logging of the class. Must be declared after the log listeners and loggers.
-
-
-
 ## Constructors
-
-### LogManager()
-
-Initializes static members of the [LogManager](#) class.
-
-
 
 ## Properties
 
 ### IgnoreCatelLogging
 
-Gets a value indicating whether the global IgnoreCatelLogging should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IgnoreCatelLogging should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
 ### IsDebugEnabled
 
-Gets a value indicating whether the global IsDebugEnabled should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IsDebugEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
 ### IsErrorEnabled
 
-Gets a value indicating whether the global IsErrorEnabled should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IsErrorEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
 ### IsInfoEnabled
 
-Gets a value indicating whether the global IsInfoEnabled should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IsInfoEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
 ### IsStatusEnabled
 
-Gets a value indicating whether the global IsStatusEnabled should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IsStatusEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
 ### IsWarningEnabled
 
-Gets a value indicating whether the global IsWarningEnabled should be overriden.
-    
-
-
-    Note that this value will override all settings of each listener globally. If this value is
-    set to ```null```, nothing will be overriden.
+Gets a value indicating whether the global IsWarningEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
 
 
 
@@ -142,13 +70,7 @@ Occurs when a log message is written to one of the logs.
 
 ### AddDebugListener(bool ignoreCatelLogging)
 
-Registers the default debug listener. Starting with Catel 2.4, the debug listener is no longer
-    attached for performance reasons. To register the debug listener, call this method.
-    
-
-
-    When an instance of the [DebugLogListener](#) is already registered, the existing instance
-    is returned.
+Registers the default debug listener. Starting with Catel 2.4, the debug listener is no longer attached for performance reasons. To register the debug listener, call this method.When an instance of the [DebugLogListener](#) is already registered, the existing instance is returned.
 
 #### Returns
 
@@ -158,12 +80,7 @@ The newly created or existing [DebugLogListener](#).
 
 ### AddListener(ILogListener listener)
 
-Adds a log listener which will receive all log events.
-    
-
-
-    This method does not check whether the listener is already added to the list
-    of registered listeners.
+Adds a log listener which will receive all log events.This method does not check whether the listener is already added to the list of registered listeners.
 
 #### Parameters
 
@@ -173,7 +90,7 @@ The listener.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
+The listener is`null`.
 
 
 
@@ -186,32 +103,6 @@ Clears all the current listeners.
 ### FlushAll()
 
 Flushes all listeners that implement the [IBatchLogListener](#) by calling FlushAsync.
-
-
-
-### GetCatelLogger(Type type, bool alwaysLog)
-
-Gets the catel logger with the specified name.
-
-#### Parameters
-
-**type**
-The type.
-
-**alwaysLog**
-The flag indicating wether or not the logger should always write logging statements regardless of log filter settings.
-
-#### Returns
-
-The [ICatelLog](#) object for the specified type.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-An element with the same key already exists in the [LogManager](#) and does not implement [ICatelLog](#).
-
-**T:System.ArgumentNullException**
-The type is ```null```.
 
 
 
@@ -275,7 +166,7 @@ The [ILog](#) object with the specified name.
 If name is null or a whitespace.
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -295,7 +186,7 @@ The [ILog](#) object for the specified type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -314,39 +205,6 @@ The [ILog](#) object for the specified type.
 
 
 
-### GetThreadSafeLogListeners()
-
-Gets the current log listeners in a thread-safe manner.
-
-#### Returns
-
-List&lt;ILogListener&gt;.
-
-
-
-### IsListenerInterested(ILogListener listener, LogEvent logEvent)
-
-Determines whether the specified listener is interested in the log event.
-
-#### Parameters
-
-**listener**
-The listener.
-
-**logEvent**
-The log event.
-
-#### Returns
-
-```true``` if the specified listener is interested in the log event; otherwise, ```false```.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The listener is ```null```.
-
-
-
 ### IsListenerRegistered(ILogListener listener)
 
 Determines whether the specified listener is already registered or not.
@@ -358,12 +216,12 @@ The listener.
 
 #### Returns
 
-```true``` if the specified listener is already registered; otherwise, ```false```.
+`true` if the specified listener is already registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
+The listener is`null`.
 
 
 
@@ -377,7 +235,7 @@ Loads the listeners from the specified configuration.
 The configuration.
 
 **assembly**
-The assembly to determine product info. If ```null```, the entry assembly will be used.
+The assembly to determine product info. If`null` , the entry assembly will be used.
 
 
 
@@ -391,26 +249,7 @@ Loads the listeners from the specified configuration file.
 The configuration file path.
 
 **assembly**
-The assembly to determine product info. If ```null```, the entry assembly will be used.
-
-
-
-### OnLogMessage(object sender, LogMessageEventArgs e)
-
-Called when one of the logs has written a log message.
-
-#### Parameters
-
-**sender**
-The sender.
-
-**e**
-The [LogMessageEventArgs](#) instance containing the event data.
-
-#### Exceptions
-
-**T:System.ArgumentOutOfRangeException**
-The [LogEvent](#) is not supported.
+The assembly to determine product info. If`null` , the entry assembly will be used.
 
 
 
@@ -426,27 +265,7 @@ The listener.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The listener is ```null```.
-
-
-
-### RemoveLogger(string name)
-
-Removes the logger with the specified name from the [LogManager](#).
-
-#### Parameters
-
-**name**
-The name of the logger.
-
-#### Returns
-
-true if the logger is successfully found and removed; otherwise, false. This method returns false if name is not found in the [LogManager](#).
-
-#### Exceptions
-
-**T:System.ArgumentException**
-If name is null or a whitespace.
+The listener is`null`.
 
 
 

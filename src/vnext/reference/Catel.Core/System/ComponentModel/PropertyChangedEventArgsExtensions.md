@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|System.ComponentModel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class PropertyChangedEventArgsExtensions
@@ -20,9 +20,7 @@ Extensions for the [PropertyChangedEventArgs](#) class.
 
 ### AllPropertiesChanged(PropertyChangedEventArgs e)
 
-Returns whether the specified instance of the [PropertyChangedEventArgs](#) represents that all properties
-    of an object have changed. This is the case when the PropertyName is ```null```
-    or empty.
+Returns whether the specified instance of the [PropertyChangedEventArgs](#) represents that all properties of an object have changed. This is the case when the PropertyName is`null` or empty.
 
 #### Parameters
 
@@ -31,19 +29,18 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 
 #### Returns
 
-```true``` if the PropertyName is ```null``` or empty, ```false``` otherwise.
+`true` if the PropertyName is`null` or empty,`false` otherwise.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
 ### HasPropertyChanged(PropertyChangedEventArgs e, string propertyName)
 
-Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification
-    for the property specified by the property name.
+Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification for the property specified by the property name.
 
 #### Parameters
 
@@ -55,22 +52,21 @@ Name of the property.
 
 #### Returns
 
-```true``` if PropertyName equals the property from the property expression; otherwise, ```false```.
+`true` if PropertyName equals the property from the property expression; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
 ### HasPropertyChanged<TModel, TValue>(PropertyChangedEventArgs e, Expression<Func<TModel, TValue>> propertyExpression, bool allowNested)
 
-Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification
-    for the property specified by the property expression.
+Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification for the property specified by the property expression.
 
 #### Type Parameters
 
@@ -89,23 +85,22 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 The property expression.
 
 **allowNested**
-if set to ```true```, nested properties are allowed.
+if set to`true` , nested properties are allowed.
 
 #### Returns
 
-```true``` if PropertyName equals the property from the property expression; otherwise, ```false```.
+`true` if PropertyName equals the property from the property expression; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
 ### HasPropertyChanged<TValue>(PropertyChangedEventArgs e, Expression<Func<TValue>> propertyExpression, bool allowNested)
 
-Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification
-    for the property specified by the property expression.
+Determines whether the specified instance of the [PropertyChangedEventArgs](#) represents a change notification for the property specified by the property expression.
 
 #### Type Parameters
 
@@ -121,16 +116,16 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 The property expression.
 
 **allowNested**
-if set to ```true```, nested properties are allowed.
+if set to`true` , nested properties are allowed.
 
 #### Returns
 
-```true``` if PropertyName equals the property from the property expression; otherwise, ```false```.
+`true` if PropertyName equals the property from the property expression; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 

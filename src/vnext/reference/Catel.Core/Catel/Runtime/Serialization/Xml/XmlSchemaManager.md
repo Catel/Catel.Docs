@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class XmlSchemaManager
@@ -20,12 +20,7 @@ Xml schema manager to create xml schemas for models in Catel.
 
 ### GenerateFlatSchemas
 
-Gets or sets a value indicating whether the xml schema manager should generate flat schemas.
-    
-
-
-    This means that classes will be generated as is. This results in easier types, but the complex types
-    cannot be re-used using WCF.
+Gets or sets a value indicating whether the xml schema manager should generate flat schemas.This means that classes will be generated as is. This results in easier types, but the complex types cannot be re-used using WCF.
 
 
 
@@ -50,7 +45,7 @@ XmlSchemaComplexType.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The schemaSet is ```null```.
+The schemaSet is`null`.
 
 #### Remarks
 

@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -209,8 +203,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/TaskCommand/">TaskCommand</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
@@ -236,8 +228,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelServiceHelper/">ViewModelServiceHelper</a>
@@ -262,9 +252,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -275,9 +262,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -345,24 +329,15 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class ViewModelFactory : IViewModelFactory
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\IViewModelFactory.htm">IViewModelFactory</a></p>
-<p>Default implementation of the <a href="#">IViewModelFactory</a> which allows custom instantation of view models. This way,
-    if a view model contains a complex constructor or needs caching, this factory can be used.</p>
-<pre><code>This default implementation will first try to inject the data context into the view model constructor. If that is not possible,
-it will try to call the empty or default constructor.
-</code></pre>
-
+<p>Default implementation of the <a href="#">IViewModelFactory</a> which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used.This default implementation will first try to inject the data context into the view model constructor. If that is not possible, it will try to call the empty or default constructor.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="servicelocator">_serviceLocator<a class="headerlink" href="#servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="typefactory">_typeFactory<a class="headerlink" href="#typefactory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="viewmodelinjectioncache">_viewModelInjectionCache<a class="headerlink" href="#viewmodelinjectioncache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="viewmodelfactoryitypefactory-typefactory-iservicelocator-servicelocator">ViewModelFactory(ITypeFactory typeFactory, IServiceLocator serviceLocator)<a class="headerlink" href="#viewmodelfactoryitypefactory-typefactory-iservicelocator-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">ViewModelFactory</a> class.</p>
@@ -373,14 +348,10 @@ The type factory.</p>
 The service locator.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeFactory is <code>null</code>.</p>
+The typeFactory is<code>null</code>.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="canreuseviewmodeltype-viewtype-type-expectedviewmodeltype-type-actualviewmodeltype-iviewmodel-viewmodelasdatacontext">CanReuseViewModel(Type viewType, Type expectedViewModelType, Type actualViewModelType, IViewModel viewModelAsDataContext)<a class="headerlink" href="#canreuseviewmodeltype-viewtype-type-expectedviewmodeltype-type-actualviewmodeltype-iviewmodel-viewmodelasdatacontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified view model as data context can be reused and allow the view to set itself as
-    owner of the inherited view model.</p>
-<pre><code>By default a view model is allowed to be inherited when it is of the same type as the expected view model type.
-</code></pre>
-
+<p>Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model.By default a view model is allowed to be inherited when it is of the same type as the expected view model type.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewType</strong>
 Type of the view.</p>
@@ -391,7 +362,7 @@ The actual view model type which is the type of the viewModelAsDataContext.</p>
 <p><strong>viewModelAsDataContext</strong>
 The view model as data context which must be checked.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified view model instance ben be reused by the view; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the specified view model instance ben be reused by the view; otherwise,<code>false</code>.</p>
 <h3 id="createviewmodeltype-viewmodeltype-object-datacontext-object-tag">CreateViewModel(Type viewModelType, object dataContext, object tag)<a class="headerlink" href="#createviewmodeltype-viewmodeltype-object-datacontext-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates a new view model.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -402,21 +373,19 @@ The data context of the view model.</p>
 <p><strong>tag</strong>
 The preferred tag to use when resolving dependencies.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The newly created <a href="#">IViewModel</a> or <code>null</code> if no view model could be created.</p>
-<h4 id="true">Exceptions<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The newly created <a href="#">IViewModel</a> or<code>null</code> if no view model could be created.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModelType is <code>null</code>.</p>
+The viewModelType is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
 The viewModelType does not implement the <a href="#">IViewModel</a> interface.</p>
 <h3 id="isviewmodelwithmodelinjectiontype-viewmodeltype">IsViewModelWithModelInjection(Type viewModelType)<a class="headerlink" href="#isviewmodelwithmodelinjectiontype-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified view model is a view model with model inject. A view model is
-    considered a model injection if the first parameter of one of the constructors is not registered inside
-    the dependency resolver.</p>
+<p>Determines whether the specified view model is a view model with model inject. A view model is considered a model injection if the first parameter of one of the constructors is not registered inside the dependency resolver.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModelType</strong>
 Type of the view model.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the view model is a view model with model injection; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the view model is a view model with model injection; otherwise,<code>false</code>.</p>
 
                     </div>
                 </div>

@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -371,15 +367,13 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class AppDomainExtensions
 </pre><p><a href="#">AppDomain</a> extensions.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="createinstanceandunwrapappdomain-appdomain">CreateInstanceAndUnwrap<T>(AppDomain appDomain)<a class="headerlink" href="#createinstanceandunwrapappdomain-appdomain" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates the instance in the specified <a href="#">AppDomain</a> and unwraps it.</p>
@@ -393,18 +387,20 @@ The app domain.</p>
 <p>The created instance of the specified type</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<h3 id="gettypesappdomain-appdomain">GetTypes(AppDomain appDomain)<a class="headerlink" href="#gettypesappdomain-appdomain" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a list of all types inside the <a href="#">AppDomain</a>.</p>
+The appDomain is<code>null</code>.</p>
+<h3 id="loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, Assembly assembly, bool includeReferencedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
 The app domain.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>List of types found in the <a href="#">AppDomain</a>.</p>
-<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This class must only be used by Catel. To make sure that an application performs, make sure to use
-    Boolean) instead.</p>
-<h3 id="loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, Assembly assembly, bool includeReferencedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><strong>assembly</strong>
+The assembly.</p>
+<p><strong>includeReferencedAssemblies</strong>
+if set to<code>true</code> , referenced assemblies will be included as well.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The appDomain is<code>null</code>.</p>
+<h3 id="loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies-hashset-alreadyloadedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, Assembly assembly, bool includeReferencedAssemblies, HashSet<string> alreadyLoadedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies-hashset-alreadyloadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
@@ -412,93 +408,48 @@ The app domain.</p>
 <p><strong>assembly</strong>
 The assembly.</p>
 <p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<h3 id="loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies-hashset-alreadyloadedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, Assembly assembly, bool includeReferencedAssemblies, HashSet<string> alreadyLoadedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assembly-assembly-bool-includereferencedassemblies-hashset-alreadyloadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>appDomain</strong>
-The app domain.</p>
-<p><strong>assembly</strong>
-The assembly.</p>
-<p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
+if set to<code>true</code> , referenced assemblies will be included as well.</p>
 <p><strong>alreadyLoadedAssemblies</strong>
 The already loaded assemblies.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
+The appDomain is<code>null</code>.</p>
 <h3 id="loadassemblyintoappdomainappdomain-appdomain-assemblyname-assemblyname-bool-includereferencedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, AssemblyName assemblyName, bool includeReferencedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assemblyname-assemblyname-bool-includereferencedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>appDomain</strong>
+The app domain.</p>
+<p><strong>assemblyName</strong>
+The assembly name.</p>
+<p><strong>includeReferencedAssemblies</strong>
+if set to<code>true</code> , referenced assemblies will be included as well.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The appDomain is<code>null</code>.</p>
+<h3 id="loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, string assemblyFilename, bool includeReferencedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
 The app domain.</p>
-<p><strong>assemblyName</strong>
-The assembly name.</p>
+<p><strong>assemblyFilename</strong>
+The assembly filename.</p>
 <p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+if set to<code>true</code> , referenced assemblies will be included as well.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<h3 id="loadassemblyintoappdomainappdomain-appdomain-assemblyname-assemblyname-bool-includereferencedassemblies-hashset-alreadyloadedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, AssemblyName assemblyName, bool includeReferencedAssemblies, HashSet<string> alreadyLoadedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-assemblyname-assemblyname-bool-includereferencedassemblies-hashset-alreadyloadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
+The appDomain is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The assemblyFilename is<code>null</code> or whitespace.</p>
+<h3 id="preloadassembliesappdomain-appdomain-string-directory">PreloadAssemblies(AppDomain appDomain, string directory)<a class="headerlink" href="#preloadassembliesappdomain-appdomain-string-directory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Preloads all the assemblies inside the specified directory into the specified <a href="#">AppDomain</a>.This method also preloads all referenced assemblies.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
 The app domain.</p>
-<p><strong>assemblyName</strong>
-The assembly name.</p>
-<p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
-<p><strong>alreadyLoadedAssemblies</strong>
-The already loaded assemblies.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<h3 id="loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, string assemblyFilename, bool includeReferencedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
-<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>appDomain</strong>
-The app domain.</p>
-<p><strong>assemblyFilename</strong>
-The assembly filename.</p>
-<p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
+<p><strong>directory</strong>
+The directory. If<code>null</code> , only the referenced assemblies are forced to be loaded.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The assemblyFilename is <code>null</code> or whitespace.</p>
-<h3 id="loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies-hashset-alreadyloadedassemblies">LoadAssemblyIntoAppDomain(AppDomain appDomain, string assemblyFilename, bool includeReferencedAssemblies, HashSet<string> alreadyLoadedAssemblies)<a class="headerlink" href="#loadassemblyintoappdomainappdomain-appdomain-string-assemblyfilename-bool-includereferencedassemblies-hashset-alreadyloadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Loads the assembly into the specified <a href="#">AppDomain</a>.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>appDomain</strong>
-The app domain.</p>
-<p><strong>assemblyFilename</strong>
-The assembly filename.</p>
-<p><strong>includeReferencedAssemblies</strong>
-if set to <code>true</code>, referenced assemblies will be included as well.</p>
-<p><strong>alreadyLoadedAssemblies</strong>
-The already loaded assemblies.</p>
-<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
-<p><strong>T:System.ArgumentException</strong>
-The assemblyFilename is <code>null</code> or whitespace.</p>
-<h3 id="preloadassembliesappdomain-appdomain-string-directory">PreloadAssemblies(AppDomain appDomain, string directory)<a class="headerlink" href="#preloadassembliesappdomain-appdomain-string-directory" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Preloads all the assemblies inside the specified directory into the specified <a href="#">AppDomain</a>.</p>
-<pre><code>This method also preloads all referenced assemblies.
-</code></pre>
-
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>appDomain</strong>
-The app domain.</p>
-<p><strong>directory</strong>
-The directory. If <code>null</code>, only the referenced assemblies are forced to be loaded.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The appDomain is <code>null</code>.</p>
+The appDomain is<code>null</code>.</p>
 
                     </div>
                 </div>

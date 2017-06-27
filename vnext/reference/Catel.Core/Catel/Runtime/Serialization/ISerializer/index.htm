@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -429,7 +425,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -466,7 +462,7 @@ The configuration.</p>
 <p>The deserialized model.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="deserializeobject-model-stream-stream-iserializationconfiguration-configuration">Deserialize(object model, Stream stream, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializeobject-model-stream-stream-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the specified model. The deserialized values will be set in the specified model.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -480,7 +476,7 @@ The configuration.</p>
 <p>The deserialized model.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="deserializetype-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializetype-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the specified model type.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -494,7 +490,7 @@ The configuration.</p>
 <p>The deserialized model.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The modelType is <code>null</code>.</p>
+The modelType is<code>null</code>.</p>
 <h3 id="deserializetype-modeltype-stream-stream-iserializationconfiguration-configuration">Deserialize(Type modelType, Stream stream, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializetype-modeltype-stream-stream-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the specified model type.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -508,7 +504,7 @@ The configuration.</p>
 <p>The deserialized model.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The modelType is <code>null</code>.</p>
+The modelType is<code>null</code>.</p>
 <h3 id="deserializememberstype-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializememberstype-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the members of the specified model.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -522,7 +518,7 @@ The configuration.</p>
 <p>The list of members that have been deserialized.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The modelType is <code>null</code>.</p>
+The modelType is<code>null</code>.</p>
 <h3 id="deserializememberstype-modeltype-stream-stream-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, Stream stream, ISerializationConfiguration configuration)<a class="headerlink" href="#deserializememberstype-modeltype-stream-stream-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Deserializes the members of the specified model.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -536,7 +532,7 @@ The configuration.</p>
 <p>The list of members that have been deserialized.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The modelType is <code>null</code>.</p>
+The modelType is<code>null</code>.</p>
 <h3 id="serializeobject-model-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Serialize(object model, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)<a class="headerlink" href="#serializeobject-model-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Serializes the specified model.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -548,7 +544,7 @@ The serialization context.</p>
 The configuration.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="serializeobject-model-stream-stream-iserializationconfiguration-configuration">Serialize(object model, Stream stream, ISerializationConfiguration configuration)<a class="headerlink" href="#serializeobject-model-stream-stream-iserializationconfiguration-configuration" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Serializes the specified model.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -560,7 +556,7 @@ The stream.</p>
 The configuration.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="serializemembersobject-model-stream-stream-iserializationconfiguration-configuration-string-memberstoignore">SerializeMembers(object model, Stream stream, ISerializationConfiguration configuration, string[] membersToIgnore)<a class="headerlink" href="#serializemembersobject-model-stream-stream-iserializationconfiguration-configuration-string-memberstoignore" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Serializes the members.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -574,19 +570,14 @@ The configuration.</p>
 The members to ignore.</p>
 <h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The model is <code>null</code>.</p>
+The model is<code>null</code>.</p>
 <h3 id="warmupienumerable-types-int-typesperthread">Warmup(IEnumerable<Type> types, int typesPerThread)<a class="headerlink" href="#warmupienumerable-types-int-typesperthread" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Warms up the specified types. If the types is <code>null</code>, all types known
-    in the <a href="#">TypeCache</a> deriving from the <a href="#">ModelBase</a> class will be initialized.</p>
-<pre><code>Note that it is not required to call this, but it can help to prevent an additional performance
-impact the first time a type is serialized.
-</code></pre>
-
+<p>Warms up the specified types. If the types is<code>null</code> , all types known in the <a href="#">TypeCache</a> deriving from the <a href="#">ModelBase</a> class will be initialized.Note that it is not required to call this, but it can help to prevent an additional performance impact the first time a type is serialized.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>types</strong>
-The types to warmp up. If <code>null</code>, all types will be initialized.</p>
+The types to warmp up. If<code>null</code> , all types will be initialized.</p>
 <p><strong>typesPerThread</strong>
-The types per thread. If <code>-1</code>, all types will be initialized on the same thread.</p>
+The types per thread. If<code>-1</code> , all types will be initialized on the same thread.</p>
 
                     </div>
                 </div>

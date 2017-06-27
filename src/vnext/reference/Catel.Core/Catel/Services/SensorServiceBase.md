@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class SensorServiceBase<TValueInterface, TEventArgs> : ISensorService<TValueInterface, TEventArgs>, ViewModelServiceBase where TEventArgs : EventArgs 
@@ -26,35 +26,17 @@ Base class for implementing sensor services.
 
 ## Fields
 
-### _dispatcherService
-
 ## Constructors
-
-### SensorServiceBase(IDispatcherService dispatcherService)
-
-Initializes a new instance of the [SensorServiceBase](#) class.
-
-#### Parameters
-
-**dispatcherService**
-The dispatcher service.
-
-
 
 ## Properties
 
 ### CurrentValue
 
-Gets the current sensor value. If no value is available, ```null``` will be returned.
+Gets the current sensor value. If no value is available,`null` will be returned.
 
 #### Remarks
 
-This is convenience property that internally calls GetCurrentValue.
-    
-
-
-    Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot 
-    subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
+This is convenience property that internally calls GetCurrentValue.Note that the services inside Catel do not support [INotifyPropertyChanged](#) , thus you cannot subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
 
 
 
@@ -86,27 +68,7 @@ Gets the current sensor value.
 
 #### Returns
 
-The current sensor value. If no value is available, ```null``` will be returned.
-
-
-
-### OnCurrentValueChanged(object sender, TEventArgs e)
-
-Method to invoke the CurrentValueChanged event from derived classes.
-
-#### Parameters
-
-**sender**
-The sender.
-
-**e**
-The [EventArgs](#) instance containing the event data.
-
-
-
-### RaiseCurrentValueChanged(TEventArgs e)
-
-Raises the CurrentValueChanged event.
+The current sensor value. If no value is available,`null` will be returned.
 
 
 

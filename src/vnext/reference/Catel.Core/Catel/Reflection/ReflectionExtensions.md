@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ReflectionExtensions
@@ -17,12 +17,6 @@ Reflection extension class.
 
 
 ## Fields
-
-### _convertableDictionary
-
-Dictionary containing all possible implicit conversions of system types.
-
-
 
 ## Methods
 
@@ -37,12 +31,12 @@ The type.
 
 #### Returns
 
-```true``` if the specified type contains generic parameters; otherwise, ```false```.
+`true` if the specified type contains generic parameters; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -62,7 +56,7 @@ Assembly.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -82,7 +76,7 @@ The get assembly full name ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -100,12 +94,12 @@ Type of the attribute.
 
 #### Returns
 
-The attribute or ```null``` of the member is not decorated with the attribute.
+The attribute or`null` of the member is not decorated with the attribute.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -123,12 +117,12 @@ Type of the attribute.
 
 #### Returns
 
-The attribute or ```null``` of the member is not decorated with the attribute.
+The attribute or`null` of the member is not decorated with the attribute.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -148,12 +142,12 @@ The member Info.
 
 #### Returns
 
-The attribute or ```null``` of the member is not decorated with the attribute.
+The attribute or`null` of the member is not decorated with the attribute.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -173,12 +167,12 @@ The type.
 
 #### Returns
 
-The attribute or ```null``` of the member is not decorated with the attribute.
+The attribute or`null` of the member is not decorated with the attribute.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -198,7 +192,7 @@ Type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -221,7 +215,7 @@ ConstructorInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -241,7 +235,7 @@ ConstructorInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -273,7 +267,7 @@ The get custom attribute ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -306,7 +300,7 @@ System.Object[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -332,7 +326,7 @@ System.Object[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -352,7 +346,7 @@ Type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -381,10 +375,10 @@ EventInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -410,10 +404,10 @@ EventInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -439,7 +433,7 @@ EventInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -470,10 +464,10 @@ FieldInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -499,10 +493,10 @@ FieldInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -528,7 +522,7 @@ FieldInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -551,7 +545,7 @@ FieldInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -571,7 +565,7 @@ Type[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -591,7 +585,7 @@ The generic type definition.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.NotSupportedException**
 The specified type is not a generic type.
@@ -611,7 +605,7 @@ The type.
 The name.
 
 **ignoreCase**
-if set to ```true``` [ignore case].
+if set to`true` [ignore case].
 
 #### Returns
 
@@ -620,7 +614,7 @@ Type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -640,7 +634,7 @@ Type[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -669,7 +663,7 @@ MemberInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -695,7 +689,7 @@ MemberInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -724,10 +718,10 @@ MethodInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -753,10 +747,10 @@ MethodInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -788,10 +782,10 @@ MethodInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -820,10 +814,10 @@ MethodInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -849,7 +843,7 @@ MethodInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -872,7 +866,7 @@ MethodInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -911,7 +905,7 @@ PropertyInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -934,7 +928,7 @@ PropertyInfo[][].
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -957,7 +951,7 @@ The flatten hierarchy.
 The allow static members.
 
 **allowExplicitInterfaceProperties**
-if set to ```true```, this method will check for explicit interface implementations when the property is not found.
+if set to`true` , this method will check for explicit interface implementations when the property is not found.
 
 #### Returns
 
@@ -966,10 +960,10 @@ PropertyInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -989,7 +983,7 @@ The name.
 The binding Flags.
 
 **allowExplicitInterfaceProperties**
-if set to ```true```, this method will check for explicit interface implementations when the property is not found.
+if set to`true` , this method will check for explicit interface implementations when the property is not found.
 
 #### Returns
 
@@ -998,10 +992,10 @@ PropertyInfo.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -1015,7 +1009,7 @@ Gets the full name of the type in a safe way. This means it checks for null firs
 The type.
 
 **fullyQualifiedAssemblyName**
-if set to ```true```, include the assembly name in the type name.
+if set to`true` , include the assembly name in the type name.
 
 #### Returns
 
@@ -1044,7 +1038,7 @@ The has base type ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1062,12 +1056,12 @@ Type of the interface.
 
 #### Returns
 
-```true``` if the type implements the interface; otherwise ```false```.
+`true` if the type implements the interface; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1087,12 +1081,12 @@ The type.
 
 #### Returns
 
-```true``` if the type implements the interface; otherwise ```false```.
+`true` if the type implements the interface; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1107,7 +1101,7 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is abstract; otherwise, ```false```.
+`true` if the specified type is abstract; otherwise,`false`.
 
 
 
@@ -1122,7 +1116,7 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is an array; otherwise, ```false```.
+`true` if the specified type is an array; otherwise,`false`.
 
 
 
@@ -1145,7 +1139,7 @@ The is assignable from ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1160,12 +1154,12 @@ Type of the target.
 
 #### Returns
 
-```true``` if the specified type is a Catel type; otherwise, ```false```.
+`true` if the specified type is a Catel type; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1180,7 +1174,7 @@ The type.
 
 #### Returns
 
-```true``` if the specified type is a class; otherwise, ```false```.
+`true` if the specified type is a class; otherwise,`false`.
 
 
 
@@ -1210,12 +1204,12 @@ Type of the attribute.
 
 #### Returns
 
-```true``` if the member is decorated with the attribute; otherwise, ```false```.
+`true` if the member is decorated with the attribute; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -1233,12 +1227,12 @@ Type of the attribute.
 
 #### Returns
 
-```true``` if the member is decorated with the attribute; otherwise, ```false```.
+`true` if the member is decorated with the attribute; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1258,12 +1252,12 @@ The member info.
 
 #### Returns
 
-```true``` if the member is decorated with the attribute; otherwise, ```false```.
+`true` if the member is decorated with the attribute; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -1283,12 +1277,12 @@ The type.
 
 #### Returns
 
-```true``` if the member is decorated with the attribute; otherwise, ```false```.
+`true` if the member is decorated with the attribute; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1308,7 +1302,7 @@ The is enum ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1328,7 +1322,7 @@ The is generic type ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1348,7 +1342,7 @@ The is generic type ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1371,7 +1365,7 @@ The is instance of type ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1391,7 +1385,7 @@ The is interface ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1411,7 +1405,7 @@ The is nested public ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1431,7 +1425,7 @@ The primitive type specification.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1451,7 +1445,7 @@ The is public ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1471,7 +1465,7 @@ The is serializable ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1491,7 +1485,7 @@ The is value type ex.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1512,12 +1506,12 @@ The attribute.
 
 #### Returns
 
-```true``` if the attribute is retrieved successfully; otherwise ```false```.
+`true` if the attribute is retrieved successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -1538,12 +1532,12 @@ The attribute.
 
 #### Returns
 
-```true``` if the attribute is retrieved successfully; otherwise ```false```.
+`true` if the attribute is retrieved successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -1566,12 +1560,12 @@ The attribute.
 
 #### Returns
 
-```true``` if the attribute is retrieved successfully; otherwise ```false```.
+`true` if the attribute is retrieved successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The memberInfo is ```null```.
+The memberInfo is`null`.
 
 
 
@@ -1594,12 +1588,12 @@ The attribute.
 
 #### Returns
 
-```true``` if the attribute is retrieved successfully; otherwise ```false```.
+`true` if the attribute is retrieved successfully; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 

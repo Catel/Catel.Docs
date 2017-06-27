@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewToViewModelAttribute : Attribute
@@ -16,13 +16,7 @@ public class ViewToViewModelAttribute : Attribute
 [Attribute]()
 
 
-A mapper attribute to map a [IView](#) (such as the UserControl or the DataWindow) 
-    property to a view model property.
-    
-
-
-    This class is very useful when creating custom user controls that need more parameterized settings than just the
-    ```DataContext``` property.
+A mapper attribute to map a [IView](#) (such as the UserControl or the DataWindow) property to a view model property.This class is very useful when creating custom user controls that need more parameterized settings than just the`DataContext` property.
 
 
 

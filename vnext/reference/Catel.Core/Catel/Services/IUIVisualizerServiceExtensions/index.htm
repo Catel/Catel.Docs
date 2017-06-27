@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -356,6 +352,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IViewModelWrapperService/">IViewModelWrapperService</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/IWrapControlService/">IWrapControlService</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceKey/">LanguageResourceKey</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/LanguageResourceSource/">LanguageResourceSource</a>
@@ -444,6 +442,12 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WindowNotRegisteredException/">WindowNotRegisteredException</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlService/">WrapControlService</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceControlNames/">WrapControlServiceControlNames</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapControlServiceWrapOptions/">WrapControlServiceWrapOptions</a>
+</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Services/WrapOptions/">WrapOptions</a>
 </li>
 
@@ -521,14 +525,13 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class IUIVisualizerServiceExtensions
 </pre><p>Extension methods for the <a href="#">IUIVisualizerService</a>.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="activatewindowwindow-window">ActivateWindow(Window window)<a class="headerlink" href="#activatewindowwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Activates the window.</p>
@@ -536,9 +539,8 @@
 <p><strong>window</strong>
 The window.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the window is activated with success; otherwise <code>false</code> or <code>null</code>.</p>
-<h3 id="getviewmodelfactoryiuivisualizerservice-uivisualizerservice">GetViewModelFactory(IUIVisualizerService uiVisualizerService)<a class="headerlink" href="#getviewmodelfactoryiuivisualizerservice-uivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="true">IsRegistered(IUIVisualizerService uiVisualizerService, Type viewModelType)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>true</code> if the window is activated with success; otherwise<code>false</code> or<code>null</code>.</p>
+<h3 id="isregisterediuivisualizerservice-uivisualizerservice-type-viewmodeltype">IsRegistered(IUIVisualizerService uiVisualizerService, Type viewModelType)<a class="headerlink" href="#isregisterediuivisualizerservice-uivisualizerservice-type-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified view model type is registered.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
@@ -546,23 +548,22 @@ The UI visualizer service.</p>
 <p><strong>viewModelType</strong>
 Type of the view model.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified view model type is registered; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the specified view model type is registered; otherwise,<code>false</code>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModelType is <code>null</code>.</p>
+The viewModelType is<code>null</code>.</p>
 <h3 id="isregisterediuivisualizerservice-uivisualizerservice">IsRegistered<TViewModel>(IUIVisualizerService uiVisualizerService)<a class="headerlink" href="#isregisterediuivisualizerservice-uivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified view model type is registered.</p>
-<h4 id="true">Type Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
 The type of the view model.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
 The UI visualizer service.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified view model type is registered; otherwise, <code>false</code>.</p>
+<p><code>true</code> if the specified view model type is registered; otherwise,<code>false</code>.</p>
 <h3 id="registeriuivisualizerservice-uivisualizerservice-type-viewmodeltype-type-windowtype-bool-throwexceptionifexists">Register(IUIVisualizerService uiVisualizerService, Type viewModelType, Type windowType, bool throwExceptionIfExists)<a class="headerlink" href="#registeriuivisualizerservice-uivisualizerservice-type-viewmodeltype-type-windowtype-bool-throwexceptionifexists" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.</p>
+<p>Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
 The UI visualizer service.</p>
@@ -571,96 +572,137 @@ Type of the view model.</p>
 <p><strong>windowType</strong>
 Type of the window.</p>
 <p><strong>throwExceptionIfExists</strong>
-if set to <code>true</code>, this method will throw an exception when already registered.</p>
+if set to<code>true</code> , this method will throw an exception when already registered.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 viewModelType</p>
 <h3 id="registertview-tviewmodeliuivisualizerservice-uivisualizerservice-bool-throwexceptionifexists">Register&lt;TView, TViewModel&gt;(IUIVisualizerService uiVisualizerService, bool throwExceptionIfExists)<a class="headerlink" href="#registertview-tviewmodeliuivisualizerservice-uivisualizerservice-bool-throwexceptionifexists" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.</p>
-<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
 The type of the view model.</p>
 <p><strong>TView</strong>
 The type of the view.</p>
-<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
 The UI visualizer service.</p>
 <p><strong>throwExceptionIfExists</strong>
-if set to <code>true</code>, this method will throw an exception when already registered.</p>
+if set to<code>true</code> , this method will throw an exception when already registered.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 viewModelType</p>
 <h3 id="showasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc">ShowAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object model, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Shows the window in non-modal state and creates the view model automatically using the specified model.</p>
-<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>TViewModel</strong>
-The type of the view model.</p>
-<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>uiVisualizerService</strong>
-The UI visualizer service.</p>
-<p><strong>model</strong>
-The model to be injected into the view model, can be <code>null</code>.</p>
-<p><strong>completedProc</strong>
-The completed proc.</p>
-<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if shown successfully, <code>false</code> otherwise.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The uiVisualizerService is <code>null</code>.</p>
-<h3 id="showdialogasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc">ShowDialogAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object model, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showdialogasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Shows the window in modal state and creates the view model automatically using the specified model.</p>
-<h4 id="true">Type Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
 The type of the view model.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
 The UI visualizer service.</p>
 <p><strong>model</strong>
-The model to be injected into the view model, can be <code>null</code>.</p>
+The model to be injected into the view model, can be<code>null</code>.</p>
 <p><strong>completedProc</strong>
 The completed proc.</p>
-<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The dialog result.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if shown successfully,<code>false</code> otherwise.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The uiVisualizerService is <code>null</code>.</p>
-<h3 id="showoractivateasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc">ShowOrActivateAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object model, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showoractivateasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates a window in non-modal state. If a window with the specified viewModelType exists, the window is activated instead of being created.</p>
-<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The uiVisualizerService is<code>null</code>.</p>
+<h3 id="showasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope">ShowAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)<a class="headerlink" href="#showasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Shows the window in non-modal state and creates the view model automatically using the specified model.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
-The type of the view model.</p>
+The view model type.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
-The UI visualizer service.</p>
-<p><strong>model</strong>
-The model to be injected into the view model, can be <code>null</code>.</p>
-<p><strong>completedProc</strong>
-The completed proc. Not applicable if window already exists.</p>
-<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if shown or activated successfully, <code>false</code> otherwise.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The uiVisualizerService is <code>null</code>.</p>
-<h3 id="unregisteriuivisualizerservice-uivisualizerservice-type-viewmodeltype">Unregister(IUIVisualizerService uiVisualizerService, Type viewModelType)<a class="headerlink" href="#unregisteriuivisualizerservice-uivisualizerservice-type-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>This unregisters the specified view model.</p>
-<h4 id="true">Parameters<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>uiVisualizerService</strong>
-The UI visualizer service.</p>
-<p><strong>viewModelType</strong>
-Type of the view model to unregister.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the view model is unregistered; otherwise <code>false</code>.</p>
-<h3 id="unregisteriuivisualizerservice-uivisualizerservice">Unregister<TViewModel>(IUIVisualizerService uiVisualizerService)<a class="headerlink" href="#unregisteriuivisualizerservice-uivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>This unregisters the specified view model.</p>
-<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+The uiVisualizerService</p>
+<p><strong>dataContext</strong>
+The data context.</p>
+<p><strong>scope</strong>
+The scope.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task.</p>
+<h3 id="showdialogasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc">ShowDialogAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object model, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showdialogasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Shows the window in modal state and creates the view model automatically using the specified model.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TViewModel</strong>
 The type of the view model.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>uiVisualizerService</strong>
 The UI visualizer service.</p>
+<p><strong>model</strong>
+The model to be injected into the view model, can be<code>null</code>.</p>
+<p><strong>completedProc</strong>
+The completed proc.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The dialog result.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The uiVisualizerService is<code>null</code>.</p>
+<h3 id="showdialogasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope">ShowDialogAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)<a class="headerlink" href="#showdialogasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Shows the window in modal state and creates the view model automatically using the specified model.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TViewModel</strong>
+The view model type.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uiVisualizerService</strong>
+The uiVisualizerService</p>
+<p><strong>dataContext</strong>
+The data context.</p>
+<p><strong>scope</strong>
+The scope.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task.</p>
+<h3 id="showoractivateasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc">ShowOrActivateAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object model, EventHandler<UICompletedEventArgs> completedProc)<a class="headerlink" href="#showoractivateasynciuivisualizerservice-uivisualizerservice-object-model-eventhandler-completedproc" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a window in non-modal state. If a window with the specified viewModelType exists, the window is activated instead of being created.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TViewModel</strong>
+The type of the view model.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uiVisualizerService</strong>
+The UI visualizer service.</p>
+<p><strong>model</strong>
+The model to be injected into the view model, can be<code>null</code>.</p>
+<p><strong>completedProc</strong>
+The completed proc. Not applicable if window already exists.</p>
 <h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the view model is unregistered; otherwise <code>false</code>.</p>
+<p><code>true</code> if shown or activated successfully,<code>false</code> otherwise.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The uiVisualizerService is<code>null</code>.</p>
+<h3 id="showoractivateasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope">ShowOrActivateAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)<a class="headerlink" href="#showoractivateasynciuivisualizerservice-uivisualizerservice-object-datacontext-object-scope" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a window in non-modal state. If a window with the specified viewModelType exists, the window is activated instead of being created.</p>
+<h4 id="type-parameters-7">Type Parameters<a class="headerlink" href="#type-parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TViewModel</strong>
+The view model type.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uiVisualizerService</strong>
+The uiVisualizerService</p>
+<p><strong>dataContext</strong>
+The data context.</p>
+<p><strong>scope</strong>
+The scope.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task.</p>
+<h3 id="unregisteriuivisualizerservice-uivisualizerservice-type-viewmodeltype">Unregister(IUIVisualizerService uiVisualizerService, Type viewModelType)<a class="headerlink" href="#unregisteriuivisualizerservice-uivisualizerservice-type-viewmodeltype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>This unregisters the specified view model.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uiVisualizerService</strong>
+The UI visualizer service.</p>
+<p><strong>viewModelType</strong>
+Type of the view model to unregister.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the view model is unregistered; otherwise<code>false</code>.</p>
+<h3 id="unregisteriuivisualizerservice-uivisualizerservice">Unregister<TViewModel>(IUIVisualizerService uiVisualizerService)<a class="headerlink" href="#unregisteriuivisualizerservice-uivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>This unregisters the specified view model.</p>
+<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TViewModel</strong>
+The type of the view model.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>uiVisualizerService</strong>
+The UI visualizer service.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the view model is unregistered; otherwise<code>false</code>.</p>
 
                     </div>
                 </div>

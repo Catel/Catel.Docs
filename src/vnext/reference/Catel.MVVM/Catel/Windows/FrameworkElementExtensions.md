@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class FrameworkElementExtensions
@@ -20,33 +20,12 @@ Extensions for [FrameworkElement](#).
 
 ### FixBlurriness(FrameworkElement element)
 
-Fixes the blurriness in WPF by setting both ```SnapsToDevicePixels``` and
-    ```UseLayoutRounding``` to ```true```.
+Fixes the blurriness in WPF by setting both`SnapsToDevicePixels` and`UseLayoutRounding` to`true`.
 
 #### Parameters
 
 **element**
 The UI element.
-
-
-
-### GetRelevantParent<T>(FrameworkElement obj)
-
-Gets the relevant parent which is either a content presenter or panel.
-
-#### Type Parameters
-
-**T**
-Type of the relevant parent
-
-#### Parameters
-
-**obj**
-The object.
-
-#### Returns
-
-The relevant parent.
 
 
 
@@ -72,7 +51,7 @@ The element.
 
 #### Returns
 
-```true``` if the specified element is visible; otherwise, ```false```.
+`true` if the specified element is visible; otherwise,`false`.
 
 
 
@@ -82,7 +61,7 @@ Determines whether the framework element is currently visible to the user.
 
 #### Returns
 
-```true``` if the framework element is currently visible to the user; otherwise, ```false```.
+`true` if the framework element is currently visible to the user; otherwise,`false`.
 
 
 
@@ -100,7 +79,7 @@ The container.
 
 #### Returns
 
-```true``` if if the specified element is currently visible to the user; otherwise, ```false```.
+`true` if if the specified element is currently visible to the user; otherwise,`false`.
 
 
 

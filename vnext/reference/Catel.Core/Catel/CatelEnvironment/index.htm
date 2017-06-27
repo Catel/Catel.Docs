@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -93,8 +91,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -115,15 +111,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -146,6 +138,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -198,6 +192,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -325,48 +321,35 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class CatelEnvironment
 </pre><p>Class containing environment information.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="bypassdevenvcheck">_bypassDevEnvCheck<a class="headerlink" href="#bypassdevenvcheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="isindesignmode">_isInDesignMode<a class="headerlink" href="#isindesignmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="defaultmultilingualdependencypropertyvalue">DefaultMultiLingualDependencyPropertyValue<a class="headerlink" href="#defaultmultilingualdependencypropertyvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>SET IN CONSTRUCTOR TO SUPPORT RUNTIME LANGUAGE SWITCHING</p>
-<p>The default value for dependency properties that use a Properties.Resources value. Such values should be set in the constructor
-    of the control instead of the dependency property to allow runtime switching of languages.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
+<p>The default value for dependency properties that use a Properties.Resources value. Such values should be set in the constructor of the control instead of the dependency property to allow runtime switching of languages.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="bypassdevenvcheck-1">BypassDevEnvCheck<a class="headerlink" href="#bypassdevenvcheck-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets or sets a value indicating whether the &quot;devenv.exe&quot; check should be bypassed. By default, the IsInDesignMode
-    also checks whether the current process is &quot;devenv.exe&quot;.</p>
-<pre><code>This behavior is not very useful when using Catel in Visual Studio extensions, so it is possible to bypass that specific check.
-</code></pre>
-
+<h3 id="bypassdevenvcheck">BypassDevEnvCheck<a class="headerlink" href="#bypassdevenvcheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets or sets a value indicating whether the &quot;devenv.exe&quot; check should be bypassed. By default, the IsInDesignMode also checks whether the current process is &quot;devenv.exe&quot;.This behavior is not very useful when using Catel in Visual Studio extensions, so it is possible to bypass that specific check.</p>
 <h3 id="disablepropertychangenotifications">DisablePropertyChangeNotifications<a class="headerlink" href="#disablepropertychangenotifications" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets a value indicating whether property change notifications are currently disabled for all instances.</p>
-<h3 id="isindesignmode-1">IsInDesignMode<a class="headerlink" href="#isindesignmode-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="isindesignmode">IsInDesignMode<a class="headerlink" href="#isindesignmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets a value indicating whether the environment is currently in design mode.</p>
 <h3 id="mainwindow">MainWindow<a class="headerlink" href="#mainwindow" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the main window of the application.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="getisindesignmodebool-initializedesigntime">GetIsInDesignMode(bool initializeDesignTime)<a class="headerlink" href="#getisindesignmodebool-initializedesigntime" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets whether the software is currently in design mode.</p>
-<pre><code>Note that unless the IsInDesignMode, the value is not cached but always determined at runtime.
-</code></pre>
-
+<p>Gets whether the software is currently in design mode.Note that unless the IsInDesignMode , the value is not cached but always determined at runtime.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>initializeDesignTime</strong>
-if set to <code>true</code>, automatically call InitializeDesignTime if in design mode.</p>
+if set to<code>true</code> , automatically call InitializeDesignTime if in design mode.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the software is in design mode, <code>false</code> otherwise.</p>
+<p><code>true</code> if the software is in design mode,<code>false</code> otherwise.</p>
 <h3 id="registerdefaultviewmodelservices">RegisterDefaultViewModelServices()<a class="headerlink" href="#registerdefaultviewmodelservices" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the default view model services in the default <a href="#">ServiceLocator</a>. This call can come in handy when the 
-    services should be accessed before any view model is created.</p>
+<p>Registers the default view model services in the default <a href="#">ServiceLocator</a>. This call can come in handy when the services should be accessed before any view model is created.</p>
 
                     </div>
                 </div>

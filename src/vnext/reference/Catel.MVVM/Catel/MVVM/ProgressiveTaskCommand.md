@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ProgressiveTaskCommand<TProgress> : TaskCommand<object, object, TProgress> where TProgress : ITaskProgressReport 
@@ -16,8 +16,7 @@ public class ProgressiveTaskCommand<TProgress> : TaskCommand<object, object, TPr
 [TaskCommand]()
 
 
-Implements the [TaskCommand](#) class with only the
-    TProgress as generic type.
+Implements the [TaskCommand](#) class with only the TProgress as generic type.
 
 #### Type Parameters
 

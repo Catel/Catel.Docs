@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class DependencyPropertyHelper
@@ -18,51 +18,7 @@ Helper class for dependency properties.
 
 ## Fields
 
-### _cacheByDependencyProperty
-
-Cache containing the names of all found dependency properties, required because it is not possible to get the name of a 
-    dependency property in some platforms.
-
-
-
-### _cacheByParentType
-
-Cache containing all dependency properties of a specific type.
-
-
-
-### _cacheByPropertyName
-
-Cache containing a dependency property based on the type + propertyname, where the key is generated using the
-    String) method.
-
-
-
-### _cacheKeyCache
-
-The cache for the cache keys.
-
-
-
-### Log
-
 ## Methods
-
-### EnsureItemInCache(Type viewType)
-
-Ensures that the dependency properties of the specified [FrameworkElement](#) are in the cache.
-
-#### Parameters
-
-**viewType**
-The view type.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The viewType is ```null```.
-
-
 
 ### GetDependencyProperties(Type viewType)
 
@@ -80,7 +36,7 @@ List containing all dependency properties of the specified [FrameworkElement](#)
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewType is ```null```.
+The viewType is`null`.
 
 
 
@@ -100,7 +56,7 @@ List containing all dependency properties of the specified [FrameworkElement](#)
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The frameworkElement is ```null```.
+The frameworkElement is`null`.
 
 
 
@@ -118,15 +74,15 @@ Name of the property.
 
 #### Returns
 
-The [DependencyProperty](#) or ```null``` if the property cannot be found.
+The [DependencyProperty](#) or`null` if the property cannot be found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The frameworkElement is ```null```.
+The frameworkElement is`null`.
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -149,10 +105,10 @@ The key to use in the cache.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewType is ```null```.
+The viewType is`null`.
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -172,7 +128,7 @@ The dependency property cache key prefix based on the framework element..
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewType is ```null```.
+The viewType is`null`.
 
 
 
@@ -190,7 +146,7 @@ The dependency property.
 
 #### Returns
 
-The name of the dependency property or ```null``` if the name could not be found.
+The name of the dependency property or`null` if the name could not be found.
 
 
 

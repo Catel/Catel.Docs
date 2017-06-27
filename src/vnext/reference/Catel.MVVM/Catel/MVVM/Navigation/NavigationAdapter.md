@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Navigation
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class NavigationAdapter : NavigationAdapterBase
@@ -21,18 +21,6 @@ Navigation adapter class because everyone seems to be implementing their own :-(
 
 
 ## Fields
-
-### _lastGlobalNavigationContext
-
-### _lastNavigationContext
-
-### _navigationServiceInitialized
-
-### Log
-
-The log.
-
-
 
 ## Constructors
 
@@ -51,12 +39,6 @@ The navigation root.
 
 
 ## Properties
-
-### HandleNavigatedOnLoaded
-
-Gets or sets a value indicating whether the navigated event should be invoked on the loaded event.
-
-
 
 ### NavigationContext
 
@@ -104,48 +86,6 @@ Occurs when the app is about to navigate away from this view.
 
 ## Methods
 
-### CanHandleNavigation()
-
-Determines whether the navigation can be handled by this adapter.
-
-#### Returns
-
-```true``` if the navigation can be handled by this adapter; otherwise, ```false```.
-
-
-
-### DetermineNavigationContext()
-
-### GetNavigationTarget<T>()
-
-Gets the navigation target as a type.
-
-#### Type Parameters
-
-**T**
-The type of the navigation target.
-
-#### Returns
-
-The type.
-
-
-
-### GetNavigationUri(object target)
-
-Gets the navigation URI for the target page.
-
-#### Parameters
-
-**target**
-The target.
-
-#### Returns
-
-System.String.
-
-
-
 ### GetNavigationUriForTargetPage()
 
 Gets the navigation URI for the target page.
@@ -155,95 +95,6 @@ Gets the navigation URI for the target page.
 System.String.
 
 
-
-### GetUriWithoutParameters(string uri)
-
-Gets the URI without parameters, thus ```/Pages/MyView.xaml?id=1``` will be returned as
-    ```/Pages/MyView.xaml```/
-
-#### Parameters
-
-**uri**
-The URI.
-
-#### Returns
-
-The URI without parameters.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The uri is ```null``` or whitespace.
-
-
-
-### GetUriWithoutParameters(Uri uri)
-
-Gets the URI without parameters, thus ```/Pages/MyView.xaml?id=1``` will be returned as
-    ```/Pages/MyView.xaml```/
-
-#### Parameters
-
-**uri**
-The URI.
-
-#### Returns
-
-The URI without parameters.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The uri is ```null```.
-
-
-
-### HandleNavigatedEvent(NavigatedEventArgs e)
-
-### Initialize()
-
-### InitializeNavigationService(bool isComingFromLoadedEvent)
-
-### OnNavigatedEvent(object sender, NavigationEventArgs e)
-
-### OnNavigatingEvent(object sender, NavigatingCancelEventArgs e)
-
-### OnNavigationTargetLoaded(object sender, EventArgs e)
-
-### RaiseNavigatedAway(NavigatedEventArgs e)
-
-Raises the NavigatedAway event.
-
-#### Parameters
-
-**e**
-The [NavigatedEventArgs](#) instance containing the event data.
-
-
-
-### RaiseNavigatedTo(NavigatedEventArgs e)
-
-Raises the NavigatedTo event.
-
-#### Parameters
-
-**e**
-The [NavigatedEventArgs](#) instance containing the event data.
-
-
-
-### RaiseNavigatingAway(NavigatingEventArgs e)
-
-Raises the NavigatingAway event.
-
-#### Parameters
-
-**e**
-The [NavigatingEventArgs](#) instance containing the event data.
-
-
-
-### Uninitialize()
 
 ### UninitializeNavigationService()
 

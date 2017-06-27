@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISelectDirectoryService
@@ -62,12 +62,11 @@ Determines the name of the directory what will be used.
 
 #### Returns
 
-```true``` if a directory is selected; otherwise ```false```.
+`true` if a directory is selected; otherwise`false`.
 
 #### Remarks
 
-If this method returns ```true```, the DirectoryName property will be filled with the directory name. Otherwise,
-    no changes will occur to the data of this object.
+If this method returns`true` , the DirectoryName property will be filled with the directory name. Otherwise, no changes will occur to the data of this object.
 
 
 

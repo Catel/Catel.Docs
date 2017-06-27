@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CommandExecutedEventArgs : EventArgs
@@ -40,7 +40,7 @@ The property name under which the command is registered.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 
 

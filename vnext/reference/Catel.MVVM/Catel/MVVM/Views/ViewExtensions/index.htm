@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -210,8 +204,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -231,8 +223,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -256,9 +246,6 @@
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
@@ -318,12 +305,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelAttribute/">ViewToViewModelAttribute</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMapping/">ViewToViewModelMapping</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingContainer/">ViewToViewModelMappingContainer</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingHelper/">ViewToViewModelMappingHelper</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingType/">ViewToViewModelMappingType</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Views/WeakViewInfo/">WeakViewInfo</a>
@@ -333,9 +314,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -403,19 +381,16 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class ViewExtensions
 </pre><p>Extension methods for views.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="autodetectedviewtypes">_autoDetectedViewtypes<a class="headerlink" href="#autodetectedviewtypes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="autodetectviewpropertiestosubscribetype-viewtype">AutoDetectViewPropertiesToSubscribe(Type viewType)<a class="headerlink" href="#autodetectviewpropertiestosubscribetype-viewtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Automatically detects view properties to subscribe to by searching for dependency properties
-    decorated with the <a href="#">ViewToViewModelAttribute</a>.</p>
+<p>Automatically detects view properties to subscribe to by searching for dependency properties decorated with the <a href="#">ViewToViewModelAttribute</a>.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewType</strong>
 The view type.</p>
@@ -428,26 +403,23 @@ The view.</p>
 The action.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The view is <code>null</code>.</p>
+The view is<code>null</code>.</p>
 <h3 id="ensurevisualtreeiview-view">EnsureVisualTree(IView view)<a class="headerlink" href="#ensurevisualtreeiview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Ensures that a visual tree exists for the view.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>view</strong>
 The view.</p>
-<h3 id="finaldispatchiview-view-action-action">FinalDispatch(IView view, Action action)<a class="headerlink" href="#finaldispatchiview-view-action-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="findparentbypredicateiview-view-predicate-predicate">FindParentByPredicate(IView view, Predicate<object> predicate)<a class="headerlink" href="#findparentbypredicateiview-view-predicate-predicate" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Finds a parent by predicate. It first tries to find the parent via the <code>UserControl.Parent</code> property, and if that
-    doesn't satisfy, it uses the <code>UserControl.TemplatedParent</code> property.</p>
+<p>Finds a parent by predicate. It first tries to find the parent via the<code>UserControl.Parent</code> property, and if that doesn't satisfy, it uses the<code>UserControl.TemplatedParent</code> property.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>view</strong>
 The control.</p>
 <p><strong>predicate</strong>
 The predicate.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><a href="#">DependencyObject</a> or <code>null</code> if no parent is found that matches the predicate.</p>
+<p><a href="#">DependencyObject</a> or<code>null</code> if no parent is found that matches the predicate.</p>
 <h3 id="findparentbypredicateframeworkelement-view-predicate-predicate-int-maxdepth">FindParentByPredicate(FrameworkElement view, Predicate<object> predicate, int maxDepth)<a class="headerlink" href="#findparentbypredicateframeworkelement-view-predicate-predicate-int-maxdepth" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Finds a parent by predicate. It first tries to find the parent via the <code>UserControl.Parent</code> property, and if that
-    doesn't satisfy, it uses the <code>UserControl.TemplatedParent</code> property.</p>
+<p>Finds a parent by predicate. It first tries to find the parent via the<code>UserControl.Parent</code> property, and if that doesn't satisfy, it uses the<code>UserControl.TemplatedParent</code> property.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>view</strong>
 The control.</p>
@@ -456,14 +428,14 @@ The predicate.</p>
 <p><strong>maxDepth</strong>
 The maximum number of levels to go up when searching for the parent. If smaller than 0, no maximum is used.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><a href="#">DependencyObject</a> or <code>null</code> if no parent is found that matches the predicate.</p>
+<p><a href="#">DependencyObject</a> or<code>null</code> if no parent is found that matches the predicate.</p>
 <h3 id="findparentviewmodelcontaineriview-view">FindParentViewModelContainer(IView view)<a class="headerlink" href="#findparentviewmodelcontaineriview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Finds the parent view model container.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>view</strong>
 The view.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The IViewModelContainer or <code>null</code> if the container is not found.</p>
+<p>The IViewModelContainer or<code>null</code> if the container is not found.</p>
 <h3 id="getparentiview-view">GetParent(IView view)<a class="headerlink" href="#getparentiview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the parent of the specified view.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -476,14 +448,14 @@ The view.</p>
 <p><strong>element</strong>
 The element.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The parent <a href="#">FrameworkElement</a> or <code>null</code> if there is no parent.</p>
+<p>The parent <a href="#">FrameworkElement</a> or<code>null</code> if there is no parent.</p>
 <h3 id="getpossibleparentsframeworkelement-element">GetPossibleParents(FrameworkElement element)<a class="headerlink" href="#getpossibleparentsframeworkelement-element" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the possible parents of the specified element.</p>
 <h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>element</strong>
 The element.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The possible parents <a href="#">FrameworkElement</a> or <code>null</code> if there is no parent.</p>
+<p>The possible parents <a href="#">FrameworkElement</a> or<code>null</code> if there is no parent.</p>
 <h3 id="getpropertiesiview-view">GetProperties(IView view)<a class="headerlink" href="#getpropertiesiview-view" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the properties of the view.</p>
 <h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

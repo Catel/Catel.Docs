@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -208,9 +205,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/WindowEventToCommand/">WindowEventToCommand</a>
 </li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -286,73 +280,22 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public abstract class TriggerActionBase&lt;T, T&gt; : TriggerAction&lt;T&gt; where T : FrameworkElement 
 </pre><p><strong>Base types</strong>
 <a href="">TriggerAction</a></p>
-<p>TriggerAction base class that handles a safe unsubscribe and clean up because the default
-    TriggerAction class does not always call <code>OnDetaching</code>.</p>
-<pre><code>This class also adds some specific features such as ValidateRequiredProperties
-which is automatically called when the trigger action is attached.
-</code></pre>
-
+<p>TriggerAction base class that handles a safe unsubscribe and clean up because the default TriggerAction class does not always call<code>OnDetaching</code>.This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger action is attached.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T</strong>
 The <a href="#">UIElement</a> this trigger action should attach to.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="isclean">_isClean<a class="headerlink" href="#isclean" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="issubscribedtoloadedevent">_isSubscribedToLoadedEvent<a class="headerlink" href="#issubscribedtoloadedevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="issubscribedtounloadedevent">_isSubscribedToUnloadedEvent<a class="headerlink" href="#issubscribedtounloadedevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="loadcounter">_loadCounter<a class="headerlink" href="#loadcounter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="isassociatedobjectloaded">IsAssociatedObjectLoaded<a class="headerlink" href="#isassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether the <code>TriggerActionBase{T}.AssociatedObject</code> is loaded.</p>
-<h3 id="isindesignmode">IsInDesignMode<a class="headerlink" href="#isindesignmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether this instance is in design mode.</p>
+<p>Gets a value indicating whether the<code>TriggerActionBase{T}.AssociatedObject</code> is loaded.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="cleanup">CleanUp()<a class="headerlink" href="#cleanup" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Actually cleans up the trigger action because OnDetaching is not always called.</p>
-<h3 id="initialize">Initialize()<a class="headerlink" href="#initialize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the trigger action. This method is called instead of the OnAttached which is sealed
-    to protect the additional trigger action.</p>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject is loaded.</p>
-<h3 id="onassociatedobjectloadedinternalobject-sender-eventargs-e">OnAssociatedObjectLoadedInternal(object sender, EventArgs e)<a class="headerlink" href="#onassociatedobjectloadedinternalobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject is loaded. This method is introduced to prevent
-    double initialization when the AssociatedObject is already loaded.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">EventArgs</a> instance containing the event data.</p>
-<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()<a class="headerlink" href="#onassociatedobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject is unloaded.</p>
-<h3 id="onassociatedobjectunloadedinternalobject-sender-eventargs-e">OnAssociatedObjectUnloadedInternal(object sender, EventArgs e)<a class="headerlink" href="#onassociatedobjectunloadedinternalobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssociatedObject is unloaded. This method is introduced to prevent
-    double uninitialization when the AssociatedObject is already unloaded.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">EventArgs</a> instance containing the event data.</p>
-<h3 id="onattached">OnAttached()<a class="headerlink" href="#onattached" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called after the action is attached to an AssociatedObject.</p>
-<h3 id="ondetaching">OnDetaching()<a class="headerlink" href="#ondetaching" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the action is being detached from its AssociatedObject, but before it has actually occurred.</p>
-<h3 id="uninitialize">Uninitialize()<a class="headerlink" href="#uninitialize" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Uninitializes the behavior. This method is called when OnDetaching is called, or when the
-    AssociatedObject is unloaded.</p>
-<pre><code>If dependency properties are used, it is very important to use DependencyProperty) 
-to clear the value
-of the dependency properties in this method.
-</code></pre>
-
-<h3 id="validaterequiredproperties">ValidateRequiredProperties()<a class="headerlink" href="#validaterequiredproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Validates the required properties. This method is called when the object is attached, but before
-    the Initialize is invoked.</p>
 
                     </div>
                 </div>

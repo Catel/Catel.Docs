@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -195,6 +189,8 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
 </li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
+</li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
 </li>
@@ -238,10 +234,6 @@
 <li class="tocentry"><a href="#properties">Properties</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelEventSource/">CatelEventSource</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/CatelLog/">CatelLog</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ConsoleLogListener/">ConsoleLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/DebugLogListener/">DebugLogListener</a>
@@ -255,8 +247,6 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListener/">IBatchLogListener</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IBatchLogListenerExtensions/">IBatchLogListenerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/ICatelLog/">ICatelLog</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/Logging/IJsonLogFormatter/">IJsonLogFormatter</a>
 </li>
@@ -391,7 +381,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -402,9 +392,6 @@
 <p><a href="/Catel.Core\Catel\Logging\IBatchLogListener.htm">IBatchLogListener</a></p>
 <p>Base class for log listeners that can write in batches.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="lock">_lock<a class="headerlink" href="#lock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="logbatch">_logBatch<a class="headerlink" href="#logbatch" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="timer">_timer<a class="headerlink" href="#timer" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="batchloglistenerbaseint-maxbatchcount">BatchLogListenerBase(int maxBatchCount)<a class="headerlink" href="#batchloglistenerbaseint-maxbatchcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">BatchLogListenerBase</a> class.</p>
@@ -419,29 +406,6 @@ The maximum batch count.</p>
 <p>Flushes the current queue asynchronous.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Task so it can be awaited.</p>
-<h3 id="ontimertickobject-state">OnTimerTick(object state)<a class="headerlink" href="#ontimertickobject-state" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="writeilog-log-string-message-logevent-logevent-object-extradata-logdata-logdata-datetime-time">Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)<a class="headerlink" href="#writeilog-log-string-message-logevent-logevent-object-extradata-logdata-logdata-datetime-time" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when any message is written to the log.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>log</strong>
-The log.</p>
-<p><strong>message</strong>
-The message.</p>
-<p><strong>logEvent</strong>
-The log event.</p>
-<p><strong>extraData</strong>
-The additional data.</p>
-<p><strong>logData</strong>
-The log data.</p>
-<p><strong>time</strong>
-The time.</p>
-<h3 id="writebatchasynclist-batchentries">WriteBatchAsync(List<LogBatchEntry> batchEntries)<a class="headerlink" href="#writebatchasynclist-batchentries" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the batch of entries.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>batchEntries</strong>
-The batch entries.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Task so this can be done asynchronously.</p>
 
                     </div>
                 </div>

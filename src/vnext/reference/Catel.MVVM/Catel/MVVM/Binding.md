@@ -22,14 +22,6 @@ Binding class for platforms not supporting bindings.
 
 ## Fields
 
-### _isUpdatingBinding
-
-### _source
-
-### _target
-
-### Log
-
 ## Constructors
 
 ### Binding(BindingParty source, BindingParty target, BindingMode mode, IValueConverter converter)
@@ -53,7 +45,7 @@ The converter.
 #### Exceptions
 
 **!:ArgumentNullException**
-The source is ```null```.
+The source is`null`.
 
 
 
@@ -84,7 +76,7 @@ The converter.
 #### Exceptions
 
 **!:ArgumentNullException**
-The source is ```null```.
+The source is`null`.
 
 
 
@@ -136,57 +128,15 @@ Occurs when the value of the binding has changed.
 
 ## Methods
 
-### DetermineToString()
-
-Determines the value to use in the ToString method.
-
-#### Returns
-
-The string to use.
-
-
-
-### EnsureBindingLifetime()
-
-Ensures the binding lifetime by checking if both the source and target are still alive.
-
-#### Returns
-
-```true``` if the binding is still valid; otherwise, ```false```.
-
-
-
-### Initialize()
-
-### OnSourceValueChanged(object sender, EventArgs e)
-
-### OnTargetValueChanged(object sender, EventArgs e)
-
 ### TransferValueFromSourceToTarget()
 
-Transfers the value from the source to target.
-    
-
-
-    Note that this method will check the [BindingMode](#) to see if the transfer is possible.
+Transfers the value from the source to target.Note that this method will check the [BindingMode](#) to see if the transfer is possible.
 
 
 
 ### TransferValueFromTargetToSource()
 
-Transfers the value from the target to source.
-    
+Transfers the value from the target to source.Note that this method will check the [BindingMode](#) to see if the transfer is possible.
 
 
-    Note that this method will check the [BindingMode](#) to see if the transfer is possible.
-
-
-
-### Uninitialize()
-
-Uninitializes this binding.
-
-
-
-### UpdateBinding(BindingParty source, BindingParty target, bool useConvertBack)
 

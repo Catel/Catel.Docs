@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class WeakActionBase : IWeakReference
@@ -23,29 +23,7 @@ Base class for weak actions that contain weak targets.
 
 ## Fields
 
-### _weakTarget
-
-WeakReference to the target listening for the event.
-
-
-
 ## Constructors
-
-### WeakActionBase(object target)
-
-Initializes a new instance of the [WeakActionBase](#) class.
-
-#### Parameters
-
-**target**
-The target of the weak action.
-
-#### Exceptions
-
-**T:System.ArgumentException**
-The target is ```null``` or whitespace.
-
-
 
 ## Properties
 
@@ -55,13 +33,13 @@ Gets a value indicating whether the event target has not yet been garbage collec
 
 #### Remarks
 
-In case of static event handlers, this property always returns ```false```.
+In case of static event handlers, this property always returns`false`.
 
 
 
 ### Target
 
-Gets the target or ```null``` if the target is garbage collected.
+Gets the target or`null` if the target is garbage collected.
 
 
 

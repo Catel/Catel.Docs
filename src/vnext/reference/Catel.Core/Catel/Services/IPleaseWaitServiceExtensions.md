@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IPleaseWaitServiceExtensions
@@ -30,12 +30,7 @@ IDisposable.
 
 ### PushInScope(IPleaseWaitService pleaseWaitService, string status)
 
-Calls String) and returns a disposable token. As soon as the token is disposed, it will
-    call Pop.
-    
-
-
-    This is a great way to safely show a busy indicator and ensure that the indicator hides, even when an exception occurs.
+Calls String) and returns a disposable token. As soon as the token is disposed, it will call Pop.This is a great way to safely show a busy indicator and ensure that the indicator hides, even when an exception occurs.
 
 #### Parameters
 
@@ -51,12 +46,7 @@ IDisposable.
 
 #### Examples
 
-<![CDATA[
-    using (pleaseWaitService.PushInScope())
-    {
-        // some code that might throw exceptions
-    }
-    ]]>
+<![CDATA[ using (pleaseWaitService.PushInScope()) { // some code that might throw exceptions } ]]>
 
 
 

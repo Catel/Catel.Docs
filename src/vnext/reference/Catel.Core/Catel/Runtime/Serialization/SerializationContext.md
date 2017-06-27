@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class SerializationContext<TContext> : ISerializationContext<TContext> where TContext : class 
@@ -28,14 +28,6 @@ The type of the context.
 
 ## Fields
 
-### _depth
-
-### _referenceManagerScopeManager
-
-### _serializableToken
-
-### _typeStackScopeManager
-
 ## Constructors
 
 ### SerializationContext(object model, Type modelType, TContext context, SerializationContextMode contextMode, ISerializationConfiguration configuration)
@@ -45,7 +37,7 @@ Initializes a new instance of the [SerializationContext](#) class.
 #### Parameters
 
 **model**
-The model, can be ```null``` for value types.
+The model, can be`null` for value types.
 
 **modelType**
 Type of the model.
@@ -62,7 +54,7 @@ The configuration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The modelType is ```null```.
+The modelType is`null`.
 
 
 
@@ -110,7 +102,7 @@ Gets the type of the model.
 
 ### ModelTypeName
 
-Gets the name of the model type, which should be a cached version of ```ModelType.GetSafeFullName(false);```.
+Gets the name of the model type, which should be a cached version of`ModelType.GetSafeFullName(false);`.
 
 
 
@@ -133,8 +125,6 @@ Gets the type stack inside the current scope.
 
 
 ## Methods
-
-### CreateSerializableToken()
 
 ### Dispose()
 

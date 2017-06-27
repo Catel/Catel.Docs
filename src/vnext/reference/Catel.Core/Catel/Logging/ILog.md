@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ILog
@@ -25,17 +25,13 @@ Gets or sets the indent level.
 #### Exceptions
 
 **T:System.ArgumentOutOfRangeException**
-The ```value``` is negative.
+The`value` is negative.
 
 
 
 ### IndentSize
 
-Gets or sets the size of the indent.
-    
-
-
-    The default value is ```2```.
+Gets or sets the size of the indent.The default value is`2`.
 
 #### Exceptions
 
@@ -46,11 +42,7 @@ The value is negative.
 
 ### IsCatelLogging
 
-Gets a value indicating whether this logger is a Catel logger.
-    
-
-
-    This value can be useful to exclude Catel logging for external listeners.
+Gets a value indicating whether this logger is a Catel logger.This value can be useful to exclude Catel logging for external listeners.
 
 
 
@@ -84,13 +76,13 @@ Occurs when a message is written to the log.
 
 ### Indent()
 
-Increases the IndentLevel by ```1```.
+Increases the IndentLevel by`1`.
 
 
 
 ### Unindent()
 
-Decreases the IndentLevel by ```1```.
+Decreases the IndentLevel by`1`.
 
 
 
@@ -112,7 +104,7 @@ The log event.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 
@@ -134,7 +126,7 @@ The log event.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The message is ```null```.
+The message is`null`.
 
 
 

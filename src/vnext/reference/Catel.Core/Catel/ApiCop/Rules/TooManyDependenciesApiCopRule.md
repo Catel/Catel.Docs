@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop.Rules
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class TooManyDependenciesApiCopRule : ApiCopRule
@@ -21,17 +21,6 @@ Rule to prevent too many dependencies on a class.
 
 
 ## Fields
-
-### _dependenciesPerType
-
-### _lockObject
-
-### MaxDependencies
-8
-
-The maximum dependencies
-
-
 
 ## Constructors
 
@@ -86,7 +75,7 @@ The tag.
 
 #### Returns
 
-```true``` if the specified ApiCop is valid; otherwise, ```false```.
+`true` if the specified ApiCop is valid; otherwise,`false`.
 
 
 

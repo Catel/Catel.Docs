@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class JsonLogFormatter : IJsonLogFormatter
@@ -23,25 +23,7 @@ The formatter which formats all log info to Json.
 
 ## Fields
 
-### ApplicationName
-
-### ApplicationVersion
-
-### LiteralWriters
-
-The literal writes.
-
-
-
-### LogEventStrings
-
-The log event strings.
-
-
-
 ## Constructors
-
-### JsonLogFormatter()
 
 ## Methods
 
@@ -64,26 +46,10 @@ Formats the log infos.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The log is ```null```.
+The log is`null`.
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
-
-### WriteBoolean(bool value, TextWriter textWriter)
-
-### WriteDateTime(DateTime value, TextWriter textWriter)
-
-### WriteJsonProperty(string name, object value, string precedingDelimiter, TextWriter textWriter)
-
-### WriteLiteral(object value, TextWriter textWriter, bool forceQuotation)
-
-### WriteOffset(DateTimeOffset value, TextWriter textWriter)
-
-### WritePropertyName(string name, TextWriter textWriter)
-
-### WriteString(object value, TextWriter textWriter)
-
-### WriteToString(object number, bool quote, TextWriter textWriter)
 

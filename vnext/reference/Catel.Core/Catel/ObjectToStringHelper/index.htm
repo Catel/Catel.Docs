@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -198,6 +192,8 @@
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -325,60 +321,42 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class ObjectToStringHelper
 </pre><p>Simple static class that turns an object to string.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="objecttostringhelper-1">ObjectToStringHelper()<a class="headerlink" href="#objecttostringhelper-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of the <a href="#">StringToObjectHelper</a> class.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="defaultculture">DefaultCulture<a class="headerlink" href="#defaultculture" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the default culture to use for parsing.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="tofulltypestringobject-instance">ToFullTypeString(object instance)<a class="headerlink" href="#tofulltypestringobject-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns a <a href="#">String</a> that represents the full type name of the instance.</p>
-<pre><code>If the instance is ```null```, this method will return &quot;null&quot;. This
-method is great when the value of a property must be logged.
-</code></pre>
-
+<p>Returns a <a href="#">String</a> that represents the full type name of the instance.If the instance is<code>null</code> , this method will return &quot;null&quot;. This method is great when the value of a property must be logged.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>instance</strong>
 The instance.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>A <a href="#">String</a> that represents the type of the instance.</p>
 <h3 id="tostringobject-instance">ToString(object instance)<a class="headerlink" href="#tostringobject-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns a <a href="#">String</a> that represents the instance.</p>
-<pre><code>If the instance is ```null```, this method will return &quot;null&quot;. This
-method is great when the value of a property must be logged.
-</code></pre>
-
+<p>Returns a <a href="#">String</a> that represents the instance.If the instance is<code>null</code> , this method will return &quot;null&quot;. This method is great when the value of a property must be logged.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>instance</strong>
-The instance, can be <code>null</code>.</p>
+The instance, can be<code>null</code>.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>A <a href="#">String</a> that represents the instance.</p>
 <h3 id="tostringobject-instance-cultureinfo-cultureinfo">ToString(object instance, CultureInfo cultureInfo)<a class="headerlink" href="#tostringobject-instance-cultureinfo-cultureinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns a <a href="#">String</a> that represents the instance.</p>
-<pre><code>If the instance is ```null```, this method will return &quot;null&quot;. This
-method is great when the value of a property must be logged.
-</code></pre>
-
+<p>Returns a <a href="#">String</a> that represents the instance.If the instance is<code>null</code> , this method will return &quot;null&quot;. This method is great when the value of a property must be logged.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>instance</strong>
-The instance, can be <code>null</code>.</p>
+The instance, can be<code>null</code>.</p>
 <p><strong>cultureInfo</strong>
 The culture information.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>A <a href="#">String</a> that represents the instance.</p>
 <h3 id="totypestringobject-instance">ToTypeString(object instance)<a class="headerlink" href="#totypestringobject-instance" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Returns a <a href="#">String</a> that represents the type name of the instance.</p>
-<pre><code>If the instance is ```null```, this method will return &quot;null&quot;. This
-method is great when the value of a property must be logged.
-</code></pre>
-
+<p>Returns a <a href="#">String</a> that represents the type name of the instance.If the instance is<code>null</code> , this method will return &quot;null&quot;. This method is great when the value of a property must be logged.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>instance</strong>
 The instance.</p>

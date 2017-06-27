@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IExceptionService
@@ -56,7 +56,7 @@ The exception handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The  is ```null```.
+The is`null`.
 
 **T:System.ArgumentException**
 The exceptionType is not of type [Exception](#).
@@ -89,12 +89,12 @@ The exception to handle.
 
 #### Returns
 
-```true``` if the exception is handled; otherwise ```false```.
+`true` if the exception is handled; otherwise`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 
@@ -109,12 +109,12 @@ Type of the exception.
 
 #### Returns
 
-```true``` if the specified exception type is registered; otherwise, ```false```.
+`true` if the specified exception type is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The  is ```null```.
+The is`null`.
 
 **T:System.ArgumentException**
 The exceptionType is not of type [Exception](#).
@@ -132,7 +132,7 @@ The type of the exception.
 
 #### Returns
 
-```true``` if the exception type is registered; otherwise, ```false```.
+`true` if the exception type is registered; otherwise,`false`.
 
 
 
@@ -148,7 +148,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -171,7 +171,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -189,7 +189,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -207,7 +207,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -230,7 +230,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -256,7 +256,7 @@ The cancellation token.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -279,7 +279,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -302,7 +302,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -322,7 +322,7 @@ The handler to use.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 
 
@@ -341,7 +341,7 @@ The type of the exception.
 The action to execute when the exception occurs.
 
 **exceptionPredicate**
-The  exception filter.
+The exception filter.
 
 #### Returns
 
@@ -350,7 +350,7 @@ The handler to use.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The handler is ```null```.
+The handler is`null`.
 
 **T:System.Exception**
 A delegate callback throws an exception.
@@ -368,7 +368,7 @@ The type of the exception.
 
 #### Returns
 
-```true``` if the exception is unsubscripted; otherwise ```false```.
+`true` if the exception is unsubscripted; otherwise`false`.
 
 
 

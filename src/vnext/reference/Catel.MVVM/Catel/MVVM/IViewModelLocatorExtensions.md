@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IViewModelLocatorExtensions
@@ -20,8 +20,7 @@ Extension methods for the [IViewModelLocator](#).
 
 ### Register<TView, TViewModel>(IViewModelLocator viewModelLocator)
 
-Registers the specified view model in the local cache. This cache will also be used by the
-    IViewModelLocator) method.
+Registers the specified view model in the local cache. This cache will also be used by the IViewModelLocator) method.
 
 #### Type Parameters
 
@@ -39,7 +38,7 @@ The view model locator.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelLocator is ```null```.
+The viewModelLocator is`null`.
 
 
 
@@ -59,18 +58,16 @@ The view model locator.
 
 #### Returns
 
-The resolved view model or ```null``` if the view model could not be resolved.
+The resolved view model or`null` if the view model could not be resolved.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelLocator is ```null```.
+The viewModelLocator is`null`.
 
 #### Remarks
 
-Keep in mind that all results are cached. The cache itself is not automatically cleared when the
-    NamingConventions are changed. If the NamingConventions are changed,
-    the cache must be cleared manually.
+Keep in mind that all results are cached. The cache itself is not automatically cleared when the NamingConventions are changed. If the NamingConventions are changed, the cache must be cleared manually.
 
 
 

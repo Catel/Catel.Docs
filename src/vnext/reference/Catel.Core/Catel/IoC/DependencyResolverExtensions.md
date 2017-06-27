@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class DependencyResolverExtensions
@@ -38,7 +38,7 @@ The tag.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dependencyResolver is ```null```.
+The dependencyResolver is`null`.
 
 
 
@@ -66,7 +66,7 @@ The resolved object.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dependencyResolver is ```null```.
+The dependencyResolver is`null`.
 
 
 
@@ -87,12 +87,12 @@ The tag.
 
 #### Returns
 
-The resolved object or ```null``` if the type could not be resolved.
+The resolved object or`null` if the type could not be resolved.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dependencyResolver is ```null```.
+The dependencyResolver is`null`.
 
 
 
@@ -115,12 +115,12 @@ The tag.
 
 #### Returns
 
-The resolved object or ```null``` if the type could not be resolved.
+The resolved object or`null` if the type could not be resolved.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The dependencyResolver is ```null```.
+The dependencyResolver is`null`.
 
 
 

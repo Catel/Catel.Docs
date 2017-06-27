@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class NotSupportedInPlatformException : Exception
@@ -16,13 +16,7 @@ public class NotSupportedInPlatformException : Exception
 [Exception]()
 
 
-Exception in case the functionality is not supported in the current platform.
-    
-
-
-    Unfortunately, some platforms miss a lot of functionality. When a feature is not supported in Catel, 
-    this is because the .NET Framework (or actually the specified platform) does not allow the code to handle 
-    that specific feature.
+Exception in case the functionality is not supported in the current platform.Unfortunately, some platforms miss a lot of functionality. When a feature is not supported in Catel, this is because the .NET Framework (or actually the specified platform) does not allow the code to handle that specific feature.
 
 
 

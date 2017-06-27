@@ -178,15 +178,9 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/LocatorBase/">LocatorBase</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ManagedViewModel/">ManagedViewModel</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelAttribute/">ModelAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelCleanUpMode/">ModelCleanUpMode</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelErrorInfo/">ModelErrorInfo</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelInfo/">ModelInfo</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ModelNotRegisteredException/">ModelNotRegisteredException</a>
 </li>
@@ -210,8 +204,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/UrlLocator/">UrlLocator</a>
 </li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ValidationToViewModelAttribute/">ValidationToViewModelAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewHelper/">ViewHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewLocator/">ViewLocator</a>
@@ -231,8 +223,6 @@
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManager/">ViewModelManager</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelManagerExtensions/">ViewModelManagerExtensions</a>
-</li>
-<li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelMetadata/">ViewModelMetadata</a>
 </li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/ViewModelNotRegisteredException/">ViewModelNotRegisteredException</a>
 </li>
@@ -273,9 +263,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Navigation/">Navigation</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/Providers/">Providers</a></span>
 </li>
 <li class="tocentry">
@@ -286,9 +273,6 @@
 </li>
 
 </ul>
-</li>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span>
@@ -356,58 +340,25 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class AuditingHelper
-</pre><p>Helper for auditing which handles the complete subscription of an <a href="#">IViewModel</a> instance
-    to the current auditing manager.</p>
+</pre><p>Helper for auditing which handles the complete subscription of an <a href="#">IViewModel</a> instance to the current auditing manager.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="knownignoredpropertynames">KnownIgnoredPropertyNames<a class="headerlink" href="#knownignoredpropertynames" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="auditinghelper-1">AuditingHelper()<a class="headerlink" href="#auditinghelper-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes static members of the <a href="#">AuditingHelper</a> class.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="onviewmodelcanceledasyncobject-sender-eventargs-e">OnViewModelCanceledAsync(object sender, EventArgs e)<a class="headerlink" href="#onviewmodelcanceledasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelcancelingasyncobject-sender-cancelingeventargs-e">OnViewModelCancelingAsync(object sender, CancelingEventArgs e)<a class="headerlink" href="#onviewmodelcancelingasyncobject-sender-cancelingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelclosedasyncobject-sender-eventargs-e">OnViewModelClosedAsync(object sender, EventArgs e)<a class="headerlink" href="#onviewmodelclosedasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelclosingasyncobject-sender-eventargs-e">OnViewModelClosingAsync(object sender, EventArgs e)<a class="headerlink" href="#onviewmodelclosingasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelcommandexecutedasyncobject-sender-commandexecutedeventargs-e">OnViewModelCommandExecutedAsync(object sender, CommandExecutedEventArgs e)<a class="headerlink" href="#onviewmodelcommandexecutedasyncobject-sender-commandexecutedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelpropertychangedobject-sender-propertychangedeventargs-e">OnViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)<a class="headerlink" href="#onviewmodelpropertychangedobject-sender-propertychangedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelpropertychangingobject-sender-propertychangingeventargs-e">OnViewModelPropertyChanging(object sender, PropertyChangingEventArgs e)<a class="headerlink" href="#onviewmodelpropertychangingobject-sender-propertychangingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelsavedasyncobject-sender-eventargs-e">OnViewModelSavedAsync(object sender, EventArgs e)<a class="headerlink" href="#onviewmodelsavedasyncobject-sender-eventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onviewmodelsavingasyncobject-sender-savingeventargs-e">OnViewModelSavingAsync(object sender, SavingEventArgs e)<a class="headerlink" href="#onviewmodelsavingasyncobject-sender-savingeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="registerviewmodeliviewmodel-viewmodel">RegisterViewModel(IViewModel viewModel)<a class="headerlink" href="#registerviewmodeliviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the view model to the <a href="#">AuditingManager</a>.</p>
-<pre><code>This helper will automatically unsubscribe from all events when the view model is closed.
-</code></pre>
-
+<p>Registers the view model to the <a href="#">AuditingManager</a>.This helper will automatically unsubscribe from all events when the view model is closed.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>viewModel</strong>
 The view model to register.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+The viewModel is<code>null</code>.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>This helper will call the Type) and IViewModel)
-    automatically.</p>
-<h3 id="subscribeeventsiviewmodel-viewmodel">SubscribeEvents(IViewModel viewModel)<a class="headerlink" href="#subscribeeventsiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Subscribes to all events of the view model.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
-<h3 id="unsubscribeeventsiviewmodel-viewmodel">UnsubscribeEvents(IViewModel viewModel)<a class="headerlink" href="#unsubscribeeventsiviewmodel-viewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unsubscribes from all events of the view model.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>viewModel</strong>
-The view model.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The viewModel is <code>null</code>.</p>
+<p>This helper will call the Type) and IViewModel) automatically.</p>
 
                     </div>
                 </div>

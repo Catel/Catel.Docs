@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ConverterHelper
@@ -20,7 +20,7 @@ Converter helper class.
 
 ### UnsetValue
 
-The generic ```UnSet``` value, compatible with all platforms.
+The generic`UnSet` value, compatible with all platforms.
 
 
 
@@ -28,17 +28,16 @@ The generic ```UnSet``` value, compatible with all platforms.
 
 ### ShouldInvert(object parameter)
 
-Checks whether the converted must be inverted. This checks the parameter input and checks whether
-    it is a boolean.
+Checks whether the converted must be inverted. This checks the parameter input and checks whether it is a boolean.
 
 #### Parameters
 
 **parameter**
-The parameter to check. Can be ```null```.
+The parameter to check. Can be`null`.
 
 #### Returns
 
-```true``` if the converter should be inverted; otherwise ```false```.
+`true` if the converter should be inverted; otherwise`false`.
 
 
 

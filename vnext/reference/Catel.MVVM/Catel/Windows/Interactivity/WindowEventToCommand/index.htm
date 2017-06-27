@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -209,9 +206,6 @@
 <li class="tocentry"><a href="#properties">Properties</a></li>
 <li class="tocentry"><a href="#methods">Methods</a></li>
 </ul>
-<li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/Interactivity/DragDropHelpers/">DragDropHelpers</a></span>
-</li>
 
 </ul>
 </li>
@@ -287,89 +281,24 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class WindowEventToCommand : CommandBehaviorBase&lt;FrameworkElement&gt;
 </pre><p><strong>Base types</strong>
 <a href="">CommandBehaviorBase</a></p>
-<p>Behavior class that catches an event from the root window element.</p>
-<pre><code>The event is forwarded to the DataContext of the [FrameworkElement](#) it is attached to.
-</code></pre>
-
+<p>Behavior class that catches an event from the root window element.The event is forwarded to the DataContext of the <a href="#">FrameworkElement</a> it is attached to.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="action">_action<a class="headerlink" href="#action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Will be executed instead of the command if set.</p>
-<h3 id="currentwindow">_currentWindow<a class="headerlink" href="#currentwindow" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Stores a reference to the window the event handler is registered on.</p>
-<pre><code>Will be used to deregister the event handler.
-</code></pre>
-
-<h3 id="weakeventlistener">_weakEventListener<a class="headerlink" href="#weakeventlistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="windoweventtocommand-1">WindowEventToCommand()<a class="headerlink" href="#windoweventtocommand-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">WindowEventToCommand</a> class.</p>
-<h3 id="windoweventtocommandaction-action">WindowEventToCommand(Action<Window> action)<a class="headerlink" href="#windoweventtocommandaction-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes a new instance of the <a href="#">WindowEventToCommand</a> class.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>action</strong>
-The action to execute on double click. This is very useful when the behavior is added
-    via code and an action must be invoked instead of a command.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="eventname">EventName<a class="headerlink" href="#eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets or sets the name of the event to subscribe to.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="executecommand">ExecuteCommand()<a class="headerlink" href="#executecommand" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the Action or executes the Command.</p>
-<pre><code>The current window instance is used as parameter.
-</code></pre>
-
-<h3 id="executecommandobject-parameter">ExecuteCommand(object parameter)<a class="headerlink" href="#executecommandobject-parameter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Invokes the Action or executes the Command.
-    The given window instance is used as parameter.</p>
-<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()<a class="headerlink" href="#onassociatedobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()<a class="headerlink" href="#onassociatedobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the associated object is unloaded.
-    Deregisters the event subscription.</p>
 <h3 id="oneventoccurred">OnEventOccurred()<a class="headerlink" href="#oneventoccurred" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Called when the event occurs.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>This method is public to allow the WeakEventListener to subscribe.</p>
-<h3 id="registereventhandlerwindow-window">RegisterEventHandler(Window window)<a class="headerlink" href="#registereventhandlerwindow-window" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the handler to the event of the given window.
-    ```
-protected override void RegisterEventHandler(Window window)
-{
-    window.Closing += WindowOnClosing;
-}</p>
-<p>private void WindowOnClosing(object sender, CancelEventArgs cancelEventArgs)
-{
-    ExecuteCommand(sender);
-}</p>
-<p>```</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>window</strong>
-The window instance the eventhandler has to be registered to.</p>
-<h3 id="subscribetowindowevent">SubscribeToWindowEvent()<a class="headerlink" href="#subscribetowindowevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Registers the handler to the event of the current window.</p>
-<h3 id="nohighlight">UnregisterEventHandler(Window window)<a class="headerlink" href="#nohighlight" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Unregisters the handler from the event of the given window.
-    ```
-protected override void RegisterEventHandler(Window window)
-{
-    window.Closed += WindowOnClosed;
-}</p>
-<p>private void WindowOnClosed(object sender, EventArgs eventArgs)
-{
-    ExecuteCommand(sender);
-}</p>
-<p>```</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>window</strong>
-The window instance the eventhandler has to be unregistered from.</p>
-<h3 id="unsubscribefromwindowevent">UnsubscribeFromWindowEvent()<a class="headerlink" href="#unsubscribefromwindowevent" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Removes the handler registration from the previous window.</p>
 
                     </div>
                 </div>

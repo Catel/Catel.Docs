@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class PropertyDataManager
@@ -18,35 +18,7 @@ Property data manager.
 
 ## Fields
 
-### _propertyData
-
-Dictionary containing all the properties per type.
-
-
-
-### _propertyDataLock
-
-Lock object for the _propertyData field.
-
-
-
-### _xmlAttributeMappings
-
-### _xmlElementMappings
-
-### Log
-
-The log.
-
-
-
 ## Constructors
-
-### PropertyDataManager()
-
-Initializes static members of the [PropertyDataManager](#) class.
-
-
 
 ### PropertyDataManager()
 
@@ -80,7 +52,7 @@ The [CatelTypeInfo](#) representing the specified type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 
@@ -103,10 +75,10 @@ The [PropertyData](#) of the requested property.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:Catel.Data.PropertyNotRegisteredException**
 Thrown when the property is not registered.
@@ -127,15 +99,15 @@ Name of the property.
 
 #### Returns
 
-```true``` if the property name is mapped to an XML attribute; otherwise, ```false```.
+`true` if the property name is mapped to an XML attribute; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -153,15 +125,15 @@ Name of the property.
 
 #### Returns
 
-```true``` if the property name is mapped to an XML element; otherwise, ```false```.
+`true` if the property name is mapped to an XML element; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The propertyName is ```null``` or whitespace.
+The propertyName is`null` or whitespace.
 
 
 
@@ -184,10 +156,10 @@ True if the property is registered, otherwise false.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 
@@ -205,15 +177,15 @@ Name of the XML.
 
 #### Returns
 
-```true``` if the XML attribute is mapped to a property name; otherwise, ```false```.
+`true` if the XML attribute is mapped to a property name; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The xmlName is ```null``` or whitespace.
+The xmlName is`null` or whitespace.
 
 
 
@@ -231,15 +203,15 @@ Name of the XML.
 
 #### Returns
 
-```true``` if the XML element is mapped to a property name; otherwise, ```false```.
+`true` if the XML element is mapped to a property name; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The xmlName is ```null``` or whitespace.
+The xmlName is`null` or whitespace.
 
 
 
@@ -298,10 +270,10 @@ Name of the property that represents the xml value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The xmlName is ```null``` or whitespace.
+The xmlName is`null` or whitespace.
 
 
 
@@ -324,21 +296,16 @@ Name of the property that represents the xml value.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The xmlName is ```null``` or whitespace.
+The xmlName is`null` or whitespace.
 
 
 
 ### RegisterProperties(Type type)
 
-Registers all the properties for the specified type.
-    
-
-
-    This method can only be called once per type. The [PropertyDataManager](#) caches
-    whether it has already registered the properties once.
+Registers all the properties for the specified type.This method can only be called once per type. The [PropertyDataManager](#) caches whether it has already registered the properties once.
 
 #### Parameters
 
@@ -352,7 +319,7 @@ The property data type info.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.InvalidOperationException**
 The properties are not declared correctly.
@@ -377,10 +344,10 @@ The property data.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:Catel.Data.PropertyAlreadyRegisteredException**
 A property with the same name is already registered.
@@ -402,10 +369,10 @@ The name of the property.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Serialization.Json
 Namespace|Catel.Runtime.Serialization.Json
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class JsonSerializationContextInfo : ISerializationContextInfo
@@ -41,7 +41,7 @@ The json writer.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The jsonSerializer is ```null```.
+The jsonSerializer is`null`.
 
 
 

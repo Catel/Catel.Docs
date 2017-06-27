@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -371,47 +367,36 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public static class AssemblyHelper
 </pre><p>Assembly helper class.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="assemblymappings">_assemblyMappings<a class="headerlink" href="#assemblymappings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="lockobject">_lockObject<a class="headerlink" href="#lockobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="registeredassemblies">_registeredAssemblies<a class="headerlink" href="#registeredassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="getalltypessafelyassembly-assembly-bool-logloaderexceptions">GetAllTypesSafely(Assembly assembly, bool logLoaderExceptions)<a class="headerlink" href="#getalltypessafelyassembly-assembly-bool-logloaderexceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets all types from the assembly safely. Sometimes, the <a href="#">ReflectionTypeLoadException</a> is thrown,
-    and no types are returned. In that case the user must manually get the successfully loaded types from the
-    Types.</p>
-<pre><code>This method automatically loads the types. If the [ReflectionTypeLoadException](#) occurs, this method
-will return the types that were loaded successfully.
-</code></pre>
-
+<p>Gets all types from the assembly safely. Sometimes, the <a href="#">ReflectionTypeLoadException</a> is thrown, and no types are returned. In that case the user must manually get the successfully loaded types from the Types.This method automatically loads the types. If the <a href="#">ReflectionTypeLoadException</a> occurs, this method will return the types that were loaded successfully.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong>
 The assembly.</p>
 <p><strong>logLoaderExceptions</strong>
-If set to <code>true</code>, the loader exceptions will be logged.</p>
+If set to<code>true</code> , the loader exceptions will be logged.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The array of successfully loaded types.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The assembly is <code>null</code>.</p>
+The assembly is<code>null</code>.</p>
 <h3 id="getassemblynamewithversionstring-assemblynamewithoutversion">GetAssemblyNameWithVersion(string assemblyNameWithoutVersion)<a class="headerlink" href="#getassemblynamewithversionstring-assemblynamewithoutversion" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the assembly name with version which is currently available in the <a href="#">AppDomain</a>.</p>
 <h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assemblyNameWithoutVersion</strong>
 The assembly name without version.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The assembly name with version or <code>null</code> if the assembly is not found in the <a href="#">AppDomain</a>.</p>
+<p>The assembly name with version or<code>null</code> if the assembly is not found in the <a href="#">AppDomain</a>.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
-The assemblyNameWithoutVersion is <code>null</code> or whitespace.</p>
+The assemblyNameWithoutVersion is<code>null</code> or whitespace.</p>
 <h3 id="getentryassembly">GetEntryAssembly()<a class="headerlink" href="#getentryassembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the entry assembly.</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -424,26 +409,23 @@ Name of the file.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>DateTime.</p>
 <h3 id="getloadedassemblies">GetLoadedAssemblies()<a class="headerlink" href="#getloadedassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    <code>AppDomain.GetAssemblies()</code>.</p>
+<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses<code>AppDomain.GetAssemblies()</code>.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><a href="#">List</a> of all loaded assemblies.</p>
 <h3 id="getloadedassembliesappdomain-appdomain">GetLoadedAssemblies(AppDomain appDomain)<a class="headerlink" href="#getloadedassembliesappdomain-appdomain" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    <code>AppDomain.GetAssemblies()</code>.</p>
+<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses<code>AppDomain.GetAssemblies()</code>.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
 The app domain to search in.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><a href="#">List</a> of all loaded assemblies.</p>
 <h3 id="getloadedassembliesappdomain-appdomain-bool-ignoredynamicassemblies">GetLoadedAssemblies(AppDomain appDomain, bool ignoreDynamicAssemblies)<a class="headerlink" href="#getloadedassembliesappdomain-appdomain-bool-ignoredynamicassemblies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses
-    <code>AppDomain.GetAssemblies()</code>.</p>
+<p>Gets the loaded assemblies by using the right method. For Windows applications, it uses<code>AppDomain.GetAssemblies()</code>.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>appDomain</strong>
 The app domain to search in.</p>
 <p><strong>ignoreDynamicAssemblies</strong>
-if set to <code>true</code>, dynamic assemblies are being ignored.</p>
+if set to<code>true</code> , dynamic assemblies are being ignored.</p>
 <h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><a href="#">List</a> of all loaded assemblies.</p>
 <h3 id="isdynamicassemblyassembly-assembly">IsDynamicAssembly(Assembly assembly)<a class="headerlink" href="#isdynamicassemblyassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -451,9 +433,7 @@ if set to <code>true</code>, dynamic assemblies are being ignored.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong></p>
 <h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if the specified assembly is a dynamic assembly; otherwise, <code>false</code>.</p>
-<h3 id="registerassemblywithversioninfoassembly-assembly">RegisterAssemblyWithVersionInfo(Assembly assembly)<a class="headerlink" href="#registerassemblywithversioninfoassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="true">ShouldIgnoreAssembly(Assembly assembly, bool ignoreDynamicAssemblies)<a class="headerlink" href="#true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>true</code> if the specified assembly is a dynamic assembly; otherwise,<code>false</code>.</p>
 
                     </div>
                 </div>

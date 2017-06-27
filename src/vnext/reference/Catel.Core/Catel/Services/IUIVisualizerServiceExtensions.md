@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public static class IUIVisualizerServiceExtensions
@@ -17,8 +17,6 @@ Extension methods for the [IUIVisualizerService](#).
 
 
 ## Fields
-
-### Log
 
 ## Methods
 
@@ -33,11 +31,9 @@ The window.
 
 #### Returns
 
-```true``` if the window is activated with success; otherwise ```false``` or ```null```.
+`true` if the window is activated with success; otherwise`false` or`null`.
 
 
-
-### GetViewModelFactory(IUIVisualizerService uiVisualizerService)
 
 ### IsRegistered(IUIVisualizerService uiVisualizerService, Type viewModelType)
 
@@ -53,12 +49,12 @@ Type of the view model.
 
 #### Returns
 
-```true``` if the specified view model type is registered; otherwise, ```false```.
+`true` if the specified view model type is registered; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelType is ```null```.
+The viewModelType is`null`.
 
 
 
@@ -78,14 +74,13 @@ The UI visualizer service.
 
 #### Returns
 
-```true``` if the specified view model type is registered; otherwise, ```false```.
+`true` if the specified view model type is registered; otherwise,`false`.
 
 
 
 ### Register(IUIVisualizerService uiVisualizerService, Type viewModelType, Type windowType, bool throwExceptionIfExists)
 
-Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.
+Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.
 
 #### Parameters
 
@@ -99,7 +94,7 @@ Type of the view model.
 Type of the window.
 
 **throwExceptionIfExists**
-if set to ```true```, this method will throw an exception when already registered.
+if set to`true` , this method will throw an exception when already registered.
 
 #### Exceptions
 
@@ -110,8 +105,7 @@ viewModelType
 
 ### Register<TView, TViewModel>(IUIVisualizerService uiVisualizerService, bool throwExceptionIfExists)
 
-Registers the specified view model and the window type. This way, Catel knowns what
-    window to show when a specific view model window is requested.
+Registers the specified view model and the window type. This way, Catel knowns what window to show when a specific view model window is requested.
 
 #### Type Parameters
 
@@ -127,7 +121,7 @@ The type of the view.
 The UI visualizer service.
 
 **throwExceptionIfExists**
-if set to ```true```, this method will throw an exception when already registered.
+if set to`true` , this method will throw an exception when already registered.
 
 #### Exceptions
 
@@ -151,19 +145,45 @@ The type of the view model.
 The UI visualizer service.
 
 **model**
-The model to be injected into the view model, can be ```null```.
+The model to be injected into the view model, can be`null`.
 
 **completedProc**
 The completed proc.
 
 #### Returns
 
-```true``` if shown successfully, ```false``` otherwise.
+`true` if shown successfully,`false` otherwise.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uiVisualizerService is ```null```.
+The uiVisualizerService is`null`.
+
+
+
+### ShowAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)
+
+Shows the window in non-modal state and creates the view model automatically using the specified model.
+
+#### Type Parameters
+
+**TViewModel**
+The view model type.
+
+#### Parameters
+
+**uiVisualizerService**
+The uiVisualizerService
+
+**dataContext**
+The data context.
+
+**scope**
+The scope.
+
+#### Returns
+
+A task.
 
 
 
@@ -182,7 +202,7 @@ The type of the view model.
 The UI visualizer service.
 
 **model**
-The model to be injected into the view model, can be ```null```.
+The model to be injected into the view model, can be`null`.
 
 **completedProc**
 The completed proc.
@@ -194,7 +214,33 @@ The dialog result.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uiVisualizerService is ```null```.
+The uiVisualizerService is`null`.
+
+
+
+### ShowDialogAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)
+
+Shows the window in modal state and creates the view model automatically using the specified model.
+
+#### Type Parameters
+
+**TViewModel**
+The view model type.
+
+#### Parameters
+
+**uiVisualizerService**
+The uiVisualizerService
+
+**dataContext**
+The data context.
+
+**scope**
+The scope.
+
+#### Returns
+
+A task.
 
 
 
@@ -213,19 +259,45 @@ The type of the view model.
 The UI visualizer service.
 
 **model**
-The model to be injected into the view model, can be ```null```.
+The model to be injected into the view model, can be`null`.
 
 **completedProc**
 The completed proc. Not applicable if window already exists.
 
 #### Returns
 
-```true``` if shown or activated successfully, ```false``` otherwise.
+`true` if shown or activated successfully,`false` otherwise.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uiVisualizerService is ```null```.
+The uiVisualizerService is`null`.
+
+
+
+### ShowOrActivateAsync<TViewModel>(IUIVisualizerService uiVisualizerService, object dataContext, object scope)
+
+Creates a window in non-modal state. If a window with the specified viewModelType exists, the window is activated instead of being created.
+
+#### Type Parameters
+
+**TViewModel**
+The view model type.
+
+#### Parameters
+
+**uiVisualizerService**
+The uiVisualizerService
+
+**dataContext**
+The data context.
+
+**scope**
+The scope.
+
+#### Returns
+
+A task.
 
 
 
@@ -243,7 +315,7 @@ Type of the view model to unregister.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 
@@ -263,7 +335,7 @@ The UI visualizer service.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 

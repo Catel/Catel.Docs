@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Navigation
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class NavigationEventArgsExtensions
@@ -34,7 +34,7 @@ The uri.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uri is ```null``` or whitespace.
+The uri is`null` or whitespace.
 
 
 
@@ -54,7 +54,7 @@ The uri.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
@@ -74,7 +74,7 @@ The uri.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
@@ -92,15 +92,15 @@ Type of the view.
 
 #### Returns
 
-```true``` if the navigation is for the specified view model; otherwise, ```false```.
+`true` if the navigation is for the specified view model; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The uriString is ```null``` or whitespace.
+The uriString is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The viewType is ```null```.
+The viewType is`null`.
 
 
 
@@ -118,12 +118,12 @@ Type of the view.
 
 #### Returns
 
-```true``` if the navigation is for the specified view model; otherwise, ```false```.
+`true` if the navigation is for the specified view model; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
@@ -141,12 +141,12 @@ Type of the view.
 
 #### Returns
 
-```true``` if the navigation is for the specified view model; otherwise, ```false```.
+`true` if the navigation is for the specified view model; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The e is ```null```.
+The e is`null`.
 
 
 
@@ -161,12 +161,12 @@ The URI string.
 
 #### Returns
 
-```true``` if the uri is a navigation to an external source; otherwise, ```false```.
+`true` if the uri is a navigation to an external source; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uriString is ```null``` or whitespace.
+The uriString is`null` or whitespace.
 
 
 
@@ -181,12 +181,12 @@ The URI.
 
 #### Returns
 
-```true``` if the uri is a navigation to an external source; otherwise, ```false```.
+`true` if the uri is a navigation to an external source; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 

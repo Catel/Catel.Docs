@@ -6,30 +6,17 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class UniqueIdentifierHelper
 ```
 
-Helper class that allows to generic unique identifiers for objects.
-    
-
-
-    This class internally keeps a counter per type and will increase the counter every time
-    a new unique identifier is requested.
+Helper class that allows to generic unique identifiers for objects.This class internally keeps a counter per type and will increase the counter every time a new unique identifier is requested.
 
 
 
 ## Fields
-
-### _lockObject
-
-### _uniqueIdentifiers
-
-The dictionary containing the unique identifiers per type.
-
-
 
 ## Methods
 
@@ -49,7 +36,7 @@ A new unique identifier for the type.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The type is ```null```.
+The type is`null`.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositeCommand : ICompositeCommand, Command
@@ -26,20 +26,6 @@ Composite command which allows several commands inside a single command being ex
 
 ## Fields
 
-### _actions
-
-### _actionsWithParameter
-
-### _commandInfo
-
-### _lock
-
-### Log
-
-The log.
-
-
-
 ## Constructors
 
 ### CompositeCommand()
@@ -52,42 +38,23 @@ Initializes a new instance of the [Command](#) class.
 
 ### AllowPartialExecution
 
-Gets or sets a value indicating whether partial execution of commands is allowed. If this value is ```true```, this composite
-    command will always be executable and only invoke the internal commands that are executable.
-    
-
-
-    The default value is ```false```.
+Gets or sets a value indicating whether partial execution of commands is allowed. If this value is`true` , this composite command will always be executable and only invoke the internal commands that are executable.The default value is`false`.
 
 
 
 ### AtLeastOneMustBeExecutable
 
-Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be 
-    executed without any commands.
-    
-
-
-    The default value is ```true```.
+Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be executed without any commands.The default value is`true`.
 
 
 
 ### CheckCanExecuteOfAllCommandsToDetermineCanExecuteForCompositeCommand
 
-Gets or sets whether this command should check the can execute of all commands to determine can execute for composite command.
-    
-
-
-    The default value is ```true``` which means the composite command can only be executed if all commands can be executed. If
-    there is a requirement to allow partial invocation, set this property to false.
+Gets or sets whether this command should check the can execute of all commands to determine can execute for composite command.The default value is`true` which means the composite command can only be executed if all commands can be executed. If there is a requirement to allow partial invocation, set this property to false.
 
 
 
 ## Methods
-
-### CanExecuteCompositeCommand(object parameter)
-
-### ExecuteCompositeCommand(object parameter)
 
 ### GetActions()
 
@@ -119,8 +86,6 @@ IEnumerable.
 
 
 
-### OnCommandCanExecuteChanged(object sender, EventArgs e)
-
 ### RegisterAction(Action action)
 
 Registers the specified action.
@@ -133,7 +98,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -149,7 +114,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -168,7 +133,7 @@ The view model. If specified, the command will automatically be unregistered whe
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 #### Remarks
 
@@ -188,7 +153,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -204,7 +169,7 @@ The action.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The action is ```null```.
+The action is`null`.
 
 
 
@@ -220,7 +185,7 @@ The command.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 
 

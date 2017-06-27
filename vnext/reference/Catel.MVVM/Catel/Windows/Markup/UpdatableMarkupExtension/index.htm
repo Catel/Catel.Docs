@@ -79,9 +79,6 @@
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/MVVM/">MVVM</a></span>
 </li>
 <li class="tocentry">
-<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Properties/">Properties</a></span>
-</li>
-<li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/Catel.MVVM/Catel/Windows/">Windows</a></span></li>
 <li class="tocentry"><a href="../../../../../../reference/Catel.MVVM/Catel/Windows/ApplicationExtensions/">ApplicationExtensions</a>
@@ -217,7 +214,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -228,49 +225,15 @@
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>This class is found at http://www.thomaslevesque.com/2009/07/28/wpf-a-markup-extension-that-can-update-its-target/.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="hasbeenloadedonce">_hasBeenLoadedOnce<a class="headerlink" href="#hasbeenloadedonce" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="isframeworkelementloaded">_isFrameworkElementLoaded<a class="headerlink" href="#isframeworkelementloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="serviceprovider">_serviceProvider<a class="headerlink" href="#serviceprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="targetobject">_targetObject<a class="headerlink" href="#targetobject" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="targetproperty">_targetProperty<a class="headerlink" href="#targetproperty" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="targetobject-1">TargetObject<a class="headerlink" href="#targetobject-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the target object.</p>
-<h3 id="targetproperty-1">TargetProperty<a class="headerlink" href="#targetproperty-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the target property.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="getvalue">GetValue()<a class="headerlink" href="#getvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the value by combining the rights methods (so we don't have to repeat ourselves).</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>System.Object.</p>
-<h3 id="ontargetobjectloaded">OnTargetObjectLoaded()<a class="headerlink" href="#ontargetobjectloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the target object is loaded.</p>
-<pre><code>Note that this method will only be called if the target object is a [FrameworkElement](#).
-</code></pre>
-
-<h3 id="ontargetobjectloadedinternalobject-sender-routedeventargs-e">OnTargetObjectLoadedInternal(object sender, RoutedEventArgs e)<a class="headerlink" href="#ontargetobjectloadedinternalobject-sender-routedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="ontargetobjectunloaded">OnTargetObjectUnloaded()<a class="headerlink" href="#ontargetobjectunloaded" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the target object is unloaded.</p>
-<pre><code>Note that this method will only be called if the target object is a [FrameworkElement](#).
-</code></pre>
-
-<h3 id="ontargetobjectunloadedinternalobject-sender-routedeventargs-e">OnTargetObjectUnloadedInternal(object sender, RoutedEventArgs e)<a class="headerlink" href="#ontargetobjectunloadedinternalobject-sender-routedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="providedynamicvalueiserviceprovider-serviceprovider">ProvideDynamicValue(IServiceProvider serviceProvider)<a class="headerlink" href="#providedynamicvalueiserviceprovider-serviceprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Provides the dynamic value.</p>
-<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>serviceProvider</strong>
-The service provider.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>System.Object.</p>
 <h3 id="providevalueiserviceprovider-serviceprovider">ProvideValue(IServiceProvider serviceProvider)<a class="headerlink" href="#providevalueiserviceprovider-serviceprovider" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>When implemented in a derived class, returns an object that is provided as the value of the target property for this markup extension.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>serviceProvider</strong>
 A service provider helper that can provide services for the markup extension.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The object value to set on the property where the extension is applied.</p>
-<h3 id="updatevalue">UpdateValue()<a class="headerlink" href="#updatevalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates the value.</p>
 
                     </div>
                 </div>

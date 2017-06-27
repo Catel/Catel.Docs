@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class Log : ILog
@@ -22,10 +22,6 @@ Default logging class that writes to the console or output window.
 
 
 ## Fields
-
-### _indentLevel
-
-### _indentSize
 
 ## Constructors
 
@@ -76,7 +72,7 @@ The type for which this logger is intended.
 #### Exceptions
 
 **T:System.ArgumentException**
-If targetType is ```null```.
+If targetType is`null`.
 
 
 
@@ -84,26 +80,18 @@ If targetType is ```null```.
 
 ### IndentLevel
 
-Gets or sets the indent level.
-    
-
-
-    The default value is ```0```.
+Gets or sets the indent level.The default value is`0`.
 
 #### Exceptions
 
 **T:System.ArgumentOutOfRangeException**
-The ```value``` is negative.
+The`value` is negative.
 
 
 
 ### IndentSize
 
-Gets or sets the size of the indent.
-    
-
-
-    The default value is ```2```.
+Gets or sets the size of the indent.The default value is`2`.
 
 #### Exceptions
 
@@ -114,11 +102,7 @@ The value is negative.
 
 ### IsCatelLogging
 
-Gets a value indicating whether this logger is a Catel logger.
-    
-
-
-    This value can be useful to exclude Catel logging for external listeners.
+Gets a value indicating whether this logger is a Catel logger.This value can be useful to exclude Catel logging for external listeners.
 
 
 
@@ -152,33 +136,13 @@ Occurs when a message is written to the log.
 
 ### Indent()
 
-Increases the IndentLevel by ```1```.
+Increases the IndentLevel by`1`.
 
 
 
 ### Unindent()
 
-Decreases the IndentLevel by ```1```.
-
-
-
-### WriteMessage(string message, object extraData, LogData logData, LogEvent logEvent)
-
-Raises the LogMessage event.
-
-#### Parameters
-
-**message**
-The message.
-
-**extraData**
-The extra data.
-
-**logData**
-The log data.
-
-**logEvent**
-The log event.
+Decreases the IndentLevel by`1`.
 
 
 

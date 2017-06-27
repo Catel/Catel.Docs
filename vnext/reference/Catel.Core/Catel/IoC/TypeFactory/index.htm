@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -421,40 +417,16 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
 <pre class="nocode">public class TypeFactory : ITypeFactory
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.Core\Catel\IoC\ITypeFactory.htm">ITypeFactory</a></p>
-<p>Type factory which will cache constructors to ensure the best performance available.</p>
-<pre><code>This class will automatically watch the TypeRegistered event and clear
-the cache automatically when the event occurs.
-</code></pre>
-
+<p>Type factory which will cache constructors to ensure the best performance available.This class will automatically watch the TypeRegistered event and clear the cache automatically when the event occurs.</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="constructorcache">_constructorCache<a class="headerlink" href="#constructorcache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all last used constructors.</p>
-<h3 id="constructorcachelock">_constructorCacheLock<a class="headerlink" href="#constructorcachelock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Provides thread safe access to constructors cache.</p>
-<h3 id="currenttyperequestpath">_currentTypeRequestPath<a class="headerlink" href="#currenttyperequestpath" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The current type request path.</p>
-<h3 id="servicelocator">_serviceLocator<a class="headerlink" href="#servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The service locator.</p>
-<h3 id="typeconstructorsmetadata">_typeConstructorsMetadata<a class="headerlink" href="#typeconstructorsmetadata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Cache containing all the metadata of a specific type so this doesn't have to be queried multiple times.</p>
-<h3 id="typeconstructorsmetadatalock">_typeConstructorsMetadataLock<a class="headerlink" href="#typeconstructorsmetadatalock" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Provides thread safe access to type constructors.</p>
-<h3 id="apicop">ApiCop<a class="headerlink" href="#apicop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The API cop.</p>
-<h3 id="log">Log<a class="headerlink" href="#log" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>The log.</p>
-<h3 id="typerequestpathname">TypeRequestPathName<a class="headerlink" href="#typerequestpathname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>TypeFactory</p>
-<p>The type request path name.</p>
 <h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="typefactory-1">TypeFactory()<a class="headerlink" href="#typefactory-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <h3 id="typefactoryiservicelocator-servicelocator">TypeFactory(IServiceLocator serviceLocator)<a class="headerlink" href="#typefactoryiservicelocator-servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes a new instance of the <a href="#">TypeFactory</a> class.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -462,198 +434,89 @@ the cache automatically when the event occurs.
 The service locator.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The serviceLocator is <code>null</code>.</p>
+The serviceLocator is<code>null</code>.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="default">Default<a class="headerlink" href="#default" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the default instance.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Do not move initialization to a field, it will cause a deadlock with the initialization of the default ServiceLocator.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<h3 id="canconstructorbeusedconstructorinfo-constructor-object-tag-bool-autocompletedependencies-object-parameters">CanConstructorBeUsed(ConstructorInfo constructor, object tag, bool autoCompleteDependencies, object[] parameters)<a class="headerlink" href="#canconstructorbeusedconstructorinfo-constructor-object-tag-bool-autocompletedependencies-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified constructor can be used for dependency injection.</p>
-<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>constructor</strong>
-The constructor.</p>
-<p><strong>tag</strong>
-The preferred tag when resolving dependencies.</p>
-<p><strong>autoCompleteDependencies</strong>
-if set to <code>true</code>, additional dependencies can be completed from the <a href="#">IServiceLocator</a>.</p>
-<p><strong>parameters</strong>
-The parameters.</p>
-<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if this instance [can constructor be used] the specified constructor; otherwise, <code>false</code>.</p>
 <h3 id="clearcache">ClearCache()<a class="headerlink" href="#clearcache" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Clears the cache of all constructors.</p>
-<pre><code>This call is normally not necessary since the type factory should keep an eye on the 
-TypeRegistered event to invalidate the cache.
-</code></pre>
-
-<h3 id="countspecialobjectsconstructorinfo-constructor">CountSpecialObjects(ConstructorInfo constructor)<a class="headerlink" href="#countspecialobjectsconstructorinfo-constructor" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the special objects count for the specific constructor.</p>
-<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>constructor</strong>
-The constructor.</p>
-<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The number of special objects.</p>
+<p>Clears the cache of all constructors.This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.</p>
 <h3 id="createinstancetype-typetoconstruct">CreateInstance(Type typeToConstruct)<a class="headerlink" href="#createinstancetype-typetoconstruct" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates an instance of the specified type using dependency injection.</p>
-<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeToConstruct</strong>
 The type to construct.</p>
-<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The instantiated type using dependency injection.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
+The typeToConstruct is<code>null</code>.</p>
 <h3 id="createinstancewithparameterstype-typetoconstruct-object-parameters">CreateInstanceWithParameters(Type typeToConstruct, object[] parameters)<a class="headerlink" href="#createinstancewithparameterstype-typetoconstruct-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates an instance of the specified type using the specified parameters as injection values.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>typeToConstruct</strong>
+The type to construct.</p>
+<p><strong>parameters</strong>
+The parameters to inject.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The instantiated type using dependency injection.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The typeToConstruct is<code>null</code>.</p>
+<h3 id="createinstancewithparametersandautocompletiontype-typetoconstruct-object-parameters">CreateInstanceWithParametersAndAutoCompletion(Type typeToConstruct, object[] parameters)<a class="headerlink" href="#createinstancewithparametersandautocompletiontype-typetoconstruct-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the <a href="#">IServiceLocator</a>.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>typeToConstruct</strong>
+The type to construct.</p>
+<p><strong>parameters</strong>
+The parameters to inject.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The instantiated type using dependency injection.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The typeToConstruct is<code>null</code>.</p>
+<h3 id="createinstancewithparametersandautocompletionwithtagtype-typetoconstruct-object-tag-object-parameters">CreateInstanceWithParametersAndAutoCompletionWithTag(Type typeToConstruct, object tag, object[] parameters)<a class="headerlink" href="#createinstancewithparametersandautocompletionwithtagtype-typetoconstruct-object-tag-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the <a href="#">IServiceLocator</a>.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeToConstruct</strong>
 The type to construct.</p>
+<p><strong>tag</strong>
+The preferred tag when resolving dependencies.</p>
 <p><strong>parameters</strong>
 The parameters to inject.</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The instantiated type using dependency injection.</p>
-<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="createinstancewithparametersandautocompletiontype-typetoconstruct-object-parameters">CreateInstanceWithParametersAndAutoCompletion(Type typeToConstruct, object[] parameters)<a class="headerlink" href="#createinstancewithparametersandautocompletiontype-typetoconstruct-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+The typeToConstruct is<code>null</code>.</p>
+<h3 id="createinstancewithparameterswithtagtype-typetoconstruct-object-tag-object-parameters">CreateInstanceWithParametersWithTag(Type typeToConstruct, object tag, object[] parameters)<a class="headerlink" href="#createinstancewithparameterswithtagtype-typetoconstruct-object-tag-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Creates an instance of the specified type using the specified parameters as injection values.</p>
-<pre><code>This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
-</code></pre>
-
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeToConstruct</strong>
 The type to construct.</p>
+<p><strong>tag</strong>
+The preferred tag when resolving dependencies.</p>
 <p><strong>parameters</strong>
 The parameters to inject.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The instantiated type using dependency injection.</p>
-<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="createinstancewithparametersandautocompletionwithtagtype-typetoconstruct-object-tag-object-parameters">CreateInstanceWithParametersAndAutoCompletionWithTag(Type typeToConstruct, object tag, object[] parameters)<a class="headerlink" href="#createinstancewithparametersandautocompletionwithtagtype-typetoconstruct-object-tag-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates an instance of the specified type using the specified parameters as injection values.</p>
-<pre><code>This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
-</code></pre>
-
+The typeToConstruct is<code>null</code>.</p>
+<h3 id="createinstancewithtagtype-typetoconstruct-object-tag">CreateInstanceWithTag(Type typeToConstruct, object tag)<a class="headerlink" href="#createinstancewithtagtype-typetoconstruct-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates an instance of the specified type using dependency injection.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>typeToConstruct</strong>
 The type to construct.</p>
 <p><strong>tag</strong>
 The preferred tag when resolving dependencies.</p>
-<p><strong>parameters</strong>
-The parameters to inject.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The instantiated type using dependency injection.</p>
-<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="createinstancewithparameterswithtagtype-typetoconstruct-object-tag-object-parameters">CreateInstanceWithParametersWithTag(Type typeToConstruct, object tag, object[] parameters)<a class="headerlink" href="#createinstancewithparameterswithtagtype-typetoconstruct-object-tag-object-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates an instance of the specified type using the specified parameters as injection values.</p>
-<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeToConstruct</strong>
-The type to construct.</p>
-<p><strong>tag</strong>
-The preferred tag when resolving dependencies.</p>
-<p><strong>parameters</strong>
-The parameters to inject.</p>
-<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The instantiated type using dependency injection.</p>
-<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="createinstancewithspecifiedparameterstype-typetoconstruct-object-tag-object-parameters-bool-autocompletedependencies">CreateInstanceWithSpecifiedParameters(Type typeToConstruct, object tag, object[] parameters, bool autoCompleteDependencies)<a class="headerlink" href="#createinstancewithspecifiedparameterstype-typetoconstruct-object-tag-object-parameters-bool-autocompletedependencies" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates an instance of the specified type using the specified parameters as injection values.</p>
-<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeToConstruct</strong>
-The type to construct.</p>
-<p><strong>tag</strong>
-The preferred tag when resolving dependencies.</p>
-<p><strong>parameters</strong>
-The parameters to inject.</p>
-<p><strong>autoCompleteDependencies</strong>
-if set to <code>true</code>, the additional dependencies will be auto completed.</p>
-<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The instantiated type using dependency injection.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="createinstancewithtagtype-typetoconstruct-object-tag">CreateInstanceWithTag(Type typeToConstruct, object tag)<a class="headerlink" href="#createinstancewithtagtype-typetoconstruct-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates an instance of the specified type using dependency injection.</p>
-<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeToConstruct</strong>
-The type to construct.</p>
-<p><strong>tag</strong>
-The preferred tag when resolving dependencies.</p>
-<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The instantiated type using dependency injection.</p>
-<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>T:System.ArgumentNullException</strong>
-The typeToConstruct is <code>null</code>.</p>
-<h3 id="getconstructorconstructorcachekey-cachekey">GetConstructor(ConstructorCacheKey cacheKey)<a class="headerlink" href="#getconstructorconstructorcachekey-cachekey" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="gettypemetadatatype-type">GetTypeMetaData(Type type)<a class="headerlink" href="#gettypemetadatatype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the constructors metadata.</p>
-<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>type</strong>
-The type.</p>
-<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The <a href="#">TypeMetaData</a>.</p>
-<h3 id="initializeafterconstructionobject-obj-typemetadata-typemetadata">InitializeAfterConstruction(object obj, TypeMetaData typeMetaData)<a class="headerlink" href="#initializeafterconstructionobject-obj-typemetadata-typemetadata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the created object after its construction.</p>
-<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>obj</strong>
-The object to initialize.</p>
-<p><strong>typeMetaData</strong>
-Metadata about object to initialize</p>
-<h3 id="isvalidparametervaluetype-parametertype-object-parametervalue">IsValidParameterValue(Type parameterType, object parameterValue)<a class="headerlink" href="#isvalidparametervaluetype-parametertype-object-parametervalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Determines whether the specified parameter value can be used for the specified parameter type.</p>
-<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>parameterType</strong>
-Type of the parameter.</p>
-<p><strong>parameterValue</strong>
-The parameter value.</p>
-<h3 id="onassemblyloadedobject-sender-assemblyloadedeventargs-e">OnAssemblyLoaded(object sender, AssemblyLoadedEventArgs e)<a class="headerlink" href="#onassemblyloadedobject-sender-assemblyloadedeventargs-e" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the AssemblyLoaded event occurs.</p>
-<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>e</strong>
-The <a href="#">AssemblyLoadedEventArgs</a> instance containing the event data.</p>
-<h3 id="onservicelocatortyperegisteredobject-sender-typeregisteredeventargs-eventargs">OnServiceLocatorTypeRegistered(object sender, TypeRegisteredEventArgs eventArgs)<a class="headerlink" href="#onservicelocatortyperegisteredobject-sender-typeregisteredeventargs-eventargs" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Called when the TypeRegistered event occurs.</p>
-<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>sender</strong>
-The sender.</p>
-<p><strong>eventArgs</strong>
-The <a href="#">TypeRegisteredEventArgs</a> instance containing the event data.</p>
-<h3 id="setconstructorconstructorcachekey-cachekey-constructorcachevalue-previouscachevalue-constructorinfo-constructorinfo">SetConstructor(ConstructorCacheKey cacheKey, ConstructorCacheValue previousCacheValue, ConstructorInfo constructorInfo)<a class="headerlink" href="#setconstructorconstructorcachekey-cachekey-constructorcachevalue-previouscachevalue-constructorinfo-constructorinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<h3 id="trycreatetoconstructtype-typetoconstruct-constructorinfo-constructor-object-tag-object-parameters-bool-checkconstructor-bool-hasmoreconstructorsleft-typemetadata-typemetadata">TryCreateToConstruct(Type typeToConstruct, ConstructorInfo constructor, object tag, object[] parameters, bool checkConstructor, bool hasMoreConstructorsLeft, TypeMetaData typeMetaData)<a class="headerlink" href="#trycreatetoconstructtype-typetoconstruct-constructorinfo-constructor-object-tag-object-parameters-bool-checkconstructor-bool-hasmoreconstructorsleft-typemetadata-typemetadata" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Tries to create the service with the specified constructor using the specified parameters.</p>
-<pre><code>This method will not throw an exception when the invocation fails.
-</code></pre>
-
-<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><strong>typeToConstruct</strong>
-Type of the service.</p>
-<p><strong>constructor</strong>
-The constructor info.</p>
-<p><strong>tag</strong>
-The preferred tag when resolving dependencies.</p>
-<p><strong>parameters</strong>
-The parameters to pass into the constructor.</p>
-<p><strong>checkConstructor</strong>
-if set to <code>true</code>, check whether the constructor can be used before using it.</p>
-<p><strong>hasMoreConstructorsLeft</strong>
-if set to <code>true</code>, more constructors are left so don't throw exceptions.</p>
-<p><strong>typeMetaData</strong>
-Metadata about type beiing constructed.</p>
-<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>The instantiated service or <code>null</code> if the instantiation fails.</p>
-<h4 id="remarks-1">Remarks<a class="headerlink" href="#remarks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that this method does not require an implementation of
-    <a href="#">TypeRequestPath</a> because this already has the parameter values
-    and thus cannot lead to invalid circular dependencies.</p>
+The typeToConstruct is<code>null</code>.</p>
 
                     </div>
                 </div>

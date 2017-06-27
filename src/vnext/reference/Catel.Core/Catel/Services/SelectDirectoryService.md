@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class SelectDirectoryService : ISelectDirectoryService, ViewModelServiceBase
@@ -70,12 +70,11 @@ Determines the DirectoryName of the Directory what will be used.
 
 #### Returns
 
-```true``` if a directory is selected; otherwise ```false```.
+`true` if a directory is selected; otherwise`false`.
 
 #### Remarks
 
-If this method returns ```true```, the DirectoryName property will be filled with the directory name. Otherwise,
-    no changes will occur to the data of this object.
+If this method returns`true` , the DirectoryName property will be filled with the directory name. Otherwise, no changes will occur to the data of this object.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ExceptionExtensions
@@ -33,7 +33,7 @@ The type of the exception.
 The exception.
 
 **param**
-is ```null```.
+is`null`.
 
 #### Returns
 
@@ -59,10 +59,10 @@ The exception.
 The message.
 
 **includeStackTrace**
-if set to ```true``` include stack trace.
+if set to`true` include stack trace.
 
 **param**
-is ```null```.
+is`null`.
 
 #### Returns
 
@@ -85,7 +85,7 @@ Gets all inner exceptions.
 The exception.
 
 **param**
-is ```null```.
+is`null`.
 
 #### Returns
 
@@ -116,7 +116,7 @@ Lowest inner exception.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The  is ```null```.
+The is`null`.
 
 
 
@@ -131,7 +131,7 @@ The exception.
 
 #### Returns
 
-```true``` if the specified exception is critical; otherwise, ```false```.
+`true` if the specified exception is critical; otherwise,`false`.
 
 
 
@@ -145,7 +145,7 @@ Returns the Exception message as XML document.
 The exception.
 
 **param**
-is ```null```.
+is`null`.
 
 #### Returns
 

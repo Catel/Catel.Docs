@@ -22,8 +22,6 @@ A location listener.
 
 ## Fields
 
-### Log
-
 ## Events
 
 ### LocationChanged
@@ -92,7 +90,7 @@ The extras.
 
 ### Run()
 
-Calls the ```run()``` method of the Runnable object the receiver holds.
+Calls the`run()` method of the Runnable object the receiver holds.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Pooling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class PoolManager<TPoolable> : IPoolManager<TPoolable> where TPoolable : new(), class, IPoolable 
@@ -17,12 +17,7 @@ public class PoolManager<TPoolable> : IPoolManager<TPoolable> where TPoolable : 
 [IPoolManager](/Catel.Core\Catel\Pooling\IPoolManager.md)
 
 
-Pool manager allowing objects to be pooled.
-    
-
-
-    The implementation removes objects from the internal stack and releases them. If no instance is
-    available, a new one will be created that should be returned to the pool once disposed.
+Pool manager allowing objects to be pooled.The implementation removes objects from the internal stack and releases them. If no instance is available, a new one will be created that should be returned to the pool once disposed.
 
 #### Type Parameters
 
@@ -32,13 +27,6 @@ Type of the object to be pooled.
 
 
 ## Fields
-
-### _stack
-
-### DefaultMaxSize
-5242880
-
-### Log
 
 ## Constructors
 

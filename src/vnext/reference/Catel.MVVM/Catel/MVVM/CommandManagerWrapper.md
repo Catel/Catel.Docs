@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class CommandManagerWrapper
@@ -17,12 +17,6 @@ Wrapper class to support key down events and automatically invoke commands on th
 
 
 ## Fields
-
-### _commandManager
-
-### _subscribed
-
-### Log
 
 ## Constructors
 
@@ -42,21 +36,5 @@ The command manager.
 
 ## Properties
 
-### View
-
-Gets the view.
-
-
-
 ## Methods
-
-### OnKeyDown(object sender, KeyEventArgs e)
-
-### OnViewLoaded(object sender, RoutedEventArgs e)
-
-### OnViewUnloaded(object sender, RoutedEventArgs e)
-
-### Subscribe()
-
-### Unsubscribe()
 

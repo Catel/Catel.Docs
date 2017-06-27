@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TypeHelper
@@ -18,25 +18,7 @@ public static class TypeHelper
 
 ## Fields
 
-### _microsoftPublicKeyTokens
-
-A list of microsoft public key tokens.
-
-
-
-### Log
-
-The [ILog](#) object.
-
-
-
 ## Constructors
-
-### TypeHelper()
-
-Initializes a new instance of the [Object](#) class.
-
-
 
 ## Properties
 
@@ -127,7 +109,7 @@ Converts a string representation of a type to a version independent type by remo
 Type to convert.
 
 **stripAssemblies**
-if set to ```true```, the assembly names will be stripped as well.
+if set to`true` , the assembly names will be stripped as well.
 
 #### Returns
 
@@ -136,7 +118,7 @@ String representing the type without version information.
 #### Exceptions
 
 **T:System.ArgumentException**
-The type is ```null``` or whitespace.
+The type is`null` or whitespace.
 
 
 
@@ -150,7 +132,7 @@ Formats multiple inner types into one string.
 The inner types.
 
 **stripAssemblies**
-if set to ```true```, the assembly names will be stripped as well.
+if set to`true` , the assembly names will be stripped as well.
 
 #### Returns
 
@@ -177,7 +159,7 @@ Type name like [typename], [assemblyname].
 #### Exceptions
 
 **T:System.ArgumentException**
-The assembly is ```null``` or whitespace.
+The assembly is`null` or whitespace.
 
 
 
@@ -188,16 +170,16 @@ Gets the name of the assembly.
 #### Parameters
 
 **fullTypeName**
-Full name of the type, for example ```Catel.TypeHelper, Catel.Core```.
+Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
-The assembly name retrieved from the type, for example ```Catel.Core``` or ```null``` if the assembly is not contained by the type.
+The assembly name retrieved from the type, for example`Catel.Core` or`null` if the assembly is not contained by the type.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullTypeName is ```null``` or whitespace.
+The fullTypeName is`null` or whitespace.
 
 
 
@@ -217,7 +199,7 @@ The assembly without the overhead.
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullyQualifiedAssemblyName is ```null``` or whitespace.
+The fullyQualifiedAssemblyName is`null` or whitespace.
 
 
 
@@ -237,7 +219,7 @@ Array of inner types.
 #### Exceptions
 
 **T:System.ArgumentException**
-The type is ```null``` or whitespace.
+The type is`null` or whitespace.
 
 
 
@@ -268,16 +250,16 @@ Gets the name of the type without the assembly but including the namespace.
 #### Parameters
 
 **fullTypeName**
-Full name of the type, for example ```Catel.TypeHelper, Catel.Core```.
+Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
-The type name retrieved from the type, for example ```Catel.TypeHelper```.
+The type name retrieved from the type, for example`Catel.TypeHelper`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullTypeName is ```null``` or whitespace.
+The fullTypeName is`null` or whitespace.
 
 
 
@@ -288,32 +270,22 @@ Gets the type namespace.
 #### Parameters
 
 **fullTypeName**
-Full name of the type, for example ```Catel.TypeHelper, Catel.Core```.
+Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
-The type namespace retrieved from the type, for example ```Catel```.
+The type namespace retrieved from the type, for example`Catel`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullTypeName is ```null``` or whitespace.
+The fullTypeName is`null` or whitespace.
 
 
 
 ### GetTypeNameWithAssembly(string fullTypeName)
 
-Gets the type name with assembly, but without the fully qualified assembly name. For example, this method provides
-    the string:
-    
-
-```Catel.TypeHelper, Catel.Core, Version=1.0.0.0, PublicKeyToken=123456789```
-
-
-    and will return:
-    
-
-```Catel.TypeHelper, Catel.Core```
+Gets the type name with assembly, but without the fully qualified assembly name. For example, this method provides the string:`Catel.TypeHelper, Catel.Core, Version=1.0.0.0, PublicKeyToken=123456789` and will return:`Catel.TypeHelper, Catel.Core`
 
 #### Parameters
 
@@ -327,7 +299,7 @@ The type name including the assembly.
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullTypeName is ```null``` or whitespace.
+The fullTypeName is`null` or whitespace.
 
 
 
@@ -338,16 +310,16 @@ Gets the type name without the assembly namespace.
 #### Parameters
 
 **fullTypeName**
-Full name of the type, for example ```Catel.TypeHelper, Catel.Core```.
+Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
-The type name retrieved from the type, for example ```TypeHelper```.
+The type name retrieved from the type, for example`TypeHelper`.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The fullTypeName is ```null``` or whitespace.
+The fullTypeName is`null` or whitespace.
 
 
 
@@ -365,21 +337,16 @@ The type to check.
 
 #### Returns
 
-```true``` if the subclass is of a raw generic type; otherwise, ```false```.
+`true` if the subclass is of a raw generic type; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The generic is ```null```.
+The generic is`null`.
 
 #### Remarks
 
-This implementation is based on this forum thread:
-    http://stackoverflow.com/questions/457676/c-reflection-check-if-a-class-is-derived-from-a-generic-class
-    
-
-
-    Original license: CC BY-SA 2.5, compatible with the MIT license.
+This implementation is based on this forum thread: http://stackoverflow.com/questions/457676/c-reflection-check-if-a-class-is-derived-from-a-generic-class Original license: CC BY-SA 2.5, compatible with the MIT license.
 
 
 

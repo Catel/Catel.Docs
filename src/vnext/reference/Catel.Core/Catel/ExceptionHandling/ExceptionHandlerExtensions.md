@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ExceptionHandlerExtensions
@@ -36,10 +36,10 @@ The interval between two attempts.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionHandler is ```null```.
+The exceptionHandler is`null`.
 
 **T:System.ArgumentOutOfRangeException**
-The numberOfTimes is larger than ```1```.
+The numberOfTimes is larger than`1`.
 
 
 
@@ -58,10 +58,10 @@ The number of times.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionHandler is ```null```.
+The exceptionHandler is`null`.
 
 **T:System.ArgumentOutOfRangeException**
-The numberOfTimes is larger than ```1```.
+The numberOfTimes is larger than`1`.
 
 
 
@@ -83,7 +83,7 @@ The interval.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exceptionHandler is ```null```.
+The exceptionHandler is`null`.
 
 **T:System.ArgumentOutOfRangeException**
 The numberOfTimes is out of range.

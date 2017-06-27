@@ -6,13 +6,13 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class AsyncLock
 ```
 
-A mutual exclusion lock that is compatible with async. Note that this lock is  recursive!
+A mutual exclusion lock that is compatible with async. Note that this lock is recursive!
 
 #### Remarks
 
@@ -21,36 +21,6 @@ This code originally comes from AsyncEx: https://github.com/StephenCleary/AsyncE
 
 
 ## Fields
-
-### _cachedKeyTask
-
-A task that is completed with the key object for this lock.
-
-
-
-### _id
-
-The semi-unique identifier for this instance. This is 0 if the id has not yet been created.
-
-
-
-### _mutex
-
-The object used for mutual exclusion.
-
-
-
-### _queue
-
-The queue of TCSs that other tasks are awaiting to acquire the lock.
-
-
-
-### _taken
-
-Whether the lock is taken by a task.
-
-
 
 ## Constructors
 
@@ -126,12 +96,6 @@ The cancellation token used to cancel the lock. If this is already set, then thi
 #### Returns
 
 A disposable that releases the lock when disposed.
-
-
-
-### ReleaseLock()
-
-Releases the lock.
 
 
 

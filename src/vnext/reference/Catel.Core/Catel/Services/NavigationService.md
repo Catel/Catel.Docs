@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class NavigationService : INavigationService, NavigationServiceBase
@@ -25,24 +25,6 @@ Service to navigate inside applications.
 
 
 ## Fields
-
-### _appClosedFromService
-
-### _appClosingByMainWindow
-
-### _registeredUris
-
-### Log
-
-The log.
-
-
-
-### NavigationRootService
-
-The navigation root service.
-
-
 
 ## Constructors
 
@@ -71,12 +53,6 @@ Gets a value indicating whether it is possible to navigate forward.
 
 
 
-### RootFrame
-
-Gets the root frame.
-
-
-
 ## Events
 
 ### ApplicationClosed
@@ -99,11 +75,9 @@ Closes the current application. The actual implementation depends on the final t
 
 #### Returns
 
-```true``` if the application is closed; otherwise ```false```.
+`true` if the application is closed; otherwise`false`.
 
 
-
-### CloseMainWindow()
 
 ### GetBackStackCount()
 
@@ -127,8 +101,6 @@ Navigates forward to the next page.
 
 
 
-### Initialize()
-
 ### Navigate(string uri, Dictionary<string, object> parameters)
 
 Navigates to a specific location.
@@ -139,13 +111,12 @@ Navigates to a specific location.
 The URI.
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The uri is ```null``` or whitespace.
+The uri is`null` or whitespace.
 
 
 
@@ -159,13 +130,12 @@ Navigates the specified location registered using the view model type.
 The view model type.
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The viewModelType is ```null```.
+The viewModelType is`null`.
 
 
 
@@ -176,7 +146,7 @@ Navigates to a specific location.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 
@@ -192,23 +162,13 @@ The view model type.
 #### Parameters
 
 **parameters**
-Dictionary of parameters, where the key is the name of the parameter, 
-    and the value is the value of the parameter.
+Dictionary of parameters, where the key is the name of the parameter, and the value is the value of the parameter.
 
 
-
-### NavigateBack()
-
-### NavigateForward()
-
-### NavigateToUri(Uri uri)
-
-### NavigateWithParameters(string uri, Dictionary<string, object> parameters)
 
 ### Register(string name, Uri uri)
 
-Registers the specified view model and the uri. Use this method to override the uri
-    detection mechanism in Catel.
+Registers the specified view model and the uri. Use this method to override the uri detection mechanism in Catel.
 
 #### Parameters
 
@@ -221,10 +181,10 @@ The URI to register.
 #### Exceptions
 
 **T:System.ArgumentException**
-The name is ```null``` or whitespace.
+The name is`null` or whitespace.
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 **T:System.InvalidOperationException**
 The name is already registered.
@@ -233,8 +193,7 @@ The name is already registered.
 
 ### Register(Type viewModelType, Uri uri)
 
-Registers the specified view model and the uri. Use this method to override the uri
-    detection mechanism in Catel.
+Registers the specified view model and the uri. Use this method to override the uri detection mechanism in Catel.
 
 #### Parameters
 
@@ -250,7 +209,7 @@ The URI to register.
 The viewModelType does not implement [IViewModel](#).
 
 **T:System.ArgumentNullException**
-The uri is ```null```.
+The uri is`null`.
 
 
 
@@ -266,21 +225,6 @@ Removes the last back entry from the navigation history.
 
 
 
-### ResolveNavigationTarget(Type viewModelType)
-
-Resolves the navigation target.
-
-#### Parameters
-
-**viewModelType**
-The view model type.
-
-#### Returns
-
-The target to navigate to.
-
-
-
 ### Unregister(string name)
 
 This unregisters the specified view model.
@@ -292,7 +236,7 @@ Name of the registered page.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 
@@ -307,7 +251,7 @@ Type of the view model to unregister.
 
 #### Returns
 
-```true``` if the view model is unregistered; otherwise ```false```.
+`true` if the view model is unregistered; otherwise`false`.
 
 
 

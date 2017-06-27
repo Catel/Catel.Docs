@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ILanguageService
@@ -20,11 +20,7 @@ Service to implement the retrieval of language services.
 
 ### CacheResults
 
-Gets or sets a value indicating whether the results should be cached.
-    
-
-
-    The default value is ```true```.
+Gets or sets a value indicating whether the results should be cached.The default value is`true`.
 
 
 
@@ -73,23 +69,21 @@ The culture information.
 
 #### Returns
 
-The string or ```null``` if the resource cannot be found.
+The string or`null` if the resource cannot be found.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The languageSource is ```null```.
+The languageSource is`null`.
 
 **T:System.ArgumentException**
-The resourceName is ```null```.
+The resourceName is`null`.
 
 
 
 ### GetString(string resourceName)
 
-Gets the string with the PreferredCulture. If the preferred language cannot be
-    found, this method will use the FallbackCulture to retrieve the
-    string.
+Gets the string with the PreferredCulture. If the preferred language cannot be found, this method will use the FallbackCulture to retrieve the string.
 
 #### Parameters
 
@@ -98,12 +92,12 @@ Name of the resource.
 
 #### Returns
 
-The string or ```null``` if the resource cannot be found.
+The string or`null` if the resource cannot be found.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The resourceName is ```null```.
+The resourceName is`null`.
 
 
 
@@ -121,15 +115,15 @@ The culture information.
 
 #### Returns
 
-The string or ```null``` if the resource cannot be found.
+The string or`null` if the resource cannot be found.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The resourceName is ```null```.
+The resourceName is`null`.
 
 **T:System.ArgumentNullException**
-The cultureInfo is ```null```.
+The cultureInfo is`null`.
 
 
 
@@ -151,7 +145,7 @@ The language source.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The languageSource is ```null``` or whitespace.
+The languageSource is`null` or whitespace.
 
 
 

@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ReferenceInfo
@@ -31,7 +31,7 @@ The instance.
 The unique identifier.
 
 **isFirstUsage**
-if set to ```true```, this is the first usage of this instance.
+if set to`true` , this is the first usage of this instance.
 
 
 

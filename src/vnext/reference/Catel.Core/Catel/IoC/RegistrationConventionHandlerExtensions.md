@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class RegistrationConventionHandlerExtensions
@@ -25,7 +25,7 @@ Adds the assembly to scan.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -46,10 +46,10 @@ The namespace.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 **T:System.ArgumentException**
-The namespace is ```null``` or whitespace.
+The namespace is`null` or whitespace.
 
 
 
@@ -71,7 +71,7 @@ The registration convention handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -92,7 +92,7 @@ The exclude.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -115,7 +115,7 @@ The registration convention handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -137,7 +137,7 @@ The registration convention handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -158,7 +158,7 @@ The exclude.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -179,14 +179,13 @@ The namespace to include.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
 ### IncludeAllTypesOfNamespaceContaining<T>(IRegistrationConventionHandler registrationConventionHandler)
 
-Only include types in the same namespace as the specified type or its sub namespaces
-    when scanning.
+Only include types in the same namespace as the specified type or its sub namespaces when scanning.
 
 #### Type Parameters
 
@@ -203,7 +202,7 @@ The registration convention handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -223,7 +222,7 @@ The registration convention handler.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -244,7 +243,7 @@ The predicate to use for matching.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 
@@ -270,7 +269,7 @@ Type of the registration.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The registrationConventionHandler is ```null```.
+The registrationConventionHandler is`null`.
 
 
 

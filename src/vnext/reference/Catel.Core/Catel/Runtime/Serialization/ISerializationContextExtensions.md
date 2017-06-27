@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ISerializationContextExtensions
@@ -31,11 +31,11 @@ The serialization context.
 The predicate.
 
 **maxLevels**
-The maximum number of levels to check. If ```-1```, will check all up to the root.
+The maximum number of levels to check. If`-1` , will check all up to the root.
 
 #### Returns
 
-The type or ```null``` of the type is not found.
+The type or`null` of the type is not found.
 
 
 

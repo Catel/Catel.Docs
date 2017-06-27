@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Scoping
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ScopeManager<T> : IDisposable where T : class 
@@ -28,48 +28,13 @@ The type to scope.
 
 ## Fields
 
-### _instances
-
-### _lock
-
-### _refCount
-
-### _scopeName
-
-### _scopeObject
-
-### Log
-
-### TypeName
-
 ## Constructors
-
-### ScopeManager()
-
-Initializes static members of the [ScopeManager](#) class.
-
-
-
-### ScopeManager(string scopeName, Func<T> createScopeFunction)
-
-Initializes a new instance of the [ScopeManager](#) class.
-
-#### Parameters
-
-**scopeName**
-Name of the scope.
-
-**createScopeFunction**
-The create scope function.
-
-
 
 ## Properties
 
 ### RefCount
 
-Gets the current reference count for this
-    object.
+Gets the current reference count for this object.
 
 
 
@@ -89,10 +54,6 @@ Occurs when the scope reference count reaches zero.
 
 ## Methods
 
-### AddRef()
-
-### DeRef()
-
 ### Dispose()
 
 Dispose object, dereferencing or disposing the context it is managing.
@@ -109,7 +70,7 @@ Gets the ContextManager object for the specified database.
 Name of the scope.
 
 **createScopeFunction**
-The create scope function. Can be ```null```.
+The create scope function. Can be`null`.
 
 #### Returns
 
@@ -118,7 +79,7 @@ The [ScopeManager](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The scopeName is ```null```.
+The scopeName is`null`.
 
 
 
@@ -133,12 +94,12 @@ Name of the scope.
 
 #### Returns
 
-```true``` if the scope exists, ```false``` otherwise.
+`true` if the scope exists,`false` otherwise.
 
 #### Exceptions
 
 **T:System.ArgumentException**
-The scopeName is ```null```.
+The scopeName is`null`.
 
 
 

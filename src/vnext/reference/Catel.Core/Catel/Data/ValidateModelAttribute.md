@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class ValidateModelAttribute : Attribute
@@ -16,11 +16,7 @@ public class ValidateModelAttribute : Attribute
 [Attribute]()
 
 
-Attribute to define custom validation at class level for all classes that derive from [ModelBase](#).
-    
-
-
-    This attribute follows a naming convention. If
+Attribute to define custom validation at class level for all classes that derive from [ModelBase](#).This attribute follows a naming convention. If
 
 
 
@@ -38,7 +34,7 @@ Type of the validator.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validatorType is ```null```.
+The validatorType is`null`.
 
 
 

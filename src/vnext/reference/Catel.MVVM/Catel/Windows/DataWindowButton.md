@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
 
 ```
 public class DataWindowButton
@@ -33,7 +33,7 @@ The binding path expression of the command to bind to.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The commandBindingPath is ```null```.
+The commandBindingPath is`null`.
 
 
 
@@ -64,7 +64,7 @@ The value converter used with visibility binding.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The commandBindingPath is ```null```.
+The commandBindingPath is`null`.
 
 #### Remarks
 
@@ -87,7 +87,7 @@ The command.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 
 
@@ -118,7 +118,7 @@ The value converter used with visibility binding.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The command is ```null```.
+The command is`null`.
 
 #### Remarks
 

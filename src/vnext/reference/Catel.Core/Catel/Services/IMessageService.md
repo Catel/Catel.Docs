@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IMessageService
@@ -43,7 +43,7 @@ The [MessageResult](#).
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -59,7 +59,7 @@ The exception.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The exception is ```null```.
+The exception is`null`.
 
 
 
@@ -78,7 +78,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -97,7 +97,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 
@@ -116,7 +116,7 @@ The caption.
 #### Exceptions
 
 **T:System.ArgumentException**
-The message is ```null``` or whitespace.
+The message is`null` or whitespace.
 
 
 

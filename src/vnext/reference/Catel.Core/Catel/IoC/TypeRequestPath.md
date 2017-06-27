@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class TypeRequestPath : ITypeRequestPath
@@ -23,19 +23,7 @@ A list of types in which the types will be constructed when being resolved from 
 
 ## Fields
 
-### _typePath
-
-### Empty
-
-### Log
-
-The log.
-
-
-
 ## Constructors
-
-### TypeRequestPath(TypeRequestInfo[] typePath, string name)
 
 ## Properties
 
@@ -86,8 +74,6 @@ Appended path item
 #### Returns
 
 
-
-### FormatPath(TypeRequestInfo[] typePath, int startIndex)
 
 ### Root(string name)
 

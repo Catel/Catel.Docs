@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CollectionToCollapsingVisibilityConverter : VisibilityConverterBase
@@ -40,25 +40,4 @@ The visibility.
 
 
 ## Methods
-
-### IsVisible(object value, Type targetType, object parameter)
-
-Determines whether the specified value is visible.
-
-#### Parameters
-
-**value**
-The value.
-
-**targetType**
-Type of the target.
-
-**parameter**
-The parameter.
-
-#### Returns
-
-```true``` if the specified value is visible; otherwise, ```false```.
-
-
 

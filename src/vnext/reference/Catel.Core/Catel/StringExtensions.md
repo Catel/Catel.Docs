@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public static class StringExtensions
@@ -46,7 +46,7 @@ The value to check.
 
 #### Returns
 
-```true``` if the string contains the value to check, ```false``` otherwise.
+`true` if the string contains the value to check,`false` otherwise.
 
 
 
@@ -64,7 +64,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string ends with any of the values, ```false``` otherwise.
+`true` if the string ends with any of the values,`false` otherwise.
 
 
 
@@ -82,7 +82,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string ends with any of the values, ```false``` otherwise.
+`true` if the string ends with any of the values,`false` otherwise.
 
 
 
@@ -100,7 +100,7 @@ The value to check.
 
 #### Returns
 
-```true``` if the string ends with the value to check, ```false``` otherwise.
+`true` if the string ends with the value to check,`false` otherwise.
 
 
 
@@ -118,7 +118,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string equals any of the values, ```false``` otherwise.
+`true` if the string equals any of the values,`false` otherwise.
 
 
 
@@ -136,7 +136,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string equals any of the values, ```false``` otherwise.
+`true` if the string equals any of the values,`false` otherwise.
 
 
 
@@ -154,7 +154,7 @@ The value to check.
 
 #### Returns
 
-```true``` if the strings are equal, ```false``` otherwise.
+`true` if the strings are equal,`false` otherwise.
 
 
 
@@ -174,7 +174,7 @@ The space replacement.
 The dot replacement.
 
 **makeLowercase**
-if set to ```true```, make the slug lower case.
+if set to`true` , make the slug lower case.
 
 #### Returns
 
@@ -184,11 +184,7 @@ The slug based on the input.
 
 ### GetUniqueControlName(string controlName)
 
-Gets the a unique name for a control. This is sometimes required in some frameworks.
-    
-
-
-    The name is made unique by appending a unique guid.
+Gets the a unique name for a control. This is sometimes required in some frameworks.The name is made unique by appending a unique guid.
 
 #### Parameters
 
@@ -215,7 +211,7 @@ The value to check.
 
 #### Returns
 
-The index or ```-1``` if not found.
+The index or`-1` if not found.
 
 
 
@@ -274,7 +270,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string starts with any of the values, ```false``` otherwise.
+`true` if the string starts with any of the values,`false` otherwise.
 
 
 
@@ -292,7 +288,7 @@ The values to check for.
 
 #### Returns
 
-```true``` if the string starts with any of the values, ```false``` otherwise.
+`true` if the string starts with any of the values,`false` otherwise.
 
 
 
@@ -310,7 +306,7 @@ The value to check.
 
 #### Returns
 
-```true``` if the string starts with the value to check, ```false``` otherwise.
+`true` if the string starts with the value to check,`false` otherwise.
 
 
 

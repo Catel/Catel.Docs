@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositeValidator : IValidator
@@ -17,25 +17,11 @@ public class CompositeValidator : IValidator
 [IValidator](/Catel.Core\Catel\Data\IValidator.md)
 
 
-Allows the combination of several validators into a single validator. This class will combine all instances of the
-    [IValidator](#) class found for a type using the [IValidatorProvider](#) into this single composite
-    validator.
+Allows the combination of several validators into a single validator. This class will combine all instances of the [IValidator](#) class found for a type using the [IValidatorProvider](#) into this single composite validator.
 
 
 
 ## Fields
-
-### _synchronizationContext
-
-The synchronization context.
-
-
-
-### _validators
-
-The validator list.
-
-
 
 ## Methods
 
@@ -51,7 +37,7 @@ The validator to add.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validator is ```null```.
+The validator is`null`.
 
 
 
@@ -70,7 +56,7 @@ The validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -89,7 +75,7 @@ The validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -111,7 +97,7 @@ The current business rule validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -130,7 +116,7 @@ The validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -149,7 +135,7 @@ The previous validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -171,7 +157,7 @@ The previous business rule validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
@@ -186,12 +172,12 @@ The validator.
 
 #### Returns
 
-```true``` if this composite validator contains the specified validator; otherwise, ```false```.
+`true` if this composite validator contains the specified validator; otherwise,`false`.
 
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validator is ```null```.
+The validator is`null`.
 
 
 
@@ -207,17 +193,13 @@ The validator to remove.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The validator is ```null```.
+The validator is`null`.
 
 
 
 ### Validate(object instance, ValidationContext validationContext)
 
-Validates the specified instance and allows the manipulation of the whole validation context.
-    
-
-
-    This method can be used to manipulate the whole validation context and the implementation of this is enough.
+Validates the specified instance and allows the manipulation of the whole validation context.This method can be used to manipulate the whole validation context and the implementation of this is enough.
 
 #### Parameters
 
@@ -230,14 +212,13 @@ The validation context.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
 ### ValidateBusinessRules(object instance, List<IBusinessRuleValidationResult> validationResults)
 
-Validates the business rules of the specified instance. The results must be added to the list of validation
-    results.
+Validates the business rules of the specified instance. The results must be added to the list of validation results.
 
 #### Parameters
 
@@ -250,14 +231,13 @@ The validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 
 ### ValidateFields(object instance, List<IFieldValidationResult> validationResults)
 
-Validates the fields of the specified instance. The results must be added to the list of validation
-    results.
+Validates the fields of the specified instance. The results must be added to the list of validation results.
 
 #### Parameters
 
@@ -270,7 +250,7 @@ The validation results.
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The instance is ```null```.
+The instance is`null`.
 
 
 

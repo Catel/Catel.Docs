@@ -66,8 +66,6 @@
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/">Catel.Core</a></span></li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/MethodTimeLogger/">MethodTimeLogger</a>
-</li>
 <li class="tocentry">
 <ul>
 <li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/Catel.Core/Catel/">Catel</a></span></li>
@@ -89,8 +87,6 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoreModule/">CoreModule</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/CoverageExcludeAttribute/">CoverageExcludeAttribute</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeCodeAttribute/">DesignTimeCodeAttribute</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/DesignTimeHelper/">DesignTimeHelper</a>
@@ -111,15 +107,11 @@
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExceptionFactory/">ExceptionFactory</a>
 </li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExcludeReason/">ExcludeReason</a>
-</li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/ExpressionHelper/">ExpressionHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/FastDateTime/">FastDateTime</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HashHelper/">HashHelper</a>
-</li>
-<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/HttpContextHelper/">HttpContextHelper</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IBindableEnum/">IBindableEnum</a>
 </li>
@@ -142,6 +134,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakAction/">IWeakAction</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakEventListener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakFunc/">IWeakFunc</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/IWeakReference/">IWeakReference</a>
 </li>
@@ -194,6 +188,8 @@
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakActionBase/">WeakActionBase</a>
 </li>
 <li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakEventListener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/Catel.Core/Catel/WeakFunc/">WeakFunc</a>
 </li>
 <li class="tocentry">
 <span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/Catel.Core/Catel/Android/">Android</a></span>
@@ -344,7 +340,7 @@
 </tr>
 <tr>
 	<td>Available on</td>
-	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
 </tr>
 </tbody>
 </table>
@@ -367,9 +363,9 @@ The default value. Will be returned if the value cannot be found.</p>
 <p>The configuration value.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="getroamingvalueiconfigurationservice-configurationservice-string-key-t-defaultvalue">GetRoamingValue<T>(IConfigurationService configurationService, string key, T defaultValue)<a class="headerlink" href="#getroamingvalueiconfigurationservice-configurationservice-string-key-t-defaultvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the configuration value using Roaming.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -386,9 +382,9 @@ The default value. Will be returned if the value cannot be found.</p>
 <p>The configuration value.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="initializelocalvalueiconfigurationservice-configurationservice-string-key-object-defaultvalue">InitializeLocalValue(IConfigurationService configurationService, string key, object defaultValue)<a class="headerlink" href="#initializelocalvalueiconfigurationservice-configurationservice-string-key-object-defaultvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes the value by setting the value to the defaultValue if the value does not yet exist using Local.</p>
 <h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -400,9 +396,9 @@ The key.</p>
 The default value.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="initializeroamingvalueiconfigurationservice-configurationservice-string-key-object-defaultvalue">InitializeRoamingValue(IConfigurationService configurationService, string key, object defaultValue)<a class="headerlink" href="#initializeroamingvalueiconfigurationservice-configurationservice-string-key-object-defaultvalue" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Initializes the value by setting the value to the defaultValue if the value does not yet exist using Roaming.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -414,9 +410,9 @@ The key.</p>
 The default value.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="islocalvalueavailableiconfigurationservice-configurationservice-string-key">IsLocalValueAvailable(IConfigurationService configurationService, string key)<a class="headerlink" href="#islocalvalueavailableiconfigurationservice-configurationservice-string-key" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified value is available using Local.</p>
 <h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -428,9 +424,9 @@ The key.</p>
 <p>The configuration value.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="isroamingvalueavailableiconfigurationservice-configurationservice-string-key">IsRoamingValueAvailable(IConfigurationService configurationService, string key)<a class="headerlink" href="#isroamingvalueavailableiconfigurationservice-configurationservice-string-key" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Determines whether the specified value is available using Roaming.</p>
 <h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -442,9 +438,9 @@ The key.</p>
 <p>The configuration value.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="setlocalvalueiconfigurationservice-configurationservice-string-key-object-value">SetLocalValue(IConfigurationService configurationService, string key, object value)<a class="headerlink" href="#setlocalvalueiconfigurationservice-configurationservice-string-key-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Sets the configuration value using Local.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -458,9 +454,9 @@ The value.</p>
 <p>The configuration value.</p>
 <h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 <h3 id="setroamingvalueiconfigurationservice-configurationservice-string-key-object-value">SetRoamingValue(IConfigurationService configurationService, string key, object value)<a class="headerlink" href="#setroamingvalueiconfigurationservice-configurationservice-string-key-object-value" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Sets the configuration value using Roaming.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -472,9 +468,9 @@ The key.</p>
 The value.</p>
 <h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
-The configurationService is <code>null</code>.</p>
+The configurationService is<code>null</code>.</p>
 <p><strong>T:System.ArgumentException</strong>
-The key is <code>null</code> or whitespace.</p>
+The key is<code>null</code> or whitespace.</p>
 
                     </div>
                 </div>

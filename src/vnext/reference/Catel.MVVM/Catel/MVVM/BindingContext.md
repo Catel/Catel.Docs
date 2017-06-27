@@ -18,14 +18,6 @@ Binding context that takes care of binding updates.
 
 ## Fields
 
-### _bindings
-
-### _commandBindings
-
-### _lastViewModelId
-
-### Log
-
 ## Constructors
 
 ### BindingContext()
@@ -76,7 +68,7 @@ The binding.
 #### Exceptions
 
 **!:ArgumentNullException**
-The binding is ```null```.
+The binding is`null`.
 
 
 
@@ -92,7 +84,7 @@ The command binding.
 #### Exceptions
 
 **!:ArgumentNullException**
-The commandBinding is ```null```.
+The commandBinding is`null`.
 
 
 
@@ -104,12 +96,7 @@ Clears this binding context and all bindings.
 
 ### DetermineIfBindingsAreRequired(IViewModel viewModel)
 
-Updates the view model of this binding context.
-    
-
-
-    This method can be called as much as required, it will automatically determine if binding
-    updates are required.
+Updates the view model of this binding context.This method can be called as much as required, it will automatically determine if binding updates are required.
 
 #### Parameters
 
@@ -130,7 +117,7 @@ The binding.
 #### Exceptions
 
 **!:ArgumentNullException**
-The binding is ```null```.
+The binding is`null`.
 
 
 
@@ -146,7 +133,7 @@ The command binding.
 #### Exceptions
 
 **!:ArgumentNullException**
-The commandBinding is ```null```.
+The commandBinding is`null`.
 
 
 

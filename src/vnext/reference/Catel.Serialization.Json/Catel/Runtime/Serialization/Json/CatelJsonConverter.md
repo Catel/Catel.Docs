@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.Serialization.Json
 Namespace|Catel.Runtime.Serialization.Json
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
 
 ```
 public class CatelJsonConverter : JsonConverter
@@ -21,10 +21,6 @@ Converts Catel models manually using the Catel serializer.
 
 
 ## Fields
-
-### _configuration
-
-### _jsonSerializer
 
 ## Constructors
 
@@ -55,7 +51,7 @@ Type of the object.
 
 #### Returns
 
-```true``` if this instance can convert the specified object type; otherwise, ```false```.
+`true` if this instance can convert the specified object type; otherwise,`false`.
 
 
 

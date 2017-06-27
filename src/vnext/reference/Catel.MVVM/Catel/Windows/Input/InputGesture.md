@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Input
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class InputGesture : ModelBase
@@ -83,25 +83,6 @@ Gets the modifiers.
 
 ## Methods
 
-### Equals(InputGesture other)
-
-Equalses the specified other.
-
-#### Parameters
-
-**other**
-The other.
-
-#### Returns
-
-```true``` if XXXX, ```false``` otherwise.
-
-#### Exceptions
-
-**T:System.NotImplementedException**
-
-
-
 ### Equals(object obj)
 
 Determines whether the specified [Object](#) is equal to this instance.
@@ -113,7 +94,7 @@ The [Object](#) to compare with this instance.
 
 #### Returns
 
-```true``` if the specified [Object](#) is equal to this instance; otherwise, ```false```.
+`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
 
 
 
@@ -142,7 +123,7 @@ The [KeyEventArgs](#) instance containing the event data.
 
 #### Returns
 
-```true``` if this gesture matches the event args, ```false``` otherwise.
+`true` if this gesture matches the event args,`false` otherwise.
 
 
 

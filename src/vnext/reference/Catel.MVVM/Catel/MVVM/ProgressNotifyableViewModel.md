@@ -6,7 +6,7 @@ Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
 
 ```
 public class ProgressNotifyableViewModel : IProgressNotifyableViewModel, ViewModelBase
@@ -25,18 +25,6 @@ The progress notifyable view model base.
 
 
 ## Fields
-
-### _currentItem
-
-The _current item.
-
-
-
-### _totalItems
-
-The _total items.
-
-
 
 ### DetailedMessageProperty
 
@@ -88,26 +76,21 @@ Must have a public constructor in order to be serializable.
 
 ### ProgressNotifyableViewModel(IServiceLocator serviceLocator, bool supportIEditableObject, bool ignoreMultipleModelsWarning, bool skipViewModelAttributesInitialization)
 
-Initializes a new instance of the [ViewModelBase](#) class.
-    
-
-
-    This constructor allows the injection of a custom [IServiceLocator](#).
+Initializes a new instance of the [ViewModelBase](#) class.This constructor allows the injection of a custom [IServiceLocator](#).
 
 #### Parameters
 
 **serviceLocator**
-The service locator to inject. If ```null```, the Default will be used.
+The service locator to inject. If`null` , the Default will be used.
 
 **supportIEditableObject**
-if set to ```true```, the view model will natively support models that
-    implement the [IEditableObject](#) interface.
+if set to`true` , the view model will natively support models that implement the [IEditableObject](#) interface.
 
 **ignoreMultipleModelsWarning**
-if set to ```true```, the warning when using multiple models is ignored.
+if set to`true` , the warning when using multiple models is ignored.
 
 **skipViewModelAttributesInitialization**
-if set to ```true```, the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
+if set to`true` , the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
 
 #### Exceptions
 
@@ -126,14 +109,13 @@ Initializes a new instance of the [ProgressNotifyableViewModel](#) class.
 #### Parameters
 
 **supportIEditableObject**
-if set to ```true```, the view model will natively support models that
-    implement the [IEditableObject](#) interface.
+if set to`true` , the view model will natively support models that implement the [IEditableObject](#) interface.
 
 **ignoreMultipleModelsWarning**
-if set to ```true```, the warning when using multiple models is ignored.
+if set to`true` , the warning when using multiple models is ignored.
 
 **skipViewModelAttributesInitialization**
-if set to ```true```, the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
+if set to`true` , the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
 
 #### Exceptions
 
@@ -191,18 +173,6 @@ Gets or sets the task percentage.
 
 ## Methods
 
-### OnTaskMessageChanged()
-
-Occurs when the value of the TaskMessage property is changed.
-
-
-
-### OnTaskPercentageChanged()
-
-Occurs when the value of the TaskPercentage property is changed.
-
-
-
 ### UpdateStatus(int currentItem, int totalItems, ITask task)
 
 The update status.
@@ -221,7 +191,7 @@ The task
 #### Exceptions
 
 **T:System.ArgumentNullException**
-The task is ```null```.
+The task is`null`.
 
 
 
