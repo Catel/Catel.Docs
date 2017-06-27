@@ -20,7 +20,7 @@ Available message buttons.
 
 #### Remarks
 
-Although directly extracted from the WPF`MessageBoxButton` , this enum provides more flexibility to use other ways to show messages to the user instead of the default`MessageBox`.
+Although directly extracted from the WPF`MessageBoxButton`, this enum provides more flexibility to use other ways to show messages to the user instead of the default`MessageBox`.
 
 
 

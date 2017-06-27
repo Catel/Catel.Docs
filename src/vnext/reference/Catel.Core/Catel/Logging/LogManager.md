@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public static class LogManager
 ```
 
-Log manager that allows external libraries to subscribe to logging of Catel.The manager automatically adds an instance of the [DebugLogListener](#) to the list of listeners so the tracing is available in debug mode. To remove this listener, call ClearListeners before doing any initialization.
+Log manager that allows external libraries to subscribe to logging of Catel. The manager automatically adds an instance of the [DebugLogListener](#) to the list of listeners so the tracing is available in debug mode. To remove this listener, call ClearListeners before doing any initialization.
 
 
 
@@ -24,37 +24,37 @@ Log manager that allows external libraries to subscribe to logging of Catel.The 
 
 ### IgnoreCatelLogging
 
-Gets a value indicating whether the global IgnoreCatelLogging should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IgnoreCatelLogging should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
 ### IsDebugEnabled
 
-Gets a value indicating whether the global IsDebugEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IsDebugEnabled should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
 ### IsErrorEnabled
 
-Gets a value indicating whether the global IsErrorEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IsErrorEnabled should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
 ### IsInfoEnabled
 
-Gets a value indicating whether the global IsInfoEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IsInfoEnabled should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
 ### IsStatusEnabled
 
-Gets a value indicating whether the global IsStatusEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IsStatusEnabled should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
 ### IsWarningEnabled
 
-Gets a value indicating whether the global IsWarningEnabled should be overriden.Note that this value will override all settings of each listener globally. If this value is set to`null` , nothing will be overriden.
+Gets a value indicating whether the global IsWarningEnabled should be overriden. Note that this value will override all settings of each listener globally. If this value is set to`null`, nothing will be overriden.
 
 
 
@@ -70,7 +70,7 @@ Occurs when a log message is written to one of the logs.
 
 ### AddDebugListener(bool ignoreCatelLogging)
 
-Registers the default debug listener. Starting with Catel 2.4, the debug listener is no longer attached for performance reasons. To register the debug listener, call this method.When an instance of the [DebugLogListener](#) is already registered, the existing instance is returned.
+Registers the default debug listener. Starting with Catel 2.4, the debug listener is no longer attached for performance reasons. To register the debug listener, call this method. When an instance of the [DebugLogListener](#) is already registered, the existing instance is returned.
 
 #### Returns
 
@@ -80,7 +80,7 @@ The newly created or existing [DebugLogListener](#).
 
 ### AddListener(ILogListener listener)
 
-Adds a log listener which will receive all log events.This method does not check whether the listener is already added to the list of registered listeners.
+Adds a log listener which will receive all log events. This method does not check whether the listener is already added to the list of registered listeners.
 
 #### Parameters
 
@@ -235,7 +235,7 @@ Loads the listeners from the specified configuration.
 The configuration.
 
 **assembly**
-The assembly to determine product info. If`null` , the entry assembly will be used.
+The assembly to determine product info. If`null`, the entry assembly will be used.
 
 
 
@@ -249,7 +249,7 @@ Loads the listeners from the specified configuration file.
 The configuration file path.
 
 **assembly**
-The assembly to determine product info. If`null` , the entry assembly will be used.
+The assembly to determine product info. If`null`, the entry assembly will be used.
 
 
 

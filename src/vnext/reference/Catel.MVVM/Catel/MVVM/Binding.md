@@ -130,13 +130,13 @@ Occurs when the value of the binding has changed.
 
 ### TransferValueFromSourceToTarget()
 
-Transfers the value from the source to target.Note that this method will check the [BindingMode](#) to see if the transfer is possible.
+Transfers the value from the source to target. Note that this method will check the [BindingMode](#) to see if the transfer is possible.
 
 
 
 ### TransferValueFromTargetToSource()
 
-Transfers the value from the target to source.Note that this method will check the [BindingMode](#) to see if the transfer is possible.
+Transfers the value from the target to source. Note that this method will check the [BindingMode](#) to see if the transfer is possible.
 
 
 

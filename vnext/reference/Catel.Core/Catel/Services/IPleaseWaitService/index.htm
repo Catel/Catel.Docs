@@ -533,14 +533,14 @@
 </pre><p>Interface for the Please Wait service.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="showcounter">ShowCounter<a class="headerlink" href="#showcounter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets the show counter.This property can be used to get the current show counter if the please wait window should be hidden for a moment.</p>
+<p>Gets the show counter. This property can be used to get the current show counter if the please wait window should be hidden for a moment.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="hide">Hide()<a class="headerlink" href="#hide" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Hides this please wait window.</p>
 <h3 id="pop">Pop()<a class="headerlink" href="#pop" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Decreases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will decrease.As long as the internal counter is not zero (0), the please wait window will stay visible. To increase the counter, make a call to Pop.A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.</p>
+<p>Decreases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will decrease. As long as the internal counter is not zero (0), the please wait window will stay visible. To increase the counter, make a call to Pop. A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.</p>
 <h3 id="pushstring-status">Push(string status)<a class="headerlink" href="#pushstring-status" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Increases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will increase.As long as the internal counter is not zero (0), the please wait window will stay visible. To decrease the counter, make a call to Pop.A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.</p>
+<p>Increases the number of clients that show the please wait window. The implementing class is responsible for holding a counter internally which a call to this method will increase. As long as the internal counter is not zero (0), the please wait window will stay visible. To decrease the counter, make a call to Pop. A call to String) or one of its overloads will not increase the internal counter. A call to Hide will reset the internal counter to zero (0) and thus hide the window.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>status</strong>
 The status to change the text to.</p>
@@ -559,7 +559,7 @@ The status. When the string is<code>null</code> or empty, the default please wai
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>When this method is used, the Hide method must be called to hide the window again.</p>
 <h3 id="updatestatusint-currentitem-int-totalitems-string-statusformat">UpdateStatus(int currentItem, int totalItems, string statusFormat)<a class="headerlink" href="#updatestatusint-currentitem-int-totalitems-string-statusformat" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Updates the status and shows a progress bar with the specified status text. The percentage will be automatically calculated.The busy indicator will automatically hide when the totalItems is larger than currentItem.When providing the statusFormat , it is possible to use<code>{0}</code> (represents current item) and<code>{1}</code> (represents total items).</p>
+<p>Updates the status and shows a progress bar with the specified status text. The percentage will be automatically calculated. The busy indicator will automatically hide when the totalItems is larger than currentItem. When providing the statusFormat, it is possible to use<code>{0}</code> (represents current item) and<code>{1}</code> (represents total items).</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>currentItem</strong>
 The current item.</p>

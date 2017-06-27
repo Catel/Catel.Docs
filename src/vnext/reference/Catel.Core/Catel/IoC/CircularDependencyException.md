@@ -16,7 +16,7 @@ public class CircularDependencyException : Exception
 [Exception]()
 
 
-Exception which can be used to easily detect circular dependencies inside the [ServiceLocator](#).This exception is used instead of letting the .NET framework throw a`StackOverflowException` which is much harder to debug.
+Exception which can be used to easily detect circular dependencies inside the [ServiceLocator](#). This exception is used instead of letting the .NET framework throw a`StackOverflowException` which is much harder to debug.
 
 
 

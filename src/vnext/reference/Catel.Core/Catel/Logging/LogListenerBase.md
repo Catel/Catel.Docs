@@ -35,37 +35,37 @@ Gets or sets a value indicating whether to ignore Catel logging.
 
 ### IsDebugEnabled
 
-Gets or sets a value indicating whether this listener is interested in debug messages.This default value is`true`.
+Gets or sets a value indicating whether this listener is interested in debug messages. This default value is`true`.
 
 
 
 ### IsErrorEnabled
 
-Gets or sets a value indicating whether this listener is interested in error messages.This default value is`true`.
+Gets or sets a value indicating whether this listener is interested in error messages. This default value is`true`.
 
 
 
 ### IsInfoEnabled
 
-Gets or sets a value indicating whether this listener is interested in info messages.This default value is`true`.
+Gets or sets a value indicating whether this listener is interested in info messages. This default value is`true`.
 
 
 
 ### IsStatusEnabled
 
-Gets or sets a value indicating whether this listener is interested in status messages.This default value is`true`.
+Gets or sets a value indicating whether this listener is interested in status messages. This default value is`true`.
 
 
 
 ### IsWarningEnabled
 
-Gets or sets a value indicating whether this listener is interested in warning messages.This default value is`true`.
+Gets or sets a value indicating whether this listener is interested in warning messages. This default value is`true`.
 
 
 
 ### TimeDisplay
 
-Gets or sets a value indicating what format of time to use.This default value is`Time`.
+Gets or sets a value indicating what format of time to use. This default value is`Time`.
 
 
 

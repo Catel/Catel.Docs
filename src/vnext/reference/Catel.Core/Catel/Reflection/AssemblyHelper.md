@@ -22,7 +22,7 @@ Assembly helper class.
 
 ### GetAllTypesSafely(Assembly assembly, bool logLoaderExceptions)
 
-Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadException](#) is thrown, and no types are returned. In that case the user must manually get the successfully loaded types from the Types.This method automatically loads the types. If the [ReflectionTypeLoadException](#) occurs, this method will return the types that were loaded successfully.
+Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadException](#) is thrown, and no types are returned. In that case the user must manually get the successfully loaded types from the Types. This method automatically loads the types. If the [ReflectionTypeLoadException](#) occurs, this method will return the types that were loaded successfully.
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Gets all types from the assembly safely. Sometimes, the [ReflectionTypeLoadExcep
 The assembly.
 
 **logLoaderExceptions**
-If set to`true` , the loader exceptions will be logged.
+If set to`true`, the loader exceptions will be logged.
 
 #### Returns
 
@@ -123,7 +123,7 @@ Gets the loaded assemblies by using the right method. For Windows applications, 
 The app domain to search in.
 
 **ignoreDynamicAssemblies**
-if set to`true` , dynamic assemblies are being ignored.
+if set to`true`, dynamic assemblies are being ignored.
 
 #### Returns
 

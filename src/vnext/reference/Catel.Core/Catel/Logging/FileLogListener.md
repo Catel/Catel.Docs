@@ -31,7 +31,7 @@ Initializes a new instance of the [FileLogListener](#) class.
 #### Parameters
 
 **assembly**
-The assembly to load the product info from. If`null` , the entry assembly will be used.
+The assembly to load the product info from. If`null`, the entry assembly will be used.
 
 
 
@@ -48,7 +48,7 @@ The file path.
 The max size in kilo bytes.
 
 **assembly**
-The assembly to load the product info from. If`null` , the entry assembly will be used.
+The assembly to load the product info from. If`null`, the entry assembly will be used.
 
 #### Exceptions
 

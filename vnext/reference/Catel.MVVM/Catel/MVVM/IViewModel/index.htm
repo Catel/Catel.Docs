@@ -339,7 +339,7 @@
 <p>View model interface.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="isclosed">IsClosed<a class="headerlink" href="#isclosed" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Gets a value indicating whether this instance is closed. If a view model is closed, calling CancelViewModelAsync , SaveViewModelAsync or Boolean}) will have no effect.</p>
+<p>Gets a value indicating whether this instance is closed. If a view model is closed, calling CancelViewModelAsync, SaveViewModelAsync or Boolean}) will have no effect.</p>
 <h3 id="title">Title<a class="headerlink" href="#title" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Gets the title of the view model.</p>
 <h3 id="uniqueidentifier">UniqueIdentifier<a class="headerlink" href="#uniqueidentifier" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -372,9 +372,9 @@
 <p><strong>result</strong>
 The result to pass to the view. This will, for example, be used as<code>DialogResult</code>.</p>
 <h3 id="initializeviewmodelasync">InitializeViewModelAsync()<a class="headerlink" href="#initializeviewmodelasync" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the view model. Normally the initialization is done in the constructor, but sometimes this must be delayed to a state where the associated UI element (user control, window, ...) is actually loaded.This method is called as soon as the associated UI element is loaded.</p>
+<p>Initializes the view model. Normally the initialization is done in the constructor, but sometimes this must be delayed to a state where the associated UI element (user control, window, ...) is actually loaded. This method is called as soon as the associated UI element is loaded.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>It's not recommended to implement the initialization of properties in this method. The initialization of properties should be done in the constructor. This method should be used to start the retrieval of data from a web service or something similar.During unit tests, it is recommended to manually call this method because there is no external container calling this method.</p>
+<p>It's not recommended to implement the initialization of properties in this method. The initialization of properties should be done in the constructor. This method should be used to start the retrieval of data from a web service or something similar. During unit tests, it is recommended to manually call this method because there is no external container calling this method.</p>
 <h3 id="saveviewmodelasync">SaveViewModelAsync()<a class="headerlink" href="#saveviewmodelasync" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Saves the data.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

@@ -30,7 +30,7 @@ Subscribes all methods of the specified instance that are decorated with the [Me
 The instance to subscribe.
 
 **messageMediator**
-The message mediator. If`null` , the default will be used.
+The message mediator. If`null`, the default will be used.
 
 #### Exceptions
 
@@ -38,7 +38,7 @@ The message mediator. If`null` , the default will be used.
 The instance is`null`.
 
 **T:System.NotSupportedException**
-The object has non-public methods decorated with the [MessageRecipientAttribute](#) , but the application is not written in full .NET.
+The object has non-public methods decorated with the [MessageRecipientAttribute](#), but the application is not written in full .NET.
 
 **T:System.InvalidCastException**
 One of the methods cannot be casted to a valid message method.
@@ -55,7 +55,7 @@ Unsubscribes all methods of the specified instance that are decorated with the [
 The instance.
 
 **messageMediator**
-The message mediator. If`null` , the default will be used.
+The message mediator. If`null`, the default will be used.
 
 #### Exceptions
 

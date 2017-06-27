@@ -33,7 +33,7 @@ The handler.
 The sender.
 
 **allowParallelExecution**
-if set to`true` , allow parallel invocation of the handlers.
+if set to`true`, allow parallel invocation of the handlers.
 
 #### Returns
 
@@ -62,7 +62,7 @@ The sender.
 The event args.
 
 **allowParallelExecution**
-if set to`true` , allow parallel invocation of the handlers.
+if set to`true`, allow parallel invocation of the handlers.
 
 #### Returns
 

@@ -445,7 +445,7 @@
 <p>By default, this value is<code>true</code>.</p>
 <h2 id="events">Events<a class="headerlink" href="#events" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="missingtype">MissingType<a class="headerlink" href="#missingtype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Occurs when a type cannot be resolved the by service locator. It first tries to raise this event.If there are no handlers or no handler can fill up the missing type, an exception will be thrown by the service locator.</p>
+<p>Occurs when a type cannot be resolved the by service locator. It first tries to raise this event. If there are no handlers or no handler can fill up the missing type, an exception will be thrown by the service locator.</p>
 <h3 id="typeinstantiated">TypeInstantiated<a class="headerlink" href="#typeinstantiated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Occurs when a type is instantiated in the service locator.</p>
 <h3 id="typeregistered">TypeRegistered<a class="headerlink" href="#typeregistered" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -457,12 +457,12 @@
 <p><strong>types</strong>
 The types that should be registered.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p><code>true</code> if all the specified types are registered with this instance of the <a href="#">IServiceLocator</a> ; otherwise<code>false</code>.</p>
+<p><code>true</code> if all the specified types are registered with this instance of the <a href="#">IServiceLocator</a>; otherwise<code>false</code>.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 The types is<code>null</code>.</p>
 <h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that this method is written for optimalization by the <a href="#">TypeFactory</a>. This means that the <a href="#">TypeFactory</a> does not need to call the <a href="#">ServiceLocator</a> several times to construct a single type using dependency injection.Only use this method if you know what you are doing, otherwise use the Object) instead.</p>
+<p>Note that this method is written for optimalization by the <a href="#">TypeFactory</a>. This means that the <a href="#">TypeFactory</a> does not need to call the <a href="#">ServiceLocator</a> several times to construct a single type using dependency injection. Only use this method if you know what you are doing, otherwise use the Object) instead.</p>
 <h3 id="dispose">Dispose()<a class="headerlink" href="#dispose" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Disposes this instance and all registered instances.</p>
 <h3 id="getregistrationinfotype-servicetype-object-tag">GetRegistrationInfo(Type serviceType, object tag)<a class="headerlink" href="#getregistrationinfotype-servicetype-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -526,7 +526,7 @@ The tag to register the service with. The default value is<code>null</code>.</p>
 <p><strong>registrationType</strong>
 The registration type. The default value is Singleton.</p>
 <p><strong>registerIfAlreadyRegistered</strong>
-If set to<code>true</code> , an older type registration is overwritten by this new one.</p>
+If set to<code>true</code>, an older type registration is overwritten by this new one.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 If serviceType is<code>null</code>.</p>
@@ -544,7 +544,7 @@ The tag to register the service with. The default value is<code>null</code>.</p>
 <p><strong>registrationType</strong>
 The registration type. The default value is Singleton.</p>
 <p><strong>registerIfAlreadyRegistered</strong>
-If set to<code>true</code> , an older type registration is overwritten by this new one.</p>
+If set to<code>true</code>, an older type registration is overwritten by this new one.</p>
 <h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentNullException</strong>
 If serviceType is<code>null</code>.</p>
@@ -579,7 +579,7 @@ The collection of types that should be resolved.</p>
 <p><strong>T:System.ArgumentNullException</strong>
 The types is<code>null</code>.</p>
 <h4 id="remarks-6">Remarks<a class="headerlink" href="#remarks-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
-<p>Note that this method is written for optimalization by the <a href="#">TypeFactory</a>. This means that the <a href="#">TypeFactory</a> does not need to call the <a href="#">ServiceLocator</a> several times to construct a single type using dependency injection.Only use this method if you know what you are doing, otherwise use the Object) instead.</p>
+<p>Note that this method is written for optimalization by the <a href="#">TypeFactory</a>. This means that the <a href="#">TypeFactory</a> does not need to call the <a href="#">ServiceLocator</a> several times to construct a single type using dependency injection. Only use this method if you know what you are doing, otherwise use the Object) instead.</p>
 <h3 id="resolvetypetype-servicetype-object-tag">ResolveType(Type serviceType, object tag)<a class="headerlink" href="#resolvetypetype-servicetype-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>Resolves an instance of the type registered on the service.</p>
 <h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

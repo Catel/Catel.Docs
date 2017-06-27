@@ -390,7 +390,7 @@
 <pre class="nocode">public class ViewLoadManager : IViewLoadManager
 </pre><p><strong>Base types</strong></p>
 <p><a href="/Catel.MVVM\Catel\MVVM\Views\IViewLoadManager.htm">IViewLoadManager</a></p>
-<p>Manager that handles top =&gt; bottom loaded events for all views inside an application.The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.This manager subscribes to both the<code>Loaded</code> and<code>LayoutUpdated</code> events. This is because in a nested scenario this will happen:```</p>
+<p>Manager that handles top =&gt; bottom loaded events for all views inside an application. The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom. This manager subscribes to both the<code>Loaded</code> and<code>LayoutUpdated</code> events. This is because in a nested scenario this will happen:```</p>
 <p>``` Will be executed in the following order:</p>
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h2 id="Will">Constructors<a class="headerlink" href="#Will" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>

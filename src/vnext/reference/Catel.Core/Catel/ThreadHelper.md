@@ -30,7 +30,7 @@ System.String.
 
 ### Sleep(int millisecondsTimeout)
 
-Lets the current execution thread sleep for the specified milliseconds.In WinRT, this method uses the Task to delay.
+Lets the current execution thread sleep for the specified milliseconds. In WinRT, this method uses the Task to delay.
 
 #### Parameters
 

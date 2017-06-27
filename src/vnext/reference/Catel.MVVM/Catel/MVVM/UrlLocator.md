@@ -60,7 +60,7 @@ Resolves an url by the view model and the registered NamingConventions.
 Type of the view model to resolve the url for.
 
 **ensurePageExists**
-If set to`true` , the method checks whether the page resource actually exists.
+If set to`true`, the method checks whether the page resource actually exists.
 
 #### Returns
 

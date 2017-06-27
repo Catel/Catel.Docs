@@ -94,7 +94,7 @@ Type of the view model.
 Type of the window.
 
 **throwExceptionIfExists**
-if set to`true` , this method will throw an exception when already registered.
+if set to`true`, this method will throw an exception when already registered.
 
 #### Exceptions
 
@@ -121,7 +121,7 @@ The type of the view.
 The UI visualizer service.
 
 **throwExceptionIfExists**
-if set to`true` , this method will throw an exception when already registered.
+if set to`true`, this method will throw an exception when already registered.
 
 #### Exceptions
 

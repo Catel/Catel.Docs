@@ -33,7 +33,7 @@ Gets the current location represented as [ILocation](#). If no location is avail
 
 #### Remarks
 
-This is convenience property that internally calls GetCurrentLocation.Note that the services inside Catel do not support [INotifyPropertyChanged](#) , thus you cannot subscribe to changes of this property. Instead, subscribe to the LocationChanged event.
+This is convenience property that internally calls GetCurrentLocation. Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot subscribe to changes of this property. Instead, subscribe to the LocationChanged event.
 
 
 

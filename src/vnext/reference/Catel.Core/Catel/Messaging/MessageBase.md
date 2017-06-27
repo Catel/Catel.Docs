@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public abstract class MessageBase<TMessage, TData> where TMessage : new(), MessageBase<TMessage, TData> 
 ```
 
-Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class to define individual message types.For most subclasses the only thing to code is an empty class body including the type parameters.For the payload data you can choose betweeen the following options:
+Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class to define individual message types. For most subclasses the only thing to code is an empty class body including the type parameters. For the payload data you can choose betweeen the following options:
 
 #### Type Parameters
 
@@ -40,7 +40,7 @@ Provides access to the payload data.
 
 ### Register(object recipient, Action<TMessage> handler, object tag)
 
-Convenient helper method to subscribe to this Message type.Usage:
+Convenient helper method to subscribe to this Message type. Usage:
 
 #### Parameters
 
@@ -76,7 +76,7 @@ The optional Catel mediator tag to be used.
 
 ### Unregister(object recipient, Action<TMessage> handler, object tag)
 
-Convenient helper method to unsubscribe from this Message type.Usage:
+Convenient helper method to unsubscribe from this Message type. Usage:
 
 #### Parameters
 

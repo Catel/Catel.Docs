@@ -31,7 +31,7 @@ The serialization context.
 The predicate.
 
 **maxLevels**
-The maximum number of levels to check. If`-1` , will check all up to the root.
+The maximum number of levels to check. If`-1`, will check all up to the root.
 
 #### Returns
 

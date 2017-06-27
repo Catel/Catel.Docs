@@ -96,7 +96,7 @@ Clears this binding context and all bindings.
 
 ### DetermineIfBindingsAreRequired(IViewModel viewModel)
 
-Updates the view model of this binding context.This method can be called as much as required, it will automatically determine if binding updates are required.
+Updates the view model of this binding context. This method can be called as much as required, it will automatically determine if binding updates are required.
 
 #### Parameters
 

@@ -331,7 +331,7 @@
 <h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="subscribetoweakcollectionchangedeventobject-target-object-source-notifycollectionchangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname">SubscribeToWeakCollectionChangedEvent(object target, object source, NotifyCollectionChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)<a class="headerlink" href="#subscribetoweakcollectionchangedeventobject-target-object-source-notifycollectionchangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event.This method subscribes to the <a href="#">NotifyCollectionChangedEventHandler</a> which does not follow the<code>EventHandler{TEventArgs}</code> convention.</p>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event. This method subscribes to the <a href="#">NotifyCollectionChangedEventHandler</a> which does not follow the<code>EventHandler{TEventArgs}</code> convention.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>target</strong>
 Instance subscribing to the event, should be<code>null</code> for static event handlers.</p>
@@ -340,7 +340,7 @@ The source of the event, should be<code>null</code> for static events.</p>
 <p><strong>handler</strong>
 The handler to execute when the event occurs.</p>
 <p><strong>throwWhenSubscriptionFails</strong>
-if set to<code>true</code> , throw an exception when subscription fails (does not apply to argument checks).</p>
+if set to<code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
 <p><strong>eventName</strong>
 Name of the event.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -368,7 +368,7 @@ Name of the event.</p>
 <p><strong>handler</strong>
 The handler to execute when the event occurs.</p>
 <p><strong>throwWhenSubscriptionFails</strong>
-if set to<code>true</code> , throw an exception when subscription fails (does not apply to argument checks).</p>
+if set to<code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The created event listener.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -379,7 +379,7 @@ The eventName is<code>null</code> or whitespace.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The source and target are both<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
-The handler is not of type <a href="#">PropertyChangedEventHandler</a> , <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
+The handler is not of type <a href="#">PropertyChangedEventHandler</a>, <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
 <h4 id="remarks-2">Remarks<a class="headerlink" href="#remarks-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>This method can only be used for non-static event sources and targets. If static events or listeners are required, use the <a href="#">WeakEventListener</a> class.</p>
 <h3 id="subscribetoweakgenericeventobject-target-object-source-string-eventname-eventhandler-handler-bool-throwwhensubscriptionfails">SubscribeToWeakGenericEvent<TEventArgs>(object target, object source, string eventName, EventHandler<TEventArgs> handler, bool throwWhenSubscriptionFails)<a class="headerlink" href="#subscribetoweakgenericeventobject-target-object-source-string-eventname-eventhandler-handler-bool-throwwhensubscriptionfails" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
@@ -397,7 +397,7 @@ Name of the event.</p>
 <p><strong>handler</strong>
 The handler to execute when the event occurs.</p>
 <p><strong>throwWhenSubscriptionFails</strong>
-if set to<code>true</code> , throw an exception when subscription fails (does not apply to argument checks).</p>
+if set to<code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
 <h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The created event listener.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -408,9 +408,9 @@ The handler is<code>null</code>.</p>
 <p><strong>T:System.InvalidOperationException</strong>
 The source and target are both<code>null</code>.</p>
 <p><strong>T:System.NotSupportedException</strong>
-The handler is not of type <a href="#">PropertyChangedEventHandler</a> , <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
+The handler is not of type <a href="#">PropertyChangedEventHandler</a>, <a href="#">NotifyCollectionChangedEventHandler</a> or <a href="#">EventHandler</a>.</p>
 <h3 id="subscribetoweakpropertychangedeventobject-target-object-source-propertychangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname">SubscribeToWeakPropertyChangedEvent(object target, object source, PropertyChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)<a class="headerlink" href="#subscribetoweakpropertychangedeventobject-target-object-source-propertychangedeventhandler-handler-bool-throwwhensubscriptionfails-string-eventname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event.This method subscribes to the <a href="#">PropertyChangedEventHandler</a> which does not follow the<code>EventHandler{TEventArgs}</code> convention.</p>
+<p>Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event. This method subscribes to the <a href="#">PropertyChangedEventHandler</a> which does not follow the<code>EventHandler{TEventArgs}</code> convention.</p>
 <h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>target</strong>
 Instance subscribing to the event, should be<code>null</code> for static event handlers.</p>
@@ -421,7 +421,7 @@ Name of the event.</p>
 <p><strong>handler</strong>
 The handler to execute when the event occurs.</p>
 <p><strong>throwWhenSubscriptionFails</strong>
-if set to<code>true</code> , throw an exception when subscription fails (does not apply to argument checks).</p>
+if set to<code>true</code>, throw an exception when subscription fails (does not apply to argument checks).</p>
 <h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The created event listener.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>

@@ -85,7 +85,7 @@ Gets a value indicating whether change notifications are suspended.
 
 ### AddItems(IEnumerable<T> collection)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -101,7 +101,7 @@ The collection is`null`.
 
 ### AddItems(IEnumerable collection)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -155,7 +155,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable<T> collection)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -171,7 +171,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable collection)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 

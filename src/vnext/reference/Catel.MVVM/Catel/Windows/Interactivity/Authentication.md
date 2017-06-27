@@ -20,7 +20,7 @@ Authentication behavior to show/hide UI elements based on the some authenticatio
 
 #### Remarks
 
-In Silverlight, the`IsEnabled` property is declared on [Control](#) instead of [FrameworkElement](#). If the AssociatedObject is not a [Control](#) , but the Action is set to Disable , a [InvalidOperationException](#) will be thrown.
+In Silverlight, the`IsEnabled` property is declared on [Control](#) instead of [FrameworkElement](#). If the AssociatedObject is not a [Control](#), but the Action is set to Disable, a [InvalidOperationException](#) will be thrown.
 
 
 

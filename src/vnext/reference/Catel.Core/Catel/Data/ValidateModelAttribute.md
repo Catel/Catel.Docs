@@ -16,7 +16,7 @@ public class ValidateModelAttribute : Attribute
 [Attribute]()
 
 
-Attribute to define custom validation at class level for all classes that derive from [ModelBase](#).This attribute follows a naming convention. If
+Attribute to define custom validation at class level for all classes that derive from [ModelBase](#). This attribute follows a naming convention. If
 
 
 

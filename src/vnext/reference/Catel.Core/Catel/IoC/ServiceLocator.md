@@ -69,7 +69,7 @@ By default, this value is`true`.
 
 ### MissingType
 
-Occurs when a type cannot be resolved the by service locator. It first tries to raise this event.If there are no handlers or no handler can fill up the missing type, an exception will be thrown by the service locator.
+Occurs when a type cannot be resolved the by service locator. It first tries to raise this event. If there are no handlers or no handler can fill up the missing type, an exception will be thrown by the service locator.
 
 
 
@@ -98,7 +98,7 @@ The types that should be registered.
 
 #### Returns
 
-`true` if all the specified types are registered with this instance of the [IServiceLocator](#) ; otherwise`false`.
+`true` if all the specified types are registered with this instance of the [IServiceLocator](#); otherwise`false`.
 
 #### Exceptions
 
@@ -107,7 +107,7 @@ The types is`null`.
 
 #### Remarks
 
-Note that this method is written for optimalization by the [TypeFactory](#). This means that the [TypeFactory](#) does not need to call the [ServiceLocator](#) several times to construct a single type using dependency injection.Only use this method if you know what you are doing, otherwise use the Object) instead.
+Note that this method is written for optimalization by the [TypeFactory](#). This means that the [TypeFactory](#) does not need to call the [ServiceLocator](#) several times to construct a single type using dependency injection. Only use this method if you know what you are doing, otherwise use the Object) instead.
 
 
 
@@ -229,7 +229,7 @@ The tag to register the service with. The default value is`null`.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 
@@ -261,7 +261,7 @@ The tag to register the service with. The default value is`null`.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 
@@ -329,7 +329,7 @@ The types is`null`.
 
 #### Remarks
 
-Note that this method is written for optimalization by the [TypeFactory](#). This means that the [TypeFactory](#) does not need to call the [ServiceLocator](#) several times to construct a single type using dependency injection.Only use this method if you know what you are doing, otherwise use the Object) instead.
+Note that this method is written for optimalization by the [TypeFactory](#). This means that the [TypeFactory](#) does not need to call the [ServiceLocator](#) several times to construct a single type using dependency injection. Only use this method if you know what you are doing, otherwise use the Object) instead.
 
 
 

@@ -42,7 +42,7 @@ Gets or sets the default type factory.
 
 ### UpdateDefaultComponents()
 
-Updates the default components.This method should be called when any of the factory methods has been changed.
+Updates the default components. This method should be called when any of the factory methods has been changed.
 
 #### Exceptions
 

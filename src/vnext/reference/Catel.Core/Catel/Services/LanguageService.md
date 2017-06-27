@@ -38,7 +38,7 @@ Initializes a new instance of the [LanguageService](#) class.
 
 ### CacheResults
 
-Gets or sets a value indicating whether the results should be cached.The default value is`true`.
+Gets or sets a value indicating whether the results should be cached. The default value is`true`.
 
 
 

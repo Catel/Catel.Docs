@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public class ChangeNotificationWrapper
 ```
 
-Wrapper for an object that implements the [INotifyPropertyChanged](#) and [INotifyCollectionChanged](#).This class is thread-safe and uses weak events to prevent memory leaks.
+Wrapper for an object that implements the [INotifyPropertyChanged](#) and [INotifyCollectionChanged](#). This class is thread-safe and uses weak events to prevent memory leaks.
 
 
 
@@ -80,7 +80,7 @@ Occurs when the PropertyChanged event occurs on the target object.
 
 ### IsUsefulForObject(object obj)
 
-Determines whether creating a [ChangeNotificationWrapper](#) is useful for the specified object.An object is considered usable when it implements either [INotifyPropertyChanged](#) or [INotifyCollectionChanged](#).
+Determines whether creating a [ChangeNotificationWrapper](#) is useful for the specified object. An object is considered usable when it implements either [INotifyPropertyChanged](#) or [INotifyCollectionChanged](#).
 
 #### Parameters
 
@@ -89,7 +89,7 @@ The object to check.
 
 #### Returns
 
-`true` if it is useful to create a [ChangeNotificationWrapper](#) ; otherwise,`false`.
+`true` if it is useful to create a [ChangeNotificationWrapper](#); otherwise,`false`.
 
 
 
@@ -107,7 +107,7 @@ The [NotifyCollectionChangedEventArgs](#) instance containing the event data.
 
 #### Remarks
 
-This method is public to allow the usage of the [WeakEventListener](#) , do not call this method yourself.
+This method is public to allow the usage of the [WeakEventListener](#), do not call this method yourself.
 
 
 
@@ -125,7 +125,7 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 
 #### Remarks
 
-This method is public to allow the usage of the [WeakEventListener](#) , do not call this method yourself.
+This method is public to allow the usage of the [WeakEventListener](#), do not call this method yourself.
 
 
 
@@ -143,7 +143,7 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 
 #### Remarks
 
-This method is public to allow the usage of the [WeakEventListener](#) , do not call this method yourself.
+This method is public to allow the usage of the [WeakEventListener](#), do not call this method yourself.
 
 
 
@@ -157,7 +157,7 @@ Subscribes to the notify changed events.
 The object to subscribe to.
 
 **parentCollection**
-If not`null` , this is a collection item which should use PropertyChangedEventArgs).
+If not`null`, this is a collection item which should use PropertyChangedEventArgs).
 
 
 
@@ -187,7 +187,7 @@ No need to check for weak events, they are unsubscribed automatically.
 
 ### UpdateCollectionSubscriptions(ICollection collection)
 
-Updates all the collection subscriptions.This method is internally used when a notifiable collection raises the Reset event.
+Updates all the collection subscriptions. This method is internally used when a notifiable collection raises the Reset event.
 
 
 

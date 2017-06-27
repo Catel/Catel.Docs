@@ -20,7 +20,7 @@ public abstract class BehaviorBase<T> : IBehavior, Behavior<T> where T : Framewo
 [IBehavior](/Catel.MVVM\Catel\Windows\Interactivity\IBehavior.md)
 
 
-Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`.This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the behavior is attached.
+Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the behavior is attached.
 
 #### Type Parameters
 

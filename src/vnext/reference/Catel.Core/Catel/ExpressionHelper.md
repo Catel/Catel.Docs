@@ -22,7 +22,7 @@ Expression helper class that allows easy parsing of expressions.
 
 ### GetOwner<TProperty>(Expression<Func<TProperty>> propertyExpression)
 
-Gets the owner of the expression. For example if the expression`() => MyProperty` , the owner of the property will be returned.
+Gets the owner of the expression. For example if the expression`() => MyProperty`, the owner of the property will be returned.
 
 #### Parameters
 

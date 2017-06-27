@@ -16,7 +16,7 @@ public class ViewToViewModelAttribute : Attribute
 [Attribute]()
 
 
-A mapper attribute to map a [IView](#) (such as the UserControl or the DataWindow) property to a view model property.This class is very useful when creating custom user controls that need more parameterized settings than just the`DataContext` property.
+A mapper attribute to map a [IView](#) (such as the UserControl or the DataWindow) property to a view model property. This class is very useful when creating custom user controls that need more parameterized settings than just the`DataContext` property.
 
 
 

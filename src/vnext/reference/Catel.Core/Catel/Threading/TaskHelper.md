@@ -153,7 +153,7 @@ The actions is`null`.
 
 ### RunAndWaitAsync(Action[] actions)
 
-Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.
+Runs all the specified actions in separate threads and waits for the to complete. The waiting for all threads is also done in a separate thread which makes this method asynchronous.
 
 #### Parameters
 
@@ -169,7 +169,7 @@ The actions is`null`.
 
 ### RunAndWaitAsync(Func<Task>[] actions)
 
-Runs all the specified actions in separate threads and waits for the to complete.The waiting for all threads is also done in a separate thread which makes this method asynchronous.
+Runs all the specified actions in separate threads and waits for the to complete. The waiting for all threads is also done in a separate thread which makes this method asynchronous.
 
 #### Parameters
 

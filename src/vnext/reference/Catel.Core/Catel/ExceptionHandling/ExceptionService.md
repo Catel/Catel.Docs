@@ -151,7 +151,7 @@ The type of the exception.
 
 ### Process(Action action)
 
-Processes the specified action.If the exception could not be handled safely by this service, it will throw the exception.
+Processes the specified action. If the exception could not be handled safely by this service, it will throw the exception.
 
 #### Parameters
 
@@ -167,7 +167,7 @@ The action is`null`.
 
 ### Process<TResult>(Func<TResult> action)
 
-Processes the specified action.If the exception could not be handled safely by this service, it will throw the exception.
+Processes the specified action. If the exception could not be handled safely by this service, it will throw the exception.
 
 #### Type Parameters
 

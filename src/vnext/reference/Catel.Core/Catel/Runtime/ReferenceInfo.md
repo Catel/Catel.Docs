@@ -31,7 +31,7 @@ The instance.
 The unique identifier.
 
 **isFirstUsage**
-if set to`true` , this is the first usage of this instance.
+if set to`true`, this is the first usage of this instance.
 
 
 

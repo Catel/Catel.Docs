@@ -17,7 +17,7 @@ public class ViewLoadManager : IViewLoadManager
 [IViewLoadManager](/Catel.MVVM\Catel\MVVM\Views\IViewLoadManager.md)
 
 
-Manager that handles top =&gt; bottom loaded events for all views inside an application.The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom.This manager subscribes to both the`Loaded` and`LayoutUpdated` events. This is because in a nested scenario this will happen:```
+Manager that handles top =&gt; bottom loaded events for all views inside an application. The reason this class is built is that in non-WPF technologies, the visual tree is loaded from bottom =&gt; top. However, Catel heavily relies on the order to be top =&gt; bottom. This manager subscribes to both the`Loaded` and`LayoutUpdated` events. This is because in a nested scenario this will happen:```
 
 ``` Will be executed in the following order:
 

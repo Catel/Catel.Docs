@@ -20,7 +20,7 @@ public abstract class EventTriggerBase<T, T> : ITrigger, EventTriggerBase<T> whe
 [ITrigger](/Catel.MVVM\Catel\Windows\Interactivity\ITrigger.md)
 
 
-Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching.This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger is attached.
+Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger is attached.
 
 #### Type Parameters
 

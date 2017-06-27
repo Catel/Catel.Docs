@@ -41,7 +41,7 @@ Gets or sets the value indicating if the cancel operation canceled.
 
 #### Remarks
 
-If`true` , the cancel operation was canceled and the operation is complete. If`false` , the cancel operation was allowed to continue and all cancel operations are complete.
+If`true`, the cancel operation was canceled and the operation is complete. If`false`, the cancel operation was allowed to continue and all cancel operations are complete.
 
 
 

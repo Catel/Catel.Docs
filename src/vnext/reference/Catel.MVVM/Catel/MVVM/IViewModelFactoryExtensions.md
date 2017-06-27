@@ -20,7 +20,7 @@ Extensions for the [IViewModelFactory](#).
 
 ### CreateViewModel<TViewModel>(IViewModelFactory viewModelFactory, object dataContext, object tag)
 
-Creates a new view model.This is a convenience wrapper around the Object) method. This method cannot be overriden.
+Creates a new view model. This is a convenience wrapper around the Object) method. This method cannot be overriden.
 
 #### Type Parameters
 

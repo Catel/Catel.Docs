@@ -36,7 +36,7 @@ Occurs when a command has been created.
 
 ### CreateCommand(string commandName, InputGesture inputGesture, ICompositeCommand compositeCommand, bool throwExceptionWhenCommandIsAlreadyCreated)
 
-Creates the command inside the command manager.If the throwExceptionWhenCommandIsAlreadyCreated is`false` and the command is already created, only the input gesture is updated for the existing command.
+Creates the command inside the command manager. If the throwExceptionWhenCommandIsAlreadyCreated is`false` and the command is already created, only the input gesture is updated for the existing command.
 
 #### Parameters
 
@@ -47,10 +47,10 @@ Name of the command.
 The input gesture.
 
 **compositeCommand**
-The composite command. If`null` , this will default to a new instance of [CompositeCommand](#).
+The composite command. If`null`, this will default to a new instance of [CompositeCommand](#).
 
 **throwExceptionWhenCommandIsAlreadyCreated**
-if set to`true` , this method will throw an exception when the command is already created.
+if set to`true`, this method will throw an exception when the command is already created.
 
 #### Exceptions
 

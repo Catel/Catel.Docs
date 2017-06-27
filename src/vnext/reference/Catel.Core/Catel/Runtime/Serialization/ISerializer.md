@@ -295,15 +295,15 @@ The model is`null`.
 
 ### Warmup(IEnumerable<Type> types, int typesPerThread)
 
-Warms up the specified types. If the types is`null` , all types known in the [TypeCache](#) deriving from the [ModelBase](#) class will be initialized.Note that it is not required to call this, but it can help to prevent an additional performance impact the first time a type is serialized.
+Warms up the specified types. If the types is`null`, all types known in the [TypeCache](#) deriving from the [ModelBase](#) class will be initialized. Note that it is not required to call this, but it can help to prevent an additional performance impact the first time a type is serialized.
 
 #### Parameters
 
 **types**
-The types to warmp up. If`null` , all types will be initialized.
+The types to warmp up. If`null`, all types will be initialized.
 
 **typesPerThread**
-The types per thread. If`-1` , all types will be initialized on the same thread.
+The types per thread. If`-1`, all types will be initialized on the same thread.
 
 
 

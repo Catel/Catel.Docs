@@ -80,7 +80,7 @@ If targetType is`null`.
 
 ### IndentLevel
 
-Gets or sets the indent level.The default value is`0`.
+Gets or sets the indent level. The default value is`0`.
 
 #### Exceptions
 
@@ -91,7 +91,7 @@ The`value` is negative.
 
 ### IndentSize
 
-Gets or sets the size of the indent.The default value is`2`.
+Gets or sets the size of the indent. The default value is`2`.
 
 #### Exceptions
 
@@ -102,7 +102,7 @@ The value is negative.
 
 ### IsCatelLogging
 
-Gets a value indicating whether this logger is a Catel logger.This value can be useful to exclude Catel logging for external listeners.
+Gets a value indicating whether this logger is a Catel logger. This value can be useful to exclude Catel logging for external listeners.
 
 
 

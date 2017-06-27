@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public static class Argument
 ```
 
-Argument validator class to help validating arguments that are passed into a method.This class automatically adds thrown exceptions to the log file.
+Argument validator class to help validating arguments that are passed into a method. This class automatically adds thrown exceptions to the log file.
 
 
 
@@ -1297,7 +1297,7 @@ Checks whether the passed in boolean check is`true`. If not, this method will th
 #### Parameters
 
 **isSupported**
-if set to`true` , the action is supported; otherwise`false`.
+if set to`true`, the action is supported; otherwise`false`.
 
 **errorFormat**
 The error format.

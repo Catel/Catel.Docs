@@ -40,7 +40,7 @@ Initializes a new instance of the [FocusBehaviorBase](#) class.
 
 ### FocusDelay
 
-Gets or sets the focus delay. If smaller than 25, no delay will be used. If larger than 5000, it will be set to 5000.The default value in WPF is`0`.
+Gets or sets the focus delay. If smaller than 25, no delay will be used. If larger than 5000, it will be set to 5000. The default value in WPF is`0`.
 
 
 

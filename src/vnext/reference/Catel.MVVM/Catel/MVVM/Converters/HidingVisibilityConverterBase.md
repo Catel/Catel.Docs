@@ -16,7 +16,7 @@ public abstract class HidingVisibilityConverterBase : VisibilityConverterBase
 [VisibilityConverterBase](/Catel.MVVM\Catel\MVVM\Converters\VisibilityConverterBase.md)
 
 
-A base class that makes it easier to create values to visibility converters.This converter returns Hidden when a non-visible state should be returned.
+A base class that makes it easier to create values to visibility converters. This converter returns Hidden when a non-visible state should be returned.
 
 
 

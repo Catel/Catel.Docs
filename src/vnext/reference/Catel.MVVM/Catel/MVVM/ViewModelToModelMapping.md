@@ -76,13 +76,13 @@ The viewModelProperty is`null` or whitespace.
 
 ### Converter
 
-Gets the converter.The default value is TwoWay.
+Gets the converter. The default value is TwoWay.
 
 
 
 ### ConverterType
 
-Gets the type of the converter.The default value is TwoWay.
+Gets the type of the converter. The default value is TwoWay.
 
 
 

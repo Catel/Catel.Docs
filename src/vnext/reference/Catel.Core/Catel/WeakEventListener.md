@@ -26,7 +26,7 @@ This class can only be used for non-static event sources and targets. If static 
 
 ### SubscribeToWeakCollectionChangedEvent(object target, object source, NotifyCollectionChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)
 
-Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event.This method subscribes to the [NotifyCollectionChangedEventHandler](#) which does not follow the`EventHandler{TEventArgs}` convention.
+Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event. This method subscribes to the [NotifyCollectionChangedEventHandler](#) which does not follow the`EventHandler{TEventArgs}` convention.
 
 #### Parameters
 
@@ -40,7 +40,7 @@ The source of the event, should be`null` for static events.
 The handler to execute when the event occurs.
 
 **throwWhenSubscriptionFails**
-if set to`true` , throw an exception when subscription fails (does not apply to argument checks).
+if set to`true`, throw an exception when subscription fails (does not apply to argument checks).
 
 **eventName**
 Name of the event.
@@ -88,7 +88,7 @@ Name of the event.
 The handler to execute when the event occurs.
 
 **throwWhenSubscriptionFails**
-if set to`true` , throw an exception when subscription fails (does not apply to argument checks).
+if set to`true`, throw an exception when subscription fails (does not apply to argument checks).
 
 #### Returns
 
@@ -106,7 +106,7 @@ The eventName is`null` or whitespace.
 The source and target are both`null`.
 
 **T:System.NotSupportedException**
-The handler is not of type [PropertyChangedEventHandler](#) , [NotifyCollectionChangedEventHandler](#) or [EventHandler](#).
+The handler is not of type [PropertyChangedEventHandler](#), [NotifyCollectionChangedEventHandler](#) or [EventHandler](#).
 
 #### Remarks
 
@@ -138,7 +138,7 @@ Name of the event.
 The handler to execute when the event occurs.
 
 **throwWhenSubscriptionFails**
-if set to`true` , throw an exception when subscription fails (does not apply to argument checks).
+if set to`true`, throw an exception when subscription fails (does not apply to argument checks).
 
 #### Returns
 
@@ -156,13 +156,13 @@ The handler is`null`.
 The source and target are both`null`.
 
 **T:System.NotSupportedException**
-The handler is not of type [PropertyChangedEventHandler](#) , [NotifyCollectionChangedEventHandler](#) or [EventHandler](#).
+The handler is not of type [PropertyChangedEventHandler](#), [NotifyCollectionChangedEventHandler](#) or [EventHandler](#).
 
 
 
 ### SubscribeToWeakPropertyChangedEvent(object target, object source, PropertyChangedEventHandler handler, bool throwWhenSubscriptionFails, string eventName)
 
-Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event.This method subscribes to the [PropertyChangedEventHandler](#) which does not follow the`EventHandler{TEventArgs}` convention.
+Subscribes to a weak event by using one single method. This method also takes care of automatic unsubscription of the event. This method subscribes to the [PropertyChangedEventHandler](#) which does not follow the`EventHandler{TEventArgs}` convention.
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Name of the event.
 The handler to execute when the event occurs.
 
 **throwWhenSubscriptionFails**
-if set to`true` , throw an exception when subscription fails (does not apply to argument checks).
+if set to`true`, throw an exception when subscription fails (does not apply to argument checks).
 
 #### Returns
 

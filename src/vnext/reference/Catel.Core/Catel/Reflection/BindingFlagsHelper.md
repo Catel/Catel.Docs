@@ -40,7 +40,7 @@ A value representing whether the hierarchy should be flattened. Corresponds with
 A value representing whether static members should be included. Corresponds with Static.
 
 **allowNonPublicMembers**
-A value representing whether non-public members should be included. Corresponds with NonPublic.If this value is`null` , the default of the framework will be used. Also see DefaultBindingFlags.
+A value representing whether non-public members should be included. Corresponds with NonPublic. If this value is`null`, the default of the framework will be used. Also see DefaultBindingFlags.
 
 #### Returns
 

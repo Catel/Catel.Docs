@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public class AuditingManager
 ```
 
-Handles the auditing for MVVM inside Catel.Use this manager to register custom auditors.
+Handles the auditing for MVVM inside Catel. Use this manager to register custom auditors.
 
 
 
@@ -69,7 +69,7 @@ The type of the auditor.
 
 ### UnregisterAuditor(IAuditor auditor)
 
-Unregisters a specific auditor.If the auditor is not registered, nothing happens.
+Unregisters a specific auditor. If the auditor is not registered, nothing happens.
 
 #### Exceptions
 

@@ -20,7 +20,7 @@ Allows a type to implement their own (de)serialization mechanism.
 
 ### Deserialize(JsonReader jsonReader)
 
-Serializes the object from the specified json reader.Note that the object is always constructed by the serialization engine, the object itself must read the values from the jsonReader.
+Serializes the object from the specified json reader. Note that the object is always constructed by the serialization engine, the object itself must read the values from the jsonReader.
 
 #### Parameters
 

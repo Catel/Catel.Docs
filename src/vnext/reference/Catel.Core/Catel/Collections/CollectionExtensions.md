@@ -209,7 +209,7 @@ The index is smaller than 0 or larger than the list count.
 
 ### RemoveFirst(IList list)
 
-Removes the first entry from the list.When there are no items in the list, this method will silently exit.
+Removes the first entry from the list. When there are no items in the list, this method will silently exit.
 
 #### Parameters
 
@@ -225,7 +225,7 @@ The list is`null`.
 
 ### RemoveLast(IList list)
 
-Removes the last entry from the list.When there are no items in the list, this method will silently exit.
+Removes the last entry from the list. When there are no items in the list, this method will silently exit.
 
 #### Parameters
 
@@ -300,7 +300,7 @@ The existing set.
 The new set.
 
 **updateExistingSet**
-if set to`true` , the existing set will be updated, otherwise a new collection will be created and the existing set will remain unchanged.
+if set to`true`, the existing set will be updated, otherwise a new collection will be created and the existing set will remain unchanged.
 
 #### Returns
 

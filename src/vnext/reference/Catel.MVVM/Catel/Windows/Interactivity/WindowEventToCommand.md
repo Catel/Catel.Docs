@@ -16,7 +16,7 @@ public class WindowEventToCommand : CommandBehaviorBase<FrameworkElement>
 [CommandBehaviorBase]()
 
 
-Behavior class that catches an event from the root window element.The event is forwarded to the DataContext of the [FrameworkElement](#) it is attached to.
+Behavior class that catches an event from the root window element. The event is forwarded to the DataContext of the [FrameworkElement](#) it is attached to.
 
 
 

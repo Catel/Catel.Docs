@@ -20,7 +20,7 @@ Available message images.
 
 #### Remarks
 
-Although directly extracted from the WPF`MessageBoxImage` , this enum provides more flexibility to use other ways to show messages to the user instead of the default`MessageBox`.
+Although directly extracted from the WPF`MessageBoxImage`, this enum provides more flexibility to use other ways to show messages to the user instead of the default`MessageBox`.
 
 
 

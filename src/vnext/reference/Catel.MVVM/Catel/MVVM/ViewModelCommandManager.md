@@ -45,7 +45,7 @@ The handler is`null`.
 
 ### Create(IViewModel viewModel)
 
-Registers the commands in a specific [IViewModel](#) instance. By subscribing to all commands, the CommandExecutedAsync can be intercepted.This method will automatically subscribe to the ClosedAsync event and unsubscribe all commands at that time.
+Registers the commands in a specific [IViewModel](#) instance. By subscribing to all commands, the CommandExecutedAsync can be intercepted. This method will automatically subscribe to the ClosedAsync event and unsubscribe all commands at that time.
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Invalidates all the commands that implement the [ICatelCommand](#).
 #### Parameters
 
 **force**
-If`true` , the commands are re-initialized. The default value is`false`.
+If`true`, the commands are re-initialized. The default value is`false`.
 
 
 

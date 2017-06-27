@@ -34,11 +34,11 @@ An [Assembly](#) instance that describes the assembly containing the current typ
 
 ### AssemblyQualifiedName
 
-Gets the assembly-qualified name of the [Type](#) , which includes the name of the assembly from which the [Type](#) was loaded.
+Gets the assembly-qualified name of the [Type](#), which includes the name of the assembly from which the [Type](#) was loaded.
 
 #### Returns
 
-The assembly-qualified name of the [Type](#) , which includes the name of the assembly from which the [Type](#) was loaded, or null if the current instance represents a generic type parameter.
+The assembly-qualified name of the [Type](#), which includes the name of the assembly from which the [Type](#) was loaded, or null if the current instance represents a generic type parameter.
 
 
 
@@ -48,7 +48,7 @@ Gets the attributes associated with the [Type](#).
 
 #### Returns
 
-A [TypeAttributes](#) object representing the attribute set of the [Type](#) , unless the [Type](#) represents a generic type parameter, in which case the value is unspecified.
+A [TypeAttributes](#) object representing the attribute set of the [Type](#), unless the [Type](#) represents a generic type parameter, in which case the value is unspecified.
 
 
 
@@ -112,11 +112,11 @@ A [Type](#) object representing the enclosing type, if the current type is a nes
 
 ### FullName
 
-Gets the fully qualified name of the [Type](#) , including the namespace of the [Type](#) but not the assembly.
+Gets the fully qualified name of the [Type](#), including the namespace of the [Type](#) but not the assembly.
 
 #### Returns
 
-The fully qualified name of the [Type](#) , including the namespace of the [Type](#) but not the assembly; or null if the current instance represents a generic type parameter, an array type, pointer type, or byref type based on a type parameter, or a generic type that is not a generic type definition but contains unresolved type parameters.
+The fully qualified name of the [Type](#), including the namespace of the [Type](#) but not the assembly; or null if the current instance represents a generic type parameter, an array type, pointer type, or byref type based on a type parameter, or a generic type that is not a generic type definition but contains unresolved type parameters.
 
 
 
@@ -201,7 +201,7 @@ Gets a value indicating whether the string format attribute AnsiClass is selecte
 
 #### Returns
 
-true if the string format attribute AnsiClass is selected for the [Type](#) ; otherwise, false.
+true if the string format attribute AnsiClass is selected for the [Type](#); otherwise, false.
 
 
 
@@ -221,7 +221,7 @@ Gets a value indicating whether the string format attribute AutoClass is selecte
 
 #### Returns
 
-true if the string format attribute AutoClass is selected for the [Type](#) ; otherwise, false.
+true if the string format attribute AutoClass is selected for the [Type](#); otherwise, false.
 
 
 
@@ -231,7 +231,7 @@ Gets a value indicating whether the class layout attribute AutoLayout is selecte
 
 #### Returns
 
-true if the class layout attribute AutoLayout is selected for the [Type](#) ; otherwise, false.
+true if the class layout attribute AutoLayout is selected for the [Type](#); otherwise, false.
 
 
 
@@ -311,7 +311,7 @@ Gets a value indicating whether the [Type](#) has a [ComImportAttribute](#) attr
 
 #### Returns
 
-true if the [Type](#) has a [ComImportAttribute](#) ; otherwise, false.
+true if the [Type](#) has a [ComImportAttribute](#); otherwise, false.
 
 
 
@@ -471,7 +471,7 @@ Gets a value indicating whether the string format attribute UnicodeClass is sele
 
 #### Returns
 
-true if the string format attribute UnicodeClass is selected for the [Type](#) ; otherwise, false.
+true if the string format attribute UnicodeClass is selected for the [Type](#); otherwise, false.
 
 
 
@@ -511,7 +511,7 @@ Gets a value that identifies a metadata element.
 
 #### Returns
 
-A value which, in combination with Module , uniquely identifies a metadata element.
+A value which, in combination with Module, uniquely identifies a metadata element.
 
 #### Exceptions
 
@@ -546,7 +546,7 @@ Gets the namespace of the [Type](#).
 
 #### Returns
 
-The namespace of the [Type](#) , or null if the current instance represents a generic parameter.
+The namespace of the [Type](#), or null if the current instance represents a generic parameter.
 
 
 
@@ -606,7 +606,7 @@ The [TypeInfo](#) whose underlying system type is to be compared with the underl
 
 #### Returns
 
-true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#) ; otherwise, false.
+true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#); otherwise, false.
 
 
 
@@ -621,7 +621,7 @@ The [Type](#) whose underlying system type is to be compared with the underlying
 
 #### Returns
 
-true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#) ; otherwise, false.
+true if the underlying system type of o is the same as the underlying system type of the current [TypeInfo](#); otherwise, false.
 
 
 
@@ -645,7 +645,7 @@ The search criteria that determines whether a member is returned in the array of
 
 #### Returns
 
-A filtered array of [MemberInfo](#) objects of the specified member type. -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have members of type memberType that match the filter criteria.
+A filtered array of [MemberInfo](#) objects of the specified member type. -or- An empty array of type [MemberInfo](#), if the current [Type](#) does not have members of type memberType that match the filter criteria.
 
 #### Exceptions
 
@@ -733,13 +733,13 @@ Returns all the public constructors defined for the current [Type](#).
 
 #### Returns
 
-An array of [ConstructorInfo](#) objects representing all the public instance constructors defined for the current [Type](#) , but not including the type initializer (static constructor). If no public instance constructors are defined for the current [Type](#) , or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method, an empty array of type [ConstructorInfo](#) is returned.
+An array of [ConstructorInfo](#) objects representing all the public instance constructors defined for the current [Type](#), but not including the type initializer (static constructor). If no public instance constructors are defined for the current [Type](#), or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method, an empty array of type [ConstructorInfo](#) is returned.
 
 
 
 ### GetConstructors(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the constructors defined for the current [Type](#) , using the specified BindingFlags.
+When overridden in a derived class, searches for the constructors defined for the current [Type](#), using the specified BindingFlags.
 
 #### Parameters
 
@@ -748,7 +748,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [ConstructorInfo](#) objects representing all constructors defined for the current [Type](#) that match the specified binding constraints, including the type initializer if it is defined. Returns an empty array of type [ConstructorInfo](#) if no constructors are defined for the current [Type](#) , if none of the defined constructors match the binding constraints, or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method.
+An array of [ConstructorInfo](#) objects representing all constructors defined for the current [Type](#) that match the specified binding constraints, including the type initializer if it is defined. Returns an empty array of type [ConstructorInfo](#) if no constructors are defined for the current [Type](#), if none of the defined constructors match the binding constraints, or if the current [Type](#) represents a type parameter in the definition of a generic type or generic method.
 
 
 
@@ -810,7 +810,7 @@ Searches for the members defined for the current [Type](#) whose [DefaultMemberA
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all default members of the current [Type](#). -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have default members.
+An array of [MemberInfo](#) objects representing all default members of the current [Type](#). -or- An empty array of type [MemberInfo](#), if the current [Type](#) does not have default members.
 
 
 
@@ -835,7 +835,7 @@ The [String](#) containing the name of an event which is declared or inherited b
 
 #### Returns
 
-The [EventInfo](#) object representing the specified public event which is declared or inherited by the current [Type](#) , if found; otherwise, null.
+The [EventInfo](#) object representing the specified public event which is declared or inherited by the current [Type](#), if found; otherwise, null.
 
 #### Exceptions
 
@@ -858,7 +858,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-The [EventInfo](#) object representing the specified event which is declared or inherited by the current [Type](#) , if found; otherwise, null.
+The [EventInfo](#) object representing the specified event which is declared or inherited by the current [Type](#), if found; otherwise, null.
 
 #### Exceptions
 
@@ -873,13 +873,13 @@ Returns all the public events that are declared or inherited by the current [Typ
 
 #### Returns
 
-An array of [EventInfo](#) objects representing all the public events which are declared or inherited by the current [Type](#). -or- An empty array of type [EventInfo](#) , if the current [Type](#) does not have public events.
+An array of [EventInfo](#) objects representing all the public events which are declared or inherited by the current [Type](#). -or- An empty array of type [EventInfo](#), if the current [Type](#) does not have public events.
 
 
 
 ### GetEvents(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for events that are declared or inherited by the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for events that are declared or inherited by the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -888,7 +888,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [EventInfo](#) objects representing all events which are declared or inherited by the current [Type](#) that match the specified binding constraints. -or- An empty array of type [EventInfo](#) , if the current [Type](#) does not have events, or if none of the events match the binding constraints.
+An array of [EventInfo](#) objects representing all events which are declared or inherited by the current [Type](#) that match the specified binding constraints. -or- An empty array of type [EventInfo](#), if the current [Type](#) does not have events, or if none of the events match the binding constraints.
 
 
 
@@ -944,13 +944,13 @@ Returns all the public fields of the current [Type](#).
 
 #### Returns
 
-An array of [FieldInfo](#) objects representing all the public fields defined for the current [Type](#). -or- An empty array of type [FieldInfo](#) , if no public fields are defined for the current [Type](#).
+An array of [FieldInfo](#) objects representing all the public fields defined for the current [Type](#). -or- An empty array of type [FieldInfo](#), if no public fields are defined for the current [Type](#).
 
 
 
 ### GetFields(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the fields defined for the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for the fields defined for the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -959,7 +959,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [FieldInfo](#) objects representing all fields defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [FieldInfo](#) , if no fields are defined for the current [Type](#) , or if none of the defined fields match the binding constraints.
+An array of [FieldInfo](#) objects representing all fields defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [FieldInfo](#), if no fields are defined for the current [Type](#), or if none of the defined fields match the binding constraints.
 
 
 
@@ -1017,7 +1017,7 @@ The [String](#) containing the name of the interface to get. For generic interfa
 
 #### Returns
 
-A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#) , if found; otherwise, null.
+A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#), if found; otherwise, null.
 
 #### Exceptions
 
@@ -1043,7 +1043,7 @@ true to ignore the case of that part of name that specifies the simple interface
 
 #### Returns
 
-A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#) , if found; otherwise, null.
+A [Type](#) object representing the interface with the specified name, implemented or inherited by the current [Type](#), if found; otherwise, null.
 
 #### Exceptions
 
@@ -1090,7 +1090,7 @@ When overridden in a derived class, gets all the interfaces implemented or inher
 
 #### Returns
 
-An array of [Type](#) objects representing all the interfaces implemented or inherited by the current [Type](#). -or- An empty array of type [Type](#) , if no interfaces are implemented or inherited by the current [Type](#).
+An array of [Type](#) objects representing all the interfaces implemented or inherited by the current [Type](#). -or- An empty array of type [Type](#), if no interfaces are implemented or inherited by the current [Type](#).
 
 #### Exceptions
 
@@ -1177,13 +1177,13 @@ Returns all the public members of the current [Type](#).
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all the public members of the current [Type](#). -or- An empty array of type [MemberInfo](#) , if the current [Type](#) does not have public members.
+An array of [MemberInfo](#) objects representing all the public members of the current [Type](#). -or- An empty array of type [MemberInfo](#), if the current [Type](#) does not have public members.
 
 
 
 ### GetMembers(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the members defined for the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for the members defined for the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -1192,7 +1192,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [MemberInfo](#) objects representing all members defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MemberInfo](#) , if no members are defined for the current [Type](#) , or if none of the defined members match the binding constraints.
+An array of [MemberInfo](#) objects representing all members defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MemberInfo](#), if no members are defined for the current [Type](#), or if none of the defined members match the binding constraints.
 
 
 
@@ -1423,13 +1423,13 @@ Returns all the public methods of the current [Type](#).
 
 #### Returns
 
-An array of [MethodInfo](#) objects representing all the public methods defined for the current [Type](#). -or- An empty array of type [MethodInfo](#) , if no public methods are defined for the current [Type](#).
+An array of [MethodInfo](#) objects representing all the public methods defined for the current [Type](#). -or- An empty array of type [MethodInfo](#), if no public methods are defined for the current [Type](#).
 
 
 
 ### GetMethods(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the methods defined for the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for the methods defined for the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -1438,7 +1438,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [MethodInfo](#) objects representing all methods defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MethodInfo](#) , if no methods are defined for the current [Type](#) , or if none of the defined methods match the binding constraints.
+An array of [MethodInfo](#) objects representing all methods defined for the current [Type](#) that match the specified binding constraints. -or- An empty array of type [MethodInfo](#), if no methods are defined for the current [Type](#), or if none of the defined methods match the binding constraints.
 
 
 
@@ -1497,7 +1497,7 @@ An array of [Type](#) objects representing the public types nested in the curren
 
 ### GetNestedTypes(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the types nested in the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for the types nested in the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -1506,7 +1506,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [Type](#) objects representing all the types nested in the current [Type](#) that match the specified binding constraints (the search is not recursive), or an empty array of type [Type](#) , if no nested types are found that match the binding constraints.
+An array of [Type](#) objects representing all the types nested in the current [Type](#) that match the specified binding constraints (the search is not recursive), or an empty array of type [Type](#), if no nested types are found that match the binding constraints.
 
 
 
@@ -1516,13 +1516,13 @@ Returns all the public properties of the current [Type](#).
 
 #### Returns
 
-An array of [PropertyInfo](#) objects representing all public properties of the current [Type](#). -or- An empty array of type [PropertyInfo](#) , if the current [Type](#) does not have public properties.
+An array of [PropertyInfo](#) objects representing all public properties of the current [Type](#). -or- An empty array of type [PropertyInfo](#), if the current [Type](#) does not have public properties.
 
 
 
 ### GetProperties(BindingFlags bindingAttr)
 
-When overridden in a derived class, searches for the properties of the current [Type](#) , using the specified binding constraints.
+When overridden in a derived class, searches for the properties of the current [Type](#), using the specified binding constraints.
 
 #### Parameters
 
@@ -1531,7 +1531,7 @@ A bitmask comprised of one or more [BindingFlags](#) that specify how the search
 
 #### Returns
 
-An array of [PropertyInfo](#) objects representing all properties of the current [Type](#) that match the specified binding constraints. -or- An empty array of type [PropertyInfo](#) , if the current [Type](#) does not have properties, or if none of the properties match the binding constraints.
+An array of [PropertyInfo](#) objects representing all properties of the current [Type](#) that match the specified binding constraints. -or- An empty array of type [PropertyInfo](#), if the current [Type](#) does not have properties, or if none of the properties match the binding constraints.
 
 
 
@@ -1871,7 +1871,7 @@ The Type to compare with the current Type.
 
 #### Returns
 
-true if c and the current Type represent the same type, or if the current Type is in the inheritance hierarchy of c , or if the current Type is an interface that c implements, or if c is a generic type parameter and the current Type represents one of the constraints of c. false if none of these conditions are true, or if c is null.
+true if c and the current Type represent the same type, or if the current Type is in the inheritance hierarchy of c, or if the current Type is an interface that c implements, or if c is a generic type parameter and the current Type represents one of the constraints of c. false if none of these conditions are true, or if c is null.
 
 
 
@@ -1904,7 +1904,7 @@ The object to compare with the current Type.
 
 #### Returns
 
-true if the current Type is in the inheritance hierarchy of the object represented by o , or if the current Type is an interface that o supports. false if neither of these conditions is the case, or if o is null, or if the current Type is an open generic type (that is, ContainsGenericParameters returns true).
+true if the current Type is in the inheritance hierarchy of the object represented by o, or if the current Type is an interface that o supports. false if neither of these conditions is the case, or if o is null, or if the current Type is an open generic type (that is, ContainsGenericParameters returns true).
 
 
 
@@ -1919,7 +1919,7 @@ The Type to compare with the current Type.
 
 #### Returns
 
-true if the Type represented by the c parameter and the current Type represent classes, and the class represented by the current Type derives from the class represented by c ; otherwise, false. This method also returns false if c and the current Type represent the same class.
+true if the Type represented by the c parameter and the current Type represent classes, and the class represented by the current Type derives from the class represented by c; otherwise, false. This method also returns false if c and the current Type represent the same class.
 
 #### Exceptions
 

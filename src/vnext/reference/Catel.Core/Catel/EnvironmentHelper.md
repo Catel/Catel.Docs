@@ -64,12 +64,12 @@ Determines whether the process is hosted by visual studio.
 
 ### IsProcessCurrentlyHostedByExpressionBlend(bool checkParentProcesses)
 
-Determines whether the process is hosted by expression blend.This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByExpressionBlend instead.
+Determines whether the process is hosted by expression blend. This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByExpressionBlend instead.
 
 #### Parameters
 
 **checkParentProcesses**
-if set to`true` , the parent processes will also be checked.
+if set to`true`, the parent processes will also be checked.
 
 #### Returns
 
@@ -79,12 +79,12 @@ if set to`true` , the parent processes will also be checked.
 
 ### IsProcessCurrentlyHostedBySharpDevelop(bool checkParentProcesses)
 
-Determines whether the process is hosted by sharp develop.This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByExpressionBlend instead.
+Determines whether the process is hosted by sharp develop. This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByExpressionBlend instead.
 
 #### Parameters
 
 **checkParentProcesses**
-if set to`true` , the parent processes will also be checked.
+if set to`true`, the parent processes will also be checked.
 
 #### Returns
 
@@ -94,12 +94,12 @@ if set to`true` , the parent processes will also be checked.
 
 ### IsProcessCurrentlyHostedByTool(bool checkParentProcesses)
 
-Determines whether the process is hosted by any tool, such as visual studio or blend.This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByTool instead.
+Determines whether the process is hosted by any tool, such as visual studio or blend. This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByTool instead.
 
 #### Parameters
 
 **checkParentProcesses**
-if set to`true` , the parent processes will also be checked.
+if set to`true`, the parent processes will also be checked.
 
 #### Returns
 
@@ -109,12 +109,12 @@ if set to`true` , the parent processes will also be checked.
 
 ### IsProcessCurrentlyHostedByVisualStudio(bool checkParentProcesses)
 
-Determines whether the process is hosted by visual studio.This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByVisualStudio instead.
+Determines whether the process is hosted by visual studio. This methods executes the logic every time it is called. To get a cached value, use the IsProcessHostedByVisualStudio instead.
 
 #### Parameters
 
 **checkParentProcesses**
-if set to`true` , the parent processes will also be checked.
+if set to`true`, the parent processes will also be checked.
 
 #### Returns
 

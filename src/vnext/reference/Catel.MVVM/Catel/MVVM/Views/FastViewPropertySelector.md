@@ -16,7 +16,7 @@ public class FastViewPropertySelector : ViewPropertySelector
 [ViewPropertySelector](/Catel.MVVM\Catel\MVVM\Views\ViewPropertySelector.md)
 
 
-Very fast view property selector because it does not select any view properties.Use this one for best performance but loose the automatic view property change notifications.
+Very fast view property selector because it does not select any view properties. Use this one for best performance but loose the automatic view property change notifications.
 
 
 

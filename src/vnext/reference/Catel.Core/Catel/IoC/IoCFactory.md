@@ -49,7 +49,7 @@ Creates a service locator with all the customized components.
 #### Parameters
 
 **initializeServiceLocator**
-if set to`true` , the [IServiceLocator](#) will be initialized using the [IServiceLocatorInitializer](#) interface.
+if set to`true`, the [IServiceLocator](#) will be initialized using the [IServiceLocatorInitializer](#) interface.
 
 #### Returns
 

@@ -20,7 +20,7 @@ Extension methods to create bindings on platforms that initially don't support b
 
 ### AddSourceEvent(Binding binding, string eventName)
 
-Adds an additional event subscription to support change notification.This extension method will use the Source to add an event.
+Adds an additional event subscription to support change notification. This extension method will use the Source to add an event.
 
 #### Parameters
 
@@ -46,7 +46,7 @@ The eventName is`null` or whitespace.
 
 ### AddSourceEvent<TEventArgs>(Binding binding, string eventName)
 
-Adds an additional event subscription to support change notification.This extension method will use the Source to add an event.
+Adds an additional event subscription to support change notification. This extension method will use the Source to add an event.
 
 #### Parameters
 
@@ -72,7 +72,7 @@ The eventName is`null` or whitespace.
 
 ### AddTargetEvent(Binding binding, string eventName)
 
-Adds an additional event subscription to support change notification.This extension method will use the Target to add an event.
+Adds an additional event subscription to support change notification. This extension method will use the Target to add an event.
 
 #### Parameters
 
@@ -98,7 +98,7 @@ The eventName is`null` or whitespace.
 
 ### AddTargetEvent<TEventArgs>(Binding binding, string eventName)
 
-Adds an additional event subscription to support change notification.This extension method will use the Target to add an event.
+Adds an additional event subscription to support change notification. This extension method will use the Target to add an event.
 
 #### Parameters
 
@@ -124,7 +124,7 @@ The eventName is`null` or whitespace.
 
 ### GetBindingValue(Binding binding)
 
-Gets the binding value.If the binding is`null` , this method will return`null`.
+Gets the binding value. If the binding is`null`, this method will return`null`.
 
 #### Parameters
 

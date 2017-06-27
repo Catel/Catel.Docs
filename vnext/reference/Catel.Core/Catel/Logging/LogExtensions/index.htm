@@ -645,7 +645,7 @@ The message format.</p>
 <p><strong>args</strong>
 The formatting arguments.</p>
 <h3 id="errorandcreateexceptionilog-log-exception-innerexception-funcstring-texception-createexceptioncallback-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Exception innerException, Func&lt;string, TException&gt; createExceptionCallback, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-exception-innerexception-funcstring-texception-createexceptioncallback-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
+<p>Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
@@ -670,7 +670,7 @@ The args.</p>
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-exception-innerexception-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Exception innerException, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-exception-innerexception-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
+<p>Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
@@ -694,7 +694,7 @@ The log is<code>null</code>.</p>
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-funcstring-texception-createexceptioncallback-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, Func&lt;string, TException&gt; createExceptionCallback, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-funcstring-texception-createexceptioncallback-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
+<p>Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>
@@ -719,7 +719,7 @@ The TException does not have a constructor accepting a string.</p>
     throw Log.ErrorAndCreateException&lt;NotSupportedException&gt;(&quot;This action is not supported&quot;);
     
 </pre><h3 id="errorandcreateexceptionilog-log-string-messageformat-object-args">ErrorAndCreateException<TException>(ILog log, string messageFormat, object[] args)<a class="headerlink" href="#errorandcreateexceptionilog-log-string-messageformat-object-args" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.</p>
+<p>Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.</p>
 <h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>TException</strong>
 The type of the exception.</p>

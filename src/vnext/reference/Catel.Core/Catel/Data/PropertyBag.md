@@ -70,7 +70,7 @@ A list of all property names and values.
 
 ### GetPropertyValue<TValue>(string propertyName)
 
-Gets the property value.If the property is not yet created, the default value will be returned.
+Gets the property value. If the property is not yet created, the default value will be returned.
 
 #### Type Parameters
 
@@ -95,7 +95,7 @@ The propertyName is`null` or whitespace.
 
 ### GetPropertyValue<TValue>(string propertyName, TValue defaultValue)
 
-Gets the property value.If the property is not yet created, the default value will be returned.
+Gets the property value. If the property is not yet created, the default value will be returned.
 
 #### Type Parameters
 
@@ -123,7 +123,7 @@ The propertyName is`null` or whitespace.
 
 ### Import(Dictionary<string, object> propertiesToImport)
 
-Imports the properties in the existing dictionary.This method will overwrite all existing property values in the property bag.
+Imports the properties in the existing dictionary. This method will overwrite all existing property values in the property bag.
 
 #### Parameters
 

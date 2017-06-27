@@ -44,19 +44,19 @@ The scroll treshold property.
 
 ### ScrollDirection
 
-The scoll direction.The default value is Bottom.
+The scoll direction. The default value is Bottom.
 
 
 
 ### ScrollOnLoaded
 
-A boolean that determines whether the behavior should automatically scroll as soon as the control is loaded.The default value is`true`.
+A boolean that determines whether the behavior should automatically scroll as soon as the control is loaded. The default value is`true`.
 
 
 
 ### ScrollTreshold
 
-The scoll threshold in which the behavior will scroll down even when it is not fully down.The default value is`5`.
+The scoll threshold in which the behavior will scroll down even when it is not fully down. The default value is`5`.
 
 
 

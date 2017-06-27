@@ -16,7 +16,7 @@ public class TextFileApiCopListener : TextApiCopListenerBase
 [TextApiCopListenerBase](/Catel.Core\Catel\ApiCop\TextApiCopListenerBase.md)
 
 
-[IApiCopListener](#) implementation which writes all results to a text file.If no`FileStream` is available in the target platform, this will write to a memory stream.
+[IApiCopListener](#) implementation which writes all results to a text file. If no`FileStream` is available in the target platform, this will write to a memory stream.
 
 
 

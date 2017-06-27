@@ -67,7 +67,7 @@ Validates the current object for field and business rule errors.
 #### Parameters
 
 **force**
-If set to`true` , a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
+If set to`true`, a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
 
 #### Remarks
 

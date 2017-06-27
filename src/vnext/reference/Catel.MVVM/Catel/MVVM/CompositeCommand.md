@@ -38,19 +38,19 @@ Initializes a new instance of the [Command](#) class.
 
 ### AllowPartialExecution
 
-Gets or sets a value indicating whether partial execution of commands is allowed. If this value is`true` , this composite command will always be executable and only invoke the internal commands that are executable.The default value is`false`.
+Gets or sets a value indicating whether partial execution of commands is allowed. If this value is`true`, this composite command will always be executable and only invoke the internal commands that are executable. The default value is`false`.
 
 
 
 ### AtLeastOneMustBeExecutable
 
-Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be executed without any commands.The default value is`true`.
+Gets or sets a value indicating whether at least one command must be executable. This will prevent the command to be executed without any commands. The default value is`true`.
 
 
 
 ### CheckCanExecuteOfAllCommandsToDetermineCanExecuteForCompositeCommand
 
-Gets or sets whether this command should check the can execute of all commands to determine can execute for composite command.The default value is`true` which means the composite command can only be executed if all commands can be executed. If there is a requirement to allow partial invocation, set this property to false.
+Gets or sets whether this command should check the can execute of all commands to determine can execute for composite command. The default value is`true` which means the composite command can only be executed if all commands can be executed. If there is a requirement to allow partial invocation, set this property to false.
 
 
 

@@ -16,7 +16,7 @@ public class AdvancedPropertyChangedEventArgs : PropertyChangedEventArgs
 [PropertyChangedEventArgs]()
 
 
-Property changed event args that are used when a property has changed. The event arguments contains both the original sender as the current sender of the event.Best used in combination with [IAdvancedNotifyPropertyChanged](#).
+Property changed event args that are used when a property has changed. The event arguments contains both the original sender as the current sender of the event. Best used in combination with [IAdvancedNotifyPropertyChanged](#).
 
 
 
@@ -151,13 +151,13 @@ The new value.
 
 ### IsNewValueMeaningful
 
-Gets a value indicating whether the NewValue has any meaning. Sometimes it is not possible to determine the new value in case a 3rd party class triggered the PropertyChanged event. In such a case, the NewValue will be`null` , but this does not mean that the new value is`null`.
+Gets a value indicating whether the NewValue has any meaning. Sometimes it is not possible to determine the new value in case a 3rd party class triggered the PropertyChanged event. In such a case, the NewValue will be`null`, but this does not mean that the new value is`null`.
 
 
 
 ### IsOldValueMeaningful
 
-Gets a value indicating whether the OldValue has any meaning. Sometimes it is not possible to determine the old value in case a 3rd party class triggered the PropertyChanged event. In such a case, the OldValue will be`null` , but this does not mean that the previous value was`null`.
+Gets a value indicating whether the OldValue has any meaning. Sometimes it is not possible to determine the old value in case a 3rd party class triggered the PropertyChanged event. In such a case, the OldValue will be`null`, but this does not mean that the previous value was`null`.
 
 
 

@@ -20,7 +20,7 @@ Control for displaying messages to the user.
 
 #### Remarks
 
-A long, long, long time ago, the messages were hold in a dependency property (DP). However, even though DP values are not static, several instances that were open at the same time were still clearing eachother values (thus it seemed the DP behaves like it's a static member). Therefore, the messages are now hold in a field, and all problems are now gone.And the control lived happily ever after.
+A long, long, long time ago, the messages were hold in a dependency property (DP). However, even though DP values are not static, several instances that were open at the same time were still clearing eachother values (thus it seemed the DP behaves like it's a static member). Therefore, the messages are now hold in a field, and all problems are now gone. And the control lived happily ever after.
 
 
 

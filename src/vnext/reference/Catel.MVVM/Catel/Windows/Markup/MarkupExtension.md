@@ -28,7 +28,7 @@ Custom markup extension.
 
 ### InternalBindingValue
 
-Gets or sets the binding value.Do not use this property, it's use to set up the binding manually.
+Gets or sets the binding value. Do not use this property, it's use to set up the binding manually.
 
 
 

@@ -60,7 +60,7 @@ The dispatcher.
 The action.
 
 **onlyBeginInvokeWhenNoAccess**
-If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
+If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 #### Returns
 
@@ -96,7 +96,7 @@ The method is`null`.
 
 ### BeginInvokeIfRequired(Dispatcher dispatcher, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -123,7 +123,7 @@ For target frameworks where the [Dispatcher](#) class does not contain the`Invok
 
 ### BeginInvokeIfRequired(Dispatcher dispatcher, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -203,7 +203,7 @@ The dispatcher.
 The action.
 
 **onlyBeginInvokeWhenNoAccess**
-If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
+If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 
 
@@ -279,7 +279,7 @@ The task representing the action.
 
 ### InvokeIfRequired(Dispatcher dispatcher, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -302,7 +302,7 @@ For target frameworks where the [Dispatcher](#) class does not contain the`Invok
 
 ### InvokeIfRequired(Dispatcher dispatcher, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 

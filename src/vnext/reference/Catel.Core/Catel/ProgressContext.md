@@ -48,7 +48,7 @@ Gets or sets the current count.
 
 ### CurrentRefreshNumber
 
-Gets the current refresh number. This represents a value that is calculated based on the TotalCount , CurrentCount and NumberOfRefreshes.
+Gets the current refresh number. This represents a value that is calculated based on the TotalCount, CurrentCount and NumberOfRefreshes.
 
 
 

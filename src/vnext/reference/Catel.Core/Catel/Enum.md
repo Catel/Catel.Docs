@@ -25,7 +25,7 @@ Type of the enumeration to wrap.
 
 ### ConvertFromOtherEnumValue(object inputEnumValue)
 
-Converts a specific enum value from one specific enum type to another enum type by it's name.For example, to convert`Catel.Services.CameraType` to`Microsoft.Devices.CameraType` , use the following code: ConvertEnum&lt;Microsoft.Devices.CameraType&gt;(Catel.Services.CameraType.Primary);
+Converts a specific enum value from one specific enum type to another enum type by it's name. For example, to convert`Catel.Services.CameraType` to`Microsoft.Devices.CameraType`, use the following code: ConvertEnum&lt;Microsoft.Devices.CameraType&gt;(Catel.Services.CameraType.Primary);
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Parses the specified input.
 The input.
 
 **ignoreCase**
-if set to`true` , the case should be ignored.
+if set to`true`, the case should be ignored.
 
 #### Returns
 
@@ -134,7 +134,7 @@ Tries to parse an enum value name.
 The input.
 
 **ignoreCase**
-if set to`true` , the case will be ignored.
+if set to`true`, the case will be ignored.
 
 **result**
 The result.
@@ -155,7 +155,7 @@ Tries to parse an enum value name.
 The input.
 
 **ignoreCase**
-if set to`true` , the case will be ignored.
+if set to`true`, the case will be ignored.
 
 **result**
 The result.

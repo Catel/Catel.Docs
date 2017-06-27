@@ -34,7 +34,7 @@ Initializes a new instance of the [UpdateBindingOnTextChanged](#) class.
 
 ### UpdateDelay
 
-Gets or sets the update delay.This is the value that is used between updates in milliseconds. The binding will be updated when no new text change event is detected within the delay.The default value is`250`. If the value is smaller than`50` , the value will be ignored and there will be no delay between the key down and the binding update. If the value is higher than`5000` , it will be set to`5000`.
+Gets or sets the update delay. This is the value that is used between updates in milliseconds. The binding will be updated when no new text change event is detected within the delay. The default value is`250`. If the value is smaller than`50`, the value will be ignored and there will be no delay between the key down and the binding update. If the value is higher than`5000`, it will be set to`5000`.
 
 
 

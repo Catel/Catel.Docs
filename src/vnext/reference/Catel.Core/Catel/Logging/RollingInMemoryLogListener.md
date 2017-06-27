@@ -34,19 +34,19 @@ Initializes a new instance of the [RollingInMemoryLogListener](#) class.
 
 ### MaximumNumberOfErrorLogEntries
 
-Gets or sets the maximum number of error log entries to keep.The default value is 50.
+Gets or sets the maximum number of error log entries to keep. The default value is 50.
 
 
 
 ### MaximumNumberOfLogEntries
 
-Gets or sets the maximum number of log entries to keep.The default value is 250.
+Gets or sets the maximum number of log entries to keep. The default value is 250.
 
 
 
 ### MaximumNumberOfWarningLogEntries
 
-Gets or sets the maximum number of warning log entries to keep.The default value is 50.
+Gets or sets the maximum number of warning log entries to keep. The default value is 50.
 
 
 

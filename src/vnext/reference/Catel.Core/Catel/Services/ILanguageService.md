@@ -20,7 +20,7 @@ Service to implement the retrieval of language services.
 
 ### CacheResults
 
-Gets or sets a value indicating whether the results should be cached.The default value is`true`.
+Gets or sets a value indicating whether the results should be cached. The default value is`true`.
 
 
 

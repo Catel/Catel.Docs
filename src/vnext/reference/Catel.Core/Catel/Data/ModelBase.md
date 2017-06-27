@@ -111,16 +111,16 @@ Name of the property.
 Type of the property.
 
 **createDefaultValue**
-The delegate that creates the default value. If`null` , a delegate returning the default value (`null` for reference types,`Activator.CreateInstance(type)` for value types).
+The delegate that creates the default value. If`null`, a delegate returning the default value (`null` for reference types,`Activator.CreateInstance(type)` for value types).
 
 **propertyChangedEventHandler**
 The property changed event handler.
 
 **includeInSerialization**
-if set to`true` , the property should be included in the serialization.
+if set to`true`, the property should be included in the serialization.
 
 **includeInBackup**
-if set to`true` , the property should be included in the backup when handling IEditableObject.
+if set to`true`, the property should be included in the backup when handling IEditableObject.
 
 #### Returns
 
@@ -154,16 +154,16 @@ The value type.
 The property expression.
 
 **createDefaultValue**
-The delegate that creates the default value. If`null` , a delegate returning the default value (`null` for reference types,`Activator.CreateInstance(type)` for value types).
+The delegate that creates the default value. If`null`, a delegate returning the default value (`null` for reference types,`Activator.CreateInstance(type)` for value types).
 
 **propertyChangedEventHandler**
 The property changed event handler.
 
 **includeInSerialization**
-If set to`true` , the property should be included in the serialization.
+If set to`true`, the property should be included in the serialization.
 
 **includeInBackup**
-If set to`true` , the property should be included in the backup when handling IEditableObject.
+If set to`true`, the property should be included in the backup when handling IEditableObject.
 
 #### Returns
 
@@ -203,10 +203,10 @@ Default value of the property.
 The property changed event handler.
 
 **includeInSerialization**
-If set to`true` , the property should be included in the serialization.
+If set to`true`, the property should be included in the serialization.
 
 **includeInBackup**
-If set to`true` , the property should be included in the backup when handling IEditableObject.
+If set to`true`, the property should be included in the backup when handling IEditableObject.
 
 #### Returns
 
@@ -246,10 +246,10 @@ Default value of the property.
 The property changed event handler.
 
 **includeInSerialization**
-if set to`true` , the property should be included in the serialization.
+if set to`true`, the property should be included in the serialization.
 
 **includeInBackup**
-if set to`true` , the property should be included in the backup when handling IEditableObject.
+if set to`true`, the property should be included in the backup when handling IEditableObject.
 
 #### Returns
 
@@ -280,7 +280,7 @@ Suspends the change notifications until the disposed object has been released.
 #### Parameters
 
 **raiseOnResume**
-if set to`true` , the notifications are invoked on resume.
+if set to`true`, the notifications are invoked on resume.
 
 #### Returns
 

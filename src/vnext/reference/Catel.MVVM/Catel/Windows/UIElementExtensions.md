@@ -28,7 +28,7 @@ Focuses the first control on the ContentElement.
 Reference to the current [ContentElement](#).
 
 **focusParentsFirst**
-if set to`true` , the parents are focused first.
+if set to`true`, the parents are focused first.
 
 
 
@@ -42,7 +42,7 @@ Focuses the first control on the UI Element.
 Reference to the current [UIElement](#).
 
 **focusParentsFirst**
-if set to`true` , the parents are focused first.
+if set to`true`, the parents are focused first.
 
 
 

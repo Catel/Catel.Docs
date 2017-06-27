@@ -17,7 +17,7 @@ public class ViewModelFactory : IViewModelFactory
 [IViewModelFactory](/Catel.MVVM\Catel\MVVM\IViewModelFactory.md)
 
 
-Default implementation of the [IViewModelFactory](#) which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used.This default implementation will first try to inject the data context into the view model constructor. If that is not possible, it will try to call the empty or default constructor.
+Default implementation of the [IViewModelFactory](#) which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used. This default implementation will first try to inject the data context into the view model constructor. If that is not possible, it will try to call the empty or default constructor.
 
 
 
@@ -48,7 +48,7 @@ The typeFactory is`null`.
 
 ### CanReuseViewModel(Type viewType, Type expectedViewModelType, Type actualViewModelType, IViewModel viewModelAsDataContext)
 
-Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model.By default a view model is allowed to be inherited when it is of the same type as the expected view model type.
+Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model. By default a view model is allowed to be inherited when it is of the same type as the expected view model type.
 
 #### Parameters
 

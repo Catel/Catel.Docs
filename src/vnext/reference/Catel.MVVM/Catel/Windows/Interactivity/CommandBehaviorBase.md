@@ -16,7 +16,7 @@ public abstract class CommandBehaviorBase<T> : BehaviorBase<T> where T : Framewo
 [BehaviorBase](/Catel.MVVM\Catel\Windows\Interactivity\BehaviorBase.md)
 
 
-Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`.This class extends the [BehaviorBase](#) class by adding supports for commands.
+Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`. This class extends the [BehaviorBase](#) class by adding supports for commands.
 
 #### Type Parameters
 

@@ -38,19 +38,19 @@ Initializes a new instance of the [ModelEqualityComparer](#) class.
 
 ### CompareCollections
 
-Gets or sets a value indicating whether collections should be compared as well.Note that this might degrade performance on properties with large collections.The default value is`false`.
+Gets or sets a value indicating whether collections should be compared as well. Note that this might degrade performance on properties with large collections. The default value is`false`.
 
 
 
 ### CompareProperties
 
-Gets or sets a value indicating whether properties should be compared.The default value is`false`.
+Gets or sets a value indicating whether properties should be compared. The default value is`false`.
 
 
 
 ### CompareValues
 
-Gets or sets a value indicating whether values should be compared as well.Note that this might degrade performance on properties with large collections.The default value is`false`.
+Gets or sets a value indicating whether values should be compared as well. Note that this might degrade performance on properties with large collections. The default value is`false`.
 
 
 

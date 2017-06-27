@@ -16,7 +16,7 @@ public abstract class CollapsingVisibilityConverterBase : VisibilityConverterBas
 [VisibilityConverterBase](/Catel.MVVM\Catel\MVVM\Converters\VisibilityConverterBase.md)
 
 
-A base class that makes it easier to create values to visibility converters.This converter returns Collapsed when a non-visible state should be returned.
+A base class that makes it easier to create values to visibility converters. This converter returns Collapsed when a non-visible state should be returned.
 
 
 

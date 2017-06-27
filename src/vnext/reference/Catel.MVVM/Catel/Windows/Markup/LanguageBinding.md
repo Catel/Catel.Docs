@@ -45,7 +45,7 @@ Name of the resource.
 
 ### Culture
 
-Gets or sets the culture. If set to`null` , it will be determined automatically.
+Gets or sets the culture. If set to`null`, it will be determined automatically.
 
 
 

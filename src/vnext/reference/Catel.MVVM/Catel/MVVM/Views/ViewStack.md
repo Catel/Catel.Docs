@@ -30,7 +30,7 @@ Initializes a new instance of the [ViewStack](#) class.
 The view.
 
 **isViewLoaded**
-if set to`true` , the view is loaded.
+if set to`true`, the view is loaded.
 
 
 
@@ -135,7 +135,7 @@ The view.
 
 ### Dispose()
 
-Disposes this instance.Not using [IDisposable](#) to prevent other auto systems from kicking in.
+Disposes this instance. Not using [IDisposable](#) to prevent other auto systems from kicking in.
 
 
 

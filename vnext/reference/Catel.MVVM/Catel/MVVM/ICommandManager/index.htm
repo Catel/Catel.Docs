@@ -343,16 +343,16 @@
 <p>Occurs when a command has been created.</p>
 <h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="createcommandstring-commandname-inputgesture-inputgesture-icompositecommand-compositecommand-bool-throwexceptionwhencommandisalreadycreated">CreateCommand(string commandName, InputGesture inputGesture, ICompositeCommand compositeCommand, bool throwExceptionWhenCommandIsAlreadyCreated)<a class="headerlink" href="#createcommandstring-commandname-inputgesture-inputgesture-icompositecommand-compositecommand-bool-throwexceptionwhencommandisalreadycreated" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Creates the command inside the command manager.If the throwExceptionWhenCommandIsAlreadyCreated is<code>false</code> and the command is already created, only the input gesture is updated for the existing command.</p>
+<p>Creates the command inside the command manager. If the throwExceptionWhenCommandIsAlreadyCreated is<code>false</code> and the command is already created, only the input gesture is updated for the existing command.</p>
 <h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>commandName</strong>
 Name of the command.</p>
 <p><strong>inputGesture</strong>
 The input gesture.</p>
 <p><strong>compositeCommand</strong>
-The composite command. If<code>null</code> , this will default to a new instance of <a href="#">CompositeCommand</a>.</p>
+The composite command. If<code>null</code>, this will default to a new instance of <a href="#">CompositeCommand</a>.</p>
 <p><strong>throwExceptionWhenCommandIsAlreadyCreated</strong>
-if set to<code>true</code> , this method will throw an exception when the command is already created.</p>
+if set to<code>true</code>, this method will throw an exception when the command is already created.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 The commandName is<code>null</code> or whitespace.</p>

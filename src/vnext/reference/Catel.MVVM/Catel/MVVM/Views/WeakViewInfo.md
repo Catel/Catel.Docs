@@ -30,7 +30,7 @@ Initializes a new instance of the [WeakViewInfo](#) class.
 The view.
 
 **isViewLoaded**
-if set to`true` , the view is already loaded.
+if set to`true`, the view is already loaded.
 
 #### Exceptions
 
@@ -49,7 +49,7 @@ Initializes a new instance of the [WeakViewInfo](#) class.
 The view load state.
 
 **isViewLoaded**
-if set to`true` , the view is already loaded.
+if set to`true`, the view is already loaded.
 
 #### Exceptions
 

@@ -54,7 +54,7 @@ The sectionName is`null` or empty.
 
 ### IsConfigurationKey(ConfigurationChangedEventArgs eventArgs, string expectedKey)
 
-Determines whether the specified [ConfigurationChangedEventArgs](#) represents the expected key.A key is also expected if the key is`null` or whitespace because it represents a full scope update in the [IConfigurationService](#).
+Determines whether the specified [ConfigurationChangedEventArgs](#) represents the expected key. A key is also expected if the key is`null` or whitespace because it represents a full scope update in the [IConfigurationService](#).
 
 #### Parameters
 
@@ -77,7 +77,7 @@ The eventArgs is`null`.
 
 ### IsConfigurationKey(string key, string expectedKey)
 
-Determines whether the specified configuration key represents the expected key.A key is also expected if the key is`null` or whitespace because it represents a full scope update in the [IConfigurationService](#).
+Determines whether the specified configuration key represents the expected key. A key is also expected if the key is`null` or whitespace because it represents a full scope update in the [IConfigurationService](#).
 
 #### Parameters
 

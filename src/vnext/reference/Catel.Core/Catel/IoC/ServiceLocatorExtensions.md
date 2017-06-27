@@ -128,7 +128,7 @@ The service locator.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 
@@ -162,7 +162,7 @@ The create service function.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 
@@ -490,7 +490,7 @@ The tag.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 
@@ -527,7 +527,7 @@ The tag.
 The registration type. The default value is Singleton.
 
 **registerIfAlreadyRegistered**
-If set to`true` , an older type registration is overwritten by this new one.
+If set to`true`, an older type registration is overwritten by this new one.
 
 #### Exceptions
 

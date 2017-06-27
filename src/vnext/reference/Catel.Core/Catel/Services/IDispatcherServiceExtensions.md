@@ -61,7 +61,7 @@ The method is`null`.
 
 ### BeginInvokeIfRequired(IDispatcherService dispatcherService, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -80,7 +80,7 @@ The action is`null`.
 
 ### BeginInvokeIfRequired(IDispatcherService dispatcherService, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -124,7 +124,7 @@ The method is`null`.
 
 ### InvokeIfRequired(IDispatcherService dispatcherService, Action action)
 
-Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 
@@ -143,7 +143,7 @@ The action is`null`.
 
 ### InvokeIfRequired(IDispatcherService dispatcherService, Delegate method, object[] args)
 
-Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required.To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
+Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on if required. To check whether this is necessary, it will check whether the current thread has access to the dispatcher.
 
 #### Parameters
 

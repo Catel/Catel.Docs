@@ -20,7 +20,7 @@ Extension methods for view model classes.
 
 ### GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations)
 
-Gets the validation summary for the specified viewModel and, if specified, the children as well.This method does not filter on any tag.
+Gets the validation summary for the specified viewModel and, if specified, the children as well. This method does not filter on any tag.
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 The view model.
 
 **includeChildViewModelValidations**
-If set to`true` , all validation from all child view models should be gathered as well.
+If set to`true`, all validation from all child view models should be gathered as well.
 
 #### Returns
 
@@ -43,7 +43,7 @@ The viewModel is`null`.
 
 ### GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations, object tag)
 
-Gets the validation summary for the specified viewModel and, if specified, the children as well.This method also filters on the specified tag.
+Gets the validation summary for the specified viewModel and, if specified, the children as well. This method also filters on the specified tag.
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 The view model.
 
 **includeChildViewModelValidations**
-If set to`true` , all validation from all child view models should be gathered as well.
+If set to`true`, all validation from all child view models should be gathered as well.
 
 **tag**
 The tag.
@@ -100,7 +100,7 @@ The view model.
 The last updated ticks.
 
 **includeChildViewModelValidations**
-If set to`true` , all validation from all child view models should be gathered as well.
+If set to`true`, all validation from all child view models should be gathered as well.
 
 #### Returns
 

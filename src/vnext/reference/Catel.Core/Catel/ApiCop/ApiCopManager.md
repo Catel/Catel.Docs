@@ -38,7 +38,7 @@ Gets a value indicating whether ApiCop is enabled.
 
 ### AddListener(IApiCopListener listener)
 
-Adds the ApiCop listener which will receive all ApiCop information.This method does not check whether the listener is already added to the list of registered listeners.
+Adds the ApiCop listener which will receive all ApiCop information. This method does not check whether the listener is already added to the list of registered listeners.
 
 #### Parameters
 

@@ -66,7 +66,7 @@ The target.
 The source.
 
 **overwriteExisting**
-if set to`true` , existing items in the target dictionary will be overwritten.
+if set to`true`, existing items in the target dictionary will be overwritten.
 
 #### Exceptions
 

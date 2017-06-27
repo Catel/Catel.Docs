@@ -16,7 +16,7 @@ public class NotSupportedInPlatformException : Exception
 [Exception]()
 
 
-Exception in case the functionality is not supported in the current platform.Unfortunately, some platforms miss a lot of functionality. When a feature is not supported in Catel, this is because the .NET Framework (or actually the specified platform) does not allow the code to handle that specific feature.
+Exception in case the functionality is not supported in the current platform. Unfortunately, some platforms miss a lot of functionality. When a feature is not supported in Catel, this is because the .NET Framework (or actually the specified platform) does not allow the code to handle that specific feature.
 
 
 

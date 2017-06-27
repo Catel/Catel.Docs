@@ -17,7 +17,7 @@ public class ValueConverterGroup : IValueConverter
 [IValueConverter](/Catel.MVVM\Catel\MVVM\Converters\IValueConverter.md)
 
 
-A value converter which contains a list of IValueConverters and invokes their Convert or ConvertBack methods in the order that they exist in the list. The output of one converter is piped into the next converter allowing for modular value converters to be chained together. If the ConvertBack method is invoked, the value converters are executed in reverse order (highest to lowest index). Do not leave an element in the Converters property collection null, every element must reference a valid IValueConverter instance. If a value converter's type is not decorated with the ValueConversionAttribute, an InvalidOperationException will be thrown when the converter is added to the Converters collection.Known limitations: the supplied parameter is used for ALL! converters.
+A value converter which contains a list of IValueConverters and invokes their Convert or ConvertBack methods in the order that they exist in the list. The output of one converter is piped into the next converter allowing for modular value converters to be chained together. If the ConvertBack method is invoked, the value converters are executed in reverse order (highest to lowest index). Do not leave an element in the Converters property collection null, every element must reference a valid IValueConverter instance. If a value converter's type is not decorated with the ValueConversionAttribute, an InvalidOperationException will be thrown when the converter is added to the Converters collection. Known limitations: the supplied parameter is used for ALL! converters.
 
 #### Remarks
 

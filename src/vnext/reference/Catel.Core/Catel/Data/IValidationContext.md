@@ -32,13 +32,13 @@ Gets a value indicating whether this instance contains warnings.
 
 ### LastModified
 
-Gets the last modified date/time.Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) is not accurate enough. Use the`LastModifiedTicks` instead.
+Gets the last modified date/time. Note that this is just an informational value and should not be used for comparisons. The [DateTime](#) is not accurate enough. Use the`LastModifiedTicks` instead.
 
 
 
 ### LastModifiedTicks
 
-Gets the last modified ticks which is much more precise that the LastModified. Use this value to compare last modification ticks on other validation contexts.Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks will return the Ticks which is`not` reliable.
+Gets the last modified ticks which is much more precise that the LastModified. Use this value to compare last modification ticks on other validation contexts. Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks will return the Ticks which is`not` reliable.
 
 
 

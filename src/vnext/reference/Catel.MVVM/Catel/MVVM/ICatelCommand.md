@@ -25,7 +25,7 @@ Advanced [ICommand](#) interface definition to provide advanced functionality.
 
 ### Tag
 
-Gets the tag for this command. A tag is a way to link any object to a command so you can use your own methods to recognize the commands, for example by ID or string.By default, the value is`null`.
+Gets the tag for this command. A tag is a way to link any object to a command so you can use your own methods to recognize the commands, for example by ID or string. By default, the value is`null`.
 
 
 

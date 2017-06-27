@@ -16,7 +16,7 @@ public abstract class Behavior<T> : DependencyObject where T : DependencyObject
 [DependencyObject]()
 
 
-Base class for the behavior because the SDK for WinRT only ships with interfaces.This class tries to mimic the WPF, Silverlight and Windows Phone behavior class to allow reusage of the behaviors in Catel.
+Base class for the behavior because the SDK for WinRT only ships with interfaces. This class tries to mimic the WPF, Silverlight and Windows Phone behavior class to allow reusage of the behaviors in Catel.
 
 #### Type Parameters
 

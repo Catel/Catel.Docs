@@ -20,7 +20,7 @@ Class that helps test methods for expected exceptions.
 
 ### CallMethodAndExpectException<TException>(Action action, Func<TException, bool> exceptionValidator)
 
-Calls the method and checks for the exception.If no exception is thrown by the method, this method will throw an exception. If the wrong exception is thrown by the delegate, this method will thrown an exception as well.
+Calls the method and checks for the exception. If no exception is thrown by the method, this method will throw an exception. If the wrong exception is thrown by the delegate, this method will thrown an exception as well.
 
 #### Type Parameters
 
@@ -33,7 +33,7 @@ The type of the exception.
 The action to execute.
 
 **exceptionValidator**
-The exception validator. If`null` , the exception will not be validated custom.
+The exception validator. If`null`, the exception will not be validated custom.
 
 #### Returns
 

@@ -62,7 +62,7 @@ Gets the log listeners.
 #### Parameters
 
 **assembly**
-The assembly to load the product info from. If`null` , the entry assembly will be used.
+The assembly to load the product info from. If`null`, the entry assembly will be used.
 
 #### Returns
 

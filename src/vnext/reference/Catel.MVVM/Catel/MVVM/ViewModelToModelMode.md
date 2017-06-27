@@ -32,14 +32,14 @@ Automatically maps properties from the model to the view model as soon as the mo
 ### OneWay
 1
 
-Automatically maps the property from the model to the view model if the model changes the property value.This mode does not map any values from the view model to the model, thus can also be seen as read-only mode.
+Automatically maps the property from the model to the view model if the model changes the property value. This mode does not map any values from the view model to the model, thus can also be seen as read-only mode.
 
 
 
 ### OneWayToSource
 2
 
-Automatically maps the property from the view model to the model if the view model changes the property value.This mode does not map any values from the model to the view model, but still keeps track of all validation that occurs in the model.
+Automatically maps the property from the view model to the model if the view model changes the property value. This mode does not map any values from the model to the view model, but still keeps track of all validation that occurs in the model.
 
 
 

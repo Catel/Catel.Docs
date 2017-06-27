@@ -43,7 +43,7 @@ The type is`null`.
 
 ### CanResolveAll(Type[] types)
 
-Determines whether all types specified can be resolved. Though Object) will return`null` at the array index when a type cannot be resolved, this method will actually check whether all the specified types are registered.It is still possible to call Object) , even when this method returns`false`.
+Determines whether all types specified can be resolved. Though Object) will return`null` at the array index when a type cannot be resolved, this method will actually check whether all the specified types are registered. It is still possible to call Object), even when this method returns`false`.
 
 #### Parameters
 

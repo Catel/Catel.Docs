@@ -60,7 +60,7 @@ Gets or sets whether values should be disposed on removal.
 
 ### ExpirationTimerInterval
 
-Gets or sets the expiration timer interval.The default value is`TimeSpan.FromSeconds(1)`.
+Gets or sets the expiration timer interval. The default value is`TimeSpan.FromSeconds(1)`.
 
 
 
@@ -262,7 +262,7 @@ If key is`null`.
 
 ### GetFromCacheOrFetchAsync(TKey key, Func<Task<TValue>> code, ExpirationPolicy expirationPolicy, bool override)
 
-Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around Boolean).
+Adds a value to the cache associated with to a key asynchronously. Note that this is a wrapper around Boolean).
 
 #### Parameters
 
@@ -291,7 +291,7 @@ If key is`null`.
 
 ### GetFromCacheOrFetchAsync(TKey key, Func<Task<TValue>> code, bool override, TimeSpan expiration)
 
-Adds a value to the cache associated with to a key asynchronously.Note that this is a wrapper around TimeSpan).
+Adds a value to the cache associated with to a key asynchronously. Note that this is a wrapper around TimeSpan).
 
 #### Parameters
 

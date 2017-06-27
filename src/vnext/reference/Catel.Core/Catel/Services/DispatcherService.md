@@ -45,7 +45,7 @@ Executes the specified delegate asynchronously with the specified arguments on t
 The action.
 
 **onlyBeginInvokeWhenNoAccess**
-If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
+If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 
 
@@ -59,7 +59,7 @@ Executes the specified action with the specified arguments synchronously on the 
 The action.
 
 **onlyInvokeWhenNoAccess**
-If set to`true` , the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
+If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 #### Exceptions
 

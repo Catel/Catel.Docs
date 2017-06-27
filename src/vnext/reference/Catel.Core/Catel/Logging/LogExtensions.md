@@ -491,7 +491,7 @@ The formatting arguments.
 
 ### ErrorAndCreateException<TException>(ILog log, Exception innerException, Func<string, TException> createExceptionCallback, string messageFormat, object[] args)
 
-Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.
+Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.
 
 #### Type Parameters
 
@@ -537,7 +537,7 @@ This example logs an error and immediately throws the exception:
 
 ### ErrorAndCreateException<TException>(ILog log, Exception innerException, string messageFormat, object[] args)
 
-Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.
+Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.
 
 #### Type Parameters
 
@@ -581,7 +581,7 @@ This example logs an error and immediately throws the exception:
 
 ### ErrorAndCreateException<TException>(ILog log, Func<string, TException> createExceptionCallback, string messageFormat, object[] args)
 
-Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.
+Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.
 
 #### Type Parameters
 
@@ -626,7 +626,7 @@ This example logs an error and immediately throws the exception:
 
 ### ErrorAndCreateException<TException>(ILog log, string messageFormat, object[] args)
 
-Writes the specified message as error message and then throws the specified exception.The specified exception must have a constructor that accepts a single string as message.
+Writes the specified message as error message and then throws the specified exception. The specified exception must have a constructor that accepts a single string as message.
 
 #### Type Parameters
 

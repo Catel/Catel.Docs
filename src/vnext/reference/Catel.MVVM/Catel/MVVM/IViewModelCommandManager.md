@@ -41,7 +41,7 @@ Invalidates all the commands that implement the [ICatelCommand](#).
 #### Parameters
 
 **force**
-If`true` , the commands are re-initialized. The default value is`false`.
+If`true`, the commands are re-initialized. The default value is`false`.
 
 
 

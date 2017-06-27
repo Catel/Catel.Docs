@@ -140,7 +140,7 @@ The instance is`null`.
 
 ### Validate(object instance, ValidationContext validationContext)
 
-Validates the specified instance and allows the manipulation of the whole validation context.This method can be used to manipulate the whole validation context and the implementation of this is enough.
+Validates the specified instance and allows the manipulation of the whole validation context. This method can be used to manipulate the whole validation context and the implementation of this is enough.
 
 #### Parameters
 

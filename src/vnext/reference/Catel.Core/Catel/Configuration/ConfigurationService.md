@@ -17,7 +17,7 @@ public class ConfigurationService : IConfigurationService
 [IConfigurationService](/Catel.Core\Catel\Configuration\IConfigurationService.md)
 
 
-Configuration service implementation that allows customization how configuration values are being used inside an application.This default implementation writes to the
+Configuration service implementation that allows customization how configuration values are being used inside an application. This default implementation writes to the
 
 
 

@@ -64,7 +64,7 @@ Gets or sets the name of the property.
 
 ### UseAutoCompletionService
 
-Gets or sets a value indicating whether this behavior should use the auto completion service to filter the items source.If this value is set to`false` , it will show the ItemsSource as auto completion source without filtering.The default value is`true`.
+Gets or sets a value indicating whether this behavior should use the auto completion service to filter the items source. If this value is set to`false`, it will show the ItemsSource as auto completion source without filtering. The default value is`true`.
 
 
 

@@ -16,7 +16,7 @@ public abstract class TriggerActionBase<T, T> : TriggerAction<T> where T : Frame
 [TriggerAction]()
 
 
-TriggerAction base class that handles a safe unsubscribe and clean up because the default TriggerAction class does not always call`OnDetaching`.This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger action is attached.
+TriggerAction base class that handles a safe unsubscribe and clean up because the default TriggerAction class does not always call`OnDetaching`. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger action is attached.
 
 #### Type Parameters
 

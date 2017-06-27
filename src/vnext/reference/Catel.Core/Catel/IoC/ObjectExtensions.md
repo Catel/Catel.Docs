@@ -20,7 +20,7 @@ IoC extensions for all objects.
 
 ### GetDependencyResolver(object obj)
 
-Gets the [IDependencyResolver](#) that was used to create the specified object.This is a convenience call that internally does this:```
+Gets the [IDependencyResolver](#) that was used to create the specified object. This is a convenience call that internally does this:```
 var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(obj);
 
@@ -39,7 +39,7 @@ The [IDependencyResolver](#) for this object.
 
 ### GetServiceLocator(object obj)
 
-Gets the [IServiceLocator](#) that was used to create the specified object.This is a convenience call that internally does this:```
+Gets the [IServiceLocator](#) that was used to create the specified object. This is a convenience call that internally does this:```
 var serviceLocator = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(obj);
 var serviceLocator = dependencyResolver.Resolve<IServiceLocator>();
@@ -59,7 +59,7 @@ The [IServiceLocator](#) used to create this object.
 
 ### GetTypeFactory(object obj)
 
-Gets the [ITypeFactory](#) that was used to create the specified object.This is a convenience call that internally does this:```
+Gets the [ITypeFactory](#) that was used to create the specified object. This is a convenience call that internally does this:```
 var dependencyResolverManager = DependencyResolverManager.Default;
 var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInstance(obj);
 var typeFactory = dependencyResolver.Resolve<ITypeFactory>();

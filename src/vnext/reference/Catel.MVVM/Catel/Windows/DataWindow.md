@@ -72,13 +72,13 @@ The additional buttons.
 The default button.
 
 **setOwnerAndFocus**
-if set to`true` , set the main window as owner window and focus the window.
+if set to`true`, set the main window as owner window and focus the window.
 
 **infoBarMessageControlGenerationMode**
 The info bar message control generation mode.
 
 **focusFirstControl**
-if set to`true` , the first control will get the focus.
+if set to`true`, the first control will get the focus.
 
 
 
@@ -98,13 +98,13 @@ The additional buttons.
 The default button.
 
 **setOwnerAndFocus**
-if set to`true` , set the main window as owner window and focus the window.
+if set to`true`, set the main window as owner window and focus the window.
 
 **infoBarMessageControlGenerationMode**
 The info bar message control generation mode.
 
 **focusFirstControl**
-if set to`true` , the first control will get the focus.
+if set to`true`, the first control will get the focus.
 
 
 
@@ -118,7 +118,7 @@ Gets or sets a value indicating whether this instance can close using escape.
 
 ### PreventViewModelCreation
 
-Gets or sets a value indicating whether the view model container should prevent the creation of a view model.This property is very useful when using views in transitions where the view model is no longer required.
+Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.
 
 
 

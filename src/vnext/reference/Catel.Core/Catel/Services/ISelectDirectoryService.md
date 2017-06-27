@@ -66,7 +66,7 @@ Determines the name of the directory what will be used.
 
 #### Remarks
 
-If this method returns`true` , the DirectoryName property will be filled with the directory name. Otherwise, no changes will occur to the data of this object.
+If this method returns`true`, the DirectoryName property will be filled with the directory name. Otherwise, no changes will occur to the data of this object.
 
 
 

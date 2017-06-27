@@ -43,7 +43,7 @@ Gets the data context.
 
 ### DoNotCreateViewModel
 
-Gets or sets a value indicating whether the logic should create a view model by itself when the ViewModel is`null`.By default, this value is`false`.
+Gets or sets a value indicating whether the logic should create a view model by itself when the ViewModel is`null`. By default, this value is`false`.
 
 
 

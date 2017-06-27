@@ -45,7 +45,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -76,7 +76,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -107,7 +107,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -138,7 +138,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -166,7 +166,7 @@ The sender.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -197,7 +197,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -225,7 +225,7 @@ The sender.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -261,7 +261,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 
@@ -297,7 +297,7 @@ The event args.
 
 #### Returns
 
-`true` if the event handler was not`null` ; otherwise`false`.
+`true` if the event handler was not`null`; otherwise`false`.
 
 
 

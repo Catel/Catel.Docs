@@ -17,7 +17,7 @@ public class MessageMediator : IMessageMediator
 [IMessageMediator](/Catel.Core\Catel\Messaging\IMessageMediator.md)
 
 
-This class creates a simple Mediator which loosely connects different objects together.The message handlers are organized using string-based message keys and are held in a WeakReference collection.
+This class creates a simple Mediator which loosely connects different objects together. The message handlers are organized using string-based message keys and are held in a WeakReference collection.
 
 
 
@@ -35,7 +35,7 @@ Gets the default instance of the message mediator.
 
 ### CleanUp()
 
-Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list.This method is automatically invoked after each call to Object) , but can also be invoked manually.
+Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list. This method is automatically invoked after each call to Object), but can also be invoked manually.
 
 
 
@@ -251,7 +251,7 @@ The recipient to unregister.
 The message tag.
 
 **ignoreTag**
-If set to`true` , tags are ignored.
+If set to`true`, tags are ignored.
 
 #### Returns
 
@@ -270,7 +270,7 @@ A handler cannot be unregistered when it is not registered first. If a handler i
 
 ### UnregisterRecipientAndIgnoreTags(object recipient)
 
-Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to.This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
+Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to. This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
 
 #### Parameters
 

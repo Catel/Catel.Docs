@@ -20,7 +20,7 @@ Interface defining a method accepting an object parameter. This allows the execu
 
 ### ExecuteWithObject(object parameter, TResult result)
 
-Executes the object with the object parameter.The class implementing this interface is responsible for casting the parameter to the right type and to determine whether`null` is allowed as parameter.
+Executes the object with the object parameter. The class implementing this interface is responsible for casting the parameter to the right type and to determine whether`null` is allowed as parameter.
 
 #### Parameters
 

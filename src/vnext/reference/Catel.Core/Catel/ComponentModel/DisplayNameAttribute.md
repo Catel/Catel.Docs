@@ -40,7 +40,7 @@ Gets the display name.
 
 ### LanguageService
 
-Gets or sets the language service. By default or when set to`null` , this property will resolve the language service from the default [IDependencyResolver](#).
+Gets or sets the language service. By default or when set to`null`, this property will resolve the language service from the default [IDependencyResolver](#).
 
 
 

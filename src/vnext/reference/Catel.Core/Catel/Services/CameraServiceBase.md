@@ -20,7 +20,7 @@ public abstract class CameraServiceBase : ICameraService, ViewModelServiceBase
 [ICameraService](/Catel.Core\Catel\Services\ICameraService.md)
 
 
-Base implementation of the [ICameraService](#). This implementation takes care of some protection code to prevent double initialization or forgotten initialization.This class ensures that the service is running when setting or getting cricical properties or calling critical methods. This might look a bit dumb in the first place, but saves the developer of the end-classes lots of redundant checking.
+Base implementation of the [ICameraService](#). This implementation takes care of some protection code to prevent double initialization or forgotten initialization. This class ensures that the service is running when setting or getting cricical properties or calling critical methods. This might look a bit dumb in the first place, but saves the developer of the end-classes lots of redundant checking.
 
 
 

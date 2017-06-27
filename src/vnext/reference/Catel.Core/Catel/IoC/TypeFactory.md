@@ -17,7 +17,7 @@ public class TypeFactory : ITypeFactory
 [ITypeFactory](/Catel.Core\Catel\IoC\ITypeFactory.md)
 
 
-Type factory which will cache constructors to ensure the best performance available.This class will automatically watch the TypeRegistered event and clear the cache automatically when the event occurs.
+Type factory which will cache constructors to ensure the best performance available. This class will automatically watch the TypeRegistered event and clear the cache automatically when the event occurs.
 
 
 
@@ -57,7 +57,7 @@ Do not move initialization to a field, it will cause a deadlock with the initial
 
 ### ClearCache()
 
-Clears the cache of all constructors.This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.
+Clears the cache of all constructors. This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.
 
 
 
@@ -106,7 +106,7 @@ The typeToConstruct is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletion(Type typeToConstruct, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 
@@ -129,7 +129,7 @@ The typeToConstruct is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletionWithTag(Type typeToConstruct, object tag, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 

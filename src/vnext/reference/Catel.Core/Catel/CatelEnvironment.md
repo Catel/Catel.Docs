@@ -29,7 +29,7 @@ The default value for dependency properties that use a Properties.Resources valu
 
 ### BypassDevEnvCheck
 
-Gets or sets a value indicating whether the "devenv.exe" check should be bypassed. By default, the IsInDesignMode also checks whether the current process is "devenv.exe".This behavior is not very useful when using Catel in Visual Studio extensions, so it is possible to bypass that specific check.
+Gets or sets a value indicating whether the "devenv.exe" check should be bypassed. By default, the IsInDesignMode also checks whether the current process is "devenv.exe". This behavior is not very useful when using Catel in Visual Studio extensions, so it is possible to bypass that specific check.
 
 
 
@@ -55,12 +55,12 @@ Gets the main window of the application.
 
 ### GetIsInDesignMode(bool initializeDesignTime)
 
-Gets whether the software is currently in design mode.Note that unless the IsInDesignMode , the value is not cached but always determined at runtime.
+Gets whether the software is currently in design mode. Note that unless the IsInDesignMode, the value is not cached but always determined at runtime.
 
 #### Parameters
 
 **initializeDesignTime**
-if set to`true` , automatically call InitializeDesignTime if in design mode.
+if set to`true`, automatically call InitializeDesignTime if in design mode.
 
 #### Returns
 

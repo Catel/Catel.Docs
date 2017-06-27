@@ -26,12 +26,12 @@ public class RedirectDeserializationBinder : SerializationBinder
 
 ### RedirectDeserializationBinder(int typesPerThread)
 
-Initializes a new instance of the [RedirectDeserializationBinder](#) class.Creates a custom binder that redirects all the types to new types if required. All properties decorated with the [RedirectTypeAttribute](#) will be redirected.
+Initializes a new instance of the [RedirectDeserializationBinder](#) class. Creates a custom binder that redirects all the types to new types if required. All properties decorated with the [RedirectTypeAttribute](#) will be redirected.
 
 #### Parameters
 
 **typesPerThread**
-The number of types per thread to initialize. If`-1` , the types will be initialized in a single thread.
+The number of types per thread to initialize. If`-1`, the types will be initialized in a single thread.
 
 #### Remarks
 

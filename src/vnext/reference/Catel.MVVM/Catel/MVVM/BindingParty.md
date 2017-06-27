@@ -42,7 +42,7 @@ Name of the property.
 
 ### Instance
 
-Gets the instance of the binding party.Note that this value is stored in a weak reference and can be`null` if garbage collected.
+Gets the instance of the binding party. Note that this value is stored in a weak reference and can be`null` if garbage collected.
 
 
 
@@ -81,7 +81,7 @@ Performs application-defined tasks associated with freeing, releasing, or resett
 
 ### GetPropertyValue()
 
-Gets the property value.Note that the property value will be`null` if the Instance is garbage collected.
+Gets the property value. Note that the property value will be`null` if the Instance is garbage collected.
 
 #### Returns
 
@@ -91,7 +91,7 @@ The property value.
 
 ### SetPropertyValue(object newValue)
 
-Sets the property value.Note that the property value will not be set if the Instance is garbage collected.
+Sets the property value. Note that the property value will not be set if the Instance is garbage collected.
 
 #### Parameters
 

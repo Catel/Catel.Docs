@@ -30,7 +30,7 @@ Gets or sets the default culture to use for parsing.
 
 ### ToFullTypeString(object instance)
 
-Returns a [String](#) that represents the full type name of the instance.If the instance is`null` , this method will return "null". This method is great when the value of a property must be logged.
+Returns a [String](#) that represents the full type name of the instance. If the instance is`null`, this method will return "null". This method is great when the value of a property must be logged.
 
 #### Parameters
 
@@ -45,7 +45,7 @@ A [String](#) that represents the type of the instance.
 
 ### ToString(object instance)
 
-Returns a [String](#) that represents the instance.If the instance is`null` , this method will return "null". This method is great when the value of a property must be logged.
+Returns a [String](#) that represents the instance. If the instance is`null`, this method will return "null". This method is great when the value of a property must be logged.
 
 #### Parameters
 
@@ -60,7 +60,7 @@ A [String](#) that represents the instance.
 
 ### ToString(object instance, CultureInfo cultureInfo)
 
-Returns a [String](#) that represents the instance.If the instance is`null` , this method will return "null". This method is great when the value of a property must be logged.
+Returns a [String](#) that represents the instance. If the instance is`null`, this method will return "null". This method is great when the value of a property must be logged.
 
 #### Parameters
 
@@ -78,7 +78,7 @@ A [String](#) that represents the instance.
 
 ### ToTypeString(object instance)
 
-Returns a [String](#) that represents the type name of the instance.If the instance is`null` , this method will return "null". This method is great when the value of a property must be logged.
+Returns a [String](#) that represents the type name of the instance. If the instance is`null`, this method will return "null". This method is great when the value of a property must be logged.
 
 #### Parameters
 

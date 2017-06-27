@@ -117,7 +117,7 @@ The name is`null` or whitespace.
 
 ### RegisterProperties()
 
-Registers all the properties for the specified type.This method can only be called once per type. The [PropertyDataManager](#) caches whether it has already registered the properties once.
+Registers all the properties for the specified type. This method can only be called once per type. The [PropertyDataManager](#) caches whether it has already registered the properties once.
 
 #### Exceptions
 

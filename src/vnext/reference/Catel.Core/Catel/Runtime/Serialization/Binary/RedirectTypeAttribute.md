@@ -20,7 +20,7 @@ Attribute that can be used to redirect types to other types to be able to rename
 
 #### Remarks
 
-This attribute should be appended to the property definition.In case this attribute is used on a field or property, the NewAssemblyName and NewTypeName are mandatory. In all other cases, the type and assembly will be loaded automatically.
+This attribute should be appended to the property definition. In case this attribute is used on a field or property, the NewAssemblyName and NewTypeName are mandatory. In all other cases, the type and assembly will be loaded automatically.
 
 
 
@@ -63,7 +63,7 @@ Gets or sets the new type name.
 
 #### Remarks
 
-Leave empty if the type name is unchanged.List or Array types should be postfixed with a [[]].
+Leave empty if the type name is unchanged. List or Array types should be postfixed with a [[]].
 
 
 

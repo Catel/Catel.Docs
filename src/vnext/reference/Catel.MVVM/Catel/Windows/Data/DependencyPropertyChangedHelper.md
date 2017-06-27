@@ -78,7 +78,7 @@ The framework element.
 The handler to subscribe.
 
 **inherited**
-if set to`true` , check inherited data context as well.
+if set to`true`, check inherited data context as well.
 
 #### Exceptions
 
@@ -144,7 +144,7 @@ The framework element.
 The handler to subscribe.
 
 **inherited**
-if set to`true` , check inherited data context as well.
+if set to`true`, check inherited data context as well.
 
 #### Exceptions
 

@@ -56,7 +56,7 @@ Gets or sets a value indicating whether the [EventArgs](#) passed to the event h
 
 ### PreventInvocationIfAssociatedObjectIsDisabled
 
-Gets or sets a value indicating whether the invocation of the command should be prevented when the AssociatedObject is disabled.By default, this value is`true.` This property is introduced to disable the default behavior. For example, when showing a window which will disable the underlying object, the command will no longer be invoked. While this is the recommended behavior in most cases, sometimes you just need to bypass the default functionality.
+Gets or sets a value indicating whether the invocation of the command should be prevented when the AssociatedObject is disabled. By default, this value is`true.` This property is introduced to disable the default behavior. For example, when showing a window which will disable the underlying object, the command will no longer be invoked. While this is the recommended behavior in most cases, sometimes you just need to bypass the default functionality.
 
 
 

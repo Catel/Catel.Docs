@@ -20,7 +20,7 @@ An attached behavior that allows you to drag and drop items among various ItemsC
 
 #### Remarks
 
-This code was originally found at http://wpfbehaviorlibrary.codeplex.com/, which is based on http://gallery.expression.microsoft.com/DragDropBehavior/.Original license: Ms-Pl, compatible with the MIT license.
+This code was originally found at http://wpfbehaviorlibrary.codeplex.com/, which is based on http://gallery.expression.microsoft.com/DragDropBehavior/. Original license: Ms-Pl, compatible with the MIT license.
 
 
 

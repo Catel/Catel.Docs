@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public interface IMessageMediator
 ```
 
-The interface definition for our Message mediator. This allows loose-event coupling between components in an application by sending messages to registered elements.This class implements the mediator pattern.
+The interface definition for our Message mediator. This allows loose-event coupling between components in an application by sending messages to registered elements. This class implements the mediator pattern.
 
 
 
@@ -20,7 +20,7 @@ The interface definition for our Message mediator. This allows loose-event coupl
 
 ### CleanUp()
 
-Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list.This method is automatically invoked after each call to Object) , but can also be invoked manually.
+Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list. This method is automatically invoked after each call to Object), but can also be invoked manually.
 
 
 
@@ -194,7 +194,7 @@ A handler cannot be unregistered when it is not registered first. If a handler i
 
 ### UnregisterRecipientAndIgnoreTags(object recipient)
 
-Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to.This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
+Unregisters a specific recipient for all the (non-static) message the recipient is subscribed to. This method ignores any tags. If a message recipient matches the specified recipient, it is unsubscribed.
 
 #### Parameters
 

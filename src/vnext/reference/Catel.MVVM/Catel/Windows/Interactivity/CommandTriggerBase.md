@@ -16,7 +16,7 @@ public abstract class CommandTriggerBase<T> : TriggerBase<T, T> where T : Framew
 [TriggerBase](/Catel.MVVM\Catel\Windows\Interactivity\TriggerBase.md)
 
 
-Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching.This class extends the [Missing: <see cref="T:Catel.Windows.Interactivity.TriggerBase`1" />](#) class by adding supports for commands.
+Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching. This class extends the [Missing: <see cref="T:Catel.Windows.Interactivity.TriggerBase`1" />](#) class by adding supports for commands.
 
 #### Type Parameters
 

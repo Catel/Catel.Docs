@@ -75,7 +75,7 @@ The serializationManager is`null`.
 
 ### PreserveReferences
 
-Gets or sets a value indicating whether references should be preserved.This will add additional`$graphid` and`$graphrefid` properties to each json object.
+Gets or sets a value indicating whether references should be preserved. This will add additional`$graphid` and`$graphrefid` properties to each json object.
 
 
 

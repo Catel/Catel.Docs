@@ -16,7 +16,7 @@ public class SerializeAsCollectionAttribute : Attribute
 [Attribute]()
 
 
-Attribute to inform the serializers in Catel to serialize the object as collection.This can only be used on ModelBase classes that implement [IList](#).
+Attribute to inform the serializers in Catel to serialize the object as collection. This can only be used on ModelBase classes that implement [IList](#).
 
 
 

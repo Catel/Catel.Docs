@@ -73,7 +73,7 @@ The typeFactory is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletion<T>(ITypeFactory typeFactory, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Type Parameters
 
@@ -101,7 +101,7 @@ The typeFactory is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletionWithTag<T>(ITypeFactory typeFactory, object tag, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Type Parameters
 

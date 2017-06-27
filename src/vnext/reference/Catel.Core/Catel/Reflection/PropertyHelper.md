@@ -69,7 +69,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case.
+if set to`true`, ignore case.
 
 #### Returns
 
@@ -87,7 +87,7 @@ Gets the name of the property based on the expression.
 The property expression.
 
 **allowNested**
-If set to`true` , nested properties are allowed.
+If set to`true`, nested properties are allowed.
 
 #### Returns
 
@@ -121,7 +121,7 @@ The type of the value.
 The property expression.
 
 **allowNested**
-If set to`true` , nested properties are allowed.
+If set to`true`, nested properties are allowed.
 
 #### Returns
 
@@ -152,7 +152,7 @@ The type of the value.
 The property expression.
 
 **allowNested**
-If set to`true` , nested properties are allowed.
+If set to`true`, nested properties are allowed.
 
 #### Returns
 
@@ -181,7 +181,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Returns
 
@@ -221,7 +221,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Returns
 
@@ -256,7 +256,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Returns
 
@@ -285,7 +285,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Returns
 
@@ -317,7 +317,7 @@ The property.
 The value.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Exceptions
 
@@ -348,7 +348,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 **value**
 The value as output parameter.
@@ -414,7 +414,7 @@ The object.
 The property.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 **value**
 The value as output parameter.
@@ -483,7 +483,7 @@ The property.
 The value.
 
 **ignoreCase**
-if set to`true` , ignore case when searching for the property name.
+if set to`true`, ignore case when searching for the property name.
 
 #### Returns
 

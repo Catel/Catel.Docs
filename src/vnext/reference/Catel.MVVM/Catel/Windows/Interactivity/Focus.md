@@ -64,7 +64,7 @@ Gets or sets the name of the event. This value is required when the FocusMoment 
 
 ### FocusMoment
 
-Gets or sets the focus moment.When this value is Loaded , no other properties need to be set.When this value is PropertyChanged , both the Source and PropertyName must be set.When this value is Event , both the Source and EventName must be set.
+Gets or sets the focus moment. When this value is Loaded, no other properties need to be set. When this value is PropertyChanged, both the Source and PropertyName must be set. When this value is Event, both the Source and EventName must be set.
 
 
 

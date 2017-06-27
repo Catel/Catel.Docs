@@ -32,7 +32,7 @@ Initializes a new instance of the [CancellableEventArgs](#) class.
 
 ### Cancel
 
-Gets or sets a value indicating whether the action should be canceled.The default value is`false`.
+Gets or sets a value indicating whether the action should be canceled. The default value is`false`.
 
 
 

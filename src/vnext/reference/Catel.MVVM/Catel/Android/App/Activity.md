@@ -50,7 +50,7 @@ Gets or sets a value indicating whether the view is enabled.
 
 ### PreventViewModelCreation
 
-Gets or sets a value indicating whether the view model container should prevent the creation of a view model.This property is very useful when using views in transitions where the view model is no longer required.
+Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.
 
 
 

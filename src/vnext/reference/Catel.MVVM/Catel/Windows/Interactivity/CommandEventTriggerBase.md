@@ -16,7 +16,7 @@ public abstract class CommandEventTriggerBase<T> : EventTriggerBase<T, T> where 
 [EventTriggerBase](/Catel.MVVM\Catel\Windows\Interactivity\EventTriggerBase.md)
 
 
-Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching.This class extends the [EventTriggerBase](#) class by adding supports for commands.
+Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching. This class extends the [EventTriggerBase](#) class by adding supports for commands.
 
 #### Type Parameters
 

@@ -16,7 +16,7 @@ public class MissingTypeEventArgs : EventArgs
 [EventArgs]()
 
 
-Event arguments for the MissingType event.These event arguments will be fired. To resolve a type, set either the ImplementingInstance or ImplementingType. If both are filled, the instance will be used.
+Event arguments for the MissingType event. These event arguments will be fired. To resolve a type, set either the ImplementingInstance or ImplementingType. If both are filled, the instance will be used.
 
 
 
@@ -42,13 +42,13 @@ The interfaceType is`null`.
 
 ### ImplementingInstance
 
-Gets or sets the implementing instance.Set if the registration of an instance is required.
+Gets or sets the implementing instance. Set if the registration of an instance is required.
 
 
 
 ### ImplementingType
 
-Gets or sets the implementing type.Set if the registration of a type is required.
+Gets or sets the implementing type. Set if the registration of a type is required.
 
 
 

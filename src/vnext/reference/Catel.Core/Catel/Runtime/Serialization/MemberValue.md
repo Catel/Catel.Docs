@@ -62,7 +62,7 @@ Gets the group of the member.
 
 ### MemberType
 
-Gets the type of the member.This is the actual member type as it is defined on the type. This is`not` a wrapper around the`value.GetType()`.
+Gets the type of the member. This is the actual member type as it is defined on the type. This is`not` a wrapper around the`value.GetType()`.
 
 
 

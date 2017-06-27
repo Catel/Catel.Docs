@@ -49,7 +49,7 @@ The validation context.
 The additional validation context.
 
 **onlyAddValidation**
-if set to`true` , validation is only added, not removed. This is great to build up summaries.
+if set to`true`, validation is only added, not removed. This is great to build up summaries.
 
 #### Returns
 

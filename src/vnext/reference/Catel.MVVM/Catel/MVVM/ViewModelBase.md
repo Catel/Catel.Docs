@@ -20,7 +20,7 @@ public abstract class ViewModelBase : IUniqueIdentifyable, IRelationalViewModel,
 [IUniqueIdentifyable](/Catel.Core\Catel\IUniqueIdentifyable.md),[IRelationalViewModel](/Catel.MVVM\Catel\MVVM\IRelationalViewModel.md)
 
 
-View model base for MVVM implementations. This class is based on the [ModelBase](#) , and supports all common interfaces used by WPF.
+View model base for MVVM implementations. This class is based on the [ModelBase](#), and supports all common interfaces used by WPF.
 
 #### Remarks
 
@@ -42,7 +42,7 @@ Gets a value indicating whether this object contains any field or business error
 
 ### IsClosed
 
-Gets a value indicating whether this instance is closed. If a view model is closed, calling CancelViewModelAsync , SaveViewModelAsync or Boolean}) will have no effect.
+Gets a value indicating whether this instance is closed. If a view model is closed, calling CancelViewModelAsync, SaveViewModelAsync or Boolean}) will have no effect.
 
 
 
@@ -114,7 +114,7 @@ Occurs when the navigation is completed.
 
 #### Remarks
 
-This should of course be a cleaner solution, but there is no other way to let a view-model know that navigation has completed. Another option is injection, but this would require every view-model for Windows Phone 7 to accept only the navigation context, which has actually nothing to do with the logic.It is also possible to use the OnNavigationCompleted event.
+This should of course be a cleaner solution, but there is no other way to let a view-model know that navigation has completed. Another option is injection, but this would require every view-model for Windows Phone 7 to accept only the navigation context, which has actually nothing to do with the logic. It is also possible to use the OnNavigationCompleted event.
 
 
 
@@ -155,7 +155,7 @@ The result to pass to the view. This will, for example, be used as`DialogResult`
 
 ### InitializeViewModelAsync()
 
-Initializes the view model. Normally the initialization is done in the constructor, but sometimes this must be delayed to a state where the associated UI element (user control, window, ...) is actually loaded.This method is called as soon as the associated UI element is loaded.
+Initializes the view model. Normally the initialization is done in the constructor, but sometimes this must be delayed to a state where the associated UI element (user control, window, ...) is actually loaded. This method is called as soon as the associated UI element is loaded.
 
 #### Returns
 
@@ -163,7 +163,7 @@ The task.
 
 #### Remarks
 
-It's not recommended to implement the initialization of properties in this method. The initialization of properties should be done in the constructor. This method should be used to start the retrieval of data from a web service or something similar.During unit tests, it is recommended to manually call this method because there is no external container calling this method.
+It's not recommended to implement the initialization of properties in this method. The initialization of properties should be done in the constructor. This method should be used to start the retrieval of data from a web service or something similar. During unit tests, it is recommended to manually call this method because there is no external container calling this method.
 
 
 
@@ -205,7 +205,7 @@ Validates the current object for field and business rule errors.
 #### Parameters
 
 **force**
-If set to`true` , a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
+If set to`true`, a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
 
 #### Remarks
 

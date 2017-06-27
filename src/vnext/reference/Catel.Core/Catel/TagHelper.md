@@ -20,7 +20,7 @@ Helper class for comparing tags.
 
 ### AreTagsEqual(object firstTag, object secondTag)
 
-Compares the firstTag with the secondTag.This method is introduced because a string comparison fails when using ==.
+Compares the firstTag with the secondTag. This method is introduced because a string comparison fails when using ==.
 
 #### Parameters
 
@@ -36,13 +36,13 @@ The second tag.
 
 #### Remarks
 
-When both tags are`null` , the tags are considered equal.
+When both tags are`null`, the tags are considered equal.
 
 
 
 ### ToString(object tag)
 
-Returns a [String](#) that represents the tag. This method also handles`null` , in that case it will return "null".
+Returns a [String](#) that represents the tag. This method also handles`null`, in that case it will return "null".
 
 #### Parameters
 

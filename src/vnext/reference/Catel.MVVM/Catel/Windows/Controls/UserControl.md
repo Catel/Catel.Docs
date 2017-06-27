@@ -57,25 +57,25 @@ The view model.
 
 ### CloseViewModelOnUnloaded
 
-Gets or sets a value indicating whether the user control should close any existing view model when the control is unloaded from the visual tree.Set this property to`false` if a view model should be kept alive and re-used for unloading/loading instead of creating a new one.By default, this value is`true`.
+Gets or sets a value indicating whether the user control should close any existing view model when the control is unloaded from the visual tree. Set this property to`false` if a view model should be kept alive and re-used for unloading/loading instead of creating a new one. By default, this value is`true`.
 
 
 
 ### CreateWarningAndErrorValidatorForViewModel
 
-Gets or sets a value indicating whether to create a [WarningAndErrorValidator](#) for the current control.If a user control does not have any [InfoBarMessageControl](#) or equivalent control, it is useless to create a [WarningAndErrorValidator](#) for the current control.The default value is determined by the DefaultCreateWarningAndErrorValidatorForViewModelValue property.
+Gets or sets a value indicating whether to create a [WarningAndErrorValidator](#) for the current control. If a user control does not have any [InfoBarMessageControl](#) or equivalent control, it is useless to create a [WarningAndErrorValidator](#) for the current control. The default value is determined by the DefaultCreateWarningAndErrorValidatorForViewModelValue property.
 
 
 
 ### DefaultCreateWarningAndErrorValidatorForViewModelValue
 
-Gets or sets a value for the CreateWarningAndErrorValidatorForViewModel property. This way, the behavior can be changed an entire application to prevent disabling it on every control.The default value is`true`.
+Gets or sets a value for the CreateWarningAndErrorValidatorForViewModel property. This way, the behavior can be changed an entire application to prevent disabling it on every control. The default value is`true`.
 
 
 
 ### DefaultSkipSearchingForInfoBarMessageControlValue
 
-Gets or sets a value for the SkipSearchingForInfoBarMessageControl property. This way, the behavior can be changed an entire application to prevent disabling it on every control.The default value is`false`.
+Gets or sets a value for the SkipSearchingForInfoBarMessageControl property. This way, the behavior can be changed an entire application to prevent disabling it on every control. The default value is`false`.
 
 #### Remarks
 
@@ -85,13 +85,13 @@ Internally this value uses the DefaultSkipSearchingForInfoBarMessageControlValue
 
 ### DefaultSupportParentViewModelContainersValue
 
-Gets or sets a value for the SupportParentViewModelContainers property. This way, the behavior can be changed an entire application to prevent disabling it on every control.The default value is`false`.
+Gets or sets a value for the SupportParentViewModelContainers property. This way, the behavior can be changed an entire application to prevent disabling it on every control. The default value is`false`.
 
 
 
 ### DefaultUnloadBehaviorValue
 
-Gets or sets the default value for the UnloadBehavior property.The default value is SaveAndCloseViewModel.
+Gets or sets the default value for the UnloadBehavior property. The default value is SaveAndCloseViewModel.
 
 
 
@@ -103,19 +103,19 @@ Gets or sets a value indicating whether the user control should automatically be
 
 ### PreventViewModelCreation
 
-Gets or sets a value indicating whether the view model container should prevent the creation of a view model.This property is very useful when using views in transitions where the view model is no longer required.
+Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.
 
 
 
 ### SkipSearchingForInfoBarMessageControl
 
-Gets or sets a value indicating whether to skip the search for an info bar message control. If not skipped, the user control will search for a the first [InfoBarMessageControl](#) that can be found. During this search, the user control will use both the visual and logical tree.If a user control does not have any [InfoBarMessageControl](#) , searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to`true`.The default value is determined by the DefaultSkipSearchingForInfoBarMessageControlValue property.
+Gets or sets a value indicating whether to skip the search for an info bar message control. If not skipped, the user control will search for a the first [InfoBarMessageControl](#) that can be found. During this search, the user control will use both the visual and logical tree. If a user control does not have any [InfoBarMessageControl](#), searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to`true`. The default value is determined by the DefaultSkipSearchingForInfoBarMessageControlValue property.
 
 
 
 ### SupportParentViewModelContainers
 
-Gets or sets a value indicating whether parent view model containers are supported. If supported, the user control will search for a [DependencyObject](#) that implements the [IViewModelContainer](#) interface. During this search, the user control will use both the visual and logical tree.If a user control does not have any parent control implementing the [IViewModelContainer](#) interface, searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to`false`.The default value is`true`.
+Gets or sets a value indicating whether parent view model containers are supported. If supported, the user control will search for a [DependencyObject](#) that implements the [IViewModelContainer](#) interface. During this search, the user control will use both the visual and logical tree. If a user control does not have any parent control implementing the [IViewModelContainer](#) interface, searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to`false`. The default value is`true`.
 
 
 

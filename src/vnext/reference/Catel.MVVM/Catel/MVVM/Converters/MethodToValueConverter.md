@@ -24,7 +24,7 @@ Converts the result of a method to a value. This makes it possible to bind to a 
 
 #### Remarks
 
-Code originally comes from http://stackoverflow.com/questions/502250/bind-to-a-method-in-wpf.Original license: CC BY-SA 2.5, compatible with the MIT license.
+Code originally comes from http://stackoverflow.com/questions/502250/bind-to-a-method-in-wpf. Original license: CC BY-SA 2.5, compatible with the MIT license.
 
 
 

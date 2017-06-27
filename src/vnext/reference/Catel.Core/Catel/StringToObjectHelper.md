@@ -298,7 +298,7 @@ The long value of the string.
 
 ### ToRightType(Type targetType, string value)
 
-Converts a string to the right target type, such as [String](#) , [Boolean](#) and [DateTime](#).
+Converts a string to the right target type, such as [String](#), [Boolean](#) and [DateTime](#).
 
 #### Parameters
 
@@ -310,7 +310,7 @@ The value to convert to the specified target type.
 
 #### Returns
 
-The converted value. If the value is`null` , this method will return`null`.
+The converted value. If the value is`null`, this method will return`null`.
 
 #### Exceptions
 
@@ -321,7 +321,7 @@ The specified targetType is not supported.
 
 ### ToRightType(Type targetType, string value, CultureInfo cultureInfo)
 
-Converts a string to the right target type, such as [String](#) , [Boolean](#) and [DateTime](#).
+Converts a string to the right target type, such as [String](#), [Boolean](#) and [DateTime](#).
 
 #### Parameters
 
@@ -336,7 +336,7 @@ The culture information.
 
 #### Returns
 
-The converted value. If the value is`null` , this method will return`null`.
+The converted value. If the value is`null`, this method will return`null`.
 
 #### Exceptions
 

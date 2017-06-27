@@ -32,7 +32,7 @@ Dependency property for the FocusParentsFirst property.
 
 ### FocusParentsFirst
 
-Gets or sets a value indicating whether the parent should be focused first.The default value is`true`.
+Gets or sets a value indicating whether the parent should be focused first. The default value is`true`.
 
 
 

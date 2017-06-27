@@ -30,7 +30,7 @@ IDisposable.
 
 ### PushInScope(IPleaseWaitService pleaseWaitService, string status)
 
-Calls String) and returns a disposable token. As soon as the token is disposed, it will call Pop.This is a great way to safely show a busy indicator and ensure that the indicator hides, even when an exception occurs.
+Calls String) and returns a disposable token. As soon as the token is disposed, it will call Pop. This is a great way to safely show a busy indicator and ensure that the indicator hides, even when an exception occurs.
 
 #### Parameters
 

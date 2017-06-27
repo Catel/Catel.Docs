@@ -28,7 +28,7 @@ Creates a delegate for the specified method and target.
 Type of the delegate.
 
 **target**
-The target. If`null` , the method will be assumed static.
+The target. If`null`, the method will be assumed static.
 
 **methodInfo**
 The method info.

@@ -28,7 +28,7 @@ Determines whether the specified keyboard modifiers are currently pressed.
 One or more keyboard modifiers.
 
 **checkForExactModifiers**
-if set to`true` , this check requires the exact modifiers to be pressed.
+if set to`true`, this check requires the exact modifiers to be pressed.
 
 #### Returns
 

@@ -50,7 +50,7 @@ The targetWindow is`null`.
 
 ### ForceCloseAfterSettingDialogResult
 
-Gets or sets a value indicating whether the logic should call`Close` immediately when the`DialogResult` is set.By default, the`Window` class correctly closes the window when the`DialogResult` is set, but not all implementations work like this.The default value is false.
+Gets or sets a value indicating whether the logic should call`Close` immediately when the`DialogResult` is set. By default, the`Window` class correctly closes the window when the`DialogResult` is set, but not all implementations work like this. The default value is false.
 
 
 

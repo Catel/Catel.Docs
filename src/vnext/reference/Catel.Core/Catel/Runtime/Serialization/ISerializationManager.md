@@ -71,7 +71,7 @@ Gets the catel properties.
 Type of the model.
 
 **includeModelBaseProperties**
-if set to`true` , also include model base properties.
+if set to`true`, also include model base properties.
 
 #### Returns
 
@@ -114,7 +114,7 @@ Gets the catel property names.
 Type of the model.
 
 **includeModelBaseProperties**
-if set to`true` , also include model base properties.
+if set to`true`, also include model base properties.
 
 #### Returns
 
@@ -249,7 +249,7 @@ The type is`null`.
 
 ### GetSerializerModifiers(Type type)
 
-Gets the serializer modifiers for the specified type.Note that the order is important because the modifiers will be called in the returned order during serialization and in reversed order during deserialization.
+Gets the serializer modifiers for the specified type. Note that the order is important because the modifiers will be called in the returned order during serialization and in reversed order during deserialization.
 
 #### Parameters
 
@@ -258,7 +258,7 @@ The type.
 
 #### Returns
 
-An array containing the modifiers. Never`null` , but can be an empty array.
+An array containing the modifiers. Never`null`, but can be an empty array.
 
 #### Exceptions
 

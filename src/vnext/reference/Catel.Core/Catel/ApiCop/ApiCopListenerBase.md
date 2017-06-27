@@ -35,7 +35,7 @@ Gets or sets the grouping for this listener.
 
 ### WriteResults(IEnumerable<IApiCopResult> results)
 
-Writes the results of the ApiCop feature.Note that this will only contain invalid results. Valid results are not written to the listeners.
+Writes the results of the ApiCop feature. Note that this will only contain invalid results. Valid results are not written to the listeners.
 
 #### Parameters
 

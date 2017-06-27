@@ -174,7 +174,7 @@ The space replacement.
 The dot replacement.
 
 **makeLowercase**
-if set to`true` , make the slug lower case.
+if set to`true`, make the slug lower case.
 
 #### Returns
 
@@ -184,7 +184,7 @@ The slug based on the input.
 
 ### GetUniqueControlName(string controlName)
 
-Gets the a unique name for a control. This is sometimes required in some frameworks.The name is made unique by appending a unique guid.
+Gets the a unique name for a control. This is sometimes required in some frameworks. The name is made unique by appending a unique guid.
 
 #### Parameters
 

@@ -24,7 +24,7 @@ Helper for auditing which handles the complete subscription of an [IViewModel](#
 
 ### RegisterViewModel(IViewModel viewModel)
 
-Registers the view model to the [AuditingManager](#).This helper will automatically unsubscribe from all events when the view model is closed.
+Registers the view model to the [AuditingManager](#). This helper will automatically unsubscribe from all events when the view model is closed.
 
 #### Parameters
 

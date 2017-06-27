@@ -68,7 +68,7 @@ Increases the count and determines whether the feature is being used at the mome
 #### Parameters
 
 **isUsed**
-if set to`true` , the feature is being used.
+if set to`true`, the feature is being used.
 
 **tag**
 The tag.

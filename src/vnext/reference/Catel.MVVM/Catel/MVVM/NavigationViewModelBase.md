@@ -16,7 +16,7 @@ public abstract class NavigationViewModelBase : ViewModelBase
 [ViewModelBase](/Catel.MVVM\Catel\MVVM\ViewModelBase.md)
 
 
-Extended base class for view models that include navigation.This class adds navigation commands and the navigation service.
+Extended base class for view models that include navigation. This class adds navigation commands and the navigation service.
 
 
 

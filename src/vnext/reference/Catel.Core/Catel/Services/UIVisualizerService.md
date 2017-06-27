@@ -20,7 +20,7 @@ public class UIVisualizerService : IUIVisualizerService, ViewModelServiceBase
 [IUIVisualizerService](/Catel.Core\Catel\Services\IUIVisualizerService.md)
 
 
-Service to show modal or non-modal popup windows.All windows will have to be registered manually or are be resolved via the [IViewLocator](#).
+Service to show modal or non-modal popup windows. All windows will have to be registered manually or are be resolved via the [IViewLocator](#).
 
 
 
@@ -79,7 +79,7 @@ Name of the registered window.
 Type of the window.
 
 **throwExceptionIfExists**
-if set to`true` , this method will throw an exception when already registered.
+if set to`true`, this method will throw an exception when already registered.
 
 #### Exceptions
 
@@ -126,7 +126,7 @@ Shows a window that is registered with the specified view model in a non-modal s
 The name that the window is registered with.
 
 **data**
-The data to set as data context. If`null` , the data context will be untouched.
+The data to set as data context. If`null`, the data context will be untouched.
 
 **completedProc**
 The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.
@@ -181,7 +181,7 @@ Shows a window that is registered with the specified view model in a modal state
 The name that the window is registered with.
 
 **data**
-The data to set as data context. If`null` , the data context will be untouched.
+The data to set as data context. If`null`, the data context will be untouched.
 
 **completedProc**
 The callback procedure that will be invoked as soon as the window is closed. This value can be`null`.

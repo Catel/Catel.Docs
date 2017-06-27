@@ -38,7 +38,7 @@ The second object.
 
 ### AreEqualReferences(object object1, object object2)
 
-Checks whether the 2 specified objects are equal references. This method is better, simple because it also checks boxing so 2 integers with the same values that are boxed are equal.Two objects are considered equal if one of the following expressions returns true:
+Checks whether the 2 specified objects are equal references. This method is better, simple because it also checks boxing so 2 integers with the same values that are boxed are equal. Two objects are considered equal if one of the following expressions returns true:
 
 #### Parameters
 
@@ -65,7 +65,7 @@ The object to chec..
 
 #### Returns
 
-`true` if the specified object is`null` or`DBNull.Value` ; otherwise,`false`.
+`true` if the specified object is`null` or`DBNull.Value`; otherwise,`false`.
 
 
 

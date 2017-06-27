@@ -109,7 +109,7 @@ Converts a string representation of a type to a version independent type by remo
 Type to convert.
 
 **stripAssemblies**
-if set to`true` , the assembly names will be stripped as well.
+if set to`true`, the assembly names will be stripped as well.
 
 #### Returns
 
@@ -132,7 +132,7 @@ Formats multiple inner types into one string.
 The inner types.
 
 **stripAssemblies**
-if set to`true` , the assembly names will be stripped as well.
+if set to`true`, the assembly names will be stripped as well.
 
 #### Returns
 

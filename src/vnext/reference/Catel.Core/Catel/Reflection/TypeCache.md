@@ -57,7 +57,7 @@ The name of the type including namespace and assembly, formatted with the String
 A value indicating whether the case should be ignored.
 
 **allowInitialization**
-If set to`true` , allow initialization of the AppDomain if it hasn't happened yet. If`false` , deal with the types currently in the cache.
+If set to`true`, allow initialization of the AppDomain if it hasn't happened yet. If`false`, deal with the types currently in the cache.
 
 #### Returns
 
@@ -80,7 +80,7 @@ Gets all the types from the current [AppDomain](#) where the predicate returns t
 The predicate where the type should apply to.
 
 **allowInitialization**
-If set to`true` , allow initialization of the AppDomain if it hasn't happened yet. If`false` , deal with the types currently in the cache.
+If set to`true`, allow initialization of the AppDomain if it hasn't happened yet. If`false`, deal with the types currently in the cache.
 
 #### Returns
 
@@ -142,7 +142,7 @@ The name of the type including namespace.
 A value indicating whether the case should be ignored.
 
 **allowInitialization**
-If set to`true` , allow initialization of the AppDomain if it hasn't happened yet. If`false` , deal with the types currently in the cache.
+If set to`true`, allow initialization of the AppDomain if it hasn't happened yet. If`false`, deal with the types currently in the cache.
 
 #### Returns
 
@@ -168,7 +168,7 @@ The type name without assembly.
 A value indicating whether the case should be ignored.
 
 **allowInitialization**
-If set to`true` , allow initialization of the AppDomain if it hasn't happened yet. If`false` , deal with the types currently in the cache.
+If set to`true`, allow initialization of the AppDomain if it hasn't happened yet. If`false`, deal with the types currently in the cache.
 
 #### Returns
 
@@ -187,35 +187,35 @@ Note that this method can only support one type of "simple type name" resolving.
 
 ### InitializeTypes(Assembly assembly, bool forceFullInitialization, bool allowMultithreadedInitialization)
 
-Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.
+Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and registering the type by type name and assembly name. The types initialized by this method are used by GetType.
 
 #### Parameters
 
 **assembly**
-The assembly to initialize the types from. If`null` , all assemblies will be checked.
+The assembly to initialize the types from. If`null`, all assemblies will be checked.
 
 **forceFullInitialization**
-If`true` , the types are initialized, even when the types are already initialized.
+If`true`, the types are initialized, even when the types are already initialized.
 
 **allowMultithreadedInitialization**
-If`true` , allow multithreaded initialization. The default value is`false`.
+If`true`, allow multithreaded initialization. The default value is`false`.
 
 
 
 ### InitializeTypes(string assemblyName, bool forceFullInitialization, bool allowMultithreadedInitialization)
 
-Initializes the types. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.
+Initializes the types. It does this by looping through all loaded assemblies and registering the type by type name and assembly name. The types initialized by this method are used by GetType.
 
 #### Parameters
 
 **assemblyName**
-Name of the assembly. If`null` , all assemblies will be checked.
+Name of the assembly. If`null`, all assemblies will be checked.
 
 **forceFullInitialization**
-If`true` , the types are initialized, even when the types are already initialized.
+If`true`, the types are initialized, even when the types are already initialized.
 
 **allowMultithreadedInitialization**
-If`true` , allow multithreaded initialization.
+If`true`, allow multithreaded initialization.
 
 #### Exceptions
 

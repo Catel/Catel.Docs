@@ -36,7 +36,7 @@ Determines the filename of the file what will be used.
 
 #### Remarks
 
-If this method returns`true` , the FileName property will be filled with the filename. Otherwise, no changes will occur to the data of this object.
+If this method returns`true`, the FileName property will be filled with the filename. Otherwise, no changes will occur to the data of this object.
 
 
 

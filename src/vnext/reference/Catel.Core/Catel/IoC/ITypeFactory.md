@@ -20,7 +20,7 @@ Type factory which will cache constructors to ensure the best performance availa
 
 ### ClearCache()
 
-Clears the cache of all constructors.This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.
+Clears the cache of all constructors. This call is normally not necessary since the type factory should keep an eye on the TypeRegistered event to invalidate the cache.
 
 
 
@@ -69,7 +69,7 @@ The typeToConstruct is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletion(Type typeToConstruct, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 
@@ -92,7 +92,7 @@ The typeToConstruct is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletionWithTag(Type typeToConstruct, object tag, object[] parameters)
 
-Creates an instance of the specified type using the specified parameters as injection values.This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
+Creates an instance of the specified type using the specified parameters as injection values. This method will also auto-complete any additional dependencies that can be resolved from the [IServiceLocator](#).
 
 #### Parameters
 

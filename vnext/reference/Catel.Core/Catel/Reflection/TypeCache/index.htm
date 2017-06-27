@@ -395,7 +395,7 @@ The name of the type including namespace and assembly, formatted with the String
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+If set to<code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code>, deal with the types currently in the cache.</p>
 <h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
 <h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -407,7 +407,7 @@ The typeNameWithAssembly is<code>null</code> or whitespace.</p>
 <p><strong>predicate</strong>
 The predicate where the type should apply to.</p>
 <p><strong>allowInitialization</strong>
-If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+If set to<code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code>, deal with the types currently in the cache.</p>
 <h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>An array containing all the <a href="#">Type</a> that match the predicate.</p>
 <h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -439,7 +439,7 @@ The name of the type including namespace.</p>
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+If set to<code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code>, deal with the types currently in the cache.</p>
 <h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
 <h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -453,7 +453,7 @@ The type name without assembly.</p>
 <p><strong>ignoreCase</strong>
 A value indicating whether the case should be ignored.</p>
 <p><strong>allowInitialization</strong>
-If set to<code>true</code> , allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code> , deal with the types currently in the cache.</p>
+If set to<code>true</code>, allow initialization of the AppDomain if it hasn't happened yet. If<code>false</code>, deal with the types currently in the cache.</p>
 <h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>The <a href="#">Type</a> or<code>null</code> if the type cannot be found.</p>
 <h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
@@ -462,23 +462,23 @@ The typeNameWithoutAssembly is<code>null</code> or whitespace.</p>
 <h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p>Note that this method can only support one type of &quot;simple type name&quot; resolving. For example, if &quot;Catel.TypeHelper&quot; is located in multiple assemblies, it will always use the latest known type for resolving the type.</p>
 <h3 id="initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(Assembly assembly, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesassembly-assembly-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.</p>
+<p>Initializes the types in the specified assembly. It does this by looping through all loaded assemblies and registering the type by type name and assembly name. The types initialized by this method are used by GetType.</p>
 <h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assembly</strong>
-The assembly to initialize the types from. If<code>null</code> , all assemblies will be checked.</p>
+The assembly to initialize the types from. If<code>null</code>, all assemblies will be checked.</p>
 <p><strong>forceFullInitialization</strong>
-If<code>true</code> , the types are initialized, even when the types are already initialized.</p>
+If<code>true</code>, the types are initialized, even when the types are already initialized.</p>
 <p><strong>allowMultithreadedInitialization</strong>
-If<code>true</code> , allow multithreaded initialization. The default value is<code>false</code>.</p>
+If<code>true</code>, allow multithreaded initialization. The default value is<code>false</code>.</p>
 <h3 id="initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization">InitializeTypes(string assemblyName, bool forceFullInitialization, bool allowMultithreadedInitialization)<a class="headerlink" href="#initializetypesstring-assemblyname-bool-forcefullinitialization-bool-allowmultithreadedinitialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>Initializes the types. It does this by looping through all loaded assemblies and registering the type by type name and assembly name.The types initialized by this method are used by GetType.</p>
+<p>Initializes the types. It does this by looping through all loaded assemblies and registering the type by type name and assembly name. The types initialized by this method are used by GetType.</p>
 <h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>assemblyName</strong>
-Name of the assembly. If<code>null</code> , all assemblies will be checked.</p>
+Name of the assembly. If<code>null</code>, all assemblies will be checked.</p>
 <p><strong>forceFullInitialization</strong>
-If<code>true</code> , the types are initialized, even when the types are already initialized.</p>
+If<code>true</code>, the types are initialized, even when the types are already initialized.</p>
 <p><strong>allowMultithreadedInitialization</strong>
-If<code>true</code> , allow multithreaded initialization.</p>
+If<code>true</code>, allow multithreaded initialization.</p>
 <h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
 <p><strong>T:System.ArgumentException</strong>
 The assemblyName is<code>null</code> or whitespace.</p>

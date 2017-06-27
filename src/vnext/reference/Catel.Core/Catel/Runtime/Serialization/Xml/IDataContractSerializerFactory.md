@@ -20,13 +20,13 @@ Interface defining a factory to create [DataContractSerializer](#) objects for s
 
 ### DataContractResolver
 
-Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#).The default value is.
+Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#). The default value is.
 
 
 
 ### DataContractSurrogate
 
-Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#).The default value is.
+Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#). The default value is.
 
 
 

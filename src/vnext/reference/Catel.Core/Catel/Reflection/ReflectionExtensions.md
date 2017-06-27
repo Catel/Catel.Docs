@@ -951,7 +951,7 @@ The flatten hierarchy.
 The allow static members.
 
 **allowExplicitInterfaceProperties**
-if set to`true` , this method will check for explicit interface implementations when the property is not found.
+if set to`true`, this method will check for explicit interface implementations when the property is not found.
 
 #### Returns
 
@@ -983,7 +983,7 @@ The name.
 The binding Flags.
 
 **allowExplicitInterfaceProperties**
-if set to`true` , this method will check for explicit interface implementations when the property is not found.
+if set to`true`, this method will check for explicit interface implementations when the property is not found.
 
 #### Returns
 
@@ -1009,7 +1009,7 @@ Gets the full name of the type in a safe way. This means it checks for null firs
 The type.
 
 **fullyQualifiedAssemblyName**
-if set to`true` , include the assembly name in the type name.
+if set to`true`, include the assembly name in the type name.
 
 #### Returns
 

@@ -43,7 +43,7 @@ Gets the validation context which contains all information about the validation.
 
 ### Validator
 
-Gets or sets the validator to use.By default, this value retrieves the default validator from them [IValidatorProvider](#) if it is registered in the [ServiceLocator](#).
+Gets or sets the validator to use. By default, this value retrieves the default validator from them [IValidatorProvider](#) if it is registered in the [ServiceLocator](#).
 
 
 
@@ -70,7 +70,7 @@ Validates the current object for field and business rule errors.
 #### Parameters
 
 **force**
-if set to`true` , a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
+if set to`true`, a validation is forced. When the validation is not forced, it means that when the object is already validated, and no properties have been changed, no validation actually occurs since there is no reason for any values to have changed.
 
 #### Remarks
 

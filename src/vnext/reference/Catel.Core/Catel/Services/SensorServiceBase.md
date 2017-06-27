@@ -36,7 +36,7 @@ Gets the current sensor value. If no value is available,`null` will be returned.
 
 #### Remarks
 
-This is convenience property that internally calls GetCurrentValue.Note that the services inside Catel do not support [INotifyPropertyChanged](#) , thus you cannot subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
+This is convenience property that internally calls GetCurrentValue. Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot subscribe to changes of this property. Instead, subscribe to the CurrentValueChanged event.
 
 
 

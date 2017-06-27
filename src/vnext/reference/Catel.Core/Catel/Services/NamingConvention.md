@@ -21,35 +21,35 @@ Class that is able to resolve naming conventions.
 ### Assembly
 [AS]
 
-The assembly constant that will be replaced by the naming convention. This constant will be replaced by the assembly name.For example, the following naming convention:`[AS].UI.Views.[VM]View` will result in the following view for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
+The assembly constant that will be replaced by the naming convention. This constant will be replaced by the assembly name. For example, the following naming convention:`[AS].UI.Views.[VM]View` will result in the following view for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
 
 
 
 ### Current
 [CURRENT]
 
-The current constant that will keep the convention in the current namespace.For example, the following naming convention:`[CURRENT].[VM]View` will result in the following view for`Catel.ExampleViewModel` :`Catel.ExampleView.xaml`
+The current constant that will keep the convention in the current namespace. For example, the following naming convention:`[CURRENT].[VM]View` will result in the following view for`Catel.ExampleViewModel` :`Catel.ExampleView.xaml`
 
 
 
 ### Up
 [UP]
 
-The up constant that will be replaced by the naming convention. This constant will be move up one step in the type namespace tree.For example, the following naming convention:`[UP].Views.[VM]View` will result in the following view for`Catel.ViewModels.ExampleViewModel` :`Catel.Views.ExampleView.xaml`
+The up constant that will be replaced by the naming convention. This constant will be move up one step in the type namespace tree. For example, the following naming convention:`[UP].Views.[VM]View` will result in the following view for`Catel.ViewModels.ExampleViewModel` :`Catel.Views.ExampleView.xaml`
 
 
 
 ### ViewModelName
 [VM]
 
-The view model name constant that will be replaced by the naming convention. This constant will be replaced by the view model name without the "ViewModel" prefix.For example, the following naming convention:`[AS].UI.Views.[VM]View` will result in the following view for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
+The view model name constant that will be replaced by the naming convention. This constant will be replaced by the view model name without the "ViewModel" prefix. For example, the following naming convention:`[AS].UI.Views.[VM]View` will result in the following view for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
 
 
 
 ### ViewName
 [VW]
 
-The view name constant that will be replaced by the naming convention. This constant will be replaced by the view name without the "View", "Window" and "Control" prefix.For example, the following naming convention:`[AS].UI.Views.[VW]ViewModel` will result in the following view model for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
+The view name constant that will be replaced by the naming convention. This constant will be replaced by the view name without the "View", "Window" and "Control" prefix. For example, the following naming convention:`[AS].UI.Views.[VW]ViewModel` will result in the following view model for`ExampleViewModel` :`MyAssembly.UI.Views.ExampleView.xaml`
 
 
 
@@ -104,7 +104,7 @@ The path is`null` or whitespace.
 
 ### GetParentSeparator(string path)
 
-Gets the parent separator.This method tries to use the following separators:
+Gets the parent separator. This method tries to use the following separators:
 
 #### Parameters
 
@@ -179,7 +179,7 @@ If conventionToUse is`null` or whitespace.
 
 ### ResolveViewByViewModelName(string assembly, string fullViewModelName, string conventionToUse)
 
-Resolves the convention by using the view model name.This method does not add assemblies or resolve types, but will only return a string containing the resolved value based on the convention.The following constants can be used in this method: * ViewModelName
+Resolves the convention by using the view model name. This method does not add assemblies or resolve types, but will only return a string containing the resolved value based on the convention. The following constants can be used in this method: * ViewModelName
 
 #### Parameters
 
@@ -205,7 +205,7 @@ If assembly is`null` or whitespace.
 
 ### ResolveViewModelByViewName(string assembly, string fullViewName, string conventionToUse)
 
-Resolves the convention by using the view name.This method does not add assemblies or resolve types, but will only return a string containing the resolved value based on the convention.The following constants can be used in this method: * ViewName
+Resolves the convention by using the view name. This method does not add assemblies or resolve types, but will only return a string containing the resolved value based on the convention. The following constants can be used in this method: * ViewName
 
 #### Parameters
 

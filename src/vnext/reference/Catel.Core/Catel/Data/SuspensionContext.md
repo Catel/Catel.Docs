@@ -41,7 +41,7 @@ Adds the specified property name to the suspension context.
 #### Parameters
 
 **propertyName**
-Name of the property. If`null` , this will be converted to`string.Empty`.
+Name of the property. If`null`, this will be converted to`string.Empty`.
 
 
 

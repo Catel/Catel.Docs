@@ -85,7 +85,7 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 The property expression.
 
 **allowNested**
-if set to`true` , nested properties are allowed.
+if set to`true`, nested properties are allowed.
 
 #### Returns
 
@@ -116,7 +116,7 @@ The [PropertyChangedEventArgs](#) instance containing the event data.
 The property expression.
 
 **allowNested**
-if set to`true` , nested properties are allowed.
+if set to`true`, nested properties are allowed.
 
 #### Returns
 

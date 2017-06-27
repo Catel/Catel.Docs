@@ -22,7 +22,7 @@ The context helper.
 
 ### CurrentContext
 
-Gets or sets the current context.Note that the setter is made public to allow customization. It will be used primarily by Catel though.
+Gets or sets the current context. Note that the setter is made public to allow customization. It will be used primarily by Catel though.
 
 
 

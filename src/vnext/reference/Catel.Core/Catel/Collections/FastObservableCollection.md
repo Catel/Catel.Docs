@@ -85,7 +85,7 @@ Gets a value indicating whether change notifications are suspended.
 
 ### AddItems(IEnumerable<T> collection)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -101,7 +101,7 @@ The collection is`null`.
 
 ### AddItems(IEnumerable<T> collection, SuspensionMode mode)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -120,7 +120,7 @@ The collection is`null`.
 
 ### AddItems(IEnumerable collection)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -136,7 +136,7 @@ The collection is`null`.
 
 ### AddItems(IEnumerable collection, SuspensionMode mode)
 
-Adds the specified items to the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -155,7 +155,7 @@ The collection is`null`.
 
 ### InsertItems(IEnumerable<T> collection, int index)
 
-Inserts the elements of the specified collection at the specified index.This method will raise a change notification at the end.
+Inserts the elements of the specified collection at the specified index. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -174,7 +174,7 @@ The collection is`null`.
 
 ### InsertItems(IEnumerable<T> collection, int index, SuspensionMode mode)
 
-Inserts the elements of the specified collection at the specified index.This method will raise a change notification at the end.
+Inserts the elements of the specified collection at the specified index. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -196,7 +196,7 @@ The collection is`null`.
 
 ### InsertItems(IEnumerable collection, int index)
 
-Inserts the elements of the specified collection at the specified index.This method will raise a change notification at the end.
+Inserts the elements of the specified collection at the specified index. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -215,7 +215,7 @@ The collection is`null`.
 
 ### InsertItems(IEnumerable collection, int index, SuspensionMode mode)
 
-Inserts the elements of the specified collection at the specified index.This method will raise a change notification at the end.
+Inserts the elements of the specified collection at the specified index. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -237,7 +237,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable<T> collection)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -253,7 +253,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable<T> collection, SuspensionMode mode)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -272,7 +272,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable collection)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
@@ -288,7 +288,7 @@ The collection is`null`.
 
 ### RemoveItems(IEnumerable collection, SuspensionMode mode)
 
-Removes the specified items from the collection without causing a change notification for all items.This method will raise a change notification at the end.
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 

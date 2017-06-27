@@ -20,7 +20,7 @@ Interface defining shared information about locators. This way, any locator can 
 
 ### NamingConventions
 
-Gets or sets the naming conventions to use to locate types.By adding or removing conventions to this property, the service can use custom resolving of types.Each implementation should add its own default naming convention.
+Gets or sets the naming conventions to use to locate types. By adding or removing conventions to this property, the service can use custom resolving of types. Each implementation should add its own default naming convention.
 
 #### Remarks
 

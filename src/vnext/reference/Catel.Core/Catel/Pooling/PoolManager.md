@@ -17,7 +17,7 @@ public class PoolManager<TPoolable> : IPoolManager<TPoolable> where TPoolable : 
 [IPoolManager](/Catel.Core\Catel\Pooling\IPoolManager.md)
 
 
-Pool manager allowing objects to be pooled.The implementation removes objects from the internal stack and releases them. If no instance is available, a new one will be created that should be returned to the pool once disposed.
+Pool manager allowing objects to be pooled. The implementation removes objects from the internal stack and releases them. If no instance is available, a new one will be created that should be returned to the pool once disposed.
 
 #### Type Parameters
 

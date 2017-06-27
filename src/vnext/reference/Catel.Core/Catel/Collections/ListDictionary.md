@@ -148,7 +148,7 @@ The key.
 
 ### CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
 
-Copies the elements to an [Array](#) , starting at a particular System.Array index.
+Copies the elements to an [Array](#), starting at a particular System.Array index.
 
 #### Parameters
 

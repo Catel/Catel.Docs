@@ -38,7 +38,7 @@ Gets a value indicating whether the target control is loaded or not.
 
 ### PreventViewModelCreation
 
-Gets or sets a value indicating whether the view model container should prevent the creation of a view model.This property is very useful when using views in transitions where the view model is no longer required.
+Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.
 
 
 
@@ -176,7 +176,7 @@ The [EventArgs](#) instance containing the event data.
 
 ### OnTargetViewLoadedAsync(object sender, EventArgs e)
 
-Called when the TargetView has just been loaded.The base implementation will try to create a view model based on the current DataContext and set it as the DataContext of the TargetView. To create custom logic for view model creation, override this method and do not call the base.
+Called when the TargetView has just been loaded. The base implementation will try to create a view model based on the current DataContext and set it as the DataContext of the TargetView. To create custom logic for view model creation, override this method and do not call the base.
 
 #### Parameters
 
@@ -226,7 +226,7 @@ Task.
 
 ### OnViewLoadedManagerLoadedInternal(object sender, ViewLoadEventArgs e)
 
-Called when the view manager is loaded.This method is public because the view loaded manager must be subscribed to as a weak event.
+Called when the view manager is loaded. This method is public because the view loaded manager must be subscribed to as a weak event.
 
 #### Parameters
 
@@ -240,7 +240,7 @@ The [ViewLoadEventArgs](#) instance containing the event data.
 
 ### OnViewLoadedManagerLoadingInternal(object sender, ViewLoadEventArgs e)
 
-Called when the view manager is unloading.This method is public because the view loaded manager must be subscribed to as a weak event.
+Called when the view manager is unloading. This method is public because the view loaded manager must be subscribed to as a weak event.
 
 #### Parameters
 
@@ -254,7 +254,7 @@ The [ViewLoadEventArgs](#) instance containing the event data.
 
 ### OnViewLoadedManagerUnloadedInternal(object sender, ViewLoadEventArgs e)
 
-Called when the view manager is unloaded.This method is public because the view loaded manager must be subscribed to as a weak event.
+Called when the view manager is unloaded. This method is public because the view loaded manager must be subscribed to as a weak event.
 
 #### Parameters
 
@@ -268,7 +268,7 @@ The [ViewLoadEventArgs](#) instance containing the event data.
 
 ### OnViewLoadedManagerUnloadingInternal(object sender, ViewLoadEventArgs e)
 
-Called when the view manager is unloading.This method is public because the view loaded manager must be subscribed to as a weak event.
+Called when the view manager is unloading. This method is public because the view loaded manager must be subscribed to as a weak event.
 
 #### Parameters
 

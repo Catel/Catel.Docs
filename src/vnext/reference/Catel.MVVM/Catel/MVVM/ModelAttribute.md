@@ -32,13 +32,13 @@ Initializes a new instance of the [ModelAttribute](#) class.
 
 ### SupportIEditableObject
 
-Gets or sets a value indicating whether the [IEditableObject](#) interface should be used on the model if possible.The default value is`true`.
+Gets or sets a value indicating whether the [IEditableObject](#) interface should be used on the model if possible. The default value is`true`.
 
 
 
 ### SupportValidation
 
-Gets or sets a value indicating whether the model validation mapping is enabled.The default value is`true`.
+Gets or sets a value indicating whether the model validation mapping is enabled. The default value is`true`.
 
 
 

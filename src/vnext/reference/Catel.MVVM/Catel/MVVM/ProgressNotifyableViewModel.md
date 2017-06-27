@@ -76,21 +76,21 @@ Must have a public constructor in order to be serializable.
 
 ### ProgressNotifyableViewModel(IServiceLocator serviceLocator, bool supportIEditableObject, bool ignoreMultipleModelsWarning, bool skipViewModelAttributesInitialization)
 
-Initializes a new instance of the [ViewModelBase](#) class.This constructor allows the injection of a custom [IServiceLocator](#).
+Initializes a new instance of the [ViewModelBase](#) class. This constructor allows the injection of a custom [IServiceLocator](#).
 
 #### Parameters
 
 **serviceLocator**
-The service locator to inject. If`null` , the Default will be used.
+The service locator to inject. If`null`, the Default will be used.
 
 **supportIEditableObject**
-if set to`true` , the view model will natively support models that implement the [IEditableObject](#) interface.
+if set to`true`, the view model will natively support models that implement the [IEditableObject](#) interface.
 
 **ignoreMultipleModelsWarning**
-if set to`true` , the warning when using multiple models is ignored.
+if set to`true`, the warning when using multiple models is ignored.
 
 **skipViewModelAttributesInitialization**
-if set to`true` , the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
+if set to`true`, the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
 
 #### Exceptions
 
@@ -109,13 +109,13 @@ Initializes a new instance of the [ProgressNotifyableViewModel](#) class.
 #### Parameters
 
 **supportIEditableObject**
-if set to`true` , the view model will natively support models that implement the [IEditableObject](#) interface.
+if set to`true`, the view model will natively support models that implement the [IEditableObject](#) interface.
 
 **ignoreMultipleModelsWarning**
-if set to`true` , the warning when using multiple models is ignored.
+if set to`true`, the warning when using multiple models is ignored.
 
 **skipViewModelAttributesInitialization**
-if set to`true` , the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
+if set to`true`, the initialization will be skipped and must be done manually via InitializeViewModelAttributes.
 
 #### Exceptions
 

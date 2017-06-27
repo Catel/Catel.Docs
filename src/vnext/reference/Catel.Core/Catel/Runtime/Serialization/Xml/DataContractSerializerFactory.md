@@ -35,13 +35,13 @@ Initializes a new instance of the [DataContractSerializerFactory](#) class.
 
 ### DataContractResolver
 
-Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#).The default value is.
+Gets or sets the DataContractResolver passed in constructor to [DataContractSerializer](#). The default value is.
 
 
 
 ### DataContractSurrogate
 
-Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#).The default value is.
+Gets or sets the [IDataContractSurrogate](#) passed in constructor to [DataContractSerializer](#). The default value is.
 
 
 

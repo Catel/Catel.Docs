@@ -20,7 +20,7 @@ Interface which allows custom instantation of view models. This way, if a view m
 
 ### CanReuseViewModel(Type viewType, Type expectedViewModelType, Type actualViewModelType, IViewModel viewModelAsDataContext)
 
-Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model.By default a view model is allowed to be inherited when it is of the same type as the expected view model type.
+Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model. By default a view model is allowed to be inherited when it is of the same type as the expected view model type.
 
 #### Parameters
 

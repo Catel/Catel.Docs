@@ -38,7 +38,7 @@ Gets the tag.
 
 ### Type
 
-Gets or sets the type.If`null` , the type must be determined dynamically.
+Gets or sets the type. If`null`, the type must be determined dynamically.
 
 #### Remarks
 

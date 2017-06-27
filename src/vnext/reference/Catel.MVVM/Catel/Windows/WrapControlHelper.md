@@ -247,7 +247,7 @@ The parent content control.
 
 #### Remarks
 
-The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a framework element can be wrapped by using the FrameworkElement) method.This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl is passed.
+The framework element that is passed must be disconnected from the parent first. It is recommended to first check whether a framework element can be wrapped by using the FrameworkElement) method. This method will automatically handle the disconnecting of the framework element from the parent is the parentContentControl is passed.
 
 
 

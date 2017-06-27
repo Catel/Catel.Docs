@@ -24,7 +24,7 @@ Gets the validation result message.
 
 #### Remarks
 
-This value has a public setter so it is possible to customize the message in derived classes.One should be careful and know what they are doing when overwriting an error message.
+This value has a public setter so it is possible to customize the message in derived classes. One should be careful and know what they are doing when overwriting an error message.
 
 
 

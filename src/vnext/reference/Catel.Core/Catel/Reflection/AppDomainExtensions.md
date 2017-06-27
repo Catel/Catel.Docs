@@ -58,7 +58,7 @@ The app domain.
 The assembly.
 
 **includeReferencedAssemblies**
-if set to`true` , referenced assemblies will be included as well.
+if set to`true`, referenced assemblies will be included as well.
 
 #### Exceptions
 
@@ -80,7 +80,7 @@ The app domain.
 The assembly.
 
 **includeReferencedAssemblies**
-if set to`true` , referenced assemblies will be included as well.
+if set to`true`, referenced assemblies will be included as well.
 
 **alreadyLoadedAssemblies**
 The already loaded assemblies.
@@ -105,7 +105,7 @@ The app domain.
 The assembly name.
 
 **includeReferencedAssemblies**
-if set to`true` , referenced assemblies will be included as well.
+if set to`true`, referenced assemblies will be included as well.
 
 #### Exceptions
 
@@ -127,7 +127,7 @@ The app domain.
 The assembly filename.
 
 **includeReferencedAssemblies**
-if set to`true` , referenced assemblies will be included as well.
+if set to`true`, referenced assemblies will be included as well.
 
 #### Exceptions
 
@@ -141,7 +141,7 @@ The assemblyFilename is`null` or whitespace.
 
 ### PreloadAssemblies(AppDomain appDomain, string directory)
 
-Preloads all the assemblies inside the specified directory into the specified [AppDomain](#).This method also preloads all referenced assemblies.
+Preloads all the assemblies inside the specified directory into the specified [AppDomain](#). This method also preloads all referenced assemblies.
 
 #### Parameters
 
@@ -149,7 +149,7 @@ Preloads all the assemblies inside the specified directory into the specified [A
 The app domain.
 
 **directory**
-The directory. If`null` , only the referenced assemblies are forced to be loaded.
+The directory. If`null`, only the referenced assemblies are forced to be loaded.
 
 #### Exceptions
 

@@ -12,7 +12,7 @@ Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, U
 public static class UniqueIdentifierHelper
 ```
 
-Helper class that allows to generic unique identifiers for objects.This class internally keeps a counter per type and will increase the counter every time a new unique identifier is requested.
+Helper class that allows to generic unique identifiers for objects. This class internally keeps a counter per type and will increase the counter every time a new unique identifier is requested.
 
 
 
