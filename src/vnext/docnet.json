@@ -8,6 +8,9 @@
     "SourceFoldersToCopy" : ["images", "includes"],
     "Footer" : "",
     "PathSpecification": "RelativeAsFolder",
+    "UrlFormatting": "Dashes",
+    "MaxLevelInToC": "3",
+    "StripIndexHtm": true,
     "Pages" : 
     {
 		"Introduction" :

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IValidationContext - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/applicationextensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandlerextensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/bytearrayextensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/catelenvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositefilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositepredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/coremodule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimecodeattribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimehelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimeinitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposabletoken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/environmenthelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/eventhandlerextensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionextensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionfactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/expressionhelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/fastdatetime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/hashhelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ibindableenum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icommandmanagerextensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icompositefilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/idisposabletoken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecutewithobject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ifluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/inotifypropertychangedextensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iuniqueidentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakaction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakeventlistener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakfunc/">IWeakFunc</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakreference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/jsonextensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/knownplatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/languagehelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mustbeimplementedexception/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mvvmmodule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/notsupportedinplatformexception/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecthelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecttostringhelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/parallelhelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/processextensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/progresscontext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/resourcehelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/serializationjsonmodule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringextensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringtoobjecthelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/supportedplatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/taghelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/themehelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threadhelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uniqueidentifierhelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uriextensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakaction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakactionbase/">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakeventlistener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakfunc/">WeakFunc</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/componentmodel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/core/">Core</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/data/">Data</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/advancedpropertychangedeventargs/">AdvancedPropertyChangedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/attributevalidatorprovider/">AttributeValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/boxingcache/">BoxingCache</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/businessrulevalidationresult/">BusinessRuleValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/cateltypeinfo/">CatelTypeInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/changenotificationwrapper/">ChangeNotificationWrapper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/childawaremodelbase/">ChildAwareModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/comparablemodelbase/">ComparableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/compositevalidator/">CompositeValidator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/compositevalidatorprovider/">CompositeValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/dispatcherobservableobject/">DispatcherObservableObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/editableobjecthelper/">EditableObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/eventchangetype/">EventChangeType</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/excludefromvalidationattribute/">ExcludeFromValidationAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/fieldvalidationresult/">FieldValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/iadvancednotifypropertychanged/">IAdvancedNotifyPropertyChanged</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ibusinessrulevalidationresult/">IBusinessRuleValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ifieldvalidationresult/">IFieldValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/imodel/">IModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/imodeleditor/">IModelEditor</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/imodelequalitycomparer/">IModelEqualityComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/imodelextensions/">IModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/imodelserialization/">IModelSerialization</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/invalidpropertyexception/">InvalidPropertyException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/invalidpropertyvalueexception/">InvalidPropertyValueException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/isavablemodel/">ISavableModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/isavablemodelextensions/">ISavableModelExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidatable/">IValidatable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidatableextensions/">IValidatableExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidatablemodel/">IValidatableModel</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidatablemodelextensions/">IValidatableModelExtensions</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/catel-core/catel/data/ivalidationcontext/">IValidationContext</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#properties">Properties</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#haserrors">HasErrors</a></li>
+
+<li class="tocentry"><a href="#haswarnings">HasWarnings</a></li>
+
+<li class="tocentry"><a href="#lastmodified">LastModified</a></li>
+
+<li class="tocentry"><a href="#lastmodifiedticks">LastModifiedTicks</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#methods">Methods</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#addibusinessrulevalidationresult-businessrulevalidationresult">Add(IBusinessRuleValidationResult businessRuleValidationResult)</a></li>
+
+<li class="tocentry"><a href="#addifieldvalidationresult-fieldvalidationresult">Add(IFieldValidationResult fieldValidationResult)</a></li>
+
+<li class="tocentry"><a href="#addbusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult">AddBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)</a></li>
+
+<li class="tocentry"><a href="#addfieldvalidationresultifieldvalidationresult-fieldvalidationresult">AddFieldValidationResult(IFieldValidationResult fieldValidationResult)</a></li>
+
+<li class="tocentry"><a href="#getbusinessruleerrorcount">GetBusinessRuleErrorCount()</a></li>
+
+<li class="tocentry"><a href="#getbusinessruleerrorcountobject-tag">GetBusinessRuleErrorCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getbusinessruleerrors">GetBusinessRuleErrors()</a></li>
+
+<li class="tocentry"><a href="#getbusinessruleerrorsobject-tag">GetBusinessRuleErrors(object tag)</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulevalidationcount">GetBusinessRuleValidationCount()</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulevalidationcountobject-tag">GetBusinessRuleValidationCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulevalidations">GetBusinessRuleValidations()</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulevalidationsobject-tag">GetBusinessRuleValidations(object tag)</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulewarningcount">GetBusinessRuleWarningCount()</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulewarningcountobject-tag">GetBusinessRuleWarningCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulewarnings">GetBusinessRuleWarnings()</a></li>
+
+<li class="tocentry"><a href="#getbusinessrulewarningsobject-tag">GetBusinessRuleWarnings(object tag)</a></li>
+
+<li class="tocentry"><a href="#geterrorcount">GetErrorCount()</a></li>
+
+<li class="tocentry"><a href="#geterrorcountobject-tag">GetErrorCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#geterrors">GetErrors()</a></li>
+
+<li class="tocentry"><a href="#geterrorsobject-tag">GetErrors(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfielderrorcount">GetFieldErrorCount()</a></li>
+
+<li class="tocentry"><a href="#getfielderrorcountobject-tag">GetFieldErrorCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfielderrors">GetFieldErrors()</a></li>
+
+<li class="tocentry"><a href="#getfielderrorsobject-tag">GetFieldErrors(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfielderrorsstring-propertyname">GetFieldErrors(string propertyName)</a></li>
+
+<li class="tocentry"><a href="#getfielderrorsstring-propertyname-object-tag">GetFieldErrors(string propertyName, object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidationcount">GetFieldValidationCount()</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidationcountobject-tag">GetFieldValidationCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidations">GetFieldValidations()</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidationsobject-tag">GetFieldValidations(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidationsstring-propertyname">GetFieldValidations(string propertyName)</a></li>
+
+<li class="tocentry"><a href="#getfieldvalidationsstring-propertyname-object-tag">GetFieldValidations(string propertyName, object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldwarningcount">GetFieldWarningCount()</a></li>
+
+<li class="tocentry"><a href="#getfieldwarningcountobject-tag">GetFieldWarningCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldwarnings">GetFieldWarnings()</a></li>
+
+<li class="tocentry"><a href="#getfieldwarningsobject-tag">GetFieldWarnings(object tag)</a></li>
+
+<li class="tocentry"><a href="#getfieldwarningsstring-propertyname">GetFieldWarnings(string propertyName)</a></li>
+
+<li class="tocentry"><a href="#getfieldwarningsstring-propertyname-object-tag">GetFieldWarnings(string propertyName, object tag)</a></li>
+
+<li class="tocentry"><a href="#getvalidationcount">GetValidationCount()</a></li>
+
+<li class="tocentry"><a href="#getvalidationcountobject-tag">GetValidationCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getvalidations">GetValidations()</a></li>
+
+<li class="tocentry"><a href="#getvalidationsobject-tag">GetValidations(object tag)</a></li>
+
+<li class="tocentry"><a href="#getwarningcount">GetWarningCount()</a></li>
+
+<li class="tocentry"><a href="#getwarningcountobject-tag">GetWarningCount(object tag)</a></li>
+
+<li class="tocentry"><a href="#getwarnings">GetWarnings()</a></li>
+
+<li class="tocentry"><a href="#getwarningsobject-tag">GetWarnings(object tag)</a></li>
+
+<li class="tocentry"><a href="#removeibusinessrulevalidationresult-businessrulevalidationresult">Remove(IBusinessRuleValidationResult businessRuleValidationResult)</a></li>
+
+<li class="tocentry"><a href="#removeifieldvalidationresult-fieldvalidationresult">Remove(IFieldValidationResult fieldValidationResult)</a></li>
+
+<li class="tocentry"><a href="#removebusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult">RemoveBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)</a></li>
+
+<li class="tocentry"><a href="#removefieldvalidationresultifieldvalidationresult-fieldvalidationresult">RemoveFieldValidationResult(IFieldValidationResult fieldValidationResult)</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidationcontextextensions/">IValidationContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidationresult/">IValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidationsummary/">IValidationSummary</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidator/">IValidator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivalidatorprovider/">IValidatorProvider</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/ivaluevalidator/">IValueValidator</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/modelbase/">ModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/modelbaseextensions/">ModelBaseExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/modelequalitycomparer/">ModelEqualityComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/observableobject/">ObservableObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/observableobjectextensions/">ObservableObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertyalreadyregisteredexception/">PropertyAlreadyRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertybag/">PropertyBag</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertydata/">PropertyData</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertydatamanager/">PropertyDataManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertynotnullableexception/">PropertyNotNullableException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertynotregisteredexception/">PropertyNotRegisteredException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/propertyvalue/">PropertyValue</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/savablemodelbase/">SavableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/suspensioncontext/">SuspensionContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validatablemodelbase/">ValidatableModelBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validatemodelattribute/">ValidateModelAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationcontext/">ValidationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationcontextchange/">ValidationContextChange</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationcontextchangetype/">ValidationContextChangeType</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationcontexthelper/">ValidationContextHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationeventargs/">ValidationEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationextensions/">ValidationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationresult/">ValidationResult</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationresulttype/">ValidationResultType</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validationsummary/">ValidationSummary</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validatorbase/">ValidatorBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/validatorproviderbase/">ValidatorProviderBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/data/xmlnamemapper/">XmlNameMapper</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/exceptionhandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/io/">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/ioc/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/runtime/">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/text/">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/system/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-serialization-json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../home.htm">Home</a></li> / <li><a href="../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../reference/catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../../../reference/catel-core/catel/index.htm">Catel</a></li> / <li><a href="../../../../../reference/catel-core/catel/data/index.htm">Data</a></li> / <li><a href="../../../../../reference/catel-core/catel/data/ivalidationcontext/index.htm">IValidationContext</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="ivalidationcontext">IValidationContext<a class="headerlink" href="#ivalidationcontext" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Data</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public interface IValidationContext
+</pre><p>Interface describing the validation</p>
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="haserrors">HasErrors<a class="headerlink" href="#haserrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this instance contains errors.</p>
+<h3 id="haswarnings">HasWarnings<a class="headerlink" href="#haswarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets a value indicating whether this instance contains warnings.</p>
+<h3 id="lastmodified">LastModified<a class="headerlink" href="#lastmodified" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the last modified date/time. Note that this is just an informational value and should not be used for comparisons. The <a href="#">DateTime</a> is not accurate enough. Use the<code>LastModifiedTicks</code> instead.</p>
+<h3 id="lastmodifiedticks">LastModifiedTicks<a class="headerlink" href="#lastmodifiedticks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the last modified ticks which is much more precise that the LastModified. Use this value to compare last modification ticks on other validation contexts. Because only full .NET provides a stopwatch, this property is only available in full .NET. All other target frameworks will return the Ticks which is<code>not</code> reliable.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="addibusinessrulevalidationresult-businessrulevalidationresult">Add(IBusinessRuleValidationResult businessRuleValidationResult)<a class="headerlink" href="#addibusinessrulevalidationresult-businessrulevalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Adds the business rule validation result.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>businessRuleValidationResult</strong>
+The business rule validation result.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The businessRuleValidationResult is<code>null</code>.</p>
+<h3 id="addifieldvalidationresult-fieldvalidationresult">Add(IFieldValidationResult fieldValidationResult)<a class="headerlink" href="#addifieldvalidationresult-fieldvalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Adds the field validation result.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fieldValidationResult</strong>
+The field validation result.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The fieldValidationResult is<code>null</code>.</p>
+<h3 id="addbusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult">AddBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)<a class="headerlink" href="#addbusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Adds the business rule validation result.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>businessRuleValidationResult</strong>
+The business rule validation result.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The businessRuleValidationResult is<code>null</code>.</p>
+<h3 id="addfieldvalidationresultifieldvalidationresult-fieldvalidationresult">AddFieldValidationResult(IFieldValidationResult fieldValidationResult)<a class="headerlink" href="#addfieldvalidationresultifieldvalidationresult-fieldvalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Adds the field validation result.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fieldValidationResult</strong>
+The field validation result.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The fieldValidationResult is<code>null</code>.</p>
+<h3 id="getbusinessruleerrorcount">GetBusinessRuleErrorCount()<a class="headerlink" href="#getbusinessruleerrorcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule error count.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule errors available.</p>
+<h3 id="getbusinessruleerrorcountobject-tag">GetBusinessRuleErrorCount(object tag)<a class="headerlink" href="#getbusinessruleerrorcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule error count with the specified tag.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule errors available.</p>
+<h3 id="getbusinessruleerrors">GetBusinessRuleErrors()<a class="headerlink" href="#getbusinessruleerrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule errors.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="getbusinessruleerrorsobject-tag">GetBusinessRuleErrors(object tag)<a class="headerlink" href="#getbusinessruleerrorsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule errors with the specified tag.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="getbusinessrulevalidationcount">GetBusinessRuleValidationCount()<a class="headerlink" href="#getbusinessrulevalidationcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule validation count.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule validations available.</p>
+<h3 id="getbusinessrulevalidationcountobject-tag">GetBusinessRuleValidationCount(object tag)<a class="headerlink" href="#getbusinessrulevalidationcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule validation count with the specified tag.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule validations available.</p>
+<h3 id="getbusinessrulevalidations">GetBusinessRuleValidations()<a class="headerlink" href="#getbusinessrulevalidations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule validations.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="getbusinessrulevalidationsobject-tag">GetBusinessRuleValidations(object tag)<a class="headerlink" href="#getbusinessrulevalidationsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule validations with the specified tag.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="getbusinessrulewarningcount">GetBusinessRuleWarningCount()<a class="headerlink" href="#getbusinessrulewarningcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule warning count.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule warnings available.</p>
+<h3 id="getbusinessrulewarningcountobject-tag">GetBusinessRuleWarningCount(object tag)<a class="headerlink" href="#getbusinessrulewarningcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the business rule warning count with the specified tag.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of business rule warnings available.</p>
+<h3 id="getbusinessrulewarnings">GetBusinessRuleWarnings()<a class="headerlink" href="#getbusinessrulewarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule warnings.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="getbusinessrulewarningsobject-tag">GetBusinessRuleWarnings(object tag)<a class="headerlink" href="#getbusinessrulewarningsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the business rule warnings with the specified tag.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IBusinessRuleValidationResult</a> items.</p>
+<h3 id="geterrorcount">GetErrorCount()<a class="headerlink" href="#geterrorcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field and business rule errors inside this context.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of errors available.</p>
+<h3 id="geterrorcountobject-tag">GetErrorCount(object tag)<a class="headerlink" href="#geterrorcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field and business rule errors with the specified tag inside this context.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of errors available.</p>
+<h3 id="geterrors">GetErrors()<a class="headerlink" href="#geterrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all field and business rule errors.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="geterrorsobject-tag">GetErrors(object tag)<a class="headerlink" href="#geterrorsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all field and business rule errors with the specified tag.</p>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="getfielderrorcount">GetFieldErrorCount()<a class="headerlink" href="#getfielderrorcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field error count of all fields.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field errors available.</p>
+<h3 id="getfielderrorcountobject-tag">GetFieldErrorCount(object tag)<a class="headerlink" href="#getfielderrorcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field error count of all fields with the specified tag.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field errors available.</p>
+<h3 id="getfielderrors">GetFieldErrors()<a class="headerlink" href="#getfielderrors" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field errors.</p>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfielderrorsobject-tag">GetFieldErrors(object tag)<a class="headerlink" href="#getfielderrorsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field errors with the specified tag.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfielderrorsstring-propertyname">GetFieldErrors(string propertyName)<a class="headerlink" href="#getfielderrorsstring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field errors for the specified property name.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getfielderrorsstring-propertyname-object-tag">GetFieldErrors(string propertyName, object tag)<a class="headerlink" href="#getfielderrorsstring-propertyname-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field errors for the specified property name with the specified tag.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getfieldvalidationcount">GetFieldValidationCount()<a class="headerlink" href="#getfieldvalidationcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field validation count of all fields.</p>
+<h4 id="returns-22">Returns<a class="headerlink" href="#returns-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field validations available.</p>
+<h3 id="getfieldvalidationcountobject-tag">GetFieldValidationCount(object tag)<a class="headerlink" href="#getfieldvalidationcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field validation count of all fields with the specified tag.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-23">Returns<a class="headerlink" href="#returns-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field validations available.</p>
+<h3 id="getfieldvalidations">GetFieldValidations()<a class="headerlink" href="#getfieldvalidations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field validations.</p>
+<h4 id="returns-24">Returns<a class="headerlink" href="#returns-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfieldvalidationsobject-tag">GetFieldValidations(object tag)<a class="headerlink" href="#getfieldvalidationsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field validations with the specified tag.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-25">Returns<a class="headerlink" href="#returns-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfieldvalidationsstring-propertyname">GetFieldValidations(string propertyName)<a class="headerlink" href="#getfieldvalidationsstring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field validations for the specified property name.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<h4 id="returns-26">Returns<a class="headerlink" href="#returns-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getfieldvalidationsstring-propertyname-object-tag">GetFieldValidations(string propertyName, object tag)<a class="headerlink" href="#getfieldvalidationsstring-propertyname-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field validations for the specified property name with the specified tag.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-27">Returns<a class="headerlink" href="#returns-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getfieldwarningcount">GetFieldWarningCount()<a class="headerlink" href="#getfieldwarningcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field warning count of all fields.</p>
+<h4 id="returns-28">Returns<a class="headerlink" href="#returns-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field warnings available.</p>
+<h3 id="getfieldwarningcountobject-tag">GetFieldWarningCount(object tag)<a class="headerlink" href="#getfieldwarningcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the field warning count of all fields with the specified tag.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-29">Returns<a class="headerlink" href="#returns-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of field warnings available.</p>
+<h3 id="getfieldwarnings">GetFieldWarnings()<a class="headerlink" href="#getfieldwarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field warnings.</p>
+<h4 id="returns-30">Returns<a class="headerlink" href="#returns-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfieldwarningsobject-tag">GetFieldWarnings(object tag)<a class="headerlink" href="#getfieldwarningsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field warnings with the specified tag.</p>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-31">Returns<a class="headerlink" href="#returns-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h3 id="getfieldwarningsstring-propertyname">GetFieldWarnings(string propertyName)<a class="headerlink" href="#getfieldwarningsstring-propertyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field warnings for the specified property name.</p>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<h4 id="returns-32">Returns<a class="headerlink" href="#returns-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getfieldwarningsstring-propertyname-object-tag">GetFieldWarnings(string propertyName, object tag)<a class="headerlink" href="#getfieldwarningsstring-propertyname-object-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field warnings for the specified property name with the specified tag.</p>
+<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>propertyName</strong>
+Name of the property.</p>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-33">Returns<a class="headerlink" href="#returns-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IFieldValidationResult</a> items.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentException</strong>
+The propertyName is<code>null</code> or whitespace.</p>
+<h3 id="getvalidationcount">GetValidationCount()<a class="headerlink" href="#getvalidationcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the total validation count of all fields and business rules.</p>
+<h4 id="returns-34">Returns<a class="headerlink" href="#returns-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of validations available.</p>
+<h3 id="getvalidationcountobject-tag">GetValidationCount(object tag)<a class="headerlink" href="#getvalidationcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the total validation count of all fields and business rules with the specified tag.</p>
+<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-35">Returns<a class="headerlink" href="#returns-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of validations available.</p>
+<h3 id="getvalidations">GetValidations()<a class="headerlink" href="#getvalidations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field and business rule validations.</p>
+<h4 id="returns-36">Returns<a class="headerlink" href="#returns-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="getvalidationsobject-tag">GetValidations(object tag)<a class="headerlink" href="#getvalidationsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all the field and business rule validations with the specified tag.</p>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tag</strong>
+The tag.</p>
+<h4 id="returns-37">Returns<a class="headerlink" href="#returns-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="getwarningcount">GetWarningCount()<a class="headerlink" href="#getwarningcount" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field and business rule warnings inside this context.</p>
+<h4 id="returns-38">Returns<a class="headerlink" href="#returns-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of warnings available.</p>
+<h3 id="getwarningcountobject-tag">GetWarningCount(object tag)<a class="headerlink" href="#getwarningcountobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the number of field and business rule warnings with the specified tag inside this context.</p>
+<h4 id="returns-39">Returns<a class="headerlink" href="#returns-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The number of warnings available.</p>
+<h3 id="getwarnings">GetWarnings()<a class="headerlink" href="#getwarnings" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all field and business rule warnings.</p>
+<h4 id="returns-40">Returns<a class="headerlink" href="#returns-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="getwarningsobject-tag">GetWarnings(object tag)<a class="headerlink" href="#getwarningsobject-tag" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets all field and business rule warnings with the specified tag.</p>
+<h4 id="returns-41">Returns<a class="headerlink" href="#returns-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>List of <a href="#">IValidationResult</a> items.</p>
+<h3 id="removeibusinessrulevalidationresult-businessrulevalidationresult">Remove(IBusinessRuleValidationResult businessRuleValidationResult)<a class="headerlink" href="#removeibusinessrulevalidationresult-businessrulevalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the business rule validation result.</p>
+<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>businessRuleValidationResult</strong>
+The business rule validation result.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The businessRuleValidationResult is<code>null</code>.</p>
+<h3 id="removeifieldvalidationresult-fieldvalidationresult">Remove(IFieldValidationResult fieldValidationResult)<a class="headerlink" href="#removeifieldvalidationresult-fieldvalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the field validation result.</p>
+<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fieldValidationResult</strong>
+The field validation result.</p>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The fieldValidationResult is<code>null</code>.</p>
+<h3 id="removebusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult">RemoveBusinessRuleValidationResult(IBusinessRuleValidationResult businessRuleValidationResult)<a class="headerlink" href="#removebusinessrulevalidationresultibusinessrulevalidationresult-businessrulevalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the business rule validation result.</p>
+<h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>businessRuleValidationResult</strong>
+The business rule validation result.</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The businessRuleValidationResult is<code>null</code>.</p>
+<h3 id="removefieldvalidationresultifieldvalidationresult-fieldvalidationresult">RemoveFieldValidationResult(IFieldValidationResult fieldValidationResult)<a class="headerlink" href="#removefieldvalidationresultifieldvalidationresult-fieldvalidationresult" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Removes the field validation result.</p>
+<h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>fieldValidationResult</strong>
+The field validation result.</p>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The fieldValidationResult is<code>null</code>.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Data/IValidationContext.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/reference/catel-core/catel/data/ivalidationcontext/index.htm';
+					   this.page.identifier = '../src/vnext/reference/Catel.Core/Catel/Data/IValidationContext.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

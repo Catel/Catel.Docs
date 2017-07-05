@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SerializationContextMode - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/catel-core/catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/applicationextensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/asynceventhandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/asynceventhandlerextensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/bytearrayextensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/catelenvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/compositefilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/compositepredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/coremodule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/designtimecodeattribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/designtimehelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/designtimeinitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/disposabletoken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/environmenthelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/eventhandlerextensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/exceptionextensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/exceptionfactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/expressionhelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/fastdatetime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/hashhelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/ibindableenum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/icommandmanagerextensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/icompositefilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/idisposabletoken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iexecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iexecutewithobject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/ifluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/inotifypropertychangedextensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iuniqueidentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iweakaction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iweakeventlistener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iweakfunc/">IWeakFunc</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/iweakreference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/jsonextensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/knownplatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/languagehelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/mustbeimplementedexception/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/mvvmmodule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/notsupportedinplatformexception/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/objecthelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/objecttostringhelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/parallelhelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/processextensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/progresscontext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/resourcehelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/serializationjsonmodule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/stringextensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/stringtoobjecthelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/supportedplatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/taghelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/themehelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/threadhelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/uniqueidentifierhelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/uriextensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/weakaction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/weakactionbase/">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/weakeventlistener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/weakfunc/">WeakFunc</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/componentmodel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/core/">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/exceptionhandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/io/">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/ioc/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/catel-core/catel/runtime/">Runtime</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/referenceequalitycomparer/">ReferenceEqualityComparer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/referenceinfo/">ReferenceInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/referencemanager/">ReferenceManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/runtimebindingredirect/">RuntimeBindingRedirect</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../../reference/catel-core/catel/runtime/serialization/">Serialization</a></span></li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/cacheinvalidatedeventargs/">CacheInvalidatedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/excludefromserializationattribute/">ExcludeFromSerializationAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/ifieldserializable/">IFieldSerializable</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/includeinserializationattribute/">IncludeInSerializationAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iobjectadapter/">IObjectAdapter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/ipropertyserializable/">IPropertySerializable</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializable/">ISerializable</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationconfiguration/">ISerializationConfiguration</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationcontext/">ISerializationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationcontextextensions/">ISerializationContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationcontextinfo/">ISerializationContextInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationcontextinfofactory/">ISerializationContextInfoFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationmanager/">ISerializationManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializationmanagerextensions/">ISerializationManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializer/">ISerializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializerextensions/">ISerializerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/iserializermodifier/">ISerializerModifier</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/keyvaluepairserializermodifier/">KeyValuePairSerializerModifier</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/membermetadata/">MemberMetadata</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/memberserializationeventargs/">MemberSerializationEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/membervalue/">MemberValue</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/objectadapter/">ObjectAdapter</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializablekeyvaluepair/">SerializableKeyValuePair</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationconfiguration/">SerializationConfiguration</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationcontext/">SerializationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationcontexthelper/">SerializationContextHelper</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationcontextmode/">SerializationContextMode</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#deserialization">Deserialization</a></li>
+
+<li class="tocentry"><a href="#serialization">Serialization</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationeventargs/">SerializationEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationfactory/">SerializationFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationinfoserializationcontextinfo/">SerializationInfoSerializationContextInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationmanager/">SerializationManager</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationmembergroup/">SerializationMemberGroup</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationmodelinfo/">SerializationModelInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationobject/">SerializationObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationscope/">SerializationScope</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializeascollectionattribute/">SerializeAsCollectionAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializeenumasstringattribute/">SerializeEnumAsStringAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializerbase/">SerializerBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializermodifierattribute/">SerializerModifierAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializermodifierbase/">SerializerModifierBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializeusingparseandtostringattribute/">SerializeUsingParseAndToStringAttribute</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/runtime/serialization/binary/">Binary</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/runtime/serialization/xml/">Xml</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/text/">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/catel/threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-core/system/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../../reference/catel-serialization-json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../../home.htm">Home</a></li> / <li><a href="../../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../../reference/catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../../../../reference/catel-core/catel/index.htm">Catel</a></li> / <li><a href="../../../../../../reference/catel-core/catel/runtime/index.htm">Runtime</a></li> / <li><a href="../../../../../../reference/catel-core/catel/runtime/serialization/index.htm">Serialization</a></li> / <li><a href="../../../../../../reference/catel-core/catel/runtime/serialization/serializationcontextmode/index.htm">SerializationContextMode</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="serializationcontextmode">SerializationContextMode<a class="headerlink" href="#serializationcontextmode" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Runtime.Serialization</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public enum SerializationContextMode : Enum
+</pre><p><strong>Base types</strong>
+<a href="">Enum</a></p>
+<p>The mode in which a context is being used.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="deserialization">Deserialization<a class="headerlink" href="#deserialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>1</p>
+<p>The context is being used for deserialization.</p>
+<h3 id="serialization">Serialization<a class="headerlink" href="#serialization" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>0</p>
+<p>The context is being used for serialization.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/reference/Catel.Core/Catel/Runtime/Serialization/SerializationContextMode.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/reference/catel-core/catel/runtime/serialization/serializationcontextmode/index.htm';
+					   this.page.identifier = '../src/vnext/reference/Catel.Core/Catel/Runtime/Serialization/SerializationContextMode.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

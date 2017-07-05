@@ -8,6 +8,9 @@
     //"SourceFoldersToCopy" : ["folder1", "foldern"],
     "Footer" : "",
     "PathSpecification": "RelativeAsFolder",
+    "UrlFormatting": "Dashes",
+    "MaxLevelInToC": "3",
+    "StripIndexHtm": true,
     "Pages" : 
     {
         "__index" : "index.md",
