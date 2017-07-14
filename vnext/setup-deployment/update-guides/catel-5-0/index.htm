@@ -57,9 +57,21 @@
 </li>
 <li class="tocentry current"><a class="current" href="../../../setup-deployment/update-guides/catel-5-0/">Catel 5.0</a>
 <ul class="currentrelative">
+<li class="tocentry"><a href="#platform-support-changes">Platform support changes</a></li>
+
+<li class="tocentry"><a href="#moved-extensions">Moved extensions</a></li>
+
+<li class="tocentry"><a href="#removed-extensions">Removed extensions</a></li>
+
+<li class="tocentry"><a href="#catel.fody">Catel.Fody</a></li>
+
 <li class="tocentry"><a href="#catel.core">Catel.Core</a></li>
 <li class="tocentry">
 <ul class="currentrelative">
+<li class="tocentry"><a href="#commandlinehelper">CommandLineHelper</a></li>
+
+<li class="tocentry"><a href="#dynamiceventlistener">DynamicEventListener</a></li>
+
 <li class="tocentry"><a href="#modelbase">ModelBase</a></li>
 
 
@@ -67,6 +79,19 @@
 </li>
 
 <li class="tocentry"><a href="#catel.mvvm">Catel.MVVM</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#countcollapsedconverter">CountCollapsedConverter</a></li>
+
+<li class="tocentry"><a href="#effectshelper">EffectsHelper</a></li>
+
+<li class="tocentry"><a href="#viewmodelbase">ViewModelBase</a></li>
+
+<li class="tocentry"><a href="#visualtargetpresentationsource">VisualTargetPresentationSource</a></li>
+
+
+</ul>
+</li>
 
 
 
@@ -132,7 +157,49 @@
 <div class="alert alert-danger"><span class="alert-title"><i class="fa fa-times-circle"></i> Danger!</span><p>Catel v5 contains a lot of breaking changes, not all of them cause compiler errors but change core behavior. It's important to check out the guide below <strong>before</strong> updating to Catel v5.</p>
 </div><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>This guide assumes that you are coming from Catel 4.5. If not, please read that guide first.</p>
 </div><p>Encountered issues while upgrading to this version? Add them here to help out others!</p>
-<h2 id="catel.core">Catel.Core<a class="headerlink" href="#catel.core" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h2 id="platform-support-changes">Platform support changes<a class="headerlink" href="#platform-support-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Added support for the following platforms:</p>
+<ul>
+<li>.NET 4.7</li>
+</ul>
+<p>Removed support for the following platforms:</p>
+<ul>
+<li>.NET 4.0</li>
+<li>Silverlight 5</li>
+<li>Windows Phone 8.0 (Silverlight)</li>
+<li>Windows Phone 8.1 (Silverlight)</li>
+<li>Windows Phone 8.1 (Runtime)</li>
+<li>Windows 8.1 (Runtime)</li>
+</ul>
+<h2 id="moved-extensions">Moved extensions<a class="headerlink" href="#moved-extensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The following extensions have been moved to a new repository:</p>
+<ul>
+<li>Catel.Extensions.Controls (moved to <a href="https://github.com/wildgums/orc.controls" target="_blank">Orc.Controls</a> &amp; <a href="https://github.com/wildgums/orchestra" target="_blank">Orchestra</a>)</li>
+<li>Catel.Extensions.DynamicObjects (moved to <a href="https://github.com/wildgums/orc.dynamicobjects" target="_blank">Orc.DynamicObjects</a>)</li>
+<li>Catel.Extensions.EntityFramework (moved to <a href="https://github.com/wildgums/orc.entityframework" target="_blank">Orc.EntityFramework</a>)</li>
+<li>Catel.Extensions.FluentValidation (moved to <a href="https://github.com/wildgums/orc.fluentvalidation" target="_blank">Orc.FluentValidation</a>)</li>
+<li>Catel.Extensions.Memento (moved to <a href="https://github.com/wildgums/orc.memento" target="_blank">Orc.Memento</a>)</li>
+<li>Catel.Extensions.Prism5 (moved to <a href="https://github.com/wildgums/orc.prism" target="_blank">Orc.Prism</a>)</li>
+<li>Catel.Extensions.Prism6 (moved to <a href="https://github.com/wildgums/orc.prism" target="_blank">Orc.Prism</a>)</li>
+</ul>
+<h2 id="removed-extensions">Removed extensions<a class="headerlink" href="#removed-extensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The following extensions have been removed:</p>
+<ul>
+<li>Catel.Extensions.CSLA</li>
+<li>Catel.Extensions.Data</li>
+<li>Catel.Extensions.Interception</li>
+<li>Catel.Extensions.MVC4</li>
+<li>Catel.Extensions.MVC5</li>
+<li>Catel.Extensions.Prism4</li>
+<li>Catel.Extensions.Wcf.Server</li>
+</ul>
+<h2 id="catel.fody">Catel.Fody<a class="headerlink" href="#catel.fody" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that if you are using Catel.Fody, you <em>must</em> update to at least 2.17 to support Catel 5.</p>
+</div><h2 id="catel.core">Catel.Core<a class="headerlink" href="#catel.core" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="commandlinehelper">CommandLineHelper<a class="headerlink" href="#commandlinehelper" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>CommandLineHelper</code> has been removed. Use <a href="https://github.com/wildgums/orc.commandline" target="_blank">Orc.CommandLine</a> instead.</p>
+<h3 id="dynamiceventlistener">DynamicEventListener<a class="headerlink" href="#dynamiceventlistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>DynamicEventListener</code> has been removed. Use <code>WeakEventListener</code> instead.</p>
 <h3 id="modelbase">ModelBase<a class="headerlink" href="#modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>The <code>ModelBase</code> has been greatly simplified to decrease the memory print and improve performance. The class is split up into separate classes:</p>
 <ul>
@@ -143,6 +210,18 @@
 <li>ComparableModelBase =&gt; contains the equality comparer members. This means the <code>ModelBase</code> itself does no longer support equality checks based on the property values</li>
 </ul>
 <h2 id="catel.mvvm">Catel.MVVM<a class="headerlink" href="#catel.mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="countcollapsedconverter">CountCollapsedConverter<a class="headerlink" href="#countcollapsedconverter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>CountCollapsedConverter</code> has been removed. Use <code>CollectionToVisibilityConverter</code> instead.</p>
+<h3 id="effectshelper">EffectsHelper<a class="headerlink" href="#effectshelper" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>EffectsHelper</code> has been removed. No replacement is available.</p>
+<h3 id="viewmodelbase">ViewModelBase<a class="headerlink" href="#viewmodelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <code>ViewModelBase</code> has been simplified. It now derives from <code>ValidatingModelBase</code> (so still supports validation). The following features / members have been removed:</p>
+<ul>
+<li><code>HasDirtyModels</code> has been removed</li>
+<li>Validation summaries (use the <code>ValidationContext</code> instead)</li>
+</ul>
+<h3 id="visualtargetpresentationsource">VisualTargetPresentationSource<a class="headerlink" href="#visualtargetpresentationsource" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>VisualTargetPresentationSource</code> has been removed. No replacement is available.</p>
 
                     </div>
                 </div>
