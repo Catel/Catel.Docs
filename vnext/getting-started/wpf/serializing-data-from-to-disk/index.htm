@@ -176,9 +176,14 @@
     public class FamilyService : IFamilyService
     {
         private readonly string _path;
+        private readonly IXmlSerializer _xmlSerializer;
 
-        public FamilyService()
+        public FamilyService(IXmlSerializer xmlSerializer)
         {
+            Argument.IsNotNull(() =&gt; xmlSerializer);
+
+            _xmlSerializer = xmlSerializer;
+
             string directory = Catel.IO.Path.GetApplicationDataDirectory(&quot;CatenaLogic&quot;, &quot;WPF.GettingStarted&quot;);
 
             _path = Path.Combine(directory, &quot;family.xml&quot;);
@@ -193,7 +198,7 @@
 
             using (var fileStream = File.Open(_path, FileMode.Open))
             {
-                var settings = Settings.Load(fileStream, SerializationMode.Xml);
+                var settings = _xmlSerializer.Deserialize&lt;Settings&gt;(fileStream);
                 return settings.Families;
             }
         }
@@ -202,7 +207,11 @@
         {
             var settings = new Settings();
             settings.Families.ReplaceRange(families);
-            settings.Save(_path, SerializationMode.Xml);
+            
+            using (var fileStream = File.Open(_path, FileMode.Create))
+            {
+                _xmlSerializer.Serialize(settings, fileStream);
+            }
         }
     }
 }
