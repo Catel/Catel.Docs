@@ -39,9 +39,14 @@ namespace WPF.GettingStarted.Services
     public class FamilyService : IFamilyService
     {
         private readonly string _path;
+        private readonly IXmlSerializer _xmlSerializer;
 
-        public FamilyService()
+        public FamilyService(IXmlSerializer xmlSerializer)
         {
+            Argument.IsNotNull(() => xmlSerializer);
+
+            _xmlSerializer = xmlSerializer;
+
             string directory = Catel.IO.Path.GetApplicationDataDirectory("CatenaLogic", "WPF.GettingStarted");
 
             _path = Path.Combine(directory, "family.xml");
@@ -56,7 +61,7 @@ namespace WPF.GettingStarted.Services
 
             using (var fileStream = File.Open(_path, FileMode.Open))
             {
-                var settings = Settings.Load(fileStream, SerializationMode.Xml);
+                var settings = _xmlSerializer.Deserialize<Settings>(fileStream);
                 return settings.Families;
             }
         }
@@ -65,7 +70,11 @@ namespace WPF.GettingStarted.Services
         {
             var settings = new Settings();
             settings.Families.ReplaceRange(families);
-            settings.Save(_path, SerializationMode.Xml);
+            
+            using (var fileStream = File.Open(_path, FileMode.Create))
+            {
+                _xmlSerializer.Serialize(settings, fileStream);
+            }
         }
     }
 }
