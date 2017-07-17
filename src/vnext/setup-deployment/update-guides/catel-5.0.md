@@ -79,6 +79,10 @@ The `ModelBase` has been greatly simplified to decrease the memory print and imp
 
 ## Catel.MVVM
 
+### XAML namespace changes
+
+The xaml namespace has changed from `http://catel.codeplex.com` to `http://schemas.catelproject.com`
+
 ### CountCollapsedConverter
 
 `CountCollapsedConverter` has been removed. Use `CollectionToVisibilityConverter` instead.
