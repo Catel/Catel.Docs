@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Performance considerations - Catel documentation</title>
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../faq/">FAQ</a></span></li>
+<li class="tocentry"><a href="../../faq/general/">General</a>
+</li>
+<li class="tocentry"><a href="../../faq/mvvm/">MVVM</a>
+</li>
+<li class="tocentry"><a href="../../faq/problem-solving/">Problem solving</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../faq/performance-considerations/">Performance considerations</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#general">General</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#disable-the-call-to-logmanager.adddebuglistener">Disable the call to LogManager.AddDebugListener</a></li>
+
+<li class="tocentry"><a href="#disable-event-subscriptions-of-child-values-for-modelbase">Disable event subscriptions of child values for ModelBase</a></li>
+
+<li class="tocentry"><a href="#disabling-validation-during-activities-where-validation-is-not-required">Disabling validation during activities where validation is not required</a></li>
+
+<li class="tocentry"><a href="#use-leanandmeanmodel-property-on-modelbase">Use LeanAndMeanModel property on ModelBase</a></li>
+
+<li class="tocentry"><a href="#preloading-assemblies-into-the-appdomain">Preloading assemblies into the AppDomain</a></li>
+
+<li class="tocentry"><a href="#warming-up-the-serializers">Warming up the serializers</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#mvvm">MVVM</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true">Set SkipSearchingForInfoBarMessageControl on UserControl to true</a></li>
+
+<li class="tocentry"><a href="#use-the-fastobservablecollection">Use the FastObservableCollection</a></li>
+
+<li class="tocentry"><a href="#specify-throttling-on-the-viewmodelbase">Specify throttling on the ViewModelBase</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../home.htm">Home</a></li> / <li><a href="../../faq/index.htm">FAQ</a></li> / <li><a href="../../faq/performance-considerations/index.htm">Performance considerations</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="performance-considerations">Performance considerations<a class="headerlink" href="#performance-considerations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>While developing software, it is very important to keep an eye on the performance. Catel itself does perform very well, but there are some caveats that you should be aware of. If you have the feeling that the application is laggy or slow, or if you want to make sure to squeeze the best performance out of Catel, consider taking a closer look at the checklist below.</p>
+<div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>Use the <a href="ApiCop">ApiCop feature</a> to get a detailed advisory report on your software</p>
+</div><h2 id="general">General<a class="headerlink" href="#general" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="disable-the-call-to-logmanager.adddebuglistener">Disable the call to LogManager.AddDebugListener<a class="headerlink" href="#disable-the-call-to-logmanager.adddebuglistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <em>DebugListener</em> is a very useful class while developing an application. It throws all the logging of Catel to the output window of Visual Studio which allows you to view exactly what happens behind the scenes. However, writing all these logs to the output window is very expensive and might cause an application to perform badly.</p>
+<p>Therefore, it is important to disable any call to LogManager.AddDebugListener when releasing an application or while performance testing.</p>
+<h3 id="disable-event-subscriptions-of-child-values-for-modelbase">Disable event subscriptions of child values for ModelBase<a class="headerlink" href="#disable-event-subscriptions-of-child-values-for-modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To be able to (re)validate when a child object changes, the ModelBase subscribes to all change notifications (of all childs) by default. This can be disabled by using the following code:</p>
+<pre class="nocode">ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
+</pre><h3 id="disabling-validation-during-activities-where-validation-is-not-required">Disabling validation during activities where validation is not required<a class="headerlink" href="#disabling-validation-during-activities-where-validation-is-not-required" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p> Validation inside Catel is very powerful, but sometimes it is not needed. To disable all validation inside Catel, use the following code:</p>
+<pre class="nocode">ModelBase.SuspendValidationForAllModels = true;
+</pre><h3 id="use-leanandmeanmodel-property-on-modelbase">Use LeanAndMeanModel property on ModelBase<a class="headerlink" href="#use-leanandmeanmodel-property-on-modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>When loading lots of models, it is not required to get support for validation and change notifications. Notifications and validation can be suspended per model (using the LeanAndMeanModel property) or globally using the GlobalLeanAndMeanModel property.</p>
+<h3 id="preloading-assemblies-into-the-appdomain">Preloading assemblies into the AppDomain<a class="headerlink" href="#preloading-assemblies-into-the-appdomain" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Preloading assemblies might result in a slower startup time, but will not cause slow downs for reflection or assembly loading during the actual application execution. To preload assemblies using Catel, simply call this extension method:</p>
+<p>**
+**</p>
+<p><strong>WPF application</strong></p>
+<p>In App.xaml.cs, add the following code</p>
+<pre class="nocode">var directory = typeof(MainWindow).Assembly.GetDirectory();
+AppDomain.CurrentDomain.PreloadAssemblies(directory);
+</pre><p> </p>
+<p><strong>ASP.NET application</strong></p>
+<p>In global.asax, add the following code:</p>
+<pre class="nocode">var directory = Server.MapPath(&quot;~/bin&quot;);
+AppDomain.Current.PreloadAssemblies(directory);
+</pre><h3 id="warming-up-the-serializers">Warming up the serializers<a class="headerlink" href="#warming-up-the-serializers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>To improve performance for serialization, <a href="../catel-core/serialization/introduction.htm">warm up the serializers</a>.</p>
+<h2 id="mvvm">MVVM<a class="headerlink" href="#mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true">Set SkipSearchingForInfoBarMessageControl on UserControl to true<a class="headerlink" href="#set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>By default, Catel assumes that an InfoBarMessageControl is located on any window. However, it might be that this control is not located on a window that contains an instance of the UserControl class. This might decrease the performance, especially when lots of user controls are used in a hierarchical way. The cause is that the UserControlLogic searches for an InfoBarMessageControl to register the view model to.</p>
+<p> If no <em>InfoBarMessageControl</em> is located on a container, make sure to set <em>SkipSearchingForInfoBarMessageControl</em> to <em>true</em>.</p>
+<pre class="nocode">// Use when not using styles and transitions
+Catel.Windows.Controls.UserControl.DefaultTransferStylesAndTransitionsToViewModelGridValue = false; 
+ 
+// Use when not using any validation controls
+Catel.Windows.Controls.UserControl.DefaultSkipSearchingForInfoBarMessageControlValue = true;
+Catel.Windows.Controls.UserControl.DefaultCreateWarningAndErrorValidatorForViewModelValue = false;
+ 
+// Use when not using *any* validation
+Catel.Data.ModelBase.SuspendValidationForAllModels = true;
+</pre><h3 id="use-the-fastobservablecollection">Use the FastObservableCollection<a class="headerlink" href="#use-the-fastobservablecollection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The FastObservableCollection does not raise events for every item, but only invokes events for the complete range of items added to or removed from the collection.</p>
+<p>When modifying a large collection of items, it is not required to raise change events for each added / removed value. Therefore the FastObservableCollection will disable change notifications until the full collection modification is done and then raise the change events just once.</p>
+<h3 id="specify-throttling-on-the-viewmodelbase">Specify throttling on the ViewModelBase<a class="headerlink" href="#specify-throttling-on-the-viewmodelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <em>ViewModelBase</em> allows the specify the throttling of the property change notifications. In normal situations it is best to directly raise property change notifications. However, when a lot of properties change a lot within a very short timeframe, it might be interesting to enable throttling. By using throttling, the change notifications are not directly sent to the UI but instead added to a dictionary. Then each time the <em>ThottlingRate</em> is reached, the change notifications are sent in batches to the view. If the same property has changed several times in a specific time frame, it will only be raised once which might give a performance boost in very specific situations.</p>
+<p>By default, throttling is disabled but can be enabled by setting the <em>ThrottlingRate</em> property:</p>
+<pre class="nocode">ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>The <em>AdvancedDemo</em> example contains a demo that shows the impact of throttling</p>
+</div>
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/5.0/faq/performance-considerations.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/faq/performance-considerations/index.htm';
+					   this.page.identifier = '../src/5.0/faq/performance-considerations.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script src="../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

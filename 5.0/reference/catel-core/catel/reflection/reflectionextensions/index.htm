@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReflectionExtensions - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/applicationextensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandlerextensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/bytearrayextensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/catelenvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositefilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositepredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/coremodule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimecodeattribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimehelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimeinitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposabletoken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/environmenthelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/eventhandlerextensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionextensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionfactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/expressionhelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/fastdatetime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/hashhelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ibindableenum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icommandmanagerextensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icompositefilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/idisposabletoken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecutewithobject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ifluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/inotifypropertychangedextensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iuniqueidentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakaction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakeventlistener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakfunc/">IWeakFunc</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakreference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/jsonextensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/knownplatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/languagehelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mustbeimplementedexception/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mvvmmodule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/notsupportedinplatformexception/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecthelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecttostringhelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/parallelhelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/processextensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/progresscontext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/resourcehelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/serializationjsonmodule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringextensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringtoobjecthelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/supportedplatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/taghelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/themehelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threadhelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uniqueidentifierhelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uriextensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakaction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakactionbase/">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakeventlistener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakfunc/">WeakFunc</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/componentmodel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/core/">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/exceptionhandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/io/">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/ioc/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/reflection/">Reflection</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/appdomainextensions/">AppDomainExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/assemblyextensions/">AssemblyExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/assemblyhelper/">AssemblyHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/assemblyloadedeventargs/">AssemblyLoadedEventArgs</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/bindingflagshelper/">BindingFlagsHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/cachedpropertyinfo/">CachedPropertyInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/cannotgetpropertyvalueexception/">CannotGetPropertyValueException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/cannotsetpropertyvalueexception/">CannotSetPropertyValueException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/delegateextensions/">DelegateExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/delegatehelper/">DelegateHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/ientryassemblyresolver/">IEntryAssemblyResolver</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/memberinfoextensions/">MemberInfoExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/objectextensions/">ObjectExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/propertyhelper/">PropertyHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/propertynotfoundexception/">PropertyNotFoundException</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/catel-core/catel/reflection/reflectionextensions/">ReflectionExtensions</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#fields">Fields</a></li>
+
+<li class="tocentry"><a href="#methods">Methods</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#containsgenericparametersextype-type">ContainsGenericParametersEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getassemblyextype-type">GetAssemblyEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getassemblyfullnameextype-type">GetAssemblyFullNameEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getattributememberinfo-memberinfo-type-attributetype">GetAttribute(MemberInfo memberInfo, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#getattributetype-type-type-attributetype">GetAttribute(Type type, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#getattributememberinfo-memberinfo">GetAttribute<TAttribute>(MemberInfo memberInfo)</a></li>
+
+<li class="tocentry"><a href="#getattributetype-type">GetAttribute<TAttribute>(Type type)</a></li>
+
+<li class="tocentry"><a href="#getbasetypeextype-type">GetBaseTypeEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getconstructorextype-type-type-types">GetConstructorEx(Type type, Type[] types)</a></li>
+
+<li class="tocentry"><a href="#getconstructorsextype-type">GetConstructorsEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributeexassembly-assembly-type-attributetype">GetCustomAttributeEx(Assembly assembly, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributeexmethodinfo-methodinfo-type-attributetype-bool-inherit">GetCustomAttributeEx(MethodInfo methodInfo, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributeexpropertyinfo-propertyinfo-type-attributetype-bool-inherit">GetCustomAttributeEx(PropertyInfo propertyInfo, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributeextype-type-type-attributetype-bool-inherit">GetCustomAttributeEx(Type type, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesexassembly-assembly-type-attributetype">GetCustomAttributesEx(Assembly assembly, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesexmethodinfo-methodinfo-bool-inherit">GetCustomAttributesEx(MethodInfo methodInfo, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesexmethodinfo-methodinfo-type-attributetype-bool-inherit">GetCustomAttributesEx(MethodInfo methodInfo, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesexpropertyinfo-propertyinfo-bool-inherit">GetCustomAttributesEx(PropertyInfo propertyInfo, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesexpropertyinfo-propertyinfo-type-attributetype-bool-inherit">GetCustomAttributesEx(PropertyInfo propertyInfo, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesextype-type-bool-inherit">GetCustomAttributesEx(Type type, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getcustomattributesextype-type-type-attributetype-bool-inherit">GetCustomAttributesEx(Type type, Type attributeType, bool inherit)</a></li>
+
+<li class="tocentry"><a href="#getelementtypeextype-type">GetElementTypeEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#geteventextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetEventEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#geteventextype-type-string-name-bindingflags-bindingflags">GetEventEx(Type type, string name, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#geteventsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetEventsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getexportedtypesexassembly-assembly">GetExportedTypesEx(Assembly assembly)</a></li>
+
+<li class="tocentry"><a href="#getfieldextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetFieldEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getfieldextype-type-string-name-bindingflags-bindingflags">GetFieldEx(Type type, string name, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getfieldsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetFieldsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getfieldsextype-type-bindingflags-bindingflags">GetFieldsEx(Type type, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getgenericargumentsextype-type">GetGenericArgumentsEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getgenerictypedefinitionextype-type">GetGenericTypeDefinitionEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getinterfaceextype-type-string-name-bool-ignorecase">GetInterfaceEx(Type type, string name, bool ignoreCase)</a></li>
+
+<li class="tocentry"><a href="#getinterfacesextype-type">GetInterfacesEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#getmemberextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetMemberEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getmemberextype-type-string-name-bindingflags-bindingflags">GetMemberEx(Type type, string name, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getmethodextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getmethodextype-type-string-name-bindingflags-bindingflags">GetMethodEx(Type type, string name, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getmethodextype-type-string-name-type-types-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodEx(Type type, string name, Type[] types, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getmethodextype-type-string-name-type-types-bindingflags-bindingflags">GetMethodEx(Type type, string name, Type[] types, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getmethodsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getmethodsextype-type-bindingflags-bindingflags">GetMethodsEx(Type type, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getparenttypestype-type">GetParentTypes(Type type)</a></li>
+
+<li class="tocentry"><a href="#getpropertiesextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetPropertiesEx(Type type, bool flattenHierarchy, bool allowStaticMembers)</a></li>
+
+<li class="tocentry"><a href="#getpropertiesextype-type-bindingflags-bindingflags">GetPropertiesEx(Type type, BindingFlags bindingFlags)</a></li>
+
+<li class="tocentry"><a href="#getpropertyextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers-bool-allowexplicitinterfaceproperties">GetPropertyEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers, bool allowExplicitInterfaceProperties)</a></li>
+
+<li class="tocentry"><a href="#getpropertyextype-type-string-name-bindingflags-bindingflags-bool-allowexplicitinterfaceproperties">GetPropertyEx(Type type, string name, BindingFlags bindingFlags, bool allowExplicitInterfaceProperties)</a></li>
+
+<li class="tocentry"><a href="#getsafefullnametype-type-bool-fullyqualifiedassemblyname">GetSafeFullName(Type type, bool fullyQualifiedAssemblyName)</a></li>
+
+<li class="tocentry"><a href="#gettypesexassembly-assembly">GetTypesEx(Assembly assembly)</a></li>
+
+<li class="tocentry"><a href="#hasbasetypeextype-type-type-typetocheck">HasBaseTypeEx(Type type, Type typeToCheck)</a></li>
+
+<li class="tocentry"><a href="#implementsinterfaceextype-type-type-interfacetype">ImplementsInterfaceEx(Type type, Type interfaceType)</a></li>
+
+<li class="tocentry"><a href="#implementsinterfaceextype-type">ImplementsInterfaceEx<TInterface>(Type type)</a></li>
+
+<li class="tocentry"><a href="#isabstractextype-type">IsAbstractEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isarrayextype-type">IsArrayEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isassignablefromextype-type-type-typetocheck">IsAssignableFromEx(Type type, Type typeToCheck)</a></li>
+
+<li class="tocentry"><a href="#iscateltypetype-type">IsCatelType(Type type)</a></li>
+
+<li class="tocentry"><a href="#isclassextype-type">IsClassEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#iscomobjectextype-type">IsCOMObjectEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isdecoratedwithattributememberinfo-memberinfo-type-attributetype">IsDecoratedWithAttribute(MemberInfo memberInfo, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#isdecoratedwithattributetype-type-type-attributetype">IsDecoratedWithAttribute(Type type, Type attributeType)</a></li>
+
+<li class="tocentry"><a href="#isdecoratedwithattributememberinfo-memberinfo">IsDecoratedWithAttribute<TAttribute>(MemberInfo memberInfo)</a></li>
+
+<li class="tocentry"><a href="#isdecoratedwithattributetype-type">IsDecoratedWithAttribute<TAttribute>(Type type)</a></li>
+
+<li class="tocentry"><a href="#isenumextype-type">IsEnumEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isgenerictypedefinitionextype-type">IsGenericTypeDefinitionEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isgenerictypeextype-type">IsGenericTypeEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isinstanceoftypeextype-type-object-objecttocheck">IsInstanceOfTypeEx(Type type, object objectToCheck)</a></li>
+
+<li class="tocentry"><a href="#isinterfaceextype-type">IsInterfaceEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isnestedpublicextype-type">IsNestedPublicEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isprimitiveextype-type">IsPrimitiveEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#ispublicextype-type">IsPublicEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isserializableextype-type">IsSerializableEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#isvaluetypeextype-type">IsValueTypeEx(Type type)</a></li>
+
+<li class="tocentry"><a href="#trygetattributememberinfo-memberinfo-type-attributetype-attribute-attribute">TryGetAttribute(MemberInfo memberInfo, Type attributeType, Attribute attribute)</a></li>
+
+<li class="tocentry"><a href="#trygetattributetype-type-type-attributetype-attribute-attribute">TryGetAttribute(Type type, Type attributeType, Attribute attribute)</a></li>
+
+<li class="tocentry"><a href="#trygetattributememberinfo-memberinfo-tattribute-attribute">TryGetAttribute<TAttribute>(MemberInfo memberInfo, TAttribute attribute)</a></li>
+
+<li class="tocentry"><a href="#trygetattributetype-type-tattribute-attribute">TryGetAttribute<TAttribute>(Type type, TAttribute attribute)</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/statichelper/">StaticHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/typecache/">TypeCache</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/typeextensions/">TypeExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/typehelper/">TypeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/typeinfo/">TypeInfo</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/reflection/typeinfoextensions/">TypeInfoExtensions</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/runtime/">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/text/">Text</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/threading/">Threading</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/system/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-serialization-json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../home.htm">Home</a></li> / <li><a href="../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../reference/catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../../../reference/catel-core/catel/index.htm">Catel</a></li> / <li><a href="../../../../../reference/catel-core/catel/reflection/index.htm">Reflection</a></li> / <li><a href="../../../../../reference/catel-core/catel/reflection/reflectionextensions/index.htm">ReflectionExtensions</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="reflectionextensions">ReflectionExtensions<a class="headerlink" href="#reflectionextensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Reflection</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class ReflectionExtensions
+</pre><p>Reflection extension class.</p>
+<h2 id="fields">Fields<a class="headerlink" href="#fields" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="containsgenericparametersextype-type">ContainsGenericParametersEx(Type type)<a class="headerlink" href="#containsgenericparametersextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type contains generic parameters.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified type contains generic parameters; otherwise,<code>false</code>.</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getassemblyextype-type">GetAssemblyEx(Type type)<a class="headerlink" href="#getassemblyextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get assembly ex.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Assembly.</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getassemblyfullnameextype-type">GetAssemblyFullNameEx(Type type)<a class="headerlink" href="#getassemblyfullnameextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get assembly full name ex.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The get assembly full name ex.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getattributememberinfo-memberinfo-type-attributetype">GetAttribute(MemberInfo memberInfo, Type attributeType)<a class="headerlink" href="#getattributememberinfo-memberinfo-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the attribute from the member.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member Info.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The attribute or<code>null</code> of the member is not decorated with the attribute.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="getattributetype-type-type-attributetype">GetAttribute(Type type, Type attributeType)<a class="headerlink" href="#getattributetype-type-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the attribute from the type.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The attribute or<code>null</code> of the member is not decorated with the attribute.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getattributememberinfo-memberinfo">GetAttribute<TAttribute>(MemberInfo memberInfo)<a class="headerlink" href="#getattributememberinfo-memberinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the attribute from the member.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The attribute type.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member Info.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The attribute or<code>null</code> of the member is not decorated with the attribute.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="getattributetype-type">GetAttribute<TAttribute>(Type type)<a class="headerlink" href="#getattributetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the attribute from the type.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The attribute type.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The attribute or<code>null</code> of the member is not decorated with the attribute.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getbasetypeextype-type">GetBaseTypeEx(Type type)<a class="headerlink" href="#getbasetypeextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get base type ex.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Type.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getconstructorextype-type-type-types">GetConstructorEx(Type type, Type[] types)<a class="headerlink" href="#getconstructorextype-type-type-types" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get constructor ex.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>types</strong>
+The types.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>ConstructorInfo.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getconstructorsextype-type">GetConstructorsEx(Type type)<a class="headerlink" href="#getconstructorsextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get constructors ex.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>ConstructorInfo[][].</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getcustomattributeexassembly-assembly-type-attributetype">GetCustomAttributeEx(Assembly assembly, Type attributeType)<a class="headerlink" href="#getcustomattributeexassembly-assembly-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributeexmethodinfo-methodinfo-type-attributetype-bool-inherit">GetCustomAttributeEx(MethodInfo methodInfo, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributeexmethodinfo-methodinfo-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributeexpropertyinfo-propertyinfo-type-attributetype-bool-inherit">GetCustomAttributeEx(PropertyInfo propertyInfo, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributeexpropertyinfo-propertyinfo-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributeextype-type-type-attributetype-bool-inherit">GetCustomAttributeEx(Type type, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributeextype-type-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get custom attribute ex.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attributeType</strong>
+The attribute type.</p>
+<p><strong>inherit</strong>
+The inherit.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The get custom attribute ex.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getcustomattributesexassembly-assembly-type-attributetype">GetCustomAttributesEx(Assembly assembly, Type attributeType)<a class="headerlink" href="#getcustomattributesexassembly-assembly-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributesexmethodinfo-methodinfo-bool-inherit">GetCustomAttributesEx(MethodInfo methodInfo, bool inherit)<a class="headerlink" href="#getcustomattributesexmethodinfo-methodinfo-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributesexmethodinfo-methodinfo-type-attributetype-bool-inherit">GetCustomAttributesEx(MethodInfo methodInfo, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributesexmethodinfo-methodinfo-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributesexpropertyinfo-propertyinfo-bool-inherit">GetCustomAttributesEx(PropertyInfo propertyInfo, bool inherit)<a class="headerlink" href="#getcustomattributesexpropertyinfo-propertyinfo-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributesexpropertyinfo-propertyinfo-type-attributetype-bool-inherit">GetCustomAttributesEx(PropertyInfo propertyInfo, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributesexpropertyinfo-propertyinfo-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getcustomattributesextype-type-bool-inherit">GetCustomAttributesEx(Type type, bool inherit)<a class="headerlink" href="#getcustomattributesextype-type-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get custom attributes ex.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>inherit</strong>
+The inherit.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>System.Object[][].</p>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getcustomattributesextype-type-type-attributetype-bool-inherit">GetCustomAttributesEx(Type type, Type attributeType, bool inherit)<a class="headerlink" href="#getcustomattributesextype-type-type-attributetype-bool-inherit" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get custom attributes ex.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attributeType</strong>
+The attribute type.</p>
+<p><strong>inherit</strong>
+The inherit.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>System.Object[][].</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getelementtypeextype-type">GetElementTypeEx(Type type)<a class="headerlink" href="#getelementtypeextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the element type of the specified type.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Type.</p>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="geteventextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetEventEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#geteventextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get event ex.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten Hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow Static Members.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>EventInfo.</p>
+<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="geteventextype-type-string-name-bindingflags-bindingflags">GetEventEx(Type type, string name, BindingFlags bindingFlags)<a class="headerlink" href="#geteventextype-type-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get event ex.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>EventInfo.</p>
+<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="geteventsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetEventsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#geteventsextype-type-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get events ex.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten Hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow Static Members.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>EventInfo[][].</p>
+<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getexportedtypesexassembly-assembly">GetExportedTypesEx(Assembly assembly)<a class="headerlink" href="#getexportedtypesexassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="getfieldextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetFieldEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getfieldextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get field ex.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow static members.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>FieldInfo.</p>
+<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getfieldextype-type-string-name-bindingflags-bindingflags">GetFieldEx(Type type, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getfieldextype-type-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get field ex.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>FieldInfo.</p>
+<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getfieldsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetFieldsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getfieldsextype-type-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get fields ex.</p>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow static members.</p>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>FieldInfo[][].</p>
+<h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getfieldsextype-type-bindingflags-bindingflags">GetFieldsEx(Type type, BindingFlags bindingFlags)<a class="headerlink" href="#getfieldsextype-type-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get fields ex.</p>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>FieldInfo[][].</p>
+<h4 id="exceptions-20">Exceptions<a class="headerlink" href="#exceptions-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getgenericargumentsextype-type">GetGenericArgumentsEx(Type type)<a class="headerlink" href="#getgenericargumentsextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get generic arguments ex.</p>
+<h4 id="parameters-21">Parameters<a class="headerlink" href="#parameters-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Type[][].</p>
+<h4 id="exceptions-21">Exceptions<a class="headerlink" href="#exceptions-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getgenerictypedefinitionextype-type">GetGenericTypeDefinitionEx(Type type)<a class="headerlink" href="#getgenerictypedefinitionextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the generic type definition of the specified type.</p>
+<h4 id="parameters-22">Parameters<a class="headerlink" href="#parameters-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-22">Returns<a class="headerlink" href="#returns-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The generic type definition.</p>
+<h4 id="exceptions-22">Exceptions<a class="headerlink" href="#exceptions-22" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.NotSupportedException</strong>
+The specified type is not a generic type.</p>
+<h3 id="getinterfaceextype-type-string-name-bool-ignorecase">GetInterfaceEx(Type type, string name, bool ignoreCase)<a class="headerlink" href="#getinterfaceextype-type-string-name-bool-ignorecase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the element type of the specified type.</p>
+<h4 id="parameters-23">Parameters<a class="headerlink" href="#parameters-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>ignoreCase</strong>
+if set to<code>true</code> [ignore case].</p>
+<h4 id="returns-23">Returns<a class="headerlink" href="#returns-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Type.</p>
+<h4 id="exceptions-23">Exceptions<a class="headerlink" href="#exceptions-23" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getinterfacesextype-type">GetInterfacesEx(Type type)<a class="headerlink" href="#getinterfacesextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get interfaces ex.</p>
+<h4 id="parameters-24">Parameters<a class="headerlink" href="#parameters-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-24">Returns<a class="headerlink" href="#returns-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>Type[][].</p>
+<h4 id="exceptions-24">Exceptions<a class="headerlink" href="#exceptions-24" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getmemberextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetMemberEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getmemberextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the member on the specified type.</p>
+<h4 id="parameters-25">Parameters<a class="headerlink" href="#parameters-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow static members.</p>
+<h4 id="returns-25">Returns<a class="headerlink" href="#returns-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MemberInfo[][].</p>
+<h4 id="exceptions-25">Exceptions<a class="headerlink" href="#exceptions-25" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getmemberextype-type-string-name-bindingflags-bindingflags">GetMemberEx(Type type, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getmemberextype-type-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the member on the specified type.</p>
+<h4 id="parameters-26">Parameters<a class="headerlink" href="#parameters-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-26">Returns<a class="headerlink" href="#returns-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MemberInfo[][].</p>
+<h4 id="exceptions-26">Exceptions<a class="headerlink" href="#exceptions-26" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getmethodextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getmethodextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get method ex.</p>
+<h4 id="parameters-27">Parameters<a class="headerlink" href="#parameters-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten Hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow Static Members.</p>
+<h4 id="returns-27">Returns<a class="headerlink" href="#returns-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo.</p>
+<h4 id="exceptions-27">Exceptions<a class="headerlink" href="#exceptions-27" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getmethodextype-type-string-name-bindingflags-bindingflags">GetMethodEx(Type type, string name, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodextype-type-string-name-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get method ex.</p>
+<h4 id="parameters-28">Parameters<a class="headerlink" href="#parameters-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-28">Returns<a class="headerlink" href="#returns-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo.</p>
+<h4 id="exceptions-28">Exceptions<a class="headerlink" href="#exceptions-28" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getmethodextype-type-string-name-type-types-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodEx(Type type, string name, Type[] types, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getmethodextype-type-string-name-type-types-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get method ex.</p>
+<h4 id="parameters-29">Parameters<a class="headerlink" href="#parameters-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>types</strong>
+The types.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten Hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow Static Members.</p>
+<h4 id="returns-29">Returns<a class="headerlink" href="#returns-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo.</p>
+<h4 id="exceptions-29">Exceptions<a class="headerlink" href="#exceptions-29" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getmethodextype-type-string-name-type-types-bindingflags-bindingflags">GetMethodEx(Type type, string name, Type[] types, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodextype-type-string-name-type-types-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get method ex.</p>
+<h4 id="parameters-30">Parameters<a class="headerlink" href="#parameters-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>types</strong>
+The types.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-30">Returns<a class="headerlink" href="#returns-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo.</p>
+<h4 id="exceptions-30">Exceptions<a class="headerlink" href="#exceptions-30" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getmethodsextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetMethodsEx(Type type, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getmethodsextype-type-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get methods ex.</p>
+<h4 id="parameters-31">Parameters<a class="headerlink" href="#parameters-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten Hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow Static Members.</p>
+<h4 id="returns-31">Returns<a class="headerlink" href="#returns-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo[][].</p>
+<h4 id="exceptions-31">Exceptions<a class="headerlink" href="#exceptions-31" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getmethodsextype-type-bindingflags-bindingflags">GetMethodsEx(Type type, BindingFlags bindingFlags)<a class="headerlink" href="#getmethodsextype-type-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get methods ex.</p>
+<h4 id="parameters-32">Parameters<a class="headerlink" href="#parameters-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-32">Returns<a class="headerlink" href="#returns-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>MethodInfo[][].</p>
+<h4 id="exceptions-32">Exceptions<a class="headerlink" href="#exceptions-32" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getparenttypestype-type">GetParentTypes(Type type)<a class="headerlink" href="#getparenttypestype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the parent types.</p>
+<h4 id="parameters-33">Parameters<a class="headerlink" href="#parameters-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-33">Returns<a class="headerlink" href="#returns-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h3 id="getpropertiesextype-type-bool-flattenhierarchy-bool-allowstaticmembers">GetPropertiesEx(Type type, bool flattenHierarchy, bool allowStaticMembers)<a class="headerlink" href="#getpropertiesextype-type-bool-flattenhierarchy-bool-allowstaticmembers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get properties ex.</p>
+<h4 id="parameters-34">Parameters<a class="headerlink" href="#parameters-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow static members.</p>
+<h4 id="returns-34">Returns<a class="headerlink" href="#returns-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>PropertyInfo[][].</p>
+<h4 id="exceptions-33">Exceptions<a class="headerlink" href="#exceptions-33" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getpropertiesextype-type-bindingflags-bindingflags">GetPropertiesEx(Type type, BindingFlags bindingFlags)<a class="headerlink" href="#getpropertiesextype-type-bindingflags-bindingflags" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get properties ex.</p>
+<h4 id="parameters-35">Parameters<a class="headerlink" href="#parameters-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<h4 id="returns-35">Returns<a class="headerlink" href="#returns-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>PropertyInfo[][].</p>
+<h4 id="exceptions-34">Exceptions<a class="headerlink" href="#exceptions-34" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="getpropertyextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers-bool-allowexplicitinterfaceproperties">GetPropertyEx(Type type, string name, bool flattenHierarchy, bool allowStaticMembers, bool allowExplicitInterfaceProperties)<a class="headerlink" href="#getpropertyextype-type-string-name-bool-flattenhierarchy-bool-allowstaticmembers-bool-allowexplicitinterfaceproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get property ex.</p>
+<h4 id="parameters-36">Parameters<a class="headerlink" href="#parameters-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>flattenHierarchy</strong>
+The flatten hierarchy.</p>
+<p><strong>allowStaticMembers</strong>
+The allow static members.</p>
+<p><strong>allowExplicitInterfaceProperties</strong>
+if set to<code>true</code>, this method will check for explicit interface implementations when the property is not found.</p>
+<h4 id="returns-36">Returns<a class="headerlink" href="#returns-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>PropertyInfo.</p>
+<h4 id="exceptions-35">Exceptions<a class="headerlink" href="#exceptions-35" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getpropertyextype-type-string-name-bindingflags-bindingflags-bool-allowexplicitinterfaceproperties">GetPropertyEx(Type type, string name, BindingFlags bindingFlags, bool allowExplicitInterfaceProperties)<a class="headerlink" href="#getpropertyextype-type-string-name-bindingflags-bindingflags-bool-allowexplicitinterfaceproperties" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The get property ex.</p>
+<h4 id="parameters-37">Parameters<a class="headerlink" href="#parameters-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>name</strong>
+The name.</p>
+<p><strong>bindingFlags</strong>
+The binding Flags.</p>
+<p><strong>allowExplicitInterfaceProperties</strong>
+if set to<code>true</code>, this method will check for explicit interface implementations when the property is not found.</p>
+<h4 id="returns-37">Returns<a class="headerlink" href="#returns-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>PropertyInfo.</p>
+<h4 id="exceptions-36">Exceptions<a class="headerlink" href="#exceptions-36" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<p><strong>T:System.ArgumentException</strong>
+The name is<code>null</code> or whitespace.</p>
+<h3 id="getsafefullnametype-type-bool-fullyqualifiedassemblyname">GetSafeFullName(Type type, bool fullyQualifiedAssemblyName)<a class="headerlink" href="#getsafefullnametype-type-bool-fullyqualifiedassemblyname" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Gets the full name of the type in a safe way. This means it checks for null first.</p>
+<h4 id="parameters-38">Parameters<a class="headerlink" href="#parameters-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>fullyQualifiedAssemblyName</strong>
+if set to<code>true</code>, include the assembly name in the type name.</p>
+<h4 id="returns-38">Returns<a class="headerlink" href="#returns-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The safe full name.</p>
+<h3 id="gettypesexassembly-assembly">GetTypesEx(Assembly assembly)<a class="headerlink" href="#gettypesexassembly-assembly" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<h3 id="hasbasetypeextype-type-type-typetocheck">HasBaseTypeEx(Type type, Type typeToCheck)<a class="headerlink" href="#hasbasetypeextype-type-type-typetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The has base type ex.</p>
+<h4 id="parameters-39">Parameters<a class="headerlink" href="#parameters-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>typeToCheck</strong>
+The type to check.</p>
+<h4 id="returns-39">Returns<a class="headerlink" href="#returns-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The has base type ex.</p>
+<h4 id="exceptions-37">Exceptions<a class="headerlink" href="#exceptions-37" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="implementsinterfaceextype-type-type-interfacetype">ImplementsInterfaceEx(Type type, Type interfaceType)<a class="headerlink" href="#implementsinterfaceextype-type-type-interfacetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether the specified type implements the specified interface.</p>
+<h4 id="parameters-40">Parameters<a class="headerlink" href="#parameters-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>interfaceType</strong>
+Type of the interface.</p>
+<h4 id="returns-40">Returns<a class="headerlink" href="#returns-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the type implements the interface; otherwise<code>false</code>.</p>
+<h4 id="exceptions-38">Exceptions<a class="headerlink" href="#exceptions-38" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="implementsinterfaceextype-type">ImplementsInterfaceEx<TInterface>(Type type)<a class="headerlink" href="#implementsinterfaceextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether the specified type implements the specified interface.</p>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TInterface</strong>
+The type of the t interface.</p>
+<h4 id="parameters-41">Parameters<a class="headerlink" href="#parameters-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-41">Returns<a class="headerlink" href="#returns-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the type implements the interface; otherwise<code>false</code>.</p>
+<h4 id="exceptions-39">Exceptions<a class="headerlink" href="#exceptions-39" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isabstractextype-type">IsAbstractEx(Type type)<a class="headerlink" href="#isabstractextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type is abstract.</p>
+<h4 id="parameters-42">Parameters<a class="headerlink" href="#parameters-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-42">Returns<a class="headerlink" href="#returns-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified type is abstract; otherwise,<code>false</code>.</p>
+<h3 id="isarrayextype-type">IsArrayEx(Type type)<a class="headerlink" href="#isarrayextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type is an array.</p>
+<h4 id="parameters-43">Parameters<a class="headerlink" href="#parameters-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-43">Returns<a class="headerlink" href="#returns-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified type is an array; otherwise,<code>false</code>.</p>
+<h3 id="isassignablefromextype-type-type-typetocheck">IsAssignableFromEx(Type type, Type typeToCheck)<a class="headerlink" href="#isassignablefromextype-type-type-typetocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is assignable from ex.</p>
+<h4 id="parameters-44">Parameters<a class="headerlink" href="#parameters-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>typeToCheck</strong>
+The type to check.</p>
+<h4 id="returns-44">Returns<a class="headerlink" href="#returns-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is assignable from ex.</p>
+<h4 id="exceptions-40">Exceptions<a class="headerlink" href="#exceptions-40" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="iscateltypetype-type">IsCatelType(Type type)<a class="headerlink" href="#iscateltypetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type is a Catel type.</p>
+<h4 id="parameters-45">Parameters<a class="headerlink" href="#parameters-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+Type of the target.</p>
+<h4 id="returns-45">Returns<a class="headerlink" href="#returns-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified type is a Catel type; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-41">Exceptions<a class="headerlink" href="#exceptions-41" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isclassextype-type">IsClassEx(Type type)<a class="headerlink" href="#isclassextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type is a class.</p>
+<h4 id="parameters-46">Parameters<a class="headerlink" href="#parameters-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-46">Returns<a class="headerlink" href="#returns-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the specified type is a class; otherwise,<code>false</code>.</p>
+<h3 id="iscomobjectextype-type">IsCOMObjectEx(Type type)<a class="headerlink" href="#iscomobjectextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified type is a COM object.</p>
+<h4 id="parameters-47">Parameters<a class="headerlink" href="#parameters-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong></p>
+<h4 id="returns-47">Returns<a class="headerlink" href="#returns-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<h3 id="isdecoratedwithattributememberinfo-memberinfo-type-attributetype">IsDecoratedWithAttribute(MemberInfo memberInfo, Type attributeType)<a class="headerlink" href="#isdecoratedwithattributememberinfo-memberinfo-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified member is decorated with the specified attribute type.</p>
+<h4 id="parameters-48">Parameters<a class="headerlink" href="#parameters-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member info.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<h4 id="returns-48">Returns<a class="headerlink" href="#returns-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the member is decorated with the attribute; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-42">Exceptions<a class="headerlink" href="#exceptions-42" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="isdecoratedwithattributetype-type-type-attributetype">IsDecoratedWithAttribute(Type type, Type attributeType)<a class="headerlink" href="#isdecoratedwithattributetype-type-type-attributetype" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified member is decorated with the specified attribute type.</p>
+<h4 id="parameters-49">Parameters<a class="headerlink" href="#parameters-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<h4 id="returns-49">Returns<a class="headerlink" href="#returns-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the member is decorated with the attribute; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-43">Exceptions<a class="headerlink" href="#exceptions-43" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isdecoratedwithattributememberinfo-memberinfo">IsDecoratedWithAttribute<TAttribute>(MemberInfo memberInfo)<a class="headerlink" href="#isdecoratedwithattributememberinfo-memberinfo" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified member is decorated with the specified attribute type.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The type of the attribute.</p>
+<h4 id="parameters-50">Parameters<a class="headerlink" href="#parameters-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member info.</p>
+<h4 id="returns-50">Returns<a class="headerlink" href="#returns-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the member is decorated with the attribute; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-44">Exceptions<a class="headerlink" href="#exceptions-44" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="isdecoratedwithattributetype-type">IsDecoratedWithAttribute<TAttribute>(Type type)<a class="headerlink" href="#isdecoratedwithattributetype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Determines whether the specified member is decorated with the specified attribute type.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The type of the attribute.</p>
+<h4 id="parameters-51">Parameters<a class="headerlink" href="#parameters-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-51">Returns<a class="headerlink" href="#returns-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the member is decorated with the attribute; otherwise,<code>false</code>.</p>
+<h4 id="exceptions-45">Exceptions<a class="headerlink" href="#exceptions-45" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isenumextype-type">IsEnumEx(Type type)<a class="headerlink" href="#isenumextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is enum ex.</p>
+<h4 id="parameters-52">Parameters<a class="headerlink" href="#parameters-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-52">Returns<a class="headerlink" href="#returns-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is enum ex.</p>
+<h4 id="exceptions-46">Exceptions<a class="headerlink" href="#exceptions-46" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isgenerictypedefinitionextype-type">IsGenericTypeDefinitionEx(Type type)<a class="headerlink" href="#isgenerictypedefinitionextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is generic type definition ex.</p>
+<h4 id="parameters-53">Parameters<a class="headerlink" href="#parameters-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-53">Returns<a class="headerlink" href="#returns-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is generic type ex.</p>
+<h4 id="exceptions-47">Exceptions<a class="headerlink" href="#exceptions-47" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isgenerictypeextype-type">IsGenericTypeEx(Type type)<a class="headerlink" href="#isgenerictypeextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is generic type ex.</p>
+<h4 id="parameters-54">Parameters<a class="headerlink" href="#parameters-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-54">Returns<a class="headerlink" href="#returns-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is generic type ex.</p>
+<h4 id="exceptions-48">Exceptions<a class="headerlink" href="#exceptions-48" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isinstanceoftypeextype-type-object-objecttocheck">IsInstanceOfTypeEx(Type type, object objectToCheck)<a class="headerlink" href="#isinstanceoftypeextype-type-object-objecttocheck" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is instance of type ex.</p>
+<h4 id="parameters-55">Parameters<a class="headerlink" href="#parameters-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>objectToCheck</strong>
+The object to check.</p>
+<h4 id="returns-55">Returns<a class="headerlink" href="#returns-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is instance of type ex.</p>
+<h4 id="exceptions-49">Exceptions<a class="headerlink" href="#exceptions-49" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isinterfaceextype-type">IsInterfaceEx(Type type)<a class="headerlink" href="#isinterfaceextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is interface ex.</p>
+<h4 id="parameters-56">Parameters<a class="headerlink" href="#parameters-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-56">Returns<a class="headerlink" href="#returns-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is interface ex.</p>
+<h4 id="exceptions-50">Exceptions<a class="headerlink" href="#exceptions-50" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isnestedpublicextype-type">IsNestedPublicEx(Type type)<a class="headerlink" href="#isnestedpublicextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is nested public ex.</p>
+<h4 id="parameters-57">Parameters<a class="headerlink" href="#parameters-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-57">Returns<a class="headerlink" href="#returns-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is nested public ex.</p>
+<h4 id="exceptions-51">Exceptions<a class="headerlink" href="#exceptions-51" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isprimitiveextype-type">IsPrimitiveEx(Type type)<a class="headerlink" href="#isprimitiveextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Returns whether the specified type is a primitive type.</p>
+<h4 id="parameters-58">Parameters<a class="headerlink" href="#parameters-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-58">Returns<a class="headerlink" href="#returns-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The primitive type specification.</p>
+<h4 id="exceptions-52">Exceptions<a class="headerlink" href="#exceptions-52" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="ispublicextype-type">IsPublicEx(Type type)<a class="headerlink" href="#ispublicextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is public ex.</p>
+<h4 id="parameters-59">Parameters<a class="headerlink" href="#parameters-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-59">Returns<a class="headerlink" href="#returns-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is public ex.</p>
+<h4 id="exceptions-53">Exceptions<a class="headerlink" href="#exceptions-53" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isserializableextype-type">IsSerializableEx(Type type)<a class="headerlink" href="#isserializableextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is serializable ex.</p>
+<h4 id="parameters-60">Parameters<a class="headerlink" href="#parameters-60" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-60">Returns<a class="headerlink" href="#returns-60" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is serializable ex.</p>
+<h4 id="exceptions-54">Exceptions<a class="headerlink" href="#exceptions-54" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="isvaluetypeextype-type">IsValueTypeEx(Type type)<a class="headerlink" href="#isvaluetypeextype-type" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The is value type ex.</p>
+<h4 id="parameters-61">Parameters<a class="headerlink" href="#parameters-61" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<h4 id="returns-61">Returns<a class="headerlink" href="#returns-61" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The is value type ex.</p>
+<h4 id="exceptions-55">Exceptions<a class="headerlink" href="#exceptions-55" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="trygetattributememberinfo-memberinfo-type-attributetype-attribute-attribute">TryGetAttribute(MemberInfo memberInfo, Type attributeType, Attribute attribute)<a class="headerlink" href="#trygetattributememberinfo-memberinfo-type-attributetype-attribute-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to the get attribute.</p>
+<h4 id="parameters-62">Parameters<a class="headerlink" href="#parameters-62" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member Info.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<p><strong>attribute</strong>
+The attribute.</p>
+<h4 id="returns-62">Returns<a class="headerlink" href="#returns-62" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the attribute is retrieved successfully; otherwise<code>false</code>.</p>
+<h4 id="exceptions-56">Exceptions<a class="headerlink" href="#exceptions-56" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="trygetattributetype-type-type-attributetype-attribute-attribute">TryGetAttribute(Type type, Type attributeType, Attribute attribute)<a class="headerlink" href="#trygetattributetype-type-type-attributetype-attribute-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to the get attribute.</p>
+<h4 id="parameters-63">Parameters<a class="headerlink" href="#parameters-63" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attributeType</strong>
+Type of the attribute.</p>
+<p><strong>attribute</strong>
+The attribute.</p>
+<h4 id="returns-63">Returns<a class="headerlink" href="#returns-63" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the attribute is retrieved successfully; otherwise<code>false</code>.</p>
+<h4 id="exceptions-57">Exceptions<a class="headerlink" href="#exceptions-57" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+<h3 id="trygetattributememberinfo-memberinfo-tattribute-attribute">TryGetAttribute<TAttribute>(MemberInfo memberInfo, TAttribute attribute)<a class="headerlink" href="#trygetattributememberinfo-memberinfo-tattribute-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to the get attribute.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The attribute type.</p>
+<h4 id="parameters-64">Parameters<a class="headerlink" href="#parameters-64" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>memberInfo</strong>
+The member Info.</p>
+<p><strong>attribute</strong>
+The attribute.</p>
+<h4 id="returns-64">Returns<a class="headerlink" href="#returns-64" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the attribute is retrieved successfully; otherwise<code>false</code>.</p>
+<h4 id="exceptions-58">Exceptions<a class="headerlink" href="#exceptions-58" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The memberInfo is<code>null</code>.</p>
+<h3 id="trygetattributetype-type-tattribute-attribute">TryGetAttribute<TAttribute>(Type type, TAttribute attribute)<a class="headerlink" href="#trygetattributetype-type-tattribute-attribute" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Tries to the get attribute.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TAttribute</strong>
+The attribute type.</p>
+<h4 id="parameters-65">Parameters<a class="headerlink" href="#parameters-65" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>type</strong>
+The type.</p>
+<p><strong>attribute</strong>
+The attribute.</p>
+<h4 id="returns-65">Returns<a class="headerlink" href="#returns-65" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><code>true</code> if the attribute is retrieved successfully; otherwise<code>false</code>.</p>
+<h4 id="exceptions-59">Exceptions<a class="headerlink" href="#exceptions-59" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The type is<code>null</code>.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/5.0/reference/Catel.Core/Catel/Reflection/ReflectionExtensions.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/reference/catel-core/catel/reflection/reflectionextensions/index.htm';
+					   this.page.identifier = '../src/5.0/reference/Catel.Core/Catel/Reflection/ReflectionExtensions.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

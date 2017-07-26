@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catel 5.0 - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span></li>
+<li class="tocentry"><a href="../../../setup-deployment/getting-prerelease-versions-via-nuget/">Getting prerelease versions via NuGet</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/stepping-through-the-code/">Stepping through the code</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/compiling-from-source/">Compiling from source</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/code-snippets-templates/">Code snippets & templates</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../setup-deployment/update-guides/">Update guides</a></span></li>
+<li class="tocentry"><a href="../../../setup-deployment/update-guides/catel-4-0/">Catel 4.0</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/update-guides/catel-4-1/">Catel 4.1</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../setup-deployment/update-guides/catel-5-0/">Catel 5.0</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#platform-support-changes">Platform support changes</a></li>
+
+<li class="tocentry"><a href="#moved-extensions">Moved extensions</a></li>
+
+<li class="tocentry"><a href="#removed-extensions">Removed extensions</a></li>
+
+<li class="tocentry"><a href="#catel.fody">Catel.Fody</a></li>
+
+<li class="tocentry"><a href="#catel.core">Catel.Core</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#commandlinehelper">CommandLineHelper</a></li>
+
+<li class="tocentry"><a href="#dynamiceventlistener">DynamicEventListener</a></li>
+
+<li class="tocentry"><a href="#modelbase">ModelBase</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#catel.mvvm">Catel.MVVM</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#xaml-namespace-changes">XAML namespace changes</a></li>
+
+<li class="tocentry"><a href="#countcollapsedconverter">CountCollapsedConverter</a></li>
+
+<li class="tocentry"><a href="#effectshelper">EffectsHelper</a></li>
+
+<li class="tocentry"><a href="#viewmodelbase">ViewModelBase</a></li>
+
+<li class="tocentry"><a href="#visualtargetpresentationsource">VisualTargetPresentationSource</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../home.htm">Home</a></li> / <li><a href="../../../setup-deployment/index.htm">Setup, deployment & projects</a></li> / <li><a href="../../../setup-deployment/update-guides/index.htm">Update guides</a></li> / <li><a href="../../../setup-deployment/update-guides/catel-5-0/index.htm">Catel 5.0</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="catel-5.0">Catel 5.0<a class="headerlink" href="#catel-5.0" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>This guide describes how to update your code to be fully compatible with Catel 5.0.</p>
+<div class="alert alert-danger"><span class="alert-title"><i class="fa fa-times-circle"></i> Danger!</span><p>Catel v5 contains a lot of breaking changes, not all of them cause compiler errors but change core behavior. It's important to check out the guide below <strong>before</strong> updating to Catel v5.</p>
+</div><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>This guide assumes that you are coming from Catel 4.5. If not, please read that guide first.</p>
+</div><p>Encountered issues while upgrading to this version? Add them here to help out others!</p>
+<h2 id="platform-support-changes">Platform support changes<a class="headerlink" href="#platform-support-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Added support for the following platforms:</p>
+<ul>
+<li>.NET 4.7</li>
+</ul>
+<p>Removed support for the following platforms:</p>
+<ul>
+<li>.NET 4.0</li>
+<li>Silverlight 5</li>
+<li>Windows Phone 8.0 (Silverlight)</li>
+<li>Windows Phone 8.1 (Silverlight)</li>
+<li>Windows Phone 8.1 (Runtime)</li>
+<li>Windows 8.1 (Runtime)</li>
+</ul>
+<h2 id="moved-extensions">Moved extensions<a class="headerlink" href="#moved-extensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The following extensions have been moved to a new repository:</p>
+<ul>
+<li>Catel.Extensions.Controls (moved to <a href="https://github.com/wildgums/orc.controls" target="_blank">Orc.Controls</a> &amp; <a href="https://github.com/wildgums/orchestra" target="_blank">Orchestra</a>)</li>
+<li>Catel.Extensions.DynamicObjects (moved to <a href="https://github.com/wildgums/orc.dynamicobjects" target="_blank">Orc.DynamicObjects</a>)</li>
+<li>Catel.Extensions.EntityFramework (moved to <a href="https://github.com/wildgums/orc.entityframework" target="_blank">Orc.EntityFramework</a>)</li>
+<li>Catel.Extensions.FluentValidation (moved to <a href="https://github.com/wildgums/orc.fluentvalidation" target="_blank">Orc.FluentValidation</a>)</li>
+<li>Catel.Extensions.Memento (moved to <a href="https://github.com/wildgums/orc.memento" target="_blank">Orc.Memento</a>)</li>
+<li>Catel.Extensions.Prism5 (moved to <a href="https://github.com/wildgums/orc.prism" target="_blank">Orc.Prism</a>)</li>
+<li>Catel.Extensions.Prism6 (moved to <a href="https://github.com/wildgums/orc.prism" target="_blank">Orc.Prism</a>)</li>
+</ul>
+<h2 id="removed-extensions">Removed extensions<a class="headerlink" href="#removed-extensions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The following extensions have been removed:</p>
+<ul>
+<li>Catel.Extensions.CSLA</li>
+<li>Catel.Extensions.Data</li>
+<li>Catel.Extensions.Interception</li>
+<li>Catel.Extensions.MVC4</li>
+<li>Catel.Extensions.MVC5</li>
+<li>Catel.Extensions.Prism4</li>
+<li>Catel.Extensions.Wcf.Server</li>
+</ul>
+<h2 id="catel.fody">Catel.Fody<a class="headerlink" href="#catel.fody" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Note that if you are using Catel.Fody, you <em>must</em> update to at least 2.17 to support Catel 5.</p>
+</div><h2 id="catel.core">Catel.Core<a class="headerlink" href="#catel.core" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="commandlinehelper">CommandLineHelper<a class="headerlink" href="#commandlinehelper" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>CommandLineHelper</code> has been removed. Use <a href="https://github.com/wildgums/orc.commandline" target="_blank">Orc.CommandLine</a> instead.</p>
+<h3 id="dynamiceventlistener">DynamicEventListener<a class="headerlink" href="#dynamiceventlistener" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>DynamicEventListener</code> has been removed. Use <code>WeakEventListener</code> instead.</p>
+<h3 id="modelbase">ModelBase<a class="headerlink" href="#modelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <code>ModelBase</code> has been greatly simplified to decrease the memory print and improve performance. The class is split up into separate classes:</p>
+<ul>
+<li>ModelBase =&gt; takes care of basic serialization and property bag registrations</li>
+<li>ValidatableModelBase =&gt; adds validation</li>
+<li>ChildAwareModelBase =&gt; contains the child event subscriptions logic (which is very costly)</li>
+<li>SavableModelBase =&gt; adds <code>Save</code> and <code>Load</code> methods </li>
+<li>ComparableModelBase =&gt; contains the equality comparer members. This means the <code>ModelBase</code> itself does no longer support equality checks based on the property values</li>
+</ul>
+<h2 id="catel.mvvm">Catel.MVVM<a class="headerlink" href="#catel.mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="xaml-namespace-changes">XAML namespace changes<a class="headerlink" href="#xaml-namespace-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The xaml namespace has changed from <code>http://catel.codeplex.com</code> to <code>http://schemas.catelproject.com</code></p>
+<h3 id="countcollapsedconverter">CountCollapsedConverter<a class="headerlink" href="#countcollapsedconverter" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>CountCollapsedConverter</code> has been removed. Use <code>CollectionToVisibilityConverter</code> instead.</p>
+<h3 id="effectshelper">EffectsHelper<a class="headerlink" href="#effectshelper" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>EffectsHelper</code> has been removed. No replacement is available.</p>
+<h3 id="viewmodelbase">ViewModelBase<a class="headerlink" href="#viewmodelbase" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <code>ViewModelBase</code> has been simplified. It now derives from <code>ValidatingModelBase</code> (so still supports validation). The following features / members have been removed:</p>
+<ul>
+<li><code>HasDirtyModels</code> has been removed</li>
+<li>Validation summaries (use the <code>ValidationContext</code> instead)</li>
+</ul>
+<h3 id="visualtargetpresentationsource">VisualTargetPresentationSource<a class="headerlink" href="#visualtargetpresentationsource" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p><code>VisualTargetPresentationSource</code> has been removed. No replacement is available.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/5.0/setup-deployment/update-guides/catel-5.0.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/setup-deployment/update-guides/catel-5-0/index.htm';
+					   this.page.identifier = '../src/5.0/setup-deployment/update-guides/catel-5.0.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

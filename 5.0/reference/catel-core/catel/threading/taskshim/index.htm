@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskShim - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/">API reference</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/">Catel</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/applicationextensions/">ApplicationExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/argument/">Argument</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandler/">AsyncEventHandler</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/asynceventhandlerextensions/">AsyncEventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/bytearrayextensions/">ByteArrayExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/catelenvironment/">CatelEnvironment</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositefilter/">CompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/compositepredicate/">CompositePredicate</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/coremodule/">CoreModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimecodeattribute/">DesignTimeCodeAttribute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimehelper/">DesignTimeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/designtimeinitializer/">DesignTimeInitializer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposable/">Disposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/disposabletoken/">DisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/enum/">Enum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/environmenthelper/">EnvironmentHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/eventhandlerextensions/">EventHandlerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionextensions/">ExceptionExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/exceptionfactory/">ExceptionFactory</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/expressionhelper/">ExpressionHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/fastdatetime/">FastDateTime</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/hashhelper/">HashHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ibindableenum/">IBindableEnum</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icommandmanagerextensions/">ICommandManagerExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/icompositefilter/">ICompositeFilter</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/idisposabletoken/">IDisposableToken</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecute/">IExecute</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iexecutewithobject/">IExecuteWithObject</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/ifluent/">IFluent</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/inotifypropertychangedextensions/">INotifyPropertyChangedExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iuniqueidentifyable/">IUniqueIdentifyable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakaction/">IWeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakeventlistener/">IWeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakfunc/">IWeakFunc</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/iweakreference/">IWeakReference</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/jsonextensions/">JsonExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/knownplatforms/">KnownPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/languagehelper/">LanguageHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mustbeimplementedexception/">MustBeImplementedException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/mvvmmodule/">MVVMModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/notsupportedinplatformexception/">NotSupportedInPlatformException</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecthelper/">ObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/objecttostringhelper/">ObjectToStringHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/parallelhelper/">ParallelHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/platforms/">Platforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/processextensions/">ProcessExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/progresscontext/">ProgressContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/resourcehelper/">ResourceHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/serializationjsonmodule/">SerializationJsonModule</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringextensions/">StringExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/stringtoobjecthelper/">StringToObjectHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/supportedplatforms/">SupportedPlatforms</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/taghelper/">TagHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/themehelper/">ThemeHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threadhelper/">ThreadHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uniqueidentifierhelper/">UniqueIdentifierHelper</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/uriextensions/">UriExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakaction/">WeakAction</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakactionbase/">WeakActionBase</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakeventlistener/">WeakEventListener</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/weakfunc/">WeakFunc</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/android/">Android</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/collections/">Collections</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/componentmodel/">ComponentModel</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/core/">Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/data/">Data</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/exceptionhandling/">ExceptionHandling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/io/">IO</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/ioc/">IoC</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/runtime/">Runtime</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/services/">Services</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/test/">Test</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/catel/text/">Text</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../../reference/catel-core/catel/threading/">Threading</a></span></li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/asynclock/">AsyncLock</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/asyncwaitqueueextensions/">AsyncWaitQueueExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/awaitabledisposable/">AwaitableDisposable</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/defaultasyncwaitqueue/">DefaultAsyncWaitQueue</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/iasyncwaitqueue/">IAsyncWaitQueue</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/readerwriterlockslimextensions/">ReaderWriterLockSlimExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/synchronizationcontext/">SynchronizationContext</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/synchronizationcontextextensions/">SynchronizationContextExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/taskextensions/">TaskExtensions</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/taskhelper/">TaskHelper</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../../reference/catel-core/catel/threading/taskshim/">TaskShim</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#methods">Methods</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#delayint-millisecondsdelay">Delay(int millisecondsDelay)</a></li>
+
+<li class="tocentry"><a href="#delayint-millisecondsdelay-cancellationtoken-cancellationtoken">Delay(int millisecondsDelay, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#delaytimespan-duetime">Delay(TimeSpan dueTime)</a></li>
+
+<li class="tocentry"><a href="#delaytimespan-duetime-cancellationtoken-cancellationtoken">Delay(TimeSpan dueTime, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#fromresulttresult-result">FromResult<TResult>(TResult result)</a></li>
+
+<li class="tocentry"><a href="#runaction-action">Run(Action action)</a></li>
+
+<li class="tocentry"><a href="#runaction-action-cancellationtoken-cancellationtoken">Run(Action action, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#runfunc-function">Run(Func<Task> function)</a></li>
+
+<li class="tocentry"><a href="#runfunc-function-cancellationtoken-cancellationtoken">Run(Func<Task> function, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#runfunctask-function">Run<TResult>(Func&lt;Task<TResult>&gt; function)</a></li>
+
+<li class="tocentry"><a href="#runfunctask-function-cancellationtoken-cancellationtoken">Run<TResult>(Func&lt;Task<TResult>&gt; function, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#runfunc-function-1">Run<TResult>(Func<TResult> function)</a></li>
+
+<li class="tocentry"><a href="#runfunc-function-cancellationtoken-cancellationtoken-1">Run<TResult>(Func<TResult> function, CancellationToken cancellationToken)</a></li>
+
+<li class="tocentry"><a href="#whenallienumerable-tasks">WhenAll(IEnumerable<Task> tasks)</a></li>
+
+<li class="tocentry"><a href="#whenalltask-tasks">WhenAll(Task[] tasks)</a></li>
+
+<li class="tocentry"><a href="#whenallienumerabletask-tasks">WhenAll<TResult>(IEnumerable&lt;Task<TResult>&gt; tasks)</a></li>
+
+<li class="tocentry"><a href="#whenalltask-tasks-1">WhenAll<TResult>(Task<TResult>[] tasks)</a></li>
+
+<li class="tocentry"><a href="#whenanyienumerable-tasks">WhenAny(IEnumerable<Task> tasks)</a></li>
+
+<li class="tocentry"><a href="#whenanytask-tasks">WhenAny(Task[] tasks)</a></li>
+
+<li class="tocentry"><a href="#whenanyienumerabletask-tasks">WhenAny<TResult>(IEnumerable&lt;Task<TResult>&gt; tasks)</a></li>
+
+<li class="tocentry"><a href="#whenanytask-tasks-1">WhenAny<TResult>(Task<TResult>[] tasks)</a></li>
+
+<li class="tocentry"><a href="#yield">Yield()</a></li>
+
+
+</ul>
+</li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/timeout/">Timeout</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/timer/">Timer</a>
+</li>
+<li class="tocentry"><a href="../../../../../reference/catel-core/catel/threading/timercallback/">TimerCallback</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-core/system/">System</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../../reference/catel-serialization-json/">Catel.Serialization.Json</a></span>
+</li>
+
+</ul>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../../home.htm">Home</a></li> / <li><a href="../../../../../reference/index.htm">API reference</a></li> / <li><a href="../../../../../reference/catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../../../reference/catel-core/catel/index.htm">Catel</a></li> / <li><a href="../../../../../reference/catel-core/catel/threading/index.htm">Threading</a></li> / <li><a href="../../../../../reference/catel-core/catel/threading/taskshim/index.htm">TaskShim</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="taskshim">TaskShim<a class="headerlink" href="#taskshim" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<table class="table table-bordered-all table-responsive">
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Assembly</td>
+	<td>Catel.Core</td>
+</tr>
+<tr>
+	<td>Namespace</td>
+	<td>Catel.Threading</td>
+</tr>
+<tr>
+	<td>Available on</td>
+	<td>.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS</td>
+</tr>
+</tbody>
+</table>
+<pre class="nocode">public static class TaskShim
+</pre><p>Task wrapper so it works on all platforms.</p>
+<h4 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>This code originally comes from https://github.com/StephenCleary/AsyncEx/ (MIT license).</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="delayint-millisecondsdelay">Delay(int millisecondsDelay)<a class="headerlink" href="#delayint-millisecondsdelay" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete after a time delay.</p>
+<h4 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>millisecondsDelay</strong>
+The number of milliseconds to wait before completing the returned task</p>
+<h4 id="returns">Returns<a class="headerlink" href="#returns" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the time delay</p>
+<h4 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The millisecondsDelay is less than -1.</p>
+<h3 id="delayint-millisecondsdelay-cancellationtoken-cancellationtoken">Delay(int millisecondsDelay, CancellationToken cancellationToken)<a class="headerlink" href="#delayint-millisecondsdelay-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete after a time delay.</p>
+<h4 id="parameters-1">Parameters<a class="headerlink" href="#parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>millisecondsDelay</strong>
+The number of milliseconds to wait before completing the returned task</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-1">Returns<a class="headerlink" href="#returns-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the time delay</p>
+<h4 id="exceptions-1">Exceptions<a class="headerlink" href="#exceptions-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The millisecondsDelay is less than -1.</p>
+<h3 id="delaytimespan-duetime">Delay(TimeSpan dueTime)<a class="headerlink" href="#delaytimespan-duetime" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a Task that will complete after the specified due time.</p>
+<h4 id="parameters-2">Parameters<a class="headerlink" href="#parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>dueTime</strong>
+The delay before the returned task completes.</p>
+<h4 id="returns-2">Returns<a class="headerlink" href="#returns-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The timed Task.</p>
+<h4 id="exceptions-2">Exceptions<a class="headerlink" href="#exceptions-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The dueTime argument must be non-negative or -1 and less than or equal to Int32.MaxValue.</p>
+<h3 id="delaytimespan-duetime-cancellationtoken-cancellationtoken">Delay(TimeSpan dueTime, CancellationToken cancellationToken)<a class="headerlink" href="#delaytimespan-duetime-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Starts a Task that will complete after the specified due time.</p>
+<h4 id="parameters-3">Parameters<a class="headerlink" href="#parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>dueTime</strong>
+The delay before the returned task completes.</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-3">Returns<a class="headerlink" href="#returns-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The timed Task.</p>
+<h4 id="exceptions-3">Exceptions<a class="headerlink" href="#exceptions-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentOutOfRangeException</strong>
+The dueTime argument must be non-negative or -1 and less than or equal to Int32.MaxValue.</p>
+<h3 id="fromresulttresult-result">FromResult<TResult>(TResult result)<a class="headerlink" href="#fromresulttresult-result" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a <a href="#">Task</a> that's completed successfully with the specified result.</p>
+<h4 id="type-parameters">Type Parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the result returned by the task.</p>
+<h4 id="parameters-4">Parameters<a class="headerlink" href="#parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>result</strong>
+The result to store into the completed task.</p>
+<h4 id="returns-4">Returns<a class="headerlink" href="#returns-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>The successfully completed task.</p>
+<h3 id="runaction-action">Run(Action action)<a class="headerlink" href="#runaction-action" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a task handle for that work.</p>
+<h4 id="parameters-5">Parameters<a class="headerlink" href="#parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The work to execute asynchronously.</p>
+<h4 id="returns-5">Returns<a class="headerlink" href="#returns-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the work queued to execute in the ThreadPool.</p>
+<h4 id="exceptions-4">Exceptions<a class="headerlink" href="#exceptions-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action parameter was null.</p>
+<h3 id="runaction-action-cancellationtoken-cancellationtoken">Run(Action action, CancellationToken cancellationToken)<a class="headerlink" href="#runaction-action-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a task handle for that work.</p>
+<h4 id="parameters-6">Parameters<a class="headerlink" href="#parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>action</strong>
+The work to execute asynchronously.</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-6">Returns<a class="headerlink" href="#returns-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the work queued to execute in the ThreadPool.</p>
+<h4 id="exceptions-5">Exceptions<a class="headerlink" href="#exceptions-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The action parameter was null.</p>
+<h3 id="runfunc-function">Run(Func<Task> function)<a class="headerlink" href="#runfunc-function" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.</p>
+<h4 id="parameters-7">Parameters<a class="headerlink" href="#parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously.</p>
+<h4 id="returns-7">Returns<a class="headerlink" href="#returns-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents a proxy for the task returned by function.</p>
+<h4 id="exceptions-6">Exceptions<a class="headerlink" href="#exceptions-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="runfunc-function-cancellationtoken-cancellationtoken">Run(Func<Task> function, CancellationToken cancellationToken)<a class="headerlink" href="#runfunc-function-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the task returned by function.</p>
+<h4 id="parameters-8">Parameters<a class="headerlink" href="#parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously.</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-8">Returns<a class="headerlink" href="#returns-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents a proxy for the task returned by function.</p>
+<h4 id="exceptions-7">Exceptions<a class="headerlink" href="#exceptions-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="runfunctask-function">Run<TResult>(Func&lt;Task<TResult>&gt; function)<a class="headerlink" href="#runfunctask-function" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.</p>
+<h4 id="type-parameters-1">Type Parameters<a class="headerlink" href="#type-parameters-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the result returned by the proxy task.</p>
+<h4 id="parameters-9">Parameters<a class="headerlink" href="#parameters-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously</p>
+<h4 id="returns-9">Returns<a class="headerlink" href="#returns-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A Task(TResult) that represents a proxy for the Task(TResult) returned by function.</p>
+<h4 id="exceptions-8">Exceptions<a class="headerlink" href="#exceptions-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="runfunctask-function-cancellationtoken-cancellationtoken">Run<TResult>(Func&lt;Task<TResult>&gt; function, CancellationToken cancellationToken)<a class="headerlink" href="#runfunctask-function-cancellationtoken-cancellationtoken" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a proxy for the Task(TResult) returned by function.</p>
+<h4 id="type-parameters-2">Type Parameters<a class="headerlink" href="#type-parameters-2" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the result returned by the proxy task.</p>
+<h4 id="parameters-10">Parameters<a class="headerlink" href="#parameters-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-10">Returns<a class="headerlink" href="#returns-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A Task(TResult) that represents a proxy for the Task(TResult) returned by function.</p>
+<h4 id="exceptions-9">Exceptions<a class="headerlink" href="#exceptions-9" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="runfunc-function-1">Run<TResult>(Func<TResult> function)<a class="headerlink" href="#runfunc-function-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a Task(TResult) handle for that work.</p>
+<h4 id="type-parameters-3">Type Parameters<a class="headerlink" href="#type-parameters-3" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type of the task.</p>
+<h4 id="parameters-11">Parameters<a class="headerlink" href="#parameters-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously.</p>
+<h4 id="returns-11">Returns<a class="headerlink" href="#returns-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A Task(TResult) that represents the work queued to execute in the ThreadPool.</p>
+<h4 id="exceptions-10">Exceptions<a class="headerlink" href="#exceptions-10" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="runfunc-function-cancellationtoken-cancellationtoken-1">Run<TResult>(Func<TResult> function, CancellationToken cancellationToken)<a class="headerlink" href="#runfunc-function-cancellationtoken-cancellationtoken-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Queues the specified work to run on the ThreadPool and returns a Task(TResult) handle for that work.</p>
+<h4 id="type-parameters-4">Type Parameters<a class="headerlink" href="#type-parameters-4" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The result type of the task.</p>
+<h4 id="parameters-12">Parameters<a class="headerlink" href="#parameters-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>function</strong>
+The work to execute asynchronously.</p>
+<p><strong>cancellationToken</strong>
+The cancellation token.</p>
+<h4 id="returns-12">Returns<a class="headerlink" href="#returns-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A Task(TResult) that represents the work queued to execute in the ThreadPool.</p>
+<h4 id="exceptions-11">Exceptions<a class="headerlink" href="#exceptions-11" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The function parameter was null.</p>
+<h3 id="whenallienumerable-tasks">WhenAll(IEnumerable<Task> tasks)<a class="headerlink" href="#whenallienumerable-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when all of the supplied tasks have completed.</p>
+<h4 id="parameters-13">Parameters<a class="headerlink" href="#parameters-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-13">Returns<a class="headerlink" href="#returns-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of all of the supplied tasks.</p>
+<h4 id="exceptions-12">Exceptions<a class="headerlink" href="#exceptions-12" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks collection contained a null task.</p>
+<h3 id="whenalltask-tasks">WhenAll(Task[] tasks)<a class="headerlink" href="#whenalltask-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when all of the supplied tasks have completed.</p>
+<h4 id="parameters-14">Parameters<a class="headerlink" href="#parameters-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-14">Returns<a class="headerlink" href="#returns-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of all of the supplied tasks.</p>
+<h4 id="exceptions-13">Exceptions<a class="headerlink" href="#exceptions-13" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task.</p>
+<h3 id="whenallienumerabletask-tasks">WhenAll<TResult>(IEnumerable&lt;Task<TResult>&gt; tasks)<a class="headerlink" href="#whenallienumerabletask-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when all of the supplied tasks have completed.</p>
+<h4 id="type-parameters-5">Type Parameters<a class="headerlink" href="#type-parameters-5" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the completed task.</p>
+<h4 id="parameters-15">Parameters<a class="headerlink" href="#parameters-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-15">Returns<a class="headerlink" href="#returns-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of all of the supplied tasks.</p>
+<h4 id="exceptions-14">Exceptions<a class="headerlink" href="#exceptions-14" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks collection contained a null task.</p>
+<h3 id="whenalltask-tasks-1">WhenAll<TResult>(Task<TResult>[] tasks)<a class="headerlink" href="#whenalltask-tasks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when all of the supplied tasks have completed.</p>
+<h4 id="type-parameters-6">Type Parameters<a class="headerlink" href="#type-parameters-6" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the completed task.</p>
+<h4 id="parameters-16">Parameters<a class="headerlink" href="#parameters-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-16">Returns<a class="headerlink" href="#returns-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of all of the supplied tasks.</p>
+<h4 id="exceptions-15">Exceptions<a class="headerlink" href="#exceptions-15" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task.</p>
+<h3 id="whenanyienumerable-tasks">WhenAny(IEnumerable<Task> tasks)<a class="headerlink" href="#whenanyienumerable-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when any of the supplied tasks have completed.</p>
+<h4 id="parameters-17">Parameters<a class="headerlink" href="#parameters-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-17">Returns<a class="headerlink" href="#returns-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
+<h4 id="exceptions-16">Exceptions<a class="headerlink" href="#exceptions-16" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task, or was empty.</p>
+<h3 id="whenanytask-tasks">WhenAny(Task[] tasks)<a class="headerlink" href="#whenanytask-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when any of the supplied tasks have completed.</p>
+<h4 id="parameters-18">Parameters<a class="headerlink" href="#parameters-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-18">Returns<a class="headerlink" href="#returns-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
+<h4 id="exceptions-17">Exceptions<a class="headerlink" href="#exceptions-17" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task, or was empty.</p>
+<h3 id="whenanyienumerabletask-tasks">WhenAny<TResult>(IEnumerable&lt;Task<TResult>&gt; tasks)<a class="headerlink" href="#whenanyienumerabletask-tasks" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when any of the supplied tasks have completed.</p>
+<h4 id="type-parameters-7">Type Parameters<a class="headerlink" href="#type-parameters-7" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the completed task.</p>
+<h4 id="parameters-19">Parameters<a class="headerlink" href="#parameters-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-19">Returns<a class="headerlink" href="#returns-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
+<h4 id="exceptions-18">Exceptions<a class="headerlink" href="#exceptions-18" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task, or was empty.</p>
+<h3 id="whenanytask-tasks-1">WhenAny<TResult>(Task<TResult>[] tasks)<a class="headerlink" href="#whenanytask-tasks-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates a task that will complete when any of the supplied tasks have completed.</p>
+<h4 id="type-parameters-8">Type Parameters<a class="headerlink" href="#type-parameters-8" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>TResult</strong>
+The type of the completed task.</p>
+<h4 id="parameters-20">Parameters<a class="headerlink" href="#parameters-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>tasks</strong>
+The tasks to wait on for completion.</p>
+<h4 id="returns-20">Returns<a class="headerlink" href="#returns-20" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A task that represents the completion of one of the supplied tasks. The return task's Result is the task that completed.</p>
+<h4 id="exceptions-19">Exceptions<a class="headerlink" href="#exceptions-19" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p><strong>T:System.ArgumentNullException</strong>
+The tasks argument was null.</p>
+<p><strong>T:System.ArgumentException</strong>
+The tasks array contained a null task, or was empty.</p>
+<h3 id="yield">Yield()<a class="headerlink" href="#yield" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>Creates an awaitable task that asynchronously yields back to the current context when awaited.</p>
+<h4 id="returns-21">Returns<a class="headerlink" href="#returns-21" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<p>A context that, when awaited, will asynchronously transition back into the current context at the time of the await. If the current <a href="#">SynchronizationContext</a> is non-null, it is treated as the current context. Otherwise, the task scheduler that is associated with the currently executing task is treated as the current context.</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/5.0/reference/Catel.Core/Catel/Threading/TaskShim.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/reference/catel-core/catel/threading/taskshim/index.htm';
+					   this.page.identifier = '../src/5.0/reference/Catel.Core/Catel/Threading/TaskShim.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../../js/highlight.pack.js"></script>
+    <script src="../../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to services - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../introduction/">Introduction</a></span></li>
+<li class="tocentry"><a href="../../../introduction/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../introduction/why-catel/">Why Catel?</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/platform-support/">Platform support</a></span>
+</li>
+<li class="tocentry"><a href="../../../introduction/introduction-data-objects/">Introduction to data objects</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../introduction/mvvm/">Introduction to MVVM</a></span></li>
+<li class="tocentry"><a href="../../../introduction/mvvm/different-interpretations-of-mvvm/">Different interpretations of MVVM</a>
+</li>
+<li class="tocentry"><a href="../../../introduction/mvvm/validation-in-model-or-view-model/">Validation in model or view model?</a>
+</li>
+<li class="tocentry"><a href="../../../introduction/mvvm/introduction-to-mvvm-and-models/">Introduction to MVVM and models</a>
+</li>
+<li class="tocentry"><a href="../../../introduction/mvvm/creating-view-models-with-catel/">Creating view models with Catel</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../introduction/mvvm/introduction-to-services/">Introduction to services</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#servicelocator">ServiceLocator</a></li>
+
+<li class="tocentry"><a href="#dependency-injection">Dependency injection</a></li>
+
+<li class="tocentry"><a href="#overview-of-services">Overview of services</a></li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../introduction/mvvm/introduction-to-nested-user-controls-problem/">Introduction to the nested user controls problem</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../home.htm">Home</a></li> / <li><a href="../../../introduction/index.htm">Introduction</a></li> / <li><a href="../../../introduction/mvvm/index.htm">Introduction to MVVM</a></li> / <li><a href="../../../introduction/mvvm/introduction-to-services/index.htm">Introduction to services</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="introduction-to-services">Introduction to services<a class="headerlink" href="#introduction-to-services" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Services are very important in MVVM. They define a way to interact with the user without using fixed controls such as <em>MessageBox</em> or <em>SaveFileDialog</em>. The interfaces defined in Catel only define generic functionality of what to expect from a specific service. Using services is a great way to abstract away all specific functionality from a view model into a service that can be mocked during unit testing and can be used by other view models as well.</p>
+<h2 id="servicelocator">ServiceLocator<a class="headerlink" href="#servicelocator" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The key behind services is the <em>ServiceLocator</em>. The <em>ServiceLocator</em> is the IoC (Inversion of Control) container that Catel provides. This is a container that contains all registrations and service instances available throughout the application. Retrieving services from the default <em>ServiceLocator</em> in Catel is very simple:</p>
+<pre class="nocode">var dependencyResolver = this.GetDependencyResolver();
+var messageService = dependencyResolver.Resolve&lt;IMessageService&gt;();
+</pre><p>It is also possible to get services injected into the constructor, which is the recommended approach</p>
+<h2 id="dependency-injection">Dependency injection<a class="headerlink" href="#dependency-injection" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>A slightly better way to manage dependencies is to use dependency injection. The reason is that to instantiate a class, you always have to provide all the dependencies. This way, all dependencies are always known to the caller making it a bit complicated and encouraging high coupling. Using dependency injection however makes it a bit easier to control than having to <em>know</em> what services are being used by a component (such as a view model).</p>
+<p>Catel fully supports dependency on view models. This means that a view model can have a constructor with several services. Catel will automatically inject the services via the constructor. An example is below:</p>
+<pre class="nocode">public class PersonViewModel : ViewModelBase
+{ 
+    private readonly IMessageService _messageService;
+    private readonly IPleaseWaitService _pleaseWaitService;
+
+    public PersonViewModel(IMessageService messageService, IPleaseWaitService pleaseWaitService)
+    {
+        _messageService = messageService;
+        _pleaseWaitService = pleaseWaitService;
+    }
+}
+</pre><h2 id="overview-of-services">Overview of services<a class="headerlink" href="#overview-of-services" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The services below are available in Catel:</p>
+<p>Name</p>
+<p>Description</p>
+<p>IAccelerometerService</p>
+<p>Allows a developer to access the accelerometer of a Windows Phone device.</p>
+<p>ICameraService</p>
+<p>Allows a developer to use the PhotoCamera class in an MVVM manner.</p>
+<p>ICompassService</p>
+<p>Allows a developer to access the compass of a Windows Phone device.</p>
+<p>IGyroscopeService</p>
+<p>Allows a developer to access the compass of a Windows Phone device.</p>
+<p>ILocationService</p>
+<p>Allows a developer to use GPS devices inside a view model.</p>
+<p>IMessageService</p>
+<p>Allows a developer to show message boxes from a view model.</p>
+<p>INavigationService</p>
+<p>Allows a developer to navigate to other pages inside an application using view models only.</p>
+<p>IOpenFileService</p>
+<p>Allows a developer to let the user choose a file from inside a view model.</p>
+<p>IPleaseWaitService</p>
+<p>Allows a developer to show a please wait message (a.k.a. busy indicator) from a view model.</p>
+<p>IProcessService</p>
+<p>Allows a developer to run processes from inside a view model.</p>
+<p>ISaveFileService</p>
+<p>Allows a developer to let the user choose a file from inside a view model.</p>
+<p>IUIVisualizerService</p>
+<p>Allows a developer to show (modal) windows or dialogs without actually referencing a specific view.</p>
+<p>IVibrateService</p>
+<p>Allows a developer to start and stop vibration of the device via a service.</p>
+<p>Note that this section is not always fully up-to-date, Catel might provide more services than listed here</p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/5.0/introduction/mvvm/introduction-to-services.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   this.page.url = 'http://docs.catelproject.com/introduction/mvvm/introduction-to-services/index.htm';
+					   this.page.identifier = '../src/5.0/introduction/mvvm/introduction-to-services.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+
+# ConfigurationService
+
+Name|Value
+---|---
+Assembly|Catel.Core
+Namespace|Catel.Configuration
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+
+```
+public class ConfigurationService : IConfigurationService
+```
+
+**Base types**
+
+[IConfigurationService](/Catel.Core\Catel\Configuration\IConfigurationService.md)
+
+
+Configuration service implementation that allows customization how configuration values are being used inside an application. This default implementation writes to the
+
+
+
+## Fields
+
+## Constructors
+
+### ConfigurationService(ISerializationManager serializationManager, IObjectConverterService objectConverterService, ISerializer serializer)
+
+Initializes a new instance of the [ConfigurationService](#) class.
+
+#### Parameters
+
+**serializationManager**
+The serialization manager.
+
+**objectConverterService**
+The object converter service.
+
+**serializer**
+The serializer.
+
+
+
+### ConfigurationService(ISerializationManager serializationManager, IObjectConverterService objectConverterService, IXmlSerializer serializer)
+
+Initializes a new instance of the [ConfigurationService](#) class.
+
+#### Parameters
+
+**serializationManager**
+The serialization manager.
+
+**objectConverterService**
+The object converter service.
+
+**serializer**
+The serializer.
+
+
+
+## Events
+
+### ConfigurationChanged
+
+Occurs when the configuration has changed.
+
+
+
+## Methods
+
+### GetValue<T>(ConfigurationContainer container, string key, T defaultValue)
+
+Gets the configuration value.
+
+#### Type Parameters
+
+**T**
+The type of the value to retrieve.
+
+#### Parameters
+
+**container**
+The container.
+
+**key**
+The key.
+
+**defaultValue**
+The default value. Will be returned if the value cannot be found.
+
+#### Returns
+
+The configuration value.
+
+#### Exceptions
+
+**T:System.ArgumentException**
+The key is`null` or whitespace.
+
+
+
+### InitializeValue(ConfigurationContainer container, string key, object defaultValue)
+
+Initializes the value by setting the value to the defaultValue if the value does not yet exist.
+
+#### Parameters
+
+**container**
+The container.
+
+**key**
+The key.
+
+**defaultValue**
+The default value.
+
+#### Exceptions
+
+**T:System.ArgumentException**
+The key is`null` or whitespace.
+
+
+
+### IsValueAvailable(ConfigurationContainer container, string key)
+
+Determines whether the specified value is available.
+
+#### Parameters
+
+**container**
+The container.
+
+**key**
+The key.
+
+#### Returns
+
+`true` if the specified value is available; otherwise,`false`.
+
+#### Exceptions
+
+**T:System.ArgumentException**
+The key is`null` or whitespace.
+
+
+
+### SetValue(ConfigurationContainer container, string key, object value)
+
+Sets the configuration value.
+
+#### Parameters
+
+**container**
+The container.
+
+**key**
+The key.
+
+**value**
+The value.
+
+#### Exceptions
+
+**T:System.ArgumentException**
+The key is`null` or whitespace.
+
+
+
+### SuspendNotifications()
+
+Suspends the notifications of this service until the returned object is disposed.
+
+#### Returns
+
+IDisposable.
+
+
+
