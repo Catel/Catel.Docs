@@ -118,7 +118,8 @@
 					   <div id="disqus_thread"></div>
 					   <script>
 					   var disqus_config = function () {
-					   this.page.url = 'http://docs.catelproject.com/docnet-search-htm';
+					   // Always use vNext so comments stay visible
+					   this.page.url = 'http://docs.catelproject.com/vnext/docnet-search-htm';
 					   this.page.identifier = '../src/5.0/Docnet_search.htm';
 					   };
 					   (function() { // DON'T EDIT BELOW THIS LINE
