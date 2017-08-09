@@ -113,7 +113,7 @@
                 </div>
                 <div role="main">
                     <div class="section">
-<h1 id="getting-prerelease-beta-versions-via-nuget">Getting prerelease (beta) versions via NuGet<a class="headerlink" href="#getting-prerelease-beta-versions-via-nuget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<h1 id="getting-prerelease-beta-versions-via-nuget--myget">Getting prerelease (beta) versions via NuGet &amp; MyGet<a class="headerlink" href="#getting-prerelease-beta-versions-via-nuget--myget" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
 <h2 id="adding-the-custom-package-source">Adding the custom package source<a class="headerlink" href="#adding-the-custom-package-source" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>Starting with Catel v5, the alpha prereleases are only available on the <a href="https://www.myget.org/feed/Packages/catel" target="_blank">MyGet feed for Catel</a>. Therefore you must first add the custom url to the NuGet Package Manager. The easiest way to do this is via Visual Studio.</p>
 </div><ol>
@@ -129,17 +129,17 @@ Source: <a href="https://www.myget.org/F/catel/api/v3/index.json" target="_blank
 <p>Please make sure to select the same settings as in the screenshow below:</p>
 <p><img src="../../images/setup-deployment/getting-prerelease-versions-via-nuget/nuget.png" width="900" height="600" /></p>
 <h2 id="installing-viapackage-manager-console">Installing via package manager console<a class="headerlink" href="#installing-viapackage-manager-console" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
-<p>This example installs Catel.Extensions.Controls as a package. However, to install other packages simple change the ID (name) of the package.</p>
+<p>This example installs Catel.MVVM as a package. However, to install other packages simple change the ID (name) of the package.</p>
 <p><strong>Installing the latest beta</strong></p>
-<pre class="nocode">Install-Package Catel.Extensions.Controls –IncludePrerelease
+<pre class="nocode">Install-Package Catel.MVVM –IncludePrerelease
 </pre><p><strong>Installing a specific beta</strong></p>
-<pre class="nocode">Install-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
+<pre class="nocode">Install-Package Catel.MVVM –IncludePrerelease -version 5.0.0-unstable0532
 </pre><p><strong>Updating to the latest beta</strong></p>
-<pre class="nocode">Update-Package Catel.Extensions.Controls –IncludePrerelease
+<pre class="nocode">Update-Package Catel.MVVM –IncludePrerelease
 </pre><p><strong>Updating to a specific beta</strong></p>
-<pre class="nocode">Update-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
+<pre class="nocode">Update-Package Catel.MVVM –IncludePrerelease -version 5.0.0-unstable0532
 </pre><p><strong>Updating to the latest stable version</strong></p>
-<pre class="nocode">Update-Package Catel.Extensions.Controls
+<pre class="nocode">Update-Package Catel.MVVM
 </pre>
                     </div>
                 </div>

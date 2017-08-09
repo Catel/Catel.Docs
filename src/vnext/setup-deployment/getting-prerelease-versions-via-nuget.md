@@ -1,4 +1,4 @@
-# Getting prerelease (beta) versions via NuGet
+# Getting prerelease (beta) versions via NuGet & MyGet
 
 ## Adding the custom package source
 
@@ -20,34 +20,34 @@ Please make sure to select the same settings as in the screenshow below:
 
 ## Installing via package manager console
 
-This example installs Catel.Extensions.Controls as a package. However, to install other packages simple change the ID (name) of the package.
+This example installs Catel.MVVM as a package. However, to install other packages simple change the ID (name) of the package.
 
 **Installing the latest beta**
 
 ```
-Install-Package Catel.Extensions.Controls –IncludePrerelease
+Install-Package Catel.MVVM –IncludePrerelease
 ```
 
 **Installing a specific beta**
 
 ```
-Install-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
+Install-Package Catel.MVVM –IncludePrerelease -version 5.0.0-unstable0532
 ```
 
 **Updating to the latest beta**
 
 ```
-Update-Package Catel.Extensions.Controls –IncludePrerelease
+Update-Package Catel.MVVM –IncludePrerelease
 ```
 
 **Updating to a specific beta**
 
 ```
-Update-Package Catel.Extensions.Controls –IncludePrerelease -version 4.0.0-unstable0532
+Update-Package Catel.MVVM –IncludePrerelease -version 5.0.0-unstable0532
 ```
 
 **Updating to the latest stable version**
 
 ```
-Update-Package Catel.Extensions.Controls
+Update-Package Catel.MVVM
 ```
