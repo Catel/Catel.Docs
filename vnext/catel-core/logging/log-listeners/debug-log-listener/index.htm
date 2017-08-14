@@ -184,6 +184,21 @@
 <pre class="nocode">#if DEBUG
 LogManager.AddDebugListener();
 #endif
+</pre><div class="alert alert-warning"><span class="alert-title"><i class="fa fa-warning"></i> Important!</span><p>For some platforms (like UWP), Catel uses <code>Debug.WriteLine</code> which gets removed in a release build. For such platforms, it is recommended to create a customer log listener as shown below.</p>
+</div><pre class="nocode">public class DebugLogListener : LogListenerBase
+{
+    protected override void Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)
+    {
+        if (log.IsCatelLogging &amp;&amp; IgnoreCatelLogging)
+        {
+            return;
+        }
+
+        var consoleMessage = FormatLogEvent(log, message, logEvent, extraData, logData, time);
+
+        System.Diagnostics.Debug.WriteLine(consoleMessage);
+    }
+}
 </pre>
                     </div>
                 </div>

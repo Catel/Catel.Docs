@@ -441,7 +441,7 @@
     {
       "location": "catel-core/logging/log-listeners/debug-log-listener/index.htm",
       "breadcrumbs": "Home / Catel.Core / Logging / Log Listeners / DebugLogListener",
-      "keywords": "AddDebugListener application best by Catel DEBUG debugging DebugLogListener development during endif even from generated if in insight is it It LogManager messages of output shows Studio the The there this To tool use Visual window you your",
+      "keywords": "a AddDebugListener alert application as below best build by Catel class consoleMessage create customer DateTime Debug DEBUG debugging DebugLogListener development Diagnostics during end endif even extraData For FormatLogEvent from generated gets if IgnoreCatelLogging ILog important in insight is IsCatelLogging it It like listener log logData LogData logEvent LogEvent LogListenerBase LogManager message messages object of output override platforms protected public recommended release removed return shown shows some string Studio such System the The there this time to To tool use uses UWP var Visual void which window Write WriteLine you your",
       "title": "DebugLogListener"
     },
     {

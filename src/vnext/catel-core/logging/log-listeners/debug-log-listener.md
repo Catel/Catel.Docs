@@ -7,3 +7,24 @@ The *DebugLogListener* is the best debugging tool there is during development. 
 LogManager.AddDebugListener();
 #endif
 ```
+
+@alert important
+For some platforms (like UWP), Catel uses `Debug.WriteLine` which gets removed in a release build. For such platforms, it is recommended to create a customer log listener as shown below.
+@end
+
+```
+public class DebugLogListener : LogListenerBase
+{
+    protected override void Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)
+    {
+        if (log.IsCatelLogging && IgnoreCatelLogging)
+        {
+            return;
+        }
+
+        var consoleMessage = FormatLogEvent(log, message, logEvent, extraData, logData, time);
+
+        System.Diagnostics.Debug.WriteLine(consoleMessage);
+    }
+}
+```
