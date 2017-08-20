@@ -164,7 +164,7 @@ AppDomain.CurrentDomain.PreloadAssemblies(directory);
 <pre class="nocode">var directory = Server.MapPath(&quot;~/bin&quot;);
 AppDomain.Current.PreloadAssemblies(directory);
 </pre><h3 id="warming-up-the-serializers">Warming up the serializers<a class="headerlink" href="#warming-up-the-serializers" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
-<p>To improve performance for serialization, <a href="../catel-core/serialization/introduction.htm">warm up the serializers</a>.</p>
+<p>To improve performance for serialization, <a href="../../catel-core/serialization/introduction/">warm up the serializers</a>.</p>
 <h2 id="mvvm">MVVM<a class="headerlink" href="#mvvm" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
 <h3 id="set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true">Set SkipSearchingForInfoBarMessageControl on UserControl to true<a class="headerlink" href="#set-skipsearchingforinfobarmessagecontrol-on-usercontrol-to-true" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
 <p>By default, Catel assumes that an InfoBarMessageControl is located on any window. However, it might be that this control is not located on a window that contains an instance of the UserControl class. This might decrease the performance, especially when lots of user controls are used in a hierarchical way. The cause is that the UserControlLogic searches for an InfoBarMessageControl to register the view model to.</p>
@@ -194,7 +194,7 @@ Catel.Data.ModelBase.SuspendValidationForAllModels = true;
                     <div role="contentinfo">
 
                       <p>
-					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/../src/vnext/faq/performance-considerations.md" target="_blank">contribute</a>!
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/vnext/faq/performance-considerations.md" target="_blank">contribute</a>!
 					  </p>
 					  <p>
 					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
@@ -207,7 +207,7 @@ Catel.Data.ModelBase.SuspendValidationForAllModels = true;
 					   var disqus_config = function () {
 					   // Always use vNext so comments stay visible
 					   this.page.url = 'http://docs.catelproject.com/vnext/faq/performance-considerations/index.htm';
-					   this.page.identifier = '../src/vnext/faq/performance-considerations.md';
+					   this.page.identifier = 'faq/performance-considerations.md';
 					   };
 					   (function() { // DON'T EDIT BELOW THIS LINE
 					   var d = document, s = d.createElement('script');
