@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catel 4.0 - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span></li>
+<li class="tocentry"><a href="../../../setup-deployment/getting-prerelease-versions-via-nuget/">Getting prerelease versions via NuGet</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/stepping-through-the-code/">Stepping through the code</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/compiling-from-source/">Compiling from source</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/code-snippets-templates/">Code snippets & templates</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../setup-deployment/update-guides/">Update guides</a></span></li>
+<li class="tocentry current"><a class="current" href="../../../setup-deployment/update-guides/catel-4-0/">Catel 4.0</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#renaming-classes">Renaming classes</a></li>
+
+<li class="tocentry"><a href="#renaming-namespaces">Renaming namespaces</a></li>
+
+<li class="tocentry"><a href="#simplied-modelbase-external-interfacing">Simplied ModelBase external interfacing</a></li>
+
+<li class="tocentry"><a href="#renamed-loadtabitemsbehavior">Renamed LoadTabItemsBehavior</a></li>
+
+<li class="tocentry"><a href="#add-additional-members-to-custom-iview-implementations">Add additional members to custom IView implementations</a></li>
+
+<li class="tocentry"><a href="#using-fastviewpropertyselector-by-default-for-major-performance-improvement">Using FastViewPropertySelector by default for major performance improvement</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#manually-add-interesting-properties-recommended">Manually add interesting properties (recommended)</a></li>
+
+<li class="tocentry"><a href="#register-the-viewpropertyselector">Register the ViewPropertySelector</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#full-support-for-asynchronous-asyncawait">Full support for asynchronous (async/await)</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#iviewmodel">IViewModel</a></li>
+
+<li class="tocentry"><a href="#imessageservice">IMessageService</a></li>
+
+<li class="tocentry"><a href="#iuivisualizerservice">IUIVisualizerService</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#optimizing-views-especially-3rd-party">Optimizing views (especially 3rd party)</a></li>
+
+<li class="tocentry"><a href="#removed-iservicelocator.removeinstance-methods">Removed IServiceLocator.RemoveInstance methods</a></li>
+
+<li class="tocentry"><a href="#changed-compositecommand">Changed CompositeCommand</a></li>
+
+<li class="tocentry"><a href="#added-time-to-all-log-calls">Added time to all log calls</a></li>
+
+<li class="tocentry"><a href="#behavior-changes">Behavior changes</a></li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../setup-deployment/update-guides/catel-4-1/">Catel 4.1</a>
+</li>
+<li class="tocentry"><a href="../../../setup-deployment/update-guides/catel-5-0/">Catel 5.0</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../home.htm">Home</a></li> / <li><a href="../../../setup-deployment/index.htm">Setup, deployment & projects</a></li> / <li><a href="../../../setup-deployment/update-guides/index.htm">Update guides</a></li> / <li><a href="../../../setup-deployment/update-guides/catel-4-0/index.htm">Catel 4.0</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="catel-4.0.0">Catel 4.0.0<a class="headerlink" href="#catel-4.0.0" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>This guide describes how to update your code to be fully compatible with Catel 4.0.</p>
+<h2 id="renaming-classes">Renaming classes<a class="headerlink" href="#renaming-classes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Some classes in Catel have been renamed.</p>
+<ul>
+<li>Catel.Environment =&gt; CatelEnvironment</li>
+<li>IDependencyPropertySelector =&gt; IViewPropertySelector</li>
+</ul>
+<h2 id="renaming-namespaces">Renaming namespaces<a class="headerlink" href="#renaming-namespaces" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Some namespaces in Catel have been changed to match the functionality. For example, all services are now in <em>Catel.Service</em> instead of <em>Catel.MVVM.Services</em> because they can be used without MVVM.</p>
+<p>Below is a list of changed namespaces:</p>
+<ul>
+<li>Catel.MVVM.Services =&gt; Catel.Services</li>
+<li>
+<p>Catel.Windows.Data.Converters =&gt; Catel.MVVM.Converters</p>
+</li>
+<li>
+<p>Catel.Windows.Controls.MVVMProviders.Logic =&gt; Catel.MVVM.Providers</p>
+</li>
+</ul>
+<p>Some interfaces were moved (but not all classes in the namespace):</p>
+<ul>
+<li>Catel.Windows =&gt; Catel.MVVM.Views</li>
+</ul>
+<h2 id="simplied-modelbase-external-interfacing">Simplied ModelBase external interfacing<a class="headerlink" href="#simplied-modelbase-external-interfacing" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <em>ModelBase</em> class exposed a lot of properties for validation such as <em>HasErrors, HasFieldErrors, HasBusinessRuleErrors</em>, etc. These all these properties are now explicitly implemented into interfaces to make models using <em>ModelBase</em> cleaner to use for end-developers. Below is a list of properties that are now implemented as explicit interface implementations:</p>
+<p>Member name</p>
+<p>Explicit interface implementation</p>
+<p>Member type</p>
+<p>BusinessRuleErrorCount</p>
+<p>IModelValidation.BusinessRuleErrorCount</p>
+<p>property</p>
+<p>BusinessRuleWarningCount</p>
+<p>IModelValidation.BusinessRuleWarningCount</p>
+<p>property</p>
+<p>Deserialized</p>
+<p>IModelSerialization.Deserialized</p>
+<p>event</p>
+<p>ErrorsChanged</p>
+<p>INotifyDataErrorInfo.ErrorsChanged</p>
+<p>event</p>
+<p>FieldErrorCount</p>
+<p>IModelValidation.FieldErrorCount</p>
+<p>property</p>
+<p>FieldWarningCount</p>
+<p>IModelValidation.FieldWarningCount</p>
+<p>property</p>
+<p>HasErrors</p>
+<p>INotifyDataErrorInfo.HasErrors</p>
+<p>property</p>
+<p>HasWarnings</p>
+<p>INotifyDataWarningInfo.HasWarnings</p>
+<p>property</p>
+<p>ValidationContext</p>
+<p>IModelValidation.ValidationContext</p>
+<p>property</p>
+<p>Validator</p>
+<p>IModelValidation.Validator</p>
+<p>property</p>
+<p>WarningsChanged</p>
+<p>INotifyDataWarningInfo.WarningsChanged</p>
+<p>event</p>
+<h2 id="renamed-loadtabitemsbehavior">Renamed LoadTabItemsBehavior<a class="headerlink" href="#renamed-loadtabitemsbehavior" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <em>LoadTabItemsBehavior</em> has been refactored with new names. The old names will be removed in v5, but will error in v4. Below are the renames:</p>
+<ul>
+<li>Single =&gt; LazyLoading</li>
+<li>SingleUnloadOthers =&gt; LazyLoadingUnloadOthers</li>
+<li>AllOnStartup =&gt; EagerLoading </li>
+<li>AllOnFirstUse =&gt; EagerLoadingOnFirstUse </li>
+</ul>
+<h2 id="add-additional-members-to-custom-iview-implementations">Add additional members to custom IView implementations<a class="headerlink" href="#add-additional-members-to-custom-iview-implementations" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To support Xamarin, the <em>IView</em> interface has been extended with new members. Make sure to implement the new members.</p>
+<h2 id="using-fastviewpropertyselector-by-default-for-major-performance-improvement">Using FastViewPropertySelector by default for major performance improvement<a class="headerlink" href="#using-fastviewpropertyselector-by-default-for-major-performance-improvement" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>When not using the <em>ViewToViewModel</em> attributes, it is not required to subscribe to all dependency properties in the <em>UserControlLogic</em>. Starting from Catel 4.0, Catel uses the <em>FastViewPropertySelector</em> by default which subscribes to no properties by default. This is a breaking change for users using the <em>ViewToViewModel</em> attribute.</p>
+<p>To get back the behavior, there are 2 ways:</p>
+<h3 id="manually-add-interesting-properties-recommended">Manually add interesting properties (recommended)<a class="headerlink" href="#manually-add-interesting-properties-recommended" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>It is best to let Catel only subscribe to the properties that it should (for the best performance). To do so, use the <em>IViewPropertySelector.AddPropertyToSubscribe</em> method to add properties:</p>
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
+var viewPropertySelector = serviceLocator.ResolveType&lt;IViewPropertySelector&gt;();
+
+
+viewPropertySelector.AddPropertyToSubscribe(&quot;MyProperty&quot;, typeof(MyView));
+</pre><p>In most cases, the only reason to subscribe to property changes is because of the *ViewToViewModel *attribute. If that is the case, it is best to use the extension method <em>AutoDetectViewPropertiesToSubscribe</em> in the static constructor of the view:</p>
+<pre class="nocode">static MyView()
+{
+    typeof(MyView).AutoDetectViewPropertiesToSubscribe();
+}
+</pre><h3 id="register-the-viewpropertyselector">Register the ViewPropertySelector<a class="headerlink" href="#register-the-viewpropertyselector" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The default implementation of the <em>ViewPropertySelector</em> subscribes to all properties by default. By registering it in the <em>ServiceLocator</em> will ensure Catel subscribes to all dependency properties:</p>
+<pre class="nocode">var serviceLocator = ServiceLocator.Default;
+serviceLocator.RegisterType&lt;IViewPropertySelector, ViewPropertySelector&gt;();
+</pre><h2 id="full-support-for-asynchronous-asyncawait">Full support for asynchronous (async/await)<a class="headerlink" href="#full-support-for-asynchronous-asyncawait" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<h3 id="iviewmodel">IViewModel<a class="headerlink" href="#iviewmodel" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The <em>IViewModel</em> interface now returns tasks instead of direct values to support async/await.</p>
+<h4 id="updating-initialize-method">Updating Initialize method<a class="headerlink" href="#updating-initialize-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<pre class="nocode">public override void Initialize()
+{
+    base.Initialize();
+}
+</pre><p>Must be changed in:</p>
+<pre class="nocode">public override async Task Initialize()
+{
+    await base.Initialize();
+}
+</pre><h4 id="updating-save-method">Updating Save method<a class="headerlink" href="#updating-save-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<pre class="nocode">public override bool Save()
+{
+    return base.Save();
+}
+</pre><p>Must be changed in:</p>
+<pre class="nocode">public override async Task&lt;bool?&gt; Save()
+{
+    return await base.Save();
+}
+</pre><h4 id="updating-close-method">Updating Close method<a class="headerlink" href="#updating-close-method" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h4>
+<pre class="nocode">public override void Close()
+{
+    base.Close();
+}
+</pre><p>Must be changed in:</p>
+<pre class="nocode">public override async Task Close()
+{
+    await base.Close();
+}
+</pre><h3 id="imessageservice">IMessageService<a class="headerlink" href="#imessageservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The use of <em>await</em> or <em>Task.ContinueWith</em> to await the result is now necessary or use the code below:</p>
+<pre class="nocode">if (await messageService.ShowInfo(&quot;message&quot;, other parameters...) == MessageBoxResult.Yes)
+{
+    // Handle yes here
+}
+</pre><h3 id="iuivisualizerservice">IUIVisualizerService<a class="headerlink" href="#iuivisualizerservice" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The use of <em>await</em> or <em>Task.ContinueWith</em> to await the result is now necessary or use the code below:</p>
+<pre class="nocode">await uiVisualizerService.ShowDialog&lt;MyViewModel&gt;();
+ 
+// Window is closed here thanks to the await keyword
+</pre><h2 id="optimizing-views-especially-3rd-party">Optimizing views (especially 3rd party)<a class="headerlink" href="#optimizing-views-especially-3rd-party" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>Catel 4.0 introduces a much simpler way to use Catel on 3rd party controls. This means that the following changes have been applied and might be breaking:</p>
+<ul>
+<li>Removed <em>GetViewModelType</em>() from view base classes. Instead use the <em>IViewModelLocator</em> to ensure Catel can find the view models. Note that it is possible to manually register a custom view with a view model in case the view / view model don't match any naming convention.</li>
+<li>Removed <em>GetViewModelInstance</em>() from view base classes. Customize the <em>IViewModelFactory</em> instead.</li>
+<li>Removed <em>ValidateData</em>, <em>DiscardChanges</em> and <em>ApplyChanges</em> from all views except <em>DataWindow</em></li>
+<li>Merged <em>ViewLoaded</em> and <em>Loaded</em> events on <em>IViewModelContainer</em> and <em>IView</em> interfaces</li>
+<li>Renamed <em>ViewLoading</em> and *ViewUnloading *events on *IViewModelContainer *to <em>Loading</em> and <em>Unloading</em></li>
+<li>Renamed *IViewLoadedManager *to <em>IViewLoadManager</em></li>
+</ul>
+<h2 id="removed-iservicelocator.removeinstance-methods">Removed IServiceLocator.RemoveInstance methods<a class="headerlink" href="#removed-iservicelocator.removeinstance-methods" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <em>IServiceLocator.Remove[x]</em> methods are removed. Use the <em>RemoveType</em> methods instead.</p>
+<h2 id="changed-compositecommand">Changed CompositeCommand<a class="headerlink" href="#changed-compositecommand" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The composite command will always allow execution, even when commands don't allow it. Therefore the *AllowPartialExecution *is now set to *false *by default.</p>
+<p>If there is a requirement to allow partial invocation, set this property to <em>true</em>.</p>
+<h2 id="added-time-to-all-log-calls">Added time to all log calls<a class="headerlink" href="#added-time-to-all-log-calls" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The <em>time</em> parameter has been added to all log calls. This is a breaking change for all classes implementing <em>ILogListener</em>.</p>
+<h2 id="behavior-changes">Behavior changes<a class="headerlink" href="#behavior-changes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>To improve multiple platforms support, all parameters of the following methods on <em>BehaviorBase</em> have been removed:</p>
+<pre class="nocode">OnAssociatedObjectLoaded(object sender, EventArgs e) =&gt; OnAssociatedObjectLoaded()
+ 
+OnAssociatedObjectUnloaded(object sender, EventArgs e) =&gt; OnAssociatedObjectUnloaded()
+</pre><p> </p>
+<p> </p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/vnext/setup-deployment/update-guides/catel-4.0.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   // Always use vNext so comments stay visible
+					   this.page.url = 'http://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4-0/index.htm';
+					   this.page.identifier = 'setup-deployment/update-guides/catel-4.0.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

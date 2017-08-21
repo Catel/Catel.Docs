@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serializing members using ToString / Parse - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../getting-started/">Getting started</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../catel-core/">Catel.Core</a></span></li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/apicop/">ApiCop</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/argument-checking/">Argument checking</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/caching/">Caching</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/configuration/">Configuration</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/data-handling/">Data handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/exception-handling/">Exception handling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/ioc/">IoC (ServiceLocator & TypeFactory)</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/logging/">Logging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/messaging/">Messaging</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/multilingual/">Multilingual</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/parallel-invocation-tasks/">Parallel invocation & tasks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/pooling/">Pooling</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/preventing-memory-leaks/">Preventing memory leaks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/reflection/">Reflection</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/scoping/">Scoping</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../catel-core/serialization/">Serialization</a></span></li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/specifying-what-gets-serialized/">Specifying what gets serialized</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../../catel-core/serialization/customizing-serialization/">Customizing serialization</a></span></li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/customizing-serialization/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/customizing-serialization/customizing-serialization-engines/">Customizing the serialization engines</a>
+</li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/">Customizing the serialization for specific models</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../../catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/">Serializing members using ToString / Parse</a>
+</li>
+<li class="tocentry"><a href="../../../../catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/">Taking full control of serialization</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/serialization/supported-serializers/">Supported serializers</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-core/validation/">Validation</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../../home.htm">Home</a></li> / <li><a href="../../../../catel-core/index.htm">Catel.Core</a></li> / <li><a href="../../../../catel-core/serialization/index.htm">Serialization</a></li> / <li><a href="../../../../catel-core/serialization/customizing-serialization/index.htm">Customizing serialization</a></li> / <li><a href="../../../../catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/index.htm">Serializing members using ToString / Parse</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="serializing-members-using-tostring--parse">Serializing members using ToString / Parse<a class="headerlink" href="#serializing-members-using-tostring--parse" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>Sometimes types (classes or structs) don't implement a proper serialization mechanism. If they support proper <em>ToString(IFormatProvider)</em> and <em>Parse(string, IFormatProvider)</em> methods, there is no need to create a custom <em>SerializerModifier</em> to serialize these types. To let the serializers take care of this automatically, at least one of the following options must be true:</p>
+<ol>
+<li>The member is decorated using the <em>SerializeUsingParseAndToString</em> attribute</li>
+<li>The container class has a <em>SerializerModifier</em> that returns <em>true</em> in the <em>ShouldSerializeMemberUsingParse</em> method</li>
+</ol>
+<div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>Note that decorating a member that does not implement proper <em>ToString(IFormatProvider)</em> and <em>Parse(string, IFormatProvider)</em> methods is useless, the serialization engine will ignore these types</p>
+</div><p>For example, the class below is an excellent usage example of when to use this technique:</p>
+<pre class="nocode">    [Serializable, StructLayout(LayoutKind.Sequential, Pack = 1)]
+    public struct Vector
+    {
+        public double X;
+        public double Y;
+        public double Z;
+
+        public Vector(double x, double y, double z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
+        public string ToString(IFormatProvider formatProvider)
+        {
+            return $&quot;{X.ToString(formatProvider)} {Y.ToString(formatProvider)} {Z.ToString(formatProvider)}&quot;;
+        }
+
+        public static Vector Parse(string value, IFormatProvider formatProvider)
+        {
+            var splitted = value.Split(new[] { &quot; &quot; }, StringSplitOptions.RemoveEmptyEntries);
+            var x = double.Parse(splitted[0], formatProvider);
+            var y = double.Parse(splitted[1], formatProvider);
+            var z = double.Parse(splitted[2], formatProvider);
+
+            var vector = new Vector(x, y, z);
+            return vector;
+        }
+    }
+</pre>
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   // Always use vNext so comments stay visible
+					   this.page.url = 'http://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/index.htm';
+					   this.page.identifier = 'catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../../js/highlight.pack.js"></script>
+    <script src="../../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>

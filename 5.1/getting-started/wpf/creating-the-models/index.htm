@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creating the models - Catel documentation</title>
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/theme_colors.css" type="text/css" />
+    <link rel="stylesheet" href="../../../css/styles/vs.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.4.5.0.min.css">
+</head>
+<body role="document">
+    <div class="grid-for-nav">
+        <nav data-toggle="nav-shift" class="nav-side stickynav">
+            <div class="side-nav-search">
+                <a href="/welcome/index.htm"><i class="fa fa-home"></i> Catel documentation</a>
+                <div role="search">
+                    <form id="search-form" class="form" action="../../../Docnet_search.htm" method="get">
+                        <input type="text" name="q" placeholder="Search docs" />
+                    </form>
+                </div>
+            </div>
+            <div class="menu menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+<ul>
+<li class="tocentry"><a href="../../../home.htm">Home</a>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../introduction/">Introduction</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../faq/">FAQ</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../setup-deployment/">Setup, deployment & projects</a></span>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../getting-started/">Getting started</a></span></li>
+<li class="tocentry"><a href="../../../getting-started/quick-introduction-for-developers/">Quick introduction for developers</a>
+</li>
+<li class="tocentry">
+<ul>
+<li><span class="navigationgroup"><i class="fa fa-caret-down"></i> <a href="../../../getting-started/wpf/">WPF</a></span></li>
+<li class="tocentry"><a href="../../../getting-started/wpf/introduction/">Introduction</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-project/">Creating the project</a>
+</li>
+<li class="tocentry current"><a class="current" href="../../../getting-started/wpf/creating-the-models/">Creating the models</a>
+<ul class="currentrelative">
+<li class="tocentry"><a href="#creating-the-model-classes">Creating the model classes</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#settings-class">Settings class</a></li>
+
+<li class="tocentry"><a href="#family-class">Family class</a></li>
+
+<li class="tocentry"><a href="#person-class">Person class</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#adding-properties-to-the-models">Adding properties to the models</a></li>
+<li class="tocentry">
+<ul class="currentrelative">
+<li class="tocentry"><a href="#settings-class-1">Settings class</a></li>
+
+<li class="tocentry"><a href="#family-class-1">Family class</a></li>
+
+<li class="tocentry"><a href="#person-class-1">Person class</a></li>
+
+
+</ul>
+</li>
+
+<li class="tocentry"><a href="#up-next">Up next</a></li>
+
+
+
+</ul>
+<li class="tocentry"><a href="../../../getting-started/wpf/serializing-data-from-to-disk/">Serializing data from/to disk</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-view-models/">Creating the view models</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-user-controls/">Creating the user controls</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/creating-the-windows/">Creating the windows</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/hooking-up-everything-together/">Hooking up everything together</a>
+</li>
+<li class="tocentry"><a href="../../../getting-started/wpf/finalizing-the-application/">Finalizing the application</a>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../getting-started/xamarin-forms/">Xamarin Forms</a></span>
+</li>
+
+</ul>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../examples/">Examples</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-core/">Catel.Core</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-mvvm/">Catel.MVVM</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-fody/">Catel.Fody</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../catel-resharper/">Catel.ReSharper</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../tips-tricks/">Tips & tricks</a></span>
+</li>
+<li class="tocentry">
+<span class="navigationgroup"><i class="fa fa-caret-right"></i> <a href="../../../reference/">API reference</a></span>
+</li>
+
+</ul>
+				<div class="toc-footer">
+					<span class="text-small">
+						<hr/>
+						<a href="https://github.com/FransBouma/DocNet" target="_blank">Made with <i class="fa fa-github"></i> DocNet</a>
+					</span>
+				</div>	
+			</div>
+            &nbsp;
+        </nav>
+        <section data-toggle="nav-shift" class="nav-content-wrap">
+            <nav class="nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="nav-top" class="fa fa-bars"></i>
+                <a href="../../../index.htm">Catel documentation</a>
+            </nav>
+            <div class="nav-content">
+                <div role="navigation" aria-label="breadcrumbs navigation">
+                    <div class="breadcrumbs">
+<ul><li><a href="../../../home.htm">Home</a></li> / <li><a href="../../../getting-started/index.htm">Getting started</a></li> / <li><a href="../../../getting-started/wpf/index.htm">WPF</a></li> / <li><a href="../../../getting-started/wpf/creating-the-models/index.htm">Creating the models</a></li></ul>
+
+                    </div>
+                    <hr />
+                </div>
+                <div role="main">
+                    <div class="section">
+<h1 id="creating-the-models">Creating the models<a class="headerlink" href="#creating-the-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h1>
+<p>In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: <em>Settings</em>, <em>Family</em> and <em>Person</em>. </p>
+<h2 id="creating-the-model-classes">Creating the model classes<a class="headerlink" href="#creating-the-model-classes" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The models that will be used in this application will derive from the <em>ModelBase</em> or <em>SavableModelBase</em> class of Catel. These classes enable support for change notifications, validations and persistence. The <em>SavableModelBase</em> adds additional methods to save and load from/to streams or files without having to create a serializer first.</p>
+<p>To create the model classes, create the following classes in the <em>Models</em> folder.</p>
+<div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>The <em>model</em> code snippet is available to create models</p>
+</div><h3 id="settings-class">Settings class<a class="headerlink" href="#settings-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<p>The settings class is the top container that will store all families and other settings (which might be added in the future).</p>
+<pre class="nocode">namespace WPF.GettingStarted.Models
+{
+    using Catel.Data;
+
+    public class Settings : SavableModelBase&lt;Settings&gt;
+    {
+    }
+}
+</pre><h3 id="family-class">Family class<a class="headerlink" href="#family-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<pre class="nocode">namespace WPF.GettingStarted.Models
+{
+    using Catel.Data;
+
+    public class Family : ModelBase
+    {
+    }
+}
+</pre><h3 id="person-class">Person class<a class="headerlink" href="#person-class" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<pre class="nocode">namespace WPF.GettingStarted.Models
+{
+    using Catel.Data;
+
+    public class Person : ModelBase
+    {
+    }
+}
+</pre><h2 id="adding-properties-to-the-models">Adding properties to the models<a class="headerlink" href="#adding-properties-to-the-models" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p>The next step is to add properties to the models. An important concept to understand is that Catel uses specific &quot;dependency-a-like&quot; properties in order to provide all the functionality in the <em>ModelBase</em> classes. Below are the properties per model that need to be registered.</p>
+<p>At first sight, these properties might look very overwhelming. Let's take a look at how the property system works. The most important thing is the actual property registration:</p>
+<pre class="nocode">public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Persons&quot;, typeof(ObservableCollection&lt;Person&gt;), () =&gt; new ObservableCollection&lt;Person&gt;());
+</pre><p>This defines a property on the model with the following data:</p>
+<ul>
+<li>Name =&gt; Persons</li>
+<li>Type =&gt; ObservableCollection&lt;Person&gt;</li>
+<li>DefaultValue =&gt; new ObservableCollection&lt;Person&gt;()</li>
+</ul>
+<p>This will create a property in the property bag of the model. The next piece of the property is the actual wrapper around the property value which is managed by the property bag. The Catel properties always need a wrapper to be exposed to the &quot;outside world&quot; of the class.</p>
+<pre class="nocode">public ObservableCollection&lt;Person&gt; Persons
+{
+    get { return GetValue&lt;ObservableCollection&lt;Person&gt;&gt;(PersonsProperty); }
+    set { SetValue(PersonsProperty, value); } 
+}
+</pre><div class="alert alert-info"><span class="alert-title"><i class="fa fa-info-circle"></i> Info</span><p>If you want to get the functionality in the <em>ModelBase</em> classes without the &quot;dependency-a-like&quot; properties you have the option to make use of normal properties and Catel.Fody.</p>
+</div><div class="alert alert-tip"><span class="alert-title"><i class="fa fa-info-circle"></i> Tip</span><p>The <em>modelprop</em> code snippet is available to create models</p>
+</div><h3 id="settings-class-1">Settings class<a class="headerlink" href="#settings-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<pre class="nocode">public class Settings : SavableModelBase&lt;Settings&gt;
+{
+    /// &lt;summary&gt;
+    /// Gets or sets all the families.
+    /// &lt;/summary&gt;
+    public ObservableCollection&lt;Family&gt; Families
+    {
+        get { return GetValue&lt;ObservableCollection&lt;Family&gt;&gt;(FamiliesProperty); }
+        set { SetValue(FamiliesProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the Families property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData FamiliesProperty = RegisterProperty(&quot;Families&quot;, typeof(ObservableCollection&lt;Family&gt;), () =&gt; new ObservableCollection&lt;Family&gt;());
+}
+</pre><h3 id="family-class-1">Family class<a class="headerlink" href="#family-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<pre class="nocode">public class Family : ModelBase
+{
+    /// &lt;summary&gt;
+    /// Gets or sets the family name.
+    /// &lt;/summary&gt;
+    public string FamilyName
+    {
+        get { return GetValue&lt;string&gt;(FamilyNameProperty); }
+        set { SetValue(FamilyNameProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the FamilyName property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData FamilyNameProperty = RegisterProperty(&quot;FamilyName&quot;, typeof(string), null);
+
+    /// &lt;summary&gt;
+    /// Gets or sets the list of persons in this family.
+    /// &lt;/summary&gt;
+    public ObservableCollection&lt;Person&gt; Persons
+    {
+        get { return GetValue&lt;ObservableCollection&lt;Person&gt;&gt;(PersonsProperty); }
+        set { SetValue(PersonsProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the Persons property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData PersonsProperty = RegisterProperty(&quot;Persons&quot;, typeof(ObservableCollection&lt;Person&gt;), () =&gt; new ObservableCollection&lt;Person&gt;());
+ 
+    public override string ToString()
+    {
+        return FamilyName;
+    }
+}
+</pre><h3 id="person-class-1">Person class<a class="headerlink" href="#person-class-1" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h3>
+<pre class="nocode">public class Person : ModelBase
+{
+    /// &lt;summary&gt;
+    /// Gets or sets the first name.
+    /// &lt;/summary&gt;
+    public string FirstName
+    {
+        get { return GetValue&lt;string&gt;(FirstNameProperty); }
+        set { SetValue(FirstNameProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the FirstName property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string), null);
+
+    /// &lt;summary&gt;
+    /// Gets or sets the last name.
+    /// &lt;/summary&gt;
+    public string LastName
+    {
+        get { return GetValue&lt;string&gt;(LastNameProperty); }
+        set { SetValue(LastNameProperty, value); }
+    }
+
+    /// &lt;summary&gt;
+    /// Register the LastName property so it is known in the class.
+    /// &lt;/summary&gt;
+    public static readonly PropertyData LastNameProperty = RegisterProperty(&quot;LastName&quot;, typeof(string), null);
+ 
+    public override string ToString()
+    {
+        string fullName = string.Empty;
+        if (!string.IsNullOrEmpty(FirstName))
+        {
+            fullName += FirstName;
+        }
+        if (!string.IsNullOrEmpty(FirstName) &amp;&amp; !string.IsNullOrWhiteSpace(LastName))
+        {
+            fullName += &quot; &quot;;
+        }
+        if (!string.IsNullOrWhiteSpace(LastName))
+        {
+            fullName += LastName;
+        }
+        return fullName;
+    }
+}
+</pre><h2 id="up-next">Up next<a class="headerlink" href="#up-next" title="Permalink to this headline"><i class="fa fa-link" aria-hidden="true"></i></a></h2>
+<p><a href="./../serializing-data-from-to-disk/">Serializing data from/to disk</a></p>
+
+                    </div>
+                </div>
+                <footer>
+                    <hr />
+                    <div role="contentinfo">
+
+                      <p>
+					    Is this section not up-to-date or found an issue? Please <a href="https://github.com/Catel/Catel.Docs/blob/master/src/vnext/getting-started/wpf/creating-the-models.md" target="_blank">contribute</a>!
+					  </p>
+					  <p>
+					    Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+					  </p>
+					  <hr />
+					  <p>
+					    <h2>Discussion</h2>
+					   <div id="disqus_thread"></div>
+					   <script>
+					   var disqus_config = function () {
+					   // Always use vNext so comments stay visible
+					   this.page.url = 'http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/index.htm';
+					   this.page.identifier = 'getting-started/wpf/creating-the-models.md';
+					   };
+					   (function() { // DON'T EDIT BELOW THIS LINE
+					   var d = document, s = d.createElement('script');
+					   s.src = 'https://catel-docs.disqus.com/embed.js';
+					   s.setAttribute('data-timestamp', +new Date());
+					   (d.head || d.body).appendChild(s);
+					   })();
+					   </script>
+					   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					  </p>
+					</div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="../../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../../js/modernizr-2.8.3.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    <script src="../../../js/theme.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-25600919-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+</body>
+</html>
