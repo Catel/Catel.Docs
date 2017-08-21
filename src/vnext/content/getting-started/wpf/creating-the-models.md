@@ -1,4 +1,8 @@
-# Creating the models
++++
+title = "Creating the models" 
+description = ""
+weight = 20
++++
 
 In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: *Settings*, *Family* and *Person*. 
 

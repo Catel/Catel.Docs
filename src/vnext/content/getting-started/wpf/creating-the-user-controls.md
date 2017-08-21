@@ -1,4 +1,8 @@
-# Creating the views (user controls)
++++
+title = "Creating the views (user controls)" 
+description = ""
+weight = 50
++++
 
 In this step we will create the views for the application. There are several views that will be created and both user controls and windows will be handled in this part of the guide. Catel makes it very easy to create views as user controls with their own view models. In the previous step we already created the view models.
 

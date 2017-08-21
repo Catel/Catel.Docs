@@ -1,4 +1,8 @@
-# Creating the views (windows)
++++
+title = "Creating the views (windows)" 
+description = ""
+weight = 60
++++
 
 In this step we will create the windows for the application. In the previous step we already created the user controls. Windows are a great way to show in an edit-context. Catel provides great edit-windows in the form of the *DataWindow*. This is a window that automatically adds *OK* and *Cancel* buttons (but of course allows customization of the buttons and behavior).
 

@@ -1,4 +1,8 @@
-# Creating the view models
++++
+title = "Creating the view models" 
+description = ""
+weight = 40
++++
 
 In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the *ViewModelBase* class
 

@@ -1,4 +1,8 @@
-# Creating the WPF project
++++
+title = "Creating the WPF project" 
+description = ""
+weight = 10
++++
 
 In this step we will create the project and add the relevant NuGet packages.
 

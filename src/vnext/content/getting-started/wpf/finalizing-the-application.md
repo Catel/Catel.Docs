@@ -1,4 +1,8 @@
-# Finalizing the application
++++
+title = "Finalizing the application" 
+description = ""
+weight = 80
++++
 
 The application we have created so far is fully functional, but misses a bit of the "magic". Below are some additional steps that might make your application more appealing and more user friendly. Of course you can go as far as you want by creating custom animations and such, but this guide focuses purely on making the basics more appealing.
 

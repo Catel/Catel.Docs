@@ -1,4 +1,8 @@
-# Hooking up everything together
++++
+title = "Hooking up everything together" 
+description = ""
+weight = 70
++++
 
 In this step we will hook everything together and add additional logic to the remaining view models.
 

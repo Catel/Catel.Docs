@@ -1,4 +1,8 @@
-# Serializing data from/to disk
++++
+title = "Serializing data from/to disk" 
+description = ""
+weight = 30
++++
 
 In this step we will create services that will serialize the models from/to disk. Services are a great way to abstract functionality that can be used in every part of the application. This guide will also register the service in the *ServiceLocator* so it can be injected in view models.
 
