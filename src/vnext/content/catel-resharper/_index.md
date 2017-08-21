@@ -4,11 +4,6 @@ description = ""
 weight = 90
 +++
 
-Catel.ReSharper
-===============
-
-# Introduction
-
 Catel.ReSharper is a ReSharper plugin that helps with development in the following
 fields:
 
