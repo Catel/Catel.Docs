@@ -12,27 +12,15 @@ Use the [ApiCop feature](ApiCop) to get a detailed advisory report on your softw
 
 The *DebugListener* is a very useful class while developing an application. It throws all the logging of Catel to the output window of Visual Studio which allows you to view exactly what happens behind the scenes. However, writing all these logs to the output window is very expensive and might cause an application to perform badly.
 
-Therefore, it is important to disable any call to LogManager.AddDebugListener when releasing an application or while performance testing.
+Therefore, it is important to disable any call to `LogManager.AddDebugListener` when releasing an application or while performance testing.
 
-### Disable event subscriptions of child values for ModelBase
-
-To be able to (re)validate when a child object changes, the ModelBase subscribes to all change notifications (of all childs) by default. This can be disabled by using the following code:
+Best way to deal with this is to wrap it inside the `DEBUG` define:
 
 ```
-ModelBase.DefaultDisableEventSubscriptionsOfChildValuesValue = false;
+#if DEBUG
+    LogManager.AddDebugListener();
+#endif
 ```
-
-### Disabling validation during activities where validation is not required
-
- Validation inside Catel is very powerful, but sometimes it is not needed. To disable all validation inside Catel, use the following code:
-
-```
-ModelBase.SuspendValidationForAllModels = true;
-```
-
-### Use LeanAndMeanModel property on ModelBase
-
-When loading lots of models, it is not required to get support for validation and change notifications. Notifications and validation can be suspended per model (using the LeanAndMeanModel property) or globally using the GlobalLeanAndMeanModel property.
 
 ### Preloading assemblies into the AppDomain
 
@@ -49,8 +37,6 @@ In App.xaml.cs, add the following code
 var directory = typeof(MainWindow).Assembly.GetDirectory();
 AppDomain.CurrentDomain.PreloadAssemblies(directory);
 ```
-
- 
 
 **ASP.NET application**
 
@@ -80,9 +66,6 @@ Catel.Windows.Controls.UserControl.DefaultTransferStylesAndTransitionsToViewMode
 // Use when not using any validation controls
 Catel.Windows.Controls.UserControl.DefaultSkipSearchingForInfoBarMessageControlValue = true;
 Catel.Windows.Controls.UserControl.DefaultCreateWarningAndErrorValidatorForViewModelValue = false;
- 
-// Use when not using *any* validation
-Catel.Data.ModelBase.SuspendValidationForAllModels = true;
 ```
 
 ### Use the FastObservableCollection
