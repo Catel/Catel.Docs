@@ -1,7 +1,10 @@
-# Validation
++++
+title = "Validation" 
+description = ""
++++
 
 @alert info
-The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+The `ViewModelBase` derives from `ModelBase`, thus all information here also applies to the `ViewModelBase`
 @end
 
 Validation is very important for data objects. Therefore, the ModelBase supports all kinds of different validation:

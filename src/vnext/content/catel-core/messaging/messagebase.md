@@ -1,4 +1,8 @@
-# MessageBase
++++
+title = "MessageBase" 
+description = ""
+weight = 10
++++
 
 The MessageMediator is a very powerful class to send messages to other objects inside an application. However, it can sometimes by cumbersome to register and create messages. Therefore the MessageBase class is a very nice convenience class to create messages and allow easier registration.
 

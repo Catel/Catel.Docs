@@ -1,4 +1,8 @@
-# Introduction to the TypeFactory
++++
+title = "TypeFactory" 
+description = ""
+weight = 20
++++
 
 The *TypeFactory* is responsible for actually creating types inside Catel. It uses the following mechanism:
 

@@ -1,4 +1,8 @@
-# Customizing the serialization engines
++++
+title = "Customizing the serialization engines" 
+description = ""
+weight = 10
++++
 
 Since the *SerializerBase* does all the heavy lifting, it is very easy to customize the behavior of an existing serializer or create a completely new one. Each serializer implements its own interface and are registered in the *ServiceLocator *using the following interfaces:
 

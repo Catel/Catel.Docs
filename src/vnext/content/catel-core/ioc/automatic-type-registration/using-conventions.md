@@ -1,4 +1,8 @@
-# Automatically registering types using conventions
++++
+title = "Using conventions" 
+description = ""
+weight = 20
++++
 
 The [ServiceLocator](Introduction_to_the_ServiceLocator) in Catel can be set up to automatically register types based on the conventions.  
 

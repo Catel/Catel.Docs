@@ -1,4 +1,8 @@
-# Setting up the ServiceLocator using configuration
++++
+title = "Setting up the ServiceLocator using configuration" 
+description = ""
+weight = 40
++++
 
 The  ServiceLocator in Catel can be set up from configuration file.
 

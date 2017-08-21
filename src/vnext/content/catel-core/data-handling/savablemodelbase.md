@@ -1,4 +1,8 @@
-# SavableModelBase
++++
+title = "SavableModelBase" 
+description = ""
+weight = 60
++++
 
 The `SavableModelBase` class extends the `[ModelBase](./modelbase.md)` class with functionality to save the model to a persistence store.
 

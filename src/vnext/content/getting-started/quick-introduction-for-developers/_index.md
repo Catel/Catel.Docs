@@ -1,4 +1,8 @@
-# Quick introduction for developers
++++
+title = "Quick introduction for developers" 
+description = ""
+weight = 10
++++
 
 This is a quick introduction for developers who don't have a lot of time to read all the docs. This document contains the absolute basics of what a developer needs to know.
 

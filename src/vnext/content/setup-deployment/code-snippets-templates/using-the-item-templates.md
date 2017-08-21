@@ -1,4 +1,8 @@
-# Using the item templates
++++
+title = "Using the item templates"
+description = ""
+weight = 20
++++
 
 There are lots of item templates available for Catel so it is really easy to develop new views very fast.
 

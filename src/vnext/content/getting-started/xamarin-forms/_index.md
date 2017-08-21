@@ -1,4 +1,8 @@
-# Getting started with Xamarin.Forms
++++
+title = "Getting started with Xamarin.Forms" 
+description = ""
+weight = 30
++++
 
 Welcome to the *Getting started* guide for Catel and Xamarin.Forms. In this guide, a very simple application will be created with the most commonly used aspects of Catel and Xamarin.Forms.
 

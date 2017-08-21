@@ -1,4 +1,8 @@
-# Serializing members using ToString / Parse
++++
+title = "Serializing members using ToString / Parse" 
+description = ""
+weight = 30
++++
 
 Sometimes types (classes or structs) don't implement a proper serialization mechanism. If they support proper *ToString(IFormatProvider)* and *Parse(string, IFormatProvider)* methods, there is no need to create a custom *SerializerModifier* to serialize these types. To let the serializers take care of this automatically, at least one of the following options must be true:
 

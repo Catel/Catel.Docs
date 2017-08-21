@@ -1,4 +1,8 @@
-# Customizing the serialization for specific models
++++
+title = "Customizing the serialization for specific models" 
+description = ""
+weight = 20
++++
 
 Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the *IncludeInSerialization* and *ExcludeFromSerialization* attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the *ISerializerModifier*.
 

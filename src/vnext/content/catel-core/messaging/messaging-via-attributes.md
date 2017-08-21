@@ -1,4 +1,8 @@
-# Messaging via attributes
++++
+title = "Messaging via attributes" 
+description = ""
+weight = 30
++++
 
 The message mediator is a great way to communicate between instances in an application. It does however require to manually subscribe to and unsubscribe from classes. This issue can be bypassed using the attribute based approach. This is an alternative for registering a method in the message mediator and not be obliged to use Register\<T\> method.
 

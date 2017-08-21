@@ -1,6 +1,9 @@
-# EventLogListener
++++
+title = "EventLogListener" 
+description = ""
++++
 
-The EventLogListener allow to write log data to the system event log. 
+The `EventLogListener` allow to write log data to the system event log. 
 
 ![](../../../images/catel-core/logging/log-listeners/event-log-listener/eventlog.png) 
 

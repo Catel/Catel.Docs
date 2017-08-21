@@ -1,4 +1,7 @@
-# Configuration
++++
+title = "Configuration" 
+description = ""
++++
 
 Catel makes it very easy to use configurations on all supported platforms. 
 

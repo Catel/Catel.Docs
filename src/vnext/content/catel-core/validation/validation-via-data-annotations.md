@@ -1,4 +1,8 @@
-# Validation via data annotations
++++
+title = "Validation via data annotations" 
+description = ""
+weight = 20
++++
 
 @alert info
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase

@@ -1,4 +1,8 @@
-# WPF implementation for exception handling
++++
+title = "WPF implementation for exception handling" 
+description = ""
+weight = 10
++++
 
 ## Creating a watcher
 

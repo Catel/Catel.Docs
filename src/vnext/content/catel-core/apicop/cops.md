@@ -1,4 +1,8 @@
-# Cops
++++
+title = "Cops" 
+description = ""
+weight = 20
++++
 
 The *IApiCop* is responsible for containing all the rules that are used inside a class. A class should contain only one *IApiCop* and one or more rules.
 

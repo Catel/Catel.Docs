@@ -1,4 +1,8 @@
-# Getting prerelease (beta) versions via NuGet & MyGet
++++
+title = "Getting prerelease (beta) versions via NuGet & MyGet" 
+description = ""
+weight = 10
++++
 
 ## Adding the custom package source
 
@@ -16,7 +20,7 @@ Starting with Catel v5, the alpha prereleases are only available on the [MyGet f
 
 Please make sure to select the same settings as in the screenshow below:
 
-![](../images/setup-deployment/getting-prerelease-versions-via-nuget/nuget.png)
+![](../../images/setup-deployment/getting-prerelease-versions-via-nuget/nuget.png)
 
 ## Installing via package manager console
 

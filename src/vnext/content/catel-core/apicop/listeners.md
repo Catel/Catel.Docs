@@ -1,4 +1,8 @@
-# Listeners
++++
+title = "Listeners" 
+description = ""
+weight = 30
++++
 
 Listeners are a way to get information about the cops and their rules in the framework. The *ApiCopManager* will take care of all the retrieval of the results and the registration of the cops. The registered listeners are used by the *ApiCopManager.WriteResults* method to write the output to. To add a listener and be able to see the output of the *ApiCop* feature, use the following code:
 

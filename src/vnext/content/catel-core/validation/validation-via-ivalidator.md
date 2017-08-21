@@ -1,4 +1,8 @@
-# Validation via IValidator
++++
+title = "Validation via IValidator" 
+description = ""
+weight = 40
++++
 
 @alert info
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase

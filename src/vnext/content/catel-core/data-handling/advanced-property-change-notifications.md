@@ -1,4 +1,8 @@
-# Advanced property change notifications
++++
+title = "Advanced property change notifications" 
+description = ""
+weight = 90
++++
 
 Sometimes the old value is needed in case of property change event. However, the *INotifyPropertyChanged* interface does not provide any of this. To support this behavior, a new version of the *PropertyChangedEventArgs* is created called *AdvancedPropertyChangedEventArgs.* This class derives from *PropertyChangedEventArgs* so the interfaces are not broken, but it does add additional functionality to the software system.
 

@@ -1,4 +1,7 @@
-# Weak events
++++
+title = "Weak events" 
+description = ""
++++
 
 You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):
 

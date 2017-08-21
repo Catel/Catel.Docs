@@ -1,4 +1,8 @@
-# Using the code snippets
++++
+title = "Using the code snippets"
+description = ""
+weight = 10
++++
 
 This part of the documentation explains all the code snippets.
 

@@ -1,14 +1,17 @@
-# JsonSerializer
++++
+title = "Json" 
+description = ""
++++
 
-The *JsonSerializer* is implemented in a separate assembly because it uses Json.Net under the hood.
+The `JsonSerializer` is implemented in a separate assembly because it uses Json.Net under the hood.
 
 ## Customizing configuration
 
-The *JsonSerializationConfiguration* enables support for customizing the configuration used while (de)serializing. Below is an example
+The `JsonSerializationConfiguration` enables support for customizing the configuration used while (de)serializing. Below is an example
 
 ### Using Bson instead of Json
 
-To use Bson instead of Json, use the *JsonSerializationConfiguration* class:
+To use Bson instead of Json, use the `JsonSerializationConfiguration` class:
 
 ```
 var configuration = new JsonSerializationConfiguration
@@ -21,7 +24,7 @@ jsonSerializer.Serialize(myObject, configuration);
 
 ### Specifying the culture to use during (de)serialization
 
-To specify the culture to use during (de)serialization, set the *Culture* property on the configuration class:
+To specify the culture to use during (de)serialization, set the `Culture` property on the configuration class:
 
 ```
 var configuration = new SerializationConfiguration
@@ -35,7 +38,7 @@ jsonSerializer.Serialize(myObject, configuration);
 
 ## Preserve references (and support circular references)
 
-By default the *JsonSerializer* supports circular references. It does so by adding additional property values to the json. Below is a json object with support for circular references:
+By default the `JsonSerializer` supports circular references. It does so by adding additional property values to the json. Below is a json object with support for circular references:
 
 ```
 {  

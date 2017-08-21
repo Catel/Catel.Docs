@@ -1,4 +1,7 @@
-# Argument checking
++++
+title = "Argument checking" 
+description = ""
++++
 
 It is best practice to always check if the input to a method is correct. If not, an exception should be thrown. Most people do not check for exceptions correctly and lots of null reference exceptions inside a deep stacktrace are hard to solve.
 Catel does check the input on every method. Normally, a check would look like this:

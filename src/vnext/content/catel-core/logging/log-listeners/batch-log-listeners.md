@@ -1,4 +1,7 @@
-# Batch log listeners
++++
+title = "Batch log listeners" 
+description = ""
++++
 
 A batch log listener is a class implementing the *IBatchLogListener* interface (and most probably deriving from *BatchLogListenerBase*). This interface adds a *Flush* method which allows a listener to be flushed. The advantage is that when a log listener writes to a slower persistence store, it will not have to access this expensive resource for every log event, but by batches.
 

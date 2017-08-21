@@ -1,4 +1,8 @@
-# Specifying what gets serialized
++++
+title = "Specifying what gets serialized" 
+description = ""
+weight = 10
++++
 
 By default, Catel only serializes the defined Catel properties on the *ModelBase* or any deriving classes. It is possible to customize this behavior. Below is a class which will be used in all examples:
 

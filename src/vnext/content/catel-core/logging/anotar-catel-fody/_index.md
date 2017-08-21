@@ -1,4 +1,8 @@
-# Anotar.Catel.Fody
++++
+title = "Anotar.Catel.Fody" 
+description = ""
+weight = 50
++++
 
 Logging is a very important part of an application. It provides detailed information about the application workflow, even when an application is already deployed to several clients. That’s the reason that logging is a first class citizen in the Catel framework.
 

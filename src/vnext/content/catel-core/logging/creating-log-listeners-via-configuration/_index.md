@@ -1,4 +1,8 @@
-# Creating log listeners via configuration
++++
+title = "Creating log listeners via configuration" 
+description = ""
+weight = 30
++++
 
 Starting with Catel 3.8, it is possible to instantiate *LogListener* classes from the configuration. Below is an example on how to customize the listeners:
 

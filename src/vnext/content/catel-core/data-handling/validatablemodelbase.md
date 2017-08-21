@@ -1,4 +1,8 @@
-# ValidatableModelBase
++++
+title = "ValidatableModelBase" 
+description = ""
+weight = 40
++++
 
 The `ValidatableModelBase` class extends the `[ModelBase](./modelbase.md)` class with functionality to validate the model. The 
 class implements the `IDataErrorInfo` interface so it is possible to validate the data object and check the 

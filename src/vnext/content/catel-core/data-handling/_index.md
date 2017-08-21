@@ -1,4 +1,7 @@
-# Data handling
++++
+title = "Data handling" 
+description = ""
++++
 
 This part of the documentation is all about data handling the way it should that is available via Catel. Some parts are based on the article on Code Project, but this documentation is more up-to-date.
 

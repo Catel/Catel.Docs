@@ -1,4 +1,10 @@
-# Introduction to DependencyResolver and DependencyResolverManager
++++
+title = "DependencyResolver and DependencyResolverManager" 
+description = ""
+weight = 30
++++
+
+# Introduction to 
 
 Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the `IDependencyResolver` and `DependencyResolverManager` are introduced.
 

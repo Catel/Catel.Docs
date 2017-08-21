@@ -1,4 +1,7 @@
-# Multilingual / Localization
++++
+title = "Multilingual / Localization" 
+description = ""
++++
 
 Making an application multilingual is a very common feature request nowadays. Therefore Catel provides the resources in several languages and provides the *LanguageService* to give the developers full control over the translation process in their applications.
 
@@ -39,7 +42,7 @@ The *LanguageService* will now automatically query these sources for the trans
 
 ## Using the LanguageService
 
-To use the *LanguageService*, retrieve it via the *DependencyResolver *(or let it be injected) and use the provided methods. The example below retrieves the *WarningTitle *resource string in the *PreferredCulture*. If the resource cannot be found in the *PreferredCulture*, it will be retrieved for the *FallbackCulture*. If that cannot be found, it will return *null*.
+To use the `LanguageService`, retrieve it via the `DependencyResolver` (or let it be injected) and use the provided methods. The example below retrieves the *WarningTitle *resource string in the *PreferredCulture*. If the resource cannot be found in the *PreferredCulture*, it will be retrieved for the *FallbackCulture*. If that cannot be found, it will return *null*.
 
 ```
 var dependencyResolver = this.GetDependencyResolver();

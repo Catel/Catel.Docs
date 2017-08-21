@@ -1,4 +1,8 @@
-# Rules
++++
+title = "Rules" 
+description = ""
+weight = 20
++++
 
 Rules always belong to an *IApiCop* instance. Rules are registered once and then updated when needed, based on the requirement of the rule. Rules are normally custom-made, but Catel does provide a few base implementations.
 

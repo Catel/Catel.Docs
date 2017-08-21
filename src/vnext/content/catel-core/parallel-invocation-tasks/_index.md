@@ -1,4 +1,7 @@
-# Parallel invocation and tasks
++++
+title = "Parallel invocation and tasks" 
+description = ""
++++
 
 This page contains helper classes in Catel to invoke specific actions on very large collections in parallel.
 

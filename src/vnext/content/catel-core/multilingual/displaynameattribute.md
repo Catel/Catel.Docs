@@ -1,6 +1,9 @@
-# DisplayNameAttribute
++++
+title = "DisplayNameAttribute" 
+description = ""
++++
 
-Catel implements a custom implementation of the *DisplayNameAttribute* known in the *DataAnnotations* namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
+Catel implements a custom implementation of the `DisplayNameAttribute` known in the `DataAnnotations` namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
 
 ## Using the attribute
 
@@ -52,5 +55,5 @@ public enum Condition
 
 ## Using the ILanguageService
 
-By default, the attribute uses the *ILanguageService* to resolve the values to show. The resource name that is passed into the constructor of the attribute will be used to resolve the localized value.
+By default, the attribute uses the `ILanguageService` to resolve the values to show. The resource name that is passed into the constructor of the attribute will be used to resolve the localized value.
 

@@ -1,4 +1,8 @@
-# Using the validation context
++++
+title = "Using the validation context" 
+description = ""
+weight = 50
++++
 
 @alert info
 The *ViewModelBase* derives from *ModelBase*, thus all information here also applies to the *ViewModelBase*

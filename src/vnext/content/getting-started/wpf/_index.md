@@ -1,4 +1,8 @@
-# Getting started with WPF
++++
+title = "Getting started with WPF" 
+description = ""
+weight = 20
++++
 
 Welcome to the *Getting started* guide for Catel and WPF. In this guide, a very simple application will be created with the most commonly used aspects of Catel and WPF.
 

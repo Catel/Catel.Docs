@@ -1,4 +1,7 @@
-# Pooling
++++
+title = "Pooling" 
+description = ""
++++
 
 Garbage collection in .NET can be very expensive, especially for objects on the Large Object Heap (LOH). .NET itself already uses pooling for threads to prevent the costly creation of threads but instead re-uses the already created threads using a thread pool. Catel provides an implementation of pooling using the *PoolManager\<TPoolable\>*. This allows both Catel and third party developers to create a pool for large objects so they can be reused.
 

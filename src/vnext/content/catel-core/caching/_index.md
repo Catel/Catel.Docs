@@ -1,4 +1,7 @@
-# Caching
++++
+title = "Caching" 
+description = ""
++++
 
 Caching is about improving applications performance. The most expensive performance costs of the applications are related with data retrieving, typically when this data requires to be moved across the network or loaded from disk. But some data have a slow changing behavior (a.k.a non-volatile) and doesn't require to be re-read with the same frequency of the volatile data.
 

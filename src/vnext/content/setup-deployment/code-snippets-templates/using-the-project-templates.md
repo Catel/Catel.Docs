@@ -1,4 +1,8 @@
-# Using the project templates
++++
+title = "Using the project templates"
+description = ""
+weight = 30
++++
 
 There are several project templates available for Catel. The easiest way is to follow these steps.
 

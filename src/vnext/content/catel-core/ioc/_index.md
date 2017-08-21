@@ -1,4 +1,7 @@
-# IoC (ServiceLocator and TypeFactory)
++++
+title = "IoC (ServiceLocator and TypeFactory)" 
+description = ""
++++
 
 Before Catel 2.0, the IoC container used internally was Unity. However, this forced all users to use and configure Unity as the IoC container in their apps and required the shipping of the libraries as well. Since Catel 2.0, a different technique is used which allows the end-developer to use the IoC container technique of their choice.
 

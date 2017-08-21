@@ -1,4 +1,8 @@
-# Validation via special model validators
++++
+title = "Validation via special model validators" 
+description = ""
+weight = 30
++++
 
 By default, Catel registers the *AttributeValidatorProvider* as the *IValidatorProvider*. This way the *ModelBase* and all the classes that derive from it can easily add a custom validator by using the *ValidateModelAttribute*.
 

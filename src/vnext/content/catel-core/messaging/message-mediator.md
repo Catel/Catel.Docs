@@ -1,4 +1,8 @@
-# Message mediator
++++
+title = "Message mediator" 
+description = ""
+weight = 20
++++
 
 Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.
 

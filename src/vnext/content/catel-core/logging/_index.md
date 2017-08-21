@@ -1,4 +1,7 @@
-# Logging
++++
+title = "Logging" 
+description = ""
++++
 
 Starting with version 2.2, Catel uses a custom internal logging system. This way, the reference to log4net could be removed. The idea behind this move is not to force the user to use log4net. Also, log4net seems deprecated (no new releases for a long time), and other logging systems such as NLog seem to grow in popularity.
 

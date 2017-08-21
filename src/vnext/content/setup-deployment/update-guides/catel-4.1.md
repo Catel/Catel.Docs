@@ -1,4 +1,8 @@
-# Catel 4.1.0
++++
+title = "Catel 4.1"
+description = ""
+weight = 410
++++
 
 This guide describes how to update your code to be fully compatible with Catel 4.1.
 

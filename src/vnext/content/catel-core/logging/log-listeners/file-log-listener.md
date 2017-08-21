@@ -1,4 +1,7 @@
-# FileLogListener
++++
+title = "FileLogListener" 
+description = ""
++++
 
 Catel also supports very lightweight listeners to allow external logging libraries to hook on. To create a listener, first create a new class that implements the *ILogListener* interface. Next, register it in the *LogManager* using the *LogManager.AddListener* method.
 

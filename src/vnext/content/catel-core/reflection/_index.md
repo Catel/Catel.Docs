@@ -1,10 +1,13 @@
-# Reflection
++++
+title = "Reflection" 
+description = ""
++++
 
 Internally, Catel uses reflection to implement some of its behavior. And why not make all these excellent reflection classes public?
 
 # Getting types without versioning
 
- Sometimes you know what type to get and what assembly it is living in. However, you don't want to be version-dependent by specifying the fully qualified assembly name. Using the TypeHelper.GetType method, it is possible to get a type by only the assembly name (say Catel.Core) and the type name (say Catel.Data.ObservableObject).
+Sometimes you know what type to get and what assembly it is living in. However, you don't want to be version-dependent by specifying the fully qualified assembly name. Using the TypeHelper.GetType method, it is possible to get a type by only the assembly name (say Catel.Core) and the type name (say Catel.Data.ObservableObject).
 
 ```
 var type = PropertyHelper.GetType("Catel.Data.ObservableObject", "Catel.Core");

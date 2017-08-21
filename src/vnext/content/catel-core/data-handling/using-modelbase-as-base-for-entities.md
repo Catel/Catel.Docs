@@ -1,4 +1,8 @@
-# Using ModelBase as base for entities
++++
+title = "Using ModelBase as base for entities" 
+description = ""
+weight = 80
++++
 
 It is possible to use the *ModelBase* as base class when using EF or any other OR mapper.
 

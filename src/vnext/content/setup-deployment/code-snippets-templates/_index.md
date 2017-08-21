@@ -1,4 +1,8 @@
-# Code snippets & templates
++++
+title = "Code snippets & templates"
+description = ""
+weight = 40
++++
 
 The latest code snippets and templates are available on the [official website](http://catelproject.com/downloads/general-files/). When downloaded, follow the steps below to install them.
 

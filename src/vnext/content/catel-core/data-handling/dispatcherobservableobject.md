@@ -1,4 +1,8 @@
-# DispatcherObservableObject
++++
+title = "DispatcherObservableObject" 
+description = ""
+weight = 20
++++
 
 @alert important
 Note that the *DispatcherObservableObject* is located in *Catel.MVVM* because it uses the *IDispatcherService*

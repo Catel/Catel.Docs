@@ -1,4 +1,8 @@
-# Validation via validate methods
++++
+title = "Validation via validate methods" 
+description = ""
+weight = 10
++++
 
 @alert info
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase

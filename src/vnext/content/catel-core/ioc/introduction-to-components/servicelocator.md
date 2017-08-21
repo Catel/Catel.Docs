@@ -1,4 +1,8 @@
-# Introduction to the ServiceLocator
++++
+title = "ServiceLocator" 
+description = ""
+weight = 10
++++
 
 The *ServiceLocator* services as the container inside Catel.
 

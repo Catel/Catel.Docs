@@ -1,4 +1,7 @@
-# Exception handling
++++
+title = "Exception handling" 
+description = ""
++++
 
 With exception handling in Catel, it is possible to create an exception handling policy and execute code in a safe way without have to check all the exception types manually. Catel exposes this technique via the IExceptionService.
 

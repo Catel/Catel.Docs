@@ -1,6 +1,9 @@
-# DisplayAttribute
++++
+title = "DisplayAttribute" 
+description = ""
++++
 
-Catel implements a custom implementation of the *DisplayAttribute* known in the *DataAnnotations* namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
+Catel implements a custom implementation of the `DisplayAttribute` known in the `DataAnnotations` namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
 
 @note warning
 Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)
@@ -56,7 +59,7 @@ public enum Condition
 
 ## Using the ILanguageService
 
-By default, the attribute uses the *ILanguageService* to resolve the values to show. The *DisplayAttribute* uses conventions to resolve the different values from the resources.
+By default, the attribute uses the `ILanguageService` to resolve the values to show. The `DisplayAttribute` uses conventions to resolve the different values from the resources.
 
 Property|ResourceName used when resolving|Fallback value
 -|-

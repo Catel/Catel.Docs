@@ -1,4 +1,8 @@
-# ObservableObject
++++
+title = "ObservableObject" 
+description = ""
+weight = 10
++++
 
 The *ObservableObject* is a very lightweight class that only implements the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces. This class is ideal for simple objects that only need property notification. Below is an example:
 

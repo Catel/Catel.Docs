@@ -1,4 +1,8 @@
-# Dependency injection
++++
+title = "Dependency injection" 
+description = ""
+weight = 10
++++
 
 The ServiceLocator in Catel supports dependency injection.
 

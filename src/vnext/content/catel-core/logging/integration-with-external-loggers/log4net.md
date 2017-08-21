@@ -1,6 +1,9 @@
-# Log4net
++++
+title = "Log4net" 
+description = ""
++++
 
-The example below provides an ILogListener for NLog, but any external logging library can be used.
+The example below provides an ILogListener for Log4net, but any external logging library can be used.
 
 ## Creating the listener
 

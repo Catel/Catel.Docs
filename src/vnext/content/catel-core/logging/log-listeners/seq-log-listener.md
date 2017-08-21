@@ -1,4 +1,7 @@
-# SeqLogListener
++++
+title = "SeqLogListener" 
+description = ""
++++
 
 [Seq](http://getseq.net/) is a structured logs server for .NET Apps. It act like a logs repository, allow to diagnostic by query your logs using a natural syntax, react on notifying you through email or instant messages and so on ...
 

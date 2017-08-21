@@ -1,4 +1,8 @@
-# Compiling from source
++++
+title = "Compiling from source"
+description = ""
+weight = 30
++++
 
 In order to compile, the following 3rd party software is required:
 

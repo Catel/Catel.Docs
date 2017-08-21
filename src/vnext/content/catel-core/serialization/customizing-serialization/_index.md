@@ -1,4 +1,8 @@
-# Introduction to customizing serialization
++++
+title = "Introduction to customizing serialization" 
+description = ""
+weight = 20
++++
 
 ## The serialization engine explained
 

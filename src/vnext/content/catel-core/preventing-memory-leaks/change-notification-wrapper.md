@@ -1,4 +1,7 @@
-# Change notification wrapper
++++
+title = "Change notification wrapper" 
+description = ""
++++
 
 Subscribing to change notifications of objects mostly results in large statements such as the one below:
 

@@ -1,4 +1,8 @@
-# Automatically registering types using attributes
++++
+title = "Using attributes" 
+description = ""
+weight = 10
++++
 
 The [ServiceLocator](Introduction_to_the_ServiceLocator) in Catel can be set up to discover attribute based registration. 
 

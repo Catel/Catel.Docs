@@ -1,4 +1,8 @@
-# ModelBase
++++
+title = "ModelBase" 
+description = ""
+weight = 30
++++
 
 The *ModelBase* class is a generic base class that can be used for all your data classes.
 

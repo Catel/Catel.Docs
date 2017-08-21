@@ -1,4 +1,7 @@
-# Thread safe code
++++
+title = "Thread safe code" 
+description = ""
++++
 
 Writing a multiple threading application is always a challenge. Eventually you need use objects or statements with the ability to synchronize access to the critical sections of the code by taking and releasing a lock.
 

@@ -1,4 +1,8 @@
-# Catel 5.0
++++
+title = "Catel 5.0"
+description = ""
+weight = 500
++++
 
 This guide describes how to update your code to be fully compatible with Catel 5.0.
 

@@ -1,4 +1,8 @@
-# Deferring validation
++++
+title = "Deferring validation" 
+description = ""
+weight = 70
++++
 
 The opinions about validation differ from person to person. Some people think it is best practice to immediately show the errors to the users. Others want to defer it to the moment where the user clicks the Save or OK button. Catel supports both "best practices".
 

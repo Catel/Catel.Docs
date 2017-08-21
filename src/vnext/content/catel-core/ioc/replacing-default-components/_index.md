@@ -1,4 +1,8 @@
-# Replacing the default components
++++
+title = "Replacing the default components" 
+description = ""
+weight = 50
++++
 
 By default, Catel provides very fast and functional implementations of the component interfaces. It is possible though that one needs to use a different container than the specified ones.
 
