@@ -1,10 +1,13 @@
-# Running code at design-time
++++
+title = "Running code at design-time" 
+description = ""
++++
 
 Sometimes one needs to run code during design-time. A good example is to register a custom `LanguageResourceSource` in the `LanguageService` to show translations in the designer. Unfortunately it is not as easy as putting some code in the code-behind to get this working.
 
-@alert info
+{{% notice info %}}
 Starting with Catel 4.3, calling `CatelEnvironment.IsInDesignTime` will automatically invoke *DesignTimeHelper.InitializeDesignTime* if in design mode. This means you only have to add classes deriving from `DesignTimeInitializer` and they will automatically be invoked when any code is checking if it's currently running inside a designer context (e.g. `LanguageBinding`)
-@end
+{{% /notice %}}
 
 ## Introducing the DesignTimeCode attribute
 

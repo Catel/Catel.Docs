@@ -1,24 +1,26 @@
 
 
-# ModelNotRegisteredException
++++
+title = "ModelNotRegisteredException" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ModelNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]()
-
+[Exception]({{< relref "#" >}})
 
 Exception for when a model is not registered on a class, but a [ViewModelToModelAttribute](#) is used with the model.
-
-
 
 ## Constructors
 
@@ -28,13 +30,10 @@ Initializes a new instance of the [ModelNotRegisteredException](#) class.
 
 #### Parameters
 
-**modelName**
-Name of the model.
-
-**propertyDeclaringViewModelToModelAttribute**
-The property declaring the view model to model attribute.
-
-
+Name|Description
+---|---
+**modelName**|Name of the model.
+**propertyDeclaringViewModelToModelAttribute**|The property declaring the view model to model attribute.
 
 ## Properties
 
@@ -42,11 +41,7 @@ The property declaring the view model to model attribute.
 
 Gets the name of the model.
 
-
-
 ### PropertyDeclaringViewModelToModelAttribute
 
 Gets the property declaring the view model to model attribute.
-
-
 

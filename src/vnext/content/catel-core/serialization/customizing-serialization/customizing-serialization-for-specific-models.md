@@ -43,6 +43,6 @@ public class Person : ModelBase
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Note that modifiers are inherited from base classes. When serializing, the modifiers defined on the most derived classes will be called last. When deserializing, the modifies defined on the most derived classes will be called first.
-@end
+{{% /notice %}}

@@ -12,7 +12,7 @@ The  ServiceLocator in Catel can be set up from configuration file.
 
 The first step to setup the service locator from the configuration file is import the custom section type *Catel.IoC.IoCConfigurationSection* from *Catel.Core*. The following example shows how to import this configuration section and make it available for the configuration file as *ioc*:
 
-``` {.html/xml data-syntaxhighlighter-params="brush: html/xml; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: html/xml; gutter: false; theme: Confluence"}
+```
 <configuration>
   <configSections>
        <sectionGroup name="catel">
@@ -23,15 +23,15 @@ The first step to setup the service locator from the configuration file is impor
 </configuration>
 ```
 
-@alert important
+{{% notice warning %}}
 In the example above we also create a section group named catel to group all Catel related configuration sections.
-@end
+{{% /notice %}}
 
 ## Configuring a service locator from the default configuration
 
 It's possible add more than one service locator configuration to the configuration file but you must specify an unique name. If a name of a service locator configuration is not specified then the name *default* is assigned. By default such configuration supports dependency injection.
 
-``` {.html/xml data-syntaxhighlighter-params="brush: html/xml; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: html/xml; gutter: false; theme: Confluence"}
+```
 <configuration>
    <configSections>
        <sectionGroup name="catel">
@@ -57,7 +57,7 @@ To configure a service locator from the default service locator configuration us
 
  
 
-``` {.csharp data-syntaxhighlighter-params="brush: csharp; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: csharp; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 
 Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -72,7 +72,7 @@ ioc.DefaultServiceLocatorConfiguration.Configure(serviceLocator);
 
 The following configuration file is a full example on how write more than one service locator configuration:
 
-``` {.html/xml data-syntaxhighlighter-params="brush: html/xml; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: html/xml; gutter: false; theme: Confluence"}
+```
 <configuration>
    <configSections>
        <sectionGroup name="catel">
@@ -98,7 +98,7 @@ The following configuration file is a full example on how write more than one se
 
 To configure a service locator from a named configuration use the following code:
 
-``` {.csharp data-syntaxhighlighter-params="brush: csharp; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: csharp; gutter: false; theme: Confluence"}
+```
 var serviceLocator = ServiceLocator.Default;
 
 Configuration configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);

@@ -1,20 +1,23 @@
 
 
-# IDependencyResolver
++++
+title = "IDependencyResolver" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IDependencyResolver
 ```
 
 Provides a simplified way to resolve dependencies and allows customization of the way dependencies are resolved.
-
-
 
 ## Methods
 
@@ -24,11 +27,10 @@ Determines whether the specified type with the specified tag can be resolved.
 
 #### Parameters
 
-**type**
-The type.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**type**|The type.
+**tag**|The tag.
 
 #### Returns
 
@@ -36,10 +38,9 @@ The tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 
 ### CanResolveAll(Type[] types)
 
@@ -47,8 +48,9 @@ Determines whether all types specified can be resolved. Though Object) will retu
 
 #### Parameters
 
-**types**
-The types.
+Name|Description
+---|---
+**types**|The types.
 
 #### Returns
 
@@ -56,10 +58,9 @@ The types.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The types is`null` or empty.
-
-
+Name|Description
+---|---
+**ArgumentException**|The types is`null` or empty.
 
 ### Resolve(Type type, object tag)
 
@@ -67,11 +68,10 @@ Resolves the specified type with the specified tag.
 
 #### Parameters
 
-**type**
-The type.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**type**|The type.
+**tag**|The tag.
 
 #### Returns
 
@@ -79,10 +79,9 @@ The resolved object or`null` if the type could not be resolved.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 
 ### ResolveAll(Type[] types, object tag)
 
@@ -90,11 +89,10 @@ Resolves the specified types with the specified tag.
 
 #### Parameters
 
-**types**
-The types.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**types**|The types.
+**tag**|The tag.
 
 #### Returns
 
@@ -102,8 +100,7 @@ A lost of resolved types. If one of the types cannot be resolved, that location 
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The types is`null` or empty.
-
-
+Name|Description
+---|---
+**ArgumentException**|The types is`null` or empty.
 

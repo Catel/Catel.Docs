@@ -1,20 +1,23 @@
 
 
-# BindingHelper
++++
+title = "BindingHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public static class BindingHelper
 ```
 
 Binding helper class.
-
-
 
 ## Methods
 
@@ -24,13 +27,10 @@ Clears a binding. This method implements the ClearBinding for both WPF and Silve
 
 #### Parameters
 
-**dependencyObject**
-The dependency object.
-
-**dependencyProperty**
-The dependency property.
-
-
+Name|Description
+---|---
+**dependencyObject**|The dependency object.
+**dependencyProperty**|The dependency property.
 
 ### GetBindingValue(FrameworkElement frameworkElement, BindingBase binding)
 
@@ -38,11 +38,10 @@ Gets the binding value.
 
 #### Parameters
 
-**frameworkElement**
-The dependency object.
-
-**binding**
-The binding.
+Name|Description
+---|---
+**frameworkElement**|The dependency object.
+**binding**|The binding.
 
 #### Returns
 
@@ -50,8 +49,7 @@ The actual binding value.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The frameworkElement is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The frameworkElement is`null`.
 

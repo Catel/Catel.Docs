@@ -1,20 +1,23 @@
 
 
-# ParallelHelper
++++
+title = "ParallelHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ParallelHelper
 ```
 
 Helper class to execute groups of methods in parallel.
-
-
 
 ## Fields
 
@@ -31,22 +34,16 @@ The item type.
 
 #### Parameters
 
-**items**
-The items.
-
-**actionToInvoke**
-The action to invoke per item.
-
-**itemsPerBatch**
-The items per batch.
-
-**taskName**
-Name of the task, can be`null`.
+Name|Description
+---|---
+**items**|The items.
+**actionToInvoke**|The action to invoke per item.
+**itemsPerBatch**|The items per batch.
+**taskName**|Name of the task, can be`null`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The items is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The items is`null`.
 

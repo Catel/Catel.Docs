@@ -1,4 +1,7 @@
-# ViewExportService
++++
+title = "ViewExportService" 
+description = ""
++++
 
 The `IViewExportService` allows a developer to export a specific view that belongs to a view model to the clipboard, a file or a printer.
 

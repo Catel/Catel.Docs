@@ -1,12 +1,17 @@
 
 
-# StateService
++++
+title = "StateService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class StateService : IStateService
@@ -14,12 +19,9 @@ public class StateService : IStateService
 
 **Base types**
 
-[IStateService](/Catel.Core\Catel\Services\IStateService.md)
-
+[IStateService]({{< relref "reference/Catel.Core/Catel/Services/IStateService.md" >}})
 
 The state service which can store and restore states.
-
-
 
 ## Fields
 
@@ -31,12 +33,11 @@ Loads the state.
 
 #### Parameters
 
-**key**
-The key.
+Name|Description
+---|---
+**key**|The key.
 
 #### Returns
-
-
 
 ### StoreState(string key, IState state)
 
@@ -44,11 +45,8 @@ Stores the state.
 
 #### Parameters
 
-**key**
-The key.
-
-**state**
-The state.
-
-
+Name|Description
+---|---
+**key**|The key.
+**state**|The state.
 

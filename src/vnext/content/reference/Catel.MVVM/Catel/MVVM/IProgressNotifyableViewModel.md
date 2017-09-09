@@ -1,12 +1,17 @@
 
 
-# IProgressNotifyableViewModel
++++
+title = "IProgressNotifyableViewModel" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IProgressNotifyableViewModel : IViewModel
@@ -14,12 +19,9 @@ public interface IProgressNotifyableViewModel : IViewModel
 
 **Base types**
 
-[IViewModel](/Catel.MVVM\Catel\MVVM\IViewModel.md)
-
+[IViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" >}})
 
 The ProgressNotifyableViewModel interface.
-
-
 
 ## Properties
 
@@ -27,43 +29,29 @@ The ProgressNotifyableViewModel interface.
 
 Gets the message.
 
-
-
 ### Percentage
 
 Gets the percent.
-
-
 
 ### Task
 
 Gets the task.
 
-
-
 ### TaskIsIndeterminate
 
 Gets or sets the task percentage.
-
-
 
 ### TaskMessage
 
 Gets or sets the task message.
 
-
-
 ### TaskName
 
 Gets or sets the task name.
 
-
-
 ### TaskPercentage
 
 Gets or sets the task percentage.
-
-
 
 ## Methods
 
@@ -73,19 +61,15 @@ Update the progress status.
 
 #### Parameters
 
-**currentItem**
-The current item.
-
-**totalItems**
-The total items.
-
-**task**
-The task
+Name|Description
+---|---
+**currentItem**|The current item.
+**totalItems**|The total items.
+**task**|The task
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The task is`null`.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The task is`null`.
 

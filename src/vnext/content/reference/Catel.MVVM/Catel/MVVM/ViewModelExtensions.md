@@ -1,20 +1,23 @@
 
 
-# ViewModelExtensions
++++
+title = "ViewModelExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ViewModelExtensions
 ```
 
 Extension methods for view model classes.
-
-
 
 ## Methods
 
@@ -24,11 +27,10 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**includeChildViewModelValidations**
-If set to`true`, all validation from all child view models should be gathered as well.
+Name|Description
+---|---
+**viewModel**|The view model.
+**includeChildViewModelValidations**|If set to`true`, all validation from all child view models should be gathered as well.
 
 #### Returns
 
@@ -36,10 +38,9 @@ The validation summary.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations, object tag)
 
@@ -47,14 +48,11 @@ Gets the validation summary for the specified viewModel and, if specified, the c
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**includeChildViewModelValidations**
-If set to`true`, all validation from all child view models should be gathered as well.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**viewModel**|The view model.
+**includeChildViewModelValidations**|If set to`true`, all validation from all child view models should be gathered as well.
+**tag**|The tag.
 
 #### Returns
 
@@ -62,10 +60,9 @@ The validation summary.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### GetViewModelCommandManager(ViewModelBase viewModel)
 
@@ -73,8 +70,9 @@ Gets the view model command manager for the specified view model.
 
 #### Parameters
 
-**viewModel**
-The view model.
+Name|Description
+---|---
+**viewModel**|The view model.
 
 #### Returns
 
@@ -82,10 +80,9 @@ IViewModelCommandManager.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### IsValidationSummaryOutdated(ViewModelBase viewModel, long lastUpdated, bool includeChildViewModelValidations)
 
@@ -93,14 +90,11 @@ Determines whether the specified validation summary is outdated by checking the 
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**lastUpdated**
-The last updated ticks.
-
-**includeChildViewModelValidations**
-If set to`true`, all validation from all child view models should be gathered as well.
+Name|Description
+---|---
+**viewModel**|The view model.
+**lastUpdated**|The last updated ticks.
+**includeChildViewModelValidations**|If set to`true`, all validation from all child view models should be gathered as well.
 
 #### Returns
 
@@ -108,8 +102,7 @@ If set to`true`, all validation from all child view models should be gathered as
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 

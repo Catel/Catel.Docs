@@ -1,12 +1,17 @@
 
 
-# EventHandlerExtensions
++++
+title = "EventHandlerExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class EventHandlerExtensions
@@ -14,40 +19,83 @@ public static class EventHandlerExtensions
 
 Extensions for event handlers.
 
-
-
 ## Methods
 
-### SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, NotifyCollectionChangedEventArgs e)
+### SafeInvoke(EventHandler handler, object sender)
 
-Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = CollectionChanged;
+Invokes the specified handler in a thread-safe manner with as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
     if (handler != null)
     {
-        handler(this, e, new NotifyCollectionChangedEventArgs(...));
+        handler(this, EventArgs.Empty);
     }
     
 ``` One can now write:```
-CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
+MyEvent.SafeInvoke(this);
     
 ```
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**e**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
 
+### SafeInvoke(EventHandler handler, object sender, EventArgs e)
 
+Invokes the specified handler in a thread-safe manner with as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
+    if (handler != null)
+    {
+        handler(this, EventArgs.Empty);
+    }
+    
+``` One can now write:```
+MyEvent.SafeInvoke(this);
+    
+```
+
+#### Parameters
+
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**e**|The event args.
+
+#### Returns
+
+`true` if the event handler was not`null`; otherwise`false`.
+
+### SafeInvoke(EventHandler<EventArgs> handler, object sender)
+
+Invokes the specified handler in a thread-safe manner with as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
+    if (handler != null)
+    {
+        handler(this, EventArgs.Empty);
+    }
+    
+``` One can now write:```
+MyEvent.SafeInvoke(this);
+    
+```
+
+#### Parameters
+
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+
+#### Returns
+
+`true` if the event handler was not`null`; otherwise`false`.
 
 ### SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, Func<NotifyCollectionChangedEventArgs> fE)
 
@@ -65,51 +113,41 @@ CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...))
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**fE**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**fE**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
 
-
-
-### SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)
+### SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, NotifyCollectionChangedEventArgs e)
 
 Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = PropertyChanged;
+var handler = CollectionChanged;
     if (handler != null)
     {
-        handler(this, e, new PropertyChangedEventArgs("propertyName"));
+        handler(this, e, new NotifyCollectionChangedEventArgs(...));
     }
     
 ``` One can now write:```
-PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs("propertyName"));
+CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
     
 ```
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**e**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**e**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
-
-
 
 ### SafeInvoke(PropertyChangedEventHandler handler, object sender, Func<PropertyChangedEventArgs> fE)
 
@@ -127,107 +165,41 @@ PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs("propertyName")
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**fE**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**fE**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
 
+### SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)
 
-
-### SafeInvoke(EventHandler handler, object sender)
-
-Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
-var handler = MyEvent;
+Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = PropertyChanged;
     if (handler != null)
     {
-        handler(this, EventArgs.Empty);
+        handler(this, e, new PropertyChangedEventArgs("propertyName"));
     }
     
 ``` One can now write:```
-MyEvent.SafeInvoke(this);
+PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs("propertyName"));
     
 ```
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-
-
-### SafeInvoke(EventHandler handler, object sender, EventArgs e)
-
-Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
-var handler = MyEvent;
-    if (handler != null)
-    {
-        handler(this, EventArgs.Empty);
-    }
-    
-``` One can now write:```
-MyEvent.SafeInvoke(this);
-    
-```
-
-#### Parameters
-
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**e**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**e**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
-
-
-
-### SafeInvoke(EventHandler<EventArgs> handler, object sender)
-
-Invokes the specified handler in a thread-safe manner with Empty as parameter for the event args. Where normally one has to write the following code:```
-var handler = MyEvent;
-    if (handler != null)
-    {
-        handler(this, EventArgs.Empty);
-    }
-    
-``` One can now write:```
-MyEvent.SafeInvoke(this);
-    
-```
-
-#### Parameters
-
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-
 
 ### SafeInvoke<TEventArgs>(EventHandler<TEventArgs> handler, object sender, Func<TEventArgs> fE)
 
@@ -246,24 +218,19 @@ MyEvent.SafeInvoke(this, e);
 #### Type Parameters
 
 **TEventArgs**
-The type of the [EventArgs](#) class.
+The type of the class.
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**fE**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**fE**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
-
-
 
 ### SafeInvoke<TEventArgs>(EventHandler<TEventArgs> handler, object sender, TEventArgs e)
 
@@ -282,24 +249,19 @@ MyEvent.SafeInvoke(this, e);
 #### Type Parameters
 
 **TEventArgs**
-The type of the [EventArgs](#) class.
+The type of the class.
 
 #### Parameters
 
-**handler**
-The handler.
-
-**sender**
-The sender.
-
-**e**
-The event args.
+Name|Description
+---|---
+**handler**|The handler.
+**sender**|The sender.
+**e**|The event args.
 
 #### Returns
 
 `true` if the event handler was not`null`; otherwise`false`.
-
-
 
 ### UnsubscribeAllHandlers<TEventArgs>(EventHandler<TEventArgs> handler)
 
@@ -312,8 +274,7 @@ The type of the event arguments.
 
 #### Parameters
 
-**handler**
-The handler.
-
-
+Name|Description
+---|---
+**handler**|The handler.
 

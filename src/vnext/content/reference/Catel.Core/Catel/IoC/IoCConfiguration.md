@@ -1,20 +1,23 @@
 
 
-# IoCConfiguration
++++
+title = "IoCConfiguration" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IoCConfiguration
 ```
 
 Contains configurations for the IoC implementation in Catel.
-
-
 
 ## Fields
 
@@ -24,19 +27,13 @@ Contains configurations for the IoC implementation in Catel.
 
 Gets or sets the default dependency resolver.
 
-
-
 ### DefaultServiceLocator
 
 Gets or sets the default service locator.
 
-
-
 ### DefaultTypeFactory
 
 Gets or sets the default type factory.
-
-
 
 ## Methods
 
@@ -46,8 +43,7 @@ Updates the default components. This method should be called when any of the fac
 
 #### Exceptions
 
-**T:System.Exception**
-The method fails to create the [IServiceLocator](#) using the factory.
-
-
+Name|Description
+---|---
+**System.Exception**|The method fails to create the [IServiceLocator](#) using the factory.
 

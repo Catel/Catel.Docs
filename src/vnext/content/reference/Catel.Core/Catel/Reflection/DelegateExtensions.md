@@ -1,20 +1,23 @@
 
 
-# DelegateExtensions
++++
+title = "DelegateExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class DelegateExtensions
 ```
 
-Extension methods for [Delegate](#).
-
-
+Extension methods for.
 
 ## Methods
 
@@ -24,17 +27,17 @@ Gets the method info of the delegate.
 
 #### Parameters
 
-**del**
-The delegate.
+Name|Description
+---|---
+**del**|The delegate.
 
 #### Returns
 
-The [MethodInfo](#) of the delegate.
+The of the delegate.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The del is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The del is`null`.
 

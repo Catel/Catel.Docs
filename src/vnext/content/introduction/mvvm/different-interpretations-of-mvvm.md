@@ -6,7 +6,7 @@ weight = 10
 
 There are two different interpretations of MVVM, the "purist" way where the model is protected, or the "shortcut" way where the view model only provides the instance of the model and the view then binds directly to the model.
 
-![](../../images/introduction/mvvm/different-interpretations-of-mvvm/overview.png)
+![](../../../images/introduction/mvvm/different-interpretations-of-mvvm/overview.png)
 
 ## Shortcut interpretation
 

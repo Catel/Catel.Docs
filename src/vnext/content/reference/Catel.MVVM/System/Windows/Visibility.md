@@ -1,6 +1,11 @@
 
 
-# Visibility
++++
+title = "Visibility" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public enum Visibility : Enum
 ```
 
 **Base types**
-[Enum]()
-
+[Enum]({{< relref "#" >}})
 
 Specifies the display state of an element.
-
-
 
 ## Fields
 
@@ -26,17 +28,11 @@ Specifies the display state of an element.
 
 Completely hidden, as if the view had not been added.
 
-
-
 ### Hidden
 
 Not displayed, but taken into account during layout (space is left for it).
 
-
-
 ### Visible
 
 Visible on screen; the default value.
-
-
 

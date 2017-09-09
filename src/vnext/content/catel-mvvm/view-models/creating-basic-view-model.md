@@ -1,4 +1,7 @@
-# Creating a basic view model
++++
+title = "Creating a basic view model" 
+description = ""
++++
 
 This example shows how to create a view model without a model. This is useful when a UI item should simply acknowledge a step that doesn't need to be persisted to a persistence store. The view model does include validation.
 

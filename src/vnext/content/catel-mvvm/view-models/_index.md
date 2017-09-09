@@ -1,4 +1,7 @@
-# View models
++++
+title = "View models" 
+description = ""
++++
 
 The view model is a very important part in the MVVM pattern. The view model is responsible for the actual logic that ensures separation of concerns, but also allows unit testing on the view logic (which is implemented in the view model) without actually instantiating the views.
 

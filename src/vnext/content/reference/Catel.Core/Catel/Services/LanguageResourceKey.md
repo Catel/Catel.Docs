@@ -1,25 +1,26 @@
 
 
-# LanguageResourceKey
++++
+title = "LanguageResourceKey" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class LanguageResourceKey : IEquatable<LanguageResourceKey>
 ```
 
 **Base types**
-
-[IEquatable]()
-
+[IEquatable]({{< relref "#" >}})
 
 Language resource key.
-
-
 
 ## Constructors
 
@@ -29,13 +30,10 @@ Initializes a new instance of the [LanguageResourceKey](#) class.
 
 #### Parameters
 
-**resourceName**
-Name of the resource.
-
-**cultureInfo**
-The culture information.
-
-
+Name|Description
+---|---
+**resourceName**|Name of the resource.
+**cultureInfo**|The culture information.
 
 ## Properties
 
@@ -43,13 +41,9 @@ The culture information.
 
 Gets the culture information.
 
-
-
 ### ResourceName
 
 Gets the name of the resource.
-
-
 
 ## Methods
 
@@ -59,29 +53,27 @@ Indicates whether the current object is equal to another object of the same type
 
 #### Parameters
 
-**other**
-An object to compare with this object.
+Name|Description
+---|---
+**other**|An object to compare with this object.
 
 #### Returns
 
 true if the current object is equal to the other parameter; otherwise, false.
 
-
-
 ### Equals(object obj)
 
-Determines whether the specified [Object](#) is equal to this instance.
+Determines whether the specified is equal to this instance.
 
 #### Parameters
 
-**obj**
-The object to compare with the current object.
+Name|Description
+---|---
+**obj**|The object to compare with the current object.
 
 #### Returns
 
-`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
-
-
+`true` if the specified is equal to this instance; otherwise,`false`.
 
 ### GetHashCode()
 
@@ -90,6 +82,4 @@ Returns a hash code for this instance.
 #### Returns
 
 A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
-
-
 

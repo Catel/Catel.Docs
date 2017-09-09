@@ -4,8 +4,6 @@ description = ""
 weight = 70
 +++
 
-# Catel.MVVM
-
 The last few years, MVVM has become the number one pattern to write applications using WPF and other XAML related platforms. The actual pattern is very simple, but there are some flaws and questions lots of MVVM users have, such as:
 
 -   How to show modal dialogs or message boxes inside a View-Model?

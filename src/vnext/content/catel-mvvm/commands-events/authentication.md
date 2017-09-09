@@ -1,4 +1,7 @@
-# Commands authentication
++++
+title = "Commands authentication" 
+description = ""
++++
 
 One of the questions an MVVM developer faces is how to control the executation state of a command by role or user authentication method. Catel offers an out-of-the-box solution for this problem to check the `CanExecute` state of the commands in the UI. 
 
@@ -52,6 +55,6 @@ Catel.IoC.ServiceLocator.Instance.RegisterType<IAuthenticationProvider, RoleAuth
 
 The code above registers a custom made command authentication provider that checks whether a specific role can execute the command.
 
-@alert info
+{{% notice info %}}
 Catel checks whether an `IAuthenticationProvider` is registered. If not, the way commands are handled is not affected in any way. If there is an `IAuthenticationProvider` available, the `CanExecute` state is checked, even when there is no custom `CanExecute` implemented.
-@end
+{{% /notice %}}

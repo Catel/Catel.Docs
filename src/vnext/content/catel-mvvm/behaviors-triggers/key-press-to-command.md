@@ -1,4 +1,7 @@
-# KeyPressToCommand
++++
+title = "KeyPressToCommand" 
+description = ""
++++
 
 Sometimes you need to handle a key press and convert it to a command. An excellent example is a ListBox that should respond to an `Ctrl + Enter` key press.
 
@@ -6,7 +9,7 @@ Sometimes you need to handle a key press and convert it to a command. An excelle
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition:

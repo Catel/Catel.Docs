@@ -12,7 +12,7 @@ Very basic class implementing the System.ComponentModel.INotifyPropertyChanging 
 
 ## The ModelBase class
 
-The [*ModelBase* ](../catel-core/data-handling/modelbase.md)(previously known as the *DataObjectBase)* class is a generic base class that can be used for all your data classes. This comes fully supporting serialization, property changed notifications, backwards compatibility and error checking.
+The [ModelBase]({{< relref "catel-core/data-handling/modelbase.md" >}})(previously known as the `DataObjectBase`) class is a generic base class that can be used for all your data classes. This comes fully supporting serialization, property changed notifications, backwards compatibility and error checking.
 
 ## Creating your first data object
 
@@ -217,9 +217,9 @@ There are also other ways to add validation to a data object:
 
 The great thing is that Catel will gather all validation results from all different mappings and combine these into the *ValidationContext*. This context can be used to query all sorts of validation info about an object.
 
-@alert info
+{{% notice info %}}
 Note that this is just an introduction, more information about validation can be found in other parts of the documentation
-@end
+{{% /notice %}}
 
 ## Saving objects
 

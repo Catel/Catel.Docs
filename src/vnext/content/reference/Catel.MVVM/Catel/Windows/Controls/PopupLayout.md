@@ -1,6 +1,11 @@
 
 
-# PopupLayout
++++
+title = "PopupLayout" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public class PopupLayout : RelativeLayout
 ```
 
 **Base types**
-[RelativeLayout]()
-
+[RelativeLayout]({{< relref "#" >}})
 
 Is a relative layout that allow show view as modal.
-
-
 
 ## Fields
 
@@ -27,8 +29,6 @@ Is a relative layout that allow show view as modal.
 ### Content
 
 The content view.
-
-
 
 ### IsPopupActive
 
@@ -40,23 +40,21 @@ Dismiss popup.
 
 #### Returns
 
-
-
 ### ShowPopupAsync(View view)
 
 Show a view as
 
 #### Parameters
 
-**view**
-The view to be displayed as popup
+Name|Description
+---|---
+**view**|The view to be displayed as popup
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The view is`null`.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The view is`null`.
 

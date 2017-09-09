@@ -1,12 +1,17 @@
 
 
-# ViewModelManager
++++
+title = "ViewModelManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelManager : IViewModelManager
@@ -14,12 +19,9 @@ public class ViewModelManager : IViewModelManager
 
 **Base types**
 
-[IViewModelManager](/Catel.MVVM\Catel\MVVM\IViewModelManager.md)
-
+[IViewModelManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelManager.md" >}})
 
 Manager for view models. Thanks to this manager, it is possible to subscribe to other view models and be able to respond correctly to property changes in other views.
-
-
 
 ## Fields
 
@@ -33,21 +35,15 @@ Initializes a new instance of the [ViewModelManager](#) class.
 
 The constructor is private because this is a singleton class.
 
-
-
 ## Properties
 
 ### ActiveViewModels
 
 Gets the active view models presently registered.
 
-
-
 ### ViewModelCount
 
 Gets the view model count.
-
-
 
 ## Methods
 
@@ -57,14 +53,13 @@ Gets the child view models of the specified view model.
 
 #### Parameters
 
-**parentViewModel**
-The parent view model.
+Name|Description
+---|---
+**parentViewModel**|The parent view model.
 
 #### Returns
 
 The child view models.
-
-
 
 ### GetChildViewModels(int parentUniqueIdentifier)
 
@@ -72,14 +67,13 @@ Gets the child view models of the specified view model unique identifier.
 
 #### Parameters
 
-**parentUniqueIdentifier**
-The parent unique identifier.
+Name|Description
+---|---
+**parentUniqueIdentifier**|The parent unique identifier.
 
 #### Returns
 
 The child view models.
-
-
 
 ### GetFirstOrDefaultInstance(Type viewModelType)
 
@@ -87,8 +81,9 @@ Gets the first or default instance of the specified view model.
 
 #### Parameters
 
-**viewModelType**
-Type of the view mode.
+Name|Description
+---|---
+**viewModelType**|Type of the view mode.
 
 #### Returns
 
@@ -96,10 +91,9 @@ The [IViewModel](#) or`null` if the view model is not registered.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The viewModelType is not of type [IViewModel](#).
-
-
+Name|Description
+---|---
+**System.ArgumentException**|The viewModelType is not of type [IViewModel](#).
 
 ### GetFirstOrDefaultInstance<TViewModel>()
 
@@ -114,22 +108,19 @@ The type of the view model.
 
 The [IViewModel](#) or`null` if the view model is not registered.
 
-
-
 ### GetViewModel(int uniqueIdentifier)
 
 Gets the view model by its unique identifier.
 
 #### Parameters
 
-**uniqueIdentifier**
-The unique identifier.
+Name|Description
+---|---
+**uniqueIdentifier**|The unique identifier.
 
 #### Returns
 
 The [IViewModel](#) or`null` if the view model is not registered.
-
-
 
 ### GetViewModelsOfModel(object model)
 
@@ -137,8 +128,9 @@ Gets the view models of a model.
 
 #### Parameters
 
-**model**
-The model to find the linked view models for.
+Name|Description
+---|---
+**model**|The model to find the linked view models for.
 
 #### Returns
 
@@ -146,10 +138,9 @@ An array containing all the view models.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The model is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The model is`null`.
 
 ### RegisterModel(IViewModel viewModel, object model)
 
@@ -157,18 +148,16 @@ Registers the model of a view model.
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**model**
-The model.
+Name|Description
+---|---
+**viewModel**|The view model.
+**model**|The model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### RegisterViewModelInstance(IViewModel viewModel)
 
@@ -176,15 +165,15 @@ Registers a view model instance with the manager. All view models must register 
 
 #### Parameters
 
-**viewModel**
-The view model to register.
+Name|Description
+---|---
+**viewModel**|The view model to register.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### UnregisterAllModels(IViewModel viewModel)
 
@@ -192,15 +181,15 @@ Unregisters all models of a view model.
 
 #### Parameters
 
-**viewModel**
-The view model.
+Name|Description
+---|---
+**viewModel**|The view model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### UnregisterModel(IViewModel viewModel, object model)
 
@@ -208,18 +197,16 @@ Unregisters the model of a view model.
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**model**
-The model.
+Name|Description
+---|---
+**viewModel**|The view model.
+**model**|The model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### UnregisterViewModelInstance(IViewModel viewModel)
 
@@ -227,13 +214,13 @@ Unregisters a view model instance from the manager. All view models must unregis
 
 #### Parameters
 
-**viewModel**
-The view model to unregister.
+Name|Description
+---|---
+**viewModel**|The view model to unregister.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 

@@ -1,28 +1,30 @@
 
 
-# WeakFunc
++++
+title = "WeakFunc" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class WeakFunc<TParameter, TResult> : IWeakFunc<TParameter, TResult>, WeakActionBase
 ```
 
 **Base types**
-[WeakActionBase](/Catel.Core\Catel\WeakActionBase.md)
+[WeakActionBase]({{< relref "reference/Catel.Core/Catel/WeakActionBase.md" >}})
 
 **Base types**
 
-[IWeakFunc](/Catel.Core\Catel\IWeakFunc.md)
-
+[IWeakFunc]({{< relref "reference/Catel.Core/Catel/IWeakFunc.md" >}})
 
 A generic weak func which allows the invocation of a command in a weak manner. This way, funcs will not cause memory leaks.
-
-
 
 ## Fields
 
@@ -34,21 +36,17 @@ Initializes a new instance of the [WeakAction](#) class.
 
 #### Parameters
 
-**target**
-The target.
-
-**func**
-The function.
+Name|Description
+---|---
+**target**|The target.
+**func**|The function.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The func is`null`.
-
-**T:System.NotSupportedException**
-The func is an anonymous delegate.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The func is`null`.
+**NotSupportedException**|The func is an anonymous delegate.
 
 ## Properties
 
@@ -60,13 +58,9 @@ Gets the actual delegate to invoke.
 
 This property is only introduced to allow action comparison on WinRT. Do not try to use this method by yourself.
 
-
-
 ### MethodName
 
 Gets the name of the method that should be executed.
-
-
 
 ## Methods
 
@@ -76,11 +70,8 @@ Executes the action. This only happens if the action's target is still alive.
 
 #### Parameters
 
-**parameter**
-The parameter.
-
-**result**
-The result
-
-
+Name|Description
+---|---
+**parameter**|The parameter.
+**result**|The result
 

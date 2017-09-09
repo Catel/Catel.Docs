@@ -1,6 +1,11 @@
 
 
-# ContextHelper
++++
+title = "ContextHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public static class ContextHelper
 
 The context helper.
 
-
-
 ## Fields
 
 ## Properties
@@ -23,6 +26,4 @@ The context helper.
 ### CurrentContext
 
 Gets or sets the current context. Note that the setter is made public to allow customization. It will be used primarily by Catel though.
-
-
 

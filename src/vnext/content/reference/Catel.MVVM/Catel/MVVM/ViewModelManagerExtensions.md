@@ -1,20 +1,23 @@
 
 
-# ViewModelManagerExtensions
++++
+title = "ViewModelManagerExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ViewModelManagerExtensions
 ```
 
 Extensions for the [IViewModelManager](#) interface.
-
-
 
 ## Methods
 
@@ -24,18 +27,16 @@ Closes all view models that are currently being managed by the [ViewModelManager
 
 #### Parameters
 
-**viewModelManager**
-The view model manager.
-
-**predicate**
-The predicate.
+Name|Description
+---|---
+**viewModelManager**|The view model manager.
+**predicate**|The predicate.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelManager is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelManager is`null`.
 
 ### SaveAndCloseViewModelsAsync(IViewModelManager viewModelManager, Func<IViewModel, bool> predicate)
 
@@ -43,16 +44,14 @@ Closes all view models that are currently being managed by the [ViewModelManager
 
 #### Parameters
 
-**viewModelManager**
-The view model manager.
-
-**predicate**
-The predicate.
+Name|Description
+---|---
+**viewModelManager**|The view model manager.
+**predicate**|The predicate.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelManager is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelManager is`null`.
 

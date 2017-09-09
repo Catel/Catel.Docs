@@ -1,20 +1,23 @@
 
 
-# UriExtensions
++++
+title = "UriExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class UriExtensions
 ```
 
 Uri extension methods.
-
-
 
 ## Methods
 
@@ -24,8 +27,9 @@ Gets the safe URI string.
 
 #### Parameters
 
-**uri**
-The URI.
+Name|Description
+---|---
+**uri**|The URI.
 
 #### Returns
 
@@ -33,10 +37,9 @@ The safe URI string.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The uri is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The uri is`null`.
 
 ### IsAbsoluteUrl(string url)
 
@@ -44,8 +47,9 @@ Determines whether the specified url is an absolute url or not.
 
 #### Parameters
 
-**url**
-The URL.
+Name|Description
+---|---
+**url**|The URL.
 
 #### Returns
 
@@ -53,8 +57,7 @@ The URL.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The url is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The url is`null`.
 

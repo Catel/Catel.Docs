@@ -1,6 +1,11 @@
 
 
-# IArgumentsProxy
++++
+title = "IArgumentsProxy" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,25 +19,17 @@ public interface IArgumentsProxy
 
 The arguments proxy interface.
 
-
-
 ## Properties
 
 ### InternalType
 
 The internal type.
 
-
-
 ### Object
 
 The object.
 
-
-
 ### Result
 
 The result.
-
-
 

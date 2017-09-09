@@ -1,4 +1,7 @@
-# OpenFileService
++++
+title = "OpenFileService" 
+description = ""
++++
 
 The `IOpenFileService` allows a developer to let the user choose a file from inside a view model.
 

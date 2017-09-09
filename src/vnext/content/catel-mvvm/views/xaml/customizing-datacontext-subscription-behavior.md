@@ -1,4 +1,7 @@
-# Customizing DataContext subscription behavior
++++
+title = "Customizing DataContext subscription behavior" 
+description = ""
++++
 
 Starting with Catel 4.0, the views watch both the direct and inherited *DataContext*. Starting with Catel 4.1, it is possible to mimick the pre 4.0 `DataContext` subscription behavior.
 

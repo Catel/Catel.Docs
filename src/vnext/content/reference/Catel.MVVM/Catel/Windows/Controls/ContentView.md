@@ -1,6 +1,11 @@
 
 
-# ContentView
++++
+title = "ContentView" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,16 +18,13 @@ public class ContentView : IView, ContentView
 ```
 
 **Base types**
-[ContentView]()
+[ContentView]({{< relref "#" >}})
 
 **Base types**
 
-[IView](/Catel.MVVM\Catel\MVVM\Views\IView.md)
-
+[IView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" >}})
 
 The content page.
-
-
 
 ## Fields
 
@@ -49,25 +51,17 @@ label.SetBinding(Label.TextProperty, "Name");
 The following example shows how to apply a BindingContext and a Binding to a Label (inherits from
             BindableObject):
 
-
-
 ### DataContext
 
 Gets or sets the data context.
-
-
 
 ### Tag
 
 Gets or sets the tag.
 
-
-
 ### ViewModel
 
 Gets the view model.
-
-
 
 ## Events
 
@@ -75,25 +69,17 @@ Gets the view model.
 
 Occurs when the data context has changed.
 
-
-
 ### Loaded
 
 Occurs when the view is loaded.
-
-
 
 ### Unloaded
 
 Occurs when the view is unloaded.
 
-
-
 ### ViewModelChanged
 
 Occurs when the view model has changed.
-
-
 
 ## Methods
 

@@ -3,9 +3,9 @@ title = "Validation"
 description = ""
 +++
 
-@alert info
+{{% notice info %}}
 The `ViewModelBase` derives from `ModelBase`, thus all information here also applies to the `ViewModelBase`
-@end
+{{% /notice %}}
 
 Validation is very important for data objects. Therefore, the ModelBase supports all kinds of different validation:
 
@@ -15,13 +15,7 @@ Validation is very important for data objects. Therefore, the ModelBase supports
 
 The validation results are cached and only executed when a property changes (the object becomes dirty) or when the validation is forced.
 
--   [Validation via validate methods](./validation-via-validate-method.md)
--   [Validation via data annotations](./validation-via-data-annotations.md)
--   [Validation via special model validators](./validation-via-special-model-validators.md)
--   [Validation via IValidator](./validation-via-ivalidator.md)
--   [Using the validation context](./using-validation-context.md)
--   [Getting a summary of validation results](./getting-summary-of-validation-results.md)
--   [Deferring validation](./deferring-validation.md)
+{{% children sort="weight" %}}
 
 ## Different types of validation
 

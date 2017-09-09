@@ -1,4 +1,7 @@
-# ViewLocator
++++
+title = "ViewLocator" 
+description = ""
++++
 
 The `IViewLocator` class is responsible for resolving the right views for a view model. Before Catel 3.0, the `IUIVisualizerService` was responsible for resolving the view, but this responsibility is now taken over by the `IViewLocator`. The `UIVisualizerService` internally uses the `IViewLocator` to resolve the views. 
 
@@ -84,9 +87,9 @@ By default, the `IViewLocator` uses the following naming conventions to resolve 
 -   [CURRENT].[VM]Activity
 -   [CURRENT].[VM]Fragment
 
-@alert info
-For more information about naming conventions, see [Naming conventions](./naming-conventions.md)
-@end
+{{% notice info %}}
+For more information about naming conventions, see [Naming conventions]({{< relref "catel-mvvm/locators-naming-conventions/naming-conventions.md" >}})
+{{% /notice %}}
 
 However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:
 

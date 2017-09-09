@@ -1,24 +1,26 @@
 
 
-# CompositeExpirationPolicy
++++
+title = "CompositeExpirationPolicy" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Caching.Policies
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositeExpirationPolicy : ExpirationPolicy
 ```
 
 **Base types**
-[ExpirationPolicy](/Catel.Core\Catel\Caching\Policies\ExpirationPolicy.md)
-
+[ExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" >}})
 
 The composite expiration policy.
-
-
 
 ## Fields
 
@@ -30,10 +32,9 @@ Initializes a new instance of the [CompositeExpirationPolicy](#) class.
 
 #### Parameters
 
-**expiresOnlyIfAllPoliciesExpires**
-If`true` indicates that the cache will expires only if policies of the composition expires, otherwise the cache will expires if policy does.
-
-
+Name|Description
+---|---
+**expiresOnlyIfAllPoliciesExpires**|If`true` indicates that the cache will expires only if policies of the composition expires, otherwise the cache will expires if policy does.
 
 ## Properties
 
@@ -41,13 +42,9 @@ If`true` indicates that the cache will expires only if policies of the compositi
 
 Gets a value indicating whether can reset.
 
-
-
 ### IsExpired
 
 Gets a value indicating whether is expired.
-
-
 
 ## Methods
 
@@ -57,12 +54,11 @@ Adds an expiration policy to the composition.
 
 #### Parameters
 
-**expirationPolicy**
-The expiration policy.
+Name|Description
+---|---
+**expirationPolicy**|The expiration policy.
 
 #### Returns
 
 The [CompositeExpirationPolicy](#).
-
-
 

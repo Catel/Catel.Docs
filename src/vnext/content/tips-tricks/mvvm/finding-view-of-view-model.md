@@ -1,4 +1,7 @@
-# Finding the view of a view model
++++
+title = "Finding the view of a view model" 
+description = ""
++++
 
 Sometimes it is required to find the view of a view model. For example, this comes in handy when implementing drag and drop where you only want to support code via view models.
 
@@ -6,9 +9,9 @@ Internally, Catel uses with the *IViewManager* for this. As soon as a view is lo
 
 A view is removed from the manager as soon as it is unloaded (via the *Unloaded* event). From this moment on, it is no longer possible to retrieve a view via its view model.
 
-@alert important
+{{% notice warning %}}
 Remember that only view classes implementing *IView* are supported by the *IViewManager*
-@end
+{{% /notice %}}
 
 ## Retrieving the view of a view model
 

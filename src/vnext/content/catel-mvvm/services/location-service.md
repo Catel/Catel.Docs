@@ -1,10 +1,13 @@
-# LocationService
++++
+title = "LocationService" 
+description = ""
++++
 
 The `ILocationService` allows a developer to use GPS devices inside a view model.
 
-@alert important
+{{% notice warning %}}
 It is important that the service must be started and stopped to retrieve values
-@end
+{{% /notice %}}
 
 ## Starting the service
 

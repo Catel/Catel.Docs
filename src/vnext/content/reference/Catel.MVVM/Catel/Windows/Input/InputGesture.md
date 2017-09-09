@@ -1,24 +1,26 @@
 
 
-# InputGesture
++++
+title = "InputGesture" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Input
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public class InputGesture : ModelBase
 ```
 
 **Base types**
-[ModelBase](/Catel.Core\Catel\Data\ModelBase.md)
-
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 Input gesture class.
-
-
 
 ## Fields
 
@@ -26,13 +28,9 @@ Input gesture class.
 
 Register the Key property so it is known in the class.
 
-
-
 ### ModifiersProperty
 
 Register the Modifiers property so it is known in the class.
-
-
 
 ## Constructors
 
@@ -40,18 +38,15 @@ Register the Modifiers property so it is known in the class.
 
 Initializes a new instance of the [InputGesture](#) class.
 
-
-
 ### InputGesture(Key key)
 
 Initializes a new instance of the [InputGesture](#) class.
 
 #### Parameters
 
-**key**
-The key.
-
-
+Name|Description
+---|---
+**key**|The key.
 
 ### InputGesture(Key key, ModifierKeys modifiers)
 
@@ -59,13 +54,10 @@ Initializes a new instance of the [InputGesture](#) class.
 
 #### Parameters
 
-**key**
-The key.
-
-**modifiers**
-The modifiers.
-
-
+Name|Description
+---|---
+**key**|The key.
+**modifiers**|The modifiers.
 
 ## Properties
 
@@ -73,30 +65,25 @@ The modifiers.
 
 Gets the key.
 
-
-
 ### Modifiers
 
 Gets the modifiers.
-
-
 
 ## Methods
 
 ### Equals(object obj)
 
-Determines whether the specified [Object](#) is equal to this instance.
+Determines whether the specified is equal to this instance.
 
 #### Parameters
 
-**obj**
-The [Object](#) to compare with this instance.
+Name|Description
+---|---
+**obj**|The to compare with this instance.
 
 #### Returns
 
-`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
-
-
+`true` if the specified is equal to this instance; otherwise,`false`.
 
 ### GetHashCode()
 
@@ -108,9 +95,9 @@ A hash code for this instance, suitable for use in hashing algorithms and data s
 
 #### Exceptions
 
-**T:System.NotImplementedException**
-
-
+Name|Description
+---|---
+**System.NotImplementedException**|
 
 ### Matches(KeyEventArgs eventArgs)
 
@@ -118,22 +105,19 @@ Checks whether this input gesture matches the specified event args.
 
 #### Parameters
 
-**eventArgs**
-The [KeyEventArgs](#) instance containing the event data.
+Name|Description
+---|---
+**eventArgs**|The instance containing the event data.
 
 #### Returns
 
 `true` if this gesture matches the event args,`false` otherwise.
 
-
-
 ### ToString()
 
-Returns a [String](#) that represents this instance.
+Returns a that represents this instance.
 
 #### Returns
 
-A [String](#) that represents this instance.
-
-
+A that represents this instance.
 

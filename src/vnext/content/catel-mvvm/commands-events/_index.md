@@ -1,4 +1,7 @@
-# Commands & events
++++
+title = "Commands & events" 
+description = ""
++++
 
 Commanding is supported by Catel. Catel supports Command classes, which is also known as `RelayCommand` or `DelegateCommand` in other frameworks. Defining a command on a view model is very easy, as you can see in the code below:
 

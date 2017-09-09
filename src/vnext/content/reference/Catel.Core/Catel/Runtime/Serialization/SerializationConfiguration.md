@@ -1,12 +1,17 @@
 
 
-# SerializationConfiguration
++++
+title = "SerializationConfiguration" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class SerializationConfiguration : ISerializationConfiguration
@@ -14,12 +19,9 @@ public class SerializationConfiguration : ISerializationConfiguration
 
 **Base types**
 
-[ISerializationConfiguration](/Catel.Core\Catel\Runtime\Serialization\ISerializationConfiguration.md)
-
+[ISerializationConfiguration]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationConfiguration.md" >}})
 
 Serialization configuration.
-
-
 
 ## Constructors
 
@@ -27,13 +29,9 @@ Serialization configuration.
 
 Initializes a new instance of the [SerializationConfiguration](#) class.
 
-
-
 ## Properties
 
 ### Culture
 
 Gets or sets the culture used for serialization.
-
-
 

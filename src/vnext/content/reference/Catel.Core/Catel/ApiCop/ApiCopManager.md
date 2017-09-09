@@ -1,20 +1,23 @@
 
 
-# ApiCopManager
++++
+title = "ApiCopManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ApiCopManager
 ```
 
 Manager class for the ApiCop feature.
-
-
 
 ## Fields
 
@@ -26,13 +29,9 @@ Manager class for the ApiCop feature.
 
 Gets the ignored rules.
 
-
-
 ### IsEnabled
 
 Gets a value indicating whether ApiCop is enabled.
-
-
 
 ## Methods
 
@@ -42,21 +41,19 @@ Adds the ApiCop listener which will receive all ApiCop information. This method 
 
 #### Parameters
 
-**listener**
-The listener.
+Name|Description
+---|---
+**listener**|The listener.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The listener is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The listener is`null`.
 
 ### ClearListeners()
 
 Clears all the current listeners.
-
-
 
 ### GetApiCop(Type type)
 
@@ -64,25 +61,23 @@ Gets the ApiCop for the specified type.
 
 #### Parameters
 
-**type**
-The type.
+Name|Description
+---|---
+**type**|The type.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 
 ### GetCurrentClassApiCop()
 
 Gets the current class ApiCop.
 
 #### Returns
-
-
 
 ### GetListeners()
 
@@ -92,16 +87,15 @@ Gets all the currently registered listeners.
 
 An enumerable of all listeners.
 
-
-
 ### IsListenerRegistered(IApiCopListener listener)
 
 Determines whether the specified listener is already registered or not.
 
 #### Parameters
 
-**listener**
-The listener.
+Name|Description
+---|---
+**listener**|The listener.
 
 #### Returns
 
@@ -109,10 +103,9 @@ The listener.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The listener is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The listener is`null`.
 
 ### RemoveListener(IApiCopListener listener)
 
@@ -120,19 +113,17 @@ Removes the ApiCop which will stop receiving all ApiCop information.
 
 #### Parameters
 
-**listener**
-The listener.
+Name|Description
+---|---
+**listener**|The listener.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The listener is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The listener is`null`.
 
 ### WriteResults()
 
 Writes the results to all the registered listeners.
-
-
 

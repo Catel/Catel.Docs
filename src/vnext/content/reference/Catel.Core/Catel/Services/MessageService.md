@@ -1,28 +1,30 @@
 
 
-# MessageService
++++
+title = "MessageService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class MessageService : IMessageService, ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase](/Catel.Core\Catel\Services\ViewModelServiceBase.md)
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Base types**
 
-[IMessageService](/Catel.Core\Catel\Services\IMessageService.md)
-
+[IMessageService]({{< relref "reference/Catel.Core/Catel/Services/IMessageService.md" >}})
 
 Message service that implements the [IMessageService](#).
-
-
 
 ## Fields
 
@@ -34,15 +36,15 @@ Initializes a new instance of the [MessageService](#) class.
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The dispatcherService is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The dispatcherService is`null`.
 
 ## Methods
 
@@ -52,24 +54,18 @@ Shows an information message to the user and allows a callback operation when th
 
 #### Parameters
 
-**message**
-The message.
-
-**caption**
-The caption.
-
-**button**
-The button.
-
-**icon**
-The icon.
+Name|Description
+---|---
+**message**|The message.
+**caption**|The caption.
+**button**|The button.
+**icon**|The icon.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The message is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The message is`null` or whitespace.
 
 ### ShowErrorAsync(Exception exception)
 
@@ -77,15 +73,15 @@ Shows an error message to the user and allows a callback operation when the mess
 
 #### Parameters
 
-**exception**
-The exception.
+Name|Description
+---|---
+**exception**|The exception.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The exception is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The exception is`null`.
 
 ### ShowErrorAsync(string message, string caption)
 
@@ -93,18 +89,16 @@ Shows an error message to the user and allows a callback operation when the mess
 
 #### Parameters
 
-**message**
-The message.
-
-**caption**
-The caption.
+Name|Description
+---|---
+**message**|The message.
+**caption**|The caption.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The message is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The message is`null` or whitespace.
 
 ### ShowInformationAsync(string message, string caption)
 
@@ -112,18 +106,16 @@ Shows an information message to the user and allows a callback operation when th
 
 #### Parameters
 
-**message**
-The message.
-
-**caption**
-The caption.
+Name|Description
+---|---
+**message**|The message.
+**caption**|The caption.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The message is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The message is`null` or whitespace.
 
 ### ShowWarningAsync(string message, string caption)
 
@@ -131,16 +123,14 @@ Shows a warning message to the user and allows a callback operation when the mes
 
 #### Parameters
 
-**message**
-The message.
-
-**caption**
-The caption.
+Name|Description
+---|---
+**message**|The message.
+**caption**|The caption.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The message is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The message is`null` or whitespace.
 

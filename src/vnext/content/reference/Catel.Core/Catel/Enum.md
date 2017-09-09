@@ -1,12 +1,17 @@
 
 
-# Enum
++++
+title = "Enum" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class Enum<TEnum> where TEnum : struct, IComparable, IFormattable 
@@ -19,8 +24,6 @@ Generic enumeration wrapper.
 **TEnum**
 Type of the enumeration to wrap.
 
-
-
 ## Methods
 
 ### ConvertFromOtherEnumValue(object inputEnumValue)
@@ -29,8 +32,9 @@ Converts a specific enum value from one specific enum type to another enum type 
 
 #### Parameters
 
-**inputEnumValue**
-The input enum value.
+Name|Description
+---|---
+**inputEnumValue**|The input enum value.
 
 #### Returns
 
@@ -38,13 +42,10 @@ The converted enum value.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The inputEnumValue is`null`.
-
-**T:System.ArgumentException**
-The inputEnumValue is not of type [Enum](#).
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The inputEnumValue is`null`.
+**ArgumentException**|The inputEnumValue is not of type.
 
 ### GetName(int value)
 
@@ -52,14 +53,13 @@ Gets the name.
 
 #### Parameters
 
-**value**
-The value.
+Name|Description
+---|---
+**value**|The value.
 
 #### Returns
 
 The name of the value.
-
-
 
 ### GetName(long value)
 
@@ -67,14 +67,13 @@ Gets the name.
 
 #### Parameters
 
-**value**
-The value.
+Name|Description
+---|---
+**value**|The value.
 
 #### Returns
 
 The name of the value.
-
-
 
 ### GetNames()
 
@@ -84,17 +83,13 @@ Gets the names.
 
 Array of names of an enum.
 
-
-
 ### GetValues()
 
 Gets the values.
 
 #### Returns
 
-[List](#) of values.
-
-
+of values.
 
 ### Parse(string input, bool ignoreCase)
 
@@ -102,17 +97,14 @@ Parses the specified input.
 
 #### Parameters
 
-**input**
-The input.
-
-**ignoreCase**
-if set to`true`, the case should be ignored.
+Name|Description
+---|---
+**input**|The input.
+**ignoreCase**|if set to`true`, the case should be ignored.
 
 #### Returns
 
 The enum value.
-
-
 
 ### ToList()
 
@@ -120,9 +112,7 @@ Converts an enumaration to a list.
 
 #### Returns
 
-[List](#) containing all the values.
-
-
+containing all the values.
 
 ### TryParse(string input, bool ignoreCase, Nullable<TEnum> result)
 
@@ -130,20 +120,15 @@ Tries to parse an enum value name.
 
 #### Parameters
 
-**input**
-The input.
-
-**ignoreCase**
-if set to`true`, the case will be ignored.
-
-**result**
-The result.
+Name|Description
+---|---
+**input**|The input.
+**ignoreCase**|if set to`true`, the case will be ignored.
+**result**|The result.
 
 #### Returns
 
 `true` if successful; otherwise`false`.
-
-
 
 ### TryParse(string input, bool ignoreCase, TEnum result)
 
@@ -151,20 +136,15 @@ Tries to parse an enum value name.
 
 #### Parameters
 
-**input**
-The input.
-
-**ignoreCase**
-if set to`true`, the case will be ignored.
-
-**result**
-The result.
+Name|Description
+---|---
+**input**|The input.
+**ignoreCase**|if set to`true`, the case will be ignored.
+**result**|The result.
 
 #### Returns
 
 `true` if successful; otherwise`false`.
-
-
 
 ### TryParse(string input, Nullable<TEnum> result)
 
@@ -172,17 +152,14 @@ Tries to parse an enum value name.
 
 #### Parameters
 
-**input**
-The input.
-
-**result**
-The result.
+Name|Description
+---|---
+**input**|The input.
+**result**|The result.
 
 #### Returns
 
 `true` if successful; otherwise`false`.
-
-
 
 ### TryParse(string input, TEnum result)
 
@@ -190,15 +167,12 @@ Tries to parse an enum value name.
 
 #### Parameters
 
-**input**
-The input.
-
-**result**
-The result.
+Name|Description
+---|---
+**input**|The input.
+**result**|The result.
 
 #### Returns
 
 `true` if successful; otherwise`false`.
-
-
 

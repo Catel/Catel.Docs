@@ -1,12 +1,17 @@
 
 
-# IExceptionService
++++
+title = "IExceptionService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IExceptionService
@@ -14,15 +19,11 @@ public interface IExceptionService
 
 This interface describes a simple Exception service.
 
-
-
 ## Properties
 
 ### ExceptionHandlers
 
 Gets the exception handlers.
-
-
 
 ## Events
 
@@ -30,13 +31,9 @@ Gets the exception handlers.
 
 Occurs when an exception is buffered.
 
-
-
 ### RetryingAction
 
 Occurs when an action is retrying.
-
-
 
 ## Methods
 
@@ -46,8 +43,9 @@ Gets the exception handler for the specified exception type.
 
 #### Parameters
 
-**exceptionType**
-Type of the exception.
+Name|Description
+---|---
+**exceptionType**|Type of the exception.
 
 #### Returns
 
@@ -55,13 +53,10 @@ The exception handler.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The is`null`.
-
-**T:System.ArgumentException**
-The exceptionType is not of type [Exception](#).
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The is`null`.
+**ArgumentException**|The exceptionType is not of type.
 
 ### GetHandler<TException>()
 
@@ -76,16 +71,15 @@ The type of the exception.
 
 The exception handler.
 
-
-
 ### HandleException(Exception exception)
 
 Handles the specified exception if possible.
 
 #### Parameters
 
-**exception**
-The exception to handle.
+Name|Description
+---|---
+**exception**|The exception to handle.
 
 #### Returns
 
@@ -93,10 +87,9 @@ The exception to handle.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The exception is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The exception is`null`.
 
 ### IsExceptionRegistered(Type exceptionType)
 
@@ -104,8 +97,9 @@ Determines whether the specified exception type is registered.
 
 #### Parameters
 
-**exceptionType**
-Type of the exception.
+Name|Description
+---|---
+**exceptionType**|Type of the exception.
 
 #### Returns
 
@@ -113,13 +107,10 @@ Type of the exception.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The is`null`.
-
-**T:System.ArgumentException**
-The exceptionType is not of type [Exception](#).
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The is`null`.
+**ArgumentException**|The exceptionType is not of type.
 
 ### IsExceptionRegistered<TException>()
 
@@ -134,23 +125,21 @@ The type of the exception.
 
 `true` if the exception type is registered; otherwise,`false`.
 
-
-
 ### Process(Action action)
 
 Processes the specified action.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### Process<TResult>(Func<TResult> action)
 
@@ -163,17 +152,17 @@ The result type.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessAsync(Func<Task> action)
 
@@ -181,17 +170,17 @@ Processes the specified action.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessAsync(Task action)
 
@@ -199,17 +188,17 @@ Processes the specified action.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessAsync<TResult>(Func<Task<TResult>> action)
 
@@ -222,17 +211,17 @@ The result type.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessAsync<TResult>(Func<TResult> action, CancellationToken cancellationToken)
 
@@ -245,20 +234,18 @@ The result type.
 
 #### Parameters
 
-**action**
-The action.
-
-**cancellationToken**
-The cancellation token.
+Name|Description
+---|---
+**action**|The action.
+**cancellationToken**|The cancellation token.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessWithRetry<TResult>(Func<TResult> action)
 
@@ -271,17 +258,17 @@ The result type.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### ProcessWithRetryAsync<TResult>(Func<Task<TResult>> action)
 
@@ -294,17 +281,17 @@ The result type.
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### Register(IExceptionHandler handler)
 
@@ -312,8 +299,9 @@ Registers an handler for a specific exception.
 
 #### Parameters
 
-**handler**
-The handler to use when the exception occurs.
+Name|Description
+---|---
+**handler**|The handler to use when the exception occurs.
 
 #### Returns
 
@@ -321,10 +309,9 @@ The handler to use.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
 
 ### Register<TException>(Action<TException> handler, Func<TException, bool> exceptionPredicate)
 
@@ -337,11 +324,10 @@ The type of the exception.
 
 #### Parameters
 
-**handler**
-The action to execute when the exception occurs.
-
-**exceptionPredicate**
-The exception filter.
+Name|Description
+---|---
+**handler**|The action to execute when the exception occurs.
+**exceptionPredicate**|The exception filter.
 
 #### Returns
 
@@ -349,13 +335,10 @@ The handler to use.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
-
-**T:System.Exception**
-A delegate callback throws an exception.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
+**Exception**|A delegate callback throws an exception.
 
 ### Unregister<TException>()
 
@@ -369,6 +352,4 @@ The type of the exception.
 #### Returns
 
 `true` if the exception is unsubscripted; otherwise`false`.
-
-
 

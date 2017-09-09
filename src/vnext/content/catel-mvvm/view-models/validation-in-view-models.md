@@ -1,4 +1,7 @@
-# Validation in view models
++++
+title = "Validation in view models" 
+description = ""
++++
 
 Validation is very important to provide both feedback to the user, but also to make sure that no invalid data reaches the model or database. Catel offers several ways to implement validation. All options are described in this part of the documentation.
 

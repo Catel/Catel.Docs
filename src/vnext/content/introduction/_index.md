@@ -6,9 +6,9 @@ weight = 10
 
 Welcome to the introduction of Catel. Catel is a  framework (or enterprise library, just use whatever you like) with data handling, diagnostics, logging, WPF controls, and an MVVM-framework. So Catel is more than "just" another MVVM-framework or some nice Extension Methods that can be used. It's more like a library that you want to include in all the XAML applications you are going to develop in the near future.
 
-@alert info
+{{% notice info %}}
 Catel is primarily meant for Line of Business (LoB) applications
-@end
+{{% /notice %}}
 
 It's important to realize that Catel is not just another Extension Methods library, nor only an MVVM-framework, but it is a combination of basic data handling, useful controls, and an MVVM-framework.
 

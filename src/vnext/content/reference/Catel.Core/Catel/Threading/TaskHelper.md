@@ -1,12 +1,17 @@
 
 
-# TaskHelper
++++
+title = "TaskHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TaskHelper
@@ -14,30 +19,21 @@ public static class TaskHelper
 
 Helper class for tasks.
 
-
-
 ## Fields
 
 ### DefaultConfigureAwaitValue
-False
 
 The default configure await value.
-
-
 
 ## Properties
 
 ### Canceled
 
-A [Task](#) that has been canceled.
-
-
+A that has been canceled.
 
 ### Completed
 
-A [Task](#) that has been completed.
-
-
+A that has been completed.
 
 ## Methods
 
@@ -47,20 +43,15 @@ Runs the specified function using Task.Run if available.
 
 #### Parameters
 
-**action**
-The action.
-
-**configureAwait**
-The value to be passed into ConfigureAwait.
-
-**cancellationToken**
-The cancellation token.
+Name|Description
+---|---
+**action**|The action.
+**configureAwait**|The value to be passed into ConfigureAwait.
+**cancellationToken**|The cancellation token.
 
 #### Returns
 
 Task&lt;T&gt;.
-
-
 
 ### Run(Func<Task> func, bool configureAwait, CancellationToken cancellationToken)
 
@@ -68,20 +59,15 @@ Runs the specified function using Task.Run if available.
 
 #### Parameters
 
-**func**
-The function.
-
-**configureAwait**
-The value to be passed into ConfigureAwait.
-
-**cancellationToken**
-The cancellation token.
+Name|Description
+---|---
+**func**|The function.
+**configureAwait**|The value to be passed into ConfigureAwait.
+**cancellationToken**|The cancellation token.
 
 #### Returns
 
 Task&lt;T&gt;.
-
-
 
 ### Run<TResult>(Func<Task<TResult>> func, bool configureAwait, CancellationToken cancellationToken)
 
@@ -94,20 +80,15 @@ Type of the result.
 
 #### Parameters
 
-**func**
-The function.
-
-**configureAwait**
-The value to be passed into ConfigureAwait.
-
-**cancellationToken**
-The cancellation token.
+Name|Description
+---|---
+**func**|The function.
+**configureAwait**|The value to be passed into ConfigureAwait.
+**cancellationToken**|The cancellation token.
 
 #### Returns
 
 Task&lt;T&gt;.
-
-
 
 ### Run<TResult>(Func<TResult> func, bool configureAwait, CancellationToken cancellationToken)
 
@@ -120,20 +101,15 @@ Type of the result.
 
 #### Parameters
 
-**func**
-The function.
-
-**configureAwait**
-The value to be passed into ConfigureAwait.
-
-**cancellationToken**
-The cancellation token.
+Name|Description
+---|---
+**func**|The function.
+**configureAwait**|The value to be passed into ConfigureAwait.
+**cancellationToken**|The cancellation token.
 
 #### Returns
 
 Task&lt;T&gt;.
-
-
 
 ### RunAndWait(Action[] actions)
 
@@ -141,15 +117,15 @@ Runs all the specified actions in separate threads and waits for the to complete
 
 #### Parameters
 
-**actions**
-The actions to spawn in separate threads.
+Name|Description
+---|---
+**actions**|The actions to spawn in separate threads.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The actions is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The actions is`null`.
 
 ### RunAndWaitAsync(Action[] actions)
 
@@ -157,15 +133,15 @@ Runs all the specified actions in separate threads and waits for the to complete
 
 #### Parameters
 
-**actions**
-The actions to spawn in separate threads.
+Name|Description
+---|---
+**actions**|The actions to spawn in separate threads.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The actions is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The actions is`null`.
 
 ### RunAndWaitAsync(Func<Task>[] actions)
 
@@ -173,13 +149,13 @@ Runs all the specified actions in separate threads and waits for the to complete
 
 #### Parameters
 
-**actions**
-The actions to spawn in separate threads.
+Name|Description
+---|---
+**actions**|The actions to spawn in separate threads.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The actions is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The actions is`null`.
 

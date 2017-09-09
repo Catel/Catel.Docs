@@ -1,12 +1,17 @@
 
 
-# ExceptionHandler
++++
+title = "ExceptionHandler" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ExceptionHandler<TException> : IExceptionHandler<TException, TException> where TException : Exception 
@@ -14,8 +19,7 @@ public abstract class ExceptionHandler<TException> : IExceptionHandler<TExceptio
 
 **Base types**
 
-[IExceptionHandler](/Catel.Core\Catel\ExceptionHandling\IExceptionHandler.md)
-
+[IExceptionHandler]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IExceptionHandler.md" >}})
 
 This implements the exception treatment mechanics.
 
@@ -23,8 +27,6 @@ This implements the exception treatment mechanics.
 
 **TException**
 The exception type.
-
-
 
 ## Fields
 
@@ -36,25 +38,17 @@ The exception type.
 
 Gets or sets the buffer policy.
 
-
-
 ### ExceptionType
 
 Gets the type of the handled exception.
-
-
 
 ### Filter
 
 Gets the exception filter.
 
-
-
 ### RetryPolicy
 
 Gets or sets the retry policy.
-
-
 
 ## Methods
 
@@ -64,23 +58,21 @@ Get the exception filter.
 
 #### Returns
 
-
-
 ### Handle(Exception exception)
 
 Handles the exception using the action that was defined.
 
 #### Parameters
 
-**exception**
-The exception.
+Name|Description
+---|---
+**exception**|The exception.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The exception is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The exception is`null`.
 
 ### OnException(TException exception)
 
@@ -88,8 +80,7 @@ The action to do on an exception of defined type occurs.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The exception is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The exception is`null`.
 

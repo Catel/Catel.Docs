@@ -1,12 +1,17 @@
 
 
-# DispatcherService
++++
+title = "DispatcherService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class DispatcherService : IDispatcherService
@@ -14,12 +19,9 @@ public class DispatcherService : IDispatcherService
 
 **Base types**
 
-[IDispatcherService](/Catel.Core\Catel\Services\IDispatcherService.md)
-
+[IDispatcherService]({{< relref "reference/Catel.Core/Catel/Services/IDispatcherService.md" >}})
 
 Service that allows the retrieval of the UI dispatcher.
-
-
 
 ## Fields
 
@@ -28,8 +30,6 @@ Service that allows the retrieval of the UI dispatcher.
 ### DispatcherService()
 
 Initializes a new instance of the [DispatcherService](#) class.
-
-
 
 ## Properties
 
@@ -41,13 +41,10 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**action**
-The action.
-
-**onlyBeginInvokeWhenNoAccess**
-If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
-
-
+Name|Description
+---|---
+**action**|The action.
+**onlyBeginInvokeWhenNoAccess**|If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 ### Invoke(Action action, bool onlyInvokeWhenNoAccess)
 
@@ -55,18 +52,16 @@ Executes the specified action with the specified arguments synchronously on the 
 
 #### Parameters
 
-**action**
-The action.
-
-**onlyInvokeWhenNoAccess**
-If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
+Name|Description
+---|---
+**action**|The action.
+**onlyInvokeWhenNoAccess**|If set to`true`, the action will be executed directly if possible. Otherwise,`Dispatcher.BeginInvoke` will be used.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### InvokeAsync(Action action)
 
@@ -74,14 +69,13 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**action**
-The action.
+Name|Description
+---|---
+**action**|The action.
 
 #### Returns
 
 The task representing the action.
-
-
 
 ### InvokeAsync(Delegate method, object[] args)
 
@@ -89,17 +83,14 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**method**
-The method.
-
-**args**
-The arguments to pass into the method.
+Name|Description
+---|---
+**method**|The method.
+**args**|The arguments to pass into the method.
 
 #### Returns
 
 The task representing the action.
-
-
 
 ### InvokeAsync<T>(Func<T> func)
 
@@ -112,12 +103,11 @@ The type of the result.
 
 #### Parameters
 
-**func**
-The function.
+Name|Description
+---|---
+**func**|The function.
 
 #### Returns
 
 The task representing the action.
-
-
 

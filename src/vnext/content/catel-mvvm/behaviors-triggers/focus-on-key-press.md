@@ -6,7 +6,7 @@ Sometimes you need to handle a key press and then set the focus on an element.
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition:

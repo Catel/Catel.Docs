@@ -1,4 +1,7 @@
-# Design-time view models
++++
+title = "Design-time view models" 
+description = ""
++++
 
 Lots of developers are using designers such as the built-in designer in Visual Studio or Expression Blend to design their xaml based applications. Although you should use designers with lots of care, we strive to fully support all designers.
 
@@ -44,7 +47,7 @@ Full DataWindow declaration:
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                  xmlns:catel="http://catel.codeplex.com"
+                  xmlns:catel="http://schemas.catelproject.com"
                   xmlns:ViewModels="clr-namespace:Catel.Examples.PersonApplication.ViewModels"
                   xmlns:Converters="clr-namespace:Catel.Examples.PersonApplication.Data.Converters"
                   xmlns:Models="clr-namespace:Catel.Examples.Models;assembly=Catel.Examples.Models" 
@@ -54,4 +57,4 @@ Full DataWindow declaration:
 
 3. Example of design time data support:
 
-![](../../images/catel-mvvm/designers/design-time-view-models/wpf.png)
+![](../../../images/catel-mvvm/designers/design-time-view-models/wpf.png)

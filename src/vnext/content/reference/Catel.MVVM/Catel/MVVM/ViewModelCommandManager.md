@@ -1,12 +1,17 @@
 
 
-# ViewModelCommandManager
++++
+title = "ViewModelCommandManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelCommandManager : IViewModelCommandManager
@@ -14,12 +19,9 @@ public class ViewModelCommandManager : IViewModelCommandManager
 
 **Base types**
 
-[IViewModelCommandManager](/Catel.MVVM\Catel\MVVM\IViewModelCommandManager.md)
-
+[IViewModelCommandManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager.md" >}})
 
 Command manager that manages the execution state of all commands of a view model.
-
-
 
 ## Fields
 
@@ -33,15 +35,15 @@ Adds a new handler when a command is executed on the specified view model.
 
 #### Parameters
 
-**handler**
-The handler to execute when a command is executed.
+Name|Description
+---|---
+**handler**|The handler to execute when a command is executed.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
 
 ### Create(IViewModel viewModel)
 
@@ -49,15 +51,15 @@ Registers the commands in a specific [IViewModel](#) instance. By subscribing to
 
 #### Parameters
 
-**viewModel**
-The view model.
+Name|Description
+---|---
+**viewModel**|The view model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ### InvalidateCommands(bool force)
 
@@ -65,8 +67,7 @@ Invalidates all the commands that implement the [ICatelCommand](#).
 
 #### Parameters
 
-**force**
-If`true`, the commands are re-initialized. The default value is`false`.
-
-
+Name|Description
+---|---
+**force**|If`true`, the commands are re-initialized. The default value is`false`.
 

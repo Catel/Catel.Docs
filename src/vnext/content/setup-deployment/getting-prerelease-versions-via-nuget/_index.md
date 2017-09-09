@@ -6,9 +6,9 @@ weight = 10
 
 ## Adding the custom package source
 
-@alert important
+{{% notice warning %}}
 Starting with Catel v5, the alpha prereleases are only available on the [MyGet feed for Catel](https://www.myget.org/feed/Packages/catel). Therefore you must first add the custom url to the NuGet Package Manager. The easiest way to do this is via Visual Studio.
-@end
+{{% /notice %}}
 
 1.  Go to *Tools* =\> *NuGet Package Manager* =\> *Package Manager Settings*
 2.  Select *Package Sources*

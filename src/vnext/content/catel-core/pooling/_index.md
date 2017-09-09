@@ -5,9 +5,9 @@ description = ""
 
 Garbage collection in .NET can be very expensive, especially for objects on the Large Object Heap (LOH). .NET itself already uses pooling for threads to prevent the costly creation of threads but instead re-uses the already created threads using a thread pool. Catel provides an implementation of pooling using the `PoolManager<TPoolable>`. This allows both Catel and third party developers to create a pool for large objects so they can be reused.
 
-@alert info
+{{% notice info %}}
 The documentation uses a byte array of 4096 as poolable object as example. If `_poolManager` is used in the code below, it represents an instance of `PoolManager<Buffer4096Poolable>`
-@end
+{{% /notice %}}
 
 ## Introduction to the pool manager
 
@@ -17,9 +17,9 @@ The pool manager internally uses a stack to manage the available objects in the 
 
 It is recommended that a pool manager gets registered in the *ServiceLocator* so it can be re-used by multiple components.
 
-@alert important
+{{% notice warning %}}
 Note that the pool manager does not limit the number of objects in memory. It has a `MaxSize` property so it will store only a maximum amount of objects inside the internal pool, but if the pool is running out of instances and a new object is requested, it will return a new instance (and thus creating a new object which could be garbage collected).
-@end
+{{% /notice %}}
 
 ### Retrieving objects from the pool
 

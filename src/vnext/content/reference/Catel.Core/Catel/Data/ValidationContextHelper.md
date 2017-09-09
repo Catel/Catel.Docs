@@ -1,20 +1,23 @@
 
 
-# ValidationContextHelper
++++
+title = "ValidationContextHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ValidationContextHelper
 ```
 
 Helper class for [IValidationContext](#) classes.
-
-
 
 ## Methods
 
@@ -24,11 +27,10 @@ Gets the changes between two different validation contexts.
 
 #### Parameters
 
-**firstContext**
-The first context.
-
-**secondContext**
-The second context.
+Name|Description
+---|---
+**firstContext**|The first context.
+**secondContext**|The second context.
 
 #### Returns
 
@@ -36,8 +38,7 @@ The list of changes.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The firstContext is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The firstContext is`null`.
 

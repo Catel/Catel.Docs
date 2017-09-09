@@ -1,4 +1,7 @@
-# Window and DataWindow
++++
+title = "Window and DataWindow" 
+description = ""
++++
 
 ## Introduction to the Window
 
@@ -26,7 +29,7 @@ The usage of the `DataWindow` class is very simple, once you know how to do it. 
 <catel:DataWindow x:Class="Catel.Articles._03___MVVM.Examples.DataWindow.PersonWindow"
                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                  xmlns:catel="http://catel.codeplex.com">
+                  xmlns:catel="http://schemas.catelproject.com">
     
     <!-- Content left out for the sake of simplicity -->
     

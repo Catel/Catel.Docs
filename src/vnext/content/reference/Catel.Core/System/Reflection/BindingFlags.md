@@ -1,6 +1,11 @@
 
 
-# BindingFlags
++++
+title = "BindingFlags" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,26 +18,19 @@ public enum BindingFlags : Enum
 ```
 
 **Base types**
-[Enum]()
-
+[Enum]({{< relref "#" >}})
 
 ## Fields
 
 ### Default
-0
 
 ### FlattenHierarchy
-64
 
 ### Instance
-4
 
 ### NonPublic
-32
 
 ### Public
-16
 
 ### Static
-8
 

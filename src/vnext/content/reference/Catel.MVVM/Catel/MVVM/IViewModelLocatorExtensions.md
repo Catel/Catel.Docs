@@ -1,20 +1,23 @@
 
 
-# IViewModelLocatorExtensions
++++
+title = "IViewModelLocatorExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IViewModelLocatorExtensions
 ```
 
 Extension methods for the [IViewModelLocator](#).
-
-
 
 ## Methods
 
@@ -32,15 +35,15 @@ The type of the view model.
 
 #### Parameters
 
-**viewModelLocator**
-The view model locator.
+Name|Description
+---|---
+**viewModelLocator**|The view model locator.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelLocator is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelLocator is`null`.
 
 ### ResolveViewModel<TView>(IViewModelLocator viewModelLocator)
 
@@ -53,8 +56,9 @@ The type of the view.
 
 #### Parameters
 
-**viewModelLocator**
-The view model locator.
+Name|Description
+---|---
+**viewModelLocator**|The view model locator.
 
 #### Returns
 
@@ -62,12 +66,11 @@ The resolved view model or`null` if the view model could not be resolved.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelLocator is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelLocator is`null`.
 
 #### Remarks
 
 Keep in mind that all results are cached. The cache itself is not automatically cleared when the NamingConventions are changed. If the NamingConventions are changed, the cache must be cleared manually.
-
-
 

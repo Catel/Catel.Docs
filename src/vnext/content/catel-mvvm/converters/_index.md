@@ -1,10 +1,13 @@
-# Converters
++++
+title = "Converters" 
+description = ""
++++
 
 In MVVM, there will be some point where you will need to use converters. Most of these converters are used in any project, so we have decided to add them to Catel. Below is a list of converters and a short description what they are used for.
 
-@alert info
+{{% notice info %}}
 Note that the behavior of most converters can be inverted by using the `ConverterParameter`
-@end
+{{% /notice %}}
 
 ## Linking converters
 

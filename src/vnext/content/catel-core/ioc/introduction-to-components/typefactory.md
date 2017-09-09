@@ -71,9 +71,9 @@ public class MyClass
 }
 ```
 
-@alert info
+{{% notice info %}}
 There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only
-@end
+{{% /notice %}}
 
 ## Using dependency injection in Catel
 
@@ -121,6 +121,6 @@ ServiceLocator.Default.SupportedDependencyInjection = false
 
 All types created with the `TypeFactory` can be initialized with custom code. This can be done by implementing the `INeedCustomInitialization` interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.
 
-@alert important
+{{% notice warning %}}
 To prevent misuse of the `Initialize` method, it is best to implement the interface explicitly
-@end
+{{% /notice %}}

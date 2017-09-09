@@ -1,24 +1,28 @@
 
 
-# SavableModelBase
++++
+title = "SavableModelBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class SavableModelBase<T> : ISavableModel, ModelBase where T : class 
 ```
 
 **Base types**
-[ModelBase](/Catel.Core\Catel\Data\ModelBase.md)
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 **Base types**
 
-[ISavableModel](/Catel.Core\Catel\Data\ISavableModel.md)
-
+[ISavableModel]({{< relref "reference/Catel.Core/Catel/Data/ISavableModel.md" >}})
 
 Abstract class that makes the [ModelBase](#) serializable.
 
@@ -26,8 +30,6 @@ Abstract class that makes the [ModelBase](#) serializable.
 
 **T**
 Type that the class should hold (same as the defined type).
-
-
 
 ## Fields
 
@@ -41,14 +43,11 @@ Loads the object from a stream using a specific formatting.
 
 #### Parameters
 
-**stream**
-Stream that contains the serialized data of this object.
-
-**serializer**
-The serializer.
-
-**configuration**
-The configuration.
+Name|Description
+---|---
+**stream**|Stream that contains the serialized data of this object.
+**serializer**|The serializer.
+**configuration**|The configuration.
 
 #### Returns
 
@@ -57,8 +56,6 @@ Deserialized instance of the object. If the deserialization fails,`null` is retu
 #### Remarks
 
 When enableRedirects is enabled, loading will take more time. Only set the parameter to`true` when the deserialization without redirects fails.
-
-
 
 ### Load(Type type, Stream stream, ISerializer serializer, ISerializationConfiguration configuration)
 
@@ -66,17 +63,12 @@ Loads the object from a stream using a specific formatting.
 
 #### Parameters
 
-**type**
-The type.
-
-**stream**
-Stream that contains the serialized data of this object.
-
-**serializer**
-The serializer.
-
-**configuration**
-The configuration.
+Name|Description
+---|---
+**type**|The type.
+**stream**|Stream that contains the serialized data of this object.
+**serializer**|The serializer.
+**configuration**|The configuration.
 
 #### Returns
 
@@ -86,22 +78,15 @@ Deserialized instance of the object. If the deserialization fails,`null` is retu
 
 When enableRedirects is enabled, loading will take more time. Only set the parameter to`true` when the deserialization without redirects fails.
 
-
-
 ### Save(Stream stream, ISerializer serializer, ISerializationConfiguration configuration)
 
 Saves the object to a stream using a specific formatting.
 
 #### Parameters
 
-**stream**
-Stream that will contain the serialized data of this object.
-
-**serializer**
-The serializer to use.
-
-**configuration**
-The configuration.
-
-
+Name|Description
+---|---
+**stream**|Stream that will contain the serialized data of this object.
+**serializer**|The serializer to use.
+**configuration**|The configuration.
 

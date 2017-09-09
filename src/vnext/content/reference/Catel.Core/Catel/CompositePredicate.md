@@ -1,12 +1,17 @@
 
 
-# CompositePredicate
++++
+title = "CompositePredicate" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class CompositePredicate<T, T> where T : class 
@@ -19,8 +24,6 @@ Composite predicate.
 **T**
 The predicates.
 
-
-
 ## Fields
 
 ## Methods
@@ -31,8 +34,9 @@ Checks whether the specified target does not match any of the registered predica
 
 #### Parameters
 
-**target**
-The target.
+Name|Description
+---|---
+**target**|The target.
 
 #### Returns
 
@@ -40,10 +44,9 @@ The target.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The target is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The target is`null`.
 
 ### MatchesAll(T target)
 
@@ -51,8 +54,9 @@ Checks whether the specified target matches all of the registered predicates.
 
 #### Parameters
 
-**target**
-The target.
+Name|Description
+---|---
+**target**|The target.
 
 #### Returns
 
@@ -60,10 +64,9 @@ The target.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The target is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The target is`null`.
 
 ### MatchesAny(T target)
 
@@ -71,8 +74,9 @@ Checks whether the specified target matches any of the registered predicates.
 
 #### Parameters
 
-**target**
-The target.
+Name|Description
+---|---
+**target**|The target.
 
 #### Returns
 
@@ -80,10 +84,9 @@ The target.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The target is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The target is`null`.
 
 ### MatchesNone(T target)
 
@@ -91,8 +94,9 @@ Checks whether the specified target matches none of the registered predicates.
 
 #### Parameters
 
-**target**
-The target.
+Name|Description
+---|---
+**target**|The target.
 
 #### Returns
 
@@ -100,8 +104,7 @@ The target.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The target is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The target is`null`.
 

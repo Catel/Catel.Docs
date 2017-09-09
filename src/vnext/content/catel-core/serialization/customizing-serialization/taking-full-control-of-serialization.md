@@ -8,9 +8,9 @@ It's possible that full control is needed (either for performance or custom seri
 
 ## Binary serialization
 
-@alert important
+{{% notice warning %}}
 Custom binary serialization is not (yet) supported
-@end
+{{% /notice %}}
 
 ## Xml serialization
 

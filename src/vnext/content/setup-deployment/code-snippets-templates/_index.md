@@ -21,7 +21,7 @@ Extract the *zip\\C\#\\ItemTemplates* to the following directory: *%MyDocuments
 **
 **
 
-@alert important
+{{% notice warning %}}
 It's possible that you need to restart Visual Studio for it to recognize the templates
-@end
+{{% /notice %}}
 

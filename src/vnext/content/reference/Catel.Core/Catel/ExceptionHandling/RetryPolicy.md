@@ -1,28 +1,30 @@
 
 
-# RetryPolicy
++++
+title = "RetryPolicy" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ExceptionHandling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class RetryPolicy : IRetryPolicy, PolicyBase
 ```
 
 **Base types**
-[PolicyBase](/Catel.Core\Catel\ExceptionHandling\PolicyBase.md)
+[PolicyBase]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.md" >}})
 
 **Base types**
 
-[IRetryPolicy](/Catel.Core\Catel\ExceptionHandling\IRetryPolicy.md)
-
+[IRetryPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IRetryPolicy.md" >}})
 
 Represents the retry policy.
-
-
 
 ## Constructors
 
@@ -32,16 +34,14 @@ Initializes a new instance of the [RetryPolicy](#) class.
 
 #### Parameters
 
-**numberOfTimes**
-The number of times.
-
-**interval**
-The interval.
+Name|Description
+---|---
+**numberOfTimes**|The number of times.
+**interval**|The interval.
 
 #### Exceptions
 
-**T:System.ArgumentOutOfRangeException**
-The numberOfTimes is larger than`1`.
-
-
+Name|Description
+---|---
+**System.ArgumentOutOfRangeException**|The numberOfTimes is larger than`1`.
 

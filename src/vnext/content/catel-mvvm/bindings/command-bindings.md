@@ -1,4 +1,7 @@
-# Command bindings
++++
+title = "Command bindings" 
+description = ""
++++
 
 Catel will automatically hook up the `CanExecute` of the command to the `Enabled` property of the element it is bound to. A command binding is always bound to an event of a specific element as shown below.
 
@@ -15,6 +18,6 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 ## iOS
 
-@alert important
+{{% notice warning %}}
 iOS not yet documented
-@end
+{{% /notice %}}

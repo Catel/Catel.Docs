@@ -1,24 +1,26 @@
 
 
-# ColorToBrushConverter
++++
+title = "ColorToBrushConverter" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public class ColorToBrushConverter : ValueConverterBase<Color, Brush>
 ```
 
 **Base types**
-[ValueConverterBase]()
-
+[ValueConverterBase]({{< relref "#" >}})
 
 ColorToBrushConverter
-
-
 
 ## Methods
 

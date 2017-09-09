@@ -1,20 +1,23 @@
 
 
-# UniqueIdentifierHelper
++++
+title = "UniqueIdentifierHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class UniqueIdentifierHelper
 ```
 
 Helper class that allows to generic unique identifiers for objects. This class internally keeps a counter per type and will increase the counter every time a new unique identifier is requested.
-
-
 
 ## Fields
 
@@ -26,8 +29,9 @@ Gets a unique identifier for the specified type.
 
 #### Parameters
 
-**type**
-The type to retrieve the unique identifier for.
+Name|Description
+---|---
+**type**|The type to retrieve the unique identifier for.
 
 #### Returns
 
@@ -35,10 +39,9 @@ A new unique identifier for the type.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 
 ### GetUniqueIdentifier<T>()
 
@@ -52,6 +55,4 @@ The type to retrieve the unique identifier for.
 #### Returns
 
 A new unique identifier for the type.
-
-
 

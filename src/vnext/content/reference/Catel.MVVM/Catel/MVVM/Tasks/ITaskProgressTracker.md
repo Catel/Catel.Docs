@@ -1,20 +1,23 @@
 
 
-# ITaskProgressTracker
++++
+title = "ITaskProgressTracker" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Tasks
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ITaskProgressTracker
 ```
 
 The progress log
-
-
 
 ## Methods
 
@@ -24,10 +27,9 @@ Update the task status.
 
 #### Parameters
 
-**message**
-The message.
-
-
+Name|Description
+---|---
+**message**|The message.
 
 ### UpdateStatus(string message, bool indeterminate)
 
@@ -35,13 +37,10 @@ Update the task status.
 
 #### Parameters
 
-**message**
-The message.
-
-**indeterminate**
-The indeterminate state.
-
-
+Name|Description
+---|---
+**message**|The message.
+**indeterminate**|The indeterminate state.
 
 ### UpdateStatus(string message, int percentage)
 
@@ -49,11 +48,8 @@ Update the task status.
 
 #### Parameters
 
-**message**
-The message.
-
-**percentage**
-The percentage.
-
-
+Name|Description
+---|---
+**message**|The message.
+**percentage**|The percentage.
 

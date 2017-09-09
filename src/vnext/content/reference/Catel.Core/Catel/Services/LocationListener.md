@@ -1,6 +1,11 @@
 
 
-# LocationListener
++++
+title = "LocationListener" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public class LocationListener : Thread
 ```
 
 **Base types**
-[Thread]()
-
+[Thread]({{< relref "#" >}})
 
 A location listener.
-
-
 
 ## Fields
 
@@ -28,13 +30,9 @@ A location listener.
 
 Occurs when the location has changed.
 
-
-
 ### StatusChanged
 
 Occurs when the status has changed.
-
-
 
 ## Methods
 
@@ -44,10 +42,9 @@ Called when the location has changed.
 
 #### Parameters
 
-**location**
-The new location, as a Location object.
-
-
+Name|Description
+---|---
+**location**|The new location, as a Location object.
 
 ### OnProviderDisabled(string provider)
 
@@ -55,10 +52,9 @@ Called when the provider is disabled by the user.
 
 #### Parameters
 
-**provider**
-The name of the location provider associated with this update.
-
-
+Name|Description
+---|---
+**provider**|The name of the location provider associated with this update.
 
 ### OnProviderEnabled(string provider)
 
@@ -66,10 +62,9 @@ Called when the provider is enabled by the user.
 
 #### Parameters
 
-**provider**
-The name of the location provider associated with this update.
-
-
+Name|Description
+---|---
+**provider**|The name of the location provider associated with this update.
 
 ### OnStatusChanged(string provider, Availability status, Bundle extras)
 
@@ -77,20 +72,13 @@ Called when the provider status changes.
 
 #### Parameters
 
-**provider**
-The name of the location provider associated with this update.
-
-**status**
-The status.
-
-**extras**
-The extras.
-
-
+Name|Description
+---|---
+**provider**|The name of the location provider associated with this update.
+**status**|The status.
+**extras**|The extras.
 
 ### Run()
 
 Calls the`run()` method of the Runnable object the receiver holds.
-
-
 

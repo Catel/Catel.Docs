@@ -1,4 +1,7 @@
-# Creating a view model with a model
++++
+title = "Creating a view model with a model" 
+description = ""
++++
 
 This example shows how to create a "classical" view model without any Catel specific MVVM features such as data pass-through. Although it is recommended to use the pass-through features, some people want to have custom validation on the view model, or want to be fully in control.
 

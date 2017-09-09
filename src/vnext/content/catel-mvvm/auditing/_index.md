@@ -1,4 +1,7 @@
-# Auditing
++++
+title = "Auditing" 
+description = ""
++++
 
 There are lots of lightweight MVVM frameworks out there, which work great for the basics. However, if you are writing larger enterprise applications, notifying the UI of changed properties isn't enough. For example, did you think about Command Authentication? Or what about sensor emulation for Windows Phone 7 (that Microsoft don’t provide)?
 
@@ -13,17 +16,17 @@ There are lots of lightweight MVVM frameworks out there, which work great for th
 
 With the auditing capabilities of Catel, you can create and register custom auditors that can handled changes and events of view models. This way, you can gather a lot of statistics or any information that you want to gather about the user experience. Below is a list of events that can be handled:
 
--   OnViewModelCreating
--   OnViewModelCreated
--   OnPropertyChanging
--   OnPropertyChanged
--   OnCommandExecuting
--   OnViewModelSaving
--   OnViewModelSaved
--   OnViewModelCanceling
--   OnViewModelCanceled
--   OnViewModelClosing
--   OnViewModelClosed
+- OnViewModelCreating
+- OnViewModelCreated
+- OnPropertyChanging
+- OnPropertyChanged
+- OnCommandExecuting
+- OnViewModelSaving
+- OnViewModelSaved
+- OnViewModelCanceling
+- OnViewModelCanceled
+- OnViewModelClosing
+- OnViewModelClosed
 
 The developer has all the freedom to handle one or more methods in an auditor. Of course multiple auditors are possible as well.
 

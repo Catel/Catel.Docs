@@ -1,33 +1,35 @@
 
 
-# FastBindingList
++++
+title = "FastBindingList" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Collections
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class FastBindingList<T> : ISuspendChangeNotificationsCollection, BindingList<T>
 ```
 
 **Base types**
-[BindingList]()
+[BindingList]({{< relref "#" >}})
 
 **Base types**
 
-[ISuspendChangeNotificationsCollection](/Catel.Core\Catel\Collections\ISuspendChangeNotificationsCollection.md)
+[ISuspendChangeNotificationsCollection]({{< relref "reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.md" >}})
 
-
-Fast implementation of [BindingList](#) where the change notifications can be suspended.
+Fast implementation of where the change notifications can be suspended.
 
 #### Type Parameters
 
 **T**
 Type of the elements contained by this collection.
-
-
 
 ## Fields
 
@@ -35,31 +37,27 @@ Type of the elements contained by this collection.
 
 ### FastBindingList()
 
-Initializes a new instance of the [FastBindingList](#) class.
-
-
-
-### FastBindingList(IEnumerable<T> collection)
-
-Initializes a new instance of the [FastBindingList](#) class.
-
-#### Parameters
-
-**collection**
-The collection.
-
-
+Initializes a new instance of the [Missing: <see cref="T:Catel.Collections.FastBindingList`1" />](#) class.
 
 ### FastBindingList(IEnumerable collection)
 
-Initializes a new instance of the [FastBindingList](#) class.
+Initializes a new instance of the [Missing: <see cref="T:Catel.Collections.FastBindingList`1" />](#) class.
 
 #### Parameters
 
-**collection**
-The collection.
+Name|Description
+---|---
+**collection**|The collection.
 
+### FastBindingList(IEnumerable<T> collection)
 
+Initializes a new instance of the [Missing: <see cref="T:Catel.Collections.FastBindingList`1" />](#) class.
+
+#### Parameters
+
+Name|Description
+---|---
+**collection**|The collection.
 
 ## Properties
 
@@ -67,37 +65,15 @@ The collection.
 
 Gets or sets a value indicating whether events should automatically be dispatched to the UI thread.
 
-
-
 ### IsDirty
 
 Gets or sets a value indicating whether change to the collection is made when its notifications are suspended.
-
-
 
 ### NotificationsSuspended
 
 Gets a value indicating whether change notifications are suspended.
 
-
-
 ## Methods
-
-### AddItems(IEnumerable<T> collection)
-
-Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
-
-#### Parameters
-
-**collection**
-The collection.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The collection is`null`.
-
-
 
 ### AddItems(IEnumerable collection)
 
@@ -105,34 +81,31 @@ Adds the specified items to the collection without causing a change notification
 
 #### Parameters
 
-**collection**
-The collection.
+Name|Description
+---|---
+**collection**|The collection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The collection is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
+### AddItems(IEnumerable<T> collection)
 
-
-### InsertItems(IEnumerable<T> collection, int index)
-
-Inserts the elements of the specified collection at the specified index.
+Adds the specified items to the collection without causing a change notification for all items. This method will raise a change notification at the end.
 
 #### Parameters
 
-**collection**
-The collection.
-
-**index**
-The start index.
+Name|Description
+---|---
+**collection**|The collection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The collection is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
 ### InsertItems(IEnumerable collection, int index)
 
@@ -140,34 +113,33 @@ Inserts the elements of the specified collection at the specified index.
 
 #### Parameters
 
-**collection**
-The collection.
-
-**index**
-The start index.
+Name|Description
+---|---
+**collection**|The collection.
+**index**|The start index.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The collection is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
+### InsertItems(IEnumerable<T> collection, int index)
 
-
-### RemoveItems(IEnumerable<T> collection)
-
-Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
+Inserts the elements of the specified collection at the specified index.
 
 #### Parameters
 
-**collection**
-The collection.
+Name|Description
+---|---
+**collection**|The collection.
+**index**|The start index.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The collection is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
 ### RemoveItems(IEnumerable collection)
 
@@ -175,25 +147,39 @@ Removes the specified items from the collection without causing a change notific
 
 #### Parameters
 
-**collection**
-The collection.
+Name|Description
+---|---
+**collection**|The collection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The collection is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
+### RemoveItems(IEnumerable<T> collection)
 
+Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.
+
+#### Parameters
+
+Name|Description
+---|---
+**collection**|The collection.
+
+#### Exceptions
+
+Name|Description
+---|---
+**ArgumentNullException**|The collection is`null`.
 
 ### Reset()
 
 Raises CollectionChanged with Reset changed action.
 
-
-
 ### SuspendChangeNotifications()
 
-Suspends the change notifications until the returned [IDisposable](#) is disposed.
+Suspends the change notifications until the returned is disposed.
 
 #### Returns
 
@@ -216,17 +202,16 @@ var fastCollection = new FastBindingList<int>();
     }
     
 ```
-
-
 
 ### SuspendChangeNotifications(SuspensionMode mode)
 
-Suspends the change notifications until the returned [IDisposable](#) is disposed.
+Suspends the change notifications until the returned is disposed.
 
 #### Parameters
 
-**mode**
-The suspension Mode.
+Name|Description
+---|---
+**mode**|The suspension Mode.
 
 #### Returns
 
@@ -249,6 +234,4 @@ var fastCollection = new FastBindingList<int>();
     }
     
 ```
-
-
 

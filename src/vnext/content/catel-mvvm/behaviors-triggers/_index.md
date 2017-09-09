@@ -1,4 +1,7 @@
-# Behaviors & triggers
++++
+title = "Behaviors & triggers" 
+description = ""
++++
 
 Behaviors and triggers are very important to correctly separate the view from the view model. For example, to respond to an event in a view model, you cannot simply subscribe to the events in the view. The EventToCommand behavior is a great example to solve this problem.
 
@@ -8,9 +11,9 @@ Catel offers lots of behaviors out of the box, so it is definitely worth taking 
 
 Starting with Catel 4.0, it is possible to manage interactivity classes such as behaviors from the InteractivityManager class. This allows a developer to get notified when a behavior or trigger is loaded or unloaded.
 
-@alert important
+{{% notice warning %}}
 Note that the *InteractivityManager* is only compatible with behaviors and triggers using one of the Catel base classes
-@end
+{{% /notice %}}
 
 The manager contains both events and methods to retrieve information about triggers. For example, if one is interested in all the *Focus* triggers, one could do the following:
 

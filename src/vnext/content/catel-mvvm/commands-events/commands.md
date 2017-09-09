@@ -1,4 +1,7 @@
-# Commands
++++
+title = "Commands" 
+description = ""
++++
 
 Commands are supported in Catel. The base class for commands is `Command`.
 

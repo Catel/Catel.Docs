@@ -1,12 +1,17 @@
 
 
-# IApiCop
++++
+title = "IApiCop" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IApiCop
@@ -14,15 +19,11 @@ public interface IApiCop
 
 Interface to specify writers for the ApiCop functionality.
 
-
-
 ## Properties
 
 ### TargetType
 
 Gets the target type of the ApiCop. This is the type where the ApiCop is created for.
-
-
 
 ## Methods
 
@@ -33,8 +34,6 @@ Gets the results of this specific ApiCop.
 #### Returns
 
 The results of this ApiCop.
-
-
 
 ### RegisterRule<TRule>(TRule rule)
 
@@ -47,8 +46,9 @@ The type of the rule.
 
 #### Parameters
 
-**rule**
-The rule.
+Name|Description
+---|---
+**rule**|The rule.
 
 #### Returns
 
@@ -56,10 +56,9 @@ The rule.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The rule is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The rule is`null`.
 
 ### UpdateRule<TRule>(string name, Action<TRule> action)
 
@@ -72,11 +71,10 @@ The type of the rule.
 
 #### Parameters
 
-**name**
-The name.
-
-**action**
-The action.
+Name|Description
+---|---
+**name**|The name.
+**action**|The action.
 
 #### Returns
 
@@ -84,11 +82,8 @@ The rule or`null` if the rule is not registered first.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The name is`null` or whitespace.
-
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentException**|The name is`null` or whitespace.
+**ArgumentNullException**|The action is`null`.
 

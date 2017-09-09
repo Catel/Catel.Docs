@@ -1,24 +1,26 @@
 
 
-# DependencyPropertyValueChangedEventArgs
++++
+title = "DependencyPropertyValueChangedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public class DependencyPropertyValueChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 Provides data for a [DependencyPropertyChangedHelper](#) implementation.
-
-
 
 ## Constructors
 
@@ -28,19 +30,12 @@ Initializes a new instance of the [DependencyPropertyValueChangedEventArgs](#) c
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**dependencyProperty**
-Dependency property.
-
-**oldValue**
-Old value.
-
-**newValue**
-New value.
-
-
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**dependencyProperty**|Dependency property.
+**oldValue**|Old value.
+**newValue**|New value.
 
 ## Properties
 
@@ -48,29 +43,19 @@ New value.
 
 Gets the dependency property that has changed.
 
-
-
 ### FxEventArgs
 
 Gets the framework event args.
-
-
 
 ### NewValue
 
 Gets the value of the property after the change.
 
-
-
 ### OldValue
 
 Gets the value of the property before the change.
 
-
-
 ### PropertyName
 
 Gets the name of the property.
-
-
 

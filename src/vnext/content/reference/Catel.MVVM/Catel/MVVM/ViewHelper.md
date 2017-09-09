@@ -1,20 +1,23 @@
 
 
-# ViewHelper
++++
+title = "ViewHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public static class ViewHelper
 ```
 
 View helper class for MVVM scenarios.
-
-
 
 ## Fields
 
@@ -26,11 +29,10 @@ Constructs the view with the view model. First, this method tries to inject the 
 
 #### Parameters
 
-**viewType**
-Type of the view to instantiate.
-
-**dataContext**
-The data context to inject into the view. In most cases, this will be a view model.
+Name|Description
+---|---
+**viewType**|Type of the view to instantiate.
+**dataContext**|The data context to inject into the view. In most cases, this will be a view model.
 
 #### Returns
 
@@ -38,10 +40,9 @@ The constructed view or`null` if it was not possible to construct the view.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewType is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewType is`null`.
 
 ### ConstructViewWithViewModel<T>(Type viewType, object dataContext)
 
@@ -54,11 +55,10 @@ The type of the view to return.
 
 #### Parameters
 
-**viewType**
-Type of the view to instantiate.
-
-**dataContext**
-The data context to inject into the view. In most cases, this will be a view model.
+Name|Description
+---|---
+**viewType**|Type of the view to instantiate.
+**dataContext**|The data context to inject into the view. In most cases, this will be a view model.
 
 #### Returns
 
@@ -66,12 +66,11 @@ The constructed view or`null` if it was not possible to construct the view.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewType is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The viewType is`null`.
 
 #### Remarks
 
 Internally uses the Object) method and casts the result.
-
-
 

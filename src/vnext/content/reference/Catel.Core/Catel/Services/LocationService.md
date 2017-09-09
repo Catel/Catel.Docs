@@ -1,24 +1,26 @@
 
 
-# LocationService
++++
+title = "LocationService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class LocationService : LocationServiceBase
 ```
 
 **Base types**
-[LocationServiceBase](/Catel.Core\Catel\Services\LocationServiceBase.md)
-
+[LocationServiceBase]({{< relref "reference/Catel.Core/Catel/Services/LocationServiceBase.md" >}})
 
 Implementation of the [ILocationService](#)
-
-
 
 ## Fields
 
@@ -30,8 +32,7 @@ Initializes a new instance of the [LocationService](#) class.
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
 

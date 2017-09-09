@@ -1,6 +1,11 @@
 
 
-# Application
++++
+title = "Application" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,8 +18,7 @@ public class Application<TMainPage> : Application where TMainPage : Page
 ```
 
 **Base types**
-[Application]()
-
+[Application]({{< relref "#" >}})
 
 The application base class.
 
@@ -22,8 +26,6 @@ The application base class.
 
 **TMainPage**
 The main page type.
-
-
 
 ## Constructors
 

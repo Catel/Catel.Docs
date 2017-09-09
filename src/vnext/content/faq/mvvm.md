@@ -18,7 +18,7 @@ When writing MVVM, it's "forbidden" (read: not a best practice) to use click han
 
     ```
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-    xmlns:catel="http://catel.codeplex.com"
+    xmlns:catel="http://schemas.catelproject.com"
     ```
 
 4.  Use the following code to convert an event to a command:

@@ -1,24 +1,26 @@
 
 
-# CommandExecutedEventArgs
++++
+title = "CommandExecutedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class CommandExecutedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
+[EventArgs]({{< relref "#" >}})
 
-
-[EventArgs](#) implementation for the event when an [ICatelCommand](#) has been executed.
-
-
+implementation for the event when an [ICatelCommand](#) has been executed.
 
 ## Constructors
 
@@ -28,21 +30,17 @@ Initializes a new instance of the [CommandExecutedEventArgs](#) class.
 
 #### Parameters
 
-**command**
-The command that just has been executed.
-
-**commandParameter**
-The command parameter that was used for the execution.
-
-**commandPropertyName**
-The property name under which the command is registered.
+Name|Description
+---|---
+**command**|The command that just has been executed.
+**commandParameter**|The command parameter that was used for the execution.
+**commandPropertyName**|The property name under which the command is registered.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The command is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The command is`null`.
 
 ## Properties
 
@@ -50,17 +48,11 @@ The command is`null`.
 
 Gets the command that just has been executed.
 
-
-
 ### CommandParameter
 
 Gets the command parameter used for the execution.
 
-
-
 ### CommandPropertyName
 
 Gets the property name under which the command is registered
-
-
 

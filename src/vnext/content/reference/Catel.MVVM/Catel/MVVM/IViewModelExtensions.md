@@ -1,20 +1,23 @@
 
 
-# IViewModelExtensions
++++
+title = "IViewModelExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IViewModelExtensions
 ```
 
 Extension methods for [IViewModel](#).
-
-
 
 ## Methods
 
@@ -26,8 +29,6 @@ Cancels the editing of the data, but also closes the view model in the same call
 
 `true` if successful; otherwise`false`.
 
-
-
 ### SaveAndCloseViewModelAsync(IViewModel viewModel)
 
 Saves the data, but also closes the view model in the same call if the save succeeds.
@@ -35,6 +36,4 @@ Saves the data, but also closes the view model in the same call if the save succ
 #### Returns
 
 `true` if successful; otherwise`false`.
-
-
 

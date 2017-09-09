@@ -1,24 +1,26 @@
 
 
-# ValidationEventArgs
++++
+title = "ValidationEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ValidationEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 The validation event args.
-
-
 
 ## Constructors
 
@@ -28,16 +30,13 @@ Initializes a new instance of the [ValidationEventArgs](#) class.
 
 #### Parameters
 
-**validationContext**
-The validation context.
-
-
+Name|Description
+---|---
+**validationContext**|The validation context.
 
 ## Properties
 
 ### ValidationContext
 
 Gets the validation context.
-
-
 

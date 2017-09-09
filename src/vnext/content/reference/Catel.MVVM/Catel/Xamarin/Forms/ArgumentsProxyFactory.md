@@ -1,6 +1,11 @@
 
 
-# ArgumentsProxyFactory
++++
+title = "ArgumentsProxyFactory" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -20,21 +25,14 @@ Creates a proxy for.
 
 #### Parameters
 
-**caption**
-The caption
-
-**message**
-The message
-
-**positiveButton**
-The positive button text
-
-**negativeButton**
-The negative button text
+Name|Description
+---|---
+**caption**|The caption
+**message**|The message
+**positiveButton**|The positive button text
+**negativeButton**|The negative button text
 
 #### Returns
 
 The proxy instance
-
-
 

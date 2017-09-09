@@ -1,24 +1,26 @@
 
 
-# BindingWithValidation
++++
+title = "BindingWithValidation" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class BindingWithValidation : Binding
 ```
 
 **Base types**
-[Binding]()
+[Binding]({{< relref "#" >}})
 
-
-Binding that automatically enables NotifyOnValidationError and ValidatesOnDataErrors.
-
-
+Binding that automatically enables and.
 
 ## Constructors
 
@@ -26,16 +28,13 @@ Binding that automatically enables NotifyOnValidationError and ValidatesOnDataEr
 
 Initializes a new instance of the [BindingWithValidation](#) class.
 
-
-
 ### BindingWithValidation(string path)
 
 Initializes a new instance of the [BindingWithValidation](#) class with an initial path.
 
 #### Parameters
 
-**path**
-The initial Path for the binding.
-
-
+Name|Description
+---|---
+**path**|The initial Path for the binding.
 

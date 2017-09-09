@@ -1,4 +1,7 @@
-# Using a custom control
++++
+title = "Using a custom control" 
+description = ""
++++
 
 In this part of the documentation, the `RadTabItem` of Telerik will be used as an example on how to create a `RadTabItem` that behaves like the `UserControl`.
 
@@ -80,11 +83,11 @@ public class TabItem : RadTabItem, IUserControl
 }
 ```
 
-@alert important
+{{% notice warning %}}
 You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes
-@end
+{{% /notice %}}
 
 ## Using the class
 
-The class can now be used the same as the `UserControl` class. For more information, see [UserControl explained](../usercontrol.md).
+The class can now be used the same as the `UserControl` class. For more information, see [UserControl explained]({{< relref "catel-mvvm/views/xaml/usercontrol.md" >}}).
 

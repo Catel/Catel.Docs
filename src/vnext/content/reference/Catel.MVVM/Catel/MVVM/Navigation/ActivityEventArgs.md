@@ -1,6 +1,11 @@
 
 
-# ActivityEventArgs
++++
+title = "ActivityEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public class ActivityEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 Event args for the activity.
-
-
 
 ## Constructors
 
@@ -28,16 +30,13 @@ Initializes a new instance of the [ActivityEventArgs](#) class.
 
 #### Parameters
 
-**activity**
-The activity.
-
-
+Name|Description
+---|---
+**activity**|The activity.
 
 ## Properties
 
 ### Activity
 
 Gets the activity.
-
-
 

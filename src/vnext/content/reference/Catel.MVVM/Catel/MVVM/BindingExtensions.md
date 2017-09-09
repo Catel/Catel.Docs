@@ -1,6 +1,11 @@
 
 
-# BindingExtensions
++++
+title = "BindingExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public static class BindingExtensions
 
 Extension methods to create bindings on platforms that initially don't support bindings.
 
-
-
 ## Methods
 
 ### AddSourceEvent(Binding binding, string eventName)
@@ -24,11 +27,10 @@ Adds an additional event subscription to support change notification. This exten
 
 #### Parameters
 
-**binding**
-The binding.
-
-**eventName**
-Name of the event.
+Name|Description
+---|---
+**binding**|The binding.
+**eventName**|Name of the event.
 
 #### Returns
 
@@ -36,13 +38,10 @@ Catel.MVVM.Binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-**!:ArgumentException**
-The eventName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
+**ArgumentException**|The eventName is`null` or whitespace.
 
 ### AddSourceEvent<TEventArgs>(Binding binding, string eventName)
 
@@ -50,11 +49,10 @@ Adds an additional event subscription to support change notification. This exten
 
 #### Parameters
 
-**binding**
-The binding.
-
-**eventName**
-Name of the event.
+Name|Description
+---|---
+**binding**|The binding.
+**eventName**|Name of the event.
 
 #### Returns
 
@@ -62,13 +60,10 @@ Catel.MVVM.Binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-**!:ArgumentException**
-The eventName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
+**ArgumentException**|The eventName is`null` or whitespace.
 
 ### AddTargetEvent(Binding binding, string eventName)
 
@@ -76,11 +71,10 @@ Adds an additional event subscription to support change notification. This exten
 
 #### Parameters
 
-**binding**
-The binding.
-
-**eventName**
-Name of the event.
+Name|Description
+---|---
+**binding**|The binding.
+**eventName**|Name of the event.
 
 #### Returns
 
@@ -88,13 +82,10 @@ Catel.MVVM.Binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-**!:ArgumentException**
-The eventName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
+**ArgumentException**|The eventName is`null` or whitespace.
 
 ### AddTargetEvent<TEventArgs>(Binding binding, string eventName)
 
@@ -102,11 +93,10 @@ Adds an additional event subscription to support change notification. This exten
 
 #### Parameters
 
-**binding**
-The binding.
-
-**eventName**
-Name of the event.
+Name|Description
+---|---
+**binding**|The binding.
+**eventName**|Name of the event.
 
 #### Returns
 
@@ -114,13 +104,10 @@ Catel.MVVM.Binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-**!:ArgumentException**
-The eventName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
+**ArgumentException**|The eventName is`null` or whitespace.
 
 ### GetBindingValue(Binding binding)
 
@@ -128,12 +115,11 @@ Gets the binding value. If the binding is`null`, this method will return`null`.
 
 #### Parameters
 
-**binding**
-The binding.
+Name|Description
+---|---
+**binding**|The binding.
 
 #### Returns
 
 The binding value.
-
-
 

@@ -118,9 +118,9 @@ public void AfterValidateBusinessRules(object instance, List<IBusinessRuleValida
 }
 ```
 
-@alert info
+{{% notice info %}}
 SynchronizationContext also allow you create asynchronous locking request.
-@end
+{{% /notice %}}
 
 ##  Acquiring a lock
 

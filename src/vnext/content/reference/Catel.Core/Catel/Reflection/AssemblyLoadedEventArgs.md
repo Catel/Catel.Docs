@@ -1,24 +1,26 @@
 
 
-# AssemblyLoadedEventArgs
++++
+title = "AssemblyLoadedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class AssemblyLoadedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 Event args for the AssemblyLoaded event.
-
-
 
 ## Constructors
 
@@ -28,18 +30,16 @@ Initializes a new instance of the [AssemblyLoadedEventArgs](#) class.
 
 #### Parameters
 
-**assembly**
-The assembly.
-
-**loadedTypes**
-The loaded types.
+Name|Description
+---|---
+**assembly**|The assembly.
+**loadedTypes**|The loaded types.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The assembly is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The assembly is`null`.
 
 ## Properties
 
@@ -47,11 +47,7 @@ The assembly is`null`.
 
 Gets the assembly.
 
-
-
 ### LoadedTypes
 
 Gets the loaded types.
-
-
 

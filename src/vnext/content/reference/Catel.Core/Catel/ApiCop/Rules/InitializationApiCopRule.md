@@ -1,24 +1,26 @@
 
 
-# InitializationApiCopRule
++++
+title = "InitializationApiCopRule" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop.Rules
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class InitializationApiCopRule : ApiCopRule
 ```
 
 **Base types**
-[ApiCopRule](/Catel.Core\Catel\ApiCop\ApiCopRule.md)
-
+[ApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" >}})
 
 Rule to show that classes should be initialized at startup.
-
-
 
 ## Constructors
 
@@ -28,30 +30,19 @@ Initializes a new instance of the [InitializationApiCopRule](#) class.
 
 #### Parameters
 
-**name**
-The name.
-
-**description**
-The description.
-
-**level**
-The level.
-
-**recommendedInitializationMode**
-The recommended initialization mode.
-
-**url**
-The URL.
-
-
+Name|Description
+---|---
+**name**|The name.
+**description**|The description.
+**level**|The level.
+**recommendedInitializationMode**|The recommended initialization mode.
+**url**|The URL.
 
 ## Properties
 
 ### RecommendedInitializationMode
 
 Gets the recommended initialization mode.
-
-
 
 ## Methods
 
@@ -61,8 +52,9 @@ Gets the result as text.
 
 #### Parameters
 
-**tag**
-The tag.
+Name|Description
+---|---
+**tag**|The tag.
 
 #### Returns
 
@@ -70,9 +62,9 @@ The result as text.
 
 #### Exceptions
 
-**T:System.NotImplementedException**
-
-
+Name|Description
+---|---
+**System.NotImplementedException**|
 
 ### IsValid(IApiCop apiCop, string tag)
 
@@ -80,11 +72,10 @@ Determines whether the specified ApiCop rule is valid.
 
 #### Parameters
 
-**apiCop**
-The ApiCop.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**apiCop**|The ApiCop.
+**tag**|The tag.
 
 #### Returns
 
@@ -92,9 +83,9 @@ The tag.
 
 #### Exceptions
 
-**T:System.NotImplementedException**
-
-
+Name|Description
+---|---
+**System.NotImplementedException**|
 
 ### SetInitializationMode(InitializationMode initializationMode, string tag)
 
@@ -102,11 +93,8 @@ Sets the initialization model. If the value is already set, it won't be updated 
 
 #### Parameters
 
-**initializationMode**
-The initialization mode.
-
-**tag**
-The tag.
-
-
+Name|Description
+---|---
+**initializationMode**|The initialization mode.
+**tag**|The tag.
 

@@ -1,20 +1,23 @@
 
 
-# IDispatcherServiceExtensions
++++
+title = "IDispatcherServiceExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IDispatcherServiceExtensions
 ```
 
 Extension methods for the [IDispatcherService](#).
-
-
 
 ## Methods
 
@@ -24,18 +27,16 @@ Executes the specified action asynchronously with the specified arguments on the
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**action**
-The action.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**action**|The action.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### BeginInvoke(IDispatcherService dispatcherService, Delegate method, object[] args)
 
@@ -43,21 +44,17 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**method**
-A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
-
-**args**
-An array of objects to pass as arguments to the given method. Can be`null`.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**method**|A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
+**args**|An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The method is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The method is`null`.
 
 ### BeginInvokeIfRequired(IDispatcherService dispatcherService, Action action)
 
@@ -65,18 +62,16 @@ Executes the specified action asynchronously with the specified arguments on the
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**action**
-The action.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**action**|The action.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### BeginInvokeIfRequired(IDispatcherService dispatcherService, Delegate method, object[] args)
 
@@ -84,21 +79,17 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**method**
-A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
-
-**args**
-An array of objects to pass as arguments to the given method. Can be`null`.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**method**|A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
+**args**|An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The method is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The method is`null`.
 
 ### Invoke(IDispatcherService dispatcherService, Delegate method, object[] args)
 
@@ -106,21 +97,17 @@ Executes the specified delegate with the specified arguments synchronously on th
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**method**
-A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
-
-**args**
-An array of objects to pass as arguments to the given method. Can be`null`.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**method**|A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
+**args**|An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The method is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The method is`null`.
 
 ### InvokeIfRequired(IDispatcherService dispatcherService, Action action)
 
@@ -128,18 +115,16 @@ Executes the specified action asynchronously with the specified arguments on the
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**action**
-The action.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**action**|The action.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
 
 ### InvokeIfRequired(IDispatcherService dispatcherService, Delegate method, object[] args)
 
@@ -147,19 +132,15 @@ Executes the specified delegate asynchronously with the specified arguments on t
 
 #### Parameters
 
-**dispatcherService**
-The dispatcher service.
-
-**method**
-A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
-
-**args**
-An array of objects to pass as arguments to the given method. Can be`null`.
+Name|Description
+---|---
+**dispatcherService**|The dispatcher service.
+**method**|A delegate to a method that takes parameters specified in args, which is pushed onto the Dispatcher event queue.
+**args**|An array of objects to pass as arguments to the given method. Can be`null`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The method is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The method is`null`.
 

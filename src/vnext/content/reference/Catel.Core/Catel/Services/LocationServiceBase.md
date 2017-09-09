@@ -1,12 +1,17 @@
 
 
-# LocationServiceBase
++++
+title = "LocationServiceBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class LocationServiceBase : ILocationService
@@ -14,12 +19,9 @@ public abstract class LocationServiceBase : ILocationService
 
 **Base types**
 
-[ILocationService](/Catel.Core\Catel\Services\ILocationService.md)
-
+[ILocationService]({{< relref "reference/Catel.Core/Catel/Services/ILocationService.md" >}})
 
 Class to allow partial abstract methods.
-
-
 
 ## Fields
 
@@ -33,17 +35,13 @@ Gets the current location represented as [ILocation](#). If no location is avail
 
 #### Remarks
 
-This is convenience property that internally calls GetCurrentLocation. Note that the services inside Catel do not support [INotifyPropertyChanged](#), thus you cannot subscribe to changes of this property. Instead, subscribe to the LocationChanged event.
-
-
+This is convenience property that internally calls GetCurrentLocation. Note that the services inside Catel do not support, thus you cannot subscribe to changes of this property. Instead, subscribe to the LocationChanged event.
 
 ## Events
 
 ### LocationChanged
 
 Occurs when the current location has changed.
-
-
 
 ## Methods
 
@@ -55,8 +53,6 @@ Gets the current location.
 
 The current location represented as [ILocation](#). If no location is available,`null` will be returned.
 
-
-
 ### Start()
 
 Starts the location service so it's retrieving data.
@@ -65,11 +61,7 @@ Starts the location service so it's retrieving data.
 
 `true` if the service started successfully; otherwise`false`.
 
-
-
 ### Stop()
 
 Stops the location service so it's no longer retrieving data.
-
-
 

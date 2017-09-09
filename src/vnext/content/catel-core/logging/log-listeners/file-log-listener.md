@@ -7,13 +7,13 @@ Catel also supports very lightweight listeners to allow external logging librari
 
 The ILogListener has a separate method for each LogEvent, but also has a shared method that is called for each log event. For example, if a debug message is written to the log, both the Write and Debug methods are invoked on the ILogListener.
 
-@alert info
+{{% notice info %}}
 For an example which writes to disk in batches, see the [batch log event listeners](Batch_log_listeners)
-@end
+{{% /notice %}}
 
-@alert important
+{{% notice warning %}}
 Note that Catel already contains a FileLogListener and there is no need to reproduce this class. It only acts as an example that is easy to understand
-@end
+{{% /notice %}}
 
 ## Specifying the path
 
@@ -93,9 +93,9 @@ fileLogListener.FilePath = "{AppDir}\{AutoLogFileName}";
 LogManager.AddListener(fileLogListener);
 ```
 
-@alert info
+{{% notice info %}}
 Note that the default path of the *FileLogListener* is *{AppData}\\{AutoLogFileName}*
-@end
+{{% /notice %}}
 
 ## Creating a custom listener
 

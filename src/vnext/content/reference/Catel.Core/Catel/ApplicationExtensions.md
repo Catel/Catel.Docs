@@ -1,6 +1,11 @@
 
 
-# ApplicationExtensions
++++
+title = "ApplicationExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public static class ApplicationExtensions
 
 The application extension methods.
 
-
-
 ## Methods
 
 ### CurrentPage(Application this)
@@ -24,8 +27,9 @@ Gets the current page.
 
 #### Parameters
 
-**this**
-The instance.
+Name|Description
+---|---
+**this**|The instance.
 
 #### Returns
 
@@ -33,8 +37,7 @@ The current or top most page of the application.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The this is`null`.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The this is`null`.
 

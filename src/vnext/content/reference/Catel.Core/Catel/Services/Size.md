@@ -1,28 +1,26 @@
 
 
-# Size
++++
+title = "Size" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public struct Size : IEquatable<Size>, ValueType
+public struct Size : ValueType
 ```
 
 **Base types**
-[ValueType]()
-
-**Base types**
-
-[IEquatable]()
-
+[ValueType]({{< relref "#" >}})
 
 Object containing size information.
-
-
 
 ## Fields
 
@@ -34,13 +32,10 @@ Initializes a new instance of the [Size](#) class.
 
 #### Parameters
 
-**width**
-The width.
-
-**height**
-The height.
-
-
+Name|Description
+---|---
+**width**|The width.
+**height**|The height.
 
 ## Properties
 
@@ -48,13 +43,9 @@ The height.
 
 Gets or sets the height.
 
-
-
 ### Width
 
 Gets or sets the width.
-
-
 
 ## Methods
 
@@ -64,29 +55,27 @@ Determines whether the specified size equals this instance.
 
 #### Parameters
 
-**size**
-The size to compare this instance to.
+Name|Description
+---|---
+**size**|The size to compare this instance to.
 
 #### Returns
 
 `true` if equal,`false` otherwise.
 
-
-
 ### Equals(object obj)
 
-Determines whether the specified [Object](#) is equal to this instance.
+Determines whether the specified is equal to this instance.
 
 #### Parameters
 
-**obj**
-The [Object](#) to compare with this instance.
+Name|Description
+---|---
+**obj**|The to compare with this instance.
 
 #### Returns
 
-`true` if the specified [Object](#) is equal to this instance; otherwise,`false`.
-
-
+`true` if the specified is equal to this instance; otherwise,`false`.
 
 ### GetHashCode()
 
@@ -96,15 +85,11 @@ Returns a hash code for this instance.
 
 A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
 
-
-
 ### ToString()
 
-Returns a [String](#) that represents this instance.
+Returns a that represents this instance.
 
 #### Returns
 
-A [String](#) that represents this instance.
-
-
+A that represents this instance.
 

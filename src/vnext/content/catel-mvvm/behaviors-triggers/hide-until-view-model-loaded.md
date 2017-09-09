@@ -1,12 +1,15 @@
-# HideUntilViewModelLoaded
++++
+title = "HideUntilViewModelLoaded" 
+description = ""
++++
 
-The *HideUntilViewModelLoaded* hides (`Visibility.Collapsed`) any view model container (`IViewModelContainer`) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.
+The `HideUntilViewModelLoaded` hides (`Visibility.Collapsed`) any view model container (`IViewModelContainer`) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.
 
 Add the following XML namespaces:
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 ## Focus when the control is loaded

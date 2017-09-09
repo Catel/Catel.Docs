@@ -1,12 +1,17 @@
 
 
-# IPoolManager
++++
+title = "IPoolManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Pooling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IPoolManager<TPoolable> : IPoolManager where TPoolable : new(), class, IPoolable 
@@ -14,8 +19,7 @@ public interface IPoolManager<TPoolable> : IPoolManager where TPoolable : new(),
 
 **Base types**
 
-[IPoolManager](/Catel.Core\Catel\Pooling\IPoolManager.md)
-
+[IPoolManager]({{< relref "reference/Catel.Core/Catel/Pooling/IPoolManager.md" >}})
 
 Pool manager allowing objects to be pooled.
 
@@ -24,15 +28,11 @@ Pool manager allowing objects to be pooled.
 **TPoolable**
 Type of the object to be pooled.
 
-
-
 ## Properties
 
 ### CurrentSize
 
 Gets the current size.
-
-
 
 ## Methods
 
@@ -43,6 +43,4 @@ Gets the poolable object from the pool.
 #### Returns
 
 A free poolable object.
-
-
 

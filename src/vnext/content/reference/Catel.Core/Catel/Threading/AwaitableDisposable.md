@@ -1,20 +1,24 @@
 
 
-# AwaitableDisposable
++++
+title = "AwaitableDisposable" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public struct AwaitableDisposable<T> : ValueType where T : IDisposable 
 ```
 
 **Base types**
-[ValueType]()
-
+[ValueType]({{< relref "#" >}})
 
 An awaitable wrapper around a task whose result is disposable. The wrapper is not disposable, so this prevents usage errors like "using (MyAsync())" when the appropriate usage should be "using (await MyAsync())".
 
@@ -27,8 +31,6 @@ The type of the result of the underlying task.
 
 This code originally comes from AsyncEx: https://github.com/StephenCleary/AsyncEx
 
-
-
 ## Fields
 
 ## Constructors
@@ -39,10 +41,9 @@ Initializes a new awaitable wrapper around the specified task.
 
 #### Parameters
 
-**task**
-The underlying task to wrap.
-
-
+Name|Description
+---|---
+**task**|The underlying task to wrap.
 
 ## Methods
 
@@ -50,22 +51,17 @@ The underlying task to wrap.
 
 Returns the underlying task.
 
-
-
 ### ConfigureAwait(bool continueOnCapturedContext)
 
 Infrastructure. Returns a configured task awaiter for the underlying task.
 
 #### Parameters
 
-**continueOnCapturedContext**
-Whether to attempt to marshal the continuation back to the captured context.
-
-
+Name|Description
+---|---
+**continueOnCapturedContext**|Whether to attempt to marshal the continuation back to the captured context.
 
 ### GetAwaiter()
 
 Infrastructure. Returns the task awaiter for the underlying task.
-
-
 

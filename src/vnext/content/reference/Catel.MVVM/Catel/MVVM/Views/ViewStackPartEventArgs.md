@@ -1,24 +1,26 @@
 
 
-# ViewStackPartEventArgs
++++
+title = "ViewStackPartEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewStackPartEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 Event args when a part of a view stack is raises an event.
-
-
 
 ## Constructors
 
@@ -28,16 +30,13 @@ Initializes a new instance of the [ViewStackPartEventArgs](#) class.
 
 #### Parameters
 
-**view**
-The view.
-
-
+Name|Description
+---|---
+**view**|The view.
 
 ## Properties
 
 ### View
 
 Gets the view that has been loaded.
-
-
 

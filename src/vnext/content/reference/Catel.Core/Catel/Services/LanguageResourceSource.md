@@ -1,12 +1,17 @@
 
 
-# LanguageResourceSource
++++
+title = "LanguageResourceSource" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class LanguageResourceSource : ILanguageSource
@@ -14,12 +19,9 @@ public class LanguageResourceSource : ILanguageSource
 
 **Base types**
 
-[ILanguageSource](/Catel.Core\Catel\Services\ILanguageSource.md)
-
+[ILanguageSource]({{< relref "reference/Catel.Core/Catel/Services/ILanguageSource.md" >}})
 
 [ILanguageSource](#) implementation for resource files.
-
-
 
 ## Constructors
 
@@ -29,16 +31,11 @@ Initializes a new instance of the [LanguageResourceSource](#) class.
 
 #### Parameters
 
-**assemblyName**
-Name of the assembly.
-
-**namespaceName**
-Name of the namespace.
-
-**resourceFileName**
-Name of the resource file.
-
-
+Name|Description
+---|---
+**assemblyName**|Name of the assembly.
+**namespaceName**|Name of the namespace.
+**resourceFileName**|Name of the resource file.
 
 ## Properties
 
@@ -46,19 +43,13 @@ Name of the resource file.
 
 Gets the name of the assembly.
 
-
-
 ### NamespaceName
 
 Gets the name of the namespace.
 
-
-
 ### ResourceFileName
 
 Gets the name of the resource file.
-
-
 
 ## Methods
 
@@ -69,6 +60,4 @@ Gets the source for the current language source.
 #### Returns
 
 The source string.
-
-
 

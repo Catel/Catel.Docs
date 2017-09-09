@@ -1,26 +1,29 @@
-# UserControl - under the hood
++++
+title = "UserControl - under the hood" 
+description = ""
++++
 
 The `UserControl` is a pretty sophisticated class. In this part of the documentation, the inner workings of the control are explained. What better way is there than to using flowcharts. There are a few events very important for the inner workings of the user control. The flowcharts are created per event.
 
-@alert info
+{{% notice info %}}
 Keep in mind that the actual logic is implemented in the `UserControlLogic`, which is used by the `UserControl`. This way, the logic can be used by any user control via the `UserControlBehavior`.
-@endif
+{{% /notice %}}
 
 ## Managing the custom DataContext
 
 The `UserControl` logic uses an additional layer to customize the DataContext. Below is a graphical representation of how it works.
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/overview.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/overview.png)
 
 Another view can be found in the image below:
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/hierarchy.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/hierarchy.png)
 
 ## Main flow
 
 The following flowchart shows what happens with a user control in the main flow (the startup). First, it checks whether the user control is loaded (which is not in a normal case). If the control is loaded, it goes directly to determining the datacontext. Otherwise, it will postpone the action until the `Loaded` event. 
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/mainflow.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/mainflow.png)
 
 ## Loaded
 
@@ -28,19 +31,19 @@ When the control is loaded, it starts checking for the first time whether the cu
 
 If a view model can and should be re-used, it sets the view model as data context and that's it. If there is no view model, or the previous view model should not be re-used, the control continues to determine the datacontext.
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/loaded.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/loaded.png)
 
 ## Unloaded
 
 Another event that is very important is the `Unloaded` event. In this event, the control either cleans up the view model or stores it so it can be re-used later. Then, it also restores the old datacontext so it never breaks existing application bindings. This way, the control won't leave any traces behind.
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/unloaded.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/unloaded.png)
 
 ## DataContextChanged
 
 The `DataContextChanged` event is used to react to changes of the datacontext. We use the `DataContextHelper` class for that. If the new datacontext is new (thus not a view model that the control just set itself), it it continues to determine the datacontext. Otherwise, it will not take any action.
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/datacontextchanged.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/datacontextchanged.png)
 
 ## DetermineDataContext
 
@@ -48,4 +51,4 @@ All other flowcharts eventually led to this flowchart, the determination of the 
 
 Basically, this is all that happens on a higher level to transform a datacontext into a view model. Under the hood, it's a bit more complicated but again, on a higher level this is what happens.
 
-![](../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/determinedatacontext.png)
+![](../../../../../images/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/determinedatacontext.png)

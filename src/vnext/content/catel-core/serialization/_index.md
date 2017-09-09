@@ -29,9 +29,9 @@ using (var fileStream = File.Open(@"C:\myobject.dob", FileMode.Open))
 }
 ```
 
-@alert info
-Note that for a model to support the *Save* and *Load* methods, it must derive from *SavableModelBase*
-@end
+{{% notice info %}}
+Note that for a model to support the `Save` and `Load` methods, it must derive from `SavableModelBase`
+{{% /notice %}}
 
 ## Warming up serialization
 
@@ -63,9 +63,9 @@ var binarySerializer = SerializationFactory.GetBinarySerializer();
 binarySerialzier.Warmup();
 ```
 
-@alert danger
+{{% notice warning %}}
 Note that warming up for all types **might** take a serious amount of time and **might** increase the memory footprint of your application depending on the number of models
-@end
+{{% /notice %}}
 
 ### Warming up using multiple threads
 

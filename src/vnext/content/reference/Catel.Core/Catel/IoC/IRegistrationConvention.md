@@ -1,12 +1,17 @@
 
 
-# IRegistrationConvention
++++
+title = "IRegistrationConvention" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IRegistrationConvention
@@ -14,15 +19,11 @@ public interface IRegistrationConvention
 
 The registration convention interface.
 
-
-
 ## Properties
 
 ### RegistrationType
 
 Gets the type of the registration.
-
-
 
 ## Methods
 
@@ -32,8 +33,7 @@ Processes the specified types to register.
 
 #### Parameters
 
-**typesToRegister**
-The types to register.
-
-
+Name|Description
+---|---
+**typesToRegister**|The types to register.
 

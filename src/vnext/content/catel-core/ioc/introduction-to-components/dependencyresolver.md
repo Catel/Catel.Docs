@@ -12,9 +12,9 @@ Managing different scoping of service locators and dependency injection can be h
 
 That's a good question. Catel already provides the `IServiceLocator` which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the `ServiceLocator`. To make it simple to customize this behavior,` `the `DependencyResolver` is introduced.
 
-@alert info
+{{% notice info %}}
 The main strategy will be to use the `DependencyResolver` instead of `ServiceLocator` to resolve the types in Catel, starting with version 3.8
-@end
+{{% /notice %}}
 
 Though in simple situations, Catel will resolve and inject all types automatically, there are a few exceptions to the rule. One of these exceptions are extension methods. These are static classes which can be used to add functionality to an object. The downside is that you cannot use dependency injection in static classes, and each object that is extended can have their own scoping of dependency resolvers. To solve this issue, Catel introduces the `DependencyResolverManager`. This is a manager that keeps track of all types and objects and the `DependencyResolver` that were used to create the object. This way it is still possible to retrieve additional dependencies in extensions methods in the ``same`` dependency resolver the type was created with.
 
@@ -61,9 +61,9 @@ public static class MyViewModelExtensions
 
 Now you have the actual `IDependencyResolver` that was use to create the view model and can easily provide the right logic with the right scoping.
 
-@alert info
+{{% notice info %}}
 Note that there will only be a single instance of a `DependencyResolverManager`. It is possible to customize the default instance, but there is no need for different scoping of `DependencyResolverManager` instances so it is valid to use the static instance
-@end
+{{% /notice %}}
 
 ## Managing the dependency resolvers per instance
 
@@ -82,9 +82,9 @@ var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.RegisterDependencyResolverForInstance(myObject, dependencyResolver);
 ```
 
-@alert important
+{{% notice warning %}}
 Note that it is not required to register a `DependencyResolver` for instances created with the `TypeFactory`. The `TypeFactory` automatically registers the `DependencyResolver` used in the `DependencyResolverManager`.
-@end
+{{% /notice %}}
 
 ### Retrieving a dependency resolver for an instance
 
@@ -97,7 +97,7 @@ var dependencyResolver = dependencyResolverManager.GetDependencyResolverForInsta
 
 Below is a graph that shows how the dependency resolver of an instance is determined:
 
-![](../../../images/catel-core/ioc/introduction-to-components/dependencyresolver/flow.png)
+![](../../../../images/catel-core/ioc/introduction-to-components/dependencyresolver/flow.png)
 
 ## Managing the dependency resolvers per type
 
@@ -115,9 +115,9 @@ var dependencyResolverManager = DependencyResolverManager.Default;
 dependencyResolverManager.RegisterDependencyResolverForType(typeof(MyClass), dependencyResolver);
 ```
 
-@alert important
+{{% notice warning %}}
 Note that these registrations are type-specific. You cannot register an interface and all classes deriving from that interface will return the same `DependencyResolver`. All actual types must be registered separately.
-@end
+{{% /notice %}}
 
 ### Retrieving a dependency resolver for a type
 
@@ -156,9 +156,9 @@ public class CustomizedDependencyResolverManager : DependencyResolverManager
 }
 ```
 
-@alert info
+{{% notice info %}}
 Note that there is no use to override the `DependencyResolverManager` as the example, but this keeps it easy to understand
-@end
+{{% /notice %}}
 
 Then set the `DependencyResolverManager.Default `static property:
 

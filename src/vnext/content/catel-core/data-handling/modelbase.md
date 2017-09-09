@@ -106,7 +106,7 @@ The data object can automatically create an internal backup and restore it, if r
 
 **Serialization**
 
-As told many times before, using the `[SavableModelBase](./savablemodelbase.md)`, you can simply save your file to a stream (file on disk, stream in memory, etc.).
+As told many times before, using the `[SavableModelBase]({{< relref "catel-core/data-handling/savablemodelbase.md" >}})`, you can simply save your file to a stream (file on disk, stream in memory, etc.).
 
 Keep in mind that this class is not suitable for database communication, there are much better ways to handle this (ORM mappers such as Entity Framework, NHibernate, LLBLGen Pro, etc.).
 

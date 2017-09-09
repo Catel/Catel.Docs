@@ -1,6 +1,11 @@
 
 
-# BindingBase
++++
+title = "BindingBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public abstract class BindingBase
 
 Base class for all bindings.
 
-
-
 ## Fields
 
 ## Methods
@@ -24,8 +27,6 @@ Base class for all bindings.
 
 Clears the binding and stops listening to both the source and target instances.
 
-
-
 ### ToString()
 
 Converts the current instance to a string.
@@ -33,6 +34,4 @@ Converts the current instance to a string.
 #### Returns
 
 The string representation of this object.
-
-
 

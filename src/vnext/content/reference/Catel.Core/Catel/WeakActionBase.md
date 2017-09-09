@@ -1,12 +1,17 @@
 
 
-# WeakActionBase
++++
+title = "WeakActionBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class WeakActionBase : IWeakReference
@@ -14,12 +19,9 @@ public abstract class WeakActionBase : IWeakReference
 
 **Base types**
 
-[IWeakReference](/Catel.Core\Catel\IWeakReference.md)
-
+[IWeakReference]({{< relref "reference/Catel.Core/Catel/IWeakReference.md" >}})
 
 Base class for weak actions that contain weak targets.
-
-
 
 ## Fields
 
@@ -35,11 +37,7 @@ Gets a value indicating whether the event target has not yet been garbage collec
 
 In case of static event handlers, this property always returns`false`.
 
-
-
 ### Target
 
 Gets the target or`null` if the target is garbage collected.
-
-
 

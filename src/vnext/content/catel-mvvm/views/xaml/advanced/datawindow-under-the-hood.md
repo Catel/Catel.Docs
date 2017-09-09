@@ -1,5 +1,8 @@
-# DataWindow - under the hood
++++
+title = "DataWindow - under the hood" 
+description = ""
++++
 
-@alert important
+{{% notice warning %}}
 This documentation has to be written in the future
-@end
+{{% /notice %}}

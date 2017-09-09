@@ -1,4 +1,7 @@
-# Validation controls
++++
+title = "Validation controls" 
+description = ""
++++
 
 There are some very important controls in Catel which help with visualizing the validation results.
 
@@ -6,7 +9,7 @@ There are some very important controls in Catel which help with visualizing the 
 
 Ever wanted to show the details of error messages to your end-users? Then, the `InfoBarMessageControl` is the control to use! The control shows a summary of all business and field errors provided by bindings on objects that implement the `IDataErrorInfo` interface.
 
-![](../../../images/catel-mvvm/views/xaml/validation-controls/infobarmessagecontrol.png)
+![](../../../../images/catel-mvvm/views/xaml/validation-controls/infobarmessagecontrol.png)
 
 In combination with the `WarningAndErrorValidator` control, the `InfoBarMessageControl` can even show field and business warnings for objects that implement the `IDataWarningInfo` interface that ships with Catel.
 
@@ -40,7 +43,7 @@ A `InfoBarMessageControl` is automatically added to the `DataWindow`, if you wa
 2.  Change the x:Key from  x:Key="{x:Type local:InfoBarMessageControl}" to  x:Key="yourCustomStyleKey"
 3.  Set the InfoBarMessageControlGenerationMode to None
 
-    ``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
+    ```
             /// <summary>
             /// Initializes a new instance of the <see cref="DataWindow"/> class.
             /// </summary>

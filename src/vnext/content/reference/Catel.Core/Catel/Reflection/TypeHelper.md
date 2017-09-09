@@ -1,20 +1,23 @@
 
 
-# TypeHelper
++++
+title = "TypeHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Reflection
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TypeHelper
 ```
 
-[Type](#) helper class.
-
-
+helper class.
 
 ## Fields
 
@@ -25,8 +28,6 @@ public static class TypeHelper
 ### MicrosoftPublicKeyTokens
 
 Gets the Microsoft public key tokens.
-
-
 
 ## Methods
 
@@ -44,14 +45,13 @@ The input type.
 
 #### Parameters
 
-**value**
-The value to cast.
+Name|Description
+---|---
+**value**|The value to cast.
 
 #### Returns
 
 The casted value.
-
-
 
 ### Cast<TInput, TOutput>(TInput value, TOutput whenNullValue)
 
@@ -67,17 +67,14 @@ The input type.
 
 #### Parameters
 
-**value**
-The value to cast.
-
-**whenNullValue**
-When unable to cast the incoming value, this value is returned instead.
+Name|Description
+---|---
+**value**|The value to cast.
+**whenNullValue**|When unable to cast the incoming value, this value is returned instead.
 
 #### Returns
 
 The casted value or when uncastable the whenNullValue is returned.
-
-
 
 ### Cast<TOutput>(object value)
 
@@ -90,14 +87,13 @@ Requested return type.
 
 #### Parameters
 
-**value**
-The value to cast.
+Name|Description
+---|---
+**value**|The value to cast.
 
 #### Returns
 
 The casted value.
-
-
 
 ### ConvertTypeToVersionIndependentType(string type, bool stripAssemblies)
 
@@ -105,11 +101,10 @@ Converts a string representation of a type to a version independent type by remo
 
 #### Parameters
 
-**type**
-Type to convert.
-
-**stripAssemblies**
-if set to`true`, the assembly names will be stripped as well.
+Name|Description
+---|---
+**type**|Type to convert.
+**stripAssemblies**|if set to`true`, the assembly names will be stripped as well.
 
 #### Returns
 
@@ -117,10 +112,9 @@ String representing the type without version information.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The type is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The type is`null` or whitespace.
 
 ### FormatInnerTypes(string[] innerTypes, bool stripAssemblies)
 
@@ -128,17 +122,14 @@ Formats multiple inner types into one string.
 
 #### Parameters
 
-**innerTypes**
-The inner types.
-
-**stripAssemblies**
-if set to`true`, the assembly names will be stripped as well.
+Name|Description
+---|---
+**innerTypes**|The inner types.
+**stripAssemblies**|if set to`true`, the assembly names will be stripped as well.
 
 #### Returns
 
 string representing a combination of all inner types.
-
-
 
 ### FormatType(string assembly, string type)
 
@@ -146,11 +137,10 @@ Formats a type in the official type description like [typename], [assemblyname].
 
 #### Parameters
 
-**assembly**
-Assembly name to format.
-
-**type**
-Type name to format.
+Name|Description
+---|---
+**assembly**|Assembly name to format.
+**type**|Type name to format.
 
 #### Returns
 
@@ -158,10 +148,9 @@ Type name like [typename], [assemblyname].
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The assembly is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The assembly is`null` or whitespace.
 
 ### GetAssemblyName(string fullTypeName)
 
@@ -169,8 +158,9 @@ Gets the name of the assembly.
 
 #### Parameters
 
-**fullTypeName**
-Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
+Name|Description
+---|---
+**fullTypeName**|Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
@@ -178,10 +168,9 @@ The assembly name retrieved from the type, for example`Catel.Core` or`null` if t
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullTypeName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullTypeName is`null` or whitespace.
 
 ### GetAssemblyNameWithoutOverhead(string fullyQualifiedAssemblyName)
 
@@ -189,8 +178,9 @@ Gets the assembly name without overhead (version, public keytoken, etc)
 
 #### Parameters
 
-**fullyQualifiedAssemblyName**
-Name of the fully qualified assembly.
+Name|Description
+---|---
+**fullyQualifiedAssemblyName**|Name of the fully qualified assembly.
 
 #### Returns
 
@@ -198,10 +188,9 @@ The assembly without the overhead.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullyQualifiedAssemblyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullyQualifiedAssemblyName is`null` or whitespace.
 
 ### GetInnerTypes(string type)
 
@@ -209,8 +198,9 @@ Returns the inner type of a type, for example, a generic array type.
 
 #### Parameters
 
-**type**
-Full type which might contain an inner type.
+Name|Description
+---|---
+**type**|Full type which might contain an inner type.
 
 #### Returns
 
@@ -218,10 +208,9 @@ Array of inner types.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The type is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The type is`null` or whitespace.
 
 ### GetTypedInstance<TTargetType>(object instance)
 
@@ -229,8 +218,9 @@ Gets the typed instance based on the specified instance.
 
 #### Parameters
 
-**instance**
-The instance to retrieve in the typed form.
+Name|Description
+---|---
+**instance**|The instance to retrieve in the typed form.
 
 #### Returns
 
@@ -238,10 +228,9 @@ The typed instance.
 
 #### Exceptions
 
-**T:System.NotSupportedException**
-The instance cannot be casted to TTargetType.
-
-
+Name|Description
+---|---
+**NotSupportedException**|The instance cannot be casted to TTargetType.
 
 ### GetTypeName(string fullTypeName)
 
@@ -249,8 +238,9 @@ Gets the name of the type without the assembly but including the namespace.
 
 #### Parameters
 
-**fullTypeName**
-Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
+Name|Description
+---|---
+**fullTypeName**|Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
@@ -258,10 +248,9 @@ The type name retrieved from the type, for example`Catel.TypeHelper`.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullTypeName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullTypeName is`null` or whitespace.
 
 ### GetTypeNamespace(string fullTypeName)
 
@@ -269,8 +258,9 @@ Gets the type namespace.
 
 #### Parameters
 
-**fullTypeName**
-Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
+Name|Description
+---|---
+**fullTypeName**|Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
@@ -278,10 +268,9 @@ The type namespace retrieved from the type, for example`Catel`.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullTypeName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullTypeName is`null` or whitespace.
 
 ### GetTypeNameWithAssembly(string fullTypeName)
 
@@ -289,8 +278,9 @@ Gets the type name with assembly, but without the fully qualified assembly name.
 
 #### Parameters
 
-**fullTypeName**
-Full name of the type.
+Name|Description
+---|---
+**fullTypeName**|Full name of the type.
 
 #### Returns
 
@@ -298,10 +288,9 @@ The type name including the assembly.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullTypeName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullTypeName is`null` or whitespace.
 
 ### GetTypeNameWithoutNamespace(string fullTypeName)
 
@@ -309,8 +298,9 @@ Gets the type name without the assembly namespace.
 
 #### Parameters
 
-**fullTypeName**
-Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
+Name|Description
+---|---
+**fullTypeName**|Full name of the type, for example`Catel.TypeHelper, Catel.Core`.
 
 #### Returns
 
@@ -318,10 +308,9 @@ The type name retrieved from the type, for example`TypeHelper`.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The fullTypeName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The fullTypeName is`null` or whitespace.
 
 ### IsSubclassOfRawGeneric(Type generic, Type toCheck)
 
@@ -329,11 +318,10 @@ Determines whether the subclass is of a raw generic type.
 
 #### Parameters
 
-**generic**
-The generic.
-
-**toCheck**
-The type to check.
+Name|Description
+---|---
+**generic**|The generic.
+**toCheck**|The type to check.
 
 #### Returns
 
@@ -341,14 +329,13 @@ The type to check.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The generic is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The generic is`null`.
 
 #### Remarks
 
 This implementation is based on this forum thread: http://stackoverflow.com/questions/457676/c-reflection-check-if-a-class-is-derived-from-a-generic-class Original license: CC BY-SA 2.5, compatible with the MIT license.
-
-
 
 ### TryCast<TInput, TOutput>(TInput value, TOutput output)
 
@@ -364,15 +351,12 @@ The input type.
 
 #### Parameters
 
-**value**
-The value to cast.
-
-**output**
-The casted value.
+Name|Description
+---|---
+**value**|The value to cast.
+**output**|The casted value.
 
 #### Returns
 
 When a cast is succeded true else false.
-
-
 

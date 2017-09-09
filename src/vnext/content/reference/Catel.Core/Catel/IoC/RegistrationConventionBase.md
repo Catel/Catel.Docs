@@ -1,12 +1,17 @@
 
 
-# RegistrationConventionBase
++++
+title = "RegistrationConventionBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class RegistrationConventionBase : IRegistrationConvention
@@ -14,12 +19,9 @@ public abstract class RegistrationConventionBase : IRegistrationConvention
 
 **Base types**
 
-[IRegistrationConvention](/Catel.Core\Catel\IoC\IRegistrationConvention.md)
-
+[IRegistrationConvention]({{< relref "reference/Catel.Core/Catel/IoC/IRegistrationConvention.md" >}})
 
 The [IRegistrationConvention](#) base implementation.
-
-
 
 ## Constructors
 
@@ -29,13 +31,10 @@ Initializes a new instance of the [RegistrationConventionBase](#) class.
 
 #### Parameters
 
-**serviceLocator**
-The service locator.
-
-**registrationType**
-Type of the registration.
-
-
+Name|Description
+---|---
+**serviceLocator**|The service locator.
+**registrationType**|Type of the registration.
 
 ## Properties
 
@@ -43,13 +42,9 @@ Type of the registration.
 
 Gets the container.
 
-
-
 ### RegistrationType
 
 Gets or sets the type of the registration.
-
-
 
 ## Methods
 
@@ -59,8 +54,7 @@ Processes the specified types to register.
 
 #### Parameters
 
-**typesToRegister**
-The types to register.
-
-
+Name|Description
+---|---
+**typesToRegister**|The types to register.
 

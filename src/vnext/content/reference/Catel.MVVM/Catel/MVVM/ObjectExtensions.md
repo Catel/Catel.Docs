@@ -1,20 +1,23 @@
 
 
-# ObjectExtensions
++++
+title = "ObjectExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ObjectExtensions
 ```
 
 Object extensions class.
-
-
 
 ## Methods
 
@@ -24,12 +27,11 @@ Determines whether the specified object is a sentinel. For more information, see
 
 #### Parameters
 
-**dataContext**
-The data context.
+Name|Description
+---|---
+**dataContext**|The data context.
 
 #### Returns
 
 `true` if the data context is a sentinel; otherwise,`false`.
-
-
 

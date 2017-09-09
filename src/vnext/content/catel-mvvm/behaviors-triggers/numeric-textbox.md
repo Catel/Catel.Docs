@@ -1,4 +1,7 @@
-# NumericTextBox
++++
+title = "NumericTextBox" 
+description = ""
++++
 
 The `NumericTextBox` behavior makes it easy to allow specific numeric input on a TextBox.
 
@@ -6,7 +9,7 @@ The `NumericTextBox` behavior makes it easy to allow specific numeric input on a
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition:
@@ -19,6 +22,6 @@ xmlns:catel="http://catel.codeplex.com"
 </TextBox>
 ```
 
-@alert info
+{{% notice info %}}
 Use the properties on the behavior to customize the behavior to your needs
-@end
+{{% /notice %}}

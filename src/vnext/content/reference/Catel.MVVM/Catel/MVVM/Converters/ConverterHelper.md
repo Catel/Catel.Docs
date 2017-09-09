@@ -1,12 +1,17 @@
 
 
-# ConverterHelper
++++
+title = "ConverterHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Converters
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ConverterHelper
@@ -14,15 +19,11 @@ public static class ConverterHelper
 
 Converter helper class.
 
-
-
 ## Fields
 
 ### UnsetValue
 
 The generic`UnSet` value, compatible with all platforms.
-
-
 
 ## Methods
 
@@ -32,12 +33,11 @@ Checks whether the converted must be inverted. This checks the parameter input a
 
 #### Parameters
 
-**parameter**
-The parameter to check. Can be`null`.
+Name|Description
+---|---
+**parameter**|The parameter to check. Can be`null`.
 
 #### Returns
 
 `true` if the converter should be inverted; otherwise`false`.
-
-
 

@@ -1,12 +1,17 @@
 
 
-# ApiCopListenerBase
++++
+title = "ApiCopListenerBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.ApiCop
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class ApiCopListenerBase : IApiCopListener
@@ -14,12 +19,9 @@ public abstract class ApiCopListenerBase : IApiCopListener
 
 **Base types**
 
-[IApiCopListener](/Catel.Core\Catel\ApiCop\IApiCopListener.md)
-
+[IApiCopListener]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopListener.md" >}})
 
 Base class for ApiCop listeners.
-
-
 
 ## Constructors
 
@@ -29,8 +31,6 @@ Base class for ApiCop listeners.
 
 Gets or sets the grouping for this listener.
 
-
-
 ## Methods
 
 ### WriteResults(IEnumerable<IApiCopResult> results)
@@ -39,8 +39,7 @@ Writes the results of the ApiCop feature. Note that this will only contain inval
 
 #### Parameters
 
-**results**
-The results.
-
-
+Name|Description
+---|---
+**results**|The results.
 

@@ -1,24 +1,26 @@
 
 
-# CameraOperationCompletedEventArgs
++++
+title = "CameraOperationCompletedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class CameraOperationCompletedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
+[EventArgs]({{< relref "#" >}})
 
-
-[EventArgs](#) for camera operations.
-
-
+for camera operations.
 
 ## Constructors
 
@@ -28,10 +30,9 @@ Initializes a new instance of the [CameraOperationCompletedEventArgs](#) class.
 
 #### Parameters
 
-**ex**
-The exception that occurred. If no exception has occurred, pass`null`.
-
-
+Name|Description
+---|---
+**ex**|The exception that occurred. If no exception has occurred, pass`null`.
 
 ## Properties
 
@@ -39,11 +40,7 @@ The exception that occurred. If no exception has occurred, pass`null`.
 
 Gets the exception that occurred if any exception occurred. If no exception occurred, this value is`null`.
 
-
-
 ### Succeeded
 
 Gets or sets a value indicating whether the operation is succeeded.
-
-
 

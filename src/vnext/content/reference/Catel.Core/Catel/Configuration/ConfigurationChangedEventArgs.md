@@ -1,24 +1,26 @@
 
 
-# ConfigurationChangedEventArgs
++++
+title = "ConfigurationChangedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ConfigurationChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 The configuration changed event args class.
-
-
 
 ## Constructors
 
@@ -28,16 +30,11 @@ Initializes a new instance of the [ConfigurationChangedEventArgs](#) class.
 
 #### Parameters
 
-**container**
-The container.
-
-**key**
-The key.
-
-**newValue**
-The new value.
-
-
+Name|Description
+---|---
+**container**|The container.
+**key**|The key.
+**newValue**|The new value.
 
 ## Properties
 
@@ -45,17 +42,11 @@ The new value.
 
 Gets the container.
 
-
-
 ### Key
 
 Gets the key.
 
-
-
 ### NewValue
 
 Gets the new value.
-
-
 

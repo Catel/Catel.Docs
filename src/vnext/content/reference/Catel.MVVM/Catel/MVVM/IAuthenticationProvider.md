@@ -1,20 +1,23 @@
 
 
-# IAuthenticationProvider
++++
+title = "IAuthenticationProvider" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IAuthenticationProvider
 ```
 
 Interface to allow an authentication mechanism to control the CanExecute state of a command.
-
-
 
 ## Methods
 
@@ -24,11 +27,10 @@ Determines whether the specified command can be executed. The class implementing
 
 #### Parameters
 
-**command**
-The command that is requested.
-
-**commandParameter**
-The command parameter.
+Name|Description
+---|---
+**command**|The command that is requested.
+**commandParameter**|The command parameter.
 
 #### Returns
 
@@ -38,26 +40,19 @@ The command parameter.
 
 The`CanExecute` state of a command is queried a lot. The command itself does not cache any results because it is not aware of role or identity changes. If caching is required, this must be implemented in the class implementing the [IAuthenticationProvider](#) interface.a
 
-
-
 ### HasAccessToUIElement(FrameworkElement element, object tag, object authenticationTag)
 
 Determines whether the user has access to the specified element. This method is invoked by the`Authentication` behavior, and can be used to disable or hide UI elements based on a role or any other authentication mechanism. This method will only be called for UI elements with the`Authentication` behavior.
 
 #### Parameters
 
-**element**
-The element.
-
-**tag**
-The tag, retrieved from`FrameworkElement.Tag`.
-
-**authenticationTag**
-The authentication tag specified by the calling object.
+Name|Description
+---|---
+**element**|The element.
+**tag**|The tag, retrieved from`FrameworkElement.Tag`.
+**authenticationTag**|The authentication tag specified by the calling object.
 
 #### Returns
 
 `true` if the user has access to the specified UI element; otherwise,`false`.
-
-
 

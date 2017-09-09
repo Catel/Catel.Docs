@@ -1,4 +1,7 @@
-# Mapping properties from view to view model
++++
+title = "Mapping properties from view to view model" 
+description = ""
++++
 
 Sometimes a view (for example, a user control) contains additional properties besides the `DataContext` to interact with the view model. By default, it is hard to implement this in an MVVM sccenario, but Catel solves this issue using the `ViewToViewModel` attribute.
 

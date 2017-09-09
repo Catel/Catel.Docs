@@ -1,24 +1,26 @@
 
 
-# WrongViewModelTypeException
++++
+title = "WrongViewModelTypeException" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class WrongViewModelTypeException : Exception
 ```
 
 **Base types**
-[Exception]()
-
+[Exception]({{< relref "#" >}})
 
 Exception in case that a wrong type is used for a view model.
-
-
 
 ## Constructors
 
@@ -28,13 +30,10 @@ Initializes a new instance of the [WrongViewModelTypeException](#) class.
 
 #### Parameters
 
-**actualType**
-The actual type.
-
-**expectedType**
-The expected type.
-
-
+Name|Description
+---|---
+**actualType**|The actual type.
+**expectedType**|The expected type.
 
 ## Properties
 
@@ -42,11 +41,7 @@ The expected type.
 
 Gets the actual type.
 
-
-
 ### ExpectedType
 
 Gets the expected type.
-
-
 

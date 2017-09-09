@@ -1,20 +1,23 @@
 
 
-# ICustomJsonSerializable
++++
+title = "ICustomJsonSerializable" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Serialization.Json
 Namespace|Catel.Runtime.Serialization.Json
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ICustomJsonSerializable
 ```
 
 Allows a type to implement their own (de)serialization mechanism.
-
-
 
 ## Methods
 
@@ -24,10 +27,9 @@ Serializes the object from the specified json reader. Note that the object is al
 
 #### Parameters
 
-**jsonReader**
-The json reader.
-
-
+Name|Description
+---|---
+**jsonReader**|The json reader.
 
 ### Serialize(JsonWriter jsonWriter)
 
@@ -35,8 +37,7 @@ Serializes the object to the specified json writer.
 
 #### Parameters
 
-**jsonWriter**
-The json writer.
-
-
+Name|Description
+---|---
+**jsonWriter**|The json writer.
 

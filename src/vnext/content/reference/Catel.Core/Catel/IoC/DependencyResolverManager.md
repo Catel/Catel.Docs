@@ -1,12 +1,17 @@
 
 
-# DependencyResolverManager
++++
+title = "DependencyResolverManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class DependencyResolverManager : IDependencyResolverManager
@@ -14,12 +19,9 @@ public class DependencyResolverManager : IDependencyResolverManager
 
 **Base types**
 
-[IDependencyResolverManager](/Catel.Core\Catel\IoC\IDependencyResolverManager.md)
-
+[IDependencyResolverManager]({{< relref "reference/Catel.Core/Catel/IoC/IDependencyResolverManager.md" >}})
 
 The dependency resolver manager.
-
-
 
 ## Fields
 
@@ -29,15 +31,11 @@ The dependency resolver manager.
 
 Initializes a new instance of the [DependencyResolverManager](#) class.
 
-
-
 ## Properties
 
 ### Default
 
 Gets or the default instance.
-
-
 
 ### DefaultDependencyResolver
 
@@ -45,21 +43,21 @@ Gets or sets the default dependency resolver.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The value is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The value is`null`.
 
 ## Methods
 
 ### GetDependencyResolverForInstance(object instance)
 
-Gets the dependency resolver for a specific instance. If there is no dependency resolver registered for the specific instance, this method will use the Type).
+Gets the dependency resolver for a specific instance. If there is no dependency resolver registered for the specific instance, this method will use the GetDependencyResolverForType(Type).
 
 #### Parameters
 
-**instance**
-The instance to retrieve the dependency resolver for.
+Name|Description
+---|---
+**instance**|The instance to retrieve the dependency resolver for.
 
 #### Returns
 
@@ -67,10 +65,9 @@ The [IDependencyResolver](#) for the object.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The instance is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The instance is`null`.
 
 ### GetDependencyResolverForType(Type type)
 
@@ -78,8 +75,9 @@ Gets the dependency resolver for a specific type. If there is no dependency reso
 
 #### Parameters
 
-**type**
-The type.
+Name|Description
+---|---
+**type**|The type.
 
 #### Returns
 
@@ -87,10 +85,9 @@ The [IDependencyResolver](#) for the type.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 
 ### RegisterDependencyResolverForInstance(object instance, IDependencyResolver dependencyResolver)
 
@@ -98,18 +95,16 @@ Registers the dependency resolver for a specific instance.
 
 #### Parameters
 
-**instance**
-The instance.
-
-**dependencyResolver**
-The dependency resolver.
+Name|Description
+---|---
+**instance**|The instance.
+**dependencyResolver**|The dependency resolver.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The instance is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The instance is`null`.
 
 ### RegisterDependencyResolverForType(Type type, IDependencyResolver dependencyResolver)
 
@@ -117,16 +112,14 @@ Registers the dependency resolver for a specific type.
 
 #### Parameters
 
-**type**
-The type.
-
-**dependencyResolver**
-The dependency resolver.
+Name|Description
+---|---
+**type**|The type.
+**dependencyResolver**|The dependency resolver.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The type is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The type is`null`.
 

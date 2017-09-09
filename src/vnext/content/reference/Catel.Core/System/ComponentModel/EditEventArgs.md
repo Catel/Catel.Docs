@@ -1,24 +1,26 @@
 
 
-# EditEventArgs
++++
+title = "EditEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|System.ComponentModel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class EditEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 Event args class containing information about events that occur in the [IAdvancedEditableObject](#) interface.
-
-
 
 ## Constructors
 
@@ -28,15 +30,15 @@ Initializes a new instance of the [EditEventArgs](#) class.
 
 #### Parameters
 
-**editableObject**
-The editable object.
+Name|Description
+---|---
+**editableObject**|The editable object.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The editableObject is`null`.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The editableObject is`null`.
 
 ## Properties
 
@@ -44,11 +46,7 @@ The editableObject is`null`.
 
 Gets or sets a value indicating whether the call to should fail and the object should not enter or leave the edit state.
 
-
-
 ### EditableObject
 
 Gets the editable object.
-
-
 

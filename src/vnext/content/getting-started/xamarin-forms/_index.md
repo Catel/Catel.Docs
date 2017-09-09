@@ -12,7 +12,7 @@ The source code for this example can be found at <https://github.com/Catel/Catel
 
 Note that this guide will recommend code snippets that can be found [here](http://www.catelproject.com/downloads/general-files/). They are not required, just recommended to speed up creating Catel classes and properties.
 
--   [Creating the Xamarin.Forms project](./creating-the-project.md)
+{{% children sort="weight" %}}
 
 This documentation is work in progress
 

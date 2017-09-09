@@ -1,4 +1,7 @@
-# Creating a view model with a model and mappings
++++
+title = "Creating a view model with a model and mappings" 
+description = ""
++++
 
 During of the use of the MVVM pattern, we noticed that lots and lots of developers have a model, and map the values of the model to all properties of the view model. When the UI closes, the developers map all the properties back to the model. All this redundant code is not necessary when using the view models of Catel.
 
@@ -80,7 +83,7 @@ public string LastName
 public static readonly PropertyData LastNameProperty = RegisterProperty("LastName", typeof(string));
 ```
 
-@alert info
+{{% notice info %}}
 If there is a single model on a view model, the name of the model in the `ViewModelToModel` can be ommitted as shown in the code below:
 
 ```
@@ -93,7 +96,7 @@ public string FirstName
 
 public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstName", typeof(string));
 ```
-@end
+{{% /notice %}}
 
 The `ViewModelToModelAttribute` in the code example above automatically maps the view model `FirstName` and `LastName` properties to the `Person.FirstName` and `Person.LastName` properties. This way, you don’t have to manually map the values from and to the model. Another nice effect is that the view model automatically validates all objects defined using the `ModelAttribute`, and all field and business errors mapped are automatically mapped to the view model.
 

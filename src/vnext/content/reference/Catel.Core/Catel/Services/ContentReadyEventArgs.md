@@ -1,24 +1,26 @@
 
 
-# ContentReadyEventArgs
++++
+title = "ContentReadyEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ContentReadyEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
+[EventArgs]({{< relref "#" >}})
 
-
-[EventArgs](#) implementation for camera content ready operations.
-
-
+implementation for camera content ready operations.
 
 ## Constructors
 
@@ -28,21 +30,19 @@ Initializes a new instance of the [ContentReadyEventArgs](#) class.
 
 #### Parameters
 
-**imageStream**
-The image stream.
+Name|Description
+---|---
+**imageStream**|The image stream.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The imageStream is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The imageStream is`null`.
 
 ## Properties
 
 ### ImageStream
 
 Gets the image stream of the image.
-
-
 

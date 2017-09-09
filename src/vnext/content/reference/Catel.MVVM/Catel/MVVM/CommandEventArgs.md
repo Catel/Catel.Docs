@@ -1,24 +1,26 @@
 
 
-# CommandEventArgs
++++
+title = "CommandEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class CommandEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
-
+[EventArgs]({{< relref "#" >}})
 
 CommandEventArgs, simply holds the command parameter.
-
-
 
 ## Constructors
 
@@ -28,16 +30,13 @@ Initializes a new instance of the [CommandEventArgs](#) class.
 
 #### Parameters
 
-**commandParameter**
-The command parameter.
-
-
+Name|Description
+---|---
+**commandParameter**|The command parameter.
 
 ## Properties
 
 ### CommandParameter
 
 Gets the command parameter used for the execution.
-
-
 

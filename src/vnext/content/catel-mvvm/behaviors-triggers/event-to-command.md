@@ -1,4 +1,7 @@
-# EventToCommand
++++
+title = "EventToCommand" 
+description = ""
++++
 
 Almost every respectable MVVM framework supports the `EventToCommand` trigger. It is a trigger that allows a an event to be turned into a command. This way, you never have to manually add event handlers, search for the view model in the code-behind and then call the right command.
 
@@ -8,7 +11,7 @@ The usage is really simple, but requires the `System.Windows.Interactivity.dll` 
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition. This example will invoke the Edit command of the view model):

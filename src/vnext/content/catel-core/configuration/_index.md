@@ -24,9 +24,9 @@ var mySetting = configurationService.GetValue<int>("mySetting", 42);
 
 The code above will retrieve the values from the configuration. If the configuration value does not exist, it will return *42* as default value.
 
-@alert info
+{{% notice info %}}
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
-@end
+{{% /notice %}}
 
 ## Setting values to the configuration
 
@@ -37,9 +37,9 @@ var configurationService = new ConfigurationService();
 configurationService.SetValue("mySetting", 42);
 ```
 
-@alert info
+{{% notice info %}}
 It's best to retrieve the service from the dependency resolver or let it be injected into the classes using it
-@end
+{{% /notice %}}
 
 ## Customizing the way values are stored
 
@@ -89,6 +89,6 @@ public class DbConfigurationService : ConfigurationService
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Don't forget to register the customized *ConfigurationService* in the *ServiceLocator*
-@end
+{{% /notice %}}

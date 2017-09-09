@@ -1,20 +1,23 @@
 
 
-# IValidatableModelExtensions
++++
+title = "IValidatableModelExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IValidatableModelExtensions
 ```
 
 Validatable model extensions.
-
-
 
 ## Methods
 
@@ -24,8 +27,9 @@ Gets the validation context for a complete object graph by also checking the pro
 
 #### Parameters
 
-**model**
-The model.
+Name|Description
+---|---
+**model**|The model.
 
 #### Returns
 
@@ -33,8 +37,7 @@ The validation context for the whole object graph.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The model is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The model is`null`.
 

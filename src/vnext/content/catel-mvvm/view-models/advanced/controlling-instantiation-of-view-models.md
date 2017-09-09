@@ -1,4 +1,7 @@
-# Controlling the instantiation of view models
++++
+title = "Controlling the instantiation of view models" 
+description = ""
++++
 
 Starting with Catel 3.1, it is possible to take control of the view model instantiation of a view dynamically at runtime. This feature can be used when the construction of a view model is more complex than injecting the datacontext as model, or when the view model instance in a custom repository should be re-used.
 
@@ -33,9 +36,9 @@ ServiceLocator.Default.RegisterType<IViewModelFactory, CustomViewModelFactory>()
 
 ## How to control the view model instantiation using a UserControl
 
-@alert important
+{{% notice warning %}}
 Note that it is best to use the `IViewModelFactory` for view model instantation because it is a more generic solution
-@end
+{{% /notice %}}
 
 Controlling the instantiation of the view model dynamically when using the `UserControl` is extremely easy. You can override the `GetViewModelInstance(object)` method like this:
 
@@ -55,9 +58,9 @@ When the method returns `null`, the logic will try to construct the view model b
 
 ## How to control the view model instantiation using a behavior
 
-@alert important
+{{% notice warning %}}
 Note that it is best to use the `IViewModelFactory` for view model instantation because it is a more generic solution
-@end
+{{% /notice %}}
 
 Controlling the instantiation of the view model dynamically when using behaviors must be done via the `DetermineViewModelInstance` event like this:
 

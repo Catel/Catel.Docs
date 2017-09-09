@@ -1,24 +1,26 @@
 
 
-# InvalidViewModelException
++++
+title = "InvalidViewModelException" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class InvalidViewModelException : Exception
 ```
 
 **Base types**
-[Exception]()
-
+[Exception]({{< relref "#" >}})
 
 Exception in case there is an invalid view model.
-
-
 
 ## Constructors
 
@@ -28,8 +30,7 @@ Initializes a new instance of the [InvalidViewModelException](#) class.
 
 #### Parameters
 
-**message**
-The message.
-
-
+Name|Description
+---|---
+**message**|The message.
 

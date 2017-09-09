@@ -1,4 +1,7 @@
-# AutoScroll
++++
+title = "AutoScroll" 
+description = ""
++++
 
 The `AutoScroll` behavior automatically scrolls to a specific direction when the `ItemsSource` of an `ItemsControl` changes.
 
@@ -6,7 +9,7 @@ The `AutoScroll` behavior automatically scrolls to a specific direction when th
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Add behavior

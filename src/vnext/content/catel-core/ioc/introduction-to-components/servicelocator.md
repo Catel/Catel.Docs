@@ -12,9 +12,9 @@ Catel uses it's own `ServiceLocator` implementing the `IServiceLocator` to gathe
 
 The `ServiceLocator` can be instantiated, but Catel instantiates one instance that can be used and shared amongst all objects inside the same `AppDomain`. The `ServiceLocator` can be retrieved by using `ServiceLocator`.`Default`.
 
-@alert info
-For more information how types are instantiated and dependency injection, take a look at the [TypeFactory documentation](./typefactory.md)
-@end
+{{% notice info %}}
+For more information how types are instantiated and dependency injection, take a look at the [TypeFactory documentation]({{< relref "catel-core/ioc/introduction-to-components/typefactory.md" >}})
+{{% /notice %}}
 
 ## Registering a type
 

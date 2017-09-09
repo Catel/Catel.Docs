@@ -5,9 +5,9 @@ description = ""
 
 Catel implements a custom implementation of the `DisplayAttribute` known in the `DataAnnotations` namespace of .NET. This attribute uses the *ILanguageService* so you can easily have all translations in a single location when using Catel.
 
-@note warning
+{{% notice warning %}}
 Note that this is still work in progress, we would love to support this, but MS sealed the class so we cannot derive from it (at the moment)
-@end
+{{% /notice %}}
 
 ## Using the attribute
 

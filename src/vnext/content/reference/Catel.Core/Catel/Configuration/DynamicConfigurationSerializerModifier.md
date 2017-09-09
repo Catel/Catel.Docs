@@ -1,24 +1,26 @@
 
 
-# DynamicConfigurationSerializerModifier
++++
+title = "DynamicConfigurationSerializerModifier" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class DynamicConfigurationSerializerModifier : SerializerModifierBase
 ```
 
 **Base types**
-[SerializerModifierBase](/Catel.Core\Catel\Runtime\Serialization\SerializerModifierBase.md)
-
+[SerializerModifierBase]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" >}})
 
 Dynamic configuration serializer modifier.
-
-
 
 ## Fields
 
@@ -30,10 +32,9 @@ Initializes a new instance of the [DynamicConfigurationSerializerModifier](#) cl
 
 #### Parameters
 
-**serializationManager**
-The serialization manager.
-
-
+Name|Description
+---|---
+**serializationManager**|The serialization manager.
 
 ## Methods
 
@@ -43,13 +44,10 @@ Called when the object is about to be deserialized.
 
 #### Parameters
 
-**context**
-The context.
-
-**model**
-The model.
-
-
+Name|Description
+---|---
+**context**|The context.
+**model**|The model.
 
 ### OnSerializing(ISerializationContext context, object model)
 
@@ -57,11 +55,8 @@ Called when the object is about to be serialized.
 
 #### Parameters
 
-**context**
-The context.
-
-**model**
-The model.
-
-
+Name|Description
+---|---
+**context**|The context.
+**model**|The model.
 

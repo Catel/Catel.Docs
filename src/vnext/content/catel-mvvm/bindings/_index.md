@@ -1,15 +1,18 @@
-# Bindings
++++
+title = "Bindings" 
+description = ""
++++
 
 By default, all XAML technologies support binding out of the box. However other platforms (such as Xamarin.Android and Xamarin.iOS) don't. Catel provides a binding system for these platforms, which is described in this topic.
 
-@alert info
+{{% notice info %}}
 Note that although the binding system in Catel is very powerful, it will never be as flexible / powerful as the native XAML binding system. We do try to support as many features as possible though.
-@end
+{{% /notice %}}
 
 For examples, check out the following pages:
 
--   [Property bindings](./property-bindings.md)
--   [Command bindings](/./command-bindings.md)
+- [Property bindings]({{< relref "catel-mvvm/bindings/property-bindings.md" >}})
+- [Command bindings]({{< relref "catel-mvvm/bindings/command-bindings.md" >}})
 
 # Binding system explained
 

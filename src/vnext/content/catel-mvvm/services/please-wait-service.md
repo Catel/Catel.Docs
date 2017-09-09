@@ -1,4 +1,7 @@
-# PleaseWaitService
++++
+title = "PleaseWaitService" 
+description = ""
++++
 
 The `IPleaseWaitService` allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. 
 

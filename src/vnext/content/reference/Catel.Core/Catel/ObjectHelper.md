@@ -1,20 +1,23 @@
 
 
-# ObjectHelper
++++
+title = "ObjectHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ObjectHelper
 ```
 
 Object helper class.
-
-
 
 ## Methods
 
@@ -24,17 +27,14 @@ Checks whether the 2 specified objects are equal. This method is better, simple 
 
 #### Parameters
 
-**object1**
-The first object.
-
-**object2**
-The second object.
+Name|Description
+---|---
+**object1**|The first object.
+**object2**|The second object.
 
 #### Returns
 
 `true` if the objects are equal; otherwise`false`.
-
-
 
 ### AreEqualReferences(object object1, object object2)
 
@@ -42,17 +42,14 @@ Checks whether the 2 specified objects are equal references. This method is bett
 
 #### Parameters
 
-**object1**
-The first object.
-
-**object2**
-The second object.
+Name|Description
+---|---
+**object1**|The first object.
+**object2**|The second object.
 
 #### Returns
 
 `true` if the objects are equal references; otherwise`false`.
-
-
 
 ### IsNull(object obj)
 
@@ -60,12 +57,11 @@ Determines whether the specified object is`null` or`DBNull.Value`.
 
 #### Parameters
 
-**obj**
-The object to chec..
+Name|Description
+---|---
+**obj**|The object to chec..
 
 #### Returns
 
 `true` if the specified object is`null` or`DBNull.Value`; otherwise,`false`.
-
-
 

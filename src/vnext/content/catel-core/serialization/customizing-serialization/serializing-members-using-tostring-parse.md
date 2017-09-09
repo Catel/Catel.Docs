@@ -9,9 +9,9 @@ Sometimes types (classes or structs) don't implement a proper serialization mech
 1.  The member is decorated using the *SerializeUsingParseAndToString* attribute
 2.  The container class has a *SerializerModifier* that returns *true* in the *ShouldSerializeMemberUsingParse* method
 
-@alert info
+{{% notice info %}}
 Note that decorating a member that does not implement proper *ToString(IFormatProvider)* and *Parse(string, IFormatProvider)* methods is useless, the serialization engine will ignore these types
-@end
+{{% /notice %}}
 
 For example, the class below is an excellent usage example of when to use this technique:
 

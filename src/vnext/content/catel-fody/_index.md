@@ -172,9 +172,9 @@ In the background, `Catel.Fody` will handle the following workflow:
 4. Instantiate the `PropertyData` field in the static constructor of the type
 5. Replace the content of the getter and setter with the appropriate calls to `GetValue` and `SetValue`
  
-@alert info
+{{% notice info %}}
 Note that this feature is automatically disabled for classes that already override the `OnPropertyChanged` method. It is too complex to determine where the logic should be added so the end-developer is responsible for implementing this feature when overriding `OnPropertyChanged`
-@end
+{{% /notice %}}
 
 ### Automatically excluded properties
 
@@ -245,9 +245,9 @@ Will automatically be weaved into this:
 
 This is much faster because the expression doesn't have to be parsed at runtime. This is a very noticeable performance boost if the expression check is used more than 50 times per second.
 
-@alert info
+{{% notice info %}}
 When using the latest version of Catel.Fody, the team recommends using expressions above the regular argument checks (with name and value specified separately) because it will result in cleaner code. With this feature, there is no longer a performance penalty for using the expressions version
-@end
+{{% /notice %}}
 
 ### Argument checking via attributes
 

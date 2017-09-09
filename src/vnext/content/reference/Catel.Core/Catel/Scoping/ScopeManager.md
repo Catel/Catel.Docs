@@ -1,21 +1,24 @@
 
 
-# ScopeManager
++++
+title = "ScopeManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Scoping
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ScopeManager<T> : IDisposable where T : class 
 ```
 
 **Base types**
-
-[IDisposable]()
-
+[IDisposable]({{< relref "#" >}})
 
 Custom scope manager to define a scope for a type.
 
@@ -23,8 +26,6 @@ Custom scope manager to define a scope for a type.
 
 **T**
 The type to scope.
-
-
 
 ## Fields
 
@@ -36,13 +37,9 @@ The type to scope.
 
 Gets the current reference count for this object.
 
-
-
 ### ScopeObject
 
 Gets the scope object.
-
-
 
 ## Events
 
@@ -50,15 +47,11 @@ Gets the scope object.
 
 Occurs when the scope reference count reaches zero.
 
-
-
 ## Methods
 
 ### Dispose()
 
 Dispose object, dereferencing or disposing the context it is managing.
-
-
 
 ### GetScopeManager(string scopeName, Func<T> createScopeFunction)
 
@@ -66,22 +59,20 @@ Gets the ContextManager object for the specified database.
 
 #### Parameters
 
-**scopeName**
-Name of the scope.
-
-**createScopeFunction**
-The create scope function. Can be`null`.
+Name|Description
+---|---
+**scopeName**|Name of the scope.
+**createScopeFunction**|The create scope function. Can be`null`.
 
 #### Returns
 
-The [ScopeManager](#).
+The [Missing: <see cref="T:Catel.Scoping.ScopeManager`1" />](#).
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The scopeName is`null`.
-
-
+Name|Description
+---|---
+**ArgumentException**|The scopeName is`null`.
 
 ### ScopeExists(string scopeName)
 
@@ -89,8 +80,9 @@ Determines whether the specified scope exists.
 
 #### Parameters
 
-**scopeName**
-Name of the scope.
+Name|Description
+---|---
+**scopeName**|Name of the scope.
 
 #### Returns
 
@@ -98,8 +90,7 @@ Name of the scope.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The scopeName is`null`.
-
-
+Name|Description
+---|---
+**ArgumentException**|The scopeName is`null`.
 

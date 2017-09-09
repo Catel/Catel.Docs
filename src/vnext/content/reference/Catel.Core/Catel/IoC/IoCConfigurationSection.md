@@ -1,20 +1,24 @@
 
 
-# IoCConfigurationSection
++++
+title = "IoCConfigurationSection" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class IoCConfigurationSection : ConfigurationSection
 ```
 
 **Base types**
-[ConfigurationSection]()
-
+[ConfigurationSection]({{< relref "#" >}})
 
 IoC configuration section.
 
@@ -45,8 +49,6 @@ sectionGroup name = "catel" >
      
 ```
 
-
-
 ## Fields
 
 ## Properties
@@ -55,13 +57,9 @@ sectionGroup name = "catel" >
 
 Gets the Default service locator configuration.
 
-
-
 ### ServiceLocatorConfigurationCollection
 
 Gets the IoC configuration collection.
-
-
 
 ## Methods
 
@@ -71,8 +69,7 @@ Gets the service locator configuration from a given name.
 
 #### Parameters
 
-**name**
-The name of the service locator configuration.
-
-
+Name|Description
+---|---
+**name**|The name of the service locator configuration.
 

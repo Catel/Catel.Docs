@@ -26,9 +26,9 @@ public class DemoMessage : MessageBase<DemoMessage, string>
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Note that the message needs an empty constructor
-@end
+{{% /notice %}}
 
 ## Sending messages
 

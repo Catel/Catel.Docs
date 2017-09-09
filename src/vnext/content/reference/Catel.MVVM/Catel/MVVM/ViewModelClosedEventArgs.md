@@ -1,24 +1,26 @@
 
 
-# ViewModelClosedEventArgs
++++
+title = "ViewModelClosedEventArgs" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelClosedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]()
+[EventArgs]({{< relref "#" >}})
 
-
-[EventArgs](#) implementation for the ClosedAsync event.
-
-
+implementation for the ClosedAsync event.
 
 ## Constructors
 
@@ -28,18 +30,16 @@ Initializes a new instance of the [ViewModelClosedEventArgs](#) class.
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-**result**
-The result to pass to the view. This will, for example, be used as`DialogResult`.
+Name|Description
+---|---
+**viewModel**|The view model.
+**result**|The result to pass to the view. This will, for example, be used as`DialogResult`.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModel is`null`.
 
 ## Properties
 
@@ -47,11 +47,7 @@ The viewModel is`null`.
 
 Gets the result to pass to the view. This will, for example, be used as`DialogResult`
 
-
-
 ### ViewModel
 
 Gets the view model.
-
-
 

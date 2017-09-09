@@ -83,6 +83,6 @@ public class MyExpirationPolicy : ExpirationPolicy
 }
 ```
 
-@alert info
+{{% notice info %}}
 The base constructor has a parameter to indicate if the policy can be reset. Therefore, if you call the base constructor with false then the OnReset method will never called.
-@end
+{{% /notice %}}

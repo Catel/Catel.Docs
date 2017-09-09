@@ -1,12 +1,17 @@
 
 
-# DependencyPropertyHelper
++++
+title = "DependencyPropertyHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown, Windows 10.0 (Universal Apps), Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
 public static class DependencyPropertyHelper
@@ -14,77 +19,71 @@ public static class DependencyPropertyHelper
 
 Helper class for dependency properties.
 
-
-
 ## Fields
 
 ## Methods
 
-### GetDependencyProperties(Type viewType)
-
-Gets all dependency properties of the specified [Type](#).
-
-#### Parameters
-
-**viewType**
-The view type.
-
-#### Returns
-
-List containing all dependency properties of the specified [FrameworkElement](#).
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The viewType is`null`.
-
-
-
 ### GetDependencyProperties(FrameworkElement frameworkElement)
 
-Gets all dependency properties of the specified [FrameworkElement](#).
+Gets all dependency properties of the specified.
 
 #### Parameters
 
-**frameworkElement**
-The framework element.
+Name|Description
+---|---
+**frameworkElement**|The framework element.
 
 #### Returns
 
-List containing all dependency properties of the specified [FrameworkElement](#).
+List containing all dependency properties of the specified.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The frameworkElement is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The frameworkElement is`null`.
 
+### GetDependencyProperties(Type viewType)
 
+Gets all dependency properties of the specified.
+
+#### Parameters
+
+Name|Description
+---|---
+**viewType**|The view type.
+
+#### Returns
+
+List containing all dependency properties of the specified.
+
+#### Exceptions
+
+Name|Description
+---|---
+**ArgumentNullException**|The viewType is`null`.
 
 ### GetDependencyPropertyByName(FrameworkElement frameworkElement, string propertyName)
 
-Gets a the dependency property of a specific [FrameworkElement](#) by its name.
+Gets a the dependency property of a specific by its name.
 
 #### Parameters
 
-**frameworkElement**
-The framework element.
-
-**propertyName**
-Name of the property.
+Name|Description
+---|---
+**frameworkElement**|The framework element.
+**propertyName**|Name of the property.
 
 #### Returns
 
-The [DependencyProperty](#) or`null` if the property cannot be found.
+The or`null` if the property cannot be found.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The frameworkElement is`null`.
-
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The frameworkElement is`null`.
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### GetDependencyPropertyCacheKey(Type viewType, string propertyName)
 
@@ -92,11 +91,10 @@ Gets the dependency property key for the cache.
 
 #### Parameters
 
-**viewType**
-The view type.
-
-**propertyName**
-Name of the property.
+Name|Description
+---|---
+**viewType**|The view type.
+**propertyName**|Name of the property.
 
 #### Returns
 
@@ -104,13 +102,10 @@ The key to use in the cache.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewType is`null`.
-
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewType is`null`.
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### GetDependencyPropertyCacheKeyPrefix(Type viewType)
 
@@ -118,8 +113,9 @@ Gets the dependency property cache key prefix.
 
 #### Parameters
 
-**viewType**
-The view type.
+Name|Description
+---|---
+**viewType**|The view type.
 
 #### Returns
 
@@ -127,10 +123,9 @@ The dependency property cache key prefix based on the framework element..
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewType is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewType is`null`.
 
 ### GetDependencyPropertyName(FrameworkElement frameworkElement, DependencyProperty dependencyProperty)
 
@@ -138,15 +133,12 @@ Gets the name of the specified dependency property.
 
 #### Parameters
 
-**frameworkElement**
-The framework element containing the dependency property.
-
-**dependencyProperty**
-The dependency property.
+Name|Description
+---|---
+**frameworkElement**|The framework element containing the dependency property.
+**dependencyProperty**|The dependency property.
 
 #### Returns
 
 The name of the dependency property or`null` if the name could not be found.
-
-
 

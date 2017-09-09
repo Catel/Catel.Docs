@@ -1,20 +1,23 @@
 
 
-# ApplicationExtensions
++++
+title = "ApplicationExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public static class ApplicationExtensions
 ```
 
-Extension methods for the [Application](#) class.
-
-
+Extension methods for the class.
 
 ## Methods
 
@@ -24,12 +27,11 @@ Gets the currently active window of the application.
 
 #### Parameters
 
-**application**
-The application.
+Name|Description
+---|---
+**application**|The application.
 
 #### Returns
 
 The active window of the application or null in case of none window is opened.
-
-
 

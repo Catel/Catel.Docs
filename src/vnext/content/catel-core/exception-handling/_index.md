@@ -29,9 +29,9 @@ exceptionService.Register<Exception>(exception => 
 });
 ```
 
-@alert info
+{{% notice info %}}
 The IExceptionService checks for type hierarchy. For example, when an exception as type Exception is registered, this handler will handle all exceptions
-@end
+{{% /notice %}}
 
 ## Executing code using the IExceptionService
 
@@ -55,9 +55,9 @@ var exceptionService = dependencyResolver.Resolve<IExceptionService>();
 var result = exceptionService.Process<int>(() => 1 + 1);
 ```
 
-@alert info
+{{% notice info %}}
 You can process yours actions asynchronously by using the ***ProcessAsync*** method.
-@end
+{{% /notice %}}
 
 ## Use the retry capabilities
 

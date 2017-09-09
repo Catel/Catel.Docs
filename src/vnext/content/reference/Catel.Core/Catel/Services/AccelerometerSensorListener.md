@@ -1,6 +1,11 @@
 
 
-# AccelerometerSensorListener
++++
+title = "AccelerometerSensorListener" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,20 +18,15 @@ public class AccelerometerSensorListener : Object
 ```
 
 **Base types**
-[Object]()
-
+[Object]({{< relref "#" >}})
 
 Sensor listener for the accelerometer.
-
-
 
 ## Events
 
 ### SensorChanged
 
 Invoked when the sensor value has changed.
-
-
 
 ## Methods
 
@@ -36,13 +36,10 @@ Called when the accuracy of a sensor has changed.
 
 #### Parameters
 
-**sensor**
-The sensor.
-
-**accuracy**
-The new accuracy of this sensor.
-
-
+Name|Description
+---|---
+**sensor**|The sensor.
+**accuracy**|The new accuracy of this sensor.
 
 ### OnSensorChanged(SensorEvent e)
 
@@ -50,8 +47,7 @@ Called when sensor values have changed.
 
 #### Parameters
 
-**e**
-the``.
-
-
+Name|Description
+---|---
+**e**|the``.
 

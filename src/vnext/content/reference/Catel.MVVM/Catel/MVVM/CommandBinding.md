@@ -1,6 +1,11 @@
 
 
-# CommandBinding
++++
+title = "CommandBinding" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public class CommandBinding : BindingBase
 ```
 
 **Base types**
-[BindingBase](/Catel.MVVM\Catel\MVVM\BindingBase.md)
-
+[BindingBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/BindingBase.md" >}})
 
 Binding to bind events to commands.
-
-
 
 ## Fields
 
@@ -30,27 +32,19 @@ Initializes a new instance of the [CommandBinding](#) class.
 
 #### Parameters
 
-**element**
-The element.
-
-**eventName**
-Name of the event.
-
-**command**
-The command.
-
-**commandParameterBinding**
-The command parameter binding.
+Name|Description
+---|---
+**element**|The element.
+**eventName**|Name of the event.
+**command**|The command.
+**commandParameterBinding**|The command parameter binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The element is`null`.
-
-**!:ArgumentException**
-The eventName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The element is`null`.
+**ArgumentException**|The eventName is`null` or whitespace.
 
 ## Methods
 

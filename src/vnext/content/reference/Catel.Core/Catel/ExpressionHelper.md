@@ -1,20 +1,23 @@
 
 
-# ExpressionHelper
++++
+title = "ExpressionHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ExpressionHelper
 ```
 
 Expression helper class that allows easy parsing of expressions.
-
-
 
 ## Fields
 
@@ -26,8 +29,9 @@ Gets the owner of the expression. For example if the expression`() => MyProperty
 
 #### Parameters
 
-**propertyExpression**
-The property expression.
+Name|Description
+---|---
+**propertyExpression**|The property expression.
 
 #### Returns
 
@@ -35,10 +39,9 @@ The owner of the expression or`null` if the owner cannot be found.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The propertyExpression is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The propertyExpression is`null`.
 
 ### GetPropertyName<TProperty>(Expression<Func<TProperty>> propertyExpression)
 
@@ -51,8 +54,9 @@ The type of the property.
 
 #### Parameters
 
-**propertyExpression**
-The property expression.
+Name|Description
+---|---
+**propertyExpression**|The property expression.
 
 #### Returns
 
@@ -60,10 +64,9 @@ The name of the property parsed from the expression or`null` if the property can
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The propertyExpression is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The propertyExpression is`null`.
 
 ### GetPropertyName<TProperty, TSource>(Expression<Func<TSource, TProperty>> propertyExpression)
 
@@ -79,8 +82,9 @@ The type of the property.
 
 #### Parameters
 
-**propertyExpression**
-The property expression.
+Name|Description
+---|---
+**propertyExpression**|The property expression.
 
 #### Returns
 
@@ -88,8 +92,7 @@ The name of the property parsed from the expression or`null` if the property can
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The propertyExpression is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The propertyExpression is`null`.
 

@@ -1,20 +1,23 @@
 
 
-# SerializationContextHelper
++++
+title = "SerializationContextHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class SerializationContextHelper
 ```
 
 Helper class for serialization.
-
-
 
 ## Methods
 
@@ -25,6 +28,4 @@ Gets the name of the serialization reference manager scope.
 #### Returns
 
 The name of the scope.
-
-
 

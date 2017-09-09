@@ -1,12 +1,17 @@
 
 
-# ViewModelWrapper
++++
+title = "ViewModelWrapper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Views
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ViewModelWrapper : IViewModelWrapper
@@ -14,12 +19,9 @@ public class ViewModelWrapper : IViewModelWrapper
 
 **Base types**
 
-[IViewModelWrapper](/Catel.MVVM\Catel\MVVM\Views\IViewModelWrapper.md)
-
+[IViewModelWrapper]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.md" >}})
 
 View model wrapper class.
-
-
 
 ## Fields
 
@@ -31,15 +33,15 @@ Initializes a new instance of the [ViewModelWrapper](#) class.
 
 #### Parameters
 
-**contentToWrap**
-The view model wrapper object, such as a grid.
+Name|Description
+---|---
+**contentToWrap**|The view model wrapper object, such as a grid.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The contentToWrap is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The contentToWrap is`null`.
 
 ## Methods
 
@@ -49,8 +51,7 @@ Updates the view model.
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-
+Name|Description
+---|---
+**viewModel**|The view model.
 

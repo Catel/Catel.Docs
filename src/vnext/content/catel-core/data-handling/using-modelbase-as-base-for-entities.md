@@ -66,7 +66,7 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 
 Or, if you only want to do this for classes inheriting Modelbase, use the following code:
 
-``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
+```
 protected override void OnModelCreating(DbModelBuilder modelBuilder)
 {
    modelBuilder.Types().Where(t => t.IsSubclassOf(typeof(ModelBase))).Configure(c => c.Ignore("IsDirty"));

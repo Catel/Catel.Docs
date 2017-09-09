@@ -1,4 +1,7 @@
-# Authentication
++++
+title = "Authentication" 
+description = ""
++++
 
 The Authentication behavior is able to hide, collapse or disable UI elements based on the current user state. The behavior uses the registered IAuthenticationProvider instances to determine whether the user has access to the specified UI element.
 
@@ -49,7 +52,7 @@ Catel.IoC.ServiceLocator.Instance.RegisterType<IAuthenticationProvider, Authenti
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 4) Add the behavior. As you can see, it is possible to provide a custom *AuthenticationTag*, which is passed to the *IAuthenticationProvider*:
@@ -66,8 +69,8 @@ xmlns:catel="http://catel.codeplex.com"
 
 **Logged in as administrator:**
 
-![](../../images/catel-mvvm/behaviors-triggers/authentication/administrator.png)
+![](../../../images/catel-mvvm/behaviors-triggers/authentication/administrator.png)
 
 **Logged in as read-only user:**
 
-![](../../images/catel-mvvm/behaviors-triggers/authentication/readonly.png)
+![](../../../images/catel-mvvm/behaviors-triggers/authentication/readonly.png)

@@ -1,10 +1,13 @@
-# UIVisualizerService
++++
+title = "UIVisualizerService" 
+description = ""
++++
 
 The `IUIVisualizerService` allows a developer to show (modal) windows or dialogs without actually referencing a specific view. Internally, the `UIVisualizerService` uses the `ViewLocator` to resolve views.
 
 ## Screenshot
 
-![](../../images/catel-mvvm/services/ui-visualizer-service/example.png)
+![](../../../images/catel-mvvm/services/ui-visualizer-service/example.png)
 
 ## Showing a non-modal window
 
@@ -54,4 +57,4 @@ uiVisualizerService.Register(typeof(EmployeeViewModel), typeof(EmployeeView));
 
 ## Using naming conventions to find windows
 
-Please see the [ViewLocator](../locators-naming-conventions/view-locator.md)topic.
+Please see the [ViewLocator]({{< relref "catel-mvvm/locators-naming-conventions/view-locator.md" >}}) topic.

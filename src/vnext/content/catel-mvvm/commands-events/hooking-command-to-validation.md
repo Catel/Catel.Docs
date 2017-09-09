@@ -1,4 +1,7 @@
-# Hooking a command to validation automatically
++++
+title = "Hooking a command to validation automatically" 
+description = ""
++++
 
 It is possible to hook the `CanExecute` of a `Command` to the `IValidationSummary` automatically. This way, there is no need to check for errors manually in the `CanExecute` method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.
 

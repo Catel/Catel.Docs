@@ -1,6 +1,11 @@
 
 
-# BindingPartyExtensions
++++
+title = "BindingPartyExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public static class BindingPartyExtensions
 
 Extension methods for binding parties.
 
-
-
 ## Fields
 
 ## Constructors
@@ -28,19 +31,15 @@ Adds the event by automatically retrieving the event args type.
 
 #### Parameters
 
-**bindingParty**
-The binding party.
-
-**eventName**
-Name of the event.
+Name|Description
+---|---
+**bindingParty**|The binding party.
+**eventName**|Name of the event.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The bindingParty is`null`.
-
-**!:ArgumentException**
-The bindingParty is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The bindingParty is`null`.
+**ArgumentException**|The bindingParty is`null`.
 

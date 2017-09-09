@@ -1,20 +1,23 @@
 
 
-# ValidationContextChange
++++
+title = "ValidationContextChange" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ValidationContextChange
 ```
 
 Class containing change information about an item in the validation context.
-
-
 
 ## Constructors
 
@@ -24,18 +27,16 @@ Initializes a new instance of the [ValidationContextChange](#) class.
 
 #### Parameters
 
-**validationResult**
-The validation result.
-
-**changeType**
-Type of the change.
+Name|Description
+---|---
+**validationResult**|The validation result.
+**changeType**|Type of the change.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The validationResult is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The validationResult is`null`.
 
 ## Properties
 
@@ -43,11 +44,7 @@ The validationResult is`null`.
 
 Gets the type of the change.
 
-
-
 ### ValidationResult
 
 Gets the validation result.
-
-
 

@@ -1,20 +1,24 @@
 
 
-# LoggingConfigurationSection
++++
+title = "LoggingConfigurationSection" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class LoggingConfigurationSection : ConfigurationSection
 ```
 
 **Base types**
-[ConfigurationSection]()
-
+[ConfigurationSection]({{< relref "#" >}})
 
 Logging configuration section.
 
@@ -41,8 +45,6 @@ sectionGroup name = "catel" >
      
 ```
 
-
-
 ## Fields
 
 ## Properties
@@ -50,8 +52,6 @@ sectionGroup name = "catel" >
 ### LogListenerConfigurationCollection
 
 Gets the logging configuration collection.
-
-
 
 ## Methods
 
@@ -61,12 +61,11 @@ Gets the log listeners.
 
 #### Parameters
 
-**assembly**
-The assembly to load the product info from. If`null`, the entry assembly will be used.
+Name|Description
+---|---
+**assembly**|The assembly to load the product info from. If`null`, the entry assembly will be used.
 
 #### Returns
 
 IEnumerable{ILogListener}.
-
-
 

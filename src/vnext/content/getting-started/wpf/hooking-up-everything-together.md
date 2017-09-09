@@ -31,9 +31,9 @@ public FamilyWindowViewModel(Family family, IUIVisualizerService uiVisualizerSer
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Don't forget to create the right backing fields *\_uiVisualizerService* and *\_messageService*
-@end
+{{% /notice %}}
 
 #### Adding the properties
 
@@ -57,9 +57,9 @@ public static readonly PropertyData SelectedPersonProperty = RegisterProperty("S
 
 #### Adding the commands
 
-@alert info
+{{% notice info %}}
 Note that we recommend that you use the *vmcommand* and *vmcommandwithcanexecute* code snippets available [here](http://www.catelproject.com/download/general-files/)
-@end
+{{% /notice %}}
 
 Below is the code which comes in two parts.
 
@@ -318,5 +318,5 @@ Now run the application and you should see your fully functional family manageme
 
 # Up next
 
-[Finalizing the application](./finalizing-the-application.md)
+[Finalizing the application]({{< relref "getting-started/wpf/finalizing-the-application.md" >}})
 

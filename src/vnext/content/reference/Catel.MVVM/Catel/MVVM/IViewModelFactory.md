@@ -1,20 +1,23 @@
 
 
-# IViewModelFactory
++++
+title = "IViewModelFactory" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IViewModelFactory
 ```
 
 Interface which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used.
-
-
 
 ## Methods
 
@@ -24,23 +27,16 @@ Determines whether the specified view model as data context can be reused and al
 
 #### Parameters
 
-**viewType**
-Type of the view.
-
-**expectedViewModelType**
-The expected view model type according to the view.
-
-**actualViewModelType**
-The actual view model type which is the type of the viewModelAsDataContext.
-
-**viewModelAsDataContext**
-The view model as data context which must be checked.
+Name|Description
+---|---
+**viewType**|Type of the view.
+**expectedViewModelType**|The expected view model type according to the view.
+**actualViewModelType**|The actual view model type which is the type of the viewModelAsDataContext.
+**viewModelAsDataContext**|The view model as data context which must be checked.
 
 #### Returns
 
 `true` if the specified view model instance ben be reused by the view; otherwise,`false`.
-
-
 
 ### CreateViewModel(Type viewModelType, object dataContext, object tag)
 
@@ -48,14 +44,11 @@ Creates a new view model.
 
 #### Parameters
 
-**viewModelType**
-Type of the view model that needs to be created.
-
-**dataContext**
-The data context of the view model.
-
-**tag**
-The preferred scope to use when resolving dependencies.
+Name|Description
+---|---
+**viewModelType**|Type of the view model that needs to be created.
+**dataContext**|The data context of the view model.
+**tag**|The preferred scope to use when resolving dependencies.
 
 #### Returns
 
@@ -63,13 +56,10 @@ The newly created [IViewModel](#) or`null` if no view model could be created.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelType is`null`.
-
-**T:System.ArgumentException**
-The viewModelType does not implement the [IViewModel](#) interface.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelType is`null`.
+**ArgumentException**|The viewModelType does not implement the [IViewModel](#) interface.
 
 ### IsViewModelWithModelInjection(Type viewModelType)
 
@@ -77,12 +67,11 @@ Determines whether the specified view model is a view model with model inject. A
 
 #### Parameters
 
-**viewModelType**
-Type of the view model.
+Name|Description
+---|---
+**viewModelType**|Type of the view model.
 
 #### Returns
 
 `true` if the view model is a view model with model injection; otherwise,`false`.
-
-
 

@@ -1,8 +1,11 @@
-# Xamarin.Android
++++
+title = "Xamarin.Android" 
+description = ""
++++
 
-@alert important
+{{% notice warning %}}
 Note that this guide is not a full Android development guide. It will cover the basics though.
-@end
+{{% /notice %}}
 
 ## Bindings
 

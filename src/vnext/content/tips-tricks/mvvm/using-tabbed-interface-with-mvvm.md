@@ -1,4 +1,7 @@
-# Using a tabbed interface with MVVM
++++
+title = "Using a tabbed interface with MVVM" 
+description = ""
++++
 
 A common scenario in WPF is to use a tabbed interface to give the user the option to use multiple main views in a tabbed environment. This example shows how to implement this correctly with both closable and non-closable tabs.
 
@@ -7,7 +10,7 @@ For this example, we will have a few requirements:
 -   Be able to add, close and activate tabs via a service
 -   Be able to specify whether a tab can be closed by the end-user
 
-![](../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.gif)
+![](../../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.gif)
 
 ## Creating the model describing a tab item
 
@@ -351,7 +354,7 @@ For this to work, the service needs to interact with views. We have a few views 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:orchestra="https://github.com/orcomp/orchestra"
              xmlns:gum="http://www.wildgums.net.au/gum"
-             xmlns:catel="http://catel.codeplex.com"
+             xmlns:catel="http://schemas.catelproject.com"
              xmlns:controls="clr-namespace:TabDemo.Controls"
              mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300">
 
@@ -464,7 +467,7 @@ namespace Tabdemo.Controls
 <catel:UserControl x:Class="TabDemo.Views.MainView"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                   xmlns:catel="http://catel.codeplex.com"
+                   xmlns:catel="http://schemas.catelproject.com"
                    xmlns:controls="clr-namespace:TabDemo.Controls">
 
     <catel:TabControl x:Name="tabControl" Margin="-2" LoadTabItems="LazyLoading">
@@ -641,4 +644,4 @@ _tabService.Remove(selectedTab);
 
 ## Download example
 
-[Download example](../../images/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.rar)
+[Download example](../../../downloads/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/example.rar)

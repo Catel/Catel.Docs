@@ -37,9 +37,9 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 }
 ```
 
-@alert info
+{{% notice info %}}
 Note that this validation code can be used in both the model and/or the view models
-@end
+{{% /notice %}}
 
 ## Adding behaviors to enable double-click on the list boxes
 
@@ -80,9 +80,9 @@ The same goes for the *FamilyWindow*:
  
 ```
 
-@alert important
+{{% notice warning %}}
 Note that the *xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"* must be added in order for the code above to compile
-@end
+{{% /notice %}}
 
 ## Adding search functionality to the main window
 
@@ -122,9 +122,9 @@ public string SearchFilter
 public static readonly PropertyData SearchFilterProperty = RegisterProperty("SearchFilter", typeof(string), null, (sender, e) => ((MainWindowViewModel)sender).UpdateSearchFilter());
 ```
 
-@alert info
+{{% notice info %}}
 Note that this property contains an additional change callback function which will be called when the property has changed.
-@end
+{{% /notice %}}
 
 Add the following import to the view model. You will needed because native **ObservableCollection** class does not support **ReplaceRange()**
 

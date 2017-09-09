@@ -1,20 +1,23 @@
 
 
-# UIElementExtensions
++++
+title = "UIElementExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public static class UIElementExtensions
 ```
 
-Extensions for [UIElement](#).
-
-
+Extensions for.
 
 ## Methods
 
@@ -24,13 +27,10 @@ Focuses the first control on the ContentElement.
 
 #### Parameters
 
-**element**
-Reference to the current [ContentElement](#).
-
-**focusParentsFirst**
-if set to`true`, the parents are focused first.
-
-
+Name|Description
+---|---
+**element**|Reference to the current.
+**focusParentsFirst**|if set to`true`, the parents are focused first.
 
 ### FocusFirstControl(UIElement element, bool focusParentsFirst)
 
@@ -38,13 +38,10 @@ Focuses the first control on the UI Element.
 
 #### Parameters
 
-**element**
-Reference to the current [UIElement](#).
-
-**focusParentsFirst**
-if set to`true`, the parents are focused first.
-
-
+Name|Description
+---|---
+**element**|Reference to the current.
+**focusParentsFirst**|if set to`true`, the parents are focused first.
 
 ### GetFocusedControl(UIElement element)
 
@@ -52,19 +49,19 @@ Gets the focused control.
 
 #### Parameters
 
-**element**
-The element to check and all childs.
+Name|Description
+---|---
+**element**|The element to check and all childs.
 
 #### Returns
 
-The focused [UIElement](#) or`null` if none if the children has the focus.
+The focused or`null` if none if the children has the focus.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The element is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The element is`null`.
 
 ### MoveFocus(ContentElement element, FocusNavigationDirection direction, int hops)
 
@@ -72,16 +69,11 @@ Moves the focus in a specific direction.
 
 #### Parameters
 
-**element**
-The element.
-
-**direction**
-The direction.
-
-**hops**
-The hops.
-
-
+Name|Description
+---|---
+**element**|The element.
+**direction**|The direction.
+**hops**|The hops.
 
 ### MoveFocus(IInputElement element, FocusNavigationDirection direction, int hops)
 
@@ -89,16 +81,11 @@ Moves the focus in a specific direction.
 
 #### Parameters
 
-**element**
-The element.
-
-**direction**
-The direction.
-
-**hops**
-The hops.
-
-
+Name|Description
+---|---
+**element**|The element.
+**direction**|The direction.
+**hops**|The hops.
 
 ### MoveFocus(UIElement element, FocusNavigationDirection direction, int hops)
 
@@ -106,14 +93,9 @@ Moves the focus in a specific direction.
 
 #### Parameters
 
-**element**
-The element.
-
-**direction**
-The direction.
-
-**hops**
-The hops.
-
-
+Name|Description
+---|---
+**element**|The element.
+**direction**|The direction.
+**hops**|The hops.
 

@@ -6,9 +6,9 @@ weight = 30
 
 By default, Catel registers the *AttributeValidatorProvider* as the *IValidatorProvider*. This way the *ModelBase* and all the classes that derive from it can easily add a custom validator by using the *ValidateModelAttribute*.
 
-@alert info
+{{% notice info %}}
 Note that it is still possible to register a custom *IValidatorProvider* to customize this behavior. It is even possible to set the *Validator* property of the *ModelBase* on a specific instance of a model
-@end
+{{% /notice %}}
 
 ## Implementing the validator
 

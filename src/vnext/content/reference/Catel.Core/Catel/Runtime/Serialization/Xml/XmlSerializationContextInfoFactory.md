@@ -1,12 +1,17 @@
 
 
-# XmlSerializationContextInfoFactory
++++
+title = "XmlSerializationContextInfoFactory" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class XmlSerializationContextInfoFactory : ISerializationContextInfoFactory
@@ -14,12 +19,9 @@ public class XmlSerializationContextInfoFactory : ISerializationContextInfoFacto
 
 **Base types**
 
-[ISerializationContextInfoFactory](/Catel.Core\Catel\Runtime\Serialization\ISerializationContextInfoFactory.md)
-
+[ISerializationContextInfoFactory]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" >}})
 
 Xml serialization context factory.
-
-
 
 ## Methods
 
@@ -29,21 +31,14 @@ Gets the serialization context information.
 
 #### Parameters
 
-**serializer**
-The serializer.
-
-**model**
-The model.
-
-**data**
-The data.
-
-**configuration**
-The configuration.
+Name|Description
+---|---
+**serializer**|The serializer.
+**model**|The model.
+**data**|The data.
+**configuration**|The configuration.
 
 #### Returns
 
 ISerializationContext.
-
-
 

@@ -1,24 +1,26 @@
 
 
-# ServiceLocatorRegistrationAttribute
++++
+title = "ServiceLocatorRegistrationAttribute" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ServiceLocatorRegistrationAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]()
-
+[Attribute]({{< relref "#" >}})
 
 The register attribute.
-
-
 
 ## Constructors
 
@@ -28,21 +30,17 @@ Initializes a new instance of the [ServiceLocatorRegistrationAttribute](#) class
 
 #### Parameters
 
-**interfaceType**
-Type of the interface.
-
-**registrationMode**
-The registration mode.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**interfaceType**|Type of the interface.
+**registrationMode**|The registration mode.
+**tag**|The tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The interfaceType is`null`.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The interfaceType is`null`.
 
 ## Properties
 
@@ -50,23 +48,15 @@ The interfaceType is`null`.
 
 Gets the type.
 
-
-
 ### RegistrationMode
 
 Gets the registration model.
-
-
 
 ### RegistrationType
 
 Gets the registration type.
 
-
-
 ### Tag
 
 Gets the tag.
-
-
 

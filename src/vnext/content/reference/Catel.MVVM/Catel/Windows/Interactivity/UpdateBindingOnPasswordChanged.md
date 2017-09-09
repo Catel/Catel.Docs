@@ -1,24 +1,26 @@
 
 
-# UpdateBindingOnPasswordChanged
++++
+title = "UpdateBindingOnPasswordChanged" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Interactivity
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class UpdateBindingOnPasswordChanged : BehaviorBase<PasswordBox>
 ```
 
 **Base types**
-[BehaviorBase]()
+[BehaviorBase]({{< relref "#" >}})
 
-
-This behavior automatically updates the binding of a [PasswordBox](#) when the`PasswordChanged` event occurs.
-
-
+This behavior automatically updates the binding of a when the`PasswordChanged` event occurs.
 
 ## Fields
 
@@ -26,15 +28,11 @@ This behavior automatically updates the binding of a [PasswordBox](#) when the`P
 
 The Password Property
 
-
-
 ## Properties
 
 ### Password
 
 Gets or sets the password.
-
-
 
 ## Methods
 

@@ -1,12 +1,17 @@
 
 
-# InfoBarMessageControlVisibilityConverter
++++
+title = "InfoBarMessageControlVisibilityConverter" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Controls
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class InfoBarMessageControlVisibilityConverter : IValueConverter
@@ -14,12 +19,9 @@ public class InfoBarMessageControlVisibilityConverter : IValueConverter
 
 **Base types**
 
-[IValueConverter](/Catel.MVVM\Catel\MVVM\Converters\IValueConverter.md)
-
+[IValueConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/IValueConverter.md" >}})
 
 Converter for the [InfoBarMessageControl](#) to determine whether the control should be visible for the current mode and
-
-
 
 ## Methods
 
@@ -29,17 +31,12 @@ Converts a value.
 
 #### Parameters
 
-**value**
-The value produced by the binding source.
-
-**targetType**
-The type of the binding target property.
-
-**parameter**
-The converter parameter to use.
-
-**culture**
-The culture to use in the converter.
+Name|Description
+---|---
+**value**|The value produced by the binding source.
+**targetType**|The type of the binding target property.
+**parameter**|The converter parameter to use.
+**culture**|The culture to use in the converter.
 
 #### Returns
 
@@ -47,13 +44,10 @@ A converted value. If the method returns null, the valid null value is used.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-If value is`null`.
-
-**T:System.ArgumentException**
-If value is not of type [InfoBarMessageControlMode](#).
-
-
+Name|Description
+---|---
+**ArgumentNullException**|If value is`null`.
+**ArgumentException**|If value is not of type [InfoBarMessageControlMode](#).
 
 ### ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
 
@@ -61,21 +55,14 @@ Converts a value.
 
 #### Parameters
 
-**value**
-The value that is produced by the binding target.
-
-**targetType**
-The type to convert to.
-
-**parameter**
-The converter parameter to use.
-
-**culture**
-The culture to use in the converter.
+Name|Description
+---|---
+**value**|The value that is produced by the binding target.
+**targetType**|The type to convert to.
+**parameter**|The converter parameter to use.
+**culture**|The culture to use in the converter.
 
 #### Returns
 
 A converted value. If the method returns null, the valid null value is used.
-
-
 

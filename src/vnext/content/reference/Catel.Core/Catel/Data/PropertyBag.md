@@ -1,25 +1,26 @@
 
 
-# PropertyBag
++++
+title = "PropertyBag" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class PropertyBag : INotifyPropertyChanged
 ```
 
 **Base types**
-
-[INotifyPropertyChanged]()
-
+[INotifyPropertyChanged]({{< relref "#" >}})
 
 Class that is able to manage all properties of a specific object in a thread-safe manner.
-
-
 
 ## Fields
 
@@ -29,8 +30,6 @@ Class that is able to manage all properties of a specific object in a thread-saf
 
 Initializes a new instance of the [PropertyBag](#) class.
 
-
-
 ## Properties
 
 ### this[]
@@ -39,22 +38,19 @@ Gets or sets the property using the indexer.
 
 #### Parameters
 
-**name**
-The name.
+Name|Description
+---|---
+**name**|The name.
 
 #### Returns
 
 The value of the property.
-
-
 
 ## Events
 
 ### PropertyChanged
 
 Occurs when a property value changes.
-
-
 
 ## Methods
 
@@ -65,8 +61,6 @@ Gets all the currently available properties in the property bag.
 #### Returns
 
 A list of all property names and values.
-
-
 
 ### GetPropertyValue<TValue>(string propertyName)
 
@@ -79,8 +73,9 @@ The type of the value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
+Name|Description
+---|---
+**propertyName**|Name of the property.
 
 #### Returns
 
@@ -88,10 +83,9 @@ The property value or the default value of TValue if the property does not exist
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### GetPropertyValue<TValue>(string propertyName, TValue defaultValue)
 
@@ -104,11 +98,10 @@ The type of the value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**defaultValue**
-The default value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**defaultValue**|The default value.
 
 #### Returns
 
@@ -116,10 +109,9 @@ The property value or the default value of TValue if the property does not exist
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### Import(Dictionary<string, object> propertiesToImport)
 
@@ -127,15 +119,15 @@ Imports the properties in the existing dictionary. This method will overwrite al
 
 #### Parameters
 
-**propertiesToImport**
-The properties to import.
+Name|Description
+---|---
+**propertiesToImport**|The properties to import.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The propertiesToImport is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The propertiesToImport is`null`.
 
 ### IsPropertyAvailable(string propertyName)
 
@@ -143,8 +135,9 @@ Determines whether the specified property is available on the property bag, whic
 
 #### Parameters
 
-**propertyName**
-Name of the property.
+Name|Description
+---|---
+**propertyName**|Name of the property.
 
 #### Returns
 
@@ -152,10 +145,9 @@ Name of the property.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, bool value)
 
@@ -163,18 +155,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, short value)
 
@@ -182,18 +172,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, int value)
 
@@ -201,18 +189,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, long value)
 
@@ -220,18 +206,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, object value)
 
@@ -239,18 +223,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, ushort value)
 
@@ -258,18 +240,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, uint value)
 
@@ -277,18 +257,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### SetPropertyValue(string propertyName, ulong value)
 
@@ -296,18 +274,16 @@ Sets the property value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**value**
-The value.
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**value**|The value.
 
 #### Exceptions
 
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentException**|The propertyName is`null` or whitespace.
 
 ### UpdatePropertyValue<TValue>(string propertyName, Func<TValue, TValue> update)
 
@@ -320,11 +296,8 @@ The type of the t value.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
-
-**update**
-The update.
-
-
+Name|Description
+---|---
+**propertyName**|Name of the property.
+**update**|The update.
 

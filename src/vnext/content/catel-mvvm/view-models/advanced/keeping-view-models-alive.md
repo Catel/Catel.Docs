@@ -1,4 +1,7 @@
-# Keeping view models alive
++++
+title = "Keeping view models alive" 
+description = ""
++++
 
 In Catel, view models are automatically closed when the `UserControl` is unloaded from the visual tree. This is because there is no guarantee that the control will be loaded again. This works great in most of the cases, but sometimes you need more control about the lifetime of the view model. One good example is the use of the `TabControl`. When a tab control contains a user control with a view model, every time a new tab is selected, the controls on the previously selected tab are unloaded (and thus the view models are closed).
 
@@ -10,14 +13,14 @@ CloseViewModelOnUnloaded = false;
 
 The view model will now be re-used when the view is loaded into the visual tree again.
 
-@alert danger
+{{% notice warning %}}
 Keep in mind that the developer is responsible for actually closing the view model
-@end
+{{% /notice %}}
 
-@alert info
+{{% notice info %}}
 [Orc.Controls](https://github.com/wildgums/orc.controls) contains an implementation of a `TabControl` that gives more control over the lifetime of the tabs
-@end
+{{% /notice %}}
 
-@alert info
+{{% notice info %}}
 The Catel Examples repository contains an example demonstrating controlling the lifetime of view models
-@end
+{{% /notice %}}

@@ -1,4 +1,7 @@
-# Focus
++++
+title = "Focus" 
+description = ""
++++
 
 To set the focus on a UI element, one must write code in the code-behind. With the `Focus` behavior, this is no longer necessary. This behavior sets the focus only once on the first time the associated object is loaded.
 
@@ -6,7 +9,7 @@ Add the following XML namespaces:
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 ## Focus when the control is loaded

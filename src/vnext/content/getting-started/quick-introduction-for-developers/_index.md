@@ -58,7 +58,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstN
 
 Catel will automatically take care of change notifications.
 
-Note that you can use the *modelprop* or *vmprop* to easily create these properties using code snippets. You can also use [Catel.Fody](../catel-fody/) instead
+Note that you can use the *modelprop* or *vmprop* to easily create these properties using code snippets. You can also use [Catel.Fody]({{< relref "catel-fody/_index.md" >}}) instead
 
 ## MVVM
 
@@ -85,10 +85,6 @@ It goes even further. Catel can create view models based on the data context. Fo
 ### Handling hierarchy and parent/child view models
 
 Note that Catel is already fully aware of parent/child relations of view models so you don’t have to do anything for this yourself. For more information, read nested user controls.
-
-### Communication between view models
-
-There are [several methods](../catel-mvvm/view-models/creating-view-model-that-watches-over-other-view-models.md) available to communicate between view models. Just make sure that you never directly reference other view model and keep everything loosely coupled.
 
 ### Resolving views and view models
 

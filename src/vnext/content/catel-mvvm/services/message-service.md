@@ -1,4 +1,7 @@
-# MessageService
++++
+title = "MessageService" 
+description = ""
++++
 
 The `IMessageService` allows a developer to show message boxes from a view model.
 

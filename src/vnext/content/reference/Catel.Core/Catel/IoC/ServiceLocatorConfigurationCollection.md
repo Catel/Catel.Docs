@@ -1,24 +1,26 @@
 
 
-# ServiceLocatorConfigurationCollection
++++
+title = "ServiceLocatorConfigurationCollection" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class ServiceLocatorConfigurationCollection : ConfigurationElementCollection
 ```
 
 **Base types**
-[ConfigurationElementCollection]()
-
+[ConfigurationElementCollection]({{< relref "#" >}})
 
 The IoC configuration collection.
-
-
 
 ## Fields
 
@@ -27,8 +29,6 @@ The IoC configuration collection.
 ### CollectionType
 
 The collection type
-
-
 
 ## Methods
 

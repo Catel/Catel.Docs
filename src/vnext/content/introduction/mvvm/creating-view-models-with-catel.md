@@ -6,13 +6,13 @@ weight = 40
 
 The View Models in Catel are very easy to write, and give the end-user a great flexibility in how to approach the Models. This part of the article will explain the classes that make it possible to easily create View Models.
 
-The *ViewModelBase* class is the most important class of all in the MVVM Framework of Catel. Of course, it can't do anything useful without the other classes, but all the View Models that are created using Catel derive of this class. *ViewModelBase* is based on the *ModelBase* class that ships with Catel. Thanks to the existence of that class, the MVVM framework was set up very quickly (although “very quickly” is relative). Below is a class diagram that shows the class tree:
+The `ViewModelBase` class is the most important class of all in the MVVM Framework of Catel. Of course, it can't do anything useful without the other classes, but all the View Models that are created using Catel derive of this class. `ViewModelBase` is based on the `ModelBase` class that ships with Catel. Thanks to the existence of that class, the MVVM framework was set up very quickly (although “very quickly” is relative). Below is a class diagram that shows the class tree:
 
-![](../../images/introduction/mvvm/creating-view-models-with-catel/classdiagram.png)
+![](../../../images/introduction/mvvm/creating-view-models-with-catel/classdiagram.png)
 
-The class diagram above shows how many default interfaces of the .NET Framework are supported in the *ModelBase* class. Since most of these interfaces are used by WPF as well, the *ViewModelBase* class itself can take huge advantage of the implementation of *ModelBase*.
+The class diagram above shows how many default interfaces of the .NET Framework are supported in the `ModelBase` class. Since most of these interfaces are used by WPF as well, the *ViewModelBase* class itself can take huge advantage of the implementation of `ModelBase`.
 
-Because *ViewModelBase* derives from *ModelBase*, you can declare properties exactly the same way. Even better, you can simply use *ModelBase* (or the extended *SavableModelBase*) to create (and save) your Models, and use *ViewModelBase* as the base for all the View Models.
+Because `ViewModelBase` derives from `ModelBase`, you can declare properties exactly the same way. Even better, you can simply use `ModelBase` (or the extended `SavableModelBase`) to create (and save) your Models, and use `ViewModelBase` as the base for all the View Models.
 
 ## Creating a view model
 
@@ -173,9 +173,9 @@ protected override void ValidateBusinessRules(List<BusinessRuleValidationResult>
 }
 ```
 
-@alert info
+{{% notice info %}}
 Note that it is also possible to re-use validation in a model using *ModelToViewModel* mappings or even external validation such as *FluentValidation*
-@end
+{{% /notice %}}
 
 There are also other ways to add validation to a data object:
 
@@ -213,9 +213,9 @@ public static readonly PropertyData PersonProperty = RegisterProperty("Person", 
 
 A Model setter is normally written as private (you normally don't want a UI to be able to change a Model), but the getter is public because you might want to read info from it.
 
-@alert info
+{{% notice info %}}
 Note that you should use the *vmpropmodel* code snippet to create Model properties
-@end
+{{% /notice %}}
 
 Models in Catel are handled as very, very special objects. This means that as soon as a Model is set, Catel tries to call the *IEditableObject.BeginEdit* method. Then, as soon as the Model is changed without being saved, or if the View Model is canceled, the Model is correctly canceled via *IEditableObject.CancelEdit*. If the Model is saved, the active Models will be committed via *IEditableObject.EndEdit*. I will leave the rest of the magic out of this article, but if you have any questions about it, don't hesitate to contact us!
 
@@ -316,9 +316,9 @@ protected override void OnViewModelPropertyChanged(IViewModel viewModel, string 
 }
 ```
 
-@alert info
+{{% notice info %}}
 Note that it is also possible to get notified of commands that are being executed on other view models
-@end
+{{% /notice %}}
 
 ### MessageMediator
 

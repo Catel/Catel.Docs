@@ -1,21 +1,24 @@
 
 
-# ReferenceEqualityComparer
++++
+title = "ReferenceEqualityComparer" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ReferenceEqualityComparer<TObject> : IEqualityComparer<TObject> where TObject : class 
 ```
 
 **Base types**
-
-[IEqualityComparer]()
-
+[IEqualityComparer]({{< relref "#" >}})
 
 Equality comparer for by reference.
 
@@ -23,8 +26,6 @@ Equality comparer for by reference.
 
 **TObject**
 The type of the object.
-
-
 
 ## Methods
 
@@ -34,17 +35,14 @@ Determines whether the specified objects are equal.
 
 #### Parameters
 
-**x**
-The first object to compare.
-
-**y**
-The second object to compare.
+Name|Description
+---|---
+**x**|The first object to compare.
+**y**|The second object to compare.
 
 #### Returns
 
 true if the specified objects are equal; otherwise, false.
-
-
 
 ### GetHashCode(TObject obj)
 
@@ -52,8 +50,9 @@ Returns a hash code for this instance.
 
 #### Parameters
 
-**obj**
-The [Object](#) for which a hash code is to be returned.
+Name|Description
+---|---
+**obj**|The [Object](#) for which a hash code is to be returned.
 
 #### Returns
 
@@ -61,7 +60,7 @@ A hash code for this instance, suitable for use in hashing algorithms and data s
 
 #### Exceptions
 
-**T:System.NotImplementedException**
-
-
+Name|Description
+---|---
+**System.NotImplementedException**|
 

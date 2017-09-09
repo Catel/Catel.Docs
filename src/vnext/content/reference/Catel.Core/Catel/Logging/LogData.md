@@ -1,24 +1,26 @@
 
 
-# LogData
++++
+title = "LogData" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class LogData : Dictionary<string, object>
 ```
 
 **Base types**
-[Dictionary]()
-
+[Dictionary]({{< relref "#" >}})
 
 Class containing log data.
-
-
 
 ## Constructors
 
@@ -26,16 +28,13 @@ Class containing log data.
 
 Initializes a new instance of the [LogData](#) class.
 
-
-
 ### LogData(IDictionary<string, object> values)
 
 Initializes a new instance of the [LogData](#) class.
 
 #### Parameters
 
-**values**
-The values.
-
-
+Name|Description
+---|---
+**values**|The values.
 

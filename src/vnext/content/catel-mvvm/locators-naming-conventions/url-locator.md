@@ -1,4 +1,7 @@
-# UrlLocator
++++
+title = "UrlLocator" 
+description = ""
++++
 
 The `IUrlLocator` class is responsible for resolving the right urls for the xaml views for a view model in navigation based applications. Before Catel 3.0, the `INavigationService` was responsible for resolving the url, but this responsibility is now taken over by the `IUrlLocator`. The `NavigationService` internally uses the `IUrlLocator` to resolve the views.
 
@@ -18,9 +21,9 @@ will be resolved as:
 /Views/MyPage.xaml
 ```
 
-@alert important
+{{% notice warning %}}
 Note that the `UrlLocator` checks whether the resource actually exists. If the resource does not exists, it will not be able to resolve a view
-@end
+{{% /notice %}}
 
 ## Manually resolving a naming convention
 
@@ -62,9 +65,9 @@ By default, the `IUrlLocator` uses the following naming conventions to resolve u
 -   /[VM]Page.xaml
 -   /[VM]Window.xaml
 
-@alert info
-For more information about naming conventions, see [Naming conventions](./naming-conventions.md)
-@end
+{{% notice info %}}
+For more information about naming conventions, see [Naming conventions]({{< relref "catel-mvvm/locators-naming-conventions/naming-conventions.md" >}})
+{{% /notice %}}
 
 However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:
 

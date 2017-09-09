@@ -30,6 +30,6 @@ Property|Validate immediately|Defer to a later moment
 DeferValidationUntilFirstSaveCall|false|true
 ValidateModelsOnInitialization|true|false
 
-@alert important
+{{% notice warning %}}
 If the DeferValidationUntilFirstSaveCall property, is used, it must be set as first property in the view model because the validation kicks in immediately when properties change.
-@end
+{{% /notice %}}

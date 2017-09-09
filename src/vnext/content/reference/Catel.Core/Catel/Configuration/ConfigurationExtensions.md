@@ -1,20 +1,23 @@
 
 
-# ConfigurationExtensions
++++
+title = "ConfigurationExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Configuration
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ConfigurationExtensions
 ```
 
 The configuration extension methods.
-
-
 
 ## Methods
 
@@ -29,14 +32,11 @@ The type of the section
 
 #### Parameters
 
-**this**
-The instance
-
-**sectionName**
-The section name
-
-**sectionGroupName**
-The section group name
+Name|Description
+---|---
+**this**|The instance
+**sectionName**|The section name
+**sectionGroupName**|The section group name
 
 #### Returns
 
@@ -44,13 +44,10 @@ The section
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The this is`null`.
-
-**T:System.ArgumentException**
-The sectionName is`null` or empty.
-
-
+Name|Description
+---|---
+**System.ArgumentNullException**|The this is`null`.
+**System.ArgumentException**|The sectionName is`null` or empty.
 
 ### IsConfigurationKey(ConfigurationChangedEventArgs eventArgs, string expectedKey)
 
@@ -58,11 +55,10 @@ Determines whether the specified [ConfigurationChangedEventArgs](#) represents t
 
 #### Parameters
 
-**eventArgs**
-The [ConfigurationChangedEventArgs](#) instance containing the event data.
-
-**expectedKey**
-The expected key.
+Name|Description
+---|---
+**eventArgs**|The [ConfigurationChangedEventArgs](#) instance containing the event data.
+**expectedKey**|The expected key.
 
 #### Returns
 
@@ -70,10 +66,9 @@ The expected key.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The eventArgs is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The eventArgs is`null`.
 
 ### IsConfigurationKey(string key, string expectedKey)
 
@@ -81,15 +76,12 @@ Determines whether the specified configuration key represents the expected key. 
 
 #### Parameters
 
-**key**
-The key.
-
-**expectedKey**
-The expected key.
+Name|Description
+---|---
+**key**|The key.
+**expectedKey**|The expected key.
 
 #### Returns
 
 `true` if [is configuration key] [the specified expected key]; otherwise,`false`.
-
-
 

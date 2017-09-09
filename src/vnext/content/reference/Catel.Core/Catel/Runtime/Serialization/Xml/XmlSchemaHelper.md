@@ -1,12 +1,17 @@
 
 
-# XmlSchemaHelper
++++
+title = "XmlSchemaHelper" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public static class XmlSchemaHelper
@@ -14,22 +19,15 @@ public static class XmlSchemaHelper
 
 Helper class for xml schemas.
 
-
-
 ## Fields
 
 ### Log
 
 The log.
 
-
-
 ### Xmlns
-http://www.w3.org/2001/XMLSchema
 
 Default xml schema.
-
-
 
 ## Properties
 
@@ -41,14 +39,11 @@ Gets the XML schema.
 
 #### Parameters
 
-**type**
-The type.
-
-**schemaSet**
-The schema set.
-
-**generateFlatSchema**
-A value indicating whether the schema should be generated as flat schema.
+Name|Description
+---|---
+**type**|The type.
+**schemaSet**|The schema set.
+**generateFlatSchema**|A value indicating whether the schema should be generated as flat schema.
 
 #### Returns
 
@@ -56,8 +51,7 @@ The qualified name of the type.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The schemaSet is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The schemaSet is`null`.
 

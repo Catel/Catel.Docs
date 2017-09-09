@@ -1,12 +1,17 @@
 
 
-# DataContextSubscriptionService
++++
+title = "DataContextSubscriptionService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class DataContextSubscriptionService : IDataContextSubscriptionService
@@ -14,12 +19,9 @@ public class DataContextSubscriptionService : IDataContextSubscriptionService
 
 **Base types**
 
-[IDataContextSubscriptionService](/Catel.MVVM\Catel\MVVM\IDataContextSubscriptionService.md)
-
+[IDataContextSubscriptionService]({{< relref "reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService.md" >}})
 
 Service that determines how to subscribe to data context.
-
-
 
 ## Constructors
 
@@ -27,15 +29,11 @@ Service that determines how to subscribe to data context.
 
 Initializes a new instance of the [DataContextSubscriptionService](#) class.
 
-
-
 ## Properties
 
 ### DefaultDataContextSubscriptionMode
 
 Gets or sets the default data context subscription mode.
-
-
 
 ## Methods
 
@@ -45,12 +43,11 @@ Gets the data context subscription mode for the specific view.
 
 #### Parameters
 
-**viewType**
-Type of the view.
+Name|Description
+---|---
+**viewType**|Type of the view.
 
 #### Returns
 
 The data context subscription mode.
-
-
 

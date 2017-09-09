@@ -58,9 +58,9 @@ _fieldValue|true
 RegularProperty|true
 CatelProperty|true
 
-@alert important
+{{% notice warning %}}
 Note that private members can only be serialized in full .NET, not in limited platforms such as UWP
-@end
+{{% /notice %}}
 
 ## Excluding fields and properties using ExcludeFromSerialization attribute
 

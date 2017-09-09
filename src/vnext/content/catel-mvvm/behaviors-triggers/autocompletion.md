@@ -1,4 +1,7 @@
-# AutoCompletionBehavior
++++
+title = "AutoCompletionBehavior" 
+description = ""
++++
 
 To enable auto completion features, once can use the services and behaviors provided by Catel. There are two components required for auto completion:
 
@@ -7,7 +10,7 @@ To enable auto completion features, once can use the services and behaviors prov
 
 The auto completion features looks like the screenshot below:
 
-![](../../images/catel-mvvm/behaviors-triggers/autocompletion/example.png)
+![](../../../images/catel-mvvm/behaviors-triggers/autocompletion/example.png)
 
 ## AutoCompletion service
 
@@ -22,6 +25,6 @@ The behavior can be used as follows:
                               ItemsSource="{Binding RawCollection}" IsEnabled="{Binding EnableAutoCompletion}"/>
 ```
 
-@alert important
+{{% notice warning %}}
 If the `PropertyName` is `null` or whitespace, the `ItemsSource` will be treated as collection of strings to be filtered directly
-@end
+{{% /notice %}}

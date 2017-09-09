@@ -1,12 +1,17 @@
 
 
-# XmlSerializationContextInfo
++++
+title = "XmlSerializationContextInfo" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime.Serialization.Xml
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class XmlSerializationContextInfo : ISerializationContextInfo
@@ -14,35 +19,13 @@ public class XmlSerializationContextInfo : ISerializationContextInfo
 
 **Base types**
 
-[ISerializationContextInfo](/Catel.Core\Catel\Runtime\Serialization\ISerializationContextInfo.md)
-
+[ISerializationContextInfo]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfo.md" >}})
 
 Class containing all information about the binary serialization context.
-
-
 
 ## Fields
 
 ## Constructors
-
-### XmlSerializationContextInfo(string xmlContent, ModelBase model)
-
-Initializes a new instance of the [XmlSerializationContextInfo](#) class.
-
-#### Parameters
-
-**xmlContent**
-Content of the XML.
-
-**model**
-The model.
-
-#### Exceptions
-
-**T:System.ArgumentNullException**
-The xmlContent is`null`.
-
-
 
 ### XmlSerializationContextInfo(XElement element, object model)
 
@@ -50,18 +33,16 @@ Initializes a new instance of the [XmlSerializationContextInfo](#) class.
 
 #### Parameters
 
-**element**
-The element.
-
-**model**
-The model, is allowed to be null for value types.
+Name|Description
+---|---
+**element**|The element.
+**model**|The model, is allowed to be null for value types.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The element is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The element is`null`.
 
 ### XmlSerializationContextInfo(XmlReader xmlReader, ModelBase model)
 
@@ -69,18 +50,33 @@ Initializes a new instance of the [XmlSerializationContextInfo](#) class.
 
 #### Parameters
 
-**xmlReader**
-The XML reader.
-
-**model**
-The model.
+Name|Description
+---|---
+**xmlReader**|The XML reader.
+**model**|The model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The xmlReader is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The xmlReader is`null`.
 
+### XmlSerializationContextInfo(string xmlContent, ModelBase model)
 
+Initializes a new instance of the [XmlSerializationContextInfo](#) class.
+
+#### Parameters
+
+Name|Description
+---|---
+**xmlContent**|Content of the XML.
+**model**|The model.
+
+#### Exceptions
+
+Name|Description
+---|---
+**ArgumentNullException**|The xmlContent is`null`.
 
 ## Properties
 
@@ -88,13 +84,9 @@ The xmlReader is`null`.
 
 Gets the element.
 
-
-
 ### Model
 
 Gets the model.
-
-
 
 ## Methods
 

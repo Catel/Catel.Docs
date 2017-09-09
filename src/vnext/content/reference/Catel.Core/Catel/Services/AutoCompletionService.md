@@ -1,12 +1,17 @@
 
 
-# AutoCompletionService
++++
+title = "AutoCompletionService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class AutoCompletionService : IAutoCompletionService
@@ -14,20 +19,15 @@ public class AutoCompletionService : IAutoCompletionService
 
 **Base types**
 
-[IAutoCompletionService](/Catel.Core\Catel\Services\IAutoCompletionService.md)
-
+[IAutoCompletionService]({{< relref "reference/Catel.Core/Catel/Services/IAutoCompletionService.md" >}})
 
 Service to implement auto completion features.
-
-
 
 ## Constructors
 
 ### AutoCompletionService()
 
 Initializes a new instance of the [AutoCompletionService](#) class.
-
-
 
 ## Methods
 
@@ -37,14 +37,11 @@ Gets the auto complete values.
 
 #### Parameters
 
-**property**
-The property.
-
-**filter**
-The filter.
-
-**source**
-The source.
+Name|Description
+---|---
+**property**|The property.
+**filter**|The filter.
+**source**|The source.
 
 #### Returns
 
@@ -52,8 +49,7 @@ System.String[].
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The source is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The source is`null`.
 

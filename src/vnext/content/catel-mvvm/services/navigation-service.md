@@ -1,4 +1,7 @@
-# NavigationService
++++
+title = "NavigationService" 
+description = ""
++++
 
 The `INavigationService` allows a developer to navigate to other pages inside an application using view models only.
 

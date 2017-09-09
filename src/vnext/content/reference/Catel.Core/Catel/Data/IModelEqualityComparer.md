@@ -1,25 +1,23 @@
 
 
-# IModelEqualityComparer
++++
+title = "IModelEqualityComparer" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Data
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IModelEqualityComparer : IEqualityComparer
+public interface IModelEqualityComparer
 ```
 
-**Base types**
-
-[IEqualityComparer]()
-
-
-Implementation of the [IEqualityComparer](#) for the [ModelBase](#).
-
-
+Implementation of the for the [ModelBase](#).
 
 ## Properties
 
@@ -27,17 +25,11 @@ Implementation of the [IEqualityComparer](#) for the [ModelBase](#).
 
 Gets or sets a value indicating whether collections should be compared.
 
-
-
 ### CompareProperties
 
 Gets or sets a value indicating whether properties should be compared.
 
-
-
 ### CompareValues
 
 Gets or sets a value indicating whether values should be compared.
-
-
 

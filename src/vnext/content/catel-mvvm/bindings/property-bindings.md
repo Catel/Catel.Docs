@@ -1,4 +1,7 @@
-# Property bindings
++++
+title = "Property bindings" 
+description = ""
++++
 
 Property bindings are very important in the MVVM pattern. The binding system in Catel will automatically map properties when the binding system is used.
 
@@ -19,9 +22,9 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 ### iOS
 
-@alert important
+{{% notice warning %}}
 iOS not yet documented
-@end
+{{% /notice %}}
 
 ## Binding properties two way
 
@@ -42,9 +45,9 @@ Note that you need to use the *AddTargetEvent* to allow two way binding in Andro
 
 ### iOS
 
-@alert important
+{{% notice warning %}}
 iOS not yet documented
-@end
+{{% /notice %}}
 
 ## Binding properties with a converter
 
@@ -63,7 +66,7 @@ protected override void AddBindings(BindingContext bindingContext, IViewModel vi
 
 ### iOS
 
-@alert important
+{{% notice warning %}}
 iOS not yet documented
-@end
+{{% /notice %}}
 

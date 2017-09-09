@@ -1,20 +1,23 @@
 
 
-# IViewModelFactoryExtensions
++++
+title = "IViewModelFactoryExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class IViewModelFactoryExtensions
 ```
 
 Extensions for the [IViewModelFactory](#).
-
-
 
 ## Methods
 
@@ -29,14 +32,11 @@ The type of the view model.
 
 #### Parameters
 
-**viewModelFactory**
-The view model factory.
-
-**dataContext**
-The data context.
-
-**tag**
-The preferred tag to use when resolving dependencies.
+Name|Description
+---|---
+**viewModelFactory**|The view model factory.
+**dataContext**|The data context.
+**tag**|The preferred tag to use when resolving dependencies.
 
 #### Returns
 
@@ -44,11 +44,8 @@ The newly created [IViewModel](#) or`null` if no view model could be created.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The viewModelFactory is`null`.
-
-**T:System.ArgumentException**
-The`TViewModel` does not implement the [IViewModel](#) interface.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The viewModelFactory is`null`.
+**ArgumentException**|The`TViewModel` does not implement the [IViewModel](#) interface.
 

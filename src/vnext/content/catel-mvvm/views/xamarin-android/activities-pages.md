@@ -1,4 +1,7 @@
-# Activities (pages)
++++
+title = "Activities (pages)" 
+description = ""
++++
 
 The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the `Fragment` class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.
 
@@ -24,9 +27,9 @@ public class MainActivity : Catel.Android.App.Activity
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Note that the class derives from *Catel.Android.App.Activity*
-@end
+{{% /notice %}}
 
 ## Designing the view
 

@@ -1,6 +1,11 @@
 
 
-# Activity
++++
+title = "Activity" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,16 +18,13 @@ public class Activity : IPage, Activity
 ```
 
 **Base types**
-[Activity]()
+[Activity]({{< relref "#" >}})
 
 **Base types**
 
-[IPage](/Catel.MVVM\Catel\MVVM\Views\IPage.md)
-
+[IPage]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" >}})
 
 View implementation that automatically takes care of view models.
-
-
 
 ## Fields
 
@@ -32,45 +34,31 @@ View implementation that automatically takes care of view models.
 
 Initializes a new instance of the [Activity](#) class.
 
-
-
 ## Properties
 
 ### DataContext
 
 Gets or sets the data context.
 
-
-
 ### IsEnabled
 
 Gets or sets a value indicating whether the view is enabled.
-
-
 
 ### PreventViewModelCreation
 
 Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.
 
-
-
 ### Tag
 
 Gets or sets the tag.
-
-
 
 ### ViewModel
 
 Gets the view model that is contained by the container.
 
-
-
 ### ViewModelType
 
 Gets the type of the view model that this user control uses.
-
-
 
 ## Events
 
@@ -78,13 +66,9 @@ Gets the type of the view model that this user control uses.
 
 Occurs when the data context has changed.
 
-
-
 ### Loaded
 
 Occurs when the view is loaded.
-
-
 
 ### PropertyChanged
 
@@ -94,25 +78,17 @@ Occurs when a property on the container has changed.
 
 This event makes it possible to externally subscribe to property changes of a view (mostly the container of a view model) because the .NET Framework does not allows us to.
 
-
-
 ### Unloaded
 
 Occurs when the view is unloaded.
-
-
 
 ### ViewModelChanged
 
 Occurs when the ViewModel property has changed.
 
-
-
 ### ViewModelPropertyChanged
 
 Occurs when a property on the ViewModel has changed.
-
-
 
 ## Methods
 

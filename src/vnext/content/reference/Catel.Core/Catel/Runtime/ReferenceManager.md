@@ -1,20 +1,23 @@
 
 
-# ReferenceManager
++++
+title = "ReferenceManager" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Runtime
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class ReferenceManager
 ```
 
 Class responsible for managing identifiers for circular dependencies.
-
-
 
 ## Fields
 
@@ -24,15 +27,11 @@ Class responsible for managing identifiers for circular dependencies.
 
 Initializes a new instance of the [ReferenceManager](#) class.
 
-
-
 ## Properties
 
 ### Count
 
 Gets the number of items in the reference manager.
-
-
 
 ## Methods
 
@@ -42,14 +41,13 @@ Gets the info for the specified instance.
 
 #### Parameters
 
-**instance**
-The instance.
+Name|Description
+---|---
+**instance**|The instance.
 
 #### Returns
 
 The [ReferenceInfo](#) or`null` if instance is`null`.
-
-
 
 ### GetInfoAt(int index)
 
@@ -57,14 +55,13 @@ Gets the info at the specified index.
 
 #### Parameters
 
-**index**
-The index.
+Name|Description
+---|---
+**index**|The index.
 
 #### Returns
 
 The [ReferenceInfo](#).
-
-
 
 ### GetInfoById(int id)
 
@@ -72,14 +69,13 @@ Gets the information by the unique identifier.
 
 #### Parameters
 
-**id**
-The unique identifier.
+Name|Description
+---|---
+**id**|The unique identifier.
 
 #### Returns
 
 The [ReferenceInfo](#) or`null` if the id is not found.
-
-
 
 ### RegisterManually(int id, object instance)
 
@@ -87,11 +83,8 @@ Registers the specified instance manually.
 
 #### Parameters
 
-**id**
-The unique identifier.
-
-**instance**
-The instance.
-
-
+Name|Description
+---|---
+**id**|The unique identifier.
+**instance**|The instance.
 

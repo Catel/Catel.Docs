@@ -1,4 +1,7 @@
-# VibrateService
++++
+title = "VibrateService" 
+description = ""
++++
 
 The `IVibrateService` allows a developer to start and stop vibration of the device via a service.
 

@@ -1,24 +1,26 @@
 
 
-# FocusFirstControl
++++
+title = "FocusFirstControl" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.Windows.Interactivity
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class FocusFirstControl : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]()
-
+[BehaviorBase]({{< relref "#" >}})
 
 Behavior to focus the first control in a window.
-
-
 
 ## Fields
 
@@ -26,15 +28,11 @@ Behavior to focus the first control in a window.
 
 Dependency property for the FocusParentsFirst property.
 
-
-
 ## Properties
 
 ### FocusParentsFirst
 
 Gets or sets a value indicating whether the parent should be focused first. The default value is`true`.
-
-
 
 ## Methods
 

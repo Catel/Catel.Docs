@@ -6,13 +6,13 @@ weight = 500
 
 This guide describes how to update your code to be fully compatible with Catel 5.0.
 
-@alert danger
+{{% notice warning %}}
 Catel v5 contains a lot of breaking changes, not all of them cause compiler errors but change core behavior. It's important to check out the guide below **before** updating to Catel v5.
-@end
+{{% /notice %}}
 
-@alert important
+{{% notice warning %}}
 This guide assumes that you are coming from Catel 4.5. If not, please read that guide first.
-@end
+{{% /notice %}}
 
 Encountered issues while upgrading to this version? Add them here to help out others!
 
@@ -57,9 +57,9 @@ The following extensions have been removed:
 
 ## Catel.Fody
 
-@alert important
+{{% notice warning %}}
 Note that if you are using Catel.Fody, you *must* update to at least 2.17 to support Catel 5.
-@end
+{{% /notice %}}
 
 ## Catel.Core
 

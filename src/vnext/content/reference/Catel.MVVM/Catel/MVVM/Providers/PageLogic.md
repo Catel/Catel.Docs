@@ -1,24 +1,26 @@
 
 
-# PageLogic
++++
+title = "PageLogic" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM.Providers
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class PageLogic : NavigationLogicBase<IPage>
 ```
 
 **Base types**
-[NavigationLogicBase]()
-
+[NavigationLogicBase]({{< relref "#" >}})
 
 MVVM Provider behavior implementation for a navigation page.
-
-
 
 ## Fields
 
@@ -30,18 +32,16 @@ Initializes a new instance of the [PageLogic](#) class.
 
 #### Parameters
 
-**targetPage**
-The page this provider should take care of.
-
-**viewModelType**
-Type of the view model.
+Name|Description
+---|---
+**targetPage**|The page this provider should take care of.
+**viewModelType**|Type of the view model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The targetPage is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The targetPage is`null`.
 
 ## Properties
 

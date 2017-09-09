@@ -1,20 +1,23 @@
 
 
-# TypeFactoryExtensions
++++
+title = "TypeFactoryExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class TypeFactoryExtensions
 ```
 
 Extension methods for the [ITypeFactory](#).
-
-
 
 ## Methods
 
@@ -29,8 +32,9 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
+Name|Description
+---|---
+**typeFactory**|The type factory.
 
 #### Returns
 
@@ -38,10 +42,9 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 
 ### CreateInstanceWithParameters<T>(ITypeFactory typeFactory, object[] parameters)
 
@@ -54,11 +57,10 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
-
-**parameters**
-The parameters to inject.
+Name|Description
+---|---
+**typeFactory**|The type factory.
+**parameters**|The parameters to inject.
 
 #### Returns
 
@@ -66,10 +68,9 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletion<T>(ITypeFactory typeFactory, object[] parameters)
 
@@ -82,11 +83,10 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
-
-**parameters**
-The parameters to inject.
+Name|Description
+---|---
+**typeFactory**|The type factory.
+**parameters**|The parameters to inject.
 
 #### Returns
 
@@ -94,10 +94,9 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 
 ### CreateInstanceWithParametersAndAutoCompletionWithTag<T>(ITypeFactory typeFactory, object tag, object[] parameters)
 
@@ -110,14 +109,11 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
-
-**tag**
-The preferred tag when resolving dependencies.
-
-**parameters**
-The parameters to inject.
+Name|Description
+---|---
+**typeFactory**|The type factory.
+**tag**|The preferred tag when resolving dependencies.
+**parameters**|The parameters to inject.
 
 #### Returns
 
@@ -125,10 +121,9 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 
 ### CreateInstanceWithParametersWithTag<T>(ITypeFactory typeFactory, object tag, object[] parameters)
 
@@ -141,14 +136,11 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
-
-**tag**
-The preferred tag when resolving dependencies.
-
-**parameters**
-The parameters to inject.
+Name|Description
+---|---
+**typeFactory**|The type factory.
+**tag**|The preferred tag when resolving dependencies.
+**parameters**|The parameters to inject.
 
 #### Returns
 
@@ -156,10 +148,9 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 
 ### CreateInstanceWithTag<T>(ITypeFactory typeFactory, object tag)
 
@@ -172,11 +163,10 @@ The type to instantiate.
 
 #### Parameters
 
-**typeFactory**
-The type factory.
-
-**tag**
-The preferred tag when resolving dependencies.
+Name|Description
+---|---
+**typeFactory**|The type factory.
+**tag**|The preferred tag when resolving dependencies.
 
 #### Returns
 
@@ -184,8 +174,7 @@ The instantiated type using dependency injection.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The typeFactory is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The typeFactory is`null`.
 

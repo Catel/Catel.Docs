@@ -285,7 +285,7 @@ The last thing to do now is the actual xaml view. For the sake of simplicity, th
 <catel:UserControl x:Class="Catel.Articles._03___MVVM.Examples.NestedUserControls.Room"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                      xmlns:catel="http://catel.codeplex.com"
+                      xmlns:catel="http://schemas.catelproject.com"
                       xmlns:NestedUserControls="clr-namespace:Catel.Articles._03___MVVM.Examples.NestedUserControls">
     <!-- For the sake of simplicity, the content is left out -->
 </catel:UserControl>

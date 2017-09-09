@@ -1,12 +1,15 @@
-# Asynchronous commands
++++
+title = "Asynchronous commands" 
+description = ""
++++
 
 Commands in MVVM are a very precious good. Actually, MVVM can't exist without them because they allow a developer to bind to a method (that's actually all an *ICommand* implementation is). However, sometimes it is required to create asynchronous commands. Starting with Catel 3.1, the *AsynchronousCommand* is introduced.
 
 With the `AsynchronousCommand`, it is possible to create a command that executes a method in the background without blocking the UI thread. It is possible to report progress to the UI thread.
 
-@alert info
+{{% notice info %}}
 Want to use async methods? Use the `TaskCommand`
-@end
+{{% /notice %}}
 
 ## Creating the command
 
@@ -54,9 +57,9 @@ private void OnCancelableAsyncCommand()
 }
 ```
 
-@alert important
+{{% notice warning %}}
 Note that this example looks stupid and you should not use `Thread.Sleep`, but this is just for the sake of simplicity and the example
-@end
+{{% /notice %}}
 
 ## Reporting progress
 

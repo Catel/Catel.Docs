@@ -1,9 +1,12 @@
-# UserControl Resources
++++
+title = "UserControl Resources" 
+description = ""
++++
 
-For the most part the resources declared within a Catel UserControl behave the exact same as resources defined in the standard UserControl.  However because of the way the Catel UserControl operates (see [UserControl Under the hood](./advanced/usercontrol-under-the-hood.md)) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:
+For the most part the resources declared within a Catel `UserControl` behave the exact same as resources defined in the standard 
+`UserControl`. However because of the way the Catel `UserControl` operates (see [UserControl Under the hood]({{< relref "catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood.md" >}})) any bindings performed inside a Resource will not be found at runtime (example CollectionViewSource Source) .  The solution is to declare the resource inside an element within the UserControl, not at the UserControl level.  Example below:
 
 Given this simple Model and ViewModel (Catel.Fody used for parameter declaration)
-
 
 ```
     public class DataSource : ModelBase
@@ -47,12 +50,12 @@ and this View:
 
 **View**
 
-``` {.xml data-syntaxhighlighter-params="brush: xml; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: xml; gutter: false; theme: Confluence"}
+```
 <catel:UserControl x:Class="Catel.Examples.WPF.Commanding.Views.DocumentView"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
-                   xmlns:catel="http://catel.codeplex.com">
+                   xmlns:catel="http://schemas.catelproject.com">
     <catel:UserControl.Resources>
         <ResourceDictionary>
             <!-- The Resource ListViewTitle will be found at run time -->
@@ -145,12 +148,12 @@ and this View:
 
 Will produce this at runtime:
 
-![](../../../images/catel-mvvm/views/xaml/usercontrol-resources/example.png)
+![](../../../../images/catel-mvvm/views/xaml/usercontrol-resources/example.png)
 
  
  The ListView on the left is not populated because the binding is not found and will produce this error:
 
-``` {.c# data-syntaxhighlighter-params="brush: c#; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: c#; gutter: false; theme: Confluence"}
+```
 System.Windows.Data Error: 40 : BindingExpression path error: 'ProjectDataSources' property not found on 'object' ''MainWindowViewModel' (HashCode=-1500006600)'. BindingExpression:Path=ProjectDataSources; DataItem='MainWindowViewModel' (HashCode=-1500006600); target element is 'CollectionViewSource' (HashCode=5965360); target property is 'Source' (type 'Object')
 ```
 

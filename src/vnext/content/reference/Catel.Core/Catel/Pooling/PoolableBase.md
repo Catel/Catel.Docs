@@ -1,12 +1,17 @@
 
 
-# PoolableBase
++++
+title = "PoolableBase" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Pooling
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public abstract class PoolableBase : IUniqueIdentifyable, IPoolable
@@ -14,12 +19,9 @@ public abstract class PoolableBase : IUniqueIdentifyable, IPoolable
 
 **Base types**
 
-[IUniqueIdentifyable](/Catel.Core\Catel\IUniqueIdentifyable.md),[IPoolable](/Catel.Core\Catel\Pooling\IPoolable.md)
-
+[IUniqueIdentifyable]({{< relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" >}}),[IPoolable]({{< relref "reference/Catel.Core/Catel/Pooling/IPoolable.md" >}})
 
 Base implementation for any poolable object.
-
-
 
 ## Fields
 
@@ -31,13 +33,9 @@ Base implementation for any poolable object.
 
 The size of the object.
 
-
-
 ### UniqueIdentifier
 
 Gets the unique identifier.
-
-
 
 ## Methods
 
@@ -45,11 +43,7 @@ Gets the unique identifier.
 
 Disposes the object and returns the object to the pool manager.
 
-
-
 ### Reset()
 
 Resets the object to an initial state.
-
-
 

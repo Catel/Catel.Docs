@@ -16,6 +16,6 @@ The serialization process works as shown in the diagram below:
 
 ![](../../../images/catel-core/serialization/customizing-serialization/introduction/workflow.png)
 
-@alert info
+{{% notice info %}}
 Workflow 1 represents the serialization. Workflow 2 represents the deserialization.
-@end
+{{% /notice %}}

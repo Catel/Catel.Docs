@@ -1,20 +1,23 @@
 
 
-# DependencyResolverExtensions
++++
+title = "DependencyResolverExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.IoC
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class DependencyResolverExtensions
 ```
 
 Extensions for the [IDependencyResolver](#).
-
-
 
 ## Methods
 
@@ -29,18 +32,16 @@ The type to resolve.
 
 #### Parameters
 
-**dependencyResolver**
-The dependency resolver.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**dependencyResolver**|The dependency resolver.
+**tag**|The tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The dependencyResolver is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The dependencyResolver is`null`.
 
 ### Resolve<T>(IDependencyResolver dependencyResolver, object tag)
 
@@ -53,11 +54,10 @@ Tye type to resolve.
 
 #### Parameters
 
-**dependencyResolver**
-The dependency resolver.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**dependencyResolver**|The dependency resolver.
+**tag**|The tag.
 
 #### Returns
 
@@ -65,10 +65,9 @@ The resolved object.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The dependencyResolver is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The dependencyResolver is`null`.
 
 ### TryResolve(IDependencyResolver dependencyResolver, Type serviceType, object tag)
 
@@ -76,14 +75,11 @@ Try to resolve the specified type with the specified tag.
 
 #### Parameters
 
-**dependencyResolver**
-The dependency resolver.
-
-**serviceType**
-Type of the service.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**dependencyResolver**|The dependency resolver.
+**serviceType**|Type of the service.
+**tag**|The tag.
 
 #### Returns
 
@@ -91,10 +87,9 @@ The resolved object or`null` if the type could not be resolved.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The dependencyResolver is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The dependencyResolver is`null`.
 
 ### TryResolve<T>(IDependencyResolver dependencyResolver, object tag)
 
@@ -107,11 +102,10 @@ The type to resolve.
 
 #### Parameters
 
-**dependencyResolver**
-The dependency resolver.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**dependencyResolver**|The dependency resolver.
+**tag**|The tag.
 
 #### Returns
 
@@ -119,8 +113,7 @@ The resolved object or`null` if the type could not be resolved.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The dependencyResolver is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The dependencyResolver is`null`.
 

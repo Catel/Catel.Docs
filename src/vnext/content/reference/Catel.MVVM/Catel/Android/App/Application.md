@@ -1,6 +1,11 @@
 
 
-# Application
++++
+title = "Application" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -13,12 +18,9 @@ public class Application : Application
 ```
 
 **Base types**
-[Application]()
-
+[Application]({{< relref "#" >}})
 
 Application class to be able to have a static context.
-
-
 
 ## Constructors
 
@@ -28,17 +30,14 @@ The constructor of the application class.
 
 #### Parameters
 
-**javaReference**
-
-**transfer**
-
-
+Name|Description
+---|---
+**javaReference**|
+**transfer**|
 
 ## Properties
 
 ### Default
 
 Gets the default application instance.
-
-
 

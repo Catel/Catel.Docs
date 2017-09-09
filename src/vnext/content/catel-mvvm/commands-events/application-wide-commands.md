@@ -1,4 +1,7 @@
-# CommandManager and command containers (Application-wide commands)
++++
+title = "CommandManager and command containers (Application-wide commands)" 
+description = ""
++++
 
 Most commands are registered per view and available per view model. Some commands (such as commands on a `Ribbon` or `Toolbar`) are application-wide. Catel supports both types, and this part of the documentation explains how to use the `ICommandManager` to work with application-wide commands such as `Refresh` with a key bound to `F5`.
 
@@ -6,7 +9,7 @@ Most commands are registered per view and available per view model. Some command
 
 There is no generic way to specify application-wide commands in XAML platforms. To overcome this issue, Catel introduces the *CommandManager*. This manager allows to create commands which are hosted by the *CommandManager*. The commands on the command manager can be created with input gestures. Once a view model wants to hook into a specific command, it only has to register the view model command with the application-wide command.
 
-@alert important
+{{% notice warning %}}
 Note that application-wide commands by default are only available on the main window of an application. To support this on other windows, add the following code in the constructor of a window:
 
 ```
@@ -22,7 +25,7 @@ public class SomeWindow
     }
 }
 ```
-@end
+{{% /notice %}}
 
 ## Creating application-wide commands
 
@@ -35,9 +38,9 @@ var commandManager = dependencyResolver.Resolve<ICommandManager>();
 commandManager.CreateCommand("Refresh", new InputGesture(Key.F5));
 ```
 
-@alert info
+{{% notice info %}}
 It is recommended to put all the command creation in a single place so they are easily manageable.
-@end
+{{% /notice %}}
 
 ### Registering a custom command
 
@@ -143,9 +146,9 @@ public static class Commands
 }
 ```
 
-@alert info
+{{% notice info %}}
 It is recommended to keep a well formed structure for your command definitions to keep them manageable, even in very large applications
-@end
+{{% /notice %}}
 
 #### Registering the command container
 

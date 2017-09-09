@@ -1,4 +1,7 @@
-# SelectTextOnFocus
++++
+title = "SelectTextOnFocus" 
+description = ""
++++
 
 The `SelectTextOnFocus` behavior makes it easy to select all text when a `TextBox` receives the focus.
 
@@ -6,7 +9,7 @@ The `SelectTextOnFocus` behavior makes it easy to select all text when a `TextBo
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition:

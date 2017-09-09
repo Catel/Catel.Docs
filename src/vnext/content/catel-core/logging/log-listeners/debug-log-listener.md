@@ -11,9 +11,9 @@ LogManager.AddDebugListener();
 #endif
 ```
 
-@alert important
+{{% notice warning %}}
 For some platforms (like UWP), Catel uses `Debug.WriteLine` which gets removed in a release build. For such platforms, it is recommended to create a customer log listener as shown below.
-@end
+{{% /notice %}}
 
 ```
 public class DebugLogListener : LogListenerBase

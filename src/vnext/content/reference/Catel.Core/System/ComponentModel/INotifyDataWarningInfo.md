@@ -1,20 +1,23 @@
 
 
-# INotifyDataWarningInfo
++++
+title = "INotifyDataWarningInfo" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|System.ComponentModel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface INotifyDataWarningInfo
 ```
 
-Interface that is based on the [INotifyDataErrorInfo](#) interface, but supports warnings instead of errors.
-
-
+Interface that is based on the interface, but supports warnings instead of errors.
 
 ## Properties
 
@@ -22,15 +25,11 @@ Interface that is based on the [INotifyDataErrorInfo](#) interface, but supports
 
 Gets a value indicating whether this object contains any field or business warnings.
 
-
-
 ## Events
 
 ### WarningsChanged
 
 Occurs when the warnings have changed.
-
-
 
 ## Methods
 
@@ -40,12 +39,11 @@ Gets the warnings for the specific property name.
 
 #### Parameters
 
-**propertyName**
-Name of the property.
+Name|Description
+---|---
+**propertyName**|Name of the property.
 
 #### Returns
 
-[IEnumerable](#) of warnings.
-
-
+of warnings.
 

@@ -1,3 +1,6 @@
-# Exposing properties of a model automatically
++++
+title = "Exposing properties of a model automatically" 
+description = ""
++++
 
-See [Catel.Fody](../../../catel-fody/introduction.md) for more information.
+See [Catel.Fody]({{< relref "catel-fody/_index.md" >}}) for more information.

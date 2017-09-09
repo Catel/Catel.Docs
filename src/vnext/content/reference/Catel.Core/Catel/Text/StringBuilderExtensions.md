@@ -1,20 +1,23 @@
 
 
-# StringBuilderExtensions
++++
+title = "StringBuilderExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Text
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class StringBuilderExtensions
 ```
 
-Extensions for the [StringBuilder](#) class.
-
-
+Extensions for the class.
 
 ## Methods
 
@@ -24,14 +27,9 @@ Appends a new line with formatting options to the string builder.
 
 #### Parameters
 
-**sb**
-The [StringBuilder](#).
-
-**format**
-The message format.
-
-**args**
-The formatting arguments.
-
-
+Name|Description
+---|---
+**sb**|The.
+**format**|The message format.
+**args**|The formatting arguments.
 

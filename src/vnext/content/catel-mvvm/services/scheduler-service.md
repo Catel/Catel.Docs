@@ -1,10 +1,13 @@
-# SchedulerService
++++
+title = "SchedulerService" 
+description = ""
++++
 
 The `ISchedulerService` allows a developer to schedule an action in the relative or absolute future. The `SchedulerService` will use the `DispatcherTimer` to invoke the action.
 
-@alert important
+{{% notice warning %}}
 Note that the `SchedulerService` does not provide any persistence of actions and schedules. When the application is closed, all schedules are lost because they are kept in memory.
-@end
+{{% /notice %}}
 
 ## Scheduling an action in the relative future
 

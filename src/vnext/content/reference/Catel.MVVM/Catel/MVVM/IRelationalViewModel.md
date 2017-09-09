@@ -1,12 +1,17 @@
 
 
-# IRelationalViewModel
++++
+title = "IRelationalViewModel" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.MVVM
 Namespace|Catel.MVVM
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface IRelationalViewModel : IViewModel
@@ -14,20 +19,15 @@ public interface IRelationalViewModel : IViewModel
 
 **Base types**
 
-[IViewModel](/Catel.MVVM\Catel\MVVM\IViewModel.md)
-
+[IViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" >}})
 
 Interface that allows a view model to be used in a nested user controls scenario.
-
-
 
 ## Properties
 
 ### ParentViewModel
 
 Gets the parent view model.
-
-
 
 ## Methods
 
@@ -37,15 +37,15 @@ Registers a child view model to this view model. When a view model is registered
 
 #### Parameters
 
-**childViewModel**
-The child view model.
+Name|Description
+---|---
+**childViewModel**|The child view model.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The childViewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The childViewModel is`null`.
 
 ### SetParentViewModel(IViewModel parentViewModel)
 
@@ -53,10 +53,9 @@ Sets the new parent view model of this view model.
 
 #### Parameters
 
-**parentViewModel**
-The parent view model.
-
-
+Name|Description
+---|---
+**parentViewModel**|The parent view model.
 
 ### UnregisterChildViewModel(IViewModel childViewModel)
 
@@ -64,13 +63,13 @@ Unregisters the child view model. This means that the child view model will no l
 
 #### Parameters
 
-**childViewModel**
-The child.
+Name|Description
+---|---
+**childViewModel**|The child.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The childViewModel is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The childViewModel is`null`.
 

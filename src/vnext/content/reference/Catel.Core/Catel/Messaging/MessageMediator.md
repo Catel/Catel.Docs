@@ -1,12 +1,17 @@
 
 
-# MessageMediator
++++
+title = "MessageMediator" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Messaging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public class MessageMediator : IMessageMediator
@@ -14,12 +19,9 @@ public class MessageMediator : IMessageMediator
 
 **Base types**
 
-[IMessageMediator](/Catel.Core\Catel\Messaging\IMessageMediator.md)
-
+[IMessageMediator]({{< relref "reference/Catel.Core/Catel/Messaging/IMessageMediator.md" >}})
 
 This class creates a simple Mediator which loosely connects different objects together. The message handlers are organized using string-based message keys and are held in a WeakReference collection.
-
-
 
 ## Fields
 
@@ -29,15 +31,11 @@ This class creates a simple Mediator which loosely connects different objects to
 
 Gets the default instance of the message mediator.
 
-
-
 ## Methods
 
 ### CleanUp()
 
 Cleans up the list of registered handlers. All handlers that are no longer alive are removed from the list. This method is automatically invoked after each call to Object), but can also be invoked manually.
-
-
 
 ### IsMessageRegistered(Type messageType, object tag)
 
@@ -45,11 +43,10 @@ Determines whether the specified message type is registered.
 
 #### Parameters
 
-**messageType**
-The type of the message.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**messageType**|The type of the message.
+**tag**|The tag.
 
 #### Returns
 
@@ -57,10 +54,9 @@ The tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The messageType is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The messageType is`null`.
 
 ### IsMessageRegistered<TMessage>(object tag)
 
@@ -73,14 +69,13 @@ The type of the message.
 
 #### Parameters
 
-**tag**
-The tag.
+Name|Description
+---|---
+**tag**|The tag.
 
 #### Returns
 
 `true` if the message type is registered; otherwise,`false`.
-
-
 
 ### IsRegistered<TMessage>(object recipient, Action<TMessage> handler, object tag)
 
@@ -93,14 +88,11 @@ The type of the message.
 
 #### Parameters
 
-**recipient**
-The recipient.
-
-**handler**
-The handler.
-
-**tag**
-The tag.
+Name|Description
+---|---
+**recipient**|The recipient.
+**handler**|The handler.
+**tag**|The tag.
 
 #### Returns
 
@@ -108,10 +100,9 @@ The tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
 
 ### Register<TMessage>(object recipient, Action<TMessage> handler, object tag)
 
@@ -124,14 +115,11 @@ The type of the message.
 
 #### Parameters
 
-**recipient**
-The recipient to register.
-
-**handler**
-The handler method.
-
-**tag**
-The message tag.
+Name|Description
+---|---
+**recipient**|The recipient to register.
+**handler**|The handler method.
+**tag**|The message tag.
 
 #### Returns
 
@@ -139,14 +127,13 @@ The message tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
 
 #### Remarks
 
 A handler cannot be registered twice. If the same handler is already registered, this method will return`false`.
-
-
 
 ### SendMessage<TMessage>(TMessage message, object tag)
 
@@ -159,11 +146,10 @@ The type of the message.
 
 #### Parameters
 
-**message**
-The message parameter.
-
-**tag**
-The message tag.
+Name|Description
+---|---
+**message**|The message parameter.
+**tag**|The message tag.
 
 #### Returns
 
@@ -171,10 +157,9 @@ The message tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The message is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The message is`null`.
 
 ### Unregister<TMessage>(object recipient, Action<TMessage> handler, object tag)
 
@@ -187,14 +172,11 @@ The type of the message.
 
 #### Parameters
 
-**recipient**
-The recipient to unregister.
-
-**handler**
-The handler method.
-
-**tag**
-The message tag.
+Name|Description
+---|---
+**recipient**|The recipient to unregister.
+**handler**|The handler method.
+**tag**|The message tag.
 
 #### Returns
 
@@ -202,14 +184,13 @@ The message tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The handler is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The handler is`null`.
 
 #### Remarks
 
 A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
-
-
 
 ### UnregisterRecipient(object recipient, object tag)
 
@@ -217,11 +198,10 @@ Unregisters a specific recipient for all the (non-static) message the recipient 
 
 #### Parameters
 
-**recipient**
-The recipient to unregister.
-
-**tag**
-The message tag.
+Name|Description
+---|---
+**recipient**|The recipient to unregister.
+**tag**|The message tag.
 
 #### Returns
 
@@ -229,14 +209,13 @@ The message tag.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The recipient is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The recipient is`null`.
 
 #### Remarks
 
 A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
-
-
 
 ### UnregisterRecipient(object recipient, object tag, bool ignoreTag)
 
@@ -244,14 +223,11 @@ Unregisters a specific recipient for all the (non-static) message the recipient 
 
 #### Parameters
 
-**recipient**
-The recipient to unregister.
-
-**tag**
-The message tag.
-
-**ignoreTag**
-If set to`true`, tags are ignored.
+Name|Description
+---|---
+**recipient**|The recipient to unregister.
+**tag**|The message tag.
+**ignoreTag**|If set to`true`, tags are ignored.
 
 #### Returns
 
@@ -259,14 +235,13 @@ If set to`true`, tags are ignored.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The recipient is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The recipient is`null`.
 
 #### Remarks
 
 A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
-
-
 
 ### UnregisterRecipientAndIgnoreTags(object recipient)
 
@@ -274,8 +249,9 @@ Unregisters a specific recipient for all the (non-static) message the recipient 
 
 #### Parameters
 
-**recipient**
-The recipient to unregister.
+Name|Description
+---|---
+**recipient**|The recipient to unregister.
 
 #### Returns
 
@@ -283,12 +259,11 @@ The recipient to unregister.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The recipient is`null`.
+Name|Description
+---|---
+**ArgumentNullException**|The recipient is`null`.
 
 #### Remarks
 
 A handler cannot be unregistered when it is not registered first. If a handler is unregistered while it is not registered, this method will return`false`.
-
-
 

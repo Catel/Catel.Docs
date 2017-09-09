@@ -1,12 +1,17 @@
 
 
-# ISchedulerService
++++
+title = "ISchedulerService" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Services
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public interface ISchedulerService
@@ -14,51 +19,41 @@ public interface ISchedulerService
 
 Service that allows scheduling of actions in the future.
 
-
-
 ## Methods
 
 ### Schedule(Action action, DateTime dateTime)
 
-Schedules the specified action in an absolute [DateTime](#).
+Schedules the specified action in an absolute.
 
 #### Parameters
 
-**action**
-The action.
-
-**dateTime**
-The date time.
+Name|Description
+---|---
+**action**|The action.
+**dateTime**|The date time.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-**T:System.ArgumentOutOfRangeException**
-The dateTime is in the past.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
+**ArgumentOutOfRangeException**|The dateTime is in the past.
 
 ### Schedule(Action action, TimeSpan timeSpan)
 
-Schedules the specified action in a relative [TimeSpan](#).
+Schedules the specified action in a relative.
 
 #### Parameters
 
-**action**
-The action.
-
-**timeSpan**
-The time span.
+Name|Description
+---|---
+**action**|The action.
+**timeSpan**|The time span.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The action is`null`.
-
-**T:System.ArgumentOutOfRangeException**
-The timeSpan is in the past.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The action is`null`.
+**ArgumentOutOfRangeException**|The timeSpan is in the past.
 

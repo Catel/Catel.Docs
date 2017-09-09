@@ -1,6 +1,11 @@
 
 
-# BindingContext
++++
+title = "BindingContext" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
@@ -14,8 +19,6 @@ public class BindingContext
 
 Binding context that takes care of binding updates.
 
-
-
 ## Fields
 
 ## Constructors
@@ -24,35 +27,25 @@ Binding context that takes care of binding updates.
 
 Initializes a new instance of the [BindingContext](#) class.
 
-
-
 ## Properties
 
 ### GetBindings
 
 Gets the get bindings.
 
-
-
 ### GetCommandBindings
 
 Gets the get command bindings.
 
-
-
 ### UniqueIdentifier
 
 Gets the unique identifier.
-
-
 
 ## Events
 
 ### BindingUpdateRequired
 
 Occurs when binding updates are required.
-
-
 
 ## Methods
 
@@ -62,15 +55,15 @@ Adds a new binding.
 
 #### Parameters
 
-**binding**
-The binding.
+Name|Description
+---|---
+**binding**|The binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
 
 ### AddCommandBinding(CommandBinding commandBinding)
 
@@ -78,21 +71,19 @@ Adds a new command binding.
 
 #### Parameters
 
-**commandBinding**
-The command binding.
+Name|Description
+---|---
+**commandBinding**|The command binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The commandBinding is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The commandBinding is`null`.
 
 ### Clear()
 
 Clears this binding context and all bindings.
-
-
 
 ### DetermineIfBindingsAreRequired(IViewModel viewModel)
 
@@ -100,10 +91,9 @@ Updates the view model of this binding context. This method can be called as muc
 
 #### Parameters
 
-**viewModel**
-The view model.
-
-
+Name|Description
+---|---
+**viewModel**|The view model.
 
 ### RemoveBinding(Binding binding)
 
@@ -111,15 +101,15 @@ Removes the binding.
 
 #### Parameters
 
-**binding**
-The binding.
+Name|Description
+---|---
+**binding**|The binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The binding is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The binding is`null`.
 
 ### RemoveCommandBinding(CommandBinding commandBinding)
 
@@ -127,13 +117,13 @@ Removes the command binding.
 
 #### Parameters
 
-**commandBinding**
-The command binding.
+Name|Description
+---|---
+**commandBinding**|The command binding.
 
 #### Exceptions
 
-**!:ArgumentNullException**
-The commandBinding is`null`.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The commandBinding is`null`.
 

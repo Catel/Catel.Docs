@@ -1,10 +1,13 @@
-# ViewModelLocator
++++
+title = "ViewModelLocator" 
+description = ""
++++
 
 Starting with Catel 3.0, there are several ways to hook up a view model to the view. When a view is constructed, an MVVM behavior is added to the view. Thanks to these MVVM behaviors, it is possible to use exactly the same logic on 3rd party controls.
 
-@alert important
+{{% notice warning %}}
 Note that the while using the conventions, magic words such as "View", "Control", "UserControl", "Window" and "Page" will be stripped from the view name while locating the view model type
-@end
+{{% /notice %}}
 
 ## Resolving by naming convention
 
@@ -54,9 +57,9 @@ By default, the *IViewModelLocator* uses the following naming conventions to res
 -   [CURRENT].[VW]ActivityViewModel
 -   [CURRENT].[VW]FragmentViewModel
 
-@alert info
-For more information about naming conventions, see [Naming conventions](./naming-conventions.md)
-@end
+{{% notice info %}}
+For more information about naming conventions, see [Naming conventions]({{< relref "catel-mvvm/locators-naming-conventions/naming-conventions.md" >}})
+{{% /notice %}}
 
 However, it is possible to add or remove new naming conventions to support your own naming convention. For example, to add a new naming convention for a different assembly, use this code:
 

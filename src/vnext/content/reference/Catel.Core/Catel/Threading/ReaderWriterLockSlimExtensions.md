@@ -1,20 +1,23 @@
 
 
-# ReaderWriterLockSlimExtensions
++++
+title = "ReaderWriterLockSlimExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Threading
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class ReaderWriterLockSlimExtensions
 ```
 
-Provides extensions for [ReaderWriterLockSlim](#).
-
-
+Provides extensions for.
 
 ## Methods
 
@@ -24,13 +27,10 @@ Performs operation that requires read access to shared resource.
 
 #### Parameters
 
-**lockSlim**
-The reader-writer lock.
-
-**criticalOperation**
-Performed operation.
-
-
+Name|Description
+---|---
+**lockSlim**|The reader-writer lock.
+**criticalOperation**|Performed operation.
 
 ### PerformRead<T>(ReaderWriterLockSlim lockSlim, Func<T> criticalOperation)
 
@@ -43,17 +43,14 @@ Type of result.
 
 #### Parameters
 
-**lockSlim**
-The reader-writer lock.
-
-**criticalOperation**
-Performed operation.
+Name|Description
+---|---
+**lockSlim**|The reader-writer lock.
+**criticalOperation**|Performed operation.
 
 #### Returns
 
 Performed operation result.
-
-
 
 ### PerformUpgradableRead(ReaderWriterLockSlim lockSlim, Action criticalOperation)
 
@@ -61,13 +58,10 @@ Performs operation that requires read access to shared resource but may require 
 
 #### Parameters
 
-**lockSlim**
-The reader-writer lock.
-
-**criticalOperation**
-Performed operation.
-
-
+Name|Description
+---|---
+**lockSlim**|The reader-writer lock.
+**criticalOperation**|Performed operation.
 
 ### PerformUpgradableRead<T>(ReaderWriterLockSlim lockSlim, Func<T> criticalOperation)
 
@@ -80,17 +74,14 @@ Type of result.
 
 #### Parameters
 
-**lockSlim**
-The reader-writer lock.
-
-**criticalOperation**
-Performed operation.
+Name|Description
+---|---
+**lockSlim**|The reader-writer lock.
+**criticalOperation**|Performed operation.
 
 #### Returns
 
 Performed operation result.
-
-
 
 ### PerformWrite(ReaderWriterLockSlim lockSlim, Action criticalOperation)
 
@@ -98,11 +89,8 @@ Performs operation that requires write access to shared resource.
 
 #### Parameters
 
-**lockSlim**
-The reader-writer lock.
-
-**criticalOperation**
-Performed operation.
-
-
+Name|Description
+---|---
+**lockSlim**|The reader-writer lock.
+**criticalOperation**|Performed operation.
 

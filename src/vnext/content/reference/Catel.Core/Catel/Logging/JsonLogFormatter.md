@@ -1,12 +1,17 @@
 
 
-# JsonLogFormatter
++++
+title = "JsonLogFormatter" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel.Logging
-Available on|.NET Framework 4.5, .NET Framework 4.6, Unknown
+Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
 public class JsonLogFormatter : IJsonLogFormatter
@@ -14,12 +19,9 @@ public class JsonLogFormatter : IJsonLogFormatter
 
 **Base types**
 
-[IJsonLogFormatter](/Catel.Core\Catel\Logging\IJsonLogFormatter.md)
-
+[IJsonLogFormatter]({{< relref "reference/Catel.Core/Catel/Logging/IJsonLogFormatter.md" >}})
 
 The formatter which formats all log info to Json.
-
-
 
 ## Fields
 
@@ -33,23 +35,19 @@ Formats the log infos.
 
 #### Parameters
 
-**log**
-
-**message**
-
-**logEvent**
-
-**time**
+Name|Description
+---|---
+**log**|
+**message**|
+**logEvent**|
+**time**|
 
 #### Returns
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The log is`null`.
-
-**T:System.ArgumentException**
-The message is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The log is`null`.
+**ArgumentException**|The message is`null` or whitespace.
 

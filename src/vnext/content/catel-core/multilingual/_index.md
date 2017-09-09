@@ -9,7 +9,7 @@ Making an application multilingual is a very common feature request nowadays. Th
 
 ### Setting cultures
 
-By default the *LanguageService* will use the current UI culture to retrieve the right language values. These can easily be customized:
+By default the `LanguageService` will use the current UI culture to retrieve the right language values. These can easily be customized:
 
 ```
 var dependencyResolver = this.GetDependencyResolver();
@@ -75,9 +75,9 @@ Since Windows Phone does not support markup extensions, a custom *MarkupExtensi
 
 Implementing a custom *LanguageService* consists of several steps which are described below.
 
-@alert important
+{{% notice warning %}}
 Note that this implementation queries the database for each translation. It is best to read all translations into memory at once to improve performance
-@end
+{{% /notice %}}
 
 ### Creating a custom ILanguageSource implementation
 

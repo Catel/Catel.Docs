@@ -4,9 +4,9 @@ description = ""
 weight = 20
 +++
 
-@alert info
+{{% notice info %}}
 The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
-@end
+{{% /notice %}}
 
 Data annotations are validation when the specific property is set. For example, when a property FirstName is set, all the data annotations on the FirstName property are validated.
 

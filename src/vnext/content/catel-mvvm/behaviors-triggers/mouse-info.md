@@ -1,10 +1,13 @@
-# MouseInfo
++++
+title = "MouseInfo" 
+description = ""
++++
 
 1) Add the following XML namespaces:
 
 ```
 xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-xmlns:catel="http://catel.codeplex.com"
+xmlns:catel="http://schemas.catelproject.com"
 ```
 
 2) Use the following definition:

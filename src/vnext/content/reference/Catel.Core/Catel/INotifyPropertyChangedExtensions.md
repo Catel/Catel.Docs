@@ -1,20 +1,23 @@
 
 
-# INotifyPropertyChangedExtensions
++++
+title = "INotifyPropertyChangedExtensions" 
+description = ""
+weight = 20
+generator = "SharpDox.Plugins.Hugo"
++++
 
 Name|Value
 ---|---
 Assembly|Catel.Core
 Namespace|Catel
-Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Unknown, Windows 10.0 (Universal Apps), Xamarin - Android, Xamarin - iOS
+Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
 public static class INotifyPropertyChangedExtensions
 ```
 
-Extension methods for the [INotifyPropertyChanged](#) interface.
-
-
+Extension methods for the interface.
 
 ## Methods
 
@@ -24,22 +27,16 @@ Subscribes to the specified property.
 
 #### Parameters
 
-**notifyPropertyChanged**
-The notify property changed.
-
-**propertyName**
-Name of the property.
-
-**handler**
-The handler.
+Name|Description
+---|---
+**notifyPropertyChanged**|The notify property changed.
+**propertyName**|Name of the property.
+**handler**|The handler.
 
 #### Exceptions
 
-**T:System.ArgumentNullException**
-The notifyPropertyChanged is`null`.
-
-**T:System.ArgumentException**
-The propertyName is`null` or whitespace.
-
-
+Name|Description
+---|---
+**ArgumentNullException**|The notifyPropertyChanged is`null`.
+**ArgumentException**|The propertyName is`null` or whitespace.
 

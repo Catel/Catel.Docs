@@ -6,15 +6,15 @@ weight = 40
 
 While developing software, it is very important to keep an eye on the performance. Catel itself does perform very well, but there are some caveats that you should be aware of. If you have the feeling that the application is laggy or slow, or if you want to make sure to squeeze the best performance out of Catel, consider taking a closer look at the checklist below.
 
-@alert tip
-Use the [ApiCop feature](ApiCop) to get a detailed advisory report on your software
-@end
+{{% notice tip %}}
+Use the [ApiCop feature]({{< relref "catel-core/apicop/_index.md" >}}) to get a detailed advisory report on your software
+{{% /notice %}}
 
 ## General
 
 ### Disable the call to LogManager.AddDebugListener
 
-The *DebugListener* is a very useful class while developing an application. It throws all the logging of Catel to the output window of Visual Studio which allows you to view exactly what happens behind the scenes. However, writing all these logs to the output window is very expensive and might cause an application to perform badly.
+The `DebugListener` is a very useful class while developing an application. It throws all the logging of Catel to the output window of Visual Studio which allows you to view exactly what happens behind the scenes. However, writing all these logs to the output window is very expensive and might cause an application to perform badly.
 
 Therefore, it is important to disable any call to `LogManager.AddDebugListener` when releasing an application or while performance testing.
 
@@ -53,7 +53,7 @@ AppDomain.Current.PreloadAssemblies(directory);
 
 ### Warming up the serializers
 
-To improve performance for serialization, [warm up the serializers](../catel-core/serialization/introduction.md).
+To improve performance for serialization, [warm up the serializers]({{< relref "catel-core/serialization/_index.md" >}}).
 
 ## MVVM
 
@@ -88,6 +88,6 @@ By default, throttling is disabled but can be enabled by setting the *Throttling
 ThrottlingRate = new TimeSpan(0, 0, 0, 0, 200);
 ```
 
-@alert info
+{{% notice info %}}
 The *AdvancedDemo* example contains a demo that shows the impact of throttling
-@end
+{{% /notice %}}
