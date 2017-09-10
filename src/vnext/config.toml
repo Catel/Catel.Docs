@@ -1,6 +1,7 @@
-baseURL = "http://docs.catelproject.com/"
+baseURL = "http://docs.catelproject.com/vnext/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
+publishDir = "../../docs/vnext"
 
 title = "Catel docs"
 theme = "docdock"
