@@ -7175,14 +7175,14 @@
 	"content": "\r\rLocationService\r\r\rMessageService\r\r\rNavigationService\r\r\rOpenFileService\r\r\rPleaseWaitService\r\r\rProcessService\r\r\rSaveFileService\r\r\rSchedulerService\r\r\rSelectDirectoryService\r\r\rUIVisualizerService\r\r\rVibrateService\r\r\rViewExportService\r\r\r"
 },
 {
-	"uri": "http://docs.catelproject.com/5.0/reference/catel.core/system/",
+	"uri": "http://docs.catelproject.com/5.0/reference/catel.mvvm/system/",
 	"title": "System",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://docs.catelproject.com/5.0/reference/catel.mvvm/system/",
+	"uri": "http://docs.catelproject.com/5.0/reference/catel.core/system/",
 	"title": "System",
 	"tags": [],
 	"description": "",

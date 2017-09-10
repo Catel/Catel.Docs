@@ -13,7 +13,8 @@ Have a question about Catel? Use <a href="https://stackoverflow.com/questions/ta
 <script>
 var disqus_config = function () {
 // Always use vNext so comments stay visible
-this.page.url = 'http://docs.catelproject.com/vnext/{{.URL}}';
+this.page.url = 'http://docs.catelproject.com/{{ .URL }}';
+//this.page.url = '{{ .File.Path | absURL }}';
 this.page.identifier = '{{.File.Path}}';
 };
 (function() { // DON'T EDIT BELOW THIS LINE
@@ -32,22 +33,5 @@ s.setAttribute('data-timestamp', +new Date());
 	    </div>
 	{{end}}
 </footer>
-
-
-{{if not .Content }}
-	{{ $paginator := .Paginator }}
-
-	<div class="extra-pagination inner">
-	{{ partial "pagination.html" $paginator }}
-	</div>
-
-	{{ range $index, $page := $paginator.Pages }}
-	   {{ .Render "li" }}
-	{{ end }}
-
-	<div style="margin-bottom:2rem"></div>
-
-	{{ partial "pagination.html" $paginator }}
-{{end}}
 
 {{ partial "footer.html" . }}
