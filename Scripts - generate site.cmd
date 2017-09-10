@@ -1,17 +1,25 @@
+:: Copy theme from subrepository
+xcopy "repositories\hugo-theme-docdock" "src\shared\themes\docdock" /e /y /i
+
+:: Generate all sites
+for %%i in (home,5.0,5.1,vnext) do (call:buildSite %%i)
+
+goto:eof
+
+
+
+:buildSite
+set siteName=%~1
+
+echo Building site: %siteName%
+
 :: Copy shared stuff
-:: TODO ../shared folder
-:: TODO ../themes
+xcopy "src\shared" "src\%siteName%" /e /y /i
 
-cd ./src/home
+:: Build site
+cd .\src\%siteName%
 hugo
 
-cd ../5.0
-hugo
-
-cd ../5.1
-hugo
-
-cd ../vnext
-hugo
-
-pause
+:: Back to root 
+cd ..\..\
+goto:eof

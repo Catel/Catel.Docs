@@ -6,7 +6,6 @@
     <description>Recent content in Catel Documentation on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 18:36:24 +0200</lastBuildDate>
     
 	<atom:link href="http://docs.catelproject.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,19 +13,10 @@
     <item>
       <title>header</title>
       <link>http://docs.catelproject.com/_header/</link>
-      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.catelproject.com/_header/</guid>
       <description>Catel Documentation</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://docs.catelproject.com/shortcodes/allversions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.catelproject.com/shortcodes/allversions/</guid>
-      <description> Catel vNext (5.2) Catel 5.1 Catel 5.0 Catel 4.5 (old system)  </description>
     </item>
     
   </channel>

@@ -3,32 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://docs.catelproject.com/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/_header/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/shortcodes/allversions/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/shortcodes/</loc>
-    <priority>0</priority>
+    <loc>http://docs.catelproject.com/</loc>
   </url>
   
   <url>
     <loc>http://docs.catelproject.com/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/_header/</loc>
   </url>
   
 </urlset>
