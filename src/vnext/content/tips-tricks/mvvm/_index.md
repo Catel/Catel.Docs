@@ -1,5 +1,5 @@
 +++
-title = "Tips & tricks - MVVM" 
+title = "MVVM" 
 description = ""
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = "Tips & tricks - Core" 
+title = "Core" 
 description = ""
 +++
 

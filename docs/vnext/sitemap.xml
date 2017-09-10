@@ -3852,6 +3852,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/tips-tricks/core/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-basic-view-model/</loc>
   </url>
   
@@ -3981,6 +3985,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/tips-tricks/mvvm/</loc>
   </url>
   
   <url>
@@ -4130,14 +4138,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/tips-tricks/core/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/tips-tricks/mvvm/</loc>
   </url>
   
   <url>
