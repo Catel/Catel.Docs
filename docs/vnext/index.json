@@ -6615,14 +6615,14 @@
 	"content": ""
 },
 {
-	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/",
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/",
 	"title": "Catel",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/",
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/",
 	"title": "Catel",
 	"tags": [],
 	"description": "",
