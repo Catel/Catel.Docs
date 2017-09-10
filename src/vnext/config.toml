@@ -1,0 +1,27 @@
+baseURL = "http://docs.catelproject.com/vnext/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+publishDir = "../../docs/vnext"
+
+title = "Catel docs"
+theme = "docdock"
+
+[params]
+editURL = "https://github.com/catel/catel.docs/edit/master/vnext/content/"
+noHomeIcon = false # default is false
+noSearch = false # default is false
+showVisitedLinks = true # default is false
+# themeStyle = "theme" # overide base css
+themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title"
+pluralizeListTitles = false
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/catel/catel.docs"
+weight = 10
