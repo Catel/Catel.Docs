@@ -7,6 +7,10 @@ The `INavigationService` allows a developer to navigate to other pages inside an
 
 All pages will have to be registered manually or following the right naming convention.
 
+{{% notice info %}}
+The `NavigationService` uses the `IViewLocator` and `IViewModelLocator` do handle the navigation. See the [Naming conventions]({{% relref "catel-mvvm/locators-naming-conventions/_index.md" %}}) section for more details.
+{{% /notice %}}
+
 ## Closing an application
 
 It is possible to close an application using the following code:
@@ -66,66 +70,3 @@ var navigationService = dependencyResolver.Resolve<INavigationService>();
 navigationService.GoBack(); // navigates to the previous page, obviously
 navigationService.GoForward(); // navigates to the next page, obviously
 ```
-
-## Navigating to a custom Uri
-
-To navigate to a custom uri without a view model type, use the following code. Of course it's also possible to pass parameters using the right method overload.
-
-```
-var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve<INavigationService>();
-navigationService.Navigate("/UI/Pages/EmployeePage.xaml");
-```
-
-## Registering custom views
-
-To register custom views, use the following code:
-
-```
-var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve<INavigationService>();
-navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
-```
-
-## Using naming conventions to find pages
-
-If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the `Show` method will try to find the view using the naming convention.
-
-To add a naming convention, use the following code:
-
-```
-var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve<INavigationService>();
-navigationService.NamingConventions.Add(string.Format("/Views/My{0}View", NamingConvention.ViewModelName));
-```
-
-The above naming convention will use the following combination:
-
-Input: *MyAssembly.UI.ViewModels.EmployeeViewModel*
-
-Output: *MyAssembly.UI.Windows.EmployeeWindow*
-
-By default, the following naming conventions will be used:
-
--   /Views/[VM].xaml
--    /Views/[VM]View.xaml
--    /Views/[VM]Control.xaml
--    /Views/[VM]Page.xaml
--    /Views/[VM]Window.xaml
--    /Controls/[VM].xaml
--    /Controls/[VM]Control.xaml
--    /Pages/[VM].xaml
--    /Pages/[VM]Page.xaml
--    /Windows/[VM].xaml
--    /Windows/[VM]Window.xaml
--    /UI/Views/[VM].xaml
--    /UI/Views/[VM]View.xaml
--    /UI/Views/[VM]Control.xaml
--    /UI/Views/[VM]Page.xaml
--    /UI/Views/[VM]Window.xaml
--    /UI/Controls/[VM].xaml
--    /UI/Controls/[VM]Control.xaml
--    /UI/Pages/[VM].xaml
--    /UI/Pages/[VM]Page.xaml
--    /UI/Windows/[VM].xaml
--    /UI/Windows/[VM]Window.xaml 

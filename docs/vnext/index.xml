@@ -10221,8 +10221,9 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
       <guid>http://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/</guid>
       <description>The INavigationService allows a developer to navigate to other pages inside an application using view models only.
 All pages will have to be registered manually or following the right naming convention.
-Closing an application It is possible to close an application using the following code:
-var dependencyResolver = this.GetDependencyResolver(); var navigationService = dependencyResolver.Resolve&amp;lt;INavigationService&amp;gt;(); navigationService.CloseApplication();  Preventing an application to be closed To prevent an application to be closed, one can subscribe to the ApplicationClosing event:</description>
+The NavigationService uses the IViewLocator and IViewModelLocator do handle the navigation. See the Naming conventions section for more details.
+Closing an application It is possible to close an application using the following code:
+var dependencyResolver = this.GetDependencyResolver(); var navigationService = dependencyResolver.</description>
     </item>
     
     <item>

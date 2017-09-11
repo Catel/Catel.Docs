@@ -23966,9 +23966,6 @@
 <li><a href="#navigating-to-a-new-view">Navigating to a new view</a></li>
 <li><a href="#navigating-with-parameters">Navigating with parameters</a></li>
 <li><a href="#navigating-back-and-forward">Navigating back and forward</a></li>
-<li><a href="#navigating-to-a-custom-uri">Navigating to a custom Uri</a></li>
-<li><a href="#registering-custom-views">Registering custom views</a></li>
-<li><a href="#using-naming-conventions-to-find-pages">Using naming conventions to find pages</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -23991,6 +23988,10 @@
 <p>The <code>INavigationService</code> allows a developer to navigate to other pages inside an application using view models only.</p>
 
 <p>All pages will have to be registered manually or following the right naming convention.</p>
+
+<div class="notices info" ><p>The <code>NavigationService</code> uses the <code>IViewLocator</code> and <code>IViewModelLocator</code> do handle the navigation. See the <a href="/vnext/catel-mvvm/locators-naming-conventions/">Naming conventions</a> section for more details.</p>
+</div>
+
 
 <h2 id="closing-an-application">Closing an application</h2>
 
@@ -24046,68 +24047,6 @@ var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
 navigationService.GoBack(); // navigates to the previous page, obviously
 navigationService.GoForward(); // navigates to the next page, obviously
 </code></pre>
-
-<h2 id="navigating-to-a-custom-uri">Navigating to a custom Uri</h2>
-
-<p>To navigate to a custom uri without a view model type, use the following code. Of course it&rsquo;s also possible to pass parameters using the right method overload.</p>
-
-<pre><code>var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
-navigationService.Navigate(&quot;/UI/Pages/EmployeePage.xaml&quot;);
-</code></pre>
-
-<h2 id="registering-custom-views">Registering custom views</h2>
-
-<p>To register custom views, use the following code:</p>
-
-<pre><code>var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
-navigationService.Register(typeof(EmployeeViewModel), typeof(EmployeeDetailsPage));
-</code></pre>
-
-<h2 id="using-naming-conventions-to-find-pages">Using naming conventions to find pages</h2>
-
-<p>If you use a consistent naming convention for views, it is possible to apply this naming convention to the service. This saves a lot of custom registration. When a page is not registered, the <code>Show</code> method will try to find the view using the naming convention.</p>
-
-<p>To add a naming convention, use the following code:</p>
-
-<pre><code>var dependencyResolver = this.GetDependencyResolver();
-var navigationService = dependencyResolver.Resolve&lt;INavigationService&gt;();
-navigationService.NamingConventions.Add(string.Format(&quot;/Views/My{0}View&quot;, NamingConvention.ViewModelName));
-</code></pre>
-
-<p>The above naming convention will use the following combination:</p>
-
-<p>Input: <em>MyAssembly.UI.ViewModels.EmployeeViewModel</em></p>
-
-<p>Output: <em>MyAssembly.UI.Windows.EmployeeWindow</em></p>
-
-<p>By default, the following naming conventions will be used:</p>
-
-<ul>
-<li>/Views/[VM].xaml</li>
-<li> /Views/[VM]View.xaml</li>
-<li> /Views/[VM]Control.xaml</li>
-<li> /Views/[VM]Page.xaml</li>
-<li> /Views/[VM]Window.xaml</li>
-<li> /Controls/[VM].xaml</li>
-<li> /Controls/[VM]Control.xaml</li>
-<li> /Pages/[VM].xaml</li>
-<li> /Pages/[VM]Page.xaml</li>
-<li> /Windows/[VM].xaml</li>
-<li> /Windows/[VM]Window.xaml</li>
-<li> /UI/Views/[VM].xaml</li>
-<li> /UI/Views/[VM]View.xaml</li>
-<li> /UI/Views/[VM]Control.xaml</li>
-<li> /UI/Views/[VM]Page.xaml</li>
-<li> /UI/Views/[VM]Window.xaml</li>
-<li> /UI/Controls/[VM].xaml</li>
-<li> /UI/Controls/[VM]Control.xaml</li>
-<li> /UI/Pages/[VM].xaml</li>
-<li> /UI/Pages/[VM]Page.xaml</li>
-<li> /UI/Windows/[VM].xaml</li>
-<li> /UI/Windows/[VM]Window.xaml </li>
-</ul>
 
 
 <footer class=" footline" >
