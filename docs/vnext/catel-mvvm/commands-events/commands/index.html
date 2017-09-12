@@ -3996,26 +3996,6 @@
  
   
     
-      <li data-nav-id="/vnext/catel-mvvm/commands-events/asynchronous-commands/" class="dd-item
-     
-      ">
-        <a href="/vnext/catel-mvvm/commands-events/asynchronous-commands/">
-        <span>Asynchronous commands</span> 
-        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
-        </a></li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/vnext/catel-mvvm/commands-events/application-wide-commands/" class="dd-item
      
       ">
@@ -23963,7 +23943,11 @@
 <ul>
 <li><a href="#code-snippets">Code snippets</a></li>
 <li><a href="#explanation">Explanation</a></li>
-<li><a href="#examples">Examples</a></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#async">Async</a></li>
+<li><a href="#sync">Sync</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -23996,18 +23980,23 @@
 
 <p>To implement commands, and still be able to unit test the view models, a separate command is introduced. This command allows a developer to implement a command that can be invoked both via code (unit testing) and UI.</p>
 
-<p>There is one real <code>Command</code> class: <code>Command\&lt;TCanExecuteParameter, TExecuteParameter\&gt;</code></p>
+<p>There are several classes to represent a command:</p>
+
+<ul>
+<li><code>Command\&lt;TCanExecuteParameter, TExecuteParameter\&gt;</code> - synchronous commands</li>
+<li><code>TaskCommand\&lt;TCanExecuteParameter, TExecuteParameter\&gt;</code> - asynchronous commands</li>
+</ul>
 
 <p>The <code>TCanExecuteParameter</code> is the parameter that is passed to the <code>CanExecute</code> of the command, ands saves the developer from casting the object (as in the interface <code>ICommand</code> to a typed object). The same goes for <code>TExecuteParameter</code> which makes the <code>Execute</code> of the command typed.</p>
 
-<p>There are also several wrappers available in case object is used as type parameter:</p>
-
-<ul>
-<li><code>Command\&lt;TExecuteParameter\&gt;</code> (wraps <code>Command\&lt;TCanExecuteParameter, TExecuteParameter\&gt;</code> with object for <code>TCanExecuteParameter</code>)</li>
-<li><code>Command</code> (wraps <code>Command\&lt;TExecuteParameter\&gt;</code> with object for <code>TExecuteParameter</code>)</li>
-</ul>
-
 <h2 id="examples">Examples</h2>
+
+<p>Xaml (assuming that the view model is set as datacontext):</p>
+
+<pre><code>&lt;Button Content=&quot;Click me&quot; Command=&quot;{Binding MyCommand}&quot; /&gt;
+</code></pre>
+
+<h3 id="async">Async</h3>
 
 <p>Code:</p>
 
@@ -24018,6 +24007,39 @@ public void MyViewModel(IMessageService messageService)
     Argument.IsNotNull(() =&gt; messageService);
  
     _messageService = messageService;
+
+    // Add commands
+    MyAction = new TaskCommand(MyAction_ExecuteAsyc);
+}
+
+/// &lt;summary&gt;
+/// Gets the MyAction command.
+/// &lt;/summary&gt;
+public TaskCommand MyAction { get; private set; }
+
+/// &lt;summary&gt;
+/// Method to invoke when the MyAction command is executed.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;parameter&quot;&gt;The parameter of the command.&lt;/param&gt;
+private async Task MyAction_ExecuteAsync(object parameter)
+{
+    // Show message box
+    await _messageService.ShowInfoAsync(&quot;My action in MVVM&quot;);
+}
+</code></pre>
+
+<h3 id="sync">Sync</h3>
+
+<p>Code:</p>
+
+<pre><code>private readonly IMessageService _messageService;
+ 
+public void MyViewModel(IMessageService messageService)
+{
+    Argument.IsNotNull(() =&gt; messageService);
+ 
+    _messageService = messageService;
+
     // Add commands
     MyAction = new Command(MyAction_Execute);
 }
@@ -24036,11 +24058,6 @@ private void MyAction_Execute(object parameter)
     // Show message box
     _messageService.ShowInfo(&quot;My action in MVVM&quot;);
 }
-</code></pre>
-
-<p>Xaml (assuming that the view model is set as datacontext):</p>
-
-<pre><code>&lt;Button Content=&quot;Click me&quot; Command=&quot;{Binding MyCommand}&quot; /&gt;
 </code></pre>
 
 

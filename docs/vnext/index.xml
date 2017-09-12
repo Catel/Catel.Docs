@@ -9727,16 +9727,6 @@ Creating the view model The view model can be created (or added as a linked file
     </item>
     
     <item>
-      <title>Asynchronous commands</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/commands-events/asynchronous-commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/commands-events/asynchronous-commands/</guid>
-      <description>Commands in MVVM are a very precious good. Actually, MVVM can&amp;rsquo;t exist without them because they allow a developer to bind to a method (that&amp;rsquo;s actually all an ICommand implementation is). However, sometimes it is required to create asynchronous commands. Starting with Catel 3.1, the AsynchronousCommand is introduced.
-With the AsynchronousCommand, it is possible to create a command that executes a method in the background without blocking the UI thread.</description>
-    </item>
-    
-    <item>
       <title>Authentication</title>
       <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
