@@ -8,7 +8,7 @@ The application we have created so far is fully functional, but misses a bit of 
 
 ## Adding validation
 
-Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from *ModelBase*). To add validation to the *Person* model, use this code:
+Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from `ValidatableModelBase`). To add validation to the `Person` model, use this code:
 
 ```
 protected override void ValidateFields(List<IFieldValidationResult> validationResults)
@@ -25,7 +25,7 @@ protected override void ValidateFields(List<IFieldValidationResult> validationRe
 }
 ```
 
-The validation for the *Family* model is very easy as well:
+The validation for the `Family` model is very easy as well:
 
 ```
 protected override void ValidateFields(List<IFieldValidationResult> validationResults)
@@ -43,7 +43,7 @@ Note that this validation code can be used in both the model and/or the view mod
 
 ## Adding behaviors to enable double-click on the list boxes
 
-The user must manually click the *Edit* buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the *MainWindow* and add this to the *ListBox* definition:
+The user must manually click the *Edit* buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the `MainWindow` and add this to the `ListBox` definition:
 
 ```
 <ListBox x:Name="listBox" ItemsSource="{Binding Families}" SelectedItem="{Binding SelectedFamily}">
@@ -61,7 +61,7 @@ The user must manually click the *Edit* buttons in the editable views to edit a
 </ListBox>
 ```
 
-The same goes for the *FamilyWindow*:
+The same goes for the `FamilyWindow`:
 
 ```
 <ListBox x:Name="listBox" ItemsSource="{Binding Persons}" SelectedItem="{Binding SelectedPerson}">
@@ -81,16 +81,16 @@ The same goes for the *FamilyWindow*:
 ```
 
 {{% notice warning %}}
-Note that the *xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"* must be added in order for the code above to compile
+Note that the `xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"` must be added in order for the code above to compile
 {{% /notice %}}
 
 ## Adding search functionality to the main window
 
-A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the *MainWindowViewModel*. Below are the steps required to implement search functionality.
+A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the `MainWindowViewModel`. Below are the steps required to implement search functionality.
 
 ### Adding additional properties to the view model
 
-Lets start by adding the additional properties required to implement searching in the *MainWindowViewModel*:
+Lets start by adding the additional properties required to implement searching in the `MainWindowViewModel`:
 
 ```
 /// <summary>
@@ -126,7 +126,7 @@ public static readonly PropertyData SearchFilterProperty = RegisterProperty("Sea
 Note that this property contains an additional change callback function which will be called when the property has changed.
 {{% /notice %}}
 
-Add the following import to the view model. You will needed because native **ObservableCollection** class does not support **ReplaceRange()**
+Add the following import to the view model. You will needed because native `ObservableCollection` class does not support `ReplaceRange()`
 
 ```
 using Catel.Collections;
@@ -159,10 +159,10 @@ private void UpdateSearchFilter()
 }
 ```
 
-Then, add this code to the *OnAddFamilyExecute* function:
+Then, add this code to the `OnAddFamilyExecute` function:
 
 ```
-private async void OnAddFamilyExecute()
+private async Task OnAddFamilyExecuteAsync()
 {
     var family = new Family();
 
@@ -178,7 +178,7 @@ private async void OnAddFamilyExecute()
 }
 ```
 
-Last but not least, add this to the *InitializeAsync* method **after** the *Families* is set from the *IFamilyService*
+Last but not least, add this to the `InitializeAsync` method **after** the `Families` is set from the `IFamilyService`
 
 ```
 protected override async Task InitializeAsync()
@@ -195,31 +195,32 @@ protected override async Task InitializeAsync()
 Replace the xaml of the main window by the following content:
 
 ```
- <catel:StackGrid>
-    <catel:StackGrid.RowDefinitions>
+ <Grid>
+    <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="*" />
-    </catel:StackGrid.RowDefinitions>
-    <catel:StackGrid.ColumnDefinitions>
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="100" />
-    </catel:StackGrid.ColumnDefinitions>
+    </Grid.ColumnDefinitions>
 
-    <catel:StackGrid Grid.ColumnSpan="2">
-        <catel:StackGrid.ColumnDefinitions>
+    <Grid Grid.Row="0" Grid.ColumnSpan="2">
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
-        </catel:StackGrid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="Filter:" />
-        <TextBox Text="{Binding SearchFilter}">
+        <Label Grid.Row="0" Grid.Column="0" Content="Filter:" />
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding SearchFilter}">
             <i:Interaction.Behaviors>
                 <catel:UpdateBindingOnTextChanged UpdateDelay="500" />
             </i:Interaction.Behaviors>
         </TextBox>
-    </catel:StackGrid>
+    </kGrid>
 
-    <ListBox x:Name="listBox" ItemsSource="{Binding FilteredFamilies}" SelectedItem="{Binding SelectedFamily}">
+    <ListBox Grid.Row="1" Grid.Column="0" x:Name="listBox" ItemsSource="{Binding FilteredFamilies}" SelectedItem="{Binding SelectedFamily}">
         <ListBox.ItemTemplate>
             <DataTemplate>
                 <Grid>
@@ -232,10 +233,10 @@ Replace the xaml of the main window by the following content:
         </ListBox.ItemTemplate>
     </ListBox>
 
-    <StackPanel>
+    <StackPanel Grid.Row="1" Grid.Column="1">
         <Button Command="{Binding AddFamily}" Content="Add..." />
         <Button Command="{Binding EditFamily}" Content="Edit..." />
         <Button Command="{Binding RemoveFamily}" Content="Remove" />
     </StackPanel>
-</catel:StackGrid>
+</Grid>
 ```

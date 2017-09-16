@@ -12,71 +12,73 @@ To create a new view, right-click the *Views* folder in the solution =\> *Add*
 
 ![](../../../images/getting-started/wpf/creating-the-user-controls/itemtemplate.png)
 
-Give the new view the name *PersonView*. The view will be added to the *Views* folder.
+Give the new view the name `PersonView`. The view will be added to the *Views* folder.
 
 {{% notice info %}}
-Catel will automatically link the *PersonViewModel* and *PersonView* together by naming convention
+Catel will automatically link the `PersonViewModel` and `PersonView` together by naming convention
 {{% /notice %}}
 
 Now we only need to modify the view itself, the code-behind can stay untouched. Since xaml isn't very interesting for this guide, simply copy/paste the xaml below and set it as content of the view:
 
 ```
-<catel:StackGrid>
-    <catel:StackGrid.RowDefinitions>
+<Grid>
+    <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
-    </catel:StackGrid.RowDefinitions>
-    <catel:StackGrid.ColumnDefinitions>
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" />
         <ColumnDefinition Width="*" />
-    </catel:StackGrid.ColumnDefinitions>
+    </Grid.ColumnDefinitions>
 
-    <Label Content="First name" />
-    <Label Content="{Binding FirstName}" />
+    <Label Grid.Row="0" Grid.Column="0" Content="First name" />
+    <Label Grid.Row="0" Grid.Column="1" Content="{Binding FirstName}" />
 
-    <Label Content="Last name" />
-    <Label Content="{Binding LastName}" />
-</catel:StackGrid>
+    <Label Grid.Row="1" Grid.Column="0" Content="Last name" />
+    <Label Grid.Row="1" Grid.Column="1" Content="{Binding LastName}" />
+</Grid>
 ```
 
 ## Family view
 
-The *FamilyView* must be created exactly the same way as the *PersonView*. Use the following xaml as content:
+The `FamilyView` must be created exactly the same way as the `PersonView`. Use the following xaml as content:
 
 ```
-<catel:StackGrid>
-    <catel:StackGrid.RowDefinitions>
+<Grid>
+    <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
-    </catel:StackGrid.RowDefinitions>
-    <catel:StackGrid.ColumnDefinitions>
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" />
         <ColumnDefinition Width="*" />
-    </catel:StackGrid.ColumnDefinitions>
+    </Grid.ColumnDefinitions>
 
-    <Label Content="Family name" />
-    <Label Content="{Binding FamilyName}" />
+    <Label Grid.Row="0" Grid.Column="0" Content="Family name" />
+    <Label Grid.Row="0" Grid.Column="1" Content="{Binding FamilyName}" />
 
-    <Label Grid.ColumnSpan="2" Content="Persons" />
+    <Label Grid.Row="1" Grid.ColumnSpan="2" Content="Persons" />
         
-    <ItemsControl Grid.ColumnSpan="2" ItemsSource="{Binding Persons}">
+    <ItemsControl Grid.Row="2" Grid.ColumnSpan="2" ItemsSource="{Binding Persons}">
         <ItemsControl.ItemTemplate>
             <DataTemplate>
                 <views:PersonView DataContext="{Binding}" />
             </DataTemplate>
         </ItemsControl.ItemTemplate>
     </ItemsControl>
-</catel:StackGrid>
+</Grid>
 ```
 
-Since this view uses the *PersonView*, it must be defined as a namespace at the top of the file:
+Since this view uses the `PersonView`, it must be defined as a namespace at the top of the file:
 
 ```
 xmlns:views="clr-namespace:WPF.GettingStarted.Views"
 ```
 
-The thing that is important to notice in the *FamilyView* is how it uses the *PersonView* and injects the *Person* models into the *PersonView* data context.
+The thing that is important to notice in the `FamilyView` is how it uses the `PersonView` and injects the `Person` models into the `PersonView` data context.
 
 ## Up next
 

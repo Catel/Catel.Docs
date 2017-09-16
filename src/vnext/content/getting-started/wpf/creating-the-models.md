@@ -8,7 +8,7 @@ In this step we will create models. Since this application is about families an
 
 ## Creating the model classes
 
-The models that will be used in this application will derive from the *ModelBase* or *SavableModelBase* class of Catel. These classes enable support for change notifications, validations and persistence. The *SavableModelBase* adds additional methods to save and load from/to streams or files without having to create a serializer first.
+The models that will be used in this application will derive from the `ModelBase`, `ValidatableModelBase` or `SavableModelBase` class of Catel. These classes enable support for change notifications, validations and persistence. The `SavableModelBase` adds additional methods to save and load from/to streams or files without having to create a serializer first.
 
 To create the model classes, create the following classes in the *Models* folder.
 
@@ -38,7 +38,7 @@ namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
 
-    public class Family : ModelBase
+    public class Family : ValidatableModelBase
     {
     }
 }
@@ -51,7 +51,7 @@ namespace WPF.GettingStarted.Models
 {
     using Catel.Data;
 
-    public class Person : ModelBase
+    public class Person : ValidatableModelBase
     {
     }
 }
@@ -59,7 +59,7 @@ namespace WPF.GettingStarted.Models
 
 ## Adding properties to the models
 
-The next step is to add properties to the models. An important concept to understand is that Catel uses specific "dependency-a-like" properties in order to provide all the functionality in the *ModelBase* classes. Below are the properties per model that need to be registered.
+The next step is to add properties to the models. An important concept to understand is that Catel uses specific "dependency-a-like" properties in order to provide all the functionality in the `ModelBase` classes. Below are the properties per model that need to be registered.
 
 At first sight, these properties might look very overwhelming. Let's take a look at how the property system works. The most important thing is the actual property registration:
 
@@ -70,8 +70,8 @@ public static readonly PropertyData PersonsProperty = RegisterProperty("Persons"
 This defines a property on the model with the following data:
 
 -   Name =\> Persons
--   Type =\> ObservableCollection\<Person\>
--   DefaultValue =\> new ObservableCollection\<Person\>()
+-   Type =\> ObservableCollection<Person\>
+-   DefaultValue =\> new ObservableCollection<Person\>()
 
 This will create a property in the property bag of the model. The next piece of the property is the actual wrapper around the property value which is managed by the property bag. The Catel properties always need a wrapper to be exposed to the "outside world" of the class.
 
@@ -84,7 +84,7 @@ public ObservableCollection<Person> Persons
 ```
 
 {{% notice info %}}
-If you want to get the functionality in the *ModelBase* classes without the "dependency-a-like" properties you have the option to make use of normal properties and Catel.Fody.
+If you want to get the functionality in the `ModelBase` classes without the "dependency-a-like" properties you have the option to make use of normal properties and Catel.Fody.
 {{% /notice %}}
 
 {{% notice tip %}}
@@ -115,7 +115,7 @@ public class Settings : SavableModelBase<Settings>
 ### Family class
 
 ```
-public class Family : ModelBase
+public class Family : ValidatableModelBase
 {
     /// <summary>
     /// Gets or sets the family name.
@@ -155,7 +155,7 @@ public class Family : ModelBase
 ### Person class
 
 ```
-public class Person : ModelBase
+public class Person : ValidatableModelBase
 {
     /// <summary>
     /// Gets or sets the first name.
@@ -192,14 +192,17 @@ public class Person : ModelBase
         {
             fullName += FirstName;
         }
+
         if (!string.IsNullOrEmpty(FirstName) && !string.IsNullOrWhiteSpace(LastName))
         {
             fullName += " ";
         }
+
         if (!string.IsNullOrWhiteSpace(LastName))
         {
             fullName += LastName;
         }
+
         return fullName;
     }
 }

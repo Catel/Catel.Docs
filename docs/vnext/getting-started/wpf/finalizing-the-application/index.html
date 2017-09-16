@@ -23971,7 +23971,7 @@
 
 <h2 id="adding-validation">Adding validation</h2>
 
-<p>Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from <em>ModelBase</em>). To add validation to the <em>Person</em> model, use this code:</p>
+<p>Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from <code>ValidatableModelBase</code>). To add validation to the <code>Person</code> model, use this code:</p>
 
 <pre><code>protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
 {
@@ -23987,7 +23987,7 @@
 }
 </code></pre>
 
-<p>The validation for the <em>Family</em> model is very easy as well:</p>
+<p>The validation for the <code>Family</code> model is very easy as well:</p>
 
 <pre><code>protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
 {
@@ -24004,7 +24004,7 @@
 
 <h2 id="adding-behaviors-to-enable-double-click-on-the-list-boxes">Adding behaviors to enable double-click on the list boxes</h2>
 
-<p>The user must manually click the <em>Edit</em> buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the <em>MainWindow</em> and add this to the <em>ListBox</em> definition:</p>
+<p>The user must manually click the <em>Edit</em> buttons in the editable views to edit a specific model. To make it easier for the user, we can enable double click to command behaviors. To do so, navigate to the <code>MainWindow</code> and add this to the <code>ListBox</code> definition:</p>
 
 <pre><code>&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Families}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
     &lt;ListBox.ItemTemplate&gt;
@@ -24021,7 +24021,7 @@
 &lt;/ListBox&gt;
 </code></pre>
 
-<p>The same goes for the <em>FamilyWindow</em>:</p>
+<p>The same goes for the <code>FamilyWindow</code>:</p>
 
 <pre><code>&lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding Persons}&quot; SelectedItem=&quot;{Binding SelectedPerson}&quot;&gt;
     &lt;ListBox.ItemTemplate&gt;
@@ -24039,17 +24039,17 @@
  
 </code></pre>
 
-<div class="notices warning" ><p>Note that the <em>xmlns:i=&ldquo;<a href="http://schemas.microsoft.com/expression/2010/interactivity&quot;">http://schemas.microsoft.com/expression/2010/interactivity&quot;</a></em> must be added in order for the code above to compile</p>
+<div class="notices warning" ><p>Note that the <code>xmlns:i=&quot;http://schemas.microsoft.com/expression/2010/interactivity&quot;</code> must be added in order for the code above to compile</p>
 </div>
 
 
 <h2 id="adding-search-functionality-to-the-main-window">Adding search functionality to the main window</h2>
 
-<p>A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the <em>MainWindowViewModel</em>. Below are the steps required to implement search functionality.</p>
+<p>A functionality that is needed in a lot of applications is search functionality. To implement this we will need to modify the <code>MainWindowViewModel</code>. Below are the steps required to implement search functionality.</p>
 
 <h3 id="adding-additional-properties-to-the-view-model">Adding additional properties to the view model</h3>
 
-<p>Lets start by adding the additional properties required to implement searching in the <em>MainWindowViewModel</em>:</p>
+<p>Lets start by adding the additional properties required to implement searching in the <code>MainWindowViewModel</code>:</p>
 
 <pre><code>/// &lt;summary&gt;
 /// Gets the filtered families.
@@ -24084,7 +24084,7 @@ public static readonly PropertyData SearchFilterProperty = RegisterProperty(&quo
 </div>
 
 
-<p>Add the following import to the view model. You will needed because native <strong>ObservableCollection</strong> class does not support <strong>ReplaceRange()</strong></p>
+<p>Add the following import to the view model. You will needed because native <code>ObservableCollection</code> class does not support <code>ReplaceRange()</code></p>
 
 <pre><code>using Catel.Collections;
 </code></pre>
@@ -24115,9 +24115,9 @@ private void UpdateSearchFilter()
 }
 </code></pre>
 
-<p>Then, add this code to the <em>OnAddFamilyExecute</em> function:</p>
+<p>Then, add this code to the <code>OnAddFamilyExecute</code> function:</p>
 
-<pre><code>private async void OnAddFamilyExecute()
+<pre><code>private async Task OnAddFamilyExecuteAsync()
 {
     var family = new Family();
 
@@ -24133,7 +24133,7 @@ private void UpdateSearchFilter()
 }
 </code></pre>
 
-<p>Last but not least, add this to the *InitializeAsync* method <strong>after</strong> the *Families* is set from the <em>IFamilyService</em></p>
+<p>Last but not least, add this to the <code>InitializeAsync</code> method <strong>after</strong> the <code>Families</code> is set from the <code>IFamilyService</code></p>
 
 <pre><code>protected override async Task InitializeAsync()
 {
@@ -24148,31 +24148,32 @@ private void UpdateSearchFilter()
 
 <p>Replace the xaml of the main window by the following content:</p>
 
-<pre><code> &lt;catel:StackGrid&gt;
-    &lt;catel:StackGrid.RowDefinitions&gt;
+<pre><code> &lt;Grid&gt;
+    &lt;Grid.RowDefinitions&gt;
         &lt;RowDefinition Height=&quot;Auto&quot; /&gt;
         &lt;RowDefinition Height=&quot;*&quot; /&gt;
-    &lt;/catel:StackGrid.RowDefinitions&gt;
-    &lt;catel:StackGrid.ColumnDefinitions&gt;
+    &lt;/Grid.RowDefinitions&gt;
+
+    &lt;Grid.ColumnDefinitions&gt;
         &lt;ColumnDefinition Width=&quot;*&quot; /&gt;
         &lt;ColumnDefinition Width=&quot;100&quot; /&gt;
-    &lt;/catel:StackGrid.ColumnDefinitions&gt;
+    &lt;/Grid.ColumnDefinitions&gt;
 
-    &lt;catel:StackGrid Grid.ColumnSpan=&quot;2&quot;&gt;
-        &lt;catel:StackGrid.ColumnDefinitions&gt;
+    &lt;Grid Grid.Row=&quot;0&quot; Grid.ColumnSpan=&quot;2&quot;&gt;
+        &lt;Grid.ColumnDefinitions&gt;
             &lt;ColumnDefinition Width=&quot;Auto&quot; /&gt;
             &lt;ColumnDefinition Width=&quot;*&quot; /&gt;
-        &lt;/catel:StackGrid.ColumnDefinitions&gt;
+        &lt;/Grid.ColumnDefinitions&gt;
 
-        &lt;Label Content=&quot;Filter:&quot; /&gt;
-        &lt;TextBox Text=&quot;{Binding SearchFilter}&quot;&gt;
+        &lt;Label Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; Content=&quot;Filter:&quot; /&gt;
+        &lt;TextBox Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; Text=&quot;{Binding SearchFilter}&quot;&gt;
             &lt;i:Interaction.Behaviors&gt;
                 &lt;catel:UpdateBindingOnTextChanged UpdateDelay=&quot;500&quot; /&gt;
             &lt;/i:Interaction.Behaviors&gt;
         &lt;/TextBox&gt;
-    &lt;/catel:StackGrid&gt;
+    &lt;/kGrid&gt;
 
-    &lt;ListBox x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding FilteredFamilies}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
+    &lt;ListBox Grid.Row=&quot;1&quot; Grid.Column=&quot;0&quot; x:Name=&quot;listBox&quot; ItemsSource=&quot;{Binding FilteredFamilies}&quot; SelectedItem=&quot;{Binding SelectedFamily}&quot;&gt;
         &lt;ListBox.ItemTemplate&gt;
             &lt;DataTemplate&gt;
                 &lt;Grid&gt;
@@ -24185,12 +24186,12 @@ private void UpdateSearchFilter()
         &lt;/ListBox.ItemTemplate&gt;
     &lt;/ListBox&gt;
 
-    &lt;StackPanel&gt;
+    &lt;StackPanel Grid.Row=&quot;1&quot; Grid.Column=&quot;1&quot;&gt;
         &lt;Button Command=&quot;{Binding AddFamily}&quot; Content=&quot;Add...&quot; /&gt;
         &lt;Button Command=&quot;{Binding EditFamily}&quot; Content=&quot;Edit...&quot; /&gt;
         &lt;Button Command=&quot;{Binding RemoveFamily}&quot; Content=&quot;Remove&quot; /&gt;
     &lt;/StackPanel&gt;
-&lt;/catel:StackGrid&gt;
+&lt;/Grid&gt;
 </code></pre>
 
 

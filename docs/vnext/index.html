@@ -23902,9 +23902,133 @@
 
 <h1 id="catel">Catel</h1>
 
-<p>Welcome to the documentation of Catel.</p>
+<p>Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms).
+The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET
+technology, from client to server.</p>
 
-<p>Please pick on the following subjects:</p>
+<p>Catel distinguishes itself by unique features to aid in the development of MVVM applications and server-side application
+development. Since Catel focuses on Line of Business applications, it provides professional support and excellent documentation
+which ensures a safe bet by professional companies and developers.</p>
+
+<h2 id="major-features">Major features</h2>
+
+<p>Below are a few major features that are available in Catel.</p>
+
+<h3 id="catel-core">Catel.Core</h3>
+
+<p>Catel.Core is the library you want to include in all your projects, whether you are writing a UI project or not. It contains lots of useful helper methods. The
+most important features are listed below:</p>
+
+<ul>
+<li>Argument validation (e.g. <code>Argument.IsNotNull(() =&gt; myArgument)</code>)</li>
+<li>Caching</li>
+<li>Data (ModelBase, PropertyBag, Validation)</li>
+<li>IoC (ServiceLocator, TypeFactory)</li>
+<li>Logging (LogManager, Log, several log listeners)</li>
+<li>Messaging</li>
+<li>Reflection (same reflection API for <em>every supported platform</em>)</li>
+<li>Serialization (BinarySerializer, XmlSerializer and more)</li>
+<li>Weak references (WeakEventListener)</li>
+</ul>
+
+<p>And more&hellip;.</p>
+
+<h3 id="catel-mvvm">Catel.MVVM</h3>
+
+<p>Catel.MVVM is the library you want to include when you are writing a UI project (e.g. WPF, UWP, Xamarin) and you want to use the MVVM pattern. Catel is the <em>only</em> MVVM library that has context-aware view and view-model creation, which can be used to solve the <a href="http://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-nested-user-controls-problem/">nested user controls problem</a>.</p>
+
+<p>The most important
+features are listed below:</p>
+
+<ul>
+<li>Auditing</li>
+<li>Collections (FastObservableCollection)</li>
+<li>Commands (Command, TaskCommand, etc)</li>
+<li>Converters (tons of converters out of the box)</li>
+<li>Services
+
+<ul>
+<li>CameraService</li>
+<li>LocationService</li>
+<li>MessageService</li>
+<li>NavigationService</li>
+<li>OpenFileService</li>
+<li>PleaseWaitService</li>
+<li>SaveFileService</li>
+<li>UIVisualizerService</li>
+</ul></li>
+<li>View models
+
+<ul>
+<li>Automatic validation</li>
+<li>Automatic mappings from model to view model</li>
+</ul></li>
+<li>Views
+
+<ul>
+<li>DataWindow</li>
+<li>UserControl</li>
+<li>Window</li>
+</ul></li>
+</ul>
+
+<h2 id="example-code">Example code</h2>
+
+<h3 id="models">Models</h3>
+
+<p>This model has automatic change notifications and validation.</p>
+
+<pre><code>public class Person : ValidatableModelBase
+{
+    public string FirstName { get; set; }
+
+    public string LastName { get; set; }
+
+    protected override void ValidateFields(List&lt;IFieldValidationResult&gt; validationResults)
+    {
+        if (string.IsNullOrWhitespace(FirstName))
+        {
+            validationResults.Add(FieldValidationResult.CreateError(nameof(FirstName), &quot;First name is required&quot;));
+        }
+
+        if (string.IsNullOrWhitespace(LastName))
+        {
+            validationResults.Add(FieldValidationResult.CreateError(nameof(LastName), &quot;Last name is required&quot;));
+        }
+    }    
+}
+</code></pre>
+
+<h3 id="view-models">View models</h3>
+
+<p>This is a view model with:</p>
+
+<ul>
+<li>Automatic injection of the DataContext</li>
+<li>Automatic mapping of properties &amp; validation from model =&gt; view model</li>
+</ul>
+
+<pre><code>public class PersonViewModel : ViewModelBase
+{
+    public PersonViewModel(Person person)
+    {
+        Argument.IsNotNull(() =&gt; person);
+
+        Person = person;
+    }
+
+    [Model]
+    private Person Person { get; set; }
+
+    [ViewModelToModel]
+    public string FirstName { get; set; }
+
+    [ViewModelToModel]
+    public string LastName { get; set; }
+}
+</code></pre>
+
+<h3 id="continue-reading">Continue reading</h3>
 
 
 

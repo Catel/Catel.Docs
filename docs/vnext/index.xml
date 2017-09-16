@@ -1837,7 +1837,7 @@ Parameters    Name Description     serviceLocator The service locator.</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/</guid>
-      <description>In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: Settings, Family and Person. Creating the model classes The models that will be used in this application will derive from the *ModelBase* or SavableModelBase class of Catel. These classes enable support for change notifications, validations and persistence. The SavableModelBase adds additional methods to save and load from/to streams or files without having to create a serializer first.</description>
+      <description>In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: Settings, Family and Person. Creating the model classes The models that will be used in this application will derive from the ModelBase, ValidatableModelBase or SavableModelBase class of Catel. These classes enable support for change notifications, validations and persistence. The SavableModelBase adds additional methods to save and load from/to streams or files without having to create a serializer first.</description>
     </item>
     
     <item>
@@ -9624,7 +9624,7 @@ Adding additional logic to FamilyWindowViewModel The first thing we are going t
       
       <guid>http://docs.catelproject.com/vnext/getting-started/wpf/finalizing-the-application/</guid>
       <description>The application we have created so far is fully functional, but misses a bit of the &amp;ldquo;magic&amp;rdquo;. Below are some additional steps that might make your application more appealing and more user friendly. Of course you can go as far as you want by creating custom animations and such, but this guide focuses purely on making the basics more appealing.
-Adding validation Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from ModelBase).</description>
+Adding validation Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from ValidatableModelBase).</description>
     </item>
     
     <item>

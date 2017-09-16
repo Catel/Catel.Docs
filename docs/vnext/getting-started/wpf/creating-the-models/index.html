@@ -23977,7 +23977,7 @@
 
 <h2 id="creating-the-model-classes">Creating the model classes</h2>
 
-<p>The models that will be used in this application will derive from the *ModelBase* or <em>SavableModelBase</em> class of Catel. These classes enable support for change notifications, validations and persistence. The <em>SavableModelBase</em> adds additional methods to save and load from/to streams or files without having to create a serializer first.</p>
+<p>The models that will be used in this application will derive from the <code>ModelBase</code>, <code>ValidatableModelBase</code> or <code>SavableModelBase</code> class of Catel. These classes enable support for change notifications, validations and persistence. The <code>SavableModelBase</code> adds additional methods to save and load from/to streams or files without having to create a serializer first.</p>
 
 <p>To create the model classes, create the following classes in the <em>Models</em> folder.</p>
 
@@ -24005,7 +24005,7 @@
 {
     using Catel.Data;
 
-    public class Family : ModelBase
+    public class Family : ValidatableModelBase
     {
     }
 }
@@ -24017,7 +24017,7 @@
 {
     using Catel.Data;
 
-    public class Person : ModelBase
+    public class Person : ValidatableModelBase
     {
     }
 }
@@ -24025,7 +24025,7 @@
 
 <h2 id="adding-properties-to-the-models">Adding properties to the models</h2>
 
-<p>The next step is to add properties to the models. An important concept to understand is that Catel uses specific &ldquo;dependency-a-like&rdquo; properties in order to provide all the functionality in the <em>ModelBase</em> classes. Below are the properties per model that need to be registered.</p>
+<p>The next step is to add properties to the models. An important concept to understand is that Catel uses specific &ldquo;dependency-a-like&rdquo; properties in order to provide all the functionality in the <code>ModelBase</code> classes. Below are the properties per model that need to be registered.</p>
 
 <p>At first sight, these properties might look very overwhelming. Let&rsquo;s take a look at how the property system works. The most important thing is the actual property registration:</p>
 
@@ -24036,8 +24036,8 @@
 
 <ul>
 <li>Name =&gt; Persons</li>
-<li>Type =&gt; ObservableCollection&lt;Person&gt;</li>
-<li>DefaultValue =&gt; new ObservableCollection&lt;Person&gt;()</li>
+<li>Type =&gt; ObservableCollection<Person\></li>
+<li>DefaultValue =&gt; new ObservableCollection<Person\>()</li>
 </ul>
 
 <p>This will create a property in the property bag of the model. The next piece of the property is the actual wrapper around the property value which is managed by the property bag. The Catel properties always need a wrapper to be exposed to the &ldquo;outside world&rdquo; of the class.</p>
@@ -24049,7 +24049,7 @@
 }
 </code></pre>
 
-<div class="notices info" ><p>If you want to get the functionality in the <em>ModelBase</em> classes without the &ldquo;dependency-a-like&rdquo; properties you have the option to make use of normal properties and Catel.Fody.</p>
+<div class="notices info" ><p>If you want to get the functionality in the <code>ModelBase</code> classes without the &ldquo;dependency-a-like&rdquo; properties you have the option to make use of normal properties and Catel.Fody.</p>
 </div>
 
 
@@ -24079,7 +24079,7 @@
 
 <h3 id="family-class-1">Family class</h3>
 
-<pre><code>public class Family : ModelBase
+<pre><code>public class Family : ValidatableModelBase
 {
     /// &lt;summary&gt;
     /// Gets or sets the family name.
@@ -24118,7 +24118,7 @@
 
 <h3 id="person-class-1">Person class</h3>
 
-<pre><code>public class Person : ModelBase
+<pre><code>public class Person : ValidatableModelBase
 {
     /// &lt;summary&gt;
     /// Gets or sets the first name.
@@ -24155,14 +24155,17 @@
         {
             fullName += FirstName;
         }
+
         if (!string.IsNullOrEmpty(FirstName) &amp;&amp; !string.IsNullOrWhiteSpace(LastName))
         {
             fullName += &quot; &quot;;
         }
+
         if (!string.IsNullOrWhiteSpace(LastName))
         {
             fullName += LastName;
         }
+
         return fullName;
     }
 }

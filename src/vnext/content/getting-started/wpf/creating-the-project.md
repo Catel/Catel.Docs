@@ -20,7 +20,7 @@ Pick a good name, in our case *WPF.GettingStarted* and click OK. The template w
 
 ## Adding the NuGet packages
 
-As soon as the project is created, the *Readme.txt* will be opened and instruct your what to do. Right-click on the solution =\> *Manage NuGet packages... *Then search for *Catel.Extensions.Controls* and click *Install*.
+As soon as the project is created, the *Readme.txt* will be opened and instruct your what to do. Right-click on the solution =\> *Manage NuGet packages... *Then search for `Catel.MVVM` and click *Install*.
 
 ![](../../../images/getting-started/wpf/creating-the-project/nuget.png)
 
@@ -40,7 +40,7 @@ The `ViewModels` folder contains the `MainWindowViewModel`, which contains the l
 
 The `Views` folder contains the `MainWindow`, which represents the actual view.
 
-This structure ties to how Catel implements viewmodel location. You do not however have to follow this structure and could for example decide to place both the View and ViewModel under the same namespace/folder and implement a custom IViewModelLocator.
+This structure ties to how Catel implements viewmodel location. You do not however have to follow this structure and could for example decide to place both the View and ViewModel under the same namespace/folder and implement a custom `IViewModelLocator`.
 
 ## Up next
 

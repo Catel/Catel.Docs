@@ -4,7 +4,7 @@ description = ""
 weight = 40
 +++
 
-In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the *ViewModelBase* class
+In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the `ViewModelBase` class
 
 {{% notice tip %}}
 The *vm* code snippet is available to create view models. There is also an on-line item template available for Catel view models
@@ -12,7 +12,7 @@ The *vm* code snippet is available to create view models. There is also an on-li
 
 ## Creating the PersonViewModel
 
-Below is the class definition of the *PersonViewModel*. This view model will be used to show the details of a *Person* model.
+Below is the class definition of the `PersonViewModel`. This view model will be used to show the details of a `Person` model.
 
 ```
 namespace WPF.GettingStarted.ViewModels
@@ -57,7 +57,7 @@ public class PersonViewModel : ViewModelBase
 ```
 
 {{% notice info %}}
-Note that the *Person* property is decorated with the *Model* attribute. This automatically makes sure that if a view model is saved, the *IEditableObject.EndEdit* is called. When the view model is canceled, the *IEditableObject.CancelEdit* is called and all changes on the model will be reverted.
+Note that the `Person` property is decorated with the `Model` attribute. This automatically makes sure that if a view model is saved, the `IEditableObject.EndEdit` is called. When the view model is canceled, the `IEditableObject.CancelEdit` is called and all changes on the model will be reverted.
 {{% /notice %}}
 
 ### Exposing properties of a model
@@ -102,7 +102,7 @@ Note that the properties are decorated with the *ViewModelToModel* attribute whi
 
 ## Creating the FamilyViewModel
 
-The *FamilyViewModel* must be set up the same way as the *PersonViewModel* above.
+The `FamilyViewModel` must be set up the same way as the `PersonViewModel` above.
 
 ```
 namespace WPF.GettingStarted.ViewModels
@@ -131,6 +131,7 @@ namespace WPF.GettingStarted.ViewModels
             get { return GetValue<Family>(FamilyProperty); }
             private set { SetValue(FamilyProperty, value); }
         }
+
         /// <summary>
         /// Register the Family property so it is known in the class.
         /// </summary>
