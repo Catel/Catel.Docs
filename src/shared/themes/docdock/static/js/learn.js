@@ -192,7 +192,7 @@ jQuery(document).ready(function() {
                 clipInit = true;
             }
 
-            code.after('<span class="copy-to-clipboard" title="Copy to clipboard" />');
+            code.after('<span class="copy-to-clipboard" title="Copy to clipboard"><object class="clippy-icon" type="image/svg+xml" data="/images/clippy.svg"/></span>');
             code.next('.copy-to-clipboard').on('mouseleave', function() {
                 $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-s tooltipped-w');
             });
