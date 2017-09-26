@@ -145,6 +145,72 @@ public class ExceptionWatcher { private static readonly ILog Log = LogManager.Ge
     </item>
     
     <item>
+      <title>BindingEvaluator</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/bindingevaluator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/bindingevaluator/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class BindingEvaluator : FrameworkElement  Base types FrameworkElement
+Class to help evaluate bindings at runtime.
+Fields Constructors Properties </description>
+    </item>
+    
+    <item>
+      <title>BooleanToTextConverterMode</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/booleantotextconvertermode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/booleantotextconvertermode/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Converters   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal enum BooleanToTextConverterMode : Enum  Base types Enum
+Available modes for the BooleanToTextConverter.
+Fields </description>
+    </item>
+    
+    <item>
+      <title>BusinessWarningOrErrorInfo</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/businesswarningorerrorinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/businesswarningorerrorinfo/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class BusinessWarningOrErrorInfo  Information class about business warnings and errors.
+Constructors Properties Methods </description>
+    </item>
+    
+    <item>
+      <title>CacheStorageValueInfo</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/cachestoragevalueinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/cachestoragevalueinfo/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CacheStorageValueInfo&amp;amp;lt;TValue, TValue&amp;amp;gt;  Value info for the cache storage.
+Type Parameters TValue The value type.
+Fields _expirationPolicy _value Constructors Properties ExpirationPolicy Gets or sets the expiration policy.
+Methods </description>
+    </item>
+    
+    <item>
+      <title>CatelEventSource</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/cateleventsource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/cateleventsource/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class CatelEventSource : EventSource  Base types EventSource
+Fields Methods </description>
+    </item>
+    
+    <item>
+      <title>CatelLog</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/catellog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/catellog/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CatelLog : ICatelLog, Log  Base types Log
+Implements interfaces ICatelLog
+Logging class used internally for Catel.
+Constructors Properties </description>
+    </item>
+    
+    <item>
       <title>Caveats in UWP</title>
       <link>http://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-uwp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -163,6 +229,16 @@ Know caveats? Feel free to add them!</description>
       <description> The *IApiCop* is responsible for containing all the rules that are used inside a class. A class should contain only one *IApiCop* and one or more rules.
 Retrieving an IApiCop for a class To retrieve an IApiCop for a class, use the following code:
 private static readonly IApiCop = ApiCopManager.GetCurrentClassApiCop();  </description>
+    </item>
+    
+    <item>
+      <title>CoverageExcludeAttribute</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/coverageexcludeattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/coverageexcludeattribute/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CoverageExcludeAttribute : Attribute  Base types Attribute
+Use this to skip coverage for the method which is decorated with this attribute. Use with care! Do not put this attribute in a specific namespace.</description>
     </item>
     
     <item>
@@ -185,6 +261,16 @@ Creating the modifier To customize the serialization of a specific model type, o
     </item>
     
     <item>
+      <title>Dequeue</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/dequeue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/dequeue/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class Dequeue&amp;amp;lt;T&amp;amp;gt; : IList&amp;amp;lt;T&amp;amp;gt;  Base types IList
+A double-ended queue (Dequeue), which provides O(1) indexed access, O(1) removals from the front and back, amortized O(1) insertions to the front and back, and O(N) insertions and removals anywhere else (with the operations getting slower as the index approaches the middle).</description>
+    </item>
+    
+    <item>
       <title>DispatcherObservableObject</title>
       <link>http://docs.catelproject.com/vnext/catel-core/data-handling/dispatcherobservableobject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -193,6 +279,111 @@ Creating the modifier To customize the serialization of a specific model type, o
       <description>Note that the DispatcherObservableObject is located in Catel.MVVM because it uses the IDispatcherService
 The DispatcherObservableObject is a class that derives from the ObservableObject class. The only difference is that the DispatcherObservableObject will dispatch all property change notifications to the UI thread. Below is a class that uses the DispatcherObservableObject and is thread-safe for the change notifications.
 public class Person : DispatcherObservableObject { private string _firstName; private string _middleName; private string _lastName; public Person(string firstName, string middleName, string lastName) { FirstName = firstName; MiddleName = middleName; LastName = lastName; } public string FirstName { get { return _firstName; } set { RaisePropertyChanging(() =&amp;gt; FirstName); var oldValue = _firstName; _firstName = value; RaisePropertyChanged(() =&amp;gt; FirstName, oldValue, value); } } public string MiddleName { get { return _middleName; } set { RaisePropertyChanging(() =&amp;gt; MiddleName); var oldValue = _middleName; _middleName = value; RaisePropertyChanged(() =&amp;gt; MiddleName, oldValue, value); } } public string LastName { get { return _lastName; } set { RaisePropertyChanging(() =&amp;gt; LastName); var oldValue = _lastName; _lastName = value; RaisePropertyChanged(() =&amp;gt; LastName, oldValue, value); } } }  </description>
+    </item>
+    
+    <item>
+      <title>DragAdorner</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dragadorner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dragadorner/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal class DragAdorner : Adorner  Base types Adorner
+Handles the visual display of the item as it&amp;rsquo;s being dragged
+Fields _myAdornerLayer _myContentPresenter _myLeftOffset _myTopOffset Constructors Properties Methods </description>
+    </item>
+    
+    <item>
+      <title>DropAdorner</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dropadorner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dropadorner/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal class DropAdorner : Adorner  Base types Adorner
+Handles the visual indication of the drop point
+Fields _myAdornerLayer _myDrawHorizontal _myPen Constructors Properties Methods DetermineHorizontalLinePoints() DetermineVerticalLinePoints() </description>
+    </item>
+    
+    <item>
+      <title>EnumerableExtensions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/enumerableextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/enumerableextensions/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class EnumerableExtensions  Methods </description>
+    </item>
+    
+    <item>
+      <title>ExceptionInheritanceComparer</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/exceptioninheritancecomparer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/exceptioninheritancecomparer/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.ExceptionHandling   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ExceptionInheritanceComparer : IComparer&amp;amp;lt;Type&amp;amp;gt;  Base types IComparer
+Methods </description>
+    </item>
+    
+    <item>
+      <title>Exceptions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/exceptions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Properties   Available on .NET Framework 4.5, .NET Framework 4.6    internal class Exceptions  A strongly-typed resource class, for looking up localized strings, etc.
+Fields resourceCulture resourceMan Constructors Exceptions() Properties ArgumentMustBeOfTypeWindow Looks up a localized string similar to Argument must be of type Window.
+ArgumentMustImplementIViewModelInterface Looks up a localized string similar to The argument must implement IViewModel interface.</description>
+    </item>
+    
+    <item>
+      <title>Exceptions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/exceptions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Properties   Available on Portable Class Libraries    internal class Exceptions  A strongly-typed resource class, for looking up localized strings, etc.
+Fields resourceCulture resourceMan Constructors Exceptions() Properties ArgumentMustBeOfTypeWindow Looks up a localized string similar to Argument must be of type Window.
+ArgumentMustImplementIViewModelInterface Looks up a localized string similar to The argument must implement IViewModel interface.</description>
+    </item>
+    
+    <item>
+      <title>ExcludeReason</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/excludereason/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/excludereason/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal enum ExcludeReason : Enum  Base types Enum
+Use this enum to provide a valid reason for excluding coverage. Expand this enum if you encounter a new type of reason.
+Fields </description>
+    </item>
+    
+    <item>
+      <title>FieldWarningOrErrorInfo</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/fieldwarningorerrorinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/fieldwarningorerrorinfo/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class FieldWarningOrErrorInfo  Information class about field warnings and errors.
+Constructors Properties Methods </description>
+    </item>
+    
+    <item>
+      <title>HttpContextHelper</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/httpcontexthelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/httpcontexthelper/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6    internal static class HttpContextHelper  Http context helper class.
+Methods </description>
+    </item>
+    
+    <item>
+      <title>ICatelLog</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/icatellog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/icatellog/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal interface ICatelLog : ILog  Implements interfaces ILog
+Log interface used internally for Catel.
+Properties </description>
     </item>
     
     <item>
@@ -207,6 +398,15 @@ How to use events with MVVM? When writing MVVM, it&amp;rsquo;s &amp;ldquo;forbid
     </item>
     
     <item>
+      <title>ManagedViewModel</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/managedviewmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/managedviewmodel/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ManagedViewModel  Represents a managed view model. A managed view model is watched for property changes. As soon as a change occurs in one of the managed view models, all other interested view models are notified of the changes.</description>
+    </item>
+    
+    <item>
       <title>Message mediator</title>
       <link>http://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -215,6 +415,72 @@ How to use events with MVVM? When writing MVVM, it&amp;rsquo;s &amp;ldquo;forbid
       <description>Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.
 Registering to a message  To register a handler for a specific message type, in this case a string, use the following code:
 var mediator = ServiceLocator.Default.ResolveType&amp;lt;IMessageMediator&amp;gt;(); mediator.Register&amp;lt;string&amp;gt;(this, OnMessage);  Sending out a message  To send a message to all recipients, use the following code:</description>
+    </item>
+    
+    <item>
+      <title>MessagingCenter</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/messagingcenter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/messagingcenter/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Xamarin.Forms   Available on Portable Class Libraries    internal static class MessagingCenter  The Messaging Center Helper
+Methods Send(object sender, Type typeOfSender, string message, IArgumentsProxy argumentsProxy) Sends the specified type of sender.
+Parameters    Name Description     sender The sender.   typeOfSender The type of sender.   message The message.</description>
+    </item>
+    
+    <item>
+      <title>ModelErrorInfo</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelerrorinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelerrorinfo/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ModelErrorInfo  Class containing all the errors and warnings retrieved via and INotifyDataWarningInfo.
+Fields _businessRuleErrors Gets the business rule errors.
+_businessRuleWarnings Gets the business rule warnings.
+_fieldErrors Gets the field errors.</description>
+    </item>
+    
+    <item>
+      <title>ModelInfo</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelinfo/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ModelInfo  Class containing information about a specific model decorated with the ModelAttribute.
+Constructors Properties </description>
+    </item>
+    
+    <item>
+      <title>NotifyRangedCollectionChangedEventArgsExtensions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/notifyrangedcollectionchangedeventargsextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/notifyrangedcollectionchangedeventargsextensions/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class NotifyRangedCollectionChangedEventArgsExtensions  The NotifyRangedCollectionChangedEventArgs extensions methods.
+Methods </description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/resources/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Properties   Available on .NET Framework 4.5, .NET Framework 4.6    internal class Resources  A strongly-typed resource class, for looking up localized strings, etc.
+Fields resourceCulture resourceMan Constructors Resources() Properties Apply Looks up a localized string similar to Apply.
+Cancel Looks up a localized string similar to Cancel.
+Close Looks up a localized string similar to Close.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/resources/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Properties   Available on Portable Class Libraries    internal class Resources  A strongly-typed resource class, for looking up localized strings, etc.
+Fields resourceCulture resourceMan Constructors Resources() Properties Culture Overrides the current thread&amp;rsquo;s CurrentUICulture property for all resource lookups using this strongly typed resource class.
+ResourceManager Returns the cached ResourceManager instance used by this class.</description>
     </item>
     
     <item>
@@ -229,6 +495,40 @@ ApiCop.RegisterRule(new UnusedFeatureApiCopRule(&amp;quot;UserControlLogic.InfoB
     </item>
     
     <item>
+      <title>SuspensionContext</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontext/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class SuspensionContext&amp;amp;lt;T, T&amp;amp;gt;  Context class the hold all relevant data while notifications are suspended.
+Type Parameters T Type of the elements contained by the suspending collection.
+Fields _suspensionCount The suspension count.</description>
+    </item>
+    
+    <item>
+      <title>SuspensionContextExtensions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontextextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontextextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class SuspensionContextExtensions  The suspension context extensions.
+Methods CreateBashEvents&amp;lt;T&amp;gt;(SuspensionContext&amp;lt;T, T&amp;gt; suspensionContext, SuspensionMode suspensionMode) Creates the bash event args list.
+Type Parameters T The type of collection item.
+Parameters    Name Description     suspensionContext The suspension context.</description>
+    </item>
+    
+    <item>
+      <title>SuspensionModeExtensions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensionmodeextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensionmodeextensions/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class SuspensionModeExtensions  The suspension mode extensions.
+Fields MixedModes The mixed modes.
+Methods </description>
+    </item>
+    
+    <item>
       <title>TypeFactory</title>
       <link>http://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -237,6 +537,15 @@ ApiCop.RegisterRule(new UnusedFeatureApiCopRule(&amp;quot;UserControlLogic.InfoB
       <description>The TypeFactory is responsible for actually creating types inside Catel. It uses the following mechanism:
  List all the constructors, order them from most parameters to least parameters While (constructors available) try to construct type using injection If all constructors fail, the TypeFactory will fallback to Activator.CreateInstance()  Dependency injection The ServiceLocator in Catel supports dependency injection.
 Introduction to dependency injection Some people make dependency injection hard to understand, or maybe they don&amp;rsquo;t understand it themselves.</description>
+    </item>
+    
+    <item>
+      <title>UIHelpers</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/uihelpers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/uihelpers/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal static class UIHelpers  Methods GetVisualDescendents&amp;lt;T&amp;gt;(DependencyObject d) </description>
     </item>
     
     <item>
@@ -280,6 +589,61 @@ Shortly said, a view with the logic in the view base is defined like this:</desc
 Data annotations are validation when the specific property is set. For example, when a property FirstName is set, all the data annotations on the FirstName property are validated.
 Decorating properties with data annotations Decorating properties is very simple. For example, to make a property mandatory, use the following definition (note the Required attribute):
 /// &amp;lt;summary&amp;gt; /// Gets or sets the middle name.</description>
+    </item>
+    
+    <item>
+      <title>ValidationData</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/validationdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/validationdata/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class ValidationData  Class containing all validation info (thus warnings and errors) about a specific object.
+Constructors Properties Methods </description>
+    </item>
+    
+    <item>
+      <title>ViewModelMetadata</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/viewmodelmetadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/viewmodelmetadata/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewModelMetadata  Class containing meta data for a view model type.
+Constructors ViewModelMetadata(Type viewModelType, Dictionary&amp;lt;string, ModelInfo&amp;gt; models, Dictionary&amp;lt;string, ViewModelToModelMapping&amp;gt; mappings) Initializes a new instance of the ViewModelMetadata class.
+Parameters    Name Description     viewModelType Type of the view model.</description>
+    </item>
+    
+    <item>
+      <title>ViewToViewModelMapping</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmapping/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMapping  Holds the information for a view to viewmodel mapping. The information is based on the ViewToViewModelAttribute.
+Fields Log The log.
+Constructors Properties </description>
+    </item>
+    
+    <item>
+      <title>ViewToViewModelMappingContainer</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappingcontainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappingcontainer/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMappingContainer  Container class for ViewToViewModelMapping elements.
+Fields _viewModelToViewMappings Dictionary containing all the view model to view mappings.
+_viewToViewModelMappings Dictionary containing all the view to view model mappings.
+Log The log.</description>
+    </item>
+    
+    <item>
+      <title>ViewToViewModelMappingHelper</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappinghelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappinghelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMappingHelper  Helper class to fix ViewToViewModelMapping for IView.
+Fields _ignoredViewChanges List of properties in the view that should be ignored.
+_ignoredViewModelChanges List of properties in the view model that should be ignored.</description>
     </item>
     
     <item>

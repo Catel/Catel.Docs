@@ -1,5 +1,341 @@
 [
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/",
+	"title": "Catel",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     CoverageExcludeAttribute    ExcludeReason    HttpContextHelper     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/android/",
+	"title": "Catel.Android",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/android/app/",
+	"title": "Catel.Android.App",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/",
+	"title": "Catel.ApiCop",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/listeners/",
+	"title": "Catel.ApiCop.Listeners",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/rules/",
+	"title": "Catel.ApiCop.Rules",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/",
+	"title": "Catel.Caching",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     CacheStorageValueInfo     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/policies/",
+	"title": "Catel.Caching.Policies",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/",
+	"title": "Catel.Collections",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     NotifyRangedCollectionChangedEventArgsExtensions    SuspensionContext    SuspensionContextExtensions    SuspensionModeExtensions     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/componentmodel/",
+	"title": "Catel.ComponentModel",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/configuration/",
+	"title": "Catel.Configuration",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/core/",
+	"title": "Catel.Core",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/data/",
+	"title": "Catel.Data",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/",
+	"title": "Catel.ExceptionHandling",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     ExceptionInheritanceComparer     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/io/",
+	"title": "Catel.IO",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/ioc/",
+	"title": "Catel.IoC",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/",
+	"title": "Catel.Logging",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     CatelEventSource    CatelLog    ICatelLog     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/",
+	"title": "Catel.MVVM",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     ManagedViewModel    ModelErrorInfo    ModelInfo    ViewModelMetadata     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/auditing/",
+	"title": "Catel.MVVM.Auditing",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/",
+	"title": "Catel.MVVM.Converters",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     BooleanToTextConverterMode     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/navigation/",
+	"title": "Catel.MVVM.Navigation",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/",
+	"title": "Catel.MVVM.Properties",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     Exceptions    Resources     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/",
+	"title": "Catel.MVVM.Providers",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/tasks/",
+	"title": "Catel.MVVM.Tasks",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/",
+	"title": "Catel.MVVM.Views",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     ViewToViewModelMapping    ViewToViewModelMappingContainer    ViewToViewModelMappingHelper     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/messaging/",
+	"title": "Catel.Messaging",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/pooling/",
+	"title": "Catel.Pooling",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/",
+	"title": "Catel.Properties",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     Exceptions    Resources     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/reflection/",
+	"title": "Catel.Reflection",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/",
+	"title": "Catel.Runtime",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/",
+	"title": "Catel.Runtime.Serialization",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/binary/",
+	"title": "Catel.Runtime.Serialization.Binary",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/json/",
+	"title": "Catel.Runtime.Serialization.Json",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/xml/",
+	"title": "Catel.Runtime.Serialization.Xml",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/scoping/",
+	"title": "Catel.Scoping",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/services/",
+	"title": "Catel.Services",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/test/",
+	"title": "Catel.Test",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/text/",
+	"title": "Catel.Text",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/",
+	"title": "Catel.Threading",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     Dequeue     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/",
+	"title": "Catel.Windows",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/",
+	"title": "Catel.Windows.Controls",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     BusinessWarningOrErrorInfo    FieldWarningOrErrorInfo    ValidationData     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/",
+	"title": "Catel.Windows.Data",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     BindingEvaluator     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/input/",
+	"title": "Catel.Windows.Input",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/",
+	"title": "Catel.Windows.Interactivity",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/",
+	"title": "Catel.Windows.Interactivity.DragDropHelpers",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     DragAdorner    DropAdorner    EnumerableExtensions    UIHelpers     "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/markup/",
+	"title": "Catel.Windows.Markup",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/threading/",
+	"title": "Catel.Windows.Threading",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/",
+	"title": "Catel.Xamarin.Forms",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description     MessagingCenter     "
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-wpf/",
 	"title": "Caveats in WPF",
 	"tags": [],
@@ -105,6 +441,27 @@
 	"content": " By default, Catel only serializes the defined Catel properties on the ModelBase or any deriving classes. It is possible to customize this behavior. Below is a class which will be used in all examples:\npublic class MyModel : ModelBase { private string _fieldValue; public string RegularProperty { get; set; } public string CatelProperty { get { return GetValue\u0026lt;string\u0026gt;(CatelPropertyProperty); } set { SetValue(CatelPropertyProperty, value); } } public static readonly PropertyData CatelPropertyProperty = RegisterProperty(\u0026quot;CatelProperty\u0026quot;, typeof(string), null); }  Member name|Gets serialized -|- _fieldValue|false RegularProperty|false CatelProperty|true\nIncluding fields and properties using IncludeInSerialization attribute To include fields or regular properties on an object, use the following code:\npublic class MyModel : ModelBase { [IncludeInSerialization] private string _fieldValue; [IncludeInSerialization] public string RegularProperty { get; set; } public string CatelProperty { get { return GetValue\u0026lt;string\u0026gt;(CatelPropertyProperty); } set { SetValue(CatelPropertyProperty, value); } } public static readonly PropertyData CatelPropertyProperty = RegisterProperty(\u0026quot;CatelProperty\u0026quot;, typeof(string), null); }  Member name|Gets serialized -|- _fieldValue|true RegularProperty|true CatelProperty|true\nNote that private members can only be serialized in full .NET, not in limited platforms such as UWP\n\rExcluding fields and properties using ExcludeFromSerialization attribute To exclude Catel properties on an object, use the following code:\npublic class MyModel : ModelBase { private string _fieldValue; public string RegularProperty { get; set; } [ExcludeFromSerialization] public string CatelProperty { get { return GetValue\u0026lt;string\u0026gt;(CatelPropertyProperty); } set { SetValue(CatelPropertyProperty, value); } } public static readonly PropertyData CatelPropertyProperty = RegisterProperty(\u0026quot;CatelProperty\u0026quot;, typeof(string), null); }  Member name|Gets serialized -|- _fieldValue|false RegularProperty|false CatelProperty|false\nSerializing a ModelBase as collection There is a very edge case that a class derives from ModelBase, but also implements IList\u0026lt;T\u0026gt;. In this case, it\u0026rsquo;s hard for the serializers to determine what to do. By default, it will treat the model as a Catel model (since it can contain more properties than just the Items property. If such a class should be serialized as collection (meaning it will only serialize the Items property), decorate it with the SerializeAsCollection attribute:\n [SerializeAsCollection] public class MyModel : ModelBase, IList\u0026lt;int\u0026gt; { // implementation left out for readability }  Implementing a custom ISerializationManager Internally Catel uses a default implementation of the ISerializationManager to determine what members of a type should be serialized. It is possible to customize this behavior by overriding a single method or by creating a brand new type. Below is an example which always excludes Password properties and fields from serialization.\npublic class SafeSerializationManager : SerializationManager { public override HashSet\u0026lt;string\u0026gt; GetFieldsToSerialize(Type type) { var fieldsList = new List\u0026lt;string\u0026gt;(base.GetFieldsToSerialize(type)); for (int i = 0; i \u0026lt; fieldsList.Count; i++) { if (string.Equals(fieldsList[i], \u0026quot;_password\u0026quot;)) { fieldsList.RemoveAt(i--); } } return new HashSet\u0026lt;string\u0026gt;(fieldsList); } public override HashSet\u0026lt;string\u0026gt; GetPropertiesToSerialize(Type type) { var propertiesList = new List\u0026lt;string\u0026gt;(base.GetPropertiesToSerialize(type)); for (int i = 0; i \u0026lt; propertiesList.Count; i++) { if (string.Equals(propertiesList[i], \u0026quot;Password\u0026quot;)) { propertiesList.RemoveAt(i--); } } return new HashSet\u0026lt;string\u0026gt;(propertiesList); } }  Don\u0026rsquo;t forget to register it in the ServiceLocator as well:\nvar serviceLocator = ServiceLocator.Default; serviceLocator.RegisterType\u0026lt;ISerializationManager, SafeSerializationManager\u0026gt;();  "
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/componentmodel/",
+	"title": "System.ComponentModel",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/",
+	"title": "System.Reflection",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/system/windows/",
+	"title": "System.Windows",
+	"tags": [],
+	"description": "",
+	"content": "   Type Description      "
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/",
 	"title": "Using attributes",
 	"tags": [],
@@ -140,6 +497,48 @@
 	"content": "\r\rUsing attributes\rUsing conventions\r\r"
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/bindingevaluator/",
+	"title": "BindingEvaluator",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class BindingEvaluator : FrameworkElement  Base types FrameworkElement\nClass to help evaluate bindings at runtime.\nFields Constructors Properties "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/booleantotextconvertermode/",
+	"title": "BooleanToTextConverterMode",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Converters   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal enum BooleanToTextConverterMode : Enum  Base types Enum\nAvailable modes for the BooleanToTextConverter.\nFields "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/businesswarningorerrorinfo/",
+	"title": "BusinessWarningOrErrorInfo",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class BusinessWarningOrErrorInfo  Information class about business warnings and errors.\nConstructors Properties Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/cachestoragevalueinfo/",
+	"title": "CacheStorageValueInfo",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CacheStorageValueInfo\u0026amp;lt;TValue, TValue\u0026amp;gt;  Value info for the cache storage.\nType Parameters TValue The value type.\nFields _expirationPolicy _value Constructors Properties ExpirationPolicy Gets or sets the expiration policy.\nMethods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/cateleventsource/",
+	"title": "CatelEventSource",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class CatelEventSource : EventSource  Base types EventSource\nFields Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/catellog/",
+	"title": "CatelLog",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CatelLog : ICatelLog, Log  Base types Log\nImplements interfaces ICatelLog\nLogging class used internally for Catel.\nConstructors Properties "
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-uwp/",
 	"title": "Caveats in UWP",
 	"tags": [],
@@ -152,6 +551,13 @@
 	"tags": [],
 	"description": "",
 	"content": " The *IApiCop* is responsible for containing all the rules that are used inside a class. A class should contain only one *IApiCop* and one or more rules.\nRetrieving an IApiCop for a class To retrieve an IApiCop for a class, use the following code:\nprivate static readonly IApiCop = ApiCopManager.GetCurrentClassApiCop();  "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/coverageexcludeattribute/",
+	"title": "CoverageExcludeAttribute",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class CoverageExcludeAttribute : Attribute  Base types Attribute\nUse this to skip coverage for the method which is decorated with this attribute. Use with care! Do not put this attribute in a specific namespace.\nFields _reason Reason why the object is excluded from coverage.\nConstructors Methods "
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/",
@@ -175,11 +581,67 @@
 	"content": " Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the IncludeInSerialization and ExcludeFromSerialization attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the ISerializerModifier.\nCreating the modifier To customize the serialization of a specific model type, one needs to implement the ISerializerModifier interface. The example belows shows how to encrypt the Password property on the Person model class.\npublic class PersonSerializerModifier : SerializerModifierBase\u0026lt;Person\u0026gt; { public override void SerializeMember(ISerializationContext context, MemberValue memberValue) { if (string.Equals(memberValue.Name, \u0026quot;Password\u0026quot;)) { memberValue.Value = EncryptionHelper.Encrypt(memberValue.Value); } } public override void DeserializeMember(ISerializationContext context, MemberValue memberValue) { if (string.Equals(memberValue.Name, \u0026quot;Password\u0026quot;)) { memberValue.Value = EncryptionHelper.Decrypt(memberValue.Value); } } }  Registering the modifier To register a modifier for a specific class, define the SerializerModifier attribute:\n[SerializerModifier(typeof(PersonSerializerModifier))] public class Person : ModelBase { // .. class contents }  Note that modifiers are inherited from base classes. When serializing, the modifiers defined on the most derived classes will be called last. When deserializing, the modifies defined on the most derived classes will be called first.\n\r"
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/dequeue/",
+	"title": "Dequeue",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class Dequeue\u0026amp;lt;T\u0026amp;gt; : IList\u0026amp;lt;T\u0026amp;gt;  Base types IList\nA double-ended queue (Dequeue), which provides O(1) indexed access, O(1) removals from the front and back, amortized O(1) insertions to the front and back, and O(N) insertions and removals anywhere else (with the operations getting slower as the index approaches the middle).\nType Parameters T The type of elements contained in the Dequeue.\nRemarks This code originally comes from AsyncEx: https://github.com/StephenCleary/AsyncEx\nFields buffer The circular buffer that holds the view.\nDefaultCapacity The default capacity.\noffset The offset into buffer where the view begins.\nConstructors Properties ICollection\u0026lt;T\u0026gt;.IsReadOnly Gets a value indicating whether this list is read-only. This implementation always returnsfalse.\nReturns true if this list is read-only; otherwise, false.\nIsEmpty Gets a value indicating whether this instance is empty.\nIsFull Gets a value indicating whether this instance is at full capacity.\nIsSplit Gets a value indicating whether the buffer is \u0026ldquo;split\u0026rdquo; (meaning the beginning of the view is at a later index in buffer than the end).\nSystem.Collections.ICollection.IsSynchronized System.Collections.ICollection.SyncRoot System.Collections.IList.IsFixedSize System.Collections.IList.IsReadOnly System.Collections.IList.this[] Methods CheckExistingIndexArgument(int sourceLength, int index) Checks the index argument to see if it refers to an existing element in a source of a given length.\nParameters    Name Description     sourceLength The length of the source. This parameter is not checked for validity.   index The index into the source.    Exceptions    Name Description     ArgumentOutOfRangeException index is not a valid index to an existing element for the source.    CheckNewIndexArgument(int sourceLength, int index) Checks the index argument to see if it refers to a valid insertion point in a source of a given length.\nParameters    Name Description     sourceLength The length of the source. This parameter is not checked for validity.   index The index into the source.    Exceptions    Name Description     ArgumentOutOfRangeException index is not a valid index to an insertion point for the source.    CheckRangeArguments(int sourceLength, int offset, int count) Checks the offset and count arguments for validity when applied to a source of a given length. Allows 0-element ranges, including a 0-element range at the end of the source.\nParameters    Name Description     sourceLength The length of the source. This parameter is not checked for validity.   offset The index into source at which the range begins.   count The number of elements in the range.    Exceptions    Name Description     ArgumentOutOfRangeException Either offset or count is less than 0.   ArgumentException The range [offset, offset + count) is not within the range [0, sourceLength).    DequeueIndexToBufferIndex(int index) Applies the offset to index, resulting in a buffer index.\nParameters    Name Description     index The Dequeue index.    Returns The buffer index.\nDoAddToBack(T value) Inserts a single element to the back of the view. IsFull must be false when this method is called.\nParameters    Name Description     value The element to insert.    DoAddToFront(T value) Inserts a single element to the front of the view. IsFull must be false when this method is called.\nParameters    Name Description     value The element to insert.    DoGetItem(int index) Gets an element at the specified view index.\nParameters    Name Description     index The zero-based view index of the element to get. This index is guaranteed to be valid.    Returns The element at the specified index.\nDoInsert(int index, T item) Inserts an element at the specified view index.\nParameters    Name Description     index The zero-based view index at which the element should be inserted. This index is guaranteed to be valid.   item The element to store in the list.    DoInsertRange(int index, IEnumerable\u0026lt;T\u0026gt; collection, int collectionCount) Inserts a range of elements into the view.\nParameters    Name Description     index The index into the view at which the elements are to be inserted.   collection The elements to insert.   collectionCount The number of elements in collection. Must be greater than zero, and the sum of collectionCount and Count must be less than or equal to Capacity.    DoRemoveAt(int index) Removes an element at the specified view index.\nParameters    Name Description     index The zero-based view index of the element to remove. This index is guaranteed to be valid.    DoRemoveFromBack() Removes and returns the last element in the view. IsEmpty must be false when this method is called.\nReturns The former last element.\nDoRemoveFromFront() Removes and returns the first element in the view. IsEmpty must be false when this method is called.\nReturns The former first element.\nDoRemoveRange(int index, int collectionCount) Removes a range of elements from the view.\nParameters    Name Description     index The index into the view at which the range begins.   collectionCount The number of elements in the range. This must be greater than 0 and less than or equal to Count.    DoSetItem(int index, T item) Sets an element at the specified view index.\nParameters    Name Description     index The zero-based view index of the element to get. This index is guaranteed to be valid.   item The element to store in the list.    EnsureCapacityForOneElement() Doubles the capacity if necessary to make room for one more element. When this method returns, IsFull is false.\nPostIncrement(int value) Increments offset by value using modulo- Capacity arithmetic.\nParameters    Name Description     value The value by which to increase offset. May not be negative.    Returns The value of offset after it was incremented.\nPreDecrement(int value) Decrements offset by value using modulo- Capacity arithmetic.\nParameters    Name Description     value The value by which to reduce offset. May not be negative or greater than Capacity.    Returns The value of offset before it was decremented.\n"
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-core/data-handling/dispatcherobservableobject/",
 	"title": "DispatcherObservableObject",
 	"tags": [],
 	"description": "",
 	"content": "Note that the DispatcherObservableObject is located in Catel.MVVM because it uses the IDispatcherService\n\rThe DispatcherObservableObject is a class that derives from the ObservableObject class. The only difference is that the DispatcherObservableObject will dispatch all property change notifications to the UI thread. Below is a class that uses the DispatcherObservableObject and is thread-safe for the change notifications.\npublic class Person : DispatcherObservableObject { private string _firstName; private string _middleName; private string _lastName; public Person(string firstName, string middleName, string lastName) { FirstName = firstName; MiddleName = middleName; LastName = lastName; } public string FirstName { get { return _firstName; } set { RaisePropertyChanging(() =\u0026gt; FirstName); var oldValue = _firstName; _firstName = value; RaisePropertyChanged(() =\u0026gt; FirstName, oldValue, value); } } public string MiddleName { get { return _middleName; } set { RaisePropertyChanging(() =\u0026gt; MiddleName); var oldValue = _middleName; _middleName = value; RaisePropertyChanged(() =\u0026gt; MiddleName, oldValue, value); } } public string LastName { get { return _lastName; } set { RaisePropertyChanging(() =\u0026gt; LastName); var oldValue = _lastName; _lastName = value; RaisePropertyChanged(() =\u0026gt; LastName, oldValue, value); } } }  "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dragadorner/",
+	"title": "DragAdorner",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal class DragAdorner : Adorner  Base types Adorner\nHandles the visual display of the item as it\u0026rsquo;s being dragged\nFields _myAdornerLayer _myContentPresenter _myLeftOffset _myTopOffset Constructors Properties Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dropadorner/",
+	"title": "DropAdorner",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal class DropAdorner : Adorner  Base types Adorner\nHandles the visual indication of the drop point\nFields _myAdornerLayer _myDrawHorizontal _myPen Constructors Properties Methods DetermineHorizontalLinePoints() DetermineVerticalLinePoints() "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/enumerableextensions/",
+	"title": "EnumerableExtensions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class EnumerableExtensions  Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/exceptioninheritancecomparer/",
+	"title": "ExceptionInheritanceComparer",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.ExceptionHandling   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ExceptionInheritanceComparer : IComparer\u0026amp;lt;Type\u0026amp;gt;  Base types IComparer\nMethods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/exceptions/",
+	"title": "Exceptions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Properties   Available on .NET Framework 4.5, .NET Framework 4.6    internal class Exceptions  A strongly-typed resource class, for looking up localized strings, etc.\nFields resourceCulture resourceMan Constructors Exceptions() Properties ArgumentMustBeOfTypeWindow Looks up a localized string similar to Argument must be of type Window.\nArgumentMustImplementIViewModelInterface Looks up a localized string similar to The argument must implement IViewModel interface.\nControlTemplateMustContainPart Looks up a localized string similar to Control template must contain part \u0026lsquo;{0}\u0026rsquo;.\nCulture Overrides the current thread\u0026rsquo;s CurrentUICulture property for all resource lookups using this strongly typed resource class.\nDataWindowButtonCanOnlyBeAddedWhenWindowIsNotLoaded Looks up a localized string similar to DataWindowButtons can only be added when the window is not yet loaded.\nFailedToConfigureIoCContainer Looks up a localized string similar to Failed to configure IoC container.\nInvalidViewModel Looks up a localized string similar to Invalid or no view model.\nModelNotRegistered Looks up a localized string similar to There is no model \u0026lsquo;{0}\u0026rsquo; registered with the model attribute, so the ViewModelToModel attribute on property \u0026lsquo;{1}\u0026rsquo; is invalid. Make sure that the property is a Catel property, not a regular property. If you are sure that you have a model with this name, make sure it\u0026rsquo;s public instead of private or protected for Silverlight and WP7 because non-public reflection is not allowed in Silverlight..\nNoExpectedResultsInQueueForUnitTest Looks up a localized string similar to No expected results in the queue, set up expected result first.\nPageNotRegistered Looks up a localized string similar to There is no page registered as \u0026lsquo;{0}\u0026rsquo;.\nPropertyNotFoundInModel Looks up a localized string similar to Mapped viewmodel property \u0026lsquo;{0}\u0026rsquo; to model property \u0026lsquo;{1}\u0026rsquo; is invalid because property \u0026lsquo;{1}\u0026rsquo; is not found on the model \u0026lsquo;{2}\u0026rsquo;\u0026lt;/value\u0026gt; \u0026lt;comment\u0026gt;{0} = view model property name {1} = model property name {2} = model name.\nResourceManager Returns the cached ResourceManager instance used by this class.\nViewModelAlreadyRegistered Looks up a localized string similar to View model already registered.\nViewModelContainerMustBeOfTypeDependencyObject Looks up a localized string similar to The viewModelContainer must be of type DependencyObject.\nViewModelNotRegistered Looks up a localized string similar to The view model of type \u0026lsquo;{0}\u0026rsquo; is not registered thus cannot be used in this context.\nVisibilityIsNotAllowedForConverter Looks up a localized string similar to Visibility.Visible is not possible as not-visible option.\nWindowNotRegistered Looks up a localized string similar to There is no window registered as \u0026lsquo;{0}\u0026rsquo;.\nWrongViewModelType Looks up a localized string similar to The view model is of the wrong type. Expected \u0026lsquo;{0}\u0026rsquo;, but type is \u0026lsquo;{1}\u0026rsquo;.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/exceptions/",
+	"title": "Exceptions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Properties   Available on Portable Class Libraries    internal class Exceptions  A strongly-typed resource class, for looking up localized strings, etc.\nFields resourceCulture resourceMan Constructors Exceptions() Properties ArgumentMustBeOfTypeWindow Looks up a localized string similar to Argument must be of type Window.\nArgumentMustImplementIViewModelInterface Looks up a localized string similar to The argument must implement IViewModel interface.\nControlTemplateMustContainPart Looks up a localized string similar to Control template must contain part \u0026lsquo;{0}\u0026rsquo;.\nCulture Overrides the current thread\u0026rsquo;s CurrentUICulture property for all resource lookups using this strongly typed resource class.\nDataWindowButtonCanOnlyBeAddedWhenWindowIsNotLoaded Looks up a localized string similar to DataWindowButtons can only be added when the window is not yet loaded.\nFailedToConfigureIoCContainer Looks up a localized string similar to Failed to configure IoC container.\nInvalidViewModel Looks up a localized string similar to Invalid or no view model.\nModelNotRegistered Looks up a localized string similar to There is no model \u0026lsquo;{0}\u0026rsquo; registered with the model attribute, so the ViewModelToModel attribute on property \u0026lsquo;{1}\u0026rsquo; is invalid. Make sure that the property is a Catel property, not a regular property. If you are sure that you have a model with this name, make sure it\u0026rsquo;s public instead of private or protected for Silverlight and WP7 because non-public reflection is not allowed in Silverlight..\nNoExpectedResultsInQueueForUnitTest Looks up a localized string similar to No expected results in the queue, set up expected result first.\nPageNotRegistered Looks up a localized string similar to There is no page registered as \u0026lsquo;{0}\u0026rsquo;.\nPropertyNotFoundInModel Looks up a localized string similar to Mapped viewmodel property \u0026lsquo;{0}\u0026rsquo; to model property \u0026lsquo;{1}\u0026rsquo; is invalid because property \u0026lsquo;{1}\u0026rsquo; is not found on the model \u0026lsquo;{2}\u0026rsquo;\u0026lt;/value\u0026gt; \u0026lt;comment\u0026gt;{0} = view model property name {1} = model property name {2} = model name.\nResourceManager Returns the cached ResourceManager instance used by this class.\nViewModelAlreadyRegistered Looks up a localized string similar to View model already registered.\nViewModelContainerMustBeOfTypeDependencyObject Looks up a localized string similar to The viewModelContainer must be of type DependencyObject.\nViewModelNotRegistered Looks up a localized string similar to The view model of type \u0026lsquo;{0}\u0026rsquo; is not registered thus cannot be used in this context.\nVisibilityIsNotAllowedForConverter Looks up a localized string similar to Visibility.Visible is not possible as not-visible option.\nWindowNotRegistered Looks up a localized string similar to There is no window registered as \u0026lsquo;{0}\u0026rsquo;.\nWrongViewModelType Looks up a localized string similar to The view model is of the wrong type. Expected \u0026lsquo;{0}\u0026rsquo;, but type is \u0026lsquo;{1}\u0026rsquo;.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/excludereason/",
+	"title": "ExcludeReason",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal enum ExcludeReason : Enum  Base types Enum\nUse this enum to provide a valid reason for excluding coverage. Expand this enum if you encounter a new type of reason.\nFields "
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/faq/",
@@ -189,11 +651,32 @@
 	"content": "\r\rGeneral\rMVVM\rProblem solving\rPerformance considerations\r\r"
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/fieldwarningorerrorinfo/",
+	"title": "FieldWarningOrErrorInfo",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class FieldWarningOrErrorInfo  Information class about field warnings and errors.\nConstructors Properties Methods "
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/getting-started/wpf/",
 	"title": "Getting started with WPF",
 	"tags": [],
 	"description": "",
 	"content": "Welcome to the Getting started guide for Catel and WPF. In this guide, a very simple application will be created with the most commonly used aspects of Catel and WPF.\nThe application will manage family members and will display the families in separate views.\nNote that this guide assumes that the reader has a basic understanding of XAML and WPF since this guide will not cover these basics\n\rThe source code for this example can be found at https://github.com/Catel/Catel.GettingStarted.WPF\n\rNote that this guide will recommend code snippets that can be found here. They are not required, just recommended to speed up creating Catel classes and properties.\n\r\rCreating the WPF project\rCreating the models\rSerializing data from/to disk\rCreating the view models\rCreating the views (user controls)\rCreating the views (windows)\rHooking up everything together\rFinalizing the application\r\rDownload the final result: WPF.GettingStarted.zip\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/httpcontexthelper/",
+	"title": "HttpContextHelper",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel   Available on .NET Framework 4.5, .NET Framework 4.6    internal static class HttpContextHelper  Http context helper class.\nMethods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/icatellog/",
+	"title": "ICatelLog",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Logging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal interface ICatelLog : ILog  Implements interfaces ILog\nLog interface used internally for Catel.\nProperties "
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/",
@@ -217,11 +700,60 @@
 	"content": " How to support example data with view models? To find out how to create design time data, see the designerstopic.\nHow to use events with MVVM? When writing MVVM, it\u0026rsquo;s \u0026ldquo;forbidden\u0026rdquo; (read: not a best practice) to use click handlers (or other UI events) in your view-model. But then should you react to events?\n Start with creating a command like you are used to using MVVM. This command will be executed when the event occurs. Add a reference to System.Windows.Interactivity.dll (ships with Catel). If you have used NuGet to add a reference, it is automatically included for you. Add the following namespace definitions to your view declaration:\nxmlns:i=\u0026quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity\u0026quot; xmlns:catel=\u0026quot;http://schemas.catelproject.com\u0026quot;  Use the following code to convert an event to a command:\n\u0026lt;i:Interaction.Triggers\u0026gt; \u0026lt;i:EventTrigger EventName=\u0026quot;[YourEvent]\u0026quot;\u0026gt; \u0026lt;catel:EventToCommand Command=\u0026quot;{Binding [YourCommand]}\u0026quot; DisableAssociatedObjectOnCannotExecute=\u0026quot;False\u0026quot; /\u0026gt; \u0026lt;/i:EventTrigger\u0026gt; \u0026lt;/i:Interaction.Triggers\u0026gt;   An example for a *ListBox *double click:\n\u0026lt;ListBox ItemsSource=\u0026quot;{Binding PersonCollection}\u0026quot; SelectedItem=\u0026quot;{Binding SelectedPerson}\u0026quot;\u0026gt; \u0026lt;i:Interaction.Triggers\u0026gt; \u0026lt;i:EventTrigger EventName=\u0026quot;MouseDoubleClick\u0026quot;\u0026gt; \u0026lt;catel:EventToCommand Command=\u0026quot;{Binding Edit}\u0026quot; DisableAssociatedObjectOnCannotExecute=\u0026quot;False\u0026quot; /\u0026gt; \u0026lt;/i:EventTrigger\u0026gt; \u0026lt;/i:Interaction.Triggers\u0026gt; \u0026lt;ListBox.ItemTemplate\u0026gt; \u0026lt;DataTemplate\u0026gt; \u0026lt;StackPanel Orientation=\u0026quot;Horizontal\u0026quot;\u0026gt; \u0026lt;Label Content=\u0026quot;{Binding FirstName}\u0026quot; /\u0026gt; \u0026lt;Label Content=\u0026quot;{Binding MiddleName}\u0026quot; /\u0026gt; \u0026lt;Label Content=\u0026quot;{Binding LastName}\u0026quot; /\u0026gt; \u0026lt;/StackPanel\u0026gt; \u0026lt;/DataTemplate\u0026gt; \u0026lt;/ListBox.ItemTemplate\u0026gt; \u0026lt;/ListBox\u0026gt;  How can I add the MVVM behaviors via code (programmatically)? Below is the code-behind of a view that adds the UserControlBehavior via code:\npublic partial class DynamicBehaviorView : UserControl, IViewModelContainer { private Catel.Windows.Controls.MVVMProviders.UserControlBehavior _mvvmBehavior; /// \u0026lt;summary\u0026gt; /// Initializes a new instance of the \u0026lt;see cref=\u0026quot;DynamicBehaviorView\u0026quot;/\u0026gt; class. /// \u0026lt;/summary\u0026gt; public DynamicBehaviorView() { InitializeComponent(); _mvvmBehavior = new Catel.Windows.Controls.MVVMProviders.UserControlBehavior(); _mvvmBehavior.ViewModelType = typeof(ViewModels.MyViewModel); System.Windows.Interactivity.Interaction.GetBehaviors(this).Add(_mvvmBehavior); _mvvmBehavior.ViewModelChanged += (sender, e) =\u0026gt; ViewModelChanged.SafeInvoke(this, e); _mvvmBehavior.ViewModelPropertyChanged += (sender, e) =\u0026gt; ViewModelPropertyChanged.SafeInvoke(this, e); } /// \u0026lt;summary\u0026gt; /// Gets the view model that is contained by the container. /// \u0026lt;/summary\u0026gt; /// \u0026lt;value\u0026gt;The view model.\u0026lt;/value\u0026gt; public IViewModel ViewModel { get { return _mvvmBehavior.ViewModel; } } /// \u0026lt;summary\u0026gt; /// Occurs when the \u0026lt;see cref=\u0026quot;ViewModel\u0026quot;/\u0026gt; property has changed. /// \u0026lt;/summary\u0026gt; public event EventHandler\u0026lt;EventArgs\u0026gt; ViewModelChanged; /// \u0026lt;summary\u0026gt; /// Occurs when a property on the \u0026lt;see cref=\u0026quot;ViewModel\u0026quot;/\u0026gt; has changed. /// \u0026lt;/summary\u0026gt; public event EventHandler\u0026lt;PropertyChangedEventArgs\u0026gt; ViewModelPropertyChanged; /// \u0026lt;summary\u0026gt; /// Occurs when a property on the container has changed. /// \u0026lt;/summary\u0026gt; /// \u0026lt;remarks\u0026gt; /// This event makes it possible to externally subscribe to property changes of a \u0026lt;see cref=\u0026quot;DependencyObject\u0026quot;/\u0026gt; /// (mostly the container of a view model) because the .NET Framework does not allows us to. /// \u0026lt;/remarks\u0026gt; public event EventHandler\u0026lt;PropertyChangedEventArgs\u0026gt; PropertyChanged; /// \u0026lt;summary\u0026gt; /// Invoked whenever the effective value of any dependency property on this \u0026lt;see cref=\u0026quot;T:System.Windows.FrameworkElement\u0026quot;/\u0026gt; has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides \u0026lt;see cref=\u0026quot;M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)\u0026quot;/\u0026gt;. /// \u0026lt;/summary\u0026gt; /// \u0026lt;param name=\u0026quot;e\u0026quot;\u0026gt;The event data that describes the property that changed, as well as old and new values.\u0026lt;/param\u0026gt; protected override void OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs e) { base.OnPropertyChanged(e); PropertyChanged.SafeInvoke(this, new PropertyChangedEventArgs(e.Property.Name)); } }  Using this technique, it is even possible to determine the view model of any view dynamically at runtime.\nHow can I inject or manipulate the view model of a UserControl? The UserControl is a very powerful control. It allows lazy loaded dynamic view model construction. However, sometimes you just don\u0026rsquo;t want the user control to dynamically create the view model. Luckily, the user control instantiates a new view model with this logic:\n The DataContext of the control can be injected into a constructor of the view model The view model has an empty constructor   You can set the DataContext of the control to a view model, and this way \u0026ldquo;inject\u0026rdquo; a view model into a control instead of letting it be created first. In fact, the user control first checks whether the DataContext is already a valid view model for the user control. If so, it keeps it that way.\nHow can I prevent validation of required fields? Catel does not validate the properties with data annotations at startup. It will only validate the data annotations when properties change or when the view model is about to be saved. This is implemented this way to allow a developer to show required fields with an asterisk (*) instead of errors. If a developer still wants to initially display errors, only a single call has to be made in the constructor:\nValidate(true, false);  If the validation is implemented in the models and not in the view model, set the ValidateModelsOnInitialization to false.\n "
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/managedviewmodel/",
+	"title": "ManagedViewModel",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ManagedViewModel  Represents a managed view model. A managed view model is watched for property changes. As soon as a change occurs in one of the managed view models, all other interested view models are notified of the changes.\nFields _lock Lock object.\n_viewModelInstances List of alive view model instances.\nLog The ILog object.\nConstructors Properties Methods Clear() Clears all the currently registered view models.\nRemarks This method should only be called during unit testing.\n"
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/",
 	"title": "Message mediator",
 	"tags": [],
 	"description": "",
 	"content": " Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.\nRegistering to a message  To register a handler for a specific message type, in this case a string, use the following code:\nvar mediator = ServiceLocator.Default.ResolveType\u0026lt;IMessageMediator\u0026gt;(); mediator.Register\u0026lt;string\u0026gt;(this, OnMessage);  Sending out a message  To send a message to all recipients, use the following code:\nvar mediator = ServiceLocator.Default.ResolveType\u0026lt;IMessageMediator\u0026gt;(); mediator.SendMessage\u0026lt;string\u0026gt;(\u0026quot;message\u0026quot;);  Sending out a message with a tag  Sometimes, you want to send messages only based on a tag. For example, you want to let other view models know that you just added a person. All recipients that registered to the string message type with the Person tag will receive the message:\nvar mediator = ServiceLocator.Default.ResolveType\u0026lt;IMessageMediator\u0026gt;(); mediator.SendMessage\u0026lt;string\u0026gt;(\u0026quot;Person added\u0026quot;, \u0026quot;Person\u0026quot;);  "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/messagingcenter/",
+	"title": "MessagingCenter",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Xamarin.Forms   Available on Portable Class Libraries    internal static class MessagingCenter  The Messaging Center Helper\nMethods Send(object sender, Type typeOfSender, string message, IArgumentsProxy argumentsProxy) Sends the specified type of sender.\nParameters    Name Description     sender The sender.   typeOfSender The type of sender.   message The message.   argumentsProxy The arguments proxy.    Returns System.Threading.Tasks.TaskCompletionSource\u0026lt;System.Boolean\u0026gt;.\nExceptions    Name Description     System.ArgumentNullException The typeOfSender isnull.    SendAlert(Page sender, IArgumentsProxy arguments) Sends the alert.\nParameters    Name Description     sender The sender.   arguments The arguments.    Returns System.Threading.Tasks.TaskCompletionSource\u0026lt;System.Boolean\u0026gt;.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelerrorinfo/",
+	"title": "ModelErrorInfo",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ModelErrorInfo  Class containing all the errors and warnings retrieved via and INotifyDataWarningInfo.\nFields _businessRuleErrors Gets the business rule errors.\n_businessRuleWarnings Gets the business rule warnings.\n_fieldErrors Gets the field errors.\n_fieldWarnings Gets the field warnings.\n_initialErrorFields List of field that were initialized with an error.\n_model Constructors Events Methods GetValidationString(object obj) Gets the validation string from the object. This method supports the following types: * string * ValidationResult\nParameters    Name Description     obj The object to convert to a string.    Returns The string retrieved from the object ornull if the object is not supported.\nHandleBusinessRuleErrors(IEnumerable errors) Handles the business rule errors.\nParameters    Name Description     errors The errors.    HandleBusinessRuleWarnings(IEnumerable warnings) Handles the business rule warnings.\nParameters    Name Description     warnings The warnings.    HandleFieldErrors(string propertyName, IEnumerable errors) Handles the field errors.\nParameters    Name Description     propertyName Name of the property.   errors The errors.    HandleFieldWarnings(string propertyName, IEnumerable warnings) Handles the field warnings.\nParameters    Name Description     propertyName Name of the property.   warnings The warnings.    OnModelErrorsChanged(object sender, DataErrorsChangedEventArgs e) Called when the errors on the model have changed.\nParameters    Name Description     sender The sender.   e The instance containing the event data.    OnModelPropertyChanged(object sender, PropertyChangedEventArgs e) Called when a property on the model has changed.\nParameters    Name Description     sender The sender.   e The instance containing the event data.    OnModelWarningsChanged(object sender, DataErrorsChangedEventArgs e) Called when the warnings on the model have changed.\nParameters    Name Description     sender The sender.   e The instance containing the event data.    "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelinfo/",
+	"title": "ModelInfo",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ModelInfo  Class containing information about a specific model decorated with the ModelAttribute.\nConstructors Properties "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/notifyrangedcollectionchangedeventargsextensions/",
+	"title": "NotifyRangedCollectionChangedEventArgsExtensions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class NotifyRangedCollectionChangedEventArgsExtensions  The NotifyRangedCollectionChangedEventArgs extensions methods.\nMethods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Properties   Available on .NET Framework 4.5, .NET Framework 4.6    internal class Resources  A strongly-typed resource class, for looking up localized strings, etc.\nFields resourceCulture resourceMan Constructors Resources() Properties Apply Looks up a localized string similar to Apply.\nCancel Looks up a localized string similar to Cancel.\nClose Looks up a localized string similar to Close.\nCulture Overrides the current thread\u0026rsquo;s CurrentUICulture property for all resource lookups using this strongly typed resource class.\nErrorTitle Looks up a localized string similar to Error.\nFailed Looks up a localized string similar to Failed.\nInfoBarMessageControlErrorTitle Looks up a localized string similar to The following warnings and/or errors were found (hover to view):.\nInfoTitle Looks up a localized string similar to Information.\nNo Looks up a localized string similar to No.\nOK Looks up a localized string similar to OK.\nPleaseWait Looks up a localized string similar to Please wait.\nResourceManager Returns the cached ResourceManager instance used by this class.\nWarningTitle Looks up a localized string similar to Warning.\nYes Looks up a localized string similar to Yes.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/resources/",
+	"title": "Resources",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Properties   Available on Portable Class Libraries    internal class Resources  A strongly-typed resource class, for looking up localized strings, etc.\nFields resourceCulture resourceMan Constructors Resources() Properties Culture Overrides the current thread\u0026rsquo;s CurrentUICulture property for all resource lookups using this strongly typed resource class.\nResourceManager Returns the cached ResourceManager instance used by this class.\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/apicop/rules/",
@@ -238,11 +770,39 @@
 	"content": "It is possible to step through the source code of Catel. This will give great insights when debugging applications because you can actually see what is happening inside Catel.\nTo enable stepping through the source code, use the following steps:\n Install any Catel package via NuGet (all have support for stepping through the code) Enable source server support in Visual Studio:  Note that you must have defined a valid symbols directory in order for symbols to be stored on disk\n\rNote that Visual Studio 2012 needs to run elevated in order to download the source server files due to a bug in Visual Studio 2012\n\r"
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontext/",
+	"title": "SuspensionContext",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class SuspensionContext\u0026amp;lt;T, T\u0026amp;gt;  Context class the hold all relevant data while notifications are suspended.\nType Parameters T Type of the elements contained by the suspending collection.\nFields _suspensionCount The suspension count.\nConstructors Properties Methods InitializeRegistry() Initialize the Events generators registry\nReturns "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontextextensions/",
+	"title": "SuspensionContextExtensions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class SuspensionContextExtensions  The suspension context extensions.\nMethods CreateBashEvents\u0026lt;T\u0026gt;(SuspensionContext\u0026lt;T, T\u0026gt; suspensionContext, SuspensionMode suspensionMode) Creates the bash event args list.\nType Parameters T The type of collection item.\nParameters    Name Description     suspensionContext The suspension context.   suspensionMode The suspension mode.    Returns The.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensionmodeextensions/",
+	"title": "SuspensionModeExtensions",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.Core   Namespace Catel.Collections   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal static class SuspensionModeExtensions  The suspension mode extensions.\nFields MixedModes The mixed modes.\nMethods "
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/",
 	"title": "TypeFactory",
 	"tags": [],
 	"description": "",
 	"content": " The TypeFactory is responsible for actually creating types inside Catel. It uses the following mechanism:\n List all the constructors, order them from most parameters to least parameters While (constructors available) try to construct type using injection If all constructors fail, the TypeFactory will fallback to Activator.CreateInstance()  Dependency injection The ServiceLocator in Catel supports dependency injection.\nIntroduction to dependency injection Some people make dependency injection hard to understand, or maybe they don\u0026rsquo;t understand it themselves. Dependency injection simply means that instead of hard referencing or instantiating other classes (dependendies), the dependencies are injected into the class via the constructor.\nExample 1: bad, instantiates the dependencies itself\npublic class MyClass { private IFirstDependency _firstDependency; private ISecondDependency _secondDependency; public MyClass() { _firstDependency = new FirstDependency(); _secondDependency = new SecondDependency(); } }  Example 2: good, retrieves the dependencies via the service locator)\npublic class MyClass { private IFirstDependency _firstDependency; private ISecondDependency _secondDependency; public MyClass() { _firstDependency = ServiceLocator.Instance.ResolveType\u0026lt;IFirstDependency\u0026gt;(); _secondDependency = ServiceLocator.Instance.ResolveType\u0026lt;ISecondDependency\u0026gt;(); } }   Example 3: good, gets the dependencies injected\npublic class MyClass { private IFirstDependency _firstDependency; private ISecondDependency _secondDependency; public MyClass(IFirstDependency firstDependency, ISecondDependency secondDepdenceny) { Argument.IsNotNull(\u0026quot;firstDependency\u0026quot;, firstDependency); Argument.IsNotNull(\u0026quot;secondDependency\u0026quot;, secondDependency); _firstDependency = firstDependency; _secondDependency = secondDependency; } }  There are other ways of using dependency injection, for example via attributes. This documentation will focus on dependency injection via the constructor only\n\rUsing dependency injection in Catel Dependency injection via the ServiceLocator in Catel is enabled by default. This means that when a type is resolved from the container, it will automatically use dependency injection to construct the type if it is not registered as instance.\nIt will first search for all available constructors on the type that will be instantiated. Then, for each constructor, starting with the one with the most parameters, it will try to retrieve all values. If one fails, it will go to the next. If all fail, it will try to use the default constructor without parameters. If that fails as well, then the type cannot be constructed and an exception will be thrown.\nTo get a better understanding of what happens, see the class below:\npublic class MyClass { private IFirstDependency _firstDependency; private ISecondDependency _secondDependency; public MyClass() : this(null) { } public MyClass(IFirstDependency firstDependency) : this(firstDependency, null) { } public MyClass(IFirstDependency firstDependency, ISecondDependency secondDepdenceny) { _firstDependency = firstDependency; _secondDependency = secondDependency; } }  When the MyClass will be retrieved from the ServiceLocator, this will happen:\n Find constructor with most parameters (the one with both firstDependency and secondDependency). If both IFirstDependency and ISecondDependency can be resolved from the ServiceLocator, the type will be constructed with the constructor. Otherwise it will proceed with step 2. Find next constructor with most parameters (the one with only firstDependency). If IFirstDependency can be resolved from the ServiceLocator, the type will be constructed with the constructor. Otherwise it will proceed with step 3. At this point, no constructor could be used. In this case, the ServiceLocator will try to use the default constructor (the one without parameters) as last resort to instantiate the type.  Disabling dependency injection  Maybe you don\u0026rsquo;t want dependency injection because it does not give you what you need or you want a very, very small improvement in performance. In that case, the dependency injection can be disabled using the code below:\nServiceLocator.Default.SupportedDependencyInjection = false  Custom initialization All types created with the TypeFactory can be initialized with custom code. This can be done by implementing the INeedCustomInitialization interface. As soon as a type is created, the TypeFactory will check whether it implements the INeedCustomInitialization interface. If so, it will call the Initialize method of the interface.\nTo prevent misuse of the Initialize method, it is best to implement the interface explicitly\n\r"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/uihelpers/",
+	"title": "UIHelpers",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Interactivity.DragDropHelpers   Available on .NET Framework 4.5, .NET Framework 4.6    internal static class UIHelpers  Methods GetVisualDescendents\u0026lt;T\u0026gt;(DependencyObject d) "
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/",
@@ -271,6 +831,41 @@
 	"tags": [],
 	"description": "",
 	"content": " The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase\n\rData annotations are validation when the specific property is set. For example, when a property FirstName is set, all the data annotations on the FirstName property are validated.\nDecorating properties with data annotations Decorating properties is very simple. For example, to make a property mandatory, use the following definition (note the Required attribute):\n/// \u0026lt;summary\u0026gt; /// Gets or sets the middle name. /// \u0026lt;/summary\u0026gt; [Required] public string MiddleName { get { return GetValue\u0026lt;string\u0026gt;(MiddleNameProperty); } set { SetValue(MiddleNameProperty, value); } } /// \u0026lt;summary\u0026gt; /// Register the property so it is known in the class. /// \u0026lt;/summary\u0026gt; public readonly PropertyData MiddleNameProperty = RegisterProperty(\u0026quot;MiddleName\u0026quot;, typeof(string), string.Empty);  For more information about data annotations, read the official MSDN documentation .\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/validationdata/",
+	"title": "ValidationData",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Controls   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    internal class ValidationData  Class containing all validation info (thus warnings and errors) about a specific object.\nConstructors Properties Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/viewmodelmetadata/",
+	"title": "ViewModelMetadata",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewModelMetadata  Class containing meta data for a view model type.\nConstructors ViewModelMetadata(Type viewModelType, Dictionary\u0026lt;string, ModelInfo\u0026gt; models, Dictionary\u0026lt;string, ViewModelToModelMapping\u0026gt; mappings) Initializes a new instance of the ViewModelMetadata class.\nParameters    Name Description     viewModelType Type of the view model.   models The models.   mappings The mappings.    Exceptions    Name Description     ArgumentNullException The viewModelType isnull.    Properties "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmapping/",
+	"title": "ViewToViewModelMapping",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMapping  Holds the information for a view to viewmodel mapping. The information is based on the ViewToViewModelAttribute.\nFields Log The log.\nConstructors Properties "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappingcontainer/",
+	"title": "ViewToViewModelMappingContainer",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMappingContainer  Container class for ViewToViewModelMapping elements.\nFields _viewModelToViewMappings Dictionary containing all the view model to view mappings.\n_viewToViewModelMappings Dictionary containing all the view to view model mappings.\nLog The log.\nConstructors Methods "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappinghelper/",
+	"title": "ViewToViewModelMappingHelper",
+	"tags": [],
+	"description": "",
+	"content": "    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Views   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    internal class ViewToViewModelMappingHelper  Helper class to fix ViewToViewModelMapping for IView.\nFields _ignoredViewChanges List of properties in the view that should be ignored.\n_ignoredViewModelChanges List of properties in the view model that should be ignored.\n_previousViewModel Gets or sets the previous view model.\n_viewModelContainers Dictionary of IViewModelContainer instances managed by this helper class.\n_viewToViewModelMappingContainers Dictionary of ViewToViewModelMappingContainer instances per type.\nLog The log.\nConstructors Properties CurrentViewModel Gets the current view model.\nViewModelContainerType Gets the type of the view model container.\nMethods InitializeViewModel(IViewModel viewModel) Initializes the specified view model.\nParameters    Name Description     viewModel The view model.    OnViewModelChanged(object sender, EventArgs e) Called when the view model on the view model container has changed.\nParameters    Name Description     sender The view model container.   e The instance containing the event data.    OnViewModelContainerPropertyChanged(object sender, PropertyChangedEventArgs e) Called when a property on the view model container has changed.\nParameters    Name Description     sender The view model container.   e The instance containing the event data.    OnViewModelPropertyChanged(object sender, PropertyChangedEventArgs e) Called when a property on the view model has changed.\nParameters    Name Description     sender The view model.   e The instance containing the event data.    TransferValue(object source, string sourcePropertyName, object target, string targetPropertyName) Transfers a value from the source property to the target property.\nParameters    Name Description     source The source.   sourcePropertyName Name of the source property.   target The target.   targetPropertyName Name of the target property.    Exceptions    Name Description     ArgumentNullException The source isnull.   ArgumentException The sourcePropertyName isnull or whitespace.    Remarks This method does not check the type of the properties. If the types are incorrect, an exception will be thrown by the .NET Framework.\nUninitializeViewModel(IViewModel viewModel) Uninitializes the specified view model.\nParameters    Name Description     viewModel The view model.    UninitializeViewToViewModelMappings() Uninitializes the ViewToViewModelMapping for the registered IViewModelContainer.\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/introduction/why-catel/",
@@ -662,7 +1257,7 @@
 	"title": "API reference",
 	"tags": [],
 	"description": "",
-	"content": "\r\r"
+	"content": "\r\rCatel.Core\rCatel.MVVM\rCatel.Serialization.Json\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.0/",
@@ -719,6 +1314,13 @@
 	"tags": [],
 	"description": "",
 	"content": " The user controls in Android are called fragments. This means that if a user control must be created, it must derive from the Fragment class. Catel provides a base implementation of this class to ensure full compatibility with the MVVM framework that ships with Catel.\nCreating the view model The view model can be created (or added as a linked file from another project) just like any platform using Catel (they are all equal on all platforms).\nCreating the view Make sure that a Views folder exists in the project so the views and view models can automatically be hooked together by Catel. Then create a new class to the views folder, in this case MainActivity:\n[Activity(MainLauncher = true)] public class MainActivity : Catel.Android.App.Activity { protected override void OnCreate(Bundle bundle) { base.OnCreate(bundle); // Set our view from the \u0026quot;main\u0026quot; layout resource SetContentView(Resource.Layout.Page_Main); } }  Note that the class derives from Catel.Android.App.Activity\n\rDesigning the view To create the actual user interface of the fragment, add a new xaml file to the Resources/layout folder, in your case Page\\_Main (but you can name it whatever you want). Then use the following source:\n\u0026lt;?xml version=\u0026quot;1.0\u0026quot; encoding=\u0026quot;utf-8\u0026quot;?\u0026gt; \u0026lt;LinearLayout xmlns:android=\u0026quot;http://schemas.android.com/apk/res/android\u0026quot; android:orientation=\u0026quot;vertical\u0026quot; android:layout_width=\u0026quot;fill_parent\u0026quot; android:layout_height=\u0026quot;fill_parent\u0026quot;\u0026gt; \u0026lt;Button android:id=\u0026quot;@+id/MyButton\u0026quot; android:layout_width=\u0026quot;fill_parent\u0026quot; android:layout_height=\u0026quot;wrap_content\u0026quot; android:text=\u0026quot;@string/Hello\u0026quot; /\u0026gt; \u0026lt;/LinearLayout\u0026gt;  Setting up synchronization In Android it is required to manually synchronize the values between the view and view model. Below is the fully extended MainActivity class containing these mapping functionality:\n[Activity(MainLauncher = true)] public class MainActivity : Catel.Android.App.Activity { private Button _testButton; protected override void OnCreate(Bundle bundle) { base.OnCreate(bundle); // Set our view from the \u0026quot;main\u0026quot; layout resource SetContentView(Resource.Layout.Page_Main); // Note: at this stage the visual tree is guaranteed in Android _testButton = FindViewById\u0026lt;Button\u0026gt;(Resource.Id.MyButton); _testButton.Click += delegate { GetViewModel\u0026lt;MainViewModel\u0026gt;().RunCommand.Execute(); }; } protected override void SyncViewModel() { var vm = GetViewModel\u0026lt;MainViewModel\u0026gt;(); if (vm == null) { return; } Title = vm.Title; _testButton.Text = string.Format(\u0026quot;{0} clicks!\u0026quot;, vm.Counter); } }  "
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/android/",
+	"title": "Android",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/apicop/",
@@ -800,6 +1402,41 @@
 {
 	"uri": "http://docs.catelproject.com/vnext/categories/",
 	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/",
+	"title": "Catel",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/",
+	"title": "Catel",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/",
+	"title": "Catel.Core",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/",
+	"title": "Catel.MVVM",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/",
+	"title": "Catel.Serialization.Json",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1274,6 +1911,13 @@
 	"content": " Sometimes one needs to run code during design-time. A good example is to register a custom LanguageResourceSource in the LanguageService to show translations in the designer. Unfortunately it is not as easy as putting some code in the code-behind to get this working.\nStarting with Catel 4.3, calling CatelEnvironment.IsInDesignTime will automatically invoke DesignTimeHelper.InitializeDesignTime if in design mode. This means you only have to add classes deriving from DesignTimeInitializer and they will automatically be invoked when any code is checking if it\u0026rsquo;s currently running inside a designer context (e.g. LanguageBinding)\n\rIntroducing the DesignTimeCode attribute To allow users to run code in the designer (Visual Studio or Blend), Catel introduces the DesignTimeCodeAttribute. This is an assembly-wide attribute which will specify the class to create at design time. This means that it is possible to create multiple attributes. Below is an example of the usage of the attribute:\n[assembly: DesignTimeCode(typeof(WpfApplication.Catel.DesignTimeLanguageService))] [assembly: DesignTimeCode(typeof(WpfApplication.Catel.DesignTimeServiceLocator))]  When the attribute is found by Catel, it will automatically construct the types specified in the attribute. This will allow the constructor to execute any code during design time.\nIntroducing the DesignTimeInitializer The DesignTimeCodeAttribute contains the types that are constructed during design-time. Although the reflection in Catel is protected by only checking these arguments at design-time, it cannot be guaranteed for other systems. Therefore Catel also provides the DesignTimeInitializer base class. This is a base class that checks whether the type being constructed is actually running inside a design tool.\nBelow is an example of the usage, which registers custom language resource sources in the language service. This allows real-time updates of the LanguageService in the designer.\npublic class DesignTimeLanguageService : Catel.DesignTimeInitializer { protected override void Initialize() { var dependencyResolver = this.GetDependencyResolver(); var languageService = dependencyResolver.Resolve\u0026lt;ILanguageService\u0026gt;(); languageService.CacheResults = false; var resourcesSource = new LanguageResourceSource(\u0026quot;WpfApplication.Catel\u0026quot;, \u0026quot;WpfApplication.Catel.Properties\u0026quot;, \u0026quot;Resources\u0026quot;); languageService.RegisterLanguageSource(resourcesSource); } }  "
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/",
+	"title": "Runtime",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/",
 	"title": "SaveFileService",
 	"tags": [],
@@ -1316,6 +1960,13 @@
 	"content": "Seq is a structured logs server for .NET Apps. It act like a logs repository, allow to diagnostic by query your logs using a natural syntax, react on notifying you through email or instant messages and so on \u0026hellip;\nTo use the Seq log listener, use the following code:\nvar logListener = new SeqLogListener(); logListener.IgnoreCatelLogging = true; // TODO: Customize options LogManager.AddListener(logListener);  This one can also be used on configuration file:\n\u0026lt;catel\u0026gt; \u0026lt;logging\u0026gt; \u0026lt;listeners\u0026gt; \u0026lt;listener type=\u0026quot;Catel.Logging.SeqLogListener\u0026quot; ServerUrl=\u0026quot;http://localhost:5341\u0026quot; IgnoreCatelLogging=\u0026quot;true\u0026quot; IsDebugEnabled=\u0026quot;false\u0026quot; IsInfoEnabled=\u0026quot;true\u0026quot; IsWarningEnabled=\u0026quot;true\u0026quot; IsErrorEnabled=\u0026quot;true\u0026quot; /\u0026gt; \u0026lt;/listeners\u0026gt; \u0026lt;/logging\u0026gt; \u0026lt;/catel\u0026gt;  This log listener is currently available only for the full .net framework\n\r"
 },
 {
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/",
+	"title": "Serialization",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://docs.catelproject.com/vnext/catel-core/serialization/",
 	"title": "Serialization",
 	"tags": [],
@@ -1328,6 +1979,20 @@
 	"tags": [],
 	"description": "",
 	"content": "\r\rLocationService\rMessageService\rNavigationService\rOpenFileService\rPleaseWaitService\rProcessService\rSaveFileService\rSchedulerService\rSelectDirectoryService\rUIVisualizerService\rVibrateService\rViewExportService\r\r"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/",
+	"title": "System",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/system/",
+	"title": "System",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/tags/",
@@ -1517,6 +2182,13 @@
 	"tags": [],
 	"description": "",
 	"content": "\r\rUsing a custom control\rUsing a custom window\r\r"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/",
+	"title": "Xamarin",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/",

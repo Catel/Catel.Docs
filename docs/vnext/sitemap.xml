@@ -3,6 +3,198 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/android/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/android/app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/listeners/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/rules/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/policies/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/componentmodel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/core/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/data/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/io/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/ioc/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/auditing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/navigation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/tasks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/messaging/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/pooling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/reflection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/binary/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/json/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/xml/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/scoping/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/test/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/text/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/input/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/markup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/threading/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-wpf/</loc>
   </url>
   
@@ -63,6 +255,18 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/componentmodel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/windows/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/</loc>
   </url>
   
@@ -83,11 +287,39 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/data/bindingevaluator/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/converters/booleantotextconvertermode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/businesswarningorerrorinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/caching/cachestoragevalueinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/cateleventsource/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/catellog/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-uwp/</loc>
   </url>
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/apicop/cops/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/coverageexcludeattribute/</loc>
   </url>
   
   <url>
@@ -103,7 +335,39 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/dequeue/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/data-handling/dispatcherobservableobject/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dragadorner/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/dropadorner/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/enumerableextensions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/exceptionhandling/exceptioninheritancecomparer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/exceptions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/excludereason/</loc>
   </url>
   
   <url>
@@ -111,7 +375,19 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/fieldwarningorerrorinfo/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/getting-started/wpf/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/httpcontexthelper/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/icatellog/</loc>
   </url>
   
   <url>
@@ -127,7 +403,35 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/managedviewmodel/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/messagingcenter/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelerrorinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/modelinfo/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/notifyrangedcollectionchangedeventargsextensions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/properties/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/resources/</loc>
   </url>
   
   <url>
@@ -139,7 +443,23 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontext/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensioncontextextensions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/suspensionmodeextensions/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/dragdrophelpers/uihelpers/</loc>
   </url>
   
   <url>
@@ -156,6 +476,26 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/validation/validation-via-data-annotations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/validationdata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/viewmodelmetadata/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmapping/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappingcontainer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/views/viewtoviewmodelmappinghelper/</loc>
   </url>
   
   <url>
@@ -417,6 +757,11 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/android/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/apicop/</loc>
   </url>
   
@@ -462,6 +807,31 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/</loc>
     <priority>0</priority>
   </url>
   
@@ -734,6 +1104,11 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/</loc>
   </url>
   
@@ -758,11 +1133,26 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/serialization/</loc>
   </url>
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/services/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -872,6 +1262,11 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
