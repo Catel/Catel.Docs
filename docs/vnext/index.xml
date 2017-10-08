@@ -6,7 +6,6 @@
     <description>Recent content in Catel Documentation on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 18:36:24 +0200</lastBuildDate>
     
 	<atom:link href="http://docs.catelproject.com/vnext/index.xml" rel="self" type="application/rss+xml" />
     
@@ -1024,15 +1023,6 @@ Catel v5 contains a lot of breaking changes, not all of them cause compiler erro
     </item>
     
     <item>
-      <title>header</title>
-      <link>http://docs.catelproject.com/vnext/_header/</link>
-      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
-      
-      <guid>http://docs.catelproject.com/vnext/_header/</guid>
-      <description>Catel Documentation</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1912,6 +1902,15 @@ Introduction to the DataWindow When developing software in XAML, most developers
       
       <guid>http://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/xml/</guid>
       <description>The xml serializer uses the DataContractSerializer from .NET to serialize the object graphs.</description>
+    </item>
+    
+    <item>
+      <title>header</title>
+      <link>http://docs.catelproject.com/vnext/_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/_header/</guid>
+      <description>Catel Documentation</description>
     </item>
     
   </channel>

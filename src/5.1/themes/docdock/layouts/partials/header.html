@@ -11,7 +11,7 @@
     <link href="{{"css/font-awesome.min.css" | relURL}}" rel="stylesheet">
     <link href="{{"css/hybrid.css" | relURL}}" rel="stylesheet">
     <link href="{{"css/featherlight.min.css" | relURL}}" rel="stylesheet">
-    <link href="{{"css/horsey.css" | relURL}}" rel="stylesheet">
+    <link href="{{"css/auto-complete.css" | relURL}}" rel="stylesheet">
     {{with .Site.Params.themeStyle}}
     <link href="{{(printf "css/%s.css" .) | relURL}}" rel="stylesheet">
     {{else}}
@@ -69,7 +69,7 @@
         {{if .Params.tags }}
           <div id="tags">
             {{ range $index, $tag := .Params.tags }}
-              <a class="label label-default" href="{{$.Site.BaseURL}}/tags/{{ $tag | urlize }}">{{ $tag }}</a>
+              <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
             {{ end }}
           </div>
         {{end}}

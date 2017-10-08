@@ -1281,20 +1281,6 @@
 	"content": " This guide describes how to update your code to be fully compatible with Catel 5.0.\nCatel v5 contains a lot of breaking changes, not all of them cause compiler errors but change core behavior. It\u0026rsquo;s important to check out the guide below before updating to Catel v5.\n\rThis guide assumes that you are coming from Catel 4.5. If not, please read that guide first.\n\rEncountered issues while upgrading to this version? Add them here to help out others!\nPlatform support changes Added support for the following platforms:\n .NET 4.7  Removed support for the following platforms:\n .NET 4.0 Silverlight 5 Windows Phone 8.0 (Silverlight) Windows Phone 8.1 (Silverlight) Windows Phone 8.1 (Runtime) Windows 8.1 (Runtime)  Moved extensions The following extensions have been moved to a new repository:\n Catel.Extensions.Controls (moved to Orc.Controls \u0026amp; Orchestra) Catel.Extensions.DynamicObjects (moved to Orc.DynamicObjects) Catel.Extensions.EntityFramework (moved to Orc.EntityFramework) Catel.Extensions.FluentValidation (moved to Orc.FluentValidation) Catel.Extensions.Memento (moved to Orc.Memento) Catel.Extensions.Prism5 (moved to Orc.Prism) Catel.Extensions.Prism6 (moved to Orc.Prism)  Removed extensions The following extensions have been removed:\n Catel.Extensions.CSLA Catel.Extensions.Data Catel.Extensions.Interception Catel.Extensions.MVC4 Catel.Extensions.MVC5 Catel.Extensions.Prism4 Catel.Extensions.Wcf.Server  Catel.Fody Note that if you are using Catel.Fody, you must update to at least 2.17 to support Catel 5.\n\rCatel.Core CommandLineHelper CommandLineHelper has been removed. Use Orc.CommandLine instead.\nDynamicEventListener DynamicEventListener has been removed. Use WeakEventListener instead.\nModelBase The ModelBase has been greatly simplified to decrease the memory print and improve performance. The class is split up into separate classes:\n ModelBase =\u0026gt; takes care of basic serialization and property bag registrations ValidatableModelBase =\u0026gt; adds validation ChildAwareModelBase =\u0026gt; contains the child event subscriptions logic (which is very costly) SavableModelBase =\u0026gt; adds Save and Load methods ComparableModelBase =\u0026gt; contains the equality comparer members. This means the ModelBase itself does no longer support equality checks based on the property values  Catel.MVVM XAML namespace changes The xaml namespace has changed from http://catel.codeplex.com to http://schemas.catelproject.com\nCountCollapsedConverter CountCollapsedConverter has been removed. Use CollectionToVisibilityConverter instead.\nEffectsHelper EffectsHelper has been removed. No replacement is available.\nViewModelBase The ViewModelBase has been simplified. It now derives from ValidatingModelBase (so still supports validation). The following features / members have been removed:\n HasDirtyModels has been removed Validation summaries (use the ValidationContext instead)  VisualTargetPresentationSource VisualTargetPresentationSource has been removed. No replacement is available.\n"
 },
 {
-	"uri": "http://docs.catelproject.com/vnext/",
-	"title": "Catel Documentation",
-	"tags": [],
-	"description": "",
-	"content": " Catel Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms). The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET technology, from client to server.\nCatel distinguishes itself by unique features to aid in the development of MVVM applications and server-side application development. Since Catel focuses on Line of Business applications, it provides professional support and excellent documentation which ensures a safe bet by professional companies and developers.\nMajor features Below are a few major features that are available in Catel.\nCatel.Core Catel.Core is the library you want to include in all your projects, whether you are writing a UI project or not. It contains lots of useful helper methods. The most important features are listed below:\n Argument validation (e.g. Argument.IsNotNull(() =\u0026gt; myArgument)) Caching Data (ModelBase, PropertyBag, Validation) IoC (ServiceLocator, TypeFactory) Logging (LogManager, Log, several log listeners) Messaging Reflection (same reflection API for every supported platform) Serialization (BinarySerializer, XmlSerializer and more) Weak references (WeakEventListener)  And more\u0026hellip;.\nCatel.MVVM Catel.MVVM is the library you want to include when you are writing a UI project (e.g. WPF, UWP, Xamarin) and you want to use the MVVM pattern. Catel is the only MVVM library that has context-aware view and view-model creation, which can be used to solve the nested user controls problem.\nThe most important features are listed below:\n Auditing Collections (FastObservableCollection) Commands (Command, TaskCommand, etc) Converters (tons of converters out of the box) Services  CameraService LocationService MessageService NavigationService OpenFileService PleaseWaitService SaveFileService UIVisualizerService  View models  Automatic validation Automatic mappings from model to view model  Views  DataWindow UserControl Window   Example code Models This model has automatic change notifications and validation.\npublic class Person : ValidatableModelBase { public string FirstName { get; set; } public string LastName { get; set; } protected override void ValidateFields(List\u0026lt;IFieldValidationResult\u0026gt; validationResults) { if (string.IsNullOrWhitespace(FirstName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(FirstName), \u0026quot;First name is required\u0026quot;)); } if (string.IsNullOrWhitespace(LastName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(LastName), \u0026quot;Last name is required\u0026quot;)); } } }  View models This is a view model with:\n Automatic injection of the DataContext Automatic mapping of properties \u0026amp; validation from model =\u0026gt; view model  public class PersonViewModel : ViewModelBase { public PersonViewModel(Person person) { Argument.IsNotNull(() =\u0026gt; person); Person = person; } [Model] private Person Person { get; set; } [ViewModelToModel] public string FirstName { get; set; } [ViewModelToModel] public string LastName { get; set; } }  Continue reading \rIntroduction\rFAQ\rSetup, deployment \u0026amp; projects\rGetting started\rExamples\rCatel.Core\rCatel.MVVM\rCatel.Fody\rCatel.ReSharper\rTips \u0026amp; tricks\rAPI reference\r\r"
-},
-{
-	"uri": "http://docs.catelproject.com/vnext/_header/",
-	"title": "header",
-	"tags": [],
-	"description": "",
-	"content": "Catel Documentation\n"
-},
-{
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/",
 	"title": "",
 	"tags": [],
@@ -1419,6 +1405,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/",
+	"title": "Catel Documentation",
+	"tags": [],
+	"description": "",
+	"content": " Catel Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms). The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET technology, from client to server.\nCatel distinguishes itself by unique features to aid in the development of MVVM applications and server-side application development. Since Catel focuses on Line of Business applications, it provides professional support and excellent documentation which ensures a safe bet by professional companies and developers.\nMajor features Below are a few major features that are available in Catel.\nCatel.Core Catel.Core is the library you want to include in all your projects, whether you are writing a UI project or not. It contains lots of useful helper methods. The most important features are listed below:\n Argument validation (e.g. Argument.IsNotNull(() =\u0026gt; myArgument)) Caching Data (ModelBase, PropertyBag, Validation) IoC (ServiceLocator, TypeFactory) Logging (LogManager, Log, several log listeners) Messaging Reflection (same reflection API for every supported platform) Serialization (BinarySerializer, XmlSerializer and more) Weak references (WeakEventListener)  And more\u0026hellip;.\nCatel.MVVM Catel.MVVM is the library you want to include when you are writing a UI project (e.g. WPF, UWP, Xamarin) and you want to use the MVVM pattern. Catel is the only MVVM library that has context-aware view and view-model creation, which can be used to solve the nested user controls problem.\nThe most important features are listed below:\n Auditing Collections (FastObservableCollection) Commands (Command, TaskCommand, etc) Converters (tons of converters out of the box) Services  CameraService LocationService MessageService NavigationService OpenFileService PleaseWaitService SaveFileService UIVisualizerService  View models  Automatic validation Automatic mappings from model to view model  Views  DataWindow UserControl Window   Example code Models This model has automatic change notifications and validation.\npublic class Person : ValidatableModelBase { public string FirstName { get; set; } public string LastName { get; set; } protected override void ValidateFields(List\u0026lt;IFieldValidationResult\u0026gt; validationResults) { if (string.IsNullOrWhitespace(FirstName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(FirstName), \u0026quot;First name is required\u0026quot;)); } if (string.IsNullOrWhitespace(LastName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(LastName), \u0026quot;Last name is required\u0026quot;)); } } }  View models This is a view model with:\n Automatic injection of the DataContext Automatic mapping of properties \u0026amp; validation from model =\u0026gt; view model  public class PersonViewModel : ViewModelBase { public PersonViewModel(Person person) { Argument.IsNotNull(() =\u0026gt; person); Person = person; } [Model] private Person Person { get; set; } [ViewModelToModel] public string FirstName { get; set; } [ViewModelToModel] public string LastName { get; set; } }  Continue reading \rIntroduction\rFAQ\rSetup, deployment \u0026amp; projects\rGetting started\rExamples\rCatel.Core\rCatel.MVVM\rCatel.Fody\rCatel.ReSharper\rTips \u0026amp; tricks\rAPI reference\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/",
@@ -1981,14 +1974,14 @@
 	"content": "\r\rLocationService\rMessageService\rNavigationService\rOpenFileService\rPleaseWaitService\rProcessService\rSaveFileService\rSchedulerService\rSelectDirectoryService\rUIVisualizerService\rVibrateService\rViewExportService\r\r"
 },
 {
-	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/",
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/system/",
 	"title": "System",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/system/",
+	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/",
 	"title": "System",
 	"tags": [],
 	"description": "",
@@ -2217,4 +2210,11 @@
 	"tags": [],
 	"description": "",
 	"content": "The xml serializer uses the DataContractSerializer from .NET to serialize the object graphs.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/vnext/_header/",
+	"title": "header",
+	"tags": [],
+	"description": "",
+	"content": "Catel Documentation\n"
 }]

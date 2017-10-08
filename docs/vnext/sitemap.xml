@@ -735,16 +735,6 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/_header/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</loc>
   </url>
   
@@ -818,6 +808,10 @@
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/</loc>
   </url>
   
   <url>
@@ -1146,12 +1140,12 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/</loc>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/</loc>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/</loc>
     <priority>0</priority>
   </url>
   
@@ -1283,6 +1277,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/xml/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/_header/</loc>
   </url>
   
 </urlset>
