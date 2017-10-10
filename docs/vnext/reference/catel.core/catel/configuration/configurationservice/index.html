@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5662,32 +5663,56 @@
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
+<li><a href="#getfinalkey-string-key">GetFinalKey(string key)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#getsettingscontainer-configurationcontainer-container">GetSettingsContainer(ConfigurationContainer container)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
 <li><a href="#getvalue-lt-t-gt-configurationcontainer-container-string-key-t-defaultvalue">GetValue&lt;T&gt;(ConfigurationContainer container, string key, T defaultValue)</a>
 <ul>
 <li><a href="#type-parameters">Type Parameters</a></li>
-<li><a href="#parameters-2">Parameters</a></li>
-<li><a href="#returns">Returns</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#returns-2">Returns</a></li>
 <li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+<li><a href="#getvaluefromstore-configurationcontainer-container-string-key">GetValueFromStore(ConfigurationContainer container, string key)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
 </ul></li>
 <li><a href="#initializevalue-configurationcontainer-container-string-key-object-defaultvalue">InitializeValue(ConfigurationContainer container, string key, object defaultValue)</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#parameters-6">Parameters</a></li>
 <li><a href="#exceptions-1">Exceptions</a></li>
 </ul></li>
 <li><a href="#isvalueavailable-configurationcontainer-container-string-key">IsValueAvailable(ConfigurationContainer container, string key)</a>
 <ul>
-<li><a href="#parameters-4">Parameters</a></li>
-<li><a href="#returns-1">Returns</a></li>
+<li><a href="#parameters-7">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
 <li><a href="#exceptions-2">Exceptions</a></li>
 </ul></li>
 <li><a href="#setvalue-configurationcontainer-container-string-key-object-value">SetValue(ConfigurationContainer container, string key, object value)</a>
 <ul>
-<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#parameters-8">Parameters</a></li>
 <li><a href="#exceptions-3">Exceptions</a></li>
+</ul></li>
+<li><a href="#setvaluetostore-configurationcontainer-container-string-key-string-value">SetValueToStore(ConfigurationContainer container, string key, string value)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
 </ul></li>
 <li><a href="#suspendnotifications">SuspendNotifications()</a>
 <ul>
-<li><a href="#returns-2">Returns</a></li>
+<li><a href="#returns-5">Returns</a></li>
+</ul></li>
+<li><a href="#valueexists-configurationcontainer-container-string-key">ValueExists(ConfigurationContainer container, string key)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#returns-6">Returns</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5819,6 +5844,58 @@
 
 <h2 id="methods">Methods</h2>
 
+<h3 id="getfinalkey-string-key">GetFinalKey(string key)</h3>
+
+<p>Gets the final key. This method allows customization of the key.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>key</strong></td>
+<td>The key.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p>System.String.</p>
+
+<h3 id="getsettingscontainer-configurationcontainer-container">GetSettingsContainer(ConfigurationContainer container)</h3>
+
+<p>Gets the settings container for this platform</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>container</strong></td>
+<td>The settings container.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-1">Returns</h4>
+
+<p>The settings container.</p>
+
 <h3 id="getvalue-lt-t-gt-configurationcontainer-container-string-key-t-defaultvalue">GetValue&lt;T&gt;(ConfigurationContainer container, string key, T defaultValue)</h3>
 
 <p>Gets the configuration value.</p>
@@ -5828,7 +5905,7 @@
 <p><strong>T</strong>
 The type of the value to retrieve.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5856,7 +5933,7 @@ The type of the value to retrieve.</p>
 </tbody>
 </table>
 
-<h4 id="returns">Returns</h4>
+<h4 id="returns-2">Returns</h4>
 
 <p>The configuration value.</p>
 
@@ -5878,11 +5955,42 @@ The type of the value to retrieve.</p>
 </tbody>
 </table>
 
+<h3 id="getvaluefromstore-configurationcontainer-container-string-key">GetValueFromStore(ConfigurationContainer container, string key)</h3>
+
+<p>Gets the value from the store.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>container</strong></td>
+<td>The container.</td>
+</tr>
+
+<tr>
+<td><strong>key</strong></td>
+<td>The key.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-3">Returns</h4>
+
+<p>The value.</p>
+
 <h3 id="initializevalue-configurationcontainer-container-string-key-object-defaultvalue">InitializeValue(ConfigurationContainer container, string key, object defaultValue)</h3>
 
 <p>Initializes the value by setting the value to the defaultValue if the value does not yet exist.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
 <thead>
@@ -5932,7 +6040,7 @@ The type of the value to retrieve.</p>
 
 <p>Determines whether the specified value is available.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-7">Parameters</h4>
 
 <table>
 <thead>
@@ -5955,7 +6063,7 @@ The type of the value to retrieve.</p>
 </tbody>
 </table>
 
-<h4 id="returns-1">Returns</h4>
+<h4 id="returns-4">Returns</h4>
 
 <p><code>true</code> if the specified value is available; otherwise,<code>false</code>.</p>
 
@@ -5981,7 +6089,7 @@ The type of the value to retrieve.</p>
 
 <p>Sets the configuration value.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-8">Parameters</h4>
 
 <table>
 <thead>
@@ -6027,13 +6135,76 @@ The type of the value to retrieve.</p>
 </tbody>
 </table>
 
+<h3 id="setvaluetostore-configurationcontainer-container-string-key-string-value">SetValueToStore(ConfigurationContainer container, string key, string value)</h3>
+
+<p>Sets the value to the store.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>container</strong></td>
+<td>The container.</td>
+</tr>
+
+<tr>
+<td><strong>key</strong></td>
+<td>The key.</td>
+</tr>
+
+<tr>
+<td><strong>value</strong></td>
+<td>The value.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="suspendnotifications">SuspendNotifications()</h3>
 
 <p>Suspends the notifications of this service until the returned object is disposed.</p>
 
-<h4 id="returns-2">Returns</h4>
+<h4 id="returns-5">Returns</h4>
 
 <p>IDisposable.</p>
+
+<h3 id="valueexists-configurationcontainer-container-string-key">ValueExists(ConfigurationContainer container, string key)</h3>
+
+<p>Determines whether the specified key value exists in the configuration.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>container</strong></td>
+<td>The container.</td>
+</tr>
+
+<tr>
+<td><strong>key</strong></td>
+<td>The key.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-6">Returns</h4>
+
+<p><code>true</code> if the value exists,<code>false</code> otherwise.</p>
 
 
 <footer class=" footline" >

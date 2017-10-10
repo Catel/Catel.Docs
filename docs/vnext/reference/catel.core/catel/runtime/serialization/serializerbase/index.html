@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5657,9 +5658,26 @@
 <li><a href="#type-parameters">Type Parameters</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
-<li><a href="#properties">Properties</a></li>
+<li><a href="#fields">Fields</a>
+<ul>
+<li><a href="#collectionname">CollectionName</a></li>
+<li><a href="#dictionaryname">DictionaryName</a></li>
+<li><a href="#rootobjectname">RootObjectName</a></li>
+</ul></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#serializerbase-iserializationmanager-serializationmanager-itypefactory-typefactory-iobjectadapter-objectadapter">SerializerBase(ISerializationManager serializationManager, ITypeFactory typeFactory, IObjectAdapter objectAdapter)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#properties">Properties</a>
+<ul>
+<li><a href="#objectadapter">ObjectAdapter</a></li>
+<li><a href="#serializationmanager">SerializationManager</a></li>
+<li><a href="#typefactory">TypeFactory</a></li>
+</ul></li>
 <li><a href="#events">Events</a>
 <ul>
 <li><a href="#deserialized">Deserialized</a></li>
@@ -5673,76 +5691,290 @@
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
+<li><a href="#afterdeserialization-iserializationcontext-lt-tserializationcontext-gt-context">AfterDeserialization(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+</ul></li>
+<li><a href="#afterdeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">AfterDeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+</ul></li>
+<li><a href="#afterserialization-iserializationcontext-lt-tserializationcontext-gt-context">AfterSerialization(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
+<li><a href="#afterserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">AfterSerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#appendcontexttostream-iserializationcontext-lt-tserializationcontext-gt-context-stream-stream">AppendContextToStream(ISerializationContext&lt;TSerializationContext&gt; context, Stream stream)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+</ul></li>
+<li><a href="#beforedeserialization-iserializationcontext-lt-tserializationcontext-gt-context">BeforeDeserialization(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
+</ul></li>
+<li><a href="#beforedeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">BeforeDeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-7">Parameters</a></li>
+</ul></li>
+<li><a href="#beforeserialization-iserializationcontext-lt-tserializationcontext-gt-context">BeforeSerialization(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-8">Parameters</a></li>
+</ul></li>
+<li><a href="#beforeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">BeforeSerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
+</ul></li>
+<li><a href="#convertdictionarytocollection-object-membervalue">ConvertDictionaryToCollection(object memberValue)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#createmodelinstance-type-type">CreateModelInstance(Type type)</a>
+<ul>
+<li><a href="#parameters-11">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
 <li><a href="#deserialize-type-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
-<li><a href="#returns">Returns</a></li>
+<li><a href="#parameters-12">Parameters</a></li>
+<li><a href="#returns-2">Returns</a></li>
 </ul></li>
 <li><a href="#deserialize-type-modeltype-stream-stream-iserializationconfiguration-configuration">Deserialize(Type modelType, Stream stream, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
-<li><a href="#returns-1">Returns</a></li>
+<li><a href="#parameters-13">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
 </ul></li>
 <li><a href="#deserialize-type-modeltype-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, TSerializationContext serializationContext, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-2">Parameters</a></li>
-<li><a href="#returns-2">Returns</a></li>
+<li><a href="#parameters-14">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
+</ul></li>
+<li><a href="#deserialize-object-model-iserializationcontext-lt-tserializationcontext-gt-context">Deserialize(object model, ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-15">Parameters</a></li>
 </ul></li>
 <li><a href="#deserialize-object-model-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
-<li><a href="#returns-3">Returns</a></li>
+<li><a href="#parameters-16">Parameters</a></li>
+<li><a href="#returns-5">Returns</a></li>
 </ul></li>
 <li><a href="#deserialize-object-model-stream-stream-iserializationconfiguration-configuration">Deserialize(object model, Stream stream, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-4">Parameters</a></li>
-<li><a href="#returns-4">Returns</a></li>
+<li><a href="#parameters-17">Parameters</a></li>
+<li><a href="#returns-6">Returns</a></li>
 </ul></li>
 <li><a href="#deserialize-object-model-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, TSerializationContext serializationContext, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-5">Parameters</a></li>
-<li><a href="#returns-5">Returns</a></li>
+<li><a href="#parameters-18">Parameters</a></li>
+<li><a href="#returns-7">Returns</a></li>
+</ul></li>
+<li><a href="#deserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">DeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-19">Parameters</a></li>
+<li><a href="#returns-8">Returns</a></li>
+</ul></li>
+<li><a href="#deserializemembers-iserializationcontext-lt-tserializationcontext-gt-context">DeserializeMembers(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-20">Parameters</a></li>
+<li><a href="#returns-9">Returns</a></li>
 </ul></li>
 <li><a href="#deserializemembers-type-modeltype-iserializationcontextinfo-serializationcontextinfo-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, ISerializationContextInfo serializationContextInfo, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-6">Parameters</a></li>
-<li><a href="#returns-6">Returns</a></li>
+<li><a href="#parameters-21">Parameters</a></li>
+<li><a href="#returns-10">Returns</a></li>
 </ul></li>
 <li><a href="#deserializemembers-type-modeltype-stream-stream-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, Stream stream, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-7">Parameters</a></li>
-<li><a href="#returns-7">Returns</a></li>
+<li><a href="#parameters-22">Parameters</a></li>
+<li><a href="#returns-11">Returns</a></li>
 </ul></li>
 <li><a href="#deserializemembers-type-modeltype-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, TSerializationContext serializationContext, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-8">Parameters</a></li>
-<li><a href="#returns-8">Returns</a></li>
+<li><a href="#parameters-23">Parameters</a></li>
+<li><a href="#returns-12">Returns</a></li>
+</ul></li>
+<li><a href="#deserializeusingobjectparse-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">DeserializeUsingObjectParse(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#returns-13">Returns</a></li>
+</ul></li>
+<li><a href="#getcontext-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-24">Parameters</a></li>
+<li><a href="#returns-14">Returns</a></li>
+<li><a href="#exceptions-1">Exceptions</a></li>
+</ul></li>
+<li><a href="#getcontext-type-modeltype-tserializationcontext-context-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(Type modelType, TSerializationContext context, SerializationContextMode contextMode, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-25">Parameters</a></li>
+<li><a href="#returns-15">Returns</a></li>
+<li><a href="#exceptions-2">Exceptions</a></li>
+</ul></li>
+<li><a href="#getcontext-object-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-26">Parameters</a></li>
+<li><a href="#returns-16">Returns</a></li>
+<li><a href="#exceptions-3">Exceptions</a></li>
+</ul></li>
+<li><a href="#getcontext-object-model-type-modeltype-tserializationcontext-context-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, TSerializationContext context, SerializationContextMode contextMode, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-27">Parameters</a></li>
+<li><a href="#returns-17">Returns</a></li>
+<li><a href="#exceptions-4">Exceptions</a></li>
+</ul></li>
+<li><a href="#getcurrentserializationconfiguration-iserializationconfiguration-configuration">GetCurrentSerializationConfiguration(ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-28">Parameters</a></li>
+<li><a href="#returns-18">Returns</a></li>
+</ul></li>
+<li><a href="#getcurrentserializationscopemanager-iserializationconfiguration-configuration">GetCurrentSerializationScopeManager(ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-29">Parameters</a></li>
+<li><a href="#returns-19">Returns</a></li>
+</ul></li>
+<li><a href="#getmembergroup-type-modeltype-string-membername">GetMemberGroup(Type modelType, string memberName)</a>
+<ul>
+<li><a href="#parameters-30">Parameters</a></li>
+<li><a href="#returns-20">Returns</a></li>
+</ul></li>
+<li><a href="#getmembertype-type-modeltype-string-membername">GetMemberType(Type modelType, string memberName)</a>
+<ul>
+<li><a href="#parameters-31">Parameters</a></li>
+<li><a href="#returns-21">Returns</a></li>
+</ul></li>
+<li><a href="#getobjectparsemethod-type-membertype">GetObjectParseMethod(Type memberType)</a>
+<ul>
+<li><a href="#parameters-32">Parameters</a></li>
+<li><a href="#returns-22">Returns</a></li>
+</ul></li>
+<li><a href="#getobjecttostringmethod-type-membertype">GetObjectToStringMethod(Type memberType)</a>
+<ul>
+<li><a href="#parameters-33">Parameters</a></li>
+<li><a href="#returns-23">Returns</a></li>
 </ul></li>
 <li><a href="#getserializablemembers-iserializationcontext-lt-tserializationcontext-gt-context-object-model-string-memberstoignore">GetSerializableMembers(ISerializationContext&lt;TSerializationContext&gt; context, object model, string[] membersToIgnore)</a>
 <ul>
-<li><a href="#parameters-9">Parameters</a></li>
-<li><a href="#returns-9">Returns</a></li>
-<li><a href="#exceptions">Exceptions</a></li>
+<li><a href="#parameters-34">Parameters</a></li>
+<li><a href="#returns-24">Returns</a></li>
+<li><a href="#exceptions-5">Exceptions</a></li>
+</ul></li>
+<li><a href="#isrootcollection-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">IsRootCollection(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-35">Parameters</a></li>
+<li><a href="#returns-25">Returns</a></li>
+</ul></li>
+<li><a href="#isrootdictionary-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">IsRootDictionary(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-36">Parameters</a></li>
+<li><a href="#returns-26">Returns</a></li>
+</ul></li>
+<li><a href="#isrootobject-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue-func-lt-membervalue-bool-gt-predicate">IsRootObject(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue, Func&lt;MemberValue, bool&gt; predicate)</a>
+<ul>
+<li><a href="#parameters-37">Parameters</a></li>
+<li><a href="#returns-27">Returns</a></li>
+</ul></li>
+<li><a href="#populatemodel-object-model-membervalue-members">PopulateModel(object model, MemberValue[] members)</a>
+<ul>
+<li><a href="#parameters-38">Parameters</a></li>
+<li><a href="#exceptions-6">Exceptions</a></li>
+</ul></li>
+<li><a href="#serialize-object-model-iserializationcontext-lt-tserializationcontext-gt-context">Serialize(object model, ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-39">Parameters</a></li>
 </ul></li>
 <li><a href="#serialize-object-model-iserializationcontextinfo-context-iserializationconfiguration-configuration">Serialize(object model, ISerializationContextInfo context, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#parameters-40">Parameters</a></li>
 </ul></li>
 <li><a href="#serialize-object-model-stream-stream-iserializationconfiguration-configuration">Serialize(object model, Stream stream, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-11">Parameters</a></li>
+<li><a href="#parameters-41">Parameters</a></li>
 </ul></li>
 <li><a href="#serialize-object-model-tserializationcontext-context-iserializationconfiguration-configuration">Serialize(object model, TSerializationContext context, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-12">Parameters</a></li>
+<li><a href="#parameters-42">Parameters</a></li>
+</ul></li>
+<li><a href="#serializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">SerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-43">Parameters</a></li>
+<li><a href="#returns-28">Returns</a></li>
+</ul></li>
+<li><a href="#serializemembers-iserializationcontext-lt-tserializationcontext-gt-context-list-lt-membervalue-gt-memberstoserialize">SerializeMembers(ISerializationContext&lt;TSerializationContext&gt; context, List&lt;MemberValue&gt; membersToSerialize)</a>
+<ul>
+<li><a href="#parameters-44">Parameters</a></li>
 </ul></li>
 <li><a href="#serializemembers-object-model-stream-stream-iserializationconfiguration-configuration-string-memberstoignore">SerializeMembers(object model, Stream stream, ISerializationConfiguration configuration, string[] membersToIgnore)</a>
 <ul>
-<li><a href="#parameters-13">Parameters</a></li>
+<li><a href="#parameters-45">Parameters</a></li>
+</ul></li>
+<li><a href="#serializeusingobjecttostring-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">SerializeUsingObjectToString(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#returns-29">Returns</a></li>
+</ul></li>
+<li><a href="#shouldexternalserializerhandlemember-membervalue-membervalue">ShouldExternalSerializerHandleMember(MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-46">Parameters</a></li>
+<li><a href="#returns-30">Returns</a></li>
+</ul></li>
+<li><a href="#shouldexternalserializerhandlemember-type-membertype">ShouldExternalSerializerHandleMember(Type memberType)</a>
+<ul>
+<li><a href="#parameters-47">Parameters</a></li>
+<li><a href="#returns-31">Returns</a></li>
+</ul></li>
+<li><a href="#shouldignoremember-object-model-string-propertyname">ShouldIgnoreMember(object model, string propertyName)</a>
+<ul>
+<li><a href="#parameters-48">Parameters</a></li>
+<li><a href="#returns-32">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeascollection-membervalue-membervalue">ShouldSerializeAsCollection(MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-49">Parameters</a></li>
+<li><a href="#returns-33">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeascollection-type-membertype">ShouldSerializeAsCollection(Type memberType)</a>
+<ul>
+<li><a href="#parameters-50">Parameters</a></li>
+<li><a href="#returns-34">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeasdictionary-membervalue-membervalue">ShouldSerializeAsDictionary(MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-51">Parameters</a></li>
+<li><a href="#returns-35">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeasdictionary-type-membertype">ShouldSerializeAsDictionary(Type memberType)</a>
+<ul>
+<li><a href="#parameters-52">Parameters</a></li>
+<li><a href="#returns-36">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeenumasstring-membervalue-membervalue-bool-checkactualmembertype">ShouldSerializeEnumAsString(MemberValue memberValue, bool checkActualMemberType)</a>
+<ul>
+<li><a href="#parameters-53">Parameters</a></li>
+<li><a href="#returns-37">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializemodelascollection-type-membertype">ShouldSerializeModelAsCollection(Type memberType)</a>
+<ul>
+<li><a href="#parameters-54">Parameters</a></li>
+<li><a href="#returns-38">Returns</a></li>
+</ul></li>
+<li><a href="#shouldserializeusingparseandtostring-membervalue-membervalue-bool-checkactualmembertype">ShouldSerializeUsingParseAndToString(MemberValue memberValue, bool checkActualMemberType)</a>
+<ul>
+<li><a href="#parameters-55">Parameters</a></li>
+<li><a href="#returns-39">Returns</a></li>
+</ul></li>
+<li><a href="#supportsdictionaryserialization-iserializationcontext-lt-tserializationcontext-gt-context">SupportsDictionarySerialization(ISerializationContext&lt;TSerializationContext&gt; context)</a>
+<ul>
+<li><a href="#parameters-56">Parameters</a></li>
+<li><a href="#returns-40">Returns</a></li>
 </ul></li>
 <li><a href="#warmup-ienumerable-lt-type-gt-types-int-typesperthread">Warmup(IEnumerable&lt;Type&gt; types, int typesPerThread)</a>
 <ul>
-<li><a href="#parameters-14">Parameters</a></li>
+<li><a href="#parameters-57">Parameters</a></li>
+</ul></li>
+<li><a href="#warmup-type-type">Warmup(Type type)</a>
+<ul>
+<li><a href="#parameters-58">Parameters</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5805,9 +6037,83 @@ The type of the serialization context.</p>
 
 <h2 id="fields">Fields</h2>
 
+<h3 id="collectionname">CollectionName</h3>
+
+<p>The collection name.</p>
+
+<h3 id="dictionaryname">DictionaryName</h3>
+
+<p>The dictionary name.</p>
+
+<h3 id="rootobjectname">RootObjectName</h3>
+
+<p>The root object name.</p>
+
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="serializerbase-iserializationmanager-serializationmanager-itypefactory-typefactory-iobjectadapter-objectadapter">SerializerBase(ISerializationManager serializationManager, ITypeFactory typeFactory, IObjectAdapter objectAdapter)</h3>
+
+<p>Initializes a new instance of the <a href="#">Missing: &lt;see cref=&ldquo;T:Catel.Runtime.Serialization.SerializerBase`1&rdquo; /&gt;</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>serializationManager</strong></td>
+<td>The serialization manager.</td>
+</tr>
+
+<tr>
+<td><strong>typeFactory</strong></td>
+<td>The type factory.</td>
+</tr>
+
+<tr>
+<td><strong>objectAdapter</strong></td>
+<td>The object adapter.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The serializationManager is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
+
+<h3 id="objectadapter">ObjectAdapter</h3>
+
+<p>Gets the object adapter.</p>
+
+<h3 id="serializationmanager">SerializationManager</h3>
+
+<p>Gets the serialization manager.</p>
+
+<h3 id="typefactory">TypeFactory</h3>
+
+<p>Gets the type factory.</p>
 
 <h2 id="events">Events</h2>
 
@@ -5845,45 +6151,9 @@ The type of the serialization context.</p>
 
 <h2 id="methods">Methods</h2>
 
-<h3 id="deserialize-type-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</h3>
+<h3 id="afterdeserialization-iserializationcontext-lt-tserializationcontext-gt-context">AfterDeserialization(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
 
-<p>Deserializes the specified model type.</p>
-
-<h4 id="parameters">Parameters</h4>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>modelType</strong></td>
-<td>Type of the model.</td>
-</tr>
-
-<tr>
-<td><strong>serializationContext</strong></td>
-<td>The serialization context.</td>
-</tr>
-
-<tr>
-<td><strong>configuration</strong></td>
-<td>The configuration.</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="returns">Returns</h4>
-
-<p>The deserialized.</p>
-
-<h3 id="deserialize-type-modeltype-stream-stream-iserializationconfiguration-configuration">Deserialize(Type modelType, Stream stream, ISerializationConfiguration configuration)</h3>
-
-<p>Deserializes the specified model type.</p>
+<p>Called after the serializer has deserialized an object.</p>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -5897,31 +6167,270 @@ The type of the serialization context.</p>
 
 <tbody>
 <tr>
-<td><strong>modelType</strong></td>
-<td>Type of the model.</td>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="afterdeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">AfterDeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Called after the serializer has deserialized a specific member.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="afterserialization-iserializationcontext-lt-tserializationcontext-gt-context">AfterSerialization(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Called after the serializer has serialized an object.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="afterserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">AfterSerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Called after the serializer has serialized a specific member.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="appendcontexttostream-iserializationcontext-lt-tserializationcontext-gt-context-stream-stream">AppendContextToStream(ISerializationContext&lt;TSerializationContext&gt; context, Stream stream)</h3>
+
+<p>Appends the serialization context to the specified stream. This way each serializer can handle the serialization its own way and write the contents to the stream via this method.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
 </tr>
 
 <tr>
 <td><strong>stream</strong></td>
 <td>The stream.</td>
 </tr>
+</tbody>
+</table>
+
+<h3 id="beforedeserialization-iserializationcontext-lt-tserializationcontext-gt-context">BeforeDeserialization(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Called before the serializer starts deserializing an object.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforedeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">BeforeDeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Called before the serializer starts deserializing a specific member.</p>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
 
 <tr>
-<td><strong>configuration</strong></td>
-<td>The configuration.</td>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforeserialization-iserializationcontext-lt-tserializationcontext-gt-context">BeforeSerialization(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Called before the serializer starts serializing an object.</p>
+
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforeserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">BeforeSerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Called before the serializer starts serializing a specific member.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="convertdictionarytocollection-object-membervalue">ConvertDictionaryToCollection(object memberValue)</h3>
+
+<p>Converts a dictionary into a serializable collection.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p>The list of serializable key value pairs.</p>
+
+<h3 id="createmodelinstance-type-type">CreateModelInstance(Type type)</h3>
+
+<p>Creates the model instance. When a type is an array or IEnumerable, this will use a collection as model instance.</p>
+
+<h4 id="parameters-11">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>Type of the model.</td>
 </tr>
 </tbody>
 </table>
 
 <h4 id="returns-1">Returns</h4>
 
-<p>The deserialized.</p>
+<p>The instantiated type.</p>
 
-<h3 id="deserialize-type-modeltype-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, TSerializationContext serializationContext, ISerializationConfiguration configuration)</h3>
+<h3 id="deserialize-type-modeltype-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</h3>
 
 <p>Deserializes the specified model type.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-12">Parameters</h4>
 
 <table>
 <thead>
@@ -5953,47 +6462,11 @@ The type of the serialization context.</p>
 
 <p>The deserialized.</p>
 
-<h3 id="deserialize-object-model-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</h3>
+<h3 id="deserialize-type-modeltype-stream-stream-iserializationconfiguration-configuration">Deserialize(Type modelType, Stream stream, ISerializationConfiguration configuration)</h3>
 
-<p>Deserializes the specified model.</p>
+<p>Deserializes the specified model type.</p>
 
-<h4 id="parameters-3">Parameters</h4>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>model</strong></td>
-<td>The model.</td>
-</tr>
-
-<tr>
-<td><strong>serializationContext</strong></td>
-<td>The serialization context.</td>
-</tr>
-
-<tr>
-<td><strong>configuration</strong></td>
-<td>The configuration.</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="returns-3">Returns</h4>
-
-<p>The deserialized model.</p>
-
-<h3 id="deserialize-object-model-stream-stream-iserializationconfiguration-configuration">Deserialize(object model, Stream stream, ISerializationConfiguration configuration)</h3>
-
-<p>Deserializes the specified model.</p>
-
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-13">Parameters</h4>
 
 <table>
 <thead>
@@ -6005,8 +6478,8 @@ The type of the serialization context.</p>
 
 <tbody>
 <tr>
-<td><strong>model</strong></td>
-<td>The model.</td>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
 </tr>
 
 <tr>
@@ -6021,15 +6494,78 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
+<h4 id="returns-3">Returns</h4>
+
+<p>The deserialized.</p>
+
+<h3 id="deserialize-type-modeltype-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(Type modelType, TSerializationContext serializationContext, ISerializationConfiguration configuration)</h3>
+
+<p>Deserializes the specified model type.</p>
+
+<h4 id="parameters-14">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>serializationContext</strong></td>
+<td>The serialization context.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
 <h4 id="returns-4">Returns</h4>
 
-<p>The deserialized model.</p>
+<p>The deserialized.</p>
 
-<h3 id="deserialize-object-model-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, TSerializationContext serializationContext, ISerializationConfiguration configuration)</h3>
+<h3 id="deserialize-object-model-iserializationcontext-lt-tserializationcontext-gt-context">Deserialize(object model, ISerializationContext&lt;TSerializationContext&gt; context)</h3>
 
 <p>Deserializes the specified model.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-15">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The serialization context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="deserialize-object-model-iserializationcontextinfo-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, ISerializationContextInfo serializationContext, ISerializationConfiguration configuration)</h3>
+
+<p>Deserializes the specified model.</p>
+
+<h4 id="parameters-16">Parameters</h4>
 
 <table>
 <thead>
@@ -6059,11 +6595,140 @@ The type of the serialization context.</p>
 
 <h4 id="returns-5">Returns</h4>
 
+<p>The deserialized model.</p>
+
+<h3 id="deserialize-object-model-stream-stream-iserializationconfiguration-configuration">Deserialize(object model, Stream stream, ISerializationConfiguration configuration)</h3>
+
+<p>Deserializes the specified model.</p>
+
+<h4 id="parameters-17">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>stream</strong></td>
+<td>The stream.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-6">Returns</h4>
+
+<p>The deserialized model.</p>
+
+<h3 id="deserialize-object-model-tserializationcontext-serializationcontext-iserializationconfiguration-configuration">Deserialize(object model, TSerializationContext serializationContext, ISerializationConfiguration configuration)</h3>
+
+<p>Deserializes the specified model.</p>
+
+<h4 id="parameters-18">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>serializationContext</strong></td>
+<td>The serialization context.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-7">Returns</h4>
+
+<h3 id="deserializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">DeserializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Deserializes the member.</p>
+
+<h4 id="parameters-19">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-8">Returns</h4>
+
+<p>The <a href="#">SerializationObject</a> representing the deserialized value or result.</p>
+
+<h3 id="deserializemembers-iserializationcontext-lt-tserializationcontext-gt-context">DeserializeMembers(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Deserializes the members.</p>
+
+<h4 id="parameters-20">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-9">Returns</h4>
+
+<p>The deserialized list of member values.</p>
+
 <h3 id="deserializemembers-type-modeltype-iserializationcontextinfo-serializationcontextinfo-iserializationconfiguration-configuration">DeserializeMembers(Type modelType, ISerializationContextInfo serializationContextInfo, ISerializationConfiguration configuration)</h3>
 
 <p>Deserializes the members.</p>
 
-<h4 id="parameters-6">Parameters</h4>
+<h4 id="parameters-21">Parameters</h4>
 
 <table>
 <thead>
@@ -6091,7 +6756,7 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
-<h4 id="returns-6">Returns</h4>
+<h4 id="returns-10">Returns</h4>
 
 <p>The deserialized list of member values.</p>
 
@@ -6099,7 +6764,7 @@ The type of the serialization context.</p>
 
 <p>Deserializes the members.</p>
 
-<h4 id="parameters-7">Parameters</h4>
+<h4 id="parameters-22">Parameters</h4>
 
 <table>
 <thead>
@@ -6127,7 +6792,7 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
-<h4 id="returns-7">Returns</h4>
+<h4 id="returns-11">Returns</h4>
 
 <p>The deserialized list of member values.</p>
 
@@ -6135,7 +6800,7 @@ The type of the serialization context.</p>
 
 <p>Deserializes the members.</p>
 
-<h4 id="parameters-8">Parameters</h4>
+<h4 id="parameters-23">Parameters</h4>
 
 <table>
 <thead>
@@ -6163,15 +6828,427 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
-<h4 id="returns-8">Returns</h4>
+<h4 id="returns-12">Returns</h4>
 
 <p>The deserialized list of member values.</p>
+
+<h3 id="deserializeusingobjectparse-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">DeserializeUsingObjectParse(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Deserializes the object using the<code>Parse(string, IFormatProvider)</code> method.</p>
+
+<h4 id="returns-13">Returns</h4>
+
+<p>The deserialized object.</p>
+
+<h3 id="getcontext-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context for the specified model type. Use this method when no model instance is available. This method will create one.</p>
+
+<h4 id="parameters-24">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>stream</strong></td>
+<td>The stream.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-14">Returns</h4>
+
+<p>The serialization context.</p>
+
+<h4 id="exceptions-1">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The modelType is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getcontext-type-modeltype-tserializationcontext-context-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(Type modelType, TSerializationContext context, SerializationContextMode contextMode, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context for the specified model type. Use this method when no model instance is available. This method will create one.</p>
+
+<h4 id="parameters-25">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-15">Returns</h4>
+
+<p>The serialization context.</p>
+
+<h4 id="exceptions-2">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The modelType is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getcontext-object-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context.</p>
+
+<h4 id="parameters-26">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model, can be<code>null</code> for value types.</td>
+</tr>
+
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>stream</strong></td>
+<td>The stream.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-16">Returns</h4>
+
+<p>The serialization context.</p>
+
+<h4 id="exceptions-3">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The model is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getcontext-object-model-type-modeltype-tserializationcontext-context-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, TSerializationContext context, SerializationContextMode contextMode, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context for the specified model instance.</p>
+
+<h4 id="parameters-27">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model, can be<code>null</code> for value types.</td>
+</tr>
+
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-17">Returns</h4>
+
+<p>The serialization context.</p>
+
+<h4 id="exceptions-4">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The model is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getcurrentserializationconfiguration-iserializationconfiguration-configuration">GetCurrentSerializationConfiguration(ISerializationConfiguration configuration)</h3>
+
+<p>Gets the current serialization configuration.</p>
+
+<h4 id="parameters-28">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration that might override the existing scope configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-18">Returns</h4>
+
+<h3 id="getcurrentserializationscopemanager-iserializationconfiguration-configuration">GetCurrentSerializationScopeManager(ISerializationConfiguration configuration)</h3>
+
+<p>Gets the current serialization scope.</p>
+
+<h4 id="parameters-29">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-19">Returns</h4>
+
+<h3 id="getmembergroup-type-modeltype-string-membername">GetMemberGroup(Type modelType, string memberName)</h3>
+
+<p>Gets the member group.</p>
+
+<h4 id="parameters-30">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>memberName</strong></td>
+<td>Name of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-20">Returns</h4>
+
+<p>The <a href="#">SerializationMemberGroup</a>.</p>
+
+<h3 id="getmembertype-type-modeltype-string-membername">GetMemberType(Type modelType, string memberName)</h3>
+
+<p>Gets the type of the member.</p>
+
+<h4 id="parameters-31">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>memberName</strong></td>
+<td>Name of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-21">Returns</h4>
+
+<p>The of the member.</p>
+
+<h3 id="getobjectparsemethod-type-membertype">GetObjectParseMethod(Type memberType)</h3>
+
+<p>Gets the<code>Parse(string, IFormatProvider)</code> method.</p>
+
+<h4 id="parameters-32">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-22">Returns</h4>
+
+<h3 id="getobjecttostringmethod-type-membertype">GetObjectToStringMethod(Type memberType)</h3>
+
+<p>Gets the<code>ToString(IFormatProvider)</code> method.</p>
+
+<h4 id="parameters-33">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-23">Returns</h4>
 
 <h3 id="getserializablemembers-iserializationcontext-lt-tserializationcontext-gt-context-object-model-string-memberstoignore">GetSerializableMembers(ISerializationContext&lt;TSerializationContext&gt; context, object model, string[] membersToIgnore)</h3>
 
 <p>Gets the serializable members for the specified model.</p>
 
-<h4 id="parameters-9">Parameters</h4>
+<h4 id="parameters-34">Parameters</h4>
 
 <table>
 <thead>
@@ -6199,11 +7276,11 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
-<h4 id="returns-9">Returns</h4>
+<h4 id="returns-24">Returns</h4>
 
 <p>The list of members to serialize.</p>
 
-<h4 id="exceptions">Exceptions</h4>
+<h4 id="exceptions-5">Exceptions</h4>
 
 <table>
 <thead>
@@ -6221,11 +7298,181 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
+<h3 id="isrootcollection-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">IsRootCollection(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Determines whether the specified member value is a root collection.</p>
+
+<h4 id="parameters-35">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-25">Returns</h4>
+
+<p><code>true</code> if the specified member value is a root collection; otherwise,<code>false</code>.</p>
+
+<h3 id="isrootdictionary-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">IsRootDictionary(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Determines whether the specified member value is a root dictionary.</p>
+
+<h4 id="parameters-36">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-26">Returns</h4>
+
+<p><code>true</code> if the specified member value is a root dictionary; otherwise,<code>false</code>.</p>
+
+<h3 id="isrootobject-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue-func-lt-membervalue-bool-gt-predicate">IsRootObject(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue, Func&lt;MemberValue, bool&gt; predicate)</h3>
+
+<p>Determines whether the specified member value is a root object.</p>
+
+<h4 id="parameters-37">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+
+<tr>
+<td><strong>predicate</strong></td>
+<td>The predicate.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-27">Returns</h4>
+
+<p><code>true</code> if the specified member value is a root object; otherwise,<code>false</code>.</p>
+
+<h3 id="populatemodel-object-model-membervalue-members">PopulateModel(object model, MemberValue[] members)</h3>
+
+<p>Populates the model with the specified members.</p>
+
+<h4 id="parameters-38">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>members</strong></td>
+<td>The members.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-6">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The model is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="serialize-object-model-iserializationcontext-lt-tserializationcontext-gt-context">Serialize(object model, ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Serializes the specified model.</p>
+
+<h4 id="parameters-39">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="serialize-object-model-iserializationcontextinfo-context-iserializationconfiguration-configuration">Serialize(object model, ISerializationContextInfo context, ISerializationConfiguration configuration)</h3>
 
 <p>Serializes the specified model.</p>
 
-<h4 id="parameters-10">Parameters</h4>
+<h4 id="parameters-40">Parameters</h4>
 
 <table>
 <thead>
@@ -6257,7 +7504,7 @@ The type of the serialization context.</p>
 
 <p>Serializes the specified model.</p>
 
-<h4 id="parameters-11">Parameters</h4>
+<h4 id="parameters-41">Parameters</h4>
 
 <table>
 <thead>
@@ -6289,7 +7536,7 @@ The type of the serialization context.</p>
 
 <p>Serializes the specified model.</p>
 
-<h4 id="parameters-12">Parameters</h4>
+<h4 id="parameters-42">Parameters</h4>
 
 <table>
 <thead>
@@ -6317,11 +7564,69 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
+<h3 id="serializemember-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">SerializeMember(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Serializes the member.</p>
+
+<h4 id="parameters-43">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-28">Returns</h4>
+
+<p>The deserialized member value.</p>
+
+<h3 id="serializemembers-iserializationcontext-lt-tserializationcontext-gt-context-list-lt-membervalue-gt-memberstoserialize">SerializeMembers(ISerializationContext&lt;TSerializationContext&gt; context, List&lt;MemberValue&gt; membersToSerialize)</h3>
+
+<p>Serializes the members.</p>
+
+<h4 id="parameters-44">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>membersToSerialize</strong></td>
+<td>The members to serialize.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="serializemembers-object-model-stream-stream-iserializationconfiguration-configuration-string-memberstoignore">SerializeMembers(object model, Stream stream, ISerializationConfiguration configuration, string[] membersToIgnore)</h3>
 
 <p>Serializes the members.</p>
 
-<h4 id="parameters-13">Parameters</h4>
+<h4 id="parameters-45">Parameters</h4>
 
 <table>
 <thead>
@@ -6354,11 +7659,318 @@ The type of the serialization context.</p>
 </tbody>
 </table>
 
+<h3 id="serializeusingobjecttostring-iserializationcontext-lt-tserializationcontext-gt-context-membervalue-membervalue">SerializeUsingObjectToString(ISerializationContext&lt;TSerializationContext&gt; context, MemberValue memberValue)</h3>
+
+<p>Deserializes the object using the<code>Parse(string, IFormatProvider)</code> method.</p>
+
+<h4 id="returns-29">Returns</h4>
+
+<p>The deserialized object.</p>
+
+<h3 id="shouldexternalserializerhandlemember-membervalue-membervalue">ShouldExternalSerializerHandleMember(MemberValue memberValue)</h3>
+
+<p>Returns whether json.net should handle the member. By default it only handles non-class types.</p>
+
+<h4 id="parameters-46">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-30">Returns</h4>
+
+<p><code>true</code> if json.net should handle the type,<code>false</code> otherwise.</p>
+
+<h3 id="shouldexternalserializerhandlemember-type-membertype">ShouldExternalSerializerHandleMember(Type memberType)</h3>
+
+<p>Returns whether json.net should handle the member. By default it only handles non-class types.</p>
+
+<h4 id="parameters-47">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-31">Returns</h4>
+
+<p><code>true</code> if json.net should handle the type,<code>false</code> otherwise.</p>
+
+<h3 id="shouldignoremember-object-model-string-propertyname">ShouldIgnoreMember(object model, string propertyName)</h3>
+
+<p>Determines whether the specified member on the specified model should be ignored by the serialization engine.</p>
+
+<h4 id="parameters-48">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>propertyName</strong></td>
+<td>Name of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-32">Returns</h4>
+
+<p><code>true</code> if the member should be ignored,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeascollection-membervalue-membervalue">ShouldSerializeAsCollection(MemberValue memberValue)</h3>
+
+<p>Returns whether the member value should be serialized as collection.</p>
+
+<h4 id="parameters-49">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-33">Returns</h4>
+
+<p><code>true</code> if the member value should be serialized as collection,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeascollection-type-membertype">ShouldSerializeAsCollection(Type memberType)</h3>
+
+<p>Returns whether the member value should be serialized as collection.</p>
+
+<h4 id="parameters-50">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-34">Returns</h4>
+
+<p><code>true</code> if the member value should be serialized as collection,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeasdictionary-membervalue-membervalue">ShouldSerializeAsDictionary(MemberValue memberValue)</h3>
+
+<p>Returns whether the member value should be serialized as dictionary.</p>
+
+<h4 id="parameters-51">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-35">Returns</h4>
+
+<p><code>true</code> if the member value should be serialized as dictionary,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeasdictionary-type-membertype">ShouldSerializeAsDictionary(Type memberType)</h3>
+
+<p>Returns whether the member value should be serialized as dictionary.</p>
+
+<h4 id="parameters-52">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-36">Returns</h4>
+
+<p><code>true</code> if the member value should be serialized as dictionary,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeenumasstring-membervalue-membervalue-bool-checkactualmembertype">ShouldSerializeEnumAsString(MemberValue memberValue, bool checkActualMemberType)</h3>
+
+<p>Returns whether the enum member value should be serialized as string.</p>
+
+<h4 id="parameters-53">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td></td>
+</tr>
+
+<tr>
+<td><strong>checkActualMemberType</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-37">Returns</h4>
+
+<h3 id="shouldserializemodelascollection-type-membertype">ShouldSerializeModelAsCollection(Type memberType)</h3>
+
+<p>Returns whether the model should be serialized as collection. Note that this method will return<code>false</code> if the method does not derive from<code>ModelBase</code>.</p>
+
+<h4 id="parameters-54">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberType</strong></td>
+<td>Type of the member.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-38">Returns</h4>
+
+<p><code>true</code> if the model should be serialized as a collection,<code>false</code> otherwise.</p>
+
+<h3 id="shouldserializeusingparseandtostring-membervalue-membervalue-bool-checkactualmembertype">ShouldSerializeUsingParseAndToString(MemberValue memberValue, bool checkActualMemberType)</h3>
+
+<p>Returns whether the member value should be serialized using<code>ToString(IFormatProvider)</code> and deserialized using<code>Parse(string, IFormatProvider)</code>.</p>
+
+<h4 id="parameters-55">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+
+<tr>
+<td><strong>checkActualMemberType</strong></td>
+<td>if set to<code>true</code>, check the actual member type.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-39">Returns</h4>
+
+<p><code>true</code> if the member should be serialized using parse.</p>
+
+<h3 id="supportsdictionaryserialization-iserializationcontext-lt-tserializationcontext-gt-context">SupportsDictionarySerialization(ISerializationContext&lt;TSerializationContext&gt; context)</h3>
+
+<p>Supportses the dictionary serialization.</p>
+
+<h4 id="parameters-56">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-40">Returns</h4>
+
+<p><code>true</code> if XXXX,<code>false</code> otherwise.</p>
+
 <h3 id="warmup-ienumerable-lt-type-gt-types-int-typesperthread">Warmup(IEnumerable&lt;Type&gt; types, int typesPerThread)</h3>
 
 <p>Warms up the specified types. If the types is<code>null</code>, all types known in the <a href="#">TypeCache</a> will be initialized. Note that it is not required to call this, but it can help to prevent an additional performance impact the first time a type is serialized.</p>
 
-<h4 id="parameters-14">Parameters</h4>
+<h4 id="parameters-57">Parameters</h4>
 
 <table>
 <thead>
@@ -6377,6 +7989,28 @@ The type of the serialization context.</p>
 <tr>
 <td><strong>typesPerThread</strong></td>
 <td>The types per thread. If<code>-1</code>, all types will be initialized on the same thread.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="warmup-type-type">Warmup(Type type)</h3>
+
+<p>Warms up the specified type.</p>
+
+<h4 id="parameters-58">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type to warmup.</td>
 </tr>
 </tbody>
 </table>

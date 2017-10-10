@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5658,20 +5659,40 @@
 </ul></li>
 </ul></li>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#navigationlogicbase-t-targetpage-type-viewmodeltype">NavigationLogicBase(T targetPage, Type viewModelType)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#targetpage">TargetPage</a></li>
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
+<li><a href="#ensureviewmodel">EnsureViewModel()</a></li>
+<li><a href="#onnavigatedawayfrompage-navigatedeventargs-e">OnNavigatedAwayFromPage(NavigatedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+</ul></li>
+<li><a href="#onnavigatedtopage-navigatedeventargs-e">OnNavigatedToPage(NavigatedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+</ul></li>
+<li><a href="#onnavigatingawayfrompage-navigatingeventargs-e">OnNavigatingAwayFromPage(NavigatingEventArgs e)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
 <li><a href="#ontargetviewloadedasync-object-sender-eventargs-e">OnTargetViewLoadedAsync(object sender, EventArgs e)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
 </ul></li>
 <li><a href="#ontargetviewunloadedasync-object-sender-eventargs-e">OnTargetViewUnloadedAsync(object sender, EventArgs e)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#parameters-5">Parameters</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5736,6 +5757,51 @@ Type of the control or page.</p>
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="navigationlogicbase-t-targetpage-type-viewmodeltype">NavigationLogicBase(T targetPage, Type viewModelType)</h3>
+
+<p>Initializes a new instance of the <a href="#">PageLogic</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>targetPage</strong></td>
+<td>The page this provider should take care of.</td>
+</tr>
+
+<tr>
+<td><strong>viewModelType</strong></td>
+<td>Type of the view model.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The targetPage is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="targetpage">TargetPage</h3>
@@ -5744,11 +5810,81 @@ Type of the control or page.</p>
 
 <h2 id="methods">Methods</h2>
 
+<h3 id="ensureviewmodel">EnsureViewModel()</h3>
+
+<p>Ensures that there is a valid view model. This is a separate method because the view model can be constructed in the constructor, but also in the OnLoaded event because of the tombstoning capabilities of Windows Phone 7. If there already is a view model, this method will do nothing.</p>
+
+<h3 id="onnavigatedawayfrompage-navigatedeventargs-e">OnNavigatedAwayFromPage(NavigatedEventArgs e)</h3>
+
+<p>Called when the control has just been navigated away from the page.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">NavigatedEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onnavigatedtopage-navigatedeventargs-e">OnNavigatedToPage(NavigatedEventArgs e)</h3>
+
+<p>Called when the control has just been navigated to the page.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">NavigatedEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onnavigatingawayfrompage-navigatingeventargs-e">OnNavigatingAwayFromPage(NavigatingEventArgs e)</h3>
+
+<p>Called when the control has just been navigated away from the page.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">NavigatingEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="ontargetviewloadedasync-object-sender-eventargs-e">OnTargetViewLoadedAsync(object sender, EventArgs e)</h3>
 
 <p>Called when the TargetView has just been loaded.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5775,7 +5911,7 @@ Type of the control or page.</p>
 
 <p>Called when the TargetView has just been unloaded.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
 <thead>

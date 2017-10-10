@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5668,7 +5669,12 @@
 <ul>
 <li><a href="#automaticallydispatchchangenotifications">AutomaticallyDispatchChangeNotifications</a></li>
 <li><a href="#isdirty">IsDirty</a></li>
+<li><a href="#issortedcore">IsSortedCore</a></li>
 <li><a href="#notificationssuspended">NotificationsSuspended</a></li>
+<li><a href="#sortdirectioncore">SortDirectionCore</a></li>
+<li><a href="#sortpropertycore">SortPropertyCore</a></li>
+<li><a href="#supportssearchingcore">SupportsSearchingCore</a></li>
+<li><a href="#supportssortingcore">SupportsSortingCore</a></li>
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
@@ -5682,27 +5688,54 @@
 <li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#exceptions-1">Exceptions</a></li>
 </ul></li>
-<li><a href="#insertitems-ienumerable-collection-int-index">InsertItems(IEnumerable collection, int index)</a>
+<li><a href="#applysortcore-propertydescriptor-prop-listsortdirection-direction">ApplySortCore(PropertyDescriptor prop, ListSortDirection direction)</a>
 <ul>
 <li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#clearitems">ClearItems()</a></li>
+<li><a href="#findcore-propertydescriptor-prop-object-key">FindCore(PropertyDescriptor prop, object key)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+</ul></li>
+<li><a href="#insertitem-int-index-t-item">InsertItem(int index, T item)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
+</ul></li>
+<li><a href="#insertitems-ienumerable-collection-int-index">InsertItems(IEnumerable collection, int index)</a>
+<ul>
+<li><a href="#parameters-7">Parameters</a></li>
 <li><a href="#exceptions-2">Exceptions</a></li>
 </ul></li>
 <li><a href="#insertitems-ienumerable-lt-t-gt-collection-int-index">InsertItems(IEnumerable&lt;T&gt; collection, int index)</a>
 <ul>
-<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#parameters-8">Parameters</a></li>
 <li><a href="#exceptions-3">Exceptions</a></li>
+</ul></li>
+<li><a href="#notifychanges">NotifyChanges()</a></li>
+<li><a href="#onlistchanged-listchangedeventargs-e">OnListChanged(ListChangedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
+</ul></li>
+<li><a href="#removeitem-int-index">RemoveItem(int index)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
 </ul></li>
 <li><a href="#removeitems-ienumerable-collection">RemoveItems(IEnumerable collection)</a>
 <ul>
-<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#parameters-11">Parameters</a></li>
 <li><a href="#exceptions-4">Exceptions</a></li>
 </ul></li>
 <li><a href="#removeitems-ienumerable-lt-t-gt-collection">RemoveItems(IEnumerable&lt;T&gt; collection)</a>
 <ul>
-<li><a href="#parameters-7">Parameters</a></li>
+<li><a href="#parameters-12">Parameters</a></li>
 <li><a href="#exceptions-5">Exceptions</a></li>
 </ul></li>
+<li><a href="#removesortcore">RemoveSortCore()</a></li>
 <li><a href="#reset">Reset()</a></li>
+<li><a href="#setitem-int-index-t-item">SetItem(int index, T item)</a>
+<ul>
+<li><a href="#parameters-13">Parameters</a></li>
+</ul></li>
 <li><a href="#suspendchangenotifications">SuspendChangeNotifications()</a>
 <ul>
 <li><a href="#returns">Returns</a></li>
@@ -5710,7 +5743,7 @@
 </ul></li>
 <li><a href="#suspendchangenotifications-suspensionmode-mode">SuspendChangeNotifications(SuspensionMode mode)</a>
 <ul>
-<li><a href="#parameters-8">Parameters</a></li>
+<li><a href="#parameters-14">Parameters</a></li>
 <li><a href="#returns-1">Returns</a></li>
 <li><a href="#examples-1">Examples</a></li>
 </ul></li>
@@ -5838,9 +5871,29 @@ Type of the elements contained by this collection.</p>
 
 <p>Gets or sets a value indicating whether change to the collection is made when its notifications are suspended.</p>
 
+<h3 id="issortedcore">IsSortedCore</h3>
+
+<p>Gets a value indicating whether the list is sorted.</p>
+
 <h3 id="notificationssuspended">NotificationsSuspended</h3>
 
 <p>Gets a value indicating whether change notifications are suspended.</p>
+
+<h3 id="sortdirectioncore">SortDirectionCore</h3>
+
+<p>Gets the direction the list is sorted.</p>
+
+<h3 id="sortpropertycore">SortPropertyCore</h3>
+
+<p>Gets the property descriptor that is used for sorting the list.</p>
+
+<h3 id="supportssearchingcore">SupportsSearchingCore</h3>
+
+<p>Gets a value indicating whether the list supports searching.</p>
+
+<h3 id="supportssortingcore">SupportsSortingCore</h3>
+
+<p>Gets a value indicating whether the list supports sorting.</p>
 
 <h2 id="methods">Methods</h2>
 
@@ -5924,11 +5977,96 @@ Type of the elements contained by this collection.</p>
 </tbody>
 </table>
 
+<h3 id="applysortcore-propertydescriptor-prop-listsortdirection-direction">ApplySortCore(PropertyDescriptor prop, ListSortDirection direction)</h3>
+
+<p>Apply sort.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>prop</strong></td>
+<td>The that specifies the property to sort on.</td>
+</tr>
+
+<tr>
+<td><strong>direction</strong></td>
+<td>One of the values.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="clearitems">ClearItems()</h3>
+
+<p>Removes all items from the collection.</p>
+
+<h3 id="findcore-propertydescriptor-prop-object-key">FindCore(PropertyDescriptor prop, object key)</h3>
+
+<p>Search for the index of item that has the specified property descriptor with the specified value.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>prop</strong></td>
+<td>The that specifies the property to search on.</td>
+</tr>
+
+<tr>
+<td><strong>key</strong></td>
+<td>The value of property to match.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="insertitem-int-index-t-item">InsertItem(int index, T item)</h3>
+
+<p>Inserts an item into the collection at the specified index.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>index</strong></td>
+<td>The zero-based index at which item should be inserted.</td>
+</tr>
+
+<tr>
+<td><strong>item</strong></td>
+<td>The object to insert.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="insertitems-ienumerable-collection-int-index">InsertItems(IEnumerable collection, int index)</h3>
 
 <p>Inserts the elements of the specified collection at the specified index.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-7">Parameters</h4>
 
 <table>
 <thead>
@@ -5973,7 +6111,7 @@ Type of the elements contained by this collection.</p>
 
 <p>Inserts the elements of the specified collection at the specified index.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-8">Parameters</h4>
 
 <table>
 <thead>
@@ -6014,11 +6152,59 @@ Type of the elements contained by this collection.</p>
 </tbody>
 </table>
 
+<h3 id="notifychanges">NotifyChanges()</h3>
+
+<p>Notifies external classes of property changes.</p>
+
+<h3 id="onlistchanged-listchangedeventargs-e">OnListChanged(ListChangedEventArgs e)</h3>
+
+<p>Raises the event, but also makes sure the event is dispatched to the UI thread.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="removeitem-int-index">RemoveItem(int index)</h3>
+
+<p>Removes the item at the specified index of the collection.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>index</strong></td>
+<td>The zero-based index of the element to remove.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="removeitems-ienumerable-collection">RemoveItems(IEnumerable collection)</h3>
 
 <p>Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.</p>
 
-<h4 id="parameters-6">Parameters</h4>
+<h4 id="parameters-11">Parameters</h4>
 
 <table>
 <thead>
@@ -6058,7 +6244,7 @@ Type of the elements contained by this collection.</p>
 
 <p>Removes the specified items from the collection without causing a change notification for all items. This method will raise a change notification at the end.</p>
 
-<h4 id="parameters-7">Parameters</h4>
+<h4 id="parameters-12">Parameters</h4>
 
 <table>
 <thead>
@@ -6094,9 +6280,40 @@ Type of the elements contained by this collection.</p>
 </tbody>
 </table>
 
+<h3 id="removesortcore">RemoveSortCore()</h3>
+
+<p>Removes any applied sort.</p>
+
 <h3 id="reset">Reset()</h3>
 
 <p>Raises CollectionChanged with Reset changed action.</p>
+
+<h3 id="setitem-int-index-t-item">SetItem(int index, T item)</h3>
+
+<p>Replaces the element at the specified index.</p>
+
+<h4 id="parameters-13">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>index</strong></td>
+<td>The zero-based index of the element to replace.</td>
+</tr>
+
+<tr>
+<td><strong>item</strong></td>
+<td>The new value for the element at the specified index.</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="suspendchangenotifications">SuspendChangeNotifications()</h3>
 
@@ -6127,7 +6344,7 @@ Type of the elements contained by this collection.</p>
 
 <p>Suspends the change notifications until the returned is disposed.</p>
 
-<h4 id="parameters-8">Parameters</h4>
+<h4 id="parameters-14">Parameters</h4>
 
 <table>
 <thead>

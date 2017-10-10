@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5644,7 +5645,13 @@
 <ul>
 <li>
 <ul>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#viewmodeltomodelconverterbase-string-propertynames">ViewModelToModelConverterBase(string[] propertyNames)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#propertynames">PropertyNames</a></li>
@@ -5653,27 +5660,27 @@
 <ul>
 <li><a href="#canconvert-type-types-type-outtype-type-viewmodeltype">CanConvert(Type[] types, Type outType, Type viewModelType)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-1">Parameters</a></li>
 <li><a href="#returns">Returns</a></li>
 </ul></li>
 <li><a href="#canconvertback-type-intype-type-outtypes-type-viewmodeltype">CanConvertBack(Type inType, Type[] outTypes, Type viewModelType)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#parameters-2">Parameters</a></li>
 <li><a href="#returns-1">Returns</a></li>
 </ul></li>
 <li><a href="#convert-object-values-iviewmodel-viewmodel">Convert(object[] values, IViewModel viewModel)</a>
 <ul>
-<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#returns-2">Returns</a></li>
 </ul></li>
 <li><a href="#convertback-object-value-iviewmodel-viewmodel">ConvertBack(object value, IViewModel viewModel)</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
 <li><a href="#returns-3">Returns</a></li>
 </ul></li>
 <li><a href="#shouldconvert-string-propertyname">ShouldConvert(string propertyName)</a>
 <ul>
-<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#parameters-5">Parameters</a></li>
 <li><a href="#returns-4">Returns</a></li>
 </ul></li>
 </ul></li>
@@ -5732,6 +5739,28 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="viewmodeltomodelconverterbase-string-propertynames">ViewModelToModelConverterBase(string[] propertyNames)</h3>
+
+<p>Initializes a new instance of the <a href="#">ViewModelToModelConverterBase</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>propertyNames</strong></td>
+<td>Name of property on which attribute was setted</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="propertynames">PropertyNames</h3>
@@ -5744,7 +5773,7 @@
 
 <p>Determines whether this instance can convert the specified types.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-1">Parameters</h4>
 
 <table>
 <thead>
@@ -5780,7 +5809,7 @@
 
 <p>Determines whether this instance can convert back the specified in type.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-2">Parameters</h4>
 
 <table>
 <thead>
@@ -5816,7 +5845,7 @@
 
 <p>Converts the specified values.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-3">Parameters</h4>
 
 <table>
 <thead>
@@ -5847,7 +5876,7 @@
 
 <p>Converts the specified values back.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5878,7 +5907,7 @@
 
 <p>Determines whether the property name should be converted.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
 <thead>

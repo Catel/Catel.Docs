@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5658,45 +5659,92 @@
 <li><a href="#parameters">Parameters</a></li>
 <li><a href="#exceptions">Exceptions</a></li>
 </ul></li>
-<li><a href="#aftervalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
+<li><a href="#aftervalidatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">AfterValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</a>
 <ul>
 <li><a href="#parameters-1">Parameters</a></li>
 <li><a href="#exceptions-1">Exceptions</a></li>
 </ul></li>
-<li><a href="#aftervalidation-object-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(object instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</a>
+<li><a href="#aftervalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
 <ul>
 <li><a href="#parameters-2">Parameters</a></li>
 <li><a href="#exceptions-2">Exceptions</a></li>
 </ul></li>
-<li><a href="#beforevalidatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</a>
+<li><a href="#aftervalidatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
 <ul>
 <li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#exceptions-3">Exceptions</a></li>
 </ul></li>
-<li><a href="#beforevalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(object instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</a>
+<li><a href="#aftervalidation-object-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(object instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</a>
 <ul>
 <li><a href="#parameters-4">Parameters</a></li>
 <li><a href="#exceptions-4">Exceptions</a></li>
 </ul></li>
-<li><a href="#beforevalidation-object-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(object instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</a>
+<li><a href="#aftervalidation-ttargettype-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(TTargetType instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</a>
 <ul>
 <li><a href="#parameters-5">Parameters</a></li>
 <li><a href="#exceptions-5">Exceptions</a></li>
 </ul></li>
-<li><a href="#validate-object-instance-validationcontext-validationcontext">Validate(object instance, ValidationContext validationContext)</a>
+<li><a href="#beforevalidatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</a>
 <ul>
 <li><a href="#parameters-6">Parameters</a></li>
 <li><a href="#exceptions-6">Exceptions</a></li>
 </ul></li>
-<li><a href="#validatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</a>
+<li><a href="#beforevalidatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</a>
 <ul>
 <li><a href="#parameters-7">Parameters</a></li>
 <li><a href="#exceptions-7">Exceptions</a></li>
 </ul></li>
-<li><a href="#validatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
+<li><a href="#beforevalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(object instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</a>
 <ul>
 <li><a href="#parameters-8">Parameters</a></li>
 <li><a href="#exceptions-8">Exceptions</a></li>
+</ul></li>
+<li><a href="#beforevalidatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
+<li><a href="#exceptions-9">Exceptions</a></li>
+</ul></li>
+<li><a href="#beforevalidation-object-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(object instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#exceptions-10">Exceptions</a></li>
+</ul></li>
+<li><a href="#beforevalidation-ttargettype-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(TTargetType instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</a>
+<ul>
+<li><a href="#parameters-11">Parameters</a></li>
+<li><a href="#exceptions-11">Exceptions</a></li>
+</ul></li>
+<li><a href="#validate-object-instance-validationcontext-validationcontext">Validate(object instance, ValidationContext validationContext)</a>
+<ul>
+<li><a href="#parameters-12">Parameters</a></li>
+<li><a href="#exceptions-12">Exceptions</a></li>
+</ul></li>
+<li><a href="#validate-ttargettype-instance-validationcontext-validationcontext">Validate(TTargetType instance, ValidationContext validationContext)</a>
+<ul>
+<li><a href="#parameters-13">Parameters</a></li>
+<li><a href="#exceptions-13">Exceptions</a></li>
+</ul></li>
+<li><a href="#validatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</a>
+<ul>
+<li><a href="#parameters-14">Parameters</a></li>
+<li><a href="#exceptions-14">Exceptions</a></li>
+</ul></li>
+<li><a href="#validatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</a>
+<ul>
+<li><a href="#parameters-15">Parameters</a></li>
+<li><a href="#exceptions-15">Exceptions</a></li>
+<li><a href="#remarks">Remarks</a></li>
+</ul></li>
+<li><a href="#validatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
+<ul>
+<li><a href="#parameters-16">Parameters</a></li>
+<li><a href="#exceptions-16">Exceptions</a></li>
+</ul></li>
+<li><a href="#validatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; validationResults)</a>
+<ul>
+<li><a href="#parameters-17">Parameters</a></li>
+<li><a href="#exceptions-17">Exceptions</a></li>
+<li><a href="#remarks-1">Remarks</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5809,9 +5857,9 @@ The target type.</p>
 </tbody>
 </table>
 
-<h3 id="aftervalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
+<h3 id="aftervalidatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">AfterValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</h3>
 
-<p>Called just after the specified instance has validated its fields.</p>
+<p>Called just after the specified instance has validated its business rules.</p>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -5851,17 +5899,12 @@ The target type.</p>
 <td><strong>ArgumentNullException</strong></td>
 <td>The instance is<code>null</code>.</td>
 </tr>
-
-<tr>
-<td><strong>NotSupportedException</strong></td>
-<td>The instance cannot be casted to TTargetType.</td>
-</tr>
 </tbody>
 </table>
 
-<h3 id="aftervalidation-object-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(object instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</h3>
+<h3 id="aftervalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
 
-<p>Called just after all validation has been executed.</p>
+<p>Called just after the specified instance has validated its fields.</p>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -5880,13 +5923,8 @@ The target type.</p>
 </tr>
 
 <tr>
-<td><strong>fieldValidationResults</strong></td>
-<td>The current field validation results.</td>
-</tr>
-
-<tr>
-<td><strong>businessRuleValidationResults</strong></td>
-<td>The current business rule validation results.</td>
+<td><strong>validationResults</strong></td>
+<td>The validation results.</td>
 </tr>
 </tbody>
 </table>
@@ -5914,9 +5952,9 @@ The target type.</p>
 </tbody>
 </table>
 
-<h3 id="beforevalidatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</h3>
+<h3 id="aftervalidatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-validationresults">AfterValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
 
-<p>Called just before the specified instance is about to be validate its business rules.</p>
+<p>Called just after the specified instance has validated its fields.</p>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -5931,11 +5969,11 @@ The target type.</p>
 <tbody>
 <tr>
 <td><strong>instance</strong></td>
-<td>The instance that is about to be validated.</td>
+<td>The instance that has just been validated.</td>
 </tr>
 
 <tr>
-<td><strong>previousValidationResults</strong></td>
+<td><strong>validationResults</strong></td>
 <td>The validation results.</td>
 </tr>
 </tbody>
@@ -5956,17 +5994,12 @@ The target type.</p>
 <td><strong>ArgumentNullException</strong></td>
 <td>The instance is<code>null</code>.</td>
 </tr>
-
-<tr>
-<td><strong>NotSupportedException</strong></td>
-<td>The instance cannot be casted to TTargetType.</td>
-</tr>
 </tbody>
 </table>
 
-<h3 id="beforevalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(object instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</h3>
+<h3 id="aftervalidation-object-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(object instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</h3>
 
-<p>Called just before the specified instance is about to be validate its fields.</p>
+<p>Called just after all validation has been executed.</p>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -5981,12 +6014,17 @@ The target type.</p>
 <tbody>
 <tr>
 <td><strong>instance</strong></td>
-<td>The instance that is about to be validated.</td>
+<td>The instance that has just been validated.</td>
 </tr>
 
 <tr>
-<td><strong>previousValidationResults</strong></td>
-<td>The validation results.</td>
+<td><strong>fieldValidationResults</strong></td>
+<td>The current field validation results.</td>
+</tr>
+
+<tr>
+<td><strong>businessRuleValidationResults</strong></td>
+<td>The current business rule validation results.</td>
 </tr>
 </tbody>
 </table>
@@ -6014,11 +6052,61 @@ The target type.</p>
 </tbody>
 </table>
 
-<h3 id="beforevalidation-object-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(object instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</h3>
+<h3 id="aftervalidation-ttargettype-instance-list-lt-ifieldvalidationresult-gt-fieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-businessrulevalidationresults">AfterValidation(TTargetType instance, List&lt;IFieldValidationResult&gt; fieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; businessRuleValidationResults)</h3>
 
-<p>Called just before any validation is caused.</p>
+<p>Called just after all validation has been executed.</p>
 
 <h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance that has just been validated.</td>
+</tr>
+
+<tr>
+<td><strong>fieldValidationResults</strong></td>
+<td>The current field validation results.</td>
+</tr>
+
+<tr>
+<td><strong>businessRuleValidationResults</strong></td>
+<td>The current business rule validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-5">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforevalidatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</h3>
+
+<p>Called just before the specified instance is about to be validate its business rules.</p>
+
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
 <thead>
@@ -6035,18 +6123,13 @@ The target type.</p>
 </tr>
 
 <tr>
-<td><strong>previousFieldValidationResults</strong></td>
-<td>The previous field validation results.</td>
-</tr>
-
-<tr>
-<td><strong>previousBusinessRuleValidationResults</strong></td>
-<td>The previous business rule validation results.</td>
+<td><strong>previousValidationResults</strong></td>
+<td>The validation results.</td>
 </tr>
 </tbody>
 </table>
 
-<h4 id="exceptions-5">Exceptions</h4>
+<h4 id="exceptions-6">Exceptions</h4>
 
 <table>
 <thead>
@@ -6069,54 +6152,9 @@ The target type.</p>
 </tbody>
 </table>
 
-<h3 id="validate-object-instance-validationcontext-validationcontext">Validate(object instance, ValidationContext validationContext)</h3>
+<h3 id="beforevalidatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-previousvalidationresults">BeforeValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; previousValidationResults)</h3>
 
-<p>Validates the specified instance and allows the manipulation of the whole validation context. This method can be used to manipulate the whole validation context and the implementation of this is enough.</p>
-
-<h4 id="parameters-6">Parameters</h4>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>instance</strong></td>
-<td>The instance to validate.</td>
-</tr>
-
-<tr>
-<td><strong>validationContext</strong></td>
-<td>The validation context.</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="exceptions-6">Exceptions</h4>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>ArgumentNullException</strong></td>
-<td>The instance is<code>null</code>.</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="validatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</h3>
-
-<p>Validates the business rules of the specified instance. The results must be added to the list of validation results.</p>
+<p>Called just before the specified instance is about to be validate its business rules.</p>
 
 <h4 id="parameters-7">Parameters</h4>
 
@@ -6131,11 +6169,11 @@ The target type.</p>
 <tbody>
 <tr>
 <td><strong>instance</strong></td>
-<td>The instance to validate.</td>
+<td>The instance that is about to be validated.</td>
 </tr>
 
 <tr>
-<td><strong>validationResults</strong></td>
+<td><strong>previousValidationResults</strong></td>
 <td>The validation results.</td>
 </tr>
 </tbody>
@@ -6156,17 +6194,12 @@ The target type.</p>
 <td><strong>ArgumentNullException</strong></td>
 <td>The instance is<code>null</code>.</td>
 </tr>
-
-<tr>
-<td><strong>NotSupportedException</strong></td>
-<td>The instance cannot be casted to TTargetType.</td>
-</tr>
 </tbody>
 </table>
 
-<h3 id="validatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
+<h3 id="beforevalidatefields-object-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(object instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</h3>
 
-<p>Validates the fields of the specified instance. The results must be added to the list of validation results.</p>
+<p>Called just before the specified instance is about to be validate its fields.</p>
 
 <h4 id="parameters-8">Parameters</h4>
 
@@ -6181,11 +6214,11 @@ The target type.</p>
 <tbody>
 <tr>
 <td><strong>instance</strong></td>
-<td>The instance to validate.</td>
+<td>The instance that is about to be validated.</td>
 </tr>
 
 <tr>
-<td><strong>validationResults</strong></td>
+<td><strong>previousValidationResults</strong></td>
 <td>The validation results.</td>
 </tr>
 </tbody>
@@ -6213,6 +6246,444 @@ The target type.</p>
 </tr>
 </tbody>
 </table>
+
+<h3 id="beforevalidatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-previousvalidationresults">BeforeValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; previousValidationResults)</h3>
+
+<p>Called just before the specified instance is about to be validate its fields.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance that is about to be validated.</td>
+</tr>
+
+<tr>
+<td><strong>previousValidationResults</strong></td>
+<td>The validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-9">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforevalidation-object-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(object instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</h3>
+
+<p>Called just before any validation is caused.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance that is about to be validated.</td>
+</tr>
+
+<tr>
+<td><strong>previousFieldValidationResults</strong></td>
+<td>The previous field validation results.</td>
+</tr>
+
+<tr>
+<td><strong>previousBusinessRuleValidationResults</strong></td>
+<td>The previous business rule validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-10">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>NotSupportedException</strong></td>
+<td>The instance cannot be casted to TTargetType.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforevalidation-ttargettype-instance-list-lt-ifieldvalidationresult-gt-previousfieldvalidationresults-list-lt-ibusinessrulevalidationresult-gt-previousbusinessrulevalidationresults">BeforeValidation(TTargetType instance, List&lt;IFieldValidationResult&gt; previousFieldValidationResults, List&lt;IBusinessRuleValidationResult&gt; previousBusinessRuleValidationResults)</h3>
+
+<p>Called just before any validation is caused.</p>
+
+<h4 id="parameters-11">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance that is about to be validated.</td>
+</tr>
+
+<tr>
+<td><strong>previousFieldValidationResults</strong></td>
+<td>The previous field validation results.</td>
+</tr>
+
+<tr>
+<td><strong>previousBusinessRuleValidationResults</strong></td>
+<td>The previous business rule validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-11">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="validate-object-instance-validationcontext-validationcontext">Validate(object instance, ValidationContext validationContext)</h3>
+
+<p>Validates the specified instance and allows the manipulation of the whole validation context. This method can be used to manipulate the whole validation context and the implementation of this is enough.</p>
+
+<h4 id="parameters-12">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationContext</strong></td>
+<td>The validation context.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-12">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="validate-ttargettype-instance-validationcontext-validationcontext">Validate(TTargetType instance, ValidationContext validationContext)</h3>
+
+<p>Validates the specified instance and allows the manipulation of the whole validation context. This method can be used to manipulate the whole validation context and the implementation of this is enough.</p>
+
+<h4 id="parameters-13">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationContext</strong></td>
+<td>The validation context.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-13">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="validatebusinessrules-object-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(object instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</h3>
+
+<p>Validates the business rules of the specified instance. The results must be added to the list of validation results.</p>
+
+<h4 id="parameters-14">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationResults</strong></td>
+<td>The validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-14">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>NotSupportedException</strong></td>
+<td>The instance cannot be casted to TTargetType.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="validatebusinessrules-ttargettype-instance-list-lt-ibusinessrulevalidationresult-gt-validationresults">ValidateBusinessRules(TTargetType instance, List&lt;IBusinessRuleValidationResult&gt; validationResults)</h3>
+
+<p>Validates the business rules of the specified instance. The results must be added to the list of validation results.</p>
+
+<h4 id="parameters-15">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationResults</strong></td>
+<td>The validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-15">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks">Remarks</h4>
+
+<p>There is no need to check for the arguments, they are already ensured to be correct in the <a href="#">Missing: &lt;see cref=&ldquo;T:Catel.Data.ValidatorBase`1&rdquo; /&gt;</a>.</p>
+
+<h3 id="validatefields-object-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(object instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
+
+<p>Validates the fields of the specified instance. The results must be added to the list of validation results.</p>
+
+<h4 id="parameters-16">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationResults</strong></td>
+<td>The validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-16">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>NotSupportedException</strong></td>
+<td>The instance cannot be casted to TTargetType.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="validatefields-ttargettype-instance-list-lt-ifieldvalidationresult-gt-validationresults">ValidateFields(TTargetType instance, List&lt;IFieldValidationResult&gt; validationResults)</h3>
+
+<p>Validates the fields of the specified instance. The results must be added to the list of validation results.</p>
+
+<h4 id="parameters-17">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>instance</strong></td>
+<td>The instance to validate.</td>
+</tr>
+
+<tr>
+<td><strong>validationResults</strong></td>
+<td>The validation results.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-17">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The instance is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks-1">Remarks</h4>
+
+<p>There is no need to check for the arguments, they are already ensured to be correct in the <a href="#">Missing: &lt;see cref=&ldquo;T:Catel.Data.ValidatorBase`1&rdquo; /&gt;</a>.</p>
 
 
 <footer class=" footline" >

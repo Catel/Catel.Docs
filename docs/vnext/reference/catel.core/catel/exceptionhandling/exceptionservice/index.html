@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5685,68 +5686,76 @@
 <li><a href="#type-parameters-1">Type Parameters</a></li>
 <li><a href="#returns-4">Returns</a></li>
 </ul></li>
-<li><a href="#process-action-action">Process(Action action)</a>
+<li><a href="#onexceptionbuffered-exception-bufferedexception-datetime-datetime">OnExceptionBuffered(Exception bufferedException, DateTime dateTime)</a>
 <ul>
 <li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
+<li><a href="#onretryingaction-int-retrycount-exception-lasterror-timespan-delay">OnRetryingAction(int retryCount, Exception lastError, TimeSpan delay)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#process-action-action">Process(Action action)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
 <li><a href="#exceptions-3">Exceptions</a></li>
 </ul></li>
 <li><a href="#process-lt-tresult-gt-func-lt-tresult-gt-action">Process&lt;TResult&gt;(Func&lt;TResult&gt; action)</a>
 <ul>
 <li><a href="#type-parameters-2">Type Parameters</a></li>
-<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#parameters-6">Parameters</a></li>
 <li><a href="#returns-5">Returns</a></li>
 <li><a href="#exceptions-4">Exceptions</a></li>
 </ul></li>
 <li><a href="#processasync-func-lt-task-gt-action">ProcessAsync(Func&lt;Task&gt; action)</a>
 <ul>
-<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#parameters-7">Parameters</a></li>
 <li><a href="#returns-6">Returns</a></li>
 <li><a href="#exceptions-5">Exceptions</a></li>
 </ul></li>
 <li><a href="#processasync-task-action">ProcessAsync(Task action)</a>
 <ul>
-<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#parameters-8">Parameters</a></li>
 <li><a href="#returns-7">Returns</a></li>
 <li><a href="#exceptions-6">Exceptions</a></li>
 </ul></li>
 <li><a href="#processasync-lt-tresult-gt-func-lt-task-lt-tresult-gt-gt-action">ProcessAsync&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt; action)</a>
 <ul>
 <li><a href="#type-parameters-3">Type Parameters</a></li>
-<li><a href="#parameters-7">Parameters</a></li>
+<li><a href="#parameters-9">Parameters</a></li>
 <li><a href="#returns-8">Returns</a></li>
 <li><a href="#exceptions-7">Exceptions</a></li>
 </ul></li>
 <li><a href="#processasync-lt-tresult-gt-func-lt-tresult-gt-action-cancellationtoken-cancellationtoken">ProcessAsync&lt;TResult&gt;(Func&lt;TResult&gt; action, CancellationToken cancellationToken)</a>
 <ul>
 <li><a href="#type-parameters-4">Type Parameters</a></li>
-<li><a href="#parameters-8">Parameters</a></li>
+<li><a href="#parameters-10">Parameters</a></li>
 <li><a href="#returns-9">Returns</a></li>
 <li><a href="#exceptions-8">Exceptions</a></li>
 </ul></li>
 <li><a href="#processwithretry-lt-tresult-gt-func-lt-tresult-gt-action">ProcessWithRetry&lt;TResult&gt;(Func&lt;TResult&gt; action)</a>
 <ul>
 <li><a href="#type-parameters-5">Type Parameters</a></li>
-<li><a href="#parameters-9">Parameters</a></li>
+<li><a href="#parameters-11">Parameters</a></li>
 <li><a href="#returns-10">Returns</a></li>
 <li><a href="#exceptions-9">Exceptions</a></li>
 </ul></li>
 <li><a href="#processwithretryasync-lt-tresult-gt-func-lt-task-lt-tresult-gt-gt-action">ProcessWithRetryAsync&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt; action)</a>
 <ul>
 <li><a href="#type-parameters-6">Type Parameters</a></li>
-<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#parameters-12">Parameters</a></li>
 <li><a href="#returns-11">Returns</a></li>
 <li><a href="#exceptions-10">Exceptions</a></li>
 </ul></li>
 <li><a href="#register-iexceptionhandler-handler">Register(IExceptionHandler handler)</a>
 <ul>
-<li><a href="#parameters-11">Parameters</a></li>
+<li><a href="#parameters-13">Parameters</a></li>
 <li><a href="#returns-12">Returns</a></li>
 <li><a href="#exceptions-11">Exceptions</a></li>
 </ul></li>
 <li><a href="#register-lt-texception-gt-action-lt-texception-gt-handler-func-lt-texception-bool-gt-exceptionpredicate">Register&lt;TException&gt;(Action&lt;TException&gt; handler, Func&lt;TException, bool&gt; exceptionPredicate)</a>
 <ul>
 <li><a href="#type-parameters-7">Type Parameters</a></li>
-<li><a href="#parameters-12">Parameters</a></li>
+<li><a href="#parameters-14">Parameters</a></li>
 <li><a href="#returns-13">Returns</a></li>
 <li><a href="#exceptions-12">Exceptions</a></li>
 </ul></li>
@@ -6001,11 +6010,70 @@ The type of the exception.</p>
 
 <p><code>true</code> if the exception type is registered; otherwise,<code>false</code>.</p>
 
+<h3 id="onexceptionbuffered-exception-bufferedexception-datetime-datetime">OnExceptionBuffered(Exception bufferedException, DateTime dateTime)</h3>
+
+<p>Notifies the subscribers whenever a exception buffered event occurs.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>bufferedException</strong></td>
+<td>The buffered exception</td>
+</tr>
+
+<tr>
+<td><strong>dateTime</strong></td>
+<td>The date and time when the event occurs.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onretryingaction-int-retrycount-exception-lasterror-timespan-delay">OnRetryingAction(int retryCount, Exception lastError, TimeSpan delay)</h3>
+
+<p>Notifies the subscribers whenever a retry event occurs.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>retryCount</strong></td>
+<td>The current retry attempt count.</td>
+</tr>
+
+<tr>
+<td><strong>lastError</strong></td>
+<td>The exception that caused the retry conditions to occur.</td>
+</tr>
+
+<tr>
+<td><strong>delay</strong></td>
+<td>The delay that indicates how long the current thread will be suspended before the next iteration is invoked.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="process-action-action">Process(Action action)</h3>
 
 <p>Processes the specified action. If the exception could not be handled safely by this service, it will throw the exception.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
 <thead>
@@ -6050,7 +6118,7 @@ The type of the exception.</p>
 <p><strong>TResult</strong>
 The result type.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
 <thead>
@@ -6092,7 +6160,7 @@ The result type.</p>
 
 <p>Processes the specified action.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-7">Parameters</h4>
 
 <table>
 <thead>
@@ -6134,7 +6202,7 @@ The result type.</p>
 
 <p>Processes the specified action.</p>
 
-<h4 id="parameters-6">Parameters</h4>
+<h4 id="parameters-8">Parameters</h4>
 
 <table>
 <thead>
@@ -6181,7 +6249,7 @@ The result type.</p>
 <p><strong>TResult</strong>
 The result type.</p>
 
-<h4 id="parameters-7">Parameters</h4>
+<h4 id="parameters-9">Parameters</h4>
 
 <table>
 <thead>
@@ -6228,7 +6296,7 @@ The result type.</p>
 <p><strong>TResult</strong>
 The result type.</p>
 
-<h4 id="parameters-8">Parameters</h4>
+<h4 id="parameters-10">Parameters</h4>
 
 <table>
 <thead>
@@ -6280,7 +6348,7 @@ The result type.</p>
 <p><strong>TResult</strong>
 The type of the result.</p>
 
-<h4 id="parameters-9">Parameters</h4>
+<h4 id="parameters-11">Parameters</h4>
 
 <table>
 <thead>
@@ -6327,7 +6395,7 @@ The type of the result.</p>
 <p><strong>TResult</strong>
 The result type.</p>
 
-<h4 id="parameters-10">Parameters</h4>
+<h4 id="parameters-12">Parameters</h4>
 
 <table>
 <thead>
@@ -6369,7 +6437,7 @@ The result type.</p>
 
 <p>Registers an handler for a specific exception type.</p>
 
-<h4 id="parameters-11">Parameters</h4>
+<h4 id="parameters-13">Parameters</h4>
 
 <table>
 <thead>
@@ -6418,7 +6486,7 @@ The result type.</p>
 <p><strong>TException</strong>
 The type of the exception.</p>
 
-<h4 id="parameters-12">Parameters</h4>
+<h4 id="parameters-14">Parameters</h4>
 
 <table>
 <thead>

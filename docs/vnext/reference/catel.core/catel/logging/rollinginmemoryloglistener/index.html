@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5669,6 +5670,10 @@
 <ul>
 <li><a href="#returns-2">Returns</a></li>
 </ul></li>
+<li><a href="#write-ilog-log-string-message-logevent-logevent-object-extradata-logdata-logdata-datetime-time">Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5770,6 +5775,53 @@
 <h4 id="returns-2">Returns</h4>
 
 <p>IEnumerable&lt;LogEntry&gt;.</p>
+
+<h3 id="write-ilog-log-string-message-logevent-logevent-object-extradata-logdata-logdata-datetime-time">Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)</h3>
+
+<p>Called when any message is written to the log.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>log</strong></td>
+<td>The log.</td>
+</tr>
+
+<tr>
+<td><strong>message</strong></td>
+<td>The message.</td>
+</tr>
+
+<tr>
+<td><strong>logEvent</strong></td>
+<td>The log event.</td>
+</tr>
+
+<tr>
+<td><strong>extraData</strong></td>
+<td>The extra data.</td>
+</tr>
+
+<tr>
+<td><strong>logData</strong></td>
+<td>The log data.</td>
+</tr>
+
+<tr>
+<td><strong>time</strong></td>
+<td>The time.</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >

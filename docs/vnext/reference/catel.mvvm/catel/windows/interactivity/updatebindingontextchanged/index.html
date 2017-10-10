@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5659,7 +5660,11 @@
 <ul>
 <li><a href="#updatedelay">UpdateDelay</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#onassociatedobjectloaded">OnAssociatedObjectLoaded()</a></li>
+<li><a href="#onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5728,6 +5733,14 @@
 <p>Gets or sets the update delay. This is the value that is used between updates in milliseconds. The binding will be updated when no new text change event is detected within the delay. The default value is<code>250</code>. If the value is smaller than<code>50</code>, the value will be ignored and there will be no delay between the key down and the binding update. If the value is higher than<code>5000</code>, it will be set to<code>5000</code>.</p>
 
 <h2 id="methods">Methods</h2>
+
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()</h3>
+
+<p>Called when the is loaded.</p>
+
+<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</h3>
+
+<p>Called when the is unloaded.</p>
 
 
 <footer class=" footline" >

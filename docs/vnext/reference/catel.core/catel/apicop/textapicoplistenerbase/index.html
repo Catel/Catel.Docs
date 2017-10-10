@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5645,7 +5646,35 @@
 <li>
 <ul>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#beginwriting">BeginWriting()</a></li>
+<li><a href="#beginwritingofgroup-string-groupname">BeginWritingOfGroup(string groupName)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+<li><a href="#endwriting">EndWriting()</a></li>
+<li><a href="#endwritingofgroup-string-groupname">EndWritingOfGroup(string groupName)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+</ul></li>
+<li><a href="#writeline-string-line">WriteLine(string line)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+</ul></li>
+<li><a href="#writeline-string-format-object-args">WriteLine(string format, object[] args)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
+<li><a href="#writeresult-iapicopresult-result">WriteResult(IApiCopResult result)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#writesummary-ienumerable-lt-iapicopresult-gt-results">WriteSummary(IEnumerable&lt;IApiCopResult&gt; results)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5702,6 +5731,151 @@
 <h2 id="fields">Fields</h2>
 
 <h2 id="methods">Methods</h2>
+
+<h3 id="beginwriting">BeginWriting()</h3>
+
+<p>Called when the listener is about to write the results.</p>
+
+<h3 id="beginwritingofgroup-string-groupname">BeginWritingOfGroup(string groupName)</h3>
+
+<p>Begins the writing of a specific group.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>groupName</strong></td>
+<td>Name of the group.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="endwriting">EndWriting()</h3>
+
+<p>Called when the listener has finished writing all the results.</p>
+
+<h3 id="endwritingofgroup-string-groupname">EndWritingOfGroup(string groupName)</h3>
+
+<p>Ends the writing of a specific group.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>groupName</strong></td>
+<td>Name of the group.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="writeline-string-line">WriteLine(string line)</h3>
+
+<p>Writes the line the to final output.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>line</strong></td>
+<td>The line.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="writeline-string-format-object-args">WriteLine(string format, object[] args)</h3>
+
+<p>Writes the line with formatting arguments.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>format</strong></td>
+<td>The format.</td>
+</tr>
+
+<tr>
+<td><strong>args</strong></td>
+<td>The arguments.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="writeresult-iapicopresult-result">WriteResult(IApiCopResult result)</h3>
+
+<p>Writes the result to the listener target.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>result</strong></td>
+<td>The result.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="writesummary-ienumerable-lt-iapicopresult-gt-results">WriteSummary(IEnumerable&lt;IApiCopResult&gt; results)</h3>
+
+<p>Writes the summary, called before any groups are written.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>results</strong></td>
+<td>The results.</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >

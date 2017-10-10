@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5677,14 +5678,63 @@
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
-<li><a href="#deserialize-type-modeltype-jsonreader-jsonreader-iserializationconfiguration-configuration">Deserialize(Type modelType, JsonReader jsonReader, ISerializationConfiguration configuration)</a>
+<li><a href="#afterserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">AfterSerialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</a>
 <ul>
 <li><a href="#parameters-1">Parameters</a></li>
+</ul></li>
+<li><a href="#appendcontexttostream-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-stream-stream">AppendContextToStream(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, Stream stream)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+</ul></li>
+<li><a href="#beforedeserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">BeforeDeserialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
+<li><a href="#beforeserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">BeforeSerialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#deserialize-type-modeltype-jsonreader-jsonreader-iserializationconfiguration-configuration">Deserialize(Type modelType, JsonReader jsonReader, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
 <li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#deserialize-object-model-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">Deserialize(object model, ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
+<li><a href="#deserializemember-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-membervalue-membervalue">DeserializeMember(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-7">Parameters</a></li>
+<li><a href="#returns-2">Returns</a></li>
+</ul></li>
+<li><a href="#getcontext-object-model-type-modeltype-jsonreader-jsonreader-jsonwriter-jsonwriter-serializationcontextmode-contextmode-dictionary-lt-string-jproperty-gt-jsonproperties-jarray-jsonarray-iserializationconfiguration-configuration">GetContext(object model, Type modelType, JsonReader jsonReader, JsonWriter jsonWriter, SerializationContextMode contextMode, Dictionary&lt;string, JProperty&gt; jsonProperties, JArray jsonArray, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-8">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
+</ul></li>
+<li><a href="#getcontext-object-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
+<li><a href="#exceptions-1">Exceptions</a></li>
+</ul></li>
+<li><a href="#serialize-object-model-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">Serialize(object model, ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
 </ul></li>
 <li><a href="#serialize-object-model-jsonwriter-jsonwriter-iserializationconfiguration-configuration">Serialize(object model, JsonWriter jsonWriter, ISerializationConfiguration configuration)</a>
 <ul>
-<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#parameters-11">Parameters</a></li>
+</ul></li>
+<li><a href="#serializemember-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-membervalue-membervalue">SerializeMember(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, MemberValue memberValue)</a>
+<ul>
+<li><a href="#parameters-12">Parameters</a></li>
+</ul></li>
+<li><a href="#warmup-type-type">Warmup(Type type)</a>
+<ul>
+<li><a href="#parameters-13">Parameters</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5821,11 +5871,104 @@
 
 <h2 id="methods">Methods</h2>
 
+<h3 id="afterserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">AfterSerialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</h3>
+
+<p>Afters the serialization.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="appendcontexttostream-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-stream-stream">AppendContextToStream(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, Stream stream)</h3>
+
+<p>Appends the context to stream.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>stream</strong></td>
+<td>The stream.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforedeserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">BeforeDeserialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</h3>
+
+<p>Befores the deserialization.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="beforeserialization-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">BeforeSerialization(ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</h3>
+
+<p>Befores the serialization.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="deserialize-type-modeltype-jsonreader-jsonreader-iserializationconfiguration-configuration">Deserialize(Type modelType, JsonReader jsonReader, ISerializationConfiguration configuration)</h3>
 
 <p>Deserializes the specified model from the json reader.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
 <thead>
@@ -5857,11 +6000,223 @@
 
 <p>The model.</p>
 
+<h3 id="deserialize-object-model-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">Deserialize(object model, ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</h3>
+
+<p>Deserializes the specified model.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-1">Returns</h4>
+
+<h3 id="deserializemember-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-membervalue-membervalue">DeserializeMember(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, MemberValue memberValue)</h3>
+
+<p>Deserializes the member.</p>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-2">Returns</h4>
+
+<p>The <a href="#">SerializationObject</a> representing the deserialized value or result.</p>
+
+<h3 id="getcontext-object-model-type-modeltype-jsonreader-jsonreader-jsonwriter-jsonwriter-serializationcontextmode-contextmode-dictionary-lt-string-jproperty-gt-jsonproperties-jarray-jsonarray-iserializationconfiguration-configuration">GetContext(object model, Type modelType, JsonReader jsonReader, JsonWriter jsonWriter, SerializationContextMode contextMode, Dictionary&lt;string, JProperty&gt; jsonProperties, JArray jsonArray, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context.</p>
+
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>jsonReader</strong></td>
+<td>The json reader.</td>
+</tr>
+
+<tr>
+<td><strong>jsonWriter</strong></td>
+<td>The json writer.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>jsonProperties</strong></td>
+<td>The json properties.</td>
+</tr>
+
+<tr>
+<td><strong>jsonArray</strong></td>
+<td>The json array.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-3">Returns</h4>
+
+<p>ISerializationContext&lt;JsonSerializationContextInfo&gt;.</p>
+
+<h3 id="getcontext-object-model-type-modeltype-stream-stream-serializationcontextmode-contextmode-iserializationconfiguration-configuration">GetContext(object model, Type modelType, Stream stream, SerializationContextMode contextMode, ISerializationConfiguration configuration)</h3>
+
+<p>Gets the context.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model.</td>
+</tr>
+
+<tr>
+<td><strong>stream</strong></td>
+<td>The stream.</td>
+</tr>
+
+<tr>
+<td><strong>contextMode</strong></td>
+<td>The context mode.</td>
+</tr>
+
+<tr>
+<td><strong>configuration</strong></td>
+<td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-4">Returns</h4>
+
+<p>ISerializationContext{SerializationInfo}.</p>
+
+<h4 id="exceptions-1">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>System.ArgumentOutOfRangeException</strong></td>
+<td>contextMode</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="serialize-object-model-iserializationcontext-lt-jsonserializationcontextinfo-gt-context">Serialize(object model, ISerializationContext&lt;JsonSerializationContextInfo&gt; context)</h3>
+
+<p>Serializes the specified model.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>model</strong></td>
+<td>The model.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="serialize-object-model-jsonwriter-jsonwriter-iserializationconfiguration-configuration">Serialize(object model, JsonWriter jsonWriter, ISerializationConfiguration configuration)</h3>
 
 <p>Serializes the specified model to the json writer.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-11">Parameters</h4>
 
 <table>
 <thead>
@@ -5885,6 +6240,55 @@
 <tr>
 <td><strong>configuration</strong></td>
 <td>The configuration.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="serializemember-iserializationcontext-lt-jsonserializationcontextinfo-gt-context-membervalue-membervalue">SerializeMember(ISerializationContext&lt;JsonSerializationContextInfo&gt; context, MemberValue memberValue)</h3>
+
+<p>Serializes the member.</p>
+
+<h4 id="parameters-12">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>context</strong></td>
+<td>The context.</td>
+</tr>
+
+<tr>
+<td><strong>memberValue</strong></td>
+<td>The member value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="warmup-type-type">Warmup(Type type)</h3>
+
+<p>Warms up the specified type.</p>
+
+<h4 id="parameters-13">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type to warmup.</td>
 </tr>
 </tbody>
 </table>

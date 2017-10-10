@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5661,8 +5662,12 @@
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#focusdelay">FocusDelay</a></li>
+<li><a href="#isfocusalreadyset">IsFocusAlreadySet</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#startfocus">StartFocus()</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5734,7 +5739,15 @@
 
 <p>Gets or sets the focus delay. If smaller than 25, no delay will be used. If larger than 5000, it will be set to 5000. The default value in WPF is<code>0</code>.</p>
 
+<h3 id="isfocusalreadyset">IsFocusAlreadySet</h3>
+
+<p>Gets a value indicating whether this instance is focus already set.</p>
+
 <h2 id="methods">Methods</h2>
+
+<h3 id="startfocus">StartFocus()</h3>
+
+<p>Starts the focus.</p>
 
 
 <footer class=" footline" >

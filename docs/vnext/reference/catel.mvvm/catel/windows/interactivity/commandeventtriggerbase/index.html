@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5669,7 +5670,27 @@
 <li><a href="#commandparameter">CommandParameter</a></li>
 <li><a href="#modifiers">Modifiers</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#canexecutecommand">CanExecuteCommand()</a>
+<ul>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#canexecutecommand-object-parameter">CanExecuteCommand(object parameter)</a>
+<ul>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
+<li><a href="#executecommand">ExecuteCommand()</a></li>
+<li><a href="#executecommand-object-parameter">ExecuteCommand(object parameter)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+<li><a href="#onassociatedobjectloaded">OnAssociatedObjectLoaded()</a></li>
+<li><a href="#onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</a></li>
+<li><a href="#oncommandcanexecutechanged">OnCommandCanExecuteChanged()</a></li>
+<li><a href="#oncommandchanged">OnCommandChanged()</a></li>
+<li><a href="#oncommandparameterchanged">OnCommandParameterChanged()</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5757,6 +5778,68 @@ The this behavior should attach to.</p>
 <p>Gets or sets the modifiers to check for.</p>
 
 <h2 id="methods">Methods</h2>
+
+<h3 id="canexecutecommand">CanExecuteCommand()</h3>
+
+<p>Determines whether the command can be invoked. It does this by checking both the Modifiers and the command itself.</p>
+
+<h4 id="returns">Returns</h4>
+
+<p><code>true</code> if the command can be invoked; otherwise,<code>false</code>.</p>
+
+<h3 id="canexecutecommand-object-parameter">CanExecuteCommand(object parameter)</h3>
+
+<p>Determines whether the command can be invoked. It does this by checking both the Modifiers and the command itself. If the CommandParameter should be used, use the CanExecuteCommand instead.</p>
+
+<h4 id="returns-1">Returns</h4>
+
+<p><code>true</code> if the command can be invoked; otherwise,<code>false</code>.</p>
+
+<h3 id="executecommand">ExecuteCommand()</h3>
+
+<p>Invokes the command with the specified parameter.</p>
+
+<h3 id="executecommand-object-parameter">ExecuteCommand(object parameter)</h3>
+
+<p>Invokes the command with the overriden parameter. If the CommandParameter should be used, use the ExecuteCommand instead.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>parameter</strong></td>
+<td>The parameter that will override the CommandParameter.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()</h3>
+
+<p>Called when the associated object is loaded.</p>
+
+<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</h3>
+
+<p>Called when the associated object is unloaded.</p>
+
+<h3 id="oncommandcanexecutechanged">OnCommandCanExecuteChanged()</h3>
+
+<p>Called when the state has changed.</p>
+
+<h3 id="oncommandchanged">OnCommandChanged()</h3>
+
+<p>Invoked when the Command property has changed.</p>
+
+<h3 id="oncommandparameterchanged">OnCommandParameterChanged()</h3>
+
+<p>Invoked when the CommandParameter property has changed.</p>
 
 
 <footer class=" footline" >

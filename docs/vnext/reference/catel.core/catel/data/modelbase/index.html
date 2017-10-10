@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5649,9 +5650,24 @@
 <li><a href="#isdirtyproperty">IsDirtyProperty</a></li>
 <li><a href="#isreadonlyproperty">IsReadOnlyProperty</a></li>
 </ul></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#modelbase">ModelBase()</a>
+<ul>
+<li><a href="#remarks">Remarks</a></li>
+</ul></li>
+<li><a href="#modelbase-serializationinfo-info-streamingcontext-context">ModelBase(SerializationInfo info, StreamingContext context)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#remarks-1">Remarks</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
+<li><a href="#alwaysinvokenotifychanged">AlwaysInvokeNotifyChanged</a>
+<ul>
+<li><a href="#remarks-2">Remarks</a></li>
+</ul></li>
 <li><a href="#disablepropertychangenotifications">DisablePropertyChangeNotifications</a></li>
 <li><a href="#isdirty">IsDirty</a></li>
 <li><a href="#isreadonly">IsReadOnly</a></li>
@@ -5661,53 +5677,168 @@
 <ul>
 <li><a href="#getobjectdata-serializationinfo-info-streamingcontext-context">GetObjectData(SerializationInfo info, StreamingContext context)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-1">Parameters</a></li>
 <li><a href="#exceptions">Exceptions</a></li>
 </ul></li>
-<li><a href="#ispropertyregistered-string-name">IsPropertyRegistered(string name)</a>
-<ul>
-<li><a href="#parameters-1">Parameters</a></li>
-<li><a href="#returns">Returns</a></li>
-</ul></li>
-<li><a href="#registerproperty-string-name-type-type-func-lt-object-gt-createdefaultvalue-eventhandler-lt-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty(string name, Type type, Func&lt;object&gt; createDefaultValue, EventHandler&lt;AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<li><a href="#getpropertydata-string-name">GetPropertyData(string name)</a>
 <ul>
 <li><a href="#parameters-2">Parameters</a></li>
-<li><a href="#returns-1">Returns</a></li>
+<li><a href="#returns">Returns</a></li>
 <li><a href="#exceptions-1">Exceptions</a></li>
 </ul></li>
-<li><a href="#registerproperty-lt-tmodel-tvalue-gt-expression-lt-func-lt-tmodel-tvalue-gt-gt-propertyexpression-func-lt-tvalue-gt-createdefaultvalue-action-lt-tmodel-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, Func&lt;TValue&gt; createDefaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<li><a href="#getserializerforieditableobject">GetSerializerForIEditableObject()</a>
 <ul>
-<li><a href="#type-parameters">Type Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
+<li><a href="#getvalue-propertydata-property">GetValue(PropertyData property)</a>
+<ul>
 <li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#returns-2">Returns</a></li>
 <li><a href="#exceptions-2">Exceptions</a></li>
 </ul></li>
-<li><a href="#registerproperty-lt-tmodel-tvalue-gt-expression-lt-func-lt-tmodel-tvalue-gt-gt-propertyexpression-tvalue-defaultvalue-action-lt-tmodel-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, TValue defaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<li><a href="#getvalue-string-name">GetValue(string name)</a>
 <ul>
-<li><a href="#type-parameters-1">Type Parameters</a></li>
 <li><a href="#parameters-4">Parameters</a></li>
 <li><a href="#returns-3">Returns</a></li>
 <li><a href="#exceptions-3">Exceptions</a></li>
 </ul></li>
-<li><a href="#registerproperty-lt-tvalue-gt-string-name-type-type-tvalue-defaultvalue-eventhandler-lt-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TValue&gt;(string name, Type type, TValue defaultValue, EventHandler&lt;AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<li><a href="#getvalue-lt-tvalue-gt-propertydata-property">GetValue&lt;TValue&gt;(PropertyData property)</a>
 <ul>
-<li><a href="#type-parameters-2">Type Parameters</a></li>
+<li><a href="#type-parameters">Type Parameters</a></li>
 <li><a href="#parameters-5">Parameters</a></li>
 <li><a href="#returns-4">Returns</a></li>
 <li><a href="#exceptions-4">Exceptions</a></li>
 </ul></li>
+<li><a href="#getvalue-lt-tvalue-gt-string-name">GetValue&lt;TValue&gt;(string name)</a>
+<ul>
+<li><a href="#type-parameters-1">Type Parameters</a></li>
+<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#returns-5">Returns</a></li>
+<li><a href="#exceptions-5">Exceptions</a></li>
+</ul></li>
+<li><a href="#getvaluefrompropertybag-lt-t-gt-string-propertyname">GetValueFromPropertyBag&lt;T&gt;(string propertyName)</a>
+<ul>
+<li><a href="#parameters-7">Parameters</a></li>
+<li><a href="#returns-6">Returns</a></li>
+</ul></li>
+<li><a href="#initializecustomproperties">InitializeCustomProperties()</a>
+<ul>
+<li><a href="#remarks-3">Remarks</a></li>
+</ul></li>
+<li><a href="#initializepropertyafterconstruction-propertydata-property">InitializePropertyAfterConstruction(PropertyData property)</a>
+<ul>
+<li><a href="#parameters-8">Parameters</a></li>
+<li><a href="#exceptions-6">Exceptions</a></li>
+</ul></li>
+<li><a href="#ismodelbaseproperty-string-name">IsModelBaseProperty(string name)</a>
+<ul>
+<li><a href="#parameters-9">Parameters</a></li>
+<li><a href="#returns-7">Returns</a></li>
+</ul></li>
+<li><a href="#ispropertyregistered-type-type-string-name">IsPropertyRegistered(Type type, string name)</a>
+<ul>
+<li><a href="#parameters-10">Parameters</a></li>
+<li><a href="#returns-8">Returns</a></li>
+</ul></li>
+<li><a href="#ispropertyregistered-string-name">IsPropertyRegistered(string name)</a>
+<ul>
+<li><a href="#parameters-11">Parameters</a></li>
+<li><a href="#returns-9">Returns</a></li>
+</ul></li>
+<li><a href="#onbeginedit-beginediteventargs-e">OnBeginEdit(BeginEditEventArgs e)</a>
+<ul>
+<li><a href="#parameters-12">Parameters</a></li>
+</ul></li>
+<li><a href="#oncanceledit-editeventargs-e">OnCancelEdit(EditEventArgs e)</a>
+<ul>
+<li><a href="#parameters-13">Parameters</a></li>
+</ul></li>
+<li><a href="#oncanceleditcompleted-canceleditcompletedeventargs-e">OnCancelEditCompleted(CancelEditCompletedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-14">Parameters</a></li>
+</ul></li>
+<li><a href="#ondeserialized">OnDeserialized()</a></li>
+<li><a href="#ondeserializing">OnDeserializing()</a></li>
+<li><a href="#onendedit-editeventargs-e">OnEndEdit(EditEventArgs e)</a>
+<ul>
+<li><a href="#parameters-15">Parameters</a></li>
+</ul></li>
+<li><a href="#onserialized">OnSerialized()</a></li>
+<li><a href="#onserializing">OnSerializing()</a></li>
+<li><a href="#raisepropertychanged-object-sender-advancedpropertychangedeventargs-e">RaisePropertyChanged(object sender, AdvancedPropertyChangedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-16">Parameters</a></li>
+<li><a href="#remarks-4">Remarks</a></li>
+</ul></li>
+<li><a href="#raisepropertychanged-object-sender-propertychangedeventargs-e-bool-updateisdirty-bool-isrefreshcallonly">RaisePropertyChanged(object sender, PropertyChangedEventArgs e, bool updateIsDirty, bool isRefreshCallOnly)</a>
+<ul>
+<li><a href="#parameters-17">Parameters</a></li>
+</ul></li>
+<li><a href="#registerproperty-string-name-type-type-func-lt-object-gt-createdefaultvalue-eventhandler-lt-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty(string name, Type type, Func&lt;object&gt; createDefaultValue, EventHandler&lt;AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<ul>
+<li><a href="#parameters-18">Parameters</a></li>
+<li><a href="#returns-10">Returns</a></li>
+<li><a href="#exceptions-7">Exceptions</a></li>
+</ul></li>
+<li><a href="#registerproperty-lt-tmodel-tvalue-gt-expression-lt-func-lt-tmodel-tvalue-gt-gt-propertyexpression-func-lt-tvalue-gt-createdefaultvalue-action-lt-tmodel-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, Func&lt;TValue&gt; createDefaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<ul>
+<li><a href="#type-parameters-2">Type Parameters</a></li>
+<li><a href="#parameters-19">Parameters</a></li>
+<li><a href="#returns-11">Returns</a></li>
+<li><a href="#exceptions-8">Exceptions</a></li>
+</ul></li>
+<li><a href="#registerproperty-lt-tmodel-tvalue-gt-expression-lt-func-lt-tmodel-tvalue-gt-gt-propertyexpression-tvalue-defaultvalue-action-lt-tmodel-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TModel, TValue&gt;(Expression&lt;Func&lt;TModel, TValue&gt;&gt; propertyExpression, TValue defaultValue, Action&lt;TModel, AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<ul>
+<li><a href="#type-parameters-3">Type Parameters</a></li>
+<li><a href="#parameters-20">Parameters</a></li>
+<li><a href="#returns-12">Returns</a></li>
+<li><a href="#exceptions-9">Exceptions</a></li>
+</ul></li>
+<li><a href="#registerproperty-lt-tvalue-gt-string-name-type-type-tvalue-defaultvalue-eventhandler-lt-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty&lt;TValue&gt;(string name, Type type, TValue defaultValue, EventHandler&lt;AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</a>
+<ul>
+<li><a href="#type-parameters-4">Type Parameters</a></li>
+<li><a href="#parameters-21">Parameters</a></li>
+<li><a href="#returns-13">Returns</a></li>
+<li><a href="#exceptions-10">Exceptions</a></li>
+</ul></li>
+<li><a href="#setdirty-string-propertyname">SetDirty(string propertyName)</a>
+<ul>
+<li><a href="#parameters-22">Parameters</a></li>
+</ul></li>
+<li><a href="#setvalue-propertydata-property-object-value-bool-notifyonchange">SetValue(PropertyData property, object value, bool notifyOnChange)</a>
+<ul>
+<li><a href="#parameters-23">Parameters</a></li>
+<li><a href="#exceptions-11">Exceptions</a></li>
+</ul></li>
+<li><a href="#setvalue-string-name-object-value-bool-notifyonchange">SetValue(string name, object value, bool notifyOnChange)</a>
+<ul>
+<li><a href="#parameters-24">Parameters</a></li>
+<li><a href="#exceptions-12">Exceptions</a></li>
+</ul></li>
+<li><a href="#setvaluetopropertybag-string-propertyname-object-value">SetValueToPropertyBag(string propertyName, object value)</a>
+<ul>
+<li><a href="#parameters-25">Parameters</a></li>
+</ul></li>
+<li><a href="#shouldpropertychangeupdateisdirty-string-propertyname">ShouldPropertyChangeUpdateIsDirty(string propertyName)</a>
+<ul>
+<li><a href="#returns-14">Returns</a></li>
+</ul></li>
 <li><a href="#suspendchangecallbacks">SuspendChangeCallbacks()</a>
 <ul>
-<li><a href="#returns-5">Returns</a></li>
+<li><a href="#returns-15">Returns</a></li>
 </ul></li>
 <li><a href="#suspendchangenotifications-bool-raiseonresume">SuspendChangeNotifications(bool raiseOnResume)</a>
 <ul>
-<li><a href="#parameters-6">Parameters</a></li>
-<li><a href="#returns-6">Returns</a></li>
+<li><a href="#parameters-26">Parameters</a></li>
+<li><a href="#returns-16">Returns</a></li>
 </ul></li>
 <li><a href="#tostring">ToString()</a>
 <ul>
-<li><a href="#returns-7">Returns</a></li>
+<li><a href="#returns-17">Returns</a></li>
+</ul></li>
+<li><a href="#unregisterproperty-type-modeltype-string-name">UnregisterProperty(Type modelType, string name)</a>
+<ul>
+<li><a href="#parameters-27">Parameters</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5778,7 +5909,54 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="modelbase">ModelBase()</h3>
+
+<p>Initializes a new instance of the <a href="#">ModelBase</a> class.</p>
+
+<h4 id="remarks">Remarks</h4>
+
+<p>Must have a public constructor in order to be serializable.</p>
+
+<h3 id="modelbase-serializationinfo-info-streamingcontext-context">ModelBase(SerializationInfo info, StreamingContext context)</h3>
+
+<p>Initializes a new instance of the <a href="#">ModelBase</a> class. Only constructor for the ModelBase.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>info</strong></td>
+<td>SerializationInfo object, null if this is the first time construction.</td>
+</tr>
+
+<tr>
+<td><strong>context</strong></td>
+<td>StreamingContext object, simple pass a default new StreamingContext() if this is the first time construction.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks-1">Remarks</h4>
+
+<p>Call this method, even when constructing the object for the first time (thus not deserializing).</p>
+
 <h2 id="properties">Properties</h2>
+
+<h3 id="alwaysinvokenotifychanged">AlwaysInvokeNotifyChanged</h3>
+
+<p>Gets or sets a value indicating whether this object should always invoke the PropertyChanged event, even when the actual value of a property has not changed. Enabling this property is useful when using this class in a WPF environment.</p>
+
+<h4 id="remarks-2">Remarks</h4>
+
+<p>By default, this property is<code>false</code>.</p>
 
 <h3 id="disablepropertychangenotifications">DisablePropertyChangeNotifications</h3>
 
@@ -5800,7 +5978,7 @@
 
 <p>Populates a <a href="#">SerializationInfo</a> with the data needed to serialize the target object.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-1">Parameters</h4>
 
 <table>
 <thead>
@@ -5841,11 +6019,112 @@
 </tbody>
 </table>
 
-<h3 id="ispropertyregistered-string-name">IsPropertyRegistered(string name)</h3>
+<h3 id="getpropertydata-string-name">GetPropertyData(string name)</h3>
 
-<p>Returns whether a specific property is registered.</p>
+<p>Gets the <a href="#">PropertyData</a> for the specified property.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p>The <a href="#">PropertyData</a>.</p>
+
+<h4 id="exceptions-1">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getserializerforieditableobject">GetSerializerForIEditableObject()</h3>
+
+<p>Gets the serializer for the interface implementation.</p>
+
+<h4 id="returns-1">Returns</h4>
+
+<p>The <a href="#">ISerializer</a>.</p>
+
+<h3 id="getvalue-propertydata-property">GetValue(PropertyData property)</h3>
+
+<p>Gets the value of a specific property.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>property</strong></td>
+<td><a href="#">PropertyData</a> of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-2">Returns</h4>
+
+<p>Object value of the property.</p>
+
+<h4 id="exceptions-2">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The property is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getvalue-string-name">GetValue(string name)</h3>
+
+<p>Gets the value of a specific property.</p>
+
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5863,15 +6142,475 @@
 </tbody>
 </table>
 
-<h4 id="returns">Returns</h4>
+<h4 id="returns-3">Returns</h4>
+
+<p>Object value of the property.</p>
+
+<h4 id="exceptions-3">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getvalue-lt-tvalue-gt-propertydata-property">GetValue&lt;TValue&gt;(PropertyData property)</h3>
+
+<p>Gets the typed value of a specific property.</p>
+
+<h4 id="type-parameters">Type Parameters</h4>
+
+<p><strong>TValue</strong>
+The type of the value.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>property</strong></td>
+<td><a href="#">PropertyData</a> of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-4">Returns</h4>
+
+<p>Object value of the property.</p>
+
+<h4 id="exceptions-4">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The property is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getvalue-lt-tvalue-gt-string-name">GetValue&lt;TValue&gt;(string name)</h3>
+
+<p>Gets the typed value of a specific property.</p>
+
+<h4 id="type-parameters-1">Type Parameters</h4>
+
+<p><strong>TValue</strong>
+The type of the value.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-5">Returns</h4>
+
+<p>Object value of the property.</p>
+
+<h4 id="exceptions-5">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getvaluefrompropertybag-lt-t-gt-string-propertyname">GetValueFromPropertyBag&lt;T&gt;(string propertyName)</h3>
+
+<p>Gets the value fast without checking for any constraints. This means that if this method is used incorrectly, it can throw random exceptions. This is a wrapper around the _propertyValues field. Don&rsquo;t use the field directly, always use this method because it takes care of locking and event subscriptions.</p>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>propertyName</strong></td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-6">Returns</h4>
+
+<p>The value of the property.</p>
+
+<h3 id="initializecustomproperties">InitializeCustomProperties()</h3>
+
+<p>Allows the initialization of custom properties. This is a virtual method that is called inside the constructor before the object is fully constructed. This might be considered as bad or as a hack, but it&rsquo;s a good way to be able to inject custom properties before any actual logic is handled by derived classes.</p>
+
+<h4 id="remarks-3">Remarks</h4>
+
+<p>Only use when you really know what you are doing.</p>
+
+<h3 id="initializepropertyafterconstruction-propertydata-property">InitializePropertyAfterConstruction(PropertyData property)</h3>
+
+<p>Initializes a specific property for this object after the object is already constructed and initialized. Normally, properties are automatically registered in the constructor. If properties should be registered via runtime behavior, this method must be used.</p>
+
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>property</strong></td>
+<td><a href="#">PropertyData</a> of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-6">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The property is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>T:Catel.Data.InvalidPropertyException</strong></td>
+<td>The name of the property is invalid.</td>
+</tr>
+
+<tr>
+<td><strong>T:Catel.Data.PropertyAlreadyRegisteredException</strong></td>
+<td>The property is already registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ismodelbaseproperty-string-name">IsModelBaseProperty(string name)</h3>
+
+<p>Determines whether the specified property is a property declared by the <a href="#">ModelBase</a> itself.</p>
+
+<h4 id="parameters-9">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-7">Returns</h4>
+
+<p><code>true</code> if the specified property is a property declared by the <a href="#">ModelBase</a> itself; otherwise,<code>false</code>.</p>
+
+<h3 id="ispropertyregistered-type-type-string-name">IsPropertyRegistered(Type type, string name)</h3>
+
+<p>Returns whether a specific property is registered.</p>
+
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type of the object for which to check.</td>
+</tr>
+
+<tr>
+<td><strong>name</strong></td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-8">Returns</h4>
 
 <p>True if the property is registered, otherwise false.</p>
+
+<h3 id="ispropertyregistered-string-name">IsPropertyRegistered(string name)</h3>
+
+<p>Returns whether a specific property is registered.</p>
+
+<h4 id="parameters-11">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-9">Returns</h4>
+
+<p>True if the property is registered, otherwise false.</p>
+
+<h3 id="onbeginedit-beginediteventargs-e">OnBeginEdit(BeginEditEventArgs e)</h3>
+
+<p>Raises the event.</p>
+
+<h4 id="parameters-12">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">BeginEditEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="oncanceledit-editeventargs-e">OnCancelEdit(EditEventArgs e)</h3>
+
+<p>Raises the event.</p>
+
+<h4 id="parameters-13">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">EditEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="oncanceleditcompleted-canceleditcompletedeventargs-e">OnCancelEditCompleted(CancelEditCompletedEventArgs e)</h3>
+
+<p>Raises the CancelEditingCompleted event.</p>
+
+<h4 id="parameters-14">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ondeserialized">OnDeserialized()</h3>
+
+<p>Called when the object is deserialized.</p>
+
+<h3 id="ondeserializing">OnDeserializing()</h3>
+
+<p>Called when the object is being deserialized.</p>
+
+<h3 id="onendedit-editeventargs-e">OnEndEdit(EditEventArgs e)</h3>
+
+<p>Raises the event.</p>
+
+<h4 id="parameters-15">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">EditEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onserialized">OnSerialized()</h3>
+
+<p>Called when the object has been serialized.</p>
+
+<h3 id="onserializing">OnSerializing()</h3>
+
+<p>Called when the object is being serialized.</p>
+
+<h3 id="raisepropertychanged-object-sender-advancedpropertychangedeventargs-e">RaisePropertyChanged(object sender, AdvancedPropertyChangedEventArgs e)</h3>
+
+<p>Raises the event.</p>
+
+<h4 id="parameters-16">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks-4">Remarks</h4>
+
+<p>This method is overriden en does not call the base because lots of additional logic is added in this class. The will explicitly call AdvancedPropertyChangedEventArgs). If this method is overriden, it is very important to call the base.</p>
+
+<h3 id="raisepropertychanged-object-sender-propertychangedeventargs-e-bool-updateisdirty-bool-isrefreshcallonly">RaisePropertyChanged(object sender, PropertyChangedEventArgs e, bool updateIsDirty, bool isRefreshCallOnly)</h3>
+
+<p>Invoked when a property value has changed.</p>
+
+<h4 id="parameters-17">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The instance containing the event data.</td>
+</tr>
+
+<tr>
+<td><strong>updateIsDirty</strong></td>
+<td>if set to<code>true</code>, the IsDirty property is set and automatic validation is allowed.</td>
+</tr>
+
+<tr>
+<td><strong>isRefreshCallOnly</strong></td>
+<td>if set to<code>true</code>, the call is only to refresh updates (for example, for the IDataErrorInfo implementation). If this value is<code>false</code>, the custom change handlers will not be called.</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="registerproperty-string-name-type-type-func-lt-object-gt-createdefaultvalue-eventhandler-lt-advancedpropertychangedeventargs-gt-propertychangedeventhandler-bool-includeinserialization-bool-includeinbackup">RegisterProperty(string name, Type type, Func&lt;object&gt; createDefaultValue, EventHandler&lt;AdvancedPropertyChangedEventArgs&gt; propertyChangedEventHandler, bool includeInSerialization, bool includeInBackup)</h3>
 
 <p>Registers a property that will be automatically handled by this object.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-18">Parameters</h4>
 
 <table>
 <thead>
@@ -5914,11 +6653,11 @@
 </tbody>
 </table>
 
-<h4 id="returns-1">Returns</h4>
+<h4 id="returns-10">Returns</h4>
 
 <p><a href="#">PropertyData</a> containing the property information.</p>
 
-<h4 id="exceptions-1">Exceptions</h4>
+<h4 id="exceptions-7">Exceptions</h4>
 
 <table>
 <thead>
@@ -5945,7 +6684,7 @@
 
 <p>Registers a property that will be automatically handled by this object.</p>
 
-<h4 id="type-parameters">Type Parameters</h4>
+<h4 id="type-parameters-2">Type Parameters</h4>
 
 <p><strong>TModel</strong>
 The model type.</p>
@@ -5953,7 +6692,7 @@ The model type.</p>
 <p><strong>TValue</strong>
 The value type.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-19">Parameters</h4>
 
 <table>
 <thead>
@@ -5991,11 +6730,11 @@ The value type.</p>
 </tbody>
 </table>
 
-<h4 id="returns-2">Returns</h4>
+<h4 id="returns-11">Returns</h4>
 
 <p><a href="#">PropertyData</a> containing the property information.</p>
 
-<h4 id="exceptions-2">Exceptions</h4>
+<h4 id="exceptions-8">Exceptions</h4>
 
 <table>
 <thead>
@@ -6022,7 +6761,7 @@ The value type.</p>
 
 <p>Registers a property that will be automatically handled by this object.</p>
 
-<h4 id="type-parameters-1">Type Parameters</h4>
+<h4 id="type-parameters-3">Type Parameters</h4>
 
 <p><strong>TModel</strong>
 The model type.</p>
@@ -6030,7 +6769,7 @@ The model type.</p>
 <p><strong>TValue</strong>
 The value type.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-20">Parameters</h4>
 
 <table>
 <thead>
@@ -6068,11 +6807,11 @@ The value type.</p>
 </tbody>
 </table>
 
-<h4 id="returns-3">Returns</h4>
+<h4 id="returns-12">Returns</h4>
 
 <p><a href="#">PropertyData</a> containing the property information.</p>
 
-<h4 id="exceptions-3">Exceptions</h4>
+<h4 id="exceptions-9">Exceptions</h4>
 
 <table>
 <thead>
@@ -6099,12 +6838,12 @@ The value type.</p>
 
 <p>Registers a property that will be automatically handled by this object.</p>
 
-<h4 id="type-parameters-2">Type Parameters</h4>
+<h4 id="type-parameters-4">Type Parameters</h4>
 
 <p><strong>TValue</strong>
 The type of the value.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-21">Parameters</h4>
 
 <table>
 <thead>
@@ -6147,11 +6886,11 @@ The type of the value.</p>
 </tbody>
 </table>
 
-<h4 id="returns-4">Returns</h4>
+<h4 id="returns-13">Returns</h4>
 
 <p><a href="#">PropertyData</a> containing the property information.</p>
 
-<h4 id="exceptions-4">Exceptions</h4>
+<h4 id="exceptions-10">Exceptions</h4>
 
 <table>
 <thead>
@@ -6174,17 +6913,184 @@ The type of the value.</p>
 </tbody>
 </table>
 
+<h3 id="setdirty-string-propertyname">SetDirty(string propertyName)</h3>
+
+<p>Sets the IsDirty property.</p>
+
+<h4 id="parameters-22">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>propertyName</strong></td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="setvalue-propertydata-property-object-value-bool-notifyonchange">SetValue(PropertyData property, object value, bool notifyOnChange)</h3>
+
+<p>Sets the value of a specific property.</p>
+
+<h4 id="parameters-23">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>property</strong></td>
+<td>The property to set.</td>
+</tr>
+
+<tr>
+<td><strong>value</strong></td>
+<td>Value of the property.</td>
+</tr>
+
+<tr>
+<td><strong>notifyOnChange</strong></td>
+<td>If<code>true</code>, the event will be invoked.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-11">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>T:Catel.Data.PropertyNotNullableException</strong></td>
+<td>The property is not nullable, but value is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The property is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="setvalue-string-name-object-value-bool-notifyonchange">SetValue(string name, object value, bool notifyOnChange)</h3>
+
+<p>Sets the value of a specific property.</p>
+
+<h4 id="parameters-24">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>Name of the property.</td>
+</tr>
+
+<tr>
+<td><strong>value</strong></td>
+<td>Value of the property.</td>
+</tr>
+
+<tr>
+<td><strong>notifyOnChange</strong></td>
+<td>If<code>true</code>, the event will be invoked.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-12">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>T:Catel.Data.PropertyNotNullableException</strong></td>
+<td>The property is not nullable, but value is<code>null</code>.</td>
+</tr>
+
+<tr>
+<td><strong>T:Catel.Data.PropertyNotRegisteredException</strong></td>
+<td>The property is not registered.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="setvaluetopropertybag-string-propertyname-object-value">SetValueToPropertyBag(string propertyName, object value)</h3>
+
+<p>Sets the value fast without checking for any constraints or additional logic such as change notifications. This means that if this method is used incorrectly, it can throw random exceptions. This is a wrapper around the _propertyValues field. Don&rsquo;t use the field directly, always use this method because it takes care of locking and event subscriptions.</p>
+
+<h4 id="parameters-25">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>propertyName</strong></td>
+<td>Name of the property.</td>
+</tr>
+
+<tr>
+<td><strong>value</strong></td>
+<td>The value.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="shouldpropertychangeupdateisdirty-string-propertyname">ShouldPropertyChangeUpdateIsDirty(string propertyName)</h3>
+
+<p>Determines whether a specific property change should update<code>IsDirty</code> to<code>true</code>.</p>
+
+<h4 id="returns-14">Returns</h4>
+
+<p><code>true</code> if<code>IsDirty</code> should be set to<code>true</code> when the specified property has changed,<code>false</code> otherwise.</p>
+
 <h3 id="suspendchangecallbacks">SuspendChangeCallbacks()</h3>
 
 <p>Suspends the change callbacks whenever a property has been called. This is very useful when there are expensive property change callbacks registered with a property that need to be temporarily disabled.</p>
 
-<h4 id="returns-5">Returns</h4>
+<h4 id="returns-15">Returns</h4>
 
 <h3 id="suspendchangenotifications-bool-raiseonresume">SuspendChangeNotifications(bool raiseOnResume)</h3>
 
 <p>Suspends the change notifications until the disposed object has been released.</p>
 
-<h4 id="parameters-6">Parameters</h4>
+<h4 id="parameters-26">Parameters</h4>
 
 <table>
 <thead>
@@ -6202,7 +7108,7 @@ The type of the value.</p>
 </tbody>
 </table>
 
-<h4 id="returns-6">Returns</h4>
+<h4 id="returns-16">Returns</h4>
 
 <p>A disposable object.</p>
 
@@ -6210,9 +7116,36 @@ The type of the value.</p>
 
 <p>Returns a that represents this instance.</p>
 
-<h4 id="returns-7">Returns</h4>
+<h4 id="returns-17">Returns</h4>
 
 <p>A that represents this instance.</p>
+
+<h3 id="unregisterproperty-type-modeltype-string-name">UnregisterProperty(Type modelType, string name)</h3>
+
+<p>Unregisters the property. Note that the unregistration of a property applies to all models of the same type. It is not possible to unregister a property for a single instance of a type.</p>
+
+<h4 id="parameters-27">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>modelType</strong></td>
+<td>Type of the model, required because it cannot be retrieved in a static context.</td>
+</tr>
+
+<tr>
+<td><strong>name</strong></td>
+<td>The name.</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >

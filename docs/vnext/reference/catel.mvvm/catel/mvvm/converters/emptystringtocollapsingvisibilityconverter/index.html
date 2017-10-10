@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5654,7 +5655,14 @@
 <ul>
 <li><a href="#emptystringtocollapsingvisibilityconverter">EmptyStringToCollapsingVisibilityConverter()</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#isvisible-object-value-type-targettype-object-parameter">IsVisible(object value, Type targetType, object parameter)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5715,6 +5723,42 @@
 <p>Initializes a new instance of the <a href="#">EmptyStringToCollapsingVisibilityConverter</a> class.</p>
 
 <h2 id="methods">Methods</h2>
+
+<h3 id="isvisible-object-value-type-targettype-object-parameter">IsVisible(object value, Type targetType, object parameter)</h3>
+
+<p>Determines what value this converter should return.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>value</strong></td>
+<td>The value produced by the binding source.</td>
+</tr>
+
+<tr>
+<td><strong>targetType</strong></td>
+<td>The type of the binding target property.</td>
+</tr>
+
+<tr>
+<td><strong>parameter</strong></td>
+<td>The converter parameter to use.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p><code>true</code> if the specified value is visible; otherwise,<code>false</code>.</p>
 
 
 <footer class=" footline" >

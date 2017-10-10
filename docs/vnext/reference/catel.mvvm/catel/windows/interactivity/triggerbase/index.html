@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5665,8 +5666,19 @@
 <ul>
 <li><a href="#isassociatedobjectloaded">IsAssociatedObjectLoaded</a></li>
 <li><a href="#isenabled">IsEnabled</a></li>
+<li><a href="#isindesignmode">IsInDesignMode</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#initialize">Initialize()</a></li>
+<li><a href="#onassociatedobjectloaded">OnAssociatedObjectLoaded()</a></li>
+<li><a href="#onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</a></li>
+<li><a href="#onattached">OnAttached()</a></li>
+<li><a href="#ondetaching">OnDetaching()</a></li>
+<li><a href="#onisenabledchanged">OnIsEnabledChanged()</a></li>
+<li><a href="#uninitialize">Uninitialize()</a></li>
+<li><a href="#validaterequiredproperties">ValidateRequiredProperties()</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5744,7 +5756,43 @@ The this trigger should attach to.</p>
 
 <p>Gets or sets a value indicating whether this trigger is enabled.</p>
 
+<h3 id="isindesignmode">IsInDesignMode</h3>
+
+<p>Gets a value indicating whether this instance is in design mode.</p>
+
 <h2 id="methods">Methods</h2>
+
+<h3 id="initialize">Initialize()</h3>
+
+<p>Initializes the trigger action. This method is called instead of the OnAttached which is sealed to protect the additional trigger action.</p>
+
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()</h3>
+
+<p>Called when the AssociatedObject is loaded.</p>
+
+<h3 id="onassociatedobjectunloaded">OnAssociatedObjectUnloaded()</h3>
+
+<p>Called when the AssociatedObject is unloaded.</p>
+
+<h3 id="onattached">OnAttached()</h3>
+
+<p>Called after the action is attached to an AssociatedObject.</p>
+
+<h3 id="ondetaching">OnDetaching()</h3>
+
+<p>Called when the action is being detached from its AssociatedObject, but before it has actually occurred.</p>
+
+<h3 id="onisenabledchanged">OnIsEnabledChanged()</h3>
+
+<p>Called when the IsEnabled property has changed.</p>
+
+<h3 id="uninitialize">Uninitialize()</h3>
+
+<p>Uninitializes the behavior. This method is called when OnDetaching is called, or when the is unloaded. If dependency properties are used, it is very important to use to clear the value of the dependency properties in this method.</p>
+
+<h3 id="validaterequiredproperties">ValidateRequiredProperties()</h3>
+
+<p>Validates the required properties. This method is called when the object is attached, but before the Initialize is invoked.</p>
 
 
 <footer class=" footline" >

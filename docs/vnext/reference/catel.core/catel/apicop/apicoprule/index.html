@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5645,7 +5646,13 @@
 <li>
 <ul>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#apicoprule-string-name-string-description-apicoprulelevel-level-string-url">ApiCopRule(string name, string description, ApiCopRuleLevel level, string url)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#description">Description</a></li>
@@ -5655,19 +5662,28 @@
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
+<li><a href="#addtag-string-tag">AddTag(string tag)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+</ul></li>
+<li><a href="#getpropertybagfortag-string-tag">GetPropertyBagForTag(string tag)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
 <li><a href="#getresultastext-string-tag">GetResultAsText(string tag)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
-<li><a href="#returns">Returns</a></li>
+<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
 </ul></li>
 <li><a href="#gettags">GetTags()</a>
 <ul>
-<li><a href="#returns-1">Returns</a></li>
+<li><a href="#returns-2">Returns</a></li>
 </ul></li>
 <li><a href="#isvalid-iapicop-apicop-string-tag">IsValid(IApiCop apiCop, string tag)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
-<li><a href="#returns-2">Returns</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5727,6 +5743,43 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="apicoprule-string-name-string-description-apicoprulelevel-level-string-url">ApiCopRule(string name, string description, ApiCopRuleLevel level, string url)</h3>
+
+<p>Initializes a new instance of the <a href="#">ApiCopRule</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name.</td>
+</tr>
+
+<tr>
+<td><strong>description</strong></td>
+<td>The description.</td>
+</tr>
+
+<tr>
+<td><strong>level</strong></td>
+<td>The level.</td>
+</tr>
+
+<tr>
+<td><strong>url</strong></td>
+<td>The URL.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="description">Description</h3>
@@ -5747,11 +5800,33 @@
 
 <h2 id="methods">Methods</h2>
 
-<h3 id="getresultastext-string-tag">GetResultAsText(string tag)</h3>
+<h3 id="addtag-string-tag">AddTag(string tag)</h3>
 
-<p>Gets the result as text.</p>
+<p>Adds the tag so it is known in this rule.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>tag</strong></td>
+<td>The tag.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="getpropertybagfortag-string-tag">GetPropertyBagForTag(string tag)</h3>
+
+<p>Gets the property bag for the specified tag.</p>
+
+<h4 id="parameters-2">Parameters</h4>
 
 <table>
 <thead>
@@ -5771,13 +5846,39 @@
 
 <h4 id="returns">Returns</h4>
 
+<p>The property bag.</p>
+
+<h3 id="getresultastext-string-tag">GetResultAsText(string tag)</h3>
+
+<p>Gets the result as text.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>tag</strong></td>
+<td>The tag.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-1">Returns</h4>
+
 <p>The result as text.</p>
 
 <h3 id="gettags">GetTags()</h3>
 
 <p>Gets all the tags used by this rule.</p>
 
-<h4 id="returns-1">Returns</h4>
+<h4 id="returns-2">Returns</h4>
 
 <p>The list of tags.</p>
 
@@ -5785,7 +5886,7 @@
 
 <p>Determines whether the specified ApiCop rule is valid.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5808,7 +5909,7 @@
 </tbody>
 </table>
 
-<h4 id="returns-2">Returns</h4>
+<h4 id="returns-3">Returns</h4>
 
 <p><code>true</code> if the specified ApiCop is valid; otherwise,<code>false</code>.</p>
 

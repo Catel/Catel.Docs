@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5671,7 +5672,13 @@
 <li><a href="#action">Action</a></li>
 <li><a href="#authenticationtag">AuthenticationTag</a></li>
 </ul></li>
-<li><a href="#methods">Methods</a></li>
+<li><a href="#methods">Methods</a>
+<ul>
+<li><a href="#onassociatedobjectloaded">OnAssociatedObjectLoaded()</a>
+<ul>
+<li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -5756,6 +5763,28 @@
 <p>Gets or sets the authentication tag which can be used to provide additional information to the <a href="#">IAuthenticationProvider</a>.</p>
 
 <h2 id="methods">Methods</h2>
+
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()</h3>
+
+<p>Called when the has been loaded.</p>
+
+<h4 id="exceptions">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>InvalidOperationException</strong></td>
+<td>No instance of <a href="#">IAuthenticationProvider</a> is registered in the <a href="#">IServiceLocator</a>.</td>
+</tr>
+</tbody>
+</table>
 
 
 <footer class=" footline" >

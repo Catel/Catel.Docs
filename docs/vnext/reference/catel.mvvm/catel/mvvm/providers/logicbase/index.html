@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5650,18 +5651,41 @@
 <ul>
 <li>
 <ul>
-<li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#fields">Fields</a>
+<ul>
+<li><a href="#lockobject">_lockObject</a></li>
+<li><a href="#viewloadmanager">ViewLoadManager</a></li>
+</ul></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#logicbase-iview-targetview-type-viewmodeltype-iviewmodel-viewmodel">LogicBase(IView targetView, Type viewModelType, IViewModel viewModel)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
-<li><a href="#istargetviewloaded">IsTargetViewLoaded</a></li>
-<li><a href="#preventviewmodelcreation">PreventViewModelCreation</a></li>
-<li><a href="#uniqueidentifier">UniqueIdentifier</a></li>
-<li><a href="#viewmodel">ViewModel</a>
+<li><a href="#canviewbeloaded">CanViewBeLoaded</a>
 <ul>
 <li><a href="#remarks">Remarks</a></li>
 </ul></li>
+<li><a href="#ignorenulldatacontext">IgnoreNullDataContext</a></li>
+<li><a href="#isclosingviewmodel">IsClosingViewModel</a></li>
+<li><a href="#isloading">IsLoading</a></li>
+<li><a href="#istargetviewloaded">IsTargetViewLoaded</a></li>
+<li><a href="#isunloading">IsUnloading</a></li>
+<li><a href="#lastknowndatacontext">LastKnownDataContext</a></li>
+<li><a href="#preventviewmodelcreation">PreventViewModelCreation</a></li>
+<li><a href="#targetview">TargetView</a></li>
+<li><a href="#targetviewtype">TargetViewType</a></li>
+<li><a href="#uniqueidentifier">UniqueIdentifier</a></li>
+<li><a href="#viewmodel">ViewModel</a>
+<ul>
+<li><a href="#remarks-1">Remarks</a></li>
+</ul></li>
 <li><a href="#viewmodelbehavior">ViewModelBehavior</a></li>
+<li><a href="#viewmodelfactory">ViewModelFactory</a></li>
 <li><a href="#viewmodeltype">ViewModelType</a></li>
 </ul></li>
 <li><a href="#events">Events</a>
@@ -5688,63 +5712,100 @@
 <li><a href="#returns-1">Returns</a></li>
 </ul></li>
 <li><a href="#closeviewmodelasync-nullable-lt-bool-gt-result">CloseViewModelAsync(Nullable&lt;bool&gt; result)</a></li>
+<li><a href="#completeviewmodelclosingasync">CompleteViewModelClosingAsync()</a>
+<ul>
+<li><a href="#returns-2">Returns</a></li>
+</ul></li>
+<li><a href="#constructviewmodelusingargumentordefaultconstructor-object-injectionobject">ConstructViewModelUsingArgumentOrDefaultConstructor(object injectionObject)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
+</ul></li>
+<li><a href="#createviewmodelbyusingdatacontextorconstructor">CreateViewModelByUsingDataContextOrConstructor()</a></li>
+<li><a href="#iscurrentdatacontext-datacontextchangedeventargs-e">IsCurrentDataContext(DataContextChangedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
+</ul></li>
 <li><a href="#ontargetviewdatacontextchanged-object-sender-datacontextchangedeventargs-e">OnTargetViewDataContextChanged(object sender, DataContextChangedEventArgs e)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-3">Parameters</a></li>
 </ul></li>
 <li><a href="#ontargetviewloadedasync-object-sender-eventargs-e">OnTargetViewLoadedAsync(object sender, EventArgs e)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
-<li><a href="#returns-2">Returns</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#returns-5">Returns</a></li>
 </ul></li>
 <li><a href="#ontargetviewpropertychanged-object-sender-propertychangedeventargs-e">OnTargetViewPropertyChanged(object sender, PropertyChangedEventArgs e)</a>
 <ul>
-<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#parameters-5">Parameters</a></li>
 </ul></li>
 <li><a href="#ontargetviewunloadedasync-object-sender-eventargs-e">OnTargetViewUnloadedAsync(object sender, EventArgs e)</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
-<li><a href="#returns-3">Returns</a></li>
-</ul></li>
-<li><a href="#onviewloadedmanagerloadedinternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoadedInternal(object sender, ViewLoadEventArgs e)</a>
-<ul>
-<li><a href="#parameters-4">Parameters</a></li>
-</ul></li>
-<li><a href="#onviewloadedmanagerloadinginternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoadingInternal(object sender, ViewLoadEventArgs e)</a>
-<ul>
-<li><a href="#parameters-5">Parameters</a></li>
-</ul></li>
-<li><a href="#onviewloadedmanagerunloadedinternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloadedInternal(object sender, ViewLoadEventArgs e)</a>
-<ul>
 <li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#returns-6">Returns</a></li>
 </ul></li>
-<li><a href="#onviewloadedmanagerunloadinginternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloadingInternal(object sender, ViewLoadEventArgs e)</a>
+<li><a href="#onviewloadedmanagerloaded-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoaded(object sender, ViewLoadEventArgs e)</a>
 <ul>
 <li><a href="#parameters-7">Parameters</a></li>
 </ul></li>
-<li><a href="#onviewmodelcanceledasync-object-sender-eventargs-e">OnViewModelCanceledAsync(object sender, EventArgs e)</a>
+<li><a href="#onviewloadedmanagerloadedinternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoadedInternal(object sender, ViewLoadEventArgs e)</a>
 <ul>
 <li><a href="#parameters-8">Parameters</a></li>
 </ul></li>
-<li><a href="#onviewmodelclosedasync-object-sender-viewmodelclosedeventargs-e">OnViewModelClosedAsync(object sender, ViewModelClosedEventArgs e)</a>
+<li><a href="#onviewloadedmanagerloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoading(object sender, ViewLoadEventArgs e)</a>
 <ul>
 <li><a href="#parameters-9">Parameters</a></li>
 </ul></li>
-<li><a href="#onviewmodelpropertychanged-object-sender-propertychangedeventargs-e">OnViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)</a>
+<li><a href="#onviewloadedmanagerloadinginternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoadingInternal(object sender, ViewLoadEventArgs e)</a>
 <ul>
 <li><a href="#parameters-10">Parameters</a></li>
 </ul></li>
-<li><a href="#onviewmodelsavedasync-object-sender-eventargs-e">OnViewModelSavedAsync(object sender, EventArgs e)</a>
+<li><a href="#onviewloadedmanagerunloaded-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloaded(object sender, ViewLoadEventArgs e)</a>
 <ul>
 <li><a href="#parameters-11">Parameters</a></li>
 </ul></li>
+<li><a href="#onviewloadedmanagerunloadedinternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloadedInternal(object sender, ViewLoadEventArgs e)</a>
+<ul>
+<li><a href="#parameters-12">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewloadedmanagerunloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloading(object sender, ViewLoadEventArgs e)</a>
+<ul>
+<li><a href="#parameters-13">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewloadedmanagerunloadinginternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloadingInternal(object sender, ViewLoadEventArgs e)</a>
+<ul>
+<li><a href="#parameters-14">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewmodelcanceledasync-object-sender-eventargs-e">OnViewModelCanceledAsync(object sender, EventArgs e)</a>
+<ul>
+<li><a href="#parameters-15">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewmodelchanged">OnViewModelChanged()</a></li>
+<li><a href="#onviewmodelchanging">OnViewModelChanging()</a></li>
+<li><a href="#onviewmodelclosedasync-object-sender-viewmodelclosedeventargs-e">OnViewModelClosedAsync(object sender, ViewModelClosedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-16">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewmodelpropertychanged-object-sender-propertychangedeventargs-e">OnViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)</a>
+<ul>
+<li><a href="#parameters-17">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewmodelsavedasync-object-sender-eventargs-e">OnViewModelSavedAsync(object sender, EventArgs e)</a>
+<ul>
+<li><a href="#parameters-18">Parameters</a></li>
+</ul></li>
 <li><a href="#saveandcloseviewmodelasync">SaveAndCloseViewModelAsync()</a>
 <ul>
-<li><a href="#returns-4">Returns</a></li>
+<li><a href="#returns-7">Returns</a></li>
 </ul></li>
 <li><a href="#saveviewmodelasync">SaveViewModelAsync()</a>
 <ul>
-<li><a href="#returns-5">Returns</a></li>
+<li><a href="#returns-8">Returns</a></li>
+</ul></li>
+<li><a href="#setdatacontext-object-newdatacontext">SetDataContext(object newDataContext)</a>
+<ul>
+<li><a href="#parameters-19">Parameters</a></li>
 </ul></li>
 <li><a href="#validateviewmodel">ValidateViewModel()</a></li>
 </ul></li>
@@ -5806,17 +5867,111 @@
 
 <h2 id="fields">Fields</h2>
 
+<h3 id="lockobject">_lockObject</h3>
+
+<p>The lock object</p>
+
+<h3 id="viewloadmanager">ViewLoadManager</h3>
+
+<p>The view load manager</p>
+
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="logicbase-iview-targetview-type-viewmodeltype-iviewmodel-viewmodel">LogicBase(IView targetView, Type viewModelType, IViewModel viewModel)</h3>
+
+<p>Initializes a new instance of the <a href="#">LogicBase</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>targetView</strong></td>
+<td>The target control.</td>
+</tr>
+
+<tr>
+<td><strong>viewModelType</strong></td>
+<td>Type of the view model.</td>
+</tr>
+
+<tr>
+<td><strong>viewModel</strong></td>
+<td>The view model.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The targetView is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
+
+<h3 id="canviewbeloaded">CanViewBeLoaded</h3>
+
+<p>Gets a value indicating whether the control can be loaded. This is very useful in non-WPF classes where the<code>LayoutUpdated</code> is used instead of the<code>Loaded</code> event. If this value is<code>true</code>, this logic implementation can call the Object,EventArgs) when the control is loaded. Otherwise, the call will be ignored.</p>
+
+<h4 id="remarks">Remarks</h4>
+
+<p>This value is introduced for Windows Phone because a navigation backwards still leads to a call to<code>LayoutUpdated</code>. To prevent new view models from being created, this property can be overridden by such logic implementations.</p>
+
+<h3 id="ignorenulldatacontext">IgnoreNullDataContext</h3>
+
+<p>Gets or sets a value indicating whether a<code>null</code> DataContext should be ignored and no new view model should be created. This property will automatically be set to<code>true</code> when a parent view model container invokes the ViewUnloading event. It will be set to<code>false</code> again when the parent view model container invokes the ViewLoading. The default value is<code>false</code>.</p>
+
+<h3 id="isclosingviewmodel">IsClosingViewModel</h3>
+
+<p>Gets or sets a value indicating whether the current view model is being closed.</p>
+
+<h3 id="isloading">IsLoading</h3>
+
+<p>Gets a value indicating whether this instance is loading.</p>
 
 <h3 id="istargetviewloaded">IsTargetViewLoaded</h3>
 
 <p>Gets a value indicating whether the target control is loaded or not.</p>
 
+<h3 id="isunloading">IsUnloading</h3>
+
+<p>Gets a value indicating whether this instance is unloading.</p>
+
+<h3 id="lastknowndatacontext">LastKnownDataContext</h3>
+
+<p>Gets the weak reference to the last known data context.</p>
+
 <h3 id="preventviewmodelcreation">PreventViewModelCreation</h3>
 
 <p>Gets or sets a value indicating whether the view model container should prevent the creation of a view model. This property is very useful when using views in transitions where the view model is no longer required.</p>
+
+<h3 id="targetview">TargetView</h3>
+
+<p>Gets the target control of this MVVM provider.</p>
+
+<h3 id="targetviewtype">TargetViewType</h3>
+
+<p>Gets the type of the target control.</p>
 
 <h3 id="uniqueidentifier">UniqueIdentifier</h3>
 
@@ -5826,13 +5981,17 @@
 
 <p>Gets or sets the view model.</p>
 
-<h4 id="remarks">Remarks</h4>
+<h4 id="remarks-1">Remarks</h4>
 
 <p>When a new value is set, the old view model will be disposed.</p>
 
 <h3 id="viewmodelbehavior">ViewModelBehavior</h3>
 
 <p>Gets the view model behavior.</p>
+
+<h3 id="viewmodelfactory">ViewModelFactory</h3>
+
+<p>Gets the view model factory used to create the view model instances.</p>
 
 <h3 id="viewmodeltype">ViewModelType</h3>
 
@@ -5902,11 +6061,73 @@
 
 <p>Closes the view model.</p>
 
+<h3 id="completeviewmodelclosingasync">CompleteViewModelClosingAsync()</h3>
+
+<p>Awaits until the closing of the view model is completed.</p>
+
+<h4 id="returns-2">Returns</h4>
+
+<p>Task.</p>
+
+<h3 id="constructviewmodelusingargumentordefaultconstructor-object-injectionobject">ConstructViewModelUsingArgumentOrDefaultConstructor(object injectionObject)</h3>
+
+<p>Tries to construct the view model using the argument. If that fails, it will try to use the default constructor of the view model. If that is not available,<code>null</code> is returned.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>injectionObject</strong></td>
+<td>The object that is injected into the view model constructor.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-3">Returns</h4>
+
+<p>Constructed view model or<code>null</code> if the view model could not be constructed.</p>
+
+<h3 id="createviewmodelbyusingdatacontextorconstructor">CreateViewModelByUsingDataContextOrConstructor()</h3>
+
+<p>Creates a view model by using data context or, if that is not possible, the constructor of the view model.</p>
+
+<h3 id="iscurrentdatacontext-datacontextchangedeventargs-e">IsCurrentDataContext(DataContextChangedEventArgs e)</h3>
+
+<p>Gets a value indicating whether the specified arguments represent the current data context.</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>e</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-4">Returns</h4>
+
 <h3 id="ontargetviewdatacontextchanged-object-sender-datacontextchangedeventargs-e">OnTargetViewDataContextChanged(object sender, DataContextChangedEventArgs e)</h3>
 
 <p>Called when the<code>DataContext</code> property of the TargetView has changed.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-3">Parameters</h4>
 
 <table>
 <thead>
@@ -5933,7 +6154,7 @@
 
 <p>Called when the TargetView has just been loaded. The base implementation will try to create a view model based on the current DataContext and set it as the DataContext of the TargetView. To create custom logic for view model creation, override this method and do not call the base.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>
@@ -5956,7 +6177,7 @@
 </tbody>
 </table>
 
-<h4 id="returns-2">Returns</h4>
+<h4 id="returns-5">Returns</h4>
 
 <p>Task.</p>
 
@@ -5964,7 +6185,7 @@
 
 <p>Called when a property on the TargetView has changed.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
 <thead>
@@ -5991,7 +6212,7 @@
 
 <p>Called when the TargetView has just been unloaded.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
 <thead>
@@ -6014,15 +6235,69 @@
 </tbody>
 </table>
 
-<h4 id="returns-3">Returns</h4>
+<h4 id="returns-6">Returns</h4>
 
 <p>Task.</p>
+
+<h3 id="onviewloadedmanagerloaded-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoaded(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is loaded.</p>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="onviewloadedmanagerloadedinternal-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoadedInternal(object sender, ViewLoadEventArgs e)</h3>
 
 <p>Called when the view manager is loaded. This method is public because the view loaded manager must be subscribed to as a weak event.</p>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewloadedmanagerloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoading(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is unloading.</p>
+
+<h4 id="parameters-9">Parameters</h4>
 
 <table>
 <thead>
@@ -6049,7 +6324,34 @@
 
 <p>Called when the view manager is unloading. This method is public because the view loaded manager must be subscribed to as a weak event.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-10">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewloadedmanagerunloaded-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloaded(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is unloaded.</p>
+
+<h4 id="parameters-11">Parameters</h4>
 
 <table>
 <thead>
@@ -6076,7 +6378,34 @@
 
 <p>Called when the view manager is unloaded. This method is public because the view loaded manager must be subscribed to as a weak event.</p>
 
-<h4 id="parameters-6">Parameters</h4>
+<h4 id="parameters-12">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewloadedmanagerunloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloading(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is unloading.</p>
+
+<h4 id="parameters-13">Parameters</h4>
 
 <table>
 <thead>
@@ -6103,7 +6432,7 @@
 
 <p>Called when the view manager is unloading. This method is public because the view loaded manager must be subscribed to as a weak event.</p>
 
-<h4 id="parameters-7">Parameters</h4>
+<h4 id="parameters-14">Parameters</h4>
 
 <table>
 <thead>
@@ -6130,7 +6459,7 @@
 
 <p>Called when the ViewModel has been saved.</p>
 
-<h4 id="parameters-8">Parameters</h4>
+<h4 id="parameters-15">Parameters</h4>
 
 <table>
 <thead>
@@ -6153,11 +6482,19 @@
 </tbody>
 </table>
 
+<h3 id="onviewmodelchanged">OnViewModelChanged()</h3>
+
+<p>Called when the ViewModel property has just been changed.</p>
+
+<h3 id="onviewmodelchanging">OnViewModelChanging()</h3>
+
+<p>Called when the ViewModel property is about to change.</p>
+
 <h3 id="onviewmodelclosedasync-object-sender-viewmodelclosedeventargs-e">OnViewModelClosedAsync(object sender, ViewModelClosedEventArgs e)</h3>
 
 <p>Called when the ViewModel has been closed.</p>
 
-<h4 id="parameters-9">Parameters</h4>
+<h4 id="parameters-16">Parameters</h4>
 
 <table>
 <thead>
@@ -6184,7 +6521,7 @@
 
 <p>Called when a property on the ViewModel has changed.</p>
 
-<h4 id="parameters-10">Parameters</h4>
+<h4 id="parameters-17">Parameters</h4>
 
 <table>
 <thead>
@@ -6211,7 +6548,7 @@
 
 <p>Called when the ViewModel has been saved.</p>
 
-<h4 id="parameters-11">Parameters</h4>
+<h4 id="parameters-18">Parameters</h4>
 
 <table>
 <thead>
@@ -6238,7 +6575,7 @@
 
 <p>Saves and closes the view model. If the saving fails, the view model is not closed.</p>
 
-<h4 id="returns-4">Returns</h4>
+<h4 id="returns-7">Returns</h4>
 
 <p><code>true</code> if the view model is successfully saved; otherwise<code>false</code>.</p>
 
@@ -6246,9 +6583,31 @@
 
 <p>Saves the view model.</p>
 
-<h4 id="returns-5">Returns</h4>
+<h4 id="returns-8">Returns</h4>
 
 <p><code>true</code> if the view model is successfully saved; otherwise<code>false</code>.</p>
+
+<h3 id="setdatacontext-object-newdatacontext">SetDataContext(object newDataContext)</h3>
+
+<p>Sets the data context of the target control. This method is abstract because the real logic implementation knows how to set the data context (for example, by using an additional data context grid).</p>
+
+<h4 id="parameters-19">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>newDataContext</strong></td>
+<td>The new data context.</td>
+</tr>
+</tbody>
+</table>
 
 <h3 id="validateviewmodel">ValidateViewModel()</h3>
 

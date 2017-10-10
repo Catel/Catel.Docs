@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5670,6 +5671,12 @@
 <li><a href="#methods">Methods</a>
 <ul>
 <li><a href="#invoke">Invoke()</a></li>
+<li><a href="#invoke-object-parameter">Invoke(object parameter)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+<li><a href="#onassociatedobjectloaded">OnAssociatedObjectLoaded()</a></li>
+<li><a href="#oncommandcanexecutechanged">OnCommandCanExecuteChanged()</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5759,6 +5766,36 @@
 <h3 id="invoke">Invoke()</h3>
 
 <p>Invokes the action without any parameter.</p>
+
+<h3 id="invoke-object-parameter">Invoke(object parameter)</h3>
+
+<p>Invokes the action.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>parameter</strong></td>
+<td>The parameter to the action. If the Action does not require a parameter, the parameter may be set to a null reference.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onassociatedobjectloaded">OnAssociatedObjectLoaded()</h3>
+
+<p>Called when the associated object is loaded.</p>
+
+<h3 id="oncommandcanexecutechanged">OnCommandCanExecuteChanged()</h3>
+
+<p>Called when the<code>CanExecute</code> state of a command has changed.</p>
 
 
 <footer class=" footline" >

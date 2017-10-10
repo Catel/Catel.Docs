@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5645,7 +5646,13 @@
 <li>
 <ul>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#locationservicebase-idispatcherservice-dispatcherservice">LocationServiceBase(IDispatcherService dispatcherService)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#currentlocation">CurrentLocation</a>
@@ -5663,11 +5670,18 @@
 <ul>
 <li><a href="#returns">Returns</a></li>
 </ul></li>
+<li><a href="#initialize">Initialize()</a></li>
+<li><a href="#raiselocationchanged">RaiseLocationChanged()</a></li>
 <li><a href="#start">Start()</a>
 <ul>
 <li><a href="#returns-1">Returns</a></li>
 </ul></li>
+<li><a href="#startsensor">StartSensor()</a>
+<ul>
+<li><a href="#returns-2">Returns</a></li>
+</ul></li>
 <li><a href="#stop">Stop()</a></li>
+<li><a href="#stopsensor">StopSensor()</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5726,6 +5740,28 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="locationservicebase-idispatcherservice-dispatcherservice">LocationServiceBase(IDispatcherService dispatcherService)</h3>
+
+<p>Initializes a new instance of the <a href="#">LocationServiceBase</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>dispatcherService</strong></td>
+<td>The dispatcher service.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="currentlocation">CurrentLocation</h3>
@@ -5752,6 +5788,14 @@
 
 <p>The current location represented as <a href="#">ILocation</a>. If no location is available,<code>null</code> will be returned.</p>
 
+<h3 id="initialize">Initialize()</h3>
+
+<p>Initializes the service.</p>
+
+<h3 id="raiselocationchanged">RaiseLocationChanged()</h3>
+
+<p>Called when the current location has changed.</p>
+
 <h3 id="start">Start()</h3>
 
 <p>Starts the location service so it&rsquo;s retrieving data.</p>
@@ -5760,7 +5804,19 @@
 
 <p><code>true</code> if the service started successfully; otherwise<code>false</code>.</p>
 
+<h3 id="startsensor">StartSensor()</h3>
+
+<p>Starts the sensor.</p>
+
+<h4 id="returns-2">Returns</h4>
+
+<p><code>true</code> if the service started successfully; otherwise<code>false</code>.</p>
+
 <h3 id="stop">Stop()</h3>
+
+<p>Stops the location service so it&rsquo;s no longer retrieving data.</p>
+
+<h3 id="stopsensor">StopSensor()</h3>
 
 <p>Stops the location service so it&rsquo;s no longer retrieving data.</p>
 

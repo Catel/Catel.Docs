@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5651,39 +5652,47 @@
 <li>
 <ul>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#expirationpolicy-bool-canreset">ExpirationPolicy(bool canReset)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+</ul></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#canreset">CanReset</a></li>
 <li><a href="#isexpired">IsExpired</a></li>
+<li><a href="#isresting">IsResting</a></li>
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
 <li><a href="#absolute-datetime-absoluteexpirationdatetime-bool-force">Absolute(DateTime absoluteExpirationDateTime, bool force)</a>
 <ul>
-<li><a href="#parameters">Parameters</a></li>
+<li><a href="#parameters-1">Parameters</a></li>
 <li><a href="#returns">Returns</a></li>
 <li><a href="#remarks">Remarks</a></li>
 </ul></li>
 <li><a href="#custom-func-lt-bool-gt-isexpiredfunc-action-resetaction-bool-force">Custom(Func&lt;bool&gt; isExpiredFunc, Action resetAction, bool force)</a>
 <ul>
-<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#parameters-2">Parameters</a></li>
 <li><a href="#returns-1">Returns</a></li>
 <li><a href="#exceptions">Exceptions</a></li>
 </ul></li>
 <li><a href="#duration-timespan-durationtimespan-bool-force">Duration(TimeSpan durationTimeSpan, bool force)</a>
 <ul>
-<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#parameters-3">Parameters</a></li>
 <li><a href="#returns-2">Returns</a></li>
 <li><a href="#remarks-1">Remarks</a></li>
 </ul></li>
+<li><a href="#onreset">OnReset()</a></li>
 <li><a href="#reset">Reset()</a>
 <ul>
 <li><a href="#exceptions-1">Exceptions</a></li>
 </ul></li>
 <li><a href="#sliding-timespan-durationtimespan-bool-force">Sliding(TimeSpan durationTimeSpan, bool force)</a>
 <ul>
-<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#parameters-4">Parameters</a></li>
 <li><a href="#returns-3">Returns</a></li>
 <li><a href="#remarks-2">Remarks</a></li>
 </ul></li>
@@ -5742,6 +5751,28 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="expirationpolicy-bool-canreset">ExpirationPolicy(bool canReset)</h3>
+
+<p>Initializes a new instance of the <a href="#">ExpirationPolicy</a> class.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>canReset</strong></td>
+<td>The can reset.</td>
+</tr>
+</tbody>
+</table>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="canreset">CanReset</h3>
@@ -5752,13 +5783,17 @@
 
 <p>Gets a value indicating whether the value with this policy attached is expired.</p>
 
+<h3 id="isresting">IsResting</h3>
+
+<p>Gets a value indicating whether is resting.</p>
+
 <h2 id="methods">Methods</h2>
 
 <h3 id="absolute-datetime-absoluteexpirationdatetime-bool-force">Absolute(DateTime absoluteExpirationDateTime, bool force)</h3>
 
 <p>Creates a <a href="#">AbsoluteExpirationPolicy</a> instance.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-1">Parameters</h4>
 
 <table>
 <thead>
@@ -5793,7 +5828,7 @@
 
 <p>Creates a <a href="#">CustomExpirationPolicy</a> instance.</p>
 
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="parameters-2">Parameters</h4>
 
 <table>
 <thead>
@@ -5847,7 +5882,7 @@
 
 <p>Creates a <a href="#">DurationExpirationPolicy</a> instance.</p>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-3">Parameters</h4>
 
 <table>
 <thead>
@@ -5878,6 +5913,10 @@
 
 <p>The cache item will expire using the duration to calculate the absolute expiration from now.</p>
 
+<h3 id="onreset">OnReset()</h3>
+
+<p>Called when the policy is resetting.</p>
+
 <h3 id="reset">Reset()</h3>
 
 <p>Resets the expiration policy.</p>
@@ -5904,7 +5943,7 @@
 
 <p>Creates a <a href="#">SlidingExpirationPolicy</a> instance.</p>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
 <thead>

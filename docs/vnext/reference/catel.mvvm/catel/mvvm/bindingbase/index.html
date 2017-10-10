@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5648,10 +5649,15 @@
 <li><a href="#methods">Methods</a>
 <ul>
 <li><a href="#clearbinding">ClearBinding()</a></li>
-<li><a href="#tostring">ToString()</a>
+<li><a href="#determinetostring">DetermineToString()</a>
 <ul>
 <li><a href="#returns">Returns</a></li>
 </ul></li>
+<li><a href="#tostring">ToString()</a>
+<ul>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
+<li><a href="#uninitialize">Uninitialize()</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -5711,13 +5717,25 @@
 
 <p>Clears the binding and stops listening to both the source and target instances.</p>
 
+<h3 id="determinetostring">DetermineToString()</h3>
+
+<p>Determines the value to use in the ToString method.</p>
+
+<h4 id="returns">Returns</h4>
+
+<p>The string to use.</p>
+
 <h3 id="tostring">ToString()</h3>
 
 <p>Converts the current instance to a string.</p>
 
-<h4 id="returns">Returns</h4>
+<h4 id="returns-1">Returns</h4>
 
 <p>The string representation of this object.</p>
+
+<h3 id="uninitialize">Uninitialize()</h3>
+
+<p>Uninitializes this binding.</p>
 
 
 <footer class=" footline" >

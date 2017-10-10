@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5668,6 +5669,8 @@
 <li><a href="#defaultsupportparentviewmodelcontainersvalue">DefaultSupportParentViewModelContainersValue</a></li>
 <li><a href="#defaultunloadbehaviorvalue">DefaultUnloadBehaviorValue</a></li>
 <li><a href="#disablewhennoviewmodel">DisableWhenNoViewModel</a></li>
+<li><a href="#hasparentviewmodelcontainer">HasParentViewModelContainer</a></li>
+<li><a href="#issubscribedtoparentviewmodel">IsSubscribedToParentViewModel</a></li>
 <li><a href="#skipsearchingforinfobarmessagecontrol">SkipSearchingForInfoBarMessageControl</a></li>
 <li><a href="#supportparentviewmodelcontainers">SupportParentViewModelContainers</a></li>
 <li><a href="#unloadbehavior">UnloadBehavior</a></li>
@@ -5685,6 +5688,20 @@
 <li><a href="#ontargetviewunloadedasync-object-sender-eventargs-e">OnTargetViewUnloadedAsync(object sender, EventArgs e)</a>
 <ul>
 <li><a href="#parameters-3">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewloadedmanagerloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoading(object sender, ViewLoadEventArgs e)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewloadedmanagerunloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloading(object sender, ViewLoadEventArgs e)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+</ul></li>
+<li><a href="#onviewmodelchanged">OnViewModelChanged()</a></li>
+<li><a href="#onviewmodelchanging">OnViewModelChanging()</a></li>
+<li><a href="#setdatacontext-object-newdatacontext">SetDataContext(object newDataContext)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5824,6 +5841,14 @@
 
 <p>Gets or sets a value indicating whether the user control should automatically be disabled when there is no active view model.</p>
 
+<h3 id="hasparentviewmodelcontainer">HasParentViewModelContainer</h3>
+
+<p>Gets a value indicating whether there is a parent view model container available.</p>
+
+<h3 id="issubscribedtoparentviewmodel">IsSubscribedToParentViewModel</h3>
+
+<p>Gets a value indicating whether this instance is subscribed to a parent view model.</p>
+
 <h3 id="skipsearchingforinfobarmessagecontrol">SkipSearchingForInfoBarMessageControl</h3>
 
 <p>Gets or sets a value indicating whether to skip the search for an info bar message control. If not skipped, the user control will search for a the first <a href="#">InfoBarMessageControl</a> that can be found. During this search, the user control will use both the visual and logical tree. If a user control does not have any <a href="#">InfoBarMessageControl</a>, searching for it is useless and requires the control to search all the way to the top for the implementation. To prevent this from happening, set this property to<code>true</code>. The default value is determined by the DefaultSkipSearchingForInfoBarMessageControlValue property.</p>
@@ -5915,6 +5940,90 @@
 <tr>
 <td><strong>e</strong></td>
 <td>The instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewloadedmanagerloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerLoading(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is loading.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewloadedmanagerunloading-object-sender-viewloadeventargs-e">OnViewLoadedManagerUnloading(object sender, ViewLoadEventArgs e)</h3>
+
+<p>Called when the view manager is unloading.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The <a href="#">ViewLoadEventArgs</a> instance containing the event data.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="onviewmodelchanged">OnViewModelChanged()</h3>
+
+<p>Called when the ViewModel property has just been changed.</p>
+
+<h3 id="onviewmodelchanging">OnViewModelChanging()</h3>
+
+<p>Called when the ViewModel property is about to change.</p>
+
+<h3 id="setdatacontext-object-newdatacontext">SetDataContext(object newDataContext)</h3>
+
+<p>Sets the data context of the target control. This method is abstract because the real logic implementation knows how to set the data context (for example, by using an additional data context grid).</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>newDataContext</strong></td>
+<td>The new data context.</td>
 </tr>
 </tbody>
 </table>

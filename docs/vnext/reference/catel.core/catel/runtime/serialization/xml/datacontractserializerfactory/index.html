@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5668,11 +5669,42 @@
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
-<li><a href="#getdatacontractserializer-type-serializingtype-type-typetoserialize-string-xmlname-string-rootnamespace-list-lt-type-gt-additionalknowntypes">GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List&lt;Type&gt; additionalKnownTypes)</a>
+<li><a href="#addtypetoknowntypesifserializable-type-typetoadd-xmlserializertypeinfo-serializertypeinfo">AddTypeToKnownTypesIfSerializable(Type typeToAdd, XmlSerializerTypeInfo serializerTypeInfo)</a>
 <ul>
 <li><a href="#parameters">Parameters</a></li>
 <li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#allownonpublicreflection-type-type">AllowNonPublicReflection(Type type)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+</ul></li>
+<li><a href="#getdatacontractserializer-type-serializingtype-type-typetoserialize-string-xmlname-string-rootnamespace-list-lt-type-gt-additionalknowntypes">GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List&lt;Type&gt; additionalKnownTypes)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#returns-2">Returns</a></li>
 <li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
+<li><a href="#getknowntypes-type-type-xmlserializertypeinfo-serializertypeinfo-bool-resolveabstractclassesandinterfaces">GetKnownTypes(Type type, XmlSerializerTypeInfo serializerTypeInfo, bool resolveAbstractClassesAndInterfaces)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
+</ul></li>
+<li><a href="#getknowntypesviaattributes-type-type">GetKnownTypesViaAttributes(Type type)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
+<li><a href="#exceptions-1">Exceptions</a></li>
+</ul></li>
+<li><a href="#istypeserializable-type-type-xmlserializertypeinfo-serializertypeinfo">IsTypeSerializable(Type type, XmlSerializerTypeInfo serializerTypeInfo)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#returns-5">Returns</a></li>
+</ul></li>
+<li><a href="#shouldtypebeignored-type-type-xmlserializertypeinfo-serializertypeinfo">ShouldTypeBeIgnored(Type type, XmlSerializerTypeInfo serializerTypeInfo)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#returns-6">Returns</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5748,11 +5780,68 @@
 
 <h2 id="methods">Methods</h2>
 
+<h3 id="addtypetoknowntypesifserializable-type-typetoadd-xmlserializertypeinfo-serializertypeinfo">AddTypeToKnownTypesIfSerializable(Type typeToAdd, XmlSerializerTypeInfo serializerTypeInfo)</h3>
+
+<p>Adds the type to the known types if the type is serializable.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>typeToAdd</strong></td>
+<td>The type to add.</td>
+</tr>
+
+<tr>
+<td><strong>serializerTypeInfo</strong></td>
+<td>The serializer type info.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p><code>true</code> if the type is serializable; otherwise<code>false</code>.</p>
+
+<h3 id="allownonpublicreflection-type-type">AllowNonPublicReflection(Type type)</h3>
+
+<p>Returns whether non-public reflection is allowed on the specified type.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-1">Returns</h4>
+
+<p><code>true</code> if non-public reflection is allowed,<code>false</code> otherwise.</p>
+
 <h3 id="getdatacontractserializer-type-serializingtype-type-typetoserialize-string-xmlname-string-rootnamespace-list-lt-type-gt-additionalknowntypes">GetDataContractSerializer(Type serializingType, Type typeToSerialize, string xmlName, string rootNamespace, List&lt;Type&gt; additionalKnownTypes)</h3>
 
 <p>Gets the Data Contract serializer for a specific type. This method caches serializers so the performance can be improved when a serializer is used more than once.</p>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-2">Parameters</h4>
 
 <table>
 <thead>
@@ -5790,7 +5879,7 @@
 </tbody>
 </table>
 
-<h4 id="returns">Returns</h4>
+<h4 id="returns-2">Returns</h4>
 
 <p>for the given type.</p>
 
@@ -5816,6 +5905,148 @@
 </tr>
 </tbody>
 </table>
+
+<h3 id="getknowntypes-type-type-xmlserializertypeinfo-serializertypeinfo-bool-resolveabstractclassesandinterfaces">GetKnownTypes(Type type, XmlSerializerTypeInfo serializerTypeInfo, bool resolveAbstractClassesAndInterfaces)</h3>
+
+<p>Gets the known types inside the specific type.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type.</td>
+</tr>
+
+<tr>
+<td><strong>serializerTypeInfo</strong></td>
+<td>The serializer type info.</td>
+</tr>
+
+<tr>
+<td><strong>resolveAbstractClassesAndInterfaces</strong></td>
+<td>if set to<code>true</code> [resolve abstract classes and interfaces].</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-3">Returns</h4>
+
+<p>Array of that are found in the object type.</p>
+
+<h3 id="getknowntypesviaattributes-type-type">GetKnownTypesViaAttributes(Type type)</h3>
+
+<p>Gets the known types via attributes.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-4">Returns</h4>
+
+<p>The list of known types via the.</p>
+
+<h4 id="exceptions-1">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentNullException</strong></td>
+<td>The type is<code>null</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="istypeserializable-type-type-xmlserializertypeinfo-serializertypeinfo">IsTypeSerializable(Type type, XmlSerializerTypeInfo serializerTypeInfo)</h3>
+
+<p>Determines whether the specified type is serializable.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type.</td>
+</tr>
+
+<tr>
+<td><strong>serializerTypeInfo</strong></td>
+<td>The serializer type information.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-5">Returns</h4>
+
+<p><code>true</code> if the specified type is serializable; otherwise,<code>false</code>.</p>
+
+<h3 id="shouldtypebeignored-type-type-xmlserializertypeinfo-serializertypeinfo">ShouldTypeBeIgnored(Type type, XmlSerializerTypeInfo serializerTypeInfo)</h3>
+
+<p>Determines whether the type should be handled.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>The type.</td>
+</tr>
+
+<tr>
+<td><strong>serializerTypeInfo</strong></td>
+<td>The serializer type info.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-6">Returns</h4>
+
+<p><code>true</code> if the type should be handled; otherwise,<code>false</code>.</p>
 
 
 <footer class=" footline" >

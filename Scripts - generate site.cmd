@@ -2,7 +2,7 @@
 xcopy "repositories\hugo-theme-docdock" "src\shared\themes\docdock" /e /y /i
 
 :: Generate all sites
-for %%i in (home,5.0,5.1,vnext) do (call:buildSite %%i)
+for %%i in (home,5.0,5.1,5.2,vnext) do (call:buildSite %%i)
 
 goto:eof
 

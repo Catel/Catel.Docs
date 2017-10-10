@@ -13,11 +13,12 @@
     <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
     <link href="/vnext/css/hybrid.css" rel="stylesheet">
     <link href="/vnext/css/featherlight.min.css" rel="stylesheet">
-    <link href="/vnext/css/horsey.css" rel="stylesheet">
+    <link href="/vnext/css/auto-complete.css" rel="stylesheet">
     
     <link href="/vnext/css/theme.css" rel="stylesheet">
     
     
+    <link href="/vnext/css/theme-customization.css" rel="stylesheet">
     <link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
     <script src="/vnext/js/jquery-2.x.min.js"></script>
     <style type="text/css">
@@ -53,7 +54,7 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
-<script type="text/javascript" src="/vnext/js/horsey.js"></script>
+<script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
 <script type="text/javascript">
     var baseurl = "http:\/\/docs.catelproject.com\/vnext\/";
 </script>
@@ -5645,16 +5646,64 @@
 <li>
 <ul>
 <li><a href="#fields">Fields</a></li>
-<li><a href="#constructors">Constructors</a></li>
+<li><a href="#constructors">Constructors</a>
+<ul>
+<li><a href="#locatorbase">LocatorBase()</a></li>
+</ul></li>
 <li><a href="#properties">Properties</a>
 <ul>
 <li><a href="#namingconventions">NamingConventions</a></li>
 </ul></li>
 <li><a href="#methods">Methods</a>
 <ul>
+<li><a href="#additemtocache-string-valuetoresolve-string-resolvedvalue">AddItemToCache(string valueToResolve, string resolvedValue)</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+</ul></li>
 <li><a href="#clearcache">ClearCache()</a>
 <ul>
 <li><a href="#remarks">Remarks</a></li>
+</ul></li>
+<li><a href="#getdefaultnamingconventions">GetDefaultNamingConventions()</a>
+<ul>
+<li><a href="#returns">Returns</a></li>
+</ul></li>
+<li><a href="#getitemfromcache-string-valuetoresolve">GetItemFromCache(string valueToResolve)</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#returns-1">Returns</a></li>
+<li><a href="#exceptions-1">Exceptions</a></li>
+</ul></li>
+<li><a href="#gettypefromstring-string-fulltypename">GetTypeFromString(string fullTypeName)</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#returns-2">Returns</a></li>
+<li><a href="#remarks-1">Remarks</a></li>
+</ul></li>
+<li><a href="#register-string-valuetoresolve-string-resolvedvalue">Register(string valueToResolve, string resolvedValue)</a>
+<ul>
+<li><a href="#parameters-3">Parameters</a></li>
+<li><a href="#exceptions-2">Exceptions</a></li>
+</ul></li>
+<li><a href="#resolve-string-valuetoresolve">Resolve(string valueToResolve)</a>
+<ul>
+<li><a href="#parameters-4">Parameters</a></li>
+<li><a href="#returns-3">Returns</a></li>
+<li><a href="#exceptions-3">Exceptions</a></li>
+<li><a href="#remarks-2">Remarks</a></li>
+</ul></li>
+<li><a href="#resolvenamingconvention-string-assembly-string-typetoresolvename-string-namingconvention">ResolveNamingConvention(string assembly, string typeToResolveName, string namingConvention)</a>
+<ul>
+<li><a href="#parameters-5">Parameters</a></li>
+<li><a href="#returns-4">Returns</a></li>
+</ul></li>
+<li><a href="#resolvevalues-string-valuetoresolve">ResolveValues(string valueToResolve)</a>
+<ul>
+<li><a href="#parameters-6">Parameters</a></li>
+<li><a href="#returns-5">Returns</a></li>
+<li><a href="#exceptions-4">Exceptions</a></li>
+<li><a href="#remarks-3">Remarks</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -5714,6 +5763,10 @@
 
 <h2 id="constructors">Constructors</h2>
 
+<h3 id="locatorbase">LocatorBase()</h3>
+
+<p>Initializes a new instance of the <a href="#">Object</a> class.</p>
+
 <h2 id="properties">Properties</h2>
 
 <h3 id="namingconventions">NamingConventions</h3>
@@ -5722,6 +5775,51 @@
 
 <h2 id="methods">Methods</h2>
 
+<h3 id="additemtocache-string-valuetoresolve-string-resolvedvalue">AddItemToCache(string valueToResolve, string resolvedValue)</h3>
+
+<p>Adds the item to the cache.</p>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>valueToResolve</strong></td>
+<td>The value to resolve.</td>
+</tr>
+
+<tr>
+<td><strong>resolvedValue</strong></td>
+<td>The resolved value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentException</strong></td>
+<td>The valueToResolve is<code>null</code> or whitespace.</td>
+</tr>
+</tbody>
+</table>
+
 <h3 id="clearcache">ClearCache()</h3>
 
 <p>Clears the cache of the resolved naming conventions.</p>
@@ -5729,6 +5827,265 @@
 <h4 id="remarks">Remarks</h4>
 
 <p>Note that clearing the cache will also clear all manually registered values registered via the String) method.</p>
+
+<h3 id="getdefaultnamingconventions">GetDefaultNamingConventions()</h3>
+
+<p>Gets the default naming conventions.</p>
+
+<h4 id="returns">Returns</h4>
+
+<p>An enumerable of default naming conventions.</p>
+
+<h3 id="getitemfromcache-string-valuetoresolve">GetItemFromCache(string valueToResolve)</h3>
+
+<p>Gets the item from the cache.</p>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>valueToResolve</strong></td>
+<td>The value to resolve.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-1">Returns</h4>
+
+<p>The item or<code>null</code> if the item was not found in the cache.</p>
+
+<h4 id="exceptions-1">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentException</strong></td>
+<td>The valueToResolve is<code>null</code> or whitespace.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="gettypefromstring-string-fulltypename">GetTypeFromString(string fullTypeName)</h3>
+
+<p>Gets the type from string. This is a helper method to easily</p>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>fullTypeName</strong></td>
+<td>Full name of the type.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-2">Returns</h4>
+
+<p>The resolved type or<code>null</code> if the type could not be resolved.</p>
+
+<h4 id="remarks-1">Remarks</h4>
+
+<p>Internally, this method uses.</p>
+
+<h3 id="register-string-valuetoresolve-string-resolvedvalue">Register(string valueToResolve, string resolvedValue)</h3>
+
+<p>Registers the specified type in the local cache. This cache will also be used by the String) method.</p>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>valueToResolve</strong></td>
+<td>The value to resolve.</td>
+</tr>
+
+<tr>
+<td><strong>resolvedValue</strong></td>
+<td>The resolved value.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="exceptions-2">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentException</strong></td>
+<td>The valueToResolve is<code>null</code> or whitespace.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="resolve-string-valuetoresolve">Resolve(string valueToResolve)</h3>
+
+<p>Resolves the specified value. It uses both the NamingConventions and the manually registered values registered via the String) method to resolve the value.</p>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>valueToResolve</strong></td>
+<td>The value to resolve.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-3">Returns</h4>
+
+<p>The resolved value or<code>null</code> if the value could not be resolved.</p>
+
+<h4 id="exceptions-3">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentException</strong></td>
+<td>The valueToResolve is<code>null</code> or whitespace.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks-2">Remarks</h4>
+
+<p>This method can be overriden to implement custom behavior. Don&rsquo;t forget to register the value using the String) method if the result should be cached in a custom implementation. By default, this value will assume the valueToResolve is a type and will cast it as so. If the valueToResolve is not a type, override this method and register the result using the String) method manually.</p>
+
+<h3 id="resolvenamingconvention-string-assembly-string-typetoresolvename-string-namingconvention">ResolveNamingConvention(string assembly, string typeToResolveName, string namingConvention)</h3>
+
+<p>Resolves a single naming convention. This method is abstract because each locator should or could use its own naming convention to resolve the type. The String) method has prepared all the values such as the assembly name and the only thing this method has to do is to actually resolve a string value based on the specified naming convention.</p>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>assembly</strong></td>
+<td>The assembly name.</td>
+</tr>
+
+<tr>
+<td><strong>typeToResolveName</strong></td>
+<td>The full type name of the type to resolve.</td>
+</tr>
+
+<tr>
+<td><strong>namingConvention</strong></td>
+<td>The naming convention to use for resolving.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-4">Returns</h4>
+
+<p>The resolved naming convention.</p>
+
+<h3 id="resolvevalues-string-valuetoresolve">ResolveValues(string valueToResolve)</h3>
+
+<p>Resolves the specified values. It uses both the NamingConventions and the manually registered values registered via the String) method to resolve the value.</p>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>valueToResolve</strong></td>
+<td>The value to resolve.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-5">Returns</h4>
+
+<p>A list of resolved values (can contain multiple items).</p>
+
+<h4 id="exceptions-4">Exceptions</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>ArgumentException</strong></td>
+<td>The valueToResolve is<code>null</code> or whitespace.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="remarks-3">Remarks</h4>
+
+<p>This method can be overriden to implement custom behavior. Don&rsquo;t forget to register the value using the String) method if the result should be cached in a custom implementation. By default, this value will assume the valueToResolve is a type and will cast it as so. If the valueToResolve is not a type, override this method and register the result using the String) method manually.</p>
 
 
 <footer class=" footline" >
