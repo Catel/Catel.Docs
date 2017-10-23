@@ -18,7 +18,7 @@ public enum ServiceLocatorRegistrationMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available modes for the [ServiceLocatorRegistrationAttribute](#).
 

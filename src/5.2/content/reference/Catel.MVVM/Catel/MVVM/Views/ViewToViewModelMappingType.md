@@ -18,7 +18,7 @@ public enum ViewToViewModelMappingType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Mapping types for the [ViewToViewModelAttribute](#).
 

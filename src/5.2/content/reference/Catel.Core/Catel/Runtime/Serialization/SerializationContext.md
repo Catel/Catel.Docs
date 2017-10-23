@@ -14,11 +14,11 @@ Namespace|Catel.Runtime.Serialization
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class SerializationContext&lt;TContext&gt; : ISerializationContext&lt;TContext&gt; where TContext : class 
+public class SerializationContext<TContext> : ISerializationContext<TContext> where TContext : class 
 ```
 
 **Implements interfaces**
-[ISerializationContext]({{&lt; relref "#" &gt;}})
+[ISerializationContext]({{< relref "#" >}})
 
 The serialization context used to serialize and deserialize models.
 

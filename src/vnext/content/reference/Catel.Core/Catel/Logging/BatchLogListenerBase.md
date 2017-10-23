@@ -18,10 +18,10 @@ public abstract class BatchLogListenerBase : IBatchLogListener, LogListenerBase
 ```
 
 **Base types**
-[LogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" &gt;}})
+[LogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" >}})
 
 **Implements interfaces**
-[IBatchLogListener]({{&lt; relref "reference/Catel.Core/Catel/Logging/IBatchLogListener.md" &gt;}})
+[IBatchLogListener]({{< relref "reference/Catel.Core/Catel/Logging/IBatchLogListener.md" >}})
 
 Base class for log listeners that can write in batches.
 

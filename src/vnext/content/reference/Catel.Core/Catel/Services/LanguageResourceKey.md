@@ -14,11 +14,11 @@ Namespace|Catel.Services
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class LanguageResourceKey : IEquatable&lt;LanguageResourceKey&gt;
+public class LanguageResourceKey : IEquatable<LanguageResourceKey>
 ```
 
 **Base types**
-[IEquatable]({{&lt; relref "#" &gt;}})
+[IEquatable]({{< relref "#" >}})
 
 Language resource key.
 

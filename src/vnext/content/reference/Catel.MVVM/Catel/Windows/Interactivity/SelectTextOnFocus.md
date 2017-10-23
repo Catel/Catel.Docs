@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class SelectTextOnFocus : BehaviorBase&lt;TextBox&gt;
+public class SelectTextOnFocus : BehaviorBase<TextBox>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Selects all the text when the is focused.
 

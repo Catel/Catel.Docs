@@ -18,7 +18,7 @@ public class DependencyPropertyValueChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Provides data for a [DependencyPropertyChangedHelper](#) implementation.
 

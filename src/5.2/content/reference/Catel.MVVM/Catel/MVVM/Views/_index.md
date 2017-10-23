@@ -9,29 +9,29 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[DataContextChangedEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/DataContextChangedEventArgs.md" &gt;}})| 
-[FastViewPropertySelector]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/FastViewPropertySelector.md" &gt;}})| 
-[IDataWindow]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IDataWindow.md" &gt;}})| 
-[INavigationView]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/INavigationView.md" &gt;}})| 
-[IPage]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" &gt;}})| 
-[IUserControl]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" &gt;}})| 
-[IView]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" &gt;}})| 
-[IViewLoadManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadManager.md" &gt;}})| 
-[IViewLoadState]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadState.md" &gt;}})| 
-[IViewManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManager.md" &gt;}})| 
-[IViewManagerExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManagerExtensions.md" &gt;}})| 
-[IViewModelWrapper]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.md" &gt;}})| 
-[IViewPropertySelector]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewPropertySelector.md" &gt;}})| 
-[ViewExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewExtensions.md" &gt;}})| 
-[ViewLoadEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadEventArgs.md" &gt;}})| 
-[ViewLoadManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager.md" &gt;}})| 
-[ViewLoadStateEvent]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadStateEvent.md" &gt;}})| 
-[ViewManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewManager.md" &gt;}})| 
-[ViewModelWrapper]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewModelWrapper.md" &gt;}})| 
-[ViewPropertySelector]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewPropertySelector.md" &gt;}})| 
-[ViewStack]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewStack.md" &gt;}})| 
-[ViewStackPartEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewStackPartEventArgs.md" &gt;}})| 
-[ViewToViewModelAttribute]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelAttribute.md" &gt;}})| 
-[ViewToViewModelMappingType]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingType.md" &gt;}})| 
-[WeakViewInfo]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/WeakViewInfo.md" &gt;}})| 
+[DataContextChangedEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/DataContextChangedEventArgs.md" >}})| 
+[FastViewPropertySelector]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/FastViewPropertySelector.md" >}})| 
+[IDataWindow]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IDataWindow.md" >}})| 
+[INavigationView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/INavigationView.md" >}})| 
+[IPage]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" >}})| 
+[IUserControl]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" >}})| 
+[IView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" >}})| 
+[IViewLoadManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadManager.md" >}})| 
+[IViewLoadState]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadState.md" >}})| 
+[IViewManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManager.md" >}})| 
+[IViewManagerExtensions]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManagerExtensions.md" >}})| 
+[IViewModelWrapper]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.md" >}})| 
+[IViewPropertySelector]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewPropertySelector.md" >}})| 
+[ViewExtensions]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewExtensions.md" >}})| 
+[ViewLoadEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadEventArgs.md" >}})| 
+[ViewLoadManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadManager.md" >}})| 
+[ViewLoadStateEvent]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewLoadStateEvent.md" >}})| 
+[ViewManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewManager.md" >}})| 
+[ViewModelWrapper]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewModelWrapper.md" >}})| 
+[ViewPropertySelector]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewPropertySelector.md" >}})| 
+[ViewStack]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewStack.md" >}})| 
+[ViewStackPartEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewStackPartEventArgs.md" >}})| 
+[ViewToViewModelAttribute]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelAttribute.md" >}})| 
+[ViewToViewModelMappingType]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewToViewModelMappingType.md" >}})| 
+[WeakViewInfo]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/WeakViewInfo.md" >}})| 
 

@@ -18,7 +18,7 @@ public abstract class ApiCopRule : IApiCopRule
 ```
 
 **Implements interfaces**
-[IApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopRule.md" &gt;}})
+[IApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopRule.md" >}})
 
 Class containing an ApiCop rule.
 

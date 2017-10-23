@@ -18,7 +18,7 @@ public abstract class PoolableBase : IUniqueIdentifyable, IPoolable
 ```
 
 **Implements interfaces**
-[IUniqueIdentifyable]({{&lt; relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" &gt;}}),[IPoolable]({{&lt; relref "reference/Catel.Core/Catel/Pooling/IPoolable.md" &gt;}})
+[IUniqueIdentifyable]({{< relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" >}}),[IPoolable]({{< relref "reference/Catel.Core/Catel/Pooling/IPoolable.md" >}})
 
 Base implementation for any poolable object.
 

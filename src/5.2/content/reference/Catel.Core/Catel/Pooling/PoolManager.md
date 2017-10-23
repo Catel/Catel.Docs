@@ -14,11 +14,11 @@ Namespace|Catel.Pooling
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class PoolManager&lt;TPoolable&gt; : IPoolManager&lt;TPoolable&gt; where TPoolable : new(), class, IPoolable 
+public class PoolManager<TPoolable> : IPoolManager<TPoolable> where TPoolable : new(), class, IPoolable 
 ```
 
 **Implements interfaces**
-[IPoolManager]({{&lt; relref "reference/Catel.Core/Catel/Pooling/IPoolManager.md" &gt;}})
+[IPoolManager]({{< relref "reference/Catel.Core/Catel/Pooling/IPoolManager.md" >}})
 
 Pool manager allowing objects to be pooled. The implementation removes objects from the internal stack and releases them. If no instance is available, a new one will be created that should be returned to the pool once disposed.
 

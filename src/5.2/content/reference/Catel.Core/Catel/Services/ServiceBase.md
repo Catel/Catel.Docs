@@ -18,7 +18,7 @@ public abstract class ServiceBase : IService
 ```
 
 **Implements interfaces**
-[IService]({{&lt; relref "reference/Catel.Core/Catel/Services/IService.md" &gt;}})
+[IService]({{< relref "reference/Catel.Core/Catel/Services/IService.md" >}})
 
 Base class for services.
 

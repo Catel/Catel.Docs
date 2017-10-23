@@ -14,7 +14,7 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IExecuteWithObject&lt;TResult&gt;
+public interface IExecuteWithObject<TResult>
 ```
 
 Interface defining a method accepting an object parameter. This allows the execution of generic objects in a non-generic way.

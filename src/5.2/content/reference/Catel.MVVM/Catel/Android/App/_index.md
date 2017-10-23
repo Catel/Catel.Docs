@@ -9,7 +9,7 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[Activity]({{&lt; relref "reference/Catel.MVVM/Catel/Android/App/Activity.md" &gt;}})| 
-[Application]({{&lt; relref "reference/Catel.MVVM/Catel/Android/App/Application.md" &gt;}})| 
-[Fragment]({{&lt; relref "reference/Catel.MVVM/Catel/Android/App/Fragment.md" &gt;}})| 
+[Activity]({{< relref "reference/Catel.MVVM/Catel/Android/App/Activity.md" >}})| 
+[Application]({{< relref "reference/Catel.MVVM/Catel/Android/App/Application.md" >}})| 
+[Fragment]({{< relref "reference/Catel.MVVM/Catel/Android/App/Fragment.md" >}})| 
 

@@ -18,7 +18,7 @@ public enum InfoBarMessageControlGenerationMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Defines the way the [InfoBarMessageControl](#) is included in the [DataWindow](#).
 

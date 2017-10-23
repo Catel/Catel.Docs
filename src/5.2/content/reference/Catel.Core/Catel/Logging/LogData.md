@@ -14,11 +14,11 @@ Namespace|Catel.Logging
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class LogData : Dictionary&lt;string, object&gt;
+public class LogData : Dictionary<string, object>
 ```
 
 **Base types**
-[Dictionary]({{&lt; relref "#" &gt;}})
+[Dictionary]({{< relref "#" >}})
 
 Class containing log data.
 

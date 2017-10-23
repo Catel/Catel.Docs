@@ -18,7 +18,7 @@ public class Registration : ConfigurationElement
 ```
 
 **Base types**
-[ConfigurationElement]({{&lt; relref "#" &gt;}})
+[ConfigurationElement]({{< relref "#" >}})
 
 The registration element.
 

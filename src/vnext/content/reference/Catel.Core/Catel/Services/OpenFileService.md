@@ -18,10 +18,10 @@ public class OpenFileService : IOpenFileService, FileServiceBase
 ```
 
 **Base types**
-[FileServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/FileServiceBase.md" &gt;}})
+[FileServiceBase]({{< relref "reference/Catel.Core/Catel/Services/FileServiceBase.md" >}})
 
 **Implements interfaces**
-[IOpenFileService]({{&lt; relref "reference/Catel.Core/Catel/Services/IOpenFileService.md" &gt;}})
+[IOpenFileService]({{< relref "reference/Catel.Core/Catel/Services/IOpenFileService.md" >}})
 
 Service to open files.
 

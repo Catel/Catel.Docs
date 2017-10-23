@@ -18,7 +18,7 @@ public class UnusedFeatureApiCopRule : ApiCopRule
 ```
 
 **Base types**
-[ApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" &gt;}})
+[ApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" >}})
 
 Rule to find out unused feature counts.
 

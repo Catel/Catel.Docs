@@ -18,7 +18,7 @@ public class UICompletedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 This is the EventArgs return value for the IUIVisualizer.Show completed event.
 

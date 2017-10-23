@@ -14,11 +14,11 @@ Namespace|Catel.Runtime.Serialization
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class SerializerBase&lt;TSerializationContext&gt; : ISerializer where TSerializationContext : class 
+public abstract class SerializerBase<TSerializationContext> : ISerializer where TSerializationContext : class 
 ```
 
 **Implements interfaces**
-[ISerializer]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" &gt;}})
+[ISerializer]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" >}})
 
 Base class for all serializers.
 

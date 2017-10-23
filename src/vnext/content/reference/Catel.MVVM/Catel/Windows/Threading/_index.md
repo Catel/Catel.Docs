@@ -9,6 +9,6 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[DispatcherExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Threading/DispatcherExtensions.md" &gt;}})| 
-[DispatcherHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Threading/DispatcherHelper.md" &gt;}})| 
+[DispatcherExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/Threading/DispatcherExtensions.md" >}})| 
+[DispatcherHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/Threading/DispatcherHelper.md" >}})| 
 

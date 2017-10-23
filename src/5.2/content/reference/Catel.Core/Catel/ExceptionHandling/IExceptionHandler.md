@@ -14,11 +14,11 @@ Namespace|Catel.ExceptionHandling
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IExceptionHandler&lt;TException, TException&gt; : IExceptionHandler where TException : Exception 
+public interface IExceptionHandler<TException, TException> : IExceptionHandler where TException : Exception 
 ```
 
 **Implements interfaces**
-[IExceptionHandler]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IExceptionHandler.md" &gt;}})
+[IExceptionHandler]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IExceptionHandler.md" >}})
 
 Interface that describes a single generic Exception handler.
 

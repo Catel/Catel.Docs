@@ -14,11 +14,11 @@ Namespace|Catel.Messaging
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class SimpleMessage : MessageBase&lt;SimpleMessage, string&gt;
+public class SimpleMessage : MessageBase<SimpleMessage, string>
 ```
 
 **Base types**
-[MessageBase]({{&lt; relref "#" &gt;}})
+[MessageBase]({{< relref "#" >}})
 
 Implements a simple message with a string payload data.
 

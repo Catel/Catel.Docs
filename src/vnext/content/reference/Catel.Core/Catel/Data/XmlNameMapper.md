@@ -14,7 +14,7 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class XmlNameMapper&lt;T&gt;
+public class XmlNameMapper<T>
 ```
 
 Xml name mappings from xml to properties and back.

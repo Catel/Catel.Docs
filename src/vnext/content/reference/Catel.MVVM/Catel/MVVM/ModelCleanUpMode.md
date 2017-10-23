@@ -18,7 +18,7 @@ public enum ModelCleanUpMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available clean up models for a model.
 

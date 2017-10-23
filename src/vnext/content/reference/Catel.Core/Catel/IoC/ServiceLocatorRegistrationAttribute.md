@@ -18,7 +18,7 @@ public class ServiceLocatorRegistrationAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 The register attribute.
 

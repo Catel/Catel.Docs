@@ -18,7 +18,7 @@ public class MultiplyConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Calculate the product of given value and factor in parameter.
 

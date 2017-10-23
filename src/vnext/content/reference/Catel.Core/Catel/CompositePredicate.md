@@ -14,7 +14,7 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class CompositePredicate&lt;T, T&gt; where T : class 
+public class CompositePredicate<T, T> where T : class 
 ```
 
 Composite predicate.

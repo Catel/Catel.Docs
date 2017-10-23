@@ -18,10 +18,10 @@ public class CompositeCommand : ICompositeCommand, Command
 ```
 
 **Base types**
-[Command]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Command.md" &gt;}})
+[Command]({{< relref "reference/Catel.MVVM/Catel/MVVM/Command.md" >}})
 
 **Implements interfaces**
-[ICompositeCommand]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ICompositeCommand.md" &gt;}})
+[ICompositeCommand]({{< relref "reference/Catel.MVVM/Catel/MVVM/ICompositeCommand.md" >}})
 
 Composite command which allows several commands inside a single command being exposed to a view.
 

@@ -18,7 +18,7 @@ public class MessageMediator : IMessageMediator
 ```
 
 **Implements interfaces**
-[IMessageMediator]({{&lt; relref "reference/Catel.Core/Catel/Messaging/IMessageMediator.md" &gt;}})
+[IMessageMediator]({{< relref "reference/Catel.Core/Catel/Messaging/IMessageMediator.md" >}})
 
 This class creates a simple Mediator which loosely connects different objects together. The message handlers are organized using string-based message keys and are held in a WeakReference collection.
 

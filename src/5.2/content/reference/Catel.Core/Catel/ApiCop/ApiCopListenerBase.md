@@ -18,7 +18,7 @@ public abstract class ApiCopListenerBase : IApiCopListener
 ```
 
 **Implements interfaces**
-[IApiCopListener]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopListener.md" &gt;}})
+[IApiCopListener]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopListener.md" >}})
 
 Base class for ApiCop listeners.
 

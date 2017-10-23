@@ -14,14 +14,14 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public abstract class EventTriggerBase&lt;T, T&gt; : ITrigger, EventTriggerBase&lt;T&gt; where T : FrameworkElement 
+public abstract class EventTriggerBase<T, T> : ITrigger, EventTriggerBase<T> where T : FrameworkElement 
 ```
 
 **Base types**
-[EventTriggerBase]({{&lt; relref "#" &gt;}})
+[EventTriggerBase]({{< relref "#" >}})
 
 **Implements interfaces**
-[ITrigger]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/ITrigger.md" &gt;}})
+[ITrigger]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/ITrigger.md" >}})
 
 Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger is attached.
 

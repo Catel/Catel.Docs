@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class UpdateBindingOnPasswordChanged : BehaviorBase&lt;PasswordBox&gt;
+public class UpdateBindingOnPasswordChanged : BehaviorBase<PasswordBox>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 This behavior automatically updates the binding of a when the`PasswordChanged` event occurs.
 

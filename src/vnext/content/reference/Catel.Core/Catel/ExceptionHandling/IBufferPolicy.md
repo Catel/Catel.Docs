@@ -18,7 +18,7 @@ public interface IBufferPolicy : IPolicy
 ```
 
 **Implements interfaces**
-[IPolicy]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" &gt;}})
+[IPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" >}})
 
 Represent the buffer policy interface in exception handling
 

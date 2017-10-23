@@ -18,7 +18,7 @@ public class ShortDateFormattingConverter : FormattingConverter
 ```
 
 **Base types**
-[FormattingConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/FormattingConverter.md" &gt;}})
+[FormattingConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/FormattingConverter.md" >}})
 
 ShortDateFormattingConverter
 

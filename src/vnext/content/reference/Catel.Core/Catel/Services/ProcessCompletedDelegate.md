@@ -18,7 +18,7 @@ public delegate ProcessCompletedDelegate : MulticastDelegate
 ```
 
 **Base types**
-[MulticastDelegate]({{&lt; relref "#" &gt;}})
+[MulticastDelegate]({{< relref "#" >}})
 
 Delegate to invoke when a process of the [IProcessService](#) is completed.
 

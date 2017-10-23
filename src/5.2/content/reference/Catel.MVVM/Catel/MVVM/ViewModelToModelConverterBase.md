@@ -18,7 +18,7 @@ public abstract class ViewModelToModelConverterBase : IViewModelToModelConverter
 ```
 
 **Implements interfaces**
-[IViewModelToModelConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModelToModelConverter.md" &gt;}})
+[IViewModelToModelConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelToModelConverter.md" >}})
 
 Base class for view model to model converters.
 

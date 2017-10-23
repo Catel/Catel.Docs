@@ -14,11 +14,11 @@ Namespace|Catel.Caching
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class CacheStorage&lt;TKey, TValue&gt; : ICacheStorage&lt;TKey, TValue, TKey, TValue&gt;
+public class CacheStorage<TKey, TValue> : ICacheStorage<TKey, TValue, TKey, TValue>
 ```
 
 **Implements interfaces**
-[ICacheStorage]({{&lt; relref "reference/Catel.Core/Catel/Caching/ICacheStorage.md" &gt;}})
+[ICacheStorage]({{< relref "reference/Catel.Core/Catel/Caching/ICacheStorage.md" >}})
 
 The cache storage.
 

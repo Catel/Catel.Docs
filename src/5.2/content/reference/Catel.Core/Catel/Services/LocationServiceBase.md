@@ -18,7 +18,7 @@ public abstract class LocationServiceBase : ILocationService
 ```
 
 **Implements interfaces**
-[ILocationService]({{&lt; relref "reference/Catel.Core/Catel/Services/ILocationService.md" &gt;}})
+[ILocationService]({{< relref "reference/Catel.Core/Catel/Services/ILocationService.md" >}})
 
 Class to allow partial abstract methods.
 

@@ -18,7 +18,7 @@ public class Log : ILog
 ```
 
 **Implements interfaces**
-[ILog]({{&lt; relref "reference/Catel.Core/Catel/Logging/ILog.md" &gt;}})
+[ILog]({{< relref "reference/Catel.Core/Catel/Logging/ILog.md" >}})
 
 Default logging class that writes to the console or output window.
 

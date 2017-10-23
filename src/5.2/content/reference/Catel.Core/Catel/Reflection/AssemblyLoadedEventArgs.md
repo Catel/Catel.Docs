@@ -18,7 +18,7 @@ public class AssemblyLoadedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args for the AssemblyLoaded event.
 

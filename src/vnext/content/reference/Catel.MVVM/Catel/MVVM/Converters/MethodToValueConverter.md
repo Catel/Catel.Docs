@@ -18,7 +18,7 @@ public class MethodToValueConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Converts the result of a method to a value. This makes it possible to bind to a method.
 

@@ -18,7 +18,7 @@ public enum CameraType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Specifies the general location of the camera on the device.
 

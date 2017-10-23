@@ -18,7 +18,7 @@ public interface IModel : IModelEditor, IModelSerialization, IAdvancedEditableOb
 ```
 
 **Implements interfaces**
-[IModelEditor]({{&lt; relref "reference/Catel.Core/Catel/Data/IModelEditor.md" &gt;}}),[IModelSerialization]({{&lt; relref "reference/Catel.Core/Catel/Data/IModelSerialization.md" &gt;}}),[IAdvancedEditableObject]({{&lt; relref "reference/Catel.Core/System/ComponentModel/IAdvancedEditableObject.md" &gt;}})
+[IModelEditor]({{< relref "reference/Catel.Core/Catel/Data/IModelEditor.md" >}}),[IModelSerialization]({{< relref "reference/Catel.Core/Catel/Data/IModelSerialization.md" >}}),[IAdvancedEditableObject]({{< relref "reference/Catel.Core/System/ComponentModel/IAdvancedEditableObject.md" >}})
 
 IModelBase that the [ModelBase](#) must implement to easily pass objects to methods as non-generic.
 

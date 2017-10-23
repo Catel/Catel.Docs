@@ -18,10 +18,10 @@ public class ViewModelWrapperService : IViewModelWrapperService, ViewModelWrappe
 ```
 
 **Base types**
-[ViewModelWrapperServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelWrapperServiceBase.md" &gt;}})
+[ViewModelWrapperServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelWrapperServiceBase.md" >}})
 
 **Implements interfaces**
-[IViewModelWrapperService]({{&lt; relref "reference/Catel.Core/Catel/Services/IViewModelWrapperService.md" &gt;}})
+[IViewModelWrapperService]({{< relref "reference/Catel.Core/Catel/Services/IViewModelWrapperService.md" >}})
 
 The view model wrapper service which is responsible of ensuring the view model container layer.
 

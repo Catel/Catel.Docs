@@ -9,10 +9,10 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[BindingHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/BindingHelper.md" &gt;}})| 
-[BindingWithValidation]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/BindingWithValidation.md" &gt;}})| 
-[DependencyPropertyChangedHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyChangedHelper.md" &gt;}})| 
-[DependencyPropertyHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyHelper.md" &gt;}})| 
-[DependencyPropertyInfo]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyInfo.md" &gt;}})| 
-[DependencyPropertyValueChangedEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyValueChangedEventArgs.md" &gt;}})| 
+[BindingHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/BindingHelper.md" >}})| 
+[BindingWithValidation]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/BindingWithValidation.md" >}})| 
+[DependencyPropertyChangedHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyChangedHelper.md" >}})| 
+[DependencyPropertyHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyHelper.md" >}})| 
+[DependencyPropertyInfo]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyInfo.md" >}})| 
+[DependencyPropertyValueChangedEventArgs]({{< relref "reference/Catel.MVVM/Catel/Windows/Data/DependencyPropertyValueChangedEventArgs.md" >}})| 
 

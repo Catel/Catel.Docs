@@ -18,7 +18,7 @@ public class RedirectTypeAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute that can be used to redirect types to other types to be able to rename / move property types.
 

@@ -18,7 +18,7 @@ public class NotifyRangedCollectionChangedEventArgs : NotifyCollectionChangedEve
 ```
 
 **Base types**
-[NotifyCollectionChangedEventArgs]({{&lt; relref "#" &gt;}})
+[NotifyCollectionChangedEventArgs]({{< relref "#" >}})
 
 The ranged notify collection changed event args.
 

@@ -18,7 +18,7 @@ public class TypeRequestPath : ITypeRequestPath
 ```
 
 **Implements interfaces**
-[ITypeRequestPath]({{&lt; relref "reference/Catel.Core/Catel/IoC/ITypeRequestPath.md" &gt;}})
+[ITypeRequestPath]({{< relref "reference/Catel.Core/Catel/IoC/ITypeRequestPath.md" >}})
 
 A list of types in which the types will be constructed when being resolved from the [ServiceLocator](#).
 

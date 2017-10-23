@@ -18,7 +18,7 @@ public class PropertyNotFoundException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception for in case a property is not found.
 

@@ -9,10 +9,10 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[AbsoluteExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/AbsoluteExpirationPolicy.md" &gt;}})| 
-[CompositeExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/CompositeExpirationPolicy.md" &gt;}})| 
-[CustomExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/CustomExpirationPolicy.md" &gt;}})| 
-[DurationExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/DurationExpirationPolicy.md" &gt;}})| 
-[ExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" &gt;}})| 
-[SlidingExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/SlidingExpirationPolicy.md" &gt;}})| 
+[AbsoluteExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/AbsoluteExpirationPolicy.md" >}})| 
+[CompositeExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/CompositeExpirationPolicy.md" >}})| 
+[CustomExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/CustomExpirationPolicy.md" >}})| 
+[DurationExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/DurationExpirationPolicy.md" >}})| 
+[ExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" >}})| 
+[SlidingExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/SlidingExpirationPolicy.md" >}})| 
 

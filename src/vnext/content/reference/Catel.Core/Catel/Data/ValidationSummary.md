@@ -18,7 +18,7 @@ public class ValidationSummary : IValidationSummary
 ```
 
 **Implements interfaces**
-[IValidationSummary]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidationSummary.md" &gt;}})
+[IValidationSummary]({{< relref "reference/Catel.Core/Catel/Data/IValidationSummary.md" >}})
 
 The validation summary that contains a momentum of the [IValidationContext](#).
 

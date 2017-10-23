@@ -18,7 +18,7 @@ public interface IRetryPolicy : IPolicy
 ```
 
 **Implements interfaces**
-[IPolicy]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" &gt;}})
+[IPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" >}})
 
 Represents the retry policy.
 

@@ -18,7 +18,7 @@ public class CatelDependencyResolver : IDependencyResolver
 ```
 
 **Implements interfaces**
-[IDependencyResolver]({{&lt; relref "reference/Catel.Core/Catel/IoC/IDependencyResolver.md" &gt;}})
+[IDependencyResolver]({{< relref "reference/Catel.Core/Catel/IoC/IDependencyResolver.md" >}})
 
 Implementation of the [IDependencyResolver](#) interface for Catel by wrapping the [ServiceLocator](#).
 

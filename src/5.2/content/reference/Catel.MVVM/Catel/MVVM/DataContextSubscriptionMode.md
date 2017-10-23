@@ -18,7 +18,7 @@ public enum DataContextSubscriptionMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Data context subscription mode.
 

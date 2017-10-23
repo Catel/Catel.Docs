@@ -18,7 +18,7 @@ public class Focus : FocusBehaviorBase
 ```
 
 **Base types**
-[FocusBehaviorBase]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/FocusBehaviorBase.md" &gt;}})
+[FocusBehaviorBase]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/FocusBehaviorBase.md" >}})
 
 Behavior to set focus to a. This behavior sets the focus only once on the first time the is loaded.
 

@@ -18,7 +18,7 @@ public class ConfigurationChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 The configuration changed event args class.
 

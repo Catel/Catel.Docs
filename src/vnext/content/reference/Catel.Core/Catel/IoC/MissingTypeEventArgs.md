@@ -18,7 +18,7 @@ public class MissingTypeEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event arguments for the MissingType event. These event arguments will be fired. To resolve a type, set either the ImplementingInstance or ImplementingType. If both are filled, the instance will be used.
 

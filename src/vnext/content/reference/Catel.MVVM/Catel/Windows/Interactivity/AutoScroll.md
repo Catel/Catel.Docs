@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class AutoScroll : BehaviorBase&lt;ItemsControl&gt;
+public class AutoScroll : BehaviorBase<ItemsControl>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Automatically scrolls to the bottom when the scrollbar is at the bottom.
 

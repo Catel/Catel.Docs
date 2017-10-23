@@ -14,7 +14,7 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class BoxingCache&lt;T&gt; where T : struct 
+public class BoxingCache<T> where T : struct 
 ```
 
 Caches boxed objects to minimize the memory footprint for boxed value types.

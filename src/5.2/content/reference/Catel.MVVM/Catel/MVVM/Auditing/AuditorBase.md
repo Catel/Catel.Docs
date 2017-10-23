@@ -18,7 +18,7 @@ public abstract class AuditorBase : IAuditor
 ```
 
 **Implements interfaces**
-[IAuditor]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Auditing/IAuditor.md" &gt;}})
+[IAuditor]({{< relref "reference/Catel.MVVM/Catel/MVVM/Auditing/IAuditor.md" >}})
 
 Convenience implementation of the [IAuditor](#) interface so not all interface members have to be implemented by the developer. This auditor also ignores the default properties such as`IsDirty` since hardly anyone would be interested in such changes. To enable the notification, clear the PropertiesToIgnore.
 

@@ -18,7 +18,7 @@ public class Application : Application
 ```
 
 **Base types**
-[Application]({{&lt; relref "#" &gt;}})
+[Application]({{< relref "#" >}})
 
 Application class to be able to have a static context.
 

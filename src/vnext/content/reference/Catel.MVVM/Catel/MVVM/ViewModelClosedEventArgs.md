@@ -18,7 +18,7 @@ public class ViewModelClosedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 implementation for the ClosedAsync event.
 

@@ -18,7 +18,7 @@ public class CommandManagerBinding : UpdatableMarkupExtension
 ```
 
 **Base types**
-[UpdatableMarkupExtension]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Markup/UpdatableMarkupExtension.md" &gt;}})
+[UpdatableMarkupExtension]({{< relref "reference/Catel.MVVM/Catel/Windows/Markup/UpdatableMarkupExtension.md" >}})
 
 Binds commands to the command manager.
 

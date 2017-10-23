@@ -18,7 +18,7 @@ public class DispatcherService : IDispatcherService
 ```
 
 **Implements interfaces**
-[IDispatcherService]({{&lt; relref "reference/Catel.Core/Catel/Services/IDispatcherService.md" &gt;}})
+[IDispatcherService]({{< relref "reference/Catel.Core/Catel/Services/IDispatcherService.md" >}})
 
 Service that allows the retrieval of the UI dispatcher.
 

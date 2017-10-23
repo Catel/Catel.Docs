@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class RoutedEventTrigger : EventTriggerBase&lt;FrameworkElement&gt;
+public class RoutedEventTrigger : EventTriggerBase<FrameworkElement>
 ```
 
 **Base types**
-[EventTriggerBase]({{&lt; relref "#" &gt;}})
+[EventTriggerBase]({{< relref "#" >}})
 
 Event trigger that supports routed events.
 

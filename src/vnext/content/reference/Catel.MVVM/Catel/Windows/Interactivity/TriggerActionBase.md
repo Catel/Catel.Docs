@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public abstract class TriggerActionBase&lt;T, T&gt; : TriggerAction&lt;T&gt; where T : FrameworkElement 
+public abstract class TriggerActionBase<T, T> : TriggerAction<T> where T : FrameworkElement 
 ```
 
 **Base types**
-[TriggerAction]({{&lt; relref "#" &gt;}})
+[TriggerAction]({{< relref "#" >}})
 
 TriggerAction base class that handles a safe unsubscribe and clean up because the default TriggerAction class does not always call`OnDetaching`. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the trigger action is attached.
 

@@ -18,7 +18,7 @@ public class TypeInstantiatedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs for the TypeInstantiated event.
 

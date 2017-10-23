@@ -18,7 +18,7 @@ public enum TimeDisplay : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available time display formats.
 

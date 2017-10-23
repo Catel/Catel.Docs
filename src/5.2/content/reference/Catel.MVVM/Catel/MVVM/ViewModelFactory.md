@@ -18,7 +18,7 @@ public class ViewModelFactory : IViewModelFactory
 ```
 
 **Implements interfaces**
-[IViewModelFactory]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModelFactory.md" &gt;}})
+[IViewModelFactory]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelFactory.md" >}})
 
 Default implementation of the [IViewModelFactory](#) which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used. This default implementation will first try to inject the data context into the view model constructor. If that is not possible, it will try to call the empty or default constructor.
 

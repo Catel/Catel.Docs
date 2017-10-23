@@ -18,7 +18,7 @@ public class Timer : IDisposable
 ```
 
 **Base types**
-[IDisposable]({{&lt; relref "#" &gt;}})
+[IDisposable]({{< relref "#" >}})
 
 Timer for WinRT since WinRT only provides the DispatcherTimer which cannot be used outside the UI thread.
 

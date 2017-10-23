@@ -18,10 +18,10 @@ public abstract class FileServiceBase : IFileSupport, ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[IFileSupport]({{&lt; relref "reference/Catel.Core/Catel/Services/IFileSupport.md" &gt;}})
+[IFileSupport]({{< relref "reference/Catel.Core/Catel/Services/IFileSupport.md" >}})
 
 Base class for file services.
 

@@ -18,7 +18,7 @@ public class ProcessService : IProcessService
 ```
 
 **Implements interfaces**
-[IProcessService]({{&lt; relref "reference/Catel.Core/Catel/Services/IProcessService.md" &gt;}})
+[IProcessService]({{< relref "reference/Catel.Core/Catel/Services/IProcessService.md" >}})
 
 Process service to run files or start processes from a view model.
 

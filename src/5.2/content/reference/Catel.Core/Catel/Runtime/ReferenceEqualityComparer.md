@@ -14,11 +14,11 @@ Namespace|Catel.Runtime
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ReferenceEqualityComparer&lt;TObject&gt; : IEqualityComparer&lt;TObject&gt; where TObject : class 
+public class ReferenceEqualityComparer<TObject> : IEqualityComparer<TObject> where TObject : class 
 ```
 
 **Base types**
-[IEqualityComparer]({{&lt; relref "#" &gt;}})
+[IEqualityComparer]({{< relref "#" >}})
 
 Equality comparer for by reference.
 

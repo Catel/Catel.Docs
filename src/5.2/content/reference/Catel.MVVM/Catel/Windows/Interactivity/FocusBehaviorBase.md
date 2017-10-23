@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class FocusBehaviorBase : BehaviorBase&lt;FrameworkElement&gt;
+public class FocusBehaviorBase : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Base class for focus behaviors.
 

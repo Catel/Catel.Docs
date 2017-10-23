@@ -18,7 +18,7 @@ public class GetFirstValidationErrorConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Converts a collection containing objects to return the first error or an empty string in case there are no errors.
 

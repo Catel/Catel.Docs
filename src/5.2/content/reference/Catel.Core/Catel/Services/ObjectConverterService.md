@@ -18,7 +18,7 @@ public class ObjectConverterService : IObjectConverterService
 ```
 
 **Implements interfaces**
-[IObjectConverterService]({{&lt; relref "reference/Catel.Core/Catel/Services/IObjectConverterService.md" &gt;}})
+[IObjectConverterService]({{< relref "reference/Catel.Core/Catel/Services/IObjectConverterService.md" >}})
 
 Service to convert objects to strings and vice versa.
 

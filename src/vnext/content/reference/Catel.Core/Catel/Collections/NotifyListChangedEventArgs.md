@@ -18,7 +18,7 @@ public class NotifyListChangedEventArgs : ListChangedEventArgs
 ```
 
 **Base types**
-[ListChangedEventArgs]({{&lt; relref "#" &gt;}})
+[ListChangedEventArgs]({{< relref "#" >}})
 
 The notify list changed event args.
 

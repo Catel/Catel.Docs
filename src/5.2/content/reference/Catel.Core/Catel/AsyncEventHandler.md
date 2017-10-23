@@ -14,11 +14,11 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public delegate AsyncEventHandler&lt;TEventArgs&gt; : MulticastDelegate where TEventArgs : EventArgs 
+public delegate AsyncEventHandler<TEventArgs> : MulticastDelegate where TEventArgs : EventArgs 
 ```
 
 **Base types**
-[MulticastDelegate]({{&lt; relref "#" &gt;}})
+[MulticastDelegate]({{< relref "#" >}})
 
 Represents the asynchronous method that will handle an event.
 

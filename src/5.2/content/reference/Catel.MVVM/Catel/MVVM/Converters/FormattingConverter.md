@@ -18,7 +18,7 @@ public class FormattingConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Converter for formatting values.
 

@@ -9,5 +9,5 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ModuleInitializer]({{&lt; relref "reference/Catel.Core/Catel/Core/ModuleInitializer.md" &gt;}})| 
+[ModuleInitializer]({{< relref "reference/Catel.Core/Catel/Core/ModuleInitializer.md" >}})| 
 

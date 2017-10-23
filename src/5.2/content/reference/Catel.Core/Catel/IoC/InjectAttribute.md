@@ -18,7 +18,7 @@ public class InjectAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to specify that a specific property must be injected.
 

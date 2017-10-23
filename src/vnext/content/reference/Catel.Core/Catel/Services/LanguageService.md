@@ -18,10 +18,10 @@ public class LanguageService : ILanguageService, LanguageServiceBase
 ```
 
 **Base types**
-[LanguageServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/LanguageServiceBase.md" &gt;}})
+[LanguageServiceBase]({{< relref "reference/Catel.Core/Catel/Services/LanguageServiceBase.md" >}})
 
 **Implements interfaces**
-[ILanguageService]({{&lt; relref "reference/Catel.Core/Catel/Services/ILanguageService.md" &gt;}})
+[ILanguageService]({{< relref "reference/Catel.Core/Catel/Services/ILanguageService.md" >}})
 
 Service to implement the retrieval of language services.
 

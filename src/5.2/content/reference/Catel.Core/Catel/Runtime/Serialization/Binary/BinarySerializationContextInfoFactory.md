@@ -18,7 +18,7 @@ public class BinarySerializationContextInfoFactory : ISerializationContextInfoFa
 ```
 
 **Implements interfaces**
-[ISerializationContextInfoFactory]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" &gt;}})
+[ISerializationContextInfoFactory]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" >}})
 
 Binary serialization context factory.
 

@@ -18,7 +18,7 @@ public class WindowNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case a window not registered, but still being used.
 

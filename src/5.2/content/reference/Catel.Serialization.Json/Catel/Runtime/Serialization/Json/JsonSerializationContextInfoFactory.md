@@ -18,7 +18,7 @@ public class JsonSerializationContextInfoFactory : ISerializationContextInfoFact
 ```
 
 **Implements interfaces**
-[ISerializationContextInfoFactory]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" &gt;}})
+[ISerializationContextInfoFactory]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" >}})
 
 Json serialization context factory.
 

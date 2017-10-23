@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class UpdateBindingOnTextChanged : UpdateBindingBehaviorBase&lt;TextBox&gt;
+public class UpdateBindingOnTextChanged : UpdateBindingBehaviorBase<TextBox>
 ```
 
 **Base types**
-[UpdateBindingBehaviorBase]({{&lt; relref "#" &gt;}})
+[UpdateBindingBehaviorBase]({{< relref "#" >}})
 
 This behavior automatically updates the binding of a when the`TextChanged` event occurs.
 

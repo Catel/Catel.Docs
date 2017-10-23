@@ -18,7 +18,7 @@ public class RollingInMemoryLogListener : LogListenerBase
 ```
 
 **Base types**
-[LogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" &gt;}})
+[LogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" >}})
 
 In memory log listener that keeps track of the latest log messages.
 

@@ -9,15 +9,15 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ActivityEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityEventArgs.md" &gt;}})| 
-[ActivityLifecycleCallbacksListener]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityLifecycleCallbacksListener.md" &gt;}})| 
-[NavigatedEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatedEventArgs.md" &gt;}})| 
-[NavigatingEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatingEventArgs.md" &gt;}})| 
-[NavigationAdapter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapter.md" &gt;}})| 
-[NavigationAdapterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapterBase.md" &gt;}})| 
-[NavigationContext]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationContext.md" &gt;}})| 
-[NavigationEventArgsBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsBase.md" &gt;}})| 
-[NavigationEventArgsExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsExtensions.md" &gt;}})| 
-[NavigationMode]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationMode.md" &gt;}})| 
-[NavigationModeExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationModeExtensions.md" &gt;}})| 
+[ActivityEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityEventArgs.md" >}})| 
+[ActivityLifecycleCallbacksListener]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/ActivityLifecycleCallbacksListener.md" >}})| 
+[NavigatedEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatedEventArgs.md" >}})| 
+[NavigatingEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigatingEventArgs.md" >}})| 
+[NavigationAdapter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapter.md" >}})| 
+[NavigationAdapterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapterBase.md" >}})| 
+[NavigationContext]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationContext.md" >}})| 
+[NavigationEventArgsBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsBase.md" >}})| 
+[NavigationEventArgsExtensions]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsExtensions.md" >}})| 
+[NavigationMode]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationMode.md" >}})| 
+[NavigationModeExtensions]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationModeExtensions.md" >}})| 
 

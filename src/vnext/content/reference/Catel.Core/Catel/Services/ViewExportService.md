@@ -18,10 +18,10 @@ public class ViewExportService : IViewExportService, ServiceBase
 ```
 
 **Base types**
-[ServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ServiceBase.md" &gt;}})
+[ServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ServiceBase.md" >}})
 
 **Implements interfaces**
-[IViewExportService]({{&lt; relref "reference/Catel.Core/Catel/Services/IViewExportService.md" &gt;}})
+[IViewExportService]({{< relref "reference/Catel.Core/Catel/Services/IViewExportService.md" >}})
 
 The ViewExportService interface.
 

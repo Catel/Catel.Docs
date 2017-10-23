@@ -18,7 +18,7 @@ public class DetermineViewModelTypeEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs class which allows late-time dynamic view model determination.
 

@@ -18,7 +18,7 @@ public interface IValidatableModel : IModel, IValidatable
 ```
 
 **Implements interfaces**
-[IModel]({{&lt; relref "reference/Catel.Core/Catel/Data/IModel.md" &gt;}}),[IValidatable]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidatable.md" &gt;}})
+[IModel]({{< relref "reference/Catel.Core/Catel/Data/IModel.md" >}}),[IValidatable]({{< relref "reference/Catel.Core/Catel/Data/IValidatable.md" >}})
 
 Defines all validation members for the models.
 

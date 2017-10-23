@@ -18,7 +18,7 @@ public class ViewManager : IViewManager
 ```
 
 **Implements interfaces**
-[IViewManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManager.md" &gt;}})
+[IViewManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewManager.md" >}})
 
 Manager that can search for views belonging to a view model.
 

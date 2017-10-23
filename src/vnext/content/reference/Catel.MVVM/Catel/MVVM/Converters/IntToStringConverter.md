@@ -18,7 +18,7 @@ public class IntToStringConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Converts integer to string and back.
 

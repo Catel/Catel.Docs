@@ -18,7 +18,7 @@ public class ApiCopResult : IApiCopResult
 ```
 
 **Implements interfaces**
-[IApiCopResult]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopResult.md" &gt;}})
+[IApiCopResult]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopResult.md" >}})
 
 ApiCop result class.
 

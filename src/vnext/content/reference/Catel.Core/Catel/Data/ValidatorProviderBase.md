@@ -18,7 +18,7 @@ public abstract class ValidatorProviderBase : IValidatorProvider
 ```
 
 **Implements interfaces**
-[IValidatorProvider]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidatorProvider.md" &gt;}})
+[IValidatorProvider]({{< relref "reference/Catel.Core/Catel/Data/IValidatorProvider.md" >}})
 
 Base class that implements the [IValidatorProvider](#) so only the GetValidator(Type) method has to be implemented.
 

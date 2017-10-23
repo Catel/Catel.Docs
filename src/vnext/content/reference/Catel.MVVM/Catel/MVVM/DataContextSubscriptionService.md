@@ -18,7 +18,7 @@ public class DataContextSubscriptionService : IDataContextSubscriptionService
 ```
 
 **Implements interfaces**
-[IDataContextSubscriptionService]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService.md" &gt;}})
+[IDataContextSubscriptionService]({{< relref "reference/Catel.MVVM/Catel/MVVM/IDataContextSubscriptionService.md" >}})
 
 Service that determines how to subscribe to data context.
 

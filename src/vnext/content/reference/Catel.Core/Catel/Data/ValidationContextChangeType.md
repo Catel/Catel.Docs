@@ -18,7 +18,7 @@ public enum ValidationContextChangeType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The type of change that occurred to a validation context item.
 

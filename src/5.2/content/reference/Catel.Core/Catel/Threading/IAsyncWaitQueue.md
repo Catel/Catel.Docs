@@ -14,7 +14,7 @@ Namespace|Catel.Threading
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IAsyncWaitQueue&lt;T, T&gt;
+public interface IAsyncWaitQueue<T, T>
 ```
 
 A collection of cancelable instances. Implementations must be threadsafe must work correctly if the caller is holding a lock.

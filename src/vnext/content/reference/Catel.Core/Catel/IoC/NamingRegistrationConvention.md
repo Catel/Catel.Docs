@@ -18,7 +18,7 @@ public class NamingRegistrationConvention : RegistrationConventionBase
 ```
 
 **Base types**
-[RegistrationConventionBase]({{&lt; relref "reference/Catel.Core/Catel/IoC/RegistrationConventionBase.md" &gt;}})
+[RegistrationConventionBase]({{< relref "reference/Catel.Core/Catel/IoC/RegistrationConventionBase.md" >}})
 
 The naming convention based on [RegistrationConventionBase](#).
 

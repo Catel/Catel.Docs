@@ -18,7 +18,7 @@ public class PropertyValue : ISerializable
 ```
 
 **Base types**
-[ISerializable]({{&lt; relref "#" &gt;}})
+[ISerializable]({{< relref "#" >}})
 
 Class holding a property value to serialize using the [ModelBase](#).
 

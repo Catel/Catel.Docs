@@ -18,7 +18,7 @@ public class LocationListener : Thread
 ```
 
 **Base types**
-[Thread]({{&lt; relref "#" &gt;}})
+[Thread]({{< relref "#" >}})
 
 A location listener.
 

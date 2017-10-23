@@ -18,7 +18,7 @@ public class StateService : IStateService
 ```
 
 **Implements interfaces**
-[IStateService]({{&lt; relref "reference/Catel.Core/Catel/Services/IStateService.md" &gt;}})
+[IStateService]({{< relref "reference/Catel.Core/Catel/Services/IStateService.md" >}})
 
 The state service which can store and restore states.
 

@@ -14,11 +14,11 @@ Namespace|Catel.MVVM.Providers
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class PageLogic : NavigationLogicBase&lt;IPage&gt;
+public class PageLogic : NavigationLogicBase<IPage>
 ```
 
 **Base types**
-[NavigationLogicBase]({{&lt; relref "#" &gt;}})
+[NavigationLogicBase]({{< relref "#" >}})
 
 MVVM Provider behavior implementation for a navigation page.
 

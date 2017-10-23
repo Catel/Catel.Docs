@@ -18,7 +18,7 @@ public class ViewModelManager : IViewModelManager
 ```
 
 **Implements interfaces**
-[IViewModelManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModelManager.md" &gt;}})
+[IViewModelManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelManager.md" >}})
 
 Manager for view models. Thanks to this manager, it is possible to subscribe to other view models and be able to respond correctly to property changes in other views.
 

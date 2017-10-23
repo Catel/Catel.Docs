@@ -18,7 +18,7 @@ public class ConsoleApiCopListener : TextApiCopListenerBase
 ```
 
 **Base types**
-[TextApiCopListenerBase]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" &gt;}})
+[TextApiCopListenerBase]({{< relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" >}})
 
 [IApiCopListener](#) implementation which writes all results to the console.
 

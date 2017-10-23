@@ -18,7 +18,7 @@ public class DesignTimeCodeAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to support code at design time.
 

@@ -14,14 +14,14 @@ Namespace|Catel.Collections
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class FastBindingList&lt;T&gt; : ISuspendChangeNotificationsCollection, BindingList&lt;T&gt;
+public class FastBindingList<T> : ISuspendChangeNotificationsCollection, BindingList<T>
 ```
 
 **Base types**
-[BindingList]({{&lt; relref "#" &gt;}})
+[BindingList]({{< relref "#" >}})
 
 **Implements interfaces**
-[ISuspendChangeNotificationsCollection]({{&lt; relref "reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.md" &gt;}})
+[ISuspendChangeNotificationsCollection]({{< relref "reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.md" >}})
 
 Fast implementation of where the change notifications can be suspended.
 

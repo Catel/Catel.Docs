@@ -18,7 +18,7 @@ public class PolicyBase : IPolicy
 ```
 
 **Implements interfaces**
-[IPolicy]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" &gt;}})
+[IPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IPolicy.md" >}})
 
 The policy base.
 

@@ -18,7 +18,7 @@ public class CameraService : CameraServiceBase
 ```
 
 **Base types**
-[CameraServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/CameraServiceBase.md" &gt;}})
+[CameraServiceBase]({{< relref "reference/Catel.Core/Catel/Services/CameraServiceBase.md" >}})
 
 Camera service.
 

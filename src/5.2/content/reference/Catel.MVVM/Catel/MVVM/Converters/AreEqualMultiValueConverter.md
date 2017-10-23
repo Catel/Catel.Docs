@@ -18,7 +18,7 @@ public class AreEqualMultiValueConverter : MarkupExtension
 ```
 
 **Base types**
-[MarkupExtension]({{&lt; relref "#" &gt;}})
+[MarkupExtension]({{< relref "#" >}})
 
 Converts a comparison of 2 bindings to a boolean whether the objects are equal or not.
 

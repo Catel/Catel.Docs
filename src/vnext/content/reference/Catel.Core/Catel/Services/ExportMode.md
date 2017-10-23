@@ -18,7 +18,7 @@ public enum ExportMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The export mode.
 

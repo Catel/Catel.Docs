@@ -14,14 +14,14 @@ Namespace|Catel.MVVM.Converters
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class ValueConverterBase&lt;TConvert, TConvertBack&gt; : IValueConverter, MarkupExtension
+public abstract class ValueConverterBase<TConvert, TConvertBack> : IValueConverter, MarkupExtension
 ```
 
 **Base types**
-[MarkupExtension]({{&lt; relref "#" &gt;}})
+[MarkupExtension]({{< relref "#" >}})
 
 **Implements interfaces**
-[IValueConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/IValueConverter.md" &gt;}})
+[IValueConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/IValueConverter.md" >}})
 
 Base class for value converters which makes it compatible between .NET and WinRT.
 

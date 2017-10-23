@@ -18,7 +18,7 @@ public class SerializationManager : ISerializationManager
 ```
 
 **Implements interfaces**
-[ISerializationManager]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationManager.md" &gt;}})
+[ISerializationManager]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationManager.md" >}})
 
 Manager which is responsible for discovering what fields and properties of an object should be serialized.
 

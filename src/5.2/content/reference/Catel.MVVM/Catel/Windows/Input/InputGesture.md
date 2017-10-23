@@ -18,7 +18,7 @@ public class InputGesture : ModelBase
 ```
 
 **Base types**
-[ModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ModelBase.md" &gt;}})
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 Input gesture class.
 

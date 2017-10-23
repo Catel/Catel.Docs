@@ -9,8 +9,8 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[AuditingHelper]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditingHelper.md" &gt;}})| 
-[AuditingManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditingManager.md" &gt;}})| 
-[AuditorBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditorBase.md" &gt;}})| 
-[IAuditor]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Auditing/IAuditor.md" &gt;}})| 
+[AuditingHelper]({{< relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditingHelper.md" >}})| 
+[AuditingManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditingManager.md" >}})| 
+[AuditorBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Auditing/AuditorBase.md" >}})| 
+[IAuditor]({{< relref "reference/Catel.MVVM/Catel/MVVM/Auditing/IAuditor.md" >}})| 
 

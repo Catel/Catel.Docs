@@ -14,11 +14,11 @@ Namespace|Catel.Caching
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ExpiringEventArgs&lt;TKey, TValue&gt; : EventArgs
+public class ExpiringEventArgs<TKey, TValue> : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 The expiring event args.
 

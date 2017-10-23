@@ -18,7 +18,7 @@ public class Location : ILocation
 ```
 
 **Implements interfaces**
-[ILocation]({{&lt; relref "reference/Catel.Core/Catel/Services/ILocation.md" &gt;}})
+[ILocation]({{< relref "reference/Catel.Core/Catel/Services/ILocation.md" >}})
 
 Class that represents a location.
 

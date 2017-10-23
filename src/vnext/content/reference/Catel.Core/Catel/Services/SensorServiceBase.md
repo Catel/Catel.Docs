@@ -14,14 +14,14 @@ Namespace|Catel.Services
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class SensorServiceBase&lt;TValueInterface, TEventArgs&gt; : ISensorService&lt;TValueInterface, TEventArgs&gt;, ViewModelServiceBase where TEventArgs : EventArgs 
+public abstract class SensorServiceBase<TValueInterface, TEventArgs> : ISensorService<TValueInterface, TEventArgs>, ViewModelServiceBase where TEventArgs : EventArgs 
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[ISensorService]({{&lt; relref "reference/Catel.Core/Catel/Services/ISensorService.md" &gt;}})
+[ISensorService]({{< relref "reference/Catel.Core/Catel/Services/ISensorService.md" >}})
 
 Base class for implementing sensor services.
 

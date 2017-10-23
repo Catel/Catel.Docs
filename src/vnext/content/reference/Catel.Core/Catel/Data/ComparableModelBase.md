@@ -18,7 +18,7 @@ public abstract class ComparableModelBase : ModelBase
 ```
 
 **Base types**
-[ModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ModelBase.md" &gt;}})
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 Comparable model base.
 

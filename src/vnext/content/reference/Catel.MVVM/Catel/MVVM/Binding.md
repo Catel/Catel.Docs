@@ -18,7 +18,7 @@ public class Binding : BindingBase
 ```
 
 **Base types**
-[BindingBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/BindingBase.md" &gt;}})
+[BindingBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/BindingBase.md" >}})
 
 Binding class for platforms not supporting bindings.
 

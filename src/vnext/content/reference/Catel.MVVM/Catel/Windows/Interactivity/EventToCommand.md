@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class EventToCommand : CommandTriggerActionBase&lt;FrameworkElement&gt;
+public class EventToCommand : CommandTriggerActionBase<FrameworkElement>
 ```
 
 **Base types**
-[CommandTriggerActionBase]({{&lt; relref "#" &gt;}})
+[CommandTriggerActionBase]({{< relref "#" >}})
 
 Class to convert a routed event to a command.
 

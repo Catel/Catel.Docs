@@ -14,7 +14,7 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IBindableEnum&lt;TEnum&gt; where TEnum : struct, IComparable, IFormattable 
+public interface IBindableEnum<TEnum> where TEnum : struct, IComparable, IFormattable 
 ```
 
 Bindable enumeration.

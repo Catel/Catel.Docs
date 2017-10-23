@@ -18,7 +18,7 @@ public abstract class NavigationViewModelBase : ViewModelBase
 ```
 
 **Base types**
-[ViewModelBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ViewModelBase.md" &gt;}})
+[ViewModelBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/ViewModelBase.md" >}})
 
 Extended base class for view models that include navigation. This class adds navigation commands and the navigation service.
 

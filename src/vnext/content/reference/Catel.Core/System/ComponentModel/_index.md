@@ -9,14 +9,14 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[BeginEditEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/BeginEditEventArgs.md" &gt;}})| 
-[CancelEditCompletedEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/CancelEditCompletedEventArgs.md" &gt;}})| 
-[CancelEditEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/CancelEditEventArgs.md" &gt;}})| 
-[EditEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/EditEventArgs.md" &gt;}})| 
-[EndEditEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/EndEditEventArgs.md" &gt;}})| 
-[IAdvancedEditableObject]({{&lt; relref "reference/Catel.Core/System/ComponentModel/IAdvancedEditableObject.md" &gt;}})| 
-[IDataErrorInfo]({{&lt; relref "reference/Catel.Core/System/ComponentModel/IDataErrorInfo.md" &gt;}})| 
-[IDataWarningInfo]({{&lt; relref "reference/Catel.Core/System/ComponentModel/IDataWarningInfo.md" &gt;}})| 
-[INotifyDataWarningInfo]({{&lt; relref "reference/Catel.Core/System/ComponentModel/INotifyDataWarningInfo.md" &gt;}})| 
-[PropertyChangedEventArgsExtensions]({{&lt; relref "reference/Catel.Core/System/ComponentModel/PropertyChangedEventArgsExtensions.md" &gt;}})| 
+[BeginEditEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/BeginEditEventArgs.md" >}})| 
+[CancelEditCompletedEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/CancelEditCompletedEventArgs.md" >}})| 
+[CancelEditEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/CancelEditEventArgs.md" >}})| 
+[EditEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/EditEventArgs.md" >}})| 
+[EndEditEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/EndEditEventArgs.md" >}})| 
+[IAdvancedEditableObject]({{< relref "reference/Catel.Core/System/ComponentModel/IAdvancedEditableObject.md" >}})| 
+[IDataErrorInfo]({{< relref "reference/Catel.Core/System/ComponentModel/IDataErrorInfo.md" >}})| 
+[IDataWarningInfo]({{< relref "reference/Catel.Core/System/ComponentModel/IDataWarningInfo.md" >}})| 
+[INotifyDataWarningInfo]({{< relref "reference/Catel.Core/System/ComponentModel/INotifyDataWarningInfo.md" >}})| 
+[PropertyChangedEventArgsExtensions]({{< relref "reference/Catel.Core/System/ComponentModel/PropertyChangedEventArgsExtensions.md" >}})| 
 

@@ -18,7 +18,7 @@ public class BinarySerializationContextInfo : SerializationInfoSerializationCont
 ```
 
 **Base types**
-[SerializationInfoSerializationContextInfo]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationInfoSerializationContextInfo.md" &gt;}})
+[SerializationInfoSerializationContextInfo]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationInfoSerializationContextInfo.md" >}})
 
 Class containing all information about the binary serialization context.
 

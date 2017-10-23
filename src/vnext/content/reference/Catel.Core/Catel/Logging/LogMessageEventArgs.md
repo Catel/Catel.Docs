@@ -18,7 +18,7 @@ public class LogMessageEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args containing information about a message that has been written to a log.
 

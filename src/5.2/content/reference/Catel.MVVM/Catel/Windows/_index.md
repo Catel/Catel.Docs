@@ -9,20 +9,20 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ApplicationExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/ApplicationExtensions.md" &gt;}})| 
-[DataContextChangedHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataContextChangedHelper.md" &gt;}})| 
-[DataWindow]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataWindow.md" &gt;}})| 
-[DataWindowButton]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataWindowButton.md" &gt;}})| 
-[DataWindowDefaultButton]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataWindowDefaultButton.md" &gt;}})| 
-[DataWindowMode]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataWindowMode.md" &gt;}})| 
-[DependencyObjectExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DependencyObjectExtensions.md" &gt;}})| 
-[FrameworkElementExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/FrameworkElementExtensions.md" &gt;}})| 
-[InfoBarMessageControlGenerationMode]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/InfoBarMessageControlGenerationMode.md" &gt;}})| 
-[PopupHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/PopupHelper.md" &gt;}})| 
-[ResourceHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/ResourceHelper.md" &gt;}})| 
-[UIElementExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/UIElementExtensions.md" &gt;}})| 
-[Window]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Window.md" &gt;}})| 
-[WindowExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/WindowExtensions.md" &gt;}})| 
-[WrapControlHelper]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/WrapControlHelper.md" &gt;}})| 
-[WrapOptions]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/WrapOptions.md" &gt;}})| 
+[ApplicationExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/ApplicationExtensions.md" >}})| 
+[DataContextChangedHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/DataContextChangedHelper.md" >}})| 
+[DataWindow]({{< relref "reference/Catel.MVVM/Catel/Windows/DataWindow.md" >}})| 
+[DataWindowButton]({{< relref "reference/Catel.MVVM/Catel/Windows/DataWindowButton.md" >}})| 
+[DataWindowDefaultButton]({{< relref "reference/Catel.MVVM/Catel/Windows/DataWindowDefaultButton.md" >}})| 
+[DataWindowMode]({{< relref "reference/Catel.MVVM/Catel/Windows/DataWindowMode.md" >}})| 
+[DependencyObjectExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/DependencyObjectExtensions.md" >}})| 
+[FrameworkElementExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/FrameworkElementExtensions.md" >}})| 
+[InfoBarMessageControlGenerationMode]({{< relref "reference/Catel.MVVM/Catel/Windows/InfoBarMessageControlGenerationMode.md" >}})| 
+[PopupHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/PopupHelper.md" >}})| 
+[ResourceHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/ResourceHelper.md" >}})| 
+[UIElementExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/UIElementExtensions.md" >}})| 
+[Window]({{< relref "reference/Catel.MVVM/Catel/Windows/Window.md" >}})| 
+[WindowExtensions]({{< relref "reference/Catel.MVVM/Catel/Windows/WindowExtensions.md" >}})| 
+[WrapControlHelper]({{< relref "reference/Catel.MVVM/Catel/Windows/WrapControlHelper.md" >}})| 
+[WrapOptions]({{< relref "reference/Catel.MVVM/Catel/Windows/WrapOptions.md" >}})| 
 

@@ -14,11 +14,11 @@ Namespace|Catel.Xamarin.Forms
 Available on|Portable Class Libraries
 
 ```
-public class Application&lt;TMainPage&gt; : Application where TMainPage : Page 
+public class Application<TMainPage> : Application where TMainPage : Page 
 ```
 
 **Base types**
-[Application]({{&lt; relref "#" &gt;}})
+[Application]({{< relref "#" >}})
 
 The application base class.
 

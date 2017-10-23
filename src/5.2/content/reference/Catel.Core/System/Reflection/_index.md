@@ -9,5 +9,5 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[BindingFlags]({{&lt; relref "reference/Catel.Core/System/Reflection/BindingFlags.md" &gt;}})| 
+[BindingFlags]({{< relref "reference/Catel.Core/System/Reflection/BindingFlags.md" >}})| 
 

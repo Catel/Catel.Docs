@@ -18,7 +18,7 @@ public interface IView : IViewModelContainer
 ```
 
 **Implements interfaces**
-[IViewModelContainer]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModelContainer.md" &gt;}})
+[IViewModelContainer]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelContainer.md" >}})
 
 Interface defining the base functionality of a view required to interact with Catel.
 

@@ -18,7 +18,7 @@ public class LogListenerConfigurationCollection : ConfigurationElementCollection
 ```
 
 **Base types**
-[ConfigurationElementCollection]({{&lt; relref "#" &gt;}})
+[ConfigurationElementCollection]({{< relref "#" >}})
 
 The log listeners configuration collection.
 

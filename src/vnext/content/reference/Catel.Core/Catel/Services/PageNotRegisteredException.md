@@ -18,7 +18,7 @@ public class PageNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case a page not registered, but still being used.
 

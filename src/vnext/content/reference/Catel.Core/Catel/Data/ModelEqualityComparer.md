@@ -14,14 +14,14 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ModelEqualityComparer : IModelEqualityComparer, EqualityComparer&lt;ModelBase&gt;
+public class ModelEqualityComparer : IModelEqualityComparer, EqualityComparer<ModelBase>
 ```
 
 **Base types**
-[EqualityComparer]({{&lt; relref "#" &gt;}})
+[EqualityComparer]({{< relref "#" >}})
 
 **Implements interfaces**
-[IModelEqualityComparer]({{&lt; relref "reference/Catel.Core/Catel/Data/IModelEqualityComparer.md" &gt;}})
+[IModelEqualityComparer]({{< relref "reference/Catel.Core/Catel/Data/IModelEqualityComparer.md" >}})
 
 Implementation of the for the [ModelBase](#).
 

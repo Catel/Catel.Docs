@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public abstract class CommandTriggerActionBase&lt;T&gt; : TriggerActionBase&lt;T, T&gt; where T : FrameworkElement 
+public abstract class CommandTriggerActionBase<T> : TriggerActionBase<T, T> where T : FrameworkElement 
 ```
 
 **Base types**
-[TriggerActionBase]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/TriggerActionBase.md" &gt;}})
+[TriggerActionBase]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/TriggerActionBase.md" >}})
 
 Trigger base class that handles a safe unsubscribe and clean up because the default Trigger class does not always call OnDetaching. This class extends the [Missing: &lt;see cref="T:Catel.Windows.Interactivity.TriggerActionBase`1" /&gt;](#) class by adding supports for commands.
 

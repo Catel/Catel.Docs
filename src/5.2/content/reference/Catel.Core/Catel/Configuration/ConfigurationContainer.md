@@ -18,7 +18,7 @@ public enum ConfigurationContainer : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The configuration containers.
 

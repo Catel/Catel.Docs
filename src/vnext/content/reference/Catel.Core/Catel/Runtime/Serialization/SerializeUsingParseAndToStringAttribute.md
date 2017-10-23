@@ -18,7 +18,7 @@ public class SerializeUsingParseAndToStringAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Parse the members decorated with this attribute using`Parse` and`ToString`.
 

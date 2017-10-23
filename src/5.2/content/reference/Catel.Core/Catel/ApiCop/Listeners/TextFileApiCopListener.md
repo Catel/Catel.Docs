@@ -18,7 +18,7 @@ public class TextFileApiCopListener : TextApiCopListenerBase
 ```
 
 **Base types**
-[TextApiCopListenerBase]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" &gt;}})
+[TextApiCopListenerBase]({{< relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" >}})
 
 [IApiCopListener](#) implementation which writes all results to a text file. If no`FileStream` is available in the target platform, this will write to a memory stream.
 

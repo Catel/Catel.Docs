@@ -18,7 +18,7 @@ public enum ValidationResultType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Types of validation results.
 

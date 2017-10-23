@@ -18,7 +18,7 @@ public class LogBatchEntry : LogEntry
 ```
 
 **Base types**
-[LogEntry]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogEntry.md" &gt;}})
+[LogEntry]({{< relref "reference/Catel.Core/Catel/Logging/LogEntry.md" >}})
 
 Represents a log entry inside a batch.
 

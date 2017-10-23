@@ -14,11 +14,11 @@ Namespace|Catel.Messaging
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class CombinedMessage : MessageBase&lt;CombinedMessage, bool&gt;
+public class CombinedMessage : MessageBase<CombinedMessage, bool>
 ```
 
 **Base types**
-[MessageBase]({{&lt; relref "#" &gt;}})
+[MessageBase]({{< relref "#" >}})
 
 Implements a message transferring a boolean value and a custom property.
 

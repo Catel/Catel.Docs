@@ -18,7 +18,7 @@ public class PopupLayout : RelativeLayout
 ```
 
 **Base types**
-[RelativeLayout]({{&lt; relref "#" &gt;}})
+[RelativeLayout]({{< relref "#" >}})
 
 Is a relative layout that allow show view as modal.
 

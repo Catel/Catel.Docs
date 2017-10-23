@@ -18,7 +18,7 @@ public class DataContextChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Contains information about DataContext changed events.
 

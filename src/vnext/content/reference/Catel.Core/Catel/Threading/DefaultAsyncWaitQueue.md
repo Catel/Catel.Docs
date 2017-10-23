@@ -14,11 +14,11 @@ Namespace|Catel.Threading
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class DefaultAsyncWaitQueue&lt;T&gt; : IAsyncWaitQueue&lt;T, T&gt;
+public class DefaultAsyncWaitQueue<T> : IAsyncWaitQueue<T, T>
 ```
 
 **Implements interfaces**
-[IAsyncWaitQueue]({{&lt; relref "reference/Catel.Core/Catel/Threading/IAsyncWaitQueue.md" &gt;}})
+[IAsyncWaitQueue]({{< relref "reference/Catel.Core/Catel/Threading/IAsyncWaitQueue.md" >}})
 
 The default wait queue implementation, which uses a double-ended queue.
 

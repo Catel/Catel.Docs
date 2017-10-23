@@ -18,7 +18,7 @@ public enum ViewLoadStateEvent : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available view load state events.
 

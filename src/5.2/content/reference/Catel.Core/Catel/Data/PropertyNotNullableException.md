@@ -18,7 +18,7 @@ public class PropertyNotNullableException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception when a property value is set to null but when the type does not support null values.
 

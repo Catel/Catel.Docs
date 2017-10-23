@@ -18,7 +18,7 @@ public abstract class BufferPoolableBase : PoolableBase
 ```
 
 **Base types**
-[PoolableBase]({{&lt; relref "reference/Catel.Core/Catel/Pooling/PoolableBase.md" &gt;}})
+[PoolableBase]({{< relref "reference/Catel.Core/Catel/Pooling/PoolableBase.md" >}})
 
 Base class for buffer poolables.
 

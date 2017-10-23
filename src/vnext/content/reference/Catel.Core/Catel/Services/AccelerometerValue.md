@@ -18,7 +18,7 @@ public class AccelerometerValue : IAccelerometerValue
 ```
 
 **Implements interfaces**
-[IAccelerometerValue]({{&lt; relref "reference/Catel.Core/Catel/Services/IAccelerometerValue.md" &gt;}})
+[IAccelerometerValue]({{< relref "reference/Catel.Core/Catel/Services/IAccelerometerValue.md" >}})
 
 Accelerometer reading value.
 

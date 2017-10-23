@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class DelayBindingUpdate : BehaviorBase&lt;FrameworkElement&gt;
+public class DelayBindingUpdate : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 This behaviors sets the binding to and manually updates the binding from view to view model after the delay.
 

@@ -18,7 +18,7 @@ public class InvalidPropertyValueException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception when an the new value of a property of the [ModelBase](#) class is invalid.
 

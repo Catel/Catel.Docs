@@ -18,7 +18,7 @@ public class TooManyDependenciesApiCopRule : ApiCopRule
 ```
 
 **Base types**
-[ApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" &gt;}})
+[ApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" >}})
 
 Rule to prevent too many dependencies on a class.
 

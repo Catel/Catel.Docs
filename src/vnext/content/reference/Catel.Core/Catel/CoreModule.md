@@ -18,7 +18,7 @@ public class CoreModule : IServiceLocatorInitializer
 ```
 
 **Implements interfaces**
-[IServiceLocatorInitializer]({{&lt; relref "reference/Catel.Core/Catel/IoC/IServiceLocatorInitializer.md" &gt;}})
+[IServiceLocatorInitializer]({{< relref "reference/Catel.Core/Catel/IoC/IServiceLocatorInitializer.md" >}})
 
 Core module which allows the registration of default services in the service locator.
 

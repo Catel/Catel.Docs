@@ -18,7 +18,7 @@ public class ServiceLocatorConfigurationCollection : ConfigurationElementCollect
 ```
 
 **Base types**
-[ConfigurationElementCollection]({{&lt; relref "#" &gt;}})
+[ConfigurationElementCollection]({{< relref "#" >}})
 
 The IoC configuration collection.
 

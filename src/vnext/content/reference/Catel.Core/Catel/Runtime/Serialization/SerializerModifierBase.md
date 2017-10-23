@@ -14,11 +14,11 @@ Namespace|Catel.Runtime.Serialization
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class SerializerModifierBase&lt;TModel&gt; : SerializerModifierBase
+public abstract class SerializerModifierBase<TModel> : SerializerModifierBase
 ```
 
 **Base types**
-[SerializerModifierBase]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" &gt;}})
+[SerializerModifierBase]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" >}})
 
 Allows modifications for a specific model for every supported serializer.
 

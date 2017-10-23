@@ -18,7 +18,7 @@ public abstract class RegistrationConventionBase : IRegistrationConvention
 ```
 
 **Implements interfaces**
-[IRegistrationConvention]({{&lt; relref "reference/Catel.Core/Catel/IoC/IRegistrationConvention.md" &gt;}})
+[IRegistrationConvention]({{< relref "reference/Catel.Core/Catel/IoC/IRegistrationConvention.md" >}})
 
 The [IRegistrationConvention](#) base implementation.
 

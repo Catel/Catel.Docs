@@ -18,7 +18,7 @@ public class RedirectDeserializationBinder : SerializationBinder
 ```
 
 **Base types**
-[SerializationBinder]({{&lt; relref "#" &gt;}})
+[SerializationBinder]({{< relref "#" >}})
 
 class that supports backwards compatible serialization.
 

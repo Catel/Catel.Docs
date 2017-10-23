@@ -18,7 +18,7 @@ public class CommandExecutedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 implementation for the event when an [ICatelCommand](#) has been executed.
 

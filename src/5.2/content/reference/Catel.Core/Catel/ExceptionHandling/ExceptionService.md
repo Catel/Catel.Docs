@@ -18,7 +18,7 @@ public class ExceptionService : IExceptionService
 ```
 
 **Implements interfaces**
-[IExceptionService]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IExceptionService.md" &gt;}})
+[IExceptionService]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IExceptionService.md" >}})
 
 The exception service allows the usage of the Try/Catch mechanics. This means that this service provides possibilities to handle all exception types previously registered.
 

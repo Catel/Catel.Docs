@@ -18,7 +18,7 @@ public class InfoBarMessageControlVisibilityConverter : IValueConverter
 ```
 
 **Implements interfaces**
-[IValueConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/IValueConverter.md" &gt;}})
+[IValueConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/IValueConverter.md" >}})
 
 Converter for the [InfoBarMessageControl](#) to determine whether the control should be visible for the current mode and
 

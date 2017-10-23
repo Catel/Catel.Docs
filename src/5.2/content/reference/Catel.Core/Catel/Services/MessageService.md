@@ -18,10 +18,10 @@ public class MessageService : IMessageService, ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[IMessageService]({{&lt; relref "reference/Catel.Core/Catel/Services/IMessageService.md" &gt;}})
+[IMessageService]({{< relref "reference/Catel.Core/Catel/Services/IMessageService.md" >}})
 
 Message service that implements the [IMessageService](#).
 

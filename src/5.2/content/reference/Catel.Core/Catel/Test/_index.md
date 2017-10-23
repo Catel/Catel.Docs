@@ -9,5 +9,5 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ExceptionTester]({{&lt; relref "reference/Catel.Core/Catel/Test/ExceptionTester.md" &gt;}})| 
+[ExceptionTester]({{< relref "reference/Catel.Core/Catel/Test/ExceptionTester.md" >}})| 
 

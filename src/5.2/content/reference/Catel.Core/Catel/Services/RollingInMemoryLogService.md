@@ -18,10 +18,10 @@ public class RollingInMemoryLogService : IRollingInMemoryLogService, ServiceBase
 ```
 
 **Base types**
-[ServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ServiceBase.md" &gt;}})
+[ServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ServiceBase.md" >}})
 
 **Implements interfaces**
-[IRollingInMemoryLogService]({{&lt; relref "reference/Catel.Core/Catel/Services/IRollingInMemoryLogService.md" &gt;}})
+[IRollingInMemoryLogService]({{< relref "reference/Catel.Core/Catel/Services/IRollingInMemoryLogService.md" >}})
 
 Rolling in memory log service.
 

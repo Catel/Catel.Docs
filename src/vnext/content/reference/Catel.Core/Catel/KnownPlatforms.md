@@ -18,7 +18,7 @@ public enum KnownPlatforms : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Known platform groups.
 

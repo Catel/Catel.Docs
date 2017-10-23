@@ -18,7 +18,7 @@ public class NavigationAdapter : NavigationAdapterBase
 ```
 
 **Base types**
-[NavigationAdapterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapterBase.md" &gt;}})
+[NavigationAdapterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationAdapterBase.md" >}})
 
 Navigation adapter class because everyone seems to be implementing their own :-(
 

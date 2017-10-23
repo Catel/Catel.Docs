@@ -14,11 +14,11 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class CommandProgressChangedEventArgs&lt;TProgress&gt; : EventArgs
+public class CommandProgressChangedEventArgs<TProgress> : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args for event when [TaskCommand](#) progress changes.
 

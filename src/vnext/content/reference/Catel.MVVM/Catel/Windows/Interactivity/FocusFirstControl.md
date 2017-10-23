@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class FocusFirstControl : BehaviorBase&lt;FrameworkElement&gt;
+public class FocusFirstControl : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Behavior to focus the first control in a window.
 

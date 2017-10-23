@@ -18,7 +18,7 @@ public class DispatcherObservableObject : ObservableObject
 ```
 
 **Base types**
-[ObservableObject]({{&lt; relref "reference/Catel.Core/Catel/Data/ObservableObject.md" &gt;}})
+[ObservableObject]({{< relref "reference/Catel.Core/Catel/Data/ObservableObject.md" >}})
 
 Implementation of the [ObservableObject](#) class that will dispatch all change notifications to the UI thread using the [IDispatcherService](#).
 

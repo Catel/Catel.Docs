@@ -18,7 +18,7 @@ public class AttributeValidatorProvider : ValidatorProviderBase
 ```
 
 **Base types**
-[ValidatorProviderBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidatorProviderBase.md" &gt;}})
+[ValidatorProviderBase]({{< relref "reference/Catel.Core/Catel/Data/ValidatorProviderBase.md" >}})
 
 Validator provider that provides the validator based on attributes on models.
 

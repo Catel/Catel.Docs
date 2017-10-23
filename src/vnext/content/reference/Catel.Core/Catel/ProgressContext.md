@@ -18,7 +18,7 @@ public class ProgressContext : Disposable
 ```
 
 **Base types**
-[Disposable]({{&lt; relref "reference/Catel.Core/Catel/Disposable.md" &gt;}})
+[Disposable]({{< relref "reference/Catel.Core/Catel/Disposable.md" >}})
 
 Never calculate progress manually anymore.
 

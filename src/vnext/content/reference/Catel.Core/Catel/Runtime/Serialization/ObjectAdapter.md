@@ -18,7 +18,7 @@ public class ObjectAdapter : IObjectAdapter
 ```
 
 **Implements interfaces**
-[IObjectAdapter]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/IObjectAdapter.md" &gt;}})
+[IObjectAdapter]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/IObjectAdapter.md" >}})
 
 Adapter to interact with objects.
 

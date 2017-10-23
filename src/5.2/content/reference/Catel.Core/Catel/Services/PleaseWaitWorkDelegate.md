@@ -18,7 +18,7 @@ public delegate PleaseWaitWorkDelegate : MulticastDelegate
 ```
 
 **Base types**
-[MulticastDelegate]({{&lt; relref "#" &gt;}})
+[MulticastDelegate]({{< relref "#" >}})
 
 Please wait work delegate.
 

@@ -18,7 +18,7 @@ public class DefaultViewModelToModelMappingConverter : ViewModelToModelConverter
 ```
 
 **Base types**
-[ViewModelToModelConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ViewModelToModelConverterBase.md" &gt;}})
+[ViewModelToModelConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/ViewModelToModelConverterBase.md" >}})
 
 ViewModelToModelMapping Copy Converter
 

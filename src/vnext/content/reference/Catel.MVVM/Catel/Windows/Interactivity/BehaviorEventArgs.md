@@ -18,7 +18,7 @@ public class BehaviorEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Behavior event args.
 

@@ -18,7 +18,7 @@ public class ActionTask : TaskBase
 ```
 
 **Base types**
-[TaskBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/TaskBase.md" &gt;}})
+[TaskBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/TaskBase.md" >}})
 
 The action task.
 

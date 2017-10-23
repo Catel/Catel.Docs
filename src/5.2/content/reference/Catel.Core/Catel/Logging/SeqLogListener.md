@@ -18,7 +18,7 @@ public class SeqLogListener : BatchLogListenerBase
 ```
 
 **Base types**
-[BatchLogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/BatchLogListenerBase.md" &gt;}})
+[BatchLogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/BatchLogListenerBase.md" >}})
 
 Log listener which writes all data to a Seq server.
 

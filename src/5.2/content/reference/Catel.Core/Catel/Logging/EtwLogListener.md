@@ -18,7 +18,7 @@ public class EtwLogListener : LogListenerBase
 ```
 
 **Base types**
-[LogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" &gt;}})
+[LogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" >}})
 
 Log listener for ETW (Event tracing for Windows).
 

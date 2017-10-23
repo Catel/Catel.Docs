@@ -18,7 +18,7 @@ public abstract class LogListenerBase : ILogListener
 ```
 
 **Implements interfaces**
-[ILogListener]({{&lt; relref "reference/Catel.Core/Catel/Logging/ILogListener.md" &gt;}})
+[ILogListener]({{< relref "reference/Catel.Core/Catel/Logging/ILogListener.md" >}})
 
 Abstract base class that implements the [ILogListener](#) interface.
 

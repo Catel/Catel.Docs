@@ -14,14 +14,14 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class WeakAction&lt;TParameter&gt; : IWeakAction&lt;TParameter&gt;, WeakActionBase
+public class WeakAction<TParameter> : IWeakAction<TParameter>, WeakActionBase
 ```
 
 **Base types**
-[WeakActionBase]({{&lt; relref "reference/Catel.Core/Catel/WeakActionBase.md" &gt;}})
+[WeakActionBase]({{< relref "reference/Catel.Core/Catel/WeakActionBase.md" >}})
 
 **Implements interfaces**
-[IWeakAction]({{&lt; relref "reference/Catel.Core/Catel/IWeakAction.md" &gt;}})
+[IWeakAction]({{< relref "reference/Catel.Core/Catel/IWeakAction.md" >}})
 
 A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not cause memory leaks.
 

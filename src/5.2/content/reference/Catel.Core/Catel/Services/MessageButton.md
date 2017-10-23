@@ -18,7 +18,7 @@ public enum MessageButton : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available message buttons.
 

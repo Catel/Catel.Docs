@@ -18,7 +18,7 @@ public abstract class NavigationServiceBase : ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 Abstract base class to support abstract partial methods.
 

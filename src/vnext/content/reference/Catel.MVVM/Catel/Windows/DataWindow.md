@@ -18,10 +18,10 @@ public class DataWindow : IDataWindow, Window
 ```
 
 **Base types**
-[Window]({{&lt; relref "#" &gt;}})
+[Window]({{< relref "#" >}})
 
 **Implements interfaces**
-[IDataWindow]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IDataWindow.md" &gt;}})
+[IDataWindow]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IDataWindow.md" >}})
 
 [Window](#) class that implements the [InfoBarMessageControl](#) and the default buttons, according to the [DataWindowMode](#).
 

@@ -18,7 +18,7 @@ public class EventLogListener : BatchLogListenerBase
 ```
 
 **Base types**
-[BatchLogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/BatchLogListenerBase.md" &gt;}})
+[BatchLogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/BatchLogListenerBase.md" >}})
 
 Log listener which writes all data to the system event log.
 

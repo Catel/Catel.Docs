@@ -14,14 +14,14 @@ Namespace|Catel.Runtime.Serialization.Binary
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class BinarySerializer : IBinarySerializer, SerializerBase&lt;BinarySerializationContextInfo&gt;
+public class BinarySerializer : IBinarySerializer, SerializerBase<BinarySerializationContextInfo>
 ```
 
 **Base types**
-[SerializerBase]({{&lt; relref "#" &gt;}})
+[SerializerBase]({{< relref "#" >}})
 
 **Implements interfaces**
-[IBinarySerializer]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/Binary/IBinarySerializer.md" &gt;}})
+[IBinarySerializer]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/Binary/IBinarySerializer.md" >}})
 
 The binary serializer.
 

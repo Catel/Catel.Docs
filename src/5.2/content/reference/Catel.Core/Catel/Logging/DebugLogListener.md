@@ -18,7 +18,7 @@ public class DebugLogListener : LogListenerBase
 ```
 
 **Base types**
-[LogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" &gt;}})
+[LogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" >}})
 
 Implementation of the [ILogListener](#) that writes code to the debug or output window.
 

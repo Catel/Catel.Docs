@@ -18,7 +18,7 @@ public class JsonLogFormatter : IJsonLogFormatter
 ```
 
 **Implements interfaces**
-[IJsonLogFormatter]({{&lt; relref "reference/Catel.Core/Catel/Logging/IJsonLogFormatter.md" &gt;}})
+[IJsonLogFormatter]({{< relref "reference/Catel.Core/Catel/Logging/IJsonLogFormatter.md" >}})
 
 The formatter which formats all log info to Json.
 

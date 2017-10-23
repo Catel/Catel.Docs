@@ -9,8 +9,8 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[InitializationApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Rules/InitializationApiCopRule.md" &gt;}})| 
-[InitializationMode]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Rules/InitializationMode.md" &gt;}})| 
-[TooManyDependenciesApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Rules/TooManyDependenciesApiCopRule.md" &gt;}})| 
-[UnusedFeatureApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Rules/UnusedFeatureApiCopRule.md" &gt;}})| 
+[InitializationApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/Rules/InitializationApiCopRule.md" >}})| 
+[InitializationMode]({{< relref "reference/Catel.Core/Catel/ApiCop/Rules/InitializationMode.md" >}})| 
+[TooManyDependenciesApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/Rules/TooManyDependenciesApiCopRule.md" >}})| 
+[UnusedFeatureApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/Rules/UnusedFeatureApiCopRule.md" >}})| 
 

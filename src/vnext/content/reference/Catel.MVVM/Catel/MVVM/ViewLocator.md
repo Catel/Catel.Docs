@@ -18,10 +18,10 @@ public class ViewLocator : IViewLocator, LocatorBase
 ```
 
 **Base types**
-[LocatorBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/LocatorBase.md" &gt;}})
+[LocatorBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/LocatorBase.md" >}})
 
 **Implements interfaces**
-[IViewLocator]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewLocator.md" &gt;}})
+[IViewLocator]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewLocator.md" >}})
 
 Resolver that will resolve view types based on the view model type. For example, if a view model with the type name`MyAssembly.ViewModels.PersonViewModel` is inserted, this could result in the view type`MyAssembly.Views.PersonView`.
 

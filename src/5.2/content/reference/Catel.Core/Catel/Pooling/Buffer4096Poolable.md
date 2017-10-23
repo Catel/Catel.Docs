@@ -18,7 +18,7 @@ public class Buffer4096Poolable : BufferPoolableBase
 ```
 
 **Base types**
-[BufferPoolableBase]({{&lt; relref "reference/Catel.Core/Catel/Pooling/BufferPoolableBase.md" &gt;}})
+[BufferPoolableBase]({{< relref "reference/Catel.Core/Catel/Pooling/BufferPoolableBase.md" >}})
 
 Poolable buffer of 4096 bytes.
 

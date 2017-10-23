@@ -18,7 +18,7 @@ public class CannotGetPropertyValueException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case a property value cannot be get.
 

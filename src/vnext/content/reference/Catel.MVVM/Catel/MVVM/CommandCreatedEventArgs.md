@@ -18,7 +18,7 @@ public class CommandCreatedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args when a command is created.
 

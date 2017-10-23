@@ -18,7 +18,7 @@ public class BooleanToGrayscaleConverter : ValueConverterBase
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" &gt;}})
+[ValueConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ValueConverterBase.md" >}})
 
 Converts a boolean to a grayscale saturation value. If the input is`false`, this converter will return`0`, otherwise`1`.
 

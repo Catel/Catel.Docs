@@ -18,7 +18,7 @@ public class ViewPropertySelector : IViewPropertySelector
 ```
 
 **Implements interfaces**
-[IViewPropertySelector]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewPropertySelector.md" &gt;}})
+[IViewPropertySelector]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewPropertySelector.md" >}})
 
 Selector class to keep the view property selections to a minimum. Catel uses a special wrapping technology to wrap bindings to view properties to be able to add change notifications for all target platforms. Though this technology works great, it might have impact on performance and this is not always necessary. By customizing the [IViewPropertySelector](#), developers can tweak the interesting view properties per type.
 

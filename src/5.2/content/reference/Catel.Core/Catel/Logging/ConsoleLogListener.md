@@ -18,7 +18,7 @@ public class ConsoleLogListener : LogListenerBase
 ```
 
 **Base types**
-[LogListenerBase]({{&lt; relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" &gt;}})
+[LogListenerBase]({{< relref "reference/Catel.Core/Catel/Logging/LogListenerBase.md" >}})
 
 Log listener that writes to the console.
 

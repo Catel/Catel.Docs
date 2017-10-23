@@ -14,11 +14,11 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class ValidatorBase&lt;TTargetType&gt; : IValidator where TTargetType : class 
+public abstract class ValidatorBase<TTargetType> : IValidator where TTargetType : class 
 ```
 
 **Implements interfaces**
-[IValidator]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidator.md" &gt;}})
+[IValidator]({{< relref "reference/Catel.Core/Catel/Data/IValidator.md" >}})
 
 Base class that implements the [IValidator](#) interface, but already implements dummy methods for the`Before` and`After` methods, which are rarely used (but still very useful in some cases).
 

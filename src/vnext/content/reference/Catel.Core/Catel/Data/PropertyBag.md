@@ -18,7 +18,7 @@ public class PropertyBag : INotifyPropertyChanged
 ```
 
 **Base types**
-[INotifyPropertyChanged]({{&lt; relref "#" &gt;}})
+[INotifyPropertyChanged]({{< relref "#" >}})
 
 Class that is able to manage all properties of a specific object in a thread-safe manner.
 

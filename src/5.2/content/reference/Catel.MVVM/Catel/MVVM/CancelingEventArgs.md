@@ -18,7 +18,7 @@ public class CancelingEventArgs : CancellableEventArgs
 ```
 
 **Base types**
-[CancellableEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/CancellableEventArgs.md" &gt;}})
+[CancellableEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/CancellableEventArgs.md" >}})
 
 EventArgs for the CancelingAsync event.
 

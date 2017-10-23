@@ -18,7 +18,7 @@ public class StringToTypeConverter : TypeConverter
 ```
 
 **Base types**
-[TypeConverter]({{&lt; relref "#" &gt;}})
+[TypeConverter]({{< relref "#" >}})
 
 Convert a string defining a .NET type into a value.
 

@@ -18,7 +18,7 @@ public abstract class Disposable : IDisposable
 ```
 
 **Base types**
-[IDisposable]({{&lt; relref "#" &gt;}})
+[IDisposable]({{< relref "#" >}})
 
 Base class for disposable objects.
 

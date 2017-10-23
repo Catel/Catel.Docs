@@ -14,7 +14,7 @@ Namespace|Catel.Collections
 Available on|Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ExtendedSuspensionContext&lt;T&gt;
+public class ExtendedSuspensionContext<T>
 ```
 
 Context class the hold all relevant data while notifications are suspended.

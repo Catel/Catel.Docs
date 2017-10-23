@@ -18,7 +18,7 @@ public class BindingParty : IDisposable
 ```
 
 **Base types**
-[IDisposable]({{&lt; relref "#" &gt;}})
+[IDisposable]({{< relref "#" >}})
 
 Contains information about a specific binding party (either source or target).
 

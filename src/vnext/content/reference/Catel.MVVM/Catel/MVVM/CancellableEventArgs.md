@@ -18,7 +18,7 @@ public abstract class CancellableEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs base which implements the Cancel property.
 

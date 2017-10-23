@@ -18,7 +18,7 @@ public class UserControlLogic : LogicBase
 ```
 
 **Base types**
-[LogicBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicBase.md" &gt;}})
+[LogicBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicBase.md" >}})
 
 MVVM Provider behavior implementation for a user control.
 

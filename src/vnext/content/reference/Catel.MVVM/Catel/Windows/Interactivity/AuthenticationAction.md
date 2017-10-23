@@ -18,7 +18,7 @@ public enum AuthenticationAction : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The available actions to perform when a user is not able to view a specific UI element.
 

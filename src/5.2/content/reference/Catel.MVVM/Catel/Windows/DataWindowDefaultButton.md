@@ -18,7 +18,7 @@ public enum DataWindowDefaultButton : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available default buttons on the data window mode.
 

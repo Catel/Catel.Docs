@@ -18,7 +18,7 @@ public class TypeRegisteredEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs for the TypeRegistered event.
 

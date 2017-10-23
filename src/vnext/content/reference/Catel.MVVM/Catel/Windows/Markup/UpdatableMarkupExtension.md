@@ -18,7 +18,7 @@ public abstract class UpdatableMarkupExtension : MarkupExtension
 ```
 
 **Base types**
-[MarkupExtension]({{&lt; relref "#" &gt;}})
+[MarkupExtension]({{< relref "#" >}})
 
 Markup extension that allows an update of the binding values.
 

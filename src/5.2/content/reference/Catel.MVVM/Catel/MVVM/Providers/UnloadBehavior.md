@@ -18,7 +18,7 @@ public enum UnloadBehavior : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available unload behaviors.
 

@@ -18,7 +18,7 @@ public class IoCConfigurationSection : ConfigurationSection
 ```
 
 **Base types**
-[ConfigurationSection]({{&lt; relref "#" &gt;}})
+[ConfigurationSection]({{< relref "#" >}})
 
 IoC configuration section.
 

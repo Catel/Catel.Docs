@@ -18,7 +18,7 @@ public interface IViewModelService : IService
 ```
 
 **Implements interfaces**
-[IService]({{&lt; relref "reference/Catel.Core/Catel/Services/IService.md" &gt;}})
+[IService]({{< relref "reference/Catel.Core/Catel/Services/IService.md" >}})
 
 Interface to declare services in a view model.
 

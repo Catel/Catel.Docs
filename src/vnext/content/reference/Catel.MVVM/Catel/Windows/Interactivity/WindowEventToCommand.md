@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class WindowEventToCommand : CommandBehaviorBase&lt;FrameworkElement&gt;
+public class WindowEventToCommand : CommandBehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[CommandBehaviorBase]({{&lt; relref "#" &gt;}})
+[CommandBehaviorBase]({{< relref "#" >}})
 
 Behavior class that catches an event from the root window element. The event is forwarded to the DataContext of the it is attached to.
 

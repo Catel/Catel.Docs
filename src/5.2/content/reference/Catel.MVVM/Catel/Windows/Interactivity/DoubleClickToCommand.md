@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class DoubleClickToCommand : CommandBehaviorBase&lt;FrameworkElement&gt;
+public class DoubleClickToCommand : CommandBehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[CommandBehaviorBase]({{&lt; relref "#" &gt;}})
+[CommandBehaviorBase]({{< relref "#" >}})
 
 This behavior allows any element that supports a double click to command for every element that supports`MouseLeftButtonDown`.
 

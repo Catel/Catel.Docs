@@ -18,7 +18,7 @@ public enum BindingFlags : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 ## Fields
 

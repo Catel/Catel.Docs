@@ -18,7 +18,7 @@ public interface IModelSerialization : ISerializable
 ```
 
 **Implements interfaces**
-[ISerializable]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializable.md" &gt;}})
+[ISerializable]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializable.md" >}})
 
 Defines all serialization members for the models.
 

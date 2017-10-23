@@ -18,7 +18,7 @@ public class LocationService : LocationServiceBase
 ```
 
 **Base types**
-[LocationServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/LocationServiceBase.md" &gt;}})
+[LocationServiceBase]({{< relref "reference/Catel.Core/Catel/Services/LocationServiceBase.md" >}})
 
 Implementation of the [ILocationService](#)
 

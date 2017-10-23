@@ -18,7 +18,7 @@ public delegate TimerCallback : MulticastDelegate
 ```
 
 **Base types**
-[MulticastDelegate]({{&lt; relref "#" &gt;}})
+[MulticastDelegate]({{< relref "#" >}})
 
 Timer callback delegate.
 

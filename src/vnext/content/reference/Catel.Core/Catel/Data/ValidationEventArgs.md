@@ -18,7 +18,7 @@ public class ValidationEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 The validation event args.
 

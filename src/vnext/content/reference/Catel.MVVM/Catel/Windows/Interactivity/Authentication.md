@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class Authentication : BehaviorBase&lt;FrameworkElement&gt;
+public class Authentication : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Authentication behavior to show/hide UI elements based on the some authentication parameters.
 

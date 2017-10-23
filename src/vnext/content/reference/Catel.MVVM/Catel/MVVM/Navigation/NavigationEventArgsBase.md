@@ -18,7 +18,7 @@ public abstract class NavigationEventArgsBase : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Base class for navigation event args.
 

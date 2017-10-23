@@ -18,7 +18,7 @@ public abstract class ValidationResult : IValidationResult
 ```
 
 **Implements interfaces**
-[IValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidationResult.md" &gt;}})
+[IValidationResult]({{< relref "reference/Catel.Core/Catel/Data/IValidationResult.md" >}})
 
 Base class for validation results.
 

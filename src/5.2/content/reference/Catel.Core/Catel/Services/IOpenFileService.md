@@ -18,7 +18,7 @@ public interface IOpenFileService : IFileSupport
 ```
 
 **Implements interfaces**
-[IFileSupport]({{&lt; relref "reference/Catel.Core/Catel/Services/IFileSupport.md" &gt;}})
+[IFileSupport]({{< relref "reference/Catel.Core/Catel/Services/IFileSupport.md" >}})
 
 Interface for the Open File service.
 

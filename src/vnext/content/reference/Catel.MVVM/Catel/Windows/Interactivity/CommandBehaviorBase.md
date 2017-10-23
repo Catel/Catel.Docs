@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public abstract class CommandBehaviorBase&lt;T&gt; : BehaviorBase&lt;T&gt; where T : FrameworkElement 
+public abstract class CommandBehaviorBase<T> : BehaviorBase<T> where T : FrameworkElement 
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorBase.md" &gt;}})
+[BehaviorBase]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorBase.md" >}})
 
 Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`. This class extends the [Missing: &lt;see cref="T:Catel.Windows.Interactivity.BehaviorBase`1" /&gt;](#) class by adding supports for commands.
 

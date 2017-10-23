@@ -18,7 +18,7 @@ public class ViewModelNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case a view model is not registered, but still being used.
 

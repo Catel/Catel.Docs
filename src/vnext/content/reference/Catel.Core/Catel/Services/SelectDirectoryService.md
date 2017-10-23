@@ -18,10 +18,10 @@ public class SelectDirectoryService : ISelectDirectoryService, ViewModelServiceB
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[ISelectDirectoryService]({{&lt; relref "reference/Catel.Core/Catel/Services/ISelectDirectoryService.md" &gt;}})
+[ISelectDirectoryService]({{< relref "reference/Catel.Core/Catel/Services/ISelectDirectoryService.md" >}})
 
 Service to open files.
 

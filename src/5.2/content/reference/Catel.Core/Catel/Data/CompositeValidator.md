@@ -18,7 +18,7 @@ public class CompositeValidator : IValidator
 ```
 
 **Implements interfaces**
-[IValidator]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidator.md" &gt;}})
+[IValidator]({{< relref "reference/Catel.Core/Catel/Data/IValidator.md" >}})
 
 Allows the combination of several validators into a single validator. This class will combine all instances of the [IValidator](#) class found for a type using the [IValidatorProvider](#) into this single composite validator.
 

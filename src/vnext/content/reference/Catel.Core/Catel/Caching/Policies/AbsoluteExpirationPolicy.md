@@ -18,7 +18,7 @@ public class AbsoluteExpirationPolicy : ExpirationPolicy
 ```
 
 **Base types**
-[ExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" &gt;}})
+[ExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" >}})
 
 The cache item will expire on the absolute expiration date time.
 

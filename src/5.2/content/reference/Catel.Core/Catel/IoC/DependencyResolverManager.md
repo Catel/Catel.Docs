@@ -18,7 +18,7 @@ public class DependencyResolverManager : IDependencyResolverManager
 ```
 
 **Implements interfaces**
-[IDependencyResolverManager]({{&lt; relref "reference/Catel.Core/Catel/IoC/IDependencyResolverManager.md" &gt;}})
+[IDependencyResolverManager]({{< relref "reference/Catel.Core/Catel/IoC/IDependencyResolverManager.md" >}})
 
 The dependency resolver manager.
 

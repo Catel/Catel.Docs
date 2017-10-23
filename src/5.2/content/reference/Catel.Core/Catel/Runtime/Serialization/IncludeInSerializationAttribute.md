@@ -18,7 +18,7 @@ public class IncludeInSerializationAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to define that a specific member must be included in the serialization by the serialization engine.
 

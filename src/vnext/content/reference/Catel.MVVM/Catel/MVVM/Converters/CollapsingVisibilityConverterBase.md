@@ -18,7 +18,7 @@ public abstract class CollapsingVisibilityConverterBase : VisibilityConverterBas
 ```
 
 **Base types**
-[VisibilityConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" &gt;}})
+[VisibilityConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" >}})
 
 A base class that makes it easier to create values to visibility converters. This converter returns when a non-visible state should be returned.
 

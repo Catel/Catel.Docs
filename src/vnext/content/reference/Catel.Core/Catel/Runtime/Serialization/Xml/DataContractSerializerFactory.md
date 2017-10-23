@@ -18,7 +18,7 @@ public class DataContractSerializerFactory : IDataContractSerializerFactory
 ```
 
 **Implements interfaces**
-[IDataContractSerializerFactory]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IDataContractSerializerFactory.md" &gt;}})
+[IDataContractSerializerFactory]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IDataContractSerializerFactory.md" >}})
 
 Default implementation of the [IDataContractSerializerFactory](#) interface.
 

@@ -18,7 +18,7 @@ public interface IViewModel : IValidatable
 ```
 
 **Implements interfaces**
-[IValidatable]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidatable.md" &gt;}})
+[IValidatable]({{< relref "reference/Catel.Core/Catel/Data/IValidatable.md" >}})
 
 View model interface.
 

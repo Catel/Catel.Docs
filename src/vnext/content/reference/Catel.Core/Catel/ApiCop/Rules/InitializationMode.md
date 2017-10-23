@@ -18,7 +18,7 @@ public enum InitializationMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The initialization mode.
 

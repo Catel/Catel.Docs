@@ -18,7 +18,7 @@ public enum ViewModelToModelMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Specifies the different mapping modes available for the [ViewModelToModelAttribute](#).
 

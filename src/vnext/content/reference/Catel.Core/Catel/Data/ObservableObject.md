@@ -18,7 +18,7 @@ public class ObservableObject : IAdvancedNotifyPropertyChanged
 ```
 
 **Implements interfaces**
-[IAdvancedNotifyPropertyChanged]({{&lt; relref "reference/Catel.Core/Catel/Data/IAdvancedNotifyPropertyChanged.md" &gt;}})
+[IAdvancedNotifyPropertyChanged]({{< relref "reference/Catel.Core/Catel/Data/IAdvancedNotifyPropertyChanged.md" >}})
 
 Very basic class implementing the interfaces.
 

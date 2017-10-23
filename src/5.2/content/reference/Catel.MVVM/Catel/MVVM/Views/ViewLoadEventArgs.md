@@ -18,7 +18,7 @@ public class ViewLoadEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs implementation for when a [IView](#) is loaded.
 

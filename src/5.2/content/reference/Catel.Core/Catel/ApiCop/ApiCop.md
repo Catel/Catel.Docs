@@ -18,7 +18,7 @@ public class ApiCop : IApiCop
 ```
 
 **Implements interfaces**
-[IApiCop]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCop.md" &gt;}})
+[IApiCop]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCop.md" >}})
 
 ApiCop writer class.
 

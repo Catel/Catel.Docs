@@ -18,7 +18,7 @@ public enum MessageImage : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available message images.
 

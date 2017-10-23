@@ -18,10 +18,10 @@ public class ProgressNotifyableViewModel : IProgressNotifyableViewModel, ViewMod
 ```
 
 **Base types**
-[ViewModelBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ViewModelBase.md" &gt;}})
+[ViewModelBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/ViewModelBase.md" >}})
 
 **Implements interfaces**
-[IProgressNotifyableViewModel]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IProgressNotifyableViewModel.md" &gt;}})
+[IProgressNotifyableViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IProgressNotifyableViewModel.md" >}})
 
 The progress notifyable view model base.
 

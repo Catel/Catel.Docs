@@ -18,7 +18,7 @@ public class ActivityLifecycleCallbacksListener : Object
 ```
 
 **Base types**
-[Object]({{&lt; relref "#" &gt;}})
+[Object]({{< relref "#" >}})
 
 ActivityLifecycleCallbacksListener implementation.
 

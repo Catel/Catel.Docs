@@ -18,7 +18,7 @@ public abstract class LocatorBase : ILocator
 ```
 
 **Implements interfaces**
-[ILocator]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ILocator.md" &gt;}})
+[ILocator]({{< relref "reference/Catel.MVVM/Catel/MVVM/ILocator.md" >}})
 
 Base class for all locators. This class implements the shared logic so only custom logic has to be implemented by new locator classes.
 

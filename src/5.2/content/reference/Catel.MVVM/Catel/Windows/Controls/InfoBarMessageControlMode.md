@@ -18,7 +18,7 @@ public enum InfoBarMessageControlMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The display mode for the [InfoBarMessageControl](#).
 

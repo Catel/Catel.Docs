@@ -18,7 +18,7 @@ public class DynamicConfigurationSerializerModifier : SerializerModifierBase
 ```
 
 **Base types**
-[SerializerModifierBase]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" &gt;}})
+[SerializerModifierBase]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" >}})
 
 Dynamic configuration serializer modifier.
 

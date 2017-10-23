@@ -18,7 +18,7 @@ public enum LogEvent : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Different types of logging events.
 

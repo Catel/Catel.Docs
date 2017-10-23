@@ -18,7 +18,7 @@ public class RetryingEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 ## Constructors
 

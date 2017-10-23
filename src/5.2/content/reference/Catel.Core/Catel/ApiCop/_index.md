@@ -9,16 +9,16 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ApiCop]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCop.md" &gt;}})| 
-[ApiCopListenerBase]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerBase.md" &gt;}})| 
-[ApiCopListenerGrouping]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerGrouping.md" &gt;}})| 
-[ApiCopManager]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopManager.md" &gt;}})| 
-[ApiCopResult]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopResult.md" &gt;}})| 
-[ApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" &gt;}})| 
-[ApiCopRuleLevel]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopRuleLevel.md" &gt;}})| 
-[IApiCop]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCop.md" &gt;}})| 
-[IApiCopListener]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopListener.md" &gt;}})| 
-[IApiCopResult]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopResult.md" &gt;}})| 
-[IApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/IApiCopRule.md" &gt;}})| 
-[TextApiCopListenerBase]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" &gt;}})| 
+[ApiCop]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCop.md" >}})| 
+[ApiCopListenerBase]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerBase.md" >}})| 
+[ApiCopListenerGrouping]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerGrouping.md" >}})| 
+[ApiCopManager]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopManager.md" >}})| 
+[ApiCopResult]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopResult.md" >}})| 
+[ApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" >}})| 
+[ApiCopRuleLevel]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRuleLevel.md" >}})| 
+[IApiCop]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCop.md" >}})| 
+[IApiCopListener]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopListener.md" >}})| 
+[IApiCopResult]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopResult.md" >}})| 
+[IApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/IApiCopRule.md" >}})| 
+[TextApiCopListenerBase]({{< relref "reference/Catel.Core/Catel/ApiCop/TextApiCopListenerBase.md" >}})| 
 

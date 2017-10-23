@@ -18,7 +18,7 @@ public enum EventChangeType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available event change types.
 

@@ -18,7 +18,7 @@ public class LoggingConfigurationSection : ConfigurationSection
 ```
 
 **Base types**
-[ConfigurationSection]({{&lt; relref "#" &gt;}})
+[ConfigurationSection]({{< relref "#" >}})
 
 Logging configuration section.
 

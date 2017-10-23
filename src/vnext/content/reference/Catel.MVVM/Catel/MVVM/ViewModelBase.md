@@ -18,10 +18,10 @@ public abstract class ViewModelBase : IUniqueIdentifyable, IRelationalViewModel,
 ```
 
 **Base types**
-[ValidatableModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidatableModelBase.md" &gt;}})
+[ValidatableModelBase]({{< relref "reference/Catel.Core/Catel/Data/ValidatableModelBase.md" >}})
 
 **Implements interfaces**
-[IUniqueIdentifyable]({{&lt; relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" &gt;}}),[IRelationalViewModel]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IRelationalViewModel.md" &gt;}})
+[IUniqueIdentifyable]({{< relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" >}}),[IRelationalViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IRelationalViewModel.md" >}})
 
 View model base for MVVM implementations. This class is based on the [ModelBase](#), and supports all common interfaces used by WPF.
 

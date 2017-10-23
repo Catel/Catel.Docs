@@ -18,10 +18,10 @@ public class Activity : IPage, Activity
 ```
 
 **Base types**
-[Activity]({{&lt; relref "#" &gt;}})
+[Activity]({{< relref "#" >}})
 
 **Implements interfaces**
-[IPage]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" &gt;}})
+[IPage]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" >}})
 
 View implementation that automatically takes care of view models.
 

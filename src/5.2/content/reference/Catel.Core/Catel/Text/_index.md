@@ -9,5 +9,5 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[StringBuilderExtensions]({{&lt; relref "reference/Catel.Core/Catel/Text/StringBuilderExtensions.md" &gt;}})| 
+[StringBuilderExtensions]({{< relref "reference/Catel.Core/Catel/Text/StringBuilderExtensions.md" >}})| 
 

@@ -14,7 +14,7 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IValueValidator&lt;TValue&gt;
+public interface IValueValidator<TValue>
 ```
 
 The value validator interface

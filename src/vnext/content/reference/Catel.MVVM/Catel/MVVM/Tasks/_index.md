@@ -9,8 +9,8 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ActionTask]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ActionTask.md" &gt;}})| 
-[ITask]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITask.md" &gt;}})| 
-[ITaskProgressTracker]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITaskProgressTracker.md" &gt;}})| 
-[TaskBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/TaskBase.md" &gt;}})| 
+[ActionTask]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ActionTask.md" >}})| 
+[ITask]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITask.md" >}})| 
+[ITaskProgressTracker]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITaskProgressTracker.md" >}})| 
+[TaskBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/TaskBase.md" >}})| 
 

@@ -18,10 +18,10 @@ public class FieldValidationResult : IFieldValidationResult, ValidationResult
 ```
 
 **Base types**
-[ValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidationResult.md" &gt;}})
+[ValidationResult]({{< relref "reference/Catel.Core/Catel/Data/ValidationResult.md" >}})
 
 **Implements interfaces**
-[IFieldValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/IFieldValidationResult.md" &gt;}})
+[IFieldValidationResult]({{< relref "reference/Catel.Core/Catel/Data/IFieldValidationResult.md" >}})
 
 Field validation result.
 

@@ -18,7 +18,7 @@ public class CollectionToHidingVisibilityConverter : CollectionToCollapsingVisib
 ```
 
 **Base types**
-[CollectionToCollapsingVisibilityConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/CollectionToCollapsingVisibilityConverter.md" &gt;}})
+[CollectionToCollapsingVisibilityConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/CollectionToCollapsingVisibilityConverter.md" >}})
 
 Convert from bool to [Visibility](#) and back. The bool value true will be converted to Visibility.Visible. The bool value false will be converted to Visibility.Hidden.
 

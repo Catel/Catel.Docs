@@ -18,7 +18,7 @@ public class MessageRecipientAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute defining a method as recipient for the [MessageMediator](#).
 

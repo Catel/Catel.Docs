@@ -18,7 +18,7 @@ public class ExcludeFromSerializationAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to define that a specific member must be excluded from the serialization by the serialization engine.
 

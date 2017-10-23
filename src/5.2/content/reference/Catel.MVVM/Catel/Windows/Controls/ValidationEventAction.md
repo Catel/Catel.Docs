@@ -18,7 +18,7 @@ public enum ValidationEventAction : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Validation event action.
 

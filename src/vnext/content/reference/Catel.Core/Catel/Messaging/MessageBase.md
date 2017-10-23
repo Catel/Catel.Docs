@@ -14,7 +14,7 @@ Namespace|Catel.Messaging
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class MessageBase&lt;TMessage, TData&gt; where TMessage : new(), MessageBase&lt;TMessage, TData&gt; 
+public abstract class MessageBase<TMessage, TData> where TMessage : new(), MessageBase<TMessage, TData> 
 ```
 
 Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class to define individual message types. For most subclasses the only thing to code is an empty class body including the type parameters. For the payload data you can choose betweeen the following options:

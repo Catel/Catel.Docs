@@ -14,11 +14,11 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ProgressiveTaskCommand&lt;TProgress&gt; : TaskCommand&lt;object, object, TProgress&gt; where TProgress : ITaskProgressReport 
+public class ProgressiveTaskCommand<TProgress> : TaskCommand<object, object, TProgress> where TProgress : ITaskProgressReport 
 ```
 
 **Base types**
-[TaskCommand]({{&lt; relref "#" &gt;}})
+[TaskCommand]({{< relref "#" >}})
 
 Implements the [Missing: &lt;see cref="T:Catel.MVVM.TaskCommand`3" /&gt;](#) class with only the TProgress as generic type.
 

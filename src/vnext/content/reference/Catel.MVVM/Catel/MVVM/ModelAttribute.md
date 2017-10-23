@@ -18,7 +18,7 @@ public class ModelAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to define a property in a view model as a model. Objects decorated with this attribute will be automatically validated when a property changes.
 

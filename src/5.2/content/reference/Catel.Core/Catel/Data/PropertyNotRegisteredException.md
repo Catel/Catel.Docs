@@ -18,7 +18,7 @@ public class PropertyNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception when a property is used by the [ModelBase](#) class that is not registered by the object.
 

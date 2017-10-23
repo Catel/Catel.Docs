@@ -18,7 +18,7 @@ public enum BindingMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Describes the direction of the data flow in a binding.
 

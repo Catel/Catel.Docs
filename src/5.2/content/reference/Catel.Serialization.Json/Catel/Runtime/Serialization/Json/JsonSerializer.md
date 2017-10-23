@@ -14,14 +14,14 @@ Namespace|Catel.Runtime.Serialization.Json
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class JsonSerializer : IJsonSerializer, SerializerBase&lt;JsonSerializationContextInfo&gt;
+public class JsonSerializer : IJsonSerializer, SerializerBase<JsonSerializationContextInfo>
 ```
 
 **Base types**
-[SerializerBase]({{&lt; relref "#" &gt;}})
+[SerializerBase]({{< relref "#" >}})
 
 **Implements interfaces**
-[IJsonSerializer]({{&lt; relref "reference/Catel.Serialization.Json/Catel/Runtime/Serialization/Json/IJsonSerializer.md" &gt;}})
+[IJsonSerializer]({{< relref "reference/Catel.Serialization.Json/Catel/Runtime/Serialization/Json/IJsonSerializer.md" >}})
 
 The binary serializer.
 

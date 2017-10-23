@@ -18,7 +18,7 @@ public class TypeFactory : ITypeFactory
 ```
 
 **Implements interfaces**
-[ITypeFactory]({{&lt; relref "reference/Catel.Core/Catel/IoC/ITypeFactory.md" &gt;}})
+[ITypeFactory]({{< relref "reference/Catel.Core/Catel/IoC/ITypeFactory.md" >}})
 
 Type factory which will cache constructors to ensure the best performance available. This class will automatically watch the TypeRegistered event and clear the cache automatically when the event occurs.
 

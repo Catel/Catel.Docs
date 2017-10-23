@@ -14,11 +14,11 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class Command : Command&lt;object, object&gt;
+public class Command : Command<object, object>
 ```
 
 **Base types**
-[Command]({{&lt; relref "#" &gt;}})
+[Command]({{< relref "#" >}})
 
 Implements the [Missing: &lt;see cref="T:Catel.MVVM.Command`2" /&gt;](#) class with as generic types.
 

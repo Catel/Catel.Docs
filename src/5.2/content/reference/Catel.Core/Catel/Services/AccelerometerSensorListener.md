@@ -18,7 +18,7 @@ public class AccelerometerSensorListener : Object
 ```
 
 **Base types**
-[Object]({{&lt; relref "#" &gt;}})
+[Object]({{< relref "#" >}})
 
 Sensor listener for the accelerometer.
 

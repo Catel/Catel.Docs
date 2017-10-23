@@ -18,7 +18,7 @@ public class ServiceLocator : IServiceLocator
 ```
 
 **Implements interfaces**
-[IServiceLocator]({{&lt; relref "reference/Catel.Core/Catel/IoC/IServiceLocator.md" &gt;}})
+[IServiceLocator]({{< relref "reference/Catel.Core/Catel/IoC/IServiceLocator.md" >}})
 
 Default implementation of the [IServiceLocator](#) interface.
 

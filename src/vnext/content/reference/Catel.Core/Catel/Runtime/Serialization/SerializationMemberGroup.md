@@ -18,7 +18,7 @@ public enum SerializationMemberGroup : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Enum representing all member group.
 

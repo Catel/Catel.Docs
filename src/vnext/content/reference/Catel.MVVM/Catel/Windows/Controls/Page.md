@@ -18,10 +18,10 @@ public class Page : IPage, Page
 ```
 
 **Base types**
-[Page]({{&lt; relref "#" &gt;}})
+[Page]({{< relref "#" >}})
 
 **Implements interfaces**
-[IPage]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" &gt;}})
+[IPage]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IPage.md" >}})
 
 [Page](#) class that supports MVVM with Catel.
 

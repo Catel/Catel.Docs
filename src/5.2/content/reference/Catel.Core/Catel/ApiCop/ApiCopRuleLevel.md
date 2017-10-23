@@ -18,7 +18,7 @@ public enum ApiCopRuleLevel : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Enum containing the ApiCop rule levels.
 

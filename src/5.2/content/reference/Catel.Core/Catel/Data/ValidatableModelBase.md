@@ -18,10 +18,10 @@ public abstract class ValidatableModelBase : IValidatableModel, ModelBase
 ```
 
 **Base types**
-[ModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ModelBase.md" &gt;}})
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 **Implements interfaces**
-[IValidatableModel]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidatableModel.md" &gt;}})
+[IValidatableModel]({{< relref "reference/Catel.Core/Catel/Data/IValidatableModel.md" >}})
 
 ModelBase implementation that supports validation.
 

@@ -18,7 +18,7 @@ public class CatelJsonContractResolver : DefaultContractResolver
 ```
 
 **Base types**
-[DefaultContractResolver]({{&lt; relref "#" &gt;}})
+[DefaultContractResolver]({{< relref "#" >}})
 
 Contract resolver to ensure that Catel models will be serialized by the Catel serializers.
 

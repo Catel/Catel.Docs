@@ -18,7 +18,7 @@ public class ReferenceToHidingVisibilityConverter : ReferenceToCollapsingVisibil
 ```
 
 **Base types**
-[ReferenceToCollapsingVisibilityConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/ReferenceToCollapsingVisibilityConverter.md" &gt;}})
+[ReferenceToCollapsingVisibilityConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/ReferenceToCollapsingVisibilityConverter.md" >}})
 
 Convert from reference to. If the reference contains a value, Visibility.Visible will be returned. If the reference is null, Visibility.Hidden will be returned.
 

@@ -18,7 +18,7 @@ public class XmlSerializationContextInfoFactory : ISerializationContextInfoFacto
 ```
 
 **Implements interfaces**
-[ISerializationContextInfoFactory]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" &gt;}})
+[ISerializationContextInfoFactory]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfoFactory.md" >}})
 
 Xml serialization context factory.
 

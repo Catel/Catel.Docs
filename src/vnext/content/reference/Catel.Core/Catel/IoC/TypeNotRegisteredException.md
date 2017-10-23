@@ -18,7 +18,7 @@ public class TypeNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception class in case an requested type from [IServiceLocator](#) is not registered.
 

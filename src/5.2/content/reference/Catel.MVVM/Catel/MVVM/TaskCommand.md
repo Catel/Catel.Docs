@@ -14,11 +14,11 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class TaskCommand&lt;TExecuteParameter, TCanExecuteParameter&gt; : TaskCommand&lt;TExecuteParameter, TCanExecuteParameter, ITaskProgressReport&gt;
+public class TaskCommand<TExecuteParameter, TCanExecuteParameter> : TaskCommand<TExecuteParameter, TCanExecuteParameter, ITaskProgressReport>
 ```
 
 **Base types**
-[TaskCommand]({{&lt; relref "#" &gt;}})
+[TaskCommand]({{< relref "#" >}})
 
 Implements the [Missing: &lt;see cref="T:Catel.MVVM.TaskCommand`3" /&gt;](#) class with only the TExecuteParameter as generic type.
 

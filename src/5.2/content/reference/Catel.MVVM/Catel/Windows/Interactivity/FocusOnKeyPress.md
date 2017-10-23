@@ -18,7 +18,7 @@ public class FocusOnKeyPress : FocusBehaviorBase
 ```
 
 **Base types**
-[FocusBehaviorBase]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/FocusBehaviorBase.md" &gt;}})
+[FocusBehaviorBase]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/FocusBehaviorBase.md" >}})
 
 Behavior to set the focus on a key press.
 

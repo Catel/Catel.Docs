@@ -18,7 +18,7 @@ public class RegistrationConventionHandler : IRegistrationConventionHandler
 ```
 
 **Implements interfaces**
-[IRegistrationConventionHandler]({{&lt; relref "reference/Catel.Core/Catel/IoC/IRegistrationConventionHandler.md" &gt;}})
+[IRegistrationConventionHandler]({{< relref "reference/Catel.Core/Catel/IoC/IRegistrationConventionHandler.md" >}})
 
 Represents the [IRegistrationConventionHandler](#) implementation.
 

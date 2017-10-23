@@ -18,7 +18,7 @@ public enum ApiCopListenerGrouping : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Grouping options for the [IApiCopListener](#) implementations.
 

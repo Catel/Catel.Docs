@@ -18,7 +18,7 @@ public class CommandEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 CommandEventArgs, simply holds the command parameter.
 

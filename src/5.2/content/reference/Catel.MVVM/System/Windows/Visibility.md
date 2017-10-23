@@ -18,7 +18,7 @@ public enum Visibility : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Specifies the display state of an element.
 

@@ -18,7 +18,7 @@ public class XmlSerializationConfiguration : SerializationConfiguration
 ```
 
 **Base types**
-[SerializationConfiguration]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationConfiguration.md" &gt;}})
+[SerializationConfiguration]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationConfiguration.md" >}})
 
 Serialization configuration with additional xml configuration.
 

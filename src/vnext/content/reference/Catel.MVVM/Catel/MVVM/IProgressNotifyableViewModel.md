@@ -18,7 +18,7 @@ public interface IProgressNotifyableViewModel : IViewModel
 ```
 
 **Implements interfaces**
-[IViewModel]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" &gt;}})
+[IViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" >}})
 
 The ProgressNotifyableViewModel interface.
 

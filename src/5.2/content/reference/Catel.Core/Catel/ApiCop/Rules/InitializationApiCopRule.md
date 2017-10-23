@@ -18,7 +18,7 @@ public class InitializationApiCopRule : ApiCopRule
 ```
 
 **Base types**
-[ApiCopRule]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" &gt;}})
+[ApiCopRule]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopRule.md" >}})
 
 Rule to show that classes should be initialized at startup.
 

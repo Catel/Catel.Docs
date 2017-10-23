@@ -9,5 +9,5 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ContextHelper]({{&lt; relref "reference/Catel.Core/Catel/Android/ContextHelper.md" &gt;}})| 
+[ContextHelper]({{< relref "reference/Catel.Core/Catel/Android/ContextHelper.md" >}})| 
 

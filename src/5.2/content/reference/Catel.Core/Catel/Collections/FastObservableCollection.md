@@ -14,14 +14,14 @@ Namespace|Catel.Collections
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class FastObservableCollection&lt;T&gt; : ISuspendChangeNotificationsCollection, ObservableCollection&lt;T&gt;
+public class FastObservableCollection<T> : ISuspendChangeNotificationsCollection, ObservableCollection<T>
 ```
 
 **Base types**
-[ObservableCollection]({{&lt; relref "#" &gt;}})
+[ObservableCollection]({{< relref "#" >}})
 
 **Implements interfaces**
-[ISuspendChangeNotificationsCollection]({{&lt; relref "reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.md" &gt;}})
+[ISuspendChangeNotificationsCollection]({{< relref "reference/Catel.Core/Catel/Collections/ISuspendChangeNotificationsCollection.md" >}})
 
 Fast implementation of where the change notifications can be suspended.
 

@@ -14,14 +14,14 @@ Namespace|Catel.Data
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class SavableModelBase&lt;T&gt; : ISavableModel, ModelBase where T : class 
+public abstract class SavableModelBase<T> : ISavableModel, ModelBase where T : class 
 ```
 
 **Base types**
-[ModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ModelBase.md" &gt;}})
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 **Implements interfaces**
-[ISavableModel]({{&lt; relref "reference/Catel.Core/Catel/Data/ISavableModel.md" &gt;}})
+[ISavableModel]({{< relref "reference/Catel.Core/Catel/Data/ISavableModel.md" >}})
 
 Abstract class that makes the [ModelBase](#) serializable.
 

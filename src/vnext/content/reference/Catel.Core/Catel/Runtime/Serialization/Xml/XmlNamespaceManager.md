@@ -18,7 +18,7 @@ public class XmlNamespaceManager : IXmlNamespaceManager
 ```
 
 **Implements interfaces**
-[IXmlNamespaceManager]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IXmlNamespaceManager.md" &gt;}})
+[IXmlNamespaceManager]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IXmlNamespaceManager.md" >}})
 
 Manages the namespaces based on the current serialization scope.
 

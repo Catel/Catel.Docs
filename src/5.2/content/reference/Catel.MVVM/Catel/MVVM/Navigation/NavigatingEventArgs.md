@@ -18,7 +18,7 @@ public class NavigatingEventArgs : NavigationEventArgsBase
 ```
 
 **Base types**
-[NavigationEventArgsBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsBase.md" &gt;}})
+[NavigationEventArgsBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Navigation/NavigationEventArgsBase.md" >}})
 
 Navigating event args.
 

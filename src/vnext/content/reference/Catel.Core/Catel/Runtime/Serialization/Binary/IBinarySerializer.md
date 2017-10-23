@@ -18,7 +18,7 @@ public interface IBinarySerializer : ISerializer
 ```
 
 **Implements interfaces**
-[ISerializer]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" &gt;}})
+[ISerializer]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" >}})
 
 Interface for the binary serializer.
 

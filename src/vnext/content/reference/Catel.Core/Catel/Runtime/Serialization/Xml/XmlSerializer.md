@@ -14,14 +14,14 @@ Namespace|Catel.Runtime.Serialization.Xml
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class XmlSerializer : IXmlSerializer, SerializerBase&lt;XmlSerializationContextInfo&gt;
+public class XmlSerializer : IXmlSerializer, SerializerBase<XmlSerializationContextInfo>
 ```
 
 **Base types**
-[SerializerBase]({{&lt; relref "#" &gt;}})
+[SerializerBase]({{< relref "#" >}})
 
 **Implements interfaces**
-[IXmlSerializer]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IXmlSerializer.md" &gt;}})
+[IXmlSerializer]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/Xml/IXmlSerializer.md" >}})
 
 The xml serializer.
 

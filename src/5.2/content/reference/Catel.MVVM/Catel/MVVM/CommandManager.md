@@ -18,7 +18,7 @@ public class CommandManager : ICommandManager
 ```
 
 **Implements interfaces**
-[ICommandManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ICommandManager.md" &gt;}})
+[ICommandManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/ICommandManager.md" >}})
 
 Manager that takes care of application-wide commands and can dynamically forward them to the right view models.
 

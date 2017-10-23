@@ -18,7 +18,7 @@ public enum WrapControlServiceWrapOptions : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available wrap options that can be used in the [IWrapControlService](#).
 

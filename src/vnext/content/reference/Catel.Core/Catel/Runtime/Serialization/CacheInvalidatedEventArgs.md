@@ -18,7 +18,7 @@ public class CacheInvalidatedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args for when a type cache has been invalidated.
 

@@ -14,11 +14,11 @@ Namespace|Catel.Collections
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class ListDictionary&lt;TKey, TValue&gt; : IDictionary&lt;TKey, TValue&gt;
+public class ListDictionary<TKey, TValue> : IDictionary<TKey, TValue>
 ```
 
 **Base types**
-[IDictionary]({{&lt; relref "#" &gt;}})
+[IDictionary]({{< relref "#" >}})
 
 Implements using a singly linked list. Recommended for collections that typically include fewer than 10 items.
 

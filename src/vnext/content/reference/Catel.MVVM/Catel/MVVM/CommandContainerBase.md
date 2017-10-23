@@ -14,7 +14,7 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public abstract class CommandContainerBase&lt;TExecuteParameter, TCanExecuteParameter, TPogress&gt; where TPogress : ITaskProgressReport 
+public abstract class CommandContainerBase<TExecuteParameter, TCanExecuteParameter, TPogress> where TPogress : ITaskProgressReport 
 ```
 
 Container for application-wide commands.

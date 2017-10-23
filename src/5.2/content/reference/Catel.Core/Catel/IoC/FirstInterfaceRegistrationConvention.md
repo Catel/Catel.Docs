@@ -18,7 +18,7 @@ public class FirstInterfaceRegistrationConvention : RegistrationConventionBase
 ```
 
 **Base types**
-[RegistrationConventionBase]({{&lt; relref "reference/Catel.Core/Catel/IoC/RegistrationConventionBase.md" &gt;}})
+[RegistrationConventionBase]({{< relref "reference/Catel.Core/Catel/IoC/RegistrationConventionBase.md" >}})
 
 The first interface convention based on [RegistrationConventionBase](#).
 

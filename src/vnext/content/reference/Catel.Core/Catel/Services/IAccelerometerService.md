@@ -14,11 +14,11 @@ Namespace|Catel.Services
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IAccelerometerService : ISensorService&lt;IAccelerometerValue, AccelerometerValueChangedEventArgs&gt;
+public interface IAccelerometerService : ISensorService<IAccelerometerValue, AccelerometerValueChangedEventArgs>
 ```
 
 **Implements interfaces**
-[ISensorService]({{&lt; relref "#" &gt;}})
+[ISensorService]({{< relref "#" >}})
 
 Interface for accelerometer sensors.
 

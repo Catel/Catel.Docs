@@ -18,7 +18,7 @@ public interface ISavableModel : IModel
 ```
 
 **Implements interfaces**
-[IModel]({{&lt; relref "reference/Catel.Core/Catel/Data/IModel.md" &gt;}})
+[IModel]({{< relref "reference/Catel.Core/Catel/Data/IModel.md" >}})
 
 ISavableDataObjectBase that defines the additional methods to save a [IModel](#) object.
 

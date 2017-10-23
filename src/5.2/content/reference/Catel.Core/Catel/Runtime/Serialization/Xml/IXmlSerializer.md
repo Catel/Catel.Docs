@@ -18,7 +18,7 @@ public interface IXmlSerializer : ISerializer
 ```
 
 **Implements interfaces**
-[ISerializer]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" &gt;}})
+[ISerializer]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializer.md" >}})
 
 Interface for the xml serializer.
 

@@ -18,7 +18,7 @@ public class EnumToHidingVisibilityConverter : EnumToCollapsingVisibilityConvert
 ```
 
 **Base types**
-[EnumToCollapsingVisibilityConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/EnumToCollapsingVisibilityConverter.md" &gt;}})
+[EnumToCollapsingVisibilityConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/EnumToCollapsingVisibilityConverter.md" >}})
 
 Convert from an enum value to. The allowed values must be defined inside the`ConverterParameter` property. If the`ConverterParameter` starts with a`!`, the element will not be visible for the specified enum values.
 

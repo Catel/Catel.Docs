@@ -18,7 +18,7 @@ public class InfoBarMessageControl : ContentControl
 ```
 
 **Base types**
-[ContentControl]({{&lt; relref "#" &gt;}})
+[ContentControl]({{< relref "#" >}})
 
 Control for displaying messages to the user.
 

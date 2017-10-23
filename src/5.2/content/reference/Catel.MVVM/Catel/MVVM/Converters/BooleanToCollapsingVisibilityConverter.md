@@ -18,7 +18,7 @@ public class BooleanToCollapsingVisibilityConverter : VisibilityConverterBase
 ```
 
 **Base types**
-[VisibilityConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" &gt;}})
+[VisibilityConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" >}})
 
 Convert from bool to [Visibility](#) and back. The bool value true will be converted to Visibility.Visible. The bool value false will be converted to Visibility.Collapsed.
 

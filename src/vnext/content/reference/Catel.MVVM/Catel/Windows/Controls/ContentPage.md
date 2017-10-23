@@ -18,10 +18,10 @@ public class ContentPage : IView, ContentPage
 ```
 
 **Base types**
-[ContentPage]({{&lt; relref "#" &gt;}})
+[ContentPage]({{< relref "#" >}})
 
 **Implements interfaces**
-[IView]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" &gt;}})
+[IView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" >}})
 
 The content page.
 

@@ -18,7 +18,7 @@ public enum FocusMoment : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Available moments on which the focus can be set.
 

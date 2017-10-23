@@ -18,7 +18,7 @@ public class CompositeExpirationPolicy : ExpirationPolicy
 ```
 
 **Base types**
-[ExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" &gt;}})
+[ExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/ExpirationPolicy.md" >}})
 
 The composite expiration policy.
 

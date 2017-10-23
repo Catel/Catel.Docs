@@ -14,11 +14,11 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class CompositeFilter&lt;T&gt; : ICompositeFilter&lt;T, T&gt; where T : class 
+public class CompositeFilter<T> : ICompositeFilter<T, T> where T : class 
 ```
 
 **Implements interfaces**
-[ICompositeFilter]({{&lt; relref "reference/Catel.Core/Catel/ICompositeFilter.md" &gt;}})
+[ICompositeFilter]({{< relref "reference/Catel.Core/Catel/ICompositeFilter.md" >}})
 
 Composite filter.
 

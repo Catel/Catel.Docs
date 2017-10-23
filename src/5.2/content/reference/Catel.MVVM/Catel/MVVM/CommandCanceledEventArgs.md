@@ -18,7 +18,7 @@ public class CommandCanceledEventArgs : CommandEventArgs
 ```
 
 **Base types**
-[CommandEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/CommandEventArgs.md" &gt;}})
+[CommandEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/CommandEventArgs.md" >}})
 
 CommandCanceledEventArgs, just like above but allows the event to be cancelled.
 

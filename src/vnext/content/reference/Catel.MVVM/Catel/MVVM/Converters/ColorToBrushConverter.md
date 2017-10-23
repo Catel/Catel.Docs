@@ -14,11 +14,11 @@ Namespace|Catel.MVVM.Converters
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class ColorToBrushConverter : ValueConverterBase&lt;Color, Brush&gt;
+public class ColorToBrushConverter : ValueConverterBase<Color, Brush>
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "#" &gt;}})
+[ValueConverterBase]({{< relref "#" >}})
 
 ColorToBrushConverter
 

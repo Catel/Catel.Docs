@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class MouseInfo : BehaviorBase&lt;FrameworkElement&gt;
+public class MouseInfo : BehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Trigger that enables a property to bind the several mouse events for the associated object.
 

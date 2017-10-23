@@ -18,7 +18,7 @@ public abstract class WeakActionBase : IWeakReference
 ```
 
 **Implements interfaces**
-[IWeakReference]({{&lt; relref "reference/Catel.Core/Catel/IWeakReference.md" &gt;}})
+[IWeakReference]({{< relref "reference/Catel.Core/Catel/IWeakReference.md" >}})
 
 Base class for weak actions that contain weak targets.
 

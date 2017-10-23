@@ -9,14 +9,14 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[DetermineViewModelInstanceEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelInstanceEventArgs.md" &gt;}})| 
-[DetermineViewModelTypeEventArgs]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelTypeEventArgs.md" &gt;}})| 
-[LogicBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicBase.md" &gt;}})| 
-[LogicExtensions]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicExtensions.md" &gt;}})| 
-[LogicViewModelBehavior]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicViewModelBehavior.md" &gt;}})| 
-[NavigationLogicBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/NavigationLogicBase.md" &gt;}})| 
-[PageLogic]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/PageLogic.md" &gt;}})| 
-[UnloadBehavior]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/UnloadBehavior.md" &gt;}})| 
-[UserControlLogic]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/UserControlLogic.md" &gt;}})| 
-[WindowLogic]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Providers/WindowLogic.md" &gt;}})| 
+[DetermineViewModelInstanceEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelInstanceEventArgs.md" >}})| 
+[DetermineViewModelTypeEventArgs]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/DetermineViewModelTypeEventArgs.md" >}})| 
+[LogicBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicBase.md" >}})| 
+[LogicExtensions]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicExtensions.md" >}})| 
+[LogicViewModelBehavior]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/LogicViewModelBehavior.md" >}})| 
+[NavigationLogicBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/NavigationLogicBase.md" >}})| 
+[PageLogic]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/PageLogic.md" >}})| 
+[UnloadBehavior]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/UnloadBehavior.md" >}})| 
+[UserControlLogic]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/UserControlLogic.md" >}})| 
+[WindowLogic]({{< relref "reference/Catel.MVVM/Catel/MVVM/Providers/WindowLogic.md" >}})| 
 

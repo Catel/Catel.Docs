@@ -18,7 +18,7 @@ public class ViewModelToModelAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to link a property in a view model to a model.
 

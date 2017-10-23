@@ -18,10 +18,10 @@ public class BusinessRuleValidationResult : IBusinessRuleValidationResult, Valid
 ```
 
 **Base types**
-[ValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidationResult.md" &gt;}})
+[ValidationResult]({{< relref "reference/Catel.Core/Catel/Data/ValidationResult.md" >}})
 
 **Implements interfaces**
-[IBusinessRuleValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/IBusinessRuleValidationResult.md" &gt;}})
+[IBusinessRuleValidationResult]({{< relref "reference/Catel.Core/Catel/Data/IBusinessRuleValidationResult.md" >}})
 
 Business rule validation result.
 

@@ -18,7 +18,7 @@ public class ModelNotRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception for when a model is not registered on a class, but a [ViewModelToModelAttribute](#) is used with the model.
 

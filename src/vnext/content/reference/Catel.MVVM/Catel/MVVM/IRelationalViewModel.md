@@ -18,7 +18,7 @@ public interface IRelationalViewModel : IViewModel
 ```
 
 **Implements interfaces**
-[IViewModel]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" &gt;}})
+[IViewModel]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModel.md" >}})
 
 Interface that allows a view model to be used in a nested user controls scenario.
 

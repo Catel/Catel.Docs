@@ -18,7 +18,7 @@ public class ViewModelCommandManager : IViewModelCommandManager
 ```
 
 **Implements interfaces**
-[IViewModelCommandManager]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager.md" &gt;}})
+[IViewModelCommandManager]({{< relref "reference/Catel.MVVM/Catel/MVVM/IViewModelCommandManager.md" >}})
 
 Command manager that manages the execution state of all commands of a view model.
 

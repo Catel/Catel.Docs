@@ -9,18 +9,18 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[AsyncLock]({{&lt; relref "reference/Catel.Core/Catel/Threading/AsyncLock.md" &gt;}})| 
-[AsyncWaitQueueExtensions]({{&lt; relref "reference/Catel.Core/Catel/Threading/AsyncWaitQueueExtensions.md" &gt;}})| 
-[AwaitableDisposable]({{&lt; relref "reference/Catel.Core/Catel/Threading/AwaitableDisposable.md" &gt;}})| 
-[DefaultAsyncWaitQueue]({{&lt; relref "reference/Catel.Core/Catel/Threading/DefaultAsyncWaitQueue.md" &gt;}})| 
-[IAsyncWaitQueue]({{&lt; relref "reference/Catel.Core/Catel/Threading/IAsyncWaitQueue.md" &gt;}})| 
-[ReaderWriterLockSlimExtensions]({{&lt; relref "reference/Catel.Core/Catel/Threading/ReaderWriterLockSlimExtensions.md" &gt;}})| 
-[SynchronizationContext]({{&lt; relref "reference/Catel.Core/Catel/Threading/SynchronizationContext.md" &gt;}})| 
-[SynchronizationContextExtensions]({{&lt; relref "reference/Catel.Core/Catel/Threading/SynchronizationContextExtensions.md" &gt;}})| 
-[TaskExtensions]({{&lt; relref "reference/Catel.Core/Catel/Threading/TaskExtensions.md" &gt;}})| 
-[TaskHelper]({{&lt; relref "reference/Catel.Core/Catel/Threading/TaskHelper.md" &gt;}})| 
-[TaskShim]({{&lt; relref "reference/Catel.Core/Catel/Threading/TaskShim.md" &gt;}})| 
-[Timeout]({{&lt; relref "reference/Catel.Core/Catel/Threading/Timeout.md" &gt;}})| 
-[Timer]({{&lt; relref "reference/Catel.Core/Catel/Threading/Timer.md" &gt;}})| 
-[TimerCallback]({{&lt; relref "reference/Catel.Core/Catel/Threading/TimerCallback.md" &gt;}})| 
+[AsyncLock]({{< relref "reference/Catel.Core/Catel/Threading/AsyncLock.md" >}})| 
+[AsyncWaitQueueExtensions]({{< relref "reference/Catel.Core/Catel/Threading/AsyncWaitQueueExtensions.md" >}})| 
+[AwaitableDisposable]({{< relref "reference/Catel.Core/Catel/Threading/AwaitableDisposable.md" >}})| 
+[DefaultAsyncWaitQueue]({{< relref "reference/Catel.Core/Catel/Threading/DefaultAsyncWaitQueue.md" >}})| 
+[IAsyncWaitQueue]({{< relref "reference/Catel.Core/Catel/Threading/IAsyncWaitQueue.md" >}})| 
+[ReaderWriterLockSlimExtensions]({{< relref "reference/Catel.Core/Catel/Threading/ReaderWriterLockSlimExtensions.md" >}})| 
+[SynchronizationContext]({{< relref "reference/Catel.Core/Catel/Threading/SynchronizationContext.md" >}})| 
+[SynchronizationContextExtensions]({{< relref "reference/Catel.Core/Catel/Threading/SynchronizationContextExtensions.md" >}})| 
+[TaskExtensions]({{< relref "reference/Catel.Core/Catel/Threading/TaskExtensions.md" >}})| 
+[TaskHelper]({{< relref "reference/Catel.Core/Catel/Threading/TaskHelper.md" >}})| 
+[TaskShim]({{< relref "reference/Catel.Core/Catel/Threading/TaskShim.md" >}})| 
+[Timeout]({{< relref "reference/Catel.Core/Catel/Threading/Timeout.md" >}})| 
+[Timer]({{< relref "reference/Catel.Core/Catel/Threading/Timer.md" >}})| 
+[TimerCallback]({{< relref "reference/Catel.Core/Catel/Threading/TimerCallback.md" >}})| 
 

@@ -18,7 +18,7 @@ public enum SupportedPlatforms : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 All the available supported platforms.
 

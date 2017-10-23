@@ -18,7 +18,7 @@ public class VibrateService : IVibrateService
 ```
 
 **Implements interfaces**
-[IVibrateService]({{&lt; relref "reference/Catel.Core/Catel/Services/IVibrateService.md" &gt;}})
+[IVibrateService]({{< relref "reference/Catel.Core/Catel/Services/IVibrateService.md" >}})
 
 Implementation of the [IVibrateService](#).
 

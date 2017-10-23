@@ -18,7 +18,7 @@ public class LanguageBinding : UpdatableMarkupExtension
 ```
 
 **Base types**
-[UpdatableMarkupExtension]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Markup/UpdatableMarkupExtension.md" &gt;}})
+[UpdatableMarkupExtension]({{< relref "reference/Catel.MVVM/Catel/Windows/Markup/UpdatableMarkupExtension.md" >}})
 
 Binding that uses the [ILanguageService](#) to retrieve the binding values.
 

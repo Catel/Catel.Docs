@@ -18,7 +18,7 @@ public class InjectionConstructorAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to specify the constructor to use for dependency injection.
 

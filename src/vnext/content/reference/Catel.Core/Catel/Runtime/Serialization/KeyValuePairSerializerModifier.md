@@ -18,7 +18,7 @@ public class KeyValuePairSerializerModifier : SerializerModifierBase
 ```
 
 **Base types**
-[SerializerModifierBase]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" &gt;}})
+[SerializerModifierBase]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializerModifierBase.md" >}})
 
 Serializer modifier that supports key value pairs automatically.
 

@@ -18,7 +18,7 @@ public interface ICompositeCommand : ICatelCommand
 ```
 
 **Implements interfaces**
-[ICatelCommand]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ICatelCommand.md" &gt;}})
+[ICatelCommand]({{< relref "reference/Catel.MVVM/Catel/MVVM/ICatelCommand.md" >}})
 
 Composite command which allows several commands inside a single command being exposed to a view.
 

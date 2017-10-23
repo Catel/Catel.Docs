@@ -18,7 +18,7 @@ public class SerializeEnumAsStringAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to define that a enum member must be serialized as string.
 

@@ -18,7 +18,7 @@ public class PleaseWaitService : IPleaseWaitService
 ```
 
 **Implements interfaces**
-[IPleaseWaitService]({{&lt; relref "reference/Catel.Core/Catel/Services/IPleaseWaitService.md" &gt;}})
+[IPleaseWaitService]({{< relref "reference/Catel.Core/Catel/Services/IPleaseWaitService.md" >}})
 
 Service to show a busy indicator.
 

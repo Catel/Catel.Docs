@@ -18,7 +18,7 @@ public class ViewStackPartEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args when a part of a view stack is raises an event.
 

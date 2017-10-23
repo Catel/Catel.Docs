@@ -18,7 +18,7 @@ public class WrongViewModelTypeException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case that a wrong type is used for a view model.
 

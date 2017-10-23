@@ -18,10 +18,10 @@ public class NavigationService : INavigationService, NavigationServiceBase
 ```
 
 **Base types**
-[NavigationServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/NavigationServiceBase.md" &gt;}})
+[NavigationServiceBase]({{< relref "reference/Catel.Core/Catel/Services/NavigationServiceBase.md" >}})
 
 **Implements interfaces**
-[INavigationService]({{&lt; relref "reference/Catel.Core/Catel/Services/INavigationService.md" &gt;}})
+[INavigationService]({{< relref "reference/Catel.Core/Catel/Services/INavigationService.md" >}})
 
 Service to navigate inside applications.
 

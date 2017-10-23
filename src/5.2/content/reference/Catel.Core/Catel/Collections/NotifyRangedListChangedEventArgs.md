@@ -18,7 +18,7 @@ public class NotifyRangedListChangedEventArgs : NotifyListChangedEventArgs
 ```
 
 **Base types**
-[NotifyListChangedEventArgs]({{&lt; relref "reference/Catel.Core/Catel/Collections/NotifyListChangedEventArgs.md" &gt;}})
+[NotifyListChangedEventArgs]({{< relref "reference/Catel.Core/Catel/Collections/NotifyListChangedEventArgs.md" >}})
 
 The ranged notify list changed event args.
 

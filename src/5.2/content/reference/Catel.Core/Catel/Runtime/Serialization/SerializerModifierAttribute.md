@@ -18,7 +18,7 @@ public class SerializerModifierAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to specify the serialization modifier attribute.
 

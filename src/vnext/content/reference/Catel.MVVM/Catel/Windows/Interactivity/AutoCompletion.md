@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class AutoCompletion : BehaviorBase&lt;TextBox&gt;
+public class AutoCompletion : BehaviorBase<TextBox>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Auto complete behavior to support auto complete on a`TextBox` control.
 

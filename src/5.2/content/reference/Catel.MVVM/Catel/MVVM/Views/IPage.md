@@ -18,7 +18,7 @@ public interface IPage : INavigationView
 ```
 
 **Implements interfaces**
-[INavigationView]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/INavigationView.md" &gt;}})
+[INavigationView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/INavigationView.md" >}})
 
 Interface defining functionality for a page.
 

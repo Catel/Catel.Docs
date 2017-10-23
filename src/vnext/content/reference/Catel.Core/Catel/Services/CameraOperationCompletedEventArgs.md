@@ -18,7 +18,7 @@ public class CameraOperationCompletedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 for camera operations.
 

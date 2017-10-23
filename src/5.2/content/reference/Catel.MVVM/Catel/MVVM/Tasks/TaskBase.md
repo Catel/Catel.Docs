@@ -18,10 +18,10 @@ public abstract class TaskBase : ITask, ModelBase
 ```
 
 **Base types**
-[ModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ModelBase.md" &gt;}})
+[ModelBase]({{< relref "reference/Catel.Core/Catel/Data/ModelBase.md" >}})
 
 **Implements interfaces**
-[ITask]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITask.md" &gt;}})
+[ITask]({{< relref "reference/Catel.MVVM/Catel/MVVM/Tasks/ITask.md" >}})
 
 The task base.
 

@@ -18,7 +18,7 @@ public class ScopeClosedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 EventArgs for the ScopeClosed event.
 

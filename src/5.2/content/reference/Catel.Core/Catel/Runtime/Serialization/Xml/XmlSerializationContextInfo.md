@@ -18,7 +18,7 @@ public class XmlSerializationContextInfo : ISerializationContextInfo
 ```
 
 **Implements interfaces**
-[ISerializationContextInfo]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfo.md" &gt;}})
+[ISerializationContextInfo]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationContextInfo.md" >}})
 
 Class containing all information about the binary serialization context.
 

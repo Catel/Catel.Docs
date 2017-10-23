@@ -18,7 +18,7 @@ public class BeginEditEventArgs : EditEventArgs
 ```
 
 **Base types**
-[EditEventArgs]({{&lt; relref "reference/Catel.Core/System/ComponentModel/EditEventArgs.md" &gt;}})
+[EditEventArgs]({{< relref "reference/Catel.Core/System/ComponentModel/EditEventArgs.md" >}})
 
 Event args implementation called when the object is about to call. This way, it is possible to cancel the events.
 

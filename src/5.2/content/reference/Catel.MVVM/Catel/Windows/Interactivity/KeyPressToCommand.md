@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class KeyPressToCommand : CommandBehaviorBase&lt;FrameworkElement&gt;
+public class KeyPressToCommand : CommandBehaviorBase<FrameworkElement>
 ```
 
 **Base types**
-[CommandBehaviorBase]({{&lt; relref "#" &gt;}})
+[CommandBehaviorBase]({{< relref "#" >}})
 
 Behavior that converts a key press on a specific UI element to a command.
 

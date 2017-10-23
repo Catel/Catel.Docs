@@ -18,10 +18,10 @@ public class RetryPolicy : IRetryPolicy, PolicyBase
 ```
 
 **Base types**
-[PolicyBase]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.md" &gt;}})
+[PolicyBase]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.md" >}})
 
 **Implements interfaces**
-[IRetryPolicy]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IRetryPolicy.md" &gt;}})
+[IRetryPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IRetryPolicy.md" >}})
 
 Represents the retry policy.
 

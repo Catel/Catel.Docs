@@ -18,7 +18,7 @@ public class DisplayNameAttribute : DisplayNameAttribute
 ```
 
 **Base types**
-[DisplayNameAttribute]({{&lt; relref "#" &gt;}})
+[DisplayNameAttribute]({{< relref "#" >}})
 
 A custom implementation of the display name attribute that uses the [ILanguageService](#).
 

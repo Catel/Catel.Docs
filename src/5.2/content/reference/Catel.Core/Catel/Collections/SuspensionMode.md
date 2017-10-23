@@ -18,7 +18,7 @@ public enum SuspensionMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The suspension mode.
 

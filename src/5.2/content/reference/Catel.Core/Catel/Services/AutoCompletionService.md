@@ -18,7 +18,7 @@ public class AutoCompletionService : IAutoCompletionService
 ```
 
 **Implements interfaces**
-[IAutoCompletionService]({{&lt; relref "reference/Catel.Core/Catel/Services/IAutoCompletionService.md" &gt;}})
+[IAutoCompletionService]({{< relref "reference/Catel.Core/Catel/Services/IAutoCompletionService.md" >}})
 
 Service to implement auto completion features.
 

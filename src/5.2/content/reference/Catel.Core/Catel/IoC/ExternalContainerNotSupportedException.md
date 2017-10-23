@@ -18,7 +18,7 @@ public class ExternalContainerNotSupportedException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception class in case an external container is not supported by the [IServiceLocator](#) implementation.
 

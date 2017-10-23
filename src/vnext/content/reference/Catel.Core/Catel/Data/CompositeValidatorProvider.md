@@ -18,7 +18,7 @@ public class CompositeValidatorProvider : ValidatorProviderBase
 ```
 
 **Base types**
-[ValidatorProviderBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidatorProviderBase.md" &gt;}})
+[ValidatorProviderBase]({{< relref "reference/Catel.Core/Catel/Data/ValidatorProviderBase.md" >}})
 
 Allows the combination of several validator providers into a single validator provider.
 

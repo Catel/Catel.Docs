@@ -18,7 +18,7 @@ public interface IViewModelLocator : ILocator
 ```
 
 **Implements interfaces**
-[ILocator]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ILocator.md" &gt;}})
+[ILocator]({{< relref "reference/Catel.MVVM/Catel/MVVM/ILocator.md" >}})
 
 Resolver that will resolve view model types based on the view type. For example, if a view with the type name`MyAssembly.Views.PersonView` is inserted, this could result in the view model type`MyAssembly.ViewModels.PersonViewModel`.
 

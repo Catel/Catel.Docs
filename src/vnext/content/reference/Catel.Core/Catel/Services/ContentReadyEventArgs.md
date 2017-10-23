@@ -18,7 +18,7 @@ public class ContentReadyEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 implementation for camera content ready operations.
 

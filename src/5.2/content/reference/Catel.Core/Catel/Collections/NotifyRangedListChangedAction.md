@@ -18,7 +18,7 @@ public enum NotifyRangedListChangedAction : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Describes the real action performed on the [Missing: &lt;see cref="T:Catel.Collections.FastBindingList`1" /&gt;](#).
 

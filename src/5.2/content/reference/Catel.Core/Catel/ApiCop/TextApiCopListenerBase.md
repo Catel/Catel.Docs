@@ -18,7 +18,7 @@ public abstract class TextApiCopListenerBase : ApiCopListenerBase
 ```
 
 **Base types**
-[ApiCopListenerBase]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerBase.md" &gt;}})
+[ApiCopListenerBase]({{< relref "reference/Catel.Core/Catel/ApiCop/ApiCopListenerBase.md" >}})
 
 [IApiCopListener](#) implementation which writes all results to a text file.
 

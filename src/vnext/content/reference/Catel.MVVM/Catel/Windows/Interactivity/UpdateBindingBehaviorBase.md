@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public class UpdateBindingBehaviorBase&lt;T&gt; : BehaviorBase&lt;T&gt; where T : FrameworkElement 
+public class UpdateBindingBehaviorBase<T> : BehaviorBase<T> where T : FrameworkElement 
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorBase.md" &gt;}})
+[BehaviorBase]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/BehaviorBase.md" >}})
 
 Behavior base for all behaviors that should update a binding.
 

@@ -18,7 +18,7 @@ public class CollectionToCollapsingVisibilityConverter : VisibilityConverterBase
 ```
 
 **Base types**
-[VisibilityConverterBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" &gt;}})
+[VisibilityConverterBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/VisibilityConverterBase.md" >}})
 
 Converts the count of a collection to the visibility.
 

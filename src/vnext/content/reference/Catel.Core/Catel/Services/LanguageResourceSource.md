@@ -18,7 +18,7 @@ public class LanguageResourceSource : ILanguageSource
 ```
 
 **Implements interfaces**
-[ILanguageSource]({{&lt; relref "reference/Catel.Core/Catel/Services/ILanguageSource.md" &gt;}})
+[ILanguageSource]({{< relref "reference/Catel.Core/Catel/Services/ILanguageSource.md" >}})
 
 [ILanguageSource](#) implementation for resource files.
 

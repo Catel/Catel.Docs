@@ -18,10 +18,10 @@ public class SchedulerService : ISchedulerService, ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[ISchedulerService]({{&lt; relref "reference/Catel.Core/Catel/Services/ISchedulerService.md" &gt;}})
+[ISchedulerService]({{< relref "reference/Catel.Core/Catel/Services/ISchedulerService.md" >}})
 
 Service that allows scheduling of actions in the future.
 

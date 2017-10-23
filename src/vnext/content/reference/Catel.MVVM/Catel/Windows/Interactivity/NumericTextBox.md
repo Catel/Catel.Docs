@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class NumericTextBox : BehaviorBase&lt;TextBox&gt;
+public class NumericTextBox : BehaviorBase<TextBox>
 ```
 
 **Base types**
-[BehaviorBase]({{&lt; relref "#" &gt;}})
+[BehaviorBase]({{< relref "#" >}})
 
 Behavior to only allow numeric input on a.
 

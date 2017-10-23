@@ -18,7 +18,7 @@ public class AccelerometerValueChangedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 implementation which contains a new accelerometer value.
 

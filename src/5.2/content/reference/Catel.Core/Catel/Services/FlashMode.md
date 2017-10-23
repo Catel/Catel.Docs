@@ -18,7 +18,7 @@ public enum FlashMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Defines the operating mode of the camera flash.
 

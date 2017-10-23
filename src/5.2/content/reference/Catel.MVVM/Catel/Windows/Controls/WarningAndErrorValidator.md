@@ -18,10 +18,10 @@ public class WarningAndErrorValidator : IUniqueIdentifyable, Control
 ```
 
 **Base types**
-[Control]({{&lt; relref "#" &gt;}})
+[Control]({{< relref "#" >}})
 
 **Implements interfaces**
-[IUniqueIdentifyable]({{&lt; relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" &gt;}})
+[IUniqueIdentifyable]({{< relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" >}})
 
 Control for adding business rule validation to the form. Assign a value or binding to source for the business object or collection of business objects to validate.
 

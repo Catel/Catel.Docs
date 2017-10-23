@@ -18,10 +18,10 @@ public class UrlLocator : IUrlLocator, LocatorBase
 ```
 
 **Base types**
-[LocatorBase]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/LocatorBase.md" &gt;}})
+[LocatorBase]({{< relref "reference/Catel.MVVM/Catel/MVVM/LocatorBase.md" >}})
 
 **Implements interfaces**
-[IUrlLocator]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/IUrlLocator.md" &gt;}})
+[IUrlLocator]({{< relref "reference/Catel.MVVM/Catel/MVVM/IUrlLocator.md" >}})
 
 Locator for urls.
 

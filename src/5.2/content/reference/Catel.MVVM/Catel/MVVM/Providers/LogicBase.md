@@ -18,10 +18,10 @@ public abstract class LogicBase : IUniqueIdentifyable, IViewLoadState, Observabl
 ```
 
 **Base types**
-[ObservableObject]({{&lt; relref "reference/Catel.Core/Catel/Data/ObservableObject.md" &gt;}})
+[ObservableObject]({{< relref "reference/Catel.Core/Catel/Data/ObservableObject.md" >}})
 
 **Implements interfaces**
-[IUniqueIdentifyable]({{&lt; relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" &gt;}}),[IViewLoadState]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadState.md" &gt;}})
+[IUniqueIdentifyable]({{< relref "reference/Catel.Core/Catel/IUniqueIdentifyable.md" >}}),[IViewLoadState]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewLoadState.md" >}})
 
 Base implementation of the behaviors, which defines all the different possible situations a behavior must implement / support to be a valid MVVM provider behavior.
 

@@ -18,7 +18,7 @@ public class ServiceDependencyExtension : MarkupExtension
 ```
 
 **Base types**
-[MarkupExtension]({{&lt; relref "#" &gt;}})
+[MarkupExtension]({{< relref "#" >}})
 
 Service dependency extension to allow service access in xaml for services with properties.
 

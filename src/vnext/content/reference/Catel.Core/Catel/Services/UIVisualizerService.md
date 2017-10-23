@@ -18,10 +18,10 @@ public class UIVisualizerService : IUIVisualizerService, ViewModelServiceBase
 ```
 
 **Base types**
-[ViewModelServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" &gt;}})
+[ViewModelServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ViewModelServiceBase.md" >}})
 
 **Implements interfaces**
-[IUIVisualizerService]({{&lt; relref "reference/Catel.Core/Catel/Services/IUIVisualizerService.md" &gt;}})
+[IUIVisualizerService]({{< relref "reference/Catel.Core/Catel/Services/IUIVisualizerService.md" >}})
 
 Service to show modal or non-modal popup windows. All windows will have to be registered manually or are be resolved via the [IViewLocator](#).
 

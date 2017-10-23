@@ -18,7 +18,7 @@ public class StartUpInfoProvider : IStartUpInfoProvider
 ```
 
 **Implements interfaces**
-[IStartUpInfoProvider]({{&lt; relref "reference/Catel.Core/Catel/Services/IStartUpInfoProvider.md" &gt;}})
+[IStartUpInfoProvider]({{< relref "reference/Catel.Core/Catel/Services/IStartUpInfoProvider.md" >}})
 
 ## Fields
 

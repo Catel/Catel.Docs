@@ -18,7 +18,7 @@ public delegate ExceptionPredicate : MulticastDelegate
 ```
 
 **Base types**
-[MulticastDelegate]({{&lt; relref "#" &gt;}})
+[MulticastDelegate]({{< relref "#" >}})
 
 The exception filter.
 

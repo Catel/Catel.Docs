@@ -14,11 +14,11 @@ Namespace|Catel
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IWeakAction&lt;TParameter&gt; : IExecuteWithObject, IWeakReference
+public interface IWeakAction<TParameter> : IExecuteWithObject, IWeakReference
 ```
 
 **Implements interfaces**
-[IExecuteWithObject]({{&lt; relref "reference/Catel.Core/Catel/IExecuteWithObject.md" &gt;}}),[IWeakReference]({{&lt; relref "reference/Catel.Core/Catel/IWeakReference.md" &gt;}})
+[IExecuteWithObject]({{< relref "reference/Catel.Core/Catel/IExecuteWithObject.md" >}}),[IWeakReference]({{< relref "reference/Catel.Core/Catel/IWeakReference.md" >}})
 
 A generic weak action which allows the invocation of a command in a weak manner. This way, actions will not cause memory leaks.
 

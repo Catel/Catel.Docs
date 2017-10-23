@@ -18,7 +18,7 @@ public class SlidingExpirationPolicy : DurationExpirationPolicy
 ```
 
 **Base types**
-[DurationExpirationPolicy]({{&lt; relref "reference/Catel.Core/Catel/Caching/Policies/DurationExpirationPolicy.md" &gt;}})
+[DurationExpirationPolicy]({{< relref "reference/Catel.Core/Catel/Caching/Policies/DurationExpirationPolicy.md" >}})
 
 The cache item will expire using the duration property as the sliding expiration.
 

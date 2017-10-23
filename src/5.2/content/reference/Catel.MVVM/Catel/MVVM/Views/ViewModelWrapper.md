@@ -18,7 +18,7 @@ public class ViewModelWrapper : IViewModelWrapper
 ```
 
 **Implements interfaces**
-[IViewModelWrapper]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.md" &gt;}})
+[IViewModelWrapper]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IViewModelWrapper.md" >}})
 
 View model wrapper class.
 

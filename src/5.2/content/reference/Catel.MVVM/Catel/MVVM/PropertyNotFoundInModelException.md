@@ -18,7 +18,7 @@ public class PropertyNotFoundInModelException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case a mapped property is not found on the model.
 

@@ -14,11 +14,11 @@ Namespace|Catel.Threading
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public struct AwaitableDisposable&lt;T&gt; : ValueType where T : IDisposable 
+public struct AwaitableDisposable<T> : ValueType where T : IDisposable 
 ```
 
 **Base types**
-[ValueType]({{&lt; relref "#" &gt;}})
+[ValueType]({{< relref "#" >}})
 
 An awaitable wrapper around a task whose result is disposable. The wrapper is not disposable, so this prevents usage errors like "using (MyAsync())" when the appropriate usage should be "using (await MyAsync())".
 

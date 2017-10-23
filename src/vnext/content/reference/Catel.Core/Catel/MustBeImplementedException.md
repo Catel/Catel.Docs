@@ -18,7 +18,7 @@ public class MustBeImplementedException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case the functionality is not yet implemented but is supported in the current platform. Unfortunately, the team has limited resources and must focus on the most requested features. Feel free to create a pull request or notify the team that you are missing this feature.
 

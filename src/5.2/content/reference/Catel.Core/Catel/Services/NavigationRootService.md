@@ -18,7 +18,7 @@ public class NavigationRootService : INavigationRootService
 ```
 
 **Implements interfaces**
-[INavigationRootService]({{&lt; relref "reference/Catel.Core/Catel/Services/INavigationRootService.md" &gt;}})
+[INavigationRootService]({{< relref "reference/Catel.Core/Catel/Services/INavigationRootService.md" >}})
 
 Service to retrieve the navigation root in the application.
 

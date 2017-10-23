@@ -14,11 +14,11 @@ Namespace|Catel.Pooling
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface IPoolManager&lt;TPoolable&gt; : IPoolManager where TPoolable : new(), class, IPoolable 
+public interface IPoolManager<TPoolable> : IPoolManager where TPoolable : new(), class, IPoolable 
 ```
 
 **Implements interfaces**
-[IPoolManager]({{&lt; relref "reference/Catel.Core/Catel/Pooling/IPoolManager.md" &gt;}})
+[IPoolManager]({{< relref "reference/Catel.Core/Catel/Pooling/IPoolManager.md" >}})
 
 Pool manager allowing objects to be pooled.
 

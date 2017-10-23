@@ -18,7 +18,7 @@ public class SerializationConfiguration : ISerializationConfiguration
 ```
 
 **Implements interfaces**
-[ISerializationConfiguration]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationConfiguration.md" &gt;}})
+[ISerializationConfiguration]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/ISerializationConfiguration.md" >}})
 
 Serialization configuration.
 

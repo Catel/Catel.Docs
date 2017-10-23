@@ -14,11 +14,11 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6
 
 ```
-public class Navigate : Behavior&lt;Hyperlink&gt;
+public class Navigate : Behavior<Hyperlink>
 ```
 
 **Base types**
-[Behavior]({{&lt; relref "#" &gt;}})
+[Behavior]({{< relref "#" >}})
 
 Navigate behavior to allow the execution of an url in non-pages for WPF.
 

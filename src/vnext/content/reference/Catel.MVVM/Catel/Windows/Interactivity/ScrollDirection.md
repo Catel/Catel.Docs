@@ -18,7 +18,7 @@ public enum ScrollDirection : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The scroll direction.
 

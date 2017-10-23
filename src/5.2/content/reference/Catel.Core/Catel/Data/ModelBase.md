@@ -18,10 +18,10 @@ public abstract class ModelBase : IModel, ObservableObject
 ```
 
 **Base types**
-[ObservableObject]({{&lt; relref "reference/Catel.Core/Catel/Data/ObservableObject.md" &gt;}})
+[ObservableObject]({{< relref "reference/Catel.Core/Catel/Data/ObservableObject.md" >}})
 
 **Implements interfaces**
-[IModel]({{&lt; relref "reference/Catel.Core/Catel/Data/IModel.md" &gt;}})
+[IModel]({{< relref "reference/Catel.Core/Catel/Data/IModel.md" >}})
 
 Abstract class that serves as a base class for serializable objects.
 

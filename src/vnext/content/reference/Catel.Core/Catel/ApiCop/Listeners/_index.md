@@ -9,6 +9,6 @@ generator = "SharpDox.Plugins.Hugo"
 
 Type|Description
 ---|---
-[ConsoleApiCopListener]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Listeners/ConsoleApiCopListener.md" &gt;}})| 
-[TextFileApiCopListener]({{&lt; relref "reference/Catel.Core/Catel/ApiCop/Listeners/TextFileApiCopListener.md" &gt;}})| 
+[ConsoleApiCopListener]({{< relref "reference/Catel.Core/Catel/ApiCop/Listeners/ConsoleApiCopListener.md" >}})| 
+[TextFileApiCopListener]({{< relref "reference/Catel.Core/Catel/ApiCop/Listeners/TextFileApiCopListener.md" >}})| 
 

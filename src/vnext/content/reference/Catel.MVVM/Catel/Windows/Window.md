@@ -18,7 +18,7 @@ public class Window : DataWindow
 ```
 
 **Base types**
-[DataWindow]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/DataWindow.md" &gt;}})
+[DataWindow]({{< relref "reference/Catel.MVVM/Catel/Windows/DataWindow.md" >}})
 
 Easy implementation of the [DataWindow](#) that adds some features to make the data window behave as a normal window.
 

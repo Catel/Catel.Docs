@@ -18,7 +18,7 @@ public class PropertyAlreadyRegisteredException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception when a property is added to the [ModelBase](#) class that is already registered by the object.
 

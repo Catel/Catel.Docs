@@ -18,10 +18,10 @@ public class Fragment : IUserControl, Fragment
 ```
 
 **Base types**
-[Fragment]({{&lt; relref "#" &gt;}})
+[Fragment]({{< relref "#" >}})
 
 **Implements interfaces**
-[IUserControl]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" &gt;}})
+[IUserControl]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" >}})
 
 Fragment implementation that automatically takes care of view models.
 

@@ -18,10 +18,10 @@ public abstract class ViewModelServiceBase : IViewModelService, ServiceBase
 ```
 
 **Base types**
-[ServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/ServiceBase.md" &gt;}})
+[ServiceBase]({{< relref "reference/Catel.Core/Catel/Services/ServiceBase.md" >}})
 
 **Implements interfaces**
-[IViewModelService]({{&lt; relref "reference/Catel.Core/Catel/Services/IViewModelService.md" &gt;}})
+[IViewModelService]({{< relref "reference/Catel.Core/Catel/Services/IViewModelService.md" >}})
 
 Base class for all view model services.
 

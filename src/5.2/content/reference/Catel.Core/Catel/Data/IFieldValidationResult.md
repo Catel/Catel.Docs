@@ -18,7 +18,7 @@ public interface IFieldValidationResult : IValidationResult
 ```
 
 **Implements interfaces**
-[IValidationResult]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidationResult.md" &gt;}})
+[IValidationResult]({{< relref "reference/Catel.Core/Catel/Data/IValidationResult.md" >}})
 
 Field validation result with information about field validations.
 

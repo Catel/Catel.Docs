@@ -14,14 +14,14 @@ Namespace|Catel.Windows.Interactivity
 Available on|.NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS
 
 ```
-public abstract class BehaviorBase&lt;T&gt; : IBehavior, Behavior&lt;T&gt; where T : FrameworkElement 
+public abstract class BehaviorBase<T> : IBehavior, Behavior<T> where T : FrameworkElement 
 ```
 
 **Base types**
-[Behavior]({{&lt; relref "#" &gt;}})
+[Behavior]({{< relref "#" >}})
 
 **Implements interfaces**
-[IBehavior]({{&lt; relref "reference/Catel.MVVM/Catel/Windows/Interactivity/IBehavior.md" &gt;}})
+[IBehavior]({{< relref "reference/Catel.MVVM/Catel/Windows/Interactivity/IBehavior.md" >}})
 
 Behavior base class that handles a safe unsubscribe and clean up because the default behavior class does not always call`OnDetaching`. This class also adds some specific features such as ValidateRequiredProperties which is automatically called when the behavior is attached.
 

@@ -18,7 +18,7 @@ public class BindingWithValidation : Binding
 ```
 
 **Base types**
-[Binding]({{&lt; relref "#" &gt;}})
+[Binding]({{< relref "#" >}})
 
 Binding that automatically enables and.
 

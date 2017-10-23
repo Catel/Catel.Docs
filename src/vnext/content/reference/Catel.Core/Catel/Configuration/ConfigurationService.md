@@ -18,7 +18,7 @@ public class ConfigurationService : IConfigurationService
 ```
 
 **Implements interfaces**
-[IConfigurationService]({{&lt; relref "reference/Catel.Core/Catel/Configuration/IConfigurationService.md" &gt;}})
+[IConfigurationService]({{< relref "reference/Catel.Core/Catel/Configuration/IConfigurationService.md" >}})
 
 Configuration service implementation that allows customization how configuration values are being used inside an application. This default implementation writes to the
 

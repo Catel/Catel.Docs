@@ -14,11 +14,11 @@ Namespace|Catel.MVVM
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface ICatelTaskCommand&lt;TProgress&gt; : ICatelCommand where TProgress : ITaskProgressReport 
+public interface ICatelTaskCommand<TProgress> : ICatelCommand where TProgress : ITaskProgressReport 
 ```
 
 **Implements interfaces**
-[ICatelCommand]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/ICatelCommand.md" &gt;}})
+[ICatelCommand]({{< relref "reference/Catel.MVVM/Catel/MVVM/ICatelCommand.md" >}})
 
 Advanced interface definition to provide advanced functionality. Supports async/await/Task methods for commands with progress reporting and cancellation token.
 

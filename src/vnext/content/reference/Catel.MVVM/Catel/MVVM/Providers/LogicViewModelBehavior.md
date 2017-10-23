@@ -18,7 +18,7 @@ public enum LogicViewModelBehavior : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The available view model behaviors.
 

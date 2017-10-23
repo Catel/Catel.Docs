@@ -18,7 +18,7 @@ public class SerializationEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 The serialization event args.
 

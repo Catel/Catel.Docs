@@ -18,7 +18,7 @@ public class WrapControlService : IWrapControlService
 ```
 
 **Implements interfaces**
-[IWrapControlService]({{&lt; relref "reference/Catel.Core/Catel/Services/IWrapControlService.md" &gt;}})
+[IWrapControlService]({{< relref "reference/Catel.Core/Catel/Services/IWrapControlService.md" >}})
 
 An helper to wrap controls and windows with several controls, such as the [InfoBarMessageControl](#).
 

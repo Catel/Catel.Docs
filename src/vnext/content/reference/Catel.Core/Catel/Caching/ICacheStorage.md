@@ -14,7 +14,7 @@ Namespace|Catel.Caching
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface ICacheStorage&lt;TKey, TValue, TKey, TValue&gt;
+public interface ICacheStorage<TKey, TValue, TKey, TValue>
 ```
 
 The cache storage interface.

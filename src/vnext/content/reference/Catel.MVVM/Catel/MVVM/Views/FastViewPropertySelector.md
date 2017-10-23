@@ -18,7 +18,7 @@ public class FastViewPropertySelector : ViewPropertySelector
 ```
 
 **Base types**
-[ViewPropertySelector]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewPropertySelector.md" &gt;}})
+[ViewPropertySelector]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/ViewPropertySelector.md" >}})
 
 Very fast view property selector because it does not select any view properties. Use this one for best performance but loose the automatic view property change notifications.
 

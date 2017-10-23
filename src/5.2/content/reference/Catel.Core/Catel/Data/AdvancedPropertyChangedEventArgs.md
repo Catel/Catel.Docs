@@ -18,7 +18,7 @@ public class AdvancedPropertyChangedEventArgs : PropertyChangedEventArgs
 ```
 
 **Base types**
-[PropertyChangedEventArgs]({{&lt; relref "#" &gt;}})
+[PropertyChangedEventArgs]({{< relref "#" >}})
 
 Property changed event args that are used when a property has changed. The event arguments contains both the original sender as the current sender of the event. Best used in combination with [IAdvancedNotifyPropertyChanged](#).
 

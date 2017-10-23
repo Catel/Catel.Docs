@@ -18,7 +18,7 @@ public enum ApplicationDataTarget : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Gets the application data target.
 

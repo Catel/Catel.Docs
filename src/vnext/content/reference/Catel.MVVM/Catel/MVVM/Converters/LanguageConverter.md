@@ -14,11 +14,11 @@ Namespace|Catel.MVVM.Converters
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public class LanguageConverter : ValueConverterBase&lt;string&gt;
+public class LanguageConverter : ValueConverterBase<string>
 ```
 
 **Base types**
-[ValueConverterBase]({{&lt; relref "#" &gt;}})
+[ValueConverterBase]({{< relref "#" >}})
 
 Converts the value (the resource name) to a language string.
 

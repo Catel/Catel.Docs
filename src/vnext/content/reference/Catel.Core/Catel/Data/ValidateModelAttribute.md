@@ -18,7 +18,7 @@ public class ValidateModelAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute to define custom validation at class level for all classes that derive from [ModelBase](#). This attribute follows a naming convention. If
 

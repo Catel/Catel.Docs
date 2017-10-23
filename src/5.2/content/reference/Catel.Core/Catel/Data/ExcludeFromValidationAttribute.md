@@ -18,7 +18,7 @@ public class ExcludeFromValidationAttribute : Attribute
 ```
 
 **Base types**
-[Attribute]({{&lt; relref "#" &gt;}})
+[Attribute]({{< relref "#" >}})
 
 Attribute that can be used to exclude properties from validation.
 

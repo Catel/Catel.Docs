@@ -18,7 +18,7 @@ public class InvalidViewModelException : Exception
 ```
 
 **Base types**
-[Exception]({{&lt; relref "#" &gt;}})
+[Exception]({{< relref "#" >}})
 
 Exception in case there is an invalid view model.
 

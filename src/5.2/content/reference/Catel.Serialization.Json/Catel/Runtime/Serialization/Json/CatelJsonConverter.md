@@ -18,7 +18,7 @@ public class CatelJsonConverter : JsonConverter
 ```
 
 **Base types**
-[JsonConverter]({{&lt; relref "#" &gt;}})
+[JsonConverter]({{< relref "#" >}})
 
 Converts Catel models manually using the Catel serializer.
 

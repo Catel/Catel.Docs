@@ -18,7 +18,7 @@ public enum NavigationMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Navigation modes.
 

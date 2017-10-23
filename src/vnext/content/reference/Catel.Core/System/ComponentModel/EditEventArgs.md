@@ -18,7 +18,7 @@ public class EditEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args class containing information about events that occur in the [IAdvancedEditableObject](#) interface.
 

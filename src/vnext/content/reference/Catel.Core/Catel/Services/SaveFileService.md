@@ -18,10 +18,10 @@ public class SaveFileService : ISaveFileService, FileServiceBase
 ```
 
 **Base types**
-[FileServiceBase]({{&lt; relref "reference/Catel.Core/Catel/Services/FileServiceBase.md" &gt;}})
+[FileServiceBase]({{< relref "reference/Catel.Core/Catel/Services/FileServiceBase.md" >}})
 
 **Implements interfaces**
-[ISaveFileService]({{&lt; relref "reference/Catel.Core/Catel/Services/ISaveFileService.md" &gt;}})
+[ISaveFileService]({{< relref "reference/Catel.Core/Catel/Services/ISaveFileService.md" >}})
 
 Service to save files.
 

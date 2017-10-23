@@ -18,7 +18,7 @@ public class ApplicationClosingEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args class for an event when an application gets closed.
 

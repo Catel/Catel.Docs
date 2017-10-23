@@ -18,7 +18,7 @@ public interface IValidatable : IDataWarningInfo, INotifyDataWarningInfo
 ```
 
 **Implements interfaces**
-[IDataWarningInfo]({{&lt; relref "reference/Catel.Core/System/ComponentModel/IDataWarningInfo.md" &gt;}}),[INotifyDataWarningInfo]({{&lt; relref "reference/Catel.Core/System/ComponentModel/INotifyDataWarningInfo.md" &gt;}})
+[IDataWarningInfo]({{< relref "reference/Catel.Core/System/ComponentModel/IDataWarningInfo.md" >}}),[INotifyDataWarningInfo]({{< relref "reference/Catel.Core/System/ComponentModel/INotifyDataWarningInfo.md" >}})
 
 Interface defining a validatable object.
 

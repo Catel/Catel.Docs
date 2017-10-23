@@ -18,7 +18,7 @@ public struct Size : ValueType
 ```
 
 **Base types**
-[ValueType]({{&lt; relref "#" &gt;}})
+[ValueType]({{< relref "#" >}})
 
 Object containing size information.
 

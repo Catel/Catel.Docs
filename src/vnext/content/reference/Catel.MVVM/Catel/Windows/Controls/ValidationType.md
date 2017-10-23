@@ -18,7 +18,7 @@ public enum ValidationType : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Business validation type.
 

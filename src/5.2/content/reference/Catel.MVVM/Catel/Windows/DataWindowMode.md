@@ -18,7 +18,7 @@ public enum DataWindowMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Mode of the [DataWindow](#).
 

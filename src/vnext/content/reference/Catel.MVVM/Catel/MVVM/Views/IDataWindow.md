@@ -18,7 +18,7 @@ public interface IDataWindow : IView
 ```
 
 **Implements interfaces**
-[IView]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" &gt;}})
+[IView]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IView.md" >}})
 
 Interface defining functionality for a window.
 

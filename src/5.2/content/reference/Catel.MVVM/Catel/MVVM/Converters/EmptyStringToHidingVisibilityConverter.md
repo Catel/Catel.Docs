@@ -18,7 +18,7 @@ public class EmptyStringToHidingVisibilityConverter : EmptyStringToCollapsingVis
 ```
 
 **Base types**
-[EmptyStringToCollapsingVisibilityConverter]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Converters/EmptyStringToCollapsingVisibilityConverter.md" &gt;}})
+[EmptyStringToCollapsingVisibilityConverter]({{< relref "reference/Catel.MVVM/Catel/MVVM/Converters/EmptyStringToCollapsingVisibilityConverter.md" >}})
 
 Convert from string to. If the string is not null or empty, Visibility.Visible will be returned. If the string is null or empty, Visibility.Hidden will be returned.
 

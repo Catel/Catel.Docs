@@ -18,7 +18,7 @@ public class MemberSerializationEventArgs : SerializationEventArgs
 ```
 
 **Base types**
-[SerializationEventArgs]({{&lt; relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationEventArgs.md" &gt;}})
+[SerializationEventArgs]({{< relref "reference/Catel.Core/Catel/Runtime/Serialization/SerializationEventArgs.md" >}})
 
 Special member value serialization event args.
 

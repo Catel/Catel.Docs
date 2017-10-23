@@ -18,10 +18,10 @@ public class BufferPolicy : IBufferPolicy, PolicyBase
 ```
 
 **Base types**
-[PolicyBase]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.md" &gt;}})
+[PolicyBase]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/PolicyBase.md" >}})
 
 **Implements interfaces**
-[IBufferPolicy]({{&lt; relref "reference/Catel.Core/Catel/ExceptionHandling/IBufferPolicy.md" &gt;}})
+[IBufferPolicy]({{< relref "reference/Catel.Core/Catel/ExceptionHandling/IBufferPolicy.md" >}})
 
 Represent the buffer policy implementation in exception handling
 

@@ -18,7 +18,7 @@ public abstract class ChildAwareModelBase : ValidatableModelBase
 ```
 
 **Base types**
-[ValidatableModelBase]({{&lt; relref "reference/Catel.Core/Catel/Data/ValidatableModelBase.md" &gt;}})
+[ValidatableModelBase]({{< relref "reference/Catel.Core/Catel/Data/ValidatableModelBase.md" >}})
 
 Class that is aware of changes of child objects by using the [ChangeNotificationWrapper](#).
 

@@ -14,7 +14,7 @@ Namespace|Catel.Services
 Available on|.NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS
 
 ```
-public interface ISensorService&lt;TValueInterface, TEventArgs&gt; where TEventArgs : EventArgs 
+public interface ISensorService<TValueInterface, TEventArgs> where TEventArgs : EventArgs 
 ```
 
 Interface that serves as a base interface for interfaces supported sensors (especially on Windows Phone 7).

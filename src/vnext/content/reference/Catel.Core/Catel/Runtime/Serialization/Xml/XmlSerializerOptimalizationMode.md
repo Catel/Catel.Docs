@@ -18,7 +18,7 @@ public enum XmlSerializerOptimalizationMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 Possible xml serializer optimalization modes
 

@@ -18,7 +18,7 @@ public enum SerializationContextMode : Enum
 ```
 
 **Base types**
-[Enum]({{&lt; relref "#" &gt;}})
+[Enum]({{< relref "#" >}})
 
 The mode in which a context is being used.
 

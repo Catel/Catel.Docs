@@ -18,10 +18,10 @@ public class UserControl : IUserControl, UserControl
 ```
 
 **Base types**
-[UserControl]({{&lt; relref "#" &gt;}})
+[UserControl]({{< relref "#" >}})
 
 **Implements interfaces**
-[IUserControl]({{&lt; relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" &gt;}})
+[IUserControl]({{< relref "reference/Catel.MVVM/Catel/MVVM/Views/IUserControl.md" >}})
 
 [UserControl](#) that supports MVVM by using a [IViewModel](#) typed parameter. If the user control is not constructed with the right view model by the developer, it will try to create the view model itself. It does this by keeping an eye on the`DataContext` property. If the property changes, the control will check the type of the DataContext and try to create the view model by using the DataContext value as the constructor. If the view model can be constructed, the DataContext of the UserControl will be replaced by the view model.
 

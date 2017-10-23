@@ -18,7 +18,7 @@ public class ValidationContext : IValidationContext
 ```
 
 **Implements interfaces**
-[IValidationContext]({{&lt; relref "reference/Catel.Core/Catel/Data/IValidationContext.md" &gt;}})
+[IValidationContext]({{< relref "reference/Catel.Core/Catel/Data/IValidationContext.md" >}})
 
 Context containing all validation and provides several methods to gather this information.
 

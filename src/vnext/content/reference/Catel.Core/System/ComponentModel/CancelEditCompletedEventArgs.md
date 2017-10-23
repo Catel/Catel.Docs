@@ -18,7 +18,7 @@ public class CancelEditCompletedEventArgs : EventArgs
 ```
 
 **Base types**
-[EventArgs]({{&lt; relref "#" &gt;}})
+[EventArgs]({{< relref "#" >}})
 
 Event args implementation called when the objects cancel edit operation has completed.
 
