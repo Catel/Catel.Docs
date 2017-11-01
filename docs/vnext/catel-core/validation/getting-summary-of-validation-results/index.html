@@ -5639,7 +5639,6 @@
 <ul>
 <li><a href="#creating-a-summary-of-all-validations">Creating a summary of all validations</a></li>
 <li><a href="#creating-a-summary-of-all-validations-with-a-specific-tag">Creating a summary of all validations with a specific tag</a></li>
-<li><a href="#using-the-validationtoviewmodel-attribute">Using the ValidationToViewModel attribute</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -5660,7 +5659,7 @@
     
     
     
-    
+
 
 <p>Sometimes you just need to get a summary of all warnings and errors of an object. All validation is gathered in the IValidationContext and available on that class. However, there are some convenience classes that allow a developer to create a summary based on a specific tag. This convenience class is IValidationSummary, which gathers the right information from an instance of IValidationContext.</p>
 
@@ -5678,15 +5677,31 @@
 <pre><code>var validationSummary = validationContext.GetValidationSummary(&quot;tag&quot;);
 </code></pre>
 
-<h2 id="using-the-validationtoviewmodel-attribute">Using the ValidationToViewModel attribute</h2>
 
-<p>The ValidationToViewModel attribute allows a developer to gather a summary of an object easily. For example, to get all the person related validation into the <em>PersonValidationSummary</em> property, use the property definition below:</p>
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
 
-<pre><code>[ValidationToViewModel(Tag = &quot;PersonValidation&quot;)]
-public IValidationSummary PersonValidationSummary { get; set; }
-</code></pre>
+this.page.url = 'http://docs.catelproject.com/\/vnext\/catel-core\/validation\/getting-summary-of-validation-results\/';
 
-<p>All validation results that have the tag <em>PersonValidation</em> will automatically be gathered into the <em>PersonValidationSummary</em> property after each validation sequence.</p>
+this.page.identifier = 'catel-core\\validation\\getting-summary-of-validation-results.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

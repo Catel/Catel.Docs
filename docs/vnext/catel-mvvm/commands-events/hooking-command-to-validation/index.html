@@ -5651,7 +5651,7 @@
     
     
     
-    <p>It is possible to hook the <code>CanExecute</code> of a <code>Command</code> to the <code>IValidationSummary</code> automatically. This way, there is no need to check for errors manually in the <code>CanExecute</code> method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.</p>
+<p>It is possible to hook the <code>CanExecute</code> of a <code>Command</code> to the <code>IValidationSummary</code> automatically. This way, there is no need to check for errors manually in the <code>CanExecute</code> method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.</p>
 
 <p>1. Add validation to a person view model (note how the validation adds the tag <code>PersonValidation</code> to a validation):</p>
 
@@ -5706,6 +5706,32 @@ private void OnSaveExecute()
 </code></pre>
 
 <p>With this example, the <code>Save</code> command on the view model can only be executed when there are no errors with the <code>PersonValidation</code> tag.</p>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/vnext\/catel-mvvm\/commands-events\/hooking-command-to-validation\/';
+
+this.page.identifier = 'catel-mvvm\\commands-events\\hooking-command-to-validation.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     
