@@ -21,15 +21,3 @@ To retrieve a summary of all validations with a specific tag from a IValidationC
 ```
 var validationSummary = validationContext.GetValidationSummary("tag");
 ```
-
-## Using the ValidationToViewModel attribute
-
-The ValidationToViewModel attribute allows a developer to gather a summary of an object easily. For example, to get all the person related validation into the *PersonValidationSummary* property, use the property definition below:
-
-```
-[ValidationToViewModel(Tag = "PersonValidation")]
-public IValidationSummary PersonValidationSummary { get; set; }
-```
-
-All validation results that have the tag *PersonValidation* will automatically be gathered into the *PersonValidationSummary* property after each validation sequence.
-
