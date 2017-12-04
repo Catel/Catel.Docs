@@ -83,7 +83,7 @@ Once the `FamilyWindowViewModel` is created, the `FamilyWindow` must be created 
 
     <Label Grid.Row="1" Grid.ColumnSpan="2" Content="Persons" />
 
-    <Grid Grid.Row=2 Grid.ColumnSpan="2">
+    <Grid Grid.Row="2" Grid.ColumnSpan="2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
