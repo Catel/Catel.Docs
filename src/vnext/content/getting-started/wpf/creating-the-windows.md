@@ -39,7 +39,7 @@ The template will also create a constructor to inject a view model into the wind
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto" />
         <ColumnDefinition Width="*" />
-    </catel:StackGrid.ColumnDefinitions>
+    </Grid.RowDefinitions>
 
     <Label Grid.Row="0" Grid.Column="0" Content="First name" />
     <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding FirstName, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" />
