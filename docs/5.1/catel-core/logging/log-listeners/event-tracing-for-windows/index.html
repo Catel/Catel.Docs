@@ -5662,7 +5662,7 @@
     
     
     
-    <p>Starting with version 4.0.0, Catel supports <a href="http://msdn.microsoft.com/en-us/library/ms751538(v=vs.110).aspx">Event Tracking for Windows (ETW)</a> out of the box. To add a log listener, use the code below:</p>
+<p>Starting with version 4.0.0, Catel supports <a href="http://msdn.microsoft.com/en-us/library/ms751538(v=vs.110).aspx">Event Tracking for Windows (ETW)</a> out of the box. To add a log listener, use the code below:</p>
 
 <pre><code>var logListener = new EtwLogListener();
 logListener.IgnoreCatelLogging = true;
@@ -5670,6 +5670,32 @@ logListener.IgnoreCatelLogging = true;
  
 LogManager.AddListener(logListener);
 </code></pre>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.1\/catel-core\/logging\/log-listeners\/event-tracing-for-windows\/';
+
+this.page.identifier = 'catel-core\\logging\\log-listeners\\event-tracing-for-windows.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

@@ -5667,7 +5667,7 @@
     
     
     
-    
+
 
 <p>The <code>UserControl</code> is a very interesting class of Catel, and fully shows the power of the MVVM Framework that ships with Catel. The user control is able to fully integrate MVVM on a user control level and solves the “nested user control” problem, which is explained in detail a bit further in this documentation.</p>
 
@@ -5825,6 +5825,32 @@ public bool MyDependencyProperty
 <p>The <code>UserControl</code> automatically closes view models in the <code>Unloaded</code> event. Reason for this is that there is no guarantee that the control will be loaded again. However, this can have some negative side effects. On of this side effects is a user control shown as a tab in a tab control. One of the behaviors of a tab control is that it unloads all non-active tabs from the visual tree. Therefore, the <code>UserControl</code> cancels and closes the view model. However, the state of the tab is lost then as well.</p>
 
 <p>To prevent this behavior, it is possible to keep view models alive when a user control is unloaded. This can be done by setting <code>CloseViewModelOnUnloaded</code> to <code>false</code>. This way, the view model is not closed and will be re-used when the control is loaded again. The downside of this is that the responsibility of closing and disposing the view model is now in the hands of the developer. A great way to make a difference between unloading (tab switch) and closing is to create a close button on the tabs that will explicitly call <code>ViewModel.CloseViewModel</code>.</p>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.2\/catel-mvvm\/views\/xaml\/usercontrol\/';
+
+this.page.identifier = 'catel-mvvm\\views\\xaml\\usercontrol.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

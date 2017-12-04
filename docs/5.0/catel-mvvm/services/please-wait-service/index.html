@@ -5668,7 +5668,7 @@
     
     
     
-    
+
 
 <p>The <code>IPleaseWaitService</code> allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. </p>
 
@@ -5728,6 +5728,32 @@ pleaseWaitService.UpdateStatus(1, 5, &quot;Updating item {0} of {1}&quot;);
 <p>The <code>Push</code> method shows the window if it is not already visible and then increases an internal counter. At the start of each (asynchronous) action, the developer can call the <code>Push</code> method. When the action is completed, the developer calls <code>Pop</code> which will internally decrease the counter. If the counter hits zero (0), the window is automatically hidden.</p>
 
 <p>It is possible to hide the window, even when the internal counter is not yet zero. A call to <code>Hide</code> will reset the counter to zero and thus hide the window.</p>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.0\/catel-mvvm\/services\/please-wait-service\/';
+
+this.page.identifier = 'catel-mvvm\\services\\please-wait-service.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

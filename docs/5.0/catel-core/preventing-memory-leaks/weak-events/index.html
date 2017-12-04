@@ -5673,7 +5673,7 @@
     
     
     
-    
+
 
 <p>You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):</p>
 
@@ -5764,6 +5764,32 @@ var weakEventListener = WeakEventListener&lt;EventListener, EventSource, EventAr
 <h3 id="static-to-static">Static to static</h3>
 
 <p>This is not supported because you shouldn’t be using a weak event listener here. Static events with static event handlers simply cannot cause memory leaks because both the source and the target have no instance. However, it might be possible that you subscribe to an event too many times and the event fires too many times. But again, no memory issues here.</p>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.0\/catel-core\/preventing-memory-leaks\/weak-events\/';
+
+this.page.identifier = 'catel-core\\preventing-memory-leaks\\weak-events.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

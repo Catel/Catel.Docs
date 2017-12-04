@@ -5657,7 +5657,7 @@
     
     
     
-    <p>In Catel, view models are automatically closed when the <code>UserControl</code> is unloaded from the visual tree. This is because there is no guarantee that the control will be loaded again. This works great in most of the cases, but sometimes you need more control about the lifetime of the view model. One good example is the use of the <code>TabControl</code>. When a tab control contains a user control with a view model, every time a new tab is selected, the controls on the previously selected tab are unloaded (and thus the view models are closed).</p>
+<p>In Catel, view models are automatically closed when the <code>UserControl</code> is unloaded from the visual tree. This is because there is no guarantee that the control will be loaded again. This works great in most of the cases, but sometimes you need more control about the lifetime of the view model. One good example is the use of the <code>TabControl</code>. When a tab control contains a user control with a view model, every time a new tab is selected, the controls on the previously selected tab are unloaded (and thus the view models are closed).</p>
 
 <p>It is possible to have more control about the lifetime of view models. To keep a view model alive, even when the view is unloaded, set the <code>CloseViewModelOnUnloaded</code> property of the <code>UserControl</code> to false in the constructor of the view:</p>
 
@@ -5677,6 +5677,32 @@
 <div class="notices info" ><p>The Catel Examples repository contains an example demonstrating controlling the lifetime of view models</p>
 </div>
 
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.2\/catel-mvvm\/view-models\/advanced\/keeping-view-models-alive\/';
+
+this.page.identifier = 'catel-mvvm\\view-models\\advanced\\keeping-view-models-alive.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

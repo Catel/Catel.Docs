@@ -5664,7 +5664,7 @@
     
     
     
-    
+
 
 <p>This part of the documentation will explain all the parts of MVVM, in the order in which we think they must be built. First of all, the Models, which are the closest to the business. Then, the View Models which define what part of the Models should be visible to the user in a specific situation. This also includes validation that is specific for the functionality that the View Model represents. Last, but not least, the View itself, which is the final representation of the View Model to the end-user.</p>
 
@@ -5693,6 +5693,32 @@ If this interface is not implemented, a Model cannot work with “states”. Thi
 <h2 id="view-models">View Models</h2>
 
 <p>View models are the classes that contain the view logic. They can be seen as a container for all models in a specific view, including the behavior to interact with these models (for example adding or removing them from a collection). It is very important that a view model also implements the <em>INotifyPropertyChanged</em> interfaces just like the models do.</p>
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.0\/introduction\/mvvm\/introduction-to-mvvm-and-models\/';
+
+this.page.identifier = 'introduction\\mvvm\\introduction-to-mvvm-and-models.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     

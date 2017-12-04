@@ -5670,7 +5670,7 @@
     
     
     
-    
+
 
 <p>Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the <em>IncludeInSerialization</em> and <em>ExcludeFromSerialization</em> attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the <em>ISerializerModifier</em>.</p>
 
@@ -5712,6 +5712,32 @@ public class Person : ModelBase
 <div class="notices warning" ><p>Note that modifiers are inherited from base classes. When serializing, the modifiers defined on the most derived classes will be called last. When deserializing, the modifies defined on the most derived classes will be called first.</p>
 </div>
 
+
+
+<hr />
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+<hr />
+<p>
+<h2>Discussion</h2>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+
+this.page.url = 'http://docs.catelproject.com/\/5.0\/catel-core\/serialization\/customizing-serialization\/customizing-serialization-for-specific-models\/';
+
+this.page.identifier = 'catel-core\\serialization\\customizing-serialization\\customizing-serialization-for-specific-models.md';
+};
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://catel-docs.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
 
 
     
