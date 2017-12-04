@@ -218,7 +218,7 @@ Replace the xaml of the main window by the following content:
                 <catel:UpdateBindingOnTextChanged UpdateDelay="500" />
             </i:Interaction.Behaviors>
         </TextBox>
-    </kGrid>
+    </Grid>
 
     <ListBox Grid.Row="1" Grid.Column="0" x:Name="listBox" ItemsSource="{Binding FilteredFamilies}" SelectedItem="{Binding SelectedFamily}">
         <ListBox.ItemTemplate>
