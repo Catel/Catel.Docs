@@ -292,34 +292,6 @@ Say, you have a multiple document interface (MDI as it was called in the old day
 
 Let's start with the basics. As we have learned earlier in this article, all View Models created with the help of Catel derive from the *ViewModelBase* class. One of the things that this class does is that it registers itself with the *ViewModelManager* class when it is being created, and it unregisters itself again when it is closed. So, simply said, *ViewModelManager* is a class that holds a reference to all existing View Models at the moment.
 
-### InterestedInAttribute
-
-Now that we know about the *ViewModelManager* class, and know that there is a repository that holds all of the live instances of all View Model classes, it should be fairly easy to communicate with other View Models. It actually is; you just have to decorate a View Model with *InterestedInAttribute*, as shown below:
-
-```
-[InterestedIn(typeof(FamilyViewModel))]
-public class PersonViewModel : ViewModelBase
-```
-
-A View Model can have multiple *InterestedInAttribute* instances, so it is possible to subscribe to multiple View Model types at the same time. Once a View Model is decorated with *InterestedInAttribute*, the View Model will receive all changes (and of course, the View Model that caused the change) via the *OnViewModelPropertyChanged* method, as shown below:
-
-```
-/// <summary>
-/// Called when a property has changed for a view model type that the current view model is interested in. This can
-/// be accomplished by decorating the view model with the <see cref="InterestedInAttribute"/>.
-/// </summary>
-/// <param name="viewModel">The view model.</param>
-/// <param name="propertyName">Name of the property.</param>
-protected override void OnViewModelPropertyChanged(IViewModel viewModel, string propertyName)
-{
-    // You can now do something with the changed property
-}
-```
-
-{{% notice info %}}
-Note that it is also possible to get notified of commands that are being executed on other view models
-{{% /notice %}}
-
 ### MessageMediator
 
 Catel also offers a solution to the message mediator pattern in the form of the *MessageMediator* class. This is all described in the next section "Message mediator".
