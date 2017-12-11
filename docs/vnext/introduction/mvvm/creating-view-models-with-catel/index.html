@@ -5650,7 +5650,6 @@
 <li><a href="#interaction-with-other-view-models">Interaction with other view models</a>
 <ul>
 <li><a href="#viewmodelmanager">ViewModelManager</a></li>
-<li><a href="#interestedinattribute">InterestedInAttribute</a></li>
 <li><a href="#messagemediator">MessageMediator</a></li>
 </ul></li>
 </ul></li>
@@ -5966,32 +5965,6 @@ public static readonly PropertyData PersonProperty = RegisterProperty(&quot;Pers
 <h3 id="viewmodelmanager">ViewModelManager</h3>
 
 <p>Let&rsquo;s start with the basics. As we have learned earlier in this article, all View Models created with the help of Catel derive from the <em>ViewModelBase</em> class. One of the things that this class does is that it registers itself with the <em>ViewModelManager</em> class when it is being created, and it unregisters itself again when it is closed. So, simply said, <em>ViewModelManager</em> is a class that holds a reference to all existing View Models at the moment.</p>
-
-<h3 id="interestedinattribute">InterestedInAttribute</h3>
-
-<p>Now that we know about the <em>ViewModelManager</em> class, and know that there is a repository that holds all of the live instances of all View Model classes, it should be fairly easy to communicate with other View Models. It actually is; you just have to decorate a View Model with <em>InterestedInAttribute</em>, as shown below:</p>
-
-<pre><code>[InterestedIn(typeof(FamilyViewModel))]
-public class PersonViewModel : ViewModelBase
-</code></pre>
-
-<p>A View Model can have multiple <em>InterestedInAttribute</em> instances, so it is possible to subscribe to multiple View Model types at the same time. Once a View Model is decorated with <em>InterestedInAttribute</em>, the View Model will receive all changes (and of course, the View Model that caused the change) via the <em>OnViewModelPropertyChanged</em> method, as shown below:</p>
-
-<pre><code>/// &lt;summary&gt;
-/// Called when a property has changed for a view model type that the current view model is interested in. This can
-/// be accomplished by decorating the view model with the &lt;see cref=&quot;InterestedInAttribute&quot;/&gt;.
-/// &lt;/summary&gt;
-/// &lt;param name=&quot;viewModel&quot;&gt;The view model.&lt;/param&gt;
-/// &lt;param name=&quot;propertyName&quot;&gt;Name of the property.&lt;/param&gt;
-protected override void OnViewModelPropertyChanged(IViewModel viewModel, string propertyName)
-{
-    // You can now do something with the changed property
-}
-</code></pre>
-
-<div class="notices info" ><p>Note that it is also possible to get notified of commands that are being executed on other view models</p>
-</div>
-
 
 <h3 id="messagemediator">MessageMediator</h3>
 
