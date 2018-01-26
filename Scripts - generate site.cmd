@@ -1,5 +1,6 @@
 :: Copy theme from subrepository
 xcopy "repositories\hugo-theme-docdock" "src\shared\themes\docdock" /e /y /i
+xcopy "src\themes\docdock.customize" "src\shared\themes\docdock" /e /y /i
 
 :: Generate all sites
 for %%i in (home,5.0,5.1,5.2,vnext) do (call:buildSite %%i)

@@ -403,7 +403,7 @@
 	"title": "Log listeners",
 	"tags": [],
 	"description": "",
-	"content": "\r\rBatch log listeners\rConsoleLogListener\rDebugLogListener\rEvent Tracing for Windows (ETW)\rEventLogListener\rFileLogListener\rRollingInMemoryLogListener\rSeqLogListener\r\r"
+	"content": "\r\rBatch log listeners\r\r\rConsoleLogListener\r\r\rDebugLogListener\r\r\rEvent Tracing for Windows (ETW)\r\r\rEventLogListener\r\r\rFileLogListener\r\r\rRollingInMemoryLogListener\r\r\rSeqLogListener\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/messaging/messagebase/",
@@ -802,7 +802,7 @@
 	"title": "Automatic type registration",
 	"tags": [],
 	"description": "",
-	"content": "\r\rUsing attributes\rUsing conventions\r\r"
+	"content": "\r\rUsing attributes\r\r\rUsing conventions\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/threading/awaitabledisposable/",
@@ -2062,7 +2062,7 @@
 	"title": "FAQ",
 	"tags": [],
 	"description": "",
-	"content": "\r\rGeneral\rMVVM\rProblem solving\rPerformance considerations\r\r"
+	"content": "\r\rGeneral\r\r\rMVVM\r\r\rProblem solving\r\r\rPerformance considerations\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/collections/fastbindinglist/",
@@ -2195,7 +2195,7 @@
 	"title": "Getting started with WPF",
 	"tags": [],
 	"description": "",
-	"content": "Welcome to the Getting started guide for Catel and WPF. In this guide, a very simple application will be created with the most commonly used aspects of Catel and WPF.\nThe application will manage family members and will display the families in separate views.\nNote that this guide assumes that the reader has a basic understanding of XAML and WPF since this guide will not cover these basics\n\rThe source code for this example can be found at https://github.com/Catel/Catel.GettingStarted.WPF\n\rNote that this guide will recommend code snippets that can be found here. They are not required, just recommended to speed up creating Catel classes and properties.\n\r\rCreating the WPF project\rCreating the models\rSerializing data from/to disk\rCreating the view models\rCreating the views (user controls)\rCreating the views (windows)\rHooking up everything together\rFinalizing the application\r\rDownload the final result: WPF.GettingStarted.zip\n"
+	"content": "Welcome to the Getting started guide for Catel and WPF. In this guide, a very simple application will be created with the most commonly used aspects of Catel and WPF.\nThe application will manage family members and will display the families in separate views.\nNote that this guide assumes that the reader has a basic understanding of XAML and WPF since this guide will not cover these basics\n\rThe source code for this example can be found at https://github.com/Catel/Catel.GettingStarted.WPF\n\rNote that this guide will recommend code snippets that can be found here. They are not required, just recommended to speed up creating Catel classes and properties.\n\r\rCreating the WPF project\r\r\rCreating the models\r\r\rSerializing data from/to disk\r\r\rCreating the view models\r\r\rCreating the views (user controls)\r\r\rCreating the views (windows)\r\r\rHooking up everything together\r\r\rFinalizing the application\r\r\rDownload the final result: WPF.GettingStarted.zip\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/catel/hashhelper/",
@@ -3490,7 +3490,7 @@
 	"title": "Introduction to components",
 	"tags": [],
 	"description": "",
-	"content": "\r\rServiceLocator\rTypeFactory\rDependencyResolver and DependencyResolverManager\rEnsuring integrity of the ServiceLocator\r\r"
+	"content": "\r\rServiceLocator\r\r\rTypeFactory\r\r\rDependencyResolver and DependencyResolverManager\r\r\rEnsuring integrity of the ServiceLocator\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/",
@@ -6108,7 +6108,7 @@
 	"title": "Getting started with Xamarin.Forms",
 	"tags": [],
 	"description": "",
-	"content": "Welcome to the *Getting started* guide for Catel and Xamarin.Forms. In this guide, a very simple application will be created with the most commonly used aspects of Catel and Xamarin.Forms.\nNote that this guide assumes that the reader has a basic understanding of XAML and Xamarin.Forms since this guide will not cover these basics\nThe source code for this example can be found at https://github.com/Catel/Catel.GettingStarted.Xamarin.Forms\nNote that this guide will recommend code snippets that can be found here. They are not required, just recommended to speed up creating Catel classes and properties.\n\rCreating the Xamarin.Forms project\r\rThis documentation is work in progress\n"
+	"content": "Welcome to the *Getting started* guide for Catel and Xamarin.Forms. In this guide, a very simple application will be created with the most commonly used aspects of Catel and Xamarin.Forms.\nNote that this guide assumes that the reader has a basic understanding of XAML and Xamarin.Forms since this guide will not cover these basics\nThe source code for this example can be found at https://github.com/Catel/Catel.GettingStarted.Xamarin.Forms\nNote that this guide will recommend code snippets that can be found here. They are not required, just recommended to speed up creating Catel classes and properties.\n\rCreating the Xamarin.Forms project\r\r\rThis documentation is work in progress\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-mvvm-and-models/",
@@ -6164,7 +6164,7 @@
 	"title": "Setup, deployment &amp; projects",
 	"tags": [],
 	"description": "",
-	"content": "\r\rGetting prerelease (beta) versions via NuGet \u0026amp; MyGet\rStepping through the code\rCompiling from source\rCode snippets \u0026amp; templates\rUpdate guides\r\r"
+	"content": "\r\rGetting prerelease (beta) versions via NuGet \u0026amp; MyGet\r\r\rStepping through the code\r\r\rCompiling from source\r\r\rCode snippets \u0026amp; templates\r\r\rUpdate guides\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/introduction/platform-support/",
@@ -6178,7 +6178,7 @@
 	"title": "Supported serializers",
 	"tags": [],
 	"description": "",
-	"content": "\r\rBinary\rJson\rXml\r\r"
+	"content": "\r\rBinary\r\r\rJson\r\r\rXml\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-project-templates/",
@@ -6234,14 +6234,14 @@
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
-	"content": "\r\rQuick introduction for developers\rGetting started with WPF\rGetting started with Xamarin.Forms\r\r"
+	"content": "\r\rQuick introduction for developers\r\r\rGetting started with WPF\r\r\rGetting started with Xamarin.Forms\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/",
 	"title": "Integration with external logging",
 	"tags": [],
 	"description": "",
-	"content": "\r\rLog4net\rNLog\r\r"
+	"content": "\r\rLog4net\r\r\rNLog\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/introduction/introduction-data-objects/",
@@ -6318,7 +6318,7 @@
 	"title": "Introduction to MVVM",
 	"tags": [],
 	"description": "",
-	"content": "\r\rDifferent interpretations of MVVM\rValidation in model or view model?\rIntroduction to MVVM and models\rCreating view models with Catel\rIntroduction to services\rIntroduction to the nested user controls problem\r\r"
+	"content": "\r\rDifferent interpretations of MVVM\r\r\rValidation in model or view model?\r\r\rIntroduction to MVVM and models\r\r\rCreating view models with Catel\r\r\rIntroduction to services\r\r\rIntroduction to the nested user controls problem\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-services/",
@@ -6339,7 +6339,7 @@
 	"title": "Update guides",
 	"tags": [],
 	"description": "",
-	"content": "\r\rCatel 4.0\rCatel 4.1\rCatel 5.0\r\r"
+	"content": "\r\rCatel 4.0\r\r\rCatel 4.1\r\r\rCatel 5.0\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/validation/using-validation-context/",
@@ -6353,7 +6353,7 @@
 	"title": "Catel.Core",
 	"tags": [],
 	"description": "",
-	"content": "\r\rApiCop\rArgument checking\rCaching\rConfiguration\rData handling\rException handling\rIoC (ServiceLocator and TypeFactory)\rLogging\rMessaging\rMultilingual / Localization\rParallel invocation and tasks\rPooling\rPreventing memory leaks\rReflection\rScoping\rSerialization\rValidation\r\r"
+	"content": "\r\rApiCop\r\r\rArgument checking\r\r\rCaching\r\r\rConfiguration\r\r\rData handling\r\r\rException handling\r\r\rIoC (ServiceLocator and TypeFactory)\r\r\rLogging\r\r\rMessaging\r\r\rMultilingual / Localization\r\r\rParallel invocation and tasks\r\r\rPooling\r\r\rPreventing memory leaks\r\r\rReflection\r\r\rScoping\r\r\rSerialization\r\r\rValidation\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-windows/",
@@ -6388,7 +6388,7 @@
 	"title": "Catel.MVVM",
 	"tags": [],
 	"description": "",
-	"content": "The last few years, MVVM has become the number one pattern to write applications using WPF and other XAML related platforms. The actual pattern is very simple, but there are some flaws and questions lots of MVVM users have, such as:\n How to show modal dialogs or message boxes inside a View-Model? How to run processes inside a View-Model? How to let the user select a file inside a View-Model?  In my opinion, this is where the good frameworks separate themselves from the bad ones. For example, people actually calling MessageBox.Show inside a View-Model are using the pattern wrong. If you are one of the developers that directly call a MessageBox inside a View-Model, ask yourself this: who is going to click the button during a unit test?\nBefore we actually started developing Catel, we did lots of investigations to make sure that the MVVM pattern was really useful in Line of Business (LoB) applications and does not miss the finishing touch. Thanks to this investigation and research, we created a solid MVVM framework which solves all the known problems of the MVVM pattern.\nThis part of the documentation explains all about the MVVM framework included with Catel. The MVVM framework that ships with Catel has the following characteristics and features:\n Very easy to use, a view model is created within 10 minutes Direct pass-through of view model properties to Models Validation mapping from model to view model and back Solves the nested user controls problem  \rAuditing\rBehaviors \u0026amp; triggers\rBindings\rCommands \u0026amp; events\rConverters\rDesigners\rLocators \u0026amp; naming conventions\rServices\rView models\rViews\r\r"
+	"content": "The last few years, MVVM has become the number one pattern to write applications using WPF and other XAML related platforms. The actual pattern is very simple, but there are some flaws and questions lots of MVVM users have, such as:\n How to show modal dialogs or message boxes inside a View-Model? How to run processes inside a View-Model? How to let the user select a file inside a View-Model?  In my opinion, this is where the good frameworks separate themselves from the bad ones. For example, people actually calling MessageBox.Show inside a View-Model are using the pattern wrong. If you are one of the developers that directly call a MessageBox inside a View-Model, ask yourself this: who is going to click the button during a unit test?\nBefore we actually started developing Catel, we did lots of investigations to make sure that the MVVM pattern was really useful in Line of Business (LoB) applications and does not miss the finishing touch. Thanks to this investigation and research, we created a solid MVVM framework which solves all the known problems of the MVVM pattern.\nThis part of the documentation explains all about the MVVM framework included with Catel. The MVVM framework that ships with Catel has the following characteristics and features:\n Very easy to use, a view model is created within 10 minutes Direct pass-through of view model properties to Models Validation mapping from model to view model and back Solves the nested user controls problem  \rAuditing\r\r\rBehaviors \u0026amp; triggers\r\r\rBindings\r\r\rCommands \u0026amp; events\r\r\rConverters\r\r\rDesigners\r\r\rLocators \u0026amp; naming conventions\r\r\rServices\r\r\rView models\r\r\rViews\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/data-handling/childawaremodelbase/",
@@ -6451,14 +6451,14 @@
 	"title": "Tips &amp; tricks",
 	"tags": [],
 	"description": "",
-	"content": "\r\rCore\rMVVM\r\r"
+	"content": "\r\rCore\r\r\rMVVM\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/",
 	"title": "API reference",
 	"tags": [],
 	"description": "",
-	"content": "\r\rCatel.Core\rCatel.MVVM\rCatel.Serialization.Json\r\r"
+	"content": "\r\rCatel.Core\r\r\rCatel.MVVM\r\r\rCatel.Serialization.Json\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.0/",
@@ -6612,7 +6612,7 @@
 	"title": "Catel Documentation",
 	"tags": [],
 	"description": "",
-	"content": " Catel Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms). The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET technology, from client to server.\nCatel distinguishes itself by unique features to aid in the development of MVVM applications and server-side application development. Since Catel focuses on Line of Business applications, it provides professional support and excellent documentation which ensures a safe bet by professional companies and developers.\nMajor features Below are a few major features that are available in Catel.\nCatel.Core Catel.Core is the library you want to include in all your projects, whether you are writing a UI project or not. It contains lots of useful helper methods. The most important features are listed below:\n Argument validation (e.g. Argument.IsNotNull(() =\u0026gt; myArgument)) Caching Data (ModelBase, PropertyBag, Validation) IoC (ServiceLocator, TypeFactory) Logging (LogManager, Log, several log listeners) Messaging Reflection (same reflection API for every supported platform) Serialization (BinarySerializer, XmlSerializer and more) Weak references (WeakEventListener)  And more\u0026hellip;.\nCatel.MVVM Catel.MVVM is the library you want to include when you are writing a UI project (e.g. WPF, UWP, Xamarin) and you want to use the MVVM pattern. Catel is the only MVVM library that has context-aware view and view-model creation, which can be used to solve the nested user controls problem.\nThe most important features are listed below:\n Auditing Collections (FastObservableCollection) Commands (Command, TaskCommand, etc) Converters (tons of converters out of the box) Services  CameraService LocationService MessageService NavigationService OpenFileService PleaseWaitService SaveFileService UIVisualizerService  View models  Automatic validation Automatic mappings from model to view model  Views  DataWindow UserControl Window   Example code Models This model has automatic change notifications and validation.\npublic class Person : ValidatableModelBase { public string FirstName { get; set; } public string LastName { get; set; } protected override void ValidateFields(List\u0026lt;IFieldValidationResult\u0026gt; validationResults) { if (string.IsNullOrWhitespace(FirstName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(FirstName), \u0026quot;First name is required\u0026quot;)); } if (string.IsNullOrWhitespace(LastName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(LastName), \u0026quot;Last name is required\u0026quot;)); } } }  View models This is a view model with:\n Automatic injection of the DataContext Automatic mapping of properties \u0026amp; validation from model =\u0026gt; view model  public class PersonViewModel : ViewModelBase { public PersonViewModel(Person person) { Argument.IsNotNull(() =\u0026gt; person); Person = person; } [Model] private Person Person { get; set; } [ViewModelToModel] public string FirstName { get; set; } [ViewModelToModel] public string LastName { get; set; } }  Continue reading \rIntroduction\rFAQ\rSetup, deployment \u0026amp; projects\rGetting started\rExamples\rCatel.Core\rCatel.MVVM\rCatel.Fody\rCatel.ReSharper\rTips \u0026amp; tricks\rAPI reference\r\r"
+	"content": " Catel Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms). The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET technology, from client to server.\nCatel distinguishes itself by unique features to aid in the development of MVVM applications and server-side application development. Since Catel focuses on Line of Business applications, it provides professional support and excellent documentation which ensures a safe bet by professional companies and developers.\nMajor features Below are a few major features that are available in Catel.\nCatel.Core Catel.Core is the library you want to include in all your projects, whether you are writing a UI project or not. It contains lots of useful helper methods. The most important features are listed below:\n Argument validation (e.g. Argument.IsNotNull(() =\u0026gt; myArgument)) Caching Data (ModelBase, PropertyBag, Validation) IoC (ServiceLocator, TypeFactory) Logging (LogManager, Log, several log listeners) Messaging Reflection (same reflection API for every supported platform) Serialization (BinarySerializer, XmlSerializer and more) Weak references (WeakEventListener)  And more\u0026hellip;.\nCatel.MVVM Catel.MVVM is the library you want to include when you are writing a UI project (e.g. WPF, UWP, Xamarin) and you want to use the MVVM pattern. Catel is the only MVVM library that has context-aware view and view-model creation, which can be used to solve the nested user controls problem.\nThe most important features are listed below:\n Auditing Collections (FastObservableCollection) Commands (Command, TaskCommand, etc) Converters (tons of converters out of the box) Services  CameraService LocationService MessageService NavigationService OpenFileService PleaseWaitService SaveFileService UIVisualizerService  View models  Automatic validation Automatic mappings from model to view model  Views  DataWindow UserControl Window   Example code Models This model has automatic change notifications and validation.\npublic class Person : ValidatableModelBase { public string FirstName { get; set; } public string LastName { get; set; } protected override void ValidateFields(List\u0026lt;IFieldValidationResult\u0026gt; validationResults) { if (string.IsNullOrWhitespace(FirstName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(FirstName), \u0026quot;First name is required\u0026quot;)); } if (string.IsNullOrWhitespace(LastName)) { validationResults.Add(FieldValidationResult.CreateError(nameof(LastName), \u0026quot;Last name is required\u0026quot;)); } } }  View models This is a view model with:\n Automatic injection of the DataContext Automatic mapping of properties \u0026amp; validation from model =\u0026gt; view model  public class PersonViewModel : ViewModelBase { public PersonViewModel(Person person) { Argument.IsNotNull(() =\u0026gt; person); Person = person; } [Model] private Person Person { get; set; } [ViewModelToModel] public string FirstName { get; set; } [ViewModelToModel] public string LastName { get; set; } }  Continue reading \rIntroduction\r\r\rFAQ\r\r\rSetup, deployment \u0026amp; projects\r\r\rGetting started\r\r\rExamples\r\r\rCatel.Core\r\r\rCatel.MVVM\r\r\rCatel.Fody\r\r\rCatel.ReSharper\r\r\rTips \u0026amp; tricks\r\r\rAPI reference\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/",
@@ -6780,7 +6780,7 @@
 	"title": "Designers",
 	"tags": [],
 	"description": "",
-	"content": "\r\rDesign-time view models\rRunning code at design-time\r\r"
+	"content": "\r\rDesign-time view models\r\r\rRunning code at design-time\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/multilingual/displayattribute/",
@@ -6927,7 +6927,7 @@
 	"title": "Locators &amp; naming conventions",
 	"tags": [],
 	"description": "",
-	"content": "\r\rNaming conventions\rUrlLocator\rViewLocator\rViewModelLocator\r\r"
+	"content": "\r\rNaming conventions\r\r\rUrlLocator\r\r\rViewLocator\r\r\rViewModelLocator\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/log4net/",
@@ -6948,7 +6948,7 @@
 	"title": "MVVM",
 	"tags": [],
 	"description": "",
-	"content": "\r\rFinding the view of a view model\rRequery commands automatically using CommandManager\rUsing a tabbed interface with MVVM\r\r"
+	"content": "\r\rFinding the view of a view model\r\r\rRequery commands automatically using CommandManager\r\r\rUsing a tabbed interface with MVVM\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/",
@@ -6969,7 +6969,7 @@
 	"title": "Messaging",
 	"tags": [],
 	"description": "",
-	"content": "\r\rMessageBase\rMessage mediator\rMessaging via attributes\r\r"
+	"content": "\r\rMessageBase\r\r\rMessage mediator\r\r\rMessaging via attributes\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/",
@@ -7060,7 +7060,7 @@
 	"title": "Preventing memory leaks",
 	"tags": [],
 	"description": "",
-	"content": "\r\rChange notification wrapper\rWeak events\r\r"
+	"content": "\r\rChange notification wrapper\r\r\rWeak events\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/services/process-service/",
@@ -7172,7 +7172,7 @@
 	"title": "Services",
 	"tags": [],
 	"description": "",
-	"content": "\r\rLocationService\rMessageService\rNavigationService\rOpenFileService\rPleaseWaitService\rProcessService\rSaveFileService\rSchedulerService\rSelectDirectoryService\rUIVisualizerService\rVibrateService\rViewExportService\r\r"
+	"content": "\r\rLocationService\r\r\rMessageService\r\r\rNavigationService\r\r\rOpenFileService\r\r\rPleaseWaitService\r\r\rProcessService\r\r\rSaveFileService\r\r\rSchedulerService\r\r\rSelectDirectoryService\r\r\rUIVisualizerService\r\r\rVibrateService\r\r\rViewExportService\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.core/system/",
@@ -7263,7 +7263,7 @@
 	"title": "Using a custom window",
 	"tags": [],
 	"description": "",
-	"content": " In this part of the documentation, the RadWindow of Telerik will be used as an example on how to create a WindowBase that behaves like the DataWindow.\nCreating the base class with behavior The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it WindowBase (to make it as \u0026ldquo;external control company independent\u0026rdquo; as possible). Below is the code for the window definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.\nBecause the RadWindow of Telerik does not close the window when the DialogResult is set, this window subscribes to the ViewModelClosed event to close the window\n/// \u0026lt;summary\u0026gt; /// Base class for a window with the Catel mvvm behavior. /// \u0026lt;/summary\u0026gt; public class Window : RadWindow, IDataWindow { private readonly WindowLogic _logic; private event EventHandler\u0026lt;EventArgs\u0026gt; _viewLoaded; private event EventHandler\u0026lt;EventArgs\u0026gt; _viewUnloaded; private event EventHandler\u0026lt;Catel.MVVM.Views.DataContextChangedEventArgs\u0026gt; _viewDataContextChanged; public Window() : this(null) { } public Window(IViewModel viewModel) { _logic = new WindowLogic(this, null, viewModel); _logic.ViewModelChanged += (sender, e) =\u0026gt; ViewModelChanged.SafeInvoke(this, e); _logic.PropertyChanged += (sender, e) =\u0026gt; PropertyChanged.SafeInvoke(this, e); Loaded += (sender, e) =\u0026gt; _viewLoaded.SafeInvoke(this); Unloaded += (sender, e) =\u0026gt; _viewUnloaded.SafeInvoke(this); this.AddDataContextChangedHandler((sender, e) =\u0026gt; _viewDataContextChanged.SafeInvoke(this, new Catel.MVVM.Views.DataContextChangedEventArgs(e.OldValue, e.NewValue))); // Because the RadWindow does not close when DialogResult is set, the following code is required ViewModelChanged += (sender, e) =\u0026gt; OnViewModelChanged(); // Call manually the first time (for injected view models) OnViewModelChanged(); WindowStartupLocation = WindowStartupLocation.CenterScreen; SetBinding(RadWindow.HeaderProperty, new Binding(\u0026quot;Title\u0026quot;)); } public IViewModel ViewModel { get { return _logic.ViewModel; } } public event PropertyChangedEventHandler PropertyChanged; public event EventHandler\u0026lt;EventArgs\u0026gt; ViewModelChanged; event EventHandler\u0026lt;EventArgs\u0026gt; IView.Loaded { add { _viewLoaded += value; } remove { _viewLoaded -= value; } } event EventHandler\u0026lt;EventArgs\u0026gt; IView.Unloaded { add { _viewUnloaded += value; } remove { _viewUnloaded -= value; } } event EventHandler\u0026lt;Catel.MVVM.Views.DataContextChangedEventArgs\u0026gt; IView.DataContextChanged { add { _viewDataContextChanged += value; } remove { _viewDataContextChanged -= value; } } private void OnViewModelChanged() { if (ViewModel != null \u0026amp;\u0026amp; !ViewModel.IsClosed) { ViewModel.Closed += ViewModelClosed; } } private void ViewModelClosed(object sender, ViewModelClosedEventArgs e) { Close(); } }  You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can\u0026rsquo;t handle abstract base classes\n\rUsing the class The class can now be used the same as the DataWindow class. For more information, see Window and DataWindow.\n"
+	"content": " In this part of the documentation, the RadWindow of Telerik will be used as an example on how to create a WindowBase that behaves like the DataWindow.\nCreating the base class with behavior The first thing to do is to create a new base class that accepts a view model type argument. In this example, we will call it WindowBase (to make it as \u0026ldquo;external control company independent\u0026rdquo; as possible). Below is the code for the window definition. The downside of xaml based applications is that you cannot derive from controls or windows that have a partial class defined in xaml. Therefore, all controls and code must be initialized via code as you can see in the code below.\nBecause the RadWindow of Telerik does not close the window when the DialogResult is set, this window subscribes to the ViewModelClosed event to close the window\n/// \u0026lt;summary\u0026gt; /// Base class for a window with the Catel mvvm behavior. /// \u0026lt;/summary\u0026gt; public class Window : RadWindow, IDataWindow { private readonly WindowLogic _logic; private event EventHandler\u0026lt;EventArgs\u0026gt; _viewLoaded; private event EventHandler\u0026lt;EventArgs\u0026gt; _viewUnloaded; private event EventHandler\u0026lt;Catel.MVVM.Views.DataContextChangedEventArgs\u0026gt; _viewDataContextChanged; public Window() : this(null) { } public Window(IViewModel viewModel) { _logic = new WindowLogic(this, null, viewModel); _logic.ViewModelChanged += (sender, e) =\u0026gt; ViewModelChanged.SafeInvoke(this, e); _logic.PropertyChanged += (sender, e) =\u0026gt; PropertyChanged.SafeInvoke(this, e); Loaded += (sender, e) =\u0026gt; _viewLoaded.SafeInvoke(this); Unloaded += (sender, e) =\u0026gt; _viewUnloaded.SafeInvoke(this); this.AddDataContextChangedHandler((sender, e) =\u0026gt; _viewDataContextChanged.SafeInvoke(this, new Catel.MVVM.Views.DataContextChangedEventArgs(e.OldValue, e.NewValue))); // Because the RadWindow does not close when DialogResult is set, the following code is required ViewModelChanged += (sender, e) =\u0026gt; OnViewModelChanged(); // Call manually the first time (for injected view models) OnViewModelChanged(); WindowStartupLocation = WindowStartupLocation.CenterScreen; SetBinding(RadWindow.HeaderProperty, new Binding(\u0026quot;Title\u0026quot;)); } public IViewModel ViewModel { get { return _logic.ViewModel; } } public event PropertyChangedEventHandler PropertyChanged; public event EventHandler\u0026lt;EventArgs\u0026gt; ViewModelChanged; event EventHandler\u0026lt;EventArgs\u0026gt; IView.Loaded { add { _viewLoaded += value; } remove { _viewLoaded -= value; } } event EventHandler\u0026lt;EventArgs\u0026gt; IView.Unloaded { add { _viewUnloaded += value; } remove { _viewUnloaded -= value; } } event EventHandler\u0026lt;Catel.MVVM.Views.DataContextChangedEventArgs\u0026gt; IView.DataContextChanged { add { _viewDataContextChanged += value; } remove { _viewDataContextChanged -= value; } } private void OnViewModelChanged() { if (ViewModel != null \u0026amp;\u0026amp; !ViewModel.IsClosed) { ViewModel.Closed += ViewModelClosed; } } private void ViewModelClosed(object sender, ViewModelClosedEventArgs e) { Close(); } }  You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can\u0026rsquo;t handle abstract base classes\n\rHandling Close Event Since the latest upgrade to Catel 5.x, the UIVisualizerService has been modified in terms of how Close events are handled. Currently, a non-generic EventHandler is utilized; this would present a problem if a window other than DataWindow is utilized and the Close event handler is generic; a simple cast from EventHandler to EventHandler\u0026lt;\u0026gt; is not possible without reflection. For our example here, the RadWindow utilizes EventHandler\u0026lt;WindowClosedEventArgs\u0026gt;. In order to be able to utilize UIVisualizerService without any exception, the HandleCloseSubscription will need to be overridden. See example below:\npublic class CustomUIVisualService : UIVisualizerService, ICustomUIVisualizerService { private readonly IViewLocator _viewLocator; public CustomUIVisualService(IViewLocator viewLocator) : base(viewLocator) { this._viewLocator = viewLocator; } protected override void HandleCloseSubscription(object window, object data, EventHandler\u0026lt;UICompletedEventArgs\u0026gt; completedProc, bool isModal) { var eventInfo = window.GetType().GetEvent(\u0026quot;Closed\u0026quot;); var addMethod = eventInfo?.AddMethod; if (addMethod != null) { EventHandler\u0026lt;WindowClosedEventArgs\u0026gt; eventHandler = null; void Closed(object s, EventArgs e) { if (!ReferenceEquals(window, s)) { // Fix for https://github.com/Catel/Catel/issues/1074 return; } bool? dialogResult; PropertyHelper.TryGetPropertyValue(window, \u0026quot;DialogResult\u0026quot;, out dialogResult); try { completedProc(this, new UICompletedEventArgs(data, isModal ? dialogResult : null)); } finally { var removeMethod = eventInfo.RemoveMethod; if (removeMethod != null) { removeMethod.Invoke(window, new object[] { eventHandler }); } } } eventHandler = Closed; addMethod.Invoke(window, new object[] { eventHandler }); } } }  We have basically created a new class named CustomUIVisualizerService which inherits from UIVisualizerService and then have overridden the HandleCloseSubscription. If you peek into the base method definition you will see that the only change is from EventHandler to EventHandler\u0026lt;WindowClosedEventArgs\u0026gt;.\nThe ICustomUIVisualizerService interface is only a convenience interface to allow for service injection:\npublic interface ICustomUIVisualizerService : IUIVisualizerService { }  Of course, this will need to be registered with the ServiceLocator to be utilized correctly:\nServiceLocator.Default.RegisterType\u0026lt;ICustomUIVisualService, CustomUIVisualService\u0026gt;  Using the class The class can now be used the same as the DataWindow class. For more information, see Window and DataWindow.\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/",
@@ -7277,7 +7277,7 @@
 	"title": "Validation",
 	"tags": [],
 	"description": "",
-	"content": "The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase\n\rValidation is very important for data objects. Therefore, the ModelBase supports all kinds of different validation:\n Internal validation via the ValidateFields and ValidateBusinessRules methods Validation via data annotations (attributes) External validators using the IValidatorProvider and IValidator interfaces  The validation results are cached and only executed when a property changes (the object becomes dirty) or when the validation is forced.\n\r\rValidation via validate methods\rValidation via data annotations\rValidation via special model validators\rValidation via IValidator\rUsing the validation context\rGetting a summary of validation results\rDeferring validation\r\rDifferent types of validation There are two different types of validation in Catel, namely warnings and errors. There are also two flavors of validations, namely field validation and business rule validation.\nOrder of execution of events The order of execution is very important if you want to perform very advanced validation (such as translating validations at the end of each validation sequence).\n IValidator.BeforeValidation OnValidation (raises Validating event) if not already validated IValidator.BeforeValidateFields OnValidatingFields (raises the ValidatingFields event) IValidator.ValidateFields ValidateFields OnValidatedFields (raises the ValidatedFields event) IValidator.AfterValidateFields IValidator.BeforeValidateBusinessRules OnValidatingBusinessRules (raises the ValidatingBusinessRules event) IValidator.ValidateBusinessRules ValidateBusinessRules OnValidatedBusinessRules (raises the ValidatedBusinessRules event) IValidator.AfterValidateBusinessRules end if not already validated OnValidated (raises the Validated event) IValidator.AfterValidation  There are lots of events, and it may seem complex and confusing at first sight. However, all these events give developers the opportunity to hook into the validation sequence at any time.\n"
+	"content": "The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase\n\rValidation is very important for data objects. Therefore, the ModelBase supports all kinds of different validation:\n Internal validation via the ValidateFields and ValidateBusinessRules methods Validation via data annotations (attributes) External validators using the IValidatorProvider and IValidator interfaces  The validation results are cached and only executed when a property changes (the object becomes dirty) or when the validation is forced.\n\r\rValidation via validate methods\r\r\rValidation via data annotations\r\r\rValidation via special model validators\r\r\rValidation via IValidator\r\r\rUsing the validation context\r\r\rGetting a summary of validation results\r\r\rDeferring validation\r\r\rDifferent types of validation There are two different types of validation in Catel, namely warnings and errors. There are also two flavors of validations, namely field validation and business rule validation.\nOrder of execution of events The order of execution is very important if you want to perform very advanced validation (such as translating validations at the end of each validation sequence).\n IValidator.BeforeValidation OnValidation (raises Validating event) if not already validated IValidator.BeforeValidateFields OnValidatingFields (raises the ValidatingFields event) IValidator.ValidateFields ValidateFields OnValidatedFields (raises the ValidatedFields event) IValidator.AfterValidateFields IValidator.BeforeValidateBusinessRules OnValidatingBusinessRules (raises the ValidatingBusinessRules event) IValidator.ValidateBusinessRules ValidateBusinessRules OnValidatedBusinessRules (raises the ValidatedBusinessRules event) IValidator.AfterValidateBusinessRules end if not already validated OnValidated (raises the Validated event) IValidator.AfterValidation  There are lots of events, and it may seem complex and confusing at first sight. However, all these events give developers the opportunity to hook into the validation sequence at any time.\n"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/views/xaml/validation-controls/",
@@ -7312,7 +7312,7 @@
 	"title": "View models (advanced)",
 	"tags": [],
 	"description": "",
-	"content": "\r\rControlling the instantiation of view models\rExposing properties of a model automatically\rKeeping view models alive\r\r"
+	"content": "\r\rControlling the instantiation of view models\r\r\rExposing properties of a model automatically\r\r\rKeeping view models alive\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/",
@@ -7340,7 +7340,7 @@
 	"title": "Views",
 	"tags": [],
 	"description": "",
-	"content": "\r\rXAML\rXamarin.Android\rXamarin.Forms\rXamarin.iOS\r\r"
+	"content": "\r\rXAML\r\r\rXamarin.Android\r\r\rXamarin.Forms\r\r\rXamarin.iOS\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/weak-events/",
@@ -7361,21 +7361,21 @@
 	"title": "XAML",
 	"tags": [],
 	"description": "",
-	"content": "\r\rXAML - advanced\rXAML - external controls\rCustomizing DataContext subscription behavior\rImproving performance by defining the view model grid manually\rUserControl\rUserControl Resources\rValidation controls\rWindow and DataWindow\r\r"
+	"content": "\r\rXAML - advanced\r\r\rXAML - external controls\r\r\rCustomizing DataContext subscription behavior\r\r\rImproving performance by defining the view model grid manually\r\r\rUserControl\r\r\rUserControl Resources\r\r\rValidation controls\r\r\rWindow and DataWindow\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/",
 	"title": "XAML - advanced",
 	"tags": [],
 	"description": "",
-	"content": "\r\rDataWindow - under the hood\rUserControl - under the hood\r\r"
+	"content": "\r\rDataWindow - under the hood\r\r\rUserControl - under the hood\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/",
 	"title": "XAML - external controls",
 	"tags": [],
 	"description": "",
-	"content": "\r\rUsing a custom control\rUsing a custom window\r\r"
+	"content": "\r\rUsing a custom control\r\r\rUsing a custom window\r\r\r"
 },
 {
 	"uri": "http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/",

@@ -4,7 +4,7 @@ DefaultContentLanguage = "en"
 publishDir = "../../docs/5.1"
 
 title = "Catel docs"
-theme = "docdock"
+theme = "docDock"
 
 [params]
 editURL = "https://github.com/catel/catel.docs/edit/master/src/vnext/content/"
