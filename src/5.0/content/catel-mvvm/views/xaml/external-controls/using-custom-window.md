@@ -94,14 +94,15 @@ You would expect an abstract class here, but the designers (both Visual Studio a
 {{% /notice %}}
 
 ## Handling Close Event
-Since the latest upgrade to Catel 5.0, the [UIVisualizerService]({{< relref "catel-mvvm/services/ui-visualizer-service.md" >}}) has been modified in terms of how `Close` events are handled. Currently, a non-generic `EventHandler` is utilized; this would present a problem if a window other than `DataWindow` is utilized and the `Close` event handler is generic; a simple cast from `EventHandler` to `EventHandler<>` is not possible without reflection. For our example here, the `RadWindow` utilizes `EventHandler<WindowClosedEventArgs>`. In order to be able to utilize `UIVisualizerService` without any exception, the `HandleCloseSubscription` will need to be overridden. See example below:
+Since the latest upgrade to Catel 5.x, the [UIVisualizerService]({{< relref "catel-mvvm/services/ui-visualizer-service.md" >}}) has been modified in terms of how `Close` events are handled. Currently, a non-generic `EventHandler` is utilized; this would present a problem if a window other than `DataWindow` is utilized and the `Close` event handler is generic; a simple cast from `EventHandler` to `EventHandler<>` is not possible without reflection. For our example here, the `RadWindow` utilizes `EventHandler<WindowClosedEventArgs>`. In order to be able to utilize `UIVisualizerService` without any exception, the `HandleCloseSubscription` will need to be overridden. See example below:
 
 ```
-public class CustomUIVisualService : UIVisualizerService, ICustomUIVisualService
+public class CustomUIVisualService : UIVisualizerService, ICustomUIVisualizerService
 {
   private readonly IViewLocator _viewLocator;
 
-  public CustomUIVisualService(IViewLocator viewLocator) : base(viewLocator)
+  public CustomUIVisualService(IViewLocator viewLocator) 
+      : base(viewLocator)
   {
       this._viewLocator = viewLocator;
   }        
@@ -146,11 +147,12 @@ public class CustomUIVisualService : UIVisualizerService, ICustomUIVisualService
 }
 ```
 
-We have basically created a new class named `CustomUIVisualService` which inherits from `UIVisualizerService` and then have overridden the `HandleCloseSubscription`. If you peek into the base method definition you will see that the only change is from `EventHandler` to `EventHandler<WindowClosedEventArgs>`.
+We have basically created a new class named `CustomUIVisualizerService` which inherits from `UIVisualizerService` and then have overridden the `HandleCloseSubscription`. If you peek into the base method definition you will see that the only change is from `EventHandler` to `EventHandler<WindowClosedEventArgs>`.
 
-The `ICustomUIVisualService` interface is only a convenience interface to allow for service injection:
+The `ICustomUIVisualizerService` interface is only a convenience interface to allow for service injection:
+
 ```
-public interface ICustomUIVisualService : IUIVisualizerService
+public interface ICustomUIVisualizerService : IUIVisualizerService
 {
 }
 ```
