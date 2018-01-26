@@ -89,6 +89,7 @@ public class Window : RadWindow, IDataWindow
     }
 }
 ```
+
 {{% notice warning %}}
 You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes
 {{% /notice %}}
