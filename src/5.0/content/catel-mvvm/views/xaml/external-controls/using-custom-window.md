@@ -89,10 +89,77 @@ public class Window : RadWindow, IDataWindow
     }
 }
 ```
-
 {{% notice warning %}}
 You would expect an abstract class here, but the designers (both Visual Studio and Expression Blend) can't handle abstract base classes
 {{% /notice %}}
+
+## Handling Close Event
+Since the latest upgrade to Catel 5.0, the [UIVisualizerService]({{< relref "catel-mvvm/services/ui-visualizer-service.md" >}}) has been modified in terms of how `Close` events are handled. Currently, a non-generic `EventHandler` is utilized; this would present a problem if a window other than `DataWindow` is utilized and the `Close` event handler is generic; a simple cast from `EventHandler` to `EventHandler<>` is not possible without reflection. For our example here, the `RadWindow` utilizes `EventHandler<WindowClosedEventArgs>`. In order to be able to utilize `UIVisualizerService` without any exception, the `HandleCloseSubscription` will need to be overridden. See example below:
+
+```
+public class CustomUIVisualService : UIVisualizerService, ICustomUIVisualService
+{
+  private readonly IViewLocator _viewLocator;
+
+  public CustomUIVisualService(IViewLocator viewLocator) : base(viewLocator)
+  {
+      this._viewLocator = viewLocator;
+  }        
+
+  protected override void HandleCloseSubscription(object window, object data, EventHandler<UICompletedEventArgs> completedProc, bool isModal)
+  {
+      var eventInfo = window.GetType().GetEvent("Closed");
+      var addMethod = eventInfo?.AddMethod;
+
+      if (addMethod != null)
+      {
+          EventHandler<WindowClosedEventArgs> eventHandler = null;
+          void Closed(object s, EventArgs e)
+          {
+              if (!ReferenceEquals(window, s))
+              {
+                  // Fix for https://github.com/Catel/Catel/issues/1074
+                  return;
+              }
+
+              bool? dialogResult;
+              PropertyHelper.TryGetPropertyValue(window, "DialogResult", out dialogResult);
+
+              try
+              {
+                  completedProc(this, new UICompletedEventArgs(data, isModal ? dialogResult : null));
+              }
+              finally
+              {
+                  var removeMethod = eventInfo.RemoveMethod;
+                  if (removeMethod != null)
+                  {
+                      removeMethod.Invoke(window, new object[] { eventHandler });
+                  }
+              }
+         }
+
+        eventHandler = Closed;
+        addMethod.Invoke(window, new object[] { eventHandler });
+    }
+  }
+}
+```
+
+We have basically created a new class named `CustomUIVisualService` which inherits from `UIVisualizerService` and then have overridden the `HandleCloseSubscription`. If you peek into the base method definition you will see that the only change is from `EventHandler` to `EventHandler<WindowClosedEventArgs>`.
+
+The `ICustomUIVisualService` interface is only a convenience interface to allow for service injection:
+```
+public interface ICustomUIVisualService : IUIVisualizerService
+{
+}
+```
+
+Of course, this will need to be registered with the `ServiceLocator` to be utilized correctly:
+
+```
+ServiceLocator.Default.RegisterType<ICustomUIVisualService, CustomUIVisualService>
+```
 
 ## Using the class
 
