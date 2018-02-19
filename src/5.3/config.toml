@@ -1,13 +1,13 @@
-baseURL = "http://docs.catelproject.com/vnext/"
+baseURL = "http://docs.catelproject.com/5.3/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-publishDir = "../../docs/vnext"
+publishDir = "../../docs/5.3"
 
 title = "Catel docs"
 theme = "docDock"
 
 [params]
-editURL = "https://github.com/catel/catel.docs/edit/master/src/vnext/content/"
+editURL = "https://github.com/catel/catel.docs/edit/master/src/5.3/content/"
 noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
