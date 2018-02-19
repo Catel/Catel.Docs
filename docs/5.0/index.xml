@@ -10584,5 +10584,14 @@ Introduction to the DataWindow When developing software in XAML, most developers
       <description>The xml serializer uses the DataContractSerializer from .NET to serialize the object graphs.</description>
     </item>
     
+    <item>
+      <title>footer</title>
+      <link>http://docs.catelproject.com/5.0/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.0/_footer/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

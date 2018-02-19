@@ -7425,4 +7425,11 @@
 	"tags": [],
 	"description": "",
 	"content": "The xml serializer uses the DataContractSerializer from .NET to serialize the object graphs.\n"
+},
+{
+	"uri": "http://docs.catelproject.com/5.0/_footer/",
+	"title": "footer",
+	"tags": [],
+	"description": "",
+	"content": ""
 }]

@@ -4261,4 +4261,8 @@
     <loc>http://docs.catelproject.com/5.0/catel-core/serialization/supported-serializers/xml/</loc>
   </url>
   
+  <url>
+    <loc>http://docs.catelproject.com/5.0/_footer/</loc>
+  </url>
+  
 </urlset>

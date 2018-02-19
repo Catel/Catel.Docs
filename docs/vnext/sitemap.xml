@@ -4108,12 +4108,12 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/</loc>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/system/</loc>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/system/</loc>
     <priority>0</priority>
   </url>
   
@@ -4240,6 +4240,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/xml/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/_footer/</loc>
   </url>
   
   <url>
