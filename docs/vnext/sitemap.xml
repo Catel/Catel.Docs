@@ -67,6 +67,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/linq/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/logging/</loc>
   </url>
   
@@ -108,10 +112,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/pooling/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/properties/</loc>
   </url>
   
   <url>
@@ -188,10 +188,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/threading/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/</loc>
   </url>
   
   <url>
@@ -359,19 +355,11 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/application/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/applicationclosingeventargs/</loc>
   </url>
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/io/applicationdatatarget/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/applicationextensions/</loc>
   </url>
   
   <url>
@@ -384,10 +372,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/argument/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/argumentsproxyfactory/</loc>
   </url>
   
   <url>
@@ -835,15 +819,7 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/contentpage/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/contentreadyeventargs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/contentview/</loc>
   </url>
   
   <url>
@@ -1083,6 +1059,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/linq/enumerableextensions/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/environmenthelper/</loc>
   </url>
   
@@ -1259,6 +1239,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/guidobjectidgenerator/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/hashhelper/</loc>
   </url>
   
@@ -1300,10 +1284,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/apicop/iapicoprule/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/forms/iargumentsproxy/</loc>
   </url>
   
   <url>
@@ -1572,6 +1552,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/iobjectconverterserviceextensions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/iobjectidgenerator/</loc>
   </url>
   
   <url>
@@ -1995,6 +1979,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/integerobjectidgenerator/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/</loc>
   </url>
   
@@ -2195,6 +2183,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/longobjectidgenerator/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/faq/mvvm/</loc>
   </url>
   
@@ -2347,10 +2339,6 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/navigationhelper/</loc>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/navigationlogicbase/</loc>
   </url>
   
@@ -2403,6 +2391,10 @@
   </url>
   
   <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/numericbasedobjectidgenerator/</loc>
+  </url>
+  
+  <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/interactivity/numerictextbox/</loc>
   </url>
   
@@ -2428,6 +2420,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/objecthelper/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/objectidgenerator/</loc>
   </url>
   
   <url>
@@ -2508,10 +2504,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/popuphelper/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/controls/popuplayout/</loc>
   </url>
   
   <url>
@@ -3076,6 +3068,10 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/uivisualizerservice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.core/catel/services/ulongobjectidgenerator/</loc>
   </url>
   
   <url>
@@ -4228,11 +4224,6 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/</loc>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/xamarin/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
