@@ -7,7 +7,7 @@ title = "Catel docs"
 theme = "docDock"
 
 [params]
-editURL = "https://github.com/catel/catel.docs/edit/master/src/5.3/content/"
+editURL = "https://github.com/catel/catel.docs/edit/master/src/vnext/content/"
 noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
