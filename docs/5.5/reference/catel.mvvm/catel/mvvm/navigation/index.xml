@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.MVVM.Navigation on Catel docs</title>
+    <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/</link>
+    <description>Recent content in Catel.MVVM.Navigation on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ActivityEventArgs</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/activityeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/activityeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on Xamarin - Android    public class ActivityEventArgs : EventArgs  Base types EventArgs
+Event args for the activity.
+Constructors ActivityEventArgs(Activity activity) Initializes a new instance of the ActivityEventArgs class.
+Parameters    Name Description     activity The activity.    Properties Activity Gets the activity.</description>
+    </item>
+    
+    <item>
+      <title>ActivityLifecycleCallbacksListener</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/activitylifecyclecallbackslistener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/activitylifecyclecallbackslistener/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on Xamarin - Android    public class ActivityLifecycleCallbacksListener : Object  Base types Object
+ActivityLifecycleCallbacksListener implementation.
+Fields Constructors ActivityLifecycleCallbacksListener(Activity activity) Initializes a new instance of the ActivityLifecycleCallbacksListener class.
+ActivityLifecycleCallbacksListener(IntPtr handle, JniHandleOwnership transfer) Initializes a new instance of the ActivityLifecycleCallbacksListener class.
+Parameters    Name Description     handle The handle.</description>
+    </item>
+    
+    <item>
+      <title>NavigatedEventArgs</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigatedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigatedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class NavigatedEventArgs : NavigationEventArgsBase  Base types NavigationEventArgsBase
+Navigated event args.
+Constructors NavigatedEventArgs(string uri, NavigationMode navigationMode) Initializes a new instance of the NavigatedEventArgs class.
+Parameters    Name Description     uri The URI.</description>
+    </item>
+    
+    <item>
+      <title>NavigatingEventArgs</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigatingeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigatingeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class NavigatingEventArgs : NavigationEventArgsBase  Base types NavigationEventArgsBase
+Navigating event args.
+Constructors NavigatingEventArgs(string uri, NavigationMode navigationMode) Initializes a new instance of the NavigatedEventArgs class.
+Parameters    Name Description     uri The URI.</description>
+    </item>
+    
+    <item>
+      <title>NavigationAdapter</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationadapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationadapter/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class NavigationAdapter : NavigationAdapterBase  Base types NavigationAdapterBase
+Navigation adapter class because everyone seems to be implementing their own :-(
+Fields Constructors NavigationAdapter(IView navigationTarget, object navigationRoot) Initializes a new instance of the NavigationAdapter class.</description>
+    </item>
+    
+    <item>
+      <title>NavigationAdapterBase</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationadapterbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationadapterbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class NavigationAdapterBase  Abstract base class to allow partial abstract methods.
+Methods CanHandleNavigation() Determines whether the navigation can be handled by this adapter.
+Returns true if the navigation can be handled by this adapter; otherwise,false.</description>
+    </item>
+    
+    <item>
+      <title>NavigationContext</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationcontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationcontext/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class NavigationContext  Generic navigation context class that works for all target frameworks.
+Constructors NavigationContext() Initializes a new instance of the NavigationContext class.
+Properties Values Gets the values.</description>
+    </item>
+    
+    <item>
+      <title>NavigationEventArgsBase</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationeventargsbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationeventargsbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class NavigationEventArgsBase : EventArgs  Base types EventArgs
+Base class for navigation event args.
+Constructors NavigationEventArgsBase(string uri, NavigationMode navigationMode) Initializes a new instance of the NavigationEventArgsBase class.
+Parameters    Name Description     uri The URI.</description>
+    </item>
+    
+    <item>
+      <title>NavigationEventArgsExtensions</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationeventargsextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationeventargsextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class NavigationEventArgsExtensions  Navigation event args extensions.
+Methods GetUriWithoutQueryInfo(NavigatingCancelEventArgs e) Gets the URI from the navigating context.
+Parameters    Name Description     e The instance containing the event data.</description>
+    </item>
+    
+    <item>
+      <title>NavigationMode</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationmode/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum NavigationMode : Enum  Base types Enum
+Navigation modes.
+Fields Back 0
+Navigating back.
+Forward 1
+Navigating forward.
+New 2
+Navigating to a new page.
+Refresh 3
+Refreshing current view.
+Unknown 4
+The navigation mode is unknown at this stage.</description>
+    </item>
+    
+    <item>
+      <title>NavigationModeExtensions</title>
+      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationmodeextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/catel/mvvm/navigation/navigationmodeextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Navigation   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class NavigationModeExtensions  Extension methods for navigation mode.
+Methods Convert(NavigationMode navigationMode) Converts the specified navigation mode.
+Parameters    Name Description     navigationMode The navigation mode.    Returns NavigationMode.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>View models (advanced) on Catel docs</title>
+    <link>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/</link>
+    <description>Recent content in View models (advanced) on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Controlling the instantiation of view models</title>
+      <link>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/</guid>
+      <description>Starting with Catel 3.1, it is possible to take control of the view model instantiation of a view dynamically at runtime. This feature can be used when the construction of a view model is more complex than injecting the datacontext as model, or when the view model instance in a custom repository should be re-used.
+How to control the view model instantiation using the IViewModelFactory The IViewModelFactory is the best way to customize the instantiation of view models in Catel.</description>
+    </item>
+    
+    <item>
+      <title>Exposing properties of a model automatically</title>
+      <link>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/</guid>
+      <description>See Catel.Fody for more information.</description>
+    </item>
+    
+    <item>
+      <title>Keeping view models alive</title>
+      <link>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/keeping-view-models-alive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.5/catel-mvvm/view-models/advanced/keeping-view-models-alive/</guid>
+      <description>In Catel, view models are automatically closed when the UserControl is unloaded from the visual tree. This is because there is no guarantee that the control will be loaded again. This works great in most of the cases, but sometimes you need more control about the lifetime of the view model. One good example is the use of the TabControl. When a tab control contains a user control with a view model, every time a new tab is selected, the controls on the previously selected tab are unloaded (and thus the view models are closed).</description>
+    </item>
+    
+  </channel>
+</rss>
