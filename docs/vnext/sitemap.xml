@@ -3773,16 +3773,6 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://docs.catelproject.com/vnext/</loc>
   </url>
   
@@ -3798,6 +3788,16 @@
   
   <url>
     <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/</loc>
     <priority>0</priority>
   </url>
   
@@ -4099,12 +4099,12 @@
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/</loc>
-    <priority>0</priority>
+    <loc>http://docs.catelproject.com/vnext/catel-core/serialization/</loc>
   </url>
   
   <url>
-    <loc>http://docs.catelproject.com/vnext/catel-core/serialization/</loc>
+    <loc>http://docs.catelproject.com/vnext/reference/catel.serialization.json/catel/runtime/serialization/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

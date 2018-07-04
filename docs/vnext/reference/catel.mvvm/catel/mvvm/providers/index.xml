@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.MVVM.Providers on Catel docs</title>
+    <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/</link>
+    <description>Recent content in Catel.MVVM.Providers on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DetermineViewModelInstanceEventArgs</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/determineviewmodelinstanceeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/determineviewmodelinstanceeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class DetermineViewModelInstanceEventArgs : EventArgs  Base types EventArgs
+EventArgs class which allows late-time dynamic view model determination.
+Constructors DetermineViewModelInstanceEventArgs(object dataContext) Initializes a new instance of the DetermineViewModelInstanceEventArgs class.
+Parameters    Name Description     dataContext The data context.</description>
+    </item>
+    
+    <item>
+      <title>DetermineViewModelTypeEventArgs</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/determineviewmodeltypeeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/determineviewmodeltypeeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class DetermineViewModelTypeEventArgs : EventArgs  Base types EventArgs
+EventArgs class which allows late-time dynamic view model determination.
+Constructors DetermineViewModelTypeEventArgs(object dataContext) Initializes a new instance of the DetermineViewModelTypeEventArgs class.
+Parameters    Name Description     dataContext The data context.</description>
+    </item>
+    
+    <item>
+      <title>LogicBase</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class LogicBase : IUniqueIdentifyable, IViewLoadState, ObservableObject  Base types ObservableObject
+Implements interfaces IUniqueIdentifyable,IViewLoadState
+Base implementation of the behaviors, which defines all the different possible situations a behavior must implement / support to be a valid MVVM provider behavior.</description>
+    </item>
+    
+    <item>
+      <title>LogicExtensions</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class LogicExtensions  Extension methods to safely interact with logic from inside views.
+Methods GetValue&amp;lt;TLogic, TValue&amp;gt;(LogicBase logic, Func&amp;lt;TLogic, TValue&amp;gt; function) Sets the value of the logic property.
+Parameters    Name Description     logic The logic, can benull so the caller don&amp;rsquo;t have to check for this.</description>
+    </item>
+    
+    <item>
+      <title>LogicViewModelBehavior</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicviewmodelbehavior/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/logicviewmodelbehavior/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum LogicViewModelBehavior : Enum  Base types Enum
+The available view model behaviors.
+Fields Dynamic 1
+View model is dynamic and will be automatically determined.
+Injected 0
+View model was injected thus will be stable during the lifetime of the view.</description>
+    </item>
+    
+    <item>
+      <title>NavigationLogicBase</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/navigationlogicbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/navigationlogicbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class NavigationLogicBase&amp;lt;T&amp;gt; : LogicBase where T : IView  Base types LogicBase
+Base class for pages or controls containing navigation logic.
+Type Parameters T Type of the control or page.
+Fields Constructors NavigationLogicBase(T targetPage, Type viewModelType) Initializes a new instance of the PageLogic class.</description>
+    </item>
+    
+    <item>
+      <title>PageLogic</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/pagelogic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/pagelogic/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class PageLogic : NavigationLogicBase&amp;lt;IPage&amp;gt;  Base types NavigationLogicBase
+MVVM Provider behavior implementation for a navigation page.
+Fields Constructors PageLogic(IPage targetPage, Type viewModelType) Initializes a new instance of the PageLogic class.
+Parameters    Name Description     targetPage The page this provider should take care of.</description>
+    </item>
+    
+    <item>
+      <title>UnloadBehavior</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/unloadbehavior/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/unloadbehavior/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum UnloadBehavior : Enum  Base types Enum
+Available unload behaviors.
+Fields CancelAndCloseViewModel 2
+Cancels and closes the view model.
+CloseViewModel 0
+Closes the view model.
+SaveAndCloseViewModel 1
+Saves and closes the view model.</description>
+    </item>
+    
+    <item>
+      <title>UserControlLogic</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/usercontrollogic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/usercontrollogic/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class UserControlLogic : LogicBase  Base types LogicBase
+MVVM Provider behavior implementation for a user control.
+Fields Constructors UserControlLogic(IView targetView, Type viewModelType, IViewModel viewModel) Initializes a new instance of the UserControlLogic class.
+Parameters    Name Description     targetView The target control.</description>
+    </item>
+    
+    <item>
+      <title>WindowLogic</title>
+      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/windowlogic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/mvvm/providers/windowlogic/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM.Providers   Available on .NET Framework 4.5, .NET Framework 4.6    public class WindowLogic : LogicBase  Base types LogicBase
+MVVM Provider behavior implementation for a window.
+Fields Constructors WindowLogic(IView targetWindow, Type viewModelType, IViewModel viewModel) Initializes a new instance of the WindowLogic class.
+Parameters    Name Description     targetWindow The window this provider should take care of.</description>
+    </item>
+    
+  </channel>
+</rss>

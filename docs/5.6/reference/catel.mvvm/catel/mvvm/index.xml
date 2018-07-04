@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.MVVM on Catel docs</title>
+    <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/</link>
+    <description>Recent content in Catel.MVVM on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Binding</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/binding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/binding/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public class Binding : BindingBase  Base types BindingBase
+Binding class for platforms not supporting bindings.
+Fields Constructors Binding(BindingParty source, BindingParty target, BindingMode mode, IValueConverter converter) Initializes a new instance of the Binding class.
+Parameters    Name Description     source The source.</description>
+    </item>
+    
+    <item>
+      <title>BindingBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public abstract class BindingBase  Base class for all bindings.
+Fields Methods ClearBinding() Clears the binding and stops listening to both the source and target instances.
+DetermineToString() Determines the value to use in the ToString method.
+Returns The string to use.
+ToString() Converts the current instance to a string.</description>
+    </item>
+    
+    <item>
+      <title>BindingContext</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingcontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingcontext/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public class BindingContext  Binding context that takes care of binding updates.
+Fields Constructors BindingContext() Initializes a new instance of the BindingContext class.
+Properties GetBindings Gets the get bindings.
+GetCommandBindings Gets the get command bindings.
+UniqueIdentifier Gets the unique identifier.
+Events BindingUpdateRequired Occurs when binding updates are required.</description>
+    </item>
+    
+    <item>
+      <title>BindingContextExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingcontextextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingcontextextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public static class BindingContextExtensions  Extension methods for the binding context.
+Methods AddBinding(BindingContext bindingContext, Expression&amp;lt;Func&amp;lt;object&amp;gt;&amp;gt; sourcePropertyExpression, Expression&amp;lt;Func&amp;lt;object&amp;gt;&amp;gt; targetPropertyExpression, BindingMode mode, IValueConverter converter) Adds a new binding to the source object.
+Parameters    Name Description     bindingContext The binding context.   sourcePropertyExpression The source property expression.</description>
+    </item>
+    
+    <item>
+      <title>BindingExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public static class BindingExtensions  Extension methods to create bindings on platforms that initially don&amp;rsquo;t support bindings.
+Methods AddSourceEvent(Binding binding, string eventName) Adds an additional event subscription to support change notification. This extension method will use the Source to add an event.
+Parameters    Name Description     binding The binding.</description>
+    </item>
+    
+    <item>
+      <title>BindingMode</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingmode/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public enum BindingMode : Enum  Base types Enum
+Describes the direction of the data flow in a binding.
+Fields OneTime 0
+Updates the binding target when the application starts or when the data context changes. This type of binding is appropriate if you are using data where either a snapshot of the current state is appropriate to use or the data is truly static.</description>
+    </item>
+    
+    <item>
+      <title>BindingParty</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingparty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingparty/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public class BindingParty : IDisposable  Base types IDisposable
+Contains information about a specific binding party (either source or target).
+Fields Constructors BindingParty(object instance, string propertyName) Initializes a new instance of the BindingParty class.
+Parameters    Name Description     instance The instance.</description>
+    </item>
+    
+    <item>
+      <title>BindingPartyExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingpartyextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/bindingpartyextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public static class BindingPartyExtensions  Extension methods for binding parties.
+Fields Constructors Methods AddEvent(BindingParty bindingParty, string eventName) Adds the event by automatically retrieving the event args type.
+Parameters    Name Description     bindingParty The binding party.   eventName Name of the event.</description>
+    </item>
+    
+    <item>
+      <title>CancelingEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/cancelingeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/cancelingeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CancelingEventArgs : CancellableEventArgs  Base types CancellableEventArgs
+EventArgs for the CancelingAsync event.
+Constructors CancelingEventArgs() Initializes a new instance of the CancelingEventArgs class.</description>
+    </item>
+    
+    <item>
+      <title>CancellableEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/cancellableeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/cancellableeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class CancellableEventArgs : EventArgs  Base types EventArgs
+EventArgs base which implements the Cancel property.
+Constructors CancellableEventArgs() Initializes a new instance of the CancellableEventArgs class.
+Properties Cancel Gets or sets a value indicating whether the action should be canceled.</description>
+    </item>
+    
+    <item>
+      <title>Command</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/command/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class Command : Command&amp;lt;object, object&amp;gt;  Base types Command
+Implements the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.MVVM.Command`2&amp;rdquo; /&amp;gt; class with as generic types.
+Constructors Command(Action execute, Func&amp;lt;bool&amp;gt; canExecute, object tag) Initializes a new instance of the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.</description>
+    </item>
+    
+    <item>
+      <title>CommandBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandbase/</guid>
+      <description>    Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class CommandBase  Base class for generic command classes. Contains protected static services for using in derived classes.
+Fields AuthenticationProvider Authentication provider.
+DispatcherService Dispatcher service.
+Constructors </description>
+    </item>
+    
+    <item>
+      <title>CommandBinding</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandbinding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandbinding/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on Xamarin - Android    public class CommandBinding : BindingBase  Base types BindingBase
+Binding to bind events to commands.
+Fields Constructors CommandBinding(object element, string eventName, ICatelCommand command, Binding commandParameterBinding) Initializes a new instance of the CommandBinding class.
+Parameters    Name Description     element The element.</description>
+    </item>
+    
+    <item>
+      <title>CommandCanceledEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcanceledeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcanceledeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandCanceledEventArgs : CommandEventArgs  Base types CommandEventArgs
+CommandCanceledEventArgs, just like above but allows the event to be cancelled.
+Constructors CommandCanceledEventArgs(object commandParameter) Initializes a new instance of the CommandCanceledEventArgs class.
+Parameters    Name Description     commandParameter The command parameter.</description>
+    </item>
+    
+    <item>
+      <title>CommandContainerBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcontainerbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcontainerbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class CommandContainerBase&amp;lt;TExecuteParameter, TCanExecuteParameter, TPogress&amp;gt; where TPogress : ITaskProgressReport  Container for application-wide commands.
+Type Parameters TExecuteParameter The type of the command execute parameter.
+TCanExecuteParameter The type of the command can execute parameter.
+TPogress The type of the pogress.</description>
+    </item>
+    
+    <item>
+      <title>CommandCreatedEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcreatedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandcreatedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandCreatedEventArgs : EventArgs  Base types EventArgs
+Event args when a command is created.
+Constructors CommandCreatedEventArgs(ICommand command, string name) Initializes a new instance of the CommandCreatedEventArgs class.
+Parameters    Name Description     command The command.</description>
+    </item>
+    
+    <item>
+      <title>CommandEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandEventArgs : EventArgs  Base types EventArgs
+CommandEventArgs, simply holds the command parameter.
+Constructors CommandEventArgs(object commandParameter) Initializes a new instance of the CommandEventArgs class.
+Parameters    Name Description     commandParameter The command parameter.</description>
+    </item>
+    
+    <item>
+      <title>CommandExecutedEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandexecutedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandexecutedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandExecutedEventArgs : EventArgs  Base types EventArgs
+implementation for the event when an ICatelCommand has been executed.
+Constructors CommandExecutedEventArgs(ICatelCommand command, object commandParameter, string commandPropertyName) Initializes a new instance of the CommandExecutedEventArgs class.
+Parameters    Name Description     command The command that just has been executed.</description>
+    </item>
+    
+    <item>
+      <title>CommandHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandhelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class CommandHelper  Helper class for the Command class.
+Methods CreateCommand(Action execute, Expression&amp;lt;Func&amp;lt;IValidationSummary&amp;gt;&amp;gt; validationSummaryPropertyExpression, object tag) Creates a new Command that automatically determines whether it can be executed. It does this by checking the right validation summary, which should be in a property.</description>
+    </item>
+    
+    <item>
+      <title>CommandManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandManager : ICommandManager  Implements interfaces ICommandManager
+Manager that takes care of application-wide commands and can dynamically forward them to the right view models.
+Fields Constructors CommandManager() Initializes a new instance of the CommandManager class.</description>
+    </item>
+    
+    <item>
+      <title>CommandManagerWrapper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandmanagerwrapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandmanagerwrapper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class CommandManagerWrapper  Wrapper class to support key down events and automatically invoke commands on the ICommandManager.
+Fields Constructors CommandManagerWrapper(FrameworkElement view, ICommandManager commandManager) Initializes a new instance of the CommandManagerWrapper class.
+Parameters    Name Description     view The view.</description>
+    </item>
+    
+    <item>
+      <title>CommandProgressChangedEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandprogresschangedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/commandprogresschangedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CommandProgressChangedEventArgs&amp;lt;TProgress&amp;gt; : EventArgs  Base types EventArgs
+Event args for event when TaskCommand progress changes.
+Constructors CommandProgressChangedEventArgs(TProgress progress) Initializes a new instance of the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.MVVM.CommandProgressChangedEventArgs`1&amp;rdquo; /&amp;gt; class.
+Parameters    Name Description     progress     Properties Progress Progress info.</description>
+    </item>
+    
+    <item>
+      <title>CompositeCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/compositecommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/compositecommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class CompositeCommand : ICompositeCommand, Command  Base types Command
+Implements interfaces ICompositeCommand
+Composite command which allows several commands inside a single command being exposed to a view.
+Fields Constructors CompositeCommand() Initializes a new instance of the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.</description>
+    </item>
+    
+    <item>
+      <title>DataContextSubscriptionMode</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/datacontextsubscriptionmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/datacontextsubscriptionmode/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum DataContextSubscriptionMode : Enum  Base types Enum
+Data context subscription mode.
+Fields DirectDataContext 0
+The direct data context only.
+InheritedDataContext 1
+Tee direct data context and the inherited data context.</description>
+    </item>
+    
+    <item>
+      <title>DataContextSubscriptionService</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/datacontextsubscriptionservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/datacontextsubscriptionservice/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class DataContextSubscriptionService : IDataContextSubscriptionService  Implements interfaces IDataContextSubscriptionService
+Service that determines how to subscribe to data context.
+Constructors DataContextSubscriptionService() Initializes a new instance of the DataContextSubscriptionService class.
+Properties DefaultDataContextSubscriptionMode Gets or sets the default data context subscription mode.</description>
+    </item>
+    
+    <item>
+      <title>DefaultViewModelToModelMappingConverter</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/defaultviewmodeltomodelmappingconverter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/defaultviewmodeltomodelmappingconverter/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class DefaultViewModelToModelMappingConverter : ViewModelToModelConverterBase  Base types ViewModelToModelConverterBase
+ViewModelToModelMapping Copy Converter
+Constructors DefaultViewModelToModelMappingConverter(string[] propertyNames) Creates an instance of converter
+Parameters    Name Description     propertyNames All properties to watch    Methods CanConvert(Type[] types, Type outType, Type viewModelType) Determines whether this instance can convert the specified types.</description>
+    </item>
+    
+    <item>
+      <title>IAuthenticationProvider</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iauthenticationprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iauthenticationprovider/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IAuthenticationProvider  Interface to allow an authentication mechanism to control the CanExecute state of a command.
+Methods CanCommandBeExecuted(ICatelCommand command, object commandParameter) Determines whether the specified command can be executed. The class implementing this interface can use any required method to check the command.</description>
+    </item>
+    
+    <item>
+      <title>ICatelCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icatelcommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icatelcommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ICatelCommand  Advanced interface definition to provide advanced functionality.
+Properties Tag Gets the tag for this command. A tag is a way to link any object to a command so you can use your own methods to recognize the commands, for example by ID or string.</description>
+    </item>
+    
+    <item>
+      <title>ICatelTaskCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icateltaskcommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icateltaskcommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ICatelTaskCommand&amp;lt;TProgress&amp;gt; : ICatelCommand where TProgress : ITaskProgressReport  Implements interfaces ICatelCommand
+Advanced interface definition to provide advanced functionality. Supports async/await/Task methods for commands with progress reporting and cancellation token.
+Type Parameters TProgress The type of the progress.</description>
+    </item>
+    
+    <item>
+      <title>ICommandManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icommandmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icommandmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ICommandManager  Manager that takes care of application-wide commands and can dynamically forward them to the right view models.
+Properties IsKeyboardEventsSuspended Gets or sets a value indicating whether the keyboard events are suspended.</description>
+    </item>
+    
+    <item>
+      <title>ICompositeCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icompositecommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/icompositecommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ICompositeCommand : ICatelCommand  Implements interfaces ICatelCommand
+Composite command which allows several commands inside a single command being exposed to a view.
+Properties AllowPartialExecution Gets or sets a value indicating whether partial execution of commands is allowed.</description>
+    </item>
+    
+    <item>
+      <title>IDataContextSubscriptionService</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/idatacontextsubscriptionservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/idatacontextsubscriptionservice/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IDataContextSubscriptionService  Service that determines how to subscribe to a data context.
+Properties DefaultDataContextSubscriptionMode Gets or sets the default data context subscription mode.
+Methods GetDataContextSubscriptionMode(Type viewType) Gets the data context subscription mode for the specific view.</description>
+    </item>
+    
+    <item>
+      <title>ILocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/ilocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/ilocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ILocator  Interface defining shared information about locators. This way, any locator can be casted to this interface and be used to locate something by naming convention.
+Properties NamingConventions Gets or sets the naming conventions to use to locate types.</description>
+    </item>
+    
+    <item>
+      <title>IProgressNotifyableViewModel</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iprogressnotifyableviewmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iprogressnotifyableviewmodel/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IProgressNotifyableViewModel : IViewModel  Implements interfaces IViewModel
+The ProgressNotifyableViewModel interface.
+Properties DetailedMessage Gets the message.
+Percentage Gets the percent.
+Task Gets the task.
+TaskIsIndeterminate Gets or sets the task percentage.
+TaskMessage Gets or sets the task message.</description>
+    </item>
+    
+    <item>
+      <title>IRelationalViewModel</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/irelationalviewmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/irelationalviewmodel/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IRelationalViewModel : IViewModel  Implements interfaces IViewModel
+Interface that allows a view model to be used in a nested user controls scenario.
+Properties ParentViewModel Gets the parent view model.
+Methods RegisterChildViewModel(IViewModel childViewModel) Registers a child view model to this view model.</description>
+    </item>
+    
+    <item>
+      <title>ITaskProgressReport</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/itaskprogressreport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/itaskprogressreport/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface ITaskProgressReport  Interface for task progress report.
+Properties Status Status of the task progress.</description>
+    </item>
+    
+    <item>
+      <title>IUrlLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iurllocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iurllocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IUrlLocator : ILocator  Implements interfaces ILocator
+Resolver that will resolve view types based on the view model type. For example, if a view model with the type nameMyAssembly.ViewModels.PersonViewModel is inserted, this could result in the view typeMyAssembly.</description>
+    </item>
+    
+    <item>
+      <title>IViewLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewlocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewlocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewLocator : ILocator  Implements interfaces ILocator
+Resolver that will resolve view types based on the view model type. For example, if a view model with the type nameMyAssembly.ViewModels.PersonViewModel is inserted, this could result in the view typeMyAssembly.</description>
+    </item>
+    
+    <item>
+      <title>IViewModel</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodel/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModel : IValidatable  Implements interfaces IValidatable
+View model interface.
+Properties IsClosed Gets a value indicating whether this instance is closed. If a view model is closed, calling CancelViewModelAsync, SaveViewModelAsync or Boolean}) will have no effect.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelCommandManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelcommandmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelcommandmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelCommandManager  Command manager for view models.
+Methods AddHandler(Func&amp;lt;IViewModel, string, ICommand, object, Task&amp;gt; handler) Adds a new handler when a command is executed on the specified view model.
+Parameters    Name Description     handler The handler to execute when a command is executed.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelContainer</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelcontainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelcontainer/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelContainer  Defines a control as a IViewModel container.
+Properties ViewModel Gets the view model that is contained by the container.
+Events ViewModelChanged Occurs when the ViewModel property has changed.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class IViewModelExtensions  Extension methods for IViewModel.
+Fields Methods AwaitCancelingAsync(ViewModelBase viewModel, int timeout) Awaits the canceling of a the ViewModelBase. This method should be used with care, and can hook into an existing cancel operation called on the ViewModelBase.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelFactory</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelfactory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelfactory/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelFactory  Interface which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used.
+Methods CanReuseViewModel(Type viewType, Type expectedViewModelType, Type actualViewModelType, IViewModel viewModelAsDataContext) Determines whether the specified view model as data context can be reused and allow the view to set itself as owner of the inherited view model.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelFactoryExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelfactoryextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelfactoryextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class IViewModelFactoryExtensions  Extensions for the IViewModelFactory.
+Methods CreateViewModel&amp;lt;TViewModel&amp;gt;(IViewModelFactory viewModelFactory, object dataContext, object tag) Creates a new view model. This is a convenience wrapper around the Object) method. This method cannot be overriden.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodellocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodellocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelLocator : ILocator  Implements interfaces ILocator
+Resolver that will resolve view model types based on the view type. For example, if a view with the type nameMyAssembly.Views.PersonView is inserted, this could result in the view model typeMyAssembly.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelLocatorExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodellocatorextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodellocatorextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class IViewModelLocatorExtensions  Extension methods for the IViewModelLocator.
+Methods Register&amp;lt;TView, TViewModel&amp;gt;(IViewModelLocator viewModelLocator) Registers the specified view model in the local cache. This cache will also be used by the IViewModelLocator) method.
+Type Parameters TView The type of the view.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodelmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelManager  Interface for the view model manager which allows the retrieval of currently alive view models.
+Properties ActiveViewModels Gets the active view models presently registered.
+Methods GetChildViewModels(IViewModel parentViewModel) Gets the child view models of the specified view model.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelToModelConverter</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodeltomodelconverter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/iviewmodeltomodelconverter/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public interface IViewModelToModelConverter  Defines view model to model converter.
+Methods CanConvert(Type[] types, Type outType, Type viewModelType) Determines whether this instance can convert the specified types.
+Parameters    Name Description     types The types.</description>
+    </item>
+    
+    <item>
+      <title>InvalidViewModelException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/invalidviewmodelexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/invalidviewmodelexception/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class InvalidViewModelException : Exception  Base types Exception
+Exception in case there is an invalid view model.
+Constructors InvalidViewModelException(string message) Initializes a new instance of the InvalidViewModelException class.
+Parameters    Name Description     message The message.</description>
+    </item>
+    
+    <item>
+      <title>LocatorBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/locatorbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/locatorbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class LocatorBase : ILocator  Implements interfaces ILocator
+Base class for all locators. This class implements the shared logic so only custom logic has to be implemented by new locator classes.
+Fields Constructors LocatorBase() Initializes a new instance of the Object class.</description>
+    </item>
+    
+    <item>
+      <title>ModelAttribute</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelattribute/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ModelAttribute : Attribute  Base types Attribute
+Attribute to define a property in a view model as a model. Objects decorated with this attribute will be automatically validated when a property changes.
+Constructors ModelAttribute() Initializes a new instance of the ModelAttribute class.</description>
+    </item>
+    
+    <item>
+      <title>ModelCleanUpMode</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelcleanupmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelcleanupmode/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum ModelCleanUpMode : Enum  Base types Enum
+Available clean up models for a model.
+Fields CancelEdit 0
+Call.
+EndEdit 1
+Call.</description>
+    </item>
+    
+    <item>
+      <title>ModelNotRegisteredException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelnotregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/modelnotregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ModelNotRegisteredException : Exception  Base types Exception
+Exception for when a model is not registered on a class, but a ViewModelToModelAttribute is used with the model.
+Constructors ModelNotRegisteredException(string modelName, string propertyDeclaringViewModelToModelAttribute) Initializes a new instance of the ModelNotRegisteredException class.</description>
+    </item>
+    
+    <item>
+      <title>ModuleInitializer</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/moduleinitializer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/moduleinitializer/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class ModuleInitializer  Class that gets called as soon as the module is loaded.
+Remarks This is made possible thanks to Fody.
+Methods Initialize() Initializes the module</description>
+    </item>
+    
+    <item>
+      <title>NavigationViewModelBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/navigationviewmodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/navigationviewmodelbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class NavigationViewModelBase : ViewModelBase  Base types ViewModelBase
+Extended base class for view models that include navigation. This class adds navigation commands and the navigation service.
+Fields Constructors NavigationViewModelBase(IServiceLocator serviceLocator, bool supportIEditableObject, bool ignoreMultipleModelsWarning, bool skipViewModelAttributesInitialization) Initializes a new instance of the ViewModelBase class.</description>
+    </item>
+    
+    <item>
+      <title>ObjectExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/objectextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/objectextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class ObjectExtensions  Object extensions class.
+Methods IsSentinelBindingObject(object dataContext) Determines whether the specified object is a sentinel. For more information, see http://stackoverflow.com/questions/3868786/wpf-sentinel-objects-and-how-to-check-for-an-internal-type. Original license: CC BY-SA 2.5, compatible with the MIT license.
+Parameters    Name Description     dataContext The data context.</description>
+    </item>
+    
+    <item>
+      <title>ObjectToDisplayNameConverter</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/objecttodisplaynameconverter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/objecttodisplaynameconverter/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ObjectToDisplayNameConverter : ValueConverterBase  Base types ValueConverterBase
+Converts elements to a display name. This supports classes, member info, enums, etc.
+Properties LanguageService Gets or sets the language service. If this value is set, it will be used inside the DisplayNameAttribute.</description>
+    </item>
+    
+    <item>
+      <title>ProgressNotifyableViewModel</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/progressnotifyableviewmodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/progressnotifyableviewmodel/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class ProgressNotifyableViewModel : IProgressNotifyableViewModel, ViewModelBase  Base types ViewModelBase
+Implements interfaces IProgressNotifyableViewModel
+The progress notifyable view model base.
+Fields DetailedMessageProperty Register the DetailedMessage property so it is known in the class.
+TaskIsIndeterminateProperty Register the TaskPercentage property so it is known in the class.</description>
+    </item>
+    
+    <item>
+      <title>ProgressiveTaskCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/progressivetaskcommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/progressivetaskcommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ProgressiveTaskCommand&amp;lt;TProgress&amp;gt; : TaskCommand&amp;lt;object, object, TProgress&amp;gt; where TProgress : ITaskProgressReport  Base types TaskCommand
+Implements the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.MVVM.TaskCommand`3&amp;rdquo; /&amp;gt; class with only the TProgress as generic type.
+Type Parameters TProgress Type of the progress change info.</description>
+    </item>
+    
+    <item>
+      <title>PropertyNotFoundInModelException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/propertynotfoundinmodelexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/propertynotfoundinmodelexception/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class PropertyNotFoundInModelException : Exception  Base types Exception
+Exception in case a mapped property is not found on the model.
+Constructors PropertyNotFoundInModelException(string viewModelPropertyName, string modelName, string modelPropertyName) Initializes a new instance of the PropertyNotFoundInModelException class.</description>
+    </item>
+    
+    <item>
+      <title>SavingEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/savingeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/savingeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class SavingEventArgs : CancellableEventArgs  Base types CancellableEventArgs
+EventArgs for the SavingAsync event.
+Constructors SavingEventArgs() Initializes a new instance of the SavingEventArgs class.</description>
+    </item>
+    
+    <item>
+      <title>TaskCommand</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/taskcommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/taskcommand/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class TaskCommand&amp;lt;TExecuteParameter, TCanExecuteParameter&amp;gt; : TaskCommand&amp;lt;TExecuteParameter, TCanExecuteParameter, ITaskProgressReport&amp;gt;  Base types TaskCommand
+Implements the Missing: &amp;lt;see cref=&amp;ldquo;T:Catel.MVVM.TaskCommand`3&amp;rdquo; /&amp;gt; class with only the TExecuteParameter as generic type.
+Type Parameters TExecuteParameter The type of the execute parameter.</description>
+    </item>
+    
+    <item>
+      <title>UrlLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/urllocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/urllocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class UrlLocator : IUrlLocator, LocatorBase  Base types LocatorBase
+Implements interfaces IUrlLocator
+Locator for urls.
+Fields Methods GetDefaultNamingConventions() Gets the default naming conventions.
+Returns An enumerable of default naming conventions.
+Register(Type viewModelType, string url) Registers the specified url in the local cache.</description>
+    </item>
+    
+    <item>
+      <title>ViewHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewhelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class ViewHelper  View helper class for MVVM scenarios.
+Fields Methods ConstructViewWithViewModel(Type viewType, object dataContext) Constructs the view with the view model. First, this method tries to inject the specified DataContext into the view. If the view does not contain a constructor with this parameter type, it will try to use the default constructor and set the DataContext manually.</description>
+    </item>
+    
+    <item>
+      <title>ViewLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewlocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewlocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewLocator : IViewLocator, LocatorBase  Base types LocatorBase
+Implements interfaces IViewLocator
+Resolver that will resolve view types based on the view model type. For example, if a view model with the type nameMyAssembly.ViewModels.PersonViewModel is inserted, this could result in the view typeMyAssembly.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class ViewModelBase : IUniqueIdentifyable, IRelationalViewModel, ValidatableModelBase  Base types ValidatableModelBase
+Implements interfaces IUniqueIdentifyable,IRelationalViewModel
+View model base for MVVM implementations. This class is based on the ModelBase, and supports all common interfaces used by WPF.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelClosedEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelclosedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelclosedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelClosedEventArgs : EventArgs  Base types EventArgs
+implementation for the ClosedAsync event.
+Constructors ViewModelClosedEventArgs(IViewModel viewModel, Nullable&amp;lt;bool&amp;gt; result) Initializes a new instance of the ViewModelClosedEventArgs class.
+Parameters    Name Description     viewModel The view model.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelCommandManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelcommandmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelcommandmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelCommandManager : IViewModelCommandManager  Implements interfaces IViewModelCommandManager
+Command manager that manages the execution state of all commands of a view model.
+Fields Constructors Methods AddHandler(Func&amp;lt;IViewModel, string, ICommand, object, Task&amp;gt; handler) Adds a new handler when a command is executed on the specified view model.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class ViewModelExtensions  Extension methods for view model classes.
+Methods GetValidationSummary(ViewModelBase viewModel, bool includeChildViewModelValidations) Gets the validation summary for the specified viewModel and, if specified, the children as well. This method does not filter on any tag.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelFactory</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelfactory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelfactory/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelFactory : IViewModelFactory  Implements interfaces IViewModelFactory
+Default implementation of the IViewModelFactory which allows custom instantation of view models. This way, if a view model contains a complex constructor or needs caching, this factory can be used.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelLocator</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodellocator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodellocator/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelLocator : IViewModelLocator, LocatorBase  Base types LocatorBase
+Implements interfaces IViewModelLocator
+Resolver that will resolve view model types based on the view type. For example, if a view with the type nameMyAssembly.Views.PersonView is inserted, this could result in the view model typeMyAssembly.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelManager</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelmanager/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelManager : IViewModelManager  Implements interfaces IViewModelManager
+Manager for view models. Thanks to this manager, it is possible to subscribe to other view models and be able to respond correctly to property changes in other views.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelManagerExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelmanagerextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelmanagerextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class ViewModelManagerExtensions  Extensions for the IViewModelManager interface.
+Methods CancelAndCloseViewModelsAsync(IViewModelManager viewModelManager, Func&amp;lt;IViewModel, bool&amp;gt; predicate) Closes all view models that are currently being managed by the ViewModelManager which match the predicate.
+Parameters    Name Description     viewModelManager The view model manager.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelNotRegisteredException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelnotregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelnotregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelNotRegisteredException : Exception  Base types Exception
+Exception in case a view model is not registered, but still being used.
+Constructors ViewModelNotRegisteredException(Type viewModelType) Initializes a new instance of the ViewModelNotRegisteredException class.
+Parameters    Name Description     viewModelType Type of the view model.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelServiceHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelservicehelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodelservicehelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public static class ViewModelServiceHelper  Helper class that registers all default services to a IServiceLocator.
+Fields Methods RegisterDefaultViewModelServices(IServiceLocator serviceLocator) Registers the default view model services.
+Parameters    Name Description     serviceLocator The service locator to add the services to.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelToModelAttribute</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelattribute/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelToModelAttribute : Attribute  Base types Attribute
+Attribute to link a property in a view model to a model.
+Constructors ViewModelToModelAttribute(string model, string property) Initializes a new instance of the ViewModelToModelAttribute class.
+Parameters    Name Description     model The property name that holds the model object.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelToModelConverterBase</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelconverterbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelconverterbase/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public abstract class ViewModelToModelConverterBase : IViewModelToModelConverter  Implements interfaces IViewModelToModelConverter
+Base class for view model to model converters.
+Constructors ViewModelToModelConverterBase(string[] propertyNames) Initializes a new instance of the ViewModelToModelConverterBase class.
+Parameters    Name Description     propertyNames Name of property on which attribute was setted    Properties PropertyNames Gets the property names.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelToModelMapping</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelmapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelmapping/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class ViewModelToModelMapping  Model value class to store the mapping of the View Model to a Model mapping.
+Fields Constructors ViewModelToModelMapping(string viewModelProperty, ViewModelToModelAttribute attribute) Initializes a new instance of the ViewModelToModelMapping class.
+Parameters    Name Description     viewModelProperty The view model property.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelToModelMode</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/viewmodeltomodelmode/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public enum ViewModelToModelMode : Enum  Base types Enum
+Specifies the different mapping modes available for the ViewModelToModelAttribute.
+Fields Explicit 3
+Automatically maps properties from the model to the view model as soon as the model is initialized.</description>
+    </item>
+    
+    <item>
+      <title>WrongViewModelTypeException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/wrongviewmodeltypeexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/mvvm/wrongviewmodeltypeexception/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.MVVM   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - Android, Xamarin - iOS    public class WrongViewModelTypeException : Exception  Base types Exception
+Exception in case that a wrong type is used for a view model.
+Constructors WrongViewModelTypeException(Type actualType, Type expectedType) Initializes a new instance of the WrongViewModelTypeException class.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting started with WPF on Catel docs</title>
+    <link>http://docs.catelproject.com/vnext/getting-started/wpf/</link>
+    <description>Recent content in Getting started with WPF on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/vnext/getting-started/wpf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating the WPF project</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-project/</guid>
+      <description>In this step we will create the project and add the relevant NuGet packages.
+This guide uses the on-line templates that are available in the Visual Studio gallery. If you can&amp;rsquo;t find the templates on-line, please download them here.
+Creating the project To create the project, start Visual Studio and choose File =&amp;gt; New Project&amp;hellip; Then switch to the on-line template section as you can see in the screenshot below and search for Catel:</description>
+    </item>
+    
+    <item>
+      <title>Creating the models</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/</guid>
+      <description>In this step we will create models. Since this application is about families and persons inside those families, we need to create the following models: Settings, Family and Person. Creating the model classes The models that will be used in this application will derive from the ModelBase, ValidatableModelBase or SavableModelBase class of Catel. These classes enable support for change notifications, validations and persistence. The SavableModelBase adds additional methods to save and load from/to streams or files without having to create a serializer first.</description>
+    </item>
+    
+    <item>
+      <title>Serializing data from/to disk</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/serializing-data-from-to-disk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/serializing-data-from-to-disk/</guid>
+      <description>In this step we will create services that will serialize the models from/to disk. Services are a great way to abstract functionality that can be used in every part of the application. This guide will also register the service in the ServiceLocator so it can be injected in view models.
+Creating the service definition The first thing to do is to create the Services folder to group the services. Below is a screenshot of how to solution will look after creating the folders:</description>
+    </item>
+    
+    <item>
+      <title>Creating the view models</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-view-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-view-models/</guid>
+      <description>In this step we will create the view models. Since this is a very simple application, just a few view models are required. A view model in essence is nothing more than a class that derives from the ViewModelBase class
+The vm code snippet is available to create view models. There is also an on-line item template available for Catel view models
+Creating the PersonViewModel Below is the class definition of the PersonViewModel.</description>
+    </item>
+    
+    <item>
+      <title>Creating the views (user controls)</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-user-controls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-user-controls/</guid>
+      <description>In this step we will create the views for the application. There are several views that will be created and both user controls and windows will be handled in this part of the guide. Catel makes it very easy to create views as user controls with their own view models. In the previous step we already created the view models.
+Person view To create a new view, right-click the Views folder in the solution =&amp;gt; Add =&amp;gt; New item&amp;hellip; =&amp;gt; On-line =&amp;gt; and search for Catel as you can see in the screen below:</description>
+    </item>
+    
+    <item>
+      <title>Creating the views (windows)</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/creating-the-windows/</guid>
+      <description>In this step we will create the windows for the application. In the previous step we already created the user controls. Windows are a great way to show in an edit-context. Catel provides great edit-windows in the form of the DataWindow. This is a window that automatically adds *OK* and *Cancel* buttons (but of course allows customization of the buttons and behavior).
+Person window It is very important that the window derives from one of the Catel windows.</description>
+    </item>
+    
+    <item>
+      <title>Hooking up everything together</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/hooking-up-everything-together/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/hooking-up-everything-together/</guid>
+      <description>In this step we will hook everything together and add additional logic to the remaining view models.
+Hooking up the view models We now have most of the application ready. However we need some logic in the view models to hook up everything together.
+Adding additional logic to FamilyWindowViewModel The first thing we are going to do is to finalize the FamilyWindowViewModel we created in the previous step. To do this, we are going to add a few properties and commands to the view model.</description>
+    </item>
+    
+    <item>
+      <title>Finalizing the application</title>
+      <link>http://docs.catelproject.com/vnext/getting-started/wpf/finalizing-the-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/vnext/getting-started/wpf/finalizing-the-application/</guid>
+      <description>The application we have created so far is fully functional, but misses a bit of the &amp;ldquo;magic&amp;rdquo;. Below are some additional steps that might make your application more appealing and more user friendly. Of course you can go as far as you want by creating custom animations and such, but this guide focuses purely on making the basics more appealing.
+Adding validation Adding validation with Catel is extremely easy. There are two flavors to pick from, but they work exactly the same (since both the models and view models internally derive from ValidatableModelBase).</description>
+    </item>
+    
+  </channel>
+</rss>

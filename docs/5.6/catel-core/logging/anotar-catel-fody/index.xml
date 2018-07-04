@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anotar.Catel.Fody on Catel docs</title>
+    <link>http://docs.catelproject.com/5.6/catel-core/logging/anotar-catel-fody/</link>
+    <description>Recent content in Anotar.Catel.Fody on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.6/catel-core/logging/anotar-catel-fody/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

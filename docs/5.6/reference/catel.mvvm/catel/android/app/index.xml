@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Android.App on Catel docs</title>
+    <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/</link>
+    <description>Recent content in Catel.Android.App on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Activity</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/activity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/activity/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Android.App   Available on Xamarin - Android    public class Activity : IPage, Activity  Base types Activity
+Implements interfaces IPage
+View implementation that automatically takes care of view models.
+Fields Constructors Activity() Initializes a new instance of the Activity class.
+Properties DataContext Gets or sets the data context.
+IsEnabled Gets or sets a value indicating whether the view is enabled.</description>
+    </item>
+    
+    <item>
+      <title>Application</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/application/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Android.App   Available on Xamarin - Android    public class Application : Application  Base types Application
+Application class to be able to have a static context.
+Constructors Application(IntPtr javaReference, JniHandleOwnership transfer) The constructor of the application class.
+Parameters    Name Description     javaReference    transfer     Properties Default Gets the default application instance.</description>
+    </item>
+    
+    <item>
+      <title>Fragment</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/fragment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.mvvm/catel/android/app/fragment/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Android.App   Available on Xamarin - Android    public class Fragment : IUserControl, Fragment  Base types Fragment
+Implements interfaces IUserControl
+Fragment implementation that automatically takes care of view models.
+Fields Constructors Fragment() Initializes a new instance of the Fragment class.
+Exceptions    Name Description     System.NotSupportedException     Fragment(IntPtr javaReference, JniHandleOwnership transfer) Initializes a new instance of the Fragment class.</description>
+    </item>
+    
+  </channel>
+</rss>

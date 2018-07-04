@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Reflection on Catel docs</title>
+    <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/</link>
+    <description>Recent content in Catel.Reflection on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AppDomainExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/appdomainextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/appdomainextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class AppDomainExtensions  extensions.
+Fields Methods CreateInstanceAndUnwrap&amp;lt;T&amp;gt;(AppDomain appDomain) Creates the instance in the specified and unwraps it.
+Type Parameters T The type of instance to create.
+Parameters    Name Description     appDomain The app domain.</description>
+    </item>
+    
+    <item>
+      <title>AssemblyExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class AssemblyExtensions  Assembly info helper class.
+Methods Company(Assembly assembly) Gets the company of a specific assembly.
+Parameters    Name Description     assembly The assembly.    Returns The company of the assembly.</description>
+    </item>
+    
+    <item>
+      <title>AssemblyHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyhelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class AssemblyHelper  Assembly helper class.
+Fields Methods GetAllTypesSafely(Assembly assembly, bool logLoaderExceptions) Gets all types from the assembly safely. Sometimes, the is thrown, and no types are returned. In that case the user must manually get the successfully loaded types from the.</description>
+    </item>
+    
+    <item>
+      <title>AssemblyLoadedEventArgs</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyloadedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/assemblyloadedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AssemblyLoadedEventArgs : EventArgs  Base types EventArgs
+Event args for the AssemblyLoaded event.
+Constructors AssemblyLoadedEventArgs(Assembly assembly, IEnumerable&amp;lt;Type&amp;gt; loadedTypes) Initializes a new instance of the AssemblyLoadedEventArgs class.
+Parameters    Name Description     assembly The assembly.</description>
+    </item>
+    
+    <item>
+      <title>BindingFlagsHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/bindingflagshelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/bindingflagshelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class BindingFlagsHelper  The binding flags helper.
+Fields DefaultBindingFlags The default binding flags.
+Methods GetFinalBindingFlags(bool flattenHierarchy, bool allowStaticMembers, Nullable&amp;lt;bool&amp;gt; allowNonPublicMembers) Gets final binding flags and respects the DefaultBindingFlags as defined in Catel.</description>
+    </item>
+    
+    <item>
+      <title>CachedPropertyInfo</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cachedpropertyinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cachedpropertyinfo/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CachedPropertyInfo  Cached implementation of the PropertyInfo.
+Fields Constructors CachedPropertyInfo(PropertyInfo propertyInfo) Initializes a new instance of the CachedPropertyInfo class.
+Parameters    Name Description     propertyInfo The property information.</description>
+    </item>
+    
+    <item>
+      <title>CannotGetPropertyValueException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cannotgetpropertyvalueexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cannotgetpropertyvalueexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CannotGetPropertyValueException : Exception  Base types Exception
+Exception in case a property value cannot be get.
+Constructors CannotGetPropertyValueException(string propertyName) Initializes a new instance of the CannotGetPropertyValueException class.
+Parameters    Name Description     propertyName Name of the property.</description>
+    </item>
+    
+    <item>
+      <title>CannotSetPropertyValueException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cannotsetpropertyvalueexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/cannotsetpropertyvalueexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CannotSetPropertyValueException : Exception  Base types Exception
+Exception in case a property value cannot be set.
+Constructors CannotSetPropertyValueException(string propertyName) Initializes a new instance of the CannotSetPropertyValueException class.
+Parameters    Name Description     propertyName Name of the property.</description>
+    </item>
+    
+    <item>
+      <title>DelegateExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/delegateextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/delegateextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class DelegateExtensions  Extension methods for.
+Methods GetMethodInfoEx(Delegate del) Gets the method info of the delegate.
+Parameters    Name Description     del The delegate.    Returns The of the delegate.</description>
+    </item>
+    
+    <item>
+      <title>DelegateHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/delegatehelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/delegatehelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class DelegateHelper  A class to be able to create delegates in both .NET and WinRT.
+Methods CreateDelegate(Type delegateType, MethodInfo methodInfo) Creates a static delegate for the specified method.
+Parameters    Name Description     delegateType Type of the delegate.</description>
+    </item>
+    
+    <item>
+      <title>IEntryAssemblyResolver</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/ientryassemblyresolver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/ientryassemblyresolver/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IEntryAssemblyResolver  Allows custom logic to be injected into GetEntryAssembly.
+Methods Resolve() Resolves the entry assembly.
+Returns Assembly.</description>
+    </item>
+    
+    <item>
+      <title>MemberInfoExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/memberinfoextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/memberinfoextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class MemberInfoExtensions  Member info extensions.
+Fields Methods GetSignature(ConstructorInfo constructorInfo) Gets the signature of a method.
+Parameters    Name Description     constructorInfo The member info.    Returns The signature of the member info.</description>
+    </item>
+    
+    <item>
+      <title>ObjectExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/objectextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/objectextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ObjectExtensions  Object extensions for reflection.
+Methods ToAttributeArray(object[] objects) Converts the list of objects to an array of attributes, very easy to use during GetCustomAttribute reflection.
+Parameters    Name Description     objects The object array, can benull.</description>
+    </item>
+    
+    <item>
+      <title>PropertyHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/propertyhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/propertyhelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class PropertyHelper  Property helper class.
+Fields Methods GetHiddenPropertyValue&amp;lt;TValue&amp;gt;(object obj, string property, Type baseType) Gets hidden property value.
+Type Parameters TValue The type of the T value.
+Parameters    Name Description     obj The obj.</description>
+    </item>
+    
+    <item>
+      <title>PropertyNotFoundException</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/propertynotfoundexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/propertynotfoundexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyNotFoundException : Exception  Base types Exception
+Exception for in case a property is not found.
+Constructors PropertyNotFoundException(string propertyName) Initializes a new instance of the PropertyNotFoundException class.
+Parameters    Name Description     propertyName Name of the property.</description>
+    </item>
+    
+    <item>
+      <title>ReflectionExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/reflectionextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/reflectionextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ReflectionExtensions  Reflection extension class.
+Fields Methods ContainsGenericParametersEx(Type type) Determines whether the specified type contains generic parameters.
+Parameters    Name Description     type The type.</description>
+    </item>
+    
+    <item>
+      <title>StaticHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/statichelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/statichelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class StaticHelper  Helper class for static classes and members.
+Methods GetCallingType() Gets the type which is calling the current method which might be static.
+Returns The type calling the method.</description>
+    </item>
+    
+    <item>
+      <title>TypeArray</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typearray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typearray/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TypeArray  The type array class.
+Methods From&amp;lt;T&amp;gt;() Gets an array of type from two type parameters.
+Type Parameters T The type
+Returns Array of types
+From&amp;lt;T1, T2, T3, T4, T5&amp;gt;() Gets an array of type from two type parameters.</description>
+    </item>
+    
+    <item>
+      <title>TypeCache</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typecache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typecache/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TypeCache  Cache containing the types of an appdomain.
+Fields Constructors Properties InitializedAssemblies Gets the names of the assemblies initialized by the TypeCache.
+ShouldIgnoreAssemblyEvaluators Gets the evaluators used to determine whether a specific assembly should be ignored.</description>
+    </item>
+    
+    <item>
+      <title>TypeExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TypeExtensions  Extensions for the type class.
+Methods GetCollectionElementType(Type type) Gets the element type of the collection.
+Parameters    Name Description     type The type.</description>
+    </item>
+    
+    <item>
+      <title>TypeHelper</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typehelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typehelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TypeHelper  helper class.
+Fields Constructors Properties MicrosoftPublicKeyTokens Gets the Microsoft public key tokens.
+Methods Cast&amp;lt;TInput, TOutput&amp;gt;(TInput value) Generic cast of a value.
+Type Parameters TOutput Requested return type.</description>
+    </item>
+    
+    <item>
+      <title>TypeInfo</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeinfo/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on Xamarin - Android, Xamarin - iOS    public class TypeInfo  The type info.
+Fields Constructors Properties Assembly Gets the Assembly in which the type is declared. For generic types, gets the Assembly in which the generic type is defined.
+Returns An Assembly instance that describes the assembly containing the current type.</description>
+    </item>
+    
+    <item>
+      <title>TypeInfoExtensions</title>
+      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeinfoextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/reflection/typeinfoextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Reflection   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries    public static class TypeInfoExtensions  The type info extensions.
+Fields Methods GetConstructor(TypeInfo typeInfo, Type[] types, BindingFlags bindingFlags) Gets the constructor with the specified types.
+Parameters    Name Description     typeInfo The.   types The types of the constructor.</description>
+    </item>
+    
+  </channel>
+</rss>

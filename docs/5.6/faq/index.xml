@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on Catel docs</title>
+    <link>http://docs.catelproject.com/5.6/faq/</link>
+    <description>Recent content in FAQ on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://docs.catelproject.com/5.6/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>General</title>
+      <link>http://docs.catelproject.com/5.6/faq/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/faq/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVVM</title>
+      <link>http://docs.catelproject.com/5.6/faq/mvvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/faq/mvvm/</guid>
+      <description>How to support example data with view models? To find out how to create design time data, see the designerstopic.
+How to use events with MVVM? When writing MVVM, it&amp;rsquo;s &amp;ldquo;forbidden&amp;rdquo; (read: not a best practice) to use click handlers (or other UI events) in your view-model. But then should you react to events?
+ Start with creating a command like you are used to using MVVM. This command will be executed when the event occurs.</description>
+    </item>
+    
+    <item>
+      <title>Problem solving</title>
+      <link>http://docs.catelproject.com/5.6/faq/problem-solving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/faq/problem-solving/</guid>
+      <description>As with every framework or toolkit, developers run into problems. This can be bugs or abuse of the API. Catel has several ways for developers to solve the problems themselves before contacting the team with the possible issue.
+Enabling the log We take logging very serious in Catel. This means that a lot of information about the internals can be be seen in the output window. To enable logging in Catel, use the following code in your application startup code:</description>
+    </item>
+    
+    <item>
+      <title>Performance considerations</title>
+      <link>http://docs.catelproject.com/5.6/faq/performance-considerations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://docs.catelproject.com/5.6/faq/performance-considerations/</guid>
+      <description>While developing software, it is very important to keep an eye on the performance. Catel itself does perform very well, but there are some caveats that you should be aware of. If you have the feeling that the application is laggy or slow, or if you want to make sure to squeeze the best performance out of Catel, consider taking a closer look at the checklist below.
+Use the ApiCop feature to get a detailed advisory report on your software</description>
+    </item>
+    
+  </channel>
+</rss>
