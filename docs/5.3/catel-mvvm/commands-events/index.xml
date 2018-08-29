@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commands &amp; events on Catel docs</title>
+    <link>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/</link>
+    <description>Recent content in Commands &amp; events on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.3/catel-mvvm/commands-events/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CommandManager and command containers (Application-wide commands)</title>
+      <link>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/application-wide-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/application-wide-commands/</guid>
+      <description>Most commands are registered per view and available per view model. Some commands (such as commands on a Ribbon or Toolbar) are application-wide. Catel supports both types, and this part of the documentation explains how to use the ICommandManager to work with application-wide commands such as Refresh with a key bound to F5.
+CommandManager There is no generic way to specify application-wide commands in XAML platforms. To overcome this issue, Catel introduces the CommandManager.</description>
+    </item>
+    
+    <item>
+      <title>Commands</title>
+      <link>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/commands/</guid>
+      <description>Commands are supported in Catel. The base class for commands is Command.
+Code snippets  vmcommand - declare a command on a view model vmcommandwithcanexecute - declare a command with support for CanExecute on a view model  Explanation To implement commands, and still be able to unit test the view models, a separate command is introduced. This command allows a developer to implement a command that can be invoked both via code (unit testing) and UI.</description>
+    </item>
+    
+    <item>
+      <title>Commands authentication</title>
+      <link>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/authentication/</guid>
+      <description>One of the questions an MVVM developer faces is how to control the executation state of a command by role or user authentication method. Catel offers an out-of-the-box solution for this problem to check the CanExecute state of the commands in the UI. It is very important that this way of disabling commands is only used to easy the development of consistent user interfaces. It cannot replace the actual check whether a user can or cannot modify data.</description>
+    </item>
+    
+    <item>
+      <title>Hooking a command to validation automatically</title>
+      <link>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/hooking-command-to-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-mvvm/commands-events/hooking-command-to-validation/</guid>
+      <description>It is possible to hook the CanExecute of a Command to the IValidationSummary automatically. This way, there is no need to check for errors manually in the CanExecute method. The example below first adds a validation summary to a view model to get the validation result. Then, it uses this validation summary to automatically determine whether a command can be executed.
+1. Add validation to a person view model (note how the validation adds the tag PersonValidation to a validation):</description>
+    </item>
+    
+  </channel>
+</rss>

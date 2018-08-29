@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catel.Runtime.Serialization on Catel docs</title>
-    <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/</link>
+    <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/</link>
     <description>Recent content in Catel.Runtime.Serialization on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CacheInvalidatedEventArgs</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/cacheinvalidatedeventargs/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/cacheinvalidatedeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/cacheinvalidatedeventargs/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/cacheinvalidatedeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CacheInvalidatedEventArgs : EventArgs  Base types EventArgs
 Event args for when a type cache has been invalidated.
 Constructors CacheInvalidatedEventArgs(Type type) Initializes a new instance of the CacheInvalidatedEventArgs class.
@@ -24,30 +24,30 @@ Parameters    Name Description     type The type.</description>
     
     <item>
       <title>ExcludeFromSerializationAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/excludefromserializationattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/excludefromserializationattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/excludefromserializationattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/excludefromserializationattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ExcludeFromSerializationAttribute : Attribute  Base types Attribute
 Attribute to define that a specific member must be excluded from the serialization by the serialization engine.</description>
     </item>
     
     <item>
       <title>IFieldSerializable</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ifieldserializable/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ifieldserializable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ifieldserializable/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ifieldserializable/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IFieldSerializable  Fast serialization interaction. By default the serialization engine uses reflection to get and set values. To improve performance, once can implement this interface.
 Methods GetFieldValue(string fieldName, object value) Gets the field value.</description>
     </item>
     
     <item>
       <title>IObjectAdapter</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iobjectadapter/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iobjectadapter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iobjectadapter/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iobjectadapter/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IObjectAdapter  Adapter to interact with objects.
 Methods GetMemberValue(object model, string memberName, SerializationModelInfo modelInfo) Gets the member value.
 Parameters    Name Description     model The model.</description>
@@ -55,20 +55,20 @@ Parameters    Name Description     model The model.</description>
     
     <item>
       <title>IPropertySerializable</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ipropertyserializable/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ipropertyserializable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ipropertyserializable/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/ipropertyserializable/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IPropertySerializable  Fast serialization interaction. By default the serialization engine uses reflection to get and set values. To improve performance, once can implement this interface.
 Methods GetPropertyValue(string propertyName, object value) Gets the property value.</description>
     </item>
     
     <item>
       <title>ISerializable</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializable/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializable/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializable/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializable  Additional features for serializable objects.
 Methods FinishDeserialization() Finishes the deserialization.
 FinishSerialization() Finishes the serialization.
@@ -78,20 +78,20 @@ StartSerialization() Starts the serialization.</description>
     
     <item>
       <title>ISerializationConfiguration</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationconfiguration/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationconfiguration/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationconfiguration/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializationConfiguration  Serialization configuration.
 Properties Culture Gets or sets the culture used for serialization.</description>
     </item>
     
     <item>
       <title>ISerializationContext</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontext/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontext/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontext/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontext/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializationContext&amp;lt;TSerializationContext&amp;gt; : ISerializationContext where TSerializationContext : class  Implements interfaces ISerializationContext
 Interface for the serialization context used to serialize and deserialize models.
 Type Parameters TSerializationContext The type of the serialization context.</description>
@@ -99,10 +99,10 @@ Type Parameters TSerializationContext The type of the serialization context.</de
     
     <item>
       <title>ISerializationContextExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ISerializationContextExtensions  Extension methods for the serialization context.
 Methods FindParentType(ISerializationContext serializationContext, Func&amp;lt;Type, bool&amp;gt; predicate, int maxLevels) Tries to find the parent type in the object graph.
 Parameters    Name Description     serializationContext The serialization context.</description>
@@ -110,19 +110,19 @@ Parameters    Name Description     serializationContext The serialization contex
     
     <item>
       <title>ISerializationContextInfo</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfo/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfo/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializationContextInfo  Serialization context info.</description>
     </item>
     
     <item>
       <title>ISerializationContextInfoFactory</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfofactory/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfofactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfofactory/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationcontextinfofactory/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializationContextInfoFactory  Factory responsible for the serialization context info.
 Methods GetSerializationContextInfo(ISerializer serializer, object model, object data, ISerializationConfiguration configuration) Gets the serialization context based on the specific info.
 Parameters    Name Description     serializer The serializer.</description>
@@ -130,20 +130,20 @@ Parameters    Name Description     serializer The serializer.</description>
     
     <item>
       <title>ISerializationManager</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanager/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanager/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanager/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializationManager  Manager which is responsible for discovering what fields and properties of an object should be serialized.
 Events CacheInvalidated Occurs when the cache for a specific type has been invalidated.</description>
     </item>
     
     <item>
       <title>ISerializationManagerExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanagerextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanagerextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanagerextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializationmanagerextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ISerializationManagerExtensions  Extension methods for the ISerializationManager.
 Methods AddSerializerModifier&amp;lt;TSerializerModifier, TType&amp;gt;(ISerializationManager serializationManager) Adds the serializer modifier for a specific type.
 Type Parameters TType The type of the to be (de)serialized type.</description>
@@ -151,10 +151,10 @@ Type Parameters TType The type of the to be (de)serialized type.</description>
     
     <item>
       <title>ISerializer</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializer/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializer/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializer/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializer  Interface definition to serialize the IModel.
 Events Deserialized Occurs when an object has just been deserialized.
 DeserializedMember Occurs when an object has just deserialized a specific member.
@@ -163,10 +163,10 @@ Deserializing Occurs when an object is about to be deserialized.</description>
     
     <item>
       <title>ISerializerExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializerextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializerextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializerextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializerextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ISerializerExtensions  ISerializer extensions.
 Methods Deserialize&amp;lt;TModel&amp;gt;(ISerializer serializer, Stream stream, ISerializationConfiguration configuration) Deserializes the specified stream into the model.
 Type Parameters TModel The type of the t model.
@@ -175,10 +175,10 @@ Parameters    Name Description     serializer The serializer.</description>
     
     <item>
       <title>ISerializerModifier</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializermodifier/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializermodifier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializermodifier/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/iserializermodifier/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISerializerModifier  Allows modifications for a specific model for every supported serializer.
 Methods DeserializeMember(ISerializationContext context, MemberValue memberValue) Allows the customization of the provided MemberValue.
 Parameters    Name Description     context The context.</description>
@@ -186,10 +186,10 @@ Parameters    Name Description     context The context.</description>
     
     <item>
       <title>IncludeInSerializationAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/includeinserializationattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/includeinserializationattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/includeinserializationattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/includeinserializationattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class IncludeInSerializationAttribute : Attribute  Base types Attribute
 Attribute to define that a specific member must be included in the serialization by the serialization engine.
 Constructors IncludeInSerializationAttribute() Initializes a new instance of the IncludeInSerializationAttribute class.</description>
@@ -197,10 +197,10 @@ Constructors IncludeInSerializationAttribute() Initializes a new instance of the
     
     <item>
       <title>KeyValuePairSerializerModifier</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/keyvaluepairserializermodifier/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/keyvaluepairserializermodifier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/keyvaluepairserializermodifier/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/keyvaluepairserializermodifier/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class KeyValuePairSerializerModifier : SerializerModifierBase  Base types SerializerModifierBase
 Serializer modifier that supports key value pairs automatically.
 Fields Methods DeserializeMember(ISerializationContext context, MemberValue memberValue) Deserializes the member.
@@ -209,10 +209,10 @@ Parameters    Name Description     context The context.</description>
     
     <item>
       <title>MemberMetadata</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membermetadata/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membermetadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membermetadata/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membermetadata/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MemberMetadata  Metadata about a member of a type.
 Constructors MemberMetadata(Type containingType, Type memberType, SerializationMemberGroup memberGroup, string memberName) Initializes a new instance of the MemberMetadata class.
 Parameters    Name Description     containingType Type of the containing.</description>
@@ -220,10 +220,10 @@ Parameters    Name Description     containingType Type of the containing.</descr
     
     <item>
       <title>MemberSerializationEventArgs</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/memberserializationeventargs/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/memberserializationeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/memberserializationeventargs/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/memberserializationeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MemberSerializationEventArgs : SerializationEventArgs  Base types SerializationEventArgs
 Special member value serialization event args.
 Constructors MemberSerializationEventArgs(ISerializationContext serializationContext, MemberValue memberValue) Initializes a new instance of the MemberSerializationEventArgs class.
@@ -232,20 +232,20 @@ Parameters    Name Description     serializationContext The serialization contex
     
     <item>
       <title>MemberValue</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membervalue/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membervalue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membervalue/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/membervalue/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MemberValue  Member value which represents the serialization info of a specific member.
 Fields Constructors MemberValue(SerializationMemberGroup memberGroup, Type modelType, Type memberType, string name, string nameForSerialization, object value) Initializes a new instance of the MemberValue class.</description>
     </item>
     
     <item>
       <title>ObjectAdapter</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/objectadapter/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/objectadapter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/objectadapter/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/objectadapter/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ObjectAdapter : IObjectAdapter  Implements interfaces IObjectAdapter
 Adapter to interact with objects.
 Fields Methods GetMemberValue(object model, string memberName, SerializationModelInfo modelInfo) Gets the member value.
@@ -254,10 +254,10 @@ Parameters    Name Description     model The model.</description>
     
     <item>
       <title>SerializableKeyValuePair</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializablekeyvaluepair/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializablekeyvaluepair/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializablekeyvaluepair/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializablekeyvaluepair/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializableKeyValuePair  Serializable key value pair.
 Properties Key Gets or sets the key.
 KeyType Gets or sets the type of the key.
@@ -267,10 +267,10 @@ ValueType Gets or sets the type of the value.</description>
     
     <item>
       <title>SerializationConfiguration</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationconfiguration/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationconfiguration/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationconfiguration/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationConfiguration : ISerializationConfiguration  Implements interfaces ISerializationConfiguration
 Serialization configuration.
 Constructors SerializationConfiguration() Initializes a new instance of the SerializationConfiguration class.
@@ -279,10 +279,10 @@ Properties Culture Gets or sets the culture used for serialization.</description
     
     <item>
       <title>SerializationContext</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontext/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontext/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontext/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontext/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationContext&amp;lt;TContext&amp;gt; : ISerializationContext&amp;lt;TContext&amp;gt; where TContext : class  Implements interfaces ISerializationContext
 The serialization context used to serialize and deserialize models.
 Type Parameters TContext The type of the context.
@@ -291,10 +291,10 @@ Fields Constructors SerializationContext(object model, Type modelType, TContext 
     
     <item>
       <title>SerializationContextHelper</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontexthelper/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontexthelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontexthelper/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontexthelper/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class SerializationContextHelper  Helper class for serialization.
 Methods GetSerializationReferenceManagerScopeName() Gets the name of the serialization reference manager scope.
 Returns The name of the scope.</description>
@@ -302,10 +302,10 @@ Returns The name of the scope.</description>
     
     <item>
       <title>SerializationContextMode</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontextmode/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontextmode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontextmode/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationcontextmode/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum SerializationContextMode : Enum  Base types Enum
 The mode in which a context is being used.
 Fields Deserialization 1
@@ -316,10 +316,10 @@ The context is being used for serialization.</description>
     
     <item>
       <title>SerializationEventArgs</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationeventargs/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationeventargs/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationEventArgs : EventArgs  Base types EventArgs
 The serialization event args.
 Constructors SerializationEventArgs(ISerializationContext serializationContext) Initializes a new instance of the SerializationEventArgs class.
@@ -328,10 +328,10 @@ Parameters    Name Description     serializationContext The serialization contex
     
     <item>
       <title>SerializationFactory</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationfactory/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationfactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationfactory/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationfactory/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class SerializationFactory  Factory responsible to create serializers. Internally this will query the ServiceLocator the retrieve the registered serializers.
 Methods GetBinarySerializer() Gets the binary serializer.
 Returns The registered IBinarySerializer.
@@ -340,10 +340,10 @@ GetXmlSerializer() Gets the XML serializer.</description>
     
     <item>
       <title>SerializationInfoSerializationContextInfo</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationinfoserializationcontextinfo/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationinfoserializationcontextinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationinfoserializationcontextinfo/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationinfoserializationcontextinfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationInfoSerializationContextInfo : ISerializationContextInfo  Implements interfaces ISerializationContextInfo
 Class containing all information about the serialization info (.NET only) serialization context.
 Constructors SerializationInfoSerializationContextInfo() Initializes a new instance of the SerializationInfoSerializationContextInfo class.
@@ -352,10 +352,10 @@ SerializationInfoSerializationContextInfo(SerializationInfo serializationInfo, L
     
     <item>
       <title>SerializationManager</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmanager/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmanager/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmanager/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationManager : ISerializationManager  Implements interfaces ISerializationManager
 Manager which is responsible for discovering what fields and properties of an object should be serialized.
 Fields Events CacheInvalidated Occurs when the cache for a specific type has been invalidated.</description>
@@ -363,10 +363,10 @@ Fields Events CacheInvalidated Occurs when the cache for a specific type has bee
     
     <item>
       <title>SerializationMemberGroup</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmembergroup/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmembergroup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmembergroup/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmembergroup/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum SerializationMemberGroup : Enum  Base types Enum
 Enum representing all member group.
 Fields CatelProperty 0
@@ -378,10 +378,10 @@ Dictionary 5</description>
     
     <item>
       <title>SerializationModelInfo</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmodelinfo/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmodelinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmodelinfo/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationmodelinfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationModelInfo  Class that contains info about serializable models.
 Constructors SerializationModelInfo(Type modelType, Dictionary&amp;lt;string, MemberMetadata&amp;gt; catelProperties, Dictionary&amp;lt;string, MemberMetadata&amp;gt; fields, Dictionary&amp;lt;string, MemberMetadata&amp;gt; regularProperties) Initializes a new instance of the SerializationModelInfo class.
 Parameters    Name Description     modelType Type of the model.</description>
@@ -389,10 +389,10 @@ Parameters    Name Description     modelType Type of the model.</description>
     
     <item>
       <title>SerializationObject</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationobject/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationobject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationobject/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationobject/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationObject  Class containing information about a (de)serialized value.
 Fields Constructors Properties IsSuccessful Gets or sets a value indicating whether this instance is successful.
 MemberGroup Gets the group of the member.</description>
@@ -400,10 +400,10 @@ MemberGroup Gets the group of the member.</description>
     
     <item>
       <title>SerializationScope</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationscope/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationscope/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationscope/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializationscope/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializationScope  The serialization scope.
 Constructors SerializationScope(ISerializer serializer, ISerializationConfiguration configuration) Initializes a new instance of the SerializationScope class.
 Parameters    Name Description     serializer The serializer.</description>
@@ -411,40 +411,40 @@ Parameters    Name Description     serializer The serializer.</description>
     
     <item>
       <title>SerializeAsCollectionAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeascollectionattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeascollectionattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeascollectionattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeascollectionattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializeAsCollectionAttribute : Attribute  Base types Attribute
 Attribute to inform the serializers in Catel to serialize the object as collection. This can only be used on ModelBase classes that implement.</description>
     </item>
     
     <item>
       <title>SerializeEnumAsStringAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeenumasstringattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeenumasstringattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeenumasstringattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeenumasstringattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializeEnumAsStringAttribute : Attribute  Base types Attribute
 Attribute to define that a enum member must be serialized as string.</description>
     </item>
     
     <item>
       <title>SerializeUsingParseAndToStringAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeusingparseandtostringattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeusingparseandtostringattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeusingparseandtostringattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializeusingparseandtostringattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializeUsingParseAndToStringAttribute : Attribute  Base types Attribute
 Parse the members decorated with this attribute usingParse andToString.</description>
     </item>
     
     <item>
       <title>SerializerBase</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializerbase/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializerbase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializerbase/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializerbase/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class SerializerBase&amp;lt;TSerializationContext&amp;gt; : ISerializer where TSerializationContext : class  Implements interfaces ISerializer
 Base class for all serializers.
 Type Parameters TSerializationContext The type of the serialization context.
@@ -453,10 +453,10 @@ Fields CollectionName The collection name.</description>
     
     <item>
       <title>SerializerModifierAttribute</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierattribute/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierattribute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierattribute/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierattribute/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SerializerModifierAttribute : Attribute  Base types Attribute
 Attribute to specify the serialization modifier attribute.
 Constructors SerializerModifierAttribute(Type serializerModifierType) Initializes a new instance of the SerializerModifierAttribute class.
@@ -465,10 +465,10 @@ Parameters    Name Description     serializerModifierType Type of the serializer
     
     <item>
       <title>SerializerModifierBase</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierbase/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierbase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierbase/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/catel/runtime/serialization/serializermodifierbase/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class SerializerModifierBase&amp;lt;TModel&amp;gt; : SerializerModifierBase  Base types SerializerModifierBase
 Allows modifications for a specific model for every supported serializer.
 Type Parameters TModel The type of the model.

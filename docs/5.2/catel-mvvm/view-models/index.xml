@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>View models on Catel docs</title>
+    <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/</link>
+    <description>Recent content in View models on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.2/catel-mvvm/view-models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a basic view model</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-basic-view-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-basic-view-model/</guid>
+      <description>This example shows how to create a view model without a model. This is useful when a UI item should simply acknowledge a step that doesn&amp;rsquo;t need to be persisted to a persistence store. The view model does include validation.
+Code snippets  vm - declare a view model vmprop - declare a property on a view model  Explanation When implementing a simple view model without a model, only one property has to be implemented that represents the checkbox that needs to be checked.</description>
+    </item>
+    
+    <item>
+      <title>Creating a view model with a model</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-view-model-with-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-view-model-with-model/</guid>
+      <description>This example shows how to create a &amp;ldquo;classical&amp;rdquo; view model without any Catel specific MVVM features such as data pass-through. Although it is recommended to use the pass-through features, some people want to have custom validation on the view model, or want to be fully in control.
+Code snippets  vm - declare a view model vmprop - declare a property on a view model  Explanation To be in full control, the only thing required is to create a basic view model with the vm code snippet.</description>
+    </item>
+    
+    <item>
+      <title>Creating a view model with a model and mappings</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/</guid>
+      <description>During of the use of the MVVM pattern, we noticed that lots and lots of developers have a model, and map the values of the model to all properties of the view model. When the UI closes, the developers map all the properties back to the model. All this redundant code is not necessary when using the view models of Catel.
+In Catel, we have created attributes that allow you to define a property as a model.</description>
+    </item>
+    
+    <item>
+      <title>Mapping properties from view to view model</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/</guid>
+      <description>Sometimes a view (for example, a user control) contains additional properties besides the DataContext to interact with the view model. By default, it is hard to implement this in an MVVM sccenario, but Catel solves this issue using the ViewToViewModel attribute.
+This attribute automatically keeps track of changes in both the view and the view model and this way, a control can have several properties and still implement MVVM.</description>
+    </item>
+    
+    <item>
+      <title>Nested view models</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/nested-view-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/nested-view-models/</guid>
+      <description>For more information on this topic, see nested user controls.</description>
+    </item>
+    
+    <item>
+      <title>Validation in view models</title>
+      <link>https://docs.catelproject.com/5.2/catel-mvvm/view-models/validation-in-view-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/catel-mvvm/view-models/validation-in-view-models/</guid>
+      <description>Validation is very important to provide both feedback to the user, but also to make sure that no invalid data reaches the model or database. Catel offers several ways to implement validation. All options are described in this part of the documentation.
+Validation in models via mappings The best way is to put validation into a model. Most model objects nowadays implement INotifyPropertyChanged and IDataErrorInfo, the most important classes that are required to use mappings from/to a model inside a view model.</description>
+    </item>
+    
+  </channel>
+</rss>

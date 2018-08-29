@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Services on Catel docs</title>
+    <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/</link>
+    <description>Recent content in Catel.Services on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.0/reference/catel.core/catel/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AccelerometerSensorListener</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometersensorlistener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometersensorlistener/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on Xamarin - Android    public class AccelerometerSensorListener : Object  Base types Object
+Sensor listener for the accelerometer.
+Events SensorChanged Invoked when the sensor value has changed.
+Methods OnAccuracyChanged(Sensor sensor, SensorStatus accuracy) Called when the accuracy of a sensor has changed.
+Parameters    Name Description     sensor The sensor.</description>
+    </item>
+    
+    <item>
+      <title>AccelerometerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AccelerometerService : IAccelerometerService, SensorServiceBase&amp;lt;IAccelerometerValue, AccelerometerValueChangedEventArgs&amp;gt;  Base types SensorServiceBase
+Base types
+IAccelerometerService
+Implementation of the IAccelerometerService.
+Constructors AccelerometerService(IDispatcherService dispatcherService) Initializes a new instance of the AccelerometerService class.
+Parameters    Name Description     dispatcherService The dispatcher service.</description>
+    </item>
+    
+    <item>
+      <title>AccelerometerValue</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometervalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometervalue/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AccelerometerValue : IAccelerometerValue  Base types
+IAccelerometerValue
+Accelerometer reading value.
+Constructors AccelerometerValue(DateTimeOffset timestamp, double x, double y, double z) Initializes a new instance of the AccelerometerValue class.
+Parameters    Name Description     timestamp The timestamp.</description>
+    </item>
+    
+    <item>
+      <title>AccelerometerValueChangedEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometervaluechangedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/accelerometervaluechangedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AccelerometerValueChangedEventArgs : EventArgs  Base types EventArgs
+implementation which contains a new accelerometer value.
+Constructors AccelerometerValueChangedEventArgs(IAccelerometerValue newValue) Initializes a new instance of the AccelerometerValueChangedEventArgs class.
+Parameters    Name Description     newValue The new accelerometer value.</description>
+    </item>
+    
+    <item>
+      <title>ApplicationClosingEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/applicationclosingeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/applicationclosingeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ApplicationClosingEventArgs : EventArgs  Base types EventArgs
+Event args class for an event when an application gets closed.
+Properties Cancel Gets or sets a value indicating whether the closing of the application should be canceled.</description>
+    </item>
+    
+    <item>
+      <title>AutoCompletionService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/autocompletionservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/autocompletionservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AutoCompletionService : IAutoCompletionService  Base types
+IAutoCompletionService
+Service to implement auto completion features.
+Constructors AutoCompletionService() Initializes a new instance of the AutoCompletionService class.
+Methods GetAutoCompleteValues(string property, string filter, IEnumerable source) Gets the auto complete values.</description>
+    </item>
+    
+    <item>
+      <title>CameraOperationCompletedEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraoperationcompletedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraoperationcompletedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CameraOperationCompletedEventArgs : EventArgs  Base types EventArgs
+for camera operations.
+Constructors CameraOperationCompletedEventArgs(Exception ex) Initializes a new instance of the CameraOperationCompletedEventArgs class.
+Parameters    Name Description     ex The exception that occurred.</description>
+    </item>
+    
+    <item>
+      <title>CameraService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CameraService : CameraServiceBase  Base types CameraServiceBase
+Camera service.</description>
+    </item>
+    
+    <item>
+      <title>CameraServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameraservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class CameraServiceBase : ICameraService, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+ICameraService
+Base implementation of the ICameraService. This implementation takes care of some protection code to prevent double initialization or forgotten initialization.</description>
+    </item>
+    
+    <item>
+      <title>CameraType</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameratype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/cameratype/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum CameraType : Enum  Base types Enum
+Specifies the general location of the camera on the device.
+Fields FrontFacing The camera is located on the front of the device.
+Primary The camera is located on the back of the device.</description>
+    </item>
+    
+    <item>
+      <title>ContentReadyEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/contentreadyeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/contentreadyeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ContentReadyEventArgs : EventArgs  Base types EventArgs
+implementation for camera content ready operations.
+Constructors ContentReadyEventArgs(Stream imageStream) Initializes a new instance of the ContentReadyEventArgs class.
+Parameters    Name Description     imageStream The image stream.</description>
+    </item>
+    
+    <item>
+      <title>DispatcherService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/dispatcherservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/dispatcherservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class DispatcherService : IDispatcherService  Base types
+IDispatcherService
+Service that allows the retrieval of the UI dispatcher.
+Fields Constructors DispatcherService() Initializes a new instance of the DispatcherService class.
+Properties Methods BeginInvoke(Action action, bool onlyBeginInvokeWhenNoAccess) Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on.</description>
+    </item>
+    
+    <item>
+      <title>ExportMode</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/exportmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/exportmode/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum ExportMode : Enum  Base types Enum
+The export mode.
+Fields Clipboard 1
+The clipboard export mode.
+File 2
+The file export mode
+Print 0
+The print export mode.</description>
+    </item>
+    
+    <item>
+      <title>FileServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/fileservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/fileservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class FileServiceBase : IFileSupport, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+IFileSupport
+Base class for file services.
+Constructors Properties AddExtension Gets or sets a value indicating whether a file dialog automatically adds an extension to a file name if the user omits an extension.</description>
+    </item>
+    
+    <item>
+      <title>FlashMode</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/flashmode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/flashmode/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum FlashMode : Enum  Base types Enum
+Defines the operating mode of the camera flash.
+Fields Auto The camera flash is in auto mode.
+Off The camera flash is disabled.</description>
+    </item>
+    
+    <item>
+      <title>IAccelerometerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iaccelerometerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iaccelerometerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAccelerometerService : ISensorService&amp;lt;IAccelerometerValue, AccelerometerValueChangedEventArgs&amp;gt;  Base types
+ISensorService
+Interface for accelerometer sensors.</description>
+    </item>
+    
+    <item>
+      <title>IAccelerometerValue</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iaccelerometervalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iaccelerometervalue/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAccelerometerValue  Value information about the accelerometer.
+Properties Timestamp Gets the timestamp.
+X Gets the X coordinate.
+Y Gets the Y coordinate.
+Z Gets the Z coordinate.</description>
+    </item>
+    
+    <item>
+      <title>IAutoCompletionService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iautocompletionservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iautocompletionservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAutoCompletionService  Service to implement auto completion features.
+Methods GetAutoCompleteValues(string property, string filter, IEnumerable source) Gets the auto complete values.
+Parameters    Name Description     property The property.</description>
+    </item>
+    
+    <item>
+      <title>ICameraService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/icameraservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/icameraservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ICameraService  Interface for retrieving the camera information.
+Properties AvailableResolutions Gets the available resolutions.
+CameraType Gets the type of the camera.
+FlashMode Gets or sets the flash mode. Unsupported flash modes silently default to Off.</description>
+    </item>
+    
+    <item>
+      <title>IDispatcherService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/idispatcherservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/idispatcherservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IDispatcherService  Service that allows the retrieval of the UI dispatcher.
+Methods BeginInvoke(Action action, bool onlyBeginInvokeWhenNoAccess) Executes the specified delegate asynchronously with the specified arguments on the thread that the Dispatcher was created on.</description>
+    </item>
+    
+    <item>
+      <title>IDispatcherServiceExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/idispatcherserviceextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/idispatcherserviceextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IDispatcherServiceExtensions  Extension methods for the IDispatcherService.
+Methods BeginInvoke(IDispatcherService dispatcherService, Action action) Executes the specified action asynchronously with the specified arguments on the thread that the Dispatcher was created on.</description>
+    </item>
+    
+    <item>
+      <title>IFileSupport</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ifilesupport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ifilesupport/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IFileSupport  Interface that supports file handling.
+Properties AddExtension Gets or sets a value indicating whether a file dialog automatically adds an extension to a file name if the user omits an extension.</description>
+    </item>
+    
+    <item>
+      <title>ILanguageService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilanguageservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilanguageservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ILanguageService  Service to implement the retrieval of language services.
+Properties CacheResults Gets or sets a value indicating whether the results should be cached. The default value istrue.
+FallbackCulture Gets or sets the fallback culture.</description>
+    </item>
+    
+    <item>
+      <title>ILanguageSource</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilanguagesource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilanguagesource/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ILanguageSource  Interface defining a language source.
+Methods GetSource() Gets the source for the current language source.
+Returns The source string.</description>
+    </item>
+    
+    <item>
+      <title>ILocation</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilocation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilocation/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ILocation  Interface that represents a location.
+Properties Altitude Gets the altitude. The altitude is the height of the location.
+Latitude Gets the latitude. The latitute is the angular distance of that location south or north of the equator.</description>
+    </item>
+    
+    <item>
+      <title>ILocationService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilocationservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ilocationservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ILocationService  Interface that supports retrieving the current location.
+Properties CurrentLocation Gets the current location represented as ILocation. If no location is available,null will be returned.
+Remarks This is convenience property that internally calls GetCurrentLocation.</description>
+    </item>
+    
+    <item>
+      <title>IMessageService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/imessageservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/imessageservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IMessageService  Interface for the message service.
+Methods ShowAsync(string message, string caption, MessageButton button, MessageImage icon) Shows the specified message and returns the result.
+Parameters    Name Description     message The message.</description>
+    </item>
+    
+    <item>
+      <title>INavigationRootService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/inavigationrootservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/inavigationrootservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface INavigationRootService  Service to retrieve the navigation root in the application.
+Methods GetNavigationRoot() Gets the navigation root.
+Returns System.Object.</description>
+    </item>
+    
+    <item>
+      <title>INavigationService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/inavigationservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/inavigationservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface INavigationService  Service to navigate inside applications.
+Properties CanGoBack Gets a value indicating whether it is possible to navigate back.
+CanGoForward Gets a value indicating whether it is possible to navigate forward.</description>
+    </item>
+    
+    <item>
+      <title>IObjectConverterService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iobjectconverterservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iobjectconverterservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IObjectConverterService  Service to convert objects to strings and vice versa.
+Properties DefaultCulture Gets or sets the default culture to use for parsing.
+Methods ConvertFromObjectToObject(object value, Type targetType) Converts the specified object to an object.</description>
+    </item>
+    
+    <item>
+      <title>IObjectConverterServiceExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iobjectconverterserviceextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iobjectconverterserviceextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IObjectConverterServiceExtensions  Extension methods for IObjectConverterService.
+Methods ConvertFromObjectToObject(IObjectConverterService service, object value) Converts the specified object to an object.
+Type Parameters T The type to convert to.
+Parameters    Name Description     service The service.</description>
+    </item>
+    
+    <item>
+      <title>IOpenFileService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iopenfileservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iopenfileservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IOpenFileService : IFileSupport  Base types
+IFileSupport
+Interface for the Open File service.
+Properties FileNames Gets the file names in case IsMultiSelect istrue.
+IsMultiSelect Gets or sets a value indicating whether this instance is multi select.</description>
+    </item>
+    
+    <item>
+      <title>IPleaseWaitService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ipleasewaitservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ipleasewaitservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IPleaseWaitService  Interface for the Please Wait service.
+Properties ShowCounter Gets the show counter. This property can be used to get the current show counter if the please wait window should be hidden for a moment.</description>
+    </item>
+    
+    <item>
+      <title>IPleaseWaitServiceExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ipleasewaitserviceextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ipleasewaitserviceextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IPleaseWaitServiceExtensions  IPleaseWaitService extensions.
+Methods HideTemporarily(IPleaseWaitService pleaseWaitService) Hides the please wait service temporarily by storing the show counter and restoring it afterwards.
+Returns IDisposable.
+PushInScope(IPleaseWaitService pleaseWaitService, string status) Calls String) and returns a disposable token.</description>
+    </item>
+    
+    <item>
+      <title>IProcessService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iprocessservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iprocessservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IProcessService  Interface for the Process service.
+Methods StartProcess(string fileName, string arguments, ProcessCompletedDelegate processCompletedCallback) Starts a process resource by specifying the name of an application and a set of command-line arguments.</description>
+    </item>
+    
+    <item>
+      <title>IRollingInMemoryLogService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/irollinginmemorylogservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/irollinginmemorylogservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IRollingInMemoryLogService  Rolling in memory log service.
+Properties LogListener Gets the log listener.
+MaximumNumberOfErrorLogEntries Gets or sets the maximum number of error log entries to keep. The default value is 50.</description>
+    </item>
+    
+    <item>
+      <title>ISaveFileService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/isavefileservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/isavefileservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISaveFileService : IFileSupport  Base types
+IFileSupport
+Interface for the Save File service.
+Methods DetermineFileAsync() Determines the filename of the file what will be used.
+Returns true if a file is selected; otherwisefalse.</description>
+    </item>
+    
+    <item>
+      <title>ISchedulerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ischedulerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ischedulerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISchedulerService  Service that allows scheduling of actions in the future.
+Methods Schedule(Action action, DateTime dateTime) Schedules the specified action in an absolute.
+Parameters    Name Description     action The action.</description>
+    </item>
+    
+    <item>
+      <title>ISelectDirectoryService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iselectdirectoryservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iselectdirectoryservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISelectDirectoryService  Interface for the Select Directory service.
+Properties DirectoryName Gets the directory name.
+FileName Gets or sets the name of the file.
+Filter Gets or sets the filter to use when opening or saving the file.</description>
+    </item>
+    
+    <item>
+      <title>ISensorService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/isensorservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/isensorservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISensorService&amp;lt;TValueInterface, TEventArgs&amp;gt; where TEventArgs : EventArgs  Interface that serves as a base interface for interfaces supported sensors (especially on Windows Phone 7).
+Type Parameters TValueInterface The type of the value interface.</description>
+    </item>
+    
+    <item>
+      <title>IService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IService  Interface to define a service.
+Properties Name Gets the name of the service.</description>
+    </item>
+    
+    <item>
+      <title>IStartUpInfoProvider</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istartupinfoprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istartupinfoprovider/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IStartUpInfoProvider  The IStartUpInfoProvider interface.
+Properties Arguments Gets the application command line argument.</description>
+    </item>
+    
+    <item>
+      <title>IStartUpInfoProviderExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istartupinfoproviderextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istartupinfoproviderextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public static class IStartUpInfoProviderExtensions  Extension methods for the startup info provider.
+Fields Methods GetCommandLine(IStartUpInfoProvider startUpInfoProvider) Gets the command line as a string and quotes the values with a space.
+Parameters    Name Description     startUpInfoProvider The start up information provider.</description>
+    </item>
+    
+    <item>
+      <title>IState</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istate/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IState  State definition.</description>
+    </item>
+    
+    <item>
+      <title>IStateService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istateservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istateservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IStateService  The state service which can store and restore states.
+Methods LoadState(string key) Loads the state.
+Parameters    Name Description     key The key.    Returns StoreState(string key, IState state) Stores the state.</description>
+    </item>
+    
+    <item>
+      <title>IStateServiceExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istateserviceextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/istateserviceextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IStateServiceExtensions  Extensions for the state service.
+Methods LoadState(IStateService stateService, string key) Loads the state.
+Type Parameters TState The type of the state.
+Parameters    Name Description     stateService The state service.</description>
+    </item>
+    
+    <item>
+      <title>IUIVisualizerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iuivisualizerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iuivisualizerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IUIVisualizerService  This interface defines a UI controller which can be used to display dialogs in either modal or modaless form from a ViewModel.
+Methods IsRegistered(string name) Determines whether the specified name is registered.</description>
+    </item>
+    
+    <item>
+      <title>IUIVisualizerServiceExtensions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iuivisualizerserviceextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iuivisualizerserviceextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class IUIVisualizerServiceExtensions  Extension methods for the IUIVisualizerService.
+Fields Methods ActivateWindow(Window window) Activates the window.
+Parameters    Name Description     window The window.    Returns true if the window is activated with success; otherwisefalse ornull.</description>
+    </item>
+    
+    <item>
+      <title>IVibrateService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ivibrateservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/ivibrateservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IVibrateService  Interface defining the functionality of the vibrate service.
+Methods Start(TimeSpan duration) Starts vibration on the device.
+Parameters    Name Description     duration A TimeSpan object specifying the amount of time, in seconds, for which the phone vibrates.</description>
+    </item>
+    
+    <item>
+      <title>IViewExportService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewexportservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewexportservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IViewExportService  The ViewExportService interface.
+Methods Export(IViewModel viewModel, ExportMode exportMode, double dpiX, double dpiY) Exports the view model view to the clipboard or to a print.
+Parameters    Name Description     viewModel The view model.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewmodelservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewmodelservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IViewModelService : IService  Base types
+IService
+Interface to declare services in a view model.</description>
+    </item>
+    
+    <item>
+      <title>IViewModelWrapperService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewmodelwrapperservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iviewmodelwrapperservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IViewModelWrapperService  The view model wrapper service which is responsible of ensuring the view model container layer.
+Methods IsWrapped(IView view) Determines whether the specified view is already wrapped.
+Parameters    Name Description     view The view.</description>
+    </item>
+    
+    <item>
+      <title>IWrapControlService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iwrapcontrolservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/iwrapcontrolservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public interface IWrapControlService  The wrap control service interface.
+Methods CanBeWrapped(FrameworkElement frameworkElement) Determines whether the specified can be safely wrapped.
+Parameters    Name Description     frameworkElement The framework element.    Returns true if the specified can be safely wrapped; otherwise,false.</description>
+    </item>
+    
+    <item>
+      <title>LanguageResourceKey</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageresourcekey/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageresourcekey/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class LanguageResourceKey : IEquatable&amp;lt;LanguageResourceKey&amp;gt;  Base types IEquatable
+Language resource key.
+Constructors LanguageResourceKey(string resourceName, CultureInfo cultureInfo) Initializes a new instance of the LanguageResourceKey class.
+Parameters    Name Description     resourceName Name of the resource.</description>
+    </item>
+    
+    <item>
+      <title>LanguageResourceSource</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageresourcesource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageresourcesource/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class LanguageResourceSource : ILanguageSource  Base types
+ILanguageSource
+ILanguageSource implementation for resource files.
+Constructors LanguageResourceSource(string assemblyName, string namespaceName, string resourceFileName) Initializes a new instance of the LanguageResourceSource class.
+Parameters    Name Description     assemblyName Name of the assembly.</description>
+    </item>
+    
+    <item>
+      <title>LanguageService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class LanguageService : ILanguageService, LanguageServiceBase  Base types LanguageServiceBase
+Base types
+ILanguageService
+Service to implement the retrieval of language services.
+Fields Constructors LanguageService() Initializes a new instance of the LanguageService class.</description>
+    </item>
+    
+    <item>
+      <title>LanguageServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/languageservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class LanguageServiceBase  Abstract class to allow partial abstract methods.
+Methods GetString(ILanguageSource languageSource, string resourceName, CultureInfo cultureInfo) Gets the string from the specified resource file with the current culture.
+Parameters    Name Description     languageSource The language source.</description>
+    </item>
+    
+    <item>
+      <title>Location</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/location/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/location/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class Location : ILocation  Base types
+ILocation
+Class that represents a location.
+Constructors Location(double latitude, double longitude) Initializes a new instance of the Location class.
+Parameters    Name Description     latitude The latitude.</description>
+    </item>
+    
+    <item>
+      <title>LocationChangedEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationchangedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationchangedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class LocationChangedEventArgs : EventArgs  Base types EventArgs
+implementation which contains a location.
+Constructors LocationChangedEventArgs(ILocation newLocation) Initializes a new instance of the LocationChangedEventArgs class.
+Parameters    Name Description     newLocation The new location.</description>
+    </item>
+    
+    <item>
+      <title>LocationListener</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationlistener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationlistener/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on Xamarin - Android    public class LocationListener : Thread  Base types Thread
+A location listener.
+Fields Events LocationChanged Occurs when the location has changed.
+StatusChanged Occurs when the status has changed.
+Methods OnLocationChanged(Location location) Called when the location has changed.
+Parameters    Name Description     location The new location, as a Location object.</description>
+    </item>
+    
+    <item>
+      <title>LocationService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class LocationService : LocationServiceBase  Base types LocationServiceBase
+Implementation of the ILocationService
+Fields Constructors LocationService(IDispatcherService dispatcherService) Initializes a new instance of the LocationService class.
+Parameters    Name Description     dispatcherService The dispatcher service.</description>
+    </item>
+    
+    <item>
+      <title>LocationServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/locationservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class LocationServiceBase : ILocationService  Base types
+ILocationService
+Class to allow partial abstract methods.
+Fields Constructors Properties CurrentLocation Gets the current location represented as ILocation. If no location is available,null will be returned.</description>
+    </item>
+    
+    <item>
+      <title>MessageButton</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messagebutton/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messagebutton/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum MessageButton : Enum  Base types Enum
+Available message buttons.
+Remarks Although directly extracted from the WPFMessageBoxButton, this enum provides more flexibility to use other ways to show messages to the user instead of the defaultMessageBox.</description>
+    </item>
+    
+    <item>
+      <title>MessageImage</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageimage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageimage/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum MessageImage : Enum  Base types Enum
+Available message images.
+Remarks Although directly extracted from the WPFMessageBoxImage, this enum provides more flexibility to use other ways to show messages to the user instead of the defaultMessageBox.</description>
+    </item>
+    
+    <item>
+      <title>MessageResult</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum MessageResult : Enum  Base types Enum
+Available message results.
+Remarks Although directly extracted from the WPFMessageBoxResult, this enum provides more flexibility to use other ways to show messages to the user instead of the defaultMessageBox.</description>
+    </item>
+    
+    <item>
+      <title>MessageService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/messageservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MessageService : IMessageService, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+IMessageService
+Message service that implements the IMessageService.
+Fields Constructors MessageService(IDispatcherService dispatcherService) Initializes a new instance of the MessageService class.
+Parameters    Name Description     dispatcherService The dispatcher service.</description>
+    </item>
+    
+    <item>
+      <title>NamingConvention</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/namingconvention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/namingconvention/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class NamingConvention  Class that is able to resolve naming conventions.
+Fields Assembly The assembly constant that will be replaced by the naming convention. This constant will be replaced by the assembly name.</description>
+    </item>
+    
+    <item>
+      <title>NavigationHelper</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationhelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on Portable Class Libraries    public static class NavigationHelper  The navigation helper class.
+Methods PopModalAsync() Asynchronously dismisses the most recent modally presented Page.
+Returns An awaitable Task&amp;lt;Page&amp;gt;, indicating the PopModalAsync completion. The Task.Result is the Page that has been popped.
+PushModalAsync(ContentPage contentPage) Presents a Page modally.
+Parameters    Name Description     contentPage The page to present    Returns An awaitable Task, indicating the PushModal completion.</description>
+    </item>
+    
+    <item>
+      <title>NavigationRootService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationrootservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationrootservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class NavigationRootService : INavigationRootService  Base types
+INavigationRootService
+Service to retrieve the navigation root in the application.
+Fields Methods GetNavigationRoot() Gets the navigation root.
+Returns System.Object.</description>
+    </item>
+    
+    <item>
+      <title>NavigationService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class NavigationService : INavigationService, NavigationServiceBase  Base types NavigationServiceBase
+Base types
+INavigationService
+Service to navigate inside applications.
+Fields Constructors NavigationService(INavigationRootService navigationRootService) Initializes a new instance of the NavigationService class.
+Parameters    Name Description     navigationRootService The navigation root service.</description>
+    </item>
+    
+    <item>
+      <title>NavigationServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/navigationservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class NavigationServiceBase : ViewModelServiceBase  Base types ViewModelServiceBase
+Abstract base class to support abstract partial methods.
+Properties CanGoBack Gets a value indicating whether it is possible to navigate back.
+CanGoForward Gets a value indicating whether it is possible to navigate forward.</description>
+    </item>
+    
+    <item>
+      <title>ObjectConverterService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/objectconverterservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/objectconverterservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ObjectConverterService : IObjectConverterService  Base types
+IObjectConverterService
+Service to convert objects to strings and vice versa.
+Constructors ObjectConverterService() Initializes a new instance of the ObjectConverterService class.
+Properties DefaultCulture Gets or sets the default culture.</description>
+    </item>
+    
+    <item>
+      <title>OpenFileService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/openfileservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/openfileservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class OpenFileService : IOpenFileService, FileServiceBase  Base types FileServiceBase
+Base types
+IOpenFileService
+Service to open files.
+Properties FileNames Gets the file names in case IsMultiSelect istrue.
+IsMultiSelect Gets or sets a value indicating whether this instance is multi select.</description>
+    </item>
+    
+    <item>
+      <title>PageNotRegisteredException</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pagenotregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pagenotregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PageNotRegisteredException : Exception  Base types Exception
+Exception in case a page not registered, but still being used.
+Constructors PageNotRegisteredException(string name) Initializes a new instance of the PageNotRegisteredException class.
+Parameters    Name Description     name The name of the page.</description>
+    </item>
+    
+    <item>
+      <title>PleaseWaitService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pleasewaitservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pleasewaitservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PleaseWaitService : IPleaseWaitService  Base types
+IPleaseWaitService
+Service to show a busy indicator.
+Fields Constructors PleaseWaitService(ILanguageService languageService, IDispatcherService dispatcherService) Initializes a new instance of the PleaseWaitService class.
+Parameters    Name Description     languageService The language service.</description>
+    </item>
+    
+    <item>
+      <title>PleaseWaitWorkDelegate</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pleasewaitworkdelegate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/pleasewaitworkdelegate/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public delegate PleaseWaitWorkDelegate : MulticastDelegate  Base types MulticastDelegate
+Please wait work delegate.</description>
+    </item>
+    
+    <item>
+      <title>ProcessCompletedDelegate</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/processcompleteddelegate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/processcompleteddelegate/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public delegate ProcessCompletedDelegate : MulticastDelegate  Base types MulticastDelegate
+Delegate to invoke when a process of the IProcessService is completed.</description>
+    </item>
+    
+    <item>
+      <title>ProcessService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/processservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/processservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public class ProcessService : IProcessService  Base types
+IProcessService
+Process service to run files or start processes from a view model.
+Methods StartProcess(string fileName, string arguments, ProcessCompletedDelegate processCompletedCallback) Starts a process resource by specifying the name of an application and a set of command-line arguments.</description>
+    </item>
+    
+    <item>
+      <title>RollingInMemoryLogService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/rollinginmemorylogservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/rollinginmemorylogservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class RollingInMemoryLogService : IRollingInMemoryLogService, ServiceBase  Base types ServiceBase
+Base types
+IRollingInMemoryLogService
+Rolling in memory log service.
+Fields Constructors RollingInMemoryLogService() Initializes a new instance of the RollingInMemoryLogService class.
+RollingInMemoryLogService(RollingInMemoryLogListener logListener) Initializes a new instance of the RollingInMemoryLogService class.</description>
+    </item>
+    
+    <item>
+      <title>SaveFileService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/savefileservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/savefileservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class SaveFileService : ISaveFileService, FileServiceBase  Base types FileServiceBase
+Base types
+ISaveFileService
+Service to save files.
+Methods DetermineFileAsync() Determines the filename of the file what will be used.
+Returns true if a file is selected; otherwisefalse.
+Remarks If this method returnstrue, the FileName property will be filled with the filename.</description>
+    </item>
+    
+    <item>
+      <title>SchedulerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/schedulerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/schedulerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class SchedulerService : ISchedulerService, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+ISchedulerService
+Service that allows scheduling of actions in the future.
+Methods Schedule(Action action, DateTime dateTime) Schedules the specified action in an absolute.
+Parameters    Name Description     action The action.</description>
+    </item>
+    
+    <item>
+      <title>SelectDirectoryService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/selectdirectoryservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/selectdirectoryservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class SelectDirectoryService : ISelectDirectoryService, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+ISelectDirectoryService
+Service to open files.
+Properties DirectoryName Gets the directory name.
+FileName Gets or sets the name of the file.
+Filter Gets or sets the filter to use when opening or saving the file.</description>
+    </item>
+    
+    <item>
+      <title>SensorServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/sensorservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/sensorservicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class SensorServiceBase&amp;lt;TValueInterface, TEventArgs&amp;gt; : ISensorService&amp;lt;TValueInterface, TEventArgs&amp;gt;, ViewModelServiceBase where TEventArgs : EventArgs  Base types ViewModelServiceBase
+Base types
+ISensorService
+Base class for implementing sensor services.
+Fields Constructors Properties CurrentValue Gets the current sensor value.</description>
+    </item>
+    
+    <item>
+      <title>ServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/servicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/servicebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ServiceBase : IService  Base types
+IService
+Base class for services.
+Properties Name Gets the name of the service.</description>
+    </item>
+    
+    <item>
+      <title>Size</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/size/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public struct Size : ValueType  Base types ValueType
+Object containing size information.
+Fields Constructors Size(double width, double height) Initializes a new instance of the Size class.
+Parameters    Name Description     width The width.</description>
+    </item>
+    
+    <item>
+      <title>StartUpInfoProvider</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/startupinfoprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/startupinfoprovider/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public class StartUpInfoProvider : IStartUpInfoProvider  Base types
+IStartUpInfoProvider
+Fields Properties Arguments Gets the application command line argument.</description>
+    </item>
+    
+    <item>
+      <title>StateService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/stateservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/stateservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class StateService : IStateService  Base types
+IStateService
+The state service which can store and restore states.
+Fields Methods LoadState(string key) Loads the state.
+Parameters    Name Description     key The key.</description>
+    </item>
+    
+    <item>
+      <title>UICompletedEventArgs</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/uicompletedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/uicompletedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class UICompletedEventArgs : EventArgs  Base types EventArgs
+This is the EventArgs return value for the IUIVisualizer.Show completed event.
+Constructors UICompletedEventArgs(object dataContext, Nullable result) Initializes a new instance of the UICompletedEventArgs class.</description>
+    </item>
+    
+    <item>
+      <title>UIVisualizerService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/uivisualizerservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/uivisualizerservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - iOS    public class UIVisualizerService : IUIVisualizerService, ViewModelServiceBase  Base types ViewModelServiceBase
+Base types
+IUIVisualizerService
+Service to show modal or non-modal popup windows. All windows will have to be registered manually or are be resolved via the IViewLocator.</description>
+    </item>
+    
+    <item>
+      <title>VibrateService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/vibrateservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/vibrateservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class VibrateService : IVibrateService  Base types
+IVibrateService
+Implementation of the IVibrateService.
+Constructors VibrateService() Constructs the vibrate service.
+Methods Start(TimeSpan duration) Starts vibration on the device.
+Parameters    Name Description     duration A TimeSpan object specifying the amount of time, in seconds, for which the phone vibrates.</description>
+    </item>
+    
+    <item>
+      <title>ViewExportService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewexportservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewexportservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public class ViewExportService : IViewExportService, ServiceBase  Base types ServiceBase
+Base types
+IViewExportService
+The ViewExportService interface.
+Fields Constructors ViewExportService(IViewManager viewManager, ISaveFileService saveFileService) Initializes a new instance of the ViewExportService class.
+Parameters    Name Description     viewManager The view manager.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelservicebase/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ViewModelServiceBase : IViewModelService, ServiceBase  Base types ServiceBase
+Base types
+IViewModelService
+Base class for all view model services.
+Properties </description>
+    </item>
+    
+    <item>
+      <title>ViewModelWrapperService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelwrapperservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelwrapperservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ViewModelWrapperService : IViewModelWrapperService, ViewModelWrapperServiceBase  Base types ViewModelWrapperServiceBase
+Base types
+IViewModelWrapperService
+The view model wrapper service which is responsible of ensuring the view model container layer.
+Fields Methods IsWrapped(IView view) Determines whether the specified view is already wrapped.</description>
+    </item>
+    
+    <item>
+      <title>ViewModelWrapperServiceBase</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelwrapperservicebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/viewmodelwrapperservicebase/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ViewModelWrapperServiceBase  Abstract class to enable partial abstract methods.
+Methods </description>
+    </item>
+    
+    <item>
+      <title>WindowNotRegisteredException</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/windownotregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/windownotregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class WindowNotRegisteredException : Exception  Base types Exception
+Exception in case a window not registered, but still being used.
+Constructors WindowNotRegisteredException(string name) Initializes a new instance of the WindowNotRegisteredException class.
+Parameters    Name Description     name The name of the window.</description>
+    </item>
+    
+    <item>
+      <title>WrapControlService</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservice/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public class WrapControlService : IWrapControlService  Base types
+IWrapControlService
+An helper to wrap controls and windows with several controls, such as the InfoBarMessageControl.
+Methods CanBeWrapped(FrameworkElement frameworkElement) Determines whether the specified can be safely wrapped.
+Parameters    Name Description     frameworkElement The framework element.</description>
+    </item>
+    
+    <item>
+      <title>WrapControlServiceControlNames</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservicecontrolnames/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservicecontrolnames/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public static class WrapControlServiceControlNames  The wrap control service control names.
+Fields ButtonsWrapPanelName The name of the wrap panel that contains the buttons.
+DefaultCancelButtonName The name of the default cancel button.
+DefaultOkButtonName The name of the default ok button.
+InfoBarMessageControlName The name of the info bar message control.</description>
+    </item>
+    
+    <item>
+      <title>WrapControlServiceWrapOptions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservicewrapoptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapcontrolservicewrapoptions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6    public enum WrapControlServiceWrapOptions : Enum  Base types Enum
+Available wrap options that can be used in the IWrapControlService.
+Fields All All available options.
+GenerateInlineInfoBarMessageControl Generates an inline InfoBarMessageControl around the element to wrap.
+GenerateOverlayInfoBarMessageControl Generates an overlay InfoBarMessageControl around the element to wrap.</description>
+    </item>
+    
+    <item>
+      <title>WrapOptions</title>
+      <link>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapoptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/reference/catel.core/catel/services/wrapoptions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Services   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum WrapOptions : Enum  Base types Enum
+Available wrap options.
+Fields CreateWarningAndErrorValidatorForViewModel Create warning and error validator for view model.
+None No options.</description>
+    </item>
+    
+  </channel>
+</rss>

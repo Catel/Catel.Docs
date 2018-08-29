@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Windows.Input on Catel docs</title>
+    <link>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/</link>
+    <description>Recent content in Catel.Windows.Input on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>InputGesture</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/inputgesture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/inputgesture/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Input   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class InputGesture : ModelBase  Base types ModelBase
+Input gesture class.
+Fields KeyProperty Register the Key property so it is known in the class.
+ModifiersProperty Register the Modifiers property so it is known in the class.
+Constructors InputGesture() Initializes a new instance of the InputGesture class.</description>
+    </item>
+    
+    <item>
+      <title>InputGestureExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/inputgestureextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/inputgestureextensions/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Input   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class InputGestureExtensions  Extension methods for the InputGesture.
+Methods IsEmpty(InputGesture inputGesture) Determines whether the specified input gesture is empty.
+Parameters    Name Description     inputGesture The input gesture.    Returns true if the specified input gesture is empty; otherwise,false.</description>
+    </item>
+    
+    <item>
+      <title>KeyboardHelper</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/keyboardhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.mvvm/catel/windows/input/keyboardhelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Input   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class KeyboardHelper  Helper class for the keyboard.
+Methods AreKeyboardModifiersPressed(ModifierKeys modifier, bool checkForExactModifiers) Determines whether the specified keyboard modifiers are currently pressed.
+Parameters    Name Description     modifier One or more keyboard modifiers.</description>
+    </item>
+    
+  </channel>
+</rss>

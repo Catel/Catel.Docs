@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Preventing memory leaks on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/</link>
+    <link>https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/</link>
     <description>Recent content in Preventing memory leaks on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Change notification wrapper</title>
-      <link>http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/change-notification-wrapper/</link>
+      <link>https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/change-notification-wrapper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/change-notification-wrapper/</guid>
+      <guid>https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/change-notification-wrapper/</guid>
       <description>Subscribing to change notifications of objects mostly results in large statements such as the one below:
 var itemAsPropertyChanged = obj as INotifyPropertyChanged; if (itemAsPropertyChanged != null) { itemAsPropertyChanged.PropertyChanged += OnPropertyChanged; }  However, using this code one must be aware that if not unsubscribed, there might be a potential memory leak here. In Catel, there is a solution for such cases that can raise change notifications using weak events called the ChangeNotificationWrapper.</description>
     </item>
     
     <item>
       <title>Weak events</title>
-      <link>http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/weak-events/</link>
+      <link>https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/weak-events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/weak-events/</guid>
+      <guid>https://docs.catelproject.com/5.5/catel-core/preventing-memory-leaks/weak-events/</guid>
       <description>You have probably heard about weak events before. This documentation is not about the issue of the cause of weak events, there are lots of articles about that. This documentation writes about the solution, which is the WeakEventListener. Shortly said, when you do this in every class (just for the sake of explaining the problem, don’t start thinking this code has no business value):
 var log = Log.Instance; log.LogReceived += OnLogReceived;  As you can see, the log is a singleton, so there is only one living instance of the Log class.</description>
     </item>

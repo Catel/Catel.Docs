@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction to customizing serialization on Catel docs</title>
-    <link>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/</link>
+    <link>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/</link>
     <description>Recent content in Introduction to customizing serialization on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Customizing the serialization engines</title>
-      <link>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-engines/</link>
+      <link>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-engines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-engines/</guid>
+      <guid>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-engines/</guid>
       <description>Since the SerializerBase does all the heavy lifting, it is very easy to customize the behavior of an existing serializer or create a completely new one. Each serializer implements its own interface and are registered in the *ServiceLocator *using the following interfaces:
  XmlSerializer =&amp;gt; IXmlSerializer BinarySerializer =&amp;gt; IBinarySerializer  To customize a serializer, derive from an existing class and customize a method. The serializer below makes sure that specific members are never serialized.</description>
     </item>
     
     <item>
       <title>Customizing the serialization for specific models</title>
-      <link>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/</link>
+      <link>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/</guid>
+      <guid>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/</guid>
       <description>Catel has a default behavior for what gets serialized. It can be tweaked by including / excluding fields and properties by using the IncludeInSerialization and ExcludeFromSerialization attributes. But sometimes one needs more specific customization of the serialization for a specific type. This customization is possible via the ISerializerModifier.
 Creating the modifier To customize the serialization of a specific model type, one needs to implement the ISerializerModifier interface. The example belows shows how to encrypt the Password property on the Person model class.</description>
     </item>
     
     <item>
       <title>Serializing members using ToString / Parse</title>
-      <link>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/</link>
+      <link>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/</guid>
+      <guid>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/</guid>
       <description>Sometimes types (classes or structs) don&amp;rsquo;t implement a proper serialization mechanism. If they support proper ToString(IFormatProvider) and Parse(string, IFormatProvider) methods, there is no need to create a custom SerializerModifier to serialize these types. To let the serializers take care of this automatically, at least one of the following options must be true:
  The member is decorated using the SerializeUsingParseAndToString attribute The container class has a SerializerModifier that returns true in the ShouldSerializeMemberUsingParse method  Note that decorating a member that does not implement proper ToString(IFormatProvider) and Parse(string, IFormatProvider) methods is useless, the serialization engine will ignore these types</description>
     </item>
     
     <item>
       <title>Taking full control of serialization</title>
-      <link>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/</link>
+      <link>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/</guid>
+      <guid>https://docs.catelproject.com/5.6/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/</guid>
       <description>It&amp;rsquo;s possible that full control is needed (either for performance or custom serialization formats). To ensure the best performance possible, this is implemented with a special interface for each serialization engine. If one of the engines detects such a special interface, it will skip all the plumbing and directly call the interface with the right context.
 Binary serialization Custom binary serialization is not (yet) supported
 Xml serialization To gain the best performance possible using the xml serializer, a model should implement the ICustomXmlSerializable interface.</description>

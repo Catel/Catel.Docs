@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting started with Xamarin.Forms on Catel docs</title>
+    <link>https://docs.catelproject.com/5.7/getting-started/xamarin-forms/</link>
+    <description>Recent content in Getting started with Xamarin.Forms on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.7/getting-started/xamarin-forms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating the Xamarin.Forms project</title>
+      <link>https://docs.catelproject.com/5.7/getting-started/xamarin-forms/creating-the-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.7/getting-started/xamarin-forms/creating-the-project/</guid>
+      <description>In this step we will create the project and add the relevant NuGet packages.
+This documentation is work in progress</description>
+    </item>
+    
+  </channel>
+</rss>

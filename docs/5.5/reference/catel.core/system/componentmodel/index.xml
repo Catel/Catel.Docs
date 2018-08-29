@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System.ComponentModel on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/</link>
+    <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/</link>
     <description>Recent content in System.ComponentModel on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BeginEditEventArgs</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/beginediteventargs/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/beginediteventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/beginediteventargs/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/beginediteventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class BeginEditEventArgs : EditEventArgs  Base types EditEventArgs
 Event args implementation called when the object is about to call. This way, it is possible to cancel the events.
 Constructors BeginEditEventArgs(IEditableObject editableObject) Initializes a new instance of the BeginEditEventArgs class.</description>
@@ -23,10 +23,10 @@ Constructors BeginEditEventArgs(IEditableObject editableObject) Initializes a ne
     
     <item>
       <title>CancelEditCompletedEventArgs</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/canceleditcompletedeventargs/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/canceleditcompletedeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/canceleditcompletedeventargs/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/canceleditcompletedeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CancelEditCompletedEventArgs : EventArgs  Base types EventArgs
 Event args implementation called when the objects cancel edit operation has completed.
 Constructors CancelEditCompletedEventArgs(bool wasCanceled) Initializes a new instance of the CancelEditCompletedEventArgs class.</description>
@@ -34,10 +34,10 @@ Constructors CancelEditCompletedEventArgs(bool wasCanceled) Initializes a new in
     
     <item>
       <title>CancelEditEventArgs</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/cancelediteventargs/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/cancelediteventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/cancelediteventargs/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/cancelediteventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CancelEditEventArgs : EditEventArgs  Base types EditEventArgs
 Event args implementation called when the object is about to call. This way, it is possible to cancel the events.
 Constructors CancelEditEventArgs(IEditableObject editableObject) Initializes a new instance of the CancelEditEventArgs class.</description>
@@ -45,10 +45,10 @@ Constructors CancelEditEventArgs(IEditableObject editableObject) Initializes a n
     
     <item>
       <title>EditEventArgs</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/editeventargs/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/editeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/editeventargs/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/editeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class EditEventArgs : EventArgs  Base types EventArgs
 Event args class containing information about events that occur in the IAdvancedEditableObject interface.
 Constructors EditEventArgs(IEditableObject editableObject) Initializes a new instance of the EditEventArgs class.</description>
@@ -56,10 +56,10 @@ Constructors EditEventArgs(IEditableObject editableObject) Initializes a new ins
     
     <item>
       <title>EndEditEventArgs</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/endediteventargs/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/endediteventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/endediteventargs/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/endediteventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class EndEditEventArgs : EditEventArgs  Base types EditEventArgs
 Event args implementation called when the object is about to call. This way, it is possible to cancel the events.
 Constructors EndEditEventArgs(IEditableObject editableObject) Initializes a new instance of the EndEditEventArgs class.</description>
@@ -67,20 +67,20 @@ Constructors EndEditEventArgs(IEditableObject editableObject) Initializes a new 
     
     <item>
       <title>IAdvancedEditableObject</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/iadvancededitableobject/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/iadvancededitableobject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/iadvancededitableobject/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/iadvancededitableobject/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAdvancedEditableObject  Interface extending the interface with events which allows preventing the object from being edited.
 Events BeginEditing Occurs when the object is about to be edited. This event gives an opportunity to cancel the call to.</description>
     </item>
     
     <item>
       <title>IDataErrorInfo</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idataerrorinfo/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idataerrorinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idataerrorinfo/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idataerrorinfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on Portable Class Libraries    public interface IDataErrorInfo  WinRT implementation of theIDataErrorInfo interface.
 Properties Error Gets the error.
 this[] Gets the error message for the property with the given name.
@@ -89,10 +89,10 @@ Parameters    Name Description     columnName The name of the property whose err
     
     <item>
       <title>IDataWarningInfo</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idatawarninginfo/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idatawarninginfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idatawarninginfo/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/idatawarninginfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IDataWarningInfo  Interface that is based on the interface, but supports warnings instead of errors.
 Properties this[] Gets the warning message for the property with the given name.
 Parameters    Name Description     columnName The name of the property whose warning message to get.</description>
@@ -100,20 +100,20 @@ Parameters    Name Description     columnName The name of the property whose war
     
     <item>
       <title>INotifyDataWarningInfo</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/inotifydatawarninginfo/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/inotifydatawarninginfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/inotifydatawarninginfo/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/inotifydatawarninginfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface INotifyDataWarningInfo  Interface that is based on the interface, but supports warnings instead of errors.
 Properties HasWarnings Gets a value indicating whether this object contains any field or business warnings.</description>
     </item>
     
     <item>
       <title>PropertyChangedEventArgsExtensions</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/propertychangedeventargsextensions/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/propertychangedeventargsextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/propertychangedeventargsextensions/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/system/componentmodel/propertychangedeventargsextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace System.ComponentModel   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class PropertyChangedEventArgsExtensions  Extensions for the class.
 Methods AllPropertiesChanged(PropertyChangedEventArgs e) Returns whether the specified instance of the represents that all properties of an object have changed. This is the case when the isnull or empty.</description>
     </item>

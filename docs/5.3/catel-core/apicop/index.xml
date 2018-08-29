@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ApiCop on Catel docs</title>
+    <link>https://docs.catelproject.com/5.3/catel-core/apicop/</link>
+    <description>Recent content in ApiCop on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.3/catel-core/apicop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cops</title>
+      <link>https://docs.catelproject.com/5.3/catel-core/apicop/cops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-core/apicop/cops/</guid>
+      <description> The *IApiCop* is responsible for containing all the rules that are used inside a class. A class should contain only one *IApiCop* and one or more rules.
+Retrieving an IApiCop for a class To retrieve an IApiCop for a class, use the following code:
+private static readonly IApiCop = ApiCopManager.GetCurrentClassApiCop();  </description>
+    </item>
+    
+    <item>
+      <title>Rules</title>
+      <link>https://docs.catelproject.com/5.3/catel-core/apicop/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-core/apicop/rules/</guid>
+      <description>Rules always belong to an *IApiCop* instance. Rules are registered once and then updated when needed, based on the requirement of the rule. Rules are normally custom-made, but Catel does provide a few base implementations.
+Registering rules To register a rule in the IApiCop, use the following code:
+ApiCop.RegisterRule(new UnusedFeatureApiCopRule(&amp;quot;UserControlLogic.InfoBarMessageControl&amp;quot;, &amp;quot;The InfoBarMessageControl is not found in the visual tree. This will have a negative impact on performance. Consider setting the SkipSearchingForInfoBarMessageControl or DefaultSkipSearchingForInfoBarMessageControlValue to true.</description>
+    </item>
+    
+    <item>
+      <title>Listeners</title>
+      <link>https://docs.catelproject.com/5.3/catel-core/apicop/listeners/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/catel-core/apicop/listeners/</guid>
+      <description>Listeners are a way to get information about the cops and their rules in the framework. The *ApiCopManager* will take care of all the retrieval of the results and the registration of the cops. The registered listeners are used by the *ApiCopManager.WriteResults* method to write the output to. To add a listener and be able to see the output of the *ApiCop* feature, use the following code:
+var apiCopListener = new ConsoleApiCopListener(); ApiCopManager.</description>
+    </item>
+    
+  </channel>
+</rss>

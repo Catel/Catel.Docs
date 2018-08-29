@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xamarin.Forms on Catel docs</title>
-    <link>http://docs.catelproject.com/5.6/catel-mvvm/views/xamarin-forms/</link>
+    <link>https://docs.catelproject.com/5.6/catel-mvvm/views/xamarin-forms/</link>
     <description>Recent content in Xamarin.Forms on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.6/catel-mvvm/views/xamarin-forms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.6/catel-mvvm/views/xamarin-forms/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

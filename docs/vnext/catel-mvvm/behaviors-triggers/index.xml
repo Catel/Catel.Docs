@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Behaviors &amp; triggers on Catel docs</title>
-    <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/</link>
+    <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/</link>
     <description>Recent content in Behaviors &amp; triggers on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/</guid>
       <description>FocusFirstControl The Focus behavior is very powerful, but sometimes you just need to focus the first control on a window or control. This can be done by using the FocusFirstControl behavior instead. This behavior will focus the first control on a window or control and has only one property: FocusParentFirst.
 Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  Focus when the control is loaded The easiest and default method is to focus the first control.</description>
@@ -23,10 +23,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title></title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/</guid>
       <description> FocusOnKeyPress Sometimes you need to handle a key press and then set the focus on an element.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
@@ -35,10 +35,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>Authentication</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/</guid>
       <description>The Authentication behavior is able to hide, collapse or disable UI elements based on the current user state. The behavior uses the registered IAuthenticationProvider instances to determine whether the user has access to the specified UI element.
 1) Creating an authentication provider:
 /// &amp;lt;summary&amp;gt; /// Example implementation of the &amp;lt;see cref=&amp;quot;AuthenticationProvider&amp;quot;/&amp;gt;. This class is not really implemented /// like it should, because it shouldn&#39;t be this easy to set the current role.</description>
@@ -46,10 +46,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>AutoCompletionBehavior</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/</guid>
       <description>To enable auto completion features, once can use the services and behaviors provided by Catel. There are two components required for auto completion:
  AutoCompletionService =&amp;gt; takes care of the actual filtering AutoCompletionBehavior =&amp;gt; can be attached to a TextBox to support a dropdown with recommended values  The auto completion features looks like the screenshot below:
 AutoCompletion service The default implementation automatically filters the collection specified. If there is no filter yet, it will filter the top 10 occurrences from the collection.</description>
@@ -57,10 +57,10 @@ AutoCompletion service The default implementation automatically filters the coll
     
     <item>
       <title>AutoScroll</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/</guid>
       <description>The AutoScroll behavior automatically scrolls to a specific direction when the ItemsSource of an ItemsControl changes.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Add behavior
@@ -70,20 +70,20 @@ The ScrollTreshold allows the treshold of the real offset (to determine whether
     
     <item>
       <title>DelayBindingUpdate</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/</guid>
       <description>Sometimes, a binding update should be delayed for performance reasons. This is possible using the DelayBindingUpdate behavior. This behavior modifies the binding mode to explicit and internally watches for property changes. If the bound dependency property changes, the behavior will wait for the time to pass and then update. If the value changes again within the timeframe, the timer is reset (so you won&amp;rsquo;t get &amp;ldquo;double&amp;rdquo; updates).
 1) Add the following XML namespaces:</description>
     </item>
     
     <item>
       <title>DoubleClickToCommand</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/</guid>
       <description>Lots of times, a developer needs to handle a double click event. This trigger allows a developer to track a double click on any FrameworkElement and respond to that using a command.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition. This example will invoke the Edit command of the view model when the item is double clicked):
@@ -92,20 +92,20 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>EventToCommand</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</guid>
       <description>Almost every respectable MVVM framework supports the EventToCommand trigger. It is a trigger that allows a an event to be turned into a command. This way, you never have to manually add event handlers, search for the view model in the code-behind and then call the right command.
 The usage is really simple, but requires the System.Windows.Interactivity.dll reference (ships with Catel). The example below shows how to add a trigger for the double click of a ListBox.</description>
     </item>
     
     <item>
       <title>Focus</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/</guid>
       <description>To set the focus on a UI element, one must write code in the code-behind. With the Focus behavior, this is no longer necessary. This behavior sets the focus only once on the first time the associated object is loaded.
 Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  Focus when the control is loaded The easiest and default method is to set the focus when the associated control is loaded.</description>
@@ -113,10 +113,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>HideUntilViewModelLoaded</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/</guid>
       <description>The HideUntilViewModelLoaded hides (Visibility.Collapsed) any view model container (IViewModelContainer) when it does not have a valid view model. This is a great way to hide lazy-loaded views that should only be visible when they contain an actual view model.
 Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  Focus when the control is loaded The easiest and default method is to focus the first control. The parent is also focused by default (just in case if it doesn&amp;rsquo;t have any focus):</description>
@@ -124,10 +124,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>KeyPressToCommand</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/</guid>
       <description>Sometimes you need to handle a key press and convert it to a command. An excellent example is a ListBox that should respond to an Ctrl + Enter key press.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
@@ -136,10 +136,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>MouseInfo</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/</guid>
       <description>1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
 &amp;lt;ListBox ItemsSource=&amp;quot;{Binding PersonCollection}&amp;quot; SelectedItem=&amp;quot;{Binding SelectedPerson}&amp;quot;&amp;gt; &amp;lt;i:Interaction.Behaviors&amp;gt; &amp;lt;catel:MouseInfo x:Name=&amp;quot;personCollectionMouseInfo&amp;quot; /&amp;gt; &amp;lt;/i:Interaction.Behaviors&amp;gt; &amp;lt;/ListBox&amp;gt;  3) Now, it is easy to bind to the mouse information like this (textblock will become visible when the listbox is hovered):
@@ -148,10 +148,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>Navigate</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/</guid>
       <description>Note that this behavior is only available for WPF
 The Hyperlink control in WPF is very powerful, but it is hard to make them work outside pages.
 Add the following XML namespaces:
@@ -161,10 +161,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>NumericTextBox</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/</guid>
       <description>The NumericTextBox behavior makes it easy to allow specific numeric input on a TextBox.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
@@ -174,10 +174,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>SelectTextOnFocus</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/</guid>
       <description>The SelectTextOnFocus behavior makes it easy to select all text when a TextBox receives the focus.
 1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
@@ -186,10 +186,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>UpdateBindingOnPasswordChanged</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/</guid>
       <description>The UpdateBindingOnPasswordChanged is a very useful behavior which allows to bind the Password property of the PasswordBox Control. Use it, it&amp;rsquo;s really simple.
  1) Add the following XML namespaces:
 xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&amp;quot; xmlns:catel=&amp;quot;http://schemas.catelproject.com&amp;quot;  2) Use the following definition:
@@ -198,10 +198,10 @@ xmlns:i=&amp;quot;clr-namespace:System.Windows.Interactivity;assembly=System.Win
     
     <item>
       <title>UpdateBindingOnTextChanged</title>
-      <link>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/</link>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/</guid>
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/</guid>
       <description>The UpdateBindingOnTextChange is a very useful behavior which allows to delay a binding update on the TextChanged event of a TextBox. This way, it is possible to implement search boxes that only start a search after a specific time when no new key presses have occurred. For example, when a user types a new search string, and the user doesn&amp;rsquo;t enter a new key for 500 ms, the binding is updated.</description>
     </item>
     

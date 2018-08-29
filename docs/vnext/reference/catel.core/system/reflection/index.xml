@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System.Reflection on Catel docs</title>
-    <link>http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/</link>
+    <link>https://docs.catelproject.com/vnext/reference/catel.core/system/reflection/</link>
     <description>Recent content in System.Reflection on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/vnext/reference/catel.core/system/reflection/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BindingFlags</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/bindingflags/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.core/system/reflection/bindingflags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.core/system/reflection/bindingflags/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.core/system/reflection/bindingflags/</guid>
       <description>    Name Value     Assembly Catel.Core   Namespace System.Reflection   Available on Portable Class Libraries    public enum BindingFlags : Enum  Base types Enum
 Fields Default FlattenHierarchy Instance NonPublic Public Static </description>
     </item>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to MVVM on Catel docs</title>
+    <link>https://docs.catelproject.com/5.0/introduction/mvvm/</link>
+    <description>Recent content in Introduction to MVVM on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.0/introduction/mvvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Different interpretations of MVVM</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/different-interpretations-of-mvvm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/different-interpretations-of-mvvm/</guid>
+      <description>There are two different interpretations of MVVM, the &amp;ldquo;purist&amp;rdquo; way where the model is protected, or the &amp;ldquo;shortcut&amp;rdquo; way where the view model only provides the instance of the model and the view then binds directly to the model.
+Shortcut interpretation This is what most people do. The view model implements the model, and then provides the model to the view. The view then binds directly to the model.</description>
+    </item>
+    
+    <item>
+      <title>Validation in model or view model?</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/validation-in-model-or-view-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/validation-in-model-or-view-model/</guid>
+      <description>I have had lots of discussion whether the validation should take place in the model or the view model. Some people think that the validation should always occur inside the model because you don’t want to persist invalid models to the persistence store. Others say that the models itself don’t need validation, but the state the view model is in requires the validation. I think both are true, and I will tell you why.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to MVVM and models</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-mvvm-and-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-mvvm-and-models/</guid>
+      <description>This part of the documentation will explain all the parts of MVVM, in the order in which we think they must be built. First of all, the Models, which are the closest to the business. Then, the View Models which define what part of the Models should be visible to the user in a specific situation. This also includes validation that is specific for the functionality that the View Model represents.</description>
+    </item>
+    
+    <item>
+      <title>Creating view models with Catel</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/creating-view-models-with-catel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/creating-view-models-with-catel/</guid>
+      <description>The View Models in Catel are very easy to write, and give the end-user a great flexibility in how to approach the Models. This part of the article will explain the classes that make it possible to easily create View Models.
+The ViewModelBase class is the most important class of all in the MVVM Framework of Catel. Of course, it can&amp;rsquo;t do anything useful without the other classes, but all the View Models that are created using Catel derive of this class.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to services</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-services/</guid>
+      <description>Services are very important in MVVM. They define a way to interact with the user without using fixed controls such as MessageBox or SaveFileDialog. The interfaces defined in Catel only define generic functionality of what to expect from a specific service. Using services is a great way to abstract away all specific functionality from a view model into a service that can be mocked during unit testing and can be used by other view models as well.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to the nested user controls problem</title>
+      <link>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-nested-user-controls-problem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/introduction/mvvm/introduction-to-nested-user-controls-problem/</guid>
+      <description>One of the issues most users of MVVM face is that “nested user controls” problem. The problem is that most (actually all that we’ve seen) MVVM Frameworks only support one view model for a window (or if you’re lucky, a user control). However, the “nested user controls” problem raises lots of questions:
+ What if the requirements are to build a dynamic UI where the nested user controls are loaded dynamically when they are required?</description>
+    </item>
+    
+  </channel>
+</rss>

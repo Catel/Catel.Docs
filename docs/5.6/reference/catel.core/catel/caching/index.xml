@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catel.Caching on Catel docs</title>
-    <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/</link>
+    <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/</link>
     <description>Recent content in Catel.Caching on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CacheStorage</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/cachestorage/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/cachestorage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/cachestorage/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/cachestorage/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CacheStorage&amp;lt;TKey, TValue&amp;gt; : ICacheStorage&amp;lt;TKey, TValue, TKey, TValue&amp;gt;  Implements interfaces ICacheStorage
 The cache storage.
 Type Parameters TKey The key type.
@@ -25,10 +25,10 @@ Fields Constructors CacheStorage(Func&amp;lt;ExpirationPolicy&amp;gt; defaultExp
     
     <item>
       <title>ExpiredEventArgs</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiredeventargs/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiredeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiredeventargs/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiredeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ExpiredEventArgs&amp;lt;TKey, TValue&amp;gt; : EventArgs  Base types EventArgs
 The expired event args.
 Type Parameters TKey The key type.
@@ -38,10 +38,10 @@ Constructors ExpiredEventArgs(TKey key, TValue value, bool dispose) Initializes 
     
     <item>
       <title>ExpiringEventArgs</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiringeventargs/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiringeventargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiringeventargs/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/expiringeventargs/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ExpiringEventArgs&amp;lt;TKey, TValue&amp;gt; : EventArgs  Base types EventArgs
 The expiring event args.
 Type Parameters TKey The key type.
@@ -51,10 +51,10 @@ Constructors ExpiringEventArgs(TKey key, TValue value, ExpirationPolicy expirati
     
     <item>
       <title>ICacheStorage</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/icachestorage/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/icachestorage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/caching/icachestorage/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/caching/icachestorage/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ICacheStorage&amp;lt;TKey, TValue, TKey, TValue&amp;gt;  The cache storage interface.
 Type Parameters TKey The key type.
 TValue The value type.

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XAML - advanced on Catel docs</title>
+    <link>https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/</link>
+    <description>Recent content in XAML - advanced on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DataWindow - under the hood</title>
+      <link>https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/</guid>
+      <description>This documentation has to be written in the future
+</description>
+    </item>
+    
+    <item>
+      <title>UserControl - under the hood</title>
+      <link>https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.0/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/</guid>
+      <description>The UserControl is a pretty sophisticated class. In this part of the documentation, the inner workings of the control are explained. What better way is there than to using flowcharts. There are a few events very important for the inner workings of the user control. The flowcharts are created per event.
+Keep in mind that the actual logic is implemented in the UserControlLogic, which is used by the UserControl. This way, the logic can be used by any user control via the UserControlBehavior.</description>
+    </item>
+    
+  </channel>
+</rss>

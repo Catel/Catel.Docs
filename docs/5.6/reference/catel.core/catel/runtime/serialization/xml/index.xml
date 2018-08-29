@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catel.Runtime.Serialization.Xml on Catel docs</title>
-    <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/</link>
+    <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/</link>
     <description>Recent content in Catel.Runtime.Serialization.Xml on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DataContractSerializerFactory</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/datacontractserializerfactory/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/datacontractserializerfactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/datacontractserializerfactory/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/datacontractserializerfactory/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class DataContractSerializerFactory : IDataContractSerializerFactory  Implements interfaces IDataContractSerializerFactory
 Default implementation of the IDataContractSerializerFactory interface.
 Fields Constructors DataContractSerializerFactory() Initializes a new instance of the DataContractSerializerFactory class.
@@ -24,20 +24,20 @@ Properties DataContractResolver Gets or sets the DataContractResolver passed in 
     
     <item>
       <title>ICustomXmlSerializable</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/icustomxmlserializable/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/icustomxmlserializable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/icustomxmlserializable/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/icustomxmlserializable/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ICustomXmlSerializable  Allows a type to implement their own (de)serialization mechanism.
 Methods Deserialize(XElement xmlElement) Serializes the object from the specified xml element. Note that the object is always constructed by the serialization engine, the object itself must read the values from the xmlElement.</description>
     </item>
     
     <item>
       <title>IDataContractSerializerFactory</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/idatacontractserializerfactory/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/idatacontractserializerfactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/idatacontractserializerfactory/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/idatacontractserializerfactory/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IDataContractSerializerFactory  Interface defining a factory to create objects for specific types.
 Properties DataContractResolver Gets or sets the DataContractResolver passed in constructor to. The default value is.
 DataContractSurrogate Gets or sets the passed in constructor to.</description>
@@ -45,10 +45,10 @@ DataContractSurrogate Gets or sets the passed in constructor to.</description>
     
     <item>
       <title>IXmlNamespaceManager</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlnamespacemanager/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlnamespacemanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlnamespacemanager/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlnamespacemanager/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IXmlNamespaceManager  Manages the xml namespaces for a specific type.
 Methods GetNamespace(Type type, string preferredPrefix) Gets the namespace for the specified type.
 Parameters    Name Description     type The type.</description>
@@ -56,20 +56,20 @@ Parameters    Name Description     type The type.</description>
     
     <item>
       <title>IXmlSerializer</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlserializer/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlserializer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlserializer/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/ixmlserializer/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IXmlSerializer : ISerializer  Implements interfaces ISerializer
 Interface for the xml serializer.</description>
     </item>
     
     <item>
       <title>XmlHelper</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlhelper/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlhelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlhelper/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlhelper/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class XmlHelper  Helper class for xml serialization.
 Fields Methods ConvertToObject(XElement element, Type objectType, Func&amp;lt;object&amp;gt; createDefaultValue) Converts the specified xml element to an object.
 Parameters    Name Description     element The element.</description>
@@ -77,10 +77,10 @@ Parameters    Name Description     element The element.</description>
     
     <item>
       <title>XmlNamespace</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespace/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespace/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespace/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlNamespace  Contains information about an xml namespace.
 Constructors XmlNamespace(string prefix, string uri) Initializes a new instance of the XmlNamespace class.
 Parameters    Name Description     prefix The prefix.</description>
@@ -88,10 +88,10 @@ Parameters    Name Description     prefix The prefix.</description>
     
     <item>
       <title>XmlNamespaceManager</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespacemanager/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespacemanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespacemanager/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlnamespacemanager/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlNamespaceManager : IXmlNamespaceManager  Implements interfaces IXmlNamespaceManager
 Manages the namespaces based on the current serialization scope.
 Remarks Note that this class is not thread-safe. Serialization on it&amp;rsquo;s own is not thread-safe because serialization of a single object should happen on the same thread.</description>
@@ -99,10 +99,10 @@ Remarks Note that this class is not thread-safe. Serialization on it&amp;rsquo;s
     
     <item>
       <title>XmlSchemaHelper</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemahelper/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemahelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemahelper/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemahelper/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6    public static class XmlSchemaHelper  Helper class for xml schemas.
 Fields Log The log.
 Xmlns Default xml schema.
@@ -112,20 +112,20 @@ Parameters    Name Description     type The type.</description>
     
     <item>
       <title>XmlSchemaManager</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemamanager/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemamanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemamanager/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlschemamanager/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6    public class XmlSchemaManager  Xml schema manager to create xml schemas for models in Catel.
 Properties GenerateFlatSchemas Gets or sets a value indicating whether the xml schema manager should generate flat schemas. This means that classes will be generated as is. This results in easier types, but the complex types cannot be re-used using WCF.</description>
     </item>
     
     <item>
       <title>XmlSerializationConfiguration</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationconfiguration/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationconfiguration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationconfiguration/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationconfiguration/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlSerializationConfiguration : SerializationConfiguration  Base types SerializationConfiguration
 Serialization configuration with additional xml configuration.
 Constructors XmlSerializationConfiguration() Initializes a new instance of the XmlSerializationConfiguration class.
@@ -134,10 +134,10 @@ Properties OptimalizationMode Gets or sets the optimalization mode.</description
     
     <item>
       <title>XmlSerializationContextInfo</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfo/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfo/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfo/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlSerializationContextInfo : ISerializationContextInfo  Implements interfaces ISerializationContextInfo
 Class containing all information about the binary serialization context.
 Fields Constructors XmlSerializationContextInfo(XElement element, object model) Initializes a new instance of the XmlSerializationContextInfo class.</description>
@@ -145,10 +145,10 @@ Fields Constructors XmlSerializationContextInfo(XElement element, object model) 
     
     <item>
       <title>XmlSerializationContextInfoFactory</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfofactory/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfofactory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfofactory/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializationcontextinfofactory/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlSerializationContextInfoFactory : ISerializationContextInfoFactory  Implements interfaces ISerializationContextInfoFactory
 Xml serialization context factory.
 Methods GetSerializationContextInfo(ISerializer serializer, object model, object data, ISerializationConfiguration configuration) Gets the serialization context information.
@@ -157,10 +157,10 @@ Parameters    Name Description     serializer The serializer.</description>
     
     <item>
       <title>XmlSerializer</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializer/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializer/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializer/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlSerializer : IXmlSerializer, SerializerBase&amp;lt;XmlSerializationContextInfo&amp;gt;  Base types SerializerBase
 Implements interfaces IXmlSerializer
 The xml serializer.
@@ -169,10 +169,10 @@ Fields Constructors XmlSerializer(ISerializationManager serializationManager, ID
     
     <item>
       <title>XmlSerializerOptimalizationMode</title>
-      <link>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializeroptimalizationmode/</link>
+      <link>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializeroptimalizationmode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializeroptimalizationmode/</guid>
+      <guid>https://docs.catelproject.com/5.6/reference/catel.core/catel/runtime/serialization/xml/xmlserializeroptimalizationmode/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime.Serialization.Xml   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum XmlSerializerOptimalizationMode : Enum  Base types Enum
 Possible xml serializer optimalization modes
 Fields Performance 2

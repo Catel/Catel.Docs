@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MVVM on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/tips-tricks/mvvm/</link>
+    <link>https://docs.catelproject.com/5.5/tips-tricks/mvvm/</link>
     <description>Recent content in MVVM on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/tips-tricks/mvvm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/tips-tricks/mvvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Finding the view of a view model</title>
-      <link>http://docs.catelproject.com/5.5/tips-tricks/mvvm/finding-view-of-view-model/</link>
+      <link>https://docs.catelproject.com/5.5/tips-tricks/mvvm/finding-view-of-view-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/tips-tricks/mvvm/finding-view-of-view-model/</guid>
+      <guid>https://docs.catelproject.com/5.5/tips-tricks/mvvm/finding-view-of-view-model/</guid>
       <description>Sometimes it is required to find the view of a view model. For example, this comes in handy when implementing drag and drop where you only want to support code via view models.
 Internally, Catel uses with the IViewManager for this. As soon as a view is loaded (via the Loaded event), the view is registered to the view manager. The view manager will keep an eye on the events of the view and notice view model changes.</description>
     </item>
     
     <item>
       <title>Requery commands automatically using CommandManager</title>
-      <link>http://docs.catelproject.com/5.5/tips-tricks/mvvm/requery-commands-automatically/</link>
+      <link>https://docs.catelproject.com/5.5/tips-tricks/mvvm/requery-commands-automatically/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/tips-tricks/mvvm/requery-commands-automatically/</guid>
+      <guid>https://docs.catelproject.com/5.5/tips-tricks/mvvm/requery-commands-automatically/</guid>
       <description>For performance reasons, Catel no longer automatically subscribes to the CommandManager to invalidate the state (saves a lot of CanExecute calls). If you want this behavior back, you can create a custom class that subscribes to the command manager and invalidates the commands for you.
 This was removed for a reason (performance), so this is not the recommended approach. But this allows you to get back the old behavior.
 To use this class, instantiate it and register it in the ServiceLocator so it stays alive.</description>
@@ -33,10 +33,10 @@ This was removed for a reason (performance), so this is not the recommended appr
     
     <item>
       <title>Using a tabbed interface with MVVM</title>
-      <link>http://docs.catelproject.com/5.5/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/</link>
+      <link>https://docs.catelproject.com/5.5/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/</guid>
+      <guid>https://docs.catelproject.com/5.5/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/</guid>
       <description>A common scenario in WPF is to use a tabbed interface to give the user the option to use multiple main views in a tabbed environment. This example shows how to implement this correctly with both closable and non-closable tabs.
 For this example, we will have a few requirements:
  Be able to add, close and activate tabs via a service Be able to specify whether a tab can be closed by the end-user  Creating the model describing a tab item First of all, we need a model describing a tab item so we can interact with a service.</description>

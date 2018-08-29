@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catel.Windows on Catel docs</title>
-    <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/</link>
+    <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/</link>
     <description>Recent content in Catel.Windows on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ApplicationExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/applicationextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/applicationextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/applicationextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/applicationextensions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public static class ApplicationExtensions  Extension methods for the class.
 Methods GetActiveWindow(Application application) Gets the currently active window of the application.
 Parameters    Name Description     application The application.    Returns The active window of the application or null in case of none window is opened.</description>
@@ -23,10 +23,10 @@ Parameters    Name Description     application The application.    Returns The a
     
     <item>
       <title>DataContextChangedHelper</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datacontextchangedhelper/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datacontextchangedhelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datacontextchangedhelper/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datacontextchangedhelper/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class DataContextChangedHelper  Helper class to subscribe to theDataContextChanged event of UI elements.
 Methods AddDataContextChangedHandler(FrameworkElement element, EventHandler&amp;lt;DependencyPropertyValueChangedEventArgs&amp;gt; handler) Adds the data context changed handler.
 Parameters    Name Description     element Element to which the handler is added.</description>
@@ -34,10 +34,10 @@ Parameters    Name Description     element Element to which the handler is added
     
     <item>
       <title>DataWindow</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindow/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindow/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindow/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public class DataWindow : IDataWindow, Window  Base types Window
 Implements interfaces IDataWindow
 Window class that implements the InfoBarMessageControl and the default buttons, according to the DataWindowMode.
@@ -47,10 +47,10 @@ Remarks This method is required for design time support.</description>
     
     <item>
       <title>DataWindowButton</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowbutton/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowbutton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowbutton/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowbutton/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public class DataWindowButton  Information for a button that should be generated.
 Constructors DataWindowButton(string text, ICommand command) Initializes a new instance of the DataWindowButton class.
 Parameters    Name Description     text The text.   command The command.</description>
@@ -58,10 +58,10 @@ Parameters    Name Description     text The text.   command The command.</descri
     
     <item>
       <title>DataWindowDefaultButton</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowdefaultbutton/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowdefaultbutton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowdefaultbutton/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowdefaultbutton/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public enum DataWindowDefaultButton : Enum  Base types Enum
 Available default buttons on the data window mode.
 Fields Apply 1
@@ -76,10 +76,10 @@ OK button.</description>
     
     <item>
       <title>DataWindowMode</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowmode/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowmode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowmode/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/datawindowmode/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public enum DataWindowMode : Enum  Base types Enum
 Mode of the DataWindow.
 Fields Close 2
@@ -94,10 +94,10 @@ Window contains OK, Cancel and Apply buttons.</description>
     
     <item>
       <title>DependencyObjectExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/dependencyobjectextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/dependencyobjectextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/dependencyobjectextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/dependencyobjectextensions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class DependencyObjectExtensions  Extension methods for the class.
 Methods FindLogicalAncestor(DependencyObject startElement, Predicate&amp;lt;object&amp;gt; condition, int maxDepth) Finds the logical ancestor according to the predicate.
 Parameters    Name Description     startElement The start element.</description>
@@ -105,10 +105,10 @@ Parameters    Name Description     startElement The start element.</description>
     
     <item>
       <title>FrameworkElementExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/frameworkelementextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/frameworkelementextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/frameworkelementextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/frameworkelementextensions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class FrameworkElementExtensions  Extensions for.
 Methods FixBlurriness(FrameworkElement element) Fixes the blurriness in WPF by setting bothSnapsToDevicePixels andUseLayoutRounding totrue.
 Parameters    Name Description     element The UI element.    HideValidationAdorner(FrameworkElement frameworkElement) Hides the validation adorner.</description>
@@ -116,10 +116,10 @@ Parameters    Name Description     element The UI element.    HideValidationAdor
     
     <item>
       <title>InfoBarMessageControlGenerationMode</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/infobarmessagecontrolgenerationmode/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/infobarmessagecontrolgenerationmode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/infobarmessagecontrolgenerationmode/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/infobarmessagecontrolgenerationmode/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public enum InfoBarMessageControlGenerationMode : Enum  Base types Enum
 Defines the way the InfoBarMessageControl is included in the DataWindow.
 Fields Inline 1
@@ -132,10 +132,10 @@ Generate the InfoBarMessageControl as overlay.</description>
     
     <item>
       <title>PopupHelper</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/popuphelper/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/popuphelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/popuphelper/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/popuphelper/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public static class PopupHelper  Popup helper class to retrieve all the popups inside a windows application, which are not available via the regular property.
 Properties Popups Gets all the popups of the current application.
 Methods GetAllPopups() Gets all the popups of the current application.</description>
@@ -143,20 +143,20 @@ Methods GetAllPopups() Gets all the popups of the current application.</descript
     
     <item>
       <title>ResourceHelper</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/resourcehelper/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/resourcehelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/resourcehelper/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/resourcehelper/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class ResourceHelper  Resource helper class.
 Fields Methods EnsurePackUriIsAllowed() Ensures that the pack URI is allowed. Sometimes, when no application object is instantiated yet, the pack URI is not allowed. This method takes care of that.</description>
     </item>
     
     <item>
       <title>UIElementExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/uielementextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/uielementextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/uielementextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/uielementextensions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public static class UIElementExtensions  Extensions for.
 Methods FocusFirstControl(ContentElement element, bool focusParentsFirst) Focuses the first control on the ContentElement.
 Parameters    Name Description     element Reference to the current.   focusParentsFirst if set totrue, the parents are focused first.</description>
@@ -164,10 +164,10 @@ Parameters    Name Description     element Reference to the current.   focusPare
     
     <item>
       <title>Window</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/window/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/window/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/window/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/window/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public class Window : DataWindow  Base types DataWindow
 Easy implementation of the DataWindow that adds some features to make the data window behave as a normal window.
 Constructors Window() Initializes a new instance of the Window class.</description>
@@ -175,10 +175,10 @@ Constructors Window() Initializes a new instance of the Window class.</descripti
     
     <item>
       <title>WindowExtensions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/windowextensions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/windowextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/windowextensions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/windowextensions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public static class WindowExtensions  Extensions for.
 Fields Methods ApplyIconFromApplication(Window window) Applies the icon from the entry assembly (the application) to the window.
 Parameters    Name Description     window The window.    BringWindowToTop(Window window) Brings to specified window to top.</description>
@@ -186,10 +186,10 @@ Parameters    Name Description     window The window.    BringWindowToTop(Window
     
     <item>
       <title>WrapControlHelper</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapcontrolhelper/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapcontrolhelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapcontrolhelper/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapcontrolhelper/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public static class WrapControlHelper  An helper to wrap controls and windows with several controls, such as the InfoBarMessageControl.
 Fields ButtonsWrapPanelName The name of the wrap panel that contains the buttons.
 DefaultCancelButtonName The name of the default cancel button.
@@ -198,10 +198,10 @@ DefaultOkButtonName The name of the default ok button.</description>
     
     <item>
       <title>WrapOptions</title>
-      <link>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapoptions/</link>
+      <link>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapoptions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapoptions/</guid>
+      <guid>https://docs.catelproject.com/vnext/reference/catel.mvvm/catel/windows/wrapoptions/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows   Available on .NET Framework 4.5, .NET Framework 4.6    public enum WrapOptions : Enum  Base types Enum
 Available wrap options that can be used in the WrapControlHelper.
 Fields All All available options.

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Support for multiple platforms on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/introduction/platform-support/</link>
+    <link>https://docs.catelproject.com/5.5/introduction/platform-support/</link>
     <description>Recent content in Support for multiple platforms on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/introduction/platform-support/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/introduction/platform-support/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Caveats in WPF</title>
-      <link>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-wpf/</link>
+      <link>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-wpf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-wpf/</guid>
+      <guid>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-wpf/</guid>
       <description>Below are all caveats in WPF.
 Know caveats? Feel free to add them!</description>
     </item>
     
     <item>
       <title>Caveats in UWP</title>
-      <link>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-uwp/</link>
+      <link>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-uwp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-uwp/</guid>
+      <guid>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-uwp/</guid>
       <description>Below are all caveats in UWP.
 Know caveats? Feel free to add them!</description>
     </item>
     
     <item>
       <title>Caveats in Android</title>
-      <link>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-android/</link>
+      <link>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-android/</guid>
+      <guid>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-android/</guid>
       <description>Below are all caveats in Android.
  Linker settings  Know caveats? Feel free to add them!
 Linker settings When linking in release mode (or debug if you would like), the linker will remove all non-used items from the final application assembly. Since the binding system in Catel uses reflection, it might break when the linker is too aggressive when optimizing the app. To prevent optimalization, create a dummy file that uses the members of each type so the linker will not exclude them.</description>
@@ -43,10 +43,10 @@ Linker settings When linking in release mode (or debug if you would like), the l
     
     <item>
       <title>Caveats in iOS</title>
-      <link>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-ios/</link>
+      <link>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-ios/</guid>
+      <guid>https://docs.catelproject.com/5.5/introduction/platform-support/caveats-in-ios/</guid>
       <description>Below are all caveats in iOS.
 Know caveats? Feel free to add them!</description>
     </item>

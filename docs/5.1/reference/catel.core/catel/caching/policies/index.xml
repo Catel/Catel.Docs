@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Caching.Policies on Catel docs</title>
+    <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/</link>
+    <description>Recent content in Catel.Caching.Policies on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AbsoluteExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/absoluteexpirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/absoluteexpirationpolicy/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AbsoluteExpirationPolicy : ExpirationPolicy  Base types ExpirationPolicy
+The cache item will expire on the absolute expiration date time.
+Constructors Properties IsExpired Gets a value indicating whether is expired.</description>
+    </item>
+    
+    <item>
+      <title>CompositeExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/compositeexpirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/compositeexpirationpolicy/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CompositeExpirationPolicy : ExpirationPolicy  Base types ExpirationPolicy
+The composite expiration policy.
+Fields Constructors CompositeExpirationPolicy(bool expiresOnlyIfAllPoliciesExpires) Initializes a new instance of the CompositeExpirationPolicy class.
+Parameters    Name Description     expiresOnlyIfAllPoliciesExpires Iftrue indicates that the cache will expires only if policies of the composition expires, otherwise the cache will expires if policy does.</description>
+    </item>
+    
+    <item>
+      <title>CustomExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/customexpirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/customexpirationpolicy/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CustomExpirationPolicy : ExpirationPolicy  Base types ExpirationPolicy
+The custom expiration policy.
+Fields Constructors CustomExpirationPolicy(Func isExpiredFunc, Action resetAction) Initializes a new instance of the CustomExpirationPolicy class.
+Parameters    Name Description     isExpiredFunc The function to check if the policy is expired.</description>
+    </item>
+    
+    <item>
+      <title>DurationExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/durationexpirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/durationexpirationpolicy/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class DurationExpirationPolicy : AbsoluteExpirationPolicy  Base types AbsoluteExpirationPolicy
+The cache item will expire using the duration to calculate the absolute expiration from now.
+Constructors Properties </description>
+    </item>
+    
+    <item>
+      <title>ExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/expirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/expirationpolicy/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ExpirationPolicy  The expiration policy.
+Fields Constructors Properties CanReset Gets a value indicating whether the value with this policy can be reset.
+IsExpired Gets a value indicating whether the value with this policy attached is expired.</description>
+    </item>
+    
+    <item>
+      <title>SlidingExpirationPolicy</title>
+      <link>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/slidingexpirationpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.1/reference/catel.core/catel/caching/policies/slidingexpirationpolicy/</guid>
+      <description>    Name Value     Assembly Catel.Core   Namespace Catel.Caching.Policies   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SlidingExpirationPolicy : DurationExpirationPolicy  Base types DurationExpirationPolicy
+The cache item will expire using the duration property as the sliding expiration.
+Constructors Methods </description>
+    </item>
+    
+  </channel>
+</rss>

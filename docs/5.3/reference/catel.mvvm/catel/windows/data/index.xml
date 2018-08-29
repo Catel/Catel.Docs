@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Windows.Data on Catel docs</title>
+    <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/</link>
+    <description>Recent content in Catel.Windows.Data on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BindingHelper</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/bindinghelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/bindinghelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class BindingHelper  Binding helper class.
+Methods ClearBinding(DependencyObject dependencyObject, DependencyProperty dependencyProperty) Clears a binding. This method implements the ClearBinding for both WPF and Silverlight.
+Parameters    Name Description     dependencyObject The dependency object.</description>
+    </item>
+    
+    <item>
+      <title>BindingWithValidation</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/bindingwithvalidation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/bindingwithvalidation/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6    public class BindingWithValidation : Binding  Base types Binding
+Binding that automatically enables and.
+Constructors BindingWithValidation() Initializes a new instance of the BindingWithValidation class.
+BindingWithValidation(string path) Initializes a new instance of the BindingWithValidation class with an initial path.
+Parameters    Name Description     path The initial Path for the binding.</description>
+    </item>
+    
+    <item>
+      <title>DependencyPropertyChangedHelper</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertychangedhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertychangedhelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class DependencyPropertyChangedHelper  Dependency property changed helper. This helper class allows to subscribe to any dependency property changed of any framework element element.
+Fields Methods IsRealDependencyProperty(FrameworkElement frameworkElement, string propertyName) Determines whether the specified dependency property is a real dependency or a wrapper or handler one for internal usage.</description>
+    </item>
+    
+    <item>
+      <title>DependencyPropertyHelper</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyhelper/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public static class DependencyPropertyHelper  Helper class for dependency properties.
+Fields Methods GetDependencyProperties(FrameworkElement frameworkElement) Gets all dependency properties of the specified.
+Parameters    Name Description     frameworkElement The framework element.    Returns List containing all dependency properties of the specified.</description>
+    </item>
+    
+    <item>
+      <title>DependencyPropertyInfo</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyinfo/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class DependencyPropertyInfo  Information about a dependency property.
+Constructors DependencyPropertyInfo(DependencyProperty dependencyProperty, string propertyName) Initializes a new instance of the DependencyPropertyInfo class.
+Parameters    Name Description     dependencyProperty The dependency property.   propertyName Name of the property.</description>
+    </item>
+    
+    <item>
+      <title>DependencyPropertyValueChangedEventArgs</title>
+      <link>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyvaluechangedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/reference/catel.mvvm/catel/windows/data/dependencypropertyvaluechangedeventargs/</guid>
+      <description>Name Value     Assembly Catel.MVVM   Namespace Catel.Windows.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Xamarin - iOS    public class DependencyPropertyValueChangedEventArgs : EventArgs  Base types EventArgs
+Provides data for a DependencyPropertyChangedHelper implementation.
+Constructors DependencyPropertyValueChangedEventArgs(string propertyName, DependencyProperty dependencyProperty, object oldValue, object newValue) Initializes a new instance of the DependencyPropertyValueChangedEventArgs class.
+Parameters    Name Description     propertyName Name of the property.</description>
+    </item>
+    
+  </channel>
+</rss>

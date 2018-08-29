@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System.Windows on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/</link>
+    <link>https://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/</link>
     <description>Recent content in System.Windows on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Visibility</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/visibility/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/visibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/visibility/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.mvvm/system/windows/visibility/</guid>
       <description>Name Value     Assembly Catel.MVVM   Namespace System.Windows   Available on Xamarin - Android    public enum Visibility : Enum  Base types Enum
 Specifies the display state of an element.
 Fields Collapsed Completely hidden, as if the view had not been added.

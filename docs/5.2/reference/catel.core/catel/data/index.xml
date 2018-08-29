@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Data on Catel docs</title>
+    <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/</link>
+    <description>Recent content in Catel.Data on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.2/reference/catel.core/catel/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AdvancedPropertyChangedEventArgs</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/advancedpropertychangedeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/advancedpropertychangedeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AdvancedPropertyChangedEventArgs : PropertyChangedEventArgs  Base types PropertyChangedEventArgs
+Property changed event args that are used when a property has changed. The event arguments contains both the original sender as the current sender of the event.</description>
+    </item>
+    
+    <item>
+      <title>AttributeValidatorProvider</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/attributevalidatorprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/attributevalidatorprovider/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AttributeValidatorProvider : ValidatorProviderBase  Base types ValidatorProviderBase
+Validator provider that provides the validator based on attributes on models.
+Fields Methods GetValidator(Type targetType) Provides an access point to allow a custom implementation in order to retrieve the available validator for the specified type.</description>
+    </item>
+    
+    <item>
+      <title>BoxingCache</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/boxingcache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/boxingcache/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class BoxingCache&amp;lt;T&amp;gt; where T : struct  Caches boxed objects to minimize the memory footprint for boxed value types.
+Fields Methods AddBoxedValue(object boxedValue) Adds the value to the cache.
+Parameters    Name Description     boxedValue The value to add to the cache.</description>
+    </item>
+    
+    <item>
+      <title>BusinessRuleValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/businessrulevalidationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/businessrulevalidationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class BusinessRuleValidationResult : IBusinessRuleValidationResult, ValidationResult  Base types ValidationResult
+Implements interfaces IBusinessRuleValidationResult
+Business rule validation result.
+Constructors BusinessRuleValidationResult(ValidationResultType validationResultType, string messageFormat, object[] args) Initializes a new instance of the BusinessRuleValidationResult class.</description>
+    </item>
+    
+    <item>
+      <title>CatelTypeInfo</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/cateltypeinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/cateltypeinfo/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CatelTypeInfo  Class containing all information about a Catel type (such as properties).
+Fields Constructors CatelTypeInfo(Type type) Initializes a new instance of the CatelTypeInfo class.
+Parameters    Name Description     type The type.</description>
+    </item>
+    
+    <item>
+      <title>ChangeNotificationWrapper</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/changenotificationwrapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/changenotificationwrapper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ChangeNotificationWrapper  Wrapper for an object that implements the and. This class is thread-safe and uses weak events to prevent memory leaks.
+Fields Constructors ChangeNotificationWrapper(object value) Initializes a new instance of the ChangeNotificationWrapper class.</description>
+    </item>
+    
+    <item>
+      <title>ChildAwareModelBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/childawaremodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/childawaremodelbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ChildAwareModelBase : ValidatableModelBase  Base types ValidatableModelBase
+Class that is aware of changes of child objects by using the ChangeNotificationWrapper.
+Fields Constructors ChildAwareModelBase() Initializes a new instance of the ChildAwareModelBase class.</description>
+    </item>
+    
+    <item>
+      <title>ComparableModelBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/comparablemodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/comparablemodelbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ComparableModelBase : ModelBase  Base types ModelBase
+Comparable model base.
+Fields Constructors ComparableModelBase() Initializes a new instance of the ComparableModelBase class.
+ComparableModelBase(SerializationInfo info, StreamingContext context) Initializes a new instance of the ComparableModelBase class.</description>
+    </item>
+    
+    <item>
+      <title>CompositeValidator</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/compositevalidator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/compositevalidator/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CompositeValidator : IValidator  Implements interfaces IValidator
+Allows the combination of several validators into a single validator. This class will combine all instances of the IValidator class found for a type using the IValidatorProvider into this single composite validator.</description>
+    </item>
+    
+    <item>
+      <title>CompositeValidatorProvider</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/compositevalidatorprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/compositevalidatorprovider/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CompositeValidatorProvider : ValidatorProviderBase  Base types ValidatorProviderBase
+Allows the combination of several validator providers into a single validator provider.
+Remarks This class can be used to unify instances of IValidatorProvider into a single one and provides several sources in order to retrieve IValidator instances.</description>
+    </item>
+    
+    <item>
+      <title>DispatcherObservableObject</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/dispatcherobservableobject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/dispatcherobservableobject/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class DispatcherObservableObject : ObservableObject  Base types ObservableObject
+Implementation of the ObservableObject class that will dispatch all change notifications to the UI thread using the IDispatcherService.
+Fields Constructors Methods RaisePropertyChanged(object sender, AdvancedPropertyChangedEventArgs e) Raises the PropertyChanged event.</description>
+    </item>
+    
+    <item>
+      <title>EditableObjectHelper</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/editableobjecthelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/editableobjecthelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class EditableObjectHelper  Class that allows to invoke methods on any object.
+Methods BeginEditObject(object obj) Begins an edit on an object. This method will do nothing when the obj isnull or not a.</description>
+    </item>
+    
+    <item>
+      <title>EventChangeType</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/eventchangetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/eventchangetype/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum EventChangeType : Enum  Base types Enum
+Available event change types.
+Fields Collection 1
+Collection change.
+Property 0
+Property change.</description>
+    </item>
+    
+    <item>
+      <title>ExcludeFromValidationAttribute</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/excludefromvalidationattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/excludefromvalidationattribute/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ExcludeFromValidationAttribute : Attribute  Base types Attribute
+Attribute that can be used to exclude properties from validation.</description>
+    </item>
+    
+    <item>
+      <title>FieldValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/fieldvalidationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/fieldvalidationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class FieldValidationResult : IFieldValidationResult, ValidationResult  Base types ValidationResult
+Implements interfaces IFieldValidationResult
+Field validation result.
+Constructors FieldValidationResult(PropertyData property, ValidationResultType validationResultType, string messageFormat, object[] args) Initializes a new instance of the FieldValidationResult class.</description>
+    </item>
+    
+    <item>
+      <title>IAdvancedNotifyPropertyChanged</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/iadvancednotifypropertychanged/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/iadvancednotifypropertychanged/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAdvancedNotifyPropertyChanged  Interface defining advanced additional functionality for the interface. This interface still supports the &amp;ldquo;old&amp;rdquo; way, so this can perfectly be used by any other class.</description>
+    </item>
+    
+    <item>
+      <title>IBusinessRuleValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ibusinessrulevalidationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ibusinessrulevalidationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IBusinessRuleValidationResult : IValidationResult  Implements interfaces IValidationResult
+Business rule validation result with information about business rule validations.</description>
+    </item>
+    
+    <item>
+      <title>IFieldValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ifieldvalidationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ifieldvalidationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IFieldValidationResult : IValidationResult  Implements interfaces IValidationResult
+Field validation result with information about field validations.
+Properties PropertyName Gets the name of the property.</description>
+    </item>
+    
+    <item>
+      <title>IModel</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodel/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IModel : IModelEditor, IModelSerialization, IAdvancedEditableObject  Implements interfaces IModelEditor,IModelSerialization,IAdvancedEditableObject
+IModelBase that the ModelBase must implement to easily pass objects to methods as non-generic.
+Remarks This interface defines all the non-generic interfaces that the ModelBase class implements.</description>
+    </item>
+    
+    <item>
+      <title>IModelEditor</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodeleditor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodeleditor/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IModelEditor  An interface that allows public editing of ModelBase instances using theGetValue andSetValue methods.
+Methods GetValue(string propertyName) Gets the value of the specified property.
+Parameters    Name Description     propertyName Name of the property.</description>
+    </item>
+    
+    <item>
+      <title>IModelEqualityComparer</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelequalitycomparer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelequalitycomparer/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IModelEqualityComparer  Implementation of the for the ModelBase.
+Properties CompareCollections Gets or sets a value indicating whether collections should be compared.
+CompareProperties Gets or sets a value indicating whether properties should be compared.</description>
+    </item>
+    
+    <item>
+      <title>IModelExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IModelExtensions  IModel extensions.
+Methods ClearIsDirtyOnAllChilds(IModel model) Clears the IsDirty on all childs.
+Parameters    Name Description     model The model.    ToByteArray(IModel model, ISerializer serializer, ISerializationConfiguration configuration) Serializes the object to a byte array.</description>
+    </item>
+    
+    <item>
+      <title>IModelSerialization</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelserialization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/imodelserialization/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IModelSerialization : ISerializable  Implements interfaces ISerializable
+Defines all serialization members for the models.</description>
+    </item>
+    
+    <item>
+      <title>ISavableModel</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/isavablemodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/isavablemodel/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface ISavableModel : IModel  Implements interfaces IModel
+ISavableDataObjectBase that defines the additional methods to save a IModel object.
+Methods Save(Stream stream, ISerializer serializer, ISerializationConfiguration configuration) Saves the object to a stream using a specific formatting.</description>
+    </item>
+    
+    <item>
+      <title>ISavableModelExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/isavablemodelextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/isavablemodelextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ISavableModelExtensions  ISaveable model extensions.
+Methods Save(ISavableModel model, string fileName, ISerializer serializer, ISerializationConfiguration configuration) Saves the object to a file using a specific formatting.
+Parameters    Name Description     model The model to save.</description>
+    </item>
+    
+    <item>
+      <title>IValidatable</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatable/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidatable : IDataWarningInfo, INotifyDataWarningInfo  Implements interfaces IDataWarningInfo,INotifyDataWarningInfo
+Interface defining a validatable object.
+Properties IsHidingValidationResults Gets a value indicating whether the object is currently hiding its validation results. If the object hides its validation results, it is still possible to retrieve the validation results using the ValidationContext.</description>
+    </item>
+    
+    <item>
+      <title>IValidatableExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatableextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatableextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IValidatableExtensions  Extensions for IValidatable.
+Methods AddBusinessRuleValidationResult(IValidatable validatable, IBusinessRuleValidationResult businessRuleValidationResult, bool validate) Adds the business rule validation result.
+Parameters    Name Description     validatable The validatable model.</description>
+    </item>
+    
+    <item>
+      <title>IValidatableModel</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatablemodel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatablemodel/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidatableModel : IModel, IValidatable  Implements interfaces IModel,IValidatable
+Defines all validation members for the models.</description>
+    </item>
+    
+    <item>
+      <title>IValidatableModelExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatablemodelextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatablemodelextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IValidatableModelExtensions  Validatable model extensions.
+Methods GetValidationContextForObjectGraph(IValidatableModel model) Gets the validation context for a complete object graph by also checking the properties and recursive
+Parameters    Name Description     model The model.</description>
+    </item>
+    
+    <item>
+      <title>IValidationContext</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationcontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationcontext/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidationContext  Interface describing the validation
+Properties HasErrors Gets a value indicating whether this instance contains errors.
+HasWarnings Gets a value indicating whether this instance contains warnings.
+LastModified Gets the last modified date/time.</description>
+    </item>
+    
+    <item>
+      <title>IValidationContextExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationcontextextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationcontextextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class IValidationContextExtensions  Extension methods for the validation context.
+Methods GetValidationsAsStringList(IValidationContext validationContext, ValidationResultType validationResult) Gets the list messages.
+Parameters    Name Description     validationContext The validation context.</description>
+    </item>
+    
+    <item>
+      <title>IValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidationResult  Validation result with information about validations.
+Properties Message Gets the validation result message.
+Remarks This value has a public setter so it is possible to customize the message in derived classes.</description>
+    </item>
+    
+    <item>
+      <title>IValidationSummary</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationsummary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidationsummary/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidationSummary  The validation summary interface.
+Properties BusinessRuleErrors Gets a collection of business rule errors.
+BusinessRuleWarnings Gets a collection of business rule warnings.
+FieldErrors Gets a collection of field errors.</description>
+    </item>
+    
+    <item>
+      <title>IValidator</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidator/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidator  Validator that can handle the validation of an object.
+Methods AfterValidateBusinessRules(object instance, List&amp;lt;IBusinessRuleValidationResult&amp;gt; validationResults) Called just after the specified instance has validated its business rules.
+Parameters    Name Description     instance The instance that has just been validated.</description>
+    </item>
+    
+    <item>
+      <title>IValidatorProvider</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatorprovider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivalidatorprovider/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValidatorProvider  Provider of IValidator classes. This provider can be used to retrieve specific validators for specific types.
+Methods GetValidator(Type targetType) Gets a validator for the specified target type.
+Parameters    Name Description     targetType The target type.</description>
+    </item>
+    
+    <item>
+      <title>IValueValidator</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivaluevalidator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/ivaluevalidator/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IValueValidator&amp;lt;TValue&amp;gt;  The value validator interface
+Type Parameters TValue The type of the value
+Methods IsValid(TValue value) Determines whether the specified value is valid.
+Parameters    Name Description     value The value.</description>
+    </item>
+    
+    <item>
+      <title>InvalidPropertyException</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/invalidpropertyexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/invalidpropertyexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class InvalidPropertyException : Exception  Base types Exception
+Exception is When an invalid property is added to the ModelBase class.
+Constructors InvalidPropertyException(string propertyName) Initializes a new instance of the InvalidPropertyException class.</description>
+    </item>
+    
+    <item>
+      <title>InvalidPropertyValueException</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/invalidpropertyvalueexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/invalidpropertyvalueexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class InvalidPropertyValueException : Exception  Base types Exception
+Exception when an the new value of a property of the ModelBase class is invalid.
+Constructors InvalidPropertyValueException(string propertyName, Type expectedType, Type actualType) Initializes a new instance of the InvalidPropertyValueException class.</description>
+    </item>
+    
+    <item>
+      <title>ModelBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ModelBase : IModel, ObservableObject  Base types ObservableObject
+Implements interfaces IModel
+Abstract class that serves as a base class for serializable objects.
+Fields IsDirtyProperty Register the IsDirty property so it is known in the class.</description>
+    </item>
+    
+    <item>
+      <title>ModelBaseExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelbaseextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelbaseextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ModelBaseExtensions  Extension methods for the ModelBase class.
+Methods Save(ModelBase model, Stream stream, ISerializer serializer) Saves the specified model to the stream using the serializer.
+Parameters    Name Description     model The model.</description>
+    </item>
+    
+    <item>
+      <title>ModelEqualityComparer</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelequalitycomparer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/modelequalitycomparer/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ModelEqualityComparer : IModelEqualityComparer, EqualityComparer&amp;lt;ModelBase&amp;gt;  Base types EqualityComparer
+Implements interfaces IModelEqualityComparer
+Implementation of the for the ModelBase.
+Fields Constructors ModelEqualityComparer() Initializes a new instance of the ModelEqualityComparer class.
+Properties CompareCollections Gets or sets a value indicating whether collections should be compared as well.</description>
+    </item>
+    
+    <item>
+      <title>ObservableObject</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/observableobject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/observableobject/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ObservableObject : IAdvancedNotifyPropertyChanged  Implements interfaces IAdvancedNotifyPropertyChanged
+Very basic class implementing the interfaces.
+Events PropertyChanged Occurs when a property of this object has changed.
+Methods OnPropertyChanged(AdvancedPropertyChangedEventArgs e) Called when the PropertyChanged event occurs.</description>
+    </item>
+    
+    <item>
+      <title>ObservableObjectExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/observableobjectextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/observableobjectextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ObservableObjectExtensions  Extension methods for the ObservableObject class.
+Methods RaiseAllPropertiesChanged(ObservableObject sender) Raises the property changed event for the specified ObservableObject.
+Parameters    Name Description     sender The observable object.</description>
+    </item>
+    
+    <item>
+      <title>PropertyAlreadyRegisteredException</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertyalreadyregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertyalreadyregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyAlreadyRegisteredException : Exception  Base types Exception
+Exception when a property is added to the ModelBase class that is already registered by the object.
+Constructors PropertyAlreadyRegisteredException(string propertyName, Type propertyType) Initializes a new instance of the PropertyAlreadyRegisteredException class.</description>
+    </item>
+    
+    <item>
+      <title>PropertyBag</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertybag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertybag/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyBag : INotifyPropertyChanged  Base types INotifyPropertyChanged
+Class that is able to manage all properties of a specific object in a thread-safe manner.
+Fields Constructors PropertyBag() Initializes a new instance of the PropertyBag class.</description>
+    </item>
+    
+    <item>
+      <title>PropertyData</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertydata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertydata/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyData  Object that contains all the property data that is used by the ModelBase class.
+Fields Constructors Properties IncludeInBackup Gets a value indicating whether whether the property should be included in the backup for IEditableObject.</description>
+    </item>
+    
+    <item>
+      <title>PropertyDataManager</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertydatamanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertydatamanager/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyDataManager  Property data manager.
+Fields Constructors PropertyDataManager() Initializes a new instance of the PropertyDataManager class.
+Properties Default Gets the default instance of the property data manager.
+Methods GetCatelTypeInfo(Type type) Gets the property data type information.</description>
+    </item>
+    
+    <item>
+      <title>PropertyNotNullableException</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertynotnullableexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertynotnullableexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyNotNullableException : Exception  Base types Exception
+Exception when a property value is set to null but when the type does not support null values.
+Constructors PropertyNotNullableException(string propertyName, Type propertyType) Initializes a new instance of the PropertyNotNullableException class.</description>
+    </item>
+    
+    <item>
+      <title>PropertyNotRegisteredException</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertynotregisteredexception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertynotregisteredexception/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyNotRegisteredException : Exception  Base types Exception
+Exception when a property is used by the ModelBase class that is not registered by the object.
+Constructors PropertyNotRegisteredException(string propertyName, Type objectType) Initializes a new instance of the PropertyNotRegisteredException class.</description>
+    </item>
+    
+    <item>
+      <title>PropertyValue</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertyvalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/propertyvalue/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class PropertyValue : ISerializable  Base types ISerializable
+Class holding a property value to serialize using the ModelBase.
+Constructors PropertyValue() Initializes a new instance of the PropertyValue class.
+PropertyValue(PropertyData propertyData, KeyValuePair&amp;lt;string, object&amp;gt; keyValuePair) Initializes a new instance of the PropertyValue class.</description>
+    </item>
+    
+    <item>
+      <title>SavableModelBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/savablemodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/savablemodelbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class SavableModelBase&amp;lt;T&amp;gt; : ISavableModel, ModelBase where T : class  Base types ModelBase
+Implements interfaces ISavableModel
+Abstract class that makes the ModelBase serializable.
+Type Parameters T Type that the class should hold (same as the defined type).</description>
+    </item>
+    
+    <item>
+      <title>SuspensionContext</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/suspensioncontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/suspensioncontext/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SuspensionContext  Suspension context that can track properties during a suspension period.
+Fields Properties Counter Gets the counter.
+Properties Gets the properties.
+Methods Add(string propertyName) Adds the specified property name to the suspension context.</description>
+    </item>
+    
+    <item>
+      <title>ValidatableModelBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatablemodelbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatablemodelbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ValidatableModelBase : IValidatableModel, ModelBase  Base types ModelBase
+Implements interfaces IValidatableModel
+ModelBase implementation that supports validation.
+Fields PropertiesNotCausingValidation The property names that failed to validate and should be skipped next time for NET 4.</description>
+    </item>
+    
+    <item>
+      <title>ValidateModelAttribute</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatemodelattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatemodelattribute/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ValidateModelAttribute : Attribute  Base types Attribute
+Attribute to define custom validation at class level for all classes that derive from ModelBase. This attribute follows a naming convention. If
+Constructors ValidateModelAttribute(Type validatorType) Initializes a new instance of the ValidateModelAttribute class.</description>
+    </item>
+    
+    <item>
+      <title>ValidationContext</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontext/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ValidationContext : IValidationContext  Implements interfaces IValidationContext
+Context containing all validation and provides several methods to gather this information.
+Fields Constructors ValidationContext() Initializes a new instance of the ValidationContext class.</description>
+    </item>
+    
+    <item>
+      <title>ValidationContextChange</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontextchange/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontextchange/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ValidationContextChange  Class containing change information about an item in the validation context.
+Constructors ValidationContextChange(IValidationResult validationResult, ValidationContextChangeType changeType) Initializes a new instance of the ValidationContextChange class.
+Parameters    Name Description     validationResult The validation result.</description>
+    </item>
+    
+    <item>
+      <title>ValidationContextChangeType</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontextchangetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontextchangetype/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum ValidationContextChangeType : Enum  Base types Enum
+The type of change that occurred to a validation context item.
+Fields Added 0
+The item was added.
+Removed 1
+The item was removed.</description>
+    </item>
+    
+    <item>
+      <title>ValidationContextHelper</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontexthelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationcontexthelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ValidationContextHelper  Helper class for IValidationContext classes.
+Methods GetChanges(IValidationContext firstContext, IValidationContext secondContext) Gets the changes between two different validation contexts.
+Parameters    Name Description     firstContext The first context.</description>
+    </item>
+    
+    <item>
+      <title>ValidationEventArgs</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationeventargs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationeventargs/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ValidationEventArgs : EventArgs  Base types EventArgs
+The validation event args.
+Constructors ValidationEventArgs(IValidationContext validationContext) Initializes a new instance of the ValidationEventArgs class.
+Parameters    Name Description     validationContext The validation context.</description>
+    </item>
+    
+    <item>
+      <title>ValidationExtensions</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ValidationExtensions  Extensions for validation.
+Methods GetValidationSummary(IValidationContext validationContext, object tag) Gets the validation summary for the specified IValidationContext.
+Parameters    Name Description     validationContext The validation context.</description>
+    </item>
+    
+    <item>
+      <title>ValidationResult</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ValidationResult : IValidationResult  Implements interfaces IValidationResult
+Base class for validation results.
+Constructors ValidationResult(ValidationResultType validationResultType, string message) Initializes a new instance of the ValidationResult class.
+Parameters    Name Description     validationResultType Type of the validation result.</description>
+    </item>
+    
+    <item>
+      <title>ValidationResultType</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationresulttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationresulttype/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum ValidationResultType : Enum  Base types Enum
+Types of validation results.
+Fields Error 1
+Validation result represents an error.
+Warning 0
+Validation result represents a warning.</description>
+    </item>
+    
+    <item>
+      <title>ValidationSummary</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationsummary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validationsummary/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ValidationSummary : IValidationSummary  Implements interfaces IValidationSummary
+The validation summary that contains a momentum of the IValidationContext.
+Fields Constructors ValidationSummary(IValidationContext validationContext) Initializes a new instance of the ValidationSummary class.
+Parameters    Name Description     validationContext The validation context to base the summary on.</description>
+    </item>
+    
+    <item>
+      <title>ValidatorBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatorbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatorbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ValidatorBase&amp;lt;TTargetType&amp;gt; : IValidator where TTargetType : class  Implements interfaces IValidator
+Base class that implements the IValidator interface, but already implements dummy methods for theBefore andAfter methods, which are rarely used (but still very useful in some cases).</description>
+    </item>
+    
+    <item>
+      <title>ValidatorProviderBase</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatorproviderbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/validatorproviderbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ValidatorProviderBase : IValidatorProvider  Implements interfaces IValidatorProvider
+Base class that implements the IValidatorProvider so only the GetValidator(Type) method has to be implemented.
+Fields Constructors ValidatorProviderBase() Initializes a new instance of the ValidatorProviderBase class.</description>
+    </item>
+    
+    <item>
+      <title>XmlNameMapper</title>
+      <link>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/xmlnamemapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.2/reference/catel.core/catel/data/xmlnamemapper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Data   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class XmlNameMapper&amp;lt;T&amp;gt;  Xml name mappings from xml to properties and back.
+Type Parameters T Type of the xml type to map, for example or.
+Fields Constructors Methods IsPropertyNameMappedToXmlName(Type type, string propertyName) Determines whether the property name is mapped to an XML name.</description>
+    </item>
+    
+  </channel>
+</rss>

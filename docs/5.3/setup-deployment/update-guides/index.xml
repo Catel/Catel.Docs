@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update guides on Catel docs</title>
+    <link>https://docs.catelproject.com/5.3/setup-deployment/update-guides/</link>
+    <description>Recent content in Update guides on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.3/setup-deployment/update-guides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Catel 4.0</title>
+      <link>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-4.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-4.0/</guid>
+      <description>This guide describes how to update your code to be fully compatible with Catel 4.0.
+Renaming classes Some classes in Catel have been renamed.
+ Catel.Environment =&amp;gt; CatelEnvironment IDependencyPropertySelector =&amp;gt; IViewPropertySelector  Renaming namespaces Some namespaces in Catel have been changed to match the functionality. For example, all services are now in Catel.Service instead of Catel.MVVM.Services because they can be used without MVVM.
+Below is a list of changed namespaces:</description>
+    </item>
+    
+    <item>
+      <title>Catel 4.1</title>
+      <link>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-4.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-4.1/</guid>
+      <description>This guide describes how to update your code to be fully compatible with Catel 4.1.
+This guide assumes that you are coming from Catel 4.0. If not, please read that guide first.
+IUIVisualizerService We have reverted the change to force you to use async code on the IUIVisualizerService. There are now 2 options:
+ Synchronous:
+var result = uiVisualizerService.ShowDialog&amp;lt;MyViewModel&amp;gt;(); // Window is closed here (synchronous behavior)  Asynchronous:</description>
+    </item>
+    
+    <item>
+      <title>Catel 5.0</title>
+      <link>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-5.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.3/setup-deployment/update-guides/catel-5.0/</guid>
+      <description>This guide describes how to update your code to be fully compatible with Catel 5.0.
+Catel v5 contains a lot of breaking changes, not all of them cause compiler errors but change core behavior. It&amp;rsquo;s important to check out the guide below before updating to Catel v5.
+This guide assumes that you are coming from Catel 4.5. If not, please read that guide first.
+Encountered issues while upgrading to this version?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exception handling on Catel docs</title>
+    <link>https://docs.catelproject.com/5.4/catel-core/exception-handling/</link>
+    <description>Recent content in Exception handling on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.4/catel-core/exception-handling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WPF implementation for exception handling</title>
+      <link>https://docs.catelproject.com/5.4/catel-core/exception-handling/wpf-implementation-for-exception-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.4/catel-core/exception-handling/wpf-implementation-for-exception-handling/</guid>
+      <description>Creating a watcher The watcher below is a self-managed watcher that takes care of exception handling in case of unhandled exceptions in both the AppDomain and Dispatcher.
+public class ExceptionWatcher { private static readonly ILog Log = LogManager.GetCurrentClassLogger(); private readonly IExceptionService _exceptionService; private readonly IMessageService _messageService; public ExceptionWatcher(IExceptionService exceptionService, IMessageService messageService) { Argument.IsNotNull(() =&amp;gt; exceptionService); Argument.IsNotNull(() =&amp;gt; messageService); _exceptionService = exceptionService; _messageService = messageService; exceptionService.Register&amp;lt;Exception&amp;gt;(async exception =&amp;gt; { await _messageService.</description>
+    </item>
+    
+  </channel>
+</rss>

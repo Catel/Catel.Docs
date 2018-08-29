@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catel.Threading on Catel docs</title>
-    <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/</link>
+    <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/</link>
     <description>Recent content in Catel.Threading on Catel docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AsyncLock</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asynclock/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asynclock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asynclock/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asynclock/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class AsyncLock  A mutual exclusion lock that is compatible with async. Note that this lock is recursive!
 Remarks This code originally comes from AsyncEx: https://github.com/StephenCleary/AsyncEx
 Fields Constructors AsyncLock() Creates a new async-compatible mutual exclusion lock.</description>
@@ -23,10 +23,10 @@ Fields Constructors AsyncLock() Creates a new async-compatible mutual exclusion 
     
     <item>
       <title>AsyncWaitQueueExtensions</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asyncwaitqueueextensions/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asyncwaitqueueextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asyncwaitqueueextensions/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/asyncwaitqueueextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class AsyncWaitQueueExtensions  Provides extension methods for wait queues.
 Remarks This code originally comes from AsyncEx: https://github.com/StephenCleary/AsyncEx
 Methods EnqueueAsync&amp;lt;T&amp;gt;(IAsyncWaitQueue&amp;lt;T, T&amp;gt; this, object syncObject, CancellationToken token) Creates a new entry and queues it to this wait queue.</description>
@@ -34,20 +34,20 @@ Methods EnqueueAsync&amp;lt;T&amp;gt;(IAsyncWaitQueue&amp;lt;T, T&amp;gt; this, 
     
     <item>
       <title>AwaitableDisposable</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/awaitabledisposable/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/awaitabledisposable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/awaitabledisposable/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/awaitabledisposable/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public struct AwaitableDisposable&amp;lt;T&amp;gt; : ValueType where T : IDisposable  Base types ValueType
 An awaitable wrapper around a task whose result is disposable. The wrapper is not disposable, so this prevents usage errors like &amp;ldquo;using (MyAsync())&amp;rdquo; when the appropriate usage should be &amp;ldquo;using (await MyAsync())&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>DefaultAsyncWaitQueue</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/defaultasyncwaitqueue/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/defaultasyncwaitqueue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/defaultasyncwaitqueue/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/defaultasyncwaitqueue/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class DefaultAsyncWaitQueue&amp;lt;T&amp;gt; : IAsyncWaitQueue&amp;lt;T, T&amp;gt;  Implements interfaces IAsyncWaitQueue
 The default wait queue implementation, which uses a double-ended queue.
 Type Parameters T The type of the results. If this isn&amp;rsquo;t needed, use.</description>
@@ -55,20 +55,20 @@ Type Parameters T The type of the results. If this isn&amp;rsquo;t needed, use.<
     
     <item>
       <title>IAsyncWaitQueue</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/iasyncwaitqueue/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/iasyncwaitqueue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/iasyncwaitqueue/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/iasyncwaitqueue/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IAsyncWaitQueue&amp;lt;T, T&amp;gt;  A collection of cancelable instances. Implementations must be threadsafe must work correctly if the caller is holding a lock.
 Type Parameters T The type of the results. If this isn&amp;rsquo;t needed, use.</description>
     </item>
     
     <item>
       <title>ReaderWriterLockSlimExtensions</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/readerwriterlockslimextensions/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/readerwriterlockslimextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/readerwriterlockslimextensions/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/readerwriterlockslimextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ReaderWriterLockSlimExtensions  Provides extensions for.
 Methods PerformRead(ReaderWriterLockSlim lockSlim, Action criticalOperation) Performs operation that requires read access to shared resource.
 Parameters    Name Description     lockSlim The reader-writer lock.</description>
@@ -76,20 +76,20 @@ Parameters    Name Description     lockSlim The reader-writer lock.</description
     
     <item>
       <title>SynchronizationContext</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontext/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontext/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontext/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontext/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SynchronizationContext  Provides a synchronization context to acquire or release exclusive lock of an object and execute thread safe code.
 Remarks Be aware when you use this class. If it is improperly used could provoke dead locks.</description>
     </item>
     
     <item>
       <title>SynchronizationContextExtensions</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontextextensions/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontextextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontextextensions/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/synchronizationcontextextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class SynchronizationContextExtensions  Extension methods for the SynchronizationContext.
 Methods AcquireScope(SynchronizationContext synchronizationContext) Acquires the scope of the SynchronizationContext. When the token is disposed, the context is released.
 Parameters    Name Description     synchronizationContext The synchronization context.</description>
@@ -97,10 +97,10 @@ Parameters    Name Description     synchronizationContext The synchronization co
     
     <item>
       <title>TaskExtensions</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskextensions/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskextensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskextensions/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskextensions/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TaskExtensions  Class TaskExtensions.
 Fields Methods AwaitWithTimeoutAsync(Task task, int timeout) Awaits the task with the specified time out. If the
 Parameters    Name Description     task The task.</description>
@@ -108,10 +108,10 @@ Parameters    Name Description     task The task.</description>
     
     <item>
       <title>TaskHelper</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskhelper/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskhelper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskhelper/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskhelper/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TaskHelper  Helper class for tasks.
 Fields DefaultConfigureAwaitValue The default configure await value.
 Properties Canceled A that has been canceled.
@@ -121,10 +121,10 @@ Methods Run(Action action, bool configureAwait, CancellationToken cancellationTo
     
     <item>
       <title>TaskShim</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskshim/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskshim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskshim/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/taskshim/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class TaskShim  Task wrapper so it works on all platforms.
 Remarks This code originally comes from https://github.com/StephenCleary/AsyncEx/ (MIT license).
 Methods Delay(TimeSpan dueTime) Starts a Task that will complete after the specified due time.</description>
@@ -132,10 +132,10 @@ Methods Delay(TimeSpan dueTime) Starts a Task that will complete after the speci
     
     <item>
       <title>Timeout</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timeout/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timeout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timeout/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timeout/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class Timeout  The timeout class.
 Fields Infinite A constant used to specify an infinite waiting period, for threading methods that accept an Int32 parameter.
 InfiniteTimeSpan A constant used to specify an infinite waiting period, for threading methods that accept an TimeSpan parameter.</description>
@@ -143,10 +143,10 @@ InfiniteTimeSpan A constant used to specify an infinite waiting period, for thre
     
     <item>
       <title>Timer</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timer/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timer/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timer/</guid>
       <description>Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class Timer : IDisposable  Base types IDisposable
 Timer for WinRT since WinRT only provides the DispatcherTimer which cannot be used outside the UI thread.
 Fields Constructors Timer() Initializes a new instance of the Timer class.</description>
@@ -154,10 +154,10 @@ Fields Constructors Timer() Initializes a new instance of the Timer class.</desc
     
     <item>
       <title>TimerCallback</title>
-      <link>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timercallback/</link>
+      <link>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timercallback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timercallback/</guid>
+      <guid>https://docs.catelproject.com/5.5/reference/catel.core/catel/threading/timercallback/</guid>
       <description>    Name Value     Assembly Catel.Core   Namespace Catel.Threading   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public delegate TimerCallback : MulticastDelegate  Base types MulticastDelegate
 Timer callback delegate.
 Parameters    Name Description     state The state.    </description>
