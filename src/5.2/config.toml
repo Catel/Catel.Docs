@@ -1,4 +1,4 @@
-baseURL = "http://docs.catelproject.com/5.2/"
+baseURL = "https://docs.catelproject.com/5.2/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 publishDir = "../../docs/5.2"

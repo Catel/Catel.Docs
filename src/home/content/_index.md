@@ -17,7 +17,8 @@ MyGet unstable version|![Pre-release version](https://img.shields.io/myget/catel
 
 Please pick a version:
 
-- [Catel vNext (5.7)](/vnext/)
+- [Catel vNext (5.8)](/vnext/)
+- [Catel 5.7](/5.7/)
 - [Catel 5.6](/5.6/)
 - [Catel 5.5](/5.5/)
 - [Catel 5.4](/5.4/)
