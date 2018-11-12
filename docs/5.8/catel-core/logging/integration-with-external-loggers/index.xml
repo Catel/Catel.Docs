@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integration with external logging on Catel docs</title>
+    <link>https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/</link>
+    <description>Recent content in Integration with external logging on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Log4net</title>
+      <link>https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/log4net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/log4net/</guid>
+      <description>The example below provides an ILogListener for Log4net, but any external logging library can be used.
+Creating the listener A listener can be created by creating a new class deriving from LogListenerBase.
+public class Log4netListener : LogListenerBase { protected override void Debug(ILog log, string message, object extraData) { var finalLog = log4net.LogManager.GetLogger(log.TargetType); finalLog.Debug(message); } protected override void Info(ILog log, string message, object extraData) { var finalLog = log4net.LogManager.GetLogger(log.TargetType); finalLog.Info(message); } protected override void Warning(ILog log, string message, object extraData) { var finalLog = log4net.</description>
+    </item>
+    
+    <item>
+      <title>NLog</title>
+      <link>https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/nlog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.8/catel-core/logging/integration-with-external-loggers/nlog/</guid>
+      <description>NLog The example below provides an ILogListener for NLog, but any external logging library can be used.
+Creating the listener A listener can be created by creating a new class deriving from LogListenerBase.
+public class NLogListener : LogListenerBase { protected override void Debug(ILog log, string message, object extraData) { var finalLog = NLog.LogManager.GetLogger(log.TargetType.ToString()); finalLog.Debug(message); } protected override void Info(ILog log, string message, object extraData) { var finalLog = NLog.LogManager.GetLogger(log.TargetType.ToString()); finalLog.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Supported serializers on Catel docs</title>
+    <link>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/</link>
+    <description>Recent content in Supported serializers on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Binary</title>
+      <link>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/binary/</guid>
+      <description>The binary serializer uses the .NET binary serializer formatters to serialize the objects.</description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/json/</guid>
+      <description>The JsonSerializer is implemented in a separate assembly because it uses Json.Net under the hood.
+Customizing configuration The JsonSerializationConfiguration enables support for customizing the configuration used while (de)serializing. Below is an example
+Using Bson instead of Json To use Bson instead of Json, use the JsonSerializationConfiguration class:
+var configuration = new JsonSerializationConfiguration { UseBson = true }; jsonSerializer.Serialize(myObject, configuration);  Specifying the culture to use during (de)serialization To specify the culture to use during (de)serialization, set the Culture property on the configuration class:</description>
+    </item>
+    
+    <item>
+      <title>Xml</title>
+      <link>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/xml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.8/catel-core/serialization/supported-serializers/xml/</guid>
+      <description>The xml serializer uses the DataContractSerializer from .NET to serialize the object graphs.</description>
+    </item>
+    
+  </channel>
+</rss>
