@@ -17,7 +17,7 @@
       
       <guid>https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-code-snippets/</guid>
       <description>This part of the documentation explains all the code snippets.
-Code snippet|Explanation -|- modelobject|Defines a model using the ModelBase class. modelprop|Defines a new property on a model class. modelpropchanged|Defines a new property with change notification on a model class. vm|Defines a new view model. vmcommand|Defines a new view model command with only an executed action. vmcommandwithcanexecute|Defines a new view model command with an executed action, but also a canexecute function. vmprop|Defines a new property on a view model.</description>
+   Code snippet Explanation     modelobject Defines a model using the ModelBase class.   modelprop Defines a new property on a model class.   modelpropchanged Defines a new property with change notification on a model class.   vm Defines a new view model.   vmcommand Defines a new view model command with only an executed action.</description>
     </item>
     
     <item>

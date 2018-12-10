@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.2" />
+<meta name="revised" content="2018-12-10T16:22:29 CET">
 <title>Deferring validation :: Catel docs</title>
 <link rel="shortcut icon" href="/vnext/images/favicon.png" type="image/x-icon" />
 <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <p>Catel Documentation</p>
 
   
+
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -7676,10 +7677,29 @@ Validate(true);
 
 <p>Below is a table of properties that can be used to affect the validation deferring.</p>
 
-<p>Property|Validate immediately|Defer to a later moment
--|-|-
-DeferValidationUntilFirstSaveCall|false|true
-ValidateModelsOnInitialization|true|false</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Validate immediately</th>
+<th>Defer to a later moment</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DeferValidationUntilFirstSaveCall</td>
+<td>false</td>
+<td>true</td>
+</tr>
+
+<tr>
+<td>ValidateModelsOnInitialization</td>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
 
 <div class="notices warning" ><p>If the DeferValidationUntilFirstSaveCall property, is used, it must be set as first property in the view model because the validation kicks in immediately when properties change.</p>
 </div>
@@ -7730,12 +7750,14 @@ s.setAttribute('data-timestamp', +new Date());
 
     
 
-  
+    
 
+    
     <div class="github-link">
       <a href="https://github.com/catel/catel.docs/edit/master/src/vnext/content/catel-core/validation/deferring-validation.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
+    
   </div>
 
 
@@ -7759,6 +7781,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 <script src="/vnext/theme-flex/script.js"></script>
+
 
     
 

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.2" />
+<meta name="revised" content="2018-12-10T16:22:30 CET">
 <title>Caching :: Catel docs</title>
 <link rel="shortcut icon" href="/vnext/images/favicon.png" type="image/x-icon" />
 <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <p>Catel Documentation</p>
 
   
+
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -7689,13 +7690,53 @@
 
 <p>Catel comes with build-in expiration policies. They are listed in the follow table:</p>
 
-<p>Expiration policy|Type|Description|Initialization code sample
--|-|-|-
-AbsoluteExpirationPolicy|Time-base|The cache item will expire on the absolute expiration DateTime|<code>ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))</code>
-DurationExpirationPolicy|Time-base|The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now|<code>ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))</code>
-SlidingExpirationPolicy|Time-base|The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan|<code>ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))</code>
-CustomExpirationPolicy|Custom|The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.|<code>var startDateTime = DateTime.Now;var duration = TimeSpan.FromMinutes(5);ExpirationPolicy.Custom(() =&gt; DateTime.Now &gt; startDateTime.Add(duration), () =&gt; startDateTime = DateTime.Now);</code>
-CompositeExpirationPolicy|Custom|Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.|<code>new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=&gt;...))</code></p>
+<table>
+<thead>
+<tr>
+<th>Expiration policy</th>
+<th>Type</th>
+<th>Description</th>
+<th>Initialization code sample</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>AbsoluteExpirationPolicy</td>
+<td>Time-base</td>
+<td>The cache item will expire on the absolute expiration DateTime</td>
+<td><code>ExpirationPolicy.Absolute(new DateTime(21, 12, 2012))</code></td>
+</tr>
+
+<tr>
+<td>DurationExpirationPolicy</td>
+<td>Time-base</td>
+<td>The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now</td>
+<td><code>ExpirationPolicy.Duration(TimeSpan.FromMinutes(5))</code></td>
+</tr>
+
+<tr>
+<td>SlidingExpirationPolicy</td>
+<td>Time-base</td>
+<td>The cache item will expire using the duration TimeSpan to calculate the absolute expiration from DateTime.Now, but everytime the item is requested, it is expanded again with the specified TimeSpan</td>
+<td><code>ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))</code></td>
+</tr>
+
+<tr>
+<td>CustomExpirationPolicy</td>
+<td>Custom</td>
+<td>The cache item will expire using the expire function and execute the reset action if specified. The example shows how to create a sliding expiration policy with a custom expiration policy.</td>
+<td><code>var startDateTime = DateTime.Now;var duration = TimeSpan.FromMinutes(5);ExpirationPolicy.Custom(() =&gt; DateTime.Now &gt; startDateTime.Add(duration), () =&gt; startDateTime = DateTime.Now);</code></td>
+</tr>
+
+<tr>
+<td>CompositeExpirationPolicy</td>
+<td>Custom</td>
+<td>Combines several expiration policy into a single one. It can be configured to expire when any policy expires or when all policies expire.</td>
+<td><code>new CompositeExpirationPolicy().Add(ExpirationPolicy.Sliding(TimeSpan.FromMinutes(5))).Add(ExpirationPolicy.Custom(()=&gt;...))</code></td>
+</tr>
+</tbody>
+</table>
 
 <p>Implementing your own expiration cache policy</p>
 
@@ -7774,12 +7815,14 @@ s.setAttribute('data-timestamp', +new Date());
 
     
 
-  
+    
 
+    
     <div class="github-link">
       <a href="https://github.com/catel/catel.docs/edit/master/src/vnext/content/catel-core/caching/_index.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
+    
   </div>
 
 
@@ -7803,6 +7846,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 <script src="/vnext/theme-flex/script.js"></script>
+
 
     
 

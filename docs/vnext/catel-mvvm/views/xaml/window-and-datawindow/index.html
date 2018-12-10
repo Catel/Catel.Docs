@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.2" />
+<meta name="revised" content="2018-12-10T16:22:37 CET">
 <title>Window and DataWindow :: Catel docs</title>
 <link rel="shortcut icon" href="/vnext/images/favicon.png" type="image/x-icon" />
 <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <p>Catel Documentation</p>
 
   
+
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -7778,11 +7779,31 @@ public class UploadWindow : DataWindow
 
 <p>Starting with Catel 2.4, the <code>DataWindow</code> has its own styles. These are located in <code>DataWindow.generic.xaml</code>. Below is a table that contains the available styles and a short description.</p>
 
-<p>Style key|Description
--|-
-DataWindowStyle|The actual window style which can be used to decorate or customize the window itself.
-DataWindowButtonContainerStyle|The container that is used for the buttons. This is a <code>WrapPanel</code>, so the styles must match that.
-DataWindowButtonStyle|The style for the buttons. By default, the buttons are right aligned and have a fixed size.</p>
+<table>
+<thead>
+<tr>
+<th>Style key</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>DataWindowStyle</td>
+<td>The actual window style which can be used to decorate or customize the window itself.</td>
+</tr>
+
+<tr>
+<td>DataWindowButtonContainerStyle</td>
+<td>The container that is used for the buttons. This is a <code>WrapPanel</code>, so the styles must match that.</td>
+</tr>
+
+<tr>
+<td>DataWindowButtonStyle</td>
+<td>The style for the buttons. By default, the buttons are right aligned and have a fixed size.</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="closing-the-datawindow-with-the-escape-key">Closing the DataWindow with the Escape key</h2>
 
@@ -7833,12 +7854,14 @@ s.setAttribute('data-timestamp', +new Date());
 
     
 
-  
+    
 
+    
     <div class="github-link">
       <a href="https://github.com/catel/catel.docs/edit/master/src/vnext/content/catel-mvvm/views/xaml/window-and-datawindow.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
+    
   </div>
 
 
@@ -7862,6 +7885,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 <script src="/vnext/theme-flex/script.js"></script>
+
 
     
 
