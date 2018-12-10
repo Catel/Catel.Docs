@@ -8,7 +8,7 @@ Catel makes it very easy to use configurations on all supported platforms. 
 Below is a table to explain what technology is used per platform to retrieve and store configuration values.
 
 Platform|Technology
--|-
+---|---
 .NET|ConfigurationManager.AppSettings
 UWP|ApplicationData.Current.LocalSettings
 PCL|Not supported

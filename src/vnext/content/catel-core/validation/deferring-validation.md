@@ -26,7 +26,7 @@ Validate(true);
 Below is a table of properties that can be used to affect the validation deferring.
 
 Property|Validate immediately|Defer to a later moment
--|-|-
+---|---|---
 DeferValidationUntilFirstSaveCall|false|true
 ValidateModelsOnInitialization|true|false
 

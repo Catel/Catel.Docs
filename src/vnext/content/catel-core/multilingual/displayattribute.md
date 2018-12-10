@@ -62,7 +62,7 @@ public enum Condition
 By default, the attribute uses the `ILanguageService` to resolve the values to show. The `DisplayAttribute` uses conventions to resolve the different values from the resources.
 
 Property|ResourceName used when resolving|Fallback value
--|-
+---|---
 ShortName|[ResourceName]\_ShortName|Name
 Name|[ResourceName]\_Name|No fallback value, will return empty value
 Description|[ResourceName]\_Description|No fallback value, will return empty value

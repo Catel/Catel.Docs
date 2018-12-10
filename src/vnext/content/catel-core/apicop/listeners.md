@@ -29,7 +29,7 @@ apiCopListener.Grouping = ApiCopListenerGrouping.Rule;
 The following grouping options are available:
 
 Grouping name|Description
--|-
+---|---
 Cop|Sort by the name of the class in which the cop is registered.
 Rule|Sort by the rule name.
 Tag|Sort by tag, which is dependent on the rule implementation. It is recommended though to use the final class name as tag.

@@ -122,7 +122,7 @@ public class UploadWindow : DataWindow
 Starting with Catel 2.4, the `DataWindow` has its own styles. These are located in `DataWindow.generic.xaml`. Below is a table that contains the available styles and a short description.
 
 Style key|Description
--|-
+---|---
 DataWindowStyle|The actual window style which can be used to decorate or customize the window itself.
 DataWindowButtonContainerStyle|The container that is used for the buttons. This is a `WrapPanel`, so the styles must match that.
 DataWindowButtonStyle|The style for the buttons. By default, the buttons are right aligned and have a fixed size.

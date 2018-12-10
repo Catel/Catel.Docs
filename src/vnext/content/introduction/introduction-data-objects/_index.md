@@ -105,7 +105,7 @@ This example shows how to declare the simplest property. In this example, a stri
 2.  In the Properties region, use the code snippet *modelprop*, and use the following values:
 
 Code snippet item|Value
------------------|-----------
+---|---
 description|Gets or sets the simple property
 type|string
 name|SimpleProperty
@@ -141,7 +141,7 @@ public static readonly PropertyDataSimplePropertyProperty = RegisterProperty("Si
 2.  In the Properties region, use the code snippet *modelpropchanged*, and use the following values:
 
 Code snippet item|Value
------------------|-----
+---|---
 description|Gets or sets the callback property
 type|string
 name|CallbackProperty
@@ -238,7 +238,7 @@ Saving and loading objects out of the box has never been so easy. *SavableModelB
 4.  In the Properties region, use the code snippet *modelprop*, and use the following values:
 
 Code snippet item|Value
------------------|-----
+---|---
 description|Gets or sets the name
 type|string
 name|Name

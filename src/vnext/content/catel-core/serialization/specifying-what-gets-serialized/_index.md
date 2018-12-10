@@ -24,7 +24,7 @@ public class MyModel : ModelBase
 ```
 
 Member name|Gets serialized
--|-
+---|---
 _fieldValue|false
 RegularProperty|false
 CatelProperty|true
@@ -53,7 +53,7 @@ public class MyModel : ModelBase
 ```
 
 Member name|Gets serialized
--|-
+---|---
 _fieldValue|true
 RegularProperty|true
 CatelProperty|true
@@ -85,7 +85,7 @@ public class MyModel : ModelBase
 ```
 
 Member name|Gets serialized
--|-
+---|---
 _fieldValue|false
 RegularProperty|false
 CatelProperty|false
