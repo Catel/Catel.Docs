@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-10T16:22:29 CET">
+<meta name="revised" content="2018-12-21T16:50:59 CET">
 <title>Catel.Fody :: Catel docs</title>
 <link rel="shortcut icon" href="/vnext/images/favicon.png" type="image/x-icon" />
 <link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
@@ -7600,13 +7600,14 @@
 <p>Catel.Fody is an addin for Fody (see <a href="https://github.com/Fody/Fody">https://github.com/Fody/Fody</a>), which
 is an extensible tool for weaving .net assemblies. This addin will rewrite simple properties to the dependency-property alike properties that are used inside Catel.</p>
 
-<p>It will rewrite all properties on the <code>ModelBase</code> and <code>ViewModelBase</code>. So, a
-property that is written as this:</p>
+<p>It will rewrite all properties on the <code>ObservableObject</code>, <code>ModelBase</code> and <code>ViewModelBase</code>. So, a property that is written as this:</p>
 
 <pre><code>public string FirstName { get; set; }
 </code></pre>
 
-<p>will be weaved into</p>
+<p>will be weaved into:</p>
+
+<p><strong>ModelBase &amp; ViewModelBase</strong></p>
 
 <pre><code>public string FirstName
 {
@@ -7617,7 +7618,24 @@ property that is written as this:</p>
 public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;FirstName&quot;, typeof(string));
 </code></pre>
 
-<p>but if a readonly computed property like this one exists:</p>
+<p><strong>ObservableObject</strong></p>
+
+<pre><code>private string _firstName;
+
+public string FirstName
+{
+    get { return _firstName; }
+    set
+    {
+        _firstName = value;
+        RaisePropertyChanged(nameof(FirstName));
+    }
+}
+</code></pre>
+
+<p><strong>Computed properties</strong></p>
+
+<p>If a readonly computed property like this one exists:</p>
 
 <pre><code>public string FullName
 {
@@ -7659,7 +7677,7 @@ public static readonly PropertyData FirstNameProperty = RegisterProperty(&quot;F
 <h2 id="disabling-weaving-for-specific-types-or-properties">Disabling weaving for specific types or properties</h2>
 
 <p>To disable the weaving of types or properties of a type, decorate it with the 
-*NoWeaving* attribute as shown in the example below:</p>
+<code>NoWeaving</code> attribute as shown in the example below:</p>
 
 <pre><code>[NoWeaving]
 public class MyClass : ModelBase
@@ -7719,7 +7737,7 @@ public class MyClass : ModelBase
 
 <h2 id="weaving-properties">Weaving properties</h2>
 
-<p>The <code>PropertyChanged.Fody</code> plugin for Fody already supports Catel out of the box, but only for property change notifications. However, with the <code>Catel.Fody</code> plugin, it is possible to automatically weave a simple property into a Catel property.</p>
+<p>It is possible to automatically weave a simple property into a Catel property (<code>ModelBase</code> or <code>ViewModelBase</code>) or a property with automatic change notifications (<code>ObservableObject</code>).</p>
 
 <p>The following property definition:</p>
 
@@ -7728,6 +7746,8 @@ public class MyClass : ModelBase
 
 <p>will be weaved into:</p>
 
+<p><strong>ModelBase &amp; ViewModelBase</strong></p>
+
 <pre><code>public string Name
 {
     get { return GetValue&lt;string&gt;(NameProperty); }
@@ -7735,6 +7755,21 @@ public class MyClass : ModelBase
 }
  
 public static readonly PropertyData NameProperty = RegisterProperty(&quot;Name&quot;, typeof(string));
+</code></pre>
+
+<p><strong>ObservableObject</strong></p>
+
+<pre><code>private string _name;
+
+public string Name
+{
+    get { return _name; }
+    set
+    {
+        _name = value;
+        RaisePropertyChanged(nameof(Name));
+    }
+}
 </code></pre>
 
 <h3 id="support-for-computed-properties">Support for computed properties</h3>
@@ -7765,7 +7800,7 @@ public static readonly PropertyData NameProperty = RegisterProperty(&quot;Name&q
 }
 </code></pre>
 
-<p>In order to avoid this behavior, you can use the <code>NoWeavingAttribute</code> on the computed property, just like this:</p>
+<p>In order to avoid this behavior, you can use the <code>NoWeaving</code> attribute on the computed property, just like this:</p>
 
 <pre><code>[NoWeaving]
 public string FullName
@@ -7777,7 +7812,7 @@ public string FullName
 <p>In the background, <code>Catel.Fody</code> will handle the following workflow:</p>
 
 <ol>
-<li>Find all types in the assembly deriving from <code>ModelBase</code> (thus also <code>ViewModelBase</code>)</li>
+<li>Find all types in the assembly deriving from <code>ObservableObject</code>, <code>ModelBase</code> and <code>ViewModelBase</code></li>
 <li>Check if the type has an automatic property backing field (only those properties are weaved)</li>
 <li>Add the <code>PropertyData</code> field for the property</li>
 <li>Instantiate the <code>PropertyData</code> field in the static constructor of the type</li>
@@ -7794,7 +7829,7 @@ public string FullName
 
 <ol>
 <li>All properties of type <code>ICommand</code></li>
-<li>Properties without an automatically generated backing field</li>
+<li>Properties without an automatically generated backing field (thus properties with a custom implementation)</li>
 </ol>
 
 <h3 id="specifying-default-values-for-weaved-properties">Specifying default values for weaved properties</h3>
