@@ -7,12 +7,13 @@ weight = 80
 Catel.Fody is an addin for Fody (see https://github.com/Fody/Fody), which
 is an extensible tool for weaving .net assemblies. This addin will rewrite simple properties to the dependency-property alike properties that are used inside Catel.
 
-It will rewrite all properties on the `ModelBase` and `ViewModelBase`. So, a
-property that is written as this:
+It will rewrite all properties on the `ObservableObject`, `ModelBase` and `ViewModelBase`. So, a property that is written as this:
 
     public string FirstName { get; set; }
 
-will be weaved into
+will be weaved into:
+
+**ModelBase & ViewModelBase**
 
     public string FirstName
     {
@@ -22,7 +23,23 @@ will be weaved into
 
     public static readonly PropertyData FirstNameProperty = RegisterProperty("FirstName", typeof(string));
 
-but if a readonly computed property like this one exists:
+**ObservableObject**
+
+	private string _firstName;
+	
+	public string FirstName
+	{
+		get { return _firstName; }
+		set
+		{
+			_firstName = value;
+			RaisePropertyChanged(nameof(FirstName));
+		}
+	}
+
+**Computed properties**
+
+If a readonly computed property like this one exists:
 
     public string FullName
     {
@@ -60,7 +77,7 @@ To enable Catel.Fody to weave assemblies, you need to perform the following step
 ## Disabling weaving for specific types or properties
 
 To disable the weaving of types or properties of a type, decorate it with the 
-*NoWeaving* attribute as shown in the example below:
+`NoWeaving` attribute as shown in the example below:
 
 	[NoWeaving]
 	public class MyClass : ModelBase
@@ -113,13 +130,15 @@ Generate xml schemas for all classes that inherit (directly or indirectly) from 
 
 ## Weaving properties
 
-The `PropertyChanged.Fody` plugin for Fody already supports Catel out of the box, but only for property change notifications. However, with the `Catel.Fody` plugin, it is possible to automatically weave a simple property into a Catel property.
+It is possible to automatically weave a simple property into a Catel property (`ModelBase` or `ViewModelBase`) or a property with automatic change notifications (`ObservableObject`).
 
 The following property definition:
 
 	public string Name { get; set; }
 
 will be weaved into:
+
+**ModelBase & ViewModelBase**
 
 	public string Name
 	{
@@ -128,6 +147,20 @@ will be weaved into:
 	}
 	 
 	public static readonly PropertyData NameProperty = RegisterProperty("Name", typeof(string));
+
+**ObservableObject**
+
+	private string _name;
+	
+	public string Name
+	{
+		get { return _name; }
+		set
+		{
+			_name = value;
+			RaisePropertyChanged(nameof(Name));
+		}
+	}
 
 ### Support for computed properties
 
@@ -155,7 +188,7 @@ the `OnPropertyChanged` method will be also weaved into
 	    }
 	}
 
-In order to avoid this behavior, you can use the `NoWeavingAttribute` on the computed property, just like this:
+In order to avoid this behavior, you can use the `NoWeaving` attribute on the computed property, just like this:
 
 	[NoWeaving]
 	public string FullName
@@ -165,7 +198,7 @@ In order to avoid this behavior, you can use the `NoWeavingAttribute` on the com
 
 In the background, `Catel.Fody` will handle the following workflow:
 
-1. Find all types in the assembly deriving from `ModelBase` (thus also `ViewModelBase`)
+1. Find all types in the assembly deriving from `ObservableObject`, `ModelBase` and `ViewModelBase`
 2. Check if the type has an automatic property backing field (only those properties are weaved)
 3. Add the `PropertyData` field for the property
 4. Instantiate the `PropertyData` field in the static constructor of the type
@@ -180,8 +213,7 @@ Note that this feature is automatically disabled for classes that already overri
 By default, Catel.Fody ignores the following properties and types by default because they shouldn't be weaved:
 
 1. All properties of type `ICommand`
-2. Properties without an automatically generated backing field
-
+2. Properties without an automatically generated backing field (thus properties with a custom implementation)
 
 ### Specifying default values for weaved properties
 
