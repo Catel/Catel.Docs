@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Messaging on Catel docs</title>
+    <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/</link>
+    <description>Recent content in Catel.Messaging on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CombinedMessage</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/combinedmessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/combinedmessage/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class CombinedMessage : MessageBase&amp;lt;CombinedMessage, bool&amp;gt;  Base types MessageBase
+Implements a message transferring a boolean value and a custom property.
+Constructors CombinedMessage() Initializes a new instance of the CombinedMessage class.
+Remarks Required by the base class.</description>
+    </item>
+    
+    <item>
+      <title>IMessageMediator</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/imessagemediator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/imessagemediator/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IMessageMediator  The interface definition for our Message mediator. This allows loose-event coupling between components in an application by sending messages to registered elements. This class implements the mediator pattern.</description>
+    </item>
+    
+    <item>
+      <title>MessageBase</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagebase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagebase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class MessageBase&amp;lt;TMessage, TData&amp;gt; where TMessage : new(), MessageBase&amp;lt;TMessage, TData&amp;gt;  Base class for messages distributed via the Catel MessageMediator subsystem. Inherit from this class to define individual message types. For most subclasses the only thing to code is an empty class body including the type parameters.</description>
+    </item>
+    
+    <item>
+      <title>MessageMediator</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagemediator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagemediator/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MessageMediator : IMessageMediator  Implements interfaces IMessageMediator
+This class creates a simple Mediator which loosely connects different objects together. The message handlers are organized using string-based message keys and are held in a WeakReference collection.</description>
+    </item>
+    
+    <item>
+      <title>MessageMediatorHelper</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagemediatorhelper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagemediatorhelper/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class MessageMediatorHelper  Helper class for the MessageMediator to allow easy subscription
+Fields Methods SubscribeRecipient(object instance, IMessageMediator messageMediator) Subscribes all methods of the specified instance that are decorated with the MessageRecipientAttribute.</description>
+    </item>
+    
+    <item>
+      <title>MessageRecipientAttribute</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagerecipientattribute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/messagerecipientattribute/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class MessageRecipientAttribute : Attribute  Base types Attribute
+Attribute defining a method as recipient for the MessageMediator.
+Constructors MessageRecipientAttribute() Initializes a new instance of the MessageRecipientAttribute class.
+Properties Tag Gets the tag.</description>
+    </item>
+    
+    <item>
+      <title>SimpleMessage</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/simplemessage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/messaging/simplemessage/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Messaging   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class SimpleMessage : MessageBase&amp;lt;SimpleMessage, string&amp;gt;  Base types MessageBase
+Implements a simple message with a string payload data.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Validation on Catel docs</title>
+    <link>https://docs.catelproject.com/5.9/catel-core/validation/</link>
+    <description>Recent content in Validation on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.9/catel-core/validation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Validation via validate methods</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-validate-method/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-validate-method/</guid>
+      <description>The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+The easiest way to implement validation is to override the ValidateFields and ValidateBusinessRules methods. Below is an example of an implementation of the ValidateFields method:
+protected override void ValidateFields(List&amp;lt;IFieldValidationResult&amp;gt; validationResults) { if (string.IsNullOrEmpty(FirstName)) { validationResults.Add(FieldValidationResult.CreateError(FirstNameProperty, &amp;quot;First name is required&amp;quot;)); } if (string.IsNullOrEmpty(LastName)) { validationResults.Add(FieldValidationResult.CreateError(LastNameProperty, &amp;quot;Last name is required&amp;quot;)); } if (Gender == Gender.Unknown) { validationResults.Add(FieldValidationResult.CreateError(GenderProperty, &amp;quot;Gender cannot be unknown&amp;quot;)); } }  </description>
+    </item>
+    
+    <item>
+      <title>Validation via data annotations</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-data-annotations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-data-annotations/</guid>
+      <description>The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+Data annotations are validation when the specific property is set. For example, when a property FirstName is set, all the data annotations on the FirstName property are validated.
+Decorating properties with data annotations Decorating properties is very simple. For example, to make a property mandatory, use the following definition (note the Required attribute):
+/// &amp;lt;summary&amp;gt; /// Gets or sets the middle name.</description>
+    </item>
+    
+    <item>
+      <title>Validation via special model validators</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-special-model-validators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-special-model-validators/</guid>
+      <description>By default, Catel registers the AttributeValidatorProvider as the IValidatorProvider. This way the ModelBase and all the classes that derive from it can easily add a custom validator by using the ValidateModelAttribute.
+Note that it is still possible to register a custom IValidatorProvider to customize this behavior. It is even possible to set the Validator property of the ModelBase on a specific instance of a model
+Implementing the validator The first thing that needs to be done is to write a custom implementation of the IValidator interface.</description>
+    </item>
+    
+    <item>
+      <title>Validation via IValidator</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-ivalidator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/validation-via-ivalidator/</guid>
+      <description>The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+The validation in Catel is extremely flexible, but sometimes it is just not enough or you are forced to use external validators. For such cases, Catel provides the IValidatorProvider and IValidator interfaces. These allow very flexible injection or external validators into data objects and view models of Catel.
+Implementing the IValidatorProvider The IValidatorProvider is responsible to return the right IValidator for a specific type.</description>
+    </item>
+    
+    <item>
+      <title>Using the validation context</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/using-validation-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/using-validation-context/</guid>
+      <description>The ViewModelBase derives from ModelBase, thus all information here also applies to the ViewModelBase
+Sometimes detailed information about validation is required. This is possible in Catel thanks to the ValidationContext class. The ValidationContext serves as the container for all validation results that are gathered via the available validation methods. The ValidationContext has lots of methods that all return lists of either IFieldValidationResult or IBusinessRuleValidationResult.
+The examples below are shown a starter examples, but you can gather every type of validation result by using the ValidationContext.</description>
+    </item>
+    
+    <item>
+      <title>Getting a summary of validation results</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/getting-summary-of-validation-results/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/getting-summary-of-validation-results/</guid>
+      <description>Sometimes you just need to get a summary of all warnings and errors of an object. All validation is gathered in the IValidationContext and available on that class. However, there are some convenience classes that allow a developer to create a summary based on a specific tag. This convenience class is IValidationSummary, which gathers the right information from an instance of IValidationContext.
+Creating a summary of all validations  To retrieve a summary of all validations from a IValidationContext, use the following code:</description>
+    </item>
+    
+    <item>
+      <title>Deferring validation</title>
+      <link>https://docs.catelproject.com/5.9/catel-core/validation/deferring-validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/catel-core/validation/deferring-validation/</guid>
+      <description>The opinions about validation differ from person to person. Some people think it is best practice to immediately show the errors to the users. Others want to defer it to the moment where the user clicks the Save or OK button. Catel supports both &amp;ldquo;best practices&amp;rdquo;.
+Suspending validation for a batch of changes Sometimes you need to change a batch of properties and don&amp;rsquo;t want validation to be called after every property change.</description>
+    </item>
+    
+  </channel>
+</rss>

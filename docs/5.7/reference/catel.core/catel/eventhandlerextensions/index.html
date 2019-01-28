@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.40.2" />
+<meta name="revised" content="2019-01-28T14:07:17 CET">
 <title>EventHandlerExtensions :: Catel docs</title>
 <link rel="shortcut icon" href="/5.7/images/favicon.png" type="image/x-icon" />
 <link href="/5.7/css/font-awesome.min.css" rel="stylesheet">
@@ -40,6 +40,7 @@
     <p>Catel Documentation</p>
 
   
+
 
   </div>
   <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
@@ -7785,36 +7786,51 @@ var handler = MyEvent;
         handler(this, EventArgs.Empty);
     }</p>
 
-<p><code>One can now write:</code>
-MyEvent.SafeInvoke(this);</p>
-
-<pre><code>
-#### Parameters
-
-Name|Description
----|---
-**handler**|The handler.
-**sender**|The sender.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-### SafeInvoke(EventHandler handler, object sender, EventArgs e)
-
-Invokes the specified handler in a thread-safe manner with as parameter for the event args. Where normally one has to write the following code:```
-var handler = MyEvent;
-    if (handler != null)
-    {
-        handler(this, EventArgs.Empty);
-    }
-    
-``` One can now write:```
-MyEvent.SafeInvoke(this);
+<pre><code class="language-One">MyEvent.SafeInvoke(this);
     
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>handler</strong></td>
+<td>The handler.</td>
+</tr>
+
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns">Returns</h4>
+
+<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
+
+<h3 id="safeinvoke-eventhandler-handler-object-sender-eventargs-e">SafeInvoke(EventHandler handler, object sender, EventArgs e)</h3>
+
+<p>Invokes the specified handler in a thread-safe manner with as parameter for the event args. Where normally one has to write the following code:```
+var handler = MyEvent;
+    if (handler != null)
+    {
+        handler(this, EventArgs.Empty);
+    }</p>
+
+<pre><code class="language-One">MyEvent.SafeInvoke(this);
+    
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
 
 <table>
 <thead>
@@ -7842,7 +7858,7 @@ MyEvent.SafeInvoke(this);
 </tbody>
 </table>
 
-<h4 id="returns">Returns</h4>
+<h4 id="returns-1">Returns</h4>
 
 <p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
 
@@ -7855,103 +7871,7 @@ var handler = MyEvent;
         handler(this, EventArgs.Empty);
     }</p>
 
-<p><code>One can now write:</code>
-MyEvent.SafeInvoke(this);</p>
-
-<pre><code>
-#### Parameters
-
-Name|Description
----|---
-**handler**|The handler.
-**sender**|The sender.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-### SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, Func&amp;lt;NotifyCollectionChangedEventArgs&amp;gt; fE)
-
-Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = CollectionChanged;
-    if (handler != null)
-    {
-        handler(this, e, new NotifyCollectionChangedEventArgs(...));
-    }
-    
-``` One can now write:```
-CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
-    
-</code></pre>
-
-<h4 id="parameters-1">Parameters</h4>
-
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><strong>handler</strong></td>
-<td>The handler.</td>
-</tr>
-
-<tr>
-<td><strong>sender</strong></td>
-<td>The sender.</td>
-</tr>
-
-<tr>
-<td><strong>fE</strong></td>
-<td>The event args.</td>
-</tr>
-</tbody>
-</table>
-
-<h4 id="returns-1">Returns</h4>
-
-<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
-
-<h3 id="safeinvoke-notifycollectionchangedeventhandler-handler-object-sender-notifycollectionchangedeventargs-e">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, NotifyCollectionChangedEventArgs e)</h3>
-
-<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = CollectionChanged;
-    if (handler != null)
-    {
-        handler(this, e, new NotifyCollectionChangedEventArgs(&hellip;));
-    }</p>
-
-<p><code>One can now write:</code>
-CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(&hellip;));</p>
-
-<pre><code>
-#### Parameters
-
-Name|Description
----|---
-**handler**|The handler.
-**sender**|The sender.
-**e**|The event args.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-### SafeInvoke(PropertyChangedEventHandler handler, object sender, Func&amp;lt;PropertyChangedEventArgs&amp;gt; fE)
-
-Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = PropertyChanged;
-    if (handler != null)
-    {
-        handler(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
-    }
-    
-``` One can now write:```
-PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
+<pre><code class="language-One">MyEvent.SafeInvoke(this);
     
 </code></pre>
 
@@ -7975,11 +7895,6 @@ PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyN
 <td><strong>sender</strong></td>
 <td>The sender.</td>
 </tr>
-
-<tr>
-<td><strong>fE</strong></td>
-<td>The event args.</td>
-</tr>
 </tbody>
 </table>
 
@@ -7987,49 +7902,18 @@ PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyN
 
 <p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
 
-<h3 id="safeinvoke-propertychangedeventhandler-handler-object-sender-propertychangedeventargs-e">SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)</h3>
+<h3 id="safeinvoke-notifycollectionchangedeventhandler-handler-object-sender-func-lt-notifycollectionchangedeventargs-gt-fe">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, Func&lt;NotifyCollectionChangedEventArgs&gt; fE)</h3>
 
 <p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = PropertyChanged;
+var handler = CollectionChanged;
     if (handler != null)
     {
-        handler(this, e, new PropertyChangedEventArgs(&ldquo;propertyName&rdquo;));
+        handler(this, e, new NotifyCollectionChangedEventArgs(&hellip;));
     }</p>
 
-<p><code>One can now write:</code>
-PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&ldquo;propertyName&rdquo;));</p>
-
-<pre><code>
-#### Parameters
-
-Name|Description
----|---
-**handler**|The handler.
-**sender**|The sender.
-**e**|The event args.
-
-#### Returns
-
-`true` if the event handler was not`null`; otherwise`false`.
-
-### SafeInvoke&amp;lt;TEventArgs&amp;gt;(EventHandler&amp;lt;TEventArgs&amp;gt; handler, object sender, Func&amp;lt;TEventArgs&amp;gt; fE)
-
-Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = MyEvent;
-    if (handler != null)
-    {
-        handler(this, e);
-    }
-    
-``` One can now write:```
-MyEvent.SafeInvoke(this, e);
+<pre><code class="language-One">CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
     
 </code></pre>
-
-<h4 id="type-parameters">Type Parameters</h4>
-
-<p><strong>TEventArgs</strong>
-The type of the class.</p>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -8063,24 +7947,18 @@ The type of the class.</p>
 
 <p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
 
-<h3 id="safeinvoke-lt-teventargs-gt-eventhandler-lt-teventargs-gt-handler-object-sender-teventargs-e">SafeInvoke&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt; handler, object sender, TEventArgs e)</h3>
+<h3 id="safeinvoke-notifycollectionchangedeventhandler-handler-object-sender-notifycollectionchangedeventargs-e">SafeInvoke(NotifyCollectionChangedEventHandler handler, object sender, NotifyCollectionChangedEventArgs e)</h3>
 
 <p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
-var handler = MyEvent;
+var handler = CollectionChanged;
     if (handler != null)
     {
-        handler(this, e);
+        handler(this, e, new NotifyCollectionChangedEventArgs(&hellip;));
     }</p>
 
-<p><code>One can now write:</code>
-MyEvent.SafeInvoke(this, e);</p>
-
-<p>```</p>
-
-<h4 id="type-parameters-1">Type Parameters</h4>
-
-<p><strong>TEventArgs</strong>
-The type of the class.</p>
+<pre><code class="language-One">CollectionChanged.SafeInvoke(this, e, new NotifyCollectionChangedEventArgs(...));
+    
+</code></pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -8114,6 +7992,196 @@ The type of the class.</p>
 
 <p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
 
+<h3 id="safeinvoke-propertychangedeventhandler-handler-object-sender-func-lt-propertychangedeventargs-gt-fe">SafeInvoke(PropertyChangedEventHandler handler, object sender, Func&lt;PropertyChangedEventArgs&gt; fE)</h3>
+
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = PropertyChanged;
+    if (handler != null)
+    {
+        handler(this, e, new PropertyChangedEventArgs(&ldquo;propertyName&rdquo;));
+    }</p>
+
+<pre><code class="language-One">PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
+    
+</code></pre>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>handler</strong></td>
+<td>The handler.</td>
+</tr>
+
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>fE</strong></td>
+<td>The event args.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-5">Returns</h4>
+
+<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
+
+<h3 id="safeinvoke-propertychangedeventhandler-handler-object-sender-propertychangedeventargs-e">SafeInvoke(PropertyChangedEventHandler handler, object sender, PropertyChangedEventArgs e)</h3>
+
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = PropertyChanged;
+    if (handler != null)
+    {
+        handler(this, e, new PropertyChangedEventArgs(&ldquo;propertyName&rdquo;));
+    }</p>
+
+<pre><code class="language-One">PropertyChanged.SafeInvoke(this, e, new PropertyChangedEventArgs(&quot;propertyName&quot;));
+    
+</code></pre>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>handler</strong></td>
+<td>The handler.</td>
+</tr>
+
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The event args.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-6">Returns</h4>
+
+<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
+
+<h3 id="safeinvoke-lt-teventargs-gt-eventhandler-lt-teventargs-gt-handler-object-sender-func-lt-teventargs-gt-fe">SafeInvoke&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt; handler, object sender, Func&lt;TEventArgs&gt; fE)</h3>
+
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = MyEvent;
+    if (handler != null)
+    {
+        handler(this, e);
+    }</p>
+
+<pre><code class="language-One">MyEvent.SafeInvoke(this, e);
+    
+</code></pre>
+
+<h4 id="type-parameters">Type Parameters</h4>
+
+<p><strong>TEventArgs</strong>
+The type of the class.</p>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>handler</strong></td>
+<td>The handler.</td>
+</tr>
+
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>fE</strong></td>
+<td>The event args.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-7">Returns</h4>
+
+<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
+
+<h3 id="safeinvoke-lt-teventargs-gt-eventhandler-lt-teventargs-gt-handler-object-sender-teventargs-e">SafeInvoke&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt; handler, object sender, TEventArgs e)</h3>
+
+<p>Invokes the specified handler in a thread-safe manner. Where normally one has to write the following code:```
+var handler = MyEvent;
+    if (handler != null)
+    {
+        handler(this, e);
+    }</p>
+
+<pre><code class="language-One">MyEvent.SafeInvoke(this, e);
+    
+</code></pre>
+
+<h4 id="type-parameters-1">Type Parameters</h4>
+
+<p><strong>TEventArgs</strong>
+The type of the class.</p>
+
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>handler</strong></td>
+<td>The handler.</td>
+</tr>
+
+<tr>
+<td><strong>sender</strong></td>
+<td>The sender.</td>
+</tr>
+
+<tr>
+<td><strong>e</strong></td>
+<td>The event args.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="returns-8">Returns</h4>
+
+<p><code>true</code> if the event handler was not<code>null</code>; otherwise<code>false</code>.</p>
+
 <h3 id="unsubscribeallhandlers-lt-teventargs-gt-eventhandler-lt-teventargs-gt-handler">UnsubscribeAllHandlers&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt; handler)</h3>
 
 <p>Unsubscribes all the handlers from the specified event.</p>
@@ -8123,7 +8191,7 @@ The type of the class.</p>
 <p><strong>TEventArgs</strong>
 The type of the event arguments.</p>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-9">Parameters</h4>
 
 <table>
 <thead>
@@ -8186,12 +8254,14 @@ s.setAttribute('data-timestamp', +new Date());
 
     
 
-  
+    
 
+    
     <div class="github-link">
       <a href="https://github.com/catel/catel.docs/edit/master/src/vnext/content/reference/Catel.Core/Catel/EventHandlerExtensions.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
+    
   </div>
 
 
@@ -8215,6 +8285,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 <script src="/5.7/theme-flex/script.js"></script>
+
 
     
 

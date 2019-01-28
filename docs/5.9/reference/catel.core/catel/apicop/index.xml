@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.ApiCop on Catel docs</title>
+    <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/</link>
+    <description>Recent content in Catel.ApiCop on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ApiCop</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicop/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ApiCop : IApiCop  Implements interfaces IApiCop
+ApiCop writer class.
+Fields Constructors ApiCop(Type targetType) Initializes a new instance of the ApiCop class.
+Parameters    Name Description     targetType The type for which this ApiCop is intented.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopListenerBase</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoplistenerbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoplistenerbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ApiCopListenerBase : IApiCopListener  Implements interfaces IApiCopListener
+Base class for ApiCop listeners.
+Constructors ApiCopListenerBase() Initializes a new instance of the ApiCopListenerBase class.
+Properties Grouping Gets or sets the grouping for this listener.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopListenerGrouping</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoplistenergrouping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoplistenergrouping/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum ApiCopListenerGrouping : Enum  Base types Enum
+Grouping options for the IApiCopListener implementations.
+Fields Cop 0
+Group by cop.
+Rule 1
+Group by rule.
+Tag 2
+Group by tag.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopManager</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicopmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicopmanager/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ApiCopManager  Manager class for the ApiCop feature.
+Fields Constructors Properties IgnoredRules Gets the ignored rules.
+IsEnabled Gets a value indicating whether ApiCop is enabled.
+Methods AddListener(IApiCopListener listener) Adds the ApiCop listener which will receive all ApiCop information.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopResult</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicopresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicopresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ApiCopResult : IApiCopResult  Implements interfaces IApiCopResult
+ApiCop result class.
+Constructors ApiCopResult(IApiCop cop, IApiCopRule rule, string tag) Initializes a new instance of the ApiCopResult class.
+Parameters    Name Description     cop The API cop.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopRule</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoprule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoprule/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class ApiCopRule : IApiCopRule  Implements interfaces IApiCopRule
+Class containing an ApiCop rule.
+Fields Constructors ApiCopRule(string name, string description, ApiCopRuleLevel level, string url) Initializes a new instance of the ApiCopRule class.</description>
+    </item>
+    
+    <item>
+      <title>ApiCopRuleLevel</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoprulelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/apicoprulelevel/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public enum ApiCopRuleLevel : Enum  Base types Enum
+Enum containing the ApiCop rule levels.
+Fields Error 2
+This rule must be taken seriously.
+Hint 0
+Following the hints of this rule might improve the usage of the Api, but can be ignored if too much work.</description>
+    </item>
+    
+    <item>
+      <title>IApiCop</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicop/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IApiCop  Interface to specify writers for the ApiCop functionality.
+Properties TargetType Gets the target type of the ApiCop. This is the type where the ApiCop is created for.
+Methods GetResults() Gets the results of this specific ApiCop.</description>
+    </item>
+    
+    <item>
+      <title>IApiCopListener</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicoplistener/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicoplistener/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IApiCopListener  Interface defining ApiCop listeners.
+Properties Grouping Gets or sets the grouping for this listener.
+Methods WriteResults(IEnumerable&amp;lt;IApiCopResult&amp;gt; results) Writes the results of the ApiCop feature. Note that this will only contain invalid results.</description>
+    </item>
+    
+    <item>
+      <title>IApiCopResult</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicopresult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicopresult/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IApiCopResult  Interface defining ApiCop results.
+Properties Cop Gets the cop.
+Rule Gets the rule.
+Tag Gets the tag.</description>
+    </item>
+    
+    <item>
+      <title>IApiCopRule</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicoprule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/iapicoprule/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public interface IApiCopRule  Interface defining ApiCop rules.
+Properties Description Gets the description.
+Level Gets the level of impact this rule has.
+Name Gets the name.
+Url Gets the URL.
+Methods GetResultAsText(string tag) Gets the result as text.</description>
+    </item>
+    
+    <item>
+      <title>TextApiCopListenerBase</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/textapicoplistenerbase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/apicop/textapicoplistenerbase/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.ApiCop   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public abstract class TextApiCopListenerBase : ApiCopListenerBase  Base types ApiCopListenerBase
+IApiCopListener implementation which writes all results to a text file.
+Fields Methods BeginWriting() Called when the listener is about to write the results.</description>
+    </item>
+    
+  </channel>
+</rss>

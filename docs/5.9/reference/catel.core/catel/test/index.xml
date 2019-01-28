@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Test on Catel docs</title>
+    <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/test/</link>
+    <description>Recent content in Catel.Test on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.9/reference/catel.core/catel/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ExceptionTester</title>
+      <link>https://docs.catelproject.com/5.9/reference/catel.core/catel/test/exceptiontester/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.9/reference/catel.core/catel/test/exceptiontester/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Test   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class ExceptionTester  Class that helps test methods for expected exceptions.
+Methods CallMethodAndExpectException&amp;lt;TException&amp;gt;(Action action, Func&amp;lt;TException, bool&amp;gt; exceptionValidator) Calls the method and checks for the exception. If no exception is thrown by the method, this method will throw an exception.</description>
+    </item>
+    
+  </channel>
+</rss>
