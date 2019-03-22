@@ -32,6 +32,8 @@ Since this is a reserved keyword, Catel will automatically take care of the chan
 <TextBlock Text="{x:Bind VM.Title}" />
 ```
 
+Note that the binding should either be set to `Mode=OneWay` per binding or for all bindings in a view by specifying `x:DefaultBindMode="OneWay"`.
+
 ## Cast every compiled bindings
 
 Another option is to use casts everywhere in the view:
