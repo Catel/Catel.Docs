@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Core on Catel docs</title>
+    <link>https://docs.catelproject.com/5.10/catel-core/</link>
+    <description>Recent content in Catel.Core on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.10/catel-core/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

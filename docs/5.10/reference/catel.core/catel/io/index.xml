@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.IO on Catel docs</title>
+    <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/</link>
+    <description>Recent content in Catel.IO on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.10/reference/catel.core/catel/io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ApplicationDataTarget</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/applicationdatatarget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/applicationdatatarget/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.IO   Available on .NET Framework 4.5, .NET Framework 4.6    public enum ApplicationDataTarget : Enum  Base types Enum
+Gets the application data target.
+Fields Machine 2
+The machine.
+UserLocal 0
+The user.
+UserRoaming 1
+The user.</description>
+    </item>
+    
+    <item>
+      <title>Path</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/path/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.IO   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class Path  Static class that implements some path methods
+Methods AppendTrailingSlash(string path) Appends a trailing backslash () to the path.
+Parameters    Name Description     path Path to append the trailing backslash to.</description>
+    </item>
+    
+    <item>
+      <title>StreamExtensions</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/streamextensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/io/streamextensions/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.IO   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public static class StreamExtensions  Extensions for the class.
+Methods GetString(Stream stream, Encoding encoding) Gets the string from the stream using the specified encoding.
+Parameters    Name Description     stream The stream.</description>
+    </item>
+    
+  </channel>
+</rss>

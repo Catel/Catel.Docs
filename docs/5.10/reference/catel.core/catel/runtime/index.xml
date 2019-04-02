@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Catel.Runtime on Catel docs</title>
+    <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/</link>
+    <description>Recent content in Catel.Runtime on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ReferenceEqualityComparer</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referenceequalitycomparer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referenceequalitycomparer/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ReferenceEqualityComparer&amp;lt;TObject&amp;gt; : IEqualityComparer&amp;lt;TObject&amp;gt; where TObject : class  Base types IEqualityComparer
+Equality comparer for by reference.
+Type Parameters TObject The type of the object.
+Methods Equals(TObject x, TObject y) Determines whether the specified objects are equal.</description>
+    </item>
+    
+    <item>
+      <title>ReferenceInfo</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referenceinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referenceinfo/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ReferenceInfo  Info about a reference which can provide a unique reference.
+Constructors ReferenceInfo(object instance, int id, bool isFirstUsage) Initializes a new instance of the ReferenceInfo class.
+Parameters    Name Description     instance The instance.</description>
+    </item>
+    
+    <item>
+      <title>ReferenceManager</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referencemanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/referencemanager/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime   Available on .NET Framework 4.5, .NET Framework 4.6, Portable Class Libraries, Xamarin - Android, Xamarin - iOS    public class ReferenceManager  Class responsible for managing identifiers for circular dependencies.
+Fields Constructors ReferenceManager() Initializes a new instance of the ReferenceManager class.
+Properties Count Gets the number of items in the reference manager.</description>
+    </item>
+    
+    <item>
+      <title>RuntimeBindingRedirect</title>
+      <link>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/runtimebindingredirect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/5.10/reference/catel.core/catel/runtime/runtimebindingredirect/</guid>
+      <description>Name Value     Assembly Catel.Core   Namespace Catel.Runtime   Available on .NET Framework 4.5, .NET Framework 4.6    public class RuntimeBindingRedirect  Automatically tries to resolve different versions of already loaded assemblies (runtime binding redirects).
+Fields Constructors RuntimeBindingRedirect() Initializes a new instance of the RuntimeBindingRedirect class.
+RuntimeBindingRedirect(AppDomain appDomain) Initializes a new instance of the RuntimeBindingRedirect class.
+Parameters    Name Description     appDomain The application domain.</description>
+    </item>
+    
+  </channel>
+</rss>

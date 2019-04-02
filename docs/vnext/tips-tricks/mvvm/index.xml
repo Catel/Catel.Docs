@@ -42,5 +42,17 @@ For this example, we will have a few requirements:
  Be able to add, close and activate tabs via a service Be able to specify whether a tab can be closed by the end-user  Creating the model describing a tab item First of all, we need a model describing a tab item so we can interact with a service.</description>
     </item>
     
+    <item>
+      <title>Using compiled bindings</title>
+      <link>https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-compiled-bindings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-compiled-bindings/</guid>
+      <description>A common scenario in UWP is to use x:Bind instead of Binding. This requires knowledge about the actual type of the view model.
+There are 2 options to support this.
+Use the VM property Catel by default exposes the ViewModel property as IViewModel. However, there is a reserved VM property you can use that is typed:
+public sealed partial class BikeSummaryView { public BikeSummaryView() { InitializeComponent(); } internal BikeSummaryViewModel VM { get { return ViewModel as BikeSummaryViewModel; } } }  Since this is a reserved keyword, Catel will automatically take care of the change notifications and x:Bind can be used directly against VM:</description>
+    </item>
+    
   </channel>
 </rss>
