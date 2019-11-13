@@ -22,9 +22,6 @@ jobs:
     - name: Copy template files
       run: cp -r ./repositories/hugo-theme-docdock ./src/shared/themes/docdock
 
-    - name: Copy customized template files
-      run: cp -r ./repositories/docdock.customize ./src/shared/themes/docdock
-      
     - name: Copy shared files to vNext documentation
       run: cp -r ./src/shared ./src/vnext
       
