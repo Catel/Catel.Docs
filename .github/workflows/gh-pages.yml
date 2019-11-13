@@ -20,10 +20,10 @@ jobs:
         # extended: true
 
     - name: Copy template files
-      run: cp -r ./repositories/hugo-theme-docdock ./src/shared/themes/docdock
+      run: cp -r ./repositories/hugo-theme-docdock/* ./src/shared/themes/docdock
 
     - name: Copy shared files to vNext documentation
-      run: cp -r ./src/shared ./src/vnext
+      run: cp -r ./src/shared/* ./src/vnext
       
     - name: Run Hugo
       run: (cd ./src/vnext && hugo --minify)
