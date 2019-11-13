@@ -22,14 +22,26 @@ jobs:
     - name: Copy template files
       run: cp -r ./repositories/hugo-theme-docdock/* ./src/shared/themes/docdock
 
-    - name: Copy shared files to vNext documentation
+    # VNEXT SITE
+
+    - name: vNext - Copy shared files to vNext documentation
       run: cp -r ./src/shared/* ./src/vnext
 
-    - name: Remove previous output
+    - name: vNext - Remove previous output
       run: rm -r ./docs/vnext
 
-    - name: Run Hugo
+    - name: vNext - Run Hugo
       run: (cd ./src/vnext && hugo --minify)
+
+    # HOME SITE
+
+    - name: Home - Copy shared files to vNext documentation
+      run: cp -r ./src/shared/* ./src/home
+
+    # Note: don't delete previous output for home, it's the root
+
+    - name: Home - Run Hugo
+      run: (cd ./src/home && hugo --minify)
 
     - name: Commit files
       run: |
