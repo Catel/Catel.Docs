@@ -24,7 +24,10 @@ jobs:
 
     - name: Copy shared files to vNext documentation
       run: cp -r ./src/shared/* ./src/vnext
-      
+
+    - name: Remove previous output
+      run: rm -r ./docs/vnext
+
     - name: Run Hugo
       run: (cd ./src/vnext && hugo --minify)
 
