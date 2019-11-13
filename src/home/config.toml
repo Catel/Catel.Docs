@@ -4,7 +4,7 @@ DefaultContentLanguage = "en"
 publishDir = "../../docs/"
 
 title = "Catel docs"
-theme = "docDock"
+theme = "docdock"
 
 [params]
 editURL = "https://github.com/catel/catel.docs/edit/master/src/home/content/"
