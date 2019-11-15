@@ -3,3 +3,22 @@
     display: block;
     text-align: center;
 }
+
+.ghContributors{
+display:flex;
+flex-flow:  wrap;
+align-content: flex-start
+}
+
+.ghContributors > div{
+width: 50% ;
+display: inline-flex;
+margin-bottom: 5px;
+}
+.ghContributors > div label{
+padding-left: 4px ;
+}
+.ghContributors > div span{
+font-size: x-small;
+padding-left: 4px ;
+}
