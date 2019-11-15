@@ -87,7 +87,7 @@ public class Buffer4096Poolable : IPoolable
     public void Reset()
     {
         var buffer = Data;
-        Array.Clear(buffer, 0, buffer.Length);        
+        Array.Clear(buffer, 0, buffer.Length);
     }
 
     // Implemented explicitly so it can't be called accidentally

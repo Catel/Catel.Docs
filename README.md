@@ -25,7 +25,7 @@ The site uses the [DocDock theme](https://docdock.netlify.com/), which allows fo
 
 ## Automatically regenerated website
 
-The site is automatically regenerated and published every time a commit (or merge) is done to the `master` branch.
+Thanks to GitHub Actions, the documentation site is automatically regenerated and published every time a commit (or merge) is done to the `master` branch.
 
 ## Simple contributions
 
@@ -51,9 +51,73 @@ hugo server -D
 
 To edit existing pages, open the existing page in your favorite markdown editor.
 
-To keep the documentation consistent, please respect the following rules:
+To keep the documentation consistent, please respect the following rules (alphabetically ordered).
 
-* 
+#### Code blocks
+
+Embed code inside code blocks using a ` or ```.
+
+#### Headings
+
+Start with level 2 (`##`) inside the pages. Level 1 (`#`) is reserved for page titles.
+
+#### Links
+
+Links to external or internal pages can be very useful.
+
+For detailed information about links and references in Hugo, see the [official documentation](https://gohugo.io/content-management/cross-references/).
+
+**Internal**
+
+Internal links are relative to the `/src/vnext/content` directory.
+
+`[SavableModelBase]({{< relref "catel-core/data-handling/savablemodelbase.md" >}})`
+
+**External**
+
+External links should contain the full URL:
+
+`[Catel website]({{< ref "https://www.catelproject.com" >}})`
+
+#### Images
+
+Don't forget to use images if that makes it more clear. Further down this guide is a detailed explanation on how to add images.
+
+#### Notes
+
+Sometimes notes can add extra weight to something important. There are different kind of notes available. Please see the examples below.
+
+**Tip**
+
+```
+{{% notice note %}}
+A simple note that users should pay attention to, but is not mandatory
+{{% /notice %}}
+```
+
+**Tip**
+
+```
+{{% notice tip %}}
+This tip can be really useful if you are working with this class
+{{% /notice %}}
+```
+
+**Info**
+
+```
+{{% notice warning %}}
+This provides more info on why something is the way it is
+{{% /notice %}}
+```
+
+**Warning**
+
+```
+{{% notice warning %}}
+Users should really notice this and pay attention
+{{% /notice %}}
+```
 
 ### Adding new pages
 
@@ -69,6 +133,10 @@ weight = 30
 +++
 
 [CONTENT GOES HERE]
+
+{{% notice warning %}}
+More documentation should be written in the future
+{{% /notice %}}
 ```
 
 From this point, the page can be edited as any other page.

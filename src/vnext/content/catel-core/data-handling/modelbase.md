@@ -6,14 +6,14 @@ weight = 30
 
 The *ModelBase* class is a generic base class that can be used for all your data classes.
 
--   **Fully serializable**
-    It is now really easy to store objects on disk or serialize them into memory, either binary or in XML. The data object supports this out of the box, and automatically handles the (de)serialization.
--   **Support property changed notifications**
-    The class supports the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces so this class can easily be used in applications to reflect changes to the user.
--   **Backwards compatibility**
-    When serializing your objects to binary, it is hard to maintain the right versions. When you add a new property to a binary class, or change a namespace, the object cannot be loaded any longer. The data object base takes care of this issue and supports backwards compatibility.
--   **Backup & revert**
-    The class implements the *IEditableObject* interface which makes it possible to create a state of the object. Then all properties can be edited, and finally, the changes can be applied or cancelled.
+- **Fully serializable**
+  It is now really easy to store objects on disk or serialize them into memory, either binary or in XML. The data object supports this out of the box, and automatically handles the (de)serialization.
+- **Support property changed notifications**
+  The class supports the *INotifyPropertyChanging* and *INotifyPropertyChanged* interfaces so this class can easily be used in applications to reflect changes to the user.
+- **Backwards compatibility**
+  When serializing your objects to binary, it is hard to maintain the right versions. When you add a new property to a binary class, or change a namespace, the object cannot be loaded any longer. The data object base takes care of this issue and supports backwards compatibility.
+- **Backup & revert**
+  The class implements the *IEditableObject* interface which makes it possible to create a state of the object. Then all properties can be edited, and finally, the changes can be applied or cancelled.
 
 ## Using the class
 
