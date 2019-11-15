@@ -16,7 +16,3 @@ To enable stepping through the source code, use the following steps:
 {{% notice warning %}}
 Note that you must have defined a valid symbols directory in order for symbols to be stored on disk
 {{% /notice %}}
-
-{{% notice warning %}}
-Note that **Visual Studio 2012** needs to run elevated in order to download the source server files due to a bug in Visual Studio 2012
-{{% /notice %}}
