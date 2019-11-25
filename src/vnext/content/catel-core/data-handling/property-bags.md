@@ -32,7 +32,7 @@ The `TypedPropertyBag` uses separate dictionaries for each value type. To preven
 
 The advantage of storing values inside typed dictionaries is that it removes the requirement for boxing, therefore resulting in improved memory usage as shown below in the benchmarks comparing the different implementations:
 
-![](../../../catel-core/data-handling/property-bags/benchmarks.png)
+![](../../../images/catel-core/data-handling/property-bags/benchmarks.png)
 
 The downside of the `TypedPropertyBag` is that it is *slightly* slower than the `PropertyBag`.
 
