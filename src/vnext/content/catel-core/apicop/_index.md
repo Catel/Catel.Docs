@@ -28,6 +28,7 @@ protected override void OnExit(ExitEventArgs e)
 
 The code above writes the results of the ApiCop feature to the console, which will look like this:
 
+```
     ****************************************************************
 
     ApiCop (r) results of 'DataWindowTest.WPF' v1.0.0.0
@@ -83,6 +84,7 @@ The code above writes the results of the ApiCop feature to the console, which wi
     ****************************************************************
     End of ApiCop (r) results, generation took '00:00:00.137'
     ****************************************************************
+```
 
 ## Architecture
 
