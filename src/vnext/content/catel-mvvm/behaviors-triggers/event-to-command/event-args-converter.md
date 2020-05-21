@@ -14,7 +14,7 @@ As the ViewModel will no longer have any direct knowledge of the `EventArgs` bei
 
 If you need more fine grain behavior, you'll need to stick with what's called a **Mixed-Mode Implementation** where the Event is implemented in the View Code-Behind and it manipulates the ViewModel through an Interface.
 
-With that, let's proceed with a basic implementation of an `EventArgsConverter` that will will handle the `PreviewMouseDoubleClick` event against a `ListBoxItem`.
+With that, let's proceed with a basic implementation of an `EventArgsConverter` that will handle the `PreviewMouseDoubleClick` event against a `ListBoxItem`.
 
 ---
 
@@ -133,9 +133,11 @@ This demonstrates that the `EventArgsConverter` acts solely as a unidirectional 
               xmlns:converters="clr-namespace:WpfApp1.Converters"
               mc:Ignorable="d"
               Title="MainWindow" Height="450" Width="800">
+              
     <catel:Window.Resources>
         <converters:PersonListEventArgsConverter x:Key="PersonListEventArgsConverter" />
     </catel:Window.Resources>
+    
     <ListBox ItemsSource="{Binding Items}">
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="PreviewMouseDoubleClick">
@@ -154,7 +156,7 @@ This demonstrates that the `EventArgsConverter` acts solely as a unidirectional 
 </catel:Window>
 ```
 
-So as shown above, we have defined an `EventTrigger` that references the `PreviewMouseDoubleClick` event and relies on `EventToCommand`. We are then telling `EventToCommand` that we want to pass event arguments by setting `PassEventArgsToCommand` to `true` and providing it with the `PersonListEventArgsConverter` which it will use instead of directly passing the `MouseEventArgs` to `MainViewModel`
+As shown above, we have defined an `EventTrigger` that references the `PreviewMouseDoubleClick` event and relies on `EventToCommand`. We are then telling `EventToCommand` that we want to pass event arguments by setting `PassEventArgsToCommand` to `true` and providing it with the `PersonListEventArgsConverter` which it will use instead of directly passing the `MouseEventArgs` to `MainViewModel`
 
 Now when a person double clicks on any of the items within the `ListBox` they will be presented with a modal window that will show the first and last name of the person in question.
 
