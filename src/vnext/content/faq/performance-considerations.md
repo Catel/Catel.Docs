@@ -78,6 +78,24 @@ The FastObservableCollection does not raise events for every item, but only invo
 
 When modifying a large collection of items, it is not required to raise change events for each added / removed value. Therefore the FastObservableCollection will disable change notifications until the full collection modification is done and then raise the change events just once.
 
+### Use the FastObservableDictionary
+
+Designed in a similar fashion to the `FastObservableCollection`, the `FastObservableDictionary` is meant  for Views that need to leverage the power of a dictionary for controls such as `ComboBox` without sacrificing performance and providing real-time feedback to the user.
+
+In addition to implementing `FastObservableDictionary`, any implementations of a `ComboBox` should leverage a `VirtualizingStackPanel` to minimize the amount of elements rendered at a given time. An example is provided below:
+
+```
+<ItemsPanelTemplate x:Key="VirtualizingItemsPanelTemplate">
+    <VirtualizingStackPanel />
+</ItemsPanelTemplate>
+
+<CombBox DisplayMemberPath="Value"
+         ItemsSource="{Binding Options}" 
+         ItemsPanel="{StaticResource VirtualizingItemsPanelTemplate}"
+         SelectedValuePath="Key"
+         SelectedItem="{Binding SelectedItem}" />
+```
+
 ### Specify throttling on the ViewModelBase
 
 The *ViewModelBase* allows the specify the throttling of the property change notifications. In normal situations it is best to directly raise property change notifications. However, when a lot of properties change a lot within a very short timeframe, it might be interesting to enable throttling. By using throttling, the change notifications are not directly sent to the UI but instead added to a dictionary. Then each time the *ThottlingRate* is reached, the change notifications are sent in batches to the view. If the same property has changed several times in a specific time frame, it will only be raised once which might give a performance boost in very specific situations.
