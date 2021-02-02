@@ -1,6 +1,5 @@
 :: Copy theme from subrepository
-xcopy "repositories\hugo-theme-docdock" "src\shared\themes\docdock" /e /y /i
-xcopy "src\themes\docdock.customize" "src\shared\themes\docdock" /e /y /i
+for %%i in (docdock,doks) do (call:copyTheme %%i)
 
 :: Generate all sites
 for %%i in (vnext) do (call:buildSite %%i)
@@ -23,4 +22,15 @@ hugo
 
 :: Back to root 
 cd ..\..\
+goto:eof
+
+:copyTheme
+set themeName=%~1
+
+echo Copying theme: %themeName%
+
+:: Copy shared stuff
+xcopy "repositories\hugo-theme-%themeName%" "src\shared\themes\%themeName%" /e /y /i
+xcopy "src\themes\%themeName%.customize" "src\shared\themes\%themeName%" /e /y /i
+
 goto:eof
