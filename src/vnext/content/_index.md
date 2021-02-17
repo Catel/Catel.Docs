@@ -5,7 +5,7 @@ description = ""
 
 # Catel
 
-Catel is an application development platform with the focus on MVVM (WPF, Universal Windows Platform, Xamarin.Android, Xamarin.iOS and Xamarin.Forms). 
+Catel is an application development platform with the focus on MVVM (WPF & Universal Windows Platform). 
 The goal of Catel is to provide a complete set of modular functionality for Line of Business applications written in any .NET 
 technology, from client to server.
 
@@ -29,7 +29,7 @@ most important features are listed below:
 - Logging (LogManager, Log, several log listeners)
 - Messaging
 - Reflection (same reflection API for *every supported platform*)
-- Serialization (BinarySerializer, XmlSerializer and more)
+- Serialization (XmlSerializer and JsonSerializer)
 - Weak references (WeakEventListener)
 
 And more.... 
@@ -42,25 +42,23 @@ The most important
 features are listed below:
 
 - Auditing
-- Collections (FastObservableCollection)
+- Collections (FastObservableCollection, FastObservableDictionary, etc)
 - Commands (Command, TaskCommand, etc)
 - Converters (tons of converters out of the box)
 - Services
-	- CameraService	
-	- LocationService
-	- MessageService
-	- NavigationService
-	- OpenFileService
-	- PleaseWaitService
-	- SaveFileService
-	- UIVisualizerService
+    - BusyIndicatorService
+    - MessageService
+    - NavigationService
+    - OpenFileService
+    - SaveFileService
+    - UIVisualizerService
 - View models
-	- Automatic validation
-	- Automatic mappings from model to view model
+    - Automatic validation
+    - Automatic mappings from model to view model
 - Views
-	- DataWindow
-	- UserControl
-	- Window
+    - DataWindow
+    - UserControl
+    - Window
 
 ## Example code
 
