@@ -2,7 +2,7 @@
 for %%i in (docdock,doks) do (call:copyTheme %%i)
 
 :: Generate all sites
-for %%i in (home,5.0,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,5.11,5.12,vnext) do (call:buildSite %%i)
+for %%i in (home,5.x,vnext) do (call:buildSite %%i)
 
 goto:eof
 

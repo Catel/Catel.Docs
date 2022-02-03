@@ -1,64 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Update guides on Catel docs</title>
-    <link>https://docs.catelproject.com/5.12/setup-deployment/update-guides/</link>
-    <description>Recent content in Update guides on Catel docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://docs.catelproject.com/5.12/setup-deployment/update-guides/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Catel 4.0</title>
-      <link>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-4.0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-4.0/</guid>
-      <description>This guide describes how to update your code to be fully compatible with Catel 4.0.
-Renaming classes Some classes in Catel have been renamed.
- Catel.Environment =&amp;gt; CatelEnvironment IDependencyPropertySelector =&amp;gt; IViewPropertySelector  Renaming namespaces Some namespaces in Catel have been changed to match the functionality. For example, all services are now in Catel.Service instead of Catel.MVVM.Services because they can be used without MVVM.
-Below is a list of changed namespaces:</description>
-    </item>
-    
-    <item>
-      <title>Catel 4.1</title>
-      <link>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-4.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-4.1/</guid>
-      <description>This guide describes how to update your code to be fully compatible with Catel 4.1.
-IUIVisualizerService We have reverted the change to force you to use async code on the IUIVisualizerService. There are now 2 options:
-  Synchronous:
-var result = uiVisualizerService.ShowDialog&amp;lt;MyViewModel&amp;gt;();// Window is closed here (synchronous behavior)  Asynchronous:
-var result = await uiVisualizerService.ShowDialogAsync&amp;lt;MyViewModel&amp;gt;();// Window is closed here thanks to the await keyword   </description>
-    </item>
-    
-    <item>
-      <title>Catel 5.0</title>
-      <link>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-5.0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-5.0/</guid>
-      <description>This guide describes how to update your code to be fully compatible with Catel 5.0.
-Encountered issues while upgrading to this version? Add them here to help out others!
-Platform support changes Added support for the following platforms:
- .NET 4.7  Removed support for the following platforms:
- .NET 4.0 Silverlight 5 Windows Phone 8.0 (Silverlight) Windows Phone 8.1 (Silverlight) Windows Phone 8.1 (Runtime) Windows 8.1 (Runtime)  Moved extensions The following extensions have been moved to a new repository:</description>
-    </item>
-    
-    <item>
-      <title>Catel 5.4</title>
-      <link>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-5.4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/5.12/setup-deployment/update-guides/catel-5.4/</guid>
-      <description>This guide describes how to update your code to be fully compatible with Catel 5.4.
-Encountered issues while upgrading to this version? Add them here to help out others!
-Updated converters The behavior of converters have been changed for some converters. The converter parameter will now also serve as an &amp;ldquo;inverter&amp;rdquo;. For example, the BooleanToCollapsingVisibilityConverter now behaves like this:
- // Show the text box when `IsEnabled` is `true`&amp;lt;TextBox Visibility=&amp;quot;{catel:BooleanToCollapsingVisibilityConverter IsEnabled}&amp;quot; /&amp;gt;&amp;lt;TextBox Visibility=&amp;quot;{catel:BooleanToCollapsingVisibilityConverter IsEnabled, ConverterParameter=False}&amp;quot; /&amp;gt;// Show the text box when `IsEnabled` is `false`&amp;lt;TextBox Visibility=&amp;quot;{catel:BooleanToCollapsingVisibilityConverter IsEnabled, ConverterParameter=True}&amp;quot; /&amp;gt;</description>
-    </item>
-    
-  </channel>
-</rss>

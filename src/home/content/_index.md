@@ -19,17 +19,5 @@ MyGet unstable version|![Pre-release version](https://img.shields.io/myget/catel
 Please pick a version:
 
 - [Catel vNext (6.0)](/vnext/)
-- [Catel 5.12](/5.12/)
-- [Catel 5.11](/5.11/)
-- [Catel 5.10](/5.10/)
-- [Catel 5.9](/5.9/)
-- [Catel 5.8](/5.8/)
-- [Catel 5.7](/5.7/)
-- [Catel 5.6](/5.6/)
-- [Catel 5.5](/5.5/)
-- [Catel 5.4](/5.4/)
-- [Catel 5.3](/5.3/)
-- [Catel 5.2](/5.2/)
-- [Catel 5.1](/5.1/)
-- [Catel 5.0](/5.0/)
+- [Catel 5.x](/5.x/)
 - [Catel 4.5 (old system)](https://catelproject.atlassian.net/wiki/display/CTL45)
