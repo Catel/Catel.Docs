@@ -1,203 +1,1846 @@
-<!doctype html><html><head><title>Catel docs</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name=revised content="2022-02-03T07:48:03 UTC"><title>ProcessService :: Catel docs</title><link rel="shortcut icon" href=/vnext/images/favicon.png type=image/x-icon><link href=/vnext/css/font-awesome.min.css rel=stylesheet><link href=/vnext/css/nucleus.css rel=stylesheet><link href=/vnext/theme-flex/style.css rel=stylesheet><link rel=stylesheet href=/vnext/css/bootstrap.min.css><script src=/vnext/js/jquery-2.x.min.js></script><script type=text/javascript>var baseurl="https:\/\/docs.catelproject.com\/vnext\/";</script></head><body data-url=/vnext/catel-mvvm/services/process-service/><header><div class=logo><p>Catel Documentation</p></div><div class=burger><a href=javascript:void(0); style=font-size:15px>&#9776;</a></div><nav class=shortcuts><li role><a href=https://github.com/catel/catel.docs rel=noopener><i class="fa fa-github"></i>Github repo</a></li></nav></header><article><aside><ul class=menu><li data-nav-id=/vnext/ class=dd-item><a href=/vnext/><i class="fa fa-fw fa-home"></i></a></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/ class="dd-item haschildren"><div><a href=/vnext/introduction/>Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/introduction/why-catel/ class=dd-item><div><a href=/vnext/introduction/why-catel/>Why Catel</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/platform-support/ class="dd-item haschildren"><div><a href=/vnext/introduction/platform-support/>Support for multiple platforms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-wpf/ class=dd-item><div><a href=/vnext/introduction/platform-support/caveats-in-wpf/>Caveats in WPF
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-uwp/ class=dd-item><div><a href=/vnext/introduction/platform-support/caveats-in-uwp/>Caveats in UWP
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-android/ class=dd-item><div><a href=/vnext/introduction/platform-support/caveats-in-android/>Caveats in Android
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-ios/ class=dd-item><div><a href=/vnext/introduction/platform-support/caveats-in-ios/>Caveats in iOS
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/introduction-data-objects/ class=dd-item><div><a href=/vnext/introduction/introduction-data-objects/>Introduction to data objects</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/ class="dd-item haschildren"><div><a href=/vnext/introduction/mvvm/>Introduction to MVVM</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/different-interpretations-of-mvvm/ class=dd-item><div><a href=/vnext/introduction/mvvm/different-interpretations-of-mvvm/>Different interpretations of MVVM
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/validation-in-model-or-view-model/ class=dd-item><div><a href=/vnext/introduction/mvvm/validation-in-model-or-view-model/>Validation in model or view model?
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-mvvm-and-models/ class=dd-item><div><a href=/vnext/introduction/mvvm/introduction-to-mvvm-and-models/>Introduction to MVVM and models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/creating-view-models-with-catel/ class=dd-item><div><a href=/vnext/introduction/mvvm/creating-view-models-with-catel/>Creating view models with Catel
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-services/ class=dd-item><div><a href=/vnext/introduction/mvvm/introduction-to-services/>Introduction to services
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-nested-user-controls-problem/ class=dd-item><div><a href=/vnext/introduction/mvvm/introduction-to-nested-user-controls-problem/>Introduction to the nested user controls problem
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/faq/ class="dd-item haschildren"><div><a href=/vnext/faq/>FAQ</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/faq/general/ class=dd-item><div><a href=/vnext/faq/general/>General
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/faq/mvvm/ class=dd-item><div><a href=/vnext/faq/mvvm/>MVVM
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/faq/problem-solving/ class=dd-item><div><a href=/vnext/faq/problem-solving/>Problem solving
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/faq/performance-considerations/ class=dd-item><div><a href=/vnext/faq/performance-considerations/>Performance considerations
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/ class="dd-item haschildren"><div><a href=/vnext/setup-deployment/>Setup, deployment & projects</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/getting-prerelease-versions-via-nuget/ class=dd-item><div><a href=/vnext/setup-deployment/getting-prerelease-versions-via-nuget/>Getting prerelease (beta) versions via NuGet & MyGet</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/stepping-through-the-code/ class=dd-item><div><a href=/vnext/setup-deployment/stepping-through-the-code/>Stepping through the code</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/compiling-from-source/ class=dd-item><div><a href=/vnext/setup-deployment/compiling-from-source/>Compiling from source</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/ class="dd-item haschildren"><div><a href=/vnext/setup-deployment/code-snippets-templates/>Code snippets & templates</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-code-snippets/ class=dd-item><div><a href=/vnext/setup-deployment/code-snippets-templates/using-the-code-snippets/>Using the code snippets
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-item-templates/ class=dd-item><div><a href=/vnext/setup-deployment/code-snippets-templates/using-the-item-templates/>Using the item templates
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-project-templates/ class=dd-item><div><a href=/vnext/setup-deployment/code-snippets-templates/using-the-project-templates/>Using the project templates
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/ class="dd-item haschildren"><div><a href=/vnext/setup-deployment/update-guides/>Update guides</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.0/ class=dd-item><div><a href=/vnext/setup-deployment/update-guides/catel-4.0/>Catel 4.0
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.1/ class=dd-item><div><a href=/vnext/setup-deployment/update-guides/catel-4.1/>Catel 4.1
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-5.0/ class=dd-item><div><a href=/vnext/setup-deployment/update-guides/catel-5.0/>Catel 5.0
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-5.4/ class=dd-item><div><a href=/vnext/setup-deployment/update-guides/catel-5.4/>Catel 5.4
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-6.0/ class=dd-item><div><a href=/vnext/setup-deployment/update-guides/catel-6.0/>Catel 6.0
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/ class="dd-item haschildren"><div><a href=/vnext/getting-started/>Getting started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/quick-introduction-for-developers/ class=dd-item><div><a href=/vnext/getting-started/quick-introduction-for-developers/>Quick introduction for developers</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/ class="dd-item haschildren"><div><a href=/vnext/getting-started/wpf/>Getting started with WPF</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-project/ class=dd-item><div><a href=/vnext/getting-started/wpf/creating-the-project/>Creating the WPF project
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/ class=dd-item><div><a href=/vnext/getting-started/wpf/creating-the-models/>Creating the models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/serializing-data-from-to-disk/ class=dd-item><div><a href=/vnext/getting-started/wpf/serializing-data-from-to-disk/>Serializing data from/to disk
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-view-models/ class=dd-item><div><a href=/vnext/getting-started/wpf/creating-the-view-models/>Creating the view models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-user-controls/ class=dd-item><div><a href=/vnext/getting-started/wpf/creating-the-user-controls/>Creating the views (user controls)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-windows/ class=dd-item><div><a href=/vnext/getting-started/wpf/creating-the-windows/>Creating the views (windows)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/hooking-up-everything-together/ class=dd-item><div><a href=/vnext/getting-started/wpf/hooking-up-everything-together/>Hooking up everything together
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/getting-started/wpf/finalizing-the-application/ class=dd-item><div><a href=/vnext/getting-started/wpf/finalizing-the-application/>Finalizing the application
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/examples/ class=dd-item><div><a href=/vnext/examples/>Examples</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ class="dd-item haschildren"><div><a href=/vnext/catel-core/>Catel.Core</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/argument-checking/ class=dd-item><div><a href=/vnext/catel-core/argument-checking/>Argument checking</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/caching/ class=dd-item><div><a href=/vnext/catel-core/caching/>Caching</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/configuration/ class=dd-item><div><a href=/vnext/catel-core/configuration/>Configuration</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/ class="dd-item haschildren"><div><a href=/vnext/catel-core/data-handling/>Data handling</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/observableobject/ class=dd-item><div><a href=/vnext/catel-core/data-handling/observableobject/>ObservableObject
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/property-bags/ class=dd-item><div><a href=/vnext/catel-core/data-handling/property-bags/>Property bags
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/dispatcherobservableobject/ class=dd-item><div><a href=/vnext/catel-core/data-handling/dispatcherobservableobject/>DispatcherObservableObject
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/modelbase/ class=dd-item><div><a href=/vnext/catel-core/data-handling/modelbase/>ModelBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/validatablemodelbase/ class=dd-item><div><a href=/vnext/catel-core/data-handling/validatablemodelbase/>ValidatableModelBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/comparablemodelbase/ class=dd-item><div><a href=/vnext/catel-core/data-handling/comparablemodelbase/>ComparableModelBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/savablemodelbase/ class=dd-item><div><a href=/vnext/catel-core/data-handling/savablemodelbase/>SavableModelBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/childawaremodelbase/ class=dd-item><div><a href=/vnext/catel-core/data-handling/childawaremodelbase/>ChildAwareModelBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/using-modelbase-as-base-for-entities/ class=dd-item><div><a href=/vnext/catel-core/data-handling/using-modelbase-as-base-for-entities/>Using ModelBase as base for entities
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/data-handling/advanced-property-change-notifications/ class=dd-item><div><a href=/vnext/catel-core/data-handling/advanced-property-change-notifications/>Advanced property change notifications
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/exception-handling/ class="dd-item haschildren"><div><a href=/vnext/catel-core/exception-handling/>Exception handling</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/exception-handling/wpf-implementation-for-exception-handling/ class=dd-item><div><a href=/vnext/catel-core/exception-handling/wpf-implementation-for-exception-handling/>WPF implementation for exception handling
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/ class="dd-item haschildren"><div><a href=/vnext/catel-core/ioc/>IoC (ServiceLocator and TypeFactory)</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/dependency-injection/ class=dd-item><div><a href=/vnext/catel-core/ioc/dependency-injection/>Dependency injection</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/ class="dd-item haschildren"><div><a href=/vnext/catel-core/ioc/automatic-type-registration/>Automatic type registration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/ class=dd-item><div><a href=/vnext/catel-core/ioc/automatic-type-registration/using-attributes/>Using attributes
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/ class=dd-item><div><a href=/vnext/catel-core/ioc/automatic-type-registration/using-conventions/>Using conventions
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ class="dd-item haschildren"><div><a href=/vnext/catel-core/ioc/introduction-to-components/>Introduction to components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/ class=dd-item><div><a href=/vnext/catel-core/ioc/introduction-to-components/servicelocator/>ServiceLocator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/ class=dd-item><div><a href=/vnext/catel-core/ioc/introduction-to-components/typefactory/>TypeFactory
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/ class=dd-item><div><a href=/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/>DependencyResolver and DependencyResolverManager
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/ class=dd-item><div><a href=/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/>Ensuring integrity of the ServiceLocator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/ioc/replacing-default-components/ class=dd-item><div><a href=/vnext/catel-core/ioc/replacing-default-components/>Replacing the default components</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/ class="dd-item haschildren"><div><a href=/vnext/catel-core/logging/>Logging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/ class="dd-item haschildren"><div><a href=/vnext/catel-core/logging/log-listeners/>Log listeners</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/batch-log-listeners/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/batch-log-listeners/>Batch log listeners
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/console-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/console-log-listener/>ConsoleLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/debug-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/debug-log-listener/>DebugLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/event-tracing-for-windows/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/event-tracing-for-windows/>Event Tracing for Windows (ETW)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/event-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/event-log-listener/>EventLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/file-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/file-log-listener/>FileLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/rolling-in-memory-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/rolling-in-memory-log-listener/>RollingInMemoryLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/seq-log-listener/ class=dd-item><div><a href=/vnext/catel-core/logging/log-listeners/seq-log-listener/>SeqLogListener
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/customizing-listeners/ class=dd-item><div><a href=/vnext/catel-core/logging/customizing-listeners/>Customizing listeners</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/creating-log-listeners-via-configuration/ class=dd-item><div><a href=/vnext/catel-core/logging/creating-log-listeners-via-configuration/>Creating log listeners via configuration</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/ class="dd-item haschildren"><div><a href=/vnext/catel-core/logging/integration-with-external-loggers/>Integration with external logging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/log4net/ class=dd-item><div><a href=/vnext/catel-core/logging/integration-with-external-loggers/log4net/>Log4net
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/nlog/ class=dd-item><div><a href=/vnext/catel-core/logging/integration-with-external-loggers/nlog/>NLog
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/logging/anotar-catel-fody/ class=dd-item><div><a href=/vnext/catel-core/logging/anotar-catel-fody/>Anotar.Catel.Fody</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/messaging/ class="dd-item haschildren"><div><a href=/vnext/catel-core/messaging/>Messaging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/ class=dd-item><div><a href=/vnext/catel-core/messaging/messagebase/>MessageBase
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/ class=dd-item><div><a href=/vnext/catel-core/messaging/message-mediator/>Message mediator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/ class=dd-item><div><a href=/vnext/catel-core/messaging/messaging-via-attributes/>Messaging via attributes
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/multilingual/ class="dd-item haschildren"><div><a href=/vnext/catel-core/multilingual/>Multilingual / Localization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/multilingual/displayattribute/ class=dd-item><div><a href=/vnext/catel-core/multilingual/displayattribute/>DisplayAttribute
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/multilingual/displaynameattribute/ class=dd-item><div><a href=/vnext/catel-core/multilingual/displaynameattribute/>DisplayNameAttribute
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/ class="dd-item haschildren"><div><a href=/vnext/catel-core/parallel-invocation-tasks/>Parallel invocation and tasks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/ class=dd-item><div><a href=/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/>Thread safe code
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/pooling/ class=dd-item><div><a href=/vnext/catel-core/pooling/>Pooling</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/ class="dd-item haschildren"><div><a href=/vnext/catel-core/preventing-memory-leaks/>Preventing memory leaks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/change-notification-wrapper/ class=dd-item><div><a href=/vnext/catel-core/preventing-memory-leaks/change-notification-wrapper/>Change notification wrapper
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/weak-events/ class=dd-item><div><a href=/vnext/catel-core/preventing-memory-leaks/weak-events/>Weak events
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/reflection/ class="dd-item haschildren"><div><a href=/vnext/catel-core/reflection/>Reflection</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/reflection/fastmemberinvoker/ class=dd-item><div><a href=/vnext/catel-core/reflection/fastmemberinvoker/>Fast member invoker
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/reflection/propertyhelper/ class=dd-item><div><a href=/vnext/catel-core/reflection/propertyhelper/>Property helper
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/reflection/typecache/ class=dd-item><div><a href=/vnext/catel-core/reflection/typecache/>Type cache
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/scoping/ class=dd-item><div><a href=/vnext/catel-core/scoping/>Scoping</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/ class="dd-item haschildren"><div><a href=/vnext/catel-core/serialization/>Serialization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/specifying-what-gets-serialized/ class=dd-item><div><a href=/vnext/catel-core/serialization/specifying-what-gets-serialized/>Specifying what gets serialized</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/ class="dd-item haschildren"><div><a href=/vnext/catel-core/serialization/customizing-serialization/>Introduction to customizing serialization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-engines/ class=dd-item><div><a href=/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-engines/>Customizing the serialization engines
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/ class=dd-item><div><a href=/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/>Customizing the serialization for specific models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/ class=dd-item><div><a href=/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/>Serializing members using ToString / Parse
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/ class=dd-item><div><a href=/vnext/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/>Taking full control of serialization
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/ class="dd-item haschildren"><div><a href=/vnext/catel-core/serialization/supported-serializers/>Supported serializers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/binary/ class=dd-item><div><a href=/vnext/catel-core/serialization/supported-serializers/binary/>Binary
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/json/ class=dd-item><div><a href=/vnext/catel-core/serialization/supported-serializers/json/>Json
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/xml/ class=dd-item><div><a href=/vnext/catel-core/serialization/supported-serializers/xml/>Xml
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/ class="dd-item haschildren"><div><a href=/vnext/catel-core/validation/>Validation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/validation-via-validate-method/ class=dd-item><div><a href=/vnext/catel-core/validation/validation-via-validate-method/>Validation via validate methods
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/validation-via-data-annotations/ class=dd-item><div><a href=/vnext/catel-core/validation/validation-via-data-annotations/>Validation via data annotations
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/validation-via-special-model-validators/ class=dd-item><div><a href=/vnext/catel-core/validation/validation-via-special-model-validators/>Validation via special model validators
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/validation-via-ivalidator/ class=dd-item><div><a href=/vnext/catel-core/validation/validation-via-ivalidator/>Validation via IValidator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/using-validation-context/ class=dd-item><div><a href=/vnext/catel-core/validation/using-validation-context/>Using the validation context
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/getting-summary-of-validation-results/ class=dd-item><div><a href=/vnext/catel-core/validation/getting-summary-of-validation-results/>Getting a summary of validation results
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-core/validation/deferring-validation/ class=dd-item><div><a href=/vnext/catel-core/validation/deferring-validation/>Deferring validation
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/ class="dd-item parent haschildren"><div><a href=/vnext/catel-mvvm/>Catel.MVVM</a>
-<i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/auditing/ class=dd-item><div><a href=/vnext/catel-mvvm/auditing/>Auditing</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/behaviors-triggers/>Behaviors & triggers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/focus-first-control/></a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/></a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/authentication/>Authentication
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/autocompletion/>AutoCompletionBehavior
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/autoscroll/>AutoScroll
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/>DelayBindingUpdate
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/>DoubleClickToCommand
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/behaviors-triggers/event-to-command/>EventToCommand</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/>EventArgsConverter
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/focus/>Focus
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/>HideUntilViewModelLoaded
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/>KeyPressToCommand
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/mouse-info/>MouseInfo
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/navigate/>Navigate
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/>NumericTextBox
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/>SelectTextOnFocus
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/>UpdateBindingOnPasswordChanged
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/ class=dd-item><div><a href=/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/>UpdateBindingOnTextChanged
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/bindings/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/bindings/>Bindings</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/bindings/command-bindings/ class=dd-item><div><a href=/vnext/catel-mvvm/bindings/command-bindings/>Command bindings
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/bindings/property-bindings/ class=dd-item><div><a href=/vnext/catel-mvvm/bindings/property-bindings/>Property bindings
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/commands-events/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/commands-events/>Commands & events</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/commands-events/application-wide-commands/ class=dd-item><div><a href=/vnext/catel-mvvm/commands-events/application-wide-commands/>CommandManager and command containers (Application-wide commands)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/commands-events/commands/ class=dd-item><div><a href=/vnext/catel-mvvm/commands-events/commands/>Commands
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/commands-events/authentication/ class=dd-item><div><a href=/vnext/catel-mvvm/commands-events/authentication/>Commands authentication
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/commands-events/hooking-command-to-validation/ class=dd-item><div><a href=/vnext/catel-mvvm/commands-events/hooking-command-to-validation/>Hooking a command to validation automatically
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/converters/ class=dd-item><div><a href=/vnext/catel-mvvm/converters/>Converters</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/designers/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/designers/>Designers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/designers/design-time-view-models/ class=dd-item><div><a href=/vnext/catel-mvvm/designers/design-time-view-models/>Design-time view models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/designers/running-code-at-design-time/ class=dd-item><div><a href=/vnext/catel-mvvm/designers/running-code-at-design-time/>Running code at design-time
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/locators-naming-conventions/>Locators & naming conventions</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/naming-conventions/ class=dd-item><div><a href=/vnext/catel-mvvm/locators-naming-conventions/naming-conventions/>Naming conventions
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/url-locator/ class=dd-item><div><a href=/vnext/catel-mvvm/locators-naming-conventions/url-locator/>UrlLocator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/view-locator/ class=dd-item><div><a href=/vnext/catel-mvvm/locators-naming-conventions/view-locator/>ViewLocator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/view-model-locator/ class=dd-item><div><a href=/vnext/catel-mvvm/locators-naming-conventions/view-model-locator/>ViewModelLocator
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/ class="dd-item parent haschildren"><div><a href=/vnext/catel-mvvm/services/>Services</a>
-<i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/location-service/>LocationService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/message-service/>MessageService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/navigation-service/>NavigationService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/open-file-service/>OpenFileService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/please-wait-service/>PleaseWaitService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/ class="dd-item active"><div><a href=/vnext/catel-mvvm/services/process-service/>ProcessService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/save-file-service/>SaveFileService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/scheduler-service/>SchedulerService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/select-directory-service/>SelectDirectoryService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/ui-visualizer-service/>UIVisualizerService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/vibrate-service/>VibrateService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/ class=dd-item><div><a href=/vnext/catel-mvvm/services/view-export-service/>ViewExportService
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/view-models/>View models</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-basic-view-model/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/creating-basic-view-model/>Creating a basic view model
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-view-model-with-model/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/creating-view-model-with-model/>Creating a view model with a model
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/>Creating a view model with a model and mappings
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/>Mapping properties from view to view model
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/nested-view-models/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/nested-view-models/>Nested view models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/validation-in-view-models/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/validation-in-view-models/>Validation in view models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/view-models/advanced/>View models (advanced)</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/>Controlling the instantiation of view models
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/>Exposing properties of a model automatically
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/keeping-view-models-alive/ class=dd-item><div><a href=/vnext/catel-mvvm/view-models/advanced/keeping-view-models-alive/>Keeping view models alive
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/views/>Views</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/views/xamarin-android/>Xamarin.Android</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/activities-pages/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xamarin-android/activities-pages/>Activities (pages)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/fragments-user-controls/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xamarin-android/fragments-user-controls/>Fragments (user controls)
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-forms/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xamarin-forms/>Xamarin.Forms</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-ios/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xamarin-ios/>Xamarin.iOS</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/views/xaml/>XAML</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior/>Customizing DataContext subscription behavior
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually/>Improving performance by defining the view model grid manually
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/usercontrol/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/usercontrol/>UserControl
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/usercontrol-resources/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/usercontrol-resources/>UserControl Resources
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/validation-controls/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/validation-controls/>Validation controls
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/window-and-datawindow/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/window-and-datawindow/>Window and DataWindow
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/views/xaml/advanced/>XAML - advanced</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/>DataWindow - under the hood
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/>UserControl - under the hood
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/ class="dd-item haschildren"><div><a href=/vnext/catel-mvvm/views/xaml/external-controls/>XAML - external controls</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/using-custom-control/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/external-controls/using-custom-control/>Using a custom control
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/using-custom-window/ class=dd-item><div><a href=/vnext/catel-mvvm/views/xaml/external-controls/using-custom-window/>Using a custom window
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li></ul></li></ul></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-fody/ class=dd-item><div><a href=/vnext/catel-fody/>Catel.Fody</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/catel-resharper/ class=dd-item><div><a href=/vnext/catel-resharper/>Catel.ReSharper</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/ class="dd-item haschildren"><div><a href=/vnext/tips-tricks/>Tips & tricks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/core/ class=dd-item><div><a href=/vnext/tips-tricks/core/>Core</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/mvvm/ class="dd-item haschildren"><div><a href=/vnext/tips-tricks/mvvm/>MVVM</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i></div><ul><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/mvvm/finding-view-of-view-model/ class=dd-item><div><a href=/vnext/tips-tricks/mvvm/finding-view-of-view-model/>Finding the view of a view model
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/mvvm/requery-commands-automatically/ class=dd-item><div><a href=/vnext/tips-tricks/mvvm/requery-commands-automatically/>Requery commands automatically using CommandManager
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/ class=dd-item><div><a href=/vnext/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/>Using a tabbed interface with MVVM
-</a><i class="fa fa-circle-thin read-icon"></i></div></li><li data-nav-id=https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-compiled-bindings/ class=dd-item><div><a href=/vnext/tips-tricks/mvvm/using-compiled-bindings/>Using compiled bindings
-</a><i class="fa fa-circle-thin read-icon"></i></div></li></ul></li></ul></li></ul><section><center><a class=github-button href=https://github.com/catel/catel/archive/master.zip data-icon=octicon-cloud-download aria-label="Download Catel on GitHub">Download</a>
-<a class=github-button href=https://github.com/catel/catel data-icon=octicon-star data-show-count=false aria-label="Star Catel on GitHub">Star</a>
-<a class=github-button href=https://github.com/catel/catel/fork data-icon=octicon-repo-forked data-show-count=true aria-label="Fork Catel on GitHub">Fork</a></center>
-<script async defer src=https://buttons.github.io/buttons.js></script></section></aside><section class=page><div class=nav-select><center>Navigation :
-<select onchange="location.href=this.value;">
-<option value=/vnext/introduction/>Introduction</option>
-<option value=/vnext/faq/>FAQ</option>
-<option value=/vnext/setup-deployment/>Setup, deployment & projects</option>
-<option value=/vnext/getting-started/>Getting started</option>
-<option value=/vnext/examples/>Examples</option>
-<option value=/vnext/catel-core/>Catel.Core</option>
-<option value=/vnext/catel-mvvm/>Catel.MVVM</option>
-<option value=/vnext/catel-mvvm/auditing/>-
-Auditing</option>
-<option value=/vnext/catel-mvvm/behaviors-triggers/>-
-Behaviors & triggers</option>
-<option value=/vnext/catel-mvvm/bindings/>-
-Bindings</option>
-<option value=/vnext/catel-mvvm/commands-events/>-
-Commands & events</option>
-<option value=/vnext/catel-mvvm/converters/>-
-Converters</option>
-<option value=/vnext/catel-mvvm/designers/>-
-Designers</option>
-<option value=/vnext/catel-mvvm/locators-naming-conventions/>-
-Locators & naming conventions</option>
-<option value=/vnext/catel-mvvm/services/>-
-Services</option>
-<option value=/vnext/catel-mvvm/services/location-service/>-- LocationService</option>
-<option value=/vnext/catel-mvvm/services/message-service/>-- MessageService</option>
-<option value=/vnext/catel-mvvm/services/navigation-service/>-- NavigationService</option>
-<option value=/vnext/catel-mvvm/services/open-file-service/>-- OpenFileService</option>
-<option value=/vnext/catel-mvvm/services/please-wait-service/>-- PleaseWaitService</option>
-<option value=/vnext/catel-mvvm/services/process-service/ selected>-- ProcessService</option>
-<option value=/vnext/catel-mvvm/services/save-file-service/>-- SaveFileService</option>
-<option value=/vnext/catel-mvvm/services/scheduler-service/>-- SchedulerService</option>
-<option value=/vnext/catel-mvvm/services/select-directory-service/>-- SelectDirectoryService</option>
-<option value=/vnext/catel-mvvm/services/ui-visualizer-service/>-- UIVisualizerService</option>
-<option value=/vnext/catel-mvvm/services/vibrate-service/>-- VibrateService</option>
-<option value=/vnext/catel-mvvm/services/view-export-service/>-- ViewExportService</option>
-<option value=/vnext/catel-mvvm/view-models/>-
-View models</option>
-<option value=/vnext/catel-mvvm/views/>-
-Views</option>
-<option value=/vnext/catel-fody/>Catel.Fody</option>
-<option value=/vnext/catel-resharper/>Catel.ReSharper</option>
-<option value=/vnext/tips-tricks/>Tips & tricks</option></select></center></div><div><div class=searchbox><input data-search-input id=search-by type=text placeholder=Search...></div><script type=text/javascript src=/vnext/js/lunr.min.js></script><script type=text/javascript src=/vnext/js/auto-complete.js></script><link href=/vnext/css/auto-complete.css rel=stylesheet><script type=text/javascript>var baseurl="https:\/\/docs.catelproject.com\/vnext\/";</script><script type=text/javascript src=/vnext/js/search.js></script></div><h1>ProcessService</h1><p>The <code>IProcessService</code> allows a developer to run processes from inside a view model.</p><h2 id=starting-a-process-with-arguments>Starting a process with arguments</h2><p>To start a process with arguments, use the following code:</p><pre><code>var dependencyResolver = this.GetDependencyResolver();
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catel docs</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2022-02-03T08:50:10 CET">
+<title>ProcessService :: Catel docs</title>
+<link rel="shortcut icon" href="/vnext/images/favicon.png" type="image/x-icon" />
+<link href="/vnext/css/font-awesome.min.css" rel="stylesheet">
+<link href="/vnext/css/nucleus.css" rel="stylesheet">
+<link href="/vnext/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/vnext/css/bootstrap.min.css">
+<script src="/vnext/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/docs.catelproject.com\/vnext\/";
+</script>
+
+
+    
+  </head>
+  <body data-url="/vnext/catel-mvvm/services/process-service/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p>Catel Documentation</p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/catel/catel.docs"  rel="noopener">
+                  <i class='fa fa-github'></i> Github repo
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/vnext/" class="dd-item">
+          <a href="/vnext/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/introduction/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/introduction/">Introduction</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/introduction/why-catel/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/introduction/why-catel/">Why Catel</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/introduction/platform-support/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/introduction/platform-support/">Support for multiple platforms</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-wpf/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/platform-support/caveats-in-wpf/">
+            Caveats in WPF
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-uwp/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/platform-support/caveats-in-uwp/">
+            Caveats in UWP
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-android/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/platform-support/caveats-in-android/">
+            Caveats in Android
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/platform-support/caveats-in-ios/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/platform-support/caveats-in-ios/">
+            Caveats in iOS
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/introduction/introduction-data-objects/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/introduction/introduction-data-objects/">Introduction to data objects</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/introduction/mvvm/">Introduction to MVVM</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/different-interpretations-of-mvvm/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/different-interpretations-of-mvvm/">
+            Different interpretations of MVVM
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/validation-in-model-or-view-model/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/validation-in-model-or-view-model/">
+            Validation in model or view model?
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-mvvm-and-models/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/introduction-to-mvvm-and-models/">
+            Introduction to MVVM and models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/creating-view-models-with-catel/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/creating-view-models-with-catel/">
+            Creating view models with Catel
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-services/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/introduction-to-services/">
+            Introduction to services
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/introduction/mvvm/introduction-to-nested-user-controls-problem/" class="dd-item">
+        <div>
+          <a href="/vnext/introduction/mvvm/introduction-to-nested-user-controls-problem/">
+            Introduction to the nested user controls problem
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/faq/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/faq/">FAQ</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/faq/general/" class="dd-item">
+        <div>
+          <a href="/vnext/faq/general/">
+            General
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/faq/mvvm/" class="dd-item">
+        <div>
+          <a href="/vnext/faq/mvvm/">
+            MVVM
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/faq/problem-solving/" class="dd-item">
+        <div>
+          <a href="/vnext/faq/problem-solving/">
+            Problem solving
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/faq/performance-considerations/" class="dd-item">
+        <div>
+          <a href="/vnext/faq/performance-considerations/">
+            Performance considerations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/">Setup, deployment &amp; projects</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/getting-prerelease-versions-via-nuget/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/getting-prerelease-versions-via-nuget/">Getting prerelease (beta) versions via NuGet &amp; MyGet</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/stepping-through-the-code/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/stepping-through-the-code/">Stepping through the code</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/compiling-from-source/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/compiling-from-source/">Compiling from source</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/code-snippets-templates/">Code snippets &amp; templates</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-code-snippets/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/code-snippets-templates/using-the-code-snippets/">
+            Using the code snippets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-item-templates/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/code-snippets-templates/using-the-item-templates/">
+            Using the item templates
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/code-snippets-templates/using-the-project-templates/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/code-snippets-templates/using-the-project-templates/">
+            Using the project templates
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/setup-deployment/update-guides/">Update guides</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.0/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/update-guides/catel-4.0/">
+            Catel 4.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-4.1/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/update-guides/catel-4.1/">
+            Catel 4.1
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-5.0/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/update-guides/catel-5.0/">
+            Catel 5.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-5.4/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/update-guides/catel-5.4/">
+            Catel 5.4
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/setup-deployment/update-guides/catel-6.0/" class="dd-item">
+        <div>
+          <a href="/vnext/setup-deployment/update-guides/catel-6.0/">
+            Catel 6.0
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/getting-started/">Getting started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/quick-introduction-for-developers/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/getting-started/quick-introduction-for-developers/">Quick introduction for developers</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/getting-started/wpf/">Getting started with WPF</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-project/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/creating-the-project/">
+            Creating the WPF project
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-models/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/creating-the-models/">
+            Creating the models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/serializing-data-from-to-disk/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/serializing-data-from-to-disk/">
+            Serializing data from/to disk
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-view-models/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/creating-the-view-models/">
+            Creating the view models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-user-controls/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/creating-the-user-controls/">
+            Creating the views (user controls)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/creating-the-windows/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/creating-the-windows/">
+            Creating the views (windows)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/hooking-up-everything-together/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/hooking-up-everything-together/">
+            Hooking up everything together
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/getting-started/wpf/finalizing-the-application/" class="dd-item">
+        <div>
+          <a href="/vnext/getting-started/wpf/finalizing-the-application/">
+            Finalizing the application
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/examples/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/examples/">Examples</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/">Catel.Core</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/argument-checking/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/argument-checking/">Argument checking</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/caching/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/caching/">Caching</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/configuration/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/configuration/">Configuration</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/data-handling/">Data handling</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/observableobject/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/observableobject/">
+            ObservableObject
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/property-bags/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/property-bags/">
+            Property bags
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/dispatcherobservableobject/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/dispatcherobservableobject/">
+            DispatcherObservableObject
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/modelbase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/modelbase/">
+            ModelBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/validatablemodelbase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/validatablemodelbase/">
+            ValidatableModelBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/comparablemodelbase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/comparablemodelbase/">
+            ComparableModelBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/savablemodelbase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/savablemodelbase/">
+            SavableModelBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/childawaremodelbase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/childawaremodelbase/">
+            ChildAwareModelBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/using-modelbase-as-base-for-entities/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/using-modelbase-as-base-for-entities/">
+            Using ModelBase as base for entities
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/data-handling/advanced-property-change-notifications/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/data-handling/advanced-property-change-notifications/">
+            Advanced property change notifications
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/exception-handling/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/exception-handling/">Exception handling</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/exception-handling/wpf-implementation-for-exception-handling/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/exception-handling/wpf-implementation-for-exception-handling/">
+            WPF implementation for exception handling
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/ioc/">IoC (ServiceLocator and TypeFactory)</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/dependency-injection/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/ioc/dependency-injection/">Dependency injection</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/ioc/automatic-type-registration/">Automatic type registration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/automatic-type-registration/using-attributes/">
+            Using attributes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/automatic-type-registration/using-conventions/">
+            Using conventions
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/ioc/introduction-to-components/">Introduction to components</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/introduction-to-components/servicelocator/">
+            ServiceLocator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/introduction-to-components/typefactory/">
+            TypeFactory
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/">
+            DependencyResolver and DependencyResolverManager
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/">
+            Ensuring integrity of the ServiceLocator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/ioc/replacing-default-components/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/ioc/replacing-default-components/">Replacing the default components</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/">Logging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/log-listeners/">Log listeners</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/batch-log-listeners/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/batch-log-listeners/">
+            Batch log listeners
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/console-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/console-log-listener/">
+            ConsoleLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/debug-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/debug-log-listener/">
+            DebugLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/event-tracing-for-windows/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/event-tracing-for-windows/">
+            Event Tracing for Windows (ETW)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/event-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/event-log-listener/">
+            EventLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/file-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/file-log-listener/">
+            FileLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/rolling-in-memory-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/rolling-in-memory-log-listener/">
+            RollingInMemoryLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/log-listeners/seq-log-listener/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/log-listeners/seq-log-listener/">
+            SeqLogListener
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/customizing-listeners/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/customizing-listeners/">Customizing listeners</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/creating-log-listeners-via-configuration/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/creating-log-listeners-via-configuration/">Creating log listeners via configuration</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/integration-with-external-loggers/">Integration with external logging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/log4net/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/integration-with-external-loggers/log4net/">
+            Log4net
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/integration-with-external-loggers/nlog/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/logging/integration-with-external-loggers/nlog/">
+            NLog
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/logging/anotar-catel-fody/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/logging/anotar-catel-fody/">Anotar.Catel.Fody</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/messaging/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/messaging/">Messaging</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/messaging/messagebase/">
+            MessageBase
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/messaging/message-mediator/">
+            Message mediator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/messaging/messaging-via-attributes/">
+            Messaging via attributes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/multilingual/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/multilingual/">Multilingual / Localization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/multilingual/displayattribute/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/multilingual/displayattribute/">
+            DisplayAttribute
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/multilingual/displaynameattribute/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/multilingual/displaynameattribute/">
+            DisplayNameAttribute
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/parallel-invocation-tasks/">Parallel invocation and tasks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/">
+            Thread safe code
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/pooling/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/pooling/">Pooling</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/preventing-memory-leaks/">Preventing memory leaks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/change-notification-wrapper/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/preventing-memory-leaks/change-notification-wrapper/">
+            Change notification wrapper
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/preventing-memory-leaks/weak-events/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/preventing-memory-leaks/weak-events/">
+            Weak events
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/reflection/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/reflection/">Reflection</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/reflection/fastmemberinvoker/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/reflection/fastmemberinvoker/">
+            Fast member invoker
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/reflection/propertyhelper/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/reflection/propertyhelper/">
+            Property helper
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/reflection/typecache/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/reflection/typecache/">
+            Type cache
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/scoping/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/scoping/">Scoping</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/serialization/">Serialization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/specifying-what-gets-serialized/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-core/serialization/specifying-what-gets-serialized/">Specifying what gets serialized</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/serialization/customizing-serialization/">Introduction to customizing serialization</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-engines/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-engines/">
+            Customizing the serialization engines
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/customizing-serialization/customizing-serialization-for-specific-models/">
+            Customizing the serialization for specific models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/customizing-serialization/serializing-members-using-tostring-parse/">
+            Serializing members using ToString / Parse
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/customizing-serialization/taking-full-control-of-serialization/">
+            Taking full control of serialization
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/serialization/supported-serializers/">Supported serializers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/binary/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/supported-serializers/binary/">
+            Binary
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/json/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/supported-serializers/json/">
+            Json
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/serialization/supported-serializers/xml/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/serialization/supported-serializers/xml/">
+            Xml
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-core/validation/">Validation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/validation-via-validate-method/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/validation-via-validate-method/">
+            Validation via validate methods
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/validation-via-data-annotations/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/validation-via-data-annotations/">
+            Validation via data annotations
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/validation-via-special-model-validators/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/validation-via-special-model-validators/">
+            Validation via special model validators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/validation-via-ivalidator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/validation-via-ivalidator/">
+            Validation via IValidator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/using-validation-context/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/using-validation-context/">
+            Using the validation context
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/getting-summary-of-validation-results/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/getting-summary-of-validation-results/">
+            Getting a summary of validation results
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-core/validation/deferring-validation/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-core/validation/deferring-validation/">
+            Deferring validation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/">Catel.MVVM</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/auditing/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/auditing/">Auditing</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/behaviors-triggers/">Behaviors &amp; triggers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-first-control/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/focus-first-control/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/focus-on-key-press/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/authentication/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/authentication/">
+            Authentication
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autocompletion/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/autocompletion/">
+            AutoCompletionBehavior
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/autoscroll/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/autoscroll/">
+            AutoScroll
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/delay-binding-update/">
+            DelayBindingUpdate
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/double-click-to-command/">
+            DoubleClickToCommand
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/behaviors-triggers/event-to-command/">EventToCommand</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/">
+            EventArgsConverter
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/focus/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/focus/">
+            Focus
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/hide-until-view-model-loaded/">
+            HideUntilViewModelLoaded
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/key-press-to-command/">
+            KeyPressToCommand
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/mouse-info/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/mouse-info/">
+            MouseInfo
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/navigate/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/navigate/">
+            Navigate
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/numeric-textbox/">
+            NumericTextBox
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/select-text-on-focus/">
+            SelectTextOnFocus
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/update-binding-on-password-changed/">
+            UpdateBindingOnPasswordChanged
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/behaviors-triggers/update-binding-on-text-changed/">
+            UpdateBindingOnTextChanged
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/bindings/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/bindings/">Bindings</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/bindings/command-bindings/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/bindings/command-bindings/">
+            Command bindings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/bindings/property-bindings/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/bindings/property-bindings/">
+            Property bindings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/commands-events/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/commands-events/">Commands &amp; events</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/commands-events/application-wide-commands/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/commands-events/application-wide-commands/">
+            CommandManager and command containers (Application-wide commands)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/commands-events/commands/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/commands-events/commands/">
+            Commands
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/commands-events/authentication/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/commands-events/authentication/">
+            Commands authentication
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/commands-events/hooking-command-to-validation/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/commands-events/hooking-command-to-validation/">
+            Hooking a command to validation automatically
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/converters/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/converters/">Converters</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/designers/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/designers/">Designers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/designers/design-time-view-models/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/designers/design-time-view-models/">
+            Design-time view models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/designers/running-code-at-design-time/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/designers/running-code-at-design-time/">
+            Running code at design-time
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/locators-naming-conventions/">Locators &amp; naming conventions</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/naming-conventions/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/locators-naming-conventions/naming-conventions/">
+            Naming conventions
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/url-locator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/locators-naming-conventions/url-locator/">
+            UrlLocator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/view-locator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/locators-naming-conventions/view-locator/">
+            ViewLocator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/view-model-locator/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/locators-naming-conventions/view-model-locator/">
+            ViewModelLocator
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/services/">Services</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/location-service/">
+            LocationService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/message-service/">
+            MessageService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/navigation-service/">
+            NavigationService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/open-file-service/">
+            OpenFileService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/please-wait-service/">
+            PleaseWaitService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/" class="dd-item active">
+        <div>
+          <a href="/vnext/catel-mvvm/services/process-service/">
+            ProcessService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/save-file-service/">
+            SaveFileService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/scheduler-service/">
+            SchedulerService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/select-directory-service/">
+            SelectDirectoryService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/ui-visualizer-service/">
+            UIVisualizerService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/vibrate-service/">
+            VibrateService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/services/view-export-service/">
+            ViewExportService
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/view-models/">View models</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-basic-view-model/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/creating-basic-view-model/">
+            Creating a basic view model
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-view-model-with-model/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/creating-view-model-with-model/">
+            Creating a view model with a model
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/creating-view-model-with-model-and-mappings/">
+            Creating a view model with a model and mappings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/mapping-properties-from-view-to-view-model/">
+            Mapping properties from view to view model
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/nested-view-models/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/nested-view-models/">
+            Nested view models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/validation-in-view-models/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/validation-in-view-models/">
+            Validation in view models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/view-models/advanced/">View models (advanced)</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/advanced/controlling-instantiation-of-view-models/">
+            Controlling the instantiation of view models
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/advanced/exposing-properties-of-model-automatically/">
+            Exposing properties of a model automatically
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/view-models/advanced/keeping-view-models-alive/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/view-models/advanced/keeping-view-models-alive/">
+            Keeping view models alive
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/">Views</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xamarin-android/">Xamarin.Android</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/activities-pages/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xamarin-android/activities-pages/">
+            Activities (pages)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-android/fragments-user-controls/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xamarin-android/fragments-user-controls/">
+            Fragments (user controls)
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-forms/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xamarin-forms/">Xamarin.Forms</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xamarin-ios/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xamarin-ios/">Xamarin.iOS</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xaml/">XAML</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/customizing-datacontext-subscription-behavior/">
+            Customizing DataContext subscription behavior
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/improving-performance-by-defining-view-model-grid-manually/">
+            Improving performance by defining the view model grid manually
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/usercontrol/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/usercontrol/">
+            UserControl
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/usercontrol-resources/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/usercontrol-resources/">
+            UserControl Resources
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/validation-controls/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/validation-controls/">
+            Validation controls
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/window-and-datawindow/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/window-and-datawindow/">
+            Window and DataWindow
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xaml/advanced/">XAML - advanced</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/advanced/datawindow-under-the-hood/">
+            DataWindow - under the hood
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/advanced/usercontrol-under-the-hood/">
+            UserControl - under the hood
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/catel-mvvm/views/xaml/external-controls/">XAML - external controls</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/using-custom-control/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/external-controls/using-custom-control/">
+            Using a custom control
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/catel-mvvm/views/xaml/external-controls/using-custom-window/" class="dd-item">
+        <div>
+          <a href="/vnext/catel-mvvm/views/xaml/external-controls/using-custom-window/">
+            Using a custom window
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-fody/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-fody/">Catel.Fody</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/catel-resharper/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/catel-resharper/">Catel.ReSharper</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/tips-tricks/">Tips &amp; tricks</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/core/" class="dd-item
+        ">
+      <div>
+      <a href="/vnext/tips-tricks/core/">Core</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/mvvm/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vnext/tips-tricks/mvvm/">MVVM</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/mvvm/finding-view-of-view-model/" class="dd-item">
+        <div>
+          <a href="/vnext/tips-tricks/mvvm/finding-view-of-view-model/">
+            Finding the view of a view model
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/mvvm/requery-commands-automatically/" class="dd-item">
+        <div>
+          <a href="/vnext/tips-tricks/mvvm/requery-commands-automatically/">
+            Requery commands automatically using CommandManager
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/" class="dd-item">
+        <div>
+          <a href="/vnext/tips-tricks/mvvm/using-tabbed-interface-with-mvvm/">
+            Using a tabbed interface with MVVM
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="https://docs.catelproject.com/vnext/tips-tricks/mvvm/using-compiled-bindings/" class="dd-item">
+        <div>
+          <a href="/vnext/tips-tricks/mvvm/using-compiled-bindings/">
+            Using compiled bindings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+<a class="github-button" href="https://github.com/catel/catel/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download Catel on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/catel/catel" data-icon="octicon-star" data-show-count="false" aria-label="Star Catel on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/catel/catel/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork Catel on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/vnext/introduction/" >
+   Introduction</option>
+    <option value="/vnext/faq/" >
+   FAQ</option>
+    <option value="/vnext/setup-deployment/" >
+   Setup, deployment &amp; projects</option>
+    <option value="/vnext/getting-started/" >
+   Getting started</option>
+    <option value="/vnext/examples/" >
+   Examples</option>
+    <option value="/vnext/catel-core/" >
+   Catel.Core</option>
+    <option value="/vnext/catel-mvvm/" >
+   Catel.MVVM</option> 
+    <option value="/vnext/catel-mvvm/auditing/" >
+  - 
+   Auditing</option>
+    <option value="/vnext/catel-mvvm/behaviors-triggers/" >
+  - 
+   Behaviors &amp; triggers</option>
+    <option value="/vnext/catel-mvvm/bindings/" >
+  - 
+   Bindings</option>
+    <option value="/vnext/catel-mvvm/commands-events/" >
+  - 
+   Commands &amp; events</option>
+    <option value="/vnext/catel-mvvm/converters/" >
+  - 
+   Converters</option>
+    <option value="/vnext/catel-mvvm/designers/" >
+  - 
+   Designers</option>
+    <option value="/vnext/catel-mvvm/locators-naming-conventions/" >
+  - 
+   Locators &amp; naming conventions</option>
+    <option value="/vnext/catel-mvvm/services/" >
+  - 
+   Services</option> 
+      <option value="/vnext/catel-mvvm/services/location-service/" >-- LocationService</option>
+      <option value="/vnext/catel-mvvm/services/message-service/" >-- MessageService</option>
+      <option value="/vnext/catel-mvvm/services/navigation-service/" >-- NavigationService</option>
+      <option value="/vnext/catel-mvvm/services/open-file-service/" >-- OpenFileService</option>
+      <option value="/vnext/catel-mvvm/services/please-wait-service/" >-- PleaseWaitService</option>
+      <option value="/vnext/catel-mvvm/services/process-service/"  selected>-- ProcessService</option>
+      <option value="/vnext/catel-mvvm/services/save-file-service/" >-- SaveFileService</option>
+      <option value="/vnext/catel-mvvm/services/scheduler-service/" >-- SchedulerService</option>
+      <option value="/vnext/catel-mvvm/services/select-directory-service/" >-- SelectDirectoryService</option>
+      <option value="/vnext/catel-mvvm/services/ui-visualizer-service/" >-- UIVisualizerService</option>
+      <option value="/vnext/catel-mvvm/services/vibrate-service/" >-- VibrateService</option>
+      <option value="/vnext/catel-mvvm/services/view-export-service/" >-- ViewExportService</option>
+  
+    <option value="/vnext/catel-mvvm/view-models/" >
+  - 
+   View models</option>
+    <option value="/vnext/catel-mvvm/views/" >
+  - 
+   Views</option>
+  
+    <option value="/vnext/catel-fody/" >
+   Catel.Fody</option>
+    <option value="/vnext/catel-resharper/" >
+   Catel.ReSharper</option>
+    <option value="/vnext/tips-tricks/" >
+   Tips &amp; tricks</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/vnext/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/vnext/js/auto-complete.js"></script>
+        <link href="/vnext/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/docs.catelproject.com\/vnext\/";
+          
+        </script>
+        <script type="text/javascript" src="/vnext/js/search.js"></script>
+      </div>
+    
+
+    <h1>ProcessService</h1>
+    
+    
+    
+<p>The <code>IProcessService</code> allows a developer to run processes from inside a view model.</p>
+<h2 id="starting-a-process-with-arguments">Starting a process with arguments</h2>
+<p>To start a process with arguments, use the following code:</p>
+<pre tabindex="0"><code>var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve&lt;IProcessService&gt;();
 processService.StartProcess(&quot;notepad.exe&quot;, @&quot;C:\mytextfile.txt&quot;);
-</code></pre><h2 id=starting-a-process-with-arguments-and-completed-callback>Starting a process with arguments and completed callback</h2><p>To start a process with arguments and receive a callback on completion, use the following code:</p><pre><code>var dependencyResolver = this.GetDependencyResolver();
+</code></pre><h2 id="starting-a-process-with-arguments-and-completed-callback">Starting a process with arguments and completed callback</h2>
+<p>To start a process with arguments and receive a callback on completion, use the following code:</p>
+<pre tabindex="0"><code>var dependencyResolver = this.GetDependencyResolver();
 var processService = dependencyResolver.Resolve&lt;IProcessService&gt;();
 processService.StartProcess(&quot;notepad.exe&quot;, @&quot;C:\mytextfile.txt&quot;, OnProcessCompleted);
-</code></pre><hr><h2>Contributions</h2><p>We would like to thank the following contributors:</p><div class=ghContributors></div><script>$(document).ready(function(){var contributorsUrl='https://api.github.com/repos/catel/catel.docs/commits?path=src/vnext/content/catel-mvvm\/services\/process-service.md'.replace('\/','/');$.getJSON(contributorsUrl,function(data){var contributors={};var contributorsCount={};data.forEach(function(commit){var author=commit.author.login;contributors[author]=commit.author;if(!(author in contributorsCount)){contributorsCount[author]=0;}
-contributorsCount[author]++;});var ghContributorsElement=$(".ghContributors");for(var key in contributors){var contributor=contributors[key];var contributorCount=contributorsCount[key];var contributorContent='';contributorContent+='<div>';contributorContent+='  <a href="'+contributor.html_url+'" title="'+contributor.login+'" target="_blank">';contributorContent+='    <img src="'+contributor.avatar_url+'" class="inline" width="64" height="64" style="height: 64px;height: 64px;margin-bottom:.25em; vertical-align:middle; ">';contributorContent+='  </a>';contributorContent+='  <span class="contributions">'+contributorCount+' commits</span>';contributorContent+='</div>';ghContributorsElement.append(contributorContent);}});});</script><p><strong>Want to contribute to the documentation?</strong> We have a <a href=https://github.com/Catel/Catel.Docs/blob/master/README.md title="Contribution guide" target=_blank>guide</a> for that!</p><hr><h2>Questions</h2><p>Have a question about Catel? Use <a href=https://stackoverflow.com/questions/tagged/catel target=_blank>StackOverflow</a> with the <i>Catel</i> tag!</p><div class=chevrons><div id=navigation><a class="nav nav-prev" href=/vnext/catel-mvvm/services/please-wait-service/ title=PleaseWaitService><i class="fa fa-chevron-left"></i><label>PleaseWaitService</label></a>
-<a class="nav nav-next" href=/vnext/catel-mvvm/services/save-file-service/ title=SaveFileService style=margin-right:0><label>SaveFileService</label><i class="fa fa-chevron-right"></i></a></div></div></section></article><footer><div class=footline><div class=github-link><a href=https://github.com/catel/catel.docs/edit/master/src/vnext/content/catel-mvvm/services/process-service.md target=blank><i class="fa fa-code-fork"></i>Improve this page</a></div></div><div></div></footer><script src=/vnext/js/clipboard.min.js></script><link href=/vnext/css/featherlight.min.css rel=stylesheet><script src=/vnext/js/featherlight.min.js></script><script src=/vnext/theme-flex/script.js></script></body></html>
+</code></pre>
+
+<hr />
+
+<h2>Contributions</h2>
+
+<p>
+  We would like to thank the following contributors:
+</p>
+
+<div class="ghContributors"></div>
+<script>
+
+
+$(document).ready( function () {
+    var contributorsUrl = 'https://api.github.com/repos/catel/catel.docs/commits?path=src/vnext/content/catel-mvvm\/services\/process-service.md'.replace('\/', '/');
+
+    $.getJSON(contributorsUrl, function(data) {
+        
+        var contributors = {};
+        var contributorsCount = {};
+        
+        data.forEach(function(commit) {
+            var author = commit.author.login;
+            contributors[author] = commit.author;
+            
+            if (!(author in contributorsCount)) {
+              contributorsCount[author] = 0;
+            }
+            
+            contributorsCount[author]++;
+        });
+        
+        var ghContributorsElement = $(".ghContributors");
+        
+        for (var key in contributors) {
+            var contributor = contributors[key];
+            var contributorCount = contributorsCount[key];
+        
+            var contributorContent = '';
+            contributorContent += '<div>';
+            contributorContent += '  <a href="'+ contributor.html_url + '" title="' + contributor.login + '" target="_blank">';
+            contributorContent += '    <img src="' + contributor.avatar_url + '" class="inline" width="64" height="64" style="height: 64px;height: 64px;margin-bottom:.25em; vertical-align:middle; ">';
+            
+            contributorContent += '  </a>';
+            contributorContent += '  <span class="contributions">' + contributorCount + ' commits</span>';
+            contributorContent += '</div>';
+            
+            ghContributorsElement.append(contributorContent);
+        }
+    });
+});
+</script>
+
+<p>
+  <strong>Want to contribute to the documentation?</strong> We have a <a href="https://github.com/Catel/Catel.Docs/blob/master/README.md" title="Contribution guide" target="_blank">guide</a> for that!
+</p>
+
+<hr />
+
+<h2>Questions</h2>
+
+<p>
+Have a question about Catel? Use <a href="https://stackoverflow.com/questions/tagged/catel" target="_blank">StackOverflow</a> with the <i>Catel</i> tag!
+</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/vnext/catel-mvvm/services/please-wait-service/" title="PleaseWaitService"> <i class="fa fa-chevron-left"></i><label>PleaseWaitService</label></a>
+    <a class="nav nav-next" href="/vnext/catel-mvvm/services/save-file-service/" title="SaveFileService" style="margin-right: 0px;"><label>SaveFileService</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/catel/catel.docs/edit/master/src/vnext/content/catel-mvvm/services/process-service.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/vnext/js/clipboard.min.js"></script>
+
+<link href="/vnext/css/featherlight.min.css" rel="stylesheet">
+<script src="/vnext/js/featherlight.min.js"></script>
+
+
+
+<script src="/vnext/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

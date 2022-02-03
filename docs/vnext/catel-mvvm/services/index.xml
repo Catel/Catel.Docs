@@ -1,29 +1,146 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Services on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/</link><description>Recent content in Services on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-mvvm/services/index.xml" rel="self" type="application/rss+xml"/><item><title>LocationService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/</guid><description>The ILocationService allows a developer to use GPS devices inside a view model.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Catel docs</title>
+    <link>https://docs.catelproject.com/vnext/catel-mvvm/services/</link>
+    <description>Recent content in Services on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-mvvm/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LocationService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/location-service/</guid>
+      <description>The ILocationService allows a developer to use GPS devices inside a view model.
 It is important that the service must be started and stopped to retrieve values
-Starting the service The GPS service needs to be started and stopped. To start the GPS service, use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var locationService = dependencyResolver.Resolve&amp;lt;ILocationService&amp;gt;(); locationService.LocationChanged += OnCurrentLocationChanged; locationService.Start(); The service will raise the LocationChanged event when a new location becomes available.</description></item><item><title>MessageService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/</guid><description>The IMessageService allows a developer to show message boxes from a view model.
+Starting the service The GPS service needs to be started and stopped. To start the GPS service, use the following code:
+var dependencyResolver = this.GetDependencyResolver();var locationService = dependencyResolver.Resolve&amp;lt;ILocationService&amp;gt;();locationService.LocationChanged += OnCurrentLocationChanged;locationService.Start();The service will raise the LocationChanged event when a new location becomes available.</description>
+    </item>
+    
+    <item>
+      <title>MessageService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/message-service/</guid>
+      <description>The IMessageService allows a developer to show message boxes from a view model.
 Showing a message To show a message from a view model, use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var messageService = dependencyResolver.Resolve&amp;lt;IMessageService&amp;gt;(); await messageService.Show(&amp;quot;My first message via the service&amp;quot;); Showing an error Showing a warning or error is very easy. Use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var messageService = dependencyResolver.Resolve&amp;lt;IMessageService&amp;gt;(); await messageService.ShowError(&amp;quot;Whoops, something went wrong&amp;quot;); Requesting confirmation It is also possible to request confirmation from the user.</description></item><item><title>NavigationService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/</guid><description>The INavigationService allows a developer to navigate to other pages inside an application using view models only.
+var dependencyResolver = this.GetDependencyResolver();var messageService = dependencyResolver.Resolve&amp;lt;IMessageService&amp;gt;();await messageService.Show(&amp;quot;My first message via the service&amp;quot;);Showing an error Showing a warning or error is very easy. Use the following code:
+var dependencyResolver = this.GetDependencyResolver();var messageService = dependencyResolver.Resolve&amp;lt;IMessageService&amp;gt;();await messageService.ShowError(&amp;quot;Whoops, something went wrong&amp;quot;);Requesting confirmation It is also possible to request confirmation from the user.</description>
+    </item>
+    
+    <item>
+      <title>NavigationService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/navigation-service/</guid>
+      <description>The INavigationService allows a developer to navigate to other pages inside an application using view models only.
 All pages will have to be registered manually or following the right naming convention.
 The NavigationService uses the IViewLocator and IViewModelLocator do handle the navigation. See the Naming conventions section for more details.
-Closing an application It is possible to close an application using the following code:
-var dependencyResolver = this.GetDependencyResolver(); var navigationService = dependencyResolver.</description></item><item><title>OpenFileService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/</guid><description>The IOpenFileService allows a developer to let the user choose a file from inside a view model.
+Closing an application It is possible to close an application using the following code:
+var dependencyResolver = this.GetDependencyResolver();var navigationService = dependencyResolver.</description>
+    </item>
+    
+    <item>
+      <title>OpenFileService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/open-file-service/</guid>
+      <description>The IOpenFileService allows a developer to let the user choose a file from inside a view model.
 Opening a file To open a file, it is required to set the right properties of the service and then make a call to the DetermineFile method:
-var dependencyResolver = this.GetDependencyResolver(); var openFileService = dependencyResolver.Resolve&amp;lt;IOpenFileService&amp;gt;(); openFileService.Filter = &amp;quot;All files|*.*&amp;quot;; if (openFileService.DetermineFile()) { // User selected a file }</description></item><item><title>PleaseWaitService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/</guid><description>The IPleaseWaitService allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. Showing using Catel.IoC; var dependencyResolver = this.GetDependencyResolver(); var pleaseWaitService = dependencyResolver.Resolve&amp;lt;IPleaseWaitService&amp;gt;(); pleaseWaitService.Show(); Hiding var dependencyResolver = this.GetDependencyResolver(); var pleaseWaitService = dependencyResolver.Resolve&amp;lt;IPleaseWaitService&amp;gt;(); pleaseWaitService.Hide(); Showing and automatically hide The IPleaseWaitService can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the Show method and the service will hide the window as soon as the delegate has completed.</description></item><item><title>ProcessService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/</guid><description>The IProcessService allows a developer to run processes from inside a view model.
+var dependencyResolver = this.GetDependencyResolver();var openFileService = dependencyResolver.Resolve&amp;lt;IOpenFileService&amp;gt;();openFileService.Filter = &amp;quot;All files|*.*&amp;quot;;if (openFileService.DetermineFile()){// User selected a file}</description>
+    </item>
+    
+    <item>
+      <title>PleaseWaitService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/please-wait-service/</guid>
+      <description>The IPleaseWaitService allows a developer to show a please wait message (a.k.a. busy indicator) from a view model. Showing using Catel.IoC;var dependencyResolver = this.GetDependencyResolver();var pleaseWaitService = dependencyResolver.Resolve&amp;lt;IPleaseWaitService&amp;gt;();pleaseWaitService.Show();Hiding var dependencyResolver = this.GetDependencyResolver();var pleaseWaitService = dependencyResolver.Resolve&amp;lt;IPleaseWaitService&amp;gt;();pleaseWaitService.Hide();Showing and automatically hide The IPleaseWaitService can automatically hide itself when an action is completed. To use this feature, simply pass a delegate to the Show method and the service will hide the window as soon as the delegate has completed.</description>
+    </item>
+    
+    <item>
+      <title>ProcessService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/process-service/</guid>
+      <description>The IProcessService allows a developer to run processes from inside a view model.
 Starting a process with arguments To start a process with arguments, use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var processService = dependencyResolver.Resolve&amp;lt;IProcessService&amp;gt;(); processService.StartProcess(&amp;quot;notepad.exe&amp;quot;, @&amp;quot;C:\mytextfile.txt&amp;quot;); Starting a process with arguments and completed callback To start a process with arguments and receive a callback on completion, use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var processService = dependencyResolver.Resolve&amp;lt;IProcessService&amp;gt;(); processService.</description></item><item><title>SaveFileService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/</guid><description>The ISaveFileService allows a developer to let the user choose a file from inside a view model.
+var dependencyResolver = this.GetDependencyResolver();var processService = dependencyResolver.Resolve&amp;lt;IProcessService&amp;gt;();processService.StartProcess(&amp;quot;notepad.exe&amp;quot;, @&amp;quot;C:\mytextfile.txt&amp;quot;);Starting a process with arguments and completed callback To start a process with arguments and receive a callback on completion, use the following code:
+var dependencyResolver = this.GetDependencyResolver();var processService = dependencyResolver.Resolve&amp;lt;IProcessService&amp;gt;();processService.</description>
+    </item>
+    
+    <item>
+      <title>SaveFileService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/save-file-service/</guid>
+      <description>The ISaveFileService allows a developer to let the user choose a file from inside a view model.
 Choosing a file To select a file to save, it is required to set the right properties of the service and then make a call to the DetermineFile method:
-var dependencyResolver = this.GetDependencyResolver(); var saveFileService = dependencyResolver.Resolve&amp;lt;ISaveFileService&amp;gt;(); saveFileService.Filter = &amp;quot;C# File|*.cs&amp;quot;; if (saveFileService.DetermineFile()) { // User selected a file }</description></item><item><title>SchedulerService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/</guid><description>The ISchedulerService allows a developer to schedule an action in the relative or absolute future. The SchedulerService will use the DispatcherTimer to invoke the action.
+var dependencyResolver = this.GetDependencyResolver();var saveFileService = dependencyResolver.Resolve&amp;lt;ISaveFileService&amp;gt;();saveFileService.Filter = &amp;quot;C# File|*.cs&amp;quot;;if (saveFileService.DetermineFile()){// User selected a file}</description>
+    </item>
+    
+    <item>
+      <title>SchedulerService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/scheduler-service/</guid>
+      <description>The ISchedulerService allows a developer to schedule an action in the relative or absolute future. The SchedulerService will use the DispatcherTimer to invoke the action.
 Note that the SchedulerService does not provide any persistence of actions and schedules. When the application is closed, all schedules are lost because they are kept in memory.
-Scheduling an action in the relative future To schedule an action in the relative future, use the Schedule method with the TimeSpan overload.</description></item><item><title>SelectDirectoryService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/</guid><description>The ISelectDirectoryService allows a developer to let the user choose a directory from inside a view model.
+Scheduling an action in the relative future To schedule an action in the relative future, use the Schedule method with the TimeSpan overload.</description>
+    </item>
+    
+    <item>
+      <title>SelectDirectoryService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/select-directory-service/</guid>
+      <description>The ISelectDirectoryService allows a developer to let the user choose a directory from inside a view model.
 Selecting a directory To select a directory, it is required to set the right properties of the service and then make a call to the DetermineDirectory method:
-var dependencyResolver = this.GetDependencyResolver(); var selectDirectoryService = dependencyResolver.Resolve&amp;lt;ISelectDirectoryService&amp;gt;(); if (selectDirectoryService.DetermineDirectory()) { // User selected a directory }</description></item><item><title>UIVisualizerService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/</guid><description>The IUIVisualizerService allows a developer to show (modal) windows or dialogs without actually referencing a specific view. Internally, the UIVisualizerService uses the ViewLocator to resolve views.
+var dependencyResolver = this.GetDependencyResolver();var selectDirectoryService = dependencyResolver.Resolve&amp;lt;ISelectDirectoryService&amp;gt;();if (selectDirectoryService.DetermineDirectory()){// User selected a directory}</description>
+    </item>
+    
+    <item>
+      <title>UIVisualizerService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/ui-visualizer-service/</guid>
+      <description>The IUIVisualizerService allows a developer to show (modal) windows or dialogs without actually referencing a specific view. Internally, the UIVisualizerService uses the ViewLocator to resolve views.
 Screenshot Showing a non-modal window To show a non-modal window, use the following code:
-var viewModel = new EmployeeViewModel(); var dependencyResolver = this.GetDependencyResolver(); var uiVisualizerService = dependencyResolver.Resolve&amp;lt;IUIVisualizerService&amp;gt;(); uiVisualizerService.Show(viewModel); Showing a modal window To show a modal window, use the following code:
-var viewModel = new EmployeeViewModel(); var dependencyResolver = this.</description></item><item><title>VibrateService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/</guid><description>The IVibrateService allows a developer to start and stop vibration of the device via a service.
+var viewModel = new EmployeeViewModel();var dependencyResolver = this.GetDependencyResolver();var uiVisualizerService = dependencyResolver.Resolve&amp;lt;IUIVisualizerService&amp;gt;();uiVisualizerService.Show(viewModel);Showing a modal window To show a modal window, use the following code:
+var viewModel = new EmployeeViewModel();var dependencyResolver = this.</description>
+    </item>
+    
+    <item>
+      <title>VibrateService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/vibrate-service/</guid>
+      <description>The IVibrateService allows a developer to start and stop vibration of the device via a service.
 Starting vibration To start the vibration, use the following code (will vibrate for 250 ms). Note that the time span must be between 0 and 5 seconds.
-var dependencyResolver = this.GetDependencyResolver(); var vibrateService = dependencyResolver.Resolve&amp;lt;IVibrateService&amp;gt;(); vibrateService.Start(new TimeSpan(0, 0, 0, 0, 250); Stopping the vibration earlier than initially planned By default, the vibration stops automatically after the specified time span has passed.</description></item><item><title>ViewExportService</title><link>https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/</guid><description>The IViewExportService allows a developer to export a specific view that belongs to a view model to the clipboard, a file or a printer.
+var dependencyResolver = this.GetDependencyResolver();var vibrateService = dependencyResolver.Resolve&amp;lt;IVibrateService&amp;gt;();vibrateService.Start(new TimeSpan(0, 0, 0, 0, 250);Stopping the vibration earlier than initially planned By default, the vibration stops automatically after the specified time span has passed.</description>
+    </item>
+    
+    <item>
+      <title>ViewExportService</title>
+      <link>https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-mvvm/services/view-export-service/</guid>
+      <description>The IViewExportService allows a developer to export a specific view that belongs to a view model to the clipboard, a file or a printer.
 Exporting a view To export a view, use the following code:
-var dependencyResolver = this.GetDependencyResolver(); var viewExportService = dependencyResolver.Resolve&amp;lt;IViewExportService&amp;gt;(); viewExportService.Export(myViewModel, ExportMode.File);</description></item></channel></rss>
+var dependencyResolver = this.GetDependencyResolver();var viewExportService = dependencyResolver.Resolve&amp;lt;IViewExportService&amp;gt;();viewExportService.Export(myViewModel, ExportMode.File);</description>
+    </item>
+    
+  </channel>
+</rss>

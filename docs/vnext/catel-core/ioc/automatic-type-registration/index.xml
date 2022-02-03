@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Automatic type registration on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/</link><description>Recent content in Automatic type registration on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/index.xml" rel="self" type="application/rss+xml"/><item><title>Using attributes</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/</guid><description>The ServiceLocator in Catel can be set up to discover attribute based registration. Declaring a registration since the type definition There is a way to automatically register types into a service locator. Using ServiceLocatorRegistrationAttribute it is possible to register types into the service locator in a declarative way. The following code shows how use this attribute:
-[ServiceLocatorRegistration(typeof(IMyClass))] public class MyClass : IMyClass { } All registration options are available in attribute based registration, such as registration type and tag, as ServiceLocatorRegistrationAttribute constructor arguments.</description></item><item><title>Using conventions</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/</guid><description>The ServiceLocator in Catel can be set up to automatically register types based on the conventions. The convention based registration should to be run first than the others registration methods to be sure to have all your types registered correctly.
-Some conventions are provided by default to allow us to register types.
-Register using Naming Convention You can want to register all types which match with the default naming convention, means when I have a *IService *interface, I expect the convention to find and register the Service class as implementation.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automatic type registration on Catel docs</title>
+    <link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/</link>
+    <description>Recent content in Automatic type registration on Catel docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using attributes</title>
+      <link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-attributes/</guid>
+      <description>The ServiceLocator in Catel can be set up to discover attribute based registration. Declaring a registration since the type definition There is a way to automatically register types into a service locator. Using ServiceLocatorRegistrationAttribute it is possible to register types into the service locator in a declarative way. The following code shows how use this attribute:
+[ServiceLocatorRegistration(typeof(IMyClass))]public class MyClass : IMyClass {}All registration options are available in attribute based registration, such as registration type and tag, as ServiceLocatorRegistrationAttribute constructor arguments.</description>
+    </item>
+    
+    <item>
+      <title>Using conventions</title>
+      <link>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/automatic-type-registration/using-conventions/</guid>
+      <description>The ServiceLocator in Catel can be set up to automatically register types based on the conventions. The convention based registration should to be run first than the others registration methods to be sure to have all your types registered correctly.
+Some conventions are provided by default to allow us to register types.
+Register using Naming Convention You can want to register all types which match with the default naming convention, means when I have a *IService *interface, I expect the convention to find and register the Service class as implementation.</description>
+    </item>
+    
+  </channel>
+</rss>
