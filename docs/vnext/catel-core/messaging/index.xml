@@ -1,42 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Messaging on Catel docs</title>
-    <link>https://docs.catelproject.com/vnext/catel-core/messaging/</link>
-    <description>Recent content in Messaging on Catel docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/messaging/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MessageBase</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/</guid>
-      <description>The MessageMediator is a very powerful class to send messages to other objects inside an application. However, it can sometimes by cumbersome to register and create messages. Therefore the MessageBase class is a very nice convenience class to create messages and allow easier registration.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Messaging on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-core/messaging/</link><description>Recent content in Messaging on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/messaging/index.xml" rel="self" type="application/rss+xml"/><item><title>MessageBase</title><link>https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/messaging/messagebase/</guid><description>The MessageMediator is a very powerful class to send messages to other objects inside an application. However, it can sometimes by cumbersome to register and create messages. Therefore the MessageBase class is a very nice convenience class to create messages and allow easier registration.
 The MessageBase provides the following additional functionality out of the box:
- Send messages with data without instantiating a message Register message handlers Unregister message handlers  Creating messages based on the MessageBase  It is very easy to create a new message.</description>
-    </item>
-    
-    <item>
-      <title>Message mediator</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</guid>
-      <description>Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.
+Send messages with data without instantiating a message Register message handlers Unregister message handlers Creating messages based on the MessageBase  It is very easy to create a new message.</description></item><item><title>Message mediator</title><link>https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/messaging/message-mediator/</guid><description>Catel allows sending messages to unknown targets by implementing the mediator pattern. The mediator is assured memory leak free, and can be used safely in any .NET environment (even ASP.NET). Below are a few usage examples of the MessageMediator class.
 Registering to a message  To register a handler for a specific message type, in this case a string, use the following code:
-var mediator = ServiceLocator.Default.ResolveType&amp;lt;IMessageMediator&amp;gt;();mediator.Register&amp;lt;string&amp;gt;(this, OnMessage);Sending out a message  To send a message to all recipients, use the following code:</description>
-    </item>
-    
-    <item>
-      <title>Messaging via attributes</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/</guid>
-      <description>The message mediator is a great way to communicate between instances in an application. It does however require to manually subscribe to and unsubscribe from classes. This issue can be bypassed using the attribute based approach. This is an alternative for registering a method in the message mediator and not be obliged to use Register&amp;lt;T&amp;gt; method.
-Subscribing and unsubscribing  When attributes are using inside a class, it is required to call the MessageMediatorHelper.</description>
-    </item>
-    
-  </channel>
-</rss>
+var mediator = ServiceLocator.Default.ResolveType&amp;lt;IMessageMediator&amp;gt;(); mediator.Register&amp;lt;string&amp;gt;(this, OnMessage); Sending out a message  To send a message to all recipients, use the following code:</description></item><item><title>Messaging via attributes</title><link>https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/messaging/messaging-via-attributes/</guid><description>The message mediator is a great way to communicate between instances in an application. It does however require to manually subscribe to and unsubscribe from classes. This issue can be bypassed using the attribute based approach. This is an alternative for registering a method in the message mediator and not be obliged to use Register&amp;lt;T&amp;gt; method.
+Subscribing and unsubscribing  When attributes are using inside a class, it is required to call the MessageMediatorHelper.</description></item></channel></rss>

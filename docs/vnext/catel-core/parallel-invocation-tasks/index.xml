@@ -1,21 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Parallel invocation and tasks on Catel docs</title>
-    <link>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/</link>
-    <description>Recent content in Parallel invocation and tasks on Catel docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Thread safe code</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/</guid>
-      <description>Writing a multiple threading application is always a challenge. Eventually you need use objects or statements with the ability to synchronize access to the critical sections of the code by taking and releasing a lock.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Parallel invocation and tasks on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/</link><description>Recent content in Parallel invocation and tasks on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/index.xml" rel="self" type="application/rss+xml"/><item><title>Thread safe code</title><link>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/parallel-invocation-tasks/thread-safe-code/</guid><description>Writing a multiple threading application is always a challenge. Eventually you need use objects or statements with the ability to synchronize access to the critical sections of the code by taking and releasing a lock.
 Background information The common solution to access the thread-sensitive resources is use the lock statement just as follow:
-private readonly object _syncObj = new object();public void DoTheWork(){lock (_syncObj){// Access to the thread-sensitive resources here.</description>
-    </item>
-    
-  </channel>
-</rss>
+private readonly object _syncObj = new object(); public void DoTheWork() { lock (_syncObj) { // Access to the thread-sensitive resources here.</description></item></channel></rss>

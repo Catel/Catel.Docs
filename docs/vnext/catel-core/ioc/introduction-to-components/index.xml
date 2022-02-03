@@ -1,51 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Introduction to components on Catel docs</title>
-    <link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/</link>
-    <description>Recent content in Introduction to components on Catel docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ServiceLocator</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/</guid>
-      <description>The ServiceLocator services as the container inside Catel.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction to components on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/</link><description>Recent content in Introduction to components on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/index.xml" rel="self" type="application/rss+xml"/><item><title>ServiceLocator</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/servicelocator/</guid><description>The ServiceLocator services as the container inside Catel.
 Internally it uses the TypeFactory as instantiator for the services.
-Catel uses it&amp;rsquo;s own ServiceLocator implementing the IServiceLocator to gather all services required by Catel. For example, default services are the IPleaseWaitService and the IUIVisualizerService. By default, when the first view model is instantiated, Catel registers all default out of the box services to the ServiceLocator. However, it only does this when the specific services are not already registered.</description>
-    </item>
-    
-    <item>
-      <title>TypeFactory</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</guid>
-      <description>The TypeFactory is responsible for actually creating types inside Catel. It uses the following mechanism:
- List all the constructors, order them from most parameters to least parameters While (constructors available) try to construct type using injection If all constructors fail, the TypeFactory will fallback to Activator.CreateInstance()  Dependency injection The ServiceLocator in Catel supports dependency injection.
-Introduction to dependency injection Some people make dependency injection hard to understand, or maybe they don&amp;rsquo;t understand it themselves.</description>
-    </item>
-    
-    <item>
-      <title>DependencyResolver and DependencyResolverManager</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/</guid>
-      <description>Introduction to Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the IDependencyResolver and DependencyResolverManager are introduced.
-Why the need for a DependencyResolver That&amp;rsquo;s a good question. Catel already provides the IServiceLocator which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the ServiceLocator.</description>
-    </item>
-    
-    <item>
-      <title>Ensuring integrity of the ServiceLocator</title>
-      <link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/</guid>
-      <description>Starting with Catel 3.6, a very useful feature has been added to the ServiceLocator and TypeFactory. This features is called &amp;ldquo;integrity checker&amp;rdquo; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming.</description>
-    </item>
-    
-  </channel>
-</rss>
+Catel uses it&amp;rsquo;s own ServiceLocator implementing the IServiceLocator to gather all services required by Catel. For example, default services are the IPleaseWaitService and the IUIVisualizerService. By default, when the first view model is instantiated, Catel registers all default out of the box services to the ServiceLocator. However, it only does this when the specific services are not already registered.</description></item><item><title>TypeFactory</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/typefactory/</guid><description>The TypeFactory is responsible for actually creating types inside Catel. It uses the following mechanism:
+List all the constructors, order them from most parameters to least parameters While (constructors available) try to construct type using injection If all constructors fail, the TypeFactory will fallback to Activator.CreateInstance() Dependency injection The ServiceLocator in Catel supports dependency injection.
+Introduction to dependency injection Some people make dependency injection hard to understand, or maybe they don&amp;rsquo;t understand it themselves.</description></item><item><title>DependencyResolver and DependencyResolverManager</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/dependencyresolver/</guid><description>Introduction to Managing different scoping of service locators and dependency injection can be hard. To aid developers with this, the IDependencyResolver and DependencyResolverManager are introduced.
+Why the need for a DependencyResolver That&amp;rsquo;s a good question. Catel already provides the IServiceLocator which allows to resolve types. The downside is that if you want to customize the way dependencies are resolved in Catel, you will have to implement a custom version of the ServiceLocator.</description></item><item><title>Ensuring integrity of the ServiceLocator</title><link>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-core/ioc/introduction-to-components/ensuring-integrity/</guid><description>Starting with Catel 3.6, a very useful feature has been added to the ServiceLocator and TypeFactory. This features is called &amp;ldquo;integrity checker&amp;rdquo; and will ensure you with useful information about type registration paths. This protection mechanism is very useful in complex applications. When people start building services, sometimes they accidentally inject other services that via injection to other services cause a stack overflow. Debugging and determining which type is causing the issue can be very time-consuming.</description></item></channel></rss>

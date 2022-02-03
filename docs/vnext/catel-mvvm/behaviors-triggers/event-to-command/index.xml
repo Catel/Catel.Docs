@@ -1,21 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>EventToCommand on Catel docs</title>
-    <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</link>
-    <description>Recent content in EventToCommand on Catel docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>EventArgsConverter</title>
-      <link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/</guid>
-      <description>The implementation and usage of the EventToCommand behavior is always strongly encouraged when developing an MVVM application as it provides a logical separation of concerns.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EventToCommand on Catel docs</title><link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/</link><description>Recent content in EventToCommand on Catel docs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/index.xml" rel="self" type="application/rss+xml"/><item><title>EventArgsConverter</title><link>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.catelproject.com/vnext/catel-mvvm/behaviors-triggers/event-to-command/event-args-converter/</guid><description>The implementation and usage of the EventToCommand behavior is always strongly encouraged when developing an MVVM application as it provides a logical separation of concerns.
 However many implementations of the behavior come with the caveat, they cause a ViewModel to have knowledge of View specific types as well as causing a ViewModel to be directly dependent on the View.
-To resolve that concern, Catel provides support for an EventArgsConverter that can be attached to an EventToCommand binding.</description>
-    </item>
-    
-  </channel>
-</rss>
+To resolve that concern, Catel provides support for an EventArgsConverter that can be attached to an EventToCommand binding.</description></item></channel></rss>
