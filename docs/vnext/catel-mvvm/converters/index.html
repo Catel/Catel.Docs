@@ -3,7 +3,7 @@
 <title>Catel docs</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=revised content="2022-06-17T09:47:22 UTC">
+<meta name=revised content="2022-06-17T11:57:04 UTC">
 <title>Converters :: Catel docs</title>
 <link rel="shortcut icon" href=/vnext/images/favicon.png type=image/x-icon>
 <link href=/vnext/css/font-awesome.min.css rel=stylesheet>
@@ -1096,6 +1096,20 @@ Hooking a command to validation automatically
 <a href=/vnext/catel-mvvm/designers/>Designers</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
 </div>
 <ul>
+<li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/designers/design-time-view-models/ class=dd-item>
+<div>
+<a href=/vnext/catel-mvvm/designers/design-time-view-models/>
+Design-time view models
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
+<li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/designers/running-code-at-design-time/ class=dd-item>
+<div>
+<a href=/vnext/catel-mvvm/designers/running-code-at-design-time/>
+Running code at design-time
+</a><i class="fa fa-circle-thin read-icon"></i>
+</div>
+</li>
 </ul>
 </li>
 <li data-nav-id=https://docs.catelproject.com/vnext/catel-mvvm/locators-naming-conventions/ class="dd-item haschildren">
@@ -1604,15 +1618,15 @@ Tips & tricks</option></select>
 </tr>
 <tr>
 <td>ContainsItemsConverter</td>
-<td>Convert the count of an ICollection or IEnumerable to true or false, depending on whether the instance contains items.- For an instance which implements ICollection, check Count > 0.- For an instance which implements IEnumerable, if the instance can be Enumerated.</td>
+<td>Convert the count of an ICollection or IEnumerable to true or false, depending on whether the instance contains items.<br>- For an instance which implements ICollection, check Count > 0.<br>- For an instance which implements IEnumerable, if the instance can be Enumerated.</td>
 </tr>
 <tr>
 <td>CountCollapsedConverter</td>
-<td>Converts the &lsquo;count&rsquo; of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Collapsed</em>Visible means: ICollection.Count > 0, String.Length > 0 or long, int, short > 0.</td>
+<td>Converts the &lsquo;count&rsquo; of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Collapsed</em><br>Visible means: ICollection.Count > 0, String.Length > 0 or long, int, short > 0.</td>
 </tr>
 <tr>
 <td>CountHiddenConverter</td>
-<td>Converts the &lsquo;count&rsquo; of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Hidden</em>Visible means: ICollection.Count > 0, String.Length > 0 or long, int, short > 0.</td>
+<td>Converts the &lsquo;count&rsquo; of ICollection, string, long, int or short to <em>Visibility.Visible</em> or <em>Visibility.Hidden</em><br>Visible means: ICollection.Count > 0, String.Length > 0 or long, int, short > 0.</td>
 </tr>
 <tr>
 <td>EmptyStringToCollapsingVisibilityConverter</td>
@@ -1624,11 +1638,11 @@ Tips & tricks</option></select>
 </tr>
 <tr>
 <td>EnumToCollapsingVisibilityConverter</td>
-<td>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3</em>)<em>:</em><code>&lt;TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToCollapsingVisibilityConverter}, ConverterParameter=Enum1&amp;vert;Enum3}"/></code>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</td>
+<td>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3</em>):<br><br><code>&lt;TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToCollapsingVisibilityConverter}, ConverterParameter=Enum1&amp;vert;Enum3}"/></code><br><br>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</td>
 </tr>
 <tr>
 <td>EnumToHidingVisibilityConverter</td>
-<td>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3</em>)<em>:</em><code>&lt;TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToHidingVisibilityConverter}, ConverterParameter=Enum1&amp;vert;Enum3}"/></code>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</td>
+<td>Converts an enum to <em>Visibility</em>. The allowed values must be defined inside the ConverterParameter as shown below (element will be visible when <em>MyEnumValue</em> is <em>Enum1</em> or <em>Enum3</em>):<br><br><code>&lt;TextBlock Visibility="{Binding MyEnumValue, Converter={converters:EnumToHidingVisibilityConverter}, ConverterParameter=Enum1&amp;vert;Enum3}"/></code><br><br>If the <em>ConverterParameter</em> starts with !, the element will not be visible for the specified enum values</td>
 </tr>
 <tr>
 <td>FormattingConverter</td>
