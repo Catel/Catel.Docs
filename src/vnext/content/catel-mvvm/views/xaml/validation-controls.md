@@ -39,7 +39,7 @@ When an error or warning is found on the changed property, the control invokes t
 
 A `InfoBarMessageControl` is automatically added to the `DataWindow`, if you want to use a different style for this `InfoBarMessageControl`, you must override the default style, add your own `InfoBarMessageControl` and disable the default `InfoBarMessageControl` from the `DataWindow`.
 
-1.  Create a custom style based on the [default style](https://github.com/Catel/Catel/blob/master/src/Catel.MVVM/Catel.MVVM.NET46/Themes/InfoBarMessageControl.generic.xaml).
+1.  Create a custom style based on the [default style](https://github.com/Catel/Catel/blob/master/src/Catel.MVVM/Themes/InfoBarMessageControl.generic.xaml).
 2.  Change the x:Key from  x:Key="{x:Type local:InfoBarMessageControl}" to  x:Key="yourCustomStyleKey"
 3.  Set the InfoBarMessageControlGenerationMode to None
 
