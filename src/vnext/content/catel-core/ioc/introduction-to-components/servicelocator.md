@@ -29,7 +29,7 @@ ServiceLocator.Default.RegisterType<IPleaseWaitService, PleaseWaitService>();
 Use the following code to register a late-bound type in the `ServiceLocator`:
 
 ```
-ServiceLocator.Default.RegisterType<IPleaseWaitService>(x => new PleaseWaitService());
+ServiceLocator.Default.RegisterType<IPleaseWaitService>((typeFactory, serviceLocatorRegistration) => new PleaseWaitService());
 ```
 
 ## Registering an instance of a type
