@@ -3,7 +3,7 @@
 <title>Catel docs</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=revised content="2023-10-08T19:25:03 UTC">
+<meta name=revised content="2023-10-09T18:44:36 UTC">
 <title>ServiceLocator :: Catel docs</title>
 <link rel="shortcut icon" href=/vnext/images/favicon.png type=image/x-icon>
 <link href=/vnext/css/nucleus.css rel=stylesheet>
@@ -1584,7 +1584,7 @@ Tips & tricks</option></select>
 <pre tabindex=0><code>ServiceLocator.Default.RegisterType&lt;IPleaseWaitService, PleaseWaitService&gt;();
 </code></pre><h2 id=registering-a-late-bound-type>Registering a late-bound type</h2>
 <p>Use the following code to register a late-bound type in the <code>ServiceLocator</code>:</p>
-<pre tabindex=0><code>ServiceLocator.Default.RegisterType&lt;IPleaseWaitService&gt;(x =&gt; new PleaseWaitService());
+<pre tabindex=0><code>ServiceLocator.Default.RegisterType&lt;IPleaseWaitService&gt;((typeFactory, serviceLocatorRegistration) =&gt; new PleaseWaitService());
 </code></pre><h2 id=registering-an-instance-of-a-type>Registering an instance of a type</h2>
 <p>Catel uses the <code>TypeFactory</code> or <code>Activator.CreateInstance</code> to create the interface implementations when the object is first resolved. However, sometimes a service constructor requires parameters or takes a long time to construct. In such cases, it is recommended to create the type manually and register the instance of the type:</p>
 <pre tabindex=0><code>var pleaseWaitService = new PleaseWaitService();
