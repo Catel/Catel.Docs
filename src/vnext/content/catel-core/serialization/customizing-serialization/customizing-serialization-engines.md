@@ -14,7 +14,7 @@ To customize a serializer, derive from an existing class and customize a method.
 ```
 public class SafeXmlSerializer : XmlSerializer
 {
-    protected override bool ShouldIgnoreMember(ModelBase model, PropertyData property)
+    protected override bool ShouldIgnoreMember(object model, PropertyData property)
     {
         if (model is SecurityModel)
         {
