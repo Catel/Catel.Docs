@@ -3,7 +3,7 @@
 <title>Catel docs</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name=revised content="2023-10-09T18:44:36 UTC">
+<meta name=revised content="2023-10-31T18:11:58 UTC">
 <title>Customizing the serialization engines :: Catel docs</title>
 <link rel="shortcut icon" href=/vnext/images/favicon.png type=image/x-icon>
 <link href=/vnext/css/nucleus.css rel=stylesheet>
@@ -1579,7 +1579,7 @@ Tips & tricks</option></select>
 <p>To customize a serializer, derive from an existing class and customize a method. The serializer below makes sure that specific members are never serialized. It keeps all other serialization logic intact.</p>
 <pre tabindex=0><code>public class SafeXmlSerializer : XmlSerializer
 {
-    protected override bool ShouldIgnoreMember(ModelBase model, PropertyData property)
+    protected override bool ShouldIgnoreMember(object model, PropertyData property)
     {
         if (model is SecurityModel)
         {
